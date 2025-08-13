@@ -276,8 +276,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \pm n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  =  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; n^{\frac{ 1 }{ z }} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  }',
+                      array( display => 'on',  latex => '{  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  =  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1071,14 +1071,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
@@ -1086,14 +1086,14 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  \;\;,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  \;\;,  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
