@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 25.06.2025, 22:00h
+  // #: Stand: 13.08.2025, 07:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250813:  +:  "MathJax":  Add Macro "Q" for "\Q" to generate a non italic "Q" for rational superial numbers useful for set S.
   //           20250625:  +:  "Sc_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //           20250309:  +:  "$Sc_g_equation_replace_ary":  Add '  :\neq  ' -> '\;\;\;:\neq\;\;\;' and ':\neq' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq' and ':\in' -> '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'
   //                      *:  "$Sc_g_equation_replace_ary":  Change order of some entries
@@ -242,6 +243,7 @@
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
     echo '            N: "\\\\mathrm{N}",'."\n"; // for natural superial numbers
     echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
+    echo '            Q: "\\\\mathrm{Q}",'."\n"; // for rational superial numbers
     echo '            R: "\\\\mathrm{R}",'."\n"; // for algebraic coefficients
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
