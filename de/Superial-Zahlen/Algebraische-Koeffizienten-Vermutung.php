@@ -121,22 +121,180 @@
                     'ebenfalls durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was nach kurzer Überlegung auch offensichtlich ist.'."\n".
                     'Das macht sie auch ganz klar zu sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
                       'Darüberhinaus zeige ich jedoch im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}} zusätzlich,'."\n".
-                    'dass \color{*Bearb}{(fast)} alle algebraischen Radikalformen, eben auch die, die Summen oder Produkte von Wurzeln und deren ganzzahligen Potenzen sind,'."\n".
+                    'dass alle algebraischen Radikalformen, eben auch die, die Summen oder Produkte von Wurzeln und deren ganzzahligen Potenzen'."\n".
+                    'sowie geschachtelte Wurzelausdrücke aus Summen und deren Kehrwerte sind,'."\n".
                     'auch sinnvolle Koeffizienten der Superial-Zahlen darstellen.'."\n".
-                    '\color{*Bearb}{(Bisher ohne Radikalformen, die man durch endlich viele geschachtelte Quadratwurzeln und ganzzahlige Additionen erhält.)}'."\n".
-                    'Obwohl diese Radikalformen keine \lm{ p }‑adischen Bewertungen ungleich Null besitzen.'."\n",
-                      'Dazu gehört auch der Goldene Schnitt:'."\n".
+                    'Und das, obwohl diese Radikalformen keine \lm{ p }‑adischen Bewertungen ungleich Null besitzen.'."\n",
+                      'Dazu gehört zum Beispiel auch der Goldene Schnitt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ  =  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt}', label_incr => false),
-                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }',
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'wie auch die pythagoreischen Tripel in quadratischer oder allgemeiner Form:'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(Bisher ohne Radikalformen, die man durch endlich viele geschachtelte Quadratwurzeln und ganzzahlige Additionen erhält.)}'."\n".
                     ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Radikal-Abgeschlossenheit} \\\\'."\n".
+                    'Wie wir auf der Seite der sinnvollen Koeffizienten herausarbeiten, erreichen wir schließlich die Radikal-Abgeschlossenheit'."\n".
+                    'der Koeffizienten.'."\n".
+                    'Ein entscheidender Schritt zur Vorbereitung unseres Beweises, dass wirklich alle reell algebraischen Zahlen als Koeffizienten'."\n".
+                    'sinnvoll sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Stehende Annahmen (SA)} \\\\'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\condb{Inklusionen:}'."\n".
+                          '\lm{ \mathbb{Z} \subset \mathbb{A}_{\S} } und \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} }​. \\\\'."\n".
+                          'Für \lm{ n \ge 1 } gilt \lm{ s^{n} \mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }. Im Allgemeinen \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }. \\\\'."\n".
+                          '\italic{Begründung: „sinnvoll“ heißt \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s \in \mathbb{S}_{\Z} } etc.; für höhere Potenzen analog.}',
+                        '\condb{Integritätsbereich:}'."\n".
+                          '\lm{ \mathbb{S}_{\Z} } ist also Integritätsbereich mit \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} } und ausgezeichnetem Element \lm{ \s \in \mathbb{S}_{\Z} }. Der Quotientenkörper sei \lm{ \s \in \mathbb{S}_{\Q} := \mathrm{Frac}(\mathbb{S}_{\Z}) }.',
+                        '\condb{Primzahldivisoren:}'."\n".
+                          'Für jede (rationale) Primzahl \lm{ p } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner \lm{ \bigcap_{e \ge 0} p^{e} \mathbb{S}_{\Z} = *\{ 0 *\} }.',
+                        '\condb{Endliche Prim-Unterstützung:}'."\n".
+                          'Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } ist die Menge \lm{ *\{ p \in \mathbb{P} *|* v_{p}(X) > 0 *\} } endlich.'."\n".
+                          '\italic{(Dieses „endlich viele Primteiler“ ist genau die Buchführung, die für sinnvolle Koeffizienten wichtig ist.)}',
+                    ))),
+
+                  array( 'text', array( text => array(
+                  '\bold{Bewertungen und Valuationsringe} \\\\'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\condb{Bewertungen \lm{ v_{p} }:} \\\\'."\n".
+                          'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } setze \\\\'."\n".
+                            '\lm{ \quad\;  v_{p}(X) := \mathrm{sup}⁡*\{ e \in \mathbb{Z}_{\ge 0} *|* X \in p^{e}\mathbb{S}_{\Z} *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\} }, \lm{ v_{p}(0) := \infty }. \\\\'."\n".
+                          'Für \lm{ x = X / Y \in \mathbb{S}_{\Q}^{\times} } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 } setze \\\\'."\n".
+                            '\lm{ \quad\;  v_{p}​(x) := v_{p}​(X) − v_{p}​(Y) \in \mathbb{Z} }.',
+                        '\condb{Axiom 0:}'."\n".
+                          'Die Bewertungen \lm{ v_{p} }​ sind wohldefiniert und erfüllen für \lm{ x, y \in \mathbb{S}_{\Q}^{\times} }.',
+                        '\condb{Axiom 1:}'."\n".
+                          '\lm{ v_{p}​(xy) = v_{p}​(x) + v_{p}​(y) }',
+                        '\condb{Axiom 2:}'."\n".
+                          '\lm{ v_{p}​(x + y) \ge \mathrm{min}\{v_{p}​(x), v_{p}​(y) \} }, falls \lm{ x + y \ne 0 }',
+                        '\condb{Axiom 3:}'."\n".
+                          'für \lm{ n \in \mathbb{Z} \setminus \{ 0 \} } stimmt \lm{ v_{p}(n) } mit der üblichen \lm{ p }-Adik überein. \\\\'."\n".
+                          '\italic{Beweis: Standard über Ideale \lm{ p^{e}\mathbb{S}_{\Z}​ } und stehende Annahmen (SA)}',
+                        '\condb{Valuationsring \lm{ V_{p} }:} \\\\'."\n".
+                          'Setze \\\\'."\n".
+                            '\lm{ \quad\;  V_{p} := *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup \{ 0 \} }.',
+                        '\condb{Struktur von \lm{ V_{p} }:} \\\\'."\n".
+                          '\lm{ V_{p} }​ ist ein lokaler Valuationsring mit maximalem Ideal \lm{ m_{p} = *\{ x *|* v_{p}(x) > 0 *\} \cup *\{ 0 *\} }. \\\\'."\n".
+                            'Insbesondere ist \lm{ V_{p} }​​ ganz abgeschlossen. \\\\'."\n".
+                            '\italic{Beweis: Aus Axiomen; Klassik: Valuationsringe sind ganz abgeschlossen.}',
+                    ))),
+
+                  array( 'text', array( text => array(
+                  '\bold{Schnittdarstellung von \lm{ \mathbb{S}_{\Z} }} \\\\'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\condb{Lemma – Offensichtliche Inklusion:}'."\n".
+                          '\lm{ \mathbb{S}_{\Z} \subseteq \bigcap_{p} V_{p} }​. \\\\'."\n".
+                          '\italic{Beweis: Für \lm{ X \in \mathbb{S}_{\Z} \setminus \{ 0 \} } ist \lm{ v_{p}(X) \ge 0 } für alle \lm{ p }.}',
+                        '\condb{Bemerkung – Einheitenkriterium:}'."\n".
+                          'Für \lm{ 0 \ne U \in \mathbb{S}_{\Z}​ } gilt: \lm{ U } ist Einheit \lm{ \Leftrightarrow v_{p}(U) = 0 } für alle \lm{ p }. \\\\'."\n".
+                          '\italic{Begründung: Hat \lm{ v_{p}(U) \ge 1 } für\color{*Bearb}{(???)} ein \lm{ p }, dann teilt \lm{ p } das Hauptideal \lm{ U \mathbb{S}_{\Z} }​, also ist \lm{ U } keine Einheit; umgekehrt folgt aus \lm{ v_{p}(U) = 0 } für \lm{ \forall p } per SA Einheitlichkeit.}',
+                        '\condb{Schnitt – Charakterisierung via Schnitt:} \\\\'."\n".
+                          '\lm{ \quad\;  \mathbb{S}_{\Z}​ = \bigcap_{ p } V_{p} \subset \mathbb{S}_{\Q}​ }. \\\\'."\n".
+                          '\italic{Beweis: Sei \lm{ x =  X / Y \in \bigcap_{ p } V_{p}​ } mit \lm{ X, Y \in \mathbb{S}_{\Z} }. Dann \lm{ v_{p}(X) \ge v_{p}(Y) } für \lm{ \forall p }. Definiere \lm{ D \in \mathbb{S}_{\Z} }​ über Primexponenten durch \lm{ v_{p}(D) := v_{p}(Y) } (existiert dank SA \condb{Endliche Prim-Unterstützung}). Dann \lm{ D | X } und \lm{ D | Y }, schreibe \lm{ X = DX′, Y = DY′ } mit \lm{ v_{p}(Y′) = 0 } für \lm{ \forall p }. Nach \condb{Einheitenkriterium} ist \lm{ Y′ } Einheit, also \lm{ x =  X′ / Y′ \in \mathbb{S}_{\Z} }​.}',
+                        '\condb{Korrelation – Ganz abgeschlossen:}'."\n".
+                          'Als Schnitt ganz abgeschlossener Ringe \lm{ V_{p} } ist \lm{ \mathbb{S}_{\Z} } selbst ganz abgeschlossen.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                  '\bold{Reell algebraische Zahlen in \lm{ \mathbb{A}_{\S} }} \\\\'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\condb{Schlüssel-Proposition:}'."\n".
+                          'Ist \lm{ \mathbb{S}_{\Z} } in \lm{ \mathbb{S}_{\Q} } ganz abgeschlossen (\condb{Korrelation – Ganz abgeschlossen}), dann gilt: \\\\'."\n".
+                            '\lm{ \quad\; } Jede reell algebraische Zahl \lm{ \alpha } liegt in \lm{ \mathbb{A}_{\S} }. \\\\'."\n".
+                          '\italic{Beweis: Sei \lm{ \alpha } reell algebraisch, Nullstelle eines monischen Polynoms} \\\\'."\n".
+                            '\lm{ \quad\;  \alpha^{n} + a_{n - 1} \alpha^{n - 1} + \cdots + a_{0} ​= 0  \quad } mit \lm{ a_{i} \in \mathbb{Z}​ }. \\\\'."\n".
+                          'Setze \lm{ Y := \alpha \cdot s } und multipliziere mit \lm{ s^{n} }: \\\\'."\n".
+                            '\lm{ \quad\;  Y^{n} + *( a_{n - 1} \s *) Y^{n - 1} + \cdots + *( a_{1} \s^{n - 1} *) Y + a_{0} \s^{n} ​= 0 }. \\\\'."\n".
+                          'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m }.'."\n".
+                          'Also ist \lm{ Y } ist \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
+                          'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \blacksquare }',
+                        '\condb{Fazit:}'."\n".
+                          'Zusammen mit der bereits bewiesenen Radikal-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} } liefert die \condb{Schlüssel-Proposition}:',
+                    ))),
+
+                  array( 'text', array( Shape  => 'conclusion', text => array(
+                        'Alle reell algebraischen Zahlen gehören zu den sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }.'."\n".
+                        ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'text', array( text => array(
+                  '\bold{Randbemerkung zur endlichen Prim-Unterstützung} \\\\'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Bemerkung – Plausibilität Endlicher Prim-Unterstützung:} \\\\'."\n".
+                    'Warum SA \condb{Endliche Prim-Unterstützung} plausibel ist: \\\\'."\n".
+                    'In der Praxis werden Elemente \lm{ X \in \mathbb{S}_{\Z} } als endliche Stellensummen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  X = \sum_{ [ 0,d ]_{\mathbb{N}} } a_{i} \s^{i}  \quad  a_{i} \in \mathbb{A}_{\S}, d \in \mathbb{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(Formel falsch)} geschrieben, wobei jedes \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } liegt (Definition „ganz“ in den Superial-Zahlen). \\\\'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ hat \lm{ z } nur die üblichen endlich vielen \lm{ p }-Teiler.',
+                        'Für \lm{ a \in \mathbb{A}_{\S} } liegt \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } und kann nach den bereits bewiesenen Regeln'."\n".
+                          '(Produkte, ganzzahlige Potenzen, endliche Summen, Radikale) mit endlich vielen rationalen Primfaktoren beschrieben werden.',
+                        'Da Summe und Produkt ganzer Superial-Zahlen die Vereinigung der jeweils endlichen Prim-Unterstützungen nimmt, bleibt die Unterstützung endlich.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Damit ist die SA \condb{Endliche Prim-Unterstützung} kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
                   array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 '\color{*Bearb}{Nachfolgender Text wird überarbeitet, weil er so nicht korrekt ist}', subline =>
