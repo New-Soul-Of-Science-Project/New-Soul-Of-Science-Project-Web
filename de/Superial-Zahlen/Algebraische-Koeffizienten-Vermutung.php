@@ -269,25 +269,25 @@
                   array( 'text', array( text => array(
                   '\condb{Bemerkung – Plausibilität Endlicher Prim-Unterstützung:} \\\\'."\n".
                     'Warum SA \condb{Endliche Prim-Unterstützung} plausibel ist: \\\\'."\n".
-                    'In der Praxis werden Elemente \lm{ X \in \mathbb{S}_{\Z} } als endliche Stellensummen'."\n".
+                    'Jedes \lm{ X \in \mathbb{S}_{\Z} } besitzt eine endliche Darstellung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  X = \sum_{ [ 0,d ]_{\mathbb{N}} } a_{i} \s^{i}  \quad  a_{i} \in \mathbb{A}_{\S}, d \in \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  X = z + \sum_{ [ 1,d ]_{\mathbb{N}} } a_{i} \s^{i}  \quad  z \in \mathbb{Z}, d \in \mathbb{N}, a_{i} \in \mathbb{A}_{\S}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Formel falsch)} geschrieben, wobei jedes \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } liegt (Definition „ganz“ in den Superial-Zahlen). \\\\'."\n".
+                    'Dabei hat \bold{nur} die Nullte Stelle einen \bold{ganzzahligen} Koeffizienten; alle \bold{positiven} Stellen tragen \bold{sinnvolle Koeffizienten} aus \lm{ \mathbb{A}_{\S} }.'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ hat \lm{ z } nur die üblichen endlich vielen \lm{ p }-Teiler.',
-                        'Für \lm{ a \in \mathbb{A}_{\S} } liegt \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } und kann nach den bereits bewiesenen Regeln'."\n".
+                        'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ \bold{sind die rationalen Primteiler endlich} (klassisch).',
+                        'XXX Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } und kann nach den bereits bewiesenen Regeln'."\n".
                           '(Produkte, ganzzahlige Potenzen, endliche Summen, Radikale) mit endlich vielen rationalen Primfaktoren beschrieben werden.',
-                        'Da Summe und Produkt ganzer Superial-Zahlen die Vereinigung der jeweils endlichen Prim-Unterstützungen nimmt, bleibt die Unterstützung endlich.',
+                        'XXX Da Summe und Produkt ganzer Superial-Zahlen die Vereinigung der jeweils endlichen Prim-Unterstützungen nimmt, bleibt die Unterstützung endlich.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'Damit ist die SA \condb{Endliche Prim-Unterstützung} kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben.'."\n".
+                    'XXX Damit ist die SA \condb{Endliche Prim-Unterstützung} kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
