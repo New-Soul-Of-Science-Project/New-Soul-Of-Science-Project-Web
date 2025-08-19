@@ -172,9 +172,16 @@
                           '\lm{ \mathbb{S}_{\Z} } ist also Integritätsbereich mit \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} } und ausgezeichnetem Element \lm{ \s \in \mathbb{S}_{\Z} }. Der Quotientenkörper sei \lm{ \s \in \mathbb{S}_{\Q} := \mathrm{Frac}(\mathbb{S}_{\Z}) }.',
                         '\condb{Primzahldivisoren:}'."\n".
                           'Für jede (rationale) Primzahl \lm{ p } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner \lm{ \bigcap_{e \ge 0} p^{e} \mathbb{S}_{\Z} = *\{ 0 *\} }.',
-                        '\condb{Endliche Prim-Unterstützung:}'."\n".
-                          'Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } ist die Menge \lm{ *\{ p \in \mathbb{P} *|* v_{p}(X) > 0 *\} } endlich.'."\n".
-                          '\italic{(Dieses „endlich viele Primteiler“ ist genau die Buchführung, die für sinnvolle Koeffizienten wichtig ist.)}',
+                        '\condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:} \\\\'."\n".
+                          '(a) \lm{ \s } ist durch jede rationale Primzahl teilbar (für alle Primzahlen \lm{ p } gilt \lm{ p \mid \s }). \\\\'."\n".
+                          '(b) Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } definieren wir den \lm{ s }-primitiven Teil \lm{ X^{(0)} } über die \lm{ s }-Ordnung \\\\'."\n".
+                            '\lm{ \quad\;  \mathrm{ord⁡_{s}}(X) := \mathrm{min} *\{ i \ge 0 *|* \text{der Koeffizient von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0 *\} } \\\\'."\n".
+                          'mittels \lm{ X = \s^{\mathrm{ord⁡_{s}}(X)} \cdot X^{(0)} } und \lm{ \mathrm{ord⁡_{s}}(X^{(0)}) = 0 }. \\\\'."\n".
+                          '(c) Die \bold{Primunterstützung} eines Elements meint fortan \bold{die des \lm{ \s }-primitiven Teils}: \\\\'."\n".
+                            '\lm{ \quad\;  \mathrm{Supp}_{p}(X) := *\{ p \in \mathbb{P} *|* v_{p}(X^{(0)}) > 0 *\} } \\\\'."\n".
+                          'Diese Menge ist \bold{endlich}. \\\\'."\n".
+                          '(d) Für alle \lm{ n \ge 1 } gilt \lm{ \s^{n}\mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }; allgemein \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} } (wohl aber \lm{ \mathbb{Z} \subset \mathbb{A}_{\S} } und \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} }). \\\\'."\n".
+                          '\italic{Kommentar: Die „unendliche“ Primdichte steckt vollständig im Faktor \lm{ s^{ord⁡_{s}}(X) }. Aussagen über „endliche Primunterstützung“ beziehen sich immer auf \lm{ X^{(0)} } (d. h. auf die zusätzliche, von \lm{ \s } unabhängige Primstruktur).}',
                     ))),
 
                   array( 'text', array( text => array(
@@ -222,7 +229,16 @@
                           '\italic{Begründung: Hat \lm{ v_{p}(U) \ge 1 } für\color{*Bearb}{(???)} ein \lm{ p }, dann teilt \lm{ p } das Hauptideal \lm{ U \mathbb{S}_{\Z} }​, also ist \lm{ U } keine Einheit; umgekehrt folgt aus \lm{ v_{p}(U) = 0 } für \lm{ \forall p } per SA Einheitlichkeit.}',
                         '\condb{Schnitt – Charakterisierung via Schnitt:} \\\\'."\n".
                           '\lm{ \quad\;  \mathbb{S}_{\Z}​ = \bigcap_{ p } V_{p} \subset \mathbb{S}_{\Q}​ }. \\\\'."\n".
-                          '\italic{Beweis: Sei \lm{ x =  X / Y \in \bigcap_{ p } V_{p}​ } mit \lm{ X, Y \in \mathbb{S}_{\Z} }. Dann \lm{ v_{p}(X) \ge v_{p}(Y) } für \lm{ \forall p }. Definiere \lm{ D \in \mathbb{S}_{\Z} }​ über Primexponenten durch \lm{ v_{p}(D) := v_{p}(Y) } (existiert dank SA \condb{Endliche Prim-Unterstützung}). Dann \lm{ D | X } und \lm{ D | Y }, schreibe \lm{ X = DX′, Y = DY′ } mit \lm{ v_{p}(Y′) = 0 } für \lm{ \forall p }. Nach \condb{Einheitenkriterium} ist \lm{ Y′ } Einheit, also \lm{ x =  X′ / Y′ \in \mathbb{S}_{\Z} }​.}',
+                          '\cond{Beweis:} \\\\'."\n".
+                          '„\lm{ \subseteq }“ ist klar, denn für \lm{ X \in \mathbb{S}_{\Z}​ \setminus *\{ 0 *\} } gilt \lm{ v_{p}(X) \ge 0 } für \lm{ \forall p }. \\\\'."\n".
+                          'Für „\lm{ \supseteq }“ sei \lm{ x \in \bigcap_{p} V_{p} }. Wähle \lm{ x = X / Y } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 }. Schreibe gemäß \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat} \\\\'."\n".
+                            '\lm{ \quad\;  X = \s^{a} X^{(0)}, \quad Y = \s^{b} Y^{(0)}  \quad *( \mathrm{ord}_{\s}​(X^{(0)}) = \mathrm{ord}_{\s}​​(Y^{(0)}) = 0 *) }. \\\\'."\n".
+                          'Dann \\\\'."\n".
+                            '\lm{ \quad\;  v_{p}​(D) := v_{p}​(Y^{(0)}) } für die endlich vielen \lm{ p } mit \lm{ v_{p}​(Y^{(0)}) > 0 }, sonst \lm{ 0 }. \\\\'."\n".
+                          'Dann teilt \lm{ D } sowohl \lm{ Y^{(0)} } als auch \lm{ X^{(0)} }. Schreibe \lm{ X^{(0)} = D \cdot X′ } und \lm{ Y^{(0)} = D \cdot Y′ }. \\\\'."\n".
+                          'Für \lm{ \forall p } gilt nun \lm{ v_{p}(Y′) = 0 }; nach dem Einheitenkriterium (\condb{Einheitenkriterium}) ist \lm{ Y′ } Einheit in \lm{ \mathbb{S}_{\Z}​ }. Daher \\\\'."\n".
+                            '\lm{ \quad\;  \frac{ X^{(0)} }{ Y^{(0)} } = \frac{ X′ }{ Y′ } \in \mathbb{S}_{\Z}​ }, \\\\'."\n".
+                          'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }. \lm{ \blacksquare }',
                         '\condb{Korrelation – Ganz abgeschlossen:}'."\n".
                           'Als Schnitt ganz abgeschlossener Ringe \lm{ V_{p} } ist \lm{ \mathbb{S}_{\Z} } selbst ganz abgeschlossen.',
                     ))),
@@ -262,36 +278,52 @@
                     ''))),
 
                   array( 'text', array( text => array(
-                  '\bold{Randbemerkung zur endlichen Prim-Unterstützung} \\\\'."\n".
+                  '\bold{Randbemerkung zur \lm{ s }-Ordnung, zum \lm{ s }-primitiven Teil und zur Endlichkeit} \\\\'."\n".
                     'XXX'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Bemerkung – Plausibilität Endlicher Prim-Unterstützung:} \\\\'."\n".
-                    'Warum SA \condb{Endliche Prim-Unterstützung} plausibel ist: \\\\'."\n".
-                    'Jedes \lm{ X \in \mathbb{S}_{\Z} } besitzt eine endliche Darstellung'."\n".
+                  '\condb{Bemerkung – Struktur in Stellenschreibweise:} \\\\'."\n".
+                    'Warum ist SA \condb{Endliche Primunterstützung} plausibel? \\\\'."\n".
+                    'Jedes \lm{ X \in \mathbb{S}_{\Z} } hat eine \bold{endliche} Stellendarstellung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  X = z + \sum_{ [ 1,d ]_{\mathbb{N}} } a_{i} \s^{i}  \quad  z \in \mathbb{Z}, d \in \mathbb{N}, a_{i} \in \mathbb{A}_{\S}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( z \in \mathbb{Z}, d \in \mathbb{N}, a_{i} \in \mathbb{A}_{\S} *)  *[  X  =  z + \sum_{ [ 1,d ]_{\mathbb{N}} } a_{i} \s^{i}  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei hat \bold{nur} die Nullte Stelle einen \bold{ganzzahligen} Koeffizienten; alle \bold{positiven} Stellen tragen \bold{sinnvolle Koeffizienten} aus \lm{ \mathbb{A}_{\S} }.'."\n".
+                    'Mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{ord}_{s}(X)  =  \mathrm{min}*\{  i \ge 0  *|*  \text{der}\;\s^{i}\text{-Koeffizient ist}\, \ne 0  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erhalten wir die Zerlegung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  m  =  \mathrm{ord}_{s}(X)  }'),
+                      array( display => 'on',  latex => '{  \mathrm{ord}_{s}*(X^{(0)}*)  =  0  }'),
+                      array( display => 'on',  latex => '{  X  =  \s^{m} \cdot X^{(0)}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der \lm{ \s^{0} }-Koeffizient von \lm{ X^{(0)} } ist ungleich \lm{ 0 } (und kann in \lm{ \mathbb{A}_{\S} } liegen).'."\n".
+                    'Da \lm{ \s } alle Primzahlen trägt, hängt die endliche Primunterstützung von \lm{ X } ausschließlich von \lm{ X^{(0)} } ab; beim Addieren/Multiplizieren vereinigen sich jeweils nur die endlichen Unterstützungen der \lm{ \s }-primitiven Teile.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Dabei hat in \lm{ \mathbb{S}_{\Z} }​ \bold{nur} die Nullte Stelle einen \bold{ganzzahligen} Koeffizienten; alle \bold{positiven} Stellen tragen \bold{sinnvolle Koeffizienten} aus \lm{ \mathbb{A}_{\S} }.'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
                         'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ \bold{sind die rationalen Primteiler endlich} (klassisch).',
-                        'XXX Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} } und kann nach den bereits bewiesenen Regeln'."\n".
-                          '(Produkte, ganzzahlige Potenzen, endliche Summen, Radikale) mit endlich vielen rationalen Primfaktoren beschrieben werden.',
-                        'XXX Da Summe und Produkt ganzer Superial-Zahlen die Vereinigung der jeweils endlichen Prim-Unterstützungen nimmt, bleibt die Unterstützung endlich.',
+                        'Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} }; damit hat auch \lm{ a_{i} \s^{i} = (a_{i} s) \s^{i−1} \in \mathbb{S}_{\Z} } eine \bold{endliche} Prim-Unterstützung (in der auf der Seite benutzten p-adischen Exponentenbuchführung).',
+                        'Summe und Produkt \bold{vereinen} jeweils nur \bold{endlich} viele Primteiler.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'XXX Damit ist die SA \condb{Endliche Prim-Unterstützung} kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'Deshalb besitzt jedes \lm{ X \in \mathbb{S}_{\Z} } nur endlich viele rationale Primteiler (SA \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}),'."\n".
+                    'welche damit kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben ist.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
