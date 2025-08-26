@@ -9,6 +9,7 @@
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
   //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
+  //                      >:  "To_f_Paragraph", 'headline':  Add array parameter for the headline tag with default 'h3' which was 'h4' before.
   //           20250731:  +:  "To_f_Text_replace":  Make "$text" an optional parameter by setting "$text=''".
   //                      +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //                      +:  "To_f_Paragraph_list_v1":  Make "$Paragraph_fn" an optional parameter by setting "$Paragraph_fn=null" and "$list" by setting "$list=array()".
@@ -1726,7 +1727,9 @@
       case 'headline':
         $headlineColorStr = '';
         $anchorStr = '';
+        $headlineTag = 'h3';
         if (gettype( $text) == 'array') {
+          $headlineTag = array_key_exists( headlineTag, $text) ? $text[headlineTag] : $headlineTag;
           $headlineColorStr = array_key_exists( headlineColor, $text) ? ' color: #'.(To_f_Color($text[headlineColor])).';' : '';
           $anchorStr = array_key_exists( jump_name, $text) ? '<a name="'.($text[jump_name]).'"></a>' : '';
           
@@ -1736,7 +1739,7 @@
         }
         
         // #: "margin" can intersect, "padding" can not intersect and it will always add.
-        echo $offset.'<h4 style="margin-top: 20px;'.($headlineColorStr).'">'.($anchorStr);
+        echo $offset.'<'.($headlineTag).' style="margin-top: 20px;'.($headlineColorStr).'">'.($anchorStr);
         break;
       case 'conclusion':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
@@ -2342,7 +2345,7 @@
         echo $offset.'</p>'."\n";
         break;
       case 'headline':
-        echo '</h4>'."\n";
+        echo '</'.($headlineTag).'>'."\n";
         break;
       case 'conclusion':
         echo $offset.'  </span>'."\n";
