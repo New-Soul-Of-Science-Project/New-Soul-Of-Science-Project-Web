@@ -230,11 +230,21 @@
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:}'."\n",
                     '(a) \lm{ \s } ist durch jede rationale Primzahl teilbar (für alle Primzahlen \lm{ p } gilt \lm{ p \mid \s }).'."\n",
-                    '(b) Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } definieren wir den \lm{ \s }-primitiven Teil \lm{ X^{(0)} } über die \lm{ \s }-Ordnung'."\n",
-                      '\lm{ \qquad\quad  \mathrm{ord⁡_{s}}(X) := \mathrm{min} *\{ i \ge 0 *|* \text{der Koeffizient von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0 *\} }'."\n",
+                    '(b) Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } definieren wir den \lm{ \s }-primitiven Teil \lm{ X^{(0)} } über die \lm{ \s }-Ordnung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{ i \ge 0 *|* \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\; \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0 *\}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     'mittels \lm{ X = \s^{\mathrm{ord⁡_{s}}(X)} \cdot X^{(0)} } und \lm{ \mathrm{ord⁡_{s}}(X^{(0)}) = 0 }.'."\n",
                     '(c) Die \bold{Primunterstützung} eines Elements meint fortan \bold{die des \lm{ \s }-primitiven Teils}:'."\n",
-                      '\lm{ \qquad\quad  \mathrm{Supp}_{p}(X) := *\{ p \in \mathbb{P} *|* v_{p}(X^{(0)}) > 0 *\} }'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{Supp}_{p}(X)  :=  *\{ p \in \mathbb{P} *|* v_{p}(X^{(0)}) > 0 *\}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     'Diese Menge ist \bold{endlich}.'."\n",
                     '(d) Für alle \lm{ n \ge 1 } gilt \lm{ \s^{n}\mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }; allgemein \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} } (wohl aber \lm{ \mathbb{Z} \subset \mathbb{A}_{\S} } und \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} }).'."\n",
                     '\italic{Kommentar:} Die „unendliche“ Primdichte steckt vollständig im Faktor \lm{ s^{ord⁡_{s}}(X) }. Aussagen über „endliche Primunterstützung“ beziehen sich immer auf \lm{ X^{(0)} } (d. h. auf die zusätzliche, von \lm{ \s } unabhängige Primstruktur).'."\n".
@@ -249,12 +259,20 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Bewertungen \lm{ v_{p} }:}'."\n",
-                    'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } setze'."\n",
-                      '\lm{ \qquad\quad  v_{p}(X) := \mathrm{sup}⁡*\{ e \in \mathbb{Z}_{\ge 0} *|* X \in p^{e}\mathbb{S}_{\Z} *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\} },'."\n",
-                      '\lm{ \qquad\quad  v_{p}(0) := \infty }.'."\n",
-                    'Für \lm{ x = X / Y \in \mathbb{S}_{\Q}^{\times} } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 } setze'."\n",
-                      '\lm{ \qquad\quad  v_{p}​(x) := v_{p}​(X) − v_{p}​(Y) \in \mathbb{Z} }.'."\n".
+                    'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } setze'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}(X)  :=  \mathrm{sup}⁡*\{ e \in \mathbb{Z}_{\ge 0} *|* X \in p^{e}\mathbb{S}_{\Z} *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  v_{p}(0)  :=  \infty  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für \lm{ x = X / Y \in \mathbb{S}_{\Q}^{\times} } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 } setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(x)  :=  v_{p}​(X) − v_{p}​(Y) \in \mathbb{Z}  \;\; .  }'),
+                    ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Axiom 0:}'."\n".
                     'Die Bewertungen \lm{ v_{p} }​ sind wohldefiniert und erfüllen für \lm{ x, y \in \mathbb{S}_{\Q}^{\times} }.'."\n".
@@ -274,9 +292,12 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Valuationsring \lm{ V_{p} }:}'."\n",
-                    'Setze'."\n",
-                      '\lm{ \qquad\quad  V_{p} := *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup \{ 0 \} }.'."\n".
+                    'Setze'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  V_{p}  :=  *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup \{ 0 \}  \;\; .  }'),
+                    ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Struktur von \lm{ V_{p} }:}'."\n",
                     '\lm{ V_{p} }​ ist ein lokaler Valuationsring mit maximalem Ideal \lm{ m_{p} = *\{ x *|* v_{p}(x) > 0 *\} \cup *\{ 0 *\} }.'."\n",
@@ -301,17 +322,39 @@
                     '\italic{Begründung:} Hat \lm{ v_{p}(U) \ge 1 } für ein \lm{ p }, dann teilt \lm{ p } das Hauptideal \lm{ U \mathbb{S}_{\Z} }​, also ist \lm{ U } keine Einheit; umgekehrt folgt aus \lm{ v_{p}(U) = 0 } für \lm{ \forall p } per SA Einheitlichkeit.'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
-                  '\bold{Schnitt – Charakterisierung via Schnitt:}'."\n",
-                    '\lm{ \qquad\quad  \mathbb{S}_{\Z}​ = \bigcap_{ p } V_{p} \subset \mathbb{S}_{\Q}​ }.'."\n",
+                  '\bold{Schnitt – Charakterisierung via Schnitt:}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}​  =  \bigcap_{ p } V_{p} \subset \mathbb{S}_{\Q}​  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     '\italic{Beweis:}'."\n".
                     '„\lm{ \subseteq }“ ist klar, denn für \lm{ X \in \mathbb{S}_{\Z}​ \setminus *\{ 0 *\} } gilt \lm{ v_{p}(X) \ge 0 } für \lm{ \forall p }.'."\n".
-                    'Für „\lm{ \supseteq }“ sei \lm{ x \in \bigcap_{p} V_{p} }. Wähle \lm{ x = X / Y } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 }. Schreibe gemäß \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}'."\n",
-                      '\lm{ \qquad\quad  X = \s^{a} X^{(0)}, \quad Y = \s^{b} Y^{(0)}  \quad *( \mathrm{ord}_{\s}​(X^{(0)}) = \mathrm{ord}_{\s}​​(Y^{(0)}) = 0 *) }.'."\n",
-                    'Dann'."\n",
-                      '\lm{ \qquad\quad  v_{p}​(D) := v_{p}​(Y^{(0)}) } für die endlich vielen \lm{ p } mit \lm{ v_{p}​(Y^{(0)}) > 0 }, sonst \lm{ 0 }.'."\n",
+                    'Für „\lm{ \supseteq }“ sei \lm{ x \in \bigcap_{p} V_{p} }. Wähle \lm{ x = X / Y } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 }. Schreibe gemäß \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  X  =  \s^{a} X^{(0)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  Y  =  \s^{b} Y^{(0)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathrm{ord}_{\s}​(X^{(0)})  =  \mathrm{ord}_{\s}​​(Y^{(0)}) = 0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann, für die endlich vielen \lm{ p },'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(D)  :=  \begin{cases} v_{p}​(Y^{(0)})  &  \text{ falls } v_{p}​(Y^{(0)}) > 0  \\\\  0  &  \text{ sonst }  \end{cases}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     'Dann teilt \lm{ D } sowohl \lm{ Y^{(0)} } als auch \lm{ X^{(0)} }. Schreibe \lm{ X^{(0)} = D \cdot X′ } und \lm{ Y^{(0)} = D \cdot Y′ }.'."\n",
                     'Für \lm{ \forall p } gilt nun \lm{ v_{p}(Y′) = 0 }; nach dem Einheitenkriterium (\condb{Einheitenkriterium}) ist \lm{ Y′ } Einheit in \lm{ \mathbb{S}_{\Z}​ }. Daher'."\n",
-                      '\lm{ \qquad\quad  \frac{ X^{(0)} }{ Y^{(0)} } = \frac{ X′ }{ Y′ } \in \mathbb{S}_{\Z}​ },'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ X^{(0)} }{ Y^{(0)} }  =  \frac{ X′ }{ Y′ } \in \mathbb{S}_{\Z}​  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
@@ -328,12 +371,26 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Schlüssel-Proposition:}'."\n".
-                    'Ist \lm{ \mathbb{S}_{\Z} } in \lm{ \mathbb{S}_{\Q} } ganz abgeschlossen (\condb{Korrelation – Ganz abgeschlossen}), dann gilt:'."\n",
-                      '\lm{ \qquad\quad  }Jede reell algebraische Zahl \lm{ \alpha } liegt in \lm{ \mathbb{A}_{\S} }.'."\n",
-                    '\italic{Beweis:} Sei \lm{ \alpha } reell algebraisch, Nullstelle eines monischen Polynoms'."\n",
-                      '\lm{ \qquad\quad  \alpha^{n} + a_{n - 1} \alpha^{n - 1} + \cdots + a_{0} ​= 0  \quad } mit \lm{ a_{i} \in \mathbb{Z}​ }.'."\n",
-                    'Setze \lm{ Y := \alpha \cdot s } und multipliziere mit \lm{ s^{n} }:'."\n",
-                      '\lm{ \qquad\quad  Y^{n} + *( a_{n - 1} \s *) Y^{n - 1} + \cdots + *( a_{1} \s^{n - 1} *) Y + a_{0} \s^{n} ​= 0 }.'."\n",
+                    'Ist \lm{ \mathbb{S}_{\Z} } in \lm{ \mathbb{S}_{\Q} } ganz abgeschlossen (\condb{Korrelation – Ganz abgeschlossen}), dann gilt:'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                        'Jede reell algebraische Zahl \lm{ \alpha } liegt in \lm{ \mathbb{A}_{\S} }.'."\n".
+                        ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:} Sei \lm{ \alpha } reell algebraisch, Nullstelle eines monischen Polynoms'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a_{i} \in \mathbb{Z}​ *)  *[  \alpha^{n} + a_{n - 1} \alpha^{n - 1} + \cdots + a_{0}  =  0  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Setze \lm{ Y := \alpha \cdot s } und multipliziere mit \lm{ s^{n} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  Y^{n} + *( a_{n - 1} \s *) Y^{n - 1} + \cdots + *( a_{1} \s^{n - 1} *) Y + a_{0} \s^{n}  =  0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
                     'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m }.'."\n".
                     'Also ist \lm{ Y } ist \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \blacksquare }'."\n".
