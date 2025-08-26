@@ -234,7 +234,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{ i \ge 0 *|* \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\; \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0 *\}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{  i \ge 0  *|*  \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\; \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0  *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'mittels \lm{ X = \s^{\mathrm{ord⁡_{s}}(X)} \cdot X^{(0)} } und \lm{ \mathrm{ord⁡_{s}}(X^{(0)}) = 0 }.'."\n",
@@ -242,7 +242,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{Supp}_{p}(X)  :=  *\{ p \in \mathbb{P} *|* v_{p}(X^{(0)}) > 0 *\}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{Supp}_{p}(X)  :=  *\{  p \in \mathbb{P}  *|*  v_{p}(X^{(0)}) > 0  *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Diese Menge ist \bold{endlich}.'."\n",
@@ -263,7 +263,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}(X)  :=  \mathrm{sup}⁡*\{ e \in \mathbb{Z}_{\ge 0} *|* X \in p^{e}\mathbb{S}_{\Z} *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  v_{p}(X)  :=  \mathrm{sup}⁡*\{  e \in \mathbb{Z}_{\ge 0}  *|*  X \in p^{e}\mathbb{S}_{\Z}  *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\}  \;\; ,  }'),
                       array( display => 'on',  latex => '{  v_{p}(0)  :=  \infty  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -296,7 +296,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  V_{p}  :=  *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup \{ 0 \}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  V_{p}  :=  *\{  x \in \mathbb{S}_{\Q}  *|*  v_{p}(x) \ge 0  *\} \cup \{ 0 \}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Struktur von \lm{ V_{p} }:}'."\n",
