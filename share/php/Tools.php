@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 31.07.2025, 22:00h
+  // #: Stand: 26.08.2025, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
   //           20250731:  +:  "To_f_Text_replace":  Make "$text" an optional parameter by setting "$text=''".
   //                      +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //                      +:  "To_f_Paragraph_list_v1":  Make "$Paragraph_fn" an optional parameter by setting "$Paragraph_fn=null" and "$list" by setting "$list=array()".
@@ -1646,31 +1647,6 @@
   
 
   
-  const arrayMarginLeftRight = 'arrayMarginLeftRight';
-  const arrayType = 'arrayType';
-  const bullet_ary = 'bullet_ary';
-  const Display = 'Display';
-  const headlineColor = 'headlineColor';
-  const horizontalLineBefore = 'horizontalLineBefore';
-  const intent = 'intent';
-  const jump_anchor = 'jump_anchor';
-  const jump_url = 'jump_url';
-  const jumpName = 'jumpName';
-  const jumpurl = 'jumpurl';
-  const NoIntentInFirstLine = 'NoIntentInFirstLine';
-  const ParagraphList = 'ParagraphList';
-  const Title = 'Title';
-  const titleColor = 'titleColor';
-  const titleClass = 'titleClass';
-  const TextColor = 'TextColor';
-  const TextAlign = 'TextAlign';
-  const titel_short = 'titel_short';
-  const subline = 'subline';
-  const sublineColor = 'sublineColor';
-  const TitleVis = 'TitleVis';
-  const title_chapter = 'title_chapter';
-  const title_site = 'title_site';
-
   function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Color_list, $Glo_g_TextAlign, $Glo_g_Paragraph_fn, $Glo_g_Intent, $Glo_g_Intent_InFirstLine, $Glo_g_FigAlign;
