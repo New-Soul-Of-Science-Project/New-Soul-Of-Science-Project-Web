@@ -412,10 +412,17 @@
                   array( 'text', array( Shape  => 'conclusion', text => array(
                         'Alle reell algebraischen Zahlen gehören zu den sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }.'."\n".
                         ''))),
-
-                  array( 'text', array( text => array(
-                    'Was wir beweisen wollten.'."\n".
+                  array( 'text', array( intent => '0em', text => array(
+                    'Also ist'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'was zu beweisen war.'."\n".
+                    ''))),
+
                   array( 'text', array( text => array(
                     'Damit haben wir tatsächlich unser bemerkenswertes Ziel erreicht zu zeigen,'."\n".
                     'dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten der Menge der Superial-Zahlen sind.'."\n".
