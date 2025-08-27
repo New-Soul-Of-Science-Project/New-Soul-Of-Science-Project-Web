@@ -221,12 +221,20 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Integritätsbereich:}'."\n".
-                    '\lm{ \mathbb{S}_{\Z} } ist also Integritätsbereich mit \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} } und ausgezeichnetem Element \lm{ \s \in \mathbb{S}_{\Z} }. Der Quotientenkörper sei \lm{ \s \in \mathbb{S}_{\Q} := \mathrm{Frac}(\mathbb{S}_{\Z}) }.'."\n".
+                    '\lm{ \mathbb{S}_{\Z} } ist also Integritätsbereich mit \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} } und ausgezeichnetem Element \lm{ \s \in \mathbb{S}_{\Z} }. Der Quotientenkörper sei'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  \in  \mathbb{S}_{\Q}  :=  \mathrm{Frac}(\mathbb{S}_{\Z})  \;\; .  }'),
+                    ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Primzahldivisoren:}'."\n".
-                    'Für jede (rationale) Primzahl \lm{ p } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner \lm{ \bigcap_{e \ge 0} p^{e} \mathbb{S}_{\Z} = *\{ 0 *\} }.'."\n".
+                    'Für jede (rationale) Primzahl \lm{ p } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner gilt'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \bigcap_{e \ge 0} p^{e} \mathbb{S}_{\Z}  =  *\{ 0 *\}  \;\; .  }'),
+                    ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:}'."\n",
                     '(a) \lm{ \s } ist durch jede rationale Primzahl teilbar (für alle Primzahlen \lm{ p } gilt \lm{ p \mid \s }).'."\n",
@@ -234,7 +242,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{  i \ge 0  *|*  \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\; \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{  i \ge 0  *|*  \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\quad \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0  *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'mittels \lm{ X = \s^{\mathrm{ord⁡_{s}}(X)} \cdot X^{(0)} } und \lm{ \mathrm{ord⁡_{s}}(X^{(0)}) = 0 }.'."\n",
@@ -263,7 +271,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}(X)  :=  \mathrm{sup}⁡*\{  e \in \mathbb{Z}_{\ge 0}  *|*  X \in p^{e}\mathbb{S}_{\Z}  *\} \in \mathbb{Z}_{\ge 0} \cup *\{ \infty *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  v_{p}(X)  :=  \mathrm{sup}⁡*\{  e \in \mathbb{Z}_{\ge 0}  *|*  X \in p^{e}\mathbb{S}_{\Z}  *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\;  \in  \mathbb{Z}_{\ge 0} \cup *\{ \infty *\}  \;\; ,  }'),
                       array( display => 'on',  latex => '{  v_{p}(0)  :=  \infty  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -271,7 +279,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}​(x)  :=  v_{p}​(X) − v_{p}​(Y) \in \mathbb{Z}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  v_{p}​(x)  :=  v_{p}​(X) − v_{p}​(Y)  \in  \mathbb{Z}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Axiom 0:}'."\n".
@@ -366,8 +374,7 @@
                   'Reell algebraische Zahlen in \lm{ \mathbb{A}_{\S} }', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Nun zeigen wir, dass wirklich alle reell algebraischen Zahlen in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Schlüssel-Proposition:}'."\n".
@@ -384,15 +391,18 @@
                       array( display => 'on',  latex => '{  *( a_{i} \in \mathbb{Z}​ *)  *[  \alpha^{n} + a_{n - 1} \alpha^{n - 1} + \cdots + a_{0}  =  0  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Setze \lm{ Y := \alpha \cdot s } und multipliziere mit \lm{ s^{n} }:'."\n".
+                    'Setze \lm{ Y := \alpha \cdot \s } und multipliziere mit \lm{ \s^{n} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  Y^{n} + *( a_{n - 1} \s *) Y^{n - 1} + \cdots + *( a_{1} \s^{n - 1} *) Y + a_{0} \s^{n}  =  0  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \alpha^{n} \s^{n} + a_{n - 1} \alpha^{n - 1} \s^{n} + \cdots + a_{1} \alpha \s^{n} + a_{0} \s^{n}  =  0  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \alpha^{n} \s^{n} + a_{n - 1} \s \alpha^{n - 1} \s^{n - 1} + \cdots \\\ \qquad\qquad\qquad\qquad \cdots + a_{1} \s^{n - 1} \alpha \s + a_{0} \s^{n}  =  0  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \alpha \cdot \s *)^{n} + *( a_{n - 1} \s *) *( \alpha \cdot \s *)^{n - 1} + \cdots \\\ \qquad\qquad\qquad\qquad \cdots + *( a_{1} \s^{n - 1} *) *( \alpha \cdot \s *) + a_{0} \s^{n}  =  0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  Y^{n} + *( a_{n - 1} \s *) Y^{n - 1} + \cdots + *( a_{1} \s^{n - 1} *) Y + a_{0} \s^{n}  =  0  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m }.'."\n".
-                    'Also ist \lm{ Y } ist \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
+                    'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m \in \mathbb{N} }.'."\n".
+                    'Also ist \lm{ Y } \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
@@ -404,20 +414,18 @@
                         ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Was wir beweisen wollten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit haben wir tatsächlich unser bemerkenswertes Ziel erreicht zu zeigen,'."\n".
+                    'dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten der Menge der Superial-Zahlen sind.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Randbemerkung zur \lm{ \s }-Ordnung, zum \lm{ \s }-primitiven Teil und zur Endlichkeit', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie können wir verstehen, was wir bewiesen haben?'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Bemerkung – Struktur in Stellenschreibweise:}'."\n",
@@ -454,14 +462,13 @@
 
                   array( 'bulletlist', array( bullet_ary => array(
                         'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ \bold{sind die rationalen Primteiler endlich} (klassisch).',
-                        'Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} }; damit hat auch \lm{ a_{i} \s^{i} = (a_{i} s) \s^{i−1} \in \mathbb{S}_{\Z} } eine \bold{endliche} Prim-Unterstützung (in der auf der Seite benutzten p-adischen Exponentenbuchführung).',
+                        'Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} }; damit hat auch \lm{ a_{i} \s^{i} = (a_{i} s) \s^{i−1} \in \mathbb{S}_{\Z} } eine \bold{endliche} Prim-Unterstützung (in der in den Superial-Zahlen benutzten p-adischen Exponentenbuchführung).',
                         'Summe und Produkt \bold{vereinen} jeweils nur \bold{endlich} viele Primteiler.',
                     ))),
 
                   array( 'text', array( text => array(
                     'Deshalb besitzt jedes \lm{ X \in \mathbb{S}_{\Z} } nur endlich viele rationale Primteiler (SA \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}),'."\n".
-                    'welche damit kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben ist.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'welche damit kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben ist.'."\n".
                     ''))),
 
                   array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
