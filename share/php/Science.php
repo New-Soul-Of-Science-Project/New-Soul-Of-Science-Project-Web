@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 13.08.2025, 07:00h
+  // #: Stand: 27.08.2025, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250827:  +:  "$Sc_g_equation_replace_ary":  Add '  \subseteq  ' -> '\;\;\;:\subseteq\;\;\;'
   //           20250813:  +:  "MathJax":  Add Macro "Q" for "\Q" to generate a non italic "Q" for rational superial numbers useful for set S.
   //           20250625:  +:  "Sc_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //           20250309:  +:  "$Sc_g_equation_replace_ary":  Add '  :\neq  ' -> '\;\;\;:\neq\;\;\;' and ':\neq' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq' and ':\in' -> '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'
@@ -687,6 +688,7 @@
                                     array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
