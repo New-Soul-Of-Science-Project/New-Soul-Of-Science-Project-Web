@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 27.08.2025, 17:00h
+  // #: Stand: 28.08.2025, 10:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250828:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\subseteq  ' -> '\;\;\;?\subseteq\;\;\;', '?\subseteq' -> '\overset{?}{\subseteq}', '?\subset' -> '\overset{?}{\subset}'
   //           20250827:  +:  "$Sc_g_equation_replace_ary":  Add '  \subseteq  ' -> '\;\;\;:\subseteq\;\;\;'
   //           20250813:  +:  "MathJax":  Add Macro "Q" for "\Q" to generate a non italic "Q" for rational superial numbers useful for set S.
   //           20250625:  +:  "Sc_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
@@ -689,6 +690,7 @@
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
@@ -697,6 +699,8 @@
                                     array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
+                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
+                                    array( '?\subset', '\overset{?}{\subset}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
