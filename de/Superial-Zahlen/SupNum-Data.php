@@ -368,12 +368,14 @@
                    
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen' => array( headline_text => 'Perspektive des Stellenwertsystems der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As' => array( headline_text => 'SN.SinK.2'),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen' => array( headline_text => 'SN.SinK.5'),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.SinK.6'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen' => array( headline_text => 'SN.SinK.5'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.SinK.6'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen' => array( headline_text => 'SN.SinK.7'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S' => array( headline_text => 'SN.SinK.8'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen' => array( headline_text => 'Vermutung, dass superiale Koeffizienten reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen' => array( headline_text => 'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten' => array( headline_text => 'Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen' => array( headline_text => 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),

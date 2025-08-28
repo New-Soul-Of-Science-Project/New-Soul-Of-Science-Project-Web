@@ -1078,9 +1078,9 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  *( e^{a^{+} \cdot \i \cdot 2 π} *)^{\s}  ?=  1  *]  }'),
                     ))),
                   array( 'text', array( text => array(

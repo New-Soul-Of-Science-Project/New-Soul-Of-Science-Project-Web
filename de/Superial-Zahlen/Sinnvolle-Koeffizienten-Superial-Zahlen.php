@@ -27,7 +27,7 @@
                     'Zur Frage, welche Koeffizienten innerhalb der Superial-Zahlen sinnvoll sind, gibt es mindestens zwei Ausgangspunkte und Perspektiven,'."\n".
                     'die scheinbar auf das selbe Ergebnis hinauslaufen:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
                       
                 'Perspektive der Zahlentheorie der Analysis', subline =>
                   '')),
@@ -54,7 +54,7 @@
                     'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}'."\n".
                     'gilt, bleibt hingegen erst einmal noch offen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen', text =>
                       
                 'Perspektive des Stellenwertsystems der Superial-Zahlen', subline =>
                   '')),
@@ -94,6 +94,7 @@
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Es existiere also die Menge'."\n".
+                      '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -111,12 +112,18 @@
                     'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n".
                     'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
                       
                 'Entsprechen die sinnvollen Koeffizienten allen reellen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} ?= \mathbb{R} } ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }')),
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{Bezüglich der Transzendenz} \\\\'."\n".
+                    'Ob \lm{ \mathbb{A}_{\S} ?= \mathbb{R} } gilt, ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Bezüglich der Transzendenz', subline =>
+                    '')),
+                  array( 'text', array( text => array(
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
                     'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
                     'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
@@ -133,12 +140,15 @@
                     'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endliche Potenzen von \lm{ \s } erlauben.'."\n",
                       'Damit würde ich \lm{ \e_{\s} } eigentlich nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zählen.'."\n".
                     'In meinen Augen sind hier also noch Einigungen nötig, welche Zahlen wir sinnvollerweise zu \lm{ \mathbb{R} } hinzurechnen.'."\n".
-                    'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als eulersche Zahl anzusehen oder ob'."\n".
-                    'wir nur noch \lm{ \e_{\s} } als eulersche Zahl anerkennen sollten.'."\n".
-                    'Oder legen wir vielleicht sogar fest, dass \lm{ \e := \e_{\s} } gilt?'."\n".
+                    'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als \italic{die} eulersche Zahl anzusehen oder ob'."\n".
+                    'wir nur \lm{ \e_{\s} } als eulersche Zahl erkennen sollten und \lm{ \e } als ihren algebraischen Anteil.'."\n".
+                    'Oder legen wir vielleicht sogar fest, dass \lm{ \e := \e_{\s} } gilt und wir ihren algebraischen Anteil als \lm{ \e_{a} } bezeichnen?'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }} \\\\'."\n".
                     'Alle reellen Zahlen, die nicht transzendent sind, sind reell algebraische Zahlen.'."\n".
                     'Dann stellt sich die Frage, ob wirklich alle reell algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
                     'ganze Zahlen sind.'."\n",
@@ -151,33 +161,41 @@
                     '\lm{ q^{+} } ist also eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{aktual unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }};'."\n".
                     'und dann auch eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
                     'wie oben bereits gesagt:'."\n".
+                    '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Bleibt die Frage …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
                       
-                'Sind die sinnvollen Koeffizienten alle reell algebraischen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
+                'Sind alle reell algebraischen Zahlen unter den sinnvollen Koeffizienten?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\lm{ \mathbb{A}_{\R} ?\subseteq \mathbb{A}_{\S} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen darstellen.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
                     'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen genannt werden.'."\n",
                       'Ich vermute, diese reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
+                    '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\R}  ?\subseteq  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht.'."\n",
@@ -201,7 +219,7 @@
                     'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
                     'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
                       
                 'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
                   'Die Wurzelausdrücke und die Radikal-Abgeschlossenheit')),
@@ -210,8 +228,11 @@
                     'ganzer Potenzen, im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die ganzzahligen Wurzeln', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die ganzzahligen Wurzeln} \\\\'."\n".
                     'Der Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} liefert uns den Ansatz'."\n".
                     'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} zu zeigen,'."\n".
                     'dass alle Wurzeln beziehungsweise alle Radikale der reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind:'."\n".
@@ -227,8 +248,11 @@
                     'Eine folgenreiche Erkenntnis, die uns im weiteren ermöglicht, dies auch für fast alle anderen Radikalformen zu zeigen.'."\n".
                     'Nur für die verschachtelten Wurzelausdrücke werden wir größeren Aufwand betreiben müssen.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln', text =>
+                  'Die Kehrwerte der Wurzeln', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln}{}Die Kehrwerte der Wurzeln} \\\\'."\n".
                     'Als nächstes können wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten}‹} zeigen,'."\n".
                     'dass auch die Kehrwerte aller Wurzeln sinnvolle Koeffizienten der Superial-Zahlen sind:'."\n".
                       ''))),
@@ -242,8 +266,11 @@
                   array( 'text', array( text => array(
                     'Das vervollständigt unser Bild, worauf wir weiter aufbauen können.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln', text =>
+                  'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte} \\\\'."\n".
                     'Im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte}‹} zeigen wir,'."\n".
                     'dass die Potenzen aller Wurzeln und ihrer Kehrwerte wegen'."\n".
                     ''))),
@@ -256,8 +283,11 @@
                   array( 'text', array( text => array(
                     'ebenfalls allesamt sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die Produkte der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Produkte der Wurzeln und ihrer Kehrwerte} \\\\'."\n".
                     'Auch die Produkte der Wurzeln beziehungsweise ihrer Kehrwerte sind alle sinnvolle Koeffizienten der Superial-Zahlen'."\n".
                     ''))),
                   array( 'equations',
@@ -269,8 +299,11 @@
                     'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte}‹}'."\n".
                     'mit etwas größerem Aufwand zeigen können.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die Summen der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Summen der Wurzeln und ihrer Kehrwerte} \\\\'."\n".
                     'Das die Summen von Wurzeln oder deren Kehrwerte im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahlen und'."\n".
                     'damit sinnvolle Koeffizienten der Superial-Zahlen sind, können am Zusammenhang'."\n".
                     ''))),
@@ -286,8 +319,11 @@
                       'So ist dann auch der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt}{Goldene Schnitt}'."\n".
                     'ein sinnvoller Koeffizient.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Geschachtelte Wurzeln und ihre Kehrwerte mit Summen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Geschachtelte Wurzeln und ihre Kehrwerte mit Summen} \\\\'."\n".
                     'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten'."\n".
                     ''))),
                   array( 'equations',
@@ -300,18 +336,29 @@
                     'und so öffnen, dass die Koeffizienten in der ersten Schicht der Superial-Zahlen verbleiben.'."\n".
                     'Damit ergeben sich ausschließlich ganze Superial-Zahlen.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Radikal-Abgeschlossenheit', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Radikal-Abgeschlossenheit} \\\\'."\n".
                     'Damit haben wir nun die Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen erreicht,'."\n".
                     'was ein entscheidender Schritt ist zu erkennen, dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
                       
                 'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
-                  // '\cond{X} \\\\'."\n".
+                    'Um die Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} } zu zeigen, müssen wir uns um zwei Teile kümmern:'."\n".
+                    'Zum einen zeigen, dass \lm{ \mathbb{A}_{\R} ?\subseteq \mathbb{A}_{\S} } gilt'."\n".
+                    'und zum anderen zeigen, dass keine transzendenten Zahlen in \lm{ \mathbb{A}_{\S} } sind.'."\n",
+                      'Fangen wir damit an, zu zeigen, dass alle reellen Nullstellen von Polynomen in \lm{ \mathbb{A}_{\S} } liegen, also alle Zahlen aus \lm{ \mathbb{A}_{\R} }.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
                     'Zu algebraischen Zahlen, die Nullstellen von Polynomen ersten bis vierten Grades entsprechen, finden wir in Wikipedia:'."\n".
                     ''))),
                       
@@ -329,8 +376,11 @@
                     'entsprechen, vollständig abgedeckt.'."\n".
                     'Wir wissen nun also, dass die Realanteile dieser Nullstellen alle sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Nullstellen von Polynomen fünften und höheren Grades', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Nullstellen von Polynomen fünften und höheren Grades} \\\\'."\n".
                     'Für die Lösung der Nullstellen von Polynomen fünften Grades können wir folgendes in Wikipedia finden:'."\n".
                     ''))),
                       
@@ -348,20 +398,26 @@
                     'ersten bis vierten Grades sind und doch mit Radikalen darstellbar, denn:'."\n".
                     '\quote{Manche Gleichungen fünften Grades können mit Wurzeln gelöst werden, […]}\footnote{Vgl. \cite{wiki:GleichungFuenftenGrades:2024}, Lösbare Gleichungen fünften Grades, Voraussetzungen für die Lösbarkeit.}'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen', text =>
+                  'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{}Vermutung, dass superiale Koeffizienten reell algebraische Zahlen sind} \\\\'."\n".
                     'Für den Rest der reell algebraischen Zahlen scheint es nicht simpel zu sein zu zeigen, dass sie ebenfalls'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
-                      'Wegen der Abgeschlossenheit der algebraischen Zahlen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
-                    'und der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Erkenntnisse zur transzendenten Zahl \lm{ \e_{\s} }},'."\n".
+                      'Wegen der Ganz-Abgeschlossenheit der algebraischen Zahlen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
+                    'und der bereits gezeigten \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit der sinnvollen Koeffizienten}'."\n".
+                    'sowie der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Erkenntnisse zur transzendenten Zahl \lm{ \e_{\s} }},'."\n".
                     'die offensichtlich superiale aktual unendlich kleine Summanden enthält, sowie meiner Vermutung,'."\n".
                     'dass dies auch für alle anderen transzendenten Zahlen gilt, vermute ich, dass wirklich genau alle'."\n".
                     'reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
                     'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
-                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
-                    'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}'."\n".
-                    'stimmt.'."\n".
+                      'Genau das ist unsere \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
+                    'ergänzt durch unsere \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹},'."\n".
+                    'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}'."\n".
+                    'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}'."\n".
+                    'stimmen.'."\n".
                     'Das wäre schon ziemlich erfreulich und cool.'."\n".
                     ''))),
                       
@@ -400,7 +456,7 @@
                       'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
                     'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen', text =>
                       
                 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
                   '')),
@@ -451,7 +507,7 @@
                     'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
                     'was im Folgenden sehr wichtig wird.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:X', text =>
                       
                 'Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen', subline =>
                   '')),
@@ -815,7 +871,7 @@
                     'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
                       
                 'Die Produkte der Wurzeln mit gleicher Basis', subline =>
                   '')),
@@ -871,7 +927,7 @@
                     'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
                     'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
                       
                 'Die Produkte der Wurzeln mit unterschiedlicher Basis', subline =>
                   '')),
@@ -966,7 +1022,7 @@
                   array( 'text', array( text => array(
                     'Sind auch die Summen der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:X', text =>
                       
                 'Die Summe einer Wurzel, oder ihres Kehrwerts, mit einer endlichen ganzen Zahlen', subline =>
                   '')),
@@ -1015,7 +1071,7 @@
                   array( 'text', array( text => array(
                     'Die Summen von irrationalen Wurzeln, oder ihren Kehrwerten sind also ebenfalls sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt', text =>
                       
                 'Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl', subline =>
                   '')),
@@ -1075,7 +1131,7 @@
                   array( 'text', array( text => array(
                     'Wir fahren fort, weitere Varianten der reell algebraischen Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln', text =>
                       
                 'Summen und Differenzen von Wurzeln', subline =>
                   '')),
@@ -1152,7 +1208,7 @@
                     'alle ganzen Zahlen \lm{ \mathbb{Z} }, alle rationalen Zahlen \lm{ \mathbb{Q} } und alle Radikalformen,'."\n".
                     'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Das beliebig tiefe Aufbrechen verschachtelter Wurzelausdrücke', subline =>
                   '')),
@@ -1235,7 +1291,7 @@
                       'Verschachtelte Wurzelausdrücke sind also nichts anderes, als die Wiederholte Anwendung des Arguments,'."\n".
                     'mit dem die Wurzeln zu aktual unendlich großen ganzen Zahlen werden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Radikal-Abgeschlossenheit', subline =>
                   '')),
@@ -1244,7 +1300,7 @@
                     'Ein wichtiger Schritt in Richtung des Beweises der'."\n".
                     '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Neue Rechenregeln XXX', subline =>
                   '')),
@@ -1282,7 +1338,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Quadratische pythagoreische Tripel', subline =>
                   '')),
@@ -1370,7 +1426,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
@@ -1402,7 +1458,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),

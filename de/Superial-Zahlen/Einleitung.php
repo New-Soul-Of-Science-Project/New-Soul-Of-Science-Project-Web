@@ -124,7 +124,7 @@
                     'die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbar sind.'."\n".
                     'Dass genau alle reell algebraischen Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermuten wir},'."\n".
                     'ist jedoch noch zu beweisen.'."\n",
-                      '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
+                      '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
