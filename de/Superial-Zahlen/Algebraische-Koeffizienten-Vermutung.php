@@ -162,20 +162,47 @@
                 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Und diesen Beweis wollen wir nun angehen.'."\n".
+                    'Um den gesuchten Beweis zu führen, habe ich, neben eigenen Ansatzideen und dazugehörigen Recherchen, auch ChatGPT 5 Thinking um Ideen dazu befragt.'."\n".
+                    'Nachfolgend nun der so gefundene Beweis, dessen Ansatz und Vorgehensweise ich, zum besseren Verständnis, vorab darlege.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
-                  'Unser Vorgehen', subline =>
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Glossar', subline =>
+                    '')),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{endliche Primzahl:} eine Primzahl \lm{ p \in \mathbb{P} = *\{ 2, 3, 5, \cdots *\} } aus \lm{ \mathbb{N} }, als Element in \lm{ \mathbb{S}_{\Z} } eingebettet. \\\\'."\n".
+                          '\italic{Notation:} \lm{ p } „endliche Primzahl“ \lm{ \Leftrightarrow } Ideal \lm{ p \mathbb{S}_{\Z} }, Bewertung \lm{  v_{p}}.',
+                        '\bold{superiale Primzahl:} Primelement in \lm{ \mathbb{S}_{\Z}\!: \; p_{\s} \ne 0 }, \lm{ p_{\s} } keine Einheit, und \lm{ p_{\s} \mid ab \;\Leftrightarrow\; p_{\s} \mid a \; } oder \lm{ \; p_{\s} \mid b \; }. („aktual unendliche Primzahl“ in unserer Sprache.)',
+                        '\bold{Primideal:} primes Ideal (zum Beispiel \lm{ p \mathbb{S}_{\Z} }, \lm{ ⟨p_{\s}⟩ }).',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    '\italic{Hinweis:} „aktual unendlich“ bezieht sich hier auf die Skala/Basis \lm{ \s }.'."\n".
+                    'Bei „superialer Primzahl“ meinen wir ringtheoretische Primheit in \lm{ \mathbb{S}_{\Z} }, nicht unbedingt „unendlich große“ numerische Größe.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Terminologie', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Dazu trennen wir zuerst bei jeder ganzen Superial-Zahl \lm{ X \in \mathbb{S}_{\Z} } den „allgemeinen \lm{ \s }-Vorrat“ von der eigentlichen arithmetischen Information.'."\n".
-                    'Weil \lm{ \s } alle rationalen Primzahlen „trägt“, kann man \lm{ X } eindeutig als \lm{ X = \s^{m} \cdot X^{(0)} } schreiben.'."\n".
+                    'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
+                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
+                    'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Unser Ansatz und Vorgehen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Als Ansatz trennen wir zuerst bei jeder ganzen Superial-Zahl \lm{ X \in \mathbb{S}_{\Z} } den „allgemeinen \lm{ \s }-Vorrat“ an unendlich vielen endlichen Primzahlen von der eigentlichen arithmetischen Information.'."\n".
+                    'Weil \lm{ \s } alle Primzahlen „trägt“, kann man \lm{ X } eindeutig als \lm{ X = \s^{m} \cdot X^{(0)} } schreiben.'."\n".
                     'Der Faktor \lm{ \s^{m} } steht für die beliebige Menge an Primpotenzen, die ohnehin in \lm{ \s } stecken; der \lm{ \s }-primitive Teil \lm{ X^{(0)} }'."\n".
                     'beginnt auf der \lm{ \s^{0} }-Stelle und hat damit einen nichtverschwindenden Nullstellen-Koeffizienten.'."\n".
                     'Wenn wir über „endliche Primunterstützung“ sprechen, meinen wir immer die des \lm{ \s }-primitiven Teils — genau dort sitzt die zusätzliche, endliche Primstruktur.'."\n",
                       'Als nächstes führen wir für jede Primzahl \lm{ p } eine „\lm{ p }-Exponentenfunktion“ \lm{ v_{p} } auf dem Quotientenkörper \lm{ \mathbb{S}_{\Q} = \mathrm{Frac}(\mathbb{S}_{\Z}) } ein:'."\n".
                     'Sie misst, wie oft \lm{ p } in Zähler minus Nenner vorkommt.'."\n".
-                    'Diese \lm{ v_{p} } verhalten sich wie bekannte Bewertungen (additiv über Produkte, ultrametrisch über Summen).'."\n".
+                    'Diese \lm{ v_{p} } verhalten sich wie bekannte \lm{ p }-adische Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} (additiv über Produkte, ultrametrisch über Summen).'."\n".
                     'Damit definieren wir zu jedem \lm{ p } den Bewertungsring \lm{ V_{p} = *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup *\{ 0 *\} }.'."\n".
                     'Solche Ringe sind lokal und (klassisch) \bold{ganz abgeschlossen}; außerdem gilt für jedes \lm{ x }: entweder \lm{ x } oder \lm{ x^{-1} } liegt in \lm{ V_{p} }.'."\n",
                       'Nun der Kernschritt:'."\n".
@@ -186,7 +213,7 @@
                     'Der \lm{ \s }-Teil ist selbst in \lm{ \mathbb{S}_{\Z} }, daher reicht es, den Quotienten \lm{ X^{(0)} / Y^{(0)} } zu verstehen.'."\n".
                     'Weil \lm{ x } in \bold{jedem} \lm{ V_{p} } liegt, ist für alle \lm{ p } die \lm{ p }-Exponentenzahl des Zählers mindestens so groß wie die des Nenners.'."\n".
                     'Da \lm{ Y^{(0)} } nur \bold{endlich viele} Primteiler hat, können wir aus diesen endlich vielen \lm{ p } einen gemeinsamen Divisor \lm{ D } (tatsächlich eine ganze Zahl) bauen,'."\n".
-                    'der \lm{ Y^{(0)} } teilt — und wegen der Ungleichungen auch \lm{ X(0) }.'."\n".
+                    'der \lm{ Y^{(0)} } teilt — und wegen der Ungleichungen auch \lm{ X^{(0)} }.'."\n".
                     'Nach dem Teilen bleibt im Nenner ein Element ohne positive \lm{ p }-Exponenten übrig, also eine Einheit; damit ist \lm{ X^{(0)} / Y^{(0)} \in \mathbb{S}_{\Z} }, folglich auch \lm{ x \in \mathbb{S}_{\Z} }.'."\n".
                     'So steht die Gleichheit \lm{ \mathbb{S}_{\Z} = \bigcap p V_{p} }.'."\n",
                       'Aus dieser Darstellung folgt sofort:'."\n".
@@ -199,11 +226,11 @@
                     '\lm{ \alpha = Y / \s } gehört zu \lm{ \mathbb{A}_{\S} }. \\\\'."\n".
                     'In Summe: \\\\'."\n".
                     '(i) \lm{ \s }-Vorrat ausklammern und nur den \lm{ \s }-primitiven Teil arithmetisch betrachten, \\\\'."\n".
-                    '(ii) \lm{ \mathbb{S}_{\Z} } als Schnitt der \lm{ p }-Bewertungsringe identifizieren \lm{ \Leftrightarrow \lm{ \mathbb{S}_{\Z} } } ganz abgeschlossen, \\\\'."\n".
+                    '(ii) \lm{ \mathbb{S}_{\Z} } als Schnitt der \lm{ p }-Bewertungsringe identifizieren \lm{ \Leftrightarrow \mathbb{S}_{\Z} } ist ganz abgeschlossen, \\\\'."\n".
                     '(iii) daraus folgt mit einem einzigen Ganzheitsargument, dass jede reell algebraische Zahl ein sinnvoller Koeffizient ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Das beschriebene Vorgehen wird nachfolgend im Detail ausgearbeitet und damit der Beweis vorgelegt,'."\n".
+                    'Der beschriebene Ansatz und unser Vorgehen wird nachfolgend im Detail ausgearbeitet und damit der Beweis vorgelegt,'."\n".
                     'dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
 
@@ -217,7 +244,7 @@
                   '\bold{Inklusionen:}'."\n".
                     '\lm{ \mathbb{Z} \subset \mathbb{A}_{\S} } und \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} }​.'."\n",
                     'Für \lm{ n \ge 1 } gilt \lm{ s^{n} \mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }. Im Allgemeinen \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
-                    '\italic{Begründung:} „sinnvoll“ heißt \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } etc.; für höhere Potenzen analog.'."\n".
+                    '\italic{Begründung:} „sinnvoll“ heißt \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } etc.; für höhere Potenzen analog (Schreibweise \lm{ \mathbb{S}_{\Z,\{ 1 \}} } siehe Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}).'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Integritätsbereich:}'."\n".
@@ -229,7 +256,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Primzahldivisoren:}'."\n".
-                    'Für jede (rationale) Primzahl \lm{ p } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner gilt'."\n".
+                    'Für jede Primzahl \lm{ p \in \mathbb{P} } ist \lm{ p \mathbb{S}_{\Z} }​ ein Primideal; ferner gilt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -237,7 +264,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:}'."\n",
-                    '(a) \lm{ \s } ist durch jede rationale Primzahl teilbar (für alle Primzahlen \lm{ p } gilt \lm{ p \mid \s }).'."\n",
+                    '(a) \lm{ \s } ist durch jede Primzahl teilbar (für alle Primzahlen \lm{ p } gilt \lm{ p \mid \s }).'."\n",
                     '(b) Für jedes \lm{ 0 \ne X \in \mathbb{S}_{\Z} } definieren wir den \lm{ \s }-primitiven Teil \lm{ X^{(0)} } über die \lm{ \s }-Ordnung'."\n".
                     ''))),
                   array( 'equations',
@@ -262,7 +289,7 @@
                   'Bewertungen und Valuationsringe', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Wir definieren unsere \lm{ p }-adischen Bewertung\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}}'."\n".
+                    'Wir definieren unsere \lm{ p }-adischen Bewertung'."\n".
                     'und den Valuationsring\footnote{\const{SupNum_g_footnote_text_Valuationsring}}:'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
@@ -468,20 +495,21 @@
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ \bold{sind die rationalen Primteiler endlich} (klassisch).',
+                        'Für \lm{ z \in \mathbb{Z} \subset \mathbb{S}_{\Z} }​ \bold{sind die Primteiler endlich} (klassisch).',
                         'Für \bold{jedes} \lm{ a_{i} \in \mathbb{A}_{\S} } \bold{gilt per Definition} \lm{ a_{i} \cdot \s \in \mathbb{S}_{\Z} }; damit hat auch \lm{ a_{i} \s^{i} = (a_{i} s) \s^{i−1} \in \mathbb{S}_{\Z} } eine \bold{endliche} Prim-Unterstützung (in der in den Superial-Zahlen benutzten p-adischen Exponentenbuchführung).',
                         'Summe und Produkt \bold{vereinen} jeweils nur \bold{endlich} viele Primteiler.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'Deshalb besitzt jedes \lm{ X \in \mathbb{S}_{\Z} } nur endlich viele rationale Primteiler (SA \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}),'."\n".
+                    'Deshalb besitzt jedes \lm{ X \in \mathbb{S}_{\Z} } nur endlich viele Primteiler (SA \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}),'."\n".
                     'welche damit kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben ist.'."\n".
                     ''))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
-                      
-                '\color{*Bearb}{Nachfolgender Text wird überarbeitet, weil er so nicht korrekt ist}', subline =>
-                  '')),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
+                Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-Adische Bewertungen …',
+                TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-Adische Bewertungen:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis unserer Überrationalitätsvermutung}, das Zeigen,'."\n".
                     'dass auch alle damit sich ergebenden durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
@@ -633,6 +661,8 @@
                     'Abermals wird deutlich, welche grundsätzliche Bedeutung die Superial-Zahlen für die Zahlentheorie haben;'."\n".
                     'wie tief sie mit den Grenzen der Zahlenmengen verbunden sind.'."\n".
                     ''))),
+
+                    ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter Ansatz mit elliptischen Integralen …',
