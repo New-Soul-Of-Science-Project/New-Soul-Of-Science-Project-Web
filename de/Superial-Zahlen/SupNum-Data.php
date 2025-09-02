@@ -121,7 +121,6 @@
         'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Beweis-der-Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen' => array( headline_text => 'Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Arithmetische-Struktur-Geometrie' => array(

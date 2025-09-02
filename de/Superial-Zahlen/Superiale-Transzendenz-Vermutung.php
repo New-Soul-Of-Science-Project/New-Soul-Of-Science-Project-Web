@@ -384,7 +384,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wie schon im Kapitel \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}'."\n".
+                    'Wie schon im Kapitel \color{*Bearb}{Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen (gelöscht, da verkehrt)} \hidden{\italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}}'."\n".
                     'gesagt, können wir tatsächlich jede endliche Indexmenge von \lm{ p }-adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) = q_{p} },'."\n".
                     'mit \lm{ q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} }, wählen und erhalten eine reell algebraische Zahl:'."\n".
                       ''))),

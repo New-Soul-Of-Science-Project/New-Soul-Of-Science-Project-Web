@@ -778,7 +778,7 @@
                     ))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
                     )),
                 )
           ); ?>
@@ -786,9 +786,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen',
+          <!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Koeffizienten-Vermutung:X',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -801,24 +801,14 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wir können tatsächlich jede endliche Indexmenge von \lm{ p }-adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) = q },'."\n".
-                    'mit \lm{ q \in \mathbb{Q} \setminus *\{ 0 *\} }, wählen und erhalten eine reell algebraische Zahl:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{q}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a  \in  \mathbb{A}_{\R}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dies ist tatsächlich eine bidirektionale Abbildung, bis auf den Fall \lm{ a = 0 } und das Vorzeichen.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
