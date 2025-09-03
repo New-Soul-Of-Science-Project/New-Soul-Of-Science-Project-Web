@@ -841,8 +841,6 @@
                            ), $Glo_g_Color_list);
   
   
-  const jump_name = 'jump_name';
-
   $Glo_g_Theme_list = array(
     // #: FrQFT
     '*Alterung-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist'),

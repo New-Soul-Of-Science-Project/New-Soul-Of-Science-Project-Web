@@ -21,6 +21,7 @@
   const intent = 'intent';
   const jump_anchor = 'jump_anchor';
   const jump_url = 'jump_url';
+  const jump_name = 'jump_name';
   const jumpName = 'jumpName';
   const jumpurl = 'jumpurl';
   const keywords = 'keywords';
