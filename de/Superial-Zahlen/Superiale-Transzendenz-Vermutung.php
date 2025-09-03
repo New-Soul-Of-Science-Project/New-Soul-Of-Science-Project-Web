@@ -105,16 +105,28 @@
                     'ebenfalls der Beweis ihrer Vollständigkeit?'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+
+                'Beweis: XXX')),
+
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',
+                Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
+                TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
+
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+
                 'Beweis: Nicht-Einbettung jeder transzendenten Zahl in eine einzige Ebene der Superial-Zahlen', subline =>
                   'Die vollständigen sinnvollen Koeffizienten sind die reell algebraischen Zahlen')),
 
-                  array( 'notice', array( Display => 'hideContent', text => array(
+                  /* array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Erklärungs-Video}',
                     '• Negative reell algebraische Zahlen und die Null korrekt berücksichtigen.',
                     '• Hier ist noch wichtig, dass  \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } nur dann eine ganze Zahl sein darf (Beweis), wenn \lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} }.',
                     '– Wenn \lm{ \mathrm{v}_{\!p}(a) \in *( \mathbb{A}_{\R} \setminus \mathbb{Q} *) }, dann sollte \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } keine ganze Zahl sein.',
-                    ))),
+                    ))), */
                       
                   array( 'text', array( text => array(
                     'Unser Beweis stütz sich auf die \lm{ p }‑adische Argumentation, also auf die Idee, dass jede reell algebraische Zahl \lm{ a \neq 0 } über'."\n".
@@ -328,7 +340,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
@@ -341,12 +353,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Sie müssten demnach folglich Elemente der Menge der reellen Zahlen \lm{ \mathbb{R} } sein.'."\n",
-                      'Wenn dem so ist, dann XXX:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      'Wenn dem so ist, dann X:'."\n",
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -359,9 +367,12 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
+                    ))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen'),
+                      // array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
                     )),
                 )
           ); ?>
@@ -369,8 +380,8 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Konsequenzen des Beweises zu den transzendenten Zahlen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+          <!  • X Konsequenzen des Beweises zu den transzendenten Zahlen  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen',
               '', 'Sc_f_Paragraph',
                 array(
@@ -438,20 +449,14 @@
                       array( display => 'on',  latex => '{  *( \exists a_{-k} \neq 0 *) *( \forall k \in \mathbb{N} *)  *[  XXX  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

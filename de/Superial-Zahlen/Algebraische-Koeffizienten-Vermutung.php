@@ -507,8 +507,8 @@
 
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
-                Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-Adische Bewertungen …',
-                TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-Adische Bewertungen:', ParagraphList => array(
+                Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
+                TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
 
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis unserer Überrationalitätsvermutung}, das Zeigen,'."\n".
