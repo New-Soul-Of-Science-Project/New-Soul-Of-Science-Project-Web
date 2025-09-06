@@ -1734,7 +1734,7 @@
           $anchorStr = array_key_exists( jump_name, $text) ? '<a name="'.($text[jump_name]).'"></a>' : '';
           
           if (array_key_exists( horizontalLineBefore, $text) && $text[horizontalLineBefore]) {
-            To_f_headline_add_hides_end_line($offset, 100, 30, 30);
+            To_f_headline_add_hides_end_line($offset, 100, 90, 90);
           }
         }
         
