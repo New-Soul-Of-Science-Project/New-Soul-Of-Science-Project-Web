@@ -451,8 +451,10 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.125'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.127'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.128'),
-                        
+
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+
+        'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen' => array( headline_text => 'Untersuchung der Potenzialzahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Vorwort' => array(

@@ -1186,7 +1186,7 @@
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'und die arithmetische Struktur von \lm{ ω }'."\n".
+                    'und die arithmetische Struktur von \lm{ ω }, als'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
