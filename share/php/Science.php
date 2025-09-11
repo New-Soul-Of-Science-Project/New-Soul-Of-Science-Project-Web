@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 28.08.2025, 10:00h
+  // #: Stand: 11.09.2025, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250911:  +:  "$Sc_g_equation_replace_ary":  Add '  \le  ' -> '\;\;\;\le\;\;\;', '  \ge  ' -> '\;\;\;\ge\;\;\;', '  \equiv  ' -> '\;\;\;\equiv\;\;\;'
   //           20250828:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\subseteq  ' -> '\;\;\;?\subseteq\;\;\;', '?\subseteq' -> '\overset{?}{\subseteq}', '?\subset' -> '\overset{?}{\subset}'
   //           20250827:  +:  "$Sc_g_equation_replace_ary":  Add '  \subseteq  ' -> '\;\;\;:\subseteq\;\;\;'
   //           20250813:  +:  "MathJax":  Add Macro "Q" for "\Q" to generate a non italic "Q" for rational superial numbers useful for set S.
@@ -671,9 +672,12 @@
                                     array( '  =  ', '\;\;\;=\;\;\;'),
                                     array( '  \neq  ', '\;\;\;\neq\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
+                                    array( '  \le  ', '\;\;\;\le\;\;\;'),
                                     array( '  \leq  ', '\;\;\;\leq\;\;\;'),
                                     array( '  >  ', '\;\;\;>\;\;\;'),
+                                    array( '  \ge  ', '\;\;\;\ge\;\;\;'),
                                     array( '  \geq  ', '\;\;\;\geq\;\;\;'),
+                                    array( '  \equiv  ', '\;\;\;\equiv\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
