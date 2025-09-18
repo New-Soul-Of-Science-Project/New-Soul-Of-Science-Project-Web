@@ -1,4 +1,40 @@
 <?php
+  $SupNum_g_text_ZFCkonform =
+                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
+
+  
+  $SupNum_g_paragraphList_Glossar =
+                array(
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Glossar', subline =>
+                    '')),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{endliche Primzahl:} eine Primzahl \lm{ p \in \mathbb{P} = *\{ 2, 3, 5, \cdots *\} } aus \lm{ \mathbb{N} }, als Element in \lm{ \mathbb{S}_{\Z} } eingebettet. \\\\'."\n".
+                          '\italic{Notation:} \lm{ p } „endliche Primzahl“ \lm{ \Leftrightarrow } Ideal \lm{ p \mathbb{S}_{\Z} }, Bewertung \lm{  v_{p}}.',
+                        '\bold{superiale Primzahl:} Primelement in \lm{ \mathbb{S}_{\Z}\!: \; p_{\s} \ne 0 }, \lm{ p_{\s} } keine Einheit, und \lm{ p_{\s} \mid ab \;\Leftrightarrow\; p_{\s} \mid a \; } oder \lm{ \; p_{\s} \mid b \; }. („aktual unendliche Primzahl“ in unserer Sprache.)',
+                        '\bold{Primideal:} primes Ideal (zum Beispiel \lm{ p \mathbb{S}_{\Z} }, \lm{ ⟨p_{\s}⟩ }).',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    '\italic{Hinweis:} „aktual unendlich“ bezieht sich hier auf die Skala/Basis \lm{ \s }.'."\n".
+                    'Bei „superialer Primzahl“ meinen wir ringtheoretische Primheit in \lm{ \mathbb{S}_{\Z} }, nicht unbedingt „unendlich große“ numerische Größe.'."\n".
+                    ''))),
+                );
+
+  $SupNum_g_paragraphList_Terminologie =
+                array(
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Terminologie', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
+                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
+                    'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
+                    ''))),
+                );
+
+  
   $SupNum_g_Site_ary = array(
     'OM:SupNum:' =>
       array_merge(
@@ -121,6 +157,7 @@
         'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Beweis-der-Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar' => array( headline_text => 'SN.AKV.20'),
       ),
     ),
     'OM:SupNum:Arithmetische-Struktur-Geometrie' => array(

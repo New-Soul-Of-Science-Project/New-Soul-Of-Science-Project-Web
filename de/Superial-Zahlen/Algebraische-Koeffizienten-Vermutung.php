@@ -166,30 +166,9 @@
                     'Nachfolgend nun der so gefundene Beweis, dessen Ansatz und Vorgehensweise ich, zum besseren Verständnis, vorab darlege.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
-                  'Glossar', subline =>
-                    '')),
+                  ...$SupNum_g_paragraphList_Glossar,
 
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{endliche Primzahl:} eine Primzahl \lm{ p \in \mathbb{P} = *\{ 2, 3, 5, \cdots *\} } aus \lm{ \mathbb{N} }, als Element in \lm{ \mathbb{S}_{\Z} } eingebettet. \\\\'."\n".
-                          '\italic{Notation:} \lm{ p } „endliche Primzahl“ \lm{ \Leftrightarrow } Ideal \lm{ p \mathbb{S}_{\Z} }, Bewertung \lm{  v_{p}}.',
-                        '\bold{superiale Primzahl:} Primelement in \lm{ \mathbb{S}_{\Z}\!: \; p_{\s} \ne 0 }, \lm{ p_{\s} } keine Einheit, und \lm{ p_{\s} \mid ab \;\Leftrightarrow\; p_{\s} \mid a \; } oder \lm{ \; p_{\s} \mid b \; }. („aktual unendliche Primzahl“ in unserer Sprache.)',
-                        '\bold{Primideal:} primes Ideal (zum Beispiel \lm{ p \mathbb{S}_{\Z} }, \lm{ ⟨p_{\s}⟩ }).',
-                    ))),
-
-                  array( 'text', array( text => array(
-                    '\italic{Hinweis:} „aktual unendlich“ bezieht sich hier auf die Skala/Basis \lm{ \s }.'."\n".
-                    'Bei „superialer Primzahl“ meinen wir ringtheoretische Primheit in \lm{ \mathbb{S}_{\Z} }, nicht unbedingt „unendlich große“ numerische Größe.'."\n".
-                    ''))),
-
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
-                  'Terminologie', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
-                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
-                    'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
-                    ''))),
+                  ...$SupNum_g_paragraphList_Terminologie,
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Unser Ansatz und Vorgehen', subline =>
@@ -361,7 +340,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}​  =  \bigcap_{ p } V_{p} \subset \mathbb{S}_{\Q}​  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}​  =  \bigcap_{ p } V_{p}  \subset  \mathbb{S}_{\Q}​  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     '\italic{Beweis:}'."\n".
@@ -407,9 +386,11 @@
                   '\bold{Schlüssel-Proposition:}'."\n".
                     'Ist \lm{ \mathbb{S}_{\Z} } in \lm{ \mathbb{S}_{\Q} } ganz abgeschlossen (\condb{Korrelation – Ganz abgeschlossen}), dann gilt:'."\n".
                     ''))),
+
                   array( 'text', array( Shape  => 'derivation', text => array(
                         'Jede reell algebraische Zahl \lm{ \alpha } liegt in \lm{ \mathbb{A}_{\S} }.'."\n".
                         ''))),
+
                   array( 'text', array( intent => '0em', text => array(
                     '\italic{Beweis:} Sei \lm{ \alpha } reell algebraisch, Nullstelle eines monischen Polynoms'."\n".
                     ''))),
@@ -444,7 +425,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar', label_text => '\name{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => true),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'was zu beweisen war.'."\n".

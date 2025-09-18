@@ -1738,7 +1738,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  n^{ω}  =  XXX  }'),
+                      // array( display => 'on',  latex => '{  n^{ω}  =  X  }'),
                       array( display => 'on',  latex => '{  \mathbb{Pz}  =  *\{ \cdots 0^{ω}, 1^{ω}, 2^{ω}, 3^{ω}, 4^{ω}, 5^{ω}, 6^{ω}, 7^{ω}, \cdots *\}  }'),
                     ))),
                   array( 'text', array( text => array(

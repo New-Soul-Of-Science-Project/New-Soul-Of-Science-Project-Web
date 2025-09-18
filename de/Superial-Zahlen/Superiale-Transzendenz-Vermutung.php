@@ -100,18 +100,467 @@
                 'Es ist eigentlich die Vermutung, dass die reell algebraischen Zahlen die vollständigen Koeffizienten der Superial-Zahlen sind', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wie kommen wir zu dem Wissen, dass die reell algebraischen Zahlen die vollständigen Koeffizienten der Superial-Zahlen sind?'."\n".
-                    'Ist der Beweis der Vermutung, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind'."\n".
-                    'ebenfalls der Beweis ihrer Vollständigkeit?'."\n".
+                    'Wie kommen wir zu dem Wissen, dass die reell algebraischen Zahlen die \italic{vollständigen} Koeffizienten der Superial-Zahlen sind?'."\n",
+                      'Wir müssen zeigen, dass die reell algebraischen Zahlen nicht nur eine Teilmenge von oder gleich den sinnvollen Koeffizienten sind.'."\n".
+                    'Sondern auch, dass die sinnvollen Koeffizienten eine Teilmenge von oder gleich den reell algebraischen Zahlen sind.'."\n".
+                    'Dann folgt zusammen die Gleichheit:'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?\subseteq  \mathbb{A}_{\R}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
+                    ))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
-                'Beweis: XXX')),
-
+                'Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
+                  ...$SupNum_g_paragraphList_Glossar,
+
+                  ...$SupNum_g_paragraphList_Terminologie,
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Unser Ansatz und Vorgehen', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Entsprechend unserer Algebraischen-Koeffizienten-Vermutung (AKV)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir arbeiten mit \lm{ \mathbb{S}_{\Z} } als den ganzen Superial-Zahlen (endliche Stellensummen ohne negative \lm{ \s }-Potenzen, mit ganzzahliger Nullstelle),'."\n".
+                    '\lm{ \mathbb{S} } als Erweiterung mit erlaubten negativen Stellen und \lm{ \mathbb{S}_{\Q} = \mathrm{Frac}(\mathbb{S}_{\Z}) }.'."\n".
+                    'Sinnvolle Koeffizienten definieren wir 1-schichtig als \lm{ \mathbb{A}_{\S} = *\{ a \in \mathbb{R}_{\text{endlich}} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} }.'."\n".
+                    'Jedes \lm{ X \in \mathbb{S}_{\Z} } zerfällt eindeutig in \lm{ X = s^{m} X^{(0)} } (s-Ordnung), und die endliche Primunterstützung liegt im \lm{ \s }-primitiven Teil.'."\n".
+                    'Für jede endliche Primzahl \lm{ p } verwenden wir die Bewertung \lm{ v_{p} } mit Valuationsring \lm{ V_{p} = *\{ x *|* v_{p}(x) \ge 0 *\} \cup *\{ 0 *\} } (optional zusätzlich \lm{ V_{s} = *\{ x *|* \mathrm{ord⁡}_{\s}(x) \ge 0 *\} \cup *\{ 0 *\} }.'."\n".
+                    'Damit erhalten wir die Schnittdarstellung \lm{ \mathbb{S}_{\Z} = \bigcap p V_{p} } (äquivalent \lm{ \mathbb{S}_{\Z} = V_{s} \cap \bigcap p V_{p} }) und folgern:'."\n".
+                    '\lm{ \mathbb{S}_{\Z} } ist ganz abgeschlossen.'."\n".
+                    'Das \bold{Ganzheitsargument} liefert sodann die \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}{AKV-Richtung} \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} }:'."\n".
+                    'Für reell algebraisches \lm{ \alpha } ist \lm{ Y = \alpha \s } Nullstelle eines monischen Polynoms über \lm{ \mathbb{S}_{\Z} }, also \lm{ Y \in \mathbb{S}_{\Z} } und damit \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Zusätzliche für den Beweis unsere Superialen-Transzendenz-Vermutung (STV)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für die Gegenrichtung (STV) beobachten wir heuristisch:'."\n".
+                    'In einer \bold{limitfreien} Superial-Auswertung behalten transzendente Konstanten wie \lm{ \e }, \lm{ π }, \lm{ \ln 2 }, \lm{ ζ(2) } sichtbare  \lm{ s^{−k} }-Korrekturen, während rein algebraische Konstruktionen 1-schichtig bleiben.'."\n".
+                    'Formal beweisen wir dies über das \bold{Superiale Kronecker-Kriterium}:'."\n".
+                    'Aus \lm{ \alpha \in \mathbb{A}_{\S} } konstruieren wir Polynome \lm{ P_{k} \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P_{k} \ge k } und \lm{ *| P_{k}(\alpha) |* \le 2^{−k} }, kohärent modulo wachsender Moduli \lm{ M_{k} }.'."\n".
+                    'Der \lm{ p }-adische Teil kommt „gratis“ aus \lm{ \s }:'."\n".
+                    '\lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.'."\n".
+                    'Den archimedischen Teil liefert Dirichlet/Siegel (Geometrie der Zahlen\color{*Bearb}{(Verweis)}) mit vorgegebener Restklasse, und eine profinite Diagonalauswahl stabilisiert die Koeffizienten zu einem monischen Grenzpolynom \lm{ P \in \mathbb{Z}[x] } mit \lm{ P(\alpha) = 0 }.'."\n".
+                    'Damit ist \lm{ \alpha } algebraisch, also \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} }.'."\n".
+                    'Zusammen mit AKV folgt schließlich die Gleichheit \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} }.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Rahmen und Notation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir setzen:'."\n".
+                    ''))),
                       
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \mathbb{S}_{\Z} = V_{s} \cap \bigcap p V_{p} } (Schnitt über \bold{alle endlichen Primzahlen} \lm{ p }); \lm{ \mathbb{S}_{\Q} = \mathrm{Frac}(\mathbb{S}_{\Z}) }).',
+                        '\lm{ \s } „trägt alle Primzahlen“; in \lm{ \mathbb{S} } sind negative \lm{ \s }-Exponenten erlaubt, in \lm{ \mathbb{S}_{\Z} } nicht und die nullte Schicht darf nur ganzzahlig sein.',
+                        '\lm{ \mathbb{A}_{\S} := *\{ a \in \mathbb{R}_{\text{endlich}} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} } (nur die Schicht \lm{ s^{1} } belegt).',
+                        'Für \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x_{i} \in \mathbb{Z}[x] } setzen wir',
+                    ))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Mit \lm{ T := \alpha \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } gilt in \lm{ \mathbb{S} } auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\; .  }'),
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Drei Schlüssellemmata', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '1) \lm{ p }-adischer „Schub“ aus \lm{ s }', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Uniforme \lm{ p }-Adik:} \\\\'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
+                    'Für \bold{jedes} \lm{ P \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P = d } und \bold{jede} endliche Primzahl \lm{ p } gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Insbesondere \lm{ \Phi_{P}(\alpha) \in p^{d} \mathbb{S}_{\Z} }, also \lm{ \Phi_{P}(\alpha) \in \bigcap_{p} p^{d} \mathbb{S}_{\Z} }.'."\n",
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:}'."\n".
+                    'Schreibe \lm{ \Phi_{P}(\alpha) = \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i} } mit \lm{ T = \alpha \cdot \s \in \mathbb{S}_{\Z} }.'."\n".
+                    'Da \lm{ p \mid \s } und \lm{ p \mid T } für \bold{alle} endlichen Primzahlen \lm{ p }, hat \bold{jeder} Summand \lm{ p }-Bewertung \lm{ \ge i \cdot 1 + ( d − i ) \cdot 1 = d }.'."\n".
+                    'Die Summe erbt \lm{ v_{p} \ge d }. \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                        '\italic{Konsequenz:}'."\n".
+                        'Für das p-adische Ziel \lm{ v_{p}(\Phi_{P_k}(\alpha)) \ge k } genügt schlicht \lm{ \mathrm{deg} P_k \ge k }.'."\n".
+                        'Keine Feinabstimmung-Kongruenzen nötig.'."\n".
+                        ''))),
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '2) Archimedisch kleine Werte mit vorgegebener Restklasse', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Hilfsnotation:}'."\n".
+                    '\lm{ d \ge 1 } und \lm{ M \ge 2 } und eine Restklasse \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } wählen wir einen festen Vertreter \lm{ C^{0} = (c_{0}^{0}, \cdots , c_{d}^{0}) \in \mathbb{Z}^{d + 1} } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c_{d}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  c_{i}^{0}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
+                      array( display => 'on',  latex => '{  *| \, c_{i}^{0} |*  \le  \frac{ M }{ 2 }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Dirichlet–Siegel mit Restklassen und Monizität:} \\\\'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{R}_{\text{endlich}} }, \lm{ d \ge 1 }, \lm{ M \ge 2 }, \lm{ \epsilon > 0 } und \lm{ \overline{C} } wie oben mit \lm{ \overline{c}_{d} \equiv 1 \; (\mathrm{mod} \, M) }.'."\n".
+                    'Dann existiert ein \bold{monisches} \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x^{i} \in \mathbb{Z}[x] } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
+                      array( display => 'on',  latex => '{  c_{d}  =  1  }'),
+                      array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und Höhenkontrolle'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \max_{0 \le i \le d} *| c_{i} |*   \le   *| c_{i}^{0} |* + M H \;\; (0 \le i \le d - 1)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'wobei man \lm{ H } so wählen kann, dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  H   \le   C(d, \alpha) *( \frac{ M }{ \epsilon } *)^{\frac{ 1 }{ d }}​  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:} \\\\'."\n".
+                    'Fixiere \lm{ C_{0} } wie oben und setze \lm{ m_{d} := 0 }.'."\n".
+                    'Betrachte Vektoren \lm{ m = (m_{0}, \cdots ,m_{d − 1}) } mit \lm{ 0 \le m_{i} \le H } ganzzahlig.'."\n".
+                    'Definiere'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c_{i}  :=  c_{i}^{0} + M m_{i} \;\; (0 \le i \le d − 1)  }'),
+                      array( display => 'on',  latex => '{  c_{d}  :=  1  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P(x)  =  \sum_{i = 0}^{d} c_{i} x^{i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann \lm{ P \equiv \overline{C} \; (\mathrm{mod} \, M) } und \lm{ P } ist \bold{monisch}.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Setze \lm{ L_{\alpha}(m) := \sum_{i = 0}^{d - 1} m_{i} \alpha^{i} }.'."\n".
+                    'Die Menge \lm{ *\{ L_{\alpha}(m) *|* 0 \le m_{i} \le H *\} } hat \lm{ ( H + 1 )^{d} } Elemente und liegt in einem Intervall der Länge'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{    \le  H \sum_{i = 0}^{d − 1} *| \alpha |*^{i}   \le   H \cdot d \cdot \max *\{ 1, *| \alpha |*^{d − 1} *\}  =:  L  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Zerlege dieses Intervall in \lm{ ( H + 1 )^{d} } gleichlange Teilintervalle der Länge \lm{ \le L / ( H + 1 )^{d} \le C( d, \alpha ) / H^{d} }.'."\n".
+                    'Wähle \lm{ m } so, dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \, L_{\alpha}(m) + \frac{ 1 }{ M } \sum_{i = 0}^{d} c_{i}^{0} \alpha^{i} \, |*   \le   \frac{ C( d, \alpha ) }{ H^{d} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| P(\alpha) |*  =  *| \, \sum_{i = 0}^{d} c_{i} \alpha^{i} \, |*   =   *| \, \sum_{i = 0}^{d} c_{i}^{0} \alpha^{i} + M L_{\alpha}(m) \, |*  \\\ \qquad\qquad\qquad\qquad\;\;   \le   M \frac{ C( d, \alpha ) }{ H^{d} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wähle \lm{ H \ge *( C(d, \alpha ) M / \epsilon *)^{1 / d} }.'."\n".
+                    'Damit \lm{ *| P(\alpha) |* \le \epsilon } und die Höhenabschätzung folgt aus der Definition von \lm{ c_{i} }. \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                        '\italic{Bemerkung (minimale Repräsentanten):}'."\n".
+                        'Wählt man \lm{ m_{i} } zusätzlich so, dass \lm{ *| c_{i} |* \le M / 2 } stets gilt (durch geeignetes „Zentrieren“ der Box), erhält man die \italic{Minimalrepräsentanten} \lm{ *| c_{i} |* \le M / 2 }, was wir gleich für die Stabilisierung nutzen.'."\n".
+                        ''))),
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '3) Stabilisierung von Koeffizienten (profiniter Diagonal-Schritt)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten:} \\\\'."\n".
+                    'Sei \lm{ M_{1} | M_{2} | M_{3} | \cdots } mit \lm{ M_{k + 1} \ge 2 M_{k} }.'."\n".
+                    'Sei \lm{ P_{k}(x) = \sum_{i = 0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } eine Folge mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P_{k + 1} ​ \equiv  P_{k} \; (\mathrm{mod} \, M_{k})  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \, c_{i}^{(k)} |*   \le   \frac{ M_{k} }{ 2 }​​  \;\;  ( 0 \le i \le d_{k} ​)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann existieren Integers \lm{ c_{i} } (für alle \lm{ i \ge 0 }) mit \lm{ c_{i}^{(k)} = c_{i} } für alle genügend großen \lm{ k } (für jedes feste \lm{ i }).'."\n".
+                    'Insbesondere konvergiert \lm{ P_{k} } koeffizientenweise zu einem \lm{ P \in \mathbb{Z}[x] }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:} \\\\'."\n".
+                    'Fixiere \lm{ i }.'."\n".
+                    'Aus \lm{ P_{k + 1} ​\equiv P_{k} \; (\mathrm{mod} \, M_{k}) } folgt \lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
+                    'Wegen \lm{ *| c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| c_{i}^{(k + 1)} |* + *| c_{i}^{(k)} |* \le M_{k + 1} / 2 + M_{k} / 2 \le M_{k + 1} − M_{k} } und \lm{ M_{k + 1} \ge 2 M_{k} } erzwingt dies \lm{ t_{k} \in \{ −1, 0, 1 \} }, ja sogar für große \lm{ k \cdot t_{k} = 0 }.'."\n".
+                    'Also stationär. \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Hauptsatz und Beweis', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Satz – Superiales Kronecker-Kriterium:} \\\\'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
+                    'Dann existiert ein monisches \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} } mit \lm{ P(\alpha) = 0 }.'."\n".
+                    'In Verbindung mit \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{AKV} folgt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:} \\\\'."\n".
+                    'Wir konstruieren induktiv \lm{ P_{k} \in \mathbb{Z}[x] } und Moduli \lm{ M_{k} } so, dass'."\n".
+                    ''))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{(A)} \lm{ \mathrm{deg} P_{k} = d_{k} \ge k } (\lm{ p }-adischer Schub),',
+                        '\bold{(B)} \lm{ *| P_{k}(\alpha) |* \le 2^{−k} } (archimedisch klein),',
+                        '\bold{(C)} \lm{ P_{k + 1} \equiv P_{k} \; (\mathrm{mod} \, M_{k}) } (Kohärenz),',
+                        '\bold{(D)} \lm{ \max_{i} *| \, c_{i}^{(k)} |* \le \frac{ M_{k} }{ 2 } } (minimale Repräsentanten),',
+                        '\bold{(E)} \lm{ P_{k} } monisch.',
+                    ))),
+
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Start:} \\\\'."\n".
+                    'Setze \lm{ M_{1} := 2 }.'."\n".
+                    'Wende \condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität} mit \lm{ d_{1} = 1 }, \lm{ \epsilon = 1 / 2 }, Restklasse \lm{ \overline{C} } mit \lm{ \overline{c}_{1} \equiv 1 \; (\mathrm{mod} \, 2) } an.'."\n".
+                    'Erhalte \bold{monisches} \lm{ P_{1} } mit \lm{ *| P_{1}(\alpha) |* \le 1 / 2 } und \bold{(D)}.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Induktionsschritt \lm{ k \rightarrow k + 1 }:} \\\\'."\n".
+                    'Wähle \lm{ M_{k + 1} := 2 M_{k} } (so \lm{ M_{k + 1} \ge 2 M_{k} } und \lm{ M_{k} \mid M_{k + 1} }).'."\n".
+                    'Wähle einen Zielgrad \lm{ d_{k + 1} \ge k + 1 } und eine Restklasse \lm{ \overline{C}^{(k + 1)} \in (\mathbb{Z} / M^{k+1} \mathbb{Z})^{d_{k + 1} + 1} } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{C}^{(k + 1)} \equiv P_{k}​ \; (\mathrm{mod} \, M_{k}​)  }'),
+                      array( display => 'on',  latex => '{  \overline{c}_{d_{k+1}}^{​(k + 1)}​ \equiv 1 \; (\mathrm{mod} \, M_{k + 1}​)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wende \condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität} mit \lm{ \epsilon = 2^{− (k + 1)} } an und nimm den eindeutigen Repräsentanten mit \lm{ *| \, c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 }.'."\n".
+                    'So erhalten wir \lm{ P_{k + 1} } mit \bold{(B)}, \bold{(C)}, \bold{(D)}, \bold{(E)}; \bold{(A)} ist per Wahl \lm{ d_{k + 1} \ge k + 1 } erfüllt.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{\lm{ p }-adische Seite:} \\\\'."\n".
+                    'Aus \bold{(A)} und \condb{Lemma – Uniforme \lm{ p }-Adik} folgt für \bold{alle} endlichen Primzahlen \lm{ p }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d_{k} \ge k  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Koeffizienten-Stabilität:} \\\\'."\n".
+                    'Wegen \bold{(C)}, \bold{(D)} und \lm{ M_{k+1} \ge 2 M_{k} } liefert \condb{Lemma – Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten} eine koeffizientenweise Konvergenz \lm{ P_{k} \rightarrow P \in \mathbb{Z}[x] } und \lm{ P } ist \bold{monisch} (per \bold{(E)}).'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Grenzübergang:} \\\\'."\n".
+                    'Aus \bold{(B)} folgt \lm{ P(\alpha) = \mathrm{lim}⁡_{k} P_{k}(\alpha) = 0 }.'."\n".
+                    'Damit existiert ein monisches \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} } mit \lm{ P(\alpha) = 0 }.'."\n".
+                    'Also \lm{ \alpha } algebraisch. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Schluss:} \\\\'."\n".
+                    'Da wir bereits (AKV) \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} } bewiesen haben, liefert der Satz \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} } und damit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\; \mathbb{A}_{\S}  =  \mathbb{A}_{\R} \;\;}  \;\; .  }'),
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Zusammenfassung der Beweisschritte', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir lassen unsere gegangenen Beweisschritte noch ein revue passieren:'."\n".
+                    ''))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Nur die 1-Schicht-Definition \lm{ \mathbb{A}_{\S} = *\{ a \in \mathbb{R}_{\text{endlich}} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} } sowie „\lm{ \s } trägt alle endlichen Primzahlen“ gingen in \condb{Lemma – Uniforme \lm{ p }-Adik} ein.',
+                        'Der archimedische Teil (\condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität}) ist reine Geometrie der Zahlen plus Restklassen-Fixierung; Monizität lässt sich über \lm{ \overline{c}_{d} \equiv 1 } erzwingen.',
+                        'Die Stabilisierung (\condb{Lemma – Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten}) nutzt allein \lm{ M_{k + 1} \ge 2 M_{k} } und Minimalrepräsentanten.',
+                        'Der \lm{ p }-adische „Schub“ ist \bold{uniform}: \lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.',
+                    ))),
+
+                  array( 'text', array( intent => '0em', text => array(
+                    'So erreichen wir den Nachweis, dass der Übergang von der endlichen, nullten Schicht oder Stelle des Stellenwertsystems der Superial-Zahlen'."\n".
+                    'zu zusätzlichen superialen Nachkommastellen, die nicht alle Null sind, – also durch das Hinzufügen von aktual unendlich kleinen Summanden zu endlichen reell algebraischen Zahlen –,'."\n".
+                    'aus Perspektive der Superial-Zahlen,'."\n".
+                    'tatsächlich dem Übergang von den reell algebraischen Zahlen zu den transzendenten Zahlen entspricht.'."\n".
+                    ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',
+                Title => 'Beweisentwurf …',
+                TitleVis => 'Beweisentwurf:', ParagraphList => array(
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Rahmen und Notation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir setzen:'."\n".
+                    ''))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \mathbb{S}_{\Z} = V_{s} \cap \bigcap p V_{p} } (Schnitt über \bold{alle endlichen Primzahlen} \lm{ p }); \lm{ \mathbb{S}_{\Q} = \mathrm{Frac}(\mathbb{S}_{\Z}) }).',
+                        '\lm{ \s } „trägt alle Primzahlen“; in \lm{ \mathbb{S} } sind negative \lm{ \s }-Exponenten erlaubt, in \lm{ \mathbb{S}_{\Z} } nicht und die nullte Schicht darf nur ganzzahlig sein.',
+                        '\lm{ \mathbb{A}_{\S} := *\{ a \in \mathbb{R} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} } (nur die Schicht \lm{ s^{1} } belegt).',
+                        'Für \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x_{i} \in \mathbb{Z}[x] } setze',
+                    ))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Schreibe \lm{ T := \alpha \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} }. Dann gilt in \lm{ \mathbb{S} } auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\;  \text{(Summe ganzer Superial-Zahlen)}  \;\; .  }'),
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\lm{ p }-adischer „Schub“ aus der Schichtenstruktur', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Schichten-bedingte \lm{ p }-Adik:} \\\\'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
+                    'Für \bold{jedes} \lm{ P \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P = d } und \bold{jede} endliche Primzahl \lm{ p } gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Insbesondere \lm{ \Phi_{P}(\alpha) \in p^{d} \mathbb{S}_{\Z} }, also \lm{ \Phi_{P}(\alpha) \in \bigcap_{p} p^{d} \mathbb{S}_{\Z} }.'."\n",
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis (1 Zeile):}'."\n".
+                    'Schreibe \lm{ \Phi_{P}(\alpha) = \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i} } mit \lm{ T = \alpha \cdot \s }.'."\n".
+                    'Da \lm{ v_{p}(\s) \ge 1 } und \lm{ v_{p}(T) \ge 1 } für \bold{alle} \lm{ p }, hat \bold{jeder} Summand \lm{ p }-Bewertung \lm{ \ge i \cdot 1 + ( d − i ) \cdot 1 = d }; damit auch die Summe. \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                        '\italic{Konsequenz:}'."\n".
+                        'Für das in SKK gebrauchte „\lm{ \Phi_{P_k}(\alpha) \in p^{k}\mathbb{S}_{\Z} } für alle \lm{ p }“ genügt schlicht \lm{ \mathrm{deg} P_k \ge k }.'."\n".
+                        'Keine Koeffizienten-Feinabstimmung nötig.'."\n".
+                        ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Archimedisch kleine Werte mit Kongruenzvorgabe', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Dirichlet–Siegel mit Restklassen:} \\\\'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{R} \text{(endlich)} }, \lm{ d \ge 1 }, \lm{ M \ge 2 } ein Modul.'."\n".
+                    'Für \bold{jede} vorgegebene Restklasse \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } und \bold{jedes} \lm{ \epsilon > 0 } existiert ein \bold{nichttriviales} \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x^{i} \in \mathbb{Z}[x] } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
+                      array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und mit einer expliziten Höhenkontrolle \lm{ \mathrm{max}_{i} *| c_{i} |* \le H(d, M, \epsilon, \alpha) }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweisskizze:} \\\\'."\n",
+                    'Betrachte das Gitter \lm{ \Lambda = *\{ c \in \mathbb{Z}^{d + 1} *|* c \equiv \overline{C} \; (\mathrm{mod} \, M) *\} } und die lineare Form \lm{ L_{\alpha}(c) = \sum_{i = 0}^{d} c_{i} \alpha^{i} }.'."\n".
+                    'Wähle die Box'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathfrak{B}  =  *\{ c \in \mathbb{R}^{d + 1}  *|*  \Vert c \Vert_{\infty} \le  H *\}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und wende den \bold{Satz vom Schubfach}/die \bold{Geometrie der Zahlen} (Dirichlet/Minkowski) auf die Bilder \lm{ L_{\alpha}(\Lambda \cap \mathfrak{B}) } an:'."\n".
+                    'Für \lm{ H } groß genug liegen zwei Gitterpunkte in einem Intervall der Länge \lm{ \epsilon }; ihre Differenz \lm{ c \in \Lambda \setminus *\{ 0 *\} } erfüllt die beiden Bedingungen.'."\n".
+                    'Die explizite Schranke \lm{ H(\cdot) } ergibt sich aus den Volumina (Standard). \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                        '\italic{Zusatz (Monizität erzwingbar):}'."\n".
+                        'Fügt man die Kongruenz \lm{ c_{d} \equiv 1 \;\; (\mathrm{mod} \, M) } hinzu und wählt hinterher den eindeutigen Vertreter mit \lm{ *| c_{d} |* \le M / 2 }, so ist für \lm{ M > 2 } bereits \lm{ c_{d} = 1 }.'."\n".
+                        'Damit kann man monische \lm{ P } erzwingen.'."\n".
+                        ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Profiniter „Diagonalschritt“ \lm{ = } Koeffizienten stabilisieren', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Lemma – Kohärente Kette \lm{ \Rightarrow } stationäre Koeffizienten:} \\\\'."\n".
+                    'Sei \lm{ M_{1} | M_{2} | M_{3} | \cdots } mit \lm{ M_{k} \rightarrow \infty }.'."\n".
+                    'Angenommen, es gibt eine Folge \lm{ P_{k}(x) = \sum_{i=0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P_{k + 1}  \equiv  P_{k}​ \;\; (\mathrm{mod} \, M) \;\;\; \text{(koheränt)}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{max}_{i} *| c_{i}^{(k)} |*  \le  \frac{ 1 }{ 2 } M_{k}​ \;\;\; \text{(minimale Repräsentanten)}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann existieren eindeutig bestimmte Integers \lm{ c_{i} } mit \lm{ c_{i}^{(k)} = c_{i} } für alle genügend großen \lm{ k } (für jedes feste \lm{ i }).'."\n".
+                    'Mit anderen Worten:'."\n".
+                    '\bold{alle Koeffizienten stabilisieren}; die Folge \lm{ (P_{k}) } konvergiert zu einem echten ganzzahligen Polynom \lm{ P(x) = \sum_{i} c_{i} x^{i} }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Beweis:}'."\n".
+                    'Fixiere \lm{ i }.'."\n".
+                    'Aus \lm{ c_{i}^{(k + 1)} \equiv c_{i}^{(k)} \; (\mathrm{mod} \, M_{k}) } folgt \lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
+                    'Wegen \lm{ *| c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| c_{i}^{(k + 1)} |* + *| c_{i}^{(k)} |* \le M_{k} } muss \lm{ t_{k} \in \{ −1, 0, 1 \} }.'."\n".
+                    'Doch \lm{ *| c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} } (ggf. Modulkette so gewählt) erzwingen \lm{ t_{k} = 0 } für alle großen \lm{ k }.'."\n".
+                    'Also stationär. \lm{ \blacksquare }'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Satz und Reduktion', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Satz – Superiales Kronecker-Kriterium:} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                    ))),
+
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',
                 Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
                 TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(

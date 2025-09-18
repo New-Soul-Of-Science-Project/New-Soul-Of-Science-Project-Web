@@ -169,10 +169,6 @@
                         addtext => '\footnote{\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
 
   
-  $SupNum_g_text_ZFCkonform =
-                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
-
-  
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';
   $NSOSP_g_footnote_text_ArchimedischesAxiom    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
   $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
