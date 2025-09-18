@@ -117,7 +117,7 @@
                 'Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Über das superiale Kronecker-Kriterium nehmen wir nachfolgend den Beweis der Superialen-Transzendenz-Vermutung in Angriff.'."\n".
                     ''))),
 
                   ...$SupNum_g_paragraphList_Glossar,
@@ -125,8 +125,103 @@
                   ...$SupNum_g_paragraphList_Terminologie,
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
-                  'Unser Ansatz und Vorgehen', subline =>
+                  'Ansatz superiales Kronecker-Kriterium', subline =>
                     '')),
+                  array( 'text', array( text => array(
+                    'Unser Ansatz in Kurzform.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Die Idee in einem Satz', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein reeller Wert \lm{ \alpha } aus \lm{ \mathbb{A}_{\S} } ist genau dann algebraisch, wenn man zu jedem \lm{ k } ein ganzzahliges Polynom \lm{ P_{k} } findet,'."\n".
+                    'das \lm{ \alpha } \bold{gleichzeitig} (i) in allen nichtarchimedischen Bewertungen „sehr teilbar“ macht und (ii) archimedisch „sehr klein“ auswertet'."\n".
+                    '– und zwar so kohärent, dass die Folge \lm{ (P_{k}) } zu einem \bold{monischen} Grenzpolynom \lm{ P \in \mathbb{Z}[x] } mit \lm{ P(\alpha) = 0 } stabilisiert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Was heißt das konkret?', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für \lm{ \alpha \in \mathbb{A}_{\S} } betrachten wir \lm{ \Phi_{P}(\alpha) := P(\alpha) \s^{\mathrm{deg} P} \in \mathbb{S} }.'."\n".
+                    'Das SKK fordert eine Folge \lm{ P_{k} \in \mathbb{Z}[x] } mit:'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{1. \lm{ p }-adische Seite (global, alle endlichen Primzahlen):} \\\\'."\n".
+                    '\lm{ \mathrm{deg} P_{k} \ge k \Rightarrow } (wegen „\lm{ \s } trägt alle Primzahlen“)'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P_{k}}(\alpha)  \in  p^{k} \mathbb{S}_{\Z}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'fÜr \bold{alle} endlichen Primzahlen \lm{ p }.'."\n".
+                    '(Das ist der „superiale Schub“: die Schichtverschiebung mit \lm{ \s^{\mathrm{deg} P_{k}} } erzwingt simultane hohe \lm{ p }-Adizität.)'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{2. archimedische Seite:} \\\\'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| P_{k}(\alpha) |* \le 2^{−k}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'oder ähnlich streng \lm{e^{− C k} }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{3. Kohärenz und Monizität:} \\\\'."\n".
+                    'Die \lm{ P_{k} } liegen in wachsend feinen Restklassen \lm{ P_{k + 1} \equiv P_{k} \; (\mathrm{mod} \, M_{k}) } (mit \lm{ M_{k + 1} \ge 2 M_{k} }) und sind monisch;'."\n".
+                    'zudem wählen wir stets „kleinste Repräsentanten“ der Koeffizienten (Höhenkontrolle).'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Warum reicht das? (Mechanik des Beweises)', subline =>
+                    '')),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Aus \bold{1)} folgt \lm{ \Phi_{P_{k}}(\alpha) \in \bigcap_{p} p^{k} \mathbb{S}_{\Z} } für alle \lm{ k } (stärkste nichtarchimedische Kleinschätzung).',
+                        'Aus \bold{2)} folgt \lm{ P_{k}(\alpha) \rightarrow 0 } in der reellen Stelle.',
+                        'Die Kohärenz aus \bold{3)} und die Höhenkontrolle erzwingt eine \bold{stationäre} Koeffizientenfolge (profiniter Diagonal-Schritt): \lm{ P_{k} \rightarrow P \in \mathbb{Z}[x] }, monisch.',
+                        'Grenzübergang in \bold{2)} gibt \lm{ P(\alpha) = 0 \Rightarrow \alpha } ist algebraisch.',
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Was unterscheidet das vom „klassischen“ Kronecker-Geist?', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Der klassische Kronecker-Gedanke sagt grob: „Globale Kleinheit/Integralität an allen Stellen ⇒ Algebraizität.“'."\n",
+                    'Im superialen SKK kommt die nichtarchimedische Seite fast „gratis“ durch den \lm{ \s }-Vorrat (die Schichtverschiebung \lm{ \s^{\mathrm{deg} P} }'."\n".
+                    'liefert simultan hohe \lm{ p }-Adizität für alle endlichen Primzahlen), während die archimedische Seite über Dirichlet/Siegel (Geometrie der Zahlen) gesteuert wird.'."\n".
+                    'Die profinite Kohärenz sorgt schließlich dafür, dass die Kleinheiten nicht nur „näherungsweise“, sondern exakt in einer ganzzahligen Nullstelle münden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Kurzformel', subline =>
+                    '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\S}  \;\;\;  \text{ist algebraisch}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \exists P_{k}  \in  \mathbb{Z}[x]  \;\;\;  \text{monisch}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Das bedeutet'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{deg} P_{k}  \ge  k  }'),
+                      array( display => 'on',  latex => '{  \Phi_{P_{k}}(\alpha)  \in  \bigcap_{p} p^{k} \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  *| P_{k}(\alpha) |*  \le  2^{−k}  }'),
+                      array( display => 'on',  latex => '{  P_{k + 1}  \equiv  P_{k} \;\; (\mathrm{mod} \, M_{k})  }'),
+                      array( display => 'on',  latex => '{  M_{k + 1}  \ge  2 M_{k}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'In Worten:'."\n".
+                    'Gelingt es, \lm{ \alpha } durch eine kohärente Folge ganzzahliger Polynome zugleich überall \lm{ p }-adisch „verschwinden zu lassen“ und reell gegen \lm{ 0 } zu drücken, dann muss \lm{ \alpha } eine Nullstelle eines monischen ganzzahligen Polynoms sein.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Unser Vorgehen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nun unser Vorgehen etwas ausführlicher geschildert.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Entsprechend unserer Algebraischen-Koeffizienten-Vermutung (AKV)', subline =>
                     '')),
@@ -413,7 +508,7 @@
                   'Zusammenfassung der Beweisschritte', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
-                    'Wir lassen unsere gegangenen Beweisschritte noch ein revue passieren:'."\n".
+                    'Wir lassen unsere gegangenen Beweisschritte noch einmal Revue passieren:'."\n".
                     ''))),
                       
                   array( 'bulletlist', array( bullet_ary => array(
