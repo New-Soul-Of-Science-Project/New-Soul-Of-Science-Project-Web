@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 11.09.2025, 22:00h
+  // #: Stand: 18.09.2025, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250918:  +:  "$Sc_g_equation_replace_ary":  Add '  =:  ' -> '\;\;\;=:\;\;\;', '=:' -> '≕'
   //           20250911:  +:  "$Sc_g_equation_replace_ary":  Add '  \le  ' -> '\;\;\;\le\;\;\;', '  \ge  ' -> '\;\;\;\ge\;\;\;', '  \equiv  ' -> '\;\;\;\equiv\;\;\;'
   //           20250828:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\subseteq  ' -> '\;\;\;?\subseteq\;\;\;', '?\subseteq' -> '\overset{?}{\subseteq}', '?\subset' -> '\overset{?}{\subset}'
   //           20250827:  +:  "$Sc_g_equation_replace_ary":  Add '  \subseteq  ' -> '\;\;\;:\subseteq\;\;\;'
@@ -685,6 +686,7 @@
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;:=\;\;\;'),
+                                    array( '  =:  ', '\;\;\;=:\;\;\;'),
                                     array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
@@ -699,6 +701,7 @@
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( ':=', '≔'),
+                                    array( '=:', '≕'),
                                     array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
                                     array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
