@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 18.09.2025, 20:00h
+  // #: Stand: 23.09.2025, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250923:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subset  ' -> '\;\;\;\not\subset\;\;\;'
   //           20250918:  +:  "$Sc_g_equation_replace_ary":  Add '  =:  ' -> '\;\;\;=:\;\;\;', '=:' -> '≕'
   //           20250911:  +:  "$Sc_g_equation_replace_ary":  Add '  \le  ' -> '\;\;\;\le\;\;\;', '  \ge  ' -> '\;\;\;\ge\;\;\;', '  \equiv  ' -> '\;\;\;\equiv\;\;\;'
   //           20250828:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\subseteq  ' -> '\;\;\;?\subseteq\;\;\;', '?\subseteq' -> '\overset{?}{\subseteq}', '?\subset' -> '\overset{?}{\subset}'
@@ -695,6 +696,7 @@
                                     array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
