@@ -185,7 +185,7 @@
                     'Damit definieren wir zu jedem \lm{ p } den Bewertungsring \lm{ V_{p} = *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} \cup *\{ 0 *\} }.'."\n".
                     'Solche Ringe sind lokal und (klassisch) \bold{ganz abgeschlossen}; außerdem gilt für jedes \lm{ x }: entweder \lm{ x } oder \lm{ x^{-1} } liegt in \lm{ V_{p} }.'."\n",
                       'Nun der Kernschritt:'."\n".
-                    'Wir zeigen \lm{ \mathbb{S}_{\Z} = \bigcap p V_{p} }.'."\n".
+                    'Wir zeigen \lm{ \mathbb{S}_{\Z} = \bigcap_{p} V_{p} }.'."\n".
                     'Die Inklusion „\lm{ \subseteq }“ ist klar, denn eine ganze Superial-Zahl hat nirgendwo negative \lm{ v_{p} }-Exponenten.'."\n".
                     'Für „\lm{ \supseteq }“ nehmen wir \lm{ x } aus dem Schnitt, schreiben \lm{ x = X / Y } mit \lm{ X, Y \in \mathbb{S}_{\Z} } und faktorieren zuerst alle \lm{ \s }-Anteile heraus:'."\n".
                     '\lm{ X = \s^{a} X^{(0)}, Y = \s^{b} Y^{(0)} }.'."\n".
@@ -194,7 +194,7 @@
                     'Da \lm{ Y^{(0)} } nur \bold{endlich viele} Primteiler hat, können wir aus diesen endlich vielen \lm{ p } einen gemeinsamen Divisor \lm{ D } (tatsächlich eine ganze Zahl) bauen,'."\n".
                     'der \lm{ Y^{(0)} } teilt — und wegen der Ungleichungen auch \lm{ X^{(0)} }.'."\n".
                     'Nach dem Teilen bleibt im Nenner ein Element ohne positive \lm{ p }-Exponenten übrig, also eine Einheit; damit ist \lm{ X^{(0)} / Y^{(0)} \in \mathbb{S}_{\Z} }, folglich auch \lm{ x \in \mathbb{S}_{\Z} }.'."\n".
-                    'So steht die Gleichheit \lm{ \mathbb{S}_{\Z} = \bigcap p V_{p} }.'."\n",
+                    'So steht die Gleichheit \lm{ \mathbb{S}_{\Z} = \bigcap_{p} V_{p} }.'."\n",
                       'Aus dieser Darstellung folgt sofort:'."\n".
                     '\lm{ \mathbb{S}_{\Z} } ist der \bold{Schnitt ganz abgeschlossener} Ringe und daher selbst \bold{ganz abgeschlossen}.'."\n".
                     'Genau das brauchen wir für den Schritt zu allen reell algebraischen Zahlen:'."\n".
@@ -222,8 +222,11 @@
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Inklusionen:}'."\n".
                     '\lm{ \mathbb{Z} \subset \mathbb{A}_{\S} } und \lm{ \mathbb{Z} \subset \mathbb{S}_{\Z} }​.'."\n",
-                    'Für \lm{ n \ge 1 } gilt \lm{ s^{n} \mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }. Im Allgemeinen \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
-                    '\italic{Begründung:} „sinnvoll“ heißt \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } etc.; für höhere Potenzen analog (Schreibweise \lm{ \mathbb{S}_{\Z,\{ 1 \}} } siehe Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}).'."\n".
+                    'Für \lm{ n \ge 1 } gilt \lm{ \s^{n} \mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }.'."\n",
+                    'Für \lm{ n = 0 } gilt \lm{ \s^{0} \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
+                    'Denn wegen \lm{ \s^{0} = 1 } und \lm{ \mathbb{A}_{\S} = 1 \cdot \mathbb{A}_{\S} } gilt dann eben im Allgemein \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
+                    '\italic{Begründung:} Koeffizient \lm{ a } heißt „sinnvoll“, wenn er nur die \lm{ n }-te Exponentenschicht verändert, in der er Faktor ist, also \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s^{n} \in \mathbb{S}_{\Z,\{ n \}} }, mit \lm{ n \ge 1 }. (Schreibweise \lm{ \mathbb{S}_{\Z,\{ n \}} } siehe Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.)'."\n".
+                    'Jedoch sind in der nullten Exponentenschicht (\lm{ n = 0 }) der \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} nur ganze Zahlen aus \lm{ \mathbb{Z} } erlaubt, also nicht alle sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }.'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Integritätsbereich:}'."\n".
@@ -248,7 +251,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{  i \ge 0  *|*  \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\quad \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{ord⁡_{s}}(X)  :=  \mathrm{min} *\{  i \ge 0  *|*  \text{der Koeffizient} \\\ \qquad\qquad\qquad\qquad\qquad\quad\, \text{von}\; \s^{i} \;\text{in}\; X \;\text{ist}\; \ne 0  *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'mittels \lm{ X = \s^{\mathrm{ord⁡_{s}}(X)} \cdot X^{(0)} } und \lm{ \mathrm{ord⁡_{s}}(X^{(0)}) = 0 }.'."\n",
