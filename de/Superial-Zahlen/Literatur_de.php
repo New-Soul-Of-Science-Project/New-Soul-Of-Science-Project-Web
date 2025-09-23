@@ -51,6 +51,7 @@
               'wiki:IrreduziblesPolynom:2024',
               'wiki:KoerperAlgebra:2023',
               'wiki:KomplexeZahl:2024',
+              'wiki:KongruenzZahlentheorie:2025',
               'wiki:Kontinuumshypothese:2023',
               'wiki:Kreisteilungspolynom:2024',
               'wiki:LanglandsProgramm:2024',

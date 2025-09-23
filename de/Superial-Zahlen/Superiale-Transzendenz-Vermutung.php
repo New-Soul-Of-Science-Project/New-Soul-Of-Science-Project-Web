@@ -313,12 +313,13 @@
                     '')),
                   array( 'text', array( intent => '0em', text => array(
                     '\italic{Hilfsnotation:}'."\n".
-                    '\lm{ d \ge 1 } und \lm{ M \ge 2 } und eine Restklasse \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } wählen wir einen festen Vertreter \lm{ C^{0} = (c_{0}^{0}, \cdots , c_{d}^{0}) \in \mathbb{Z}^{d + 1} } mit'."\n".
+                    '\lm{ d \ge 1 } und \lm{ M \ge 2 } und eine Restklasse\footnote{\const{SupNum_g_footnote_text_Restklasse}} \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } wählen wir einen festen Vertreter \lm{ C^{0} = (c_{0}^{0}, \cdots , c_{d}^{0}) \in \mathbb{Z}^{d + 1} } mit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{d}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  c_{i}^{0}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
+                      array( display => 'on',  latex => '{  c_{i}^{0}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }',
+                                               footnote => '\\const{SupNum_g_footnote_text_Kongruenz}'),
                       array( display => 'on',  latex => '{  *| \, c_{i}^{0} |*  \le  \frac{ M }{ 2 }  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -410,7 +411,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  P_{k + 1} ​ \equiv  P_{k} \; (\mathrm{mod} \, M_{k})  }'),
+                      array( display => 'on',  latex => '{  P_{k + 1} ​  \equiv   P_{k} \; (\mathrm{mod} \, M_{k})  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'und'."\n".
@@ -518,11 +519,45 @@
                         'Der \lm{ p }-adische „Schub“ ist \bold{uniform}: \lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.',
                     ))),
 
-                  array( 'text', array( intent => '0em', text => array(
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+
+                'Fazit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
                     'So erreichen wir den Nachweis, dass der Übergang von der endlichen, nullten Schicht oder Stelle des Stellenwertsystems der Superial-Zahlen'."\n".
                     'zu zusätzlichen superialen Nachkommastellen, die nicht alle Null sind, – also durch das Hinzufügen von aktual unendlich kleinen Summanden zu endlichen reell algebraischen Zahlen –,'."\n".
                     'aus Perspektive der Superial-Zahlen,'."\n".
-                    'tatsächlich dem Übergang von den reell algebraischen Zahlen zu den transzendenten Zahlen entspricht.'."\n".
+                    'tatsächlich auch dem Übergang von den reell algebraischen Zahlen zu den transzendenten Zahlen entspricht.'."\n",
+                      'Daraus folgt dann auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  \subset  \mathbb{R}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{R}  \not\subset  \mathbb{A}_{\S}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wie bekannt.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Die Superial-Zahlen stellen die reellen Zahlen in ein neues Licht', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Veränderung unserer Perspektive von genereller Anwendung des Limes hin zu aktualer Unendlichkeit, wo dies möglich ist,'."\n".
+                    'eröffnet auch eine neue Perspektive auf die reellen Zahlen \lm{ \mathbb{R} }, wie wir erkennen.'."\n",
+                      'Dies ist die Perspektive der Superial-Zahlen und deren Erweiterungen,'."\n".
+                    'in der die Definition der reellen Zahlen, in Form von superialen reellen Zahlen \lm{ \mathbb{R}_{\S} } oder \lm{ \mathbb{S}_{\R} }, dann zu überdenken ist.'."\n",
+                      'Diese Sicht offenbart die tiefe Verbindung des Zählens und der endlichen Primzahlen mit dem Aktual-Unendlichen.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Das Langlands-Programm', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Eben diese Verbindung des Zählens und der endlichen Primzahlen mit dem Aktual-Unendlichen'."\n".
+                    'erhellt nicht nur die Grenzen zwischen den algebraischen Zahlen und den transzendenten Zahlen,'."\n".
+                    'sondern lässt gleichzeitig auch eine tiefe Verbindung zwischen Geometrie, Algebra und Analysis erkennbar werden.'."\n",
+                      'Wenn sich dies so bestätigt, sind die Superial-Zahlen ein wichtiger Baustein des Langlands-Programms\footnote{\const{SupNum_g_footnote_text_LanglandsProgramm}}.'."\n".
                     ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',

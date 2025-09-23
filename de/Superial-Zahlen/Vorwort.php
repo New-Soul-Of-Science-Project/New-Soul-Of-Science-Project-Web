@@ -103,7 +103,7 @@
                     'Dadurch, dass ich meine Vergleiche und Herleitungen immer weiter fasste, Vermutungen anstellte und auch versuchte zu beweisen, was nach meinem jetzigen Verständnis'."\n".
                     'großteils gelang, und so immer mehr Hintergrund erkennen konnte, ist mir dann auch klar geworden, dass meine Theorie'."\n".
                     'der Analysis mit Superial-Zahlen ein nach meinem Verständnis neuer Zugang zum in der Mathematik berühmten und wichtigen'."\n".
-                    '\italic{Langlands-Programm}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.} ist.'."\n",
+                    '\italic{Langlands-Programm}\footnote{\const{SupNum_g_footnote_text_LanglandsProgramm}} ist.'."\n",
                       'Einer von mehreren Ausgangspunkten des Langlands-Programms ist es, dass es tiefe Verbindungen zwischen der Analysis und der Zahlentheorie geben könnte.'."\n".
                     'Zwei Themenfelder, deren Zusammenführung der Theorie der Superial-Zahlen schon in die Wiege gelegt ist.'."\n".
                     'Dies gilt dann ebenso für die Geometrie, schon wegen der Analysis von Kurven und anderen geometrischen Objekten.'."\n",
