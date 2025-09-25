@@ -1373,8 +1373,8 @@
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
                     'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
-                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
-                      'Nach allem, was ich über diese herausfinden kann, sind die realwertigen Lösungen'."\n".
+                    'die reelwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
+                      'Nach allem, was ich über diese herausfinden kann, sind die reelwertigen Lösungen'."\n".
                     'der Nullstellen von Polynomen entweder Radikale\color{*Bearb}{(Verweis)}, also durch bereits'."\n".
                     'oben betrachtete Wurzelausdrücke darstellbar, oder es sind elliptische Integrale\color{*Bearb}{(Verweis)},'."\n".
                     'für die Nullstellen von Polynomen 5. oder höheren Grades.\color{*Bearb}{(Verweis)}'."\n",

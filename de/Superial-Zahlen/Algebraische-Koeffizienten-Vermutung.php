@@ -657,7 +657,7 @@
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Nach allem, was ich über algebraische Zahlen herausfinden kann, sind die realwertigen Lösungen'."\n".
+                      'Nach allem, was ich über algebraische Zahlen herausfinden kann, sind die reelwertigen Lösungen'."\n".
                     'der Nullstellen von Polynomen entweder Radikale\color{*Bearb}{(Verweis)}, also durch bereits'."\n".
                     'oben betrachtete Wurzelausdrücke darstellbar, oder es sind elliptische Integrale\color{*Bearb}{(Verweis)},'."\n".
                     'für die Nullstellen von Polynomen 5. oder höheren Grades.\color{*Bearb}{(Verweis)}'."\n",

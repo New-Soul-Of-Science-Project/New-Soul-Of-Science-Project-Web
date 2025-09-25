@@ -384,6 +384,7 @@
   $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
   $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
+  $SupNum_g_footnote_text_Taylorreihe           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
   $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_Valuationsring        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ValuationRing:2024}.';

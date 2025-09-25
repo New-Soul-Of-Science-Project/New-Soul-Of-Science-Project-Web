@@ -43,6 +43,7 @@
               'wiki:GeordneterKoerper:2022',
               'wiki:GleichungFuenftenGrades:2024',
               'wiki:GrenzwertFunktion:2024',
+              'wiki:Infinitesimal:2025',
               'wiki:IntegrallyClosedDomain:2024',
               'wiki:IntegralityAndValuationRings:2011',
               'wiki:Integralrechnung:2023',

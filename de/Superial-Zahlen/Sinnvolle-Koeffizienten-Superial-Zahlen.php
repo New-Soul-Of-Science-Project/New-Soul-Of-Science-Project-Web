@@ -14,13 +14,10 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Fragen}',
-                    '• Wenn wir von algebraischer Zahlen sprechen, dann handelt es sich nicht um die, die durch Radikale darstellbar sind!',
-                    '– Ich habe gelesen, dass nicht alle algebraischen Zahlen mit Wurzeln darstellbar sind: \quote{Im Rahmen der Galoistheorie werden diese Zwischenkörper untersucht, um so tiefe Einblicke über die Lösbarkeit oder Nichtlösbarkeit von Gleichungen zu erhalten. Ein Resultat der Galoistheorie ist, dass zwar jede komplexe Zahl, die man aus rationalen Zahlen durch Verwendung der Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) sowie durch Ziehen n-ter Wurzeln (n eine natürliche Zahl) erhalten kann (man nennt solche Zahlen „durch Radikale darstellbar“), algebraisch ist, umgekehrt aber algebraische Zahlen existieren, die man nicht in dieser Weise darstellen kann; alle diese Zahlen sind Nullstellen von Polynomen mindestens 5. Grades.}\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}} Möglicherweise handelt es sich „nur“ um (Polynom-)Radikale: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#Auflösung_eines_Polynoms_durch_Radikale}.',
-                    '– Dann stünde ansonsten der Beweis aus, dass alle reell algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben. Dazu würden dann unter anderem auch elliptische Integrale zur Lösung Polynome 5. Grades gehören: Vgl. \url{https://www.spektrum.de/lexikon/mathematik/elliptisches-integral/4494} und \url{https://www.spektrum.de/wissen/charles-hermite-1822-1901/1171317}.',
-                    '• Wenn nun alle reell algebraischen Zahlen sinnvolle Koeffizienten von \lm{ \s } sind, also aktual unendliche ganze Zahlen ergeben:',
-                    '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
-                    '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
+                    // '\bold{Fragen}',
+                    // '• Wenn nun alle reell algebraischen Zahlen sinnvolle Koeffizienten von \lm{ \s } sind, also aktual unendliche ganze Zahlen ergeben:',
+                    // '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
+                    // '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -86,23 +83,50 @@
                     'bleiben, wie in Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich} definiert.'."\n".
                     'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n",
                       'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n",
-                      'Wie können wir nun dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
-                    'was sie schon erfüllen, wie eben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
+                      'Für die Definition der Menge der sinnvollen Koeffizienten darf die Ausgangsmenge keine unendlich großen und unendlich kleinen, also keine infinitesimalen Elemente beinhalten.'."\n".
+                    'Zum einen sollte die Menge der reellen Zahlen, nach Standarddefinition, solche Elemente nicht enthalten:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Infinitesimals do not exist in the standard real number system, but they do exist in other number systems,'."\n".
+                        'such as the surreal number system and the hyperreal number system,'."\n".
+                        'which can be thought of as the real numbers augmented with both infinitesimal and infinite quantities;'."\n".
+                        'the augmentations are the reciprocals of one another.'."\n".
+                        ''),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Infinitesimal:2025}.}')),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Infinitesimale existieren nicht im Standard-Reellzahlsystem, aber sie existieren in anderen Zahlensystemen,'."\n".
+                        'wie dem Surrealen Zahlensystem und dem Hyperreellen Zahlensystem, die man sich als die reellen Zahlen vorstellen kann,'."\n".
+                        'die sowohl um infinitesimale als auch um unendliche Größen erweitert sind; die Erweiterungen sind die Kehrwerte voneinander.'."\n".
+                        ''),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Infinitesimal:2025}.} \small{\italic{Übersetzt ins Deutsche mit \jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}')),
+
+                  array( 'text', array( text => array(
+                    'Da diese Information allerdings nicht überall zu finden ist, gehen wir auf Nummer sicher.'."\n",
+                      'Wie können wir denn dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
+                    'was sie schon erfüllen, wie oben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
                     'Dazu können wir die neue \jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{Unendlichkeits-Gaußklammer}'."\n".
                     'benutzen, die alle aktual unendlich kleinen Summanden aus einer Zahl entfernt.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Es existiere also die Menge'."\n".
-                      '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  {\left\lfloor a \right\rfloor}_{\infty} \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  {\left\lfloor a \right\rfloor}_{\infty} \in \mathbb{A}_{\S} *)  }',
+                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in {\left\lfloor \mathbb{R}\right\rfloor}_{\infty} \!:  \, a \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  a \in \mathbb{A}_{\S} *)  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                      'der sinnvollen Koeffizienten der Superial-Zahlen, in der die Koeffizienten der Superial-Zahlen auf eine Exponentenschicht begrenzt sind:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sie verhalten sich Exponentenschicht neutral und ergeben im aktual unendlich Großen ganze Zahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -126,11 +150,11 @@
                   array( 'text', array( text => array(
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
                     'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
-                    'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
-                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{etwas detailliertere \lm{ \e }-Funktion} und damit eine'."\n".
+                    'und nicht wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
+                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{etwas detailliertere \lm{ \e }-Funktion} als klassisch üblich und damit eine'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e_{\s} }}, die mehr Details ihrer Struktur offenbart,'."\n".
                     'als die Zahl \lm{ \e }, die wir über den Limes erhalten.'."\n",
-                      'Die uns bekannte Zahl \lm{ \e }, definiert durch ihre Taylorreihe\color{*Bearb}{(Verweis)},'."\n".
+                      'Die uns bekannte Zahl \lm{ \e }, definiert durch ihre Taylorreihe\footnote{\const{SupNum_g_footnote_text_Taylorreihe}},'."\n".
                     'ist von der Zahl \lm{ \e_{\s} } nämlich nur der Summand endlicher Größe.'."\n".
                     '\lm{ \e_{\s} } enthält aber noch aktual unendlich viele, aktual unendlich kleine Summanden herunter bis zur Potenz \lm{ \s^{-\s} }.'."\n".
                     'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und so möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
@@ -138,11 +162,9 @@
                     'macht die \lm{ \e }-Funktion nur mit der Basis \lm{ \e_{\s} } Sinn.'."\n".
                     '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahl der hier definierten 1. Ordnung, weil sie'."\n".
                     'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endliche Potenzen von \lm{ \s } erlauben.'."\n",
-                      'Damit würde ich \lm{ \e_{\s} } eigentlich nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zählen.'."\n".
-                    'In meinen Augen sind hier also noch Einigungen nötig, welche Zahlen wir sinnvollerweise zu \lm{ \mathbb{R} } hinzurechnen.'."\n".
-                    'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als \italic{die} eulersche Zahl anzusehen oder ob'."\n".
-                    'wir nur \lm{ \e_{\s} } als eulersche Zahl erkennen sollten und \lm{ \e } als ihren algebraischen Anteil.'."\n".
-                    'Oder legen wir vielleicht sogar fest, dass \lm{ \e := \e_{\s} } gilt und wir ihren algebraischen Anteil als \lm{ \e_{a} } bezeichnen?'."\n".
+                      'Damit ist \lm{ \e_{\s} } nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zu zählen.'."\n".
+                    'Im Rahmen der reellen Zahlen ist \lm{ \e } als \italic{die} eulersche Zahl anzusehen.'."\n".
+                    'Im Rahmen der Superial-Zahlen ist \italic{die} eulersche Zahl \lm{ \e_{\s} } und \lm{ \e } nur ihr reell algebraischer Anteil.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
@@ -161,15 +183,23 @@
                     '\lm{ q^{+} } ist also eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{aktual unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }};'."\n".
                     'und dann auch eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
                     'wie oben bereits gesagt:'."\n".
-                    '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Bleibt die Frage …'."\n".
+                    'Da rationale Zahlen nicht unendlich groß sind und auch keine unendlich kleinen Summanden enthalten, entspricht dies der Aussage,'."\n".
+                    'dass sie sich neutral bezüglich der Exponentenschicht der Superial-Zahlen verhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n",
+                      'Bleibt die Frage …'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
                       
@@ -179,17 +209,24 @@
                     '\lm{ \mathbb{A}_{\R} ?\subseteq \mathbb{A}_{\S} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen darstellen.'."\n".
+                    'Die algebraischen Zahlen \lm{ \mathbb{A} } (auch \lm{ \overline{\mathbb{Q}} } für algebraischer Abschluss von \lm{ \mathbb{Q} } genannt) sind ja dadurch definiert, dass sie die Menge aller Lösungen der Nullstellen von Polynomen darstellen.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
-                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen genannt werden.'."\n",
-                      'Ich vermute, diese reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }'."\n".
+                    'die reelwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen \lm{ \mathbb{A}_{\R} } genannt werden.'."\n",
+                      'Ich vermute, diese reell algebraischen Zahlen'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
-                    '\\\\ \color{*Bearb}{(Diese Formel muss noch einmal genauer gefasst werden, weil nicht festgelegt ist, dass es auf die Schicht \lm{ \mathbb{S}_{\N,\{ 1 \}} } begrenzt ist.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da reell algebraische Zahlen nicht unendlich groß sind und ich nach unserem Beweis der Überrationalitätsvermutung sowie der nachfolgend gezeigten Radikal-Abgeschlossenheit davon ausgehe,'."\n".
+                    'dass sie auch keine unendlich kleinen Summanden enthalten, entspricht dies der Aussage, dass sie sich neutral bezüglich'."\n".
+                    'der Exponentenschicht der Superial-Zahlen verhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  *]  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
@@ -198,26 +235,18 @@
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht.'."\n",
+                    'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht und bewiesen.'."\n",
                       'Wie gesagt, algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
                     'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
                     'deren Koeffizienten rationale – also gebrochene –'."\n".
                     'Potenzen von natürlichen Zahlen sein können, viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
-                    'deren Kehrwerte, oder deren arithmetischen Kombinationen, also inklusive deren ganzen Potenzen.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n",
-                      'Polynome fünften Grades können auch Nullstellen haben, die durch Integrale von Termen der vorstehenden Art ausgedrückt werden.'."\n".
+                    'deren Kehrwerte, oder deren arithmetischen Kombinationen, also inklusive deren ganzen Potenzen; auch Radikalformen genannt.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n",
+                      'Polynome fünften Grades können neben Radikalformen auch Nullstellen haben, die durch Integrale von Radikalformen ausgedrückt werden.'."\n".
                     'Leider konnte ich zu den Nullstellen von Polynomen sechsten und höheren Grades bisher nichts konkretes finden.'."\n",
-                      'Sollte meine Vermutung stimmen, dann wäre schon etwas sehr besonderes.'."\n",
-                      'Hier ist zu bemerken, dass algebraische Zahlen allesamt Lösungen aller möglichen Nullstellen von Polynomen sind und damit'."\n".
-                    'grundsätzlich komplexe Zahlen,'."\n".
-                    'also Zahlen auf der Gaußschen Zahlenebene und damit einen imaginären Anteil haben können.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
-                      'Die Koeffizienten der algebraischen Zahlen müssten demnach also Anteile des Primzahl-Flächenprodukts von \lm{ \s } sein.'."\n".
-                    'Oder sie müssen multipliziert mit Anteilen des Primzahl-Flächenprodukts von \lm{ \s } ganze Zahlen ergeben.'."\n".
-                    'Beides ist allerdings nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
-                    'Hier beginnt nun die Crux und hier wird es nachfolgend sehr spannend und erkenntnisreich.'."\n",
+                      'Sollte meine Vermutung stimmen, dann wäre diese schon etwas sehr besonderes.'."\n",
                       'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
                     'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
-                    'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n".
+                    'dass es tatsächlich passen könnte, dass die reell algebraischen Zahlen die Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
                       

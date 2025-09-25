@@ -504,7 +504,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.}'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\const{SupNum_g_footnote_text_Taylorreihe}}'."\n".
                     'zur Eulerschen Zahl \lm{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
