@@ -55,7 +55,7 @@
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
                       
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
                   '')),
@@ -107,7 +107,7 @@
                     'ist das Verständnis der ganzen Superial-Zahlen tief mit ihren sinnvollen Koeffizienten verbunden.'."\n".
                     'Weil dort im Detail erklärt, betrachten wir hier diesen Zusammenhang nicht ganz so tief.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
                       
                 'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }', subline =>
                   '')),
@@ -199,7 +199,7 @@
                       'Für \lm{ 0 < d }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
                     'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ a_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
                       
                 'Beispiele für natürliche Superial-Zahl', subline =>
                   '')),
@@ -325,7 +325,7 @@
                     'Nachfolgend wichtige Definitionen zur Schaffung von Werkzeugen, die es ermöglichen, die Superial-Zahlen, ihre Untermengen und'."\n".
                     'Summen einfach zu definieren, darzustellen und mit ihnen praktisch umgehen zu können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
 
                 '\italic{Inhalt}', subline =>
                   '')),
@@ -339,7 +339,7 @@
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                     )),
 
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
 
                 'Zahlen und Mengen im Unendlichen', subline =>
                   'Der Übergang von Mengen und Werten endlicher natürlicher Zahlen ins Aktual-Unendliche')),
@@ -349,8 +349,10 @@
                     'um plausibel zu sein und in Bezug auf die Superial-Zahlen Sinn zu ergeben.'."\n",
                       'Das bedeutet nicht, dass es prinzipiell nicht auch weitere Möglichkeiten mit ihren Perspektiven und deren jeweiligen Vor- und Nachteilen gibt.'."\n".
                     'Mir erscheint die nachfolgende Perspektive natürlich am besten zum Erkenntnisgewinn geeignet und in diesem Sinne als am besten zu den Superial-Zahlen passend.'."\n"))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Die Teilmengen vom Beginn der natürlichen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Teilmengen vom Beginn der natürlichen Zahlen} \\\\'."\n".
                     'Betrachten wird die Teilmengen \lm{ \mathbb{T}_{n} }, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \lm{ n }.'."\n",
                       'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n".
                     ''))),
@@ -383,8 +385,10 @@
                       'wenn wir uns mit dem Übergang uns Unendliche beschäftigen.'."\n".
                       ''))),
                       
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Das größte Element dieser Mengen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Das größte Element dieser Mengen} \\\\'."\n".
                     'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Menge \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
                     'Wenn das Symbol \lm{ \# } die Anzahl der Elemente einer Menge gibt, dann gilt:'."\n".
                     ''))),
@@ -400,8 +404,10 @@
                     'Die Aussage \lm{ \mathrm{groesstes}(\mathbb{T}_{n}) = n - 1 } gilt offenbar nur im Endlichen und ergibt im Aktual-Unendlichen keinen Sinn mehr.'."\n",
                       'Wir gehen nun ins Unendliche über und schauen uns das mal näher an.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Übergang ins Aktual-Unendliche', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Übergang ins Aktual-Unendliche} \\\\'."\n".
                     'Anders als im Endlichen bei der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
                     'die unendlich viele Elemente endlicher Größe enthält.'."\n".
                     'Auch sie beginnt mit der Null und den weiteren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
@@ -460,7 +466,7 @@
                     ''))),
 
                   // #Ref: *SupNum:Stellenwertsystem-Schreibweise
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
                       
                 'Stellenwertsystem', subline =>
                   '')),
@@ -473,8 +479,10 @@
                       '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
                       'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Ein besonderes Zahlensystem und seine Kurznotation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Ein besonderes Zahlensystem und seine Kurznotation} \\\\'."\n".
                     'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Stellenwertsystem auf Basis der superialen Basis \lm{ \s }.'."\n",
                       'Nachfolgend wird das Symbol \lm{ \concat } für die Aneinanderreihung, die Konkatenation,'."\n".
                       'der „Ziffer“ nach der Definition \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} der Superial-Zahlen verwendet:'."\n".
@@ -499,8 +507,10 @@
                     'Am Ende der Rechnung wird angestrebt, dass die Terme rein endliche Ausdrücke ergeben,'."\n".
                     'die nicht mehr zu Überträgen in andere Stellen führen, wenn dies geht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Beispiele für unsere Kurznotation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Beispiele für unsere Kurznotation} \\\\'."\n".
                     'Nun ein paar Beispiele in der neuen Notation:'."\n".
                     ''))),
                   array( 'equations',
@@ -515,9 +525,10 @@
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
                     'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen', text =>
+                  'Berechnung der einzelnen Stellen im superialen Stellenwertsystem', subline =>
+                    'Die neue Unendlichkeits-Gaußklammer')),
                   array( 'text', array( text => array(
-                  '\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{}\condb{Berechnung der einzelnen Stellen im superialen Stellenwertsystem} \\\\'."\n".
-                  '\cond{Die neue Unendlichkeits-Gaußklammer} \\\\'."\n".
                     'Die Aufgabe, aus einer beliebigen Superial-Zahl eine „Ziffer“, oder besser eine Stelle, herauszufiltern,'."\n".
                     'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operator dafür auskommt.'."\n".
                     ''))),
@@ -591,7 +602,7 @@
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
                     ''))),
 
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
                       
                 'Intervall-Menge', subline =>
                   '')),
@@ -648,9 +659,10 @@
                   array( 'text', array( text => array(
                     'Etwas anders sieht dies für Summendefinitionen über Intervall-Mengen aus.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen', text =>
+                  'Summendefinition über Intervall-Mengen', subline =>
+                    'Integrale als Summen')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{}Summendefinition über Intervall-Mengen} \\\\'."\n".
-                  '\cond{Integrale als Summen} \\\\'."\n".
                     'Denn, wenn der größere Wert zuerst kommt, dann summieren wir quasi Rückwärts – auch, wenn Mengen keine Ordnung haben –'."\n".
                     'und es negiert sich das Ergebnis.'."\n".
                     'Dies ist dann im Besonderen für die \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Definitionen von Integralen} von Bedeutung.'."\n".
@@ -684,7 +696,7 @@
                     'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
                     ''))),
 
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       
                 'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
                   '')),
@@ -711,7 +723,7 @@
                     'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
                     ''))),
 
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen', text =>
                       
                 'Eingrenzung der Schichten der Superial-Zahlen', subline =>
                   '')),
@@ -737,7 +749,7 @@
                     'Die Koeffizienten aller anderen Schichten sind Null.'."\n".
                     ''))),
 
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
                       
                 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
                   '')),
