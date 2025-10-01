@@ -1,6 +1,6 @@
 <?php
   $SupNum_g_text_ZFCkonform =
-                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
+                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
 
   
   $SupNum_g_paragraphList_Glossar =
@@ -242,13 +242,8 @@
                    
           'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen' => array( headline_text => 'Ableitung genau verstehen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen' => array( headline_text => 'Integral genau verstehen'/*, headline_text_short => 'X'*/),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Menge-natuerliche-Vorgaenger-xs' => array( headline_text => 'SN.Ein.3'),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Menge-natuerliche-Vorgaenger-xs-Elemente' => array( headline_text => 'SN.Ein.4'),
           'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Ein.3'),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.Ein.6'),
           'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral' => array( headline_text => 'Konkretes Integral'/*, headline_text_short => 'X'*/),
-          //%! 'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.Ein.8'),
-          //%! 'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.Ein.10'),
 
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
