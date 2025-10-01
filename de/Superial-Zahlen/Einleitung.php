@@ -86,7 +86,7 @@
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Motivation', subline =>
                   '')),
@@ -111,7 +111,7 @@
                     'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, indem man sie als Null definiert.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Formale Einschränkung', subline =>
                   '')),
@@ -126,7 +126,7 @@
                     'ist jedoch noch zu beweisen.'."\n",
                       '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
                 'Ableitung genau verstehen', subline =>
                   '')),
@@ -200,7 +200,7 @@
                   array( 'text', array( text => array(
                     'So können wir sehr genau verfolgen, was vor sich geht, und nichts verschwindet.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen', text =>
                                            
                 'Integration genau verstehen', subline =>
                   '')),
@@ -434,7 +434,7 @@
                     'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
                     'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \lm{ \s }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Kleiner Ausblick zwischendurch')),
                   array( 'text', array( text => array(
@@ -511,7 +511,7 @@
                       'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
                     'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ein Stellenwertsystem', subline =>
                   'Eine fraktale Struktur')),
@@ -565,7 +565,7 @@
                     'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
                     'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s', text =>
                                            
                 'Mit Primzahlen ins Unendliche', subline =>
                   'Was ist unsere neue superiale Basis \lm{ \s }?')),
@@ -789,7 +789,7 @@
                     'Denn so würde auch eine bessere Differenzierung zwischen den irrationalen und den transzendenten Zahlen ermöglicht.'."\n".
                     '\\\\ \color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die Erweiterung der Arithmetik ins Unendliche', subline =>
                   '')),
@@ -846,7 +846,7 @@
                       'Dort wo drei vertikale Punkte ›⋮‹ stehen, werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Weitreichender Erkenntnisgewinn')),
                   array( 'text', array( text => array(
@@ -898,7 +898,7 @@
                       array(  jump_name => 'OM:SupNum:Einleitung', type => 'back'),
                     )),
                   
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration', text =>
                 'Definition ganzer und natürlicher Superial-Zahlen und die Integration', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -957,7 +957,7 @@
                     ))),
                   array( 'text', array( text => array(
                     '\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Grundlagen:X', text =>
                 'Superiale Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -1134,7 +1134,7 @@
                       array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen', type => 'back'),
                     )),
                   
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung', text =>
                                            
                 'Überrationalitätsvermutung')),
                   /*array( 'text', array( text => array(
@@ -1163,7 +1163,7 @@
                   array( 'text', array( text => array(
                     'Mehr dazu auf der Seite \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Primzahlprodukt-Vermutung')),
                       
@@ -1205,7 +1205,7 @@
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \lm{ \mathbb{N} } und \lm{ ω } zu tun haben.'."\n".
                     'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Genauere Differenzierung der Zahlenarten', subline =>
                   'Rationale, irrationale, algebraische und transzendente Zahlen')),
@@ -1238,7 +1238,7 @@
                     'dann nicht zu den reellen Zahlen?'."\n",
                       'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Einsichten und Fragen zur Kontinuumshypothese', subline =>
                   '')),
