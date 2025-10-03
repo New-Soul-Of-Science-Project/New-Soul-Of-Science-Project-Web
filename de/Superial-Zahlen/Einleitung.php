@@ -746,7 +746,7 @@
                       'Es ist mir mittlerweile gelungen, dies auf dieser Webseite zu beweisen (Pair-Review muss noch erfolgen) und so gilt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }'),
@@ -772,22 +772,75 @@
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Der Beweis der Überrationalitätsvermutung', subline =>
-                  '')),
+                  'Welcher uns zur Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
-                    'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden kann.'."\n",
-                      'Ein überrationaler Bruch ist ein Bruch, der im Nenner und im Zähler unendlich große, teilerfremde Zahlen hat,'."\n".
-                    'deren Primfaktorzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".
-                    'Dann wäre ein Produkt eines überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n",
-                      'Zu den algebraischen Zahlen gehören auch ganzzahlige Wurzeln natürlicher Zahlen, wie \lm{ \sqrt{2} },'."\n".
-                    'womit dann beispielsweise \lm{ \sqrt{2} \cdot \s } ganzzahlig wäre.'."\n",
-                      'Sollte die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} sich als wahr'."\n".
-                    'erweisen, dann wäre dies ebenfalls eine sehr bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
-                    'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur Zahlentheorie wäre.'."\n".
-                    'Denn so würde auch eine bessere Differenzierung zwischen den irrationalen und den transzendenten Zahlen ermöglicht.'."\n".
-                    '\\\\ \color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)}'."\n".
+                    'dreht sich um die Frage, ob irrationale Wurzeln'."\n".
+                    'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden können.'."\n",
+                      'Unser Beweis der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
+                    'Ein überrationaler Bruch ist demnach ein Bruch, der im Nenner und im Zähler unendlich große ganze Zahlen hat,'."\n".
+                    'deren Primfaktorzerlegung aus unendlich hohen Potenzen endlich vieler Primzahlen besteht:'."\n".
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diesen Bruch können wir von der Basis her reduzieren, wenn \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz darstellt:'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da die beiden folgenden Ausdrücke aktual unendliche ganze Zahlen darstellen'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => false),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist auch ihr Produkt eine aktual unendlich große ganze Zahl und fällt somit in die natürlichen Superial-Zahlen'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wie wir sehen.'."\n",
+                      'So ist ein Produkt jedes überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n".
+                    'Also gehören auch die irrationalen Wurzeln zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
+                    'Also auch die Wurzel aus Zwei \lm{ \sqrt{2} },'."\n".
+                    'mit \lm{ \sqrt{2} \cdot \s \in \mathbb{S}_{\N} }.'."\n",
+                      'Dies ist eine bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
+                    'die uns schon so, aber ganz besonders im weiteren Verlauf, neue Informationen über Wurzeln (Radikale) und schließlich über Wurzelausdrücke (Radikalformen) liefert.'."\n".
+                    'Schließlich können wir die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
+                    'der sinnvollen Koeffizienten der Superial-Zahlen zeigen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Der Beweis der Algebraischen-Koeffizienten-Vermutung', subline =>
+                  'Welcher uns zur Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  array( 'text', array( text => array(
+                    'Im Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} stellen sich alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'als sinnvolle Koeffizienten der Superial-Zahlen heraus.'."\n".
+                    'Damit zeigen wir sogar ihre \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Der Beweis der Superialen-Transzendenz-Vermutung', subline =>
+                  'Welcher uns zur ausschließlichen Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  array( 'text', array( text => array(
+                    'Und im Beweis der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung} zeigen wir noch,'."\n".
+                    'dass nur die reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Was bedeutet, dass transzendente Zahlen keine sinnvollen Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Transzendente Zahlen tragen nämlich im Rahmen der Superial-Zahlen superial kleine Summanden.'."\n".
+                    'Womit wir erkennen können, dass Superial-Zahlen im Grunde reelle Zahlen sind, die echte infinite, also aktual unendliche Anteile besitzen.'."\n".
+                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht im Grunde dem Übergang'."\n".
+                    'von den reell algebraischen Zahlen zu den transzendenten Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
