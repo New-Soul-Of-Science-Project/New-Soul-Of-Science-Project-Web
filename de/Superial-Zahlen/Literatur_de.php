@@ -61,6 +61,7 @@
               'wiki:MaechtigkeitMathematik:2023',
               'wiki:NormalitaetKommutativeAlgebra:2022',
               'wiki:Ordinalzahl:2021',
+              'wiki:Orthogonalitaet:2025',
               'wiki:PAdischeZahl:2024',
               'wiki:ParitaetMathematik:2021',
               'wiki:PeanoAxiome:2021',

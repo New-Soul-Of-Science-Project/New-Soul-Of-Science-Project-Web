@@ -59,7 +59,7 @@
                     'deren Anzahl dann aktual unendlich groß sind und sich so wieder zu endliche Zahlen aufsummieren.'."\n",
                       'Nutzen wir auch die Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Summen ausrechnen,'."\n".
                     'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
-                    'Die Summe aller endlichen ganzen Zahlen oder die Summe der Realanteile aller algebraischen Zahlen beispielsweise.'."\n",
+                    'Die Summe aller endlichen ganzen Zahlen oder die Summe aller reell algebraischen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
                     'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ \s }'."\n".
                     'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
@@ -71,8 +71,8 @@
                       'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
                     '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'zur Basis \lm{ \s },'."\n".
-                    'wo die Ziffern alle positiven wie auch negativen Realanteile der algebraischen Zahlen sein können.'."\n",
-                      'Wir erschaffen so eine Zahlentheorie der Analysis, die auf Primzahlen basiert, die im unendlich großen Produkt'."\n".
+                    'wo die Ziffern alle positiven wie auch negativen reell algebraischen Zahlen sein können.'."\n",
+                      'Wir erschaffen so eine Zahlentheorie der Analysis, die auf den uns bekannten endlichen Primzahlen basiert, die im unendlich großen Produkt'."\n".
                     'aller endlichen Primzahlen zur \lm{ ω }-ten Potenz ihre Grundlage findet, der \italic{superialen Basis} \lm{ \s }.'."\n".
                     'Dabei finden wir heraus, dass \lm{ ω } selbst – die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –'."\n".
                     'ein Primzahlprodukt ist.'."\n",
@@ -90,18 +90,12 @@
                                            
                 'Motivation', subline =>
                   '')),
-
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Einpflegen}',
-                    '• … intuitive Grundlage … – der Limes ist vom Umgang her weniger intuitiv',
-                    '– Auch ins Vorwort einbringen.',
-                    ))),
-                      
                   array( 'text', array( text => array(
                     'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
                     'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau vor sich geht.'."\n".
-                    'Ich spielte viel mit dem Ansatz der Ableitung herum, was schließlich dazu führte, dass ich begriff, dass der dort verwendete Limes nicht nur dazu führt,'."\n".
+                    'Auch deshalb, weil ich den Limes weniger intuitiv fand und einen einsichtigeren Ansatz suchte.'."\n",
+                      'Ich spielte viel mit dem Ansatz der Ableitung herum, was schließlich dazu führte, dass ich begriff, dass der dort verwendete Limes nicht nur dazu führt,'."\n".
                     'dass ein bestimmtes Glied der sich ergebenen Summe dominant in den Vordergrund tritt und das Ergebnis bestimmt.'."\n".
                     'Mir wurde auch klar, dass all die anderen Summanden, die unendlich klein und damit scheinbar unbedeutend wurden, eine Welt darstellten, die so quasi im Nirvana versank.'."\n",
                       'Genau diese „versunkene“ Welt weckte mein Interesse.'."\n".
@@ -111,20 +105,30 @@
                     'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, indem man sie als Null definiert.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Formale Einschränkung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Um nachfolgend genau zu arbeiten, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
+                    'Um gleich möglichst genau zu arbeiten und dem Leser zu ermöglichen, die Bedeutung dieser Arbeit einzuschätzen, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
                     'dass im folgenden die Funktionsparameter – meistens \lm{ x } –'."\n".
                     'die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
-                    'der Menge \lm{ \mathbb{A}_{\S} } sind.'."\n".
-                    'Nach jetzigem Stand sind dies mindestens alle realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
-                    'die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbar sind.'."\n".
-                    'Dass genau alle reell algebraischen Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermuten wir},'."\n".
-                    'ist jedoch noch zu beweisen.'."\n",
+                    'der Menge \lm{ \mathbb{A}_{\S} } sind.'."\n",
+                      'Nach unserem Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} und der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung}'."\n".
+                    'sind genau alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'die sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
                       '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
+                    ''))), */
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Formale Anmerkung zu den reellen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Um die reellen Zahlen im Rahmen der Superial-Zahlen einordnen zu können, ist folgendes für ihre beiden Teilmengen, die reell algebraischen Zahlen und die transzendenten Zahlen, zu berücksichtigen:'."\n",
+                      'Im Rahmen der Superial-Zahlen teilen sich die reellen Zahlen auf, sodass die reell algebraischen Zahlen ihre Koeffizienten sind,'."\n".
+                    'wohingegen sich die transzendenten Zahlen so auf mehrere Potenzen der superialen Basis \lm{ \s } verteilen, dass die endliche Potenz'."\n".
+                    '\lm{ a_{0} \cdot \s^{0} } einen von Null verschiedenen Koeffizienten \lm{ a_{0} } und noch mindestens eine negative Potenz von \lm{ \s },'."\n".
+                    'mit \lm{ a_{z^{-}} \cdot \s^{z^{-}} }, ebenfalls einen von Null verschiedenen Koeffizienten \lm{ a_{z^{-}} } besitz.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
@@ -155,8 +159,10 @@
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
                     'Die Dimension \lm{ a_{0} \s^{0} = a_{0} } stellt dann die uns bekannten, endlichen Zahlen dar, weil \lm{ \s^{0} = 1 } ist, wie gewohnt.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Konkrete Ableitungen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Konkrete Ableitungen} \\\\'."\n".
                     'Nun zwei Beispiele, um anschaulich zu verstehen, was vor sich geht:'."\n".
                     ''))),
 
@@ -208,8 +214,10 @@
                     'Beim \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integral} müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
                     'lernen viel Interessantes dabei, wenn wir herausfinden, wie das geht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Ganze Superial-Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Ganze Superial-Zahlen} \\\\'."\n".
                     'Interessanter wird es noch, wenn wir uns nun mit der Umkehrung der Ableitung aus der neuen Perspektive beschäftigen,'."\n".
                     'mit der Integration:'."\n",
                       'Beim Flächenintegral, von dem wir hier sprechen, handelt es sich um eine Summe'."\n".
@@ -326,8 +334,10 @@
                       'Hierzu benötigen wir ganze Superial-Zahlen, skaliert ins superial kleine.'."\n".
                     'Diese werden wir im folgenden Beispiel besser praktisch kennenlernen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral', text =>
+                  'Konkretes Integral', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{}Konkretes Integral} \\\\'."\n".
                     'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht.'."\n".
                     'Dieses finden wir in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}'."\n".
                     'auch im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}‹}.'."\n".
@@ -466,7 +476,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1}  }',
+                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
@@ -491,20 +501,20 @@
                     ))),
                   array( 'text', array( text => array(
                     'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Anzahlen.'."\n",
-                      'Ebenso für die Summe aller endlichen realen Koeffizienten der Superial-Zahlen von Null bis ausschließlich – oder einschließlich – \lm{ x } können wir ein'."\n".
-                    'Ergebnis finden:'."\n".
+                      'Ebenso für die Summe aller reell algebraischen Koeffizienten \lm{ \mathbb{A}_{\S} } der Superial-Zahlen von Null bis ausschließlich – oder einschließlich –'."\n".
+                    '\lm{ x } können wir ein Ergebnis finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } - \frac{ x }{ 2 } + x  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } + \frac{ x }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 } + x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } + \frac{ x }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n",
                       'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
-                    'Auch die Anzahl aller endlichen rationalen Zahlen insgesamt und in einem Intervall konnte nach meinem Wissen zuvor'."\n".
+                    'Auch die Anzahl aller reell algebraischen Zahlen, insgesamt und in einem Intervall, konnte nach meinem Wissen zuvor'."\n".
                     'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
                     'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -ω } entspricht,'."\n".
                     'war mir nicht bekannt.'."\n",
@@ -558,7 +568,7 @@
                       'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen rationalen Zahlen'."\n".
                     'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
                     'den endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen hat.'."\n".
-                    'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\color{*Bearb}{(Verweis)},'."\n".
+                    'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Orthogonalitaet:2025}.},'."\n".
                     'die senkrecht zueinander stehen, sondern auch unendlich kleine, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
                     'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
                     'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
@@ -620,7 +630,6 @@
                   'Rationale Zahlen und ihre Primfaktorzerlegung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Auch \lm{ p }-adische Bewertungen, wie \lm{ 2^{ω + q}} berücksichtigen?)} \\\\'."\n".
                     'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung hat,'."\n".
                     'so hat im Grunde auch jede rationale Zahl größer Null und ungleich Eins eine'."\n".
                     'Primfaktorzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
