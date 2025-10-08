@@ -23,6 +23,7 @@
               'Plichta:GottesGeheimeFormel:1995',
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
+              'wiki:AlgebraicNumber:2025',
               'wiki:AlgebraischerZahlkoerper:2020',
               'wiki:AlgebraischeKurve:2023',
               'wiki:AlgebraischeZahl:2022',
