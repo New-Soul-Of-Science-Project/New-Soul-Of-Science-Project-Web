@@ -983,7 +983,8 @@
                     '')),
                   array( 'text', array( text => array(
                     'Die vorstehenden Fragen und weitere Einsichten, die sich durch die Superial-Zahlen ergeben,'."\n".
-                    'führen uns zu einer neuen \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n".
+                    'führen uns zu einer neuen \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n",
+                      'Dieser Frage nähern wir uns jetzt sehr philosophisch und dann konzeptionell recht pragmatisch auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.'."\n".
                     ''))),
                     
                   array( 'jumplist',
