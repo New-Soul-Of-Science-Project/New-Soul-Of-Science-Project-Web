@@ -258,12 +258,7 @@
 
           'OM:SupNum:Einleitung:Vortext:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', headline_text_short => 'Die Veränderung der Primfaktorzerlegung von s durch rationale Koeffizienten'),
 
-        'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration' => array( headline_text => 'Definition ganzer und natürlicher Superial-Zahlen und die Integration'/*, headline_text_short => 'X'*/),
-
-        'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
-          'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
+        // 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Eulersche-Zahl-e-Funktion' => array(
@@ -383,6 +378,8 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.Prim.4'),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis' => array( headline_text => 'Weitere Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+
+        'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises' => array( headline_text => 'Gedanken zu Konsequenzen des Beweises'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
       ),

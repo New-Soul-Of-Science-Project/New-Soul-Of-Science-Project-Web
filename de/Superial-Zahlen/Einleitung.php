@@ -13,6 +13,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Einpflegen}',
+                    '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
                     '\bold{Der Ansatz mit aktual unendlichen Zahlen ist nicht neu}',
                     '• Sondern er ist historisch offenbar sogar älter, als der mit dem Limes-Grenzwert, siehe \url{https://de.wikipedia.org/w/index.php?title=Hyperreelle_Zahl&oldid=237554998} und \url{https://de.wikipedia.org/wiki/Differentialrechnung#Geschichte}.',
                     '• Dieser Ansatz machte Probleme, weil er in sich logisch inkonsistent und nicht klar definiert war.',
@@ -36,11 +38,6 @@
                     '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
                     '\bold{Forschungsideen}',
                     '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\footnote{Vgl. \cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
-                    '\bold{Korrekturen}',
-                    '• (gerade weitreichend auf dem Weg) Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
-                    '• Die Kapitel der Seiten erneut durcharbeiten.',
-                    '\bold{Einpflegen}',
-                    '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -981,10 +978,17 @@
                     'Denn so ergeben sich unter anderem neue Möglichkeiten die Verteilung der Primzahlen unter den großen endlichen natürlichen Zahlen besser zu verstehen.'."\n".
                     'Auch die Primfaktorzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Die Frage der Kontinuumshypothese', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die vorstehenden Fragen und weitere Einsichten, die sich durch die Superial-Zahlen ergeben,'."\n".
+                    'führen uns zu einer neuen \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n".
+                    ''))),
                     
                   array( 'jumplist',
                     array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie'),
                     )),
                 )
           ); ?>
@@ -992,369 +996,28 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Grundlagen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Einleitung:Grundlagen',
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Einleitung:X',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Einleitung', type => 'back'),
                     )),
                   
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration', text =>
-                'Definition ganzer und natürlicher Superial-Zahlen und die Integration', subline =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:X:X', text =>
+                                           
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dadurch, dass \lm{ \s } die \lm{ ω }-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
-                    'bezüglich ihrer Multiplikation mit rationalen Zahlen, Brüchen aus ganzen Zahlen.'."\n"))),
-                  array( 'text', array( text => array(
-                  '\condb{Die Größenordnung von rationalen Zahlen ist die gleiche, wie die der reellen Zahlen} \\\\'."\n".
-                    'Um uns einer sinnvollen Definition von ganzen und natürlichen Superial-Zahlen zu nähern stellen wir fest, dass reelle Zahlen'."\n".
-                    'nicht grundsätzlich größer sind als rationale, aber nach den Formeln \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s} und \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n} alle kleiner als \lm{ \s }:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  (\forall q \in \mathbb{Q}) (\exists  r \in \mathbb{R}) *[  r < q < s  *]  }'),
-                      array( display => 'on',  latex => '{  (\forall r \in \mathbb{R}) (\exists  q \in \mathbb{Q}) *[  q < r < s  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Daraus folgt:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  (\forall r \in \mathbb{R}^{+}) *[  0 < s^{-1} <  r  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) *[  0 < s^{-1} <  q  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Nachfolgend betrachten wir nur noch rationale Zahlen, weil wir uns hier näher mit diesen beschäftigen wollen.'."\n".
-                    'Allerdings gilt dies auch alles für reelle Zahlen.'."\n",
-                      'Multiplizieren wir die ganze jeweilige rationale Ungleichung mit einer beliebigen positiven rationalen Zahl, dann ergibt sich:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) *[  0 < k \cdot s^{-1} <  k \cdot q  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Weil der letzte Term durch das frei wählbare \lm{ q } alle möglichen positiven Werte annehmen kann, ist dies auch äquivalent mit:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) *[  0 < k \cdot s^{-1} <  q  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wir können hieran erkennen, dass keine rationale Zahl \lm{ k } existiert, die im Produkt mit \lm{ \s^{-1} } ins Endliche kommen kann.'."\n"))),
-                  array( 'text', array( text => array(
-                  '\condb{Natürliche Superial-Zahlen} \\\\'."\n".
-                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \lm{ \mathbb{S}_{N} } gibt.'."\n",
-                      'Das ist im Grunde ziemlich leicht zu beantworten, denn natürliche Zahlen sind generell alle positiven ganzen Superial-Zahlen,'."\n".
-                    'hier per obiger Definition einschließlich der Null.'."\n".
-                    'Um dies zu beurteilen müssen wir sagen können, welche ganzen Superial-Zahlen größer als Null sind.'."\n",
-                      'Bei den Superial-Zahlen handelt es sich um eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}:'."\n".
-                    'Die Ordnung der ungleichen Faktoren der größten Potenz bestimmt die Ordnung zweier Superial-Zahlen,'."\n".
-                    'ähnlich wie die Wörter in einem Lexikon geordnet werden.'."\n",
-                      'Positiv ist eine ganze Superial-Zahl also, wenn der Faktor seiner größten Potenz größer als Null ist.'."\n".
-                    'Alle kleineren Potenzen können auch negativ sein, weil die größte Potenz dominant ist,'."\n".
-                    'wie in einigen der Beispiele:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *) *[  0  \leq  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\N}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  〈5〉․  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 - \frac{3}{2} *〉〈-5〉․  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈5〉  \notin  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Grundlagen:X', text =>
-                'Superiale Primzahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Um herauszufinden, ob es superiale Primzahlen geben kann und wie diese sinnvollerweise definiert werden können und aussehen,'."\n".
-                    'möchte ich mit der Definition von Primzahlen im Endlichen beginnen, damit wir die Eigenschaften dann ins Unendliche erweitern.'."\n"))),
-                  array( 'text', array( text => array(
-                  '\condb{Primzahlen im Endlichen} \\\\'."\n".
-                    'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
-                      
-                  array( 'text', array( Shape  => 'quote', text => array(
-                        'Die Primzahlen sind innerhalb der Menge \lm{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
-                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Primzahl:2021}, Eigenschaften von Primzahlen.}')),
-                      
-                  array( 'text', array( text => array(
-                    'Nach dieser Definition ist die Eins keine Primzahl.'."\n",
-                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Bilde die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \lm{ p\# }',
-                        'Addiere Eins dazu oder ziehe Eins ab: \lm{ p\# \pm 1 }',
-                        '\lm{ p\# \pm 1 } ist nicht durch eine der Primzahlen in \lm{ p\# } ganzzahlig teilbar.',
-                        '\lm{ p\# \pm 1 } kann daher entweder nur selber eine Primzahl sein, die dann größer als \lm{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \lm{ p\# } enthalten sind und damit größer als \lm{ p } sein müssen. ',
-                        'Alle Primzahlen, durch die \lm{ p\# \pm 1 } teilbar ist, sind damit größer als \lm{ p }.',
-                        'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \lm{ p }, womit die Menge der endlichen Primzahlen nicht endet.',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
-                    'Der vorstehend geführte Beweis zeigt, dass die Primfakultät eine besondere Rolle im Zusammenhang mit Primzahlen und dem Unendlichen spielt.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
-                    'zwischen einer gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
-                    'der Lage und Größe der Lücke.'."\n",
-                      'Angenommen es ist eine Frage der prinzipiellen Möglichkeit aufgrund der Lage und Größe der Lücke.'."\n",
-                      'Angenommen die Primzahlen zwischen der gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } verschwinden allmählich gegen Unendlich:'."\n".
-                    'Dann blieben zunehmend die Primzahl-Zwillinge \lm{ p\# \pm 1 } als nächstgrößere Primzahlen direkt nach \lm{ p } übrig.'."\n".
-                    'Die Möglichkeit, dass …'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{ p_{x}\# ± 1}   \leq  p_{x}  }'),
-                      array( display => 'on',  latex => '{  p_{x}\#  =  p_{x-1}\# \cdot p_{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x}\# }  =  \sqrt{ p_{x-1}\# } \cdot \sqrt{ p_{x} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{x+1}\#  =  p_{x}\# \cdot p_{x+1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x+1}\# }  =  \sqrt{ p_{x}\# \cdot p_{x+1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x+1}\# }  =  \sqrt{ p_{x}\# } \cdot \sqrt{ p_{x+1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } }  =  \sqrt{ p_{x}\# }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } }  =  \sqrt{ p_{x-1}\# } \cdot \sqrt{ p_{x} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } \cdot \sqrt{ p_{x-1}\# } }  =   \sqrt{ p_{x} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x} } \cdot \sqrt{ p_{x+1} } }{ \sqrt{ p_{x+1} } }  =   \sqrt{ p_{x} }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '… könnte verschwinden!?'."\n".
-                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \lm{ p\# \pm 1 } selber Primzahlen sein.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Nähern sich die Lücken in den Primzahlen \lm{ \Delta = ( p\# - 1) - p }?',
-                        'Dann sind tendenziell alle \lm{ p\# \pm 1 } Primzahlen.',
-                        '\color{*Bearb}{(In Arbeit …)}',
-                    ))),
-                  array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '\lm{ \Delta p_{i}\# = p_{i + 1}\# - p_{i}\#}',
-                        'Annahme \lm{ \Delta p_{i}\# < \Delta p_{i + 1}\#}',
-                        '\color{*Bearb}{(In Arbeit …)}',
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '2 ⋅ 3 ⋅ 5  =  30',
-                        '30 / 2  =  15',
-                        '\color{*Bearb}{(In Arbeit …)}',
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
-                      array( display => 'on',  latex => '{  p_{x}\# \pm 1  =  XX  }'),
-                      array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Primzahlen in den Superial-Zahlen:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p  =  〈\frac{1}{2}〉〈\pm 1〉․〈0〉  }'),
-                      array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Experiment:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2}  =  ungerade  }'),
-                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} \pm 1  =  gerade  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Diese beiden Zahlen sind durch keine endliche ungerade Primzahl teilbar.'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} - 1  ?=  2^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  2^{x} + 2  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} + 1  \neq  2^{y}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Oder:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} + 1  ?=  2^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} - 1  =  2^{x} - 2  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} - 1  \neq  2^{y}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} - 1  ?=  2^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  2^{x} + 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  (2^{x - 1} + 1) \cdot 2  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} + 1  \neq  2^{y}  }'),
-                      array( display => 'on',  latex => '{  (2^{x - 1} + 1) \cdot 2  =  2^{y}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  (2^{x - 1} + 1)  =  2^{y - 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y - 1  =  log_{2} (2^{x - 1} + 1)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} ((2^{x - 1} + 1) \cdot 2)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + log_{2} 2 }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1 }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Mit Primzahlen ins Unendliche – 2. Ansatz} \\\\'."\n".
-                    'Lässt sich die Körnung der natürlichen Zahlen über das folgende Produkt beschreiben?'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  \frac{ 1 }{ p } *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 1 }{ 3 } \cdot \frac{ 1 }{ 5 } \cdot \frac{ 1 }{ 7 } \cdot …  =  \frac{ 1 }{ ω_{p} }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Hälfte aller natürlichen Zahlen enthält die \lm{ 2 }.'."\n".
-                    'Ein drittel aller natürlichen Zahlen enthält die \lm{ 3 } und so fort … ?'."\n",
-                      'Da würde die Null bei allen mit zu zählen.'."\n".
-                    'Es gibt aber sehr viele Zahlen, die sowohl die \lm{ 2 } als auch die \lm{ 3 } oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie'),
                     )),
                 )
-          ); ?>
-
-
-		    	<!  • Fragestellungen und perspektivischer Erkenntnisgewinn  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn',
-              '', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen', type => 'back'),
-                    )),
-                  
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung', text =>
-                                           
-                'Überrationalitätsvermutung')),
-                  /*array( 'text', array( text => array(
-                    '\color{*Bearb}{'."\n".
-                    '(• √2 lässt sich als periodischer Kettenbruch(https://de.wikipedia.org/w/index.php?title=Kettenbruch&oldid=158343364 ) schreiben: [1;2,2,2,2,2,..] und ist eine quadratische Irrationalzahl.(https://de.wikipedia.org/w/index.php?title=Wurzel_2&oldid=154215301 )) \\\\'."\n".
-                    '(• Jede rationale Zahl kann eindeutig durch einen endlichen regulären Kettenbruch dargestellt werden (der mit Hilfe des euklidischen Algorithmus berechnet werden kann).(https://de.wikipedia.org/w/index.php?title=Kettenbruch&oldid=158343364 )) \\\\'."\n".
-                    '}'."\n"))),*/
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
-                    'Diese Vermutung bezieht sich darauf, dass ich vermute, dass die rationalen Koeffizienten der \italic{rationalen Superial-Zahlen} durch Koeffizienten ersetzt werden können,'."\n".
-                    'die durch überrationale Brüche dargestellt werden.\footnote[*Entwick]{\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
-                    'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
-                    'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \lm{ \s } vermutet.'."\n".
-                    'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
-                    'Ein Produkt eines überrationalen Bruchs \lm{ q_{r} } mit \lm{ \s } ergibt dann die unendliche, natürliche Superial-Zahl \lm{  q_{r} \cdot \s}.'."\n".
-                    'Die Menge aller überrationalen Brüche wäre dann \lm{ \mathbb{Qr} }.'."\n".
-                    'Die Vermutung bezieht sich darauf, dass solche überrationalen Brüche definierbar sind.'."\n".
-                    'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",
-                      'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  ?\in  \mathbb{Qr}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Mehr dazu auf der Seite \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}}.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
-                                           
-                'Primzahlprodukt-Vermutung')),
-                      
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Eigene Überlegungen}',
-                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \lm{ ω }. Nur folgt daraus, dass z.B. \lm{ ω - 1} nicht zu den natürlichen Zahlen gehört. \lm{ ω - n } für \lm{ n \in \mathbb{N} } ist diese Struktur gespiegelt, quasi rückwärts.',
-                    '• Siehe Erklärung für Raimund: Ordner "20200904 - Wissenschaft mit Raimund - Superial-Zahlen"',
-                    '• Siehe meine Latex-Abhandlungen.',
-                    ))),
-                      
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
-                    'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
-                    'die Größe von \lm{ ω } hat.'."\n".
-                    'Dies würde auf folgende Formeln hinauslaufen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)  =  ω_{p}  }'),
-                      array( display => 'on',  latex => '{  ω_{p}  ?=  ω  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  =  ω_{p}^{ω}  ?=  ω^{ω}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Richtigkeit dieser Vermutung setzt eine Eigenschaft der Primzahlverteilung unter den extrem großen natürlichen Zahlen voraus, die so'."\n".
-                    'allgemein wohl nicht erwartet wird.'."\n".
-                    'Es wird letztendlich behauptet, dass das Produkt aller Primzahlen innerhalb der natürlichen Zahlen genau so groß ist, wie die Anzahl der natürlichen Zahlen selbst.'."\n".
-                    'Dies kann nur sein, wenn unter den extrem großen natürlichen Zahlen nur noch sehr wenige Primzahlen vorkommen, sie dort also im Prinzip verschwinden und schließlich eigentlich nicht mehr vorkommen.'."\n".
-                    'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \lm{ ω } eine riesige Lücke, wonach \lm{ ω - 1} dann keine endliche, natürliche Zahl wäre.'."\n".
-                    '\lm{ ω - 1 } wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
-                      'Ich vermute genau letzteres, nicht mehr nur, weil es meiner logischen Intuition entspricht, sondern, weil die Konstruktion meiner \jump{OM:BiOrd:Einleitung}{Biordinalzahlen} genau diese \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Lücke} erkennen lässt.'."\n".
-                    'Denn die Primzahlen kommen innerhalb der natürlichen Zahlen nicht zu einem endlichen Ende, wie sich zeigen lässt.'."\n".
-                    'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \lm{ ω - 1 } damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
-                    'Die Lücke könnte also tatsächlich so groß sein, dass das Produkt aller endlicher Primzahlen gleich der Anzahl der natürlichen Zahlen ist.'."\n".
-                    'Auch wenn dies erst einmal überraschent erscheint.'."\n",
-                      'Schaut man sich den Grafen der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ n\# } an, so steigt dieser anfangs sehr viel schneller, als der der Anzahl der natürlichen Zahlen.\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
-                    'Der Graf der Primfakultät kann am „Ende“ der natürlichen Zahlen nur dann wieder gleich groß werden, wenn ab einem bestimmten Punkt im Prinzip, vielleicht quasi erst im Aktual-Unendlichen, keine Primzahlen mehr in das Produkt hinzu kommen.'."\n".
-                    'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \lm{ n\# - n } oder auch \lm{ \frac{ n\# }{ n } } kann im Endlichen kein Maximum haben.'."\n".
-                    'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
-                    'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \lm{ \mathbb{N} } und \lm{ ω } zu tun haben.'."\n".
-                    'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
-                                           
-                'Genauere Differenzierung der Zahlenarten', subline =>
-                  'Rationale, irrationale, algebraische und transzendente Zahlen')),
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{X}',
-                    // '• X',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Definition des Aktual-Unendlichen durch alle endlichen Primzahlen,'."\n".
-                    'genauer die Definition der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'in Form des Symbols \lm{ ω } durch das \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
-                    'darauf basierend die Definition der superialen Basis oder Einheit \lm{ \s }'."\n".
-                    'in dieser Arbeit, erlaubt uns noch einmal differenziert über die Zahlenarten nachzudenken.'."\n",
-                      'Wie oben schon beschrieben gibt es die Vermutung, die Koeffizienten der algebraischen Zahlen'."\n".
-                    'könnten ein Teil des Primzahl-Flächenprodukts von \lm{ \s } sein – \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} –,'."\n".
-                    'dass einem Bruch unendlich vieler endlicher Primzahlen mit jeweils endlicher Potenz entspricht.'."\n".
-                    'Dies würde folglich dazu führen, dass wir die Koeffizienten der Superial-Zahlen um die Koeffizienten'."\n".
-                    'der algebraischen Zahlen erweitern könnten.'."\n".
-                    'Diese dann von uns überrationale Zahlen genannten irrationalen Zahlen würden nur aus endlichen Zahlen'."\n".
-                    'definiert werden können.'."\n",
-                      'Bezüglich der transzendenten Zahlen zeigen wir allerdings exemplarisch, dass die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl}\footnote{\const{SupNum_g_footnote_text_EulerscheZahl}}'."\n".
-                    '\lm{ \e } unendlich kleine aktual unendliche Summanden enthält, die nicht verschwinden können.'."\n".
-                    'Dies gelingt uns mit der hier eingangs formulierten Definition der Ableitung durch die Superial-Zahlen.'."\n".
-                    'Demnach ist \lm{ \e } nicht einmal eine Superial-Zahl der hier vorgestellten 1. Ordnung,'."\n".
-                    'sondern noch höherer Ordnung, die noch genau zu definieren ist.'."\n",
-                      'Es stellen sich in meinen Augen die Fragen:'."\n",
-                      'Gehört die transzendente Zahl \lm{ \e } nach der neuen Erkenntnis zu den reellen Zahlen,'."\n".
-                    'wenn sie doch nicht verschwindende unendlich kleine aktual unendliche Summanden enthält?'."\n",
-                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises}{wie \lm{ \pi }},'."\n".
-                    'dann nicht zu den reellen Zahlen?'."\n",
-                      'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Einsichten und Fragen zur Kontinuumshypothese', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Die vorstehenden Fragen und weitere Einsichten, die sich durch die Superial-Zahlen ergeben,'."\n".
-                    'führen uns zu einer neuen \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n".
-                    ''))),
-                      
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
-                    )),
-                )
-          ); ?>
+          ); */ ?>
 
           
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

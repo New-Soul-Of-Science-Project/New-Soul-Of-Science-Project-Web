@@ -1917,10 +1917,9 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
-                '\color{*Bearb}{(In Arbeit …)} Experimentell', subline =>
+                'Experimentelle Notizen dazu', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  // '\condb{X} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
@@ -1939,6 +1938,85 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Gedanken zu Konsequenzen des Beweises  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises',
+              'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Parität}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises:X', text =>
+                      
+                'Gedankenexperiment', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir wissen nun:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.GK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ ω }{ 2 }  =  ungerade  }'),
+                      array( display => 'on',  latex => '{  \frac{ ω }{ 2 } \pm 1  =  gerade  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die beiden Zahlen \lm{ \frac{ ω }{ 2 } \pm 1 } sind durch keine endliche ungerade Primzahl teilbar.'."\n".
+                    'Also, wenn sie aus endlichen Primfaktoren bestehen, dann nur aus geraden wobei nur die Zwei in Frage kommt.'."\n".
+                    'So muss dann eine der beiden eine Potenz von Zwei sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ ω }{ 2 } - 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } + 1  =  2^{x} + 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \forall \mathbb{N} < x < ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in XXX *)  *[  \frac{ ω }{ 2 } + 1  ?=  2^{y}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Oder:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ ω }{ 2 } + 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } - 1  =  2^{x} - 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \forall \mathbb{N} < x < ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in XXX *)  *[  \frac{ ω }{ 2 } - 1  ?=  2^{y}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ ω }{ 2 } - 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } + 1  =  2^{x} + 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } + 1  =  (2^{x - 1} + 1) \cdot 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ ω }{ 2 } + 1  \neq  2^{y}  }'),
+                      array( display => 'on',  latex => '{  (2^{x - 1} + 1) \cdot 2  =  2^{y}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  (2^{x - 1} + 1)  =  2^{y - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y - 1  =  log_{2} (2^{x - 1} + 1)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} ((2^{x - 1} + 1) \cdot 2)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + log_{2} 2 }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1 }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen'),
                     )),
               )
@@ -1951,7 +2029,7 @@
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -1961,16 +2039,19 @@
                     // '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),
                       
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                '\color{*Bearb}{(In Arbeit …)} Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
+                'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Berechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# }, dann wird es sehr schnell'."\n".
                     'viel größer, als die größte in ihm vorkommende Primzahl:\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2\#  =  2  }'),
                       array( display => 'on',  latex => '{  3\#  =  6  }'),
                       array( display => 'on',  latex => '{  5\#  =  30  }'),
@@ -2017,7 +2098,7 @@
                       'Aus der letzen uns bekannten extrem großen Primzahl \lm{ p_i } ergeben sich die beiden nächsten Primzahlen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p_{i}\# \pm 1  \in  \mathbb{P}  }'),
                       array( display => 'on',  latex => '{  p_{i + 1}  :=  p_{i}\# - 1  }'),
                       array( display => 'on',  latex => '{  p_{i + 2}  :=  p_{i}\# + 1  }'),
@@ -2027,7 +2108,7 @@
                       'und den beiden nächsten keine Primzahl mehr:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \; ] p_{i}, p_{i + 1} [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                     ))),
@@ -2035,7 +2116,7 @@
                       'Dann ist die nächste Primfakultät \lm{ p_{i+1}# } die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p_{i + 1}\# \pm 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot p_{i + 1} \pm 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot *( p_{i}\# - 1 *) \pm 1  }'),
@@ -2046,14 +2127,14 @@
                       'Das können wir mit dem Verhältnis zum Zählen herausfinden:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ *( p_{i}\# *)^{2} - p_{i}\# }{ n }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  p_{i + 1}\# \pm 1  \in  \mathbb{P}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  (p_{i}\# - 1)\# \pm 1  \in  \mathbb{P}  }'),
                       array( display => 'on',  latex => '{  ( ( p\# - 1 ) \cdot ( p\# + 1 ) )\# \pm 1  \in  \mathbb{P}  }'),
@@ -2068,12 +2149,97 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
+                Title => 'Alte Notizen zum obigen Ansatz …',
+                TitleVis => 'Alte Notizen zum obigen Ansatz:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                  '\condb{Primzahlen im Endlichen} \\\\'."\n".
+                    'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Die Primzahlen sind innerhalb der Menge \lm{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Primzahl:2021}, Eigenschaften von Primzahlen.}')),
+                      
+                  array( 'text', array( text => array(
+                    'Nach dieser Definition ist die Eins keine Primzahl.'."\n",
+                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Bilde die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \lm{ p\# }',
+                        'Addiere Eins dazu oder ziehe Eins ab: \lm{ p\# \pm 1 }',
+                        '\lm{ p\# \pm 1 } ist nicht durch eine der Primzahlen in \lm{ p\# } ganzzahlig teilbar.',
+                        '\lm{ p\# \pm 1 } kann daher entweder nur selber eine Primzahl sein, die dann größer als \lm{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \lm{ p\# } enthalten sind und damit größer als \lm{ p } sein müssen. ',
+                        'Alle Primzahlen, durch die \lm{ p\# \pm 1 } teilbar ist, sind damit größer als \lm{ p }.',
+                        'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \lm{ p }, womit die Menge der endlichen Primzahlen nicht endet.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
+                    'Der vorstehend geführte Beweis zeigt, dass die Primfakultät eine besondere Rolle im Zusammenhang mit Primzahlen und dem Unendlichen spielt.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
+                    'zwischen einer gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
+                    'der Lage und Größe der Lücke.'."\n",
+                      'Angenommen es ist eine Frage der prinzipiellen Möglichkeit aufgrund der Lage und Größe der Lücke.'."\n",
+                      'Angenommen die Primzahlen zwischen der gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } verschwinden allmählich gegen Unendlich:'."\n".
+                    'Dann blieben zunehmend die Primzahl-Zwillinge \lm{ p\# \pm 1 } als nächstgrößere Primzahlen direkt nach \lm{ p } übrig.'."\n".
+                    'Die Möglichkeit, dass …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{ p_{x}\# ± 1}   \leq  p_{x}  }'),
+                      array( display => 'on',  latex => '{  p_{x}\#  =  p_{x-1}\# \cdot p_{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x}\# }  =  \sqrt{ p_{x-1}\# } \cdot \sqrt{ p_{x} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{x+1}\#  =  p_{x}\# \cdot p_{x+1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x+1}\# }  =  \sqrt{ p_{x}\# \cdot p_{x+1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ p_{x+1}\# }  =  \sqrt{ p_{x}\# } \cdot \sqrt{ p_{x+1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } }  =  \sqrt{ p_{x}\# }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } }  =  \sqrt{ p_{x-1}\# } \cdot \sqrt{ p_{x} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x+1}\# } }{ \sqrt{ p_{x+1} } \cdot \sqrt{ p_{x-1}\# } }  =   \sqrt{ p_{x} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sqrt{ p_{x} } \cdot \sqrt{ p_{x+1} } }{ \sqrt{ p_{x+1} } }  =   \sqrt{ p_{x} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '… könnte verschwinden!?'."\n".
+                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \lm{ p\# \pm 1 } selber Primzahlen sein.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Nähern sich die Lücken in den Primzahlen \lm{ \Delta = ( p\# - 1) - p }?',
+                        'Dann sind tendenziell alle \lm{ p\# \pm 1 } Primzahlen.',
+                        '\color{*Bearb}{(In Arbeit …)}',
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \Delta p_{i}\# = p_{i + 1}\# - p_{i}\#}',
+                        'Annahme \lm{ \Delta p_{i}\# < \Delta p_{i + 1}\#}',
+                        '\color{*Bearb}{(In Arbeit …)}',
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '2 ⋅ 3 ⋅ 5  =  30',
+                        '30 / 2  =  15',
+                        '\color{*Bearb}{(In Arbeit …)}',
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                    ))),
+
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                '\color{*Bearb}{(In Arbeit …)} Freie Gedanken', subline =>
+                'Freie Gedanken', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Jede zweite natürliche Zahl ist durch die Primzahl Zwei teilbar, daher sollte die Anzahl der natürlichen Zahlen \lm{ ω } ebenso durch Zwei teilbar sein.',
@@ -2096,7 +2262,7 @@
                     'Betrachten wir das aktuell verwendete Produkt zur Definition von \lm{ \s }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
@@ -2114,7 +2280,7 @@
                     'reicht folgende Potenz einer jeden Primzahl:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p^{x}  =  ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  x  =  \log_{p} ω  }'),
                     ))),
@@ -2122,7 +2288,7 @@
                     'Folgendes Primzahlprodukt für \lm{ \s } würde also hinreichen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  ?:=  \prod_{ \forall p \in \mathbb{P} }  p^{ \log_{p} ω }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \forall p \in \mathbb{P} } ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \# \mathbb{P} } ω  }'),
@@ -2134,7 +2300,7 @@
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \forall p \in \mathbb{P} } ω_{p}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  ω_{2} \cdot ω_{3} \cdot ω_{5} \cdot ω_{7} \cdot ω_{11} \cdot ω_{13} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  ω  ?=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots  }'),
