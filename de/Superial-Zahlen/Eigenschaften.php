@@ -1198,6 +1198,179 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Neue Rechenregeln im Unendlichen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• Die Null ist in den Superial-Zahlen viel simpler definiert, als in den hyperreellen Zahlen.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Im Aktual-Unendlichen gelten bezüglich ganzer Zahlen hier und dort ungewohnte oder neue Rechenregeln,'."\n".
+                    'mit denen wir uns hier etwas befassen wollen.'."\n".
+                    ''))),
+                      
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                      
+                'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wurzeln aus Summen genügend großer aktual unendlicher ganzer Superial-Zahlen sind selber ganze Superial-Zahlen.'."\n",
+                      'So sind die ganzen Zahlen \lm{ a_{s} \s^{y} } und \lm{ b_{s} \s^{y} } durch den Faktor \lm{ \s^{y} } so groß,'."\n".
+                    'dass sogar aus deren Summe immer die \lm{ y }-te Wurzel gezogen werden kann, so, dass sich immer eine ganze Superial-Zahl ergibt,'."\n".
+                    'was im Endlichen im Regelfall nicht gilt.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Wie wir aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen}‹} wissen,'."\n".
+                      'ist eine beliebige Wurzel aus einer Summe von reell algebraischen Zahl multipliziert mit unserer superialen Basis \lm{ \s }'."\n".
+                      'eine ganze Superial-Zahl der ersten Exponentenschicht'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'was durch Umformung unsere Behauptung zeigt, denn die Summanden sind auch ganze Superial-Zahlen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a_{s} \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  }'),
+                      array( display => 'on',  latex => '{  b_{s} \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'was Voraussetzung war.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Sehr bemerkenswert auch.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel', text =>
+
+                'Pythagoreische Tripel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Im Endlichen gibt es tatsächlich unendlich viele pythagoreische Tripel\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}}, bei denen alle drei Zahlen ganzzahlig sind.'."\n".
+                    'Allerdings gibt es natürlich auch sehr viele Kombinationen von ganzen Zahlen, die nicht gleich sind.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Pythagoreische Tripel im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
+                      array( display => 'on',  latex => '{  c^{2}  =  a^{2} + b^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Pythagoreische Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a_{s}, b_{s}, c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  c_{s}^{2}  =  a_{s}^{2} + b_{s}^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}  =  *| \sqrt{ a_{s}^{2} + b_{s}^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}  =  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir sie ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{2} + b_{s}^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} \s^{2} + b_{s}^{2} \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s} \s *)^{2} + *( b_{s} \s *)^{2} *)^{\frac{ 1 }{ 2 }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'sind die superialen pythagoreischen Tripel \lm{ a_{s} \s }, \lm{ b_{s} \s } und \lm{ c_{s} \s } für'."\n".
+                      'alle reell algebraischen Zahlen \lm{ a_{s} }, \lm{ b_{s} } und \lm{ c_{s} } ganzzahlig.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'So sind im Superial-Unendlichen \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen}{alle pythagoreischen Tripel, deren Koordinaten reell algebraisch sind, ganzzahlig}.'."\n",
+                      'Und wir können verstehen, dass sie dann vor dem Hochskalieren, also im Endlichen, auf die superial kleine Exponentenschicht \lm{ \s^{-1}} bezogen,'."\n".
+                    'superial klein ganzzahlig sind und damit auf das den endlichen Zahlen unterliegende Raster fallen,'."\n".
+                    'dass im Kapitel \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹} beleuchtet wird.'."\n".
+                    'So ist dann auch zu verstehen, dass die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{Kreise mit reell algebraisch Koordinaten}'."\n".
+                    'ebenso auf dieses Raster fallen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+
+                'Großer Fermatscher Satz', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die pythagoreischen Tripel lassen sich auf höhere Potenzen als zwei erweitern und wir landen bei den Fermatschen Tripeln'."\n".
+                    'und damit beim Großen Fermatschen Satz\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.}.'."\n".
+                    'Dieser besagt, dass es keine einzige Kombination ganzen Zahlen gibt, die die Gleichung erfüllt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Großer Fermatscher Satz im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( \forall n \in \mathbb{N} > 2 *)  *[  c^{n}  =  a^{n} + b^{n}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Fermatsche Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a_{s} , b_{s} , c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  c_{s}^{n}  =  a_{s}^{n} + b_{s}^{n}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}  =  *| \sqrt[n]{ a_{s}^{n} + b_{s}^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}  =  *( a_{s}^{n} + b_{s}^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} + b_{s}^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{n} + b_{s}^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} \s^{n} + b_{s}^{n} \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s} \s *)^{n} + *( b_{s} \s *)^{n} *)^{\frac{ 1 }{ n }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'sind alle superialen Fermatschen Tripel \lm{ a_{s} \s }, \lm{ b_{s} \s } und \lm{ c_{s} \s } für alle reell algebraischen Zahlen'."\n".
+                      '\lm{ a_{s} }, \lm{ b_{s} } und \lm{ c_{s} } ganz.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Bei den Fermatschen Tripeln ist bemerkenswert, dass es im Endlichen nicht eine einzige Lösung für ganze Zahlen gibt,'."\n".
+                    'im superialen Unendlichen sind dann alle Lösungen ganze Zahlen.'."\n",
+                      'Dies hat eine gewisse Ähnlichkeit mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
+                    'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen'),
                     )),
               )
@@ -1210,7 +1383,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

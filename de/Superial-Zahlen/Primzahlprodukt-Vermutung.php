@@ -1491,13 +1491,13 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}} eine wichtige Rolle spielt.\color{*Bearb}{(Link, siehe sinnvolle Koeffizienten, Radikalformen, verschachtelte Wurzelausdrücke)}'."\n",
+                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit \jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel}{pythagoreischen Tripeln}\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}} eine wichtige Rolle spielt.'."\n",
                       'Zum einen gibt es primitive pythagoreische Tripel.'."\n".
                     'Bei ihnen haben die drei natürlichen Zahlen des Tripels – alle größer als Null – keine gemeinsamen Teiler und'."\n".
                     'sind daher die kleinsten Zahlen dieses Verhältnisses.'."\n",
                       'Zum anderen gibt es die nicht-primitiven pythagoreischen Tripel.'."\n".
                     'Diese sind natürliche Vielfache – zweifache oder größer – der primitiven pythagoreischen Tripel.'."\n".
-                    'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive.'."\n",
+                    'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive und so auf das primitive durch „Kürzen“ zu reduzieren.'."\n",
                       'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
@@ -1506,7 +1506,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Über den Prozess, den wir oben zur \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl}{Berechnung der nächsten Primzahl}'."\n".
-                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen haben.'."\n",
+                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen Primzahlen haben.'."\n",
                       'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
@@ -1574,12 +1574,13 @@
                 'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n",
+                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den'."\n".
+                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{Kreis und die Kreisfläche die primitiven pythagoreischen Tripel}.'."\n",
                       'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
                     'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
                       'Das Raster wird bei der Skalierung so dann immer feiner, im Verhältnis zur Größe.'."\n".
                     'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
-                    'Und bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
+                    'Und bei \lm{ \s } dann so fein, dass alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       

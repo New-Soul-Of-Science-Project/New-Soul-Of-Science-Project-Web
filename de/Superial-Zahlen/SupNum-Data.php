@@ -221,6 +221,9 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Ei.S.V.4'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
                    
+        'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
+                   
         'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'X' */),
                    
         'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese' => array( headline_text => 'Untersuchungen zur Kontinuumshypothese'/* , headline_text_short => 'X' */),
