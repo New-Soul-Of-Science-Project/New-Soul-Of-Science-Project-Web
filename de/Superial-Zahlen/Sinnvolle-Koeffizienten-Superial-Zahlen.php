@@ -270,8 +270,12 @@
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{1}{x}}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Eine folgenreiche Erkenntnis, die uns im weiteren ermöglicht, dies auch für fast alle anderen Radikalformen zu zeigen.'."\n".
@@ -289,8 +293,12 @@
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| \sqrt[-x]{ n } \,|*  =  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{- \frac{ 1 }{ x }}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Das vervollständigt unser Bild, worauf wir weiter aufbauen können.'."\n".
@@ -306,8 +314,12 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k}  =  n^{\frac{ k }{ y }}  =  *( n^{k} *)^{\frac{ 1 }{ y }}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'ebenfalls allesamt sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
@@ -321,8 +333,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *)  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte}‹}'."\n".
@@ -339,8 +355,10 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  =  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }}  \in  \mathbb{A}_{\S}  \;\;,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'sehen, da wir das Produkt dieser Summe immer in die Summe zweier Produkte aufteilen können, die beide solche ganzen Zahlen sind,'."\n".
@@ -356,9 +374,11 @@
                     'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\;,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'weil die aktual unendlichen Potenzen der Primzahlen in \lm{ \s } die Wurzeln aller endlich tief verschachtelten Schichten knacken'."\n".
@@ -516,7 +536,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Lösung nach der oben aufgeworfenen Frage eines überrationalen Bruchs aus aktual unendlich großem'."\n".
@@ -621,8 +641,8 @@
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p_{i}^{ω}  \parallel  \s  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei stellt \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz dar und'."\n".
@@ -666,8 +686,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{1}{x}}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
@@ -730,8 +754,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ob die Division von \lm{ \s } durch eine möglicherweise irrationale positive Wurzel auch immer eine aktual unendlich große ganze Zahl bleibt,'."\n".
@@ -747,7 +771,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n },'."\n".
@@ -755,9 +779,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu der Aussage, dass auch der Kehrwert der Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl sein muss,'."\n".
@@ -777,7 +801,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n }'."\n".
@@ -787,18 +811,29 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 - x }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 - x }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu der Aussage, dass auch der Kehrwert der \lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl sein muss,'."\n".
-                      'was wir zeigen wollten.'."\n",
+                      'die nur in der ersten Exponentenschicht liegt.'."\n".
+                      'So kommen wir dann auch hier zu der Aussage, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{- \frac{ 1 }{ x }}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'gilt, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -839,15 +874,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei wir sehen, dass wegen'."\n".
@@ -862,11 +897,22 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  *]  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wahr ist.'."\n",
+                      'wahr ist.'."\n".
+                      'Und so können wir dann auch sagen, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ebenso wahr ist.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -915,22 +961,22 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei wir sehen, dass wegen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und weil wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
@@ -939,14 +985,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'so ist auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wahr.'."\n",
@@ -971,7 +1017,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann'."\n".
@@ -1008,18 +1054,28 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und damit erkennen wir, unsere Ausgangsannahme'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'muss wahr sein.'."\n",
+                      'sowie dann auch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *)  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'müssen wahr sein.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1069,29 +1125,29 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\;\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\;\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden aktual unendlich große natürliche oder ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pm n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \pm n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  \in  \mathbb{S}_{\Z}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
@@ -1116,7 +1172,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'mit dem Wert seiner Definition'."\n".
@@ -1131,27 +1187,27 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden aktual unendlich große natürliche Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier natürlicher Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'auch immer eine aktual unendlich große natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
@@ -1175,30 +1231,32 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  \;\;,  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }}  \in  \mathbb{A}_{\S}  \;\;,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
@@ -1234,54 +1292,46 @@
                   array( 'text', array( text => array(
                     'Bisher haben wir noch keine vollständige Radikal-Abgeschlossenheit gezeigt,'."\n".
                     'da die geschachtelten Radikale und ihre Kehrwerte mit Summen noch fehlen.'."\n",
-                      'In unserer aktuellen Koeffizientenmenge \lm{ \mathbb{A}_{\S,Rad,0} } sind also bisher alle natürlichen Zahlen \lm{ \mathbb{N} },'."\n".
+                      'In unserer aktuellen Koeffizientenmenge \lm{ \mathbb{A}_{\S} } sind also bisher alle natürlichen Zahlen \lm{ \mathbb{N} },'."\n".
                     'alle ganzen Zahlen \lm{ \mathbb{Z} }, alle rationalen Zahlen \lm{ \mathbb{Q} } und alle Radikalformen,'."\n".
-                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten.'."\n".
+                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten, jeweils als positiver und negativer Wert sowie auch die Null.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Das beliebig tiefe Aufbrechen verschachtelter Wurzelausdrücke', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
+                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten, wie wir jetzt zeigen.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Betrachten wir eine geschachtelte Wurzel, die eine Summe enthält'."\n".
+                      'Betrachten wir eine geschachtelte Wurzel im Produkt mit unserer superialen Basis \lm{ \s }, die eine Summe enthält,'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( a_{s} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\;\;\;   *[  w_{s}  :=  \sqrt[y]{ \overset{}{ \sqrt[z]{n} } + a_{s} }  *]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( a_{s} \in \mathbb{A}_{\S}^{+} *) \\\ \qquad\qquad\qquad\qquad\;\;\;   *[  \sqrt[y]{ \overset{}{ \sqrt[z]{n} } + a_{s} } \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wobei wir die Wurzeln durch gebrochene Exponenten ausdrücken wollen:'."\n".
+                      'und fragen, ob das Ergebnis rein in der ersten Exponentenschicht \lm{ \mathbb{S}_{\N,\{ 1 \}}^{+} } liegt,'."\n".
+                      'wobei wir die Wurzeln durch gebrochene Exponenten ausdrücken wollen, um deren Behandlung zu vereinfachen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c_{s}  :=  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Nehmen wir an, eine solche geschachtelte Wurzel – ein geschachteltes Radikal oder deren Kehrwerte – ergibt im Produkt mit \lm{ \s }'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c_{s} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}  ?\in  \mathbb{A}_{\S}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'eine ganze Superial-Zahl, die rein nur in der ersten Schicht einen Koeffizienten ungleich Null besitzt, also in \lm{ \mathbb{S}_{\Z,\{ 1 \}} } liegt.'."\n".
                       'Diese Schreibweise ist im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}'."\n".
                       'in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen} definiert.'."\n".
-                      'Dann muss ihr Koeffizient \lm{ c_{s} } ein sinnvoller Koeffizient sein und damit in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
+                      'Dann müsste ihr Koeffizient ein sinnvoller Koeffizient sein und damit in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nun können wir \lm{ \s } durch Potenzierung unter die Wurzel schreiben:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Wurzel auf der rechten Seite lässt sich beseitigen, indem wir beide Seiten mit \lm{ y } potenzieren, weil wir schon wissen, dass dies die Aussage nicht verändert.'."\n".
@@ -1289,30 +1339,46 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *(*( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }} *)^{y}  ?\in  \mathbb{S}_{\Z,\{ y \}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *(*( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }} *)^{y}  ?\in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Das ist wegen dem schon bekannten \lm{ n^{\frac{ 1 }{ z }} + a_{s} \in \mathbb{A}_{\S} } eine wahre Aussage,'."\n".
+                      'Das ist wegen dem schon aus den oberen Zusammenhängen bekannten \lm{ n^{\frac{ 1 }{ z }} + a_{s} \in \mathbb{A}_{\S}^{+} } eine wahre Aussage,'."\n".
                       'die auch wieder auf die erste Schicht verschoben werden kann'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ z }} + a_{s}  \in  \mathbb{A}_{\S}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'was wir zeigen wollen.'."\n",
+                      'ohne sie in ihrem Wahrheitsgehalt zu verändern.'."\n".
+                      'Das beantwortet dann auch die Eingangsfrage, ob'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SN1plus}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'als wahr, was wir im Grunde zeigen wollten.'."\n".
+                      'Aber dies gilt dann im Grunde auch für die negativen Werte dieser Wurzelsummen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'was wir eigentlich zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Da es ja darum geht zu beurteilen, ob \lm{ c_{s} \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } beziehungsweise \lm{ c_{s} \in \mathbb{A}_{\S} } ist,'."\n".
-                    'respektive, ob \lm{ c_{s} } ein sinnvoller Koeffizient ist, können wir folgendermaßen argumentieren:'."\n",
-                      'Solange die Potenz von \lm{ \s } größer gleich Eins, also die Potenz der Primzahlen in ihr aktual unendlich groß, ist, solange ist ihre'."\n".
-                    'genaue aktual unendliche Größe nicht dafür entscheidend, aus einer endlichen Zahl \lm{ c_{s} } eine ganze Zahl zu machen.'."\n".
-                    'Jedes \lm{ \s^{d} }, mit \lm{ d \ge 1 }, ergibt im Produkt mit \lm{ c_{s} } als \lm{ c_{s} \cdot \s } eine aktual unendlich große ganze Zahl.'."\n".
+                    'Solange die Potenz von \lm{ \s } größer gleich Eins ist – also die Potenz der Primzahlen in ihr aktual unendlich groß ist –, solange ist ihre'."\n".
+                    'genaue aktual unendliche Größe nicht dafür entscheidend, aus einer endlichen Zahl \lm{ \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} } eine ganze Zahl zu machen.'."\n".
+                    'Jedes \lm{ \s^{d} }, mit \lm{ d \ge 1 }, ergibt im Produkt damit eine aktual unendlich große ganze Zahl.'."\n".
                     'Das zeigen wir im Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} und daran anschließend'."\n".
                     'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} im Detail.'."\n",
                       'Dieses Argument kann bei verschachtelten Wurzelausdrücken wiederholt angewandt werden.'."\n".

@@ -1242,17 +1242,17 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was durch Umformung unsere Behauptung zeigt, denn die Summanden sind auch ganze Superial-Zahlen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a_{s} \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  }'),
-                      array( display => 'on',  latex => '{  b_{s} \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  a_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  b_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was Voraussetzung war.'."\n",

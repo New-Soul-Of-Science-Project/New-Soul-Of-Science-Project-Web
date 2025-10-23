@@ -810,10 +810,10 @@
                     'ist auch ihr Produkt eine aktual unendlich große ganze Zahl und fällt somit in die natürlichen Superial-Zahlen'."\n",
                     ''))),
                   array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'wie wir sehen.'."\n",
