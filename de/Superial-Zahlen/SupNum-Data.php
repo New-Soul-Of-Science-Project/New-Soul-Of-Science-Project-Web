@@ -439,7 +439,7 @@
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte' => array( headline_text => 'Summen der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt' => array( headline_text => 'Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt' => array( headline_text => 'SN.SinK.SR.7'),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN' => array( headline_text => 'SN.SinK.SR.13'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN1' => array( headline_text => 'SN.SinK.SR.13'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus' => array( headline_text => 'SN.SinK.SR.20'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS' => array( headline_text => 'SN.SinK.SR.21'),

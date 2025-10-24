@@ -1270,11 +1270,10 @@
                     'Im Endlichen gibt es tatsächlich unendlich viele pythagoreische Tripel\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}}, bei denen alle drei Zahlen ganzzahlig sind.'."\n".
                     'Allerdings gibt es natürlich auch sehr viele Kombinationen von ganzen Zahlen, die nicht gleich sind.'."\n".
                     ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Pythagoreische Tripel im Endlichen:'."\n".
-                      ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                  'Pythagoreische Tripel im Endlichen', subline =>
+                    '')),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
@@ -1282,8 +1281,14 @@
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
                     ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                  'Pythagoreische Tripel im Superialen', subline =>
+                    '')),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Pythagoreische Tripel im Superialen:'."\n".
+                      '\\\\'."\n".
+                      'Sei:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1327,17 +1332,23 @@
                     'Dieser besagt, dass es keine einzige Kombination ganzen Zahlen gibt, die die Gleichung erfüllt.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Großer Fermatscher Satz im Endlichen:'."\n".
-                      ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                  'Großer Fermatscher Satz im Endlichen', subline =>
+                    '')),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( \forall n \in \mathbb{N} > 2 *)  *[  c^{n}  =  a^{n} + b^{n}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
                     ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                  'Fermatsche Tripel im Superialen', subline =>
+                    '')),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Fermatsche Tripel im Superialen:'."\n".
+                      '\\\\'."\n".
+                      'Sei:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

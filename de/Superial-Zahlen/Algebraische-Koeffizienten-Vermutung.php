@@ -30,7 +30,7 @@
                   'Ein Paradigmenwechsel')),
                   array( 'text', array( text => array(
                     'Aus Sicht der klassischen Mathematik enthalten transzendente Zahlen keine unendlich kleinen Summanden.'."\n".
-                    'Dies kommt, weil in ihr transzendente Zahlen durch Grenzwertbetrachtungen\color{*Bearb}{(Verweis)} mit Hilfe des Limes\color{*Bearb}{(Verweis)}'."\n".
+                    'Dies kommt, weil in ihr transzendente Zahlen durch Grenzwertbetrachtungen mit Hilfe des Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
                     'definiert sind.'."\n",
                       'Bei Grenzwertbetrachtungen wird das Verhalten von Funktionen untersucht, wenn sich ihr Parameter'."\n".
                     'einem bestimmten Wert, von unten oder von oben, nähert oder in Richtung Unendlichkeit läuft.'."\n".
@@ -96,17 +96,18 @@
                     'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr gegeben,'."\n".
                     'weil die aktuale Unendlichkeit verloren geht, die der Beweis fordert.'."\n".
                     'Einzig endlich oft kürzen ist möglich, ohne diese Bedingung zu verletzen, bringt aber keinerlei zusätzlichen Gewinn.'."\n",
-                      'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
+                      'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.'."\n".
                     'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahlflächenprodukts von \lm{ \s }.'."\n".
                     'Dadurch wird jedes Produkt einer Wurzel mit unserer superialen Basis'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'zu einer natürlichen unendlich großen Zahl, in der nur die Schicht \lm{ \s^{1} } belegt ist.'."\n".
+                    'zu einer unendlich großen natürlichen Zahl, in der nur die Exponentenschicht \lm{ \s^{1} } belegt ist.'."\n".
+                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n".
                     'Das ist ein echter Paradigmenwechsel des Verständnisses von Wurzeln und der Superial-Zahlen.'."\n",
                       'Genau diese Eigenschaft macht sinnvolle Koeffizienten aus.'."\n".
                     'Denn so lassen sich die natürlichen Zahlen \lm{ \mathbb{N} } und auch die ganzen Zahlen \lm{ \mathbb{Z} }'."\n".
@@ -121,30 +122,22 @@
                   'Algebraische Radikalformen', subline =>
                     'Reell algebraische Zahlen, die durch algebraische Ausdrücke mit Wurzeln dargestellt werden können')),
                   array( 'text', array( text => array(
-                    'Alle algebraischen Radikalformen, die Produkte, Brüche oder rationale Potenzen von Radikalen sind, können'."\n".
-                    'ebenfalls durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was nach kurzer Überlegung auch offensichtlich ist.'."\n".
-                    'Das macht sie auch ganz klar zu sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
-                      'Darüberhinaus zeige ich jedoch im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}} zusätzlich,'."\n".
-                    'dass alle algebraischen Radikalformen, eben auch die, die Summen oder Produkte von Wurzeln und deren ganzzahligen Potenzen'."\n".
-                    'sowie geschachtelte Wurzelausdrücke aus Summen und deren Kehrwerte sind,'."\n".
-                    'auch sinnvolle Koeffizienten der Superial-Zahlen darstellen.'."\n".
-                    'Und das, obwohl diese Radikalformen keine \lm{ p }‑adischen Bewertungen ungleich Null besitzen.'."\n",
+                    'Alle \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{algebraischen Radikalformen sind sinnvolle Koeffizienten}'."\n".
+                    'der Superial-Zahlen.'."\n".
+                    'Diese sind Summen oder Produkte von Wurzeln und deren ganzzahligen Potenzen'."\n".
+                    'sowie geschachtelte Wurzelausdrücke aus Summen und deren Kehrwerte.'."\n",
                       'Dazu gehört zum Beispiel auch der Goldene Schnitt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ  =  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt}', label_incr => false),
-                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN1}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wie auch die pythagoreischen Tripel in quadratischer oder allgemeiner Form:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    '\color{*Bearb}{(Bisher ohne Radikalformen, die man durch endlich viele geschachtelte Quadratwurzeln und ganzzahlige Additionen erhält.)}'."\n".
+                    'wie auch die \jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel}{pythagoreischen Tripel}\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}}'."\n".
+                    'in quadratischer oder allgemeiner Form.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Radikal-Abgeschlossenheit', subline =>
