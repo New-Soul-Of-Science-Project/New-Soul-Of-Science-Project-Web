@@ -760,6 +760,11 @@
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+
+                '', subline =>
+                  '')),
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'),
                     )),

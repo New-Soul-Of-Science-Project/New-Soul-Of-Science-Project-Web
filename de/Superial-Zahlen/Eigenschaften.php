@@ -1222,8 +1222,18 @@
                     'Im Aktual-Unendlichen gelten bezüglich ganzer Zahlen hier und dort ungewohnte oder neue Rechenregeln,'."\n".
                     'mit denen wir uns hier etwas befassen wollen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
+                    )),
                       
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen', text =>
                       
                 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen', subline =>
                   '')),
@@ -1262,7 +1272,8 @@
                   array( 'text', array( text => array(
                     'Sehr bemerkenswert auch.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel', text =>
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel', text =>
 
                 'Pythagoreische Tripel', subline =>
                   '')),
@@ -1322,7 +1333,8 @@
                     'So ist dann auch zu verstehen, dass die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{Kreise mit reell algebraisch Koordinaten}'."\n".
                     'ebenso auf dieses Raster fallen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz', text =>
 
                 'Großer Fermatscher Satz', subline =>
                   '')),
@@ -1380,7 +1392,12 @@
                       'Dies hat eine gewisse Ähnlichkeit mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
                     ''))),
-                      
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
+
+                '', subline =>
+                  '')),
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen'),
                     )),
