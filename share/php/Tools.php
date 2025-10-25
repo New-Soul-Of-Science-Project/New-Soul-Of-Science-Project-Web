@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 26.08.2025, 19:00h
+  // #: Stand: 25.10.2025, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20251025:  >:  "To_f_Paragraph" type "headline":  Change 'horizontalLineBefore' from 'To_f_headline_add_hides_end_line($offset, 100, 90, 90)' to 'To_f_headline_add_hides_end_line($offset, 100, 60, 60)'.
   //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
   //                      >:  "To_f_Paragraph", 'headline':  Add array parameter for the headline tag with default 'h3' which was 'h4' before.
   //           20250731:  +:  "To_f_Text_replace":  Make "$text" an optional parameter by setting "$text=''".
@@ -1734,7 +1735,7 @@
           $anchorStr = array_key_exists( jump_name, $text) ? '<a name="'.($text[jump_name]).'"></a>' : '';
           
           if (array_key_exists( horizontalLineBefore, $text) && $text[horizontalLineBefore]) {
-            To_f_headline_add_hides_end_line($offset, 100, 90, 90);
+            To_f_headline_add_hides_end_line($offset, 100, 60, 60);
           }
         }
         
