@@ -336,7 +336,6 @@
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen'),
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                     )),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
@@ -747,17 +746,6 @@
                   array( 'text', array( text => array(
                     'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".
                     'Die Koeffizienten aller anderen Schichten sind Null.'."\n".
-                    ''))),
-
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
-                      
-                'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    '… siehe Einleitung, "Rationale Zahlen und ihre Primfaktorzerlegung"'."\n".
-                    '… siehe Einleitung, "Die Veränderung der Primfaktorzerlegung von 𝑠 durch rationale Koeffizienten"'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>

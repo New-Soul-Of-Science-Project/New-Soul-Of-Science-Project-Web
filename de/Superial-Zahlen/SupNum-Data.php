@@ -222,6 +222,7 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
                    
         'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz' => array( headline_text => 'Großer Fermatscher Satz'/* , headline_text_short => 'X' */),
@@ -330,7 +331,6 @@
             'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Fo.F.SS.1'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen' => array( headline_text => 'Eingrenzung der Schichten der Superial-Zahlen'/* , headline_text_short => 'X' */),
             'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen' => array( headline_text => 'SN.Fo.F.ES.1'),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Literatur' => array(
