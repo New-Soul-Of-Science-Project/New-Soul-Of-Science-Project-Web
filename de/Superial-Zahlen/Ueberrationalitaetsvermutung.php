@@ -24,14 +24,11 @@
                     'Denn es stellte sich heraus, dass die Superial-Zahlen nur dann für Integrale nutzbar sind, wenn jeder Koeffizient \lm{ a }'."\n".
                     'im Produkt mit der superialen Basis \lm{ \s } eine aktual unendliche ganze Zahl ergibt.'."\n".
                     'Hiernach steht also die Frage im Raum, für welche endlichen Zahlen dies gilt.'."\n".
-                    'Im Detail beschäftigen wir uns damit im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}}.'."\n",
-                      /*%! 'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
-                    'auch Koeffizienten der Superial-Zahlen sind.'."\n".
-                    'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n", */
+                    'Im Detail beschäftigen wir uns damit im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹}.'."\n",
                       'Nachfolgend geht es nun aber ausschließlich darum zu zeigen, dass irrationale Wurzeln tatsächlich durch'."\n".
                     'Brüche aktual unendlicher ganzer Zahlen darstellbar sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis – Wurzel aus Zwei ist keine rationale Zahl, also irrational', subline =>
                   '')),
@@ -160,7 +157,7 @@
                     'Doch unser Beweis hilft uns glücklicherweise dabei zu verstehen, wie ein Bruch ganzer Zahlen beschaffen sein muss, der die'."\n".
                     'Wurzel aus Zwei dann doch darstellen kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
@@ -267,7 +264,7 @@
                       'Für die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{Wurzel aus Zwei im Zusammenhang mit den natürlichen Superial-Zahlen}'."\n".
                     'hat dies eine wichtige Bedeutung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung', subline =>
                   'Erweiterung des Beweises auf alle algebraischen Koeffizienten, die irrationale Zahlen sind')),
@@ -276,8 +273,11 @@
                     'führen zu können, möchte ich eingangs einmal klären, was passiert, wenn es tatsächlich eine'."\n".
                     'Lösung für den vermeintlichen Widerspruchsbeweis gibt.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Rationale Wurzeln', subline =>
+                    'Wenn eine Wurzel eine rationale Zahl als Lösung hat')),
                   array( 'text', array( text => array(
-                  '\condb{Rationale Wurzeln} \cond{— Wenn eine Wurzel eine rationale Zahl als Lösung hat} \\\\'."\n".
                     'Was passiert, wenn die Wurzel eine rationale Zahl als Lösung besitzt,'."\n".
                     'sie also nicht irrational ist.'."\n".
                     ''))),
@@ -342,8 +342,11 @@
                   array( 'text', array( text => array(
                     'Diese Erkenntnis wird im nachfolgenden Widerspruchsbeweis eine Rolle spielen.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Irrationale Wurzeln', subline =>
+                    'Wenn es keine rationale Zahl als Lösung für eine Wurzel gibt')),
                   array( 'text', array( text => array(
-                  '\condb{Irrationale Wurzeln} \cond{— Wenn es keine rationale Zahl als Lösung für eine Wurzel gibt} \\\\'."\n".
                     'Für alle \lm{ x }-ten Wurzeln aus \lm{ n }, bei denen \lm{ n } nicht die \lm{ x }-te Potenz einer natürlichen'."\n".
                     'Zahl \lm{ m } ist, gilt der folgende Widerspruchsbeweis und zeigt, dass deren \lm{ x }-ten Wurzeln'."\n".
                     'algebraische irrationale Zahlen sind.'."\n".
@@ -638,8 +641,11 @@
                   array( 'text', array( text => array(
                     'Gleich zeitig zeigen wir mit dem Widerspruchsbeweis nun auch, wie die Lösung aussieht.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Irrationale Wurzeln', subline =>
+                    'Die Lösung')),
                   array( 'text', array( text => array(
-                  '\condb{Irrationale Wurzeln} \cond{— Die Lösung} \\\\'."\n".
                     'Wollen wir eine Lösung finden, wie wir die \lm{ n }-te Wurzel aus \lm{ x } als Bruch darstellen können,'."\n".
                     'dann kommen wir durch den Widerspruchsbeweis zu dem Schluss:'."\n",
                       'Verzichten wir darauf, dass der Zähler \lm{ a } und der Nenner \lm{ b } endlich sein müssen und wir akzeptieren,'."\n".
@@ -774,7 +780,7 @@
                       'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
                     'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
                     ''))),
-                  /*%! array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
+                  /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
                 'XXX Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \lm{ x }-ten Wurzeln aus \lm{ n } sind Superial-Zahlen')),
@@ -1541,7 +1547,7 @@
                     'Entstehung auseinander zu setzen.'."\n",
                       'Welche tieferen Einsichten haben wir vorstehend gewonnen und welche können wir noch weiter schöpfen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Das feine Raster der irrationalen endlichen Wurzeln', subline =>
                   '')),
@@ -1594,7 +1600,7 @@
                     'Wir lernen darüber etwas Neues auf dem Gebiet der Zahlentheorie.'."\n".
                     'Es bliebe uns verborgen, wenn wir es einfach nur weg kürzten und es nicht zu deuten wüssten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Endliche Wurzeln – gebrochene Exponenten – können auch im Endlichen ganze Zahlen ergeben', subline =>
                   '')),
@@ -1628,7 +1634,7 @@
                     'Und das Produkt wird aufgrund der Größe des Faktors \lm{ 2^{g} } beziehungsweise \lm{ n^{g} } grundsätzlich zu'."\n".
                     'einer ganzen Zahl, aber von aktual unendlicher Größe.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Nur die aktual unendlichen Potenzen des Zahlen-Radikals der Basis ergeben ein Raster, dass auch die gebrochenen Potenzen der Basis zu ganzen Zahlen macht', subline =>
                   '')),
@@ -1643,7 +1649,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Was ist der kleinste Faktor einer gebrochenen Zahl, der aus ihr eine ganze Zahl macht?', subline =>
                   '')),
@@ -1722,7 +1728,7 @@
                     'die in der oben bewiesenen Überrationalitätsvermutung ja die zentrale Rolle spielen.'."\n".
                     'Daher sollten wir uns mit ihnen noch näher befassen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
                       
                 'Viele Potenzialzahlen sind weder Superial-Zahlen noch Ordinalzahlen', subline =>
                   '')),
