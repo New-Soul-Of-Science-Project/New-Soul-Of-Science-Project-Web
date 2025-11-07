@@ -102,8 +102,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  a*o( 3 *o)1  =  *o( 2 *o)a  =  \cdot a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a*o( 4 *o)1  =  *o( 3 *o)a  =  \uparrow a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a *o( 3 *o) 1  =  *o( 2 *o) a  =  \cdot a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 1  =  *o( 3 *o) a  =  \uparrow a  =  a  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Gleiches gilt dann auch für das Mal als Vorzeichen, wie gleich verdeutlicht wurde.'."\n",
@@ -144,9 +144,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }',
-                                               /* label_name => 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel', */label_text => '\\jumpname{OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a *o( 4 *o) 3  }',
+                                          label_text => '\\jumpname{OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a *o( 4 *o) 3  }'),
+                      array( display => 'on',  latex => '{  *( *( a^{a} *)^{a} *)^{a}  =  a *o( 4 *o) 4  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a \cdot a}  =  a *o( 4 *o) 4  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Aufgrund der Umformung durch Ersetzung der geschachtelten Exponenten mit deren Produkt im Exponenten'."\n".
@@ -156,8 +158,11 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) b  =  a^{ *( a^{b - 1} *) }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 3  =  a^{ *( a^{2} *) }  =  *( a^{a} *)^{a}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 2  =  a^{ *( a^{1} *) }  =  a^{a}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 1  =  a^{ *( a^{0} *) }  =  a  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 0  =  a^{ *( a^{-1} *) }  =  a^{ \frac{1}{a} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) \!-\!1  =  a^{ *( a^{-2} *) }  =  a^{ \frac{1}{a^{2}} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Funktionsanalysis zeigt, dass sich die Funktion bei \lm{ b \rightarrow -\infty } von oben der Eins nähert.'."\n".
@@ -231,6 +236,7 @@
                       'Das linksseitig neutrale Element kann wie folgt durch den'."\n".
                     '\\jump{OM:OT:Einleitung:Inverse-Operatoren}{allgemeinen inversen Wurzeloperator} errechnet werden:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
