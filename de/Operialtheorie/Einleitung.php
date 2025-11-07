@@ -78,8 +78,8 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Der jeweils höhere Operator \\term{x + 1} beschreibt,'."\n".
-                      'wie häufig – ausgedrückt durch \\term{b} – der niedrigere Operator \\term{x} einen identischen Wert \\term{a} verkettet.'."\n".
+                      'Der jeweils höhere Operator \lm{ x + 1 } beschreibt,'."\n".
+                      'wie häufig – ausgedrückt durch \lm{ b } – der niedrigere Operator \lm{ x } einen identischen Wert \lm{ a } verkettet.'."\n".
                     ''))),
                       
                   array( 'text', array( text => array(
@@ -96,8 +96,8 @@
                   array( 'text', array( text => array(
                     'Der vierte Operator, die niedere Tetration beziehungsweise der niedere Hyper-4-Operator,'."\n".
                     'ergibt sich auf diese Weise zu einer Verkettung von Exponenten.'."\n".
-                    'Dabei setzen wir voraus, dass der Exponent-Operator als Vorzeichen von a, nämlich \\term{↑a},'."\n".
-                    'das \\term{a} nicht verändert. Dies stellt sich im Folgenden durch'."\n".
+                    'Dabei setzen wir voraus, dass der Exponent-Operator als Vorzeichen von a, nämlich \lm{ \uparrow a },'."\n".
+                    'das \lm{ a } nicht verändert. Dies stellt sich im Folgenden durch'."\n".
                     'Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut} als korrekt heraus:'."\n".
                     ''))),
                   array( 'equations',
@@ -107,7 +107,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Gleiches gilt dann auch für das Mal als Vorzeichen, wie gleich verdeutlicht wurde.'."\n",
-                      'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
+                      'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \lm{ \mathbb{N} } gefordert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -151,7 +151,7 @@
                   array( 'text', array( text => array(
                     'Aufgrund der Umformung durch Ersetzung der geschachtelten Exponenten mit deren Produkt im Exponenten'."\n".
                     'vereinfacht sich die allgemeine Formel für die ›niedere Tetration‹ zu einem Produkt im Exponenten,'."\n".
-                    'das einen Faktoren weniger enthält, als \\term{a}\'s insgesamt da sind:'."\n".
+                    'das einen Faktoren weniger enthält, als \lm{ a }\'s insgesamt da sind:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -160,7 +160,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  a *o( 4 *o) 0  =  a^{ *( a^{-1} *) }  =  a^{ \frac{1}{a} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Funktionsanalysis zeigt, dass sich die Funktion bei \\term{b → –∞} von oben der Eins nähert.'."\n".
+                    'Die Funktionsanalysis zeigt, dass sich die Funktion bei \lm{ b \rightarrow -\infty } von oben der Eins nähert.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Aus arithmetisch systematischen, philosophischen und metaphysischen Gründen sind diese Konstruktionen'."\n".
@@ -249,8 +249,8 @@
                                                label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die allgemeine x-Wurzel einer Zahl \\term{a} aus oder von sich selbst'."\n".
-                    'ergibt also das linksseitige neutrale Element \\term{n__{links}}.'."\n",
+                    'Die allgemeine \lm{ x }-Wurzel einer Zahl \lm{ a } aus oder von sich selbst'."\n".
+                    'ergibt also das linksseitige neutrale Element \lm{ n_{links} }.'."\n",
                       'Das rechtsseitig neutrale Element kann wie folgt durch den'."\n".
                     '\\jump{OM:OT:Einleitung:Inverse-Operatoren}{allgemeinen inversen Logarithmusoperator} errechnet werden:'."\n".
                     ''))),
@@ -272,8 +272,8 @@
                                                label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die allgemeine x-Logarithmus einer Zahl \\term{a} zur seiner eigenen Basis oder von sich selbst'."\n".
-                    'ergibt also das linksseitige neutrale Element \\term{n__{rechts}}.'."\n",
+                    'Die allgemeine x-Logarithmus einer Zahl \lm{ a } zur seiner eigenen Basis oder von sich selbst'."\n".
+                    'ergibt also das linksseitige neutrale Element \lm{ n_{rechts} }.'."\n",
                       'Dann schauen wir uns im Folgenden an, was sich für die konkreten Operatoren ergibt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
@@ -338,7 +338,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
-                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
+                    'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus:'."\n".
                     ''))),
                   array( 'equations',
@@ -417,7 +417,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
-                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
+                    'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus:'."\n".
                     ''))),
                   array( 'equations',
@@ -474,14 +474,14 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'mit \\term{n__{links}} in Abhängigkeit von \\term{a}'."\n".
+                      'mit \lm{ n_{links} } in Abhängigkeit von \lm{ a }'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  \sqrt[a]{a}  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die linksseitig neutralen Elemente \\term{n__{links}(a)} der Potenz sind von \\term{a} abhängig'."\n".
+                    'Die linksseitig neutralen Elemente \lm{ n_{links}(a) } der Potenz sind von \lm{ a } abhängig'."\n".
                     'und unterscheiden sich so im Allgemeinen voneinander.'."\n",
                       'Dies gilt auch für alle linksseitig neutralen Element der Operatoren größer als Drei, wie noch zu zeigen ist.'."\n".
                     ''))),
@@ -521,8 +521,8 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
-                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
-                    'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
+                    'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -617,9 +617,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Da drei Mal der Null-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} um Drei'."\n".
+                      'Da drei Mal der Null-Operator auf ein beliebiges \lm{ a } angewandt wird und dies insgesamt \lm{ a } um Drei'."\n".
                     'erhöhen soll, kann es nur so sein, dass jeder Operator das Ergebnis um Eins erhöht.'."\n".
-                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \lm{ c } das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.AM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -661,9 +661,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} immer genau um Eins'."\n".
+                      'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \lm{ a } angewandt wird und dies insgesamt \lm{ a } immer genau um Eins'."\n".
                     'erhöhen soll, kann es nur so sein, dass der erste Operator als Vorzeichen das Ergebnis bestimmt.'."\n".
-                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \lm{ c } das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.AM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -706,9 +706,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Der Minus-Zwei-Operator, auf ein beliebiges \\term{a} angewandt, ändert an \\term{a} nie etwas;'."\n".
+                      'Der Minus-Zwei-Operator, auf ein beliebiges \lm{ a } angewandt, ändert an \lm{ a } nie etwas;'."\n".
                     'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
-                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \lm{ c } das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.AM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
