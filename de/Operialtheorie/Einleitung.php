@@ -115,12 +115,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'So können wir anschließend einfacher definieren.'."\n",
-                      'Den eben geschilderten Zusammenhang drücken wir nun als umgekehrte oder niedere Verkettung ›\latexmath{ \circledcirc }‹ aus,'."\n".
-                    'weil bei der üblichen Verkettung ›\latexmath{ \circ }‹'."\n".
+                      'Den eben geschilderten Zusammenhang drücken wir nun als umgekehrte oder niedere Verkettung ›\lm{ \circledcirc }‹ aus,'."\n".
+                    'weil bei der üblichen Verkettung ›\lm{ \circ }‹'."\n".
                     'die Funktionsschachtelung genau anders herum ist, als bei der hier beschriebenen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KompositionMathematik:2022}, Definition.}'."\n".
                     'Die Klammerung erfolgt vom Beginn an, also im sogenannten niederen Bereich.'."\n".
                     'Das nachfolgende Glied der niederen Verkettung wird auf das Ergebnis aller vorherigen Glieder angewandt.'."\n".
-                    'Da die Reihenfolge entscheidend ist, wird die Indizierung unter dem ›\latexmath{ \circledcirc }‹, durch den ›\latexmath{ \forall }‹ Operator, generell implizit vom kleinsten zum größten Element der Indexmenge vorgenommen:'."\n".
+                    'Da die Reihenfolge entscheidend ist, wird die Indizierung unter dem ›\lm{ \circledcirc }‹, durch den ›\lm{ \forall }‹ Operator, generell implizit vom kleinsten zum größten Element der Indexmenge vorgenommen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
