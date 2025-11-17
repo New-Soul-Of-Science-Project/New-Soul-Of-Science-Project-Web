@@ -1715,40 +1715,93 @@
                       
                   array( 'text', array( text => array(
                     'Der Beweis der Überrationalitätsvermutung lässt die Frage aufkommen, ob es nicht auch ein separates Zahlensystem'."\n".
-                    'zu den aktual unendlichen Potenzen natürlicher Zahlen gibt.'."\n",
-                      'Im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}‹}'."\n".
-                    'vergleichen wir die Struktur der Superial-Zahlen mit der Struktur der Ordninalzahlen.'."\n".
-                    'Dabei stellen wir erstaunliche Ähnlichkeit bei grundlegenden Unterschieden fest, die sich wunderbar ergänzen.'."\n",
-                      'Wir können sagen, dass die Ordinalzahlen zu Beginn den natürlichen Zahlen und danach zunächst den'."\n".
-                    'endlichen Vielfachen sowie den endlichen Potenzen der kleinsten aktualen Unendlichkeit \lm{ ω } entsprechen, wie \lm{ 3 ω^{2} + 5 }.'."\n".
-                    'Danach kommenden dann die aktual unendlichen Potenzen des aktual Unendlichen \lm{ ω^{ω} }, also wie \lm{ 3^{\frac{ 1 }{ 2 }} \s^{2} + 5 = 3^{\frac{ 1 }{ 2 }} *( ω^{ω} *)^{2} + 5 }, und so fort.'."\n",
-                      'Die Superial-Zahlen entsprechen zu Beginn ebenfalls den natürlichen Zahlen, danach hingegen den endlichen Vielfachen'."\n".
-                    'sowie den endlichen Potenzen der aktual unendlichen Potenzen des aktual Unendlichen \lm{ \s = ω^{ω} }.'."\n",
-                      'Systematisch gesehen gibt es aber auch noch die aktual unendlichen Potenzen der natürlichen Zahlen, wie \lm{ 2^{ω} }, oder allgemeiner \lm{ n^{ω} },'."\n".
-                    'die in der oben bewiesenen Überrationalitätsvermutung ja die zentrale Rolle spielen.'."\n".
+                    'zu den aktual unendlichen Potenzen natürlicher Zahlen wie \lm{ n^{ω} } gibt.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                  'Die Potenzialzahlen sind im Allgemeinen weder Superial-Zahlen noch Ordinalzahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}‹}'."\n".
+                    'vergleichen wir die Struktur der Superial-Zahlen mit der Struktur der Ordinalzahlen.'."\n".
+                    'Dabei stellen wir erstaunliche Ähnlichkeiten bei gleichzeitigen grundlegenden Unterschieden fest, die sich wundersam ergänzen.'."\n",
+                      'Wir können sagen, dass die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ \mathbb{On} }'."\n".
+                    'ein rein positives Stellenwertsystem\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}} zur Basis \lm{ ω } sind.'."\n".
+                    'Sie beginnen mit den natürlichen Zahlen und setzen sich danach mit den Summen'."\n".
+                    'der endlichen Vielfachen sowie den endlichen Potenzen von \lm{ ω } fort, wie \lm{ 3 ω^{2} + 5 }.'."\n".
+                    'Danach kommen dann die aktual unendlichen Potenzen des aktual Unendlichen \lm{ ω^{ω} }, also wie \lm{ 3^{\frac{ 1 }{ 2 }} \s^{2} + 5 = 3^{\frac{ 1 }{ 2 }} *( ω^{ω} *)^{2} + 5 }, und so weiter.'."\n",
+                      'Die natürlichen Superial-Zahlen sind nun ein Stellenwertsystem zur Basis \lm{ \s = ω^{ω} },'."\n".
+                    'wie wir durch den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wissen.'."\n".
+                    'Auch die natürlichen Superial-Zahlen beginnen mit den endlichen natürlichen Zahlen, gehen danach dann mit den Summen der endlichen reell algebraischen Vielfachen von \lm{ \s } weiter, positiven wie auch negativen,'."\n".
+                    'und dessen endlichen natürlichen Potenzen, wobei im endlichen Summanden nur endliche ganze Zahlen als Koeffizienten vorkommen.'."\n",
+                      'Dadurch, dass in den Superial-Zahlen viel feinere und auch negative Koeffizienten vorkommen können, verhalten sich Superial-Zahlen ganz anders als Ordinalzahlen.'."\n".
+                    'So sind die Ordinalzahlen, bis auf die endlichen natürlichen Zahlen und dann \lm{ \s = ω^{ω} }, \lm{ \s^{2} = ω^{2 ω} } und ähnliche, keine Superial-Zahlen.'."\n",
+                      'Systematisch gesehen gibt es auch noch die aktual unendlichen Potenzen der natürlichen Zahlen, wie \lm{ 2^{ω} }, oder allgemeiner \lm{ n^{ω} },'."\n".
+                    'die ich \italic{Potenzialzahlen} nenne und die in der oben bewiesenen Überrationalitätsvermutung ja die zentrale Rolle spielen.'."\n".
+                    'Auch diese sind keine Superial-Zahlen!'."\n".
                     'Daher sollten wir uns mit ihnen noch näher befassen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
                       
-                'Viele Potenzialzahlen sind weder Superial-Zahlen noch Ordinalzahlen', subline =>
+                'Die Potenzialzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dabei ist zunächst festzustellen, dass Zahlen wie \lm{ 2^{ω} }, oder allgemeiner \lm{ n^{ω} }, nicht zur Menge der'."\n".
-                    'Superial-Zahlen gehören, auch, wenn der Beweis oben sie verwendet und dieser entscheidende Konsequenzen für die'."\n".
-                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten} der Superial-Zahlen hat.'."\n".
-                    'Denn faktoriell sind diese Zahlen im Primzahl-Flächenprodukt von \lm{ \s } enthalten, jedoch kommen sie nicht in Reinform in dieser Menge vor.'."\n",
+                    'Wie eben erwähnt, ist festzustellen, dass Zahlen wie \lm{ n^{ω} } nicht zur Menge der'."\n".
+                    'Superial-Zahlen \lm{ \mathbb{S} } gehören, auch, wenn der Beweis oben sie verwendet und dieser entscheidende Konsequenzen für die'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} hat.'."\n".
+                    'Denn faktoriell sind diese Zahlen, oder besser ihre wesentlichen Eigenschaften, im Primzahl-Flächenprodukt von \lm{ \s } enthalten, jedoch kommen sie eben nicht in Reinform in den Superial-Zahlen vor.'."\n",
                       'Zur Menge der Ordinalzahlen gehören die Potenzialzahlen ebensowenig.'."\n".
                     'Dort lassen sie sich überhaupt gar nicht einordnen, obwohl die Zahl \lm{ 2^{ω} } als Kardinalität mit der \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuumshypothese}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'grundlegend zusammenhängt und diese wiederum mit den Ordinalzahlen.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                  'Natürliche Potenzialzahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Natürliche Potenzialzahlen sind erst einmal positive ganze Zahlen einschließlich der Null.'."\n".
+                    'Sie sind im Endlichen im Grunde zunächst die endlichen natürlichen Zahlen quasi in Form ihrer Primfaktorisierung, zuzüglich der Null und Eins, sowie deren positive natürliche Potenzen.'."\n".
+                    'Summen dieser sind immer wieder als Primfaktorisierung darstellbar.'."\n",
+                      'Dann geht es im Aktual-Unendlichen über zu den \lm{ ω }-ten Potenzen der natürlichen Zahlen.'."\n".
+                    'Die aktual unendlichen Potenzen können auch Vielfache und Potenzen von \lm{ ω } sowie endliche rationale Summanden enthalten.'."\n",
+                      'Nachfolgend sind die Klassen- beziehungsweise Mengeneinträge einmal nach der Basis und einmal nach der Potenz geordnet.'."\n".
+                    'Die jeweilige Basis \lm{ _{\perp}n } dieser Potenzdarstellung besteht aus den Primzahlen ihrer Primfaktorierung in der Potenz aus den Primzahlen,'."\n".
+                    'die in den Potenzen der einzelnen Primzahlen keinen gemeinsamen Teiler haben, und dann noch in der Potenz des gemeinsamen Teilers aller Potenzen.'."\n",
+                      'Wir definieren also die \italic{Oberpotenz} einer natürlichen Zahl \lm{ _{\sqcap}n } und die \italic{Oberpotenzbasis} \lm{ _{\perp}n } dazu:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  n^{ω}  =  X  }'),
-                      array( display => 'on',  latex => '{  \mathbb{Pz}  =  *\{ \cdots 0^{ω}, 1^{ω}, 2^{ω}, 3^{ω}, 4^{ω}, 5^{ω}, 6^{ω}, 7^{ω}, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \mathrm{opot}(n)  :=  _{\sqcap}n  :=  \text{Oberpotenz von } n  *]  }'),
+                      array( display => 'on',  latex => '{  \mathrm{obas}(n)  :=  _{\perp}n  :=  \sqrt[\raise .2ex {_{\sqcap}n}]{n}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  =  \mathrm{obas}(n)^{\mathrm{opot}(n)}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  _{\perp}n^{_{\sqcap}n}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Für Einträge, die ins Aktual-Unendliche gehen, ist zu berücksichtigen, dass folgende'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier die Einträge nach dem gemeinsamen Teiler der Potenzen, also der Oberpotenz, und innerhalb dieser nach der Größe der Oberpotenzbasis sortiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, 1, \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{1} *) } \\\ \qquad\quad\,\, 2, 3, 5, 6 = 2 \cdot 3, 7, 10= 2 \cdot 5, \\\ \qquad\quad\, 11, 12 = 2^{2} \cdot 3, 13, 14 = 2 \cdot 7, 15 = 3 \cdot 5, 17, \\\ \qquad\quad\, 18 = 2 \cdot 3^{2}, 19, 20 = 2^{2} \cdot 5, 21 = 3 \cdot 7, \\\ \qquad\quad\, 22 = 2 \cdot 11, 23, 24 = 2^{3}, 26 = 2 \cdot 13, 28 = 2^{2} \cdot 7 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{2} *) } \\\ \qquad\quad\;\, 4 = 2^{2}, 9 = 3^{2}, 25 = 5^{2} \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\; 12^{2} = *( 2^{2} \cdot 3 *)^{2} = 2^{4} \cdot 3^{2} = 144 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{3} *) } \\\ \qquad\quad\;\, 8 = 2^{3}, 27 = 3^{3} \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{4} *) } \\\ \qquad\quad\; 16 = 2^{4} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω - \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω - \frac{ 1 }{ 2 }}, 3^{ω - \frac{ 1 }{ 2 }}, 4^{ω - \frac{ 1 }{ 2 }}, 5^{ω - \frac{ 1 }{ 2 }}, 6^{ω - \frac{ 1 }{ 2 }}, 7^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω} *) } \\\ \qquad\quad\;\, 2^{ω}, 3^{ω}, 5^{ω}, 6^{ω}, 7^{ω} \cdots ω^{ω} \cdots \quad \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{2 ω} *) } \\\ \qquad\quad\;\, 2^{2 ω} = 4^{ω} \cdots ω^{2 ω} \cdots \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier die Einträge erst nach der Oberpotenzbasis und innerhalb dieser nach den Oberpotenzen sortiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, \\\ \qquad\quad\, 1, \\\ \qquad\quad\, 2^{1}, 2^{2}, 2^{3} \cdots 2^{ω - \frac{ 1 }{ 2 }} \cdots 2^{ω} \cdots 2^{ω + \frac{ 1 }{ 2 }} \cdots 2^{2 ω - \frac{ 1 }{ 3 }} \cdots 2^{2 ω} \cdots \\\ \qquad\quad\, 3^{1}, 3^{2}, 3^{3} \cdots 3^{ω - \frac{ 1 }{ 2 }} \cdots 3^{ω} \cdots 3^{ω + \frac{ 1 }{ 2 }} \cdots 3^{2 ω - \frac{ 1 }{ 3 }} \cdots 3^{2 ω} \cdots \\\ \qquad\quad\, 5^{1}, 5^{2}, 5^{3} \cdots 5^{ω - \frac{ 1 }{ 2 }} \cdots 5^{ω} \cdots 5^{ω + \frac{ 1 }{ 2 }} \cdots 5^{2 ω - \frac{ 1 }{ 3 }} \cdots 5^{2 ω} \cdots \\\ \qquad\quad\, 6^{1}, 6^{2}, 6^{3} \cdots 6^{ω - \frac{ 1 }{ 2 }} \cdots 6^{ω} \cdots 6^{ω + \frac{ 1 }{ 2 }} \cdots 6^{2 ω - \frac{ 1 }{ 3 }} \cdots 6^{2 ω} \cdots \\\ \qquad\quad\, 7^{1}, 7^{2}, 7^{3} \cdots 7^{ω - \frac{ 1 }{ 2 }} \cdots 7^{ω} \cdots 7^{ω + \frac{ 1 }{ 2 }} \cdots 7^{2 ω - \frac{ 1 }{ 3 }} \cdots 7^{2 ω} \cdots \\\ \qquad\quad\, 10^{1}, 10^{2}, 10^{3} \cdots 10^{ω - \frac{ 1 }{ 2 }} \cdots 10^{ω} \cdots 10^{ω + \frac{ 1 }{ 2 }} \cdots 10^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 11^{1}, 11^{2}, 11^{3} \cdots 11^{ω - \frac{ 1 }{ 2 }} \cdots 11^{ω} \cdots 11^{ω + \frac{ 1 }{ 2 }} \cdots 11^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 12^{1}, 12^{2}, 12^{3} \cdots 12^{ω - \frac{ 1 }{ 2 }} \cdots 12^{ω} \cdots 12^{ω + \frac{ 1 }{ 2 }} \cdots 12^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 13^{1}, 13^{2}, 13^{3} \cdots 13^{ω - \frac{ 1 }{ 2 }} \cdots 13^{ω} \cdots 13^{ω + \frac{ 1 }{ 2 }} \cdots 13^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 14^{1}, 14^{2}, 14^{3} \cdots 14^{ω - \frac{ 1 }{ 2 }} \cdots 14^{ω} \cdots 14^{ω + \frac{ 1 }{ 2 }} \cdots 14^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 15^{1}, 15^{2}, 15^{3} \cdots 15^{ω - \frac{ 1 }{ 2 }} \cdots 15^{ω} \cdots 15^{ω + \frac{ 1 }{ 2 }} \cdots 15^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 17^{1}, 17^{2}, 17^{3} \cdots 17^{ω - \frac{ 1 }{ 2 }} \cdots 17^{ω} \cdots 17^{ω + \frac{ 1 }{ 2 }} \cdots 17^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{1}, ω^{2}, ω^{3} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      '… \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen}‹} → \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}‹} …'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

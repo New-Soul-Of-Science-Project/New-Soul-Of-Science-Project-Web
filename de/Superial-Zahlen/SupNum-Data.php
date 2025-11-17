@@ -222,10 +222,10 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
                    
         'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz' => array( headline_text => 'Großer Fermatscher Satz'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Potenzzahlen'/* , headline_text_short => 'X' */),
                    
         'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'X' */),
                    
@@ -505,6 +505,7 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen' => array( headline_text => 'Untersuchung der Potenzialzahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn' => array( headline_text => 'SN.Ei.NR.Exp.23'),
       ),
     ),
     'OM:SupNum:Vorwort' => array(

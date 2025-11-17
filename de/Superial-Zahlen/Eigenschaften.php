@@ -1219,8 +1219,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Im Aktual-Unendlichen gelten bezüglich ganzer Zahlen hier und dort ungewohnte oder neue Rechenregeln,'."\n".
-                    'mit denen wir uns hier etwas befassen wollen.'."\n".
+                    'Im Aktual-Unendlichen gelten bezüglich ganzer Zahlen hier und dort ungewohnte neue Rechenregeln,'."\n".
+                    'mit denen wir uns etwas näher befassen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
 
@@ -1228,22 +1228,11 @@
                   '')),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen'),
                     )),
-
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
-                      
-                'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    '… siehe Einleitung, "Rationale Zahlen und ihre Primfaktorzerlegung"'."\n".
-                    '… siehe Einleitung, "Die Veränderung der Primfaktorzerlegung von 𝑠 durch rationale Koeffizienten"'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen', text =>
                       
@@ -1403,6 +1392,112 @@
                     'im superialen Unendlichen sind dann alle Lösungen ganze Zahlen.'."\n",
                       'Dies hat eine gewisse Ähnlichkeit mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen', text =>
+                      
+                'Aktual-Unendliche Exponenten der Primzahlen in Potenzzahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} bringt neue Erkenntnisse bezüglich'."\n".
+                    'des Rechnens mit aktual unendlichen Potenzen von Primzahlen oder allgemeiner von natürlichen Zahlen in \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzzahlen} mit sich.'."\n".
+                    'Diese betreffen die Ganzzahligkeit von aktual unendlichen Exponenten mit endlichen rationalen Anteilen in ihrer Summe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-in-natuerlich-infinit}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier steht \lm{ g } für jede aktual unendlich große ganze Zahl.'."\n".
+                    '\lm{ n^{g} } ist demnach dann auch eine aktual unendlich große ganze Zahl.'."\n",
+                      'Dies können wir noch etwas eleganter und genauer ausdrücken, wenn wir die Klasse der wirklich aktual unendlich großen ganzen Zahlen \lm{ \mathbb{N}_{\infty}^{\infty} } definieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty}^{\infty}  :=  *\{  u \in \mathbb{N}_{\infty}  *|*  *( \forall i \in \mathbb{N} *) *[ i < u *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  g  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun wissen wir schon aus Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit},'."\n".
+                    'dass:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}^{+} *)  *[  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann gilt auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall y \in \mathbb{Z} *)  *[  n^{g + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( n^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  n^{g + \frac{ y }{ x }}  =  \frac{ *( n^{g + \frac{ 1 }{ x }} *)^{y} }{ *( n^{g} *)^{y - 1} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g + \frac{ y }{ x }} }{ n^{(y - 1) g} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{*( y g + \frac{ y }{ x } *) - (y - 1) g}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{y g - (y - 1) g + \frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g + \frac{ y }{ x }}  \;\; .  }'),
+                    ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
+                Title => '\small{In faktorisierter Form …}',
+                TitleVis => 'In faktorisierter Form:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{g} n^{\frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{y g} n^{\frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( n^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{(y - 1) g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g} n^{\frac{ y }{ x }} }{ n^{(y - 1) g} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g} }{ n^{(y - 1) g} } n^{\frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g} n^{\frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g + \frac{ y }{ x }}  \;\; .  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Die ganzzahlige Teilbarkeit des Bruchs wird durch die um \lm{ y } erhöhte Potenz des Zähler garantiert,'."\n".
+                    'im Verhältnis zu der die Erhöhung der Potenz des Nenners mit \lm{ y - 1 } geringer ausfällt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                      
+                'Betrachtung im Rahmen der Potenzialzahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzialzahlen} \lm{ \mathbb{Pn} } sind Zahlen,'."\n".
+                    'die im Allgemeinen nicht in der Menge der Superial-Zahlen \lm{ \mathbb{S} } und'."\n".
+                    'auch nicht in der Klasse der Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ \mathbb{On} } sind.'."\n".
+                    'Sie spielen beim \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} eine entscheidende Rolle,'."\n".
+                    'der für die Superial-Zahlen sehr bedeutsam ist, und ergänzen die vorgenannte Klasse und Menge systematisch.'."\n",
+                      'Sie sind Potenzen natürlicher Zahlen beziehungsweise von Primzahlen, die bis zur vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    '\lm{ ω } und noch weiter hinauf reichen und Summen dieser.'."\n".
+                    'Die aktual unendliche Größe \lm{ g } in den obigen allgemeinen Rechenregeln ist bei den Potenzialzahlen durch positive natürliche Potenzen von \lm{ ω }'."\n".
+                    'und deren positive natürliche Vielfache ersetzt.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So sind die Potenzialzahlen diesbezüglich einfach ein Spezialfall.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
