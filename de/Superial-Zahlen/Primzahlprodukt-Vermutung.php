@@ -1984,7 +1984,7 @@
                       array( display => 'on',  latex => '{  \frac{ ω }{ 2 } - 1  ?=  2^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } + 1  =  2^{x} + 2  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \forall \mathbb{N} < x < ω  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in XXX *)  *[  \frac{ ω }{ 2 } + 1  ?=  2^{y}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in X *)  *[  \frac{ ω }{ 2 } + 1  ?=  2^{y}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Oder:'."\n".
@@ -1994,7 +1994,7 @@
                       array( display => 'on',  latex => '{  \frac{ ω }{ 2 } + 1  ?=  2^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 } - 1  =  2^{x} - 2  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \forall \mathbb{N} < x < ω  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in XXX *)  *[  \frac{ ω }{ 2 } - 1  ?=  2^{y}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists y \in X *)  *[  \frac{ ω }{ 2 } - 1  ?=  2^{y}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
