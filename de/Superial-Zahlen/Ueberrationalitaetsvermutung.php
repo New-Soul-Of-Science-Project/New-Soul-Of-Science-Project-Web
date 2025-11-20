@@ -782,7 +782,7 @@
                     ''))),
                   /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
-                'XXX Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
+                'X Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \lm{ x }-ten Wurzeln aus \lm{ n } sind Superial-Zahlen')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -883,10 +883,10 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und zeigen damit, dass dieser überrationale Bruch auf die einfache vollständige Induktion reduziert werden kann,'."\n".
                       'ohne seinen Wahrheitsgehalt zu verlieren.'."\n",
-                        'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                        'X'."\n".
+                      'X'."\n".
+                      'X'."\n".
+                      'X'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wegen der Primfaktorzerlegung von \lm{ n } in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}'."\n".
@@ -1023,7 +1023,7 @@
                     'grundsätzlich zugelassen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Die Kehrwerte der Wurzeln} \\\\'."\n".
+                  '\condb{X Die Kehrwerte der Wurzeln} \\\\'."\n".
                     'Was uns nun noch fehlt, sind die Kehrwerte der Wurzeln, oder anders ausgedrückt,'."\n".
                     'die negativen Wurzeln.'."\n".
                     'Dazu gucken wir uns diese jetzt näher an.'."\n".
@@ -1133,7 +1133,7 @@
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}XXX Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}X Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
                     'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
@@ -1180,7 +1180,7 @@
                     'Sie sind völlig neutral.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Die Produkte der Wurzeln} \\\\'."\n".
+                  '\condb{X Die Produkte der Wurzeln} \\\\'."\n".
                     'Wie sieht es nun mit den Produkten von Wurzeln oder deren Kehrwerten aus?'."\n".
                     ''))),
 
@@ -1233,7 +1233,7 @@
                     'Sie sind auch im Produkt mit der superialen Basis natürliche Superial-Zahlen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
+                  '\condb{X Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
                     'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln oder ihren Kehrwerten'."\n".
                     'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
                     'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
@@ -1329,7 +1329,7 @@
                     'Wir fahren fort, weitere Varianten der Realanteile algebraischer Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}XXX Summen von Wurzeln} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}X Summen von Wurzeln} \\\\'."\n".
                     'Ganz ähnlich verhält es sich mit Summen von zwei oder mehr Wurzeln.'."\n".
                     ''))),
                       
