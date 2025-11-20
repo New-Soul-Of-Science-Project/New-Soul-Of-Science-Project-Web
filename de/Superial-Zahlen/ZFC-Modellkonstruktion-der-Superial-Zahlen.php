@@ -1,0 +1,264 @@
+<?php   $Glo_PathRel_back = '../';
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
+
+
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:ZFC-Modellkonstruktion'); ?>
+
+
+      <?php FrQFT_f_Div_Header( '      '); ?>
+
+
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Superiale-Transzendenz-Vermutung'); ?>
+
+	
+          <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
+                array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Real-Abgeschlossenheit}',
+                    '• Wenn wir als Exponenten von \lm{ \s }, also für \lm{ \Gamma }, rationale Zahlen zulassen, dann erhalten wir Real-Abgeschlossenheit, meint ChatGPT. Das bedeutet, dass auch Wurzeln aus jeder Superial-Zahl gezogen werden können.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wir entwickeln die Superial-Zahlen von ihrer intuitiven Definition weiter, indem wir sie mit einer'."\n".
+                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) kompatibel ist.'."\n".
+                    'Dabei hab ich mich von einer Konversation mit ChatGPT inspirieren lassen, in der ein Vorschlag entstand,'."\n".
+                    'wie eine sichere Fundierung der Superial-Zahlen aussehen kann.'."\n",
+                      'Eine Unsicherheit besteht in der Definition unserer superialen Basis \lm{ \s } durch das unendlich große Produkt von Primzahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \displaystyle \prod_{\forall p \in \mathbb{P}}  p^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
+                      array( display => 'on',  latex => '{  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
+                      array( display => 'on',  latex => '{  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot \cdots  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn in ZFC dürfen wir zwar mit unendlichen Mengen arbeiten, aber „\lm{ \infty \times \infty }“ als gewöhnliches Ganzzahl-Produkt ist nicht definiert und es gibt weitere Probleme:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
+                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\color{*Bearb}{(Verweis)}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
+                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein Körper – Analysis oder Differentialrechnung wären unmöglich.',
+                        'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
+                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\color{*Bearb}{(Verweis)}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
+                        'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – wir müssten die komplette Algebra darauf neu definieren.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und diese Probleme und Unsicherheiten wollen wir nun lösen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Die Hahn-Reihe als Ausweg', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } — und kodieren die Aussage'."\n".
+                    '„\lm{ \s } hat bei jeder Primzahl \lm{ p } die Exponentenlänge \lm{ ω }“ rein über \lm{ p }-adische Bewertungen.'."\n".
+                    'Eine Superial-Konstruktion über eine Hahn-Reihe\color{*Bearb}{(Verweis)} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{P} *)  *[  v_{q}*( \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω} *)  :=  ω  *]  }'),
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  :>  0  }'),
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'kapseln.'."\n".
+                    'Denn auf diese Weise ist \lm{ \s } und das für es stehende unendliche Produkt \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } einfach ein neues formales Zeichen, mit wohldefinierten Eigenschaften.'."\n".
+                    'Dadurch ergibt sich die Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} } zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}((\s^{\Gamma}))  }'),
+                      array( display => 'on',  latex => '{  \Gamma  :=  \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wenn \lm{ \mathbb{A}_{\R} } das Koeffizientenfeld der reell algebraischen Zahlen und'."\n".
+                    '\lm{ \Gamma } die Wertgruppe (geordnete abelsche Gruppe mit üblicher Ordnung) unserer Hahn-Reihe ist.'."\n",
+                      'Ausformuliert erhalten wir so:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \mathbb{Z}}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\; \underbrace{ \operatorname{supp} f := *\{ k *|* a_k \neq 0 *\} }_{\text{ist wohlgeordnet}}  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\,  \;\land\; \underbrace{\exists n \in \mathbb{Z}:\; \operatorname{supp} f \subseteq ( -\infty, n ]}_{\text{oben endlich}}  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mathematisch steckt die Unendlichkeit jetzt in zwei ZFC-konformen Stellen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \mathrm{supp} f } — wohlgeordnete Menge von endlichen Exponenten',
+                        'Bewertungs­wert \lm{ ω } — das Ordinal \lm{ ω } ist ein Mengen-Element in ZFC',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beides sind fertige, aktual unendliche Mengen – aber eben keine „Zahl mit unendlich vielen Primfaktoren“.'."\n".
+                    'Damit können wir die Algebra sauber definieren, ohne etwas zu fordern, was ZFC nicht als Element kennt.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Primfaktorzerlegung von \lm{ \s }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir stellen fest, dass \lm{ ω } und \lm{ p^{ω} } keine Elemente des Rings der Superial-Zahlen sind.'."\n".
+                    'Dies scheint im Allgemeinen kein Problem zu sein.'."\n",
+                      'So steht nun auch fest, dass \lm{ \s } durch jede endliche Potenz jeder Primzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  p^{n} \mid \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'teilbar ist, wobei jeder der Exponenten \lm{ n } sowie jede dieser endlichen Potenzen \lm{ p^{n} } ein Element des Superial-Rings sind.'."\n".
+                    'Im Besonderen ist die exakte Teilbarkeit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  p^{ω} \parallel \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Jeder einzelne Summand der Hahn-Reihe, sein reell algebraischer Koeffizient einer endlichen ganzen Potenz der superialen Basis \lm{ \s },'."\n".
+                    'haben die wohldefinierte \lm{ p }-adische Bewertungen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}*( a_{k} \cdot \s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'so, dass sich bei Potenzen \lm{ k \ge 1 } nur rein positive Potenzen der Primzahlen ergeben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathrm{supp} f *)  \\\ \qquad\;\; *[  v_{p}*( a_{k} *) \in \mathbb{Q}  \Rightarrow  \\\ \qquad\quad\, *( k - 1 *) \cdot ω  <  k \cdot ω + v_{p}*( a_{k} *)  <  *( k + 1 *) \cdot ω  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So können wir leicht erkennen, dass alle Hahn-Reihen-Summanden in ihrer Größenordnung immer separiert bleiben,'."\n".
+                    'auch egal ob \lm{ v_{p}*( a_{k} *) } positiv oder negativ ist, weil von \lm{ k \cdot ω } dominiert.'."\n",
+                      'Auch ist auffällig, dass hier Summen oder Differenzen wie \lm{ k \cdot ω \pm \frac{ z }{ n } } als Ausdrücke entstehen, die wir bisher nicht kennen,'."\n".
+                    'aber nun einfach nach den Grundregeln der uns bekannten Algebra nutzen.'."\n".
+                    'Unter Kenntnis der Dominanz von \lm{ k \cdot ω }.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
+                  '')),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Real-Abgeschlossenheit}',
+                    '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
+                    '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Durch die Hahn-Reihe erhalten wir alle nötigen Eigenschaften', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Unser Ziel einer ZFC-konformen Definition der Superial-Zahlen haben wir somit erreicht.'."\n".
+                    'Durch die Hahn-Reihen-Definition erhalten wir nun:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Addition:} koeffizientenweise.',
+                        '\bold{Multiplikation:} Cauchy-Produkt\color{*Bearb}{(Verweis)} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
+                        '\bold{Lexikographische Ordnung:}\color{*Bearb}{(Verweis)} \\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
+                        '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein geordneter Körper ist.',
+                        '\bold{Division:} Polynomdivision\color{*Bearb}{(Verweis)}.',
+                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} ganze Superial-Zahlen, natürliche Superial-Zahlen, gerade und ungerade Superial-Zahlen sowie superiale Primzahlen.\color{*Bearb}{(genauer klären)}',
+                        '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.\color{*Bearb}{(genauer klären)}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Zusammenfassung und Übertragung der geklärten Eigenschaften', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Zusammenfassend können wir sagen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wird nur symbolisch eingeführt,',
+                        '„unendlich viele Faktoren“ werden über Bewertungen beziehungsweise Supports ausgedrückt, in einer streng mengentheoretischen Form,',
+                        'sodass alle Beteiligten Mengen bleiben,',
+                        'wodurch wir vollständige ZFC-Konformität erhalten.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Darüber ist es uns tatsächlich gelungen \lm{ \mathbb{S} } als Menge zu definieren.'."\n".
+                    'Und wir kommen jetzt in die komfortable Lage, diese Eigenschaften übertragen zu können.'."\n",
+                      '„\lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} }“ ist als bildhafte Intuition prima, aber alleine formal nicht genau genug.'."\n".
+                    'Die Hahn-Reihen-Definition gibt dieselbe \lm{ p }-adische Wirkung wieder, liefert aber gleichzeitig Addition, Subtraktion, Ordnung – kurz:'."\n".
+                    'den vollständigen Zahlkörper \lm{ \mathbb{S} }, den die Superial-Analysis braucht.'."\n",
+                      'Weil wir das unendliche Produkt \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } jetzt ZFC-konform definiert haben, wird das,'."\n".
+                    'was uns intuitiv offensichtlich erschien, nun formal sicher auf alle zuvor auf dieser Basis in dieser Arbeit gemachten Definitionen übertragen.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Diskussion'),
+                    )),
+                )
+          ); ?>
+		    	<br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+
+
+          <!  • Diskussion  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:ZFC-Modellkonstruktion:Diskussion',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Parität}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Betrachten wir die Eigenschaften der unendlichen Produkte näher, so fällt auf, dass sich auf ihrer Grundlage recht einfach neue ganze Zahlen konstruieren lassen,'."\n".
+                    'die über die Mengen oder Klassen hinausgehen, zu deren Konstruktion wir diese nutzen oder aus denen wir diese gewonnen haben.'."\n",
+                      'Ein Beispiel ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primfaktorzerlegung der vollständigen Induktion \lm{ ω }}, die sich unter Zuhilfenahme der Superial-Zahlen'."\n".
+                    'beweisen lässt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und wodurch wir eine tiefere Definition unserer superialen Basis \lm{ \s } erhalten.'."\n",
+                      'Hierin erkennen wir, dass für alle endlichen Primzahlen \lm{ p } jeweils neue aktual unendliche ganze Zahlen \lm{ \frac{ ω }{ p } } konstruiert werden können,'."\n".
+                    'die größer als jede endliche ganze Zahl sind, jedoch kleiner als \lm{ ω }.'."\n".
+                    'Und Summen dieser mit endlichen ganzen Zahlen \lm{ \frac{ ω }{ p } \pm n } bringen dann noch viel mehr solcher Zahlen hervor.'."\n".
+                    'Das ist halt einer der Effekte, die wir mit unendlichen Produkten von endlichen Zahlen heraufbeschwören und die wir in Erkenntnis verwandeln.'."\n",
+                      'Damit sind dann, beginnend mit Null, vor \lm{ ω } mehr ganze Zahlen möglich, als \lm{ ω }’s Wert groß ist.'."\n".
+                    'Dies ist ein ähnlicher Effekt, wie wir ihn schon von den rationalen Zahlen her kennen, der uns bei ganzen Zahlen vermutlich noch nicht so begegnet ist.'."\n".
+                    'Wir kennen ihn ähnlich auch von den \jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}}.'."\n",
+                      'Im Aktual-Unendlichen bekommen die ganzen Zahlen aus Produktperspektive also manche bemerkenswerte Ähnlichkeit mit den rationalen Zahlen,'."\n".
+                    'was verblüffend erscheinen kann.'."\n",
+                      'Unendliche Produkte müssen also klar definiert sein, um diese Phänomene sicher handhaben zu können.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Home'),
+                    )),
+              )
+          ); ?>
+
+
+			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
+
+	
+<?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>

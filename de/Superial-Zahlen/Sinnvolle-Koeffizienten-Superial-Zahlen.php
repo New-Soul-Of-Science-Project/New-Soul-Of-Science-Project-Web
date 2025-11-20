@@ -1,0 +1,1442 @@
+<?php   $Glo_PathRel_back = '../';
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
+
+
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'); ?>
+
+
+      <?php FrQFT_f_Div_Header( '      '); ?>
+
+
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Formale-Entwicklung'); ?>
+
+	
+          <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
+                array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Fragen}',
+                    // '• Wenn nun alle reell algebraischen Zahlen sinnvolle Koeffizienten von \lm{ \s } sind, also aktual unendliche ganze Zahlen ergeben:',
+                    // '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
+                    // '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Zur Frage, welche Koeffizienten innerhalb der Superial-Zahlen sinnvoll sind, gibt es mindestens zwei Ausgangspunkte und Perspektiven,'."\n".
+                    'die scheinbar auf das selbe Ergebnis hinauslaufen:'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                      
+                'Perspektive der Zahlentheorie der Analysis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Zum einen können wir uns auf den Standpunkt stellen, dass für eine Zahlentheorie der Analysis sowohl die Ableitung als auch'."\n".
+                    'das Integral sinnvoll funktionieren sollten und damit beide plausibel definierbar sein müssen.'."\n",
+                      'Bei näherer Betrachtung stellen wir deshalb fest, dass die nun mit Hilfe aktual unendlicher Summen definierten Integrale'."\n".
+                    'aktual unendlich kleine ganze Zahlen benötigen, die wir aus einer entsprechenden Verkleinerung der'."\n".
+                    '\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{Erweiterung ganzer Zahlen ins aktual unendlich Große} gewinnen können.'."\n",
+                      'Betrachten wir diese ganzen Superial-Zahlen, dann haben diese in den Summanden mit negativen Potenzen von \lm{ \s }'."\n".
+                    'nur Nullen als Koeffizienten.'."\n".
+                    'Im endlichen, also der Koeffizient von \lm{ \s^{0} = 1 }, haben wir nur endliche ganze Zahlen.'."\n".
+                    'Und in den aktual unendlichen Summanden der ganzen Superial-Zahlen, also die positiven Potenzen von \lm{ \s },'."\n".
+                    'ergibt sich das Fragezeichen, dass nicht gleich ganz eindeutig beantwortbar ist.'."\n",
+                      'Das kommt daher, weil die aktual unendlich Großen Summanden dieser ganzen Superial-Zahlen alle ganze Zahlen sein müssen.'."\n".
+                    'Und zwar deshalb, weil der endliche Summand und die unendlich kleinen Summand in jedem Fall immer ganze Zahlen sind.'."\n".
+                    'Kommt nun der Summand dazu, der Eins als Potenz hat, also \lm{ \s^{1} = \s }, muss dieser im Produkt mit seinem Koeffizienten'."\n".
+                    'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n".
+                    'Denn auf eine ganze Zahl müssen wir immer eine ganze Zahl addieren, damit wieder eine ganze Zahl herauskommt.'."\n",
+                      'Dazu stellen wir fest, das schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur'."\n".
+                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
+                    'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
+                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}'."\n".
+                    'gilt, bleibt hingegen erst einmal noch offen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen', text =>
+                      
+                'Perspektive des Stellenwertsystems der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Zum anderen können wir erwarten, dass die sinnvollen Koeffizienten der Superial-Zahlen, wie in jedem anderen Stellenwertsystem,'."\n".
+                    'grundsätzlich keine Überträge in niedrigere oder höhere Stellen erzeugen.'."\n".
+                    'Wobei sie gleichzeitig aber so fein granuliert und von einer Größe sind, dass sie die ihnen zugedachte Stelle'."\n".
+                    'maximal ausfüllen.'."\n",
+                      'Demnach sind im Grunde folgende Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann:'."\n",
+                      'Das Produkt der sinnvollen Koeffizienten \lm{ a } mit der superialen Basis \lm{ \s }, also \lm{ a \cdot \s }, darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
+                    'also die Potenz von \lm{ \s } im Wert des Produkts,'."\n".
+                    'weil die Koeffizienten sonst nicht wie sinnvolle Ziffern in einem \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}'."\n".
+                    'fungieren können.'."\n".
+                    'Das bedeutet, dass \lm{ a } eine endliche Zahl sein muss.'."\n".
+                    'Es muss also immer eine endliche ganze Zahl \lm{ z_{k} } existieren, die kleiner als \lm{ a } ist,'."\n".
+                    'und es muss auch immer eine endliche ganze Zahl \lm{ z_{g} } existieren, die größer als \lm{ a } ist.'."\n",
+                      'Die größte mir bekannte Zahlenmenge, die diese Bedingung erfüllt ist die Menge der reellen Zahlen \lm{ \mathbb{R} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists z_{k}, z_{g} \in \mathbb{Z} *) *( \forall a \in \mathbb{R} *)  *[  z_{k}  <  a  <  z_{g}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es darf sich eben bei \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
+                    'außer die Stelle mit der Potenz Eins von \lm{ \s }.'."\n".
+                    'Das heißt, dass \lm{ a } keine aktual unendlich kleinen Summanden enthalten darf.'."\n".
+                    'Das Produkt \lm{ a \cdot \s } muss eben wirklich eine ganze rein aktual unendlich große Zahl sein.'."\n".
+                    'Das bedeutet, sie muss \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{ohne ihre Nachkommastellen, welcher Art auch immer, die gleiche Zahl}'."\n".
+                    'bleiben, wie in Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich} definiert.'."\n".
+                    'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n",
+                      'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n",
+                      'Für die Definition der Menge der sinnvollen Koeffizienten darf die Ausgangsmenge keine unendlich großen und unendlich kleinen, also keine infinitesimalen Elemente beinhalten.'."\n".
+                    'Zum einen sollte die Menge der reellen Zahlen, nach Standarddefinition, solche Elemente nicht enthalten:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Infinitesimals do not exist in the standard real number system, but they do exist in other number systems,'."\n".
+                        'such as the surreal number system and the hyperreal number system,'."\n".
+                        'which can be thought of as the real numbers augmented with both infinitesimal and infinite quantities;'."\n".
+                        'the augmentations are the reciprocals of one another.'."\n".
+                        ''),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Infinitesimal:2025}.}')),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Infinitesimale existieren nicht im Standard-Reellzahlsystem, aber sie existieren in anderen Zahlensystemen,'."\n".
+                        'wie dem Surrealen Zahlensystem und dem Hyperreellen Zahlensystem, die man sich als die reellen Zahlen vorstellen kann,'."\n".
+                        'die sowohl um infinitesimale als auch um unendliche Größen erweitert sind; die Erweiterungen sind die Kehrwerte voneinander.'."\n".
+                        ''),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Infinitesimal:2025}.} \small{\italic{Übersetzt ins Deutsche mit \jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}')),
+
+                  array( 'text', array( text => array(
+                    'Da diese Information allerdings nicht überall zu finden ist, gehen wir auf Nummer sicher.'."\n",
+                      'Wie können wir denn dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
+                    'was sie schon erfüllen, wie oben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
+                    'Dazu können wir die neue \jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{Unendlichkeits-Gaußklammer}'."\n".
+                    'benutzen, die alle aktual unendlich kleinen Summanden aus einer Zahl entfernt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Es existiere also die Menge'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in {\left\lfloor \mathbb{R}\right\rfloor}_{\infty} \!:  \, a \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  a \in \mathbb{A}_{\S} *)  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'der sinnvollen Koeffizienten der Superial-Zahlen, in der die Koeffizienten der Superial-Zahlen auf eine Exponentenschicht begrenzt sind:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sie verhalten sich Exponentenschicht neutral und ergeben im aktual unendlich Großen ganze Zahlen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Diese Definition erfüllt die genannten Bedingungen an die sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                      'Stellt sich also die Frage:'."\n".
+                    'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n".
+                    'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                      
+                'Entsprechen die sinnvollen Koeffizienten allen reellen Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ob \lm{ \mathbb{A}_{\S} ?= \mathbb{R} } gilt, ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Bezüglich der Transzendenz', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
+                    'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
+                    'und nicht wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
+                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{etwas detailliertere \lm{ \e }-Funktion} als klassisch üblich und damit eine'."\n".
+                    '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e_{\s} }}, die mehr Details ihrer Struktur offenbart,'."\n".
+                    'als die Zahl \lm{ \e }, die wir über den Limes erhalten.'."\n",
+                      'Die uns bekannte Zahl \lm{ \e }, definiert durch ihre Taylorreihe\footnote{\const{SupNum_g_footnote_text_Taylorreihe}},'."\n".
+                    'ist von der Zahl \lm{ \e_{\s} } nämlich nur der Summand endlicher Größe.'."\n".
+                    '\lm{ \e_{\s} } enthält aber noch aktual unendlich viele, aktual unendlich kleine Summanden herunter bis zur Potenz \lm{ \s^{-\s} }.'."\n".
+                    'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und so möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
+                    'Aber im Rahmen der Superial-Zahlen'."\n".
+                    'macht die \lm{ \e }-Funktion nur mit der Basis \lm{ \e_{\s} } Sinn.'."\n".
+                    '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahl der hier definierten 1. Ordnung, weil sie'."\n".
+                    'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endliche Potenzen von \lm{ \s } erlauben.'."\n",
+                      'Damit ist \lm{ \e_{\s} } nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zu zählen.'."\n".
+                    'Im Rahmen der reellen Zahlen ist \lm{ \e } als \italic{die} eulersche Zahl anzusehen.'."\n".
+                    'Im Rahmen der Superial-Zahlen ist \italic{die} eulersche Zahl \lm{ \e_{\s} } und \lm{ \e } nur ihr reell algebraischer Anteil.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Alle reellen Zahlen, die nicht transzendent sind, sind reell algebraische Zahlen.'."\n".
+                    'Dann stellt sich die Frage, ob wirklich alle reell algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    'ganze Zahlen sind.'."\n",
+                      'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
+                    'der reell algebraischen Zahlen sind, ist es offensichtlich,'."\n".
+                    'dass sie \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
+                    'Wie diese \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
+                    'zeigen wir in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung}.'."\n".
+                    'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
+                    '\lm{ q^{+} } ist also eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{aktual unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }};'."\n".
+                    'und dann auch eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
+                    'wie oben bereits gesagt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da rationale Zahlen nicht unendlich groß sind und auch keine unendlich kleinen Summanden enthalten, entspricht dies der Aussage,'."\n".
+                    'dass sie sich neutral bezüglich der Exponentenschicht der Superial-Zahlen verhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n",
+                      'Bleibt die Frage …'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                      
+                'Sind alle reell algebraischen Zahlen unter den sinnvollen Koeffizienten?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\lm{ \mathbb{A}_{\R} ?\subseteq \mathbb{A}_{\S} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die algebraischen Zahlen \lm{ \mathbb{A} } (auch \lm{ \overline{\mathbb{Q}} } für algebraischer Abschluss von \lm{ \mathbb{Q} } genannt) sind ja dadurch definiert, dass sie die Menge aller Lösungen der Nullstellen von Polynomen darstellen.'."\n".
+                    'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
+                    'die reelwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen \lm{ \mathbb{A}_{\R} } genannt werden.'."\n",
+                      'Ich vermute, diese reell algebraischen Zahlen'."\n".
+                    'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da reell algebraische Zahlen nicht unendlich groß sind und ich nach unserem Beweis der Überrationalitätsvermutung sowie der nachfolgend gezeigten Radikal-Abgeschlossenheit davon ausgehe,'."\n".
+                    'dass sie auch keine unendlich kleinen Summanden enthalten, entspricht dies der Aussage, dass sie sich neutral bezüglich'."\n".
+                    'der Exponentenschicht der Superial-Zahlen verhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\R}  ?\subseteq  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht und bewiesen.'."\n",
+                      'Wie gesagt, algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
+                    'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
+                    'deren Koeffizienten rationale – also gebrochene –'."\n".
+                    'Potenzen von natürlichen Zahlen sein können, viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
+                    'deren Kehrwerte, oder deren arithmetischen Kombinationen, also inklusive deren ganzen Potenzen; auch Radikalformen genannt.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n",
+                      'Polynome fünften Grades können neben Radikalformen auch Nullstellen haben, die durch Integrale von Radikalformen ausgedrückt werden.'."\n".
+                    'Leider konnte ich zu den Nullstellen von Polynomen sechsten und höheren Grades bisher nichts konkretes finden.'."\n",
+                      'Sollte meine Vermutung stimmen, dann wäre diese schon etwas sehr besonderes.'."\n",
+                      'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
+                    'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
+                    'dass es tatsächlich passen könnte, dass die reell algebraischen Zahlen die Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
+                      
+                'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
+                  'Die Wurzelausdrücke und die Radikal-Abgeschlossenheit')),
+                  array( 'text', array( text => array(
+                    'Wir werden nachfolgen zeigen, dass tatsächlich alle Radikalformen, also Kombinationen von reell algebraischen Wurzeln mit den Grundrechenarten und'."\n".
+                    'ganzer Potenzen, im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
+                    'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die ganzzahligen Wurzeln', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} liefert uns den Ansatz'."\n".
+                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} zu zeigen,'."\n".
+                    'dass alle Wurzeln beziehungsweise alle Radikale der reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{1}{x}}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Eine folgenreiche Erkenntnis, die uns im weiteren ermöglicht, dies auch für fast alle anderen Radikalformen zu zeigen.'."\n".
+                    'Nur für die verschachtelten Wurzelausdrücke werden wir größeren Aufwand betreiben müssen.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln', text =>
+                  'Die Kehrwerte der Wurzeln', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Als nächstes können wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten}‹} zeigen,'."\n".
+                    'dass auch die Kehrwerte aller Wurzeln sinnvolle Koeffizienten der Superial-Zahlen sind:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[-x]{ n } \,|*  =  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{- \frac{ 1 }{ x }}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vervollständigt unser Bild, worauf wir weiter aufbauen können.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln', text =>
+                  'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte}‹} zeigen wir,'."\n".
+                    'dass die Potenzen aller Wurzeln und ihrer Kehrwerte wegen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k}  =  n^{\frac{ k }{ y }}  =  *( n^{k} *)^{\frac{ 1 }{ y }}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k}  \in  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ebenfalls allesamt sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die Produkte der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch die Produkte der Wurzeln beziehungsweise ihrer Kehrwerte sind alle sinnvolle Koeffizienten der Superial-Zahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *)  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte}‹}'."\n".
+                    'mit etwas größerem Aufwand zeigen können.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Die Summen der Wurzeln und ihrer Kehrwerte', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das die Summen von Wurzeln oder deren Kehrwerte im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahlen und'."\n".
+                    'damit sinnvolle Koeffizienten der Superial-Zahlen sind, können am Zusammenhang'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  =  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }}  \in  \mathbb{A}_{\S}  \;\;,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sehen, da wir das Produkt dieser Summe immer in die Summe zweier Produkte aufteilen können, die beide solche ganzen Zahlen sind,'."\n".
+                    'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte}‹} zeigen.'."\n",
+                      'So ist dann auch der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt}{Goldene Schnitt}'."\n".
+                    'ein sinnvoller Koeffizient.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Geschachtelte Wurzeln und ihre Kehrwerte mit Summen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'weil die aktual unendlichen Potenzen der Primzahlen in \lm{ \s } die Wurzeln aller endlich tief verschachtelten Schichten knacken'."\n".
+                    'und so öffnen, dass die Koeffizienten in der ersten Schicht der Superial-Zahlen verbleiben.'."\n".
+                    'Damit ergeben sich ausschließlich ganze Superial-Zahlen.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Radikal-Abgeschlossenheit', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Damit haben wir nun die Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen erreicht,'."\n".
+                    'was ein entscheidender Schritt ist zu erkennen, dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten sind.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As', text =>
+                      
+                'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Um die Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} } zu zeigen, müssen wir uns um zwei Teile kümmern:'."\n".
+                    'Zum einen zeigen, dass \lm{ \mathbb{A}_{\R} ?\subseteq \mathbb{A}_{\S} } gilt'."\n".
+                    'und zum anderen zeigen, dass keine transzendenten Zahlen in \lm{ \mathbb{A}_{\S} } sind.'."\n",
+                      'Fangen wir damit an, zu zeigen, dass alle reellen Nullstellen von Polynomen in \lm{ \mathbb{A}_{\S} } liegen, also alle Zahlen aus \lm{ \mathbb{A}_{\R} }.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Zu algebraischen Zahlen, die Nullstellen von Polynomen ersten bis vierten Grades entsprechen, finden wir in Wikipedia:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Im Rahmen der Galoistheorie werden diese Zwischenkörper untersucht, um so tiefe Einblicke über die Lösbarkeit oder Nichtlösbarkeit von Gleichungen zu erhalten.'."\n".
+                      'Ein Resultat der Galoistheorie ist, dass zwar jede komplexe Zahl, die man aus rationalen Zahlen durch Verwendung der'."\n".
+                      'Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) sowie durch Ziehen n-ter Wurzeln (n eine natürliche Zahl)'."\n".
+                      'erhalten kann (man nennt solche Zahlen „durch Radikale darstellbar“), algebraisch ist, umgekehrt aber algebraische Zahlen existieren,'."\n".
+                      'die man nicht in dieser Weise darstellen kann; alle diese Zahlen sind Nullstellen von Polynomen mindestens 5. Grades.'."\n".
+                      ''),
+                      addtext => '\footnote{Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}')),
+ 
+                  array( 'text', array( text => array(
+                    'Damit sind alle Koeffizienten von Superial-Zahlen, die den Realanteilen von Nullstellen der Polynome ersten bis vierten Grades'."\n".
+                    'entsprechen, vollständig abgedeckt.'."\n".
+                    'Wir wissen nun also, dass die Realanteile dieser Nullstellen alle sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                  'Nullstellen von Polynomen fünften und höheren Grades', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für die Lösung der Nullstellen von Polynomen fünften Grades können wir folgendes in Wikipedia finden:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Eine allgemeine Lösungsformel, die nur mit den vier Grundrechenarten und dem Wurzelziehen auskommt,'."\n".
+                      'gibt es für Gleichungen höheren als vierten Grades nicht (ein Resultat der Galoistheorie). \\\\'."\n".
+                      '[…] \\\\'."\n".
+                      'Gleichungen fünften Grades lassen sich mit Hilfe elliptischer Funktionen allgemein lösen.'."\n".
+                      'Als Erster hat das Charles Hermite 1858 mit jacobischen Thetafunktionen gezeigt.'."\n".
+                      ''),
+                      addtext => '\footnote{Vgl. \cite{wiki:LoesenVonGleichungen:2024}, Gleichungen höheren Grades.}')),
+ 
+                  array( 'text', array( text => array(
+                    'Umgekehrt gibt es algebraische Zahlen, die keine Lösungen der Nullstellen von Polynomen'."\n".
+                    'ersten bis vierten Grades sind und doch mit Radikalen darstellbar, denn:'."\n".
+                    '\quote{Manche Gleichungen fünften Grades können mit Wurzeln gelöst werden, […]}\footnote{Vgl. \cite{wiki:GleichungFuenftenGrades:2024}, Lösbare Gleichungen fünften Grades, Voraussetzungen für die Lösbarkeit.}'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen', text =>
+                  'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für den Rest der reell algebraischen Zahlen scheint es nicht simpel zu sein zu zeigen, dass sie ebenfalls'."\n".
+                    'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Wegen der Ganz-Abgeschlossenheit der algebraischen Zahlen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
+                    'und der bereits gezeigten \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit der sinnvollen Koeffizienten}'."\n".
+                    'sowie der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Erkenntnisse zur transzendenten Zahl \lm{ \e_{\s} }},'."\n".
+                    'die offensichtlich superiale aktual unendlich kleine Summanden enthält, sowie meiner Vermutung,'."\n".
+                    'dass dies auch für alle anderen transzendenten Zahlen gilt, vermute ich, dass wirklich genau alle'."\n".
+                    'reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
+                    'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
+                      'Genau das ist unsere \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
+                    'ergänzt durch unsere \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹},'."\n".
+                    'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}'."\n".
+                    'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}'."\n".
+                    'stimmen.'."\n".
+                    'Das wäre schon ziemlich erfreulich und cool.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten'),
+                    )),
+                )
+          ); ?>
+		    	<br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+          
+
+          <!  • Radikale sind sinnvolle Koeffizienten  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten',
+              'Das Ergebnis des Beweises der Überrationalitätsvermutung', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    '• Hier ggf. auch mit \lm{ n^{ω + \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Um die Sache weiter systematisch anzugehen hatte ich die Idee, mich als nächstes mit den irrationalen Radikalen der'."\n".
+                    'algebraischen Zahlen zu beschäftigen, den ganzzahligen Wurzeln aus ganzen Zahlen, die irrationale Zahlen ergeben.'."\n",
+                      'Wenn die irrationalen algebraischen Zahlen, die durch Radikale darstellbar sind, im Produkt mit unserem \lm{ \s }'."\n".
+                    'aktual unendlich große ganze Zahlen ergeben sollen, um sinnvolle Koeffizienten der Superial-Zahlen zu sein,'."\n".
+                    'dann muss jedes dieser irrationalen Radikale einem Bruch aus'."\n".
+                    'aktual unendlich großem ganzen Nenner und Zähler entsprechen.'."\n".
+                    'Die Faktoren im Nenner und Zähler, die jeweils die Ganzzahligkeit erzeugen, müssen ebenso Faktoren im Primzahl-Flächenprodukt von \lm{ \s } sein,'."\n".
+                    'damit \lm{ \s } als Faktor auch diese Ganzzahligkeit erzeugen kann.'."\n",
+                      'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
+                    'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen', text =>
+                      
+                'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
+                    'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } \,|* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weil dieser Faktor auch in \lm{ \s } steckt, erkennen wir weiter, dass dann auch \lm{ \s } im Produkt mit der'."\n".
+                    'zweiten Wurzel aus Zwei eine aktual unendlich große ganze Zahl sein muss und dann die zweite Wurzel aus Zwei'."\n".
+                    'ein sinnvoller Koeffizient der Superial-Zahlen ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Lösung nach der oben aufgeworfenen Frage eines überrationalen Bruchs aus aktual unendlich großem'."\n".
+                    'Nenner und Zähler sieht in diesem Fall wie folgt aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } \,|*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vollständige Kürzen von \lm{ 2^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
+                    'keine ganze Zahl mehr wäre, was aber gesucht war.'."\n".
+                    'Unsere neue Erkenntnis zeigt uns jedoch, dass wir den Faktor Zwei im Zähler und Nenner so oft kürzen oder hinzufügen können,'."\n".
+                    'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
+                    'was im Folgenden sehr wichtig wird.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:X', text =>
+                      
+                'Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen', subline =>
+                  '')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Fragen}',
+                    '• Die scheinbar viel elegantere Lösung dieser Herleitung aus dem Abschnitt \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln} vielleicht hier einführen?',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Im ganz allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n } wie \lm{ *| \sqrt[x]{ n } \,|* = n^{\frac{1}{x}} }'."\n".
+                    'stellt sich die Sache wie folgt dar'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                    'eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists k_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies hat zur Folge, dass \lm{ n } in der Potenz der vollständigen Induktion \lm{ n^{ω} } kein Teiler der superialen Basis \lm{ \s } ist'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ω}  =  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  =  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \s  =  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  k_{1} \ge 2 \lor k_{2} \ge 2 \lor k_{3} \ge 2 \lor k_{4} \ge 2 \lor \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  \nmid  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  \nmid  \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und aus diesem Grund können wir aus unseren bisherigen Erkenntnissen nicht folgern, dass \lm{ n^{\frac{ 1 }{ x }} \cdot \s }'."\n".
+                    'immer eine natürliche Superial-Zahl ist und damit alle \lm{ n^{\frac{ 1 }{ x }} } sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Wir müssen also klären, ob auch die aktual unendlichen Teiler von \lm{ \s }, in Form der Produkte von Primzahlen mit Potenzen der'."\n".
+                    'vollständigen Induktion \lm{ p_{i}^{ω} }, ausreichen, um im Produkt mit diesen Wurzeln immer natürliche Superial-Zahlen zu erzeugen.'."\n".
+                    'Und dazu drücken wir die Wurzel als Bruch von Potenzen der Primzahlen von \lm{ n } aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ p_{1}^{k_{1} *( ω + q *)} \cdot p_{2}^{k_{2} *( ω + q *)} \cdot p_{3}^{k_{3} *( ω + q *)} \cdot p_{4}^{k_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Separieren wir die Produkte nach den Faktoren der einzelnen Primzahlpotenzen \lm{ p_{i}^{k_{i}} } in \lm{ n }, dann sieht das Bild folgendermaßen aus'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
+                    'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
+                    'zu einer ganzen Zahl zu machen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn nur dann, wenn das gegeben ist, ist auch jede dieser Wurzeln im Produkt mit unserer superialen Basis \lm{ \s }'."\n".
+                    'eine aktual unendlich große natürliche Superial-Zahl, weil \lm{ \s } eben „nur“ jede Primzahl in'."\n".
+                    'einfacher vollständiger Induktionen \lm{ p_{i}^{ω} } enthält:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}^{ω}  \parallel  \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei stellt \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz dar und'."\n".
+                    '\lm{ \rad(n)^{ω} } teilt daher des Primzahl-Flächenprodukt von \lm{ \s } exakt.'."\n",
+                      'Wie oben gesagt stellen wir im Beweis der Überrationalitätsvermutung fest, dass'."\n".
+                    'wir in der Wahl der aktual unendlich großen ganzen Potenz von \lm{ n } frei sind,'."\n".
+                    'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
+                    'solange die Potenz größer bleibt, als jede endliche natürliche Zahl – also solange sie nicht endlich wird.'."\n".
+                    'Das haben wir schon in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}'."\n".
+                    'für die aktual unendliche Potenz \lm{ g } gefunden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So können wir für \lm{ k_{i} \cdot g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
+                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'was wunderbarerweise genau die Eigenschaft ist, die wir an dieser Stelle für sinnvolle Koeffizienten der Superial-Zahlen benötigen.'."\n",
+                      'So ergeben sich dann folgende Aussagen für die \lm{ x }-te Wurzel aus \lm{ n }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind alle durch Radikale darstellbaren algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{1}{x}}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
+                    'die Nützlichkeit der Superial-Zahlen auf.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Kehrwerte der Radikale sind sinnvolle Koeffizienten  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    '• Hier ggf. auch mit \lm{ n^{ω - \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Als nächstes betrachten wir die Kehrwerte der Wurzeln oder anders ausgedrückt,'."\n".
+                    'die negativen Wurzeln.'."\n".
+                    'Dazu gucken wir uns diese jetzt näher an.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei es erlaubt, dass in der \lm{ x }-te Wurzel aus \lm{ n } die Wurzel \lm{ x } eine negative Zahl,'."\n".
+                      'aber nicht Null ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }}  =  \frac{ n^{- \frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  \;\;,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'dann bleibt der Bruch trotzdem ein überrationaler Bruch aus zwei aktual unendlichen ganzen Zahlen, wie wir sehen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die \lm{ x }-te Wurzel aus \lm{ n } rutscht einfach in den Nenner des Bruchs'."\n".
+                    'zum anderen identischen aktual unendlich großen Primzahlturm, wo das Produkt dann ebenso eine aktual unendlich große ganze Zahl ergibt,'."\n".
+                    'wie zuvor im Zähler.'."\n".
+                    'Das ist plausibel.'."\n",
+                      'Jedoch stellt sich wieder die Frage:'."\n".
+                    'Ist das Produkt des Kehrwerts einer Wurzel mit der superialen Basis \lm{ \s } auch immer eine natürliche'."\n".
+                    'Superial-Zahl?'."\n".
+                      'Dies ist nicht ganz so offensichtlich, weil es bedeutet, dass \lm{ \s } durch eine \lm{ x }-te Wurzel aus \lm{ n }'."\n".
+                    'geteilt auch immer eine ganze positive Superial-Zahl sein muss:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ob die Division von \lm{ \s } durch eine möglicherweise irrationale positive Wurzel auch immer eine aktual unendlich große ganze Zahl bleibt,'."\n".
+                    'erscheint in der Tat fragwürdig.'."\n",
+                      'Ich möchte damit ansetzen, dies an der Quadratwurzel aus \lm{ n } zu zeigen und von hier aus zu verallgemeinern.'."\n".
+                    'Denn im Fall der Quadratwurzel können wir durch eine erlaubte Division ganz leicht zeigen, dass unsere fragliche Aussage wahr ist:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei die uns bekannte wahre Aussage, dass die'."\n".
+                      'Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n },'."\n".
+                      'die den Wahrheitsgehalt der Aussage nicht verändert, und deren Umformung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu der Aussage, dass auch der Kehrwert der Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl sein muss,'."\n".
+                      'was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Nun verallgemeinern wir auf die generelle Aussage, mit dem Kehrwert der \lm{ x }-ten Wurzel'."\n".
+                    'aus einer endlichen natürlichen Zahl \lm{ n } größer gleich Zwei.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei die uns bekannte wahre Aussage, dass die'."\n".
+                      '\lm{ x }-te Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n }'."\n".
+                      'und durch einen Faktor, der eine erlaubte Potenz der \lm{ x }-ten Wurzel aus \lm{ n } ist,'."\n".
+                      'wie wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{folgenden Abschnitt} hergeleitet haben,'."\n".
+                      'die beide den Wahrheitsgehalt der Aussage nicht verändern, und durch deren Umformung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 - x }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu der Aussage, dass auch der Kehrwert der \lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl sein muss,'."\n".
+                      'die nur in der ersten Exponentenschicht liegt.'."\n".
+                      'So kommen wir dann auch hier zu der Aussage, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{- \frac{ 1 }{ x }}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'gilt, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Über erlaubte Operationen, die die Ganzzahligkeit unseres Ansatzes erhalten, erreichen wir also'."\n".
+                    'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
+                    'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei die ganzzahlige Potenz einer Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei wir sehen, dass wegen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{k} \in \mathbb{N}^{+} \setminus *\{ 1 *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'die neue Basis einfach nur ein anderer natürlicher Radikand \lm{ n^{k} } der Wurzel ist,'."\n".
+                      'so dass unsere anfängliche Aussage'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wahr ist.'."\n".
+                      'Und so können wir dann auch sagen, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} *)^{k}  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ebenso wahr ist.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die ganzzahligen Potenzen der Wurzeln oder ihrer Kehrwerte nicht zu sorgen'."\n".
+                    'und weiter zu kümmern.'."\n".
+                    'Sie sind völlig neutral.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Produkte der Radikale und ihrer Kehrwerte  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                      
+                'Die Produkte der Wurzeln mit gleicher Basis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wie sieht es nun mit den Produkten von Wurzeln, oder von deren Kehrwerten, aus?'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei das Produkt zweier Wurzeln beziehungsweise ihres Kehrwerts mit gleicher Basis im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei wir sehen, dass wegen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und weil wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
+                      'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
+                      'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'so ist auch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wahr.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
+                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                      
+                'Die Produkte der Wurzeln mit unterschiedlicher Basis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit ungleicher Basis dar?'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts mit unterschiedlicher Basis im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann'."\n".
+                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}}.'."\n".
+                      'Denn wir können die Basis jedes Faktoren vor \lm{ \s } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                      'in ihre Primzahlpotenzen zerlegen und gegebenenfalls neu zusammenfassen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists k_{n,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  *( p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots *)^{\frac{ 1 }{ y }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }',
+                                    latex_if_visible => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  *( \exists k_{m,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  m  =  p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  *( p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots *)^{\frac{ 1 }{ z }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }',
+                                    latex_if_visible => '{  \Leftrightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'also ergibt sich für unser Produkt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} }{ y } + \frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{n,2} }{ y } + \frac{ k_{m,2} }{ z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} }{ y } + \frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{n,4} }{ y } + \frac{ k_{m,4} }{ z }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z }{ y \cdot z } + \frac{ k_{m,1} \cdot y }{ z \cdot y }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z }{ y \cdot z } + \frac{ k_{m,2} \cdot y }{ z \cdot y }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z }{ y \cdot z } + \frac{ k_{m,3} \cdot y }{ z \cdot y }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z }{ y \cdot z } + \frac{ k_{m,4} \cdot y }{ z \cdot y }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z + k_{m,1} \cdot y }{ y \cdot z }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z + k_{m,2} \cdot y }{ y \cdot z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z + k_{m,3} \cdot y }{ y \cdot z }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z + k_{m,4} \cdot y }{ y \cdot z }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot *( p_{4}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,4} \cdot z + k_{m,4} \cdot y} \cdot \cdots  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und wir sehen, dass alle Potenzen rationale Zahlen sind, in Nenner und Zähler also ganze Zahlen haben,'."\n".
+                      'was ganzzahligen Potenzen ganzzahliger Wurzeln, oder deren Kehrwerten, entspricht.'."\n".
+                      'Wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{wissen bereits},'."\n".
+                      'dass solche Faktoren von \lm{ \s } in endlicher Anzahl natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und damit erkennen wir, unsere Ausgangsannahme'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'sowie dann auch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *)  \in  \mathbb{A}_{\S}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'müssen wahr sein.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die Produkte der Wurzeln mit unterschidlicher Basis, oder ihrer Kehrwerten, nicht zu sorgen.'."\n".
+                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Summen der Radikale und ihrer Kehrwerte  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Sind auch die Summen der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen?'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:X', text =>
+                      
+                'Die Summe einer Wurzel, oder ihres Kehrwerts, mit einer endlichen ganzen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln, oder ihren Kehrwerten,'."\n".
+                    'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
+                    'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass die irrationale Wurzel, oder ihr Kehrwerten, in einer Summe mit der endlichen ganzen Zahl \lm{ z }'."\n".
+                      'zusammen im Produkt mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\;\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da beide Summanden aktual unendlich große natürliche oder ganze Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \pm n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die Summen von irrationalen Wurzeln, oder ihren Kehrwerten sind also ebenfalls sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt', text =>
+                      
+                'Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'So sind dann auch algebraische Zahlen wie der Goldene Schnitt \lm{ φ }'."\n".
+                    'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass der irrationale Goldene Schnitt \lm{ φ } im Produkt mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'mit dem Wert seiner Definition'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  φ  =  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 }  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Einsetzen, Umstellen und Ausmultiplizieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da beide Summanden aktual unendlich große natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und die Summe zweier natürlicher Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'auch immer eine aktual unendlich große natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir fahren fort, weitere Varianten der reell algebraischen Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln', text =>
+                      
+                'Summen und Differenzen von Wurzeln', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ganz ähnlich verhält es sich mit Summen von zwei oder mehr Wurzeln.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass eine Summe aus zwei irrationalen Wurzeln, oder ihrer jeweiligen Kehrwerte, im Produkt mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da beide Summanden ganze Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \pm m^{\frac{ 1 }{ z }}  \in  \mathbb{A}_{\S}  \;\;,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'So sind dann alle algebraischen Zahlen, die durch Kombinationen arithmetischer Operationen von Radikalen – Wurzelausdrücken –,'."\n".
+                    'oder deren Kehrwerte, inklusive ganzzahliger Potenzen, dargestellt werden können, natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Geschachtelte Radikale oder ihre Kehrwerte mit Summen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Bisher haben wir noch keine vollständige Radikal-Abgeschlossenheit gezeigt,'."\n".
+                    'da die geschachtelten Radikale und ihre Kehrwerte mit Summen noch fehlen.'."\n",
+                      'In unserer aktuellen Koeffizientenmenge \lm{ \mathbb{A}_{\S} } sind also bisher alle natürlichen Zahlen \lm{ \mathbb{N} },'."\n".
+                    'alle ganzen Zahlen \lm{ \mathbb{Z} }, alle rationalen Zahlen \lm{ \mathbb{Q} } und alle Radikalformen,'."\n".
+                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten, jeweils als positiver und negativer Wert sowie auch die Null.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Das beliebig tiefe Aufbrechen verschachtelter Wurzelausdrücke', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten, wie wir jetzt zeigen.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Betrachten wir eine geschachtelte Wurzel im Produkt mit unserer superialen Basis \lm{ \s }, die eine Summe enthält,'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( a_{s} \in \mathbb{A}_{\S}^{+} *) \\\ \qquad\qquad\qquad\qquad\;\;\;   *[  \sqrt[y]{ \overset{}{ \sqrt[z]{n} } + a_{s} } \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und fragen, ob das Ergebnis rein in der ersten Exponentenschicht \lm{ \mathbb{S}_{\N,\{ 1 \}}^{+} } liegt,'."\n".
+                      'wobei wir die Wurzeln durch gebrochene Exponenten ausdrücken wollen, um deren Behandlung zu vereinfachen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Diese Schreibweise ist im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}'."\n".
+                      'in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen} definiert.'."\n".
+                      'Dann müsste ihr Koeffizient ein sinnvoller Koeffizient sein und damit in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Nun können wir \lm{ \s } durch Potenzierung unter die Wurzel schreiben:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die Wurzel auf der rechten Seite lässt sich beseitigen, indem wir beide Seiten mit \lm{ y } potenzieren, weil wir schon wissen, dass dies die Aussage nicht verändert.'."\n".
+                      'Wir müssen nur berücksichtigen, dass dies die Koeffizientenschicht auf \lm{ y } erhöht:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *(*( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }} *)^{y}  ?\in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das ist wegen dem schon aus den oberen Zusammenhängen bekannten \lm{ n^{\frac{ 1 }{ z }} + a_{s} \in \mathbb{A}_{\S}^{+} } eine wahre Aussage,'."\n".
+                      'die auch wieder auf die erste Schicht verschoben werden kann'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ohne sie in ihrem Wahrheitsgehalt zu verändern.'."\n".
+                      'Das beantwortet dann auch die Eingangsfrage, ob'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SN1plus}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'als wahr, was wir im Grunde zeigen wollten.'."\n".
+                      'Aber dies gilt dann im Grunde auch für die negativen Werte dieser Wurzelsummen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  \in  \mathbb{A}_{\S}  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'was wir eigentlich zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Solange die Potenz von \lm{ \s } größer gleich Eins ist – also die Potenz der Primzahlen in ihr aktual unendlich groß ist –, solange ist ihre'."\n".
+                    'genaue aktual unendliche Größe nicht dafür entscheidend, aus einer endlichen Zahl \lm{ \pm *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} } eine ganze Zahl zu machen.'."\n".
+                    'Jedes \lm{ \s^{d} }, mit \lm{ d \ge 1 }, ergibt im Produkt damit eine aktual unendlich große ganze Zahl.'."\n".
+                    'Das zeigen wir im Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} und daran anschließend'."\n".
+                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} im Detail.'."\n",
+                      'Dieses Argument kann bei verschachtelten Wurzelausdrücken wiederholt angewandt werden.'."\n".
+                    'Wir sehen folglich:'."\n".
+                    'Die aktual unendlich großen Potenzen der Primzahlen in \lm{ \s } knacken alle endlich oft verschachtelten Wurzelausdrücke.'."\n",
+                      'Verschachtelte Wurzelausdrücke sind also nichts anderes, als die Wiederholte Anwendung des Arguments,'."\n".
+                    'mit dem die Wurzeln zu aktual unendlich großen ganzen Zahlen werden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Radikal-Abgeschlossenheit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Damit erreichen wir nun tatsächlich die Radikal-Abgeschlossenheit der sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} } der Superial-Zahlen.'."\n".
+                    'Ein wichtiger Schritt in Richtung des Beweises der'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X:X', text =>
+                      
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                    )),
+              )
+          ); */ ?>
+
+
+			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
+
+	
+<?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>

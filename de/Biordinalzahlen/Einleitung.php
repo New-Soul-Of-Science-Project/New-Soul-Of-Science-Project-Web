@@ -16,7 +16,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Offene Fragestellungen}',
                     '• Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?',
-                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Struktur-Geometrie}} auf.',
+                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
                     '– Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
                     '– Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
                     '– Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
@@ -25,7 +25,7 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Elementen der echten Klasse\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'Bei den Elementen der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteKlasse}}'."\n".
                     'handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
@@ -71,7 +71,7 @@
                       array( display => 'on',  latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, \cdots , n - 1 *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins}', label_incr => true),
-                      array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, \cdots , n *\}  =  n \cup *\{ n *\}  }',
+                      array( display => 'on',  latex => '{  n + 1  :=  n \cup *\{ n *\}  =  *\{ 0, 1, 2, \cdots , n *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
                     ))),
@@ -453,6 +453,90 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Prozessdeutung  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:BiOrd:Einleitung:Prozessdeutung',
+              'Zählen ist eine Bewegung, ein Vorgang, ein Prozess, aber in seiner Definition doch abgeschlossen', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Welche Bedeutung \lm{ ω } hat, ist eine interessante und auch sehr philosophische Frage.'."\n".
+                    'Sie offenbart bei näherer Betrachtung ein Spannungsfeld zwischen zwei wahren, fast widersprüchlichen Perspektiven.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung:X', text =>
+                      
+                'Wie lässt sich das Symbol \lm{ ω } verstehen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Oben haben wir erklärt, dass das Symbol \lm{ ω } gleichbedeutend mit der Menge \lm{ \mathbb{ N } } zu verstehen ist'."\n".
+                    'und damit auch den Wert repräsentiert, der der Anzahl an Elementen in \lm{ \mathbb{ N } }, also der Anzahl der endlichen'."\n".
+                    'natürlichen Zahlen, entspricht oder gleich ist.'."\n",
+                      'Nun können wir weiter überlegen, wie wir das noch genauer beschreiben und deuten können.'."\n".
+                    'Dazu erst einmal die Definition von \lm{ ω } und schließlich transitiv der Klasse aller Ordinalzahlen \lm{ \mathbb{On} }.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Es existiere also die Klasse \lm{ \mathbb{On} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.PD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists ω\!: *( \varnothing \in ω \land \forall \alpha\!: *( \alpha \in ω \Rightarrow \alpha \cup *\{ \alpha *\} \in ω *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists 2 ω\!: *( ω \in 2 ω \land \forall \alpha\!: *( \alpha \in 2 ω \Rightarrow \alpha \cup *\{ \alpha *\} \in 2 ω *) *)  }'),
+                      array( display => 'on',  latex => '{  \dots  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  \exists \mathbb{On}\!: *( \mathrm{transitiv}\,\alpha \in \mathbb{On} \land \forall \alpha\!: *( \alpha \in \mathbb{On} \Rightarrow \alpha \cup *\{ \alpha *\} \in \mathbb{On} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On', label_text => '\name{OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'aller Ordinalzahlen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Gleichzeitig sind alle Ordinalzahlen ebenso über die Wohlordnung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.PD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{On}  :=  \\\ \quad\;\;\;\, *\{  \alpha  *|*  \mathrm{transitiv}\,\alpha \in \mathbb{U} \land *( \forall x, y \in \alpha *) *[ x \in y \Rightarrow x < y *]  *\}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On-Ordnung', label_text => '\name{OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On-Ordnung}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'definiert.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Beide Definitionen beschreiben die vollständige Klasse der Ordinalzahlen als die Menge aller wohlgeordneten Mengen,'."\n".
+                      'des Mengenuniversums \lm{ \mathbb{U} }, die keine „größeren“ Elemente enthalten als sie selbst.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir sehen, dass die Menge \lm{ ω = \mathbb{ N } } über einen rekursiven Prozess \lm{ \alpha \in ω \Rightarrow \alpha \cup *\{ \alpha *\} \in ω }'."\n".
+                    'mit der Setzung, dass wir mit der leeren Menge \lm{ \varnothing } beginnen, definiert ist.'."\n",
+                      'Der Wert \lm{ ω } beschreibt also einen Prozess der ersten Ordnung des Zählens vom endlichen ins potenziell Unendliche,'."\n".
+                    'der im Endlichen nicht abgeschlossen ist.'."\n".
+                    'Er ist fortschreitend.'."\n".
+                    'Damit steht \lm{ ω } zum einen für etwas in einem Prozess Werdendes und zum anderen durch seine Aktual-Unendlichkeit gleichzeitig'."\n".
+                    'dafür, dass der Prozess des Werdens vollständig transitiv und in seiner Definition abgeschlossen ist.'."\n",
+                      '\lm{ ω } beschreibt also die Bewegung des Zählens aus der prozesshaften und gleichwohl abgeschlossenen Perspektive.'."\n".
+                    'Dies entspricht quasi einer ewigen Bewegung noch im Endlichen und damit im Grunde einer physikalischen Bewegung,'."\n".
+                    'wie mein Freund Hendrik Hansen mich gelehrt hat;'."\n".
+                    'einem ewig laufenden physikalischen Prozess, der von seiner Definition her vollständig und so gesehen abgeschlossen ist.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung'),
                     )),
               )
@@ -465,7 +549,7 @@
               'Was wir wohl nicht sehen', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre', type => 'back'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -633,7 +717,7 @@
                   // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
                   // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
-                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
                   // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
@@ -1354,7 +1438,7 @@
                     'Es gibt Fälle, in denen wir Mengen aller endlichen ganzen Zahlen, aber dazu auch von ihrem Wert her über das endliche hinausgehende'."\n".
                     'aktual unendliche ganze Zahlen benötigen.'."\n".
                     'Und zwar auch im negativen Bereich.'."\n".
-                    'Ein solcher Fall tritt auf, wenn wir die \jump{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{arithmetische Struktur der Geometrie untersuchen}.'."\n".
+                    'Ein solcher Fall tritt auf, wenn wir die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{arithmetische Struktur der Geometrie untersuchen}.'."\n".
                     'Denn wir wollen dort alle Punkte in einem Netz unendlich vieler Teilungen adressieren, das sich auch über die'."\n".
                     'ganzen negativen Zahlen erstrecken soll.'."\n".
                     'In diesem Fall kommen wir aber mit den Biordinalzahlen \lm{ \mathbb{Bn} } nicht weiter, weil sie für alle Limeszahlen Vorgänger'."\n".

@@ -10,18 +10,18 @@ html, body {
   padding: 0;
 	background: #A0A0A0;
 }
-body, div, h1, h2, h3, h4, p, table, td, tr, ul {
+body, div, h1, h2, h3, h4, h5, p, table, td, tr, ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* #: Allgemeiner Abstand nach rechts und links. */
-h1, h2, h3, h4, p, table, td, tr, ul {
+h1, h2, h3, h4, h5, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
 /* #: Schriftstärke der Überschriften und starker Schrift. */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   /*font-weight: bold;*/
   font-weight: 600;
 }
@@ -48,7 +48,10 @@ h3 {
 	font-size: 15px;
 }
 h4 {
-	font-size: 13px;
+  font-size: 13px;
+}
+h5 {
+	font-size: 10px;
 }
 img {
 	border-style: solid;
@@ -171,7 +174,8 @@ a:hover {
 	.content h1,
 	.content h2,
 	.content h3,
-	.content h4,
+  .content h4,
+	.content h5,
   .content input,
   .content p,
 	.content table,
@@ -205,9 +209,13 @@ a:hover {
     /*font-size: 18px;*/
     font-size: 20px;
 	}
-	.content h4 {
+  .content h4 {
     /*font-size: 16px;*/
     font-size: 18px;
+  }
+	.content h5 {
+    /*font-size: 16px;*/
+    font-size: 16px;
 	}
 
   .content-horizontal-scrollable {
@@ -546,7 +554,11 @@ svg {
 p.tools-class-text-derivation,
 p.tools-class-text-conclusion,
 p.tools-class-text-italic,
-p.tools-class-text-quote {
+p.tools-class-text-quote,
+table.tools-class-text-derivation,
+table.tools-class-text-conclusion,
+table.tools-class-text-italic,
+table.tools-class-text-quote {
   /* #!: hyphens is set by 'tools-class-text'! */
   /* #: 30px + 32px (margin-left + text-indent(2em)) */
   margin-left: 62px;

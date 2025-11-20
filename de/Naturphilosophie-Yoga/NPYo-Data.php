@@ -51,6 +51,26 @@
         'OM:NPYo:Home:Haftungsausschluss' => array( headline_text => 'Haftungsausschluss', headline_text_short => 'Haftungsausschluss'),
       ),
     ),
+    'OM:NPYo:Anker-im-Milchocean' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Anker-im-Milchocean.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Anker-im-Milchocean.php',
+      titel => 'Der Anker im Milchocean - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => '\name[undertitle]{OM:NPYo:Trimurti}. — \name[description]{OM:NPYo:Trimurti}.',
+      keywords => '',
+      text_titel_h1 => 'Der Anker im Milchocean',
+      text_titel_short => 'Der Anker im Milchocean',
+      text_undertitel_h2 => 'Ein metaphysisches und alchemisches Bild der Welt und ihrer Schöpfung',
+      // text_titel_discr_h3 => 'In diesem Bild der Entstehung des Lebens und des Bewusstseins; der Schöpfung, die sich durch einen metaphysischen Prozess des Tauziehens der Urkräfte herausbildet und durch Hoffnung und Glaube in der Tiefe des Unbekannten, des Jenseits, mit Hilfe der Reinigung von Körper und Seele verankert',
+      text_titel_discr_h3 => 'Durch einen Prozess des Tauziehens der Urkräfte im Milchocean – dem fruchtbaren Ursee – entsteht die Schöpfung, die Materie, das Bewusstsein und das Leben, welches sich durch Hoffnung und Glaube in der Tiefe des Ursees – im Unbekannten, im Jenseits – mit Hilfe der Reinigung von Körper und Seele sicher verankert, die das Licht bringt',
+      jump_ary => array(
+        'OM:NPYo:Anker-im-Milchocean:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+            'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+                   
+        // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
+      ),
+    ),
     'OM:NPYo:Energie-Esoterik-Spiritualitaet' => array(
       url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Energie-Esoterik-Spiritualitaet-Physik.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Energie-Esoterik-Spiritualitaet-Physik.php',
@@ -96,6 +116,32 @@
         'OM:NPYo:ExistenzLeichtigkeit:Pleroma-Plenum-Vakuum' => array( headline_text => 'Pleroma, Plenum und Vakuum'/* , headline_text_short => 'XXX' */),
       ),
     ),
+    'OM:NPYo:HaTha' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
+      titel => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => 'Unsere Balance der Körperhälften, unser Schicksal. Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unsem Achtsamkeitsprozess und der Gesichtsspiegelung.',
+      keywords => '',
+      text_titel_h1 => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
+      text_titel_short => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
+      text_undertitel_h2 => 'Unsere Balance der Körperhälften, unser Schicksal',
+      text_titel_discr_h3 => 'Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unserem Achtsamkeitsprozess und der Gesichtsspiegelung',
+      jump_ary => array(
+        'OM:NPYo:HaTha:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:NPYo:HaTha:Vortext:Fig-AugeDesRa' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-AchtsamkeitDracheSchlange' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusAsklepiosstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:NPYo:HaTha:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                   
+        'OM:NPYo:HaTha:WirZweiWesen' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
+        'OM:NPYo:HaTha:HerstellungBalance' => array( headline_text => 'Herstellung der Balance', headline_text_short => 'Herstellung der Balance'),
+      ),
+    ),
     'OM:NPYo:Spiritualitaet-Psychologie' => array(
       url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
@@ -113,6 +159,44 @@
           'OM:NPYo:Spiritualitaet-Psychologie:Vortext:DialogBewusstseinUnterbewusstsein' => array( headline_text => 'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', headline_text_short => 'Mein Dialog zwischen Bewusstsein und Unterbewusstsein'),
                    
         'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen' => array( headline_text => 'Wissen und Unwissen'/*, headline_text_short => 'XXX'*/),
+      ),
+    ),
+    'OM:NPYo:Trimurti' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Trimurti-Hekate-drei-Nornen-Vergangenheit-Gegenwart-Zukunft.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Trimurti-Hekate-drei-Nornen-Vergangenheit-Gegenwart-Zukunft.php',
+      titel => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => '\name[undertitle]{OM:NPYo:Trimurti}. — \name[description]{OM:NPYo:Trimurti}.',
+      keywords => '',
+      text_titel_h1 => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft',
+      text_titel_short => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft',
+      text_undertitel_h2 => 'Brahma, Vishnu und Shiva als Einheit des kosmischen Prinzips des Schicksals der Trimurti',
+      text_titel_discr_h3 => 'Dieses kosmische Prinzip entspricht auch den Gottheiten Hermes Trismegistos, Hekate und den nordisch-mythologischen Figuren der drei Nornen, die alle unter anderem die Vergangenheit, Gegenwart und Zukunft repräsentieren',
+      jump_ary => array(
+        'OM:NPYo:Trimurti:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+            'OM:NPYo:Trimurti:YouTube-HastDuShivaSchonEinmalSoGesehen' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+                   
+        // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
+      ),
+    ),
+    'OM:NPYo:Yin-Yang-heiliges-Kind' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Yin-Yang-Sonne-Mond-heiliges-Kind.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Yin-Yang-Sonne-Mond-heiliges-Kind.php',
+      titel => 'Yin und Yang oder Sonne und Mond und das heilige Kind - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => '\name[undertitle]{OM:NPYo:Trimurti}. — \name[description]{OM:NPYo:Trimurti}.',
+      keywords => '',
+      text_titel_h1 => 'Yin und Yang oder Sonne und Mond und das heilige Kind',
+      text_titel_short => 'Yin und Yang oder Sonne und Mond und das heilige Kind',
+      text_undertitel_h2 => 'Das Prinzip des Geschlechts und das heilige Kind, das daraus geboren wird',
+      text_titel_discr_h3 => 'Unsere Gehirnhälften sind nach dem Prinzip des Geschlechts auf Gefühle (weibliches Prinzip) und Handlungen (männliches Prinzip) spezialisiert, was sich diagonal in unseren Körperhälften widerspiegelt. Dies ist eine wesentliche Grundlage des alten Wissens und offenbar in nahezu allen Mythologien und Religionen zu finden. Es ist ebenso die Grundlage unserer Psyche und Psychosomatik und damit unserer Fürsorge und Heilung, das heilige Kind, das daraus geboren wird',
+      jump_ary => array(
+        'OM:NPYo:Yin-Yang-heiliges-Kind:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+            'OM:NPYo:Yin-Yang-heiliges-Kind:YouTube-SecretSymbolOfShivaExposed' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+                   
+        // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
       ),
     ),
   );

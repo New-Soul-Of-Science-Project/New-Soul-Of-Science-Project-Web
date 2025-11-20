@@ -24,14 +24,11 @@
                     'Denn es stellte sich heraus, dass die Superial-Zahlen nur dann für Integrale nutzbar sind, wenn jeder Koeffizient \lm{ a }'."\n".
                     'im Produkt mit der superialen Basis \lm{ \s } eine aktual unendliche ganze Zahl ergibt.'."\n".
                     'Hiernach steht also die Frage im Raum, für welche endlichen Zahlen dies gilt.'."\n".
-                    'Im Detail beschäftigen wir uns damit im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n",
-                      /*%! 'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
-                    'auch Koeffizienten der Superial-Zahlen sind.'."\n".
-                    'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n", */
+                    'Im Detail beschäftigen wir uns damit im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹}.'."\n",
                       'Nachfolgend geht es nun aber ausschließlich darum zu zeigen, dass irrationale Wurzeln tatsächlich durch'."\n".
                     'Brüche aktual unendlicher ganzer Zahlen darstellbar sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis – Wurzel aus Zwei ist keine rationale Zahl, also irrational', subline =>
                   '')),
@@ -42,7 +39,7 @@
                       'Als Impuls gebende Einstimmung hier vorab ein Video dazu, wenn du Lust darauf hast: \jump[https://www.youtube.com/watch?v=M5OeQ-l6a60][]{}{Daniel Jung — Beweis, dass Wurzel aus 2 nicht rational, sondern irrational ist, indirekte Beweisführung}.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Eingangs schauen wir uns an, wie wir die Wurzel aus Zwei durch eine Potenz von \lm{ 2 }'."\n".
                       'darstellen können:'."\n".
@@ -52,7 +49,7 @@
                       array( display => 'on',  latex => '{  \sqrt{2}  =  \pm 2^{\frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt{2} |*  =  2^{\frac{ 1 }{ 2 }}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei die Wurzel aus Zwei, hier dargestellt als halbe Potenz von Zwei, als rationaler Bruch,'."\n".
                       'also als Bruch aus endlichen natürlichen Zahlen, darstellbar:'."\n".
                       ''))),
@@ -60,18 +57,18 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner als auch einen Zähler geben muss, die teilerfremd sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *)  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'denn ein rationaler Bruch lässt bis auf einen kleinsten Nenner und Zähler kürzen,'."\n".
                       'bis sie keine gemeinsamen Primfaktoren mehr haben.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
                       ''))),
                   array( 'equations',
@@ -81,7 +78,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot b^{2}  =  a^{2}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'woraus wir direkt erkennen, wenn \lm{ b } keine \lm{ 2 } als Primfaktor enthält, dass \lm{ a^{2} } durch \lm{ 2^{2} = 4 } teilbar sein muss,'."\n".
                       'denn ein Quadrat kann eine Primzahl nicht in einfacher Potenz enthalten:'."\n".
                       ''))),
@@ -91,7 +88,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{1} \mid a  \Leftrightarrow  2 \mid a  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{2} \mid a^{2}  \Leftrightarrow  4 \mid a^{2}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aus der gleichen, abermals angewandten Formel erkennen wir aber auch,'."\n".
                       'dass dann ebenso \lm{ b^{2} } durch \lm{ 2^{2} = 4 } teilbar sein muss:'."\n".
                       ''))),
@@ -100,7 +97,7 @@
                       array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Denn, wenn in \lm{ a^{2} } nun \lm{ 2^{2} = 4 } steckt,'."\n".
                       'dann muss \lm{ \frac{ 2^{2} }{ 2 } = 2^{1} } in \lm{ b^{2} } enthalten sein und damit auch wieder \lm{ 2^{2} = 4 }:'."\n".
                       ''))),
@@ -110,7 +107,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{1} \mid b  \Leftrightarrow  2 \mid b  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{2} \mid b^{2}  \Leftrightarrow  4 \mid b^{2}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann erkennen wir weiterhin, dass \lm{ a^{2} } durch \lm{ 2^{3} = 8 } und schließlich durch \lm{ 2^{6} = 64 } teilbar sein muss:'."\n".
                       ''))),
                   array( 'equations',
@@ -126,10 +123,10 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und immer so fort, für alle endlichen ganzen Potenzen von Zwei – \lm{ 2^{x} }.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daraus folgt dann, dass für all diese endlichen Exponenten keine Teilerfremdheit existiert:'."\n".
                       ''))),
                   array( 'equations',
@@ -141,17 +138,17 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  \lnot *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a, x \in \mathbb{N} *) *( \forall b \in \mathbb{N}^{+} *)  *[  \nexists *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies seht im Widerspruch zu der Eingangsfeststellung, dass es für den gesuchten Bruch – aus endlichen natürlichen Zahlen – einen Nenner und einen Zähler geben muss, die teilerfremd sind.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aufgrund des Widerspruchs also können wir schließen, dass es keinen rationalen Bruch mit endlichem ganzen Nenner und Zähler gibt, der die Wurzel aus Zwei darstellen kann'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -160,7 +157,7 @@
                     'Doch unser Beweis hilft uns glücklicherweise dabei zu verstehen, wie ein Bruch ganzer Zahlen beschaffen sein muss, der die'."\n".
                     'Wurzel aus Zwei dann doch darstellen kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
@@ -184,8 +181,17 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
-                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }'),
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n",
@@ -227,7 +233,7 @@
                     'Darüber hinaus müssen der Nenner \lm{ b } und der Zähler \lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'In die Bedingung des Beweises'."\n".
                       ''))),
@@ -235,7 +241,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unseren Lösungsansatz eingesetzt, führt zu'."\n".
                       ''))),
                   array( 'equations',
@@ -247,47 +253,18 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot 2^{2 ω}  =  2^{2 ω + 2 \frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{2 ω + 1}  =  2^{2 ω + 1}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was zu zeigen war.'."\n",
                       '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
                     'Damit haben wir bewiesen, dass unsere Lösung die Wurzel aus Zwei als Bruch aus ganzen Zahlen darstellt,'."\n".
-                    'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n".
+                    'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n",
+                      'Für die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{Wurzel aus Zwei im Zusammenhang mit den natürlichen Superial-Zahlen}'."\n".
+                    'hat dies eine wichtige Bedeutung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
-                      
-                'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
-                  '')),
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{X}',
-                    '• Remove or move this?',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wie wir wissen ist \lm{ 2^{ω} } ein Teil des Produkts von \lm{ \s }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \s }{ 2^{ω} }  \in  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'So macht es dann auch Sinn, dass ein Produkt aus unserer superialen Basis \lm{ \s } mit der Wurzel aus Zwei'."\n".
-                    'eine natürliche Superial-Zahl ergibt, weil zwei unendlich große ganze Zahlen multipliziert werden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} \cdot \frac{ \s }{ 2^{ω} }  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Auf diese Weise erhalten die natürlichen und die ganzen Superial-Zahlen eine sehr wesentliche und interessante'."\n".
-                    'Erweiterung und die Mathematik gewinnt fundamentale Erkenntnisse.'."\n",
-                      'Denn wie wir im folgenden zeigen werden, können wir diese Erweiterung auf alle algebraischen Koeffizienten'."\n".
-                    'ausdehnen.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung', subline =>
                   'Erweiterung des Beweises auf alle algebraischen Koeffizienten, die irrationale Zahlen sind')),
@@ -296,13 +273,16 @@
                     'führen zu können, möchte ich eingangs einmal klären, was passiert, wenn es tatsächlich eine'."\n".
                     'Lösung für den vermeintlichen Widerspruchsbeweis gibt.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Rationale Wurzeln', subline =>
+                    'Wenn eine Wurzel eine rationale Zahl als Lösung hat')),
                   array( 'text', array( text => array(
-                  '\condb{Rationale Wurzeln} \cond{— Wenn eine Wurzel eine rationale Zahl als Lösung hat} \\\\'."\n".
                     'Was passiert, wenn die Wurzel eine rationale Zahl als Lösung besitzt,'."\n".
                     'sie also nicht irrational ist.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Dazu stellen wir einmal fest, wie wir die \lm{ x }-te Wurzel aus \lm{ n } durch eine Potenz von \lm{ n }'."\n".
                       'beschreiben können:'."\n".
@@ -312,7 +292,7 @@
                       array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \pm n^{\frac{ 1 }{ x }}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{n} |*  =  n^{\frac{ 1 }{ x }}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei die \lm{ x }-te Wurzel aus \lm{ n } als endlicher rationaler Bruch – aus endlichen natürlichen Zahlen – darstellbar:'."\n".
                       ''))),
                   array( 'equations',
@@ -320,7 +300,7 @@
                       array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für den Fall, dass die Wurzel eine rationale Lösung hat, muss der Radikand unter der Wurzel \lm{ n }'."\n".
                       'von der Potenz des Wurzel Radix \lm{ x } sein:'."\n".
                       ''))),
@@ -331,7 +311,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n  =  m^{x}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
                       ''))),
                   array( 'equations',
@@ -341,7 +321,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  m^{x}  =  \frac{ a^{x} }{ b^{x} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  m  =  \frac{ a }{ b }  \;\;;  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'damit existent und nicht im Widerspruch, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -362,14 +342,17 @@
                   array( 'text', array( text => array(
                     'Diese Erkenntnis wird im nachfolgenden Widerspruchsbeweis eine Rolle spielen.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Irrationale Wurzeln', subline =>
+                    'Wenn es keine rationale Zahl als Lösung für eine Wurzel gibt')),
                   array( 'text', array( text => array(
-                  '\condb{Irrationale Wurzeln} \cond{— Wenn es keine rationale Zahl als Lösung für eine Wurzel gibt} \\\\'."\n".
                     'Für alle \lm{ x }-ten Wurzeln aus \lm{ n }, bei denen \lm{ n } nicht die \lm{ x }-te Potenz einer natürlichen'."\n".
                     'Zahl \lm{ m } ist, gilt der folgende Widerspruchsbeweis und zeigt, dass deren \lm{ x }-ten Wurzeln'."\n".
                     'algebraische irrationale Zahlen sind.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Dazu schauen wir uns an, wie wir die \lm{ x }-te Wurzel aus \lm{ n } durch eine Potenz von \lm{ n }'."\n".
                       'beschreiben können:'."\n".
@@ -379,7 +362,7 @@
                       array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \pm n^{\frac{ 1 }{ x }}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{n} |*  =  n^{\frac{ 1 }{ x }}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei die \lm{ x }-te Wurzel aus \lm{ n } als endlicher rationaler Bruch darstellbar – also als Bruch endlicher natürlicher Zahlen:'."\n".
                       ''))),
                   array( 'equations',
@@ -387,14 +370,14 @@
                       array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner und einen Zähler geben muss, die teilerfremd sind:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
                       ''))),
                   array( 'equations',
@@ -404,7 +387,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot b^{x}  =  a^{x}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'woraus wir im Folgenden direkt erkennen können, wenn \lm{ b } nicht alle Primfaktoren von \lm{ n } enthält,'."\n".
                       'dass \lm{ a^{x} } durch \lm{ n } teilbar sein muss:'."\n".
                       ''))),
@@ -413,7 +396,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  n \mid a^{x}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Weil wir es hier mit algebraischen irrationalen Wurzeln zu tun haben, ist nach den Formeln \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m} und \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m}'."\n".
                       '\lm{ n } nicht die \lm{ x }-te Potenz einer natürlichen Zahl \lm{ m }:'."\n".
                       ''))),
@@ -422,7 +405,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists m \in \mathbb{N}^{+} *)  *[  n  =  m^{x}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P}(n) *) *( \forall j_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\;\;\;  *[  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da für \lm{ n } aber eine Primfaktorzerlegung existieren muss'."\n".
                       ''))),
                   array( 'equations',
@@ -430,21 +413,21 @@
                       array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P}(n) *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'hat diese die Bedingung, dass mindestens eine der Potenzen \lm{ k_{i} } ihrer Primfaktoren nicht durch \lm{ x } teilbar sein darf:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( x \mid k_{1} *) \lor \lnot *( x \mid k_{2} *) \lor \lnot *( x \mid k_{3} *) \lor \lnot *( x \mid k_{4} *) \lor \cdots  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wegen Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x} gilt nun auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots \mid a^{x}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'woraus dann'."\n".
                       ''))),
                   array( 'equations',
@@ -465,10 +448,10 @@
 
                     ))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'folgt, weil ja, wie eben festgestellt, eines der \lm{ k_{i} } nicht durch \lm{ x } teilbar ist.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aus der obigen Ausgangsbedingung \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x},'."\n".
                       'abermals angewandt, erkennen wir aber auch,'."\n".
                       'nach dem gleichen Argument, wie direkt zuvor, dass dann ebenso \lm{ b^{x} } durch \lm{ n^{x} } teilbar sein muss:'."\n".
@@ -491,14 +474,14 @@
 
                     ))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und, weil ja schon ein \lm{ n } auf der Seite von \lm{ b^{x} } vorhanden ist, müssen wir bei der Teilbarkeit eines abziehen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x - 1} \mid b^{x}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wegen der Nichtteilbarkeit von \lm{ x } durch \lm{ x - 1 } ist dies äquivalent mit:'."\n".
                       ''))),
                   array( 'equations',
@@ -520,7 +503,7 @@
 
                     ))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wenn \lm{ b^{x} } durch \lm{ n^{x} } teilbar ist, dann folgt durch die Ausgangsbedingung'."\n".
                       ''))),
                   array( 'equations',
@@ -554,14 +537,14 @@
 
                     ))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'weil hier ja ein \lm{ n } zum \lm{ b^{x} } hinzukommt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x^{2} - x + 1} \mid a^{x}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und wegen der nicht Teilbarkeit von \lm{ x^{2} - x + 1 } durch \lm{ x }:'."\n".
                       ''))),
                   array( 'equations',
@@ -571,7 +554,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{*( x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} - x^{2} + x} \mid a^{x}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und wieder weiter aus der Ausgangsbedingung'."\n".
                       ''))),
                   array( 'equations',
@@ -579,7 +562,7 @@
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und, weil ja schon ein \lm{ n } auf der Seite von \lm{ b^{x} } vorhanden ist, folgt:'."\n".
                       ''))),
                   array( 'equations',
@@ -590,7 +573,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{*( x^{3} - x^{2} + x - 1 *) \cdot x} \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x} \mid b^{x}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und dann weiter'."\n".
                       ''))),
                   array( 'equations',
@@ -605,7 +588,7 @@
                       array( display => 'on',  latex => '{  \vdots  }',
                                           label_text => '', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und immer so fort, bis zum Beweisschritt \lm{ r }, wobei ein Schritt immer für \lm{ a } und \lm{ b } gemeinsam gezählt wird:'."\n".
                       ''))),
                   array( 'equations',
@@ -613,10 +596,10 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{N}^{+} *) *( t = 2 \cdot r - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{N}^{+} *) *( t = 2 \cdot r *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und immer so fort …'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'An dieser Stelle ist es aber auch einsichtig, dass \lm{ a } und \lm{ b }, wenn sie durch die entwickelten'."\n".
                       'Polynom-Potenzen von \lm{ n } teilbar sind, ebenso durch jede endliche kleinere positive ganzzahlige Potenz von \lm{ n } teilbar sein müssen.'."\n".
                       'Das bedeutet, aus unserer Ausgangsbedingung folgt die Teilbarkeit durch alle endlichen natürlichen Potenzen von \lm{ n }:'."\n".
@@ -628,7 +611,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid a  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid b  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daraus folgt dann, dass für all diese endlichen Exponenten von \lm{ n } keine Teilerfremdheit existiert:'."\n".
                       ''))),
                   array( 'equations',
@@ -640,17 +623,17 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{N} *) *( \forall b, n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  \lnot *( \frac{ a }{ n^{x} } \perp \frac{ b }{ n^{x} } *)  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  \frac{ a }{ n^{x} } \perp \frac{ b }{ n^{x} }  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies seht im Widerspruch zu der Eingangsfeststellung, dass es für den gesuchten Bruch – aus endlichen natürlichen Zahlen – einen Nenner und einen Zähler geben muss, die teilerfremd sind.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aufgrund des Widerspruchs also können wir schließen, dass es für irrationale Wurzeln keinen rationalen Bruch mit endlichem ganzen Nenner und Zähler gibt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -658,8 +641,11 @@
                   array( 'text', array( text => array(
                     'Gleich zeitig zeigen wir mit dem Widerspruchsbeweis nun auch, wie die Lösung aussieht.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Irrationale Wurzeln', subline =>
+                    'Die Lösung')),
                   array( 'text', array( text => array(
-                  '\condb{Irrationale Wurzeln} \cond{— Die Lösung} \\\\'."\n".
                     'Wollen wir eine Lösung finden, wie wir die \lm{ n }-te Wurzel aus \lm{ x } als Bruch darstellen können,'."\n".
                     'dann kommen wir durch den Widerspruchsbeweis zu dem Schluss:'."\n",
                       'Verzichten wir darauf, dass der Zähler \lm{ a } und der Nenner \lm{ b } endlich sein müssen und wir akzeptieren,'."\n".
@@ -668,7 +654,7 @@
                       'Gehen wir ans Werk formulieren dies.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Setzen wir die Entwicklung des Zählers \lm{ a } und des Nenners \lm{ b } des Bruchs oben fort, bis zur vollständigen Induktion,'."\n".
                       'dann kommen wir zu folgendem Ausdruck'."\n".
@@ -678,7 +664,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'in dem wir nun die Entwicklungsschritte \lm{ r } durch die vollständigen Induktion \lm{ ω } ersetzt haben.'."\n".
                       'Direkt \lm{ ω } in die Summe eingesetzt, anstatt durch \lm{ t } ausgedrückt, und die Summe beispielhaft'."\n".
                       'ausgeschrieben erhalten wir'."\n".
@@ -688,7 +674,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω - 1 } - x^{ 2 ω - 2 } + x^{ 2 ω - 3 } - \cdots + x } \mid a  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω } - x^{ 2 ω - 1 } + x^{ 2 ω - 2 } - x^{ 2 ω - 3 } + \cdots - x } \mid b  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'von wo aus wir weiter vorangehen können.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -713,7 +699,7 @@
                     'unseren Zähler und Nenner unserer Ausgangsbedingung.'."\n",
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ g } ein aktual unendlich großer ganzer Exponent von \lm{ n }, der der Potenz die Eigenschaft gibt,'."\n".
                       'dass sie beliebig endlich oft durch \lm{ n } teilbar ist, ohne eine endliche Potenz zu werden'."\n".
@@ -723,7 +709,7 @@
                       array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dann definieren wir \lm{ b } und \lm{ a } nun, indem wir die Ausgangsbedingung \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}'."\n".
                       'wie gerade beschrieben abwandeln:'."\n".
                       ''))),
@@ -737,7 +723,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  n^{g + \frac{ 1 }{ x } - g}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  n^{\frac{ 1 }{ x }}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Hier erkennen wir jetzt, durch vollständiges Kürzen des Bruchs:'."\n".
                       'Diese beiden Bedingungen beschreiben \lm{ a } und \lm{ b } vollständig.'."\n".
                       'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
@@ -756,10 +742,10 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall z \in \mathbb{Z} *)  *[  n^{g + z + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'So sind wir zur Lösungsmenge gekommen, die wir finden wollten.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Auch hier können wir, wie im Anfangs betrachteten speziellen Fall \lm{ 2^{ω} },'."\n".
                       'mit Hilfe der vollständigen Induktion \lm{ ω } normieren:'."\n".
                       ''))),
@@ -770,19 +756,19 @@
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \boxed{\;\;  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  \;\;}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \boxed{\;\;  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  \;\;}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
                       'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
                       'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
                       'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
                       'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
                       'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
-                      'beschäftigen wir uns im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n",
+                      'beschäftigen wir uns im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}}.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -794,14 +780,14 @@
                       'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
                     'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
                     ''))),
-                  /*%! array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
+                  /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
-                'XXX Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
+                'X Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \lm{ x }-ten Wurzeln aus \lm{ n } sind Superial-Zahlen')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Ein viel einfacherer Beweis, dass einfache Potenzen einer natürlichen Zahl hoch \lm{ ω } auch irrationale Wurzeln aus einer natürlichen Zahl mit mehrfachen Potenzen zu einer ganzen Zahl machen, finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}}.',
+                    '• Ein viel einfacherer Beweis, dass einfache Potenzen einer natürlichen Zahl hoch \lm{ ω } auch irrationale Wurzeln aus einer natürlichen Zahl mit mehrfachen Potenzen zu einer ganzen Zahl machen, finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}}.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -818,7 +804,7 @@
                     'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ ω } der Exponent von \lm{ n }, um die \lm{ x }-te Wurzel aus \lm{ n } als'."\n".
                       'überrationalen Bruch darzustellen'."\n".
@@ -835,7 +821,7 @@
                       array( display => 'on',  latex => '{  q  :=  \frac{ m }{ k }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} *)  *[  n^{q}  =  \frac{ n^{q} \cdot n^{ω} }{ n^{ω} }  =  \frac{ n^{ω + q} }{ n^{ω} }  *]  }'),
                     ))), */
-                  /*%! array( 'text', array( Shape  => 'derivation', text => array(
+                  /*%! array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dann ist es so, dass die natürliche Zahl \lm{ n } eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen'."\n".
                       'in höheren Potenzen als Eins vorkommen können:'."\n".
                       ''))),
@@ -846,7 +832,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
                       // array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ p_{1}^{k_{1} *( ω + q *)} \cdot p_{2}^{k_{2} *( ω + q *)} \cdot p_{3}^{k_{3} *( ω + q *)} \cdot p_{4}^{k_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Brechen wir dies auf die Faktoren der einzelnen Primzahlpotenzen \lm{ p_{i}^{k_{i}} } in \lm{ n } herunter, dann sieht das Bild folgendermaßen aus'."\n".
                       ''))),
                   array( 'equations',
@@ -854,7 +840,7 @@
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
                       'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
                       'zu einer ganzen Zahl zu machen'."\n".
@@ -864,7 +850,7 @@
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'denn nur dann, wenn das gegeben ist, dann ist auch diese Wurzel im Produkt mit unserer superialen Basis \lm{ \s }'."\n".
                       'eine aktual unendlich große natürliche Superial-Zahl, weil \lm{ \s } eben „nur“ die einfachen vollständigen Induktionen aller'."\n".
                       'Primzahlen \lm{ p_{i}^{ω} } enthält'."\n".
@@ -876,7 +862,7 @@
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wenn \lm{ \rad(n) } das Produkt aller in \lm{ n } enthaltenen Primzahlen in einfacher Potenz ist.'."\n",
                         'Dass der Faktor \lm{ p_{i}^{ω} } reichen muss, um aus \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} } eine aktual unendliche ganze Zahl zu machen,'."\n".
                       'können wir schon daran erkennen, dass wir im überrationalen Bruch soweit kürzen dürfen, solange \lm{ *( p_{i}^{k_{i}} *)^{ω} }'."\n".
@@ -894,15 +880,15 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und zeigen damit, dass dieser überrationale Bruch auf die einfache vollständige Induktion reduziert werden kann,'."\n".
                       'ohne seinen Wahrheitsgehalt zu verlieren.'."\n",
-                        'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                        'X'."\n".
+                      'X'."\n".
+                      'X'."\n".
+                      'X'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wegen der Primfaktorzerlegung von \lm{ n } in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}'."\n".
                       'gilt dann auch:'."\n".
                       ''))),
@@ -912,7 +898,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}^{k_{1} *( \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \frac{ 1 }{ x } *)} \cdot \cdots  =  \\\ \qquad\qquad\qquad \frac{ p_{1}^{k_{1} *( ω + \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( ω + \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( ω + \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( ω + \frac{ 1 }{ x } *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Weil \lm{ n } in unserem Ansatz \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}'."\n".
                       'hier ja für jede beliebige positive natürliche Zahl gilt, so gilt sie logischerweise auch für jede Primzahl der Primfaktorzerlegung von \lm{ n },'."\n".
                       'wenn \lm{ \mathbb{P}(n) } die Menge der Primfaktoren von \lm{ n } ist,'."\n".
@@ -922,7 +908,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω + \frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} \cdot p_{i}^{\frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'womit wir jetzt bei den einzelnen Primzahltürmen des Primzahl-Flächenprodukts von \lm{ \s } angekommen sind.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -931,7 +917,7 @@
                     'Wenn \lm{ n } nur aus Primzahlen erster Potenz besteht, dann ergibt sich das Bild:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei probehalber \lm{ n } eine positive natürliche Zahl, die nur aus Primzahlen erster Potenz besteht'."\n".
                       ''))),
@@ -939,7 +925,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} }  *]  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dann erhalten wir einen Nenner und diesen auch als Faktor im Zähler,'."\n".
                       'der immer ein Teil des Primzahl-Flächenprodukts von \lm{ \s } ist'."\n".
                       'und der Zähler ist auch immer eine ganze Zahl:'."\n".
@@ -948,7 +934,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'In Bezug auf die Superial-Zahlen hat dies eine besondere Bedeutung.'."\n".
                       'Denn nehmen wir die \lm{ x }-te Wurzel aus unserem besonderen \lm{ n }'."\n".
                       'mit der superialen Basis \lm{ \s } mal, dann erhalten wir ebenfalls eine ganze Zahl,'."\n".
@@ -959,14 +945,14 @@
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω}  \mid  \s  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das führt uns unweigerlich zu der Frage, ob diese besonderen Wurzel nicht auch zu den Superial-Zahlen gehören'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'deren Beantwortung wir nachgehen sollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1037,13 +1023,13 @@
                     'grundsätzlich zugelassen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Die Kehrwerte der Wurzeln} \\\\'."\n".
+                  '\condb{X Die Kehrwerte der Wurzeln} \\\\'."\n".
                     'Was uns nun noch fehlt, sind die Kehrwerte der Wurzeln, oder anders ausgedrückt,'."\n".
                     'die negativen Wurzeln.'."\n".
                     'Dazu gucken wir uns diese jetzt näher an.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei es erlaubt, dass die \lm{ x }-te Wurzel aus \lm{ n } eine negative Zahl,'."\n".
                       'aber nicht Null ist'."\n".
@@ -1053,7 +1039,7 @@
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} }{ p_{i}^{ω} \cdot n^{\frac{ 1 }{ x }} }  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dann bleibt der Bruch trotzdem ein überrationaler Bruch, wie wir sehen.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1081,7 +1067,7 @@
                     'Denn im Fall der Quadratwurzel können wir durch eine erlaubte Division ganz leicht zeigen, dass unsere fragliche Aussage wahr ist:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei die uns bekannte wahre Aussage, dass die'."\n".
                       'Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
@@ -1090,7 +1076,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n },'."\n".
                       'die den Wahrheitsgehalt der Aussage nicht verändert und deren Umformung'."\n".
                       ''))),
@@ -1100,7 +1086,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu der Aussage, dass auch der Kehrwert der Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } ist eine ganze Zahl sein muss,'."\n".
                       'was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
@@ -1111,7 +1097,7 @@
                     'aus einer endlichen natürlichen Zahl \lm{ n } größer gleich Zwei.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei die uns bekannte wahre Aussage, dass die'."\n".
                       '\lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
@@ -1120,7 +1106,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n }'."\n".
                       'und durch einen Faktor, der eine erlaubte Potenz der \lm{ x }-ten Wurzel aus \lm{ n } ist,'."\n".
                       'wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{nächsten Abschnitt} sehen,'."\n".
@@ -1136,7 +1122,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu der Aussage, dass auch der Kehrwert der \lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl sein muss,'."\n".
                       'was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
@@ -1147,12 +1133,12 @@
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}XXX Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}X Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
                     'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei die ganzzahlige Potenz einer Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
                       ''))),
@@ -1160,7 +1146,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
@@ -1168,14 +1154,14 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei wir sehen, dass wegen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{k} \in \mathbb{N}^{+} \setminus *\{ 1 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'die neue Basis einfach nur ein anderer natürlicher Radikand \lm{ n^{k} } der Wurzel ist,'."\n".
                       'so dass unsere anfängliche Aussage'."\n".
                       ''))),
@@ -1183,7 +1169,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wahr ist.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1194,11 +1180,11 @@
                     'Sie sind völlig neutral.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Die Produkte der Wurzeln} \\\\'."\n".
+                  '\condb{X Die Produkte der Wurzeln} \\\\'."\n".
                     'Wie sieht es nun mit den Produkten von Wurzeln oder deren Kehrwerten aus?'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei das Produkt zweier Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
                       ''))),
@@ -1206,7 +1192,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
@@ -1214,15 +1200,15 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei wir sehen, dass wegen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'und weil wir im \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und weil wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
                       'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
                       'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
                       ''))),
@@ -1230,14 +1216,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ist auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wahr.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1247,13 +1233,13 @@
                     'Sie sind auch im Produkt mit der superialen Basis natürliche Superial-Zahlen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{XXX Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
+                  '\condb{X Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
                     'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln oder ihren Kehrwerten'."\n".
                     'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
                     'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nehmen wir an, dass die irrationale Wurzel oder ihr Kehrwerten in einer Summe mit der endlichen ganzen Zahl \lm{ z } und im Produkt dieser mit \lm{ \s }'."\n".
                       ''))),
@@ -1261,14 +1247,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad *( n^{\frac{ 1 }{ y }} + z \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
@@ -1276,14 +1262,14 @@
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                       array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1293,7 +1279,7 @@
                     'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nehmen wir an, dass der irrationale Goldene Schnitt \lm{ φ } im Produkt mit \lm{ \s }'."\n".
                       ''))),
@@ -1301,14 +1287,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'mit dem Wert der Definition'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ  =  \frac{ \sqrt{ 5 } + 1 }{ 2 }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Einsetzen, Umstellen und Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
@@ -1317,7 +1303,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden natürliche Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
@@ -1325,7 +1311,7 @@
                       array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier natürlicher Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
@@ -1334,7 +1320,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'auch immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1343,11 +1329,11 @@
                     'Wir fahren fort, weitere Varianten der Realanteile algebraischer Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
                     ''))), */
                   /*%! array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}XXX Summen von Wurzeln} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}X Summen von Wurzeln} \\\\'."\n".
                     'Ganz ähnlich verhält es sich mit Summen von zwei oder mehr Wurzeln.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nehmen wir an, dass eine Summe aus zwei irrationalen Wurzeln, oder ihrer jeweiligen Kehrwerte, im Produkt mit \lm{ \s }'."\n".
                       ''))),
@@ -1355,14 +1341,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\quad *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
@@ -1370,14 +1356,14 @@
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1393,8 +1379,8 @@
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
                     'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
-                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
-                      'Nach allem, was ich über diese herausfinden kann, sind die realwertigen Lösungen'."\n".
+                    'die reelwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
+                      'Nach allem, was ich über diese herausfinden kann, sind die reelwertigen Lösungen'."\n".
                     'der Nullstellen von Polynomen entweder Radikale\color{*Bearb}{(Verweis)}, also durch bereits'."\n".
                     'oben betrachtete Wurzelausdrücke darstellbar, oder es sind elliptische Integrale\color{*Bearb}{(Verweis)},'."\n".
                     'für die Nullstellen von Polynomen 5. oder höheren Grades.\color{*Bearb}{(Verweis)}'."\n",
@@ -1403,13 +1389,13 @@
                     'Da die Ausdrücke der Polynome jedes Summanden damit algebraische Radikale oder gegebenenfalls wieder endliche oder unendliche Summen'."\n".
                     'algebraischer Radikale sind, die gegen einen endlichen Wert konvergieren, bleiben es doch Summen algebraischer Radikale.'."\n",
                       'Summen algebraischer Radikale, ob endliche oder unendliche, die zu endlichen Werten konvergieren,'."\n".
-                    'verhalten sich wie im vorstehenden Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln}}'."\n".
+                    'verhalten sich wie im vorstehenden Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln}}'."\n".
                     'beschrieben und sind damit im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen'."\n".
                     'die summiert wieder ebensolche ergeben.'."\n",
                       'Wie allgemein dies gilt, können wir an einem Beispiel beobachten.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Als Beispiel betrachten wir als erstes das allgemeine elliptische Integral der I. Art in der Jacobi-Form:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeIntegrale:2024}, Vollständige elliptische Integrale, Definition der vollständigen elliptischen Integrale.}'."\n".
                       ''))),
@@ -1417,7 +1403,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( 0 < k < 1 *)  *[  \int_{0}^{1} {\frac { \mathrm{d} x }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach der Definition eines Integrals mit Superial-Zahlen als Summe, nach Kapitel \italic{\jumpname{OM:SupNum:Ableitungen-Integrale:Integration}},'."\n".
                       'entspricht dies:'."\n".
                       ''))),
@@ -1425,14 +1411,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{A}_{\R} *) *( 0 < k < 1 *) \\\ \qquad\quad\;\;\;\,  *[  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nehmen wir an, dass dieses Integral im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉*) \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren'."\n".
                       ''))),
                   array( 'equations',
@@ -1449,14 +1435,14 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *) \cdot \frac{ 1 }{ \s^{2} } *)^{\frac{ 1 }{ -2 }} *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei diese Summe sich insofern plausibel in die Fundierung der Superial-Zahlen einfügt, als dass ihre'."\n".
                       'zählende Variable ihre Werte per Definition „nur“ aus den möglichen und sinnvollen Superial-Zahlen schöpft.'."\n".
                       'Das bedeutet, dass die Koeffizienten der Superial-Zahlen der zählenden Variable auch Realanteile der algebraischen Zahlen'."\n".
                       'sind und dadurch die summierten Ausdrücke wieder Realanteile algebraischer Zahlen ergeben.'."\n".
                       'Dies ist in sich selbst plausibel.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nun ist es so, dass die Definition der Ableitung und des Integrals per Superial-Zahlen mit der superialen'."\n".
                       'Basis \lm{ \s } die Besonderheit, dass die aktual unendlichen Anteile bei der Ableitung'."\n".
                       'von rein endlichen Funktionen nicht verschwinden.'."\n".
@@ -1470,7 +1456,7 @@
                       array( display => 'on',  latex => '{  f(x) = x^{3}  \Rightarrow  f\'(x) =  *〈 3 x^{2} *〉.*〈 3 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  f(x) = x  \Rightarrow  f\'(x) =  1  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da alle obigen Summanden ganze Superial-Zahlen sind'."\n".
                       '\\\\ \color{*Bearb}{(Wie gehen wir hier damit um, dass \lm{ x } in der Integralsumme auch superial kleine Anteile enthalten kann? Werden die hier eh zu endlichen ganzen Zahlen? Bei \lm{ x^{2} } wohl eher nicht. Oder können wir das Integral oben so definieren, dass es passt? Oder heben sich die superial kleinen Anteile erst beim Summieren auf?)}'."\n".
                       ''))),
@@ -1478,14 +1464,14 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\color{*Bearb}{(In Arbeit …)} und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1561,7 +1547,7 @@
                     'Entstehung auseinander zu setzen.'."\n",
                       'Welche tieferen Einsichten haben wir vorstehend gewonnen und welche können wir noch weiter schöpfen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Das feine Raster der irrationalen endlichen Wurzeln', subline =>
                   '')),
@@ -1587,7 +1573,7 @@
                     'Der Beweis der Überrationalitätsvermutung zeigt uns aus Perspektive ganzzahliger Brüche,'."\n".
                     'dass es sich bei den irrationalen endlichen Wurzeln tatsächlich um Brüche reiner Potenzen des Radikanden \lm{ n } der Wurzel handelt,'."\n".
                     'was nur sichtbar ist, wenn der unendliche \italic{überrationale Bruch} nicht gekürzt wird.'."\n",
-                      'Dies gilt eben auch für die \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln}{Kehrwerte der Wurzeln},'."\n".
+                      'Dies gilt eben auch für die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln}{Kehrwerte der Wurzeln},'."\n".
                     'nur das dort die endlichen rationalen Differenzen ein negatives Vorzeichen tragen:'."\n".
                     ''))),
                   array( 'equations',
@@ -1614,7 +1600,7 @@
                     'Wir lernen darüber etwas Neues auf dem Gebiet der Zahlentheorie.'."\n".
                     'Es bliebe uns verborgen, wenn wir es einfach nur weg kürzten und es nicht zu deuten wüssten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Endliche Wurzeln – gebrochene Exponenten – können auch im Endlichen ganze Zahlen ergeben', subline =>
                   '')),
@@ -1648,7 +1634,7 @@
                     'Und das Produkt wird aufgrund der Größe des Faktors \lm{ 2^{g} } beziehungsweise \lm{ n^{g} } grundsätzlich zu'."\n".
                     'einer ganzen Zahl, aber von aktual unendlicher Größe.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Nur die aktual unendlichen Potenzen des Zahlen-Radikals der Basis ergeben ein Raster, dass auch die gebrochenen Potenzen der Basis zu ganzen Zahlen macht', subline =>
                   '')),
@@ -1663,7 +1649,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Was ist der kleinste Faktor einer gebrochenen Zahl, der aus ihr eine ganze Zahl macht?', subline =>
                   '')),
@@ -1707,17 +1693,16 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      //%! array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen'),
                     )),
               )
           ); ?>
           
 
-          <!  • Untersuchung  >
-          <?php /*%! To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+          <!  • Untersuchung der Potenzialzahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises', type => 'back'),
@@ -1728,174 +1713,102 @@
                     // '• X',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
-                Title => '\small{Alter Entwurf der Überrationalitätsvermutung …}',
-                TitleVis => 'Alter Entwurf der Überrationalitätsvermutung:', ParagraphList => array(
-
                   array( 'text', array( text => array(
-                    'Die Überrationalitätsvermutung geht davon aus, dass sich die Koordinaten (aus der Menge \latexmath{ \mathbb{A}_R }) der algebraischen Zahlen immer durch rationale Zahlen'."\n".
-                    'aus der Menge \latexmath{ \mathbb{A} } oder durch einen \italic{überrationalen Bruch} von unendlich großen Primzahlprodukten endlicher Primzahlen in Nenner und Zähler'."\n".
-                    'ausdrücken lassen.'."\n".
-                    'Die Wurzel aus Zwei \latexmath{ \sqrt{2} } wäre demnach Beispielsweise auch ein überrationaler Bruch:'."\n".
+                    'Der Beweis der Überrationalitätsvermutung lässt die Frage aufkommen, ob es nicht auch ein separates Zahlensystem'."\n".
+                    'zu den aktual unendlichen Potenzen natürlicher Zahlen wie \lm{ n^{ω} } gibt.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Angenommen \latexmath{ \sqrt{2} } sei ein Beispiel eines überrationalen Bruchs:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  ?=  \frac{ a }{ b }  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Ihre Quotienten \latexmath{ a } und \latexmath{ b }, als Zähler und Nenner,'."\n".
-                      'sollen gekürzt und damit von minimaler Größe sein.'."\n".
-                      'Die minimalen \latexmath{ a } und \latexmath{ b }, die den wesentlichen Kern des Bruchs ausmachen,'."\n".
-                      'wären damit teilerfremd\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilerfremdheit:2022}.}\footnote[*Entwick]{\color{*Entwick}{Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}}:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a \perp b  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Brüche können als die Menge \latexmath{ \mathbb{Qr}^+ } mit folgender Formel minimalistisch beschrieben werden,'."\n".
-                      'wobei uns die Funktion \latexmath{ ord(p, \mathbb{P}) }'."\n".
-                      'den Index als Ordnungszahl einer Primzahl \latexmath{ p }'."\n".
-                      'in der Menge der endlichen Primzahlen \latexmath{ \mathbb{P} } gibt.'."\n".
-                      'Auch müssen sie die Bedingung erfüllen, dass sie endlich groß sind:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Qr}^{+}  :=  *\{  x  *|*  *( \exists x *) *( \exists n \in \mathbb{N} *) *( x < n *)  \\\ \qquad\qquad\qquad\quad\; *[  x  =  \prod_{ ( \forall p_{i} \in \mathbb{P} ) ( i = ord(p, \mathbb{P}) ) ( z_{i} \in \mathbb{Z} ) } \!\!\! p_{i}^{z_{i}}  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Verallgemeinert für alle überrationalen Zahlen muss ihr Bruch auch negativ oder Null sein können.'."\n".
-                      'Daher benötigen wir den Bruch mit Vorzeichen, um die Menge \latexmath{ \mathbb{Qr} } der überrationalen Zahlen zu definieren:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Qr}  :=  *\{  x  *|*  *( q^{+} \in \mathbb{Qr}^{+} *) *( \forall v \in \{ -1, 0, 1 \} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  x  =  v \cdot q^{+}  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                      ''))),
-
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                  'Die Potenzialzahlen sind im Allgemeinen weder Superial-Zahlen noch Ordinalzahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Das bedeutet, dass wir unser Beispiel nun so in seiner Beschreibung verfeinern können:'."\n".
+                    'Im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}‹}'."\n".
+                    'vergleichen wir die Struktur der Superial-Zahlen mit der Struktur der Ordinalzahlen.'."\n".
+                    'Dabei stellen wir erstaunliche Ähnlichkeiten bei gleichzeitigen grundlegenden Unterschieden fest, die sich wundersam ergänzen.'."\n",
+                      'Wir können sagen, dass die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ \mathbb{On} }'."\n".
+                    'ein rein positives Stellenwertsystem\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}} zur Basis \lm{ ω } sind.'."\n".
+                    'Sie beginnen mit den natürlichen Zahlen und setzen sich danach mit den Summen'."\n".
+                    'der endlichen Vielfachen sowie den endlichen Potenzen von \lm{ ω } fort, wie \lm{ 3 ω^{2} + 5 }.'."\n".
+                    'Danach kommen dann die aktual unendlichen Potenzen des aktual Unendlichen \lm{ ω^{ω} }, also wie \lm{ 3^{\frac{ 1 }{ 2 }} \s^{2} + 5 = 3^{\frac{ 1 }{ 2 }} *( ω^{ω} *)^{2} + 5 }, und so weiter.'."\n",
+                      'Die natürlichen Superial-Zahlen sind nun ein Stellenwertsystem zur Basis \lm{ \s = ω^{ω} },'."\n".
+                    'wie wir durch den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wissen.'."\n".
+                    'Auch die natürlichen Superial-Zahlen beginnen mit den endlichen natürlichen Zahlen, gehen danach dann mit den Summen der endlichen reell algebraischen Vielfachen von \lm{ \s } weiter, positiven wie auch negativen,'."\n".
+                    'und dessen endlichen natürlichen Potenzen, wobei im endlichen Summanden nur endliche ganze Zahlen als Koeffizienten vorkommen.'."\n",
+                      'Dadurch, dass in den Superial-Zahlen viel feinere und auch negative Koeffizienten vorkommen können, verhalten sich Superial-Zahlen ganz anders als Ordinalzahlen.'."\n".
+                    'So sind die Ordinalzahlen, bis auf die endlichen natürlichen Zahlen und dann \lm{ \s = ω^{ω} }, \lm{ \s^{2} = ω^{2 ω} } und ähnliche, keine Superial-Zahlen.'."\n",
+                      'Systematisch gesehen gibt es auch noch die aktual unendlichen Potenzen der natürlichen Zahlen, wie \lm{ 2^{ω} }, oder allgemeiner \lm{ n^{ω} },'."\n".
+                    'die ich \italic{Potenzialzahlen} nenne und die in der oben bewiesenen Überrationalitätsvermutung ja die zentrale Rolle spielen.'."\n".
+                    'Auch diese sind keine Superial-Zahlen!'."\n".
+                    'Daher sollten wir uns mit ihnen noch näher befassen.'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  ?\in  \mathbb{Qr}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wir können jetzt Überlegungen anstellen, ob dies prinzipiell überhaupt möglich ist:'."\n",
-                      'Wenn wir die \latexmath{ \sqrt{2} } in einer Näherung berechnen, dann erhalten wir ja immer mehr Nachkommastellen.'."\n".
-                    'Dies müsste bedeuten, dass im Zähler und Nenner unseres Bruchs immer mehr teilerfremde Primzahlen hinzukommen,'."\n".
-                    'die das Ergebnis dann immer genauer werden lassen.'."\n".
-                    'Denn die Wurzel aus Zwei hat als irrationale Zahl ja unendlich viele, aperiodische Nachkommastellen.'."\n",
-                      'Nun gibt es im Grunde zwei naiv denkbare Möglichkeiten für die Entwicklung der Primzahlen, jeweils im Nenner und Zähler:'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Entweder die Primzahlen wechseln dabei ständig alle und es ist keine Annäherung an eine bestimmte Primzahlzusammensetzung zu beobachten.',
-                        'Oder nach und nach kristallisieren sich Primzahlen heraus, die ab einer bestimmten Genauigkeit bleiben,'."\n".
-                          'und diese werden dann immer mehr.',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Um das zu klären, bietet sich natürlich ein \jump{OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung}{Rechenexperiment},'."\n".
-                    'also vermutlich eher ein Computer-Experiment, an.'."\n",
-                      'Im ersten Fall fällt es mir schwer zu verstehen, wie wir da weiterkommen wollen.'."\n",
-                      'Im zweiten Fall können wir uns vielleicht überlegen, ob das grundsätzlich möglich ist,'."\n".
-                    'denn die sich herauskristallisierenden Primzahl müssen wohl bestimmte Eigenschaften haben,'."\n".
-                    'damit das Ergebnis konvergiert, also immer genauer wird, und nicht wieder zerstört wird:'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
-                    ))),
-
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
                       
-                'Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Quadratwurzel_aus_2&oldid=229698584]{}{Quadratwurzel aus 2, Geschichte}', subline =>
+                'Die Potenzialzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Alte Inder:'."\n".
+                    'Wie eben erwähnt, ist festzustellen, dass Zahlen wie \lm{ n^{ω} } nicht zur Menge der'."\n".
+                    'Superial-Zahlen \lm{ \mathbb{S} } gehören, auch, wenn der Beweis oben sie verwendet und dieser entscheidende Konsequenzen für die'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} hat.'."\n".
+                    'Denn faktoriell sind diese Zahlen, oder besser ihre wesentlichen Eigenschaften, im Primzahl-Flächenprodukt von \lm{ \s } enthalten, jedoch kommen sie eben nicht in Reinform in den Superial-Zahlen vor.'."\n",
+                      'Zur Menge der Ordinalzahlen gehören die Potenzialzahlen ebensowenig.'."\n".
+                    'Dort lassen sie sich überhaupt gar nicht einordnen, obwohl die Zahl \lm{ 2^{ω} } als Kardinalität mit der \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuumshypothese}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
+                    'grundlegend zusammenhängt und diese wiederum mit den Ordinalzahlen.'."\n",
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                  'Natürliche Potenzialzahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Natürliche Potenzialzahlen sind erst einmal positive ganze Zahlen einschließlich der Null.'."\n".
+                    'Sie sind im Endlichen im Grunde zunächst die endlichen natürlichen Zahlen quasi in Form ihrer Primfaktorisierung, zuzüglich der Null und Eins, sowie deren positive natürliche Potenzen.'."\n".
+                    'Summen dieser sind immer wieder als Primfaktorisierung darstellbar.'."\n",
+                      'Dann geht es im Aktual-Unendlichen über zu den \lm{ ω }-ten Potenzen der natürlichen Zahlen.'."\n".
+                    'Die aktual unendlichen Potenzen können auch Vielfache und Potenzen von \lm{ ω } sowie endliche rationale Summanden enthalten.'."\n",
+                      'Nachfolgend sind die Klassen- beziehungsweise Mengeneinträge einmal nach der Basis und einmal nach der Potenz geordnet.'."\n".
+                    'Die jeweilige Basis \lm{ _{\perp}n } dieser Potenzdarstellung besteht aus den Primzahlen ihrer Primfaktorierung in der Potenz aus den Primzahlen,'."\n".
+                    'die in den Potenzen der einzelnen Primzahlen keinen gemeinsamen Teiler haben, und dann noch in der Potenz des gemeinsamen Teilers aller Potenzen.'."\n",
+                      'Wir definieren also die \italic{Oberpotenz} einer natürlichen Zahl \lm{ _{\sqcap}n } und die \italic{Oberpotenzbasis} \lm{ _{\perp}n } dazu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 577 }{ 408 }  =  \sqrt{2}  \approx  \frac{ 577 }{ 2^{3} \cdot 3 \cdot 17 }  }'),
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \mathrm{opot}(n)  :=  _{\sqcap}n  :=  \text{Oberpotenz von } n  *]  }'),
+                      array( display => 'on',  latex => '{  \mathrm{obas}(n)  :=  _{\perp}n  :=  \sqrt[\raise .2ex {_{\sqcap}n}]{n}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  =  \mathrm{obas}(n)^{\mathrm{opot}(n)}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  _{\perp}n^{_{\sqcap}n}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Babylonier:'."\n".
+                    'Für Einträge, die ins Aktual-Unendliche gehen, ist zu berücksichtigen, dass folgende'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 30547 }{ 21600 }  =  \frac{ 11 \cdot 2777 }{ 2^{5} \cdot 3^{3} \cdot 5^{2} }  }'),
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall k, m, x \in \mathbb{N}^{+} *) *( \forall y \in \mathbb{Z} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                      
-                'Näherungsbrüche der Kettenbruchentwicklung von Wurzel aus Zwei', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'OEIS: \jump[https://oeis.org/search?q=A001333+-id:A001333]{}{A002965 – Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).}'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Hier die Einträge nach dem gemeinsamen Teiler der Potenzen, also der Oberpotenz, und innerhalb dieser nach der Größe der Oberpotenzbasis sortiert:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  1,414213562373095048801688724209698 \\\ \qquad\qquad\;\;\, 078569671875376948073176679737990 \\\ \qquad\qquad\;\;\, 73247846210703885038753432764157\!\dots  }',
-                                            footnote => '\color{*Bearb}{Vgl. \jump[https://oeis.org/A002193/constant]{}{OEIS: A002193 as a constant (usually base 10)}}'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 1 }{ 1 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 1 }{ 1 }  =  1,\!|\overline{0}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 3 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 3 }{ 2 }  =  1,\!|5\overline{0}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 7 }{ 5 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 7 }{ 5 }  =  1,4|\overline{0}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 17 }{ 12 }  =  \frac{ 17 }{ 2^{2} \cdot 3 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 17 }{ 12 }  =  1,41|\overline{6}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 41 }{ 29 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 41 }{ 29 }  =  1,\overline{41|37931034482758620689655172}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 99 }{ 70 }  =  \frac{ 3^{2} \cdot 11 }{ 2 \cdot 5 \cdot 7 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 99 }{ 70 }  =  1,41\overline{42|8571}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 239 }{ 169 }  =  \frac{ 239 }{ 13^{2} }  }'),
-                      array( display => 'off', latex => '{  \frac{ 239 }{ 169 }  =  1,\overline{4142|0118343195266272189349} \\\ \qquad\qquad\quad\;\, \overline{11242603550295857988165680} \\\ \qquad\qquad\quad\;\, \overline{47337278106508875739644970}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 577 }{ 408 }  =  \frac{ 577 }{ 2^{3} \cdot 3 \cdot 17 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 577 }{ 408 }  =  1,41421|56\overline{8627450980392156} \\\ \qquad\qquad\quad\;\,  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 1393 }{ 985 }  =  \frac{ 7 \cdot 199 }{ 5 \cdot 197 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 1393 }{ 985 }  =  1,41\overline{4213|1979695431472081218} \\\ \qquad\qquad\quad\;\;\; \overline{2741116751269035532994923} \\\ \qquad\qquad\quad\;\;\; \overline{8578680203045685279187817} \\\ \qquad\qquad\quad\;\;\; \overline{2588832487309644670050761}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 3363 }{ 2378 }  =  \frac{ 3 \cdot 19 \cdot 59 }{ 2 \cdot 29 \cdot 41 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 3363 }{ 2378 }  =  1,41\overline{4213|6248948696383515559} \\\ \qquad\qquad\quad\;\;\, \overline{2935239697224558452481076} \\\ \qquad\qquad\quad\;\;\, \overline{5349032800672834314550042} \\\ \qquad\qquad\quad\;\;\, \overline{0521446593776282590412111} \\\ \qquad\qquad\quad\;\;\, \overline{0176619007569386038687973} \\\ \qquad\qquad\quad\;\;\, \overline{0866274179983179}  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 8119 }{ 5741 }  =  \frac{ 23 \cdot 353 }{ 5741 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 8119 }{ 5741 }  =  1,4142135|516460546943041282\!\dots  }',
-                                            footnote => '\color{*Bearb}{Beginn und Ende der Periode sind unbekannt: \\\\ Vgl. \jump[https://www.wolframalpha.com/input?i=8119%2F5741]{}{WolframAlpha: 8119/5741}}'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 19601 }{ 13860 }  =  \frac{ 17 \cdot 1153 }{ 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 19601 }{ 13860 }  =  1,41\overline{421356}|  }',
-                                            footnote => '\color{*Bearb}{Vgl. \jump[https://www.wolframalpha.com/input?i=19601%2F13860]{}{WolframAlpha: 19601/13860}}'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 47321 }{ 33461 }  =  \frac{ 79 \cdot 599 }{ 33461 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 47321 }{ 33461 }  =  1,414213562|0573204626281342\!\dots  }',
-                                            footnote => '\color{*Bearb}{Beginn und Ende der Periode sind unbekannt: \\\\ Vgl. \jump[https://www.wolframalpha.com/input?i=47321%2F33461]{}{WolframAlpha: 47321/33461}}'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 114243 }{ 80782 }  =  \frac{ 3 \cdot 113 \cdot 337 }{ 2 \cdot 13^{2} \cdot 239 }  }'),
-                      array( display => 'off', latex => '{  \frac{ 114243 }{ 80782 }  =  1,4\overline{14213562|4272734024906538\!\dots^{546}}  }',
-                                            footnote => '\color{*Bearb}{Vgl. \jump[https://www.wolframalpha.com/input?i=114243%2F80782]{}{WolframAlpha: 114243/80782}}'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 195025 }{ 114243 }  =  \frac{ 5^{2} \cdot 29 \cdot 269 }{ 3 \cdot 113 \cdot 337 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ 275807 }  =  \frac{ X }{ 7 \cdot 31^{2} \cdot 41 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ 470832 }  =  \frac{ X }{ 2^{4} \cdot 3 \cdot 17 \cdot 577 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ X }  =  \frac{ X }{ X }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 30547 }{ 21600 }  =  \frac{ 11 \cdot 2777 }{ 2^{5} \cdot 3^{3} \cdot 5^{2} }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ X }  =  \frac{ X }{ X }  }'),
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, 1, \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{1} *) } \\\ \qquad\quad\,\, 2, 3, 5, 6 = 2 \cdot 3, 7, 10= 2 \cdot 5, \\\ \qquad\quad\, 11, 12 = 2^{2} \cdot 3, 13, 14 = 2 \cdot 7, 15 = 3 \cdot 5, 17, \\\ \qquad\quad\, 18 = 2 \cdot 3^{2}, 19, 20 = 2^{2} \cdot 5, 21 = 3 \cdot 7, \\\ \qquad\quad\, 22 = 2 \cdot 11, 23, 24 = 2^{3}, 26 = 2 \cdot 13, 28 = 2^{2} \cdot 7 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{2} *) } \\\ \qquad\quad\;\, 2^{2} = 4, 3^{2} = 9, 5^{2} = 25 \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\; 12^{2} = *( 2^{2} \cdot 3 *)^{2} = 2^{4} \cdot 3^{2} = 144 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{3} *) } \\\ \qquad\quad\;\, 2^{3} = 8, 3^{3} = 27 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{4} *) } \\\ \qquad\quad\; 2^{4} = 16 \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω - \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω - \frac{ 1 }{ 2 }}, 3^{ω - \frac{ 1 }{ 2 }}, 5^{ω - \frac{ 1 }{ 2 }}, 6^{ω - \frac{ 1 }{ 2 }}, 7^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω} *) } \\\ \qquad\quad\;\, 2^{ω}, 3^{ω}, 5^{ω}, 6^{ω}, 7^{ω} \cdots ω^{ω} \cdots \quad \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω + \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω + \frac{ 1 }{ 2 }}, 3^{ω + \frac{ 1 }{ 2 }}, 5^{ω + \frac{ 1 }{ 2 }}, 6^{ω + \frac{ 1 }{ 2 }}, 7^{ω + \frac{ 1 }{ 2 }} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{2 ω} *) } \\\ \qquad\quad\;\, 2^{2 ω} = 4^{ω} \cdots ω^{2 ω} \cdots \quad *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Hier die Einträge erst nach der Oberpotenzbasis und innerhalb dieser nach den Oberpotenzen sortiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, \\\ \qquad\quad\, 1, \\\ \qquad\quad\, 2^{1}, 2^{2}, 2^{3} \cdots 2^{ω - \frac{ 1 }{ 2 }} \cdots 2^{ω} \cdots 2^{ω + \frac{ 1 }{ 2 }} \cdots 2^{2 ω - \frac{ 1 }{ 3 }} \cdots 2^{2 ω} \cdots \\\ \qquad\quad\, 3^{1}, 3^{2}, 3^{3} \cdots 3^{ω - \frac{ 1 }{ 2 }} \cdots 3^{ω} \cdots 3^{ω + \frac{ 1 }{ 2 }} \cdots 3^{2 ω - \frac{ 1 }{ 3 }} \cdots 3^{2 ω} \cdots \\\ \qquad\quad\, 5^{1}, 5^{2}, 5^{3} \cdots 5^{ω - \frac{ 1 }{ 2 }} \cdots 5^{ω} \cdots 5^{ω + \frac{ 1 }{ 2 }} \cdots 5^{2 ω - \frac{ 1 }{ 3 }} \cdots 5^{2 ω} \cdots \\\ \qquad\quad\, 6^{1}, 6^{2}, 6^{3} \cdots 6^{ω - \frac{ 1 }{ 2 }} \cdots 6^{ω} \cdots 6^{ω + \frac{ 1 }{ 2 }} \cdots 6^{2 ω - \frac{ 1 }{ 3 }} \cdots 6^{2 ω} \cdots \\\ \qquad\quad\, 7^{1}, 7^{2}, 7^{3} \cdots 7^{ω - \frac{ 1 }{ 2 }} \cdots 7^{ω} \cdots 7^{ω + \frac{ 1 }{ 2 }} \cdots 7^{2 ω - \frac{ 1 }{ 3 }} \cdots 7^{2 ω} \cdots \\\ \qquad\quad\, 10^{1}, 10^{2}, 10^{3} \cdots 10^{ω - \frac{ 1 }{ 2 }} \cdots 10^{ω} \cdots 10^{ω + \frac{ 1 }{ 2 }} \cdots 10^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 11^{1}, 11^{2}, 11^{3} \cdots 11^{ω - \frac{ 1 }{ 2 }} \cdots 11^{ω} \cdots 11^{ω + \frac{ 1 }{ 2 }} \cdots 11^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 12^{1}, 12^{2}, 12^{3} \cdots 12^{ω - \frac{ 1 }{ 2 }} \cdots 12^{ω} \cdots 12^{ω + \frac{ 1 }{ 2 }} \cdots 12^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 13^{1}, 13^{2}, 13^{3} \cdots 13^{ω - \frac{ 1 }{ 2 }} \cdots 13^{ω} \cdots 13^{ω + \frac{ 1 }{ 2 }} \cdots 13^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 14^{1}, 14^{2}, 14^{3} \cdots 14^{ω - \frac{ 1 }{ 2 }} \cdots 14^{ω} \cdots 14^{ω + \frac{ 1 }{ 2 }} \cdots 14^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 15^{1}, 15^{2}, 15^{3} \cdots 15^{ω - \frac{ 1 }{ 2 }} \cdots 15^{ω} \cdots 15^{ω + \frac{ 1 }{ 2 }} \cdots 15^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 17^{1}, 17^{2}, 17^{3} \cdots 17^{ω - \frac{ 1 }{ 2 }} \cdots 17^{ω} \cdots 17^{ω + \frac{ 1 }{ 2 }} \cdots 17^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{1}, ω^{2}, ω^{3} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      '… \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen}‹} → \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}‹} …'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

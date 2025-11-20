@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Home'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Yin-Yang-heiliges-Kind'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -744,7 +744,7 @@
                     '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Home:Inhalt'),
+                      array(  jump_name => 'OM:NPYo:Trimurti'),
                     )),
               )
           ); ?>

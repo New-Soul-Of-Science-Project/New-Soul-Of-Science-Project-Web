@@ -63,6 +63,9 @@
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft'),
                     )),
 
                   array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
@@ -75,19 +78,17 @@
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind'),
                     )),
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
 
-                '\italic{Gesamte Auflistung}', subline =>
-                  '')),
-
-
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft', text =>
                       
                 'Eine positive Vision für unsere Zukunft', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Mein Anliegen ist, euch zu zeigen, dass die alten Weisheiten der Mythen und Religionen für uns heute immer noch eine wichtige Bedeutung haben,'."\n".
                     'wenn wir sie mit unserem modernen Wissen, unserer modernen Wissenschaft, verbinden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Informationen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
@@ -273,7 +274,196 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang', text =>
+                      
+                'Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen,'."\n".
+                    'mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise schauen wir auf einer Metaebene nach bestimmten Aspekten.'."\n".
+                    'Wir sehen, wo wir dabei der weiblich-männlichen Dualität, wie Yin und Yang oder Mond und Sonne, begegnen und in welchen Fassetten diese auftritt.'."\n".
+                    'Dabei können wir auch erkennen, dass aus diesen Aspekten „heilige Kinder“ oder „Gotteskinder“ „geboren“ oder geschöpft werden.'."\n",
+                      'Wir analysieren, dass die weiblich-männliche Dualität oft für unsere Gefühle (Bedürfnisse) und unsere Handlungen (Taten) steht.'."\n".
+                    'Und das daraus geborene „heilige Kind“ steht für Lernen, Persönlichkeitsentwicklung, Gedeihen, Klugheit, Gesundheit, Fürsorge, Liebe – eben für ein gutes Leben.'."\n".
+                    'Daraus entwickeln wir ein wissenschaftliches Modell der Psychosomatik, dass ich Care-Prozess oder Achtsamkeitsprozess nenne.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Etappen unserer Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Beispiele für die weiblich-männliche Dualität \\\\'."\n".
+                    '2. Paarungen weiblich-männlicher Dualität bringen „Kinder“ hervor \\\\'."\n".
+                    '3. Gefühl, Handlung und Entwicklung als besondere Dreifaltigkeit \\\\'."\n".
+                    '4. Die Realität der besonderen Dreifaltigkeit \\\\'."\n".
+                    '5. Ein neues Modell als Grundlage der Psychosomatik und Medizin \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Eckdaten:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1 bis 1,5 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Ein-lebensnahes-Verstaendnis-von-Yin-und-Yang-Sonne-und-Mond-dem-Prinzip-des-Geschlechts-202502-1.9-kurz.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts}',
+                    ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang-YouTube'))),
+
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                    )),
+
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik', text =>
+                      
+                'Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet:'."\n".
+                    'Diesmal bezüglich weiterer geometrischer Dimensionen und ihrer Bedeutung, im Besondern Oben und Unten.'."\n",
+                      'Uns beschäftigen die Fragen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Was hat der weiblich-männliche Dualismus und das „heilige Kind“ mit unserem Bewusstsein und Unterbewusstsein zu tun?',
+                        'Was hat dies mit unserer Heilung zu tun; mit Hoffnung und Glaube?',
+                        'Wie integriert sich dies in unser neues Modells der Psychosomatik, in den neuen Care-Prozess oder Achtsamkeitsprozess?',
+                        'Wie können wir das „heilige Kind“ als Beseelung oder Hauchung – Leben einhauchend – verstehen?',
+                    ))),
+                  array( 'text', array( text => array(
+                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n",
+                      'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren.'."\n".
+                    'Es ging den alten Ägyptern, Griechen und Römern ganz sicher damals nicht anders.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Etappen unserer Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Weitere Dimensionen der Dualität und Trinität in unserem Körper \\\\'."\n".
+                    '2. Der Phönix aus der Asche \\\\'."\n".
+                    '3. Das Wechselspiel von Bewusstsein und Unterbewusstsein \\\\'."\n".
+                    '4. Den großen Drachen besiegen, die alte Schlange – unsere Angst \\\\'."\n".
+                    '5. Unsere Heilung – immer eine Selbstheilung \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Eckdaten:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1 bis 1,5 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Dem-Wechselspiel-von-Bewusstsein-und-Unterbewusstsein-entspringt-unsere-Heilung-vom-Phoenix-aus-der-Asche-zur-Psychosomatik-202502-3.3-Vortrag.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=jwKjOlLx29k&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=4]{}{Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik}',
+                    ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_DemWechselspielVonBewusstsein, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik-YouTube'))),
+
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                    )),
+
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft', text =>
+                      
+                'Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch jetzt auf eine analytische Gedanken- und Wissensreise gehen, mit deren Erkenntnissen wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet:'."\n",
+                      'Diesmal bezüglich des Zusammenhangs der Dinge, der dadurch erweiterten Beseelung und der geometrischen Bezüge und Dimensionen, die dadurch entstehen, sowie, was dies alles mit der Zeit und ihrer Helix-Spiralform zu tun hat.'."\n",
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Heute möchte ich mit euch die dualen und ternären Aspekte der Zeit erforschen.',
+                        'Die Zeit hat für unser Leben, und so natürlich auch für unsere Ahnen, eine ganz besondere Bedeutung.',
+                        'Beleuchten wir die Aspekte der Zeit naturphilosophisch, dann offenbart sich uns ein dynamisches Prinzip der Grundstruktur unserer Welt, dass auf Stabilität und Fortentwicklung beruht, wie auch auf den Wegen des Schicksals; unseren Entscheidungen.',
+                        'Dabei handelt es sich im Grunde um eine dynamische Heilige Geometrie.',
+                        'Um dies zu verstehen, möchte ich damit beginnen, die spirituelle Magie der Geometrie zu beleuchten.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n",
+                      'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren. Es ging den alten Ägyptern, Griechen und Römern ganz sicher damals nicht anders.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Etappen unserer Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Der Ring und die spirituelle Magie der Geometrie \\\\'."\n".
+                    '2. Gemeinsamer Dialog Ⅰ \\\\'."\n".
+                    '3. Das altägyptische duale Zeitverständnis und die Physik \\\\'."\n".
+                    '4. Die Trinität oder Dreifaltigkeit der Veränderung und der Zeit \\\\'."\n".
+                    '5. Gemeinsamer Dialog Ⅱ \\\\'."\n".
+                    '6. Die Trimurti und das Licht \\\\'."\n".
+                    '7. Das Schicksal als Weg, Weggabelung und Schwelle – die Transformation \\\\'."\n".
+                    '8. Das Zusammenwirken der Aspekte der Zeit zu neuem Verständnis der Welt \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Eckdaten:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1,5 bis 2 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Die-Helix-Spirale-Die-Zeit-in-Mythologien–Religionen-und–Wissenschaft-202502-6.4.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=joyy7i-f6Rw&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=7]{}{Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft}',
+                    ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_DieHelixSpirale, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft-YouTube'))),
+
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      // array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      // array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      // array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      // array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                      array(  jump_name => 'OM:FrQFT:Home', title_site => 'Fraktale Quanten-Fluss-Theorie'),
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen'),
+                      array(  jump_name => 'OM:FrQFT:Lepton'),
+                      array(  jump_name => 'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-UnpolPhotFarbpol6pol', title_site => 'Vektorgleichgewicht in der Quantenchromodynamik (Hadronen-Modell)'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation'),
+                    )),
+
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz', text =>
                       
                 'Yin und Yang, Sonne und Mond in Mythologie und Wissenschaft \italic{– das Prinzip des Geschlechts}', subline =>
                   'Der Care-Prozess im ›Spannungsspiel des Lebens‹')),
@@ -302,7 +492,7 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind', text =>
                       
                 'Yin und Yang, Sonne und Mond sowie die Dreifaltigkeit in Mythologie und Wissenschaft \italic{– das Prinzip des Geschlechts und das daraus „geborene göttliche Kind“}', subline =>
                   'Der Care-Prozess im ›Spannungsspiel des Lebens‹')),

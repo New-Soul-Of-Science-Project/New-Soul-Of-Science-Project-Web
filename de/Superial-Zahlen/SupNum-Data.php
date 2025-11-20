@@ -1,4 +1,40 @@
 <?php
+  $SupNum_g_text_ZFCkonform =
+                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
+
+  
+  $SupNum_g_paragraphList_Glossar =
+                array(
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Glossar', subline =>
+                    '')),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{endliche Primzahl:} eine Primzahl \lm{ p \in \mathbb{P} = *\{ 2, 3, 5, \cdots *\} } aus \lm{ \mathbb{N} }, als Element in \lm{ \mathbb{S}_{\Z} } eingebettet. \\\\'."\n".
+                          '\italic{Notation:} \lm{ p } „endliche Primzahl“ \lm{ \Leftrightarrow } Ideal \lm{ p \mathbb{S}_{\Z} }, Bewertung \lm{  v_{p}}.',
+                        '\bold{superiale Primzahl:} Primelement in \lm{ \mathbb{S}_{\Z}\!: \; p_{\s} \ne 0 }, \lm{ p_{\s} } keine Einheit, und \lm{ p_{\s} \mid ab \;\Leftrightarrow\; p_{\s} \mid a \; } oder \lm{ \; p_{\s} \mid b \; }. („aktual unendliche Primzahl“ in unserer Sprache.)',
+                        '\bold{Primideal:} primes Ideal (zum Beispiel \lm{ p \mathbb{S}_{\Z} }, \lm{ ⟨p_{\s}⟩ }).',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    '\italic{Hinweis:} „aktual unendlich“ bezieht sich hier auf die Skala/Basis \lm{ \s }.'."\n".
+                    'Bei „superialer Primzahl“ meinen wir ringtheoretische Primheit in \lm{ \mathbb{S}_{\Z} }, nicht unbedingt „unendlich große“ numerische Größe.'."\n".
+                    ''))),
+                );
+
+  $SupNum_g_paragraphList_Terminologie =
+                array(
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Terminologie', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
+                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
+                    'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
+                    ''))),
+                );
+
+  
   $SupNum_g_Site_ary = array(
     'OM:SupNum:' =>
       array_merge(
@@ -37,7 +73,7 @@
       text_titel_h1 => 'Superial-Zahlen \color{*TitleAdd}{\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche',
-      text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der (durch Radikale darstellbaren?) reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt – neue Ideen elementarer Mathematik',
+      text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt; auch die Struktur der transzendenten Zahlen weiter aufklärt – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -85,7 +121,8 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.IN.23'),
 
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'X' */),
+
+          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'Summen zur Integration von 〈2x〉․〈1〉' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt' => array( headline_text => 'SN.AbIn.NU.1'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel' => array( headline_text => 'Direkte Herleitung der angepassten Gaußschen Summenformel'/* , headline_text_short => 'X' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.3'),
@@ -98,7 +135,57 @@
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz' => array( headline_text => 'SN.AbIn.NU.27'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert' => array( headline_text => 'SN.AbIn.NU.28'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'SN.AbIn.NU.32'),
+
+          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x' => array( headline_text => 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }' , headline_text_short => 'Summe aller Koeffizienten von Null bis ausschließlich x' ),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.39'),
+
+        'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale' => array( headline_text => 'Besondere Ableitungen und Integrale'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores' => array( headline_text => 'Traum der Sophomores'/* , headline_text_short => 'X'*/),
+      ),
+    ),
+    'OM:SupNum:Algebraische-Koeffizienten-Vermutung' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php',
+      titel => 'Algebraische-Koeffizienten-Vermutung (AKV) - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Algebraische-Koeffizienten-Vermutung}. — \name[description]{OM:SupNum:Algebraische-Koeffizienten-Vermutung}.',
+      keywords => '',
+      text_titel_h1 => 'Algebraische-Koeffizienten-Vermutung (AKV)',
+      text_titel_short => 'Algebraische-Koeffizienten-Vermutung',
+      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
+      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
+      jump_ary => array(
+        'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Beweis-der-Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar' => array( headline_text => 'SN.AKV.20'),
+      ),
+    ),
+    'OM:SupNum:Arithmetische-Struktur-Geometrie' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Arithmetische-Struktur-Geometrie}.\hidden{ — \name[description]{OM:SupNum:Arithmetische-Struktur-Geometrie}.}',
+      keywords => '',
+      text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
+      text_titel_short => 'Die arithmetische Struktur der Geometrie',
+      text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
+
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(
@@ -114,16 +201,6 @@
       jump_ary => array(
         'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-        'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen' => array( headline_text => 'Die sinnvollen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen' => array( headline_text => 'Perspektive des Stellenwertsystems der Superial-Zahlen'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-exist-As' => array( headline_text => 'SN.Eig.SK.2'),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.Eig.SK.6'),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen' => array( headline_text => 'Vermutung, dass superiale Koeffizienten reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
-
         'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen' => array( headline_text => 'Was lernen wir über rationale beziehungsweise algebraische Zahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
@@ -144,6 +221,12 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Ei.S.V.4'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
                    
+        'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz' => array( headline_text => 'Großer Fermatscher Satz'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Potenzzahlen'/* , headline_text_short => 'X' */),
+                   
         'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'X' */),
                    
         'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese' => array( headline_text => 'Untersuchungen zur Kontinuumshypothese'/* , headline_text_short => 'X' */),
@@ -154,7 +237,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Einleitung.php',
       titel => 'Einleitung - Die Superial-Zahlen (SN) - Deutsch',
-      description => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken.',
+      description => '\name[undertitle]{OM:SupNum:Einleitung}. — \name[description]{OM:SupNum:Einleitung}.',
       keywords => '',
       text_titel_h1 => 'Einleitung',
       text_titel_short => 'Einleitung',
@@ -165,13 +248,9 @@
                    
           'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen' => array( headline_text => 'Ableitung genau verstehen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen' => array( headline_text => 'Integral genau verstehen'/*, headline_text_short => 'X'*/),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Menge-natuerliche-Vorgaenger-xs' => array( headline_text => 'SN.Ein.3'),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Menge-natuerliche-Vorgaenger-xs-Elemente' => array( headline_text => 'SN.Ein.4'),
           'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Ein.3'),
-          // 'OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.Ein.6'),
           'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral' => array( headline_text => 'Konkretes Integral'/*, headline_text_short => 'X'*/),
-          //%! 'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.Ein.8'),
-          //%! 'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.Ein.10'),
+          'OM:SupNum:Einleitung:Vortext:Kleiner-Ausblick-zwischendurch' => array( headline_text => 'Kleiner Ausblick zwischendurch'/*, headline_text_short => 'X'*/),
 
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
@@ -183,12 +262,9 @@
           'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.28'),
           'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.29'),
 
-        'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration' => array( headline_text => 'Definition ganzer und natürlicher Superial-Zahlen und die Integration'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Vortext:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', headline_text_short => 'Die Veränderung der Primfaktorzerlegung von s durch rationale Koeffizienten'),
 
-        'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
-          'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
+        // 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Eulersche-Zahl-e-Funktion' => array(
@@ -209,7 +285,9 @@
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck' => array( headline_text => 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck' , headline_text_short => 'Die e-Funktion und das Pascalsche Dreieck'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe' => array( headline_text => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.78'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem' => array( headline_text => 'SN.EuZa.81'),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe' => array( headline_text => 'SN.EuZa.111'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \lm{ s^2 }'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral' => array( headline_text => 'Die \lm{ \e }-Funktion aus dem Integral' , headline_text_short => 'Die e-Funktion aus dem Integral'),
@@ -232,25 +310,27 @@
       jump_ary => array(
         'OM:SupNum:Formale-Entwicklung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Form.1'),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Fo.1'),
 
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Form.Z.6'),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Form.Z.7'),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Fo.Z.6'),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Fo.Z.7'),
 
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'X' */),
         'OM:SupNum:Formale-Entwicklung:PrimSZ' => array( headline_text => 'Superiale Primzahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Form.F.13'),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Form.F.14'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Fo.F.ZM.13'),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Fo.F.ZM.14'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem' => array( headline_text => 'Stellenwertsystem'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen' => array( headline_text => 'Berechnung der einzelnen Stellen im superialen Stellenwertsystem'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Form.F.39'),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen' => array( headline_text => 'Berechnung der einzelnen Stellen im superialen Stellenwertsystem'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge' => array( headline_text => 'Intervall-Menge'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der Schichten einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Fo.F.SS.1'),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen' => array( headline_text => 'Eingrenzung der Schichten der Superial-Zahlen'/* , headline_text_short => 'X' */),
+            'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen' => array( headline_text => 'SN.Fo.F.ES.1'),
       ),
     ),
     'OM:SupNum:Literatur' => array(
@@ -289,6 +369,7 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.89'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.131'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.132'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.136'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.137'),
@@ -298,35 +379,93 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.173'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.174'),
 
-        'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+        'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis' => array( headline_text => 'Interpretation des Beweises'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.Prim.4'),
+
+        'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis' => array( headline_text => 'Weitere Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+
+        'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises' => array( headline_text => 'Gedanken zu Konsequenzen des Beweises'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
       ),
     ),
-    'OM:SupNum:Struktur-Geometrie' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
-      titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Struktur-Geometrie}.\hidden{ — \name[description]{OM:SupNum:Struktur-Geometrie}.}',
+    'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Sinnvolle-Koeffizienten-Superial-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Sinnvolle-Koeffizienten-Superial-Zahlen.php',
+      titel => 'Die sinnvollen Koeffizienten der Superial-Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}. — \name[description]{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}\hidden{.}',
       keywords => '',
-      text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
-      text_titel_short => 'Die arithmetische Struktur der Geometrie',
-      text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
+      text_titel_h1 => 'Die sinnvollen Koeffizienten der Superial-Zahlen',
+      text_titel_short => 'Die sinnvollen Koeffizienten der Superial-Zahlen',
+      text_undertitel_h2 => 'Welche endlichen Zahlen im Produkt mit unserer superialen Basis ergeben aktual unendliche ganze Zahlen',
+      text_titel_discr_h3 => 'Was können uns Ableitungen und Integrale mit Superial-Zahlen darüber verraten, welche Koeffizienten für das superiale Stellenwertsystem sinnvoll sind?',
+      jump_ary => array(
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen' => array( headline_text => 'Perspektive des Stellenwertsystems der Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As' => array( headline_text => 'SN.SinK.2'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen' => array( headline_text => 'SN.SinK.7'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.SinK.8'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen' => array( headline_text => 'SN.SinK.9'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S' => array( headline_text => 'SN.SinK.10'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen' => array( headline_text => 'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten' => array( headline_text => 'Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen' => array( headline_text => 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty' => array( headline_text => 'SN.SinK.R.23'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega' => array( headline_text => 'SN.SinK.R.24'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus' => array( headline_text => 'SN.SinK.R.26'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.R.27'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-pm-xte-Wurzel-n-ist-in-AS' => array( headline_text => 'SN.SinK.R.28'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten' => array( headline_text => 'Kehrwerte der Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega' => array( headline_text => 'SN.SinK.KR.2'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus' => array( headline_text => 'SN.SinK.KR.16'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.KR.17'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-pm-minus-xte-Wurzel-n-ist-in-AS' => array( headline_text => 'SN.SinK.KR.18'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte' => array( headline_text => 'Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus' => array( headline_text => 'SN.SinK.GP.5'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.GP.6'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-hoch-k-mal-s-ist-in-AS' => array( headline_text => 'SN.SinK.GP.7'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte' => array( headline_text => 'Produkte der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus' => array( headline_text => 'SN.SinK.PR.19'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.PR.20'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-ist-in-AS' => array( headline_text => 'SN.SinK.PR.21'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte' => array( headline_text => 'Summen der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt' => array( headline_text => 'Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt' => array( headline_text => 'SN.SinK.SR.7'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN1' => array( headline_text => 'SN.SinK.SR.13'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-mal-s-ist-in-SZ1plus' => array( headline_text => 'SN.SinK.SR.20'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-pm-zte-Wurzel-m-ist-in-AS' => array( headline_text => 'SN.SinK.SR.21'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen' => array( headline_text => 'Geschachtelte Radikale oder ihre Kehrwerte mit Summen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SN1plus' => array( headline_text => 'SN.SinK.GRS.8'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.GRS.9'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-pm-yte-Wurzel-aus-der-zte-Wurzel-n-plus-as-ist-in-AS' => array( headline_text => 'SN.SinK.GRS.10'),
+      ),
+    ),
+    'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
+      titel => 'Superiale-Transzendenz-Vermutung (STV) - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Superiale-Transzendenz-Vermutung}.\hidden{ — \name[description]{OM:SupNum:Superiale-Transzendenz-Vermutung}.}',
+      keywords => '',
+      text_titel_h1 => 'Superiale-Transzendenz-Vermutung (STV)',
+      text_titel_short => 'Superiale-Transzendenz-Vermutung',
+      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-
-          'OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
-
-        'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
+        'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
@@ -343,57 +482,62 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat' => array( headline_text => 'SN.ÜV.7'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega' => array( headline_text => 'SN.ÜV.28'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity' => array( headline_text => 'SN.ÜV.31'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity' => array( headline_text => 'SN.ÜV.32'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen' => array( headline_text => 'SN.ÜV.46'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m' => array( headline_text => 'SN.ÜV.49'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m' => array( headline_text => 'SN.ÜV.55'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x' => array( headline_text => 'SN.ÜV.61'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x' => array( headline_text => 'SN.ÜV.62'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i' => array( headline_text => 'SN.ÜV.65'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz' => array( headline_text => 'SN.ÜV.115'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.123'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.124'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.125'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.127'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.128'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.130'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.131'),
-                        
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega' => array( headline_text => 'SN.ÜV.28'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega' => array( headline_text => 'SN.ÜV.29'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega' => array( headline_text => 'SN.ÜV.30'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity' => array( headline_text => 'SN.ÜV.32'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity' => array( headline_text => 'SN.ÜV.33'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen' => array( headline_text => 'SN.ÜV.43'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m' => array( headline_text => 'SN.ÜV.46'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m' => array( headline_text => 'SN.ÜV.52'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x' => array( headline_text => 'SN.ÜV.58'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x' => array( headline_text => 'SN.ÜV.59'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i' => array( headline_text => 'SN.ÜV.62'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz' => array( headline_text => 'SN.ÜV.112'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.120'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.121'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.122'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.124'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit' => array( headline_text => 'SN.ÜV.125'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.127'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.128'),
+
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+
+        'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen' => array( headline_text => 'Untersuchung der Potenzialzahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn' => array( headline_text => 'SN.Ei.NR.Exp.23'),
       ),
     ),
-    'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
-      titel => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}.',
+    'OM:SupNum:Vorwort' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vorwort.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vorwort.php',
+      titel => 'Vorwort - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Vorwort}./hidden{ — \name[description]{OM:SupNum:Vorwort}.}',
       keywords => '',
-      text_titel_h1 => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen',
-      text_titel_short => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen',
-      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
-      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
-      jump_ary => array(
-        'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                   
-          // 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
-      ),
-    ),
-    'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden.php',
-      titel => 'Vermutung transzendente Zahlen besitzen superial kleine Summanden - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}.\hidden{ — \name[description]{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}.}',
-      keywords => '',
-      text_titel_h1 => 'Vermutung transzendente Zahlen besitzen superial kleine Summanden',
-      text_titel_short => 'Vermutung transzendente Zahlen besitzen superial kleine Summanden',
-      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
+      text_titel_h1 => 'Vorwort',
+      text_titel_short => 'Vorwort',
+      text_undertitel_h2 => 'Was mich bewegt und ich bewegen möchte',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+        'OM:SupNum:Vorwort:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          // 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+          'OM:SupNum:Vorwort:Vortext:X' => array( headline_text => 'X'/*, headline_text_short => 'X'*/),
+      ),
+    ),
+    'OM:SupNum:ZFC-Modellkonstruktion' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/ZFC-Modellkonstruktion-der-Superial-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/ZFC-Modellkonstruktion-der-Superial-Zahlen.php',
+      titel => 'Die ZFC-Modellkonstruktion der Superial-Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:ZFC-Modellkonstruktion}.\hidden{ — \name[description]{OM:SupNum:ZFC-Modellkonstruktion}.}',
+      keywords => '',
+      text_titel_h1 => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
+      text_titel_short => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
+      text_undertitel_h2 => 'Fundierung der Superial-Zahlen auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit Auswahlaxiom (ZFC)',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),
       ),
     ),
   );

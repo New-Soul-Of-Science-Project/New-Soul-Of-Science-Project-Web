@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Formale-Entwicklung'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -24,7 +24,7 @@
                     'und \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Integralrechnung:2023}.} eigentlich sind.'."\n".
                     'Ich wollte genauer Verstehen und explizit ausdrücken können, was implizit vor sich geht, wenn wir eine Funktion ableiten oder integrieren.'."\n",
                       'So entdeckte ich die Superial-Zahlen und mit ihnen eine Möglichkeit, bei der ihre normierte aktuale Unendlichkeit'."\n".
-                    'in der Entwicklung der Definition der Ableitung und der Integration den Limes\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.}'."\n".
+                    'in der Entwicklung der Definition der Ableitung und der Integration den Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
                     'oder das Differential\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.} ersetzt.'."\n".
                     'Auf diese Weise können wir, anstatt den Limes-Operator oder den Differential-Operator zu benutzen, einfach wie gewohnt mit Zahlen rechnen.'."\n",
                       'Es geht also um Transparenz und Genauigkeit oder Detail, denen wir an dieser Stelle den Vorzug gegenüber der Kürze und der alten Gewohnheit'."\n".
@@ -46,6 +46,13 @@
                     'und transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}}'."\n".
                     'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht –'."\n".
                     'den Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems} der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
+                      
+                'ZFC-konforme Definition', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\const{SupNum_g_text_ZFCkonform}'."\n".
                     ''))),
 
                   array( 'jumplist', array(
@@ -139,7 +146,7 @@
                     'Um besser zu verstehen, was genau vor sich geht, wollen wir uns zwei Beispiele betrachten:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Funktion \lm{ f(x) = x^{2} } ergibt sich:'."\n".
                       ''))),
@@ -154,10 +161,10 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 2 x } heraus.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für \lm{ f(x) = x^{3} } ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
@@ -171,7 +178,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot \s^{-1} + \s^{-2}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 3 x^{2} } heraus.'."\n",
                         '\\\\ '."\n".
                       ''))),
@@ -232,7 +239,7 @@
                     'Die Art von ganzen oder natürlichen Zahlen, mit denen wir es in diesem Fall zu tun haben, sind aktual unendlich kleine'."\n".
                     'ganze oder natürliche Superial-Zahlen, wie die folgenden, die sich dadurch auszeichnen, dass sie von Null bis'."\n".
                     'zu einer endlichen Zahl \lm{ x \in \mathbb{A}_{\S} } gehen – \lm{ \mathbb{A}_{\S} } als Menge der'."\n".
-                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} –;'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} –;'."\n".
                     'auszugsweise in einer Menge aufgelistet, wobei der Beginn und das Ende exakt stimmen:'."\n".
                     ''))),
                   array( 'equations',
@@ -269,18 +276,18 @@
                     'mit \lm{ x \in \mathbb{A}_{\S} \land a \in [ 0, x ]_{\mathbb{A}_{\S}} }, immer ganze Zahlen sind.'."\n",
                       'Daher beschäftigt sich die Theorie der Superial-Zahlen in ihrem Zentrum besonders auch damit, aus welcher Menge \lm{ \mathbb{A}_{\S} } die Zahlen'."\n".
                     '\lm{ x } unter diesem Aspekt sinnvollerweise sein können, so, dass \lm{ x \cdot \s } ganze Zahlen sind;'."\n".
-                    'also mit den \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten von \lm{ \s }}.'."\n",
+                    'also mit den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten von \lm{ \s }}.'."\n",
                       'Dabei ist es aufgrund der Definition von \lm{ \s } schnell zu sehen, dass alle rationalen Koeffizienten \lm{ q \cdot \s }, mit \lm{ q \in \mathbb{Q} },'."\n".
                     'ganze Zahlen sind.'."\n",
                       'Hingegen mussten wir erst aufwendiger beweisen, dass auch alle Wurzeln der natürlichen Zahlen als Koeffizienten,'."\n".
-                    'wie \lm{ \sqrt{2} \cdot \s }, auch sämtlich ganze Zahlen sind, wie wir im \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
+                    'wie \lm{ \sqrt{2} \cdot \s }, auch sämtlich ganze Zahlen sind, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
                     'Auf diesen Beweis aufbauend zeigen wir weiter, dass selbst alle durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    '– also \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
-                    'darstellbaren realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    '– also \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
+                    'darstellbaren reellen algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
                     'Es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
-                    'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
-                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹}.'."\n".
+                    'reell algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
+                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -358,9 +365,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) \cdot \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) \cdot \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
                       array( display => 'on',  latex => '{  *( a, x \in \mathbb{A}_{\S} *)  *[  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) \cdot \s^{-1}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
@@ -382,7 +389,7 @@
                     'hier nun allerdings vollständig in der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Wir nehmen das erste obige \jump{OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
                       'dem Ableitungsergebnis \lm{ f\'(x) = *〈 2 x *〉.*〈 1 *〉 } und setzen dies in unsere Integralformel ein:'."\n".
@@ -393,7 +400,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 2 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n *〉*〈 \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! 1 *〉  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Anschließend haben wir die innere und äußere Summe in zwei getrennte Summen umgeformt.'."\n",
                         'Die hintere Summe addiert die Eins \lm{ x \cdot s } mal, weil die Schrittgröße hierbei ja keine Rolle spielt,'."\n".
                       'sondern nur die Schrittanzahl, und das ergibt natürlich auch \lm{ x \cdot s }:'."\n".
@@ -404,7 +411,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n \; + \; x *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die einzige noch nicht aufgelöste Summe der superial kleinen ganzen Zahlen der ersten \lm{ x \cdot s } Elemente dieser Menge, mit der Null,'."\n".
                       'ergibt sich aus der angepassten Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
                       'wie bei den Biordinalzahlen im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen}‹} nach Formel'."\n".
@@ -420,7 +427,7 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{S}_{\N} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{S}_{\N}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \lm{ n },'."\n".
                       'also für aktual unendlich große natürliche Zahlen, gilt.'."\n",
                         'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
@@ -435,7 +442,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ *〈 x^{2} *〉*〈 -x *〉. }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Diese Summe haben wir auch noch einmal im Einzelnen im Rahmen der Superial-Zahlen aus ihren Teilsummen im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel}‹}'."\n".
                       'hergeleitet, um zu zeigen, und damit ganz sicher zu gehen, dass diese richtig ist.'."\n",
                         'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
@@ -450,7 +457,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  0^{2} \; + \; x^{2}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  x^{2}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und ist auch das erwartete Ergebnis.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -575,7 +582,17 @@
                     'von Integralen auftauchen.'."\n".
                     'Im Fall, dass ihre Ergebnisse schon bekannt sind untersuchen wir, ob wir sie auch noch anders ausdrücken können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x'),
+                    )),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
                       
                 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }', subline =>
                   '')),
@@ -754,7 +771,7 @@
                     'den wir nun direkt berechnen:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei also die Summe der drei Teile der erste Summand unserer Superial-Zahlen und dieser gleich der ersten Teilsumme,'."\n".
                       'die uns schon bekannt ist:'."\n".
@@ -769,7 +786,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \frac{ x^{2} \cdot \s }{ 2 \cdot ω }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \frac{ x \cdot \s }{ 2 \cdot ω } \cdot x  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Der erste Faktor des rechten Produkts ist uns schon oben aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}'."\n".
                       'bekannt und wir können ihn ersetzen:'."\n".
                       ''))),
@@ -777,7 +794,7 @@
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir erweitern beide Seiten mit \lm{ ω } und vertauschen links und rechts:'."\n".
                       ''))),
                   array( 'equations',
@@ -785,7 +802,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  *( y \cdot 2  +  x *) \cdot ω  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot ω  =  *( y \cdot 2  +  x *) \cdot ω  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
                       'kennen wir unsere rechte Seite hier und setzen diese ein:'."\n".
                       ''))),
@@ -794,7 +811,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wodurch sich unsere neue Formel ergibt.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -808,7 +825,7 @@
                     'von Null bis ausschließlich \lm{ x } anders ausdrücken:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Wir ersetzen in der uns bekannten Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}'."\n".
                       'die beiden Summanden auf der rechten Seite durch die neuen Ausdrücke \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}'."\n".
@@ -825,7 +842,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \, \cdot \; ω \cdot *( x - \frac{ 1 }{ \s } *)  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und erhalten eine ganz andere Darstellung, die recht kurz dadurch möglich wird,'."\n".
                       'weil beide Summanden einen gemeinsamen Faktor enthalten, den wir hier ausklammern konnten.'."\n",
                         '\\\\'."\n".
@@ -843,7 +860,7 @@
                     'Wir möchten dabei aus den drei Summanden oben zwei sehr anschauliche Summanden machen:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nehmen wir also Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
                       'und ersetzen unseren Substituenten:'."\n".
@@ -855,7 +872,7 @@
                       array( display => 'on',  latex => '{  *( y + y + x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;+\;  x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Hier beachten wir, dass die Intervall-Mengen-Klammern in beiden Summen gleich ausgerichtet sind.'."\n".
                       'Durch eine unterschiedliche Ausrichtung der Klammern können wir die geklammerte Summe umschreiben,'."\n".
                       'weil wir auf der Seite der Null die Klammer einfach ohne Folgen umdrehen'."\n".
@@ -873,7 +890,7 @@
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot ω  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot ω  }'),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot \s }{ 2 }  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot ω  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wodurch wir den neuen Ausdruck erhalten haben.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -903,7 +920,7 @@
                     'ausgeklammert werden kann.'."\n".
                     'Diese Summe lässt sich noch auf weitere Arten umformen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x', text =>
                       
                 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
@@ -912,7 +929,7 @@
                     'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
                       'gegeben, und wir formen um und ersetzen dann auch wieder den Substituenten \lm{ y }'."\n".
@@ -927,14 +944,14 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }  \;\;  ,  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'so erhalten wir einen Ausdruck für die gesuchte Summe.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
                     'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle reell algebraischen Zahlen handeln sollte,'."\n".
-                    'wie \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{wir vermuten},'."\n".
+                    'wie \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{wir vermuten},'."\n".
                     'dann habe ich einen Ausdruck für deren Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
                       'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
                     'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
@@ -1000,6 +1017,64 @@
                     ''))),
 
                     ))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Besondere Ableitungen und Integrale  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Es gibt besondere Gleichungen in Bezug auf Ableitungen und Integrale, die sich zu untersuchen lohnen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores'),
+                    )),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores', text =>
+                      
+                'Traum der Sophomores', subline =>
+                  '')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Der Beweis der Gleichheit ist auch auf \cite{wiki:TraumDerSophomores:2024}, zu finden.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:TraumDerSophomores:2024}.}'."\n".
+                    'Nur die Bereiche der Addition und deren Feinheit sind unterschiedlich.'."\n".
+                    'Diese Gleichung gibt es in zwei Varianten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.BAI', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{-x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  *( -1 *)^{n + 1} n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  - \sum_{ n = 1 }^{ \infty }  *( -n *)^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion'),

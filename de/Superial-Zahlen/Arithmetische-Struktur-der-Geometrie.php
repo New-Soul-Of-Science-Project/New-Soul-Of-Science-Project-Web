@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Struktur-Geometrie'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Arithmetische-Struktur-Geometrie'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -20,6 +20,11 @@
                     '– Bietet hier die aktual unendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
                     '⋅ In Bezug auf die Ordinalzahlen und Biordinalzahlen ist die „Umgebung“ übrigens das „Fähnchen“ zwischen der Null und Ein bzw. zwischen jeder ganzen Zahl, mit dieser, und der nächst größeren, ohne diese, obwohl die Zahlen dazwischen in den ganzen Zahlen gar nicht definiert sind. Sie sind aber implizit mit gemeint. Siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}.',
                     '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
+                    '\bold{Welche Form der Vollständigkeit haben die reel algebraischen Zahlen?}',
+                    '• Ich würde es algebraische oder geometrische Vollständigkeit nennen.',
+                    '• Welche Form der Vollständigkeit haben dagegen die reellen Zahlen?',
+                    '– Weitz / HAW Hamburg: \jump[https://www.youtube.com/watch?v=gyS_eb9dIgo]{}{Der Aufbau des Zahlensystems} – Sek. 11:10',
+                    '– Hierfür müssen wir vermutlich eine superiale Vollständigkeit definieren. Mit den Superial-Zahlen erster Stufe, wie wir sie hier vornehmlich definieren, erreichen wir die superiale Vollständigkeit allerdings noch nicht, wie wir an der superialen Eulerschen Zahl sehen. Edmund Weitz sagt allerdings, dass wir diese Vollständigkeit in \lm{ \mathbb{R} } zeigen können.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -119,7 +124,7 @@
                   // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
                   // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
-                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
                   // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
@@ -212,7 +217,7 @@
                     'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{}Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{}Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
                     'Um diese Struktur auf alle natürlichen Zahlen auszudehnen, brauchen wir ein passendes Symbol:'."\n",
                       'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
                     'auszudrücken, der so groß ist, dass er per Definition genau alle natürlichen Zahlen beinhaltet.'."\n".
@@ -312,7 +317,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Kontinuumshypothese}',
-                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -325,7 +330,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
-                                          label_name => 'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
+                                          label_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{ω}  \;\;  .  }'),
                     ))),
@@ -383,8 +388,18 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } |*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
@@ -410,7 +425,7 @@
                     'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
                     'Sein Geheimnis wird erst offenbar, wenn wir seine Entstehungsgeschichte verstehen und'."\n".
                     'damit seine Bedeutung entschlüsseln und so erkennen.'."\n",
-                      'Oben in Formel \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}'."\n".
+                      'Oben in Formel \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}'."\n".
                     'haben wir berechnet, in welchem Abstand die Punkte auf dem aktual unendlichen Zweiteilungsraster liegen,'."\n".
                     'nämlich \lm{ d = 2^{-ω} }, wenn wir in die aktuale Unendlichkeit der vollständigen Induktion \lm{ ω } übergehen.'."\n".
                     'Wir können diesen Abstand oder dieses Raster durch Skalierung, also durch Multiplikation, mit seinem Kehrwert \lm{ 2^{ω} },'."\n".
@@ -439,7 +454,7 @@
                     'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *| \sqrt[k]{c} |*^{m} }} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *| \sqrt[k]{c} |*^{m} }} \\\\'."\n".
                     'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
                     ''))),
                   array( 'equations',
@@ -505,7 +520,7 @@
                     'Dies ist sehr bemerkenswert und lässt uns einige neue Erkenntnisse in der Zahlentheorie und'."\n".
                     'bezüglich der arithmetischen Struktur der Geometrie gewinnen.'."\n".
                     'Es zeigt uns, auf welche Weise die Wurzeln in das fraktale Teilungsgewebe der Geometrie eingewoben sind.'."\n",
-                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
+                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen reell algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
@@ -517,15 +532,15 @@
                       'Mit Hilfe von \lm{ ω } können wir eine normierte aktual unendliche Potenz der Primzahlen ausdrücken,'."\n".
                     'die es uns ermöglicht, das Fraktal der arithmetischen Teilung der Geometrie im Hinblick auf rein endliche Zahlen'."\n".
                     'so zu vervollständigen, dass alle Radikale der irrationalen reell algebraischen Zahlen im geschöpften Raster enthalten sind,'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'also auch alle irrationalen in ihnen.'."\n",
-                      'Dabei ist es \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
+                      'Dabei ist es \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
                     'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e_{\s} }} zeigen konnten.'."\n",
                       'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
                     'sehen, dass \lm{ ω } – also die vollständige Induktion selber – eine Primfaktorzerlegung in Form des Produkts aller endlichen Primzahlen besitzt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
                                            
                 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', subline =>
                   '')),
@@ -538,13 +553,14 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Als Teilung der Eins ist es dann die Zahl \lm{ \s^{-1} }, die der Strecke zwischen Null und Eins'."\n".
+                    '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      'Als Teilung der Eins ist es dann die Zahl \lm{ \s^{-1} }, die der Strecke zwischen Null und Eins'."\n".
                     'unsere vorstehend gefundene arithmetische Struktur gibt, indem sie für die normierte aktual unendlich kleine Distanz steht:'."\n".
                     ''))),
                   array( 'equations',
@@ -557,7 +573,7 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 ω \cdot \s  }'),
                       // array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *) *( \forall m \in [0, \s[_{\mathbb{S}_{\Z}} *)  *[  r_{\s,\Z}  =  z + \s^{-1} \cdot m  *]  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  XXX *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  X *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
                       // array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
                       // array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
@@ -574,7 +590,7 @@
                     'aber doch normiert aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{}Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{}Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile} \\\\'."\n".
                   '\cond{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
                   /*  ''))),
 
@@ -634,7 +650,7 @@
                     'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
                     'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
@@ -674,12 +690,12 @@
                       'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                       
                 'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
+                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
                     'über das unendliche Primzahlprodukt aus der \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n",
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
@@ -689,23 +705,23 @@
                     ''))),
                       
                   array( 'figure',
-                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung'))),
+                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung'))),
                       
                   array( 'text', array( text => array(
                     'In der geometrischen Konstruktion der rhythmischen Wiederholung bleiben die Begrenzungspunkte der Teilstrecken immer im selben Abstand von Eins.'."\n".
                     'Am jeweiligen Ende der Punktreihe werden stets die nötigen Punkte angehängt, um den Rhythmus der nächsten natürlichen Zahl zu integrieren,'."\n".
-                    'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n".
+                    'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Definition von \lm{ \s^{-1} } über den Regen der natürlichen Zahlen} \\\\'."\n".
                     ''))),
                       
                   array( 'figure',
-                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktTeilung, array( name => 'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung'))),
+                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktTeilung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung'))),
                       
                   array( 'text', array( text => array(
                     'In der Konstruktion der rhythmischen Zerlegung werden zwischen den vorhandenen Begrenzungspunkte der Teilstrecken immer neue Punkte hinzugefügt, um den Rhythmus'."\n".
-                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
+                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins herniedergeht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -744,10 +760,10 @@
                     ''))),
                       
                   array( 'figure',
-                    array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen'))),
+                    array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen'))),
                                             
                   array( 'text', array( text => array(
-                    'In \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen} sehen wir, dass jeder Punkt im Endlichen'."\n".
+                    'In \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen} sehen wir, dass jeder Punkt im Endlichen'."\n".
                     'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
                     'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
                     'Der Zahlenstrahl um jeden Punkt hat so dann die Ausdehnung \lm{ 2 ω \, \s^{-1} }, weil der Koeffizient \lm{ a } über alle ganzen Zahlen läuft'."\n".
@@ -763,7 +779,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie'),
                     )),
                 )
           ); ?>
@@ -771,13 +787,13 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Die Ontologie der Geometrie  >
+          <!  • Die Ontologie der Geometrie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie',
+            'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie',
               'Eine Diskussion – ein Versuch der Annäherung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Struktur-Geometrie', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -788,7 +804,7 @@
                   array( 'text', array( text => array(
                     'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
                 'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
                   '')),
@@ -796,18 +812,26 @@
                     'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
                     'zunächst keine transzendenten Zahlen.'."\n".
                       'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Koeffizienten des damit verbundenen Zahlensystems tatsächlich reell algebraisch}'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
                     'sind, und nicht nur solche, die durch Radikale darstellbar sind,'."\n".
                     'legt nahe, dass die Koordinaten der Grundstruktur der Geometrie mit reell algebraischen Zahlen auskommt.'."\n".
                     'In diesem Fall sind dann keine Koordinaten notwendig, die unendlich kleine Summanden beinhalten, wie es demnach'."\n".
-                    '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
-                      'Wenn wir also erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
-                    'dann sind nicht nur die Parameter, sondern auch die Koordinaten von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
-                    'allesamt ebenfalls reell algebraische Zahlen, wenn der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".
+                    '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
+                      'Wenn wir also für einfache Relationen erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
+                    'dann sind nicht nur die Parameter, sondern auch die Koordinaten der Relationen von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
+                    'allesamt ebenfalls reell algebraische Zahlen, wenn eine der beiden Koordinaten, der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".
                     'vielfach sogar solche, die durch Radikale – also Wurzeln - darstellbar sind.'."\n",
-                      'Das bedeutet in dieser einfachen Geometrie kommen wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten aus.'."\n".
+                      'Für die Kreisrelation stellt es sich so dar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x, x_{M}, y_{M}, r \in \mathbb{A}_{\S} *)  *[  *( x - x_{M} *)^{2} + *( y - y_{M} *)^{2}  =  r^{2}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  y  \in  \mathbb{A}_{\S}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das bedeutet bei diesen einfachen Geometrie können wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten auskommen.'."\n".
                     'Und auch elliptische Kurven kommen unter bestimmten Umständen mit reell algebraischen Koordinaten aus, und in jedem Fall mit algebraischen Koordinaten.'."\n",
-                      'Wir können die oben angeführten Kurven (Funktionen) auch rotieren  oder anderweitig mit Matrizen aus reell algebraischen Zahlen verschiebben, spiegeln oder verzerren – multiplizieren –,'."\n".
+                      'Wir können die oben angeführten Kurven (Funktionen) auch rotieren oder anderweitig mit Matrizen aus reell algebraischen Zahlen verschieben, spiegeln oder verzerren – multiplizieren –,'."\n".
                     'die Ergebniskoordinaten bleiben reell algebraische Zahlen.'."\n".
                     'Das auf dieser Seite eingangs gefundene Raster gibt uns die Möglichkeit ein Quadrat um 45° – \lm{ ½π } – zu drehen und die Koordinaten'."\n".
                     'seiner Eckpunkte liegen immer noch auf diesem Raster, weil sie durch Radikale – in diesem Fall zweite Wurzeln – darstellbar sind.'."\n",
@@ -816,30 +840,336 @@
                     'Das entspricht aber nicht der hier anvisierten Geometrie, in der die Eingangswerte und Ergebniswerte aus der selben Zahlenmenge,'."\n".
                     'nämlich der gefundenen arithmetischen Struktur der Geometrie, vermutlich den reell algebraischen Zahlen, kommen sollen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
                 'Wann kommen transzendente Zahlen ins Spiel?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die transzendenten Zahlen kommen ins Spiel, wenn wir uns beispielsweise mit der Länge der Kurven beschäftigen oder'."\n".
                     'zu den Exponentialfunktionen übergehen wollen.'."\n",
+                      'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  /* array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
-                      //                    label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                      
+                'Können wir einen Kreis entlang des Kreisumfangs so parametrisieren, dass wir nur rein reell algebraische Koordinaten erhalten?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Nutzen wir die \lm{ \e }-Funktion zur Parametrisierung einen Kreises entlang seines Kreisumfanges mit reellen Zahl als Parameter,'."\n".
+                    'ist es völlig klar, dass diese auch transzendente Koordinaten liefert.'."\n".
+                    'Und zwar, weil die reellen Zahlen auch transzendente Zahlen enthalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{R} *)  *[  \mathrm{Re}*( \e^{x \i} *) \cap \mathbb{T}  \ne  \varnothing  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn \lm{ \mathbb{T} } die Menge der transzendenten Zahlen und \lm{ \mathrm{Re}*( c *) } der Realanteil der komplexen Zahl \lm{ c } ist.'."\n",
+                      'Es kommt sodann die Frage auf, ob wir den Kreis auch so parametrisieren können, dass nur reell algebraische Zahlen im Real- und im Imaginäranteil'."\n".
+                    'herauskommen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  \mathrm{Re}*( \e^{a \i 2 π} *) \cap \mathbb{T}  ?=  \varnothing  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und dies so, wie im vorstehenden Beispiel dadurch, dass wir zwar wegen des Faktors \lm{ 2 π } außer die Null nur transzendente Zahlen im Exponenten haben,'."\n".
+                    'diese aber über den Faktor \lm{ a } so granuliert sind, dass alle Ergebnisse auf dem Raster von \lm{ \s^{-1} } in der Menge der komplexen Zahlen \lm{ \mathbb{C} } liegen.'."\n".
+                    'Dabei möchte ich im Folgenden \lm{ \mathbb{C}_{\S} } als die Menge der komplexen Zahlen auf diesem Raster bezeichnen.'."\n",
+                      'Nach den Erkenntnissen, die wir im Rahmen der Superial-Zahlen und ihrer arithmetischen Struktur der Geometrie haben, wissen wir,'."\n".
+                    'dass es \lm{ \s } algebraische Koeffizienten der Superial-Zahlen insgesamt gibt.'."\n".
+                    'Für den oberen Parameter \lm{ a } erhalten wir dann eine vollständige Kreisumrundung, wenn er von Null bis Eins durchläuft.'."\n",
+                      'Nach unseren Erkenntnissen kommt die Nutzung des Faktors \lm{ a } der Teilung der Strecke Eins durch ganzzahligen Exponenten von Primzahlen im Eingangsabschnitt dieser Seite gleich,'."\n".
+                    'nur das hier der Kreisumfang beziehungsweise der Winkel entsprechend geteilt wird:'."\n".
+                      'Nehmen wir einfachheitshalber den Einheitskreis, dann ist in seine Punktmenge \lm{ \mathbb{K}_{1} } ohne Teilung die einzige Koordinate der Einheitsvektor auf der realen oder x-Achse:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{K}_{1}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix} *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} -1 \cr 0 \end{bmatrix} *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2^{2}}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} 0 \cr 1 \end{bmatrix}, \begin{bmatrix} -1 \cr 0 \end{bmatrix}, \begin{bmatrix} 0 \cr -1 \end{bmatrix}  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2^{3}}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr 1 \end{bmatrix}, \begin{bmatrix} - \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \\\ \qquad\qquad\;\; \begin{bmatrix} -1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ - \frac{1}{2} } \cr \sqrt{ - \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr -1 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr - \sqrt{ \frac{1}{2} } \end{bmatrix}  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Tabelle der Koordinatendreiecke für das 16-Eck} \\\\'."\n".
+                    'Jeder Punkt \lm{ P_{k} }​ liegt auf dem Einheitskreis bei:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall k \in [ 0, 16 [_\mathbb{N} *)  *[  \theta_{k}  =  \frac{ k \cdot 2 π }{ 16 }  *]  }'),
+                      array( display => 'on',  latex => '{  P_{k}  =  \begin{bmatrix} \cos\,\theta_{k}​ \cr \sin \, \theta_{k} \end{bmatrix}  =  *( \cos \, \theta_{k}​ , \, \sin \, \theta_{k} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Alle Koordinaten lassen sich durch Radikale, also Wurzelausdrücke, darstellen, wie ich vermutet habe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      /* array( display => 'on',  latex => '\begin{array}{|c|c|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'k & P_k  (x, y) & P_{k+1} (x, y) & \Delta x & \Delta y \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '0 & (1,0) & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & \frac{\sqrt{2+\sqrt{2}}}{2} - 1 & \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '1 & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \frac{\sqrt{2}}{2} - \frac{\sqrt{2+\sqrt{2}}}{2} & \frac{\sqrt{2}}{2} - \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '2 & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & \frac{\sqrt{2-\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} & \frac{\sqrt{2+\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '3 & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & (0,1) & -\frac{\sqrt{2-\sqrt{2}}}{2} & 1 - \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '4 & (0,1) & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & -\frac{\sqrt{2-\sqrt{2}}}{2} & \frac{\sqrt{2+\sqrt{2}}}{2} - 1 \\\ '."\n".
+                                                        '5 & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2-\sqrt{2}}}{2} & \frac{\sqrt{2}}{2} - \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '6 & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & -\frac{\sqrt{2+\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} & \frac{\sqrt{2-\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '7 & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & (-1,0) & -1 + \frac{\sqrt{2+\sqrt{2}}}{2} & -\frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '8 & (-1,0) & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & -\frac{\sqrt{2+\sqrt{2}}}{2} + 1 & -\frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '9 & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2+\sqrt{2}}}{2} & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '10 & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & -\frac{\sqrt{2-\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} & -\frac{\sqrt{2+\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '11 & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & (0,-1) & \frac{\sqrt{2-\sqrt{2}}}{2} & -1 + \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '12 & (0,-1) & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & \frac{\sqrt{2-\sqrt{2}}}{2} & -\frac{\sqrt{2+\sqrt{2}}}{2} + 1 \\\ '."\n".
+                                                        '13 & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \frac{\sqrt{2}}{2} - \frac{\sqrt{2-\sqrt{2}}}{2} & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '14 & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & \frac{\sqrt{2+\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} & -\frac{\sqrt{2-\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '15 & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & (1,0) & 1 - \frac{\sqrt{2+\sqrt{2}}}{2} & \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}',
+                                          label_text => '', label_incr => false), */
+                      array( display => 'on',  latex => '\begin{array}{|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'k & \theta_{k} & P_{k} *( x_{k} , y_{k} *) \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '0 & 0 & (1,0) \\\ '."\n".
+                                                        '1 & \frac{\pi}{8} & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '2 & \frac{\pi}{4} & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '3 & \frac{3\pi}{8} & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '4 & \frac{\pi}{2} & (0,1) \\\ '."\n".
+                                                        '5 & \frac{5\pi}{8} & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '6 & \frac{3\pi}{4} & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '7 & \frac{7\pi}{8} & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '8 & \pi & (-1,0) \\\ '."\n".
+                                                        '9 & \frac{9\pi}{8} & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '10 & \frac{5\pi}{4} & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '11 & \frac{11\pi}{8} & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '12 & \frac{3\pi}{2} & (0,-1) \\\ '."\n".
+                                                        '13 & \frac{13\pi}{8} & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '14 & \frac{7\pi}{4} & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '15 & \frac{15\pi}{8} & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}',
+                                          label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
-                'X', subline =>
+                'Beweis: Die Koordinaten der Ecken eines regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
+                  '\condb{Schritt 1: Darstellung der Ecken in komplexer Form} \\\\'."\n".
+                    'Die Eckpunkte eines regelmäßigen \lm{ m }-Ecks auf dem Einheitskreis sind durch die komplexen Zahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{N} *) *( \forall k \in [ 0, m [_\mathbb{N} *)  *[  z_{k}  =  e^{\frac{ k }{ m } \cdot \i \cdot 2 π}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  z_{k}  =  \cos \frac{ k \cdot 2 π }{ m } + \i \cdot \sin \frac{ k \cdot 2 π }{ m }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegeben.'."\n".
+                    'Diese Werte sind die \lm{ m }-ten Einheitswurzeln, also die Lösungen der Gleichung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z^{ m }  =  1  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die reellen Koordinaten der Ecken sind die Kosinus- und Sinuswerte:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x_{k} = \cos \frac{ k \cdot 2 π }{ m }  }'),
+                      array( display => 'on',  latex => '{  y_{k} = \sin \frac{ k \cdot 2 π }{ m }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unsere Aufgabe ist es zu zeigen, dass \lm{ x_{k} } und \lm{ y_{k} } reell algebraische Zahlen sind, also Lösungen eines Polynoms mit ganzzahligen Koeffizienten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 2: Minimalpolynom der Einheitswurzeln} \\\\'."\n".
+                    'Die Gleichung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z^{m} - 1  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'hat die Lösungen \lm{ z_k = e^{2\pi i k / m} }, also genau die Ecken des \lm{ m }-Ecks. Da dieses Polynom \italic{ganzzahlige Koeffizienten} hat,'."\n".
+                    'folgt sofort, dass jede Einheitswurzel \lm{ z_k } eine \italic{algebraische Zahl} ist.'."\n".
+                    'Tatsächlich sind die Einheitswurzeln die Nullstellen des sogenannten \lm{ m }-ten Kreisteilungspolynoms\footnote{(Primärliteratur einfügen!) \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{m}(z)  =  \prod_{\substack{1 \leq k \leq m \\\ \gcd(k, m) = 1}} *( z - e^{2\pi i k / m} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wobei \lm{ \gcd(k, m) } (auch ggT genannt) die größte natürliche Zahl ist, durch die die beiden Zahlen \lm{ k } und \lm{ m } teilbar sind.'."\n",
+                      'Dieses Polynom hat \italic{ganzzahlige Koeffizienten}, was zeigt, dass jede Einheitswurzel \lm{ e^{2\pi i k / m} } eine algebraische Zahl ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 3: Kosinus und Sinus sind ebenfalls algebraisch} \\\\'."\n".
+                    'Da ja, wie oben beschrieben, gilt'."\n".
+                    '\color{*Bearb}{(auf obere Formel verweisen, Nummerierung!)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z_{k}  =  e^{2\pi i k / m}  =  \cos \frac{2\pi k}{m} + i \sin \frac{2\pi k}{m}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und wir bereits gezeigt haben, dass \lm{ z_k } algebraisch ist, genügt es zu zeigen, dass auch Kosinus und Sinus algebraisch sind.'."\n".
+                    'Das folgt direkt aus den Identitäten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2}  }'),
+                      array( display => 'on',  latex => '{  \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da sowohl \lm{ e^{i\theta} } als auch \lm{ e^{-i\theta} } algebraische Zahlen sind – weil sie Einheitswurzeln sind –,'."\n".
+                    'folgt aus diesen Linearkombinationen, dass auch \lm{ \cos \theta } und \lm{ \sin \theta } algebraische Zahlen sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 4: Fazit} \\\\'."\n".
+                    'Da sich \lm{ \cos \frac{2\pi k}{m} } und \lm{ \sin \frac{2\pi k}{m} } als Linearkombinationen von Einheitswurzeln ausdrücken lassen'."\n".
+                    'und Einheitswurzeln algebraische Zahlen sind, folgt:'."\n",
+                      'Die Koordinaten aller Ecken eines beliebigen regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                      
+                'Analyse des Beweises und Projektion der Bedeutung in der betrachteten Geometrie', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Dies erscheint auf den ersten Blick recht erstaunlich, weil wir es ja bei der obigen exponentiellen \lm{ \e }-Funktion, zur Beschreibung des Kreises,'."\n".
+                    'sowohl in der Basis als auch im Exponenten, bis auf beim Ausgangseckpunkt \lm{ k = 0 }, nur mit rein transzendenten Zahlen zu tun haben.'."\n".
+                    'Diese neutralisieren sich hier aber vollständig in Bezug auf ihre Transzendenz.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Was passiert, wenn wir mit der Anzahl der Ecken ins Unendliche übergehen?} \\\\'."\n".
+                  '\cond{Abschätzung der Anzahl an Ecken, die algebraische Koordinaten haben können} \\\\'."\n".
+                    'In Bezug auf die Kreisrelation des Einheitskreises, die wir weiter oben betrachtet haben, kann sowohl die \lm{ x }-Koordinate als auch die \lm{ y }-Koordinate'."\n".
+                    'alle algebraischen Zahlen zwischen minus Eins und plus Eins annehmen, nur nicht in freier Kombination.'."\n".
+                    'Wenn \lm{ x } von minus Eins bis plus Eins durchläuft, dann treten, außer an den Scheitelpunkten, immer zwei verschiedene \lm{ y }-Koordinaten auf,'."\n".
+                    'und zwar in der Kombination \lm{ \pm y }.'."\n",
+                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \# ( \lbrack -1, 1 \rbrack_{\mathbb{A}_{\R}} ) - 2 } zu tun.'."\n".
+                    'Dies sind viel mehr Koordinaten, als wir sie durch ein regelmäßiges \lm{ m }-Eck bekommen können, denn dies wären durch vollständige Induktion nur \lm{ ω } viele Koordinaten.'."\n".
+                    'Die unterschiedlichen \lm{ m }-Ecke enthalten eben unterschiedliche Koordinaten, je nach der Primfaktorzerlegung von \lm{ m },'."\n".
+                    'sodass wir durch alle \lm{ ω } \lm{ m }-Ecke kombiniert eine Anzahl von \lm{ \s } Koordinaten erhalten.'."\n".
+                    'Dies ist nicht anders, als bei der Teilung der Strecke von Null bis Eins, wie oben entwickelt'."\n".
+                    'und hätte nach meiner Ansicht zur Folge, dass die Koordinaten überwiegend superial kleine Summanden bekämen.'."\n",
+                      'Der obige algebraische Parameter \lm{ a } der Eingangs formulierten \lm{ \e }-Funktion für den Einheitskreis enthält allerdings'."\n".
+                    'nicht \lm{ \s } viele Möglichkeiten bereit.'."\n".
+                    'Er läuft nur von \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }, wenn die Koordinaten keine Dopplung haben sollen.'."\n",
+                      'Nehmen wir an es gilt unsere Vermutung \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }:'."\n".
+                    'Dann wäre \lm{ \# ( \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} ) ?= \frac{ \s }{ 2 ω } }.'."\n".
+                    'Dies führt nach meinem Verständnis dazu, dass die superial kleinen Summanden vollständig verschwinden und alle Koordinaten'."\n".
+                    'rein reell algebraische werden.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    '\lm{ 2 \cdot \# ( [ -1, 1 ]_{\mathbb{A}_{\R}} ) - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Betrachtung der Verhältnisse im Kreis verlagert die Fragestellung der sinnvollen Koeffizienten geometrisch ins Endliche} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))), */
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-pos-Null-reell-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  *( e^{a^{+} \cdot \i \cdot 2 π} *)^{\s}  ?=  1  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Gibt es überrationale Zahlen, die sich nicht wie die ganzen Wurzeln aus natürlichen Zahlen verhalten?} \\\\'."\n".
+                    'Wir wollen schauen, welche reell algebraischen Zahlen der Menge \lm{ \mathbb{A}_{\R} } es noch geben kann, die durch ein Produkt mit einem unendlichen Teilprodukt des Primzahl-Flächenprodukts'."\n".
+                    'von \lm{ \s } noch aktual unendliche natürliche Zahlen ergeben können.'."\n".
+                    'Hier ein mögliches Beispiel, dass sich an überrationale Zahlen, genauer an überrationalen Brüchen, orientiert.'."\n".
+                    'Denn es gibt ja auch noch die Möglichkeit, dass zum Beispiel nicht alle endlichen aktual unendlichen Potenzen der Zwei schon ausreichen, wie bei irrationalen Wurzeln'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sondern nur eine der unendlichen Potenzen der Zwei dies leistet, alle anderen aber nicht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  a \cdot 2^{ω} \in \mathbb{N}_{\infty}  \land  a \cdot 2^{ω - 1} \notin \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie'),
+                    )),
+              )
+          ); ?>
+          
+
+          <!  • Resonanz in der Arithmetik der Geometrie  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie',
+              'Eine grundlegendes Prinzip der Existenz: die Resonanz', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Unsere superiale Basis \lm{ \s } geht über ihre Primfaktorzerlegung in „Resonanz“ mit jeder ganzen, jeder rationalen und sogar'."\n".
+                    'jeder algebraischen Zahl, also auch mit allen Brüchen, ganzen Exponenten und ganzen Wurzeln sowie deren algebraische Kombinationen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                      
+                'Wie wird Resonanz in diesem Zusammenhang verstanden?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Resonanz bedeutet hier, dass alle endlichen algebraischen Zahlen sowohl auf der Grundlage der superial kleinen Basis \lm{ \s^{-1} }'."\n".
+                    '„tanzen“ – also „schwingen“ –, als auch der Ganzheit \lm{ \s } entgegenstreben, die sie als größere Vollkommenheit quasi anzieht.'."\n",
+                      'Ich lasse mich hier von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
+                    'Verhältnissen zu tun haben.'."\n".
+                    'Denn mir ist bewusst, dass die Primzahlen zwar statisch erscheinen, gleichzeitig aber aus dem dynamischen Prozess des Zählens resultieren,'."\n".
+                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n",
+                      'Zum einen erscheint jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } aus der Perspektive ihres grundlegenden Rasters der Größenordnung \lm{ \s^{-1} }'."\n".
+                    'als ganze Zahl.'."\n".
+                    'Mit anderen Worten: \lm{ z \cdot \s^{-1} = a } bedeutet, dass ihr Faktor \lm{ z = a \cdot \s } eine ganze Zahl ist, wenn auch eine aktual unendlich große.'."\n",
+                      'Zum anderen fallen die kleinsten ganzzahligen „Schwingungsknoten“ – also die Primzahl-Konstruktoren (\lm{ p }-adischen Bewertungen) von \lm{ a } –'."\n".
+                    'mit dem grundlegenden Raster zusammen.'."\n",
+                      'Damit liegt zum Beispiel auch \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } auf dem im Unendlichen ganzzahligen Raster \lm{ 2^{q} \cdot 2^{ω} }, wenn \lm{ q \in \mathbb{Q} }.'."\n".
+                    'Wollen wir dieses auf alle ganzzahligen Wurzeln und schließlich auf alle reell algebraischen Zahlen ausweiten, dann brauchen wir'."\n".
+                    'allerdings das größere Raster von \lm{ \s }.'."\n".
+                    'Wodurch wir dann \lm{ 2^{\frac{ 1 }{ 2 }} \s } als ganze Zahl erhalten.'."\n".
+                    'Wenn wir dieses Rastern dann aber auf endliche Zahlen verkleinert haben wollen, so skalieren wir es mit dem Faktor \lm{ \s^{-1} } herunter auf'."\n".
+                    '\lm{ *( 2^{\frac{ 1 }{ 2 }} \s *) \s^{-1} } und erhalten dann \lm{ 2^{\frac{ 1 }{ 2 }} }, also unsere endliche Wurzel,'."\n".
+                    'die auf dem aktual unendlich kleinen Raster der Weite \lm{ \s^{-1} } liegt.'."\n",
+                      'Dieses enthält allerdings unendlich kleine ganze Summanden \lm{ a + z \cdot \s^{-1} }, mit \lm{ a \in \mathbb{A}_{\R} } und \lm{ z \in \mathbb{Z} }.'."\n".
+                    'Wollen wir diese nicht haben, dann nehmen wir im Endlichen einfach nur die reell algebraischen Koeffizienten \lm{ a },'."\n".
+                    'die auch alle auf diesem Raster liegen, wenn \lm{ z = 0 }.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                      
+                'Verfeinerung der Perspektive der Resonanz', subline =>
+                  '… führt vermutlich zur Riemannschen Vermutung')),
+                  array( 'text', array( text => array(
+                    'Führen wir diese Perspektive der Resonanz weiter aus, indem wir sie auf den Prozess des Zählens beziehen,'."\n".
+                    'dann könnte uns dies zur Riemannschen Vermutung führen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),

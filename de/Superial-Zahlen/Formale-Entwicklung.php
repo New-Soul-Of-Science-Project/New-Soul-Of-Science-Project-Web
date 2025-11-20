@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Struktur-Geometrie'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Arithmetische-Struktur-Geometrie'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -26,12 +26,12 @@
                       'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
                     'bezüglich der Addition und Multiplikation.'."\n".
                     'Sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
-                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die durch \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{Radikale darstellbaren reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die durch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Radikale darstellbaren reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'ins Aktual-Unendliche erweitert;'."\n".
                     'vielleicht sogar alle reell algebraischen Zahlen.'."\n",
                       'Durch Radikale darstellbare rein reale algebraische Zahlen sind solche, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
                     'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sind.\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{aktuellen Forschung}.'."\n",
+                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{aktuellen Forschung}.'."\n",
                       'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
                     'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
@@ -55,17 +55,17 @@
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
                       
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } eine möglichst große Anzahl der reellen Zahlen umfassen und ins Aktual-Unendliche erweitern,'."\n".
-                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten}'."\n".
+                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}'."\n".
                     'über \lm{ \mathbb{A}_{\S} } definiert werden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
@@ -103,34 +103,35 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}‹} aufzeigen,'."\n".
+                    'Wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} aufzeigen,'."\n".
                     'ist das Verständnis der ganzen Superial-Zahlen tief mit ihren sinnvollen Koeffizienten verbunden.'."\n".
-                    'Weil dort mehr im Detail erklärt, betrachten wir hier diesen Zusammenhang etwas oberflächlicher.'."\n".
+                    'Weil dort im Detail erklärt, betrachten wir hier diesen Zusammenhang nicht ganz so tief.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
                       
                 'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
-                    'Wir haben es zuvor ja schon angedeutet:'."\n"))),
+                    'Wie müssen ganze Superial-Zahlen nun aussehen?'."\n".
+                    'Eine Superial-Zahl ist dann ganz, wenn all ihre Summanden ganz sind, was bedeutet:'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten Null sein, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
-                        'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen enthalten, was bedeutet, dass hier auch die Koeffizienten ganze Zahlen sein müssen, weil ihr Stellenwert-Faktor \lm{ \s^{0} = 1 } ist.',
-                        'Die Summanden mit positiven Potenzen von \lm{ \s }, also \lm{ \s^{d} }, mit \lm{ 0 < d }, sollten auch nur ganze Zahlen sein. Hier bedeutet dies aufgrund der aktual unendlichen Größe von \lm{ \s^{d} } aber, dass nur Koeffizienten als Faktoren des potenzierten \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahl-Flächenprodukts}, das \lm{ \s } entspricht, in Frage kommen, die das Produkt nicht in seiner Größenordnung bezüglich seiner Stelle \lm{ \s^{d} } verändern.',
+                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten nur Null-Koeffizienten haben, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
+                        'Im endlichen Summanden \lm{ \s^{0} = 1 } sollten demnach nur ganze Koeffizienten enthalten sein.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s } sollten auch nur ganze Zahlen sein. Das bedeutet, die Koeffizienten können wegen der aktual unendlichen Größe der Basis aus \lm{ \mathbb{A}_{\S} } sein.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
                     'Sie bestehen nur aus endlichen Brüchen von Primfaktoren endlicher Anzahl und Potenz.'."\n",
-                      'Interessanter und für manch einen wohl etwas überraschender Weise erfüllen aber auch ganzzahlige Wurzeln aus positiven natürlichen Zahlen diese Bedingung, wie wir im \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
+                      'Interessanter und für manch einen wohl etwas überraschender Weise erfüllen aber auch ganzzahlige Wurzeln aus positiven natürlichen Zahlen diese Bedingung, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
                     'lernen.'."\n".
-                    'Schließlich kommen wir sogar so weit, dass wir dies für \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{alle durch Radikale darstellbaren reell algebraischen Zahlen}'."\n".
+                    'Schließlich kommen wir sogar so weit, dass wir dies für \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle durch Radikale darstellbaren reell algebraischen Zahlen}'."\n".
                     'zeigen können.'."\n",
                       'Wir bekommen einen Eindruck und ein Gefühl anhand folgender Beispiele für ganze Superial-Zahlen in'."\n".
                     'der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\S} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
@@ -151,7 +152,7 @@
                       'Nachfolgend nun eine genaue Definition der ganzen Superial-Zahlen:'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -184,13 +185,13 @@
                     'Es sind einfach alle Zahlen aus dieser Menge, die positiv sind, einschließlich der Null:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.N', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall u \in \mathbb{S}_{\Z} *)  *[ 0 \leq u *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -198,7 +199,7 @@
                       'Für \lm{ 0 < d }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
                     'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ a_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
                       
                 'Beispiele für natürliche Superial-Zahl', subline =>
                   '')),
@@ -207,7 +208,7 @@
                     'für die natürlichen Superial-Zahlen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *〈 0 *〉․  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  *〈 -5 *〉․  \notin  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \notin  \mathbb{S}_{\N}  }'),
@@ -247,25 +248,25 @@
                     'nur durch Eins und durch sich selber ganzzahlig teilbar sind, wie auch sonst bei Primzahlen üblich.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Es existiere also die Menge'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!: *( \forall x \in \mathbb{S}_{\N}^{+}\!: *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'aller superialen Primzahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wenn \lm{ \mathbb{A}_{\S} } \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
+                    'Wenn \lm{ \mathbb{A}_{\S} } \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
                     'dann gehören dazu auch alle endlichen Primzahlen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{P}  \subset  \mathbb{S}_{\P}  }'),
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
                     ))),
@@ -276,14 +277,14 @@
                       'Kommen höhere Potenzen der superialen Basis ins Spiel, müssen wir schauen, ob es nicht binomische Formeln gibt, die diese erzeugen können:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\S} *)  *[  a_{2} \cdot \s^{2} + a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Was wir sehen können ist, dass der endliche Summand nur \lm{ \pm 1 } sein kann, denn wäre er eine andere ganze Zahl,'."\n".
                     'dann wäre die natürliche Superial-Zahl, wegen des Primzahl-Flächenprodukts, durch den Betrag dieser ganzen Zahl teilbar.'."\n",
-                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.}'."\n".
+                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}'."\n".
                     'zu beantworten:'."\n".
                     ''))),
 
@@ -324,7 +325,7 @@
                     'Nachfolgend wichtige Definitionen zur Schaffung von Werkzeugen, die es ermöglichen, die Superial-Zahlen, ihre Untermengen und'."\n".
                     'Summen einfach zu definieren, darzustellen und mit ihnen praktisch umgehen zu können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
 
                 '\italic{Inhalt}', subline =>
                   '')),
@@ -332,11 +333,12 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen'),
                     )),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
 
                 'Zahlen und Mengen im Unendlichen', subline =>
                   'Der Übergang von Mengen und Werten endlicher natürlicher Zahlen ins Aktual-Unendliche')),
@@ -346,20 +348,22 @@
                     'um plausibel zu sein und in Bezug auf die Superial-Zahlen Sinn zu ergeben.'."\n",
                       'Das bedeutet nicht, dass es prinzipiell nicht auch weitere Möglichkeiten mit ihren Perspektiven und deren jeweiligen Vor- und Nachteilen gibt.'."\n".
                     'Mir erscheint die nachfolgende Perspektive natürlich am besten zum Erkenntnisgewinn geeignet und in diesem Sinne als am besten zu den Superial-Zahlen passend.'."\n"))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Die Teilmengen vom Beginn der natürlichen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Teilmengen vom Beginn der natürlichen Zahlen} \\\\'."\n".
                     'Betrachten wird die Teilmengen \lm{ \mathbb{T}_{n} }, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \lm{ n }.'."\n",
                       'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  *\{ 0, 1, 2, 3, 4, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Formell korrekter können wir schreiben, wenn wir nachfolgend die Menge aller natürlichen Zahlen \lm{ \mathbb{N} } als stets mit der Null beginnend annehmen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
                       array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  *\{  x  *|*  *( n \in \mathbb{N} *) *( \forall x \in \mathbb{N} *) *[  x < n  *]  *\}  }'),
@@ -380,13 +384,15 @@
                       'wenn wir uns mit dem Übergang uns Unendliche beschäftigen.'."\n".
                       ''))),
                       
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Das größte Element dieser Mengen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Das größte Element dieser Mengen} \\\\'."\n".
                     'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Menge \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
                     'Wenn das Symbol \lm{ \# } die Anzahl der Elemente einer Menge gibt, dann gilt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  \#\mathbb{T}_{n}  =  n  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \exists \, \mathrm{groesstes}(\mathbb{T}_{n}) *)  *[  \mathrm{groesstes}(\mathbb{T}_{n})  =  n - 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathrm{groesstes}(\mathbb{T}_{n}) + 1  =  n  }'),
@@ -397,15 +403,17 @@
                     'Die Aussage \lm{ \mathrm{groesstes}(\mathbb{T}_{n}) = n - 1 } gilt offenbar nur im Endlichen und ergibt im Aktual-Unendlichen keinen Sinn mehr.'."\n",
                       'Wir gehen nun ins Unendliche über und schauen uns das mal näher an.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Übergang ins Aktual-Unendliche', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Übergang ins Aktual-Unendliche} \\\\'."\n".
                     'Anders als im Endlichen bei der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
                     'die unendlich viele Elemente endlicher Größe enthält.'."\n".
                     'Auch sie beginnt mit der Null und den weiteren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
                     'weil es zu jedem Element einen Nachfolger gibt, denn es ist die Menge der vollständigen Induktion:\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \Rightarrow  \nexists \, \mathrm{groesstes}(\mathbb{N})  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -413,7 +421,7 @@
                     'mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  :=  \#\mathbb{N}  }',
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
@@ -423,13 +431,13 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
+                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
                     'anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
                     'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\S} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
                     'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
                     'Denn unsere Untersuchung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulerschen Zahl \lm{ \e }} – hierin als \lm{ \e_{\s} } bezeichnet –'."\n".
                     'aufgrund der \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung} mit Hilfe von Superial-Zahlen,'."\n".
-                    'lässt nämlich die \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutung} aufkommen,'."\n".
+                    'lässt nämlich die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutung} aufkommen,'."\n".
                     'dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
                       'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
                       'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
@@ -441,7 +449,7 @@
                       'Das gleiche gilt, wenn wir das \lm{ ω } durch die noch viel größere superiale Basis \lm{ \s = ω^{ω} } ersetzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  \s  *]  }',
                                                label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s}', label_incr => true),
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }',
@@ -455,8 +463,9 @@
                     'wichtige Eigenschaften der Zahlen näher untersuchen zu können, wie wir später sehen werden.'."\n".
                     'Sie ermöglicht so unter anderem die Definition einer konkreten aktual unendlichen Differentialrechnung, wie oben schon angedeutet.'."\n".
                     ''))),
+
                   // #Ref: *SupNum:Stellenwertsystem-Schreibweise
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
                       
                 'Stellenwertsystem', subline =>
                   '')),
@@ -464,19 +473,21 @@
                     'Eine der Eigenschaften der Superial-Zahlen ist, dass es sich um ein Stellenwertsystem handelt.'."\n".
                     'Es ist ein aktual unendliches Stellenwertsystem, in dem es eine endliche Stelle gibt und deren „Ziffern“'."\n".
                     'nicht nur ganze Zahlen oder alle rationalen Zahlen sein können, sondern eine große Menge an reell algebraischen Zahlen, wenn nicht gar'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
                     'Also können sogar negative Zahlen, Brüche, Wurzeln und so fort hier Ziffern sein.'."\n",
-                      '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
+                      '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
                       'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Ein besonderes Zahlensystem und seine Kurznotation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Ein besonderes Zahlensystem und seine Kurznotation} \\\\'."\n".
                     'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Stellenwertsystem auf Basis der superialen Basis \lm{ \s }.'."\n",
                       'Nachfolgend wird das Symbol \lm{ \concat } für die Aneinanderreihung, die Konkatenation,'."\n".
                       'der „Ziffer“ nach der Definition \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} der Superial-Zahlen verwendet:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -495,12 +506,14 @@
                     'Am Ende der Rechnung wird angestrebt, dass die Terme rein endliche Ausdrücke ergeben,'."\n".
                     'die nicht mehr zu Überträgen in andere Stellen führen, wenn dies geht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  'Beispiele für unsere Kurznotation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Beispiele für unsere Kurznotation} \\\\'."\n".
                     'Nun ein paar Beispiele in der neuen Notation:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\S} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
@@ -511,9 +524,10 @@
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
                     'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen', text =>
+                  'Berechnung der einzelnen Stellen im superialen Stellenwertsystem', subline =>
+                    'Die neue Unendlichkeits-Gaußklammer')),
                   array( 'text', array( text => array(
-                  '\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{}\condb{Berechnung der einzelnen Stellen im superialen Stellenwertsystem} \\\\'."\n".
-                  '\cond{Die neue Unendlichkeits-Gaußklammer} \\\\'."\n".
                     'Die Aufgabe, aus einer beliebigen Superial-Zahl eine „Ziffer“, oder besser eine Stelle, herauszufiltern,'."\n".
                     'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operator dafür auskommt.'."\n".
                     ''))),
@@ -526,7 +540,7 @@
                       'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }'),
                     ))),
                       
@@ -535,7 +549,7 @@
                 TitleVis => 'Beispielrechnung:', ParagraphList => array(
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }'),
@@ -556,7 +570,7 @@
                       'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }'),
                     ))),
                       
@@ -565,7 +579,7 @@
                 TitleVis => 'Beispielrechnung:', ParagraphList => array(
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }'),
                       array( display => 'on',  latex => '{  i  =  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }'),
@@ -578,40 +592,16 @@
                     ))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was wir erreichen wollten.'."\n".
+                      'Was wir erreichen wollten.'."\n",
+                        '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
                     'Den neue Unendlichkeits-Gaußklammer benötigen wir sodann auch dabei, die'."\n".
-                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
-                      
-                'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'An einigen Stellen dieser Arbeit'."\n".
-                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
-                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
-                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
-                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
                       
                 'Intervall-Menge', subline =>
                   '')),
@@ -619,19 +609,19 @@
                     'Eine etwas allgemeinere Definition der Intervall-Menge eines Intervalls\footnote{Internet: \\\\ Vgl. \cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'so können wir flexibel Intervall-Mengen definieren.'."\n",
                         '\\\\'.
                       ''))),
@@ -645,7 +635,7 @@
                     'mit Summen zu definieren.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} } definieren.'."\n".
@@ -654,13 +644,13 @@
                       'Das macht für die Intervall-Menge, aber keinen Unterschied, weil in Mengen die Elemente nicht angeordnet sind,'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ b, a ]_\mathbb{T}  =  [ a, b ]_\mathbb{T}  }'),
                       array( display => 'on',  latex => '{  [ b, a [_\mathbb{T}  =  ] a, b ]_\mathbb{T}  }'),
                       array( display => 'on',  latex => '{  ] b, a ]_\mathbb{T}  =  [ a, b [_\mathbb{T}  }'),
                       array( display => 'on',  latex => '{  ] b, a [_\mathbb{T}  =  ] a, b [_\mathbb{T}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so muss lediglich berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen.'."\n",
                         '\\\\'.
                       ''))),
@@ -668,15 +658,16 @@
                   array( 'text', array( text => array(
                     'Etwas anders sieht dies für Summendefinitionen über Intervall-Mengen aus.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen', text =>
+                  'Summendefinition über Intervall-Mengen', subline =>
+                    'Integrale als Summen')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{}Summendefinition über Intervall-Mengen} \\\\'."\n".
-                  '\cond{Integrale als Summen} \\\\'."\n".
                     'Denn, wenn der größere Wert zuerst kommt, dann summieren wir quasi Rückwärts – auch, wenn Mengen keine Ordnung haben –'."\n".
                     'und es negiert sich das Ergebnis.'."\n".
                     'Dies ist dann im Besonderen für die \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Definitionen von Integralen} von Bedeutung.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} }'."\n".
@@ -687,13 +678,13 @@
                       'anstatt der Summe'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ i \in [ b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b ]_\mathbb{T} } f(i)  }'),
                       array( display => 'on',  latex => '{  \sum_{ i \in [ b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b ]_\mathbb{T} } f(i)  }'),
                       array( display => 'on',  latex => '{  \sum_{ i \in ] b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b [_\mathbb{T} } f(i)  }'),
                       array( display => 'on',  latex => '{  \sum_{ i \in ] b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b [_\mathbb{T} } f(i)  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so muss nicht nur berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen,'."\n".
                       'sondern auch, dass sich bei einer Summe, deren Intervall-Menge mit dem größeren Element zuerst definiert ist,'."\n".
                       'das Vorzeichen umdreht.'."\n",
@@ -704,8 +695,66 @@
                     'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
                     ''))),
 
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                      
+                'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'An einigen Stellen dieser Arbeit'."\n".
+                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
+                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
+                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen', text =>
+                      
+                'Eingrenzung der Schichten der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bei der Eingrenzung der Schichten der Superial-Zahlen geht es darum, zum Beispiel eine Menge \lm{ \mathbb{S}_{X,\mathbb{T}} } von der existierenden Menge \lm{ \mathbb{S}_{X} } abzuleiten,'."\n".
+                    'in der nur bestimmte Schichten mit den Indizes in \lm{ \mathbb{T} } mit Koeffizienten ungleich Null belegt sein können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In der Menge \lm{ \mathbb{S}_{\Z,\{ 1 \}} } beispielsweise, die auf den ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beruht,'."\n".
+                    'können dann nur die Koeffizienten der Schicht Eins ungleich Null sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".
+                    'Die Koeffizienten aller anderen Schichten sind Null.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+
+                '', subline =>
+                  '')),
+
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'),
                     )),
               )
           ); ?>

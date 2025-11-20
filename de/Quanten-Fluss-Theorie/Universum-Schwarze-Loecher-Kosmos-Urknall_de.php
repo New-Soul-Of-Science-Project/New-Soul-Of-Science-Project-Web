@@ -18,7 +18,7 @@
                     '• Logischer Bruch in der ART:',
                     '– Wenn sich die Gravitationswellen und die Gravitationswechselwirkung nur mit Lichtgeschwindigkeit im Raum ausbreiten können, wie kann dann die Gravitation, die der Singularität hinter dem Ereignishorizont entspringt, dem Schwarzen Loch durch den Ereignishorizont entkommen, wenn es das Licht nicht kann? Ein Schwarzes Loch dürfte demnach in der ART keine Gravitation haben! Es fehlt jedenfalls die Wechselwirkung zwischen dem Inneren des Schwarzen Lochs und der Umgebung, welche dann ja erst die Raumzeitkrümmung entstehen lassen kann, welche in der ART der gravitativen Wirkung des Raums zugrunde liegt.',
                     '\\bold{Aktuelle akademische Diskussion}',
-                    '• Das Dirac-Milne Universum, von Edward Arthur Milne, wird nach einem Artikel im SdW gerade näher untersucht, weil es erstaunlich gut zu den Erkenntnissen des heutigen Standardmodell der Kosmologie (SMK) passt:}',
+                    '• Das Dirac-Milne Universum, von Edward Arthur Milne, wird nach einem Artikel im SdW gerade näher untersucht, weil es erstaunlich gut zu den Erkenntnissen des heutigen Standardmodell der Kosmologie (SMK) passt:',
                     '– Dieses Modell hat nach meinem jetzigen Verständnis Eigenschaften, die interessant für das FrQFT sein könnten.',
                     '– Siehe \\jump[https://www.spektrum.de/magazin/der-unterschied-zwischen-materie-und-antimaterie/1686886]{}{Chardin, Gabriel, Antimaterie im neuen Licht} und \\jump[https://www.aanda.org/articles/aa/abs/2012/01/aa16103-10/aa16103-10.html]{}{Benoit-Lévy, A. and Chardin, G., Introducing the Dirac-Milne universe}.',
                     '• Die Struktur, dass ein Schwarzes Loch einen Kosmos enthält, kommt interessanterweise auch im holographischen Prinzip und in der AdS-CFT-Dualität beziehungsweise in der Maldacena-Dualität vor.\\footnote[*Bearb]{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{Moskowitz:MitQuantenbitsZurRaumzeit-Paper:2017}.} (Diesen Text gibt es so im Kapitel \\italic{\\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Fraktales-Universum}}.) Die hyperbolische Verzerrung hat die Geometrie eines Anti-De-Sitter-Raums, siehe \\url{https://de.wikipedia.org/wiki/Anti-de-Sitter-Raum}, was die AdS-CFT-Dualität beziehungsweise die Maldacena-Dualität und damit das holografische Prinzip in der FrQFT möglich erscheinen lässt.\\footnote[*Bearb]{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{Moskowitz:MitQuantenbitsZurRaumzeit-Paper:2017}.}',
@@ -34,30 +34,11 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      // array(  jump_name => 'OM:FrQFT:XXX'),
                     )),
                 )
           ); ?>
@@ -66,7 +47,6 @@
           
 
 		    	<!  • X  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -76,27 +56,8 @@
                     )),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Dunkle-Energie'),

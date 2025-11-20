@@ -15,36 +15,18 @@
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• In der Quanten-Fluss-Theorie ist der Elektronen-String viel größer als jeder String im Atomkern. Daher kann das Elektron sich nur zum Atomkern zentrieren und niemals hineinfallen.'."\n",
-                    '• Die elektrische Ladung des Elektrons hat aber trotzdem ein Feld, dessen Quelle im Schwerpunkt seines Wirkungsquanten-Strings liegt, siehe \\jump[][*Bearb]{OM:FrQFT:Lepton}{Leptonen-Modell}.'."\n",
-                    '• Welche Rolle spielt die Herleitung Heisenbergs Unschärferelation\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}.} im Atommodell? Im Besonderen die Relation \( p \cdot q - q \cdot p = \frac{\hbar}{2 \pi i} \). Noch einmal lesen.'."\n",
-                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \\jump[https://www.youtube.com/watch?v=Vf98gzuXsgI&t=170s]{}{The Nature of the Electron SIMPLIFIED in 5 Minutes!}.'."\n",
+                    '• Die elektrische Ladung des Elektrons hat aber trotzdem ein Feld, dessen Quelle im Schwerpunkt seines Wirkungsquanten-Strings liegt, siehe \jump{OM:FrQFT:Lepton}{Leptonen-Modell}.'."\n",
+                    '• Welche Rolle spielt die Herleitung Heisenbergs Unschärferelation\footnote{\cite{Heisenberg:UeberQuantKinMech1927Scan}.} im Atommodell? Im Besonderen die Relation \( p \cdot q - q \cdot p = \frac{\hbar}{2 \pi i} \). Noch einmal lesen.'."\n",
+                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \jump[https://www.youtube.com/watch?v=Vf98gzuXsgI&t=170s]{}{The Nature of the Electron SIMPLIFIED in 5 Minutes!}.'."\n",
+                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \jump[https://www.youtube.com/watch?v=qJZ1Ez28C-A]{}{Something Strange Happens When You Trust Quantum Mechanics}.'."\n",
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Atommodell:XXX'),
+                      // array(  jump_name => 'OM:FrQFT:Atommodell:X'),
                     )),
                 )
           ); ?>
@@ -52,44 +34,24 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Atommodell:XXX',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Atommodell:X',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Atommodell', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Quantengravitation'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

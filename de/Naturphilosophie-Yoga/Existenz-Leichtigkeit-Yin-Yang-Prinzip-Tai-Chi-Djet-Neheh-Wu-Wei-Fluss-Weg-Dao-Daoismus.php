@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:HaTha'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Chakras-Kabbala-Tarot'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -369,7 +369,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:Home'),
                     )),
               )
           ); ?>

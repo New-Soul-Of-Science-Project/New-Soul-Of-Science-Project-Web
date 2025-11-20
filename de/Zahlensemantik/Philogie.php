@@ -155,7 +155,7 @@
                     ''))), */
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
+                      // array(  jump_name => 'X'),
                     )),
                 )
           ); ?>

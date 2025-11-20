@@ -30,7 +30,7 @@
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Die Definition unserer Ableitung finden wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}:'."\n".
                       ''))),
@@ -39,7 +39,7 @@
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
                       ''))),
                   array( 'equations',
@@ -51,7 +51,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot *( {․〈1〉} + 1 *)  =  f(〈x〉․〈1〉)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot 〈1〉․〈1〉  =  f(〈x〉․〈1〉)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach kurzer Überlegung können wir erraten, dass die Bedingung für unsere Funktion von einer'."\n".
                       'Exponentialfunktion der Basis \lm{ 〈1〉․〈1〉 } erfüllt werden kann,'."\n".
                       'denn der Parameter der Funktion soll sich um eine superial kleine Einheit erhöhen, wenn mit'."\n".
@@ -62,7 +62,7 @@
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈1〉^{〈x〉_{1}}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
                       ''))),
                   array( 'equations',
@@ -71,10 +71,10 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉_{1} + 1}  =  〈1〉․〈1〉^{〈〈x〉․\,〈1〉〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉〈1〉.}  =  〈1〉․〈1〉^{〈x〉〈1〉․}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'richtig ist.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Bei näherer Betrachtung können wir nun aber auch leicht sehen, dass es noch weitere Funktionen ähnlicher'."\n".
                       'Art gibt, die dies auch erfüllen, nämlich für alle \lm{ y }:'."\n".
                       ''))),
@@ -82,7 +82,7 @@
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈1〉^{〈x〉〈y〉.}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daher legen wir zusätzlich fest, dass'."\n".
                       ''))),
                   array( 'equations',
@@ -91,7 +91,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈1〉^{〈x〉_{1}}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'sein soll und legen uns damit auf die zuerst gefundene Funktion fest, so wie es auch sonst üblich ist.'."\n",
                         '\\\\ '."\n".
                       ''))),
@@ -373,7 +373,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }',
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
@@ -390,7 +391,7 @@
                     'auswirkt.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
                       'und ändern die dortige Differenz von \lm{ s } auf \lm{ s^2 }:'."\n".
@@ -399,7 +400,7 @@
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
                       ''))),
                   array( 'equations',
@@ -411,7 +412,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot *( {․〈0〉〈1〉} + 1 *)  =  f(〈x〉․〈0〉〈1〉)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot 〈1〉․〈0〉〈1〉  =  f(〈x〉․〈0〉〈1〉)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach kurzer Überlegung können wir erraten, dass die Bedingung für unsere Funktion von einer'."\n".
                       'Exponentialfunktion der Basis \lm{ 〈1〉․〈0〉〈1〉 } erfüllt werden kann,'."\n".
                       'denn der Parameter der Funktion soll sich um eine superial kleine Einheit erhöhen, wenn mit'."\n".
@@ -422,7 +423,7 @@
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
                       ''))),
                   array( 'equations',
@@ -431,10 +432,10 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉.}  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉․}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'richtig ist.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Bei näherer Betrachtung können wir nun aber auch leicht sehen, dass es noch weitere Funktionen ähnlicher'."\n".
                       'Art gibt, die dies auch erfüllen, nämlich für alle \lm{ y }:'."\n".
                       ''))),
@@ -442,7 +443,7 @@
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈y〉.}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daher legen wir zusätzlich fest, dass'."\n".
                       ''))),
                   array( 'equations',
@@ -451,7 +452,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'sein soll und legen uns damit auf die zuerst gefundene Funktion fest, so wie es auch sonst üblich ist.'."\n",
                         '\\\\ '."\n".
                       ''))),
@@ -503,12 +504,13 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.}'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\const{SupNum_g_footnote_text_Taylorreihe}}'."\n".
                     'zur Eulerschen Zahl \lm{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen nun auch, dass die Eulersche Zahl \lm{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
@@ -701,7 +703,7 @@
                     'Formulieren wir die eulersche Zahl, wie oben gezeigt, als \lm{ \e_{\s} }, dann ist ihre Transzendenz recht einfach zu zeigen.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei der Wert der eulerschen Zahl nach der mit Hilfe der Superial-Zahlen gewonnenen Definition aus Formel \jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}'."\n".
                       ''))),
@@ -712,7 +714,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \e_{\s}^{1}  =  *( 1 + \frac{ 1 }{ \s } *)^{1 \cdot \s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'so können wir diesen nach den Regeln offensichtlich nur zu Null machen, wenn wir die \lm{ \s }-te Wurzel ziehen,'."\n".
                       'was nicht erlaubt ist.'."\n".
                       'Denn die \lm{ \s }-te Wurzel bedeutet \lm{ \e_{\s} } hoch \lm{ \frac{ 1 }{ \s } } nehmen'."\n".
@@ -722,7 +724,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{ \frac{ 1 }{ \s } }  =  *( *( 1 + \frac{ 1 }{ \s } *)^{\s} *)^{ \frac{ 1 }{ \s } }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{ \frac{ 1 }{ \s } }  =  *( 1 + \frac{ 1 }{ \s } *)  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'mit einer gebrochenen Zahl im Exponenten, die auch noch unendlich klein ist.'."\n".
                       'Was wir zeigen wollten.'."\n",
                         '\\\\ '."\n".

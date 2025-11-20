@@ -3,10 +3,19 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 19.11.2024, 17:00h
+  // #: Stand: 23.09.2025, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250923:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subset  ' -> '\;\;\;\not\subset\;\;\;'
+  //           20250918:  +:  "$Sc_g_equation_replace_ary":  Add '  =:  ' -> '\;\;\;=:\;\;\;', '=:' -> '≕'
+  //           20250911:  +:  "$Sc_g_equation_replace_ary":  Add '  \le  ' -> '\;\;\;\le\;\;\;', '  \ge  ' -> '\;\;\;\ge\;\;\;', '  \equiv  ' -> '\;\;\;\equiv\;\;\;'
+  //           20250828:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\subseteq  ' -> '\;\;\;?\subseteq\;\;\;', '?\subseteq' -> '\overset{?}{\subseteq}', '?\subset' -> '\overset{?}{\subset}'
+  //           20250827:  +:  "$Sc_g_equation_replace_ary":  Add '  \subseteq  ' -> '\;\;\;:\subseteq\;\;\;'
+  //           20250813:  +:  "MathJax":  Add Macro "Q" for "\Q" to generate a non italic "Q" for rational superial numbers useful for set S.
+  //           20250625:  +:  "Sc_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
+  //           20250309:  +:  "$Sc_g_equation_replace_ary":  Add '  :\neq  ' -> '\;\;\;:\neq\;\;\;' and ':\neq' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq' and ':\in' -> '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'
+  //                      *:  "$Sc_g_equation_replace_ary":  Change order of some entries
   //           20241119:  *:  "Sc_f_equation_latex_str_html":  Change MathJax inline mode to use "$" as start and same as end instead of "\(" as start ans "\)" as end because the old usage caused problems in case of use in "\jumpname" statements probably getting confused by the system with our own internal latex statements.
   //           20241108:  +:  "MathJax":  Add Macro "concat" and "Concat" for a self created small concatenation symbol and big concatenation symbol.
   //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
@@ -239,6 +248,7 @@
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
     echo '            N: "\\\\mathrm{N}",'."\n"; // for natural superial numbers
     echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
+    echo '            Q: "\\\\mathrm{Q}",'."\n"; // for rational superial numbers
     echo '            R: "\\\\mathrm{R}",'."\n"; // for algebraic coefficients
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
@@ -617,7 +627,7 @@
   const latex_tech = 'latex_tech';
   const equ_list = 'equ_list';
   
-  function Sc_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
+  function Sc_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Sc_g_equation_auto_num;
     
@@ -664,28 +674,42 @@
                                     array( '  =  ', '\;\;\;=\;\;\;'),
                                     array( '  \neq  ', '\;\;\;\neq\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
+                                    array( '  \le  ', '\;\;\;\le\;\;\;'),
                                     array( '  \leq  ', '\;\;\;\leq\;\;\;'),
                                     array( '  >  ', '\;\;\;>\;\;\;'),
+                                    array( '  \ge  ', '\;\;\;\ge\;\;\;'),
                                     array( '  \geq  ', '\;\;\;\geq\;\;\;'),
+                                    array( '  \equiv  ', '\;\;\;\equiv\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
-                                    array( ':=', '≔'),
-                                    array( '  ≔  ', '\;\;\;≔\;\;\;'),
+                                    array( '  :=  ', '\;\;\;:=\;\;\;'),
+                                    array( '  =:  ', '\;\;\;=:\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
-                                    array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
                                     array( '  :\in  ', '\;\;\;:\in\;\;\;'),
-                                    array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
+                                    array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
+                                    array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
+                                    array( ':=', '≔'),
+                                    array( '=:', '≕'),
+                                    array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
+                                    array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
+                                    array( '?=', '\overset{?}{=}'),
+                                    array( '?\in', '\overset{?}{\in}'),
+                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
+                                    array( '?\subset', '\overset{?}{\subset}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),

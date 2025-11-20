@@ -4,10 +4,23 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 19.11.2024, 16:00h
-  
+  // #: Stand: 25.10.2025, 17:00h
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20251025:  >:  "To_f_Paragraph" type "headline":  Change 'horizontalLineBefore' from 'To_f_headline_add_hides_end_line($offset, 100, 90, 90)' to 'To_f_headline_add_hides_end_line($offset, 100, 60, 60)'.
+  //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
+  //                      >:  "To_f_Paragraph", 'headline':  Add array parameter for the headline tag with default 'h3' which was 'h4' before.
+  //           20250731:  +:  "To_f_Text_replace":  Make "$text" an optional parameter by setting "$text=''".
+  //                      +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
+  //                      +:  "To_f_Paragraph_list_v1":  Make "$Paragraph_fn" an optional parameter by setting "$Paragraph_fn=null" and "$list" by setting "$list=array()".
+  //                      +:  "To_f_Paragraph_list":  Make "$list" an optional parameter by setting "$list=array()".
+  //                      +:  "To_f_Chapter_v1":  Make "$headline_name" an optional parameter by setting "$headline_name=''".
+  //                      +:  "To_f_Chapter":  Make "$paragraph_list" an optional parameter by setting "$paragraph_list=array()".
+  //           20250625:  +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
+  //           20250506:  >:  "To_f_Paragraph" type "youtube":  Change 'iframe' to modern form without cookies.
+  //           20250505:  >:  "To_f_Paragraph" type "headline":  Add 'horizontalLineBefore' as boolean parameter.
+  //           20250322:  >:  "To_f_Paragraph" type "bulletlist":  Add 'Shape' as object parameter.
   //           20241119:  >:  "To_f_Paragraph" type "jumplist":  Replace "<p>" tag by "<table>" tag.
   //           20240914:  +:  "To_f_HeaderElements":  Remove import "../share/js/NSOSP.js" and move it to local file
   //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
@@ -1289,7 +1302,7 @@
 
 
 
-  function To_f_Text_replace_html( $replace_ary=null, $replace_preg_ary=null, $text)
+  function To_f_Text_replace_html( $replace_ary=null, $replace_preg_ary=null, $text='')
   {
     $text_ret = $text;
     
@@ -1501,7 +1514,7 @@
   }
   
   
-  function To_f_Text_replace( $replace_ary=null, $replace_preg_ary=null, $text)
+  function To_f_Text_replace( $replace_ary=null, $replace_preg_ary=null, $text='')
   {
     echo To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text);
   }
@@ -1636,32 +1649,7 @@
   
 
   
-  const title_site = 'title_site';
-  const jump_url = 'jump_url';
-  const title_chapter = 'title_chapter';
-  const jump_anchor = 'jump_anchor';
-  // const jump_url = 'jump_url';
-  const Display = 'Display';
-  const Title = 'Title';
-  const ParagraphList = 'ParagraphList';
-  const titleColor = 'titleColor';
-  const titleClass = 'titleClass';
-  const jumpName = 'jumpName';
-  const TextColor = 'TextColor';
-  const TextAlign = 'TextAlign';
-  const intent = 'intent';
-  const NoIntentInFirstLine = 'NoIntentInFirstLine';
-  const arrayType = 'arrayType';
-  const titel_short = 'titel_short';
-  const bullet_ary = 'bullet_ary';
-  const subline = 'subline';
-  const headlineColor = 'headlineColor';
-  const TitleVis = 'TitleVis';
-  const arrayMarginLeftRight = 'arrayMarginLeftRight';
-  const sublineColor = 'sublineColor';
-  const jumpurl = 'jumpurl';
-
-  function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
+  function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Color_list, $Glo_g_TextAlign, $Glo_g_Paragraph_fn, $Glo_g_Intent, $Glo_g_Intent_InFirstLine, $Glo_g_FigAlign;
     
@@ -1738,8 +1726,21 @@
             echo $offset.'  <span style="color: #'.$text_color.'">'."\n";*/
         break;
       case 'headline':
-        // #: "margin" can intersect, "padding" can not intersect and it will allways add.
-        echo $offset.'<h4 style="margin-top: 20px;'.(((gettype( $text) == 'array') && array_key_exists( headlineColor, $text)) ? ' color: #'.(To_f_Color($text[headlineColor])).';' : '').'">'.(((gettype( $text) == 'array') && array_key_exists( jump_name, $text)) ? '<a name="'.($text[jump_name]).'"></a>' : '');
+        $headlineColorStr = '';
+        $anchorStr = '';
+        $headlineTag = 'h3';
+        if (gettype( $text) == 'array') {
+          $headlineTag = array_key_exists( headlineTag, $text) ? $text[headlineTag] : $headlineTag;
+          $headlineColorStr = array_key_exists( headlineColor, $text) ? ' color: #'.(To_f_Color($text[headlineColor])).';' : '';
+          $anchorStr = array_key_exists( jump_name, $text) ? '<a name="'.($text[jump_name]).'"></a>' : '';
+          
+          if (array_key_exists( horizontalLineBefore, $text) && $text[horizontalLineBefore]) {
+            To_f_headline_add_hides_end_line($offset, 100, 60, 60);
+          }
+        }
+        
+        // #: "margin" can intersect, "padding" can not intersect and it will always add.
+        echo $offset.'<'.($headlineTag).' style="margin-top: 20px;'.($headlineColorStr).'">'.($anchorStr);
         break;
       case 'conclusion':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
@@ -1760,7 +1761,26 @@
         $block_param_add_is = ((array_key_exists( TextAlign, $text)));
         $block_is = (($block_param_add_is && ($text[TextAlign] == 'block')) || (!$block_param_add_is && ($Glo_g_TextAlign == 'block')));
         
-        echo $offset.'<table class="tools-class-text" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
+        $shape_is = ((gettype( $text) == 'array') && array_key_exists( Shape, $text));
+        $class_Additional = '';
+        if ($shape_is)
+          switch ($text[Shape])
+          {
+            case 'derivation':
+              $class_Additional = 'tools-class-text-derivation';
+              break;
+            case 'conclusion':
+              $class_Additional = 'tools-class-text-conclusion';
+              break;
+            case 'italic':
+              $class_Additional = 'tools-class-text-italic';
+              break;
+            case 'quote':
+              $class_Additional = 'tools-class-text-quote';
+              break;
+          }
+        
+        echo $offset.'<table class="tools-class-text'.((0 < strlen($class_Additional)) ? ' '.$class_Additional : '').'" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
         break;
       case 'jumplist':
         // #?: Is an element in array?
@@ -2101,7 +2121,14 @@
                       //    Rel: '&rel=0' shows no recommended videos at the end of the video.
                       //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
                       //    Auto: '&autoplay=1' plays the film immediately.
-                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      // echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
+                      //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
+                      //    &: Write no '&' after '?'!
+                      //    Rel: '&rel=0' shows no recommended videos at the end of the video.
+                      //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
+                      //    Auto: '&autoplay=1' plays the film immediately.
+                      echo '            <iframe width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'."\n";
                       break;
                     case 'iframe':
                       echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";
@@ -2319,7 +2346,7 @@
         echo $offset.'</p>'."\n";
         break;
       case 'headline':
-        echo '</h4>'."\n";
+        echo '</'.($headlineTag).'>'."\n";
         break;
       case 'conclusion':
         echo $offset.'  </span>'."\n";
@@ -2356,18 +2383,19 @@
   }
   
   
-  function To_f_Paragraph_list_v1( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $Paragraph_fn, $list)
+  function To_f_Paragraph_list_v1( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $Paragraph_fn=null, $list=array())
   {
+    if ($Paragraph_fn !== null)
     
-    foreach ($list as $value)
-    {
-      $Paragraph_fn( $value[0], $replace_ary, $replace_preg_ary, $offset, $value[1]);
-    }
+      foreach ($list as $value)
+      {
+        $Paragraph_fn( $value[0], $replace_ary, $replace_preg_ary, $offset, $value[1]);
+      }
     
   }
   
   
-  function To_f_Paragraph_list( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $list)
+  function To_f_Paragraph_list( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $list=array())
   {
     
     foreach ($list as $value)
@@ -2379,7 +2407,7 @@
   
   
   function To_f_Chapter_v1( $replace_ary, $replace_preg_ary, $offset='          ', $display='hideContent',
-                            $headline_name, $headline_addon='', $Paragraph_fn=null, $paragraph_list=null)
+                            $headline_name='', $headline_addon='', $Paragraph_fn=null, $paragraph_list=null)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
@@ -2411,7 +2439,7 @@
   
   
   function To_f_Chapter( $replace_ary=null, $replace_preg_ary=null, $offset='          ', $display='hideContent',
-                          $headline_text='', $headline_text_short='', $headline_name='', $headline_addon='', $paragraph_list)
+                          $headline_text='', $headline_text_short='', $headline_name='', $headline_addon='', $paragraph_list=array())
   {
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
@@ -2724,17 +2752,17 @@
     To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_headline_last_elements_hides_ary_dim - 1, $display, true);
 
     echo $offset.'</div>'."\n";
-    To_f_headline_add_hides_end_line();
+    To_f_headline_add_hides_end_line($offset);
     
     $To_g_headline_last_elements_hides_ary_dim = null;
     $local_elements_hides_ele_num = null;
   }
   
   
-  function To_f_headline_add_hides_end_line( $offset='          ')
+  function To_f_headline_add_hides_end_line( $offset='          ', $relLineInset=0, $marginTop=0, $marginBottom=0)
   {
     //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-left: 10px; margin-right: 20px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
   }
   
   

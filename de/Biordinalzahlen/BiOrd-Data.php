@@ -68,6 +68,10 @@
         'OM:BiOrd:Einleitung:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge' => array( headline_text => 'BO.Ein.IM.1'),
                         
+        'OM:BiOrd:Einleitung:Prozessdeutung' => array( headline_text => 'Prozessdeutung'/*, headline_text_short => 'X'*/),
+          'OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On' => array( headline_text => 'BO.Ein.PD.3'/*, headline_text_short => 'X'*/),
+          'OM:BiOrd:Einleitung:Prozessdeutung:Equ-Def-On-Ordnung' => array( headline_text => 'BO.Ein.PD.4'/*, headline_text_short => 'X'*/),
+                        
         'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein' => array( headline_text => 'Ontologie der Dualität allgemein'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik' => array( headline_text => 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik'/*, headline_text_short => 'X'*/),

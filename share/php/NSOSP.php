@@ -120,6 +120,7 @@
                     'Meine Methoden und Fachmethoden sind grundsätzlich Hilfen zur Selbsthilfe in Eigenverantwortung.'."\n".
                     'Eine Haftung ist im Rahmen der Gesetzgebung grundsätzlich ausgeschlossen.'."\n")));
   
+  
   $FrQFT_g_text_QuantengravRechnungOhneNaeh    =
                   array( 'text', array( text => array(
                     'Ohne \jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend}{Näherung für große Abstände},'."\n".
@@ -135,12 +136,14 @@
                         'Das vektorielle Gleichgewicht ist der Nullpunkt für Ereignisse oder Nicht-Ereignisse: Es ist das leere Theater, der leere Zirkus und das leere Universum, das bereit ist, jede Handlung und jedes Publikum aufzunehmen.'."\n"),
                         addtext => '~Richard Buckminster Fuller\footnote{Buckminster Fuller, Richard, \jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \small{\italic{Übersetzt ins Deutsche mit \jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
   
+  
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape => 'italic', text => array(
                     'Ich gebe dir \jump{OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching}{NaPhil-Yoga Coaching} \\\\'."\n".
                     'kombiniert mit Intensive Yoga Unterricht (Power Yoga). \\\\'."\n".
                     '\small{\color{*TitleAdd}{Spende was du kannst oder bringe gerne selbstgemachtes Essen mit. \\\\'."\n".
                     'Bist du daran interessiert? Dann \jump{OM:FrQFT:Impressum}{melde dich} bei mir.}}'."\n")));
+  
   
   $SpaLeb_g_zitat_WolfBuentig_Normopathie =
                     array( 'text', array( Shape  => 'quote', text => array(
@@ -176,8 +179,10 @@
   $NSOSP_g_footnote_text_PeanoAxiome            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
   $NSOSP_g_footnote_text_RingAlgebra            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
 
+  $BiOrd_g_footnote_text_EchteKlasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
   $BiOrd_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
+  $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
   $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
   $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
 
@@ -354,24 +359,37 @@
 
   $SupNum_g_footnote_text_AlgebraischerZahlkoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.';
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
+  $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
+  $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
   $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+  $SupNum_g_footnote_text_PythagoreischesTripel = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
   $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
+  $SupNum_g_footnote_text_Kongruenz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
   $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
+  $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
-  $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
+  $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
+  $SupNum_g_footnote_text_PadischeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
+  $SupNum_g_footnote_text_Primfaktorzerlegung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
+  $SupNum_g_footnote_text_Primpolynom           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_Restklasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
   $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
+  $SupNum_g_footnote_text_Taylorreihe           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
   $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_Valuationsring        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ValuationRing:2024}.';
 
   
   const fig_file_name = 'fig_file_name';
@@ -536,7 +554,8 @@
                                                                  'Nach dieser Idee sind die Wirkungsquanten-Strings der Teil-Leptonen über Teil-Strings von Vakuum-Photonen, den Gluonen, verbunden.'."\n".
                                                                  'Alle Strings zusammen haben eine Farbladung von Weiß, weil sich ihre Auslenkungen von den Rotationszentren ihrer Lichtbahnen zu Weiß zusammensetzen.');
   
-  $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
+  // $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
+  $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '660px', height => '223px', name => 'set local!',
                                                          text => '\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
                                                                  'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \lm{_{x}\alpha} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
                                                                  'Eine Zentrale Masse kann sich mit ihrem Mittelpunkt im Nullpunkt gedacht werden, wobei ein Schwarzes Loch am eingezeichneten Ereignishorizont seinen Schwarzschild-Radius hat.');
@@ -585,14 +604,14 @@
 
   
   
-  //alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
+  // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_Lepton_highRes" in Verwendung.
   $FrQFT_g_youtube_ary_Lepton                   = array( source => 'https://www.youtube.com/embed/LsF93WgX9fE?rel=0&loop=1&playlist=LsF93WgX9fE', width => '420px', height => '307px'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'Geladenes Lepton mit hypothetischen sechs wellenförmigen Phasen als Näherungsdarstellung. (In Bezug auf die festgelegte Konvention versehentlich ein Antiteilchen in Up-Orientierung.)'."\n".
                                                                   '\const{FrQFT_g_text_WQSWQMenge}');
   
-  //ohne Loop $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'http://www.youtube.com/embed/XfNlH_aWhrE?rel=0', width => '560', height => '315', name => set local',
+  // ohne Loop $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'http://www.youtube.com/embed/XfNlH_aWhrE?rel=0', width => '560', height => '315', name => set local',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_VakuumElapson" in Verwendung.
   $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'https://www.youtube.com/embed/XfNlH_aWhrE?rel=0&loop=1&playlist=XfNlH_aWhrE', width => '560', height => '315', name => 'set local',
@@ -602,6 +621,11 @@
 
 
 
+  $NPYo_g_figure_ary_AchtsamkeitDracheSchlange   = array( fig_file_name => 'Naturphilosophie-Yoga/Achtsamkeit-Drache-Schlange-20211119-v01', figPDF_is => false, fig_alt_description => 'Der Care-Prozess oder Achtsamkeitsprozess als Unendlichkeit von Drache und Schlange', width => '440px', height => '302px', name => 'set local!',
+                                                         text => 'Der männliche Drache – die Schlange mit Flügeln – und die weibliche Schlange stellen in diesem Bild'."\n".
+                                                                  'die unendliche Schwingung zwischen der männlichen und weiblichen Seite der Dualität dar,'."\n".
+                                                                  'die im Zentrum unseres Lebens steht.');
+  
   $NPYo_g_figure_ary_AugeDesRa                   = array( fig_file_name => 'Naturphilosophie-Yoga/Auge-des-Ra-v01', fig_alt_description => 'Auge des Ra', width => '300px', height => '272px', name => 'set local!',
                                                          text => 'Hieroglyphe des Sonnengottes Ra (auch Re genannt). Männliches Prinzip, Djet-Zeit. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
@@ -631,21 +655,63 @@
   $NPYo_g_figure_ary_LebenDesHorusHermesstab     = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Hermesstab-v02', fig_alt_description => 'Leben des Horus mit Hermesstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => $NPYo_g_text_LebenDesHorusHermesstab_Orig);
   
-  $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
+  $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz =
+                                                  array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
                                                          text => 'Das transzendente Symbol für das Naturphilosophie-Yoga: Yin und Yang der Körper-Seele-Existenz'."\n".
                                                                   'als Dualismus von Djet und Neheh.');
   
-  $NPYo_g_figure_ary_PhoenixAusDerAsche
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
+  $NPYo_g_figure_ary_PhoenixAusDerAsche         = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
                                                          text => 'Der Phönix aus der Asche des Naturphilosophie-Yoga: Die Hoffnung im Yin und Yang als fraktaler Dualismus von Bewusstsein und Unterbewusstsein.');
   
-  $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
+  $NPYo_g_figure_ary_YinYang                    = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
+  $NPYo_g_youtube_ary_ChurningTheSeaOfMilk      = array( source => 'https://www.youtube-nocookie.com/embed/Bu9vjNj1sqQ?si=3YDi1CNr3oeqSfWs', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => '›Churning the sea of milk.‹ meint ›Das Milchmeer umrühren.‹ oder ›Den Milchocean quirlen.‹'."\n".
+                                                                   'Dies ist eine zentrale hinduistische Legende, bei der Götter (Devas) und Dämonen (Asuras) gemeinsam den kosmischen Ozean aufwirbelten, um den Nektar der Unsterblichkeit (Amrita) zu gewinnen.'."\n".
+                                                                   'Dafür verwendeten sie den Berg Mandara als Quirlstab und die Schlangenkönigin Vasuki als Quirlseil.'."\n".
+                                                                   'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
+                                                                   '');
+
+  $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/stY3r0bUleI?si=iWhrbvjUEbNvl4uS', width => '315', height => '560'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Der Autor dieses Videos behauptet sogar, dass das englische Wort für Gott, also God oder G-O-D,'."\n".
+                                                                   'im hinduistischen Verständnis für Generator, Operator und Destroyer steht.'."\n".
+                                                                   '');
+  
+  $NPYo_g_youtube_ary_SecretSymbolOfShivaExposed =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/CiIEwN6UVzE?si=tKqW57S_5-Wctgr0', width => '315', height => '560'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Schon Shiva erzählt uns vom Prinzip des Geschlechts, in dem er als Transformator seine weibliche Seite (vornehmlich die Gefühle)'."\n".
+                                                                   'mit seiner männlichen (vornehmlich die Handlungen) in Einheit und Einklang bringt.'."\n".
+                                                                   '');
 
 
+
+  $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/JV0igRBnQUM?si=H5eGNBVYRx77pKBk', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  $NSOSA_g_youtube_ary_DemWechselspielVonBewusstsein = array( source => 'https://www.youtube-nocookie.com/embed/jwKjOlLx29k?si=HXVOYuzZZY6xppT0', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – Psychosomatik“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  $NSOSA_g_youtube_ary_DieHelixSpirale          = array( source => 'https://www.youtube-nocookie.com/embed/joyy7i-f6Rw?si=hKuo05W4qUvrtq1w', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  
+  
   $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2016-IMG_3683-clip', fig_alt_description => 'Wolfgang Huß ©2016 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '288px', name => 'set local!',
                                                          text => 'Yoga-Lehrer/-Coach, Forscher, Programmierer');
   
@@ -786,8 +852,6 @@
                            ), $Glo_g_Color_list);
   
   
-  const jump_name = 'jump_name';
-
   $Glo_g_Theme_list = array(
     // #: FrQFT
     '*Alterung-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist'),
@@ -1882,31 +1946,6 @@
                   'OM:NPYo:Einleitung:Bilder' => array( headline_text => 'Wir sind was wir denken – unsere Bilder bestimmen uns', headline_text_short => 'wir sind was wir denken – unsere Bilder bestimmen uns'),
                   'OM:NPYo:Einleitung:Bild-GebaendigtesLicht' => array( headline_text => 'Bild: Wir sind gebändigtes Licht', headline_text_short => 'Bild: Wir sind gebändigtes Licht'),
                   'OM:NPYo:Einleitung:Veranstaltungen' => array( headline_text => 'Veranstaltungen', headline_text_short => 'Veranstaltungen'),
-                ),
-         ),
-  'OM:NPYo:HaTha' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
-           titel => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'Unsere Balance der Körperhälften, unser Schicksal. Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unsem Achtsamkeitsprozess und der Gesichtsspiegelung.',
-           keywords => '',
-           text_titel_h1 => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
-           text_titel_short => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
-           text_undertitel_h2 => 'Unsere Balance der Körperhälften, unser Schicksal',
-           text_titel_discr_h3 => 'Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unserem Achtsamkeitsprozess und der Gesichtsspiegelung',
-           jump_ary => array(
-                  'OM:NPYo:HaTha:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:NPYo:HaTha:Vortext:Fig-AugeDesRa' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusAsklepiosstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:NPYo:HaTha:WirZweiWesen' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
-                  'OM:NPYo:HaTha:HerstellungBalance' => array( headline_text => 'Herstellung der Balance', headline_text_short => 'Herstellung der Balance'),
                 ),
          ),
   'OM:NPYo:Literatur' =>
@@ -3098,7 +3137,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2025-02-13T18:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2025-11-20T23:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3295,7 +3334,7 @@
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.38-d20250213-t1800" target="_blank">v9.38</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.39-d20251120-t2300" target="_blank">v9.39</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3451,7 +3490,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 13. Februar 2025, 18:00 CET.'."\n";
+    echo $offset.'      Stand 20. November 2025, 23:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";
