@@ -144,6 +144,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Stein-der-Weisen'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Trimurti'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Chakras-Kabbala-Tarot'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Anker-im-Milchocean'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:ExistenzLeichtigkeit'),
                     ))),
                     

@@ -41,7 +41,7 @@
                     '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Anker-im-Milchocean'),
                     )),
                 )
           ); ?>

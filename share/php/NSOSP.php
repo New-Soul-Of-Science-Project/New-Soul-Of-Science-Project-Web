@@ -667,6 +667,13 @@
                                                          text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
+  $NPYo_g_youtube_ary_ChurningTheSeaOfMilk      = array( source => 'https://www.youtube-nocookie.com/embed/Bu9vjNj1sqQ?si=3YDi1CNr3oeqSfWs', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => '›Churning the sea of milk.‹ meint ›Das Milchmeer umrühren.‹ oder ›Den Milchocean quirlen.‹'."\n".
+                                                                   'Dies ist eine zentrale hinduistische Legende, bei der Götter (Devas) und Dämonen (Asuras) gemeinsam den kosmischen Ozean aufwirbelten, um den Nektar der Unsterblichkeit (Amrita) zu gewinnen.'."\n".
+                                                                   'Dafür verwendeten sie den Berg Mandara als Quirlstab und die Schlangenkönigin Vasuki als Quirlseil.'."\n".
+                                                                   'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
+                                                                   '');
+
   $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =
                                                   array( source => 'https://www.youtube-nocookie.com/embed/stY3r0bUleI?si=iWhrbvjUEbNvl4uS', width => '315', height => '560'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'Der Autor dieses Videos behauptet sogar, dass das englische Wort für Gott, also God oder G-O-D,'."\n".
