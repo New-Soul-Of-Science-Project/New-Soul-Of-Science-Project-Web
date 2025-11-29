@@ -49,7 +49,7 @@
                     'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
                     'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ein fundamentales Problem', subline =>
                   'Keine Hochstapelei')),
@@ -69,7 +69,7 @@
                     'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
                       'Aber was funktioniert dann?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
@@ -250,7 +250,7 @@
                       'Dass es \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{genau gleich viele negative Zahlen wie natürliche Zahlen, mit der Null},'."\n".
                     'geben muss, sehen wir in den \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Immer noch Lückenhaft', subline =>
                   '')),
@@ -261,7 +261,7 @@
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
                       'Wie können wir aber die Lücken nun so schließen, dass sie keine endliche Größe mehr haben?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Übergang ins Unendliche', subline =>
                   'Die vollständige Induktion der Teilungen')),
@@ -349,7 +349,7 @@
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich dadurch nicht.'."\n",
                       'Können wir nun davon sprechen, dass ein solches Gewebe dann keine durch endliche Teilungen erreichbaren Lücken mehr hat?'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Irrationale algebraische Zahlen', subline =>
                   'Gibt es noch Lücken im Gewebe?')),
@@ -523,7 +523,7 @@
                       'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen reell algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die besondere Rolle der normierten Einheit \lm{ ω }', subline =>
                   '')),
@@ -540,7 +540,7 @@
                       'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
                     'sehen, dass \lm{ ω } – also die vollständige Induktion selber – eine Primfaktorzerlegung in Form des Produkts aller endlichen Primzahlen besitzt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
                                            
                 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', subline =>
                   '')),
@@ -650,7 +650,7 @@
                     'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
                     'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
@@ -690,7 +690,7 @@
                       'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                       
                 'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
@@ -740,7 +740,7 @@
                   array( 'text', array( text => array(
                     'wie wir sie oben schon definiert haben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Wie wir aus Punkten eine Linie konstruieren können', subline =>
                   'Ein naturphilosophisches Problem gibt uns einen Einblick in die fraktale Realität der Geometrie')),
@@ -821,7 +821,7 @@
                   array( 'text', array( text => array(
                     'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
                 'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
                   '')),
@@ -857,7 +857,7 @@
                     'Das entspricht aber nicht der hier anvisierten Geometrie, in der die Eingangswerte und Ergebniswerte aus der selben Zahlenmenge,'."\n".
                     'nämlich der gefundenen arithmetischen Struktur der Geometrie, vermutlich den reell algebraischen Zahlen, kommen sollen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
                 'Wann kommen transzendente Zahlen ins Spiel?', subline =>
                   '')),
@@ -867,7 +867,7 @@
                       'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
                 'Können wir einen Kreis entlang des Kreisumfangs so parametrisieren, dass wir nur rein reell algebraische Koordinaten erhalten?', subline =>
                   '')),
@@ -974,7 +974,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
                 'Beweis: Die Koordinaten der Ecken eines regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen', subline =>
                   '')),
@@ -1055,7 +1055,7 @@
                     'und Einheitswurzeln algebraische Zahlen sind, folgt:'."\n",
                       'Die Koordinaten aller Ecken eines beliebigen regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
                 'Analyse des Beweises und Projektion der Bedeutung in der betrachteten Geometrie', subline =>
                   '')),
@@ -1156,7 +1156,7 @@
                     'Unsere superiale Basis \lm{ \s } geht über ihre Primfaktorzerlegung in „Resonanz“ mit jeder ganzen, jeder rationalen und sogar'."\n".
                     'jeder algebraischen Zahl, also auch mit allen Brüchen, ganzen Exponenten und ganzen Wurzeln sowie deren algebraische Kombinationen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
                       
                 'Wie wird Resonanz in diesem Zusammenhang verstanden?', subline =>
                   '')),
@@ -1183,7 +1183,7 @@
                     'Wollen wir diese nicht haben, dann nehmen wir im Endlichen einfach nur die reell algebraischen Koeffizienten \lm{ a },'."\n".
                     'die auch alle auf diesem Raster liegen, wenn \lm{ z = 0 }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
                       
                 'Verfeinerung der Perspektive der Resonanz', subline =>
                   '… führt vermutlich zur Riemannschen Vermutung')),
