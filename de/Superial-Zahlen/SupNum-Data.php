@@ -184,6 +184,7 @@
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten' => array( headline_text => 'Die Ebene der rein endlichen Koordinaten, der reell algebraischen Zahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
       ),

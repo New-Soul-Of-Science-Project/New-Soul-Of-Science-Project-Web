@@ -790,7 +790,7 @@
           <!  • Die Ontologie der Geometrie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie',
-              'Eine Diskussion – ein Versuch der Annäherung', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie', type => 'back'),
@@ -800,6 +800,23 @@
                     // '\bold{X}',
                     // '• X',
                     ))),
+                      
+                  array( 'text', array( text => array(
+                    'Die Ontologie der Geometrie beschäftigt sich mit unterschiedlichen strukturellen Eigenschaften der Geometrie.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten'),
+                    )),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten', text =>
+                      
+                'Die Ebene der rein endlichen Koordinaten, der reell algebraischen Zahlen', subline =>
+                  'Ein Kreis, zum Beispiel, hat keine aktual unendlich kleinen Summanden')),
                       
                   array( 'text', array( text => array(
                     'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
@@ -1108,6 +1125,11 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+
+                '', subline =>
+                  '')),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie'),
