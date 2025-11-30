@@ -833,8 +833,48 @@
                   '')),
 
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten'),
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten'),
                     )),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten', text =>
+                      
+                'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten', subline =>
+                  'Ihre komplementäre Ergänzung sowie die Asymmetrie des Zählens im Zusammenspiel von Punkten und Abständen')),
+                      
+                  array( 'text', array( text => array(
+                    'Wir entwickeln die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{arithmetische Struktur der Geometrie} oben'."\n".
+                    'unter anderem durch die Zerlegung der Strecke zwischen Null und Eins in Teilstrecken.'."\n".
+                    'Diese Teilstrecken werden von Punkten begrenzt, beginnend bei der Null, fortgesetzt mit den Punkten zwischen Null und Eins sowie abgeschlossen mit dem Punkt Eins.'."\n",
+                      'Nun gibt es einen Unterschied zwischen der Anzahl der Teilstrecken und der Anzahl der Begrenzungspunkte.'."\n".
+                    'Die Anzahl der Begrenzungspunkte sind immer einer mehr als die Anzahl der Teilstrecken.'."\n",
+                      'Erweitern wir das Muster von der Eins bis zur Zwei, indem wir dieses Muster bei der Eins aneinander legen, dass es bis zur Zwei reicht.'."\n".
+                    'Dann ist der Punkt auf der Eins doppelt.'."\n".
+                    'Ein Punkt kann vom Muster her aber nicht doppelt sein.'."\n".
+                    'Er zählt also nur ein Mal, weil wir einen Punkt strukturell nicht teilen oder doppeln können, wenn er am selben Ort ist.'."\n",
+                      'Eine Teilstrecke hingegen können wir weiter teilen, weil sich die neuen Teilstrecken nicht überschneiden, außer an ihrem Berührungspunkt.'."\n".
+                    'Daran sehen wir aber auch, dass wir uns im Grunde entscheiden müssen, zu welcher der beiden neuen Teilstrecken der Berührungspunkt gehören soll.'."\n".
+                    'Er kann eigentlich nur zur einen oder zur anderen gehören.'."\n".
+                    'Das ist das, worauf ich hinaus möchte.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Gleiches gilt nämlich auch bei der Verdoppelung der Strecke von der Null zur Eins dann zur Zwei.'."\n".
+                    'Wir müssen uns entscheiden, ob der Punkt der Eins zur Strecke von Null bis Eins oder zu der Strecke von Eins bis Zwei gehört.'."\n".
+                    'Hierin spiegelt sich wiederum die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie des Zählens},'."\n".
+                    'die wir auch bei den \jump{OM:BiOrd:Home}{Biordinalzahlen} entdeckt haben.'."\n",
+                      'Nehmen wir also alle Punkte von der Null bis ohne die Eins, dann wird diese geometrische Asymmetrie deutlich und'."\n".
+                    'wir haben genau so viele Punkte wie Teilstrecken.'."\n".
+                    'Auch die Fortsetzung dieses neuen Musters bis zur Zwei hat dann bei der Eins nicht einen Punkt, der doppelt ist, sich also überlagert.'."\n",
+                      'Wir können so erkennen: der Punkt und die Strecke sind ontologisch gesehen Strukturen, die sich komplementär ergänzen,'."\n".
+                    'und sogar die Asymmetrie des Zählens in ihrem Zusammenspiel beinhalten.'."\n".
+                    'Die Asymmetrie des Zählens enthält den Funken der Veränderung; das Prozesshafte in der nur scheinbar statischen Natur der Mathematik.'."\n".
+                    ''))),
+
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten', text =>
                       
@@ -1160,10 +1200,12 @@
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
 
                 '', subline =>
                   '')),
+
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie'),
