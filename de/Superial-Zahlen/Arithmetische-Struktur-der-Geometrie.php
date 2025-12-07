@@ -865,12 +865,14 @@
                   array( 'text', array( text => array(
                     'Gleiches gilt nämlich auch bei der Verdoppelung der Strecke von der Null zur Eins dann zur Zwei.'."\n".
                     'Wir müssen uns entscheiden, ob der Punkt der Eins zur Strecke von Null bis Eins oder zu der Strecke von Eins bis Zwei gehört.'."\n".
+                    'Denn einen Punkt können wir nicht halbieren, also teilen.'."\n".
                     'Hierin spiegelt sich wiederum die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie des Zählens},'."\n".
                     'die wir auch bei den \jump{OM:BiOrd:Home}{Biordinalzahlen} entdeckt haben.'."\n",
                       'Nehmen wir also alle Punkte von der Null bis ohne die Eins, dann wird diese geometrische Asymmetrie deutlich und'."\n".
                     'wir haben genau so viele Punkte wie Teilstrecken.'."\n".
-                    'Auch die Fortsetzung dieses neuen Musters bis zur Zwei hat dann bei der Eins nicht einen Punkt, der doppelt ist, sich also überlagert.'."\n",
-                      'Wir können so erkennen: der Punkt und die Strecke sind ontologisch gesehen Strukturen, die sich komplementär ergänzen,'."\n".
+                    'Auch die Fortsetzung dieses neuen Musters bis zur Zwei hat dann bei der Eins nicht einen Punkt, der doppelt ist, sich also überlagert.'."\n".
+                    'Dieses Muster können wir nun durch Verschiebung ohne Schwierigkeiten bis ins Unendliche fortsetzen, wie auch Rückwärts dann ins Negativ-Unendliche.'."\n",
+                      'Wir können so erkennen: der Punkt und die Strecke sind ontologisch gesehen Strukturen, die sich komplementär ergänzen'."\n".
                     'und sogar die Asymmetrie des Zählens in ihrem Zusammenspiel beinhalten.'."\n".
                     'Die Asymmetrie des Zählens enthält den Funken der Veränderung; das Prozesshafte in der nur scheinbar statischen Natur der Mathematik.'."\n".
                     ''))),
