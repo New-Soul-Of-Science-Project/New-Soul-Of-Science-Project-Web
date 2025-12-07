@@ -853,7 +853,9 @@
                     'Begreifen wir jede nach oben gezählten Abstand Eins als Welle – oder alternativ als Sägezahn, wie ich es selber schon früher gedacht hab – dann fängt jede dieser Wellen bei einer ganzen'."\n".
                     'Zahl an.'."\n".
                     'Die darauf folgende nächste ganze Zahl ist schon der Beginn der nächsten Welle und gehört nicht mehr zu der, die wir gerade gezählt haben.'."\n",
-                      'Die nullte Welle oder der nullte Zahn beginnt also bei der Null und endet vor der Eins.'."\n".
+                      'Die nullte Welle oder der nullte Zahn beginnt also bei der Null und endet vor der Eins, ähnlich einem Fähnchen, das an einem Mast in Zählrichtung weht,'."\n".
+                    'was wir interessanter Weise auch im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹}'."\n".
+                    'auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹} des Themas \italic{›\jumpname{OM:SupNum:Home}‹} finden.'."\n".
                     ''))),
                       
                   array( 'figure',
