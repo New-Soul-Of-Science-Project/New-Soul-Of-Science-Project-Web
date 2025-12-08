@@ -1594,7 +1594,8 @@
                     'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
                       'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen.'."\n".
                       'Sondern ich möchte die Kontinuumshypothese durch die mit den Superial-Zahlen gefundene Struktur des Unendlichen,'."\n".
-                    'der Dichte oder das Rasters der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
+                    'der Dichte oder das Rasters der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie}'."\n".
+                    '(Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}‹}),'."\n".
                     'differenzierter und tiefer beleuchten sowie gegebenenfalls sinnvoller formulieren, um weitere Erkenntnisse zu gewinnen.'."\n",
                       'Mit der Kontinuumshypothese wird angenommen:'."\n".
                     ''))),
