@@ -882,8 +882,8 @@
                     ''))), */
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
                       
-                'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
-                  'Vom Wert her gleich und doch verschieden')),
+                'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich', subline =>
+                  'Vom aktual unendlichen algebraischen Wert her gleich sowie gleich viele ganze Vorgänger; und doch führen unterschiedliche Wertpfade dorthin: Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} }')),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
