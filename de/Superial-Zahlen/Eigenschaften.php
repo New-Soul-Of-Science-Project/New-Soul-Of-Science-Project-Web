@@ -228,6 +228,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich'),
                     )),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
@@ -880,6 +881,8 @@
                     'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
                       'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
                     ''))), */
+
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
                       
                 'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich', subline =>
@@ -1196,7 +1199,34 @@
                   array( 'text', array( text => array(
                     'zu verstehen, denn beide Zahlensysteme ergänzen sich auf faszinierende Weise.'."\n".
                     ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich', text =>
                       
+                'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?', subline =>
+                  '')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    // '• \lm{ \mathbb{On} } ist eine echte Klasse\color{*Bearb}{(Verweis)}, während \lm{ \mathbb{S_{\N}} } eine Menge ist.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Da beide Klassen bei Null mit den selben Elementen – mit den endlichen natürlichen Zahlen – beginnen,'."\n".
+                    'sind diese schon einmal aufeinander abbildbar.'."\n",
+                      'Um es erst einmal zu vereinfachen untersuchen wir zunächst nur …'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich:X', text =>
+                  'Die Zahlen von Null bis \lm{ \s } beziehungsweise \lm{ ω^{ω} }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Bei den Ordinalzahlen ist die erste aktual unendlich große Zahl, die auf die endlichen folgt, bekannt, nämlich \lm{ ω }.'."\n".
+                    'Bei den natürlichen Superial-Zahlen ist die erste aktual unendlich große Zahl unbekannt, weil sie in ihren aktual unendlichen Schichten,'."\n".
+                    'in den algebraischen Koeffizienten \lm{ a_{i} } von \lm{ a_{1} \s^{1}, a_{2} \s^{2}, a_{3} \s^{3} \cdots }, dicht sind.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen'),
                     )),

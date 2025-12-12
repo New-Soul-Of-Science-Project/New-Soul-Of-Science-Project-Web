@@ -209,6 +209,7 @@
         'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
 
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
+
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } anhand der Frage der Vorgänger?',/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Ei.S.L.1'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Ei.S.L.8'),
@@ -217,12 +218,16 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
+
           'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung' => array( headline_text => 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung'/* , headline_text_short => 'X' */),
+
           'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich' => array( headline_text => 'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Ei.S.V.1'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Ei.S.V.3'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Ei.S.V.4'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
+
+          'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich' => array( headline_text => 'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?'/* , headline_text_short => 'X' */),
                    
         'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
