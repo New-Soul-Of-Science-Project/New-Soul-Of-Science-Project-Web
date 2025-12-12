@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 25.10.2025, 17:00h
+  // #: Stand: 12.12.2025, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
+  //                      >:  "To_f_headline_add_hides_end_line":  Use color '*SectionSeparatorLine'.
   //           20251025:  >:  "To_f_Paragraph" type "headline":  Change 'horizontalLineBefore' from 'To_f_headline_add_hides_end_line($offset, 100, 90, 90)' to 'To_f_headline_add_hides_end_line($offset, 100, 60, 60)'.
   //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
   //                      >:  "To_f_Paragraph", 'headline':  Add array parameter for the headline tag with default 'h3' which was 'h4' before.
@@ -245,16 +247,12 @@
   
   $Glo_g_Color_list = array(
                              '*Error:ColorNotFound'   => array( color => 'FF0000'),  // #!: Do not remove!
-                             // '*SiteUndertitleH2'      => array( color => '#505050'),
                              '*SiteUndertitleH2'      => array( color => '#000000'),
+                             '*SectionHeadlineAddon'  => array( color => '#000000'),
+                             '*SectionSeparatorLine'  => array( color => '#000000'),
                              '*ContListDots'          => array( color => 'A0A0A0'),
                              '*ContListDescr'         => array( color => '000000'),
-                             // '*SectionHeadlineAddon'  => array( color => '#A0A0A0'),
-                             '*SectionHeadlineAddon'  => array( color => '#000000'),
-                             // '*FigTitle'              => array( color => '505050'),
                              '*FigTitle'              => array( color => '000000'),
-                             //%! '*FigDescr'              => array( color => 'A0A0A0'),
-                             // '*FigDescr'              => array( color => '707070'),
                              '*FigDescr'              => array( color => '000000'),
                              '*Conclusion'            => array( color => '000AC4'),
                            );
@@ -2761,8 +2759,7 @@
   
   function To_f_headline_add_hides_end_line( $offset='          ', $relLineInset=0, $marginTop=0, $marginBottom=0)
   {
-    //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid '.(To_f_Color('*SectionSeparatorLine', false)).'; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
   }
   
   
