@@ -1241,10 +1241,12 @@
                   array( 'text', array( text => array(
                     'Resonanz bedeutet hier, dass alle endlichen algebraischen Zahlen sowohl auf der Grundlage der superial kleinen Basis \lm{ \s^{-1} }'."\n".
                     '„tanzen“ – also „schwingen“ –, als auch der Ganzheit \lm{ \s } entgegenstreben, die sie als größere Vollkommenheit quasi anzieht.'."\n",
-                      'Ich lasse mich hier von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
+                      'Ich lasse mich von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
                     'Verhältnissen zu tun haben.'."\n".
                     'Denn mir ist bewusst, dass die Primzahlen zwar statisch erscheinen, gleichzeitig aber aus dem dynamischen Prozess des Zählens resultieren,'."\n".
-                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n",
+                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n".
+                    'Dass das Zählen, und damit das Prozesshafte, tief in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{arithmetischen Struktur der Geometrie} verankert ist,'."\n".
+                    'haben wir oben ja schon im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹} erkannt.'."\n",
                       'Zum einen erscheint jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } aus der Perspektive ihres grundlegenden Rasters der Größenordnung \lm{ \s^{-1} }'."\n".
                     'als ganze Zahl.'."\n".
                     'Mit anderen Worten: \lm{ z \cdot \s^{-1} = a } bedeutet, dass ihr Faktor \lm{ z = a \cdot \s } eine ganze Zahl ist, wenn auch eine aktual unendlich große.'."\n",
