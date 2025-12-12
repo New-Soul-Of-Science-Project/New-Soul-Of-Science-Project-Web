@@ -867,7 +867,8 @@
                     'Wir müssen uns entscheiden, ob der Punkt der Eins zur Strecke von Null bis Eins oder zu der Strecke von Eins bis Zwei gehört.'."\n".
                     'Denn einen Punkt können wir nicht halbieren, also teilen.'."\n".
                     'Hierin spiegelt sich wiederum die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie des Zählens},'."\n".
-                    'die wir auch bei den \jump{OM:BiOrd:Home}{Biordinalzahlen} entdeckt haben.'."\n",
+                    'die wir auch bei den \jump{OM:BiOrd:Home}{Biordinalzahlen} entdeckt haben'."\n".
+                    'und die bei der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{Berechnung der Anzahl aller endlichen ganzen Zahlen} entscheidend ist.'."\n",
                       'Nehmen wir also alle Punkte von der Null bis ohne die Eins, dann wird diese geometrische Asymmetrie deutlich und'."\n".
                     'wir haben genau so viele Punkte wie Teilstrecken.'."\n".
                     'Auch die Fortsetzung dieses neuen Musters bis zur Zwei hat dann bei der Eins nicht einen Punkt, der doppelt ist, sich also überlagert.'."\n".

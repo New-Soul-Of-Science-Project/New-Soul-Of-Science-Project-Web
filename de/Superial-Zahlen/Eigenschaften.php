@@ -231,6 +231,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich'),
                     )),
 
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
                 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } anhand der Frage der Vorgänger?', subline =>
@@ -365,6 +366,8 @@
                     'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns tatsächlich zu zeigen,'."\n".
                     'dass wirklich \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } gilt.'."\n".
                     ''))),
+
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
                       
                 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen', subline =>
@@ -379,12 +382,14 @@
                     'Darauf basierend haben wir eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
                     'herausgearbeitet, die der von uns gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
                     '\lm{ 2 ω } zugrunde liegt.'."\n",
-                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen bleibenden Zählrichtung, die auch dort in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
+                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen bleibenden Zählrichtung, die dort ebenfalls in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
                     'weil alle Zahlen letztendlich aus dem Zählen hervorgehen.'."\n".
-                    'Siehe dazu auch den \italic{›\jumpname{OM:OT:Zaehloperator}‹} in der \italic{›\jumpname{OM:OT:Home}‹}.'."\n",
+                    'Siehe dazu auch den \italic{›\jumpname{OM:OT:Zaehloperator}‹} in der \italic{›\jumpname{OM:OT:Home}‹}.'."\n".
+                    'Dass das Zählen, und damit auch das Prozesshafte, tief in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{arithmetischen Struktur der Geometrie} verankert ist,'."\n".
+                    'haben wir bereits im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹} erkannt.'."\n",
                       'Um auszudrücken, dass jeder negative sinnvolle Koeffizient der Superial-Zahlen Teil eines an einer negativen ganzen Zahl hängenden Zahlenintervalls ist,'."\n".
                     'wo jedes negative Zahlenintervall jeweils aus einem Zahlenintervall an einer natürlichen, also positiven Zahl oder der Null entsteht, berücksichtigen wir'."\n".
-                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Sägezähne – oder spezielle Wellen – von einer Zahl zur nächsten handelt.'."\n".
+                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Sägezähne – wie Fähnchen oder spezielle Wellen – von einer Zahl zur nächsten handelt.'."\n".
                     'Diese Sägezähne hängen in Zählrichtung an den ganzen Zahlen.'."\n".
                     ''))),
                       
@@ -448,8 +453,10 @@
                       'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
                     'wirklich \lm{ 2 ω } ist.'."\n".
                     ''))),
+
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung', text =>
-                      
+
                 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung', subline =>
                   '')),
                       
@@ -884,10 +891,10 @@
 
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
-                      
+
                 'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich', subline =>
                   'Vom aktual unendlichen algebraischen Wert her gleich sowie gleich viele ganze Vorgänger; und doch führen unterschiedliche Wertpfade dorthin: Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} }')),
-                      
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     // '• \lm{ \mathbb{On} } ist eine echte Klasse\color{*Bearb}{(Verweis)}, während \lm{ \mathbb{S_{\N}} } eine Menge ist.',
