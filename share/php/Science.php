@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 12.12.2025, 19:00h
+  // #: Stand: 14.12.2025, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*EquationHideSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*EquationHideSeparatorLine'.
   //                      >:  "Sc_f_equation_list_HideLine_html", "Sc_f_equation_list":  Use color '*EquationHideSeparatorLine'.
   //           20250923:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subset  ' -> '\;\;\;\not\subset\;\;\;'
@@ -192,9 +193,9 @@
   
 
   $Glo_g_Color_list = array_merge( array(
-                             '*Formular'              => array( color => '000000'),
-                             '*EquationHideSeparatorLine' => array( color => '#808080'),
-                             '*Equation-Number'       => array( color => '000000'),
+                             '*Formular'                  => array( color => '000000'),
+                             '*EquationHideSeparatorLine' => array( color => '#7F7F7F'),
+                             '*Equation-Number'           => array( color => '000000'),
                            ), $Glo_g_Color_list);
   
   $Glo_g_Paragraph_fn = 'Sc_f_Paragraph';
