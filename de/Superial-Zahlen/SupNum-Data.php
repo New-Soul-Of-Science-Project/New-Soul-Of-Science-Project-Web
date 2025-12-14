@@ -136,7 +136,7 @@
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert' => array( headline_text => 'SN.AbIn.NU.28'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'SN.AbIn.NU.32'),
 
-          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x' => array( headline_text => 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }' , headline_text_short => 'Summe aller Koeffizienten von Null bis ausschließlich x' ),
+          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x' => array( headline_text => 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }'/* , headline_text_short => 'X' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.39'),
 
         'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale' => array( headline_text => 'Besondere Ableitungen und Integrale'/* , headline_text_short => 'X'*/),
