@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 12.12.2025, 19:00h
+  // #: Stand: 14.12.2025, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*SectionSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
   //                      >:  "To_f_headline_add_hides_end_line":  Use color '*SectionSeparatorLine'.
   //           20251025:  >:  "To_f_Paragraph" type "headline":  Change 'horizontalLineBefore' from 'To_f_headline_add_hides_end_line($offset, 100, 90, 90)' to 'To_f_headline_add_hides_end_line($offset, 100, 60, 60)'.
@@ -249,7 +250,7 @@
                              '*Error:ColorNotFound'   => array( color => 'FF0000'),  // #!: Do not remove!
                              '*SiteUndertitleH2'      => array( color => '#000000'),
                              '*SectionHeadlineAddon'  => array( color => '#000000'),
-                             '*SectionSeparatorLine'  => array( color => '#000000'),
+                             '*SectionSeparatorLine'  => array( color => '#7F7F7F'),
                              '*ContListDots'          => array( color => 'A0A0A0'),
                              '*ContListDescr'         => array( color => '000000'),
                              '*FigTitle'              => array( color => '000000'),
