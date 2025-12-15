@@ -285,9 +285,8 @@
                     '– also \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
                     'darstellbaren reellen algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
-                    'Es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
-                    'reell algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
-                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}.'."\n".
+                    'Darauf aufbauend ist es uns schließlich gelungen im \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis der Algebraische-Koeffizienten-Vermutung}'."\n".
+                    'zu zeigen, dass sogar alle reell algebraischen Zahlen ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -329,10 +328,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben geschildert, funktioniert dies für alle rationalen \lm{ x } und für alle \lm{ x }, die ganze Wurzel aus rationalen Zahlen sind,'."\n".
-                    'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen.'."\n".
-                    'Offen, aber meiner Meinung nach wahrscheinlich, auch für unendliche Summen dieser, also vermutlich für alle reell algebraischen Zahlen.'."\n".
+                    'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen, wie auch für alle anderen reell algebraischen Zahlen.'."\n".
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
-                    'auf die ich an anderer Stelle eingehen möchte.'."\n",
+                    'auf die ich in der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung} eingehen möchte.'."\n",
                     ''))),
                   array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -698,7 +696,7 @@
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte.'."\n".
                     'Dadurch ergibt schlussendlich die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \lm{ -ω }'."\n".
                     'und nicht Null, wie wir naiv annehmen könnten.'."\n",
-                      'Auf der anderen Seite ist die Anzahl der rationalen Koeffizienten von Null bis ausschließlich Eins,'."\n".
+                      'Auf der anderen Seite ist die Anzahl der reell algebraischen Koeffizienten von Null bis ausschließlich Eins,'."\n".
                     'nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}:'."\n".
                     ''))),
                   array( 'equations',
@@ -738,10 +736,10 @@
                   array( 'text', array( text => array(
                     'Die erste Teilsumme unserer superial kleinen ganzen Superial-Zahlen \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen} soll nach unserer Vermutung dem'."\n".
                     'ersten Summanden des uns bekannten Ergebnisses der zu berechnenden Summe \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt} ergeben.'."\n",
-                      'Die erste Teilsumme unserer zu summierenden Zahlen enthält alle rationalen Zahlen von Null bis einschließlich \lm{ x }.'."\n".
+                      'Die erste Teilsumme unserer zu summierenden Zahlen enthält alle reell algebraischen Zahlen von Null bis einschließlich \lm{ x }.'."\n".
                     'Diese Summe muss allerdings für jede superial kleine Zahl gebildet werden, die in unserer Menge \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
                     'enthalten ist.'."\n",
-                      'Für die rationale Zahl Null in der ersten Teilsumme gibt es nur die natürlichen Zahlen, mit der Null, als superial kleine Schritte in der zweiten Teilsumme:'."\n".
+                      'Für die Zahl Null in der ersten Teilsumme gibt es nur die natürlichen Zahlen, mit der Null, als superial kleine Schritte in der zweiten Teilsumme:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -750,7 +748,7 @@
                   array( 'text', array( text => array(
                     'Für die sinnvollen Koeffizienten der Superial-Zahlen \lm{ a } mit \lm{ 0 < a < x } in der ersten Teilsumme gibt es wirklich'."\n".
                     'alle superial kleinen ganzzahligen Schritte in der zweiten Teilsumme.'."\n".
-                    'Da wir die Summe dieser rationalen Zahlen noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \lm{ y }:'."\n".
+                    'Da wir die Summe dieser reell algebraischen Zahlen noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \lm{ y }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -767,7 +765,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die rationale Zahl \lm{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
+                    'Für die Zahl \lm{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -913,7 +911,7 @@
                     'deren ganzer Zahlenanteil Null oder positiv sind.'."\n".
                     'Die zweite Summe in der Klammer steht für alle superial kleinen ganzen Zahlen,'."\n".
                     'deren ganzer Zahlenanteil rein negativ sind.'."\n".
-                    'Jede dieser beiden Summen von rationalen Zahlen gibt es daher \lm{ ω } mal,'."\n".
+                    'Jede dieser beiden Summen von reell algebraischen Zahlen gibt es daher \lm{ ω } mal,'."\n".
                     'da es sowohl alle Null oder positiven ganzen Zahlen in der Anzahl \lm{ ω } gibt,'."\n".
                     'als dies auch für alle rein negativen der Fall ist.'."\n",
                       'Unsere bekannte Gesamtsumme wird dann zu:'."\n".
@@ -995,13 +993,13 @@
                       'Im Grunde genommen haben wir damit schon den Beweis für die Richtigkeit dieser Gleichung erbracht.'."\n".
                     'Aber vielleicht können wir ja noch besser verstehen, warum dies so ist?'."\n",
                       'Wie oben schon erwähnt, wissen wir mit Hilfe der Biordinalzahlen aus dem späteren Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
-                    'die Anzahl der rationalen Zahlen zwischen Null und ausschließlich der Eins aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}.'."\n".
+                    'die Anzahl der reell algebraischen Zahlen zwischen Null und ausschließlich der Eins aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}.'."\n".
                     'Diese haben wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x} auf ihre Anzahl zwischen Null und ausschließlich \lm{ x } erweitert.'."\n",
-                      'Die Anzahl der rationalen Zahlen zwischen Null und ausschließlich \lm{ x } beläuft sich demnach auf \lm{ \frac{ x \cdot \s }{ 2 \cdot ω }  \;  . }'."\n".
+                      'Die Anzahl der reell algebraischen Zahlen zwischen Null und ausschließlich \lm{ x } beläuft sich demnach auf \lm{ \frac{ x \cdot \s }{ 2 \cdot ω }  \;  . }'."\n".
                     'Ihre Größenordnung \lm{ \s } zeigt uns, dass wir auch ein Ergebnis in der Größenordnung \lm{ \s } erwarten sollten,'."\n".
                     'wenn wir so viele endliche Zahlen summieren.'."\n".
                     'Das passt schon mal zu unserer gesuchten Summe.'."\n",
-                      'Da es sich bei den rationalen Zahlen um die Koeffizienten endlicher Größe von superial kleinen ganzen Zahlen handelt,'."\n".
+                      'Da es sich bei den reell algebraischen Zahlen um die Koeffizienten endlicher Größe von superial kleinen ganzen Zahlen handelt,'."\n".
                     'müssen sie alle den gleichen Abstand zueinander haben, der sich aus ihrer Dichte \lm{ \rho_Q } berechnet:'."\n".
                     ''))),
                   array( 'equations',
