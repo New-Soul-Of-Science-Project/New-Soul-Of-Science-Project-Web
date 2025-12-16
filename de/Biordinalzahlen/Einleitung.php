@@ -37,7 +37,7 @@
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
                     'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Erreichte und erwartete Erkenntnisgewinne', subline =>
                   '')),
@@ -53,7 +53,7 @@
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
                     'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
                       
                 'Ordinalzahlen', subline =>
                   '')),
@@ -102,7 +102,7 @@
                     'die den Schritten einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Grundsätzliche Idee zur Erweiterung der Ordinalzahlen ins Negative', subline =>
                   'Der Ansatz vorerst beispielhaft mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} }, zum einfachen Einstieg und erweiterten Verständnis')),
@@ -124,7 +124,7 @@
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Der Ansatz mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} } trägt nur bedingt', subline =>
                   '')),
@@ -144,7 +144,7 @@
                     'wenn wir endlos rückwärts ins Negative zählen, denn es bleiben alle anderen Mengen, die nicht den Ordinalzahlen entsprechen,'."\n".
                     'übrig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Biordinalzahlen als Erweiterung der Ordinalzahlen', subline =>
                   'Der Ansatz mit dem Mengenuniversum \lm{ \mathbb{U} } zur allgemeinen Definition der Subtraktion von Ordinalzahlen')),
@@ -155,8 +155,10 @@
                     'Noch größere unendliche negative Ordinalzahlen lassen sich so generell nicht darstellen, denn an der Menge'."\n".
                     'der natürlichen Zahlen \lm{ \mathbb{N} } können nicht mehr Zahlen fehlen, als drinne sind.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Negative Ordinalzahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Negative Ordinalzahlen} \\\\'."\n".
                     'Die Lösung dieses Problems finden wir, wie gesagt, darin, anstatt Zahlen an der Menge der natürlichen Zahlen fehlen zu lassen,'."\n".
                     'sie aus dem Mengenuniversum\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Allklasse:2020}.} zu entfernen.'."\n",
                       'Das Mengenuniversum \lm{ \mathbb{U} } ist die kleinste Klasse von Mengen, die alle Mengen enthält, die definierbar sind.'."\n".
@@ -180,8 +182,10 @@
                     'Auch in diesem Fall wird konsequenterweise das Prinzip aufrecht erhalten, dass die Klasse – das Mengenuniversum ist auch ein Container, aber definitionsgemäß keine Menge, sondern eine Klasse –, die eine Zahl repräsentiert zum Negativen hin'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Erweiterung der Limeszahlen um ihre Vorgänger', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Erweiterung der Limeszahlen um ihre Vorgänger} \\\\'."\n".
                     'Wir möchten ja erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen, also die Vorgänger benennen, können.'."\n".
                     'Die sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
@@ -197,8 +201,10 @@
                   array( 'text', array( text => array(
                     'Diese Definition, basierend auf \lm{ \mathbb{N} }, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis} \\\\'."\n".
                     'Aber wie steht es mit der Eindeutigkeit, der Praktikabilität und der generellen Plausibilität in komplizierteren Fällen?'."\n".
                     'An folgendem Beispiel können wir einmal sehen, worum es geht:'."\n".
                     ''))),
@@ -257,7 +263,7 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Die Menge der Biordinalzahlen \lm{ \mathbb{Bn} }', subline =>
                   '')),
@@ -270,7 +276,7 @@
                 Title => 'Verworfene Möglichkeiten …',
                 TitleVis => 'Verworfene Möglichkeiten:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Umgekehrte Klammerung', subline =>
                   '')),
@@ -306,7 +312,7 @@
                       'Deshalb ist für mich diese Möglichkeit zu verwerfen, wenn wir oben eine wunderbar einfache Möglichkeit gefunden haben,'."\n".
                     'dasselbe sehr übersichtlich und plausibel zu leisten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Entfernen der (nur einer) Menge mit den Zahlen vom Mengenuniversum', subline =>
                   '')),
@@ -477,7 +483,7 @@
                     'Welche Bedeutung \lm{ ω } hat, ist eine interessante und auch sehr philosophische Frage.'."\n".
                     'Sie offenbart bei näherer Betrachtung ein Spannungsfeld zwischen zwei wahren, fast widersprüchlichen Perspektiven.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung:X', text =>
                       
                 'Wie lässt sich das Symbol \lm{ ω } verstehen?', subline =>
                   '')),
@@ -561,7 +567,7 @@
                     'Was geht beim Arbeiten mit Mengen implizit vor sich, was wir wohl nicht sehen, was uns nicht bewusst ist?'."\n",
                       'Wir wollen dies hier vor allem ontologisch betrachten, also die Lehre von Seienden betreffend.\color{*Bearb}{(Verweis)}'."\n".
                     'Seiend auch besonders im Sinne von Struktur und hier von verborgener Struktur.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Funktion unseres Fokus', subline =>
                   'Der Auswahldualismus oder Bewusstseinsdualismus')),
@@ -646,7 +652,7 @@
                       'Die Zuordnung der Werte zur ontologischen Struktur führt zu einer naturphilosophisch sehr interessanten '."\n".
                     '\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Aussagenlogik', subline =>
                   '')),
@@ -686,7 +692,7 @@
                     'Beides macht einen erheblichen Unterschied und versetzt uns in die Lage, plausibel und logisch sinnvoll'."\n".
                     'Gewähltes als Positives und Weggelassenes als Negatives zu differenzieren.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologie der Dualität der Auswahl und Auslassung', subline =>
                   'Dualität bringt etwas zur Existenz und zur Wirkung')),
@@ -696,7 +702,7 @@
                     'Es ist ein \jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
                     'ganz wie in der \jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein', text =>
                       
                 'Ontologie der Dualität allgemein', subline =>
                   'Dualitäten „gebären“ weitere Dimension – „göttliche Kinder“ –, die zählen')),
@@ -736,7 +742,7 @@
                     'Alles drei wird wieder zusammengefasst und daraus entsteht das Vierte, und so fort.'."\n",
                       'Ähnliches finden wir übrigens auch in der neuen Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik', text =>
                       
                 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
                   'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
@@ -805,8 +811,10 @@
                     'Interessanterweise ergibt sich so, dass es eine negative Zahl mehr gibt als positive Zahlen, ohne die Null.'."\n".
                     'Wie kann das sein?'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Ontologische Begründung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Ontologische Begründung} \\\\'."\n".
                     'Aus ontologischer Sicht, also aus Sicht der Struktur des Seins oder die Realität betreffend, hat mir mein Freund Raimund Welsch nahegelegt:'."\n".
                     'Begreifen wir jede nach oben gezählten Abstand Eins als Welle – oder alternativ als Sägezahn, wie ich es selber schon früher gedacht hab – dann fängt jede dieser Wellen bei einer ganzen'."\n".
                     'Zahl an.'."\n".
@@ -842,8 +850,10 @@
                     'Denn die Intervalle der Zwischenräume, die an den ganzen Zahlen in Zählrichtung hängen, sind der Grund für'."\n".
                     'die Zahlenwert-Symmetrie, die sich an der Null spiegelt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Kombinatorische Begründung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Kombinatorische Begründung} \\\\'."\n".
                     'Schauen wir uns hier noch einmal die oben stehenden Formeln \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega} an:'."\n".
                     ''))),
                   array( 'equations',
@@ -862,8 +872,10 @@
                     'Und diese kombinatorische Anzahl wird in \lm{ -ω } ausgedrückt und ihr absoluter Wert ist eben \lm{ ω }.'."\n".
                     'Also gibt es auch aus dieser Perspektive eine negative ganze Zahl mehr, als es positive ohne die Null gibt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung} \\\\'."\n".
                     'Um auszudrücken, wie jede negative ganze Zahl jeweils aus einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
                     'im Ansatz die oben entwickelte, ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
                     'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n",
@@ -892,8 +904,10 @@
                   array( 'text', array( text => array(
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen', text =>
+                  'Anzahl der endlichen ganzen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{}Anzahl der endlichen ganzen Zahlen} \\\\'."\n".
                     'So kommen wir zu Aussagen über die Anzahl der ganzen endlichen Zahlen:'."\n".
                     ''))),
                       
@@ -918,8 +932,10 @@
                   array( 'text', array( text => array(
                     'Diese Aussagen sind durchaus bemerkenswert und führen uns zu einer fundamentalen und sehr spannenden Asymmetrie.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Daraus folgt eine prinzipielle Asymmetrie', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Daraus folgt eine prinzipielle Asymmetrie} \\\\'."\n".
                     'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine prinzipielle und fundamentale Asymmetrie,'."\n".
                     'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt,'."\n".
                     'weil jede negative ganze Zahl um minus Eins kleiner ist, als die natürlich Zahl, aus deren Verschiebung sie gebildet wird (siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}):'."\n".
@@ -977,7 +993,7 @@
                 Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
                 TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{Notiz}', subline =>
                   '')),
@@ -1006,7 +1022,7 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(-1)  =  - \frac{ 1 }{ 12 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichletsche Eta-Funktion', subline =>
                   '')),
@@ -1092,7 +1108,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichlet-Reihe', subline =>
                   '')),
@@ -1125,7 +1141,7 @@
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Primzahlprodukt-Vermutung', subline =>
                   '')),
@@ -1241,8 +1257,10 @@
                     'Denn, wie wir noch sehen werden,'."\n".
                     'können wir so überhaupt erst die Anzahl der Zahlen in bestimmten Mengen ausdrücken.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Eine größere Anzahl von Vorgängern, als eine Zahl groß ist, kennen wir schon von rationalen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Eine größere Anzahl von Vorgängern, als eine Zahl groß ist, kennen wir schon von rationalen Zahlen} \\\\'."\n".
                     'Bei den Biordinalzahlen haben wir es offenbar mit einer Mischform auf dem Weg zu den rationalen Zahlen zu tun.'."\n",
                       'Denn auch bei den rationalen Zahlen haben wir mehr Vorgänger, sagen wir beispielsweise vor der \lm{ ½ },'."\n".
                     'als die Zahl groß ist.'."\n".
@@ -1250,8 +1268,10 @@
                     'Nur handelt es sich nicht um ganze Zahlen, sondern die rationalen Zahlen liegen dicht\color{*Bearb}{(Verweis)},'."\n".
                     'während die Biordinalzahlen alle noch ganze Zahlen sind und noch nicht dicht liegen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Bezug zu den Superial-Zahlen und zur Anzahl der rationalen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Bezug zu den Superial-Zahlen und zur Anzahl der rationalen Zahlen} \\\\'."\n".
                     'Das vorstehende Ergebnis spielt bei der Analyse der \jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} und damit auch im Hinblick auf'."\n".
                     'die Anzahl der rationalen Zahlen eine zentrale Rolle.'."\n",
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
@@ -1399,8 +1419,10 @@
                       'Oder im anderen Fall über \lm{ n \in [5, ω + 56]_{2 ω} } oder \lm{ n \in [5, ω + 56]_{\mathbb{On}} },'."\n".
                     'deren Teilmengen ebenfalls alle gleich sind, auch, wenn sich die Basismengen unterscheiden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Anders bei ganzen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Anders bei ganzen Zahlen} \\\\'."\n".
                     'Es gibt Fälle, in denen wir Mengen aller endlichen ganzen Zahlen, aber dazu auch von ihrem Wert her über das endliche hinausgehende'."\n".
                     'aktual unendliche ganze Zahlen benötigen.'."\n".
                     'Und zwar auch im negativen Bereich.'."\n".
