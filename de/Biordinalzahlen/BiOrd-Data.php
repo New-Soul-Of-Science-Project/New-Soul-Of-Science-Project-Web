@@ -75,30 +75,33 @@
         'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein' => array( headline_text => 'Ontologie der Dualität allgemein'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik' => array( headline_text => 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik'/*, headline_text_short => 'X'*/),
-                        
+
         'OM:BiOrd:Einleitung:NeueEinsichten' => array( headline_text => 'Neue Einsichten'/*, headline_text_short => 'X'*/),
-                        
+
           'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen' => array( headline_text => 'Anzahl der endlichen ganzen Zahlen'/*, headline_text_short => 'X'*/),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N' => array( headline_text => 'BO.Ein.NE.6'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z' => array( headline_text => 'BO.Ein.NE.7'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z' => array( headline_text => 'BO.Ein.NE.12'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N' => array( headline_text => 'BO.Ein.FA.6'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z' => array( headline_text => 'BO.Ein.FA.7'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z' => array( headline_text => 'BO.Ein.FA.12'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z' => array( headline_text => 'BO.Ein.FA.14'),
 
           'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'X'*/),
+
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'BO.Ein.NE.68'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'BO.Ein.MZ.3'),
+
           'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen' => array( headline_text => 'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen'/* , headline_text_short => 'X' */),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n' => array( headline_text => 'BO.Ein.NE.74'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich' => array( headline_text => 'BO.Ein.NE.75'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c' => array( headline_text => 'BO.Ein.NE.78'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c' => array( headline_text => 'BO.Ein.NE.79'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g' => array( headline_text => 'BO.Ein.NE.81'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich' => array( headline_text => 'BO.Ein.NE.82'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g' => array( headline_text => 'BO.Ein.NE.83'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g' => array( headline_text => 'BO.Ein.NE.84'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.85'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.86'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n' => array( headline_text => 'BO.Ein.NZ.6'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich' => array( headline_text => 'BO.Ein.NZ.7'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c' => array( headline_text => 'BO.Ein.NZ.10'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c' => array( headline_text => 'BO.Ein.NZ.11'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g' => array( headline_text => 'BO.Ein.NZ.13'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich' => array( headline_text => 'BO.Ein.NZ.14'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g' => array( headline_text => 'BO.Ein.NZ.15'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g' => array( headline_text => 'BO.Ein.NZ.16'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NZ.17'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NZ.18'),
 
           'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Rein die Menge der Ordinalzahlen ins echt Negative erweitert'/*, headline_text_short => 'X'*/),
 
