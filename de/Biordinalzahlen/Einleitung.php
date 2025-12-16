@@ -772,11 +772,26 @@
 
                   array( 'text', array( text => array(
                     'Wir können durch das Vorstehende erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
-                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n".
+                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört.'."\n".
+                    'Dadurch sind die natürlichen Zahlen \lm{ \mathbb{N} } ontologisch – von ihrem Strukturmuster her – einschließlich der Null zu verstehen.'."\n",
+                      'Daraus und auch sonst ergeben sich weitere neue Einsichten, wenn wir diese Gedanken konsequent fortsetzen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:WeiterentwicklungZuDenSuperialZahlen'),
+                    )),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
                       
                 'Eine fundamentale Asymmetrie', subline =>
                   'Die ontologische Struktur der Zahlen beinhaltet die Zählrichtung')),
@@ -784,63 +799,6 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Eine Asymmetrie zwischen Existenz und ihrer Assoziation}',
                     '• Hier wird ebenso eine Asymmetrie zwischen einer ontologischen Existenz und ihrem assoziierten „Wert“ aufgezeigt.',
-                    ))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent',
-                    Title => 'Zwischenzeitlicher, wohl falscher Text …', TitleVis => 'Zwischenzeitlicher, wohl falscher Text:', ParagraphList => array(
-
-                  array( 'text', array( text => array(
-                    'Interessanterweise können wir so erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
-                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n",
-                      'Da es zur Null keine Antimenge und damit auch ontologisch kein negatives Komplementär gibt,'."\n".
-                    'was perfekt zur Eindeutigkeit und gewünschten Bidirektionalität in Bezug auf die Zahlenwerte passt,'."\n".
-                    'gibt es tatsächlich genauso viele negative wie positive Zahlen,'."\n".
-                    'eben beides ohne die Null.'."\n",
-                      'Es gibt also eine fundamentale Asymmetrie zwischen der ontologischen Struktur der Ordinalzahlen'."\n".
-                    'und der ontologischen Struktur der aus ihnen abgeleiteten negativen Zahlen.'."\n".
-                    'Dies gilt also auch für alle endlichen ganzen positiven Zahlen mit der Null und'."\n".
-                    'für die endlichen ganzen negativen Zahlen, ohne die Null:'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
-                      'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  ω  =  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  ω - 1  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω - 1  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Summe aller endlichen ganzen Zahlen ist demnach Null:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; + \sum_{ \forall n \in \mathbb{Z}^{-} } \! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0 \; + \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ n = 1 }^{ ω - 1 } n \; - \; \sum_{ n = 1 }^{ ω - 1 } n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω - 1 *)^{2} + *( ω - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω^{2} - 2 \cdot ω + 1 *) + *( ω - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( ω^{2} - ω *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Der Durchschnitt aller endlichen ganzen Zahlen ist demnach Null:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  \frac{ 0 }{ 2 \cdot ω - 1 }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  0  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω - 1 }  =  0  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
                     ))),
                       
                   array( 'text', array( text => array(
@@ -979,16 +937,16 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \lm{ –ω }'."\n".
+                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \lm{ –\!ω }'."\n".
                       'und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Der Wert \lm{ –ω } dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                    'Der Wert \lm{ –\!ω } dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
                       'Das die Summe aller endlichen ganzen Zahlen negativ ist, dürfte den einen oder anderen erstaunen.'."\n".
                     'Denn naiv neigen wir wohl zumeist dazu anzunehmen, dass sich alle endlichen ganzen Zahlen zu Null summieren,'."\n".
                     'weil wir von einer Werte- und Zahlensymmetrie bei Null ausgehen.'."\n".
-                    'Das wirklich \lm{ –ω } die Summe aller endlichen ganzen Zahlen ist und ebenso auch \lm{ 2 ω } die Anzahl'."\n".
+                    'Das wirklich \lm{ –\!ω } die Summe aller endlichen ganzen Zahlen ist und ebenso auch \lm{ 2 ω } die Anzahl'."\n".
                     'aller endlichen ganzen Zahlen, bestätigt sich durch die plausible Herleitung'."\n".
                     'der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration} auf Basis der'."\n".
                     '\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
@@ -1007,7 +965,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \lm{ –½ } und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \lm{ –\!½ } und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -1201,9 +1159,10 @@
                     ''))),
 
                     ))),
-                      
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
+
                 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -1224,15 +1183,16 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
-                      '\color{*Bearb}{(Ist das wirklich eine Begründung? Die Lücke ist so groß nun auch wieder nicht, siehe unten. Außerdem geht es ja um den Wert von \lm{ ω }, der sich aus dem Produkt aller endlichen Primzahlen ergeben soll, und nicht darum, wieviele ganze Zahlen vor \lm{ ω } kommen.)}'."\n".
+                      'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr ist, wie wir bewiesen haben.'."\n".
                     ''))),
                       
                   array( 'text', array( text => array(
                     'Diese Lücke hat eine wichtige Bedeutung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
+
                 'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', subline =>
                   'Eine Paradox erscheinende, bizarre Situation')),
                   array( 'text', array( text => array(
@@ -1297,8 +1257,10 @@
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
+
                 'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen', subline =>
                   'Biordinalzahlen machen es möglich')),
                   array( 'text', array( text => array(
@@ -1420,10 +1382,12 @@
                       '\color{*Entwick}{Interessant wäre, ob sich durch die Bestimmung weiterer Summen die Plausibilität des Beweises der Primzahlprodukt-Vermutung vertiefen lässt.'."\n".
                     'Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
-                      
-                'Die Menge der Ordinalzahlen nur ins Negative erweitert', subline =>
-                  'Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negativen Zahlen adressieren')),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
+
+                'Rein die Menge der Ordinalzahlen ins echt Negative erweitert', subline =>
+                  'Keine Vorgänger der unendlichen Limeszahlen. Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negative Zahlen adressieren')),
                   array( 'text', array( text => array(
                     'Wollen wir alle natürlichen Zahlen \lm{ n } adressieren, von der Null an bis ins potenziell Unendliche,'."\n".
                     'dann nutzen wir dafür die Menge der natürlichen Zahlen \lm{ \mathbb{N} } durch \lm{ n \in \mathbb{N} }'."\n".
@@ -1475,8 +1439,10 @@
                   array( 'text', array( text => array(
                     'So erhalten wir die Basismenge, die wir zum Adressieren benötigen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:WeiterentwicklungZuDenSuperialZahlen', text =>
+
                 'Weiterentwicklung zu den Superial-Zahlen', subline =>
                   'Die superiale Basis \lm{ \s} hat \lm{ \s } natürliche Superial-Zahlen als Vorgänger')),
                   array( 'text', array( text => array(

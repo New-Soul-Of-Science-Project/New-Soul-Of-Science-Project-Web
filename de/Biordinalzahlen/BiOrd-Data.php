@@ -100,7 +100,9 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.85'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.86'),
 
-          'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Die Menge der Ordinalzahlen ins Negative erweitert'/*, headline_text_short => 'X'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Rein die Menge der Ordinalzahlen ins echt Negative erweitert'/*, headline_text_short => 'X'*/),
+
+          'OM:BiOrd:Einleitung:NeueEinsichten:WeiterentwicklungZuDenSuperialZahlen' => array( headline_text => 'Weiterentwicklung zu den Superial-Zahlen'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:BiOrd:Literatur' => array(
