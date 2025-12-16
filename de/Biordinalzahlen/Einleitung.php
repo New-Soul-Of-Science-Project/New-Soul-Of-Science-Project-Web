@@ -1471,20 +1471,22 @@
                     'Die \jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
                     'verstanden werden und sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
-                    'Dies gilt in einem noch engeren Sinn, wenn sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
-                    'als wahr herausstellen sollte.'."\n",
-                      'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen bekannt ist, die der der Biordinalzahlen'."\n".
+                    'Dies gilt in einem noch engeren Sinn, weil sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
+                    'als wahr herausgestellt hat.'."\n",
+                      'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen aus leeren Mengen bekannt ist, die der Mengendarstellung der Biordinalzahlen'."\n".
                     'entspricht, so waren für mich die Superial-Zahlen und ihre Eigenschaft, dass die Subtraktion vollständig definiert ist,'."\n".
                     'der Anlass zur Entwicklung der Biordinalzahlen aus den Ordinalzahlen, um die ontologische Struktur'."\n".
                     'von aktual unendlichen Zahlen besser zu verstehen.'."\n".
                     'Daher liegt es auf der Hand, deren Eigenschaften in Bezug auf ihre Vorgänger zu vergleichen.'."\n",
                       'Mit den Ordinalzahlen und den Biordinalzahlen befinden wir uns strukturell sozusagen am Sockel'."\n".
-                    'der Fraktalität des Aktual-Unendlichen.'."\n".
+                    'der Fraktalität des Aktual-Unendlichen Großen ganzen Zahlen.'."\n".
                     'Dies erscheint mir ein Grund dafür, dass wir in bizarre und auch interessante, scheinbar paradoxe Situationen kommen.'."\n",
                       'Mit den Superial-Zahlen kommen wir dann quasi in die höheren Sphären der Fraktalität,'."\n".
                     'was zur Folge hat, dass uns die Dinge wieder harmonischer erscheinen.'."\n".
                     'Denn in den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} haben wir wieder so viele Vorgänger,'."\n".
-                    'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist.'."\n".
+                    'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist;'."\n".
+                    'diesmal allerdings mit reell algebraischen Koeffizienten und nicht nur mit ganzen Zahlen als Koeffizienten, wie bei den Biordinalzahlen.'."\n",
+                      'In den Superial-Zahlen machen wir einen \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{Vergleich der Struktur beider Zahlenklassen}.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
