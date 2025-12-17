@@ -477,8 +477,9 @@
                     'wenn wir uns nicht differenziert mit dem Muster und der Bedeutung des Zählens bis ins aktual unendliche auseinander setzen.'."\n".
                     'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
                     'wirklich \lm{ 2 ω } ist.'."\n",
-                      'Wie ist es nun bei einer Spiegelung der Entitäten der reell algebraischen Zahlen?'."\n".
-                    'Diese können wir nur verstehen, wenn wir die Intervalle zwischen den ganzen Zahlen explizit berücksichtigen und durch Dranhängen an die ganzen Zahlen visualisieren:'."\n".
+                      'Wie ist es nun bezüglich der Summe und des Mittelwerts aller reell algebraischen Zahlen?'."\n".
+                    'Diese können wir nur verstehen, wenn wir die Intervalle zwischen den ganzen Zahlen explizit berücksichtigen und durch Dranhängen an die ganzen Zahlen visualisieren.'."\n",
+                      'So erhalten wir für die Summe aller reell algebraischen Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -507,7 +508,7 @@
                   array( 'text', array( text => array(
                     'Die Anteile der positiven und negativen Sägezähne heben sich auf und es bleibt einfach die Summe aller ganzen Zahlen übrig.'."\n".
                     'Sehr interessant und beim Einmal-drüber-nachdenken plausibel.'."\n",
-                      'Der Mittelwert aller reell algebraischen Zahlen ist mit Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} dann'."\n".
+                      'Der Mittelwert aller reell algebraischen Zahlen ergibt sich mit Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} dann zu'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -516,7 +517,8 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  \;\; ,  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
