@@ -369,7 +369,7 @@
 
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
-                      
+
                 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen', subline =>
                   'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
                   array( 'text', array( text => array(
@@ -438,20 +438,91 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \s  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => false),
                       array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \# \mathbb{A}_{\S}^{-} \; + \; \# \mathbb{A}_{\S}^{0,+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S}^{-}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es gibt also eine quasi Spiegelung der Anzahlen von positiven und negativen ganzen Zahlen.'."\n",
-                      'Aber die Spiegelung der Werte der ganzen Zahlen an der Null ist nicht korrekt.'."\n".
-                    'Die Spiegelung der Werte findet beim Wert \lm{ -½ } statt (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
-                    'Wir sehen, es kann der falsche Eindruck einer Spiegelung der Entitäten der ganzen Zahlen oder der reell algebraischen Zahlen entstehen,'."\n".
-                    'wenn wir die Intervalle zwischen den ganzen Zahlen nicht explizit berücksichtigen und durch Dranhängen visualisieren würden.'."\n",
-                      'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
-                    'wirklich \lm{ 2 ω } ist.'."\n".
+                    'Es gibt also eine quasi Spiegelung der Anzahlen von positiven, mit der Null, und negativen ganzen Zahlen.'."\n",
+                      'Die Anzahl der rein positiven Zahlen ist allerdings mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{+}  =  \# \mathbb{A}_{\S}^{-} - 1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'eine weniger, als die der negativen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', horizontalLineBefore => false, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Die Spiegelung der Entitäten und der Mittelwert der reell algebraischen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Jedoch, die langläufige stillschweigende Annahme der Spiegelung der Werte der \italic{ganzen Zahlen} an der Null und ihr Mittelwert Null sind nicht korrekt.'."\n".
+                    'Die Spiegelung der Werte aller \italic{ganzen Zahlen} findet bei \lm{ -½ } statt, wie wir in der \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen} erkennen.'."\n".
+                    'Die Summe aller  \italic{ganzen Zahlen} und ihr Mittelwert sind nach den Formeln \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z} und \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen, es kann leicht der falsche Eindruck einer Spiegelung der Entitäten der ganzen Zahlen an der Null entstehen,'."\n".
+                    'wenn wir uns nicht differenziert mit dem Muster und der Bedeutung des Zählens bis ins aktual unendliche auseinander setzen.'."\n".
+                    'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
+                    'wirklich \lm{ 2 ω } ist.'."\n",
+                      'Wie ist es nun bei einer Spiegelung der Entitäten der reell algebraischen Zahlen?'."\n".
+                    'Diese können wir nur verstehen, wenn wir die Intervalle zwischen den ganzen Zahlen explizit berücksichtigen und durch Dranhängen an die ganzen Zahlen visualisieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z + u  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
+                      array( display => 'off', latex => '{  x  =  1  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \# \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ \forall z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  -ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Anteile der positiven und negativen Sägezähne heben sich auf und es bleibt einfach die Summe aller ganzen Zahlen übrig.'."\n".
+                    'Sehr interessant und beim Einmal-drüber-nachdenken plausibel.'."\n",
+                      'Der Mittelwert aller reell algebraischen Zahlen ist mit Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
+                      array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
+                    'wie wir in \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen} sehen.'."\n".
+                    'Nur der Abstand zum quasi letzen fehlenden Punkt bringt ein negatives Ungleichgewicht hinein,'."\n".
+                    'dass allerdings unendlich klein ausfällt, wie wir in Bild und Wert erkennen können.'."\n".
                     ''))),
 
 
