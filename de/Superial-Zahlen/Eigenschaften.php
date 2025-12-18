@@ -129,8 +129,10 @@
                     'Wie wir daran sehen, handelt es sich bei den Superial-Zahlen um eine ganz andere Menge,'."\n".
                     'als bei Mengen endlicher Zahlen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
+                  'Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch angeordneter Körper ist?', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch angeordneter Körper ist?} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
@@ -460,7 +462,7 @@
                   array( 'text', array( text => array(
                     'eine weniger, als die der negativen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', horizontalLineBefore => false, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
                   'Die Spiegelung der Entitäten und der Mittelwert der reell algebraischen Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -550,8 +552,10 @@
                     'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
                     'Eine bemerkenswerte Doppelung, wie ich finde, wo die eine Seite schließlich perfekt in die andere Seite greift.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Eine bemerkenswerte Doppelung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Eine bemerkenswerte Doppelung} \\\\'."\n".
                     'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
                     'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} = \s }.'."\n".
@@ -573,8 +577,10 @@
                     'Das tun sie zum einen in den Differenzen der Ableitung und sodann auch, zum anderen, bei der Integration, wo die superial kleinen ganzen Zahlen'."\n".
                     'als Indizes der Summenglieder auftreten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Existenz der maximalen Dichte der Zahlengeraden', subline =>
+                    'Mit endlichen Koordinatenwerten, also ohne aktual unendlich kleine Summanden')),
                   array( 'text', array( text => array(
-                  '\condb{Existenz der maximalen Dichte der Zahlengeraden} \\\\'."\n".
                     'Die eben entwickelte Vorstellung, dass eine weitere Verdichtung der maximaldichten rein endlichen Zahlengeraden zum „herausfallen“ aktual unendlich kleiner ganzer Summanden führt,'."\n".
                     'passt, wie oben gesagt, genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.'."\n",
                       'Dort teilen wir die Strecke von der Null bis zur Eins mit Hilfe unserer endlichen Primzahlen jeweils bis zur Potenz der vollständigen Induktion \lm{ ω }.'."\n".
@@ -612,8 +618,10 @@
                     'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
                     'Und wir lernen, auch, wenn das Kürzen eines überrationalen Bruchs möglich ist, kann es dazu führen, dass wir eine gesuchte Lösung nicht finden können, wenn wir es tun.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Die Ähnlichkeit beider Mengen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Ähnlichkeit beider Mengen} \\\\'."\n".
                     'Die Mengen werden beide mit sehr ähnlichen Definitionen beschrieben, an denen wir auch recht schnell erkennen können,'."\n".
                     'dass sie tatsächlich die gleiche Anzahl an Elementen beinhalten müssen:'."\n".
                     ''))),
@@ -696,8 +704,10 @@
                       'Wenn nun aber beide Mengen die gleiche Anzahl an Elementen, sprich Zahlen, haben, dann stellt sich die Frage,'."\n".
                     'ob und wie wir die Mengen aufeinander abbilden können.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen} \\\\'."\n".
                     'Die Menge \lm{ \mathbb{A}_{\S} } steht im \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'der Superial-Zahlen für alle sinnvollen Koeffizienten,'."\n".
                     'dann entspricht die Anzahl ihrer Elemente quasi der Anzahl der möglichen Ziffern, nämlich \lm{ \s }.'."\n".
@@ -714,8 +724,10 @@
                     'Dies kommt, weil bei den natürlichen Superial-Zahlen keine reinen Ziffern, sondern beim Übergang ins Aktual-Unendliche selber schon'."\n".
                     'gemischte Zahlen im Sinne des Stellenwertsystems, wie beispielsweise \lm{ *〈 ⅔ *〉*〈 7 *〉. = ⅔ \s + 7 }, auftreten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Die wirkliche Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die absolute Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen} \\\\'."\n".
                     'Die sinnvollen Koeffizienten und das natürliche Zählen fallen bei den Superial-Zahlen auseinander und passen gleichzeitig so auch perfekt ineinander.'."\n".
                     'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n",
                       'Diese Zwittrigkeit oder Zwitternatur der Anzahl \lm{ \s } in den ihr entsprechenden wichtigen Mengen unseres neuen Stellenwertsystemens,'."\n".
@@ -795,8 +807,10 @@
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Das Problem scheint …'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Gleich mächtig, aber nur bedingt abbildbar …', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Gleich mächtig, aber nur bedingt abbildbar …} \\\\'."\n".
                     'Die Elemente beider Mengen sind nicht nach ihrer Größe geordnet aufeinander abbildbar, sondern nur,'."\n".
                     'wenn wir ihre Reihenfolge verändern ???'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -1787,8 +1801,10 @@
                     'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
                       'Wenn wir dies alles in einer Gesamtschau betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Unabhängigkeit von der Mengenlehre (ZFC)', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Unabhängigkeit von der Mengenlehre (ZFC)} \\\\'."\n".
                     'An dieser Stelle möchte ich darauf aufmerksam machen, dass die Kontinuumshypothese von der'."\n".
                     'Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) insgesamt unabhängig ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Unabhängigkeit von ZFC.}'."\n".
                     'Dass bedeutet, die Mengenlehre – genauer die ZFC-Mengenlehre – gibt uns nicht die Möglichkeit zu entscheiden, ob die Kontinuumshypothese wahr oder falsch ist.'."\n",
