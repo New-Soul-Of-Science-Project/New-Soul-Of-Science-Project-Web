@@ -41,14 +41,14 @@
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹},'."\n".
                     'wo wir uns schon mit der Struktur von \lm{ \s } beschäftigt haben.'."\n".
-                    'Dabei fanden wir, dass die Anzahl der sinnvollen Koeffizienten \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} *) },'."\n".
+                    'Dabei fanden wir, dass die Anzahl der sinnvollen Koeffizienten \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} },'."\n".
                     'von der Null bis ausschließlich der Eins, nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
                     'eine aktual unendliche positive ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
