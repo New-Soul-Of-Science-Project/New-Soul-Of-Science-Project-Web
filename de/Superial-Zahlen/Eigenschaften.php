@@ -592,21 +592,22 @@
                     'Das würde also gut die bekannte Aufteilung der Zahlenmengen und deren Trennung ontologisch klar und verständlich erklären.'."\n",
                       'Und auch die Einblicke in die Zusammenhänge zwischen ganzen und reell algebraischen Zahlen vertieften sich deutlich und klar.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen:X', text =>
+                  'Tiefer Zusammenhang zwischen den Primzahlen und den reell algebraischen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Tiefer Zusammenhang zwischen den Primzahlen und den sinnvollen Koeffizienten der Superial-Zahlen} \\\\'."\n".
-                  '\cond{Möglicherweise sogar zwischen den Primzahlen und den reell algebraischen Zahlen} \\\\'."\n".
-                    'Entspricht die Menge \lm{ \mathbb{A}_{\S} } tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} },'."\n".
-                    'dann werden diese in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
-                    'und die Anlass zu der Annahme gibt, dass wir diese in Zukunft noch detaillierter formulieren können.'."\n",
+                    'Da die Menge \lm{ \mathbb{A}_{\S} } nach unserem \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis unserer Algebraischen-Koeffizienten-Vermutung} tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } gleich ist,'."\n".
+                    'werden die reell algebraischen Zahlen in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
+                    'und diese gibt Anlass zu der Annahme, dass wir sie in Zukunft noch detaillierter formulieren können.'."\n",
                       'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
                     'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – verwoben ist.'."\n".
                     'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\S} }, müssen nach Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As} ganze Zahl sein,'."\n".
                     'siehe \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
                     'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",
                       'Der Beweis der Überrationalitätsvermutung zeigt beispielsweise für'."\n".
-                    '\lm{ a = \sqrt{2} = \frac{ \sqrt{2} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ \sqrt{2} \cdot \s } eine ganze Zahl ist.'."\n".
-                    'Und zwar, weil \lm{ \sqrt{2} \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
-                    'Deshalb ist \lm{ \sqrt{2} } ein sinnvoller Koeffizient und es gilt \lm{ \sqrt{2} \in \mathbb{A}_{\S} }.'."\n".
+                    '\lm{ a = *| \sqrt{2} \,|* = \frac{ *| \sqrt{2} \,|* \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ *| \sqrt{2} \,|* \cdot \s } eine ganze Zahl ist.'."\n".
+                    'Und zwar, weil \lm{ *| \sqrt{2} \,|* \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
+                    'Deshalb ist \lm{ *| \sqrt{2} \,|* } ein sinnvoller Koeffizient und es gilt \lm{ *| \sqrt{2} \,|* \in \mathbb{A}_{\S} }.'."\n".
                     'Schon hierin liegen einige erstaunliche neue Erkenntnisse, die bisher offenbar unbekannt waren.'."\n".
                     'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
                     'Und wir lernen, auch, wenn das Kürzen eines überrationalen Bruchs möglich ist, kann es dazu führen, dass wir eine gesuchte Lösung nicht finden können, wenn wir es tun.'."\n".
