@@ -126,11 +126,11 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  ?=  ω_{\forall p}  :=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  \\\ \qquad\quad\;  =  *( ω_{\forall p} *)^{ω}  ?=  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  \\\ \qquad\quad\;  =  *( ω_{\forall p} *)^{ω}  ?=  ω^{ω}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Stimmt unsere Vermutung, dann ist \lm{ s } das Gleiche wie \lm{ ω } hoch \lm{ ω }.'."\n",
+                    'Stimmt unsere Vermutung, dann ist \lm{ \s } das Gleiche wie \lm{ ω } hoch \lm{ ω }.'."\n",
                       'An dieser Stelle sind wird nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \lm{ ω } stecken oder'."\n".
                     'auch welche endlich oft mehrfach vorkommen.'."\n".
                     'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
@@ -181,7 +181,7 @@
                   array( 'text', array( text => array(
                   '\condb{Hohe Plausibilität der Primzahlprodukt-Vermutung} \\\\'."\n".
                     'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
-                    '\lm{ s } ist, dass \lm{ ω } gleicht.'."\n".
+                    '\lm{ \s } ist, dass \lm{ ω } gleicht.'."\n".
                     'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
                     'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben, sie aber schon mal'."\n".
                     'sehr plausibel erscheint.'."\n".
@@ -1340,7 +1340,7 @@
                     //   'Wird sie nun auch eine Gleichheit und es gilt sogar \lm{ ω = pr( ω ) }?'."\n",
                       'Wir wussten ja schon mit der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung}:'."\n".
                     'Die Primfaktorzerlegung von \lm{ ω } ist'."\n".
-                    'ein unendlich großer Teil derer von \lm{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
+                    'ein unendlich großer Teil derer von \lm{ \s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
                     'seines Primzahl-Flächenprodukts zu finden ist.'."\n",
                       'Die gerade gezeigten Entsprechungen beruhen auf Primfakultäten, lückenlos und bei der kleinsten'."\n".
                     'Primzahl beginnend.'."\n".
@@ -1395,7 +1395,7 @@
                     '\lm{ ω ?= ω\overline{\#} }.'."\n",
                       'Und genau diese Gleichheit wird mit der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
                     'die Primfaktorzerlegung von \lm{ ω } ist'."\n".
-                    'ein unendlich großer Teil derer von \lm{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
+                    'ein unendlich großer Teil derer von \lm{ \s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
                     'seines Primzahl-Flächenprodukts zu finden ist, bestätigt.'."\n",
                       '\lm{ lpr\!*( p\overline{\#} *) } führt uns, mit der Mengen-Primfakultät \lm{ p\overline{\#} } im Parameter, über'."\n".
                     'das Zählen aller Primzahlen mit Hilfe von \lm{ lpr\!*( p\overline{\#} + 1 *) } mittels'."\n".
@@ -1418,7 +1418,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Deshalb kann \lm{ ω } nur der Teil des Primzahl-Flächenprodukts von \lm{ s } sein,'."\n".
+                      'Deshalb kann \lm{ ω } nur der Teil des Primzahl-Flächenprodukts von \lm{ \s } sein,'."\n".
                       'der lückenlos genau eine Zeile aller endlichen Primzahlen enthält.'."\n".
                       'Unsere Vermutung der Gleichheit'."\n".
                       ''))),
@@ -1449,11 +1449,11 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  s  =  ω^{ω}  \;\;}  \;\;,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \s  =  ω^{ω}  \;\;}  \;\;,  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wodurch wir auch ein genaueres Bild von \lm{ s } bekommen.'."\n",
+                      'wodurch wir auch ein genaueres Bild von \lm{ \s } bekommen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1823,15 +1823,15 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Teile davon können wir nun wegen unseres Beweises durch Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
-                      'auch mit \lm{ s } ausdrücken:'."\n".
+                      'auch mit \lm{ \s } ausdrücken:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( ω *)  =  ω \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ ω, 2 ω, 3 ω, 4 ω, 5 ω, 6 ω, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{2}, 2 ω^{2}, 3 ω^{2}, 4 ω^{2}, 5 ω^{2}, 6 ω^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, ω^{ω - 1}, 2 ω^{ω - 1}, 3 ω^{ω - 1}, 4 ω^{ω - 1}, 5 ω^{ω - 1}, 6 ω^{ω - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; s, 2 s, 3 s, 4 s, 5 s, 6 s, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{ω + 1}, 2 ω^{ω + 1}, 3 ω^{ω + 1}, 4 ω^{ω + 1}, 5 ω^{ω + 1}, 6 ω^{ω + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, ω^{2 ω - 1}, 2 ω^{2 ω - 1}, 3 ω^{2 ω - 1}, 4 ω^{2 ω - 1}, 5 ω^{2 ω - 1}, 6 ω^{2 ω - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; s^{2}, 2 s^{2}, 3 s^{2}, 4 s^{2}, 5 s^{2}, 6 s^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{2 ω + 1}, 2 ω^{2 ω + 1}, 3 ω^{2 ω + 1}, 4 ω^{2 ω + 1}, 5 ω^{2 ω + 1}, 6 ω^{2 ω + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( ω *)  =  ω \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ ω, 2 ω, 3 ω, 4 ω, 5 ω, 6 ω, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{2}, 2 ω^{2}, 3 ω^{2}, 4 ω^{2}, 5 ω^{2}, 6 ω^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, ω^{ω - 1}, 2 ω^{ω - 1}, 3 ω^{ω - 1}, 4 ω^{ω - 1}, 5 ω^{ω - 1}, 6 ω^{ω - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; s, 2 s, 3 s, 4 s, 5 s, 6 s, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{ω + 1}, 2 ω^{ω + 1}, 3 ω^{ω + 1}, 4 ω^{ω + 1}, 5 ω^{ω + 1}, 6 ω^{ω + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, ω^{2 ω - 1}, 2 ω^{2 ω - 1}, 3 ω^{2 ω - 1}, 4 ω^{2 ω - 1}, 5 ω^{2 ω - 1}, 6 ω^{2 ω - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \s^{2}, 2 \s^{2}, 3 \s^{2}, 4 \s^{2}, 5 \s^{2}, 6 \s^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; ω^{2 ω + 1}, 2 ω^{2 ω + 1}, 3 ω^{2 ω + 1}, 4 ω^{2 ω + 1}, 5 ω^{2 ω + 1}, 6 ω^{2 ω + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Das ist abermals ein bemerkenswertes Muster.'."\n".
-                      '\color{*Bearb}{(Es ist möglich auch die Zeilen mit Differenzen und Summen in den Potenzen mit \lm{ s } auszudrücken.)}'."\n",
+                      '\color{*Bearb}{(Es ist möglich auch die Zeilen mit Differenzen und Summen in den Potenzen mit \lm{ \s } auszudrücken.)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1841,7 +1841,7 @@
                     'Denn in der Theorie der Biordinalzahlen können von all den aktual unendlichen ordinalen Limeszahlen'."\n".
                     'endliche natürliche Zahlen abgezogen und aufaddiert werden, die nicht in dieser Menge vorhanden sind'."\n".
                     'und daher in den Lücken liegen.'."\n",
-                      'Diese Erkenntnis mit der obigen Darstellung durch \lm{ s } führt uns dann wieder zurück zu'."\n".
+                      'Diese Erkenntnis mit der obigen Darstellung durch \lm{ \s } führt uns dann wieder zurück zu'."\n".
                     'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
@@ -1874,8 +1874,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
-                    'offenbart einen tiefen Zusammenhang zwischen \lm{ s } und \lm{ ω }.'."\n".
-                    'Auch der Kehrwert von \lm{ s } lässt sich so einfach mit \lm{ ω }'."\n".
+                    'offenbart einen tiefen Zusammenhang zwischen \lm{ \s } und \lm{ ω }.'."\n".
+                    'Auch der Kehrwert von \lm{ \s } lässt sich so einfach mit \lm{ ω }'."\n".
                     'ausdrücken:'."\n".
                     ''))),
 
@@ -1885,26 +1885,26 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'ist, dann ist die Körnung der von uns definierten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitung}'."\n".
-                      'mittels \lm{ s }'."\n".
+                      'mittels \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 1 }{ s }  =  \frac{ 1 }{ ω^{ω} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s^{-1}  =  ω^{-ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 1 }{ \s }  =  \frac{ 1 }{ ω^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1}  =  ω^{-ω}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und so natürlich auch die des \jump{OM:SupNum:Ableitungen-Integrale}{Integrals}.'."\n".
-                      'Also können wir jedes \lm{ s^x } als'."\n".
+                      'Also können wir jedes \lm{ \s^x } als'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  s^{x}  =  *( ω^{ω} *)^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s^{x}  =  ω^{ω \cdot x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{x}  =  *( ω^{ω} *)^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{x}  =  ω^{ω \cdot x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'durch \lm{ ω } ausdrücken.'."\n",
@@ -1912,7 +1912,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Unsere superiale Basis \lm{ s } und ihre Potenzen stehen'."\n".
+                    'Unsere superiale Basis \lm{ \s } und ihre Potenzen stehen'."\n".
                     'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
                     'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
                     ''))),
@@ -1925,7 +1925,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  ω \cdot ω^{ω - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots  }'),
@@ -2245,11 +2245,11 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Jede zweite natürliche Zahl ist durch die Primzahl Zwei teilbar, daher sollte die Anzahl der natürlichen Zahlen \lm{ ω } ebenso durch Zwei teilbar sein.',
                         'Das gleiche Argument kann für jede weitere endliche Primzahl herangezogen werden.',
-                        'Jede vierte natürliche Zahl ist natürlich ebenfalls durch die zweite Potenz von Zwei teilbar, aber, wenn auch die Anzahl der natürlichen Zahlen \lm{ ω } durch die Vier ganzzahlig teilbar wäre, dann sollte dies auch für jede andere endliche Primzahl endlicher Potenz gelten. Das kann aber aufgrund der Betrachtung der Struktur der Superial-Zahlen, siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹, nicht sein, denn dann wäre quasi \lm{ s = ω }.',
-                        'Wenn \lm{ s = ω } wäre, dann würde es genau so viele rationale Zahlen, wie natürliche Zahlen geben, was zwar für die Mächtigkeit stimmt, aber in meinen Augen nicht für deren Anzahl.',
+                        'Jede vierte natürliche Zahl ist natürlich ebenfalls durch die zweite Potenz von Zwei teilbar, aber, wenn auch die Anzahl der natürlichen Zahlen \lm{ ω } durch die Vier ganzzahlig teilbar wäre, dann sollte dies auch für jede andere endliche Primzahl endlicher Potenz gelten. Das kann aber aufgrund der Betrachtung der Struktur der Superial-Zahlen, siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹, nicht sein, denn dann wäre quasi \lm{ \s = ω }.',
+                        'Wenn \lm{ \s = ω } wäre, dann würde es genau so viele rationale Zahlen, wie natürliche Zahlen geben, was zwar für die Mächtigkeit stimmt, aber in meinen Augen nicht für deren Anzahl.',
                         'Denn die Kombinatorik zur Erzeugung der rationalen Zahlen aus Brüchen zeigt, dass es deutlich mehr rationale Zahlen von ihrer Anzahl her geben muss, als natürliche Zahlen, denn im Calkin-Wilf-Baum enthält schon der letzte Strang alle natürlichen Zahlen und der erste Strang all deren Kehrwerte. \\\\ Die direkte Kombinatorik von Zähler und Nenner wäre jeweils \lm{ ω } und ergäbe sich zu \lm{ ω^2 }, wenn nicht gekürzt werden könnte.',
                         'Anders, als bei der Mächtigkeit, wird bei der von mir gemeinten Anzahl der Zahlen ihre kombinatorische Erzeugung mit der vollständigen Induktion der natürlichen Zahlen ins Verhältnis gesetzt.',
-                        'Und die Definition von \lm{ s } über das Primzahlflächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
+                        'Und die Definition von \lm{ \s } über das Primzahlflächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
                         '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
@@ -2264,9 +2264,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2290,10 +2290,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  ?:=  \prod_{ \forall p \in \mathbb{P} }  p^{ \log_{p} ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \forall p \in \mathbb{P} } ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \# \mathbb{P} } ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  ω^{ \# \mathbb{P} }  }'),
+                      array( display => 'on',  latex => '{  \s  ?:=  \prod_{ \forall p \in \mathbb{P} }  p^{ \log_{p} ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \forall p \in \mathbb{P} } ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \# \mathbb{P} } ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  ω^{ \# \mathbb{P} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das verwundert nach ein bisschen Überlegung nicht weiter, denn wir haben es erzwungen.'."\n".
@@ -2302,10 +2302,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  \prod_{ \forall p \in \mathbb{P} } ω_{p}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  ?=  ω_{2} \cdot ω_{3} \cdot ω_{5} \cdot ω_{7} \cdot ω_{11} \cdot ω_{13} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \forall p \in \mathbb{P} } ω_{p}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  ω_{2} \cdot ω_{3} \cdot ω_{5} \cdot ω_{7} \cdot ω_{11} \cdot ω_{13} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  ω  ?=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  ?=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{5} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{p \in \mathbb{P}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  ?=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{5} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{p \in \mathbb{P}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
