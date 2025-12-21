@@ -83,7 +83,7 @@
                     'muss \lm{ 2 ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 '\lm{ ω } kann nicht einer der unendlich großen Primzahltürme des Primzahl-Flächenprodukts sein', subline =>
                   '')),
@@ -114,7 +114,7 @@
                     'Somit kommt keine Primzahl der Potenz \lm{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
                     'als unendlich großer Primfaktoranteil von \lm{ \s }, der \lm{ ω } gleicht, in Frage.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
                       
                 'Wir vermuten, \lm{ ω } ist die vollständige Primfakultät aller endlichen Primzahlen', subline =>
                   '')),
@@ -143,8 +143,8 @@
                       'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                      
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+
                 'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -155,13 +155,17 @@
                     'welche Bedeutung dieser Satz und das Zentrum seines Beweises für die natürlichen Zahlen hat.'."\n",
                       'Es gibt also mindestens zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen:'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis durch Zählen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Beweis durch Zählen} \\\\'."\n".
                     'Einmal können wir die Unendlichkeit der endlichen natürlichen Zahlen durch das Zählen beweisen, mittels der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
                     'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis durch die Primfakultät und die Phasenverschiebung um \lm{ \pm 1 }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Beweis durch die Primfakultät und die Phasenverschiebung um \lm{ \pm 1 }} \\\\'."\n".
                     'Und ein weiteres Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen mittels der Primfakultät und der Phasenverschiebung'."\n".
                     'um \lm{ \pm 1 } beweisen, auf Basis der Multiplikationsatome der Primzahlen und des Zählatoms Eins, ausgehend von der Eins.'."\n".
                     'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
@@ -178,8 +182,10 @@
                     'erzeugt darüber die immer größer werdende Primfakultät indirekt alle natürlichen Zahlen größer als Eins,'."\n".
                     'bis ins Unendliche, weil sie genau das Raster vorgibt, auf dem diese liegen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Hohe Plausibilität der Primzahlprodukt-Vermutung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Hohe Plausibilität der Primzahlprodukt-Vermutung} \\\\'."\n".
                     'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
                     '\lm{ \s } ist, dass \lm{ ω } gleicht.'."\n".
                     'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
@@ -187,7 +193,7 @@
                     'sehr plausibel erscheint.'."\n".
                     'Genau dies zeigen wir nachfolgend und nutzen dazu die vorstehende Einsicht für den Beweis.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
                 'Zum ›Satz des Euklid‹', subline =>
                   '')),
@@ -198,8 +204,10 @@
                     'Dabei werde ich ihn etwas modifizieren, damit er zu den von uns gesuchten Eigenschaften am besten passt und'."\n".
                     'wir ihn gut weiterverwenden können:'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis, dass es unendlich viele Primzahlen im Endlichen gibt', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Beweis, dass es unendlich viele Primzahlen im Endlichen gibt} \\\\'."\n".
                     'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
                       
                   array( 'text', array( Shape  => 'quote', text => array(
@@ -222,8 +230,10 @@
                   array( 'text', array( text => array(
                     'Es gibt in den endlichen natürlichen Zahlen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Besondere Rolle der Primfakultät', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Besondere Rolle der Primfakultät} \\\\'."\n".
                     'Die Primfakultät spielt im ›Satz des Euklid‹ die zentrale Rolle.'."\n",
                       'Zum einen sammelt sie alle Primzahlen bis einschließlich \lm{ p } lückenlos in ihrem Produkt \lm{ p\# } ein.'."\n".
                     'Zum anderen erlaubt sie über ihre doppelte Variation um plus-minus Einen \lm{ p\# \pm 1 } Aussagen über weitere Primzahlen,'."\n".
@@ -233,7 +243,7 @@
                     '\lm{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} }, mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
                     'die in der Primfaktorzerlegung von \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } stecken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Das passende Verständnis zum Beweis unserer Vermutung', subline =>
                   'Eine Perspektivenfindung')),
@@ -257,8 +267,10 @@
                     'Im ersten Moment erscheint es eher undurchsichtig, was die Primfakultät mit der Anzahl von aufeinanderfolgenden'."\n".
                     'natürlichen Zahlen in einer Menge zu tun hat.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge} \\\\'."\n".
                     'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}, und in erweiterter Form die \jump{OM:BiOrd:Home}{Biordinalzahlen},'."\n".
                     'definieren die Anzahl der aufeinanderfolgenden natürlichen Zahlen in endlichen und unendlichen Mengen,'."\n".
                     'und symbolisieren diese mit den Mengen selbst.'."\n",
@@ -293,8 +305,10 @@
                     'von der Null an angeben, mit einer Menge zu beschreiben.'."\n".
                     'Und zwar mit einer Menge von Zahlen, die auf seiner Primfaktorzerlegung basieren und das Primfaktor-Spektrum oder Primfaktor-Raster des Werts widerspiegeln.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Primturmzerlegung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Primturmzerlegung} \\\\'."\n".
                     'Wie können wir die Primfaktorzerlegung jeder natürlichen Zahl eindeutig in einer Menge darstellen?'."\n",
                       'Das ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich, die wir \italic{Primturmzerlegung} nennen.'."\n".
                     'Denn eine Menge der reinen Primfaktoren wäre nicht eindeutig, weil dies nicht die'."\n".
@@ -342,8 +356,10 @@
                     'Diese Menge können wir nun nutzen, um daraus das Primfaktor-Spektrum oder Primfaktor-Raster'."\n".
                     'der natürlichen Zahl zu bestimmen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Definition des Primturm-Potenzrasters', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Definition des Primturm-Potenzrasters} \\\\'."\n".
                     'Die Menge der Anzahl der ersten \lm{ n } natürlichen Zahlen, von der Null an,'."\n".
                     'stellt den Zählaspekt der Zahl \lm{ n } dar, also die Menge an Zahlen, die bis zu ihr erzeugt werden.'."\n",
                       'Die Primturmzerlegung ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
@@ -670,9 +686,10 @@
                 Title => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster …',
                 TitleVis => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster:', ParagraphList => array(
 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Das Primpotenzraster', subline =>
+                    'Die nächste Primzahl')),
                   array( 'text', array( text => array(
-                  '\condb{Das Primpotenzraster} \\\\'."\n".
-                  '\cond{Die nächste Primzahl} \\\\'."\n".
                     'Zur Definition der Menge des Primpotenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
                     'natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir auch noch die Menge der Primfaktoren'."\n".
                     'einer natürlichen Zahl.'."\n".
@@ -823,9 +840,10 @@
 
                     ))),
 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Mengen-Primfakultät', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Mengen-Primfakultät} \\\\'."\n".
-                  // '\cond{In Kombination mit dem Primturm-Potenzraster können wir neue Erkenntnisse gewinnen} \\\\'."\n".
                     'Das Primturm-Potenzraster ist vom Ansatz des Beweises des ›Satz des Euklid‹ inspiriert und'."\n".
                     'bietet nun, mit Hilfe der jetzt zu entwickelnden, abgewandelten Primfakultät,'."\n".
                     'eine weitere Möglichkeit, die natürlichen Zahlen zu beschreiben, wie oben schon dargelegt.'."\n".
@@ -835,7 +853,7 @@
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
                     'und über eine zu diesem Zweck etwas abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
-                //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                //  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 //'Die vollständige Primfakultät und die Anzahl von natürlichen Zahlen in einer Menge', subline =>
                 //  'Gibt es eine Beschreibung der Größe von Zahlenmengen aus natürlichen Zahlen, die auf der Primfakultät beruhen, die bei der Annäherung an die vollständige Primfakultät die Menge der natürlichen Zahlen beschreibt?')),
@@ -915,8 +933,10 @@
                       'Was sind die Bedingungen, unter denen das fragliche Gleichheitszeichen erfüllt ist?'."\n".
                     'Wie können wir sie formulieren?'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Analyse des ›Satz des Euklid‹ in Bezug auf die Mengen-Primfakultät', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Analyse des ›Satz des Euklid‹ in Bezug auf die Mengen-Primfakultät} \\\\'."\n".
                     'In den obigen endlichen Beispielen zur Mengen-Primfakultät handelt es sich ja um Mengen \lm{ \mathbb{T} = n }, mit \lm{ n \in \mathbb{N} },'."\n".
                     'deren Elemente endliche natürliche Zahlen sind, von der Null bis zu einer endlichen größten \lm{ n - 1 }.'."\n",
                       'Aus einer neuen Perspektive auf den ›Satz des Euklid‹ stellen wir fest, dass \lm{ n\overline{\#} } uns ein Produkt'."\n".
@@ -927,8 +947,10 @@
                     'Denn diese haben als Primfaktoren nur kleinere Primzahlen \lm{ p_{i–d} }, mit \lm{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Für das Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Für das Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung} \\\\'."\n".
                     'Da das Primturm-Potenzraster ein Zahlenspektrum aufgrund der Primzahltürme seines Parameters liefert,'."\n".
                     'ergibt die Mengen-Primfakultät einer Zahl als sein Parameter \lm{ pr\!*( n\overline{\#} *) } ein besonderes Spektrum oder Raster:'."\n",
                       'Wenn wir die Mengen-Primfakultät einer natürlichen Zahl \lm{ n } als Parameter des Primturm-Potenzrasters benutzen,'."\n".
@@ -954,7 +976,7 @@
                     'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \lm{ pr\!*( p_i\overline{\#} *) }'."\n".
                     'kombiniert schließlich alle Primturm-Potenzraster der in ihm enthaltenen Primzahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
                       
                 'Berechnung der nächsten Primzahl', subline =>
                   'Per Algebra und Mengenlehre')),
@@ -1032,8 +1054,10 @@
                       'Wir beschreiben dies so, dass das Primturm-Potenzraster eine erste Lücke aufwies und die neue Primzahl'."\n".
                     'diese Lücke nun füllt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl} \\\\'."\n".
                     'Im Besonderen ist ein jedes derartiges Primturm-Potenzraster \lm{ pr\!*( n *) }'."\n".
                     'eine Beschreibung der kleinsten fehlenden reinen Primzahl in seinen Primzahltürmen, die'."\n".
                     'auf seiner ersten Rasterlücke sitzt.'."\n".
@@ -1049,7 +1073,7 @@
                     'Also ergibt sich: \lm{ lpr\!*( 18 *) = 3 }.'."\n",
                       'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
                   'Die zählende Konstruktion der Primzahlen und damit der natürlichen Zahlen gleichzeitig')),
@@ -1154,7 +1178,7 @@
 
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Der Beweis der Primzahlprodukt-Vermutung', subline =>
                   'Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \lm{ ω } übergeht')),
@@ -1319,8 +1343,10 @@
                     '\lm{ lpr\!*( p\overline{\#} *) } extrahieren können.'."\n".
                     'Beide Beschreibungen entsprechen einander, sind im Endlichen vom Wert her aber im Allgemeinen nicht gleich: \lm{ p \widehat{=} p\overline{\#} }.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Übergang ins Unendliche zu allen endlichen natürlichen Zahlen der Menge \lm{ ω }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Übergang ins Unendliche zu allen endlichen natürlichen Zahlen der Menge \lm{ ω }} \\\\'."\n".
                     'Nun passiert beim Übergang ins Unendliche zu \lm{ ω } etwas besonderes:'."\n",
                       'Die Anzahl der Zahlen der Menge der ersten \lm{ ω } natürlichen Zahlen bleibt \lm{ ω } selbst.'."\n".
                     'Die Mengen-Primfakultät \lm{ ω\overline{\#} } dieser Menge wird nun zum Produkt aller endlichen Primzahlen.'."\n".
@@ -1500,7 +1526,7 @@
                     'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive und so auf das primitive durch „Kürzen“ zu reduzieren.'."\n",
                       'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Die Entdeckung einer Primzahl', subline =>
                   '')),
@@ -1509,7 +1535,7 @@
                     'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen Primzahlen haben.'."\n",
                       'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Vielfache einer Primzahl', subline =>
                   '')),
@@ -1569,7 +1595,7 @@
                   array( 'text', array( text => array(
                     'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
                   '')),
@@ -1582,7 +1608,7 @@
                     'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
                     'Und bei \lm{ \s } dann so fein, dass alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Primzahl-Potenztürme', subline =>
                   '')),
@@ -1623,7 +1649,7 @@
                     'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter,'."\n".
                     'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Jeder Primzahl-Schritt teilt \lm{ ω }', subline =>
                   '')),
@@ -1656,7 +1682,7 @@
                       '\lm{ ω } ist nun keine Primzahl mehr, weil ihr alle endlichen Primzahlen zugrunde liegen,'."\n".
                     'die nicht enden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Jedoch ist jeder Primzahl-Schritt kein Teiler eines anderen Primzahl-Schritts', subline =>
                   '')),
@@ -1682,7 +1708,7 @@
                     'Der Übergang ist also wirklich etwas besonderes, von Schritten, die alle keine Teiler voneinander sind,'."\n".
                     'zum Ergebnis bei \lm{ ω }, das alle Schritte in einem Produkt zusammenfasst.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Erklärung und Verständnis des Gesamtspektrums der natürlichen Zahlen durch ihr Primzahl-Spektrum', subline =>
                   '')),
@@ -1707,8 +1733,10 @@
                     'Die Menge oder Zahl \lm{ ω } beschreibt alle natürlichen Zahlen und damit das Zählraster.'."\n",
                       'Nur ein Produkt aller endlichen Primzahlen \lm{ ω } beschreibt darum das Zählraster arithmetisch so, dass alle natürlichen Zahlen der Menge \lm{ ω } erfasst werden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Nähere Betrachtung der Spektren oder Raster', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Nähere Betrachtung der Spektren oder Raster} \\\\'."\n".
                     'Warum handelt es sich denn bei \lm{ 2 = 2^1 }, \lm{ 4 = 2^2 } oder \lm{ 8 = 2^3 } und für'."\n".
                     'alle weiteren Potenzen von Zwei, oder allgemeiner bei \lm{ p_i^k }, mit \lm{ p_i \in \mathbb{P} } und \lm{ k \geq 1 }, um das gleiche Raster?'."\n".
                     'Das ist nicht gleich offensichtlich, finde ich.'."\n",
@@ -1724,7 +1752,7 @@
                       'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω } mit einem Produkt'."\n".
                     'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Das Verlassen des Rasters einer Menge von aufeinanderfolgenden natürlichen Zahlen', subline =>
                   '')),
@@ -1738,7 +1766,7 @@
                       'Und unsere schrittweise Konstruktion der Primzahlen in Definition \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen}'."\n".
                     'funktioniert nach dem selben Prinzip.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Immer mehr Primzahlen machen das Raster in Bezug auf die folgenden natürlichen Zahlen immer feiner', subline =>
                   '')),
@@ -1748,7 +1776,7 @@
                     'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
                     'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Sichtbarmachung der Produktstruktur von \lm{ ω } im Kontext ihres Primturm-Potenzrasters', subline =>
                   '')),
@@ -1844,7 +1872,7 @@
                       'Diese Erkenntnis mit der obigen Darstellung durch \lm{ \s } führt uns dann wieder zurück zu'."\n".
                     'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Die Größenordnung von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
                   '')),
@@ -1868,7 +1896,7 @@
                     'das auch die Menge \lm{ lpr\!*( ω\overline{\#} *) = ω } darstellt.'."\n".
                     'Und der Wert von \lm{ ω\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \lm{ ω }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Die Größenordnung und Struktur von \lm{ \s } und \lm{ \s^{-1} }', subline =>
                   '')),
@@ -1916,7 +1944,7 @@
                     'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
                     'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Experimentelle Notizen dazu', subline =>
                   '')),
@@ -1962,7 +1990,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises:X', text =>
                       
                 'Gedankenexperiment', subline =>
                   '')),
@@ -2043,7 +2071,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
@@ -2081,7 +2109,7 @@
                     'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
                     'Zahlen aufholen kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Szenario, in dem hypothetisch als nächstgrößere und übernächstgrößere Primzahlen nur Primzahlzwillinge existieren', subline =>
                   '')),
@@ -2154,8 +2182,11 @@
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
                 Title => 'Alte Notizen zum obigen Ansatz …',
                 TitleVis => 'Alte Notizen zum obigen Ansatz:', ParagraphList => array(
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Primzahlen im Endlichen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Primzahlen im Endlichen} \\\\'."\n".
                     'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
                       
                   array( 'text', array( Shape  => 'quote', text => array(
@@ -2177,8 +2208,10 @@
                   array( 'text', array( text => array(
                     'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Mit Primzahlen ins Unendliche', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
                     'Der vorstehend geführte Beweis zeigt, dass die Primfakultät eine besondere Rolle im Zusammenhang mit Primzahlen und dem Unendlichen spielt.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
@@ -2234,7 +2267,7 @@
                     ''))),
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Freie Gedanken', subline =>
                   '')),
@@ -2255,7 +2288,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Argumentation über die Primzahltürme der Definition von \lm{ \s }', subline =>
                   '')),
