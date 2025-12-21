@@ -529,7 +529,19 @@
                     'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
                     'wie wir in \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen} sehen.'."\n".
                     'Nur der Abstand zum quasi letzen fehlenden Punkt bringt ein negatives Ungleichgewicht hinein,'."\n".
-                    'dass allerdings unendlich klein ausfällt, wie wir in Bild und Wert erkennen können.'."\n".
+                    'dass allerdings unendlich klein ausfällt, wie wir in Bild und Wert erkennen können.'."\n",
+                      'Diese Summe kennen wir aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}'."\n".
+                    'in etwas anderer Form schon aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}‹}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ \forall z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
+                    'Es erscheint mir aber sehr interessant.'."\n".
                     ''))),
 
 
@@ -740,12 +752,11 @@
                         '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}}?}',
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar',
                 Title => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar? …',
                 TitleVis => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar?', ParagraphList => array(
 
                   array( 'text', array( text => array(
-                  // '\condb{Sind beide aufeinander linear abbildbar?} \\\\'."\n".
                     'Naiv können wir einmal annehmen, da die Werte beider Mengen offenbar nicht nur wohlgeordnet sind, sondern auch'."\n".
                     'alle je in ihrer Menge die gleichen Abstände untereinander haben, dass sie vielleicht rein durch Verschiebung und einen Faktor'."\n".
                     'Element für Element ihrer Reihenfolge nach aufeinander abgebildet werden können.'."\n".
@@ -1306,7 +1317,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    // '• \lm{ \mathbb{On} } ist eine echte Klasse\color{*Bearb}{(Verweis)}, während \lm{ \mathbb{S_{\N}} } eine Menge ist.',
+                    '• Ähnliches machen wir ja auch im jetzigen Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} im Abschnitt hier: \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar}‹}',
                     ))),
                       
                   array( 'text', array( text => array(
