@@ -248,6 +248,24 @@
                 'Das passende Verständnis zum Beweis unserer Vermutung', subline =>
                   'Eine Perspektivenfindung')),
                   array( 'text', array( text => array(
+                    'Wir nutzen folgende Erkenntnis für unseren Ansatz:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Alle natürlichen Zahlen, die kleiner sind als eine bestimmte Primzahl, lassen sich aus einem Produkt der Primzahlen bilden,'."\n".
+                        'die kleiner sind als die bestimmte.'."\n",
+                          'Oder, lässt sich eine natürliche Zahl nicht aus einem Produkt von Primzahlen bilden, die kleiner sind als sie, ist es eine neue Primzahl.'."\n".
+                        ''))),
+
+                  array( 'text', array( text => array(
+                    'Nun finden wir heraus, wie wir diese Erkenntnis in Verbindung mit dem ›Satz des Euklid‹ für unseren Beweis nutzen können.'."\n".
+                    'Dies tun wir, indem wir sie dafür nutzen, sowohl die Menge der endlichen Primzahlen als auch die der endlichen natürlichen Zahlen zu konstruieren.'."\n".
+                    'Diese neue Mengenkonstruktion der Zahlen, diese Entsprechung, können wir zum Beweis ins Aktual-Unendliche fortsetzen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Unser Einstieg über die Primfakultät', subline =>
+                    '')),
+                  array( 'text', array( text => array(
                     'Berechnen wir Beispielhaft das Produkt der endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# },'."\n".
                     'dann wird deutlich, dass es schnell sehr viel größer wird, als die größte in ihm vorkommende Primzahl:\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     ''))),
@@ -307,7 +325,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Die Primturmzerlegung', subline =>
-                    '')),
+                    'Eine auf Primzahlen basierende eineindeutige faktorielle Mengendarstellung der natürlichen Zahlen')),
                   array( 'text', array( text => array(
                     'Wie können wir die Primfaktorzerlegung jeder natürlichen Zahl eindeutig in einer Menge darstellen?'."\n",
                       'Das ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich, die wir \italic{Primturmzerlegung} nennen.'."\n".
@@ -358,7 +376,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Definition des Primturm-Potenzrasters', subline =>
-                    '')),
+                    'Die Erweiterung der Primturmzerlegung zu einem Potenzrasters oder Potenzspektrum')),
                   array( 'text', array( text => array(
                     'Die Menge der Anzahl der ersten \lm{ n } natürlichen Zahlen, von der Null an,'."\n".
                     'stellt den Zählaspekt der Zahl \lm{ n } dar, also die Menge an Zahlen, die bis zu ihr erzeugt werden.'."\n",
