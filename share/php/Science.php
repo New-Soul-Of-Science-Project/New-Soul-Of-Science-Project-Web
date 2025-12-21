@@ -8,6 +8,7 @@
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
   //           20251221:  >:  "MathJax":  Change Macro "rad" from '\mathrm' to '\operatorname'.
+  //                      +:  "MathJax":  Add Macros "lpr", "pr", and "pt".
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*EquationHideSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*EquationHideSeparatorLine'.
   //                      >:  "Sc_f_equation_list_HideLine_html", "Sc_f_equation_list":  Use color '*EquationHideSeparatorLine'.
@@ -256,7 +257,9 @@
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
-    echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
+    echo '            lpr: "\\\\operatorname{lpr}",'."\n"; // for gapless prime tower power grid set of
+    echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
+    echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
     echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
