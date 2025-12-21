@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 14.12.2025, 23:00h
+  // #: Stand: 21.12.2025, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20251221:  >:  "MathJax":  Change Macro "rad" from '\mathrm' to '\operatorname'.
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*EquationHideSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*EquationHideSeparatorLine'.
   //                      >:  "Sc_f_equation_list_HideLine_html", "Sc_f_equation_list":  Use color '*EquationHideSeparatorLine'.
@@ -256,6 +257,7 @@
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
     echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
+    echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
