@@ -364,8 +364,8 @@
       keywords => '',
       text_titel_h1 => 'Primzahlprodukt-Vermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
-      text_undertitel_h2 => 'Das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, ist der Anzahl der natürlichen Zahlen gleich',
-      text_titel_discr_h3 => 'Eine Vorstellung der Vermutung und ihr Beweis',
+      text_undertitel_h2 => 'Eine Vorstellung der Vermutung und ihr Beweis',
+      text_titel_discr_h3 => 'Das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, ist der Anzahl der natürlichen Zahlen gleich',
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
