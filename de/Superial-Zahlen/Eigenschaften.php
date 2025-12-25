@@ -1391,7 +1391,7 @@
                       'eine ganze Superial-Zahl der ersten Exponentenschicht'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.WSZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
@@ -1400,7 +1400,7 @@
                       'was durch Umformung unsere Behauptung zeigt, denn die Summanden sind auch ganze Superial-Zahlen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.WSZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
                       array( display => 'on',  latex => '{  b_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  \;\; ,  }'),
                     ))),
@@ -1423,10 +1423,10 @@
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Pythagoreische Tripel im Endlichen', subline =>
+                  'Im Endlichen', subline =>
                     '')),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
                       array( display => 'on',  latex => '{  c^{2}  =  a^{2} + b^{2}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
@@ -1434,7 +1434,7 @@
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Pythagoreische Tripel im Superialen', subline =>
+                  'Im Superialen', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1442,7 +1442,7 @@
                       'Sei:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall a_{s}, b_{s}, c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{2}  =  a_{s}^{2} + b_{s}^{2}  }'),
@@ -1453,7 +1453,7 @@
                       'In dem Moment, wo wir sie ins Superiale skalieren'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{2} + b_{s}^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} \s^{2} + b_{s}^{2} \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
@@ -1474,6 +1474,7 @@
                     'ebenso auf dieses Raster fallen.'."\n".
                     ''))),
 
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz', text =>
 
                 'Großer Fermatscher Satz', subline =>
@@ -1481,21 +1482,21 @@
                   array( 'text', array( text => array(
                     'Die pythagoreischen Tripel lassen sich auf höhere Potenzen als zwei erweitern und wir landen bei den Fermatschen Tripeln'."\n".
                     'und damit beim Großen Fermatschen Satz\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.}.'."\n".
-                    'Dieser besagt, dass es keine einzige Kombination ganzen Zahlen gibt, die die Gleichung erfüllt.'."\n".
+                    'Dieser besagt, dass es keine einzige Kombination natürlicher Zahlen gibt, die die folgende Gleichung erfüllt.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Großer Fermatscher Satz im Endlichen', subline =>
+                  'Im Endlichen', subline =>
                     '')),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( \forall n \in \mathbb{N} > 2 *)  *[  c^{n}  =  a^{n} + b^{n}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Fermatsche Tripel im Superialen', subline =>
+                  'Im Superialen', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1503,7 +1504,7 @@
                       'Sei:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall a_{s} , b_{s} , c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{n}  =  a_{s}^{n} + b_{s}^{n}  }'),
@@ -1514,7 +1515,7 @@
                       'In dem Moment, wo wir es ins Superiale skalieren'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} + b_{s}^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{n} + b_{s}^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} \s^{n} + b_{s}^{n} \s^{n} *)^{\frac{ 1 }{ n }}  }'),
