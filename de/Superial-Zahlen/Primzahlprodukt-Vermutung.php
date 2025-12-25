@@ -15,14 +15,16 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Verbesserungen der Seite}',
-                    '• Nach dem Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \lm{ \mathbb{A}_{\S} } ändern.',
+                    //%! '• Nach dem Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \lm{ \mathbb{A}_{\S} } ändern.',
                     '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     '\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
                     '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \lm{ ω }, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
                     '– Meine Analyse sagt: Eine Anzahl von \lm{ ω } Zahlen sind vom Typ \lm{ ω - n } in den Biordinalzahlen.',
                     '– Da die Primzahlprodukt-Vermutung stimmt, liegen dann auch alle \lm{ p^{-1} \cdot ω \pm n}, mit \lm{ p } ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen dort.',
-                    '⋅ Nach meiner Meinung gibt es keine Einschränkung für die Größe von \lm{ n }. Dann sind es jeweils \lm{ 2 \cdot ω} pro jedem \lm{ p^{-1} } Zahlen.',
+                    '⋅ Nach meiner Meinung gibt es keine Einschränkung für die Größe von \lm{ n }. Dann sind es jeweils \lm{ 2 ω } pro jedem \lm{ p^{-1} } Zahlen.',
+                    '\bold{Primzahlzwillingsvermutung}',
+                    '• Können wir über den Beweis der Primzahlprodukt-Vermutung die Primzahlzwillingsvermutung beweisen?',
                     '\bold{Interessante Erkenntnisse zu Primzahlen}',
                     '• Der \jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
                     '• Mit dem \jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \lm{ \s } in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
