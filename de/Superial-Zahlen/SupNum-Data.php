@@ -391,6 +391,7 @@
 
         'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis' => array( headline_text => 'Interpretation des Beweises'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.Prim.4'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Verwandtschaft-Primzahlen-pythagoreische-Tripel' => array( headline_text => 'Verwandtschaft der Primzahlen und der pythagoreischen Tripel'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis' => array( headline_text => 'Weitere Diskussion des Beweises'/* , headline_text_short => 'X'*/),
 

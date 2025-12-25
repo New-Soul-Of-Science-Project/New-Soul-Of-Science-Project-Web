@@ -513,7 +513,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \rad(980)  =  \rad(2^{2} \cdot 5 \cdot 7^{2})  =  2 \cdot 5 \cdot 7  =  70  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \rad(980)  =  \rad*( 2^{2} \cdot 5 \cdot 7^{2} *)  =  2 \cdot 5 \cdot 7  =  70  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'können wir also formulieren,'."\n".
@@ -883,7 +883,12 @@
                       
                 'Die Ebene der rein endlichen Koordinaten, der reell algebraischen Zahlen', subline =>
                   'Ein Kreis, zum Beispiel, hat keine aktual unendlich kleinen Summanden')),
-                      
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Hinweis auf \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Verwandtschaft-Primzahlen-pythagoreische-Tripel}‹} einfügen.',
+                    ))),
+
                   array( 'text', array( text => array(
                     'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
                     ''))),
