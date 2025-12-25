@@ -136,7 +136,7 @@
                       'An dieser Stelle sind wird nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \lm{ ω } stecken oder'."\n".
                     'auch welche endlich oft mehrfach vorkommen.'."\n".
                     'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
-                    'Außer, dass vielleicht die \lm{ 2 } an \lm{ ω } fehlen könnte, weil sie in \lm{ 2 \cdot ω } wieder separat hinzu kommt.'."\n",
+                    'Außer, dass vielleicht die \lm{ 2 } an \lm{ ω } fehlen könnte, weil sie in \lm{ 2 ω } wieder separat hinzu kommt.'."\n",
                       'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
                     'Sie liefert einen Grund, dass \lm{ ω } durch \lm{ 2 } teilbar sein sollte.'."\n",
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
@@ -1548,16 +1548,17 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
-                'Die Entdeckung einer Primzahl', subline =>
+                'Die Entdeckung einer Primzahl – als multiplikative Einheit', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Über den Prozess, den wir oben zur \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl}{Berechnung der nächsten Primzahl}'."\n".
-                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen Primzahlen haben.'."\n",
+                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde ein unendlicher Prozess der ewig läuft,'."\n".
+                    'bis wir am Ende alle endlichen Primzahlen gefunden haben.'."\n",
                       'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
-                'Vielfache einer Primzahl', subline =>
+                'Das Vielfache einer Primzahl und deren Übergang zu den aktual unendlichen Einheiten \lm{ ω } und \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Anschließend wiederholt sich jede einzelne Primzahl \lm{ p }, als neu erkannte multiplikative Einheit, in ihren natürlichen Vielfachen'."\n".
@@ -1584,11 +1585,11 @@
                     ))),
                   array( 'text', array( text => array(
                     'übergehen.'."\n".
-                    'Es handelt sich also um einen Übergang von der Einheit, die eine jede endliche Primzahl \lm{ p } darstellt,'."\n".
-                    'zu der einen oder der anderen aktual unendlichen Zähleinheit \lm{ ω } oder \lm{ \s }.'."\n",
+                    'Es handelt sich also um einen Übergang von den multiplikativen Einheiten, die eine jede endliche Primzahl \lm{ p } darstellt,'."\n".
+                    'zu der aktual unendlichen Zähleinheit \lm{ ω } oder der aktual unendlichen Zähleinheit \lm{ \s }.'."\n",
                       'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
-                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, sichtbar halten.'."\n",
-                      'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss demnach auch'."\n",
+                    'Diese Information steckt in den eigentlich kürzbaren vorstehenden Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, sichtbar halten.'."\n",
+                      'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } durch ihre natürliche Vervielfachung den Übergang zu \lm{ ω } glatt absolvieren können soll, dann muss demnach auch'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1596,14 +1597,21 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
+                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben ja mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
                     'Die \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} steht hier für die Menge aller endlichen und aktual unendlichen positiven ganzen Zahlen, einschließlich der Null.'."\n",
-                      'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit des Zählens über alle endlichen Primzahlen.'."\n".
-                    'Die aber selber keine Primzahl sein kann, weil sie deshalb durch alle endlichen Primzahlen ganzzahlig teilbar sein muss.'."\n".
-                    'Alle endlichen Primzahlen sind zu \lm{ ω } ganzzahlig skalierbar.'."\n".
+                      'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit des Zählens über die endlichen natürlichen vielfachen der endlichen Primzahlen.'."\n".
+                    'Wobei aber die Zieleinheit \lm{ ω } selber keine Primzahl sein kann, weil sie ja deshalb durch alle endlichen Primzahlen ganzzahlig teilbar sein muss.'."\n".
+                    'Oder anders ausgedrückt:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Alle endlichen Primzahlen sind ganzzahlig zu \lm{ ω } skalierbar.'."\n".
+                        ''))),
+
+                  array( 'text', array( text => array(
                     'Denn die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Beweises deutlich macht; zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
-                    'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in ganz neuem Licht.'."\n",
-                      'Wenn wir hingegen nicht nur das Zählen, sondern auch alle seine Schritte, glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
+                    'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in neuem Licht.'."\n",
+                      'Wenn wir hingegen nicht nur das Zählen über Primzahlen, sondern auch alle seine Schritte, glatt ins Unendliche skalieren wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
                     'dann geht dies nur hin zur superialen Einheit \lm{ \s = ω^{ω} }.'."\n".
                     'Denn dann muss'."\n".
                     ''))),
@@ -1615,18 +1623,111 @@
                   array( 'text', array( text => array(
                     'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Verwandtschaft-Primzahlen-pythagoreische-Tripel', text =>
                       
                 'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den'."\n".
-                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{Kreis und die Kreisfläche die primitiven pythagoreischen Tripel}.'."\n",
+                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für'."\n".
+                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten}{die Kreiskoordinaten und die Kreisradien die primitiven pythagoreischen Tripel}.'."\n",
                       'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
-                    'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
-                      'Das Raster wird bei der Skalierung so dann immer feiner, im Verhältnis zur Größe.'."\n".
-                    'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
-                    'Und bei \lm{ \s } dann so fein, dass alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
+                    'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  r, x, y  \in  \mathbb{N}^{+}  }'),
+                      array( display => 'on',  latex => '{  r^{2}  =  x^{2} + y^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  r  =  *| \sqrt{ x^{2} + y^{2} } \,|*  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier kommen, ähnlich wie bei den Primzahlen, nur bestimmte Tripel aus ganzen Zahlen in Frage, mit der größten Zahl als Radius, wie:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '\begin{array}{|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'r & x & y \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '5 & 4 & 3 \\\ '."\n".
+                                                        '13 & 12 & 5 \\\ '."\n".
+                                                        '17 & 15 & 8 \\\ '."\n".
+                                                        '\vdots & \vdots & \vdots \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das Raster wird bei der Skalierung sodann immer feiner, im Verhältnis zur Größe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  \in  \mathbb{N}^{+}  }'),
+                      array( display => 'on',  latex => '{  r \cdot n  =  *| \sqrt{ *( x \cdot n *)^{2} + *( y \cdot n *)^{2} } \,|*  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In Zahlen beispielsweise:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '\begin{array}{|c|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'n & r & x & y \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '1 & 5 & 4 & 3 \\\ '."\n".
+                                                        '2 & 10 & 8 & 6 \\\ '."\n".
+                                                        '3 & 15 & 12 & 9 \\\ '."\n".
+                                                        '\vdots & \vdots & \vdots & \vdots \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '1 & 13 & 12 & 5 \\\ '."\n".
+                                                        '2 & 26 & 24 & 10 \\\ '."\n".
+                                                        '3 & 39 & 36 & 15 \\\ '."\n".
+                                                        '\vdots & \vdots & \vdots & \vdots \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '1 & 17 & 15 & 8 \\\ '."\n".
+                                                        '2 & 34 & 30 & 16 \\\ '."\n".
+                                                        '3 & 51 & 45 & 24 \\\ '."\n".
+                                                        '\vdots & \vdots & \vdots & \vdots \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn wir den Radius oder die Koordinaten über einen ganzzahligen Faktor zu einer aktual unendlichen Einheit machen wollen, dann geht das nicht in jedem Fall ganzzahlig über \lm{ ω }, dann in Formeln als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  r \cdot \frac{ ω }{ r }  =  *| \sqrt{ *( x \cdot \frac{ ω }{ r } *)^{2} + *( y \cdot \frac{ ω }{ r } *)^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  r \cdot \frac{ ω }{ x }  =  *| \sqrt{ *( x \cdot \frac{ ω }{ x } *)^{2} + *( y \cdot \frac{ ω }{ x } *)^{2} } \,|*  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn \lm{ \frac{ ω }{ r } } oder \lm{ \frac{ ω }{ x } } sind nicht unbedingt ganzzahlig, weil im Allgemeinen weder \lm{ r ?= \rad(r) } noch \lm{ x ?= \rad(x) } sind,'."\n".
+                    'also ein Produkt von Primzahlen einfacher Potenz, das \lm{ ω } ganzzahlig teilt.'."\n",
+                      'Das bekommen wir nur über \lm{ \s = ω^{ω} } hin'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  r \cdot \frac{ \s }{ r }  =  *| \sqrt{ *( x \cdot \frac{ \s }{ r } *)^{2} + *( y \cdot \frac{ \s }{ r } *)^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  r \cdot \frac{ \s }{ x }  =  *| \sqrt{ *( x \cdot \frac{ \s }{ x } *)^{2} + *( y \cdot \frac{ \s }{ x } *)^{2} } \,|*  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn \lm{ \s } ist im Produkt mit jeder rationalen Zahl und sogar mit jeder reell algebraischen Zahl eine aktual unendlich große ganze Zahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s }{ a }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  \s  =  a \cdot \frac{ \s }{ a }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Denn bei \lm{ \s } wird das aktual unendliche Raster im Verhältnis zur Größe dann so fein, dass alle reell algebraischen Zahlen auf dem Raster liegen.'."\n".
+                    'So erhalten wir beispielsweise auch für \lm{ r = *| \sqrt{2} \,|*, x = y = 1 } diesbezüglich eine Lösung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s }{ *| \sqrt{2} \,|* }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  *| \sqrt{2} \,|* \cdot \frac{ \s }{ *| \sqrt{2} \,|* }  =  *| \sqrt{ *( 1 \cdot \frac{ \s }{ *| \sqrt{2} \,|* } *)^{2} + *( 1 \cdot \frac{ \s }{ *| \sqrt{2} \,|* } *)^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \s  =  *| \sqrt{2} \,|* \cdot \frac{ \s }{ *| \sqrt{2} \,|* }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Also können wir auch alle reell algebraischen Zahlen, quasi als geometrisch arithmetische Einheiten, ganzzahlig zu \lm{ \s } skalieren.'."\n".
+                    'Die pythagoreischen Tripel sind also das für die arithmetische Geometrie, was die Primzahlen für die Elemente der Menge aller natürlichen Zahlen sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
@@ -1856,7 +1957,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pr\!*( ω *)  =  ω \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ ω, \\\ \qquad\qquad\qquad\quad\; 2 \cdot ω, \\\ \qquad\qquad\qquad\quad\; 3 \cdot ω, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot ω, \\\ \qquad\qquad\qquad\quad\; 5 \cdot ω, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot ω, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pr\!*( ω *)  =  ω \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ ω, \\\ \qquad\qquad\qquad\quad\; 2 ω, \\\ \qquad\qquad\qquad\quad\; 3 ω, \\\ \qquad\qquad\qquad\quad\; 2^{2} ω, \\\ \qquad\qquad\qquad\quad\; 5 ω, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot ω, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Erweitert sieht diese so aus:'."\n".
