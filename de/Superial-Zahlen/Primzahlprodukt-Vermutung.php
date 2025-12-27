@@ -1767,7 +1767,7 @@
                   array( 'text', array( text => array(
                     'Wir stellen fest, dass es uns über die Erzeugung jeder endlichen Primzahl gelungen ist,'."\n".
                     'die natürlichen Zahlen durch eine vollständige Induktion zu konstruieren.'."\n".
-                    'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter,'."\n".
+                    'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter'."\n".
                     'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
@@ -1775,14 +1775,14 @@
                 'Jeder Primzahl-Schritt teilt \lm{ ω }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Jeder dieser Schritte, also jede erzeugte Primzahl, ist, nach dem Beweis, Teiler des vollständigen'."\n".
+                    'Jeder dieser Schritte, also jede erzeugte Primzahl, ist nach dem Beweis, und wie wir im Kapitel zuvor sahen, Teiler des vollständigen'."\n".
                     'aktual unendlichen Ergebnisses \lm{ ω }.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Jeder der Primzahl-Schritte \lm{ p = \lpr\!*( p\overline{\#} *) }'."\n".
-                      'teilt die Anzahl aller natürlichen Zahlen \lm{ ω } ganzzahlig'."\n".
+                      'teilt die Anzahl aller natürlichen Zahlen \lm{ ω = \# ω = ω\overline{\#} } ganzzahlig'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -1869,8 +1869,11 @@
                     'Primzahlen nicht ganzzahlig teilbar.'."\n".
                     'Wir erhalten also eine erweiterte Qualität bezüglich unterschiedlicher Primfaktoren einer natürlichen Zahl.'."\n",
                       'In Bezug auf die Vervielfachung der selben Primzahl durch ihre steigende Potenz in einem'."\n".
-                    'Produkt, bleibt die Qualität dieser Teilungsaussage unverändert und damit unabhängig von ihrer Potenz.'."\n",
-                      'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω } mit einem Produkt'."\n".
+                    'Produkt, wie in \lm{ 6 = 2^{2} \cdot 3 = 4 \cdot 3 = 12 } bei \lm{ 13 = 12 + 1 = *( 2^{2} \cdot 3 *) + 1 },'."\n".
+                    'bleibt die Qualität dieser Teilungsaussage zu oben unverändert.'."\n".
+                    'Denn weder \lm{ 2 }, noch \lm{ 4 }, noch \lm{ 3 } teilen die \lm{ 13 }.'."\n".
+                    'Damit sind alle solchen Aussagen völlig unabhängig von der Potenz aller Primzahlen im Produkt.'."\n",
+                      'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω = \mathbb{N} } mit einem Produkt'."\n".
                     'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
@@ -1893,9 +1896,9 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der ›Satz des Euklid‹ macht deutlich, dass die neu hinzukommenden, immer größeren Primzahlen'."\n".
-                    'wieder und wieder außerhalb des bisherigen Rasters der kleineren Zahlen liegen.'."\n".
-                    'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
-                    'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
+                    'immer wieder und wieder außerhalb des bisherigen Rasters der kleineren Zahlen liegen.'."\n".
+                    'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner im Verhältnis zur erreichten Größe.'."\n",
+                      'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
