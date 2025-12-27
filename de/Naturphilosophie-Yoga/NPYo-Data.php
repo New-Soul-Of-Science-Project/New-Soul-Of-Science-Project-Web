@@ -61,7 +61,7 @@
       text_titel_short => 'Der Anker im Milchocean',
       text_undertitel_h2 => 'Ein metaphysisches und alchemisches Bild der Welt und ihrer Schöpfung',
       // text_titel_discr_h3 => 'In diesem Bild der Entstehung des Lebens und des Bewusstseins; der Schöpfung, die sich durch einen metaphysischen Prozess des Tauziehens der Urkräfte herausbildet und durch Hoffnung und Glaube in der Tiefe des Unbekannten, des Jenseits, mit Hilfe der Reinigung von Körper und Seele verankert',
-      text_titel_discr_h3 => 'Durch einen Prozess des Tauziehens der Urkräfte im Milchocean – dem fruchtbaren Ursee – entsteht die Schöpfung, die Materie, das Bewusstsein und das Leben, welches sich durch Hoffnung und Glaube in der Tiefe des Ursees – im Unbekannten, im Jenseits – mit Hilfe der Reinigung von Körper und Seele sicher verankert, die das Licht bringt',
+      text_titel_discr_h3 => 'Durch einen Prozess des Tauziehens der Urkräfte im Milchocean – dem fruchtbaren Ursee – entsteht die Schöpfung, die Materie, das Bewusstsein und das Leben, welches sich durch Hoffnung und Glaube in der Tiefe des Ursees – im Unbekannten, im Jenseits – mit Hilfe der Reinigung von Körper und Seele sicher verankert, die das Licht der Erkenntnis bringt',
       jump_ary => array(
         'OM:NPYo:Anker-im-Milchocean:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
