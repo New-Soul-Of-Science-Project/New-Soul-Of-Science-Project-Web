@@ -14,7 +14,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    // '• X',
+                    '• \italic{Samudra Manthana} in der Überschrift und im Link hinzufügen.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -84,16 +84,395 @@
                     'berichtete er, dass in hinduistischen Tempeln Butterlampen brannten.'."\n",
                       'Unvermittelt musste ich an Fruchtbarkeit und an das Licht der Erleuchtung denken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
                                            
-                'Den Milchocean quirlen — Churning the Sea of Milk', subline =>
-                  'Das Rühren des Milchmeers als alchemistisches Urbild der Materialisierung, Reinigung und Läuterung')),
+                'Das Umrühren des Milchmeers — Churning the Sea of Milk', subline =>
+                  'Ein Aufwirbeln oder Quirlen des Milchmeers als alchemistisches Urbild der Schöpfung beziehungsweise Materialisierung, Reinigung und Läuterung')),
+                  array( 'text', array( text => array(
+                    '\cond{Erzählt nach der Internetseite} \italic{\jump[https://mantras.co.in/2025/10/22/samudra-manthan-complete-guide-to-the-churning-of-the-ocean-story-meaning-spiritual-significance]{}{›Samudra Manthan: Complete Guide to the Churning of the Ocean Story, Meaning & Spiritual Significance‹}}\footnote{\cite{Chauhan:SamudraManthan:2025}}, \cond{übersetzt mit} \jump[https://deepl.com]{}{DeepL.com}\cond{.}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Der Fluch des Weisen Durvasa', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Geschichte beginnt mit \italic{Indra}, dem König von \italic{Svarga} (Himmel), der auf seinem prächtigen Elefanten \italic{Airavata} reitet.'."\n".
+                    'Während seiner Reise begegnete er dem mächtigen und für sein aufbrausendes Temperament bekannten Weisen \italic{Durvasa},'."\n".
+                    'der ihm eine heilige Girlande schenkte, die von himmlischen Nymphen gesegnet worden war.'."\n".
+                    'Diese Girlande war kein gewöhnliches Geschenk – sie war die Wohnstätte von \italic{Sri} (Glück und Wohlstand).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'In einem Anfall von Arroganz oder vielleicht auch Unachtsamkeit legte Indra die Girlande auf Airavatas Rüssel.'."\n".
+                    'Der Elefant, irritiert durch den starken Duft und das Summen der Bienen, die dieser anzog, warf die Girlande zu Boden und zertrampelte sie.'."\n".
+                    'Als er diese Respektlosigkeit gegenüber einem heiligen Opfer sah, brach der Zorn des Weisen Durvasa hervor.'."\n".
+                    'Er sprach einen verheerenden Fluch aus:'."\n".
+                    'Indra und alle \italic{Devas} würden ihrer Kraft, ihrer Vitalität und ihres Glücks beraubt werden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Der Fluch zeigte sofort Wirkung.'."\n".
+                    'Die Devas wurden von Tag zu Tag schwächer und verloren die Kämpfe gegen die \italic{Asuras}, angeführt vom mächtigen König \italic{Bali}.'."\n".
+                    'Die drei Welten (\italic{Triloka}) fielen unter die Kontrolle der Asuras, wodurch der Kosmos in Chaos und Dunkelheit versank.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Der weise Rat Vishnus', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Verzweifelt und machtlos wandten sich Indra und die Devas an Lord \italic{Vishnu} in seiner kosmischen Wohnstätte auf der Schlange \italic{Shesha},'."\n".
+                    'die auf dem Ozean aus Milch schwamm.'."\n".
+                    'Sie schilderten ihm ihre Notlage und baten um göttliche Führung.'."\n".
+                    'Vishnu, der Erhalter des Universums, offenbarte ihnen eine tiefgründige Lösung:'."\n".
+                    'Sie mussten den kosmischen Milchozean (\italic{Kshira Sagara}) aufwühlen, um \italic{Amrita}, den Nektar der Unsterblichkeit,'."\n".
+                    'zu gewinnen, der ihnen ihre Macht zurückgeben und ihnen ewiges Leben schenken würde.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Vishnu warnte jedoch, dass diese Aufgabe gewaltig sei – unmöglich für die Devas allein in ihrem geschwächten Zustand.'."\n".
+                    'Sie müssten eine unwahrscheinliche Allianz mit ihren Erzfeinden, den Asuras, eingehen und ihnen versprechen, den Nektar gerecht zu teilen.'."\n".
+                    'Vishnu versicherte den Devas heimlich, dass er durch göttliches Eingreifen dafür sorgen würde, dass nur sie den Amrita erhielten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Vorbereitung des großen Rührens des Milchmeers', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Der Rührstab – Berg Mandara', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Devas und Asuras entwurzelten den Berg \italic{Mandara} (auch \italic{Mandarachal} genannt), einen massiven Gipfel und Ausläufer des Berges \italic{Meru} (der kosmischen Achse),'."\n".
+                    'um ihn als Rührstab zu verwenden.'."\n".
+                    'Der Berg war so gewaltig, dass viele himmlische Wesen beim Transport vor Erschöpfung starben.'."\n".
+                    'Lord Vishnu, der auf seinem göttlichen Reittier \italic{Garuda} ritt, belebte sie wieder und trug den Berg zur Mitte des Ozeans.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Das Rührseil – Vasuki', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Sie brauchten ein ebenso starkes Seil zum Umrühren.'."\n".
+                    '\italic{Vasuki}, der König der Schlangen, der Lord \italic{Shivas} Hals schmückte, meldete sich freiwillig für diese kosmische Aufgabe.'."\n".
+                    'Die Asuras, die dies für prestigeträchtiger hielten, verlangten, Vasukis Kopf zu halten, während die Devas sich bereit erklärten,'."\n".
+                    'den Schwanz zu halten.'."\n".
+                    'Diese Entscheidung sollte sich später als vorteilhaft für die Devas erweisen,'."\n".
+                    'da die giftigen Dämpfe aus Vasukis Mund in erster Linie die Asuras beeinträchtigten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Das Fundament des Rührstabs – Vishnus Schildkröten-Avatar Kurma', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Als der Berg Mandara ins Meer gesetzt wurde, sank er aufgrund seines enormen Gewichts in die Tiefe.'."\n".
+                    'Vishnu nahm sofort die Gestalt seines Avatars \italic{Kurma} (Schildkröte) an, tauchte unter den Berg und stützte ihn auf seinem riesigen Panzer.'."\n".
+                    'Dadurch wurde der Rührstab stabilisiert, sodass der kosmische Vorgang durchgeführt werden konnte.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Der Rührprozess und seine Herausforderungen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Mit dem Berg Mandara auf Kurmas Rücken balanciert, wickelte sich Vasuki um den Berg, die Devas zogen am hinteren Ende und die Asuras am vorderen Ende.'."\n".
+                    'Das rhythmische Hin- und Herziehen brachte den Berg zum Drehen und wirbelte das Milchmeer mit enormer Kraft auf.'."\n".
+                    'Heilkräuter aus den umliegenden Bergen fielen in das Meer und verliehen ihm göttliche Eigenschaften.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Als das Rühren immer heftiger wurde, führte Vasukis Anstrengung dazu, dass er Feuer spuckte und giftige Dämpfe aus seinen tausend Mündern ausstieß.'."\n".
+                    'Diese giftigen Emissionen wirkten sich in erster Linie auf die Asuras aus, die seinen Kopf festhielten, und schwächten sie erheblich,'."\n".
+                    'obwohl sie in ihrer Gier nach Unsterblichkeit nicht nachließen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Die Entstehung von Halahala: Das tödliche Gift', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das erste Produkt der Umwälzung war kein Schatz, sondern Schrecken – \italic{Halahala} (oder \italic{Kalakuta}), ein so tödliches Gift,'."\n".
+                    'dass allein seine Anwesenheit die gesamte Schöpfung zu vernichten drohte.'."\n".
+                    'Die Dämpfe des Giftes verbreiteten sich über die drei Welten und verursachten allgemeine Panik.'."\n".
+                    'Weder Devas noch Asuras konnten mit dieser katastrophalen Substanz umgehen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'In diesem Moment der kosmischen Krise wandten sich alle Wesen an Lord Shiva, den Zerstörer und Transformator.'."\n".
+                    'Shiva zeigte tiefes Mitgefühl und Selbstlosigkeit und beschloss, das Gift zu sich zu nehmen, um das Universum zu retten.'."\n".
+                    'Seine Gemahlin, die Göttin \italic{Parvati}, drückte jedoch sofort ihre Hand gegen seinen Hals, um zu verhindern,'."\n".
+                    'dass das Gift in seinen Körper gelangte und ihn von innen zerstörte.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Das Gift blieb in Shivas Kehle stecken und färbte sie dauerhaft blau.'."\n".
+                    'Für diese höchste Opfergabe erhielt Shiva den Beinamen \italic{Neelakantha} (नीलकण्ठ) – „der Blaukehlige“.'."\n".
+                    'Dieses Ereignis wird während \italic{Maha Shivaratri} gefeiert, wenn Gläubige die ganze Nacht wach bleiben, um Shivas Opfer zu gedenken.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Die 14 göttlichen Schätze (Ratnas), die erschienen sind', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nachdem das Gift neutralisiert worden war, wurde das Umrühren fortgesetzt, wodurch vierzehn kostbare Schätze gewonnen wurden'."\n".
+                    '(obwohl verschiedene puranische Texte zwischen 9 und 14 Gegenstände aufführen).'."\n".
+                    'Jeder Schatz besaß einzigartige göttliche Eigenschaften und wurde von verschiedenen himmlischen Wesen beansprucht:'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '1. Halahala (हलाहल) – Das tödliche Gift', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Shiva'."\n",
+                    '\bold{Bedeutung:} Steht für die unvermeidlichen Herausforderungen des Lebens und die Notwendigkeit göttlicher Opfer, um kollektive Widrigkeiten zu überwinden.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '2. Kamadhenu (कामधेनु) – Die göttliche Wunschkuh', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} \italic{Sage Vasishtha} und die \italic{Rishis}'."\n",
+                    '\bold{Bedeutung:} Symbolisiert Überfluss, Nahrung und die Erfüllung gerechter Wünsche. Sie konnte ihrem Hüter alles bieten, was er sich wünschte.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '3. Ucchhaishravas (उच्चैःश्रवस्) – Das siebenköpfige himmlische Pferd', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Ursprünglich die Asuras, später Indras Reittier'."\n".
+                    '\bold{Bedeutung:} Steht für Kraft, Adel und Schnelligkeit. Der Urtyp aller Pferde.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '4. Airavata (ऐरावत) – Der weiße Elefant mit vier Stoßzähnen', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Indra (König der Devas)'."\n",
+                    '\bold{Bedeutung:} Symbol für Königtum, Weisheit und regenbringende Wolken. Wurde zu Indras wichtigstem Reittier.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '5. Kaustubha Mani (कौस्तुभ मणि) – Das göttliche Juwel', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Vishnu'."\n",
+                    '\bold{Bedeutung:} Der strahlendste Edelstein, der existiert, steht für Bewusstsein und göttliches Licht. Vishnu trägt ihn auf seiner Brust.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '6. Kalpavriksha (कल्पवृक्ष) – Der Wunschbaum', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Die Devas, gepflanzt in Indras Himmel'."\n",
+                    '\bold{Bedeutung:} Erfüllt alle Wünsche derer, die darunter sitzen, und symbolisiert göttliche Großzügigkeit und spirituelle Erfüllung.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '7. Rambha und die Apsaras (अप्सरा) – Himmlische Tänzerinnen', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Die Devas'."\n",
+                    '\bold{Bedeutung:} Sie verkörpern Schönheit, Kunst und die ästhetische Dimension des Daseins. Sie treten am Hofe Indras auf.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '8. Göttin Lakshmi (लक्ष्मी) – Die Verkörperung von Reichtum und Wohlstand', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Vishnu (sie wählte ihn zu ihrem ewigen Gemahl)'."\n",
+                    '\bold{Bedeutung:} Die Göttin des materiellen und spirituellen Wohlstands, des Glücks und des Überflusses. Ihr Erscheinen brachte dem Kosmos das Glück zurück.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '9. Parijata-Baum (पारिजात) – Der duftende göttliche Baum', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Indra (später kam es zu Konflikten, als \italic{Krishna} es für \italic{Satyabhama} nahm)'."\n",
+                    '\bold{Bedeutung:} Ihre Blüten verwelken nie und verströmen einen göttlichen Duft, der für ewige Schönheit und die Freuden des Himmels steht.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '10. Chandra (चन्द्र) – Der Mond', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Shiva (der es auf seinen Kopf setzte)'."\n",
+                    '\bold{Bedeutung:} Steht für den Verstand, die Emotionen und die zyklische Natur der Zeit. Sein Wachsen und Schwinden symbolisiert den Rhythmus des Lebens.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '11. Varuni oder Sura (वारुणी) – Die Göttin des Weines', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Die Asuras'."\n",
+                    '\bold{Bedeutung:} Steht für Rausch, Vergnügen und sinnliche Erfahrungen, die sowohl zu Freude als auch zu Wahnvorstellungen führen können.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '12. Panchajanya (पाञ्चजन्य) – Vishnus Muschelhorn', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Vishnu'."\n",
+                    '\bold{Bedeutung:} Sein Klang repräsentiert die ursprüngliche Schwingung von \italic{Om}, die verwendet wird, um den Sieg des Guten über das Böse zu verkünden.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '13. Sharanga (शारंग) – Vishnus Bogen und andere Waffen', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Lord Vishnu'."\n",
+                    '\bold{Bedeutung:} Steht für göttlichen Schutz und die Kraft, das Dharma aufrechtzuerhalten.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  '14. Dhanvantari (धन्वन्तरि) – Der göttliche Arzt', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Bezug:} Das Universum (er wurde zum Begründer des \italic{Ayurveda})'."\n",
+                    '\bold{Bedeutung:} Er erschien mit dem \italic{Kalasha}, dem Krug des Amrita enthält. Er steht für Heilung, Medizin und Gesundheit. Er wird als Vater der \italic{ayurvedischen Medizin} verehrt.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\cond{Die Internetseite erzählt die Geschichte leider nicht zu Ende. Also setze ich sie aus anderen Quellen fort.}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Das erscheinen von Dhanvantari mit Amrita', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Dhanvantari, der göttliche Arzt, steigt aus dem Milchmeer mit dem Krug des Amrita empor.'."\n".
+                    'Asuras reagieren schnell:'."\n".
+                    'Sie reißen den Krug an sich.'."\n".
+                    'Die Devas sind entmutigt; ohne Amrita bleibt ihre Schwäche bestehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Vishnu als Mohini', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Vishnu erscheint als \italic{Mohini}, der betörenden, überirdischen Schönheit.'."\n".
+                    'Sie bietet Schlichtung an – aber nur, wenn alle bedingungslos ihren Anweisungen folgen:'."\n".
+                    'Getrenntes Sitzen:'."\n".
+                    'Devas auf die eine, Asuras auf die andere Seite (Ordnung, kein Durcheinander).'."\n".
+                    'Kein Streit, keine Unterbrechung während der Verteilung.'."\n".
+                    'Blick auf Mohini richten, nicht auf den Krug (die Szene wird zur Initiation: Vertrauen statt Arglist).'."\n".
+                    'Die Asuras, verzaubert von Mohinis Anmut, stimmen zu und übergeben ihr freiwillig den Krug.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Die „Verteilung“, die keine ist', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Mohini beginnt zu „verteilen“, schenkt aber ausschließlich den Devas ein.'."\n".
+                    'Die Asuras bleiben staunend, gebannt – zunächst ohne zu protestieren.'."\n".
+                    'Einzelne Asuras merken es (manche Fassungen nennen Bali als Wortführer), doch keiner greift durch; Mohini beruhigt, „alles geschehe gerecht“.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Der Rāhu/Ketu-Moment (Eklipsen-Mythos)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein Asura verkleidet sich als Deva und setzt sich zwischen \italic{Sūrya} (Sonne) und Chandra (Mond).'."\n".
+                    'Als der Amrita-Löffel seine Zunge berührt, verraten ihn Sonne und Mond.'."\n",
+                      'Zur Strafe schleudert Vishnu den \italic{Sudarśana}-Diskus auf den Asura:'."\n".
+                    'Sein Kopf wird abgetrennt und lebt nun separat als \italic{Rāhu} weiter, während sein Leib fortan als \italic{Ketu} lebt.'."\n".
+                    'Dies passiert, weil Amrita, der Nektar der Unsterblichkeit, schon seinen Hals berührt hat und so Rāhu unsterblich machte.'."\n".
+                    'Seither versucht er, Sonne und Mond zu verschlingen, was in den Eklipsen zu sehen ist.'."\n".
+                    '(In manchen Erzählungen wird betont, dass der Nektar nicht den Leib erreichte, darum bleibt der Rumpf sterblich oder ohnmächtig: Erklärung für Ketu.)'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Abschluss: Stärkung & Neuordnung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nachdem die Devas getrunken haben, kehrt ihre Kraft zurück.'."\n".
+                    'Es folgt die Schlacht; die Asuras werden zurückgedrängt.'."\n".
+                    'Ordnung (dharma) ist geklärt und erneuert.'."\n".
+                    'Der Fluch Durvāsas – die Anfangskrise – ist überwunden; Lakṣmī ist zurück, Glanz (tejas/śrī) wiederhergestellt.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'XXX', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Samudra Manthana\footnote{\const{NPYo_g_footnote_text_SamudraManthana}} (das Quirlen des Ozeans) (Sanskrit: समुद्रमन्थन; lit. "churning of the ocean")'."\n".
+                    'ist eine zentrale Erzählung der hinduistischen Mythologie,'."\n".
+                    'in der Götter (Devas) und Dämonen (Asuras) zusammenarbeiten den Milchozean aufzurühren – zu quirlen –, um Amrita,'."\n".
+                    'den Nektar der Unsterblichkeit, für sie alle zu gewinnen.'."\n".
+                    'Dabei schöpfen sie auch viele andere Schätze und ein tödliches Gift (Halahala), das von Shiva getrunken und so neutralisiert wird, damit es die Welt nicht gefährdet.'."\n".
+                    'Vishnu hilft, in Form seines Avatars Kurma, einer riesigen Schildkröte, den Berg Mandara als Quirlstab zu stützen, damit das Werk vollbracht werden kann.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Die Geschichte im Detail:', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der Grund:'."\n".
+                    'Die Götter und Dämonen verbündeten sich, um durch das Quirlen des Milchmeeres den Amrita zu erlangen, der ihnen Unsterblichkeit verleihen würde. \\\\'."\n".
+                    'Das Werkzeug:'."\n".
+                    'Der massive Berg Mandara diente als Quirlstab, und die riesige Schlange Vasuki wurde als Seil um den Berg gewickelt. \\\\'."\n".
+                    'Vishnus Rolle:'."\n".
+                    'Als der Berg zu sinken begann, nahm Vishnu die Form des Kurma (einer riesigen Schildkröte) an, um ihn auf seinem Rücken zu stützen. \\\\'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Die Ergebnisse:', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Halahala-Gift:'."\n".
+                    'Zuerst trat ein furchtbares Gift aus, das die Welt zu vernichten drohte. Shiva trank es, um die Schöpfung zu retten, und erhielt dadurch einen blauen Hals (Neelkanth). \\\\'."\n".
+                    'Schätze:'."\n".
+                    'Viele göttliche Wesen und Schätze traten hervor, darunter die Kuh Kamadhenu, das Pferd Uchchaihshravas, der Wunschbaum Kalpavriksha, die Göttin Lakshmi und der Mond. \\\\'."\n".
+                    'Amrita:'."\n".
+                    'Schließlich erschien Dhanvantari mit dem Topf voller Amrita. \\\\'."\n".
+                    'Der Kampf um Amrita:'."\n".
+                    'Die Götter und Dämonen kämpften um den Nektar. Vishnu verwandelte sich in die schöne Mohini, um die Asuras abzulenken, enthauptete den Dämon Rahu, der versuchte, Amrita zu trinken, wodurch Rahu und Ketu entstanden. \\\\'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Bedeutung:', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Geschichte symbolisiert den ewigen Kampf zwischen Gut und Böse, die Herausforderungen des Lebens und die Belohnungen, die durch Geduld, Teamwork und Opferbereitschaft (wie das von Shiva) erzielt werden können, und bietet tiefe spirituelle Lehren.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Ablauf in 12 Schritten (kanonische Grundform)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Gern.'."\n".
+                    'Hier ist die Geschichte vom Rühren des Milchozeans (Samudra Manthana) einmal als Ablauf in Schritten und danach als kurzer Erzähltext.'."\n".
+                    'Am Ende nenne ich die wichtigsten Varianten/Hinweise.'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Schwächung der Devas} – Durch Indras Hybris (z. B. Beleidigung des Weisen Durvasa) verlieren die Devas Kraft und Herrschaft.',
+                        '\bold{Rat Vishnus} – Vishnu rät, den Ozean der Milch zu rühren, um Amṛta (Unsterblichkeits-Essenz) zu gewinnen.',
+                        '\bold{Bündnis mit den Asuras} – Devas und Asuras schließen einen Zweckbund: gemeinsame Arbeit, später „gerechte“ Teilung des Amṛta.',
+                        '\bold{Quirl & Seil} – Berg Mandara wird zum Rührstab, Vāsuki, der Schlangenkönig, zum Seil.',
+                        '\bold{Der Berg sinkt} – Mandara versinkt im Ozean. Vishnu nimmt die Schildkröten-Form Kūrma an und trägt den Berg auf seinem Panzer.',
+                        '\bold{Das Rühren beginnt} – Devas am einen, Asuras am anderen Ende der Schlange: Ziehen – Lösen – Ziehen im kosmischen Takt.',
+                        '\bold{Das Gift} – Zuerst steigt das tödliche Hālāhala (Kālakūṭa) auf. Śiva trinkt es, Pārvatī hält es ihm im Hals – er wird Nīlakaṇṭha („blaukehliger“).',
+                        '\bold{Die Kostbarkeiten} – Aus dem Rühren erscheinen die Ratnas („Schätze“), u. a.: \\\\'."\n".
+                        '• Kamadhenu (Wunschkuh), Uccaiḥśravas (Ross), Airāvata (Elefant) \\\\'."\n".
+                        '• Kalpavṛkṣa (Wunschbaum), Apsaras (Himmelsmädchen) \\\\'."\n".
+                        '• Chandra (Mond), Kālīya-/Nāga-Gaben (versch. Versionen) \\\\'."\n".
+                        '• Varuṇī (Wein/Göttin der Trankkunst, in manchen Fassungen) \\\\'."\n".
+                        '• Kaustubha (Juwel, später an Vishnus Brust), Lakṣmī (Göttin des Glücks, wählt Vishnu)',
+                        '\bold{Dhanvantari mit dem Krug} – Schließlich steigt Dhanvantari, der göttliche Arzt, aus dem Meer mit dem Krug Amṛta.',
+                        '\bold{Streit um den Krug} – Die Asuras reißen den Krug an sich. Vishnu erscheint als Mohinī (betörende Gestalt), setzt die Asuras außer Gefecht und verteilt das Amṛta den Devas.',
+                        '\bold{Rāhu/Ketu} – Ein Asura in Verkleidung kostet Amṛta; Sonne und Mond verraten ihn, Vishnu köpft ihn. Sein Kopf (Rāhu) und Leib (Ketu) leben fort und verfolgen Sonne/Mond (Eklipsen-Motiv).',
+                        '\bold{Wiederherstellung der Ordnung} – Die Devas gewinnen Stärke & Herrschaft zurück; die Asuras werden geschlagen. Der Kosmos ist geklärt.',
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Kurztext (erzählerisch)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Als die Götter durch eigene Verblendung schwach wurden, wies Vishnu ihnen einen Weg zurück zur Ordnung: „Rührt den Ozean der Milch und hebt daraus das Amṛta.“ Die Devas schlossen, widerwillig, ein Bündnis mit ihren Gegnern, den Asuras. Sie holten den Berg Mandara als Quirl und die Schlange Vāsuki als Seil. Doch der Berg versank – bis Vishnu, als Schildkröte Kūrma, unter ihn tauchte und ihn auf seinem Panzer trug.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Nun setzten Devas und Asuras im Wechsel Zug um Zug die Welt in Bewegung. Zuerst stieg das schwarze Gift Hālāhala auf; Śiva nahm es in sich auf, und Pārvatī hielt es ihm im Hals – sein Kehlkopf wurde blau. Dann kamen die Kostbarkeiten: Elefant und Ross, Wunschkuh und -baum, der Mond, die Apsaras, Edelsteine – und Lakṣmī, die Vishnu erwählte. Schließlich stieg Dhanvantari aus der Flut, den Krug der Unsterblichkeit in den Händen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Als die Asuras den Krug raubten, erschien Vishnu als Mohinī, die Täuschende. Mit Lächeln und List ließ er die Asuras warten und schenkte das Amṛta den Göttern. Ein Asura, der mittrank, verlor den Leib und wurde als Rāhu und Ketu an den Himmel verbannt. So kehrten Kraft und Ordnung zu den Devas zurück – denn was gerührt war, hatte sich geklärt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Wichtige Hinweise & Varianten', subline =>
+                    '')),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Reihenfolge der „Schätze“} variiert je nach Quelle (Mahābhārata, Viṣṇu-Purāṇa, Bhāgavata-Purāṇa u. a.).',
+                        '\bold{Rollen am Seil} (wer Kopf/Schwanz von Vāsuki hält) wechseln in den Fassungen.',
+                        '\bold{Varuṇī/Wein:} teils Grund der späteren „sura/asura“-Volksetymologie („die einen nahmen die surā an/lehnten sie ab“).',
+                        '\bold{Lakṣmīs „Rückkehr“:} Ihr Erscheinen beim Churning markiert oft die Wieder-Erscheinung des Glücks in einer Krisenzeit.',
+                        '\bold{Kernbilder} sind stabil: Kūrma als Fundament, Mandara als Achse/Quirl, Vāsuki als Seil, Gift→Klärung→Amṛta, Mohinī als List.',
+                    ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'youtube',
                     array_merge( $NPYo_g_youtube_ary_ChurningTheSeaOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk'))),
+
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'youtube',
+                    array_merge( $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-TheChurningOfTheOceanOfMilk'))),
 
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -139,7 +518,7 @@
                     // '• X',
                     ))), */
                       
-                  /* array( 'headline', array( jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
                                            
                 'X')), */
                       

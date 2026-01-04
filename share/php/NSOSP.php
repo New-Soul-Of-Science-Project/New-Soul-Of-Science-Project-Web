@@ -333,6 +333,7 @@
   $NPYo_g_footnote_text_HermesTrismegistos      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HermesTrismegistos:2019}.';
   $NPYo_g_footnote_text_Hermetik                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Hermetik:2019}.';
   $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}.';
+  $NPYo_g_footnote_text_SamudraManthana         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SamudraManthana:2025}.';
   $NPYo_g_footnote_text_Trimurti                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Trimurti:2016}.';
   $NPYo_g_footnote_text_YinUndYang              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:YinUndYang:2019}.';
   $NPYo_g_footnote_text_ZeitDjetNeheh           = '\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
@@ -672,6 +673,13 @@
                                                                    'Dies ist eine zentrale hinduistische Legende, bei der Götter (Devas) und Dämonen (Asuras) gemeinsam den kosmischen Ozean aufwirbelten, um den Nektar der Unsterblichkeit (Amrita) zu gewinnen.'."\n".
                                                                    'Dafür verwendeten sie den Berg Mandara als Quirlstab und die Schlangenkönigin Vasuki als Quirlseil.'."\n".
                                                                    'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
+                                                                   '');
+
+  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk = array( source => 'https://www.youtube-nocookie.com/embed/MItyUwPAjLA?si=cXzh9t8tPMIjJCVp', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'XXX'."\n".
+                                                                   'XXX'."\n".
+                                                                   'XXX'."\n".
+                                                                   'XXX'."\n".
                                                                    '');
 
   $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =

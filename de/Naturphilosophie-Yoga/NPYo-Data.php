@@ -67,6 +67,7 @@
                    
           // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
             'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+            'OM:NPYo:Anker-im-Milchocean:YouTube-TheChurningOfTheOceanOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
                    
         // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
       ),
