@@ -2195,7 +2195,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen:X', text =>
                       
                 'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
@@ -2219,15 +2219,20 @@
                     'So wäre es ein sehr großes Rätsel, wie dieses Produkt irgendwann nicht weiter wächst, so, dass'."\n".
                     'die natürlichen Zahlen es wieder einhohlen und letztendlich gleich groß sein können.'."\n".
                     'Ich würde aus meiner heutigen Sicht sagen, dass dies ein oder sogar das wesentliche Geheimnis der'."\n".
-                    'Primzahlen ist.'."\n",
-                      'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?'."\n",
-                      'Aus meiner Sicht könnte dies nur dann der Fall sein, wenn die Anzahl der Primzahlen'."\n".
+                    'Primzahlen ist.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen:X', text =>
+                  'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Aus meiner Sicht könnte dies nur dann der Fall sein, wenn die Anzahl der Primzahlen'."\n".
                     'unter den extrem großen natürlichen Zahlen minimal wird. \color{*Bearb}{(Ist ›minimal‹ die korrekte Formulierung? Und ist diese Annahme notwendig?)}'."\n".
                     'Und mit Hilfe des \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹},'."\n".
                     'eines Beweises, dass es unendlich viele Primzahlen gibt, können wir erkennen, was das bedeuten sollte.'."\n".
-                    'Eine Minimierung des Anteils an Primzahlen heißt, dass es unter den ganz extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt.'."\n".
-                    'Die Lücken zwischen den Primzahlen würden im Schnitt maximal werden.'."\n".
-                    'Diese Aussage ist also eng mit der Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
+                    'Eine Minimierung des Anteils an Primzahlen heißt, die Lücken würden zwischen den Primzahlen im Schnitt maximal werden.'."\n".
+                    'Der ›Satz des Euklid‹ legt in diesem Fall nahe, dass es unter den extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt,'."\n".
+                    'nämlich die \lm{ p\# \pm 1 } aus dem Satz.'."\n",
+                      'Dadurch ist dies eng mit der Aussage der Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
                       'Wir können plausibel machen, wie wir noch zeigen, dass unter der Annahme, es gäbe im extrem Großen im wesentlichen nur noch Primzahlzwillinge,'."\n".
                     'und, dass dann ein solches Primzahlzwillingspaar die nächsten Primzahlen erzeugt, ohne, dass dazwischen noch welche wären,'."\n".
                     'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
@@ -2257,7 +2262,7 @@
                       array( display => 'on',  latex => '{  p_{i + 2}  :=  p_{i}\# + 1  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann gibt es also zwischen unserer letzen extrem großen Primzahl \lm{ p_i }'."\n".
+                      'Dann gibt es also zwischen unserer letzen extrem großen Primzahl \lm{ p_{i} }'."\n".
                       'und den beiden nächsten keine Primzahl mehr:'."\n".
                       ''))),
                   array( 'equations',
@@ -2266,7 +2271,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann ist die nächste Primfakultät \lm{ p_{i+1}# } die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
+                      'Dann ist die nächste Primfakultät \lm{ p_{i + 1}\# } die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
