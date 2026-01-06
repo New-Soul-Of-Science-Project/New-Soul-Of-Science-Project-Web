@@ -497,7 +497,7 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Anker-im-Milchocean:Vishnu'),
                     )),
                 )
           ); ?>
@@ -505,28 +505,68 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • X  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:NPYo:HaTha:WirZweiWesen',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+          <!  • Vishnu  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:NPYo:Anker-im-Milchocean:Vishnu',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:HaTha', type => 'back'),
+                      array(  jump_name => 'OM:NPYo:Anker-im-Milchocean', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '• X',
-                    ))), */
+                    '• Bei den Arbeiten zum ›Anker im Milchocean‹ viel mir irgendwann auf, dass Vishnu im Hinduismus auch eine ähnliche Rolle wie eine Jesus-Figur spielt.',
+                    '• Mir kam der zunächst völlig abwegig erscheinende Gedanke, ob das ‚Vis-’ im Namen Vishnus entfernt etwas mit dem deutschen ‚Fisch’ und englisch ‚fish’ zu tun haben könnte, also mit dem indogermanischen, denn der Fisch steht ja für Jesus, auch Fisch (griechisch ΙΧΘΥΣ - ICHTHYS) ein Akronym für „Jesus Christus, Gottes Sohn, Retter“, ein frühes christliches Symbol.',
+                    '– Entfernt scheint mir das möglich. Die Bedeutung, die dem Gedanken am nächsten steht ist ‚Mittagsmahl’, ‚Nahrung’, ‚nähren’, auch ‚Zukost zum Brot’',
+                    '– Mit ‚*fiska-’, ‚fisc’, ‚visch’, ‚vis’ zum Beispiel, siehe:',
+                    '⋅ DWDS, der Fisch, Etymologie: \url{https://www.dwds.de/wb/Fisch}',
+                    '⋅ DWEE, Etymologie, Fisch: \url{https://dwee.saw-leipzig.de/etymology/Fisch/de}',
+                    '• Vishnu steht für:',
+                    '– \bold{Rolle:} Beschützer und Erhalter des Universums und der Ordnung.',
+                    '– \bold{Gattin:} Lakshmi, die Göttin des Glücks und der Schönheit.',
+                    '– \bold{Reittier:} Der Adler Garuda. Ein Phönix und Schlangentöter.',
+                    '– Vishnu erscheint in verschiedenen Formen, um das Böse zu bekämpfen:',
+                    '⋅ \bold{Avatare:} Matsya (\bold{\italic{Fisch}} !!!), Kurma (Schildkröte), Varaha (Wildschwein), Narasimha (Halb-Löwe), Vamana (Zwerg), Parashurama, Rama, Krishna, Buddha und der zukünftige Kalki.',
+                    ))),
                       
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
                                            
                 'X')), */
                       
-                  /* array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:HaTha:HerstellungBalance'),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Anker-im-Milchocean:AngkorWat'),
                     )),
               )
-          ); */ ?>
+          ); ?>
+
+
+		    	<!  • Angkor Wat  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:NPYo:Anker-im-Milchocean:AngkorWat',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Anker-im-Milchocean:Vishnu', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '• Ich erinnere mich dunkel, dass ich ein Video gesehen habe, in dem tief in einem Schacht mitten im Hauptturm von Angkor Wat eine Schildkrötenstatue (Kurma) in einem Steinkasten gewesen sein soll.',
+                    '– Video: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple}',
+                    '• Dieser Steinkasten im Schacht wird bei jeder Sommersonnen durch ein Loch in der Turmspitze durch einem Lichtstrahl beschienen.',
+                    '• Es ist nach meinem Verständnis Vishnu in Form seines Avatars Kurma, der beim Rühren des Milchoceans den Fels oben hält.',
+                    '• Dadurch kam mein Eindruck auf, Angkor Wat symbolisiert den Milchocean-Mythos.',
+                    '• Und Angkor Wat erscheint gleichzeitig als riesiger Lingam umgeben von einer riesigen Yoni.',
+                    ))),
+                      
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
+                                           
+                'X')), */
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                    )),
+              )
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
