@@ -2232,11 +2232,154 @@
                     'Eine Minimierung des Anteils an Primzahlen heißt, die Lücken würden zwischen den Primzahlen im Schnitt maximal werden.'."\n".
                     'Der ›Satz des Euklid‹ legt in diesem Fall nahe, dass es unter den extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt,'."\n".
                     'nämlich die \lm{ p\# \pm 1 } aus dem Satz.'."\n",
-                      'Dadurch ist dies eng mit der Aussage der Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
+                      'Dadurch wäre dies eng mit der Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
                       'Wir können plausibel machen, wie wir noch zeigen, dass unter der Annahme, es gäbe im extrem Großen im wesentlichen nur noch Primzahlzwillinge,'."\n".
                     'und, dass dann ein solches Primzahlzwillingspaar die nächsten Primzahlen erzeugt, ohne, dass dazwischen noch welche wären,'."\n".
                     'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
                     'Zahlen aufholen kann.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen:X', text =>
+                  'Was bedeutet es genau, wenn die Dichte der Primzahlen minimal wird?', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Erzeugung neuer Primzahlen im ›Satz des Euklid‹ läuft wie gesagt über die Primfakultät mit \lm{ p\# \pm 1 }.'."\n".
+                    'Das ist das Spiel, was nie endet.'."\n".
+                    'Nach dem Satz gibt es dann nämlich nur zwei Möglichkeiten, die beide größere Primzahlen als \lm{ p } zur Folge haben.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Entweder \lm{ p\# \pm 1 } ist bereits eine Primzahl'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p\# \pm 1  \in  \mathbb{P}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'oder diese Zahl ist ein Produkt von Primzahlen, die dann natürlich alle kleiner als sie sind, aber auch alle größer als \lm{ p }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{\mathrm{fak}} \in \operatorname{prim}(p\# \pm 1) *)  *[  p  <  p_{\mathrm{fak}}  <  p\# \pm 1  *]  }'),
+                      array( display => 'on',  latex => '{  \# \operatorname{prim}(p\# \pm 1)  \geq  2  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei \lm{ \operatorname{prim}(n) } für die Menge aller Primfaktoren in \lm{ n } steht und die Zahl mindestens zwei Primfaktoren enthalten muss.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Demnach ist entweder \lm{ p\# - 1 } eine Primzahl oder sie besteht mindesten aus zwei Primzahlen, die kleiner sind als sie selber.'."\n".
+                    'Gleiches gilt parallel für \lm{ p\# + 1 }, wobei sich beider Primfaktoren kaum überschneiden dürften.'."\n".
+                    'Also führt dieser bewiesene Satz zur Erkenntnis, dass es zwischen \lm{ p } und \lm{ p\# + 2 } immer wenigsten zwei oder sogar mehr neue Primzahlen geben muss.'."\n",
+                      'Nun ist es offensichtlich, dass die Dichte an Primzahlen am geringsten ist, wenn sowohl \lm{ p\# - 1 } als auch \lm{ p\# + 1 } prim wären.'."\n".
+                    'Denn in diesem Fall haben wir zum einen nur zwei erzwungene neue Primzahlen zwischen \lm{ p } und \lm{ p\# + 2 },'."\n".
+                    'was auch dazu führt, das weniger noch größere neue Primzahlen über die nächsten \lm{ p\# \pm 1 } erzwungen werden.'."\n".
+                    'Und zum anderen sind die neuen Primzahlen \lm{ p\# \pm 1 } die größten möglichen, also machen die größte Lücke,'."\n".
+                    'was auch in Richtung der minimalen Dichte wirkt.'."\n",
+                      'Einzig wissen wir noch nicht, ob es trotzdem auch noch andere Primzahlen zwischen \lm{ p } und \lm{ p\# + 2 } gibt,'."\n".
+                    'die nicht durch den Satz erzwungen werden.'."\n".
+                    'Nur, wenn wir zeigen könnten, dass die Annahme, es gäbe zum Potenzial-Unendlichen hin tendenziell nur noch Primzahlen der Form'."\n".
+                    '\lm{ p\# \pm 1 }, also nur noch diese Primzahlzwillinge, und dass sie gleichbedeutend mit der Primzahlproduktvermutung wäre,'."\n".
+                    'dann hätten wir bewiesen, dass auch die Primzahlzwillingsvermutung stimmen muss.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, ab einer bestimmten extrem großen Zahl würde es nur noch Primzahlen als Primzahlzwillinge der Form \lm{ p\# \pm 1 } geben:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists n ?\in \mathbb{N} *) *( \forall p \in \mathbb{P} > n *)  *[  p\# \pm 1  \in  \mathbb{P}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Ist dies mit unserem oben geführten Beweis, dass \lm{ ω = ω\overline{\#} }, gleichbedeutend?'."\n",
+                      'Die vorstehende Aussage bedeutet ja, die Anzahl an endlichen natürlichen Zahlen ist im Unendlichen dem Produkt aller endlichen Primzahlen gleich.'."\n".
+                      'Das können wir mit folgender Aussage annähern:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ p\# }{ n }  \approx  1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wenn wir gerade an einem solchen Primzahlzwilling vorbei kommen und im Produkt alle vorherigen Primzahlen bis \lm{ p_{i} }'."\n".
+                      'und den ersten Primzahlzwilling \lm{ p_{i + 1} = p_{i}\# - 1 } eingesammelt haben'."\n".
+                      '– der zweite Primzahlzwilling \lm{ p_{i + 2} = p_{i}\# + 1 } ist noch nicht im Produkt –,'."\n".
+                      'dann können wir schon das Zentrum \lm{ p_{i + 3}\# } des nächsten Primzahlzwillingpaars konstruieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 3}\#  =  p_{i}\# \cdot p_{i + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 3}\#  =  p_{i}\# \cdot *( p_{i}\# - 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 3}\#  =  *( p_{i}\# *)^{2} - p_{i}\#  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Demnach kommt nach unserer Annahme eine riesige Lücke von der noch nicht eingesammelten Primzahl \lm{ p_{i + 2} } bis zur ersten Primzahl des nächsten Primzahlzwillings \lm{ p_{i + 3}\# - 1 }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 3}\# - 1  =  *( *( p_{i}\# *)^{2} - p_{i}\# *) - 1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wie groß ist diese Lücke im Verhältnis der Zentren beider Primzahlzwillinge:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ p_{i + 3}\# }{ p_{i}\# }  =  \frac{ *( p_{i}\# *)^{2} - p_{i}\# }{ p_{i}\# }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ p_{i + 3}\# }{ p_{i}\# }  =  p_{i}\# - 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ p_{i + 3}\# }{ p_{i}\# }  =  p_{i + 1}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das bedeutet nach Formel XXX, wenn wir beim Zentrum \lm{ n = p_{i}\# } durchlaufen, dann springt durch das Einsammeln von \lm{ p_{i + 1} = p_{i}\# - 1 }'."\n".
+                      'das Zentrum der Endgrenze der kommenden Lücke auf \lm{ p_{i + 3}\# }.'."\n".
+                      'Dass wir dabei noch an \lm{ p_{i + 2} = p_{i}\# + 1 } vorbeikommen, ändert diese Lücke ja nur minimal.'."\n",
+                      'In dem Moment wo wir \lm{ n = p_{i}\# } passieren, also direkt vor dem Sprung durch das einsammeln von \lm{ p_{i + 1} = p_{i}\# - 1 },'."\n".
+                      'also bis genau \lm{ n = p_{i}\# - 2 }, sind wir dann im Verhältnis gesunken auf:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ p_{i}\# }{ p_{i}\# - 2 }  \approx  1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das sieht schon mal gut aus.'."\n",
+                      'Im nächsten Zählschritt \lm{ n = p_{i}\# - 1 } kommt nun \lm{ p_{i + 1} = p_{i}\# - 1 } ins Produkt dazu, der Sprung erfolgt und'."\n".
+                      'wir wissen nach unserer Annahme, dass nun, außer \lm{ p_{i + 2} = p_{i}\# + 1 }, keine Primzahlen bis zum Ende der Lücke mehr kommen.'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ p_{i + 3}\# }{ n }  \approx  1  }'),
+                      array( display => 'on',  latex => '{  p_{i + 1} \cdot p_{i + 2}  =  *( p_{i}\# - 1 *) \cdot *( p_{i}\# + 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 1} \cdot p_{i + 2}  =  *( p_{i}\# *)^{2} - 1  }'),
+                      array( display => 'on',  latex => '{  p_{i}\# \cdot p_{i + 1} \cdot p_{i + 2}  =  p_{i}\# \cdot *( p_{i}\# - 1 *) \cdot *( p_{i}\# + 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot p_{i + 1} \cdot p_{i + 2}  =  p_{i}\# \cdot *( *( p_{i}\# *)^{2} - 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot p_{i + 1} \cdot p_{i + 2}  =  *( p_{i}\# *)^{3} - p_{i}\#  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'XXX Kommen wir vielleicht mit \lm{ p\overline{\#} } weiter???'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 2}\#  =  p_{i}\# \cdot p_{i + 1} \cdot p_{i + 2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 2}\#  =  p_{i}\# \cdot *( p_{i}\# - 1 *) \cdot *( p_{i}\# + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  p_{i + 2}\#  =  *( *( p_{i}\# *)^{2} - p_{i}\# *) \cdot *( p_{i}\# + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  p_{i + 2}\#  =  *( p_{i}\# *)^{2} \cdot p_{i}\# - p_{i}\# \cdot p_{i}\# + *( p_{i}\# *)^{2} - p_{i}\#  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  p_{i + 2}\#  =  *( p_{i}\# *)^{3} - *( p_{i}\# *)^{2} + *( p_{i}\# *)^{2} - p_{i}\#  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 2}\#  =  *( p_{i}\# *)^{3} - p_{i}\#  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
