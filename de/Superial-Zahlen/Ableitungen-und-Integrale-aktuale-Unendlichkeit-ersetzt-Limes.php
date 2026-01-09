@@ -31,7 +31,7 @@
                     'von (kurzen) Schreibweisen geben werden.'."\n".
                     'Wir wollen zunächst entdecken, ergründen und verstehen und eben nicht gleich verkürzen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
                       
                 'Der Mehrwert', subline =>
                   '')),
@@ -47,7 +47,7 @@
                     'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht –'."\n".
                     'den Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems} der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
                       
                 'ZFC-konforme Definition', subline =>
                   '')),
@@ -138,7 +138,7 @@
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
                       'Durch die detaillierte Betrachtung mit aktual unendlichen Zahlen erschließt sich ein genaueres Verständnis.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen', text =>
                       
                 'Beispiele für Ableitungen', subline =>
                   '')),
@@ -186,7 +186,7 @@
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass die Vorgehensweise mit dem Limes Details der Vorgänge verbirgt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
                 'Welche Funktion ist nach dieser Definition ihre eigene Ableitung?', subline =>
                   '')),
@@ -231,7 +231,7 @@
                       'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben,'."\n".
                     'wie wir in dieser Arbeit immer wieder feststellen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Ganze und natürliche Superial-Zahlen', subline =>
                   '')),
@@ -288,7 +288,7 @@
                     'Darauf aufbauend ist es uns schließlich gelungen im \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis der Algebraische-Koeffizienten-Vermutung}'."\n".
                     'zu zeigen, dass sogar alle reell algebraischen Zahlen ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Definition der Summe zur Integration auf Basis von Superial-Zahlen', subline =>
                   '')),
@@ -332,7 +332,7 @@
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich in der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung} eingehen möchte.'."\n",
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Definition der Integration', subline =>
                   '')),
@@ -377,7 +377,7 @@
                       'Im Falle, dass die Grenzen des Integrals in ihrer Größe vertauscht sind, also, wenn \lm{ x < a } gilt,'."\n".
                     '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals', text =>
                       
                 'Beispiel eines konkreten Integrals', subline =>
                   '')),
@@ -467,7 +467,7 @@
                     'Offensichtlich ist dabei, dass wir so recht einfach verstehen, was bei der Berechnung des Integrals im Detail vor sich geht.'."\n",
                       'Und das ist ja eines unserer Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
                 'Die Ableitung ist die Umkehrung der Integration', subline =>
                   '')),
@@ -492,7 +492,7 @@
                     'Die Ableitung einer Integration ist also deren Umkehrung.'."\n".
                     'Dies können wir offensichtlich geschlossen zeigen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung', text =>
                       
                 'Die Integration als Umkehrung der Ableitung', subline =>
                   '')),
@@ -567,7 +567,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -580,7 +580,7 @@
                     'von Integralen auftauchen.'."\n".
                     'Im Fall, dass ihre Ergebnisse schon bekannt sind untersuchen wir, ob wir sie auch noch anders ausdrücken können.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
 
                 '\italic{Inhalt}', subline =>
                   '')),
@@ -591,7 +591,7 @@
                     )),
 
 
-                  array( 'headline', array( headlineTag => 'h3',  horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
 
                 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }', subline =>
                   '')),
@@ -932,7 +932,7 @@
                     ''))),
 
 
-                  array( 'headline', array( headlineTag => 'h3',  horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x', text =>
 
                 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
@@ -1056,7 +1056,7 @@
                   array( 'text', array( text => array(
                     'Es gibt besondere Gleichungen in Bezug auf Ableitungen und Integrale, die sich zu untersuchen lohnen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3',  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
 
                 '\italic{Inhalt}', subline =>
                   '')),
@@ -1066,7 +1066,7 @@
                     )),
 
 
-                  array( 'headline', array( headlineTag => 'h3',  horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores', text =>
                       
                 'Traum der Sophomores', subline =>
                   '')),
