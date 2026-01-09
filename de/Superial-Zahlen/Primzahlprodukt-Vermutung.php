@@ -2343,8 +2343,8 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das sieht schon mal gut aus.'."\n",
                       'Im nächsten Zählschritt \lm{ n = p_{i}\# - 1 } kommt nun \lm{ p_{i + 1} = p_{i}\# - 1 } ins Produkt dazu, der Sprung erfolgt und'."\n".
-                      'wir wissen nach unserer Annahme, dass nun, außer \lm{ p_{i + 2} = p_{i}\# + 1 }, keine Primzahlen bis zum Ende der Lücke mehr kommen.'."\n".
-                      'XXX'."\n".
+                      'wir wissen nach unserer Annahme, dass nun, außer \lm{ p_{i + 2} = p_{i}\# + 1 }, keine Primzahlen bis zum Ende der Lücke mehr kommen.'."\n",
+                        '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2356,10 +2356,10 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot p_{i + 1} \cdot p_{i + 2}  =  *( p_{i}\# *)^{3} - p_{i}\#  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'XXX Kommen wir vielleicht mit \lm{ p\overline{\#} } weiter???'."\n".
+                      '\color{*Bearb}{(In Arbeit …)} Kommen wir vielleicht mit \lm{ p\overline{\#} } weiter???'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2371,15 +2371,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{i + 2}\#  =  *( p_{i}\# *)^{3} - p_{i}\#  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
