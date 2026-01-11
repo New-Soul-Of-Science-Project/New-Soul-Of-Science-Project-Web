@@ -90,6 +90,8 @@
       text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes oder das Differential',
       text_titel_discr_h3 => '',
       jump_ary => array(
+        'OM:SupNum:Ableitungen-Integrale:Ableitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+
           // 'OM:SupNum:Ableitungen-Integrale:Vortext:X' => array( headline_text => 'X'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Ableitungen-Integrale:Ableitung' => array( headline_text => 'Die Ableitung'/* , headline_text_short => 'X'*/),
@@ -119,6 +121,14 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals' => array( headline_text => 'Beispiel eines konkreten Integrals'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.AbIn.IN.20'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.IN.23'),
+
+        'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung' => array( headline_text => 'Diskussion der Infinitesimalrechnung'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen' => array( headline_text => 'Wohldefinierte Arithmetik des Unendlichen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung' => array( headline_text => 'Besonderheit der Infinitesimalrechnung mit Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung' => array( headline_text => 'Der metaphysische Moment der Bewegung'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung' => array( headline_text => 'Algebraische infinitesimale Umgebung'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+            'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'X'*/),
 
@@ -218,7 +228,7 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins' => array( headline_text => 'SN.Ei.S.L.12'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen' => array( headline_text => 'Erklärung der Anzahl der reell algebraischen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
 
           'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung' => array( headline_text => 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung'/* , headline_text_short => 'X' */),
             'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar' => array( headline_text => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar?'/* , headline_text_short => 'X' */),
@@ -264,13 +274,14 @@
 
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
-          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?', headline_text_short => 'Was ist unsere neue superiale Basis s?'),
-          'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.24'),
-          'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.25'),
-          'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.26'),
-          'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.Ein.27'),
-          'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.28'),
-          'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.29'),
+          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
+            'OM:SupNum:Einleitung:Vortext:Definition-von-s' => array( headline_text => 'Die Definition von \lm{ \s }',/* headline_text_short => 'X' */),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.24'),
+            'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.25'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.26'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.Ein.27'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.28'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.29'),
 
           'OM:SupNum:Einleitung:Vortext:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', headline_text_short => 'Die Veränderung der Primfaktorzerlegung von s durch rationale Koeffizienten'),
 

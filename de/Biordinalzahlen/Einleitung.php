@@ -888,7 +888,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Intervalle, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben,'."\n".
-                    'was wir bei den \jump{OM:SupNum:Home}{Superial-Zahl} noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{expliziter erkennen} können.'."\n".
+                    'was wir bei den \jump{OM:SupNum:Home}{Superial-Zahl} noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}{expliziter erkennen} können.'."\n".
                     'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
                     'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null.'."\n".
                     'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",

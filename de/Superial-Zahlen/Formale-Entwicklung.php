@@ -126,7 +126,7 @@
                       'Interessanter und für manch einen wohl etwas überraschender Weise erfüllen aber auch ganzzahlige Wurzeln aus positiven natürlichen Zahlen diese Bedingung, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
                     'lernen.'."\n".
                     'Schließlich kommen wir sogar so weit, dass wir dies für \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle durch Radikale darstellbaren reell algebraischen Zahlen}'."\n".
-                    'zeigen können.'."\n",
+                    'und dann sogar für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen} zeigen können.'."\n",
                       'Wir bekommen einen Eindruck und ein Gefühl anhand folgender Beispiele für ganze Superial-Zahlen in'."\n".
                     'der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}:'."\n".
                     ''))),

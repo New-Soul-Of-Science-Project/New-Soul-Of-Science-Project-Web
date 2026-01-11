@@ -555,6 +555,406 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Diskussion der Infinitesimalrechnung  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wir betrachten die besonderen Eigenschaften der Infinitesimalrechnung mit Superial-Zahlen'."\n".
+                    'und gleichen diese mit der Standardanalysis sowie der Nichtstandardanalysis ab.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung'),
+                    )),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen', text =>
+
+                'Wohldefinierte Arithmetik des Unendlichen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Das Aufkommen der Infinitesimalrechnung am Ende des 17. Jahrhunderts löst eine Krise in der Mathematik aus.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 a., S. 162-176, hier S. 162.}'."\n".
+                    'Diese Krise hat mit der Frage zu tun, wie mit infinitesimalen Größen oder mit endlichen Werten, die sich diesen nähern, umzugehen ist.'."\n".
+                    'Denn Berechnung einer Ableitung wird umso genauer, je kleiner Nenner und Zähler im Quotienten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0} \frac{ f(x + \Delta x) - f(x) }{ \Delta x }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'werden.'."\n".
+                    'Dies hängt hier ausschließlich von der Größe von \lm{ \Delta x } ab, wodurch der Bedarf entsteht es möglichst ganz extrem klein zu machen.'."\n",
+                      'Eine Beispielrechnung mit \lm{ \Delta x } für die Funktion \lm{ f(x) = x^{2} } im Rahmen der Standardanalysis ergibt sich dann zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0} \frac{ *( x + \Delta x *)^{2} - x^{2} }{ \Delta x }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0} \frac{ *( x^{2} + 2 x \cdot \Delta x + (\Delta x)^{2} *) - x^{2} }{ \Delta x }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0} \frac{ 2 x \cdot \Delta x + (\Delta x)^{2} }{ \Delta x }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0} 2 x + \Delta x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dieses Vorgehen der Standardanalysis wirft Fragen auf:\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 a., S. 162-176, hier S. 170-172.}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Für das Endergebnis von der vorletzten zur letzten Gleichung wird das \lm{ \Delta x } schließlich weggelassen,'."\n".
+                          'weil gesagt wird, dass \lm{ \Delta x } im Grunde den Wert Null hat.'."\n".
+                          'Aber der Limes bedeutet doch gerade, das \lm{ \Delta x } niemals Null ist.'."\n".
+                          'Dann dürfen wir es doch nicht einfach weglassen, oder?',
+                        'Warum die \lm{ +0 } im Limes? Gilt nicht \lm{ +0 = 0 }?',
+                        'Und wenn wir \lm{ \Delta x } dann in der Summe weglassen, weil es quasi Null ist, warum können wir dann in der Zeile davor durch \lm{ \Delta x } teilen,'."\n".
+                          'wenn teilen durch Null doch nicht definiert ist?',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Bezüglich der ersten Frage bemühen wir quasi den Gedanken der Rundung, wenn \lm{ \Delta x } doch nun so klein ist.'."\n".
+                    'Dieses Vorgehen hat aber eher einen pragmatischen Charakter, wie in der Physik oder Mechanik üblich,'."\n".
+                    'und nicht den Charakter möglichst maximaler mathematischer Genauigkeit, ist mein Eindruck.'."\n".
+                    'Ich verstehe aber, dass sich dieses Vorgehen mangels des Wissens um sinnvoll erscheinende Alternativen und Gründe, anders zu handeln, durchgesetzt hat.'."\n".
+                    'Warum etwas stehen lassen, wenn es doch vernachlässigbar erscheint, durch die Nutzung des Limes nicht genormt ist, damit eher stört und zum Verstecken einlädt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Aber genau diese Ungenauigkeit und Ungenormtheit hat mich schon immer gestört, weil ich das Gefühl hatte, hier wird etwas wichtiges übersehen und beseitigt.'."\n".
+                        ''),
+                        addtext => '')),
+
+                  array( 'text', array( text => array(
+                    'Das Weglassen des schrumpfenden Summanden erfüllt allerdings auch einen wichtigen Zweck.'."\n".
+                    'Es reinigt das Ergebnis für unser Auge und unser Bewusstsein von quasi verunreinigenden endlichen Anteilen,'."\n".
+                    'was bei den Superial-Zahlen, wie wir gleich sehen, durch eine infinitesimale Summenaufspaltung geleistet wird.'."\n",
+                      'Zur zweiten Frage können wir sagen, dass diese Notation ausdrücken soll, dass \lm{ \Delta x } sich nur vom Positiven her der Null nähert.'."\n".
+                    'Ansonsten wäre selbst das Vorzeichen des weggelassenen Summanden unklar, also positiv oder negativ, was die Ungenormtheit noch verstärken würde.'."\n",
+                      'Bezüglich der dritten Frage, der vermeintlichen Division durch Null, sind wir (nur) etwas gnädiger.'."\n".
+                    'Nenner und Zähler werden bei schrumpfendem \lm{ \Delta x } ungefähr gleichermaßen kleiner, was sich in einem Quotienten'."\n".
+                    'dann bis zu einem gewissen Grad wieder aufhebt, aber halt ein immer genaueres Ergebnis liefert.'."\n".
+                    'Daher haben wir eben keine Division durch Null.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Superiale Arithmetik des Unendlichen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Über die Superial-Zahlen erhalten wir eine wohldefinierte Arithmetik des Unendlichen, was diese Probleme eliminiert.'."\n".
+                    'Mit Hilfe unserer neuen ›Zahlentheorie der Analysis‹ separieren wir die endlichen – in der Realität wichtigen – Summanden'."\n".
+                    'durch eine infinitesimale Summenaufspaltung von den unendlich kleinen.'."\n",
+                      'Dies zeigen wir hier noch einmal durch die Wiederholung des der vorherigen Rechnung entsprechenden und schon'."\n".
+                    '\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen}{oben gerechneten Beispiels},'."\n".
+                    'in dem wir den Limes \lm{ \Delta x \rightarrow +0 } durch unsere wirklich infinitesimale Einheit \lm{ \s^{-1} = \; .*〈  1 *〉 } ersetzen,'."\n".
+                    'wenn wir die Ableitung der Funktion \lm{ f(x) = x^{2} } berechnen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + \s^{-1}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Noch einmal in \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwert-Schreibweise}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  \frac{ *〈 x *〉.*〈 1 *〉^{2} - x^{2} }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *〈  x^{2} *〉.*〈  2 x *〉*〈  1 *〉 - x^{2} }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ .*〈  2 x *〉*〈  1 *〉 }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  *〈  2 x *〉.*〈  1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier wird die mathematische Genauigkeit erhalten und daher der infinitesimale Summand nicht weggelassen.'."\n".
+                    'Wo er beim Übergang in die reale Praxis ja eh jederzeit entfernt werden kann.'."\n",
+                      'Die infinitesimale Einheit ist durch ihre \jump{OM:SupNum:Einleitung:Vortext:Definition-von-s}{Definition über das Primzahl-Flächenprodukt}'."\n".
+                    'wohldefiniert und genormt.'."\n".
+                    'Und es ist völlig klar, welches Vorzeichen die Infinitesimale haben.'."\n",
+                      'Auch das Spannungsfeld zwischen dem Weglassen des Summanden und der vermeintlichen Division durch Null in der Standardanalysis'."\n".
+                    'hat sich erledigt.'."\n".
+                    'Es gibt gar keine Division durch Null.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Bisher hat niemand die Arithmetik von \lm{ \infty } verstanden?', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'In seinem Buch ›Die Entdeckung des Unendlichen‹ bemerkt David Foster Wallace:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Angesichts unserer bisher dargelegten Geschichte lässt sich wohl am einfachsten sagen,'."\n".
+                        'die meisten der hier unterstellten Probleme [siehe oben] seien eigentlich durch die Unfähigkeit der Mathematik entstanden,'."\n".
+                        'mit unendlichen Größen umzugehen – die reale Schwierigkeit besteht wie bei Zenons Dichotomie und Galileis Paradoxon darin,'."\n".
+                        'dass bisher noch niemand die Arithmetik von \lm{ \infty } verstanden habe.'."\n".
+                        'Diese Aussage wäre nicht völlig falsch, aber für unsere Zwecke wäre sie zumindest um die Hälfte verkürzt.[Fußnote zur Nonstandard Analysis (Nichtstandardanalysis)]'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 a., S. 162-176, hier S. 176.}')),
+
+                  array( 'text', array( text => array(
+                    'In seiner Fußnote weist David Foster Wallace dann auf die Nichtstandardanalysis\footnote{\const{SupNum_g_footnote_text_Nichtstandardanalysis}}'."\n".
+                    'als nichttriviale Möglichkeit hin,'."\n".
+                    'mit Hilfe von Hyperreellen Zahlen\footnote{\const{SupNum_g_footnote_text_HyperreelleZahl}} eine Arithmetik des Unendlichen zu beschreiben.'."\n".
+                    'Er nennt die Nichtstandardanalysis allerdings \quote{[…] schwer Mengentheoretisch und auf Cantor bezogen, dazu umstritten und verwegen fachmathematisch […]}\footnote{\cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 a., S. 162-176, hier S. 176.}.'."\n",
+                      'Nach meiner Recherche meint er das „umstritten“ vermutlich nicht als „mathematisch fragwürdig/inkonsistent“,'."\n".
+                    'sondern eher im Sinne von „philosophisch, didaktisch und geschmacklich umkämpft“.'."\n".
+                    '„Umstritten“ ist demnach eher als Hinweis darauf zu verstehen, dass die Nichtstandardanalysis nichts für Menschen ohne tiefe mathematische'."\n".
+                    'Kenntnis ist.'."\n",
+                      'Also ist sie nichts für Erstsemester-Studenten und schon gar nichts für Schüler.'."\n".
+                    'Sie erhellt für Normalsterbliche die Arithmetik des Unendlichen und deren tiefere Zusammenhänge nur nicht so einfach.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Superial-Zahlen erweitern die gewohnte endliche Arithmetik intuitiv weitgehend ins Aktual-Unendliche und sind didaktisch wertvoll', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen sind dort so aufgestellt, dass sie sowohl die Arithmetik des Unendlichen sehr verständlich erklären,'."\n".
+                    'als auch didaktisch für Einsteiger in die Infinitesimalrechnung gut brauchbar sind.'."\n".
+                    'Etwas Komplexer wird es bezüglich der Superial-Zahlen erst bei \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{transzendenten Zahlen},'."\n".
+                    'wie beispielsweise die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e }} oder \lm{ π }, die mindestens eine,'."\n".
+                    'aber vermutlich unendlich viele infinitesimale Schichten besitzen.'."\n".
+                    'Hierzu ist eine einfache Erweiterung des Stellenwertsystems auf ganze Superial-Zahlen erforderlich.'."\n".
+                    ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung', text =>
+
+                'Besonderheit der Infinitesimalrechnung mit Superial-Zahlen', subline =>
+                  'Ganze infinitesimale Schritte durch die superiale Zahlentheorie')),
+                  array( 'text', array( text => array(
+                    'Die Standardanalysis der modernen Mathematik arbeitet mit Grenzwerten\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}.'."\n".
+                    'Diese haben die Eigenschaft, dass sie im Grunde keinen festen Wert haben.'."\n".
+                    'Es ist nur sicher, dass Grenzwerte über den Limes niemals wirklich infinitesimal sind, denn sie erreichen den Grenzwert nie wirklich,'."\n".
+                    'sondern sind ihm beliebig, jedoch immer nur endlich nahe.'."\n",
+                      'David Foster Wallace beschreibt es wie folgt, wobei er hier von Zeit und nicht von Raum beziehungsweise Geometrie spricht,'."\n".
+                    'aber dies ist letztlich unerheblich, die Argumente sind die gleichen:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Wenn es \lm{ 0 } Intervalle gibt, dann folgen \lm{ t_{1} } und \lm{ t_{2} } eindeutig nicht einander, weil sie dann exakt denselben Moment bezeichnen.'."\n".
+                        'Ist zwischen ihnen aber irgendein zeitliches Intervall vorhanden, dann gibt es stets weitere, winzigere Momente zwischen \lm{ t_{1} } und \lm{ t_{2} }'."\n".
+                        '– weil jedes finite zeitliche Intervall genau wie jeder Abstand auf der Zahlengeraden immer weiter unterteilt werden kann.'."\n".
+                        'Soll heißen, nach \lm{ t_{1} } gibt es nie ein \bold{unmittelbar folgendes} \lm{ t_{2} }.'."\n".
+                        'Solange infinitesimale Größen unerwünscht sind, muss es zwischen \lm{ t_{1} } und \lm{ t_{2} } immer eine unendliche Zahl von Momenten geben.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189, hier S. 187.}')),
+
+                  array( 'text', array( text => array(
+                    'Das bedeutet, dass es keine festen Zählschritte für die Ableitung und das Integral gibt.'."\n".
+                    'Es wird allerdings ein'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{d} x  =  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  =  *( t_{2} > t_{1} *) *[ \, \lim\limits_{t_{2} \rightarrow t_{1}}{ t_{2} - t_{1} } *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'als sogenannte 1-Form\footnote{\const{SupNum_g_footnote_text_PfaffscheForm}} genutzt,'."\n".
+                    'die aber keine Einheit im Sinne der Definition einer unendlich kleinen Zahl Eins, sondern eine Kurznotation ist.'."\n",
+                      'Genau dies ist bei den Superial-Zahlen anders:'."\n".
+                    'Über das superiale Stellenwertsystem auf Basis unseres durch \jump{OM:SupNum:ZFC-Modellkonstruktion}{Primzahlen klar definierten \lm{ \s }}'."\n".
+                    'erhalten wir mit \lm{ 1 \s^{-1} } eine wirklich infinitesimale Eins.'."\n".
+                    'In diesem Stellenwertsystem, das also infinitesimale Größen erlaubt, können wir nach Bedarf sowohl infinitesimale Zahlenmengen definieren,'."\n".
+                    'in denen es zwischen zwei unterschiedlichen Zahlen unendlich viele weitere gibt, oder welche, wo infinitesimale ganze Zahlen direkt aufeinander folgen.'."\n",
+                      'Über die Menge der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } lässt sich auch die Menge der superial kleinen ganzen'."\n".
+                    'beziehungsweise infinitesimalen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } definieren.'."\n".
+                    'In dieser Menge gilt nicht, was David Foster Wallace über die Intervalle des Standardanalysis sagt:'."\n".
+                    'Hier gibt es nicht zwischen allen Zahlen eine weitere Zahl, nämlich dann nicht,'."\n".
+                    'wenn im unendlich kleinen die ganzen Summanden zweier Zahlen direkt aufeinander folgen,'."\n".
+                    'wie zum Beispiel \lm{ *〈 1,\!3 *〉.*〈 57 *〉 } und \lm{ *〈 1,\!3 *〉.*〈 58 *〉 \, }.'."\n".
+                    'Es gibt also \italic{unmittelbar folgende} Zahlen, wenn wir infinitesimale ganze Superial-Zahlen betrachten,'."\n".
+                    'die ja in unserer hier definierten ›Zahlentheorie der Analysis‹ für Ableitungen und Integrale genutzt werden.'."\n",
+                      'All dies wird über die ganz besonderen Zusammenhänge zwischen ganzen und reell algebraischen Koeffizienten'."\n".
+                    'im Stellenwertsystem der Superial-Zahlen möglich und vereinfacht das theoretische Verständnis'."\n".
+                    'und teilweise auch die praktische Handhabung von Ableitungen und Integralen.'."\n".
+                    'Wir können aufgrund dieser \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{wohldefinierten Arithmetik des Unendlichen}'."\n".
+                    'wirklich ganz normal Rechnen.'."\n".
+                    ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung', text =>
+
+                'Der metaphysische Moment der Bewegung', subline =>
+                  'Das Pfeilparadoxon Zenons aus naturphilosophischer Perspektive und in superialer Interpretation')),
+                  array( 'text', array( text => array(
+                    'Bei Zenons Pfeilparadoxon handelt es sich um eine metaphysische und naturphilosophische Betrachtung zum Szenario eines Pfeilflugs'."\n".
+                    'vom Bogen bis ins Ziel.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189.}'."\n".
+                    'Dabei stellen sich metaphysische Fragen:'."\n",
+                      'Zenons Beschreibung geht davon aus, dass der Pfeil in jedem Moment seines Pfluges in Ruhe sei;'."\n".
+                    'also keinen Weg zurücklegen würde.'."\n".
+                    'Diese Vorstellung führt zu den Paradoxa, die wir schon oben in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung}‹}'."\n".
+                    'beschrieben haben.'."\n",
+                      'Wie dort auch dargelegt und ebenso in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}‹}'."\n".
+                    'am Beispiel im Detail vorgerechnet treten diese Paradoxa mit Hilfe von Superial-Zahlen nicht auf.'."\n".
+                    'Dies kommt, weil uns die Superial-Zahlen eine Arithmetik des Unendlichen schenken.'."\n".
+                    'Und zwar in der Form, dass uns infinitesimale ganze Zahlen zur Verfügung stehen,'."\n".
+                    'mit denen wir die Flugzeit und die Flugbahn des Pfeils in einheitliche aktual unendlich kleine Schritte teilen können.'."\n".
+                    'Dabei bleibt die Bahn im Endlichen, bei ihrer Beschreibung durch die Superial-Zahlen, Dicht.'."\n".
+                    'Es gibt also zwischen je zwei Zeitpunkten ihrer Flugbahn, die sich in ihren endlichen Werten unterscheiden,'."\n".
+                    'unendlich viele endliche Werte, weil die endlichen Anteile der Zeit – und auch der Orte – mit reell algebraischen Zahlen beschrieben werden.'."\n".
+                    'Zwischen den Zeitpunkten Sekunde \lm{ *〈 5,\!273 *〉.*〈 100 *〉 } und Sekunde \lm{ *〈 5,\!292 *〉.*〈 9 *〉 } liegt zum Beispiel Sekunde \lm{ *〈 5,\!281 *〉.*〈 -2 *〉 }:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 100 *〉  <  *〈 5,\!281 *〉.*〈 -2 *〉  <  *〈 5,\!292 *〉.*〈 9 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}  <  5,\!292 + 9 \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ist der endliche Zeitpunkt der gleiche, dann unterscheiden sich die Zeitpunkte nur noch im unendlich kleinen Infinitesimalen,'."\n".
+                    'wo wir es nun mit ganzen Zahlen zu tun haben.'."\n".
+                    'Ein Beispiel für zwei solche Superial-Zahlen könnte Sekunde \lm{ *〈 5,\!273 *〉.*〈 -3 *〉 } und Sekunde \lm{ *〈 5,\!273 *〉.*〈 2 *〉 } sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 -3 *〉  <  *〈 5,\!273 *〉.*〈 2 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 - 3 \s^{-1}  <  5,\!273 + 2 \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier zwischen gibt es dann nur noch die direkt aufeinanderfolgenden Momente:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 -2 *〉  =  5,\!273 - 2 \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 -1 *〉  =  5,\!273 - \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 0 *〉  =  5,\!273  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 1 *〉  =  5,\!273 + \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und zwischen zwei benachbarten davon, wie \lm{ *〈 5,\!273 *〉.*〈 -1 *〉 } und \lm{ *〈 5,\!273 *〉.*〈 0 *〉 }, gibt es nach dieser Definition keinen weiteren Moment,'."\n".
+                    'denn sie sind nur einen infinitesimalen Zählschritt auseinander:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \nexists t \in \mathbb{S}_{\Z}^{-1} *)  *[  *〈 5,\!273 *〉.*〈 -1 *〉  <  t  <  *〈 5,\!273 *〉.*〈 0 *〉  *]  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 0 *〉 - *〈 5,\!273 *〉.*〈 -1 *〉  =  .*〈 1 *〉  =  \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der metaphysische Moment des Pfeilflugs entspricht also dem Abstand zweier benachbarter ganzer infinitesimalen Superial-Zahlen aus der Menge \lm{ \mathbb{S}_{\Z}^{-1} },'."\n".
+                    'also der Länge \lm{ \s^{-1} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Der Moment als infinitesimaler Prozess', subline =>
+                    'Eine metaphysisch naturphilosophische Interpretation')),
+                  array( 'text', array( text => array(
+                    'Wir können die infinitesimale Schicht unter der endlichen reell algebraischen Schicht auf mindesten zwei Blickwinkeln betrachten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Infinitesimale Umgebung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auf der einen Seite können wir den endlichen Moment im Rahmen der Superial-Zahlen als von Infinitesimalen umgeben verstehen;'."\n".
+                    'standardmäßig von ganzzahligen Infinitesimalen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *)  *[  *〈 5,\!273 *〉.*〈 z *〉  \in  \mathbb{S}_{\Z}^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  *〈 a *〉.*〈 z *〉  \in  \mathbb{S}_{\Z}^{-1}  *]  }'),
+                    ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung',
+                Title => 'Algebraische infinitesimale Umgebung …',
+                TitleVis => 'Algebraische infinitesimale Umgebung:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Und bei Bedarf auch von reell algebraischen Infinitesimalen, wenn sie dicht liegen sollen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  *〈 5,\!273 *〉.*〈 a *〉  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{0}, a_{-1} \in \mathbb{A}_{\R} *)  *[  *〈 a_{0} *〉.*〈 a_{-1} *〉  \in  \mathbb{S}  *]  }'),
+                    ))),
+
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Dadurch können wir uns dem endlichen Zeitpunkt aus dem infinitesimal Negativen nähern und, nachdem wir ihn erreicht haben,'."\n".
+                    'von ihm ins infinitesimal Positive wieder verlassen.'."\n".
+                    ''))),
+
+                  array( 'figure',
+                    array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-GeradeSuperialZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Die \jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-GeradeSuperialZahlen}'."\n".
+                    'gibt einen Eindruck davon, wie Schichten des Stellenwertsystems der Superial-Zahlen linear ineinander verschachtelt sind.'."\n".
+                    'So beschreibt die erste infinitesimale Schicht \lm{ \s^{-1} } die Umgebungen der endlichen Zahlen der Schicht \lm{ \s^{0} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Prozesshafte infinitesimale Zählschritte', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die ganzen Infinitesimale um die und damit zwischen den endlichen Zahlen enthalten als Zähleinheiten den Prozess des Zählens'."\n".
+                    'und repräsentieren oder realisieren so den dynamischen Moment der Zeit oder der Bewegung.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Aus prozesshafter Perspektive sehen wir die infinitesimalen ganzen Zahlen der Umgebung jeder endlichen reell algebraischen Zahl in Zählrichtung ausgerichtet,'."\n".
+                    'wie wir in \jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-OntologieGanzeZahlen}'."\n".
+                    'anhand der ganzen endlichen Zahlen und der an ihnen hängenden Sägezahn-Intervalle erkennen.'."\n".
+                    'Dies gilt ebenso für infinitesimale ganze Zahlen und \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung}{infinitesimale reell algebraische Zahlen}.'."\n",
+                      'Detailliert wird dies im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹} dargelegt.'."\n".
+                    'Den tiefergehenden Ursprung des prozesshaften Fundaments der Arithmetik der Geometrie haben wir schon im'."\n".
+                    'Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹}'."\n".
+                    'herausgefunden, der sich in einer fundamentalen Asymmetrie der Geometrie und \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{des Zählens} offenbart.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Ein gutes naturphilosophisches Verständnis der Metaphysik in der Mathematik', subline =>
+                    'Wie die Mathematik des Pfeilflugs funktioniert')),
+                  array( 'text', array( text => array(
+                    'In ihrer Breite erlaubt uns unsere Forschung nicht nur eine praktische und intuitive Arithmetik des Unendlichen,'."\n".
+                    'sondern auch gute interessante Grundlagen für unser naturphilosophisches Verständnis der Metaphysik.'."\n".
+                    'Wir bekommen eine Ahnung davon, warum die Infinitesimalrechnung genau am Übergang zwischen Mathematik und Physik liegt'."\n".
+                    'sowie warum und wie sie im Detail funktioniert; dass diese Mathematik die Dynamik in ihren Fundamenten trägt.'."\n",
+                      'Jeder Moment des Pfeilflugs im Pfeilparadoxon Zenons trägt demnach nicht nur einen Zeitpunkt in sich.'."\n".
+                    'Ein Moment ist seinen infinitesimalen Fundamenten in den Kontext des Zählens eingebettet.'."\n".
+                    'Bei der Infinitesimalrechnung können wir diesen metaphysischen Kontext nicht einfach ignorieren, denn wir nutzen ihn,'."\n".
+                    'um die dynamischen, prozesshaften Verhältnisse von Veränderungen zu berechnen.'."\n".
+                    'So wird es zwingend, diesen Kontext zu ergründen und besser zu verstehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  'Ein tieferes Naturverständnis', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Weiten wir unseren Fokus aus, auf die größere naturphilosophische Perspektive, in die die Wissenschaft der Physik und des Lebens integriert sein soll,'."\n".
+                    'so können wir den oft im Verborgenen wirkenden metaphysischen Kontext der infiniten und infinitesimalen Zahlen,'."\n".
+                    'in die unsere endliche Realität eingebettet ist, ähnlich verstehen, wie andere Kontexte der Wissenschaft:'."\n",
+                      'Physik findet immer im Kontext von Raum und Zeit sowie des Vakuums statt, die auch alle Wechselwirkungen vermitteln.'."\n".
+                    'Hierin ist alles eingebettet, was unsere Realität ausmacht.'."\n".
+                    'Darüber hinaus existiert in der auf diesen Seiten entwickelte neue Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie} zusätzlich noch'."\n".
+                    'die Einbettung unseres Kosmos in das innere eines Schwarzen Lochs einer höheren physikalischen Fraktalebene.'."\n".
+                    'Diese übergeordnete Ebene entspricht dann eher der infiniten oder unendlich großen Ebene der Zahlen.'."\n",
+                      'In der Wissenschaft vom Leben, besonders in der Psychologie und der Psychosomatik und damit auch der Medizin,'."\n".
+                    'entspricht der Kontext, in dem das bewusste Leben eingebettet ist, dem Unterbewussten oder Unbewussten sowie dem Unbekannten.'."\n".
+                    'Das auf diesen Seiten entwickelte Modell der Psychosomatik beziehungsweise des zentralen Lebensprozesses,'."\n".
+                    'dem \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess oder Achtsamkeitsprozess}, basiert unter anderem auf einem Informationsaustausch'."\n".
+                    'zwischen dem Bewusstsein und dem Unterbewusstsein.'."\n".
+                    'Hier spielt der Austausch zwischen dem bewussten Leben und seinem Kontext eine zentrale Rolle.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen'),
                     )),
               )

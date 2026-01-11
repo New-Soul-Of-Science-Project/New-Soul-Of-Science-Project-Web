@@ -55,7 +55,7 @@
                   'Keine Hochstapelei')),
                   array( 'text', array( text => array(
                     'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
-                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13.}'."\n".
+                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13. \\\\ Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189, hier S. 186-189.}'."\n".
                     'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
                     'die Linie füllen, dicht an dicht.'."\n".
                     'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
@@ -373,7 +373,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'mit den auf ihm aufbauenden, nachfolgenden Beweisen\color{*Bearb}{(Link)} zeigt,'."\n".
+                    'mit den auf ihm \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{aufbauenden, nachfolgenden Beweisen}, zeigt,'."\n".
                     'dass die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind,'."\n".
                     'wenn wir mit den Teilungen und damit auch mit den negativen Potenzen der Abstände ins Aktual-Unendliche übergehen.'."\n",
                       'Die Radikale der irrationalen algebraischen Zahlen sind die irrationalen algebraischen Zahlen,'."\n".
@@ -690,7 +690,7 @@
                   array( 'text', array( text => array(
                     'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die Anzahl der sinnvollen'."\n".
                     'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
-                    'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}‹}'."\n".
+                    'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
                     'lernen, dann muss es insgesamt \lm{ \# \mathbb{A}_{\S} = \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
                       'Es gilt also \lm{ \# \mathbb{A}_{\S} = \s }.'."\n".
                     'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
@@ -896,7 +896,7 @@
                   'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
+                    'Kurz und knapp würde ich sagen, um einfache geometrische Strukturen abzubilden brauchen wir'."\n".
                     'zunächst keine transzendenten Zahlen.'."\n".
                       'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
                     '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
