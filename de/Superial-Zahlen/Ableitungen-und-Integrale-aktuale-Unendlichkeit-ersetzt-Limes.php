@@ -732,9 +732,9 @@
                     'Die Superial-Zahlen sind dort so aufgestellt, dass sie sowohl die Arithmetik des Unendlichen sehr verständlich erklären,'."\n".
                     'als auch didaktisch für Einsteiger in die Infinitesimalrechnung gut brauchbar sind.'."\n".
                     'Etwas Komplexer wird es bezüglich der Superial-Zahlen erst bei \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{transzendenten Zahlen},'."\n".
-                    'wie beispielsweise die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e }} oder \lm{ π }, die mindestens eine,'."\n".
-                    'aber vermutlich unendlich viele infinitesimale Schichten besitzen.'."\n".
-                    'Hierzu ist eine einfache Erweiterung des Stellenwertsystems auf ganze Superial-Zahlen erforderlich.'."\n".
+                    'wie beispielsweise der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e }} oder bei \lm{ π }, die mindestens eine,'."\n".
+                    'aber vermutlich meist unendlich viele infinitesimale Schichten besitzen, was noch genauer zu erforschen ist.'."\n".
+                    'Hierzu ist eine einfache Erweiterung des Stellenwertsystems auf Superial-Zahlen zweiter Ordnung \lm{ {^{*}\mathbb{S}} = {^{2}\mathbb{S}} }, mit Potenzen von ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }, erforderlich.'."\n".
                     ''))),
 
 
