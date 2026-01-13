@@ -35,8 +35,8 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
+
                 'Herleitung der allgemeinen Operatoren Formeln', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -133,8 +133,8 @@
                   array( 'text', array( text => array(
                     'Auf diese Weise gibt es eine klare absolute, weil explizite, Definition, die auch die Vorzeichen berücksichtigt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
+                         
                 'Genaue Betrachtung der niederen Tetration beziehungsweise des niederen Hyper-4-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -282,15 +282,17 @@
                     'ergibt also das linksseitige neutrale Element \lm{ n_{rechts} }.'."\n",
                       'Dann schauen wir uns im Folgenden an, was sich für die konkreten Operatoren ergibt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+
                 'Addition – neutrales Element', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Addition ist eine besondere Operation.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Linksseitig und rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Linksseitig und rechtsseitig neutrales Element} \\\\'."\n".
                     'Wegen der Vertauschbarkeit ihrer Operanden, ihrer Kommutativität,'."\n".
                     'fallen beide neutralen Elemente zu einem zusammen:'."\n".
                     ''))),
@@ -342,8 +344,10 @@
                   array( 'text', array( text => array(
                     'Wie bekannt, ergeben sich auf diese Weise beide neutralen Elemente zu Null.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus:'."\n".
                     ''))),
@@ -355,21 +359,25 @@
                   array( 'text', array( text => array(
                     'Die Einbettung ist bei der Addition beidseitig, anders, als wir das später beim \jump{OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator}{Null-Operator} sehen werden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Die Additions-Einbettung verhält sich, naturphilosophisch interpretiert, ähnlich wie das Vakuum der Physik,'."\n".
                     'das zunächst neutral erscheint.'."\n".
                     'Diese „Neutralität“ ist der Grund, aus dem wir die Einbettung zunächst vereinfachend weglassen können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                         
                 'Multiplikation – neutrales Element', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Auch die Multiplikation ist eine besondere Operation.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Linksseitig und rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Linksseitig und rechtsseitig neutrales Element} \\\\'."\n".
                     'Auch bei ihr fallen wegen der Vertauschbarkeit ihrer Operanden, ihrer Kommutativität,'."\n".
                     'beide neutralen Elemente zu einem zusammen:'."\n".
                     ''))),
@@ -421,8 +429,10 @@
                   array( 'text', array( text => array(
                     'Wie bekannt, ergeben sich auf diese Weise beide neutralen Elemente zu Eins.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus:'."\n".
                     ''))),
@@ -434,22 +444,26 @@
                   array( 'text', array( text => array(
                     'Die Einbettung ist bei der Addition beidseitig, anders, als wir das später beim \jump{OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator}{Null-Operator} sehen werden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Die Multiplikations-Einbettung verhält sich, naturphilosophisch interpretiert, ähnlich wie das Vakuum der Physik,'."\n".
                     'das zunächst neutral erscheint.'."\n".
                     'Diese „Neutralität“ ist der Grund, aus dem wir die Einbettung zunächst vereinfachend weglassen können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                         
                 'Potenz – neutrale Elemente', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Da bei der Potenz im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
                     'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Linksseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Linksseitig neutrales Element} \\\\'."\n".
                     'Um das linksseitig neutrale Element der Potenz zu bestimmen, setzen wir den Potenz-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
                     ''))),
@@ -491,8 +505,10 @@
                     'und unterscheiden sich so im Allgemeinen voneinander.'."\n",
                       'Dies gilt auch für alle linksseitig neutralen Element der Operatoren größer als Drei, wie noch zu zeigen ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Rechtsseitig neutrales Element} \\\\'."\n".
                     'Um das rechtsseitig neutrale Element der Potenz zu bestimmen, setzen wir den Potenz-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
                     ''))),
@@ -525,8 +541,10 @@
                     'Wie bekannt, ergibt sich das rechtsseitig neutrale Element auf diese Weise zu Eins.'."\n",
                       'Dies gilt auch für alle rechtsseitig neutralen Element der Operatoren größer als Drei, wie noch zu zeigen ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
@@ -539,8 +557,10 @@
                     'Eine tiefere Einbettung ist hier aus technischen Gründen leider nicht darstellbar.'."\n",
                       'Sie ist bei der Potenz beidseitig, anders, als wir das gleich beim \jump{OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator}{Null-Operator} sehen werden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Die Potenz-Einbettung verhält sich, naturphilosophisch interpretiert, ähnlich wie das Vakuum der Physik,'."\n".
                     'das zunächst neutral erscheint.'."\n".
                     'Diese „Neutralität“ ist der Grund, aus dem wir die Einbettung zunächst vereinfachend weglassen können.'."\n".
@@ -607,8 +627,8 @@
                   array( 'text', array( text => array(
                     'Dann sehen die kleineren Operatoren anders aus …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
+                         
                 'Was ist dann der Null-Operator?', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -649,8 +669,8 @@
                     'noch zu sprechen.'."\n",
                       'Dies ist also identisch mit der Version ohne zusätzlichem Vorzeichen in der rekursiven Definition.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
+                         
                 'Was ist dann der Minus-Eins-Operator?', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -694,8 +714,8 @@
                     'noch zu sprechen.'."\n",
                       'Auch hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
+                         
                 'Was ist dann der Minus-Zwei-Operator?', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -736,8 +756,8 @@
                     'noch zu sprechen.'."\n",
                       'Ebenso hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
+                         
                 'Die Versionen ohne und mit zusätzlichem Vorzeichen in der rekursiven Definition sind identisch', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -747,16 +767,16 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.AM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( a *o( x + 1 *o) b *) *o( x *o) a  :=  a *o( x + 1 *o) *( b + 1 *)  }',
-                                               /* label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv', */label_text => '\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}', label_incr => false),
+                                               label_text => '\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( x + 1 *o) a *o( x + 1 *o) b *) *o( x *o) a  :=  *o( x + 1 *o) a *o( x + 1 *o) *( b + 1 *)  }',
-                                               /* label_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen', */label_text => '\jumpname{OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen}', label_incr => false),
+                                               label_text => '\jumpname{OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dies gilt dann auch für die absolute Definition der Formel \jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  /* array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
-                                           
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
+                      
                 '(In Arbeit …)')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
