@@ -180,9 +180,9 @@
                    
         'OM:OT:Zaehloperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'X' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.12'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.14'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.17'),
       ),
     ),
   );

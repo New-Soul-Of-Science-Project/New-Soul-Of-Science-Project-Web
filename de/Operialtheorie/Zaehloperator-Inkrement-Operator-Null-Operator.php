@@ -167,7 +167,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  a - 1  *]  .  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  a - 1  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die linksseitig neutralen Elemente \\term{n__{links}(a)} des Null-Operators sind von \\term{a} abhängig'."\n".
@@ -196,7 +196,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) n_{rechts}  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) n_{rechts}  =  a + 1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -204,8 +204,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a  =  a + 1  *]  .  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) n_{rechts}  =  a  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
@@ -221,7 +220,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *)  *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \nexists q *)  \\\ \qquad\quad\;\;\,  *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*} *o( 0 *o) q  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auf der rechten Seite von \\term{a} existiert kein neutrales Element und daher auch keine Einbettung,'."\n".
@@ -246,7 +245,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall x \in \mathbb{Z}  *) *( \forall a, n_{x,rechts} \in \mathbb{R}  *) *[  a *o( x *o)  :=  a *o( x *o) n_{x,rechts}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{Z}  *) *( \forall a \in \mathbb{R}  *) *[  a *o( x *o)  :=  a  *]  ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{Z}  *) *( \forall a \in \mathbb{R}  *) *[  a *o( x *o)  :=  a  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -254,7 +253,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o)  =  a  *]  .  }',
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o)  =  a  *]  \;\; .  }',
                                                label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -263,7 +262,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \nexists q \in \mathbb{R}  }'),
+                      array( display => 'on',  latex => '{  \nexists q  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -271,7 +270,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a  *]  .  }',
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a  *]  \;\; .  }',
                                                label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -280,7 +279,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \nexists q \in \mathbb{R}  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  \nexists q  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
@@ -288,7 +287,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists q \in \mathbb{R} *) *( \forall q \in \mathbb{R} *)  }'),
+                      array( display => 'on',  latex => '{  *( \exists q *) *( \forall q *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -296,7 +295,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a + 1  *]  .  }',
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a + 1  *]  \;\; .  }',
                                                label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -305,7 +304,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists q \in \mathbb{R} *) *( \forall q \in \mathbb{R} *)  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  *( \exists q *) *( \forall q *)  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies gilt so allgemein für alle \\term{q}, weil es nicht darauf ankommt, was \\term{q} ist,'."\n".
@@ -345,7 +344,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =   a  *]  .  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) a  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =   a  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \\term{a} mit erhalten werden soll oder nicht.'."\n".
