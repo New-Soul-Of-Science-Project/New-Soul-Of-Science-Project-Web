@@ -42,8 +42,8 @@
                     'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Vortext:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Zaehloperator:Vortext:X', text =>
+
                 'Herleitung des Zähloperators aus der Addition', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -118,8 +118,8 @@
                     'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+          
                 'Neutrale Elemente des Null-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -129,8 +129,10 @@
                       'Da beim Null-Operator im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
                     'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Linksseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Linksseitig neutrales Element} \\\\'."\n".
                     'Um das linksseitig neutrale Element des Null-Operators zu bestimmen, setzen wir den Null-Operator'."\n".
                     'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
                     ''))),
@@ -173,8 +175,10 @@
                       'Wir sehen, dass das linksseitig neutrale Element aus dem Zählen geboren ist und'."\n".
                     'immer den Vorgänger unserer Zahl \\term{a} darstellt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Rechtsseitig neutrales Element} \\\\'."\n".
                     'Um das rechtsseitig neutrale Element des Null-Operators zu bestimmen, setzen wir den Null-Operator'."\n".
                     'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
                     ''))),
@@ -208,21 +212,25 @@
                     'Es existiert nicht, weil jede Zahl \\term{n__{rechts}} unser \\term{a} um einen hoch zählt.'."\n".
                     'Es gibt keine Zahl \\term{n__{rechts}}, die unser \\term{a} nicht verändert.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *)  *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auf der rechten Seite von \\term{a} existiert kein neutrales Element und daher auch keine Einbettung,'."\n".
                     'was sehr bemerkenswert ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Perspektive der Logik', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Perspektive der Logik} \\\\'."\n".
                     'Interessanterweise können wir, dazu passend, bei kluger, weil plausibler, Definition der Operatoren als Nachzeichen,'."\n".
                     'mit dem Null-Operator dann auch überprüfen, ob eine Zahl \\term{q} existiert.\\footnote{Nachfolgende Definition und Herleitungen mit Raimund Welsch erschaffen.}'."\n".
                     ''))),
@@ -307,8 +315,10 @@
                     'Wir spannen also damit auch einen Raum aller Möglichkeiten auf.'."\n".
                     'Auch deshalb ist unser Null-Operator wirklich etwas ganz besonderes.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Äquivalenter Vorgänger', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Äquivalenter Vorgänger} \\\\'."\n".
                     'Im Null-Operator haben wir das Zählen im Vorzeichen und im angehängten Operator mit beliebigem Operanden.'."\n".
                     'Bezüglich des Vorzeichens gilt für den äquivalenten Vorgänger:'."\n".
                     ''))),
@@ -340,8 +350,10 @@
                   array( 'text', array( text => array(
                     'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \\term{a} mit erhalten werden soll oder nicht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Betrachten wir das Zählen mit dem Null-Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
                     'dann können wir unser festgehaltenes oder festgelegtes \\term{a} als die Gegenwart verstehen:'."\n".
                     ''))),
@@ -377,8 +389,10 @@
                     'Das sind tiefe naturphilosophische Einsichten.'."\n".
                     ''))),
                       
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  'Sprachgebrauch', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\\condb{Sprachgebrauch} \\\\'."\n".
                     'Wir finden das auch in unserem Sprachgebrauch:'."\n".
                     ''))),
                       
