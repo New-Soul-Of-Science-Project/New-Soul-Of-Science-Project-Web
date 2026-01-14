@@ -38,9 +38,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Der Minus-Zwei-Operator, auf ein beliebiges \term{a} angewandt, ändert an \term{a} nie etwas;'."\n".
+                      'Der Minus-Zwei-Operator, auf ein beliebiges \lm{ a } angewandt, ändert an \lm{ a } nie etwas;'."\n".
                     'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
-                    'Das bedeutet dann, wenn \term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \lm{ c } das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.KonO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -151,8 +151,8 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen, dass das linksseitig neutrale Element \term{n__{links}} identisch mit'."\n".
-                    'dem ursprünglichen Element \term{a} ist, genau, wie beim Minus-Eins-Operator.'."\n".
+                    'Wir sehen, dass das linksseitig neutrale Element \lm{ n_{links} } identisch mit'."\n".
+                    'dem ursprünglichen Element \lm{ a } ist, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Rechtsseitig neutrales Element} \\\\'."\n".
@@ -185,21 +185,21 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können erkennen, dass alle Elemente \term{n__{rechts}} rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
-                    'weil alle \term{n__{rechts}} unser \term{a} unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
+                    'Wir können erkennen, dass alle Elemente \lm{ n_{rechts} } rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
+                    'weil alle \lm{ n_{rechts} } unser \lm{ a } unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Die Einbettung der des Minus-Eins-Operators.'."\n",
-                      'Halten wir also unser jetziges \term{a} fest, dann sieht seine Einbettung in'."\n".
-                    'neutrale Elemente wie folgt aus – \term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
+                      'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.KonO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall c_{1},c_{2},\cdots \in \mathbb{R} *) *[  a  =  \cdots \, *o( -2 *o) a *o( -2 *o) a \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -2 *o) {*a*} \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -2 *o) {c_{1}} *o( -2 *o) {c_{2}} *o( -2 *o) \cdots  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf der rechten Seite von \term{a} existiert immer das gleiche neutrales Element \term{a}'."\n".
+                    'Auf der rechten Seite von \lm{ a } existiert immer das gleiche neutrales Element \lm{ a }'."\n".
                     'und auf der linken Seite existieren beliebige neutrale Elemente, was auch sehr bemerkenswert ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -233,7 +233,7 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier ist es nicht einmal ein Unterschied, ob bei der Einbettung das Vorzeichen von \term{a} mit erhalten werden soll oder nicht.'."\n".
+                    'Hier ist es nicht einmal ein Unterschied, ob bei der Einbettung das Vorzeichen von \lm{ a } mit erhalten werden soll oder nicht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Naturphilosophische Interpretation} \\\\'."\n".
@@ -241,7 +241,7 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Wie beim Minus-Eins-Operator hat Gegenwart unserer Zahl \term{a} eine Konstanz, in die sie vorne eingebettet ist, aus der sie folgt.'."\n".
+                      'Wie beim Minus-Eins-Operator hat Gegenwart unserer Zahl \lm{ a } eine Konstanz, in die sie vorne eingebettet ist, aus der sie folgt.'."\n".
                       'Eine Zukunft hat sie, in der alles Einfluss nehmen kann, dies aber ihre Konstanz nicht verändert.'."\n".
                       'Die Konstanz ihrer Zukunft wird durch den Prozess des Erhaltens, durch das Anhängen eines weiteren dieses Operators mit einem beliebigen Operanden,'."\n".
                       'in Form einer beliebigen Zahl, nicht verändert.'."\n",

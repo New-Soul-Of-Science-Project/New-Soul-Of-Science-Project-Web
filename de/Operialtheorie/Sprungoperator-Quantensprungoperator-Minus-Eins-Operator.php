@@ -39,9 +39,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \term{a} angewandt wird und dies insgesamt \term{a} immer genau um Eins'."\n".
+                      'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \lm{a} angewandt wird und dies insgesamt \lm{a} immer genau um Eins'."\n".
                     'erhöhen soll, kann es nur so sein, dass der erste Operator als Vorzeichen das Ergebnis bestimmt.'."\n".
-                    'Das bedeutet dann, wenn \term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \lm{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.SpruO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -139,7 +139,7 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen, dass das linksseitig neutrale Element \term{n__{links}} identisch mit dem ursprünglichen Element \term{a} ist.'."\n".
+                    'Wir sehen, dass das linksseitig neutrale Element \lm{ n_{links} } identisch mit dem ursprünglichen Element \lm{ a } ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Rechtsseitig neutrales Element} \\\\'."\n".
@@ -179,13 +179,13 @@
                       array( display => 'on',  latex => '{  \forall n_{rechts} \in \mathbb{R}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können erkennen, dass alle Elemente \term{n__{rechts}} rechtsseitig neutrale Elemente des Minus-Eins-Operators sind,'."\n".
-                    'weil alle \term{n__{rechts}} unser \term{a} unverändert lassen.'."\n".
+                    'Wir können erkennen, dass alle Elemente \lm{ n_{rechts} } rechtsseitig neutrale Elemente des Minus-Eins-Operators sind,'."\n".
+                    'weil alle \lm{ n_{rechts} } unser \lm{ a } unverändert lassen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
-                    'Halten wir also unser jetziges \term{a} fest, dann sieht seine Einbettung in'."\n".
-                    'neutrale Elemente wie folgt aus – \term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
+                    'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -193,7 +193,7 @@
                                                label_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung', label_text => '\name{OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf der rechten Seite von \term{a} existiert immer das gleiche neutrales Element \term{a}'."\n".
+                    'Auf der rechten Seite von \lm{ a } existiert immer das gleiche neutrales Element \lm{ a }'."\n".
                     'und auf der linken Seite existieren beliebige neutrale Elemente, was auch sehr bemerkenswert ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -227,17 +227,17 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =   a + 1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \term{a} mit erhalten werden soll oder nicht.'."\n".
+                    'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \lm{ a } mit erhalten werden soll oder nicht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Betrachten wir das Zählen mit dem Minus-Eins-Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
-                    'dann können wir unser festgehaltenes oder festgelegtes \term{a} auch als die direkt vor uns liegende Vergangenheit verstehen:'."\n".
+                    'dann können wir unser festgehaltenes oder festgelegtes \lm{ a } auch als die direkt vor uns liegende Vergangenheit verstehen:'."\n".
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Existiert in der Gegenwart auf den zeitlichen Schritt vorher \term{a} noch nichts, dann erzeugt der'."\n".
-                      'an das Nicht-Existente angehängte \term{a} den nächsten Schritt \term{a + 1}.'."\n".
+                      'Existiert in der Gegenwart auf den zeitlichen Schritt vorher \lm{ a } noch nichts, dann erzeugt der'."\n".
+                      'an das Nicht-Existente angehängte \lm{ a } den nächsten Schritt \lm{ a + 1 }.'."\n".
                       'Nimmt dann im selben, nun existierenden Schritt noch ein beliebiger Operand mit dem Operator Minus-Eins Einfluss,'."\n".
                       'so ändert sich nichts weiter, bis der nächste, noch nicht existierende Schritt erreicht ist.'."\n".
                     ''))),
@@ -253,8 +253,8 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Nur als Vorzeichen vor dem Nichts existiert, wird aus dem Nichts die eigene Veränderung von \term{a} kreiert.'."\n".
-                      'Die Vergangenheit oder Historie \term{a} kreiert also seine noch nicht existierende Zukunft zu \term{a + 1}.'."\n".
+                      'Nur als Vorzeichen vor dem Nichts existiert, wird aus dem Nichts die eigene Veränderung von \lm{ a } kreiert.'."\n".
+                      'Die Vergangenheit oder Historie \lm{ a } kreiert also seine noch nicht existierende Zukunft zu \lm{ a + 1 }.'."\n".
                     ''))),
                       
                   array( 'equations',
