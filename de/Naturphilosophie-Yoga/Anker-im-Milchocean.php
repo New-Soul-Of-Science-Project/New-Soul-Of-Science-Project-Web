@@ -551,7 +551,7 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Ich erinnere mich dunkel, dass ich ein Video gesehen habe, in dem tief in einem Schacht mitten im Hauptturm von Angkor Wat eine Schildkrötenstatue (Kurma) in einem Steinkasten gewesen sein soll.',
-                    '– Video: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple}',
+                    '– Video: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple} – Sek. 03:15',
                     '• Dieser Steinkasten im Schacht wird bei jeder Sommersonnen durch ein Loch in der Turmspitze durch einem Lichtstrahl beschienen.',
                     '• Es ist nach meinem Verständnis Vishnu in Form seines Avatars Kurma, der beim Rühren des Milchoceans den Fels oben hält.',
                     '• Dadurch kam mein Eindruck auf, Angkor Wat symbolisiert den Milchocean-Mythos.',
