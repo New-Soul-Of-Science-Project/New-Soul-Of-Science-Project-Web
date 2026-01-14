@@ -97,6 +97,7 @@
           'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.KonO.7'),
 
         'OM:OT:Konstanzoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:OT:Literatur' => array(

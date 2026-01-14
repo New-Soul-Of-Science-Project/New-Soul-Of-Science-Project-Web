@@ -921,7 +921,7 @@
                     'herausgefunden, der sich in einer fundamentalen Asymmetrie der Geometrie und \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{des Zählens} offenbart.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
-                  'Ein gutes naturphilosophisches Verständnis der Metaphysik in der Mathematik', subline =>
+                  'Ein gutes naturphilosophisches Verständnis der Metaphysik der Bewegung in der Mathematik', subline =>
                     'Wie die Mathematik des Pfeilflugs funktioniert')),
                   array( 'text', array( text => array(
                     'In ihrer Breite erlaubt uns unsere Forschung nicht nur eine praktische und intuitive Arithmetik des Unendlichen,'."\n".
@@ -934,7 +934,7 @@
                     'um die dynamischen, prozesshaften Verhältnisse von Veränderungen zu berechnen.'."\n".
                     'So wird es zwingend, diesen Kontext zu ergründen und besser zu verstehen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:EinTieferesNaturverständnis', text =>
                   'Ein tieferes Naturverständnis', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -951,7 +951,25 @@
                     'Das auf diesen Seiten entwickelte Modell der Psychosomatik beziehungsweise des zentralen Lebensprozesses,'."\n".
                     'dem \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess oder Achtsamkeitsprozess}, basiert unter anderem auf einem Informationsaustausch'."\n".
                     'zwischen dem Bewusstsein und dem Unterbewusstsein.'."\n".
-                    'Hier spielt der Austausch zwischen dem bewussten Leben und seinem Kontext eine zentrale Rolle.'."\n".
+                    'Hier spielt der Austausch zwischen dem bewussten Leben und seinem Kontext eine zentrale Rolle.'."\n",
+                      'Bezüglich der Mathematik gibt es noch ein Forschungsthema auf dieser Seite bei dem auch ein Kontext auftaucht,'."\n".
+                    'der in naturphilosophischer und metaphysischer Hinsicht interessant ist.'."\n".
+                    'In der \jump{OM:OT:Home}{Operialtheorie} erkennen wir je nach Operator unterschiedliche neutrale Einbettungen von momentanen Werten:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Beim \jump{OM:OT:Zaehloperator}{Zähloperator}, die \italic{›\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig die Vergangenheit herunter gezählt und rechtsseitig die Zukunft, die noch nicht existiert.'."\n",
+                        'Bei der Addition, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:AdditionEinbettungInNeutraleElemente}‹}, hier beidseitig Nullen.'."\n",
+                        'Bei der Multiplikation, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:MultiplikationEinbettungInNeutraleElemente}‹}, hier beidseitig Einsen.'."\n",
+                        'Bei der Potenz, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:PotenzEinbettungInNeutraleElemente}‹}, hier linksseitig die Momentan-Wert-Wurzel aus dem momentanen Wert und rechtsseitig die Eins.'."\n",
+                        'Beim \jump{OM:OT:Sprungoperator}{Sprungoperator}, die \italic{›\jumpname{OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig der Zählsprung, der vor Ewigkeiten geschah, und rechtsseitig beliebige Werte.'."\n",
+                        'Beim \jump{OM:OT:Konstanzoperator}{Konstanzoperator}, die \italic{›\jumpname{OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig die momentane Wert, den es schon ewig gibt, und rechtsseitig beliebige Werte.'."\n",
+                    ))),
+                  array( 'text', array( text => array(
+                    'Was all dies tiefer zu bedeuten hat, sollte weiter philosophiert werden.'."\n".
+                    'Es zeigt aber, dass die systematische Ausarbeitung der Entstehung unserer arithmetischen Operatoren Aufschluss über den Kontext gibt,'."\n".
+                    'in dem die Arithmetik stattfindet, dadurch, dass wir die Verborgenen Strukturen herausarbeiten, die offenbar ihre Grundlage darstellen.'."\n",
+                      'Wir entdecken so immer wieder unsere unabsichtlichen stillschweigenden Annahmen und Voraussetzungen, damit all dies so funktioniert,'."\n".
+                    'wie wir es sinnvoller Weise gewohnt sind und beobachten.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

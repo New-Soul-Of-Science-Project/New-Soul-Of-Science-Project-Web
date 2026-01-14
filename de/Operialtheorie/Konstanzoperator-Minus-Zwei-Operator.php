@@ -64,7 +64,7 @@
                     'noch zu sprechen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
-                                           
+
                 'Der Beginn des Zählens', subline =>
                   'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
                   array( 'text', array( text => array(
@@ -153,6 +153,7 @@
                     array( equ_text_std => 'OT.KonO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
                     ))),
+
                   array( 'text', array( text => array(
                     'Wir sehen, dass das linksseitig neutrale Element \lm{ n_{links} } identisch mit'."\n".
                     'dem ursprünglichen Element \lm{ a } ist, genau, wie beim Minus-Eins-Operator.'."\n".
@@ -190,11 +191,12 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  .  }'),
                     ))),
+
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass alle Elemente \lm{ n_{rechts} } rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
                     'weil alle \lm{ n_{rechts} } unser \lm{ a } unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente', text =>
                   'Einbettung in neutrale Elemente', subline =>
                     '')),
                   array( 'text', array( text => array(
