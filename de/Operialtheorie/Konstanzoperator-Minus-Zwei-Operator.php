@@ -20,8 +20,8 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
+
                 'Was ist der Minus-Zwei-Operator?', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -63,7 +63,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
                                            
                 'Der Beginn des Zählens', subline =>
                   'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
@@ -80,7 +80,7 @@
                   array( 'text', array( text => array(
                     'Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
                     ''))),
-                  /* array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
                                            
                 'XXX')), */
                   array( 'text', array( text => array(
@@ -109,8 +109,8 @@
                     'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
-                                           
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+
                 'Neutrale Elemente des Minus-Zwei-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -121,11 +121,14 @@
                       'Da beim Minus-Zwei-Operator im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
                     'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  'Linksseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Linksseitig neutrales Element} \\\\'."\n".
                     'Um das linksseitig neutrale Element des Minus-Zwei-Operators zu bestimmen, setzen wir den Minus-Zwei-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
@@ -154,11 +157,14 @@
                     'Wir sehen, dass das linksseitig neutrale Element \lm{ n_{links} } identisch mit'."\n".
                     'dem ursprünglichen Element \lm{ a } ist, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  'Rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Rechtsseitig neutrales Element} \\\\'."\n".
                     'Um das rechtsseitig neutrale Element des Minus-Zwei-Operators zu bestimmen, setzen wir den Minus-Zwei-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
@@ -188,8 +194,10 @@
                     'Wir können erkennen, dass alle Elemente \lm{ n_{rechts} } rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
                     'weil alle \lm{ n_{rechts} } unser \lm{ a } unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Die Einbettung der des Minus-Eins-Operators.'."\n",
                       'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
@@ -202,11 +210,14 @@
                     'Auf der rechten Seite von \lm{ a } existiert immer das gleiche neutrales Element \lm{ a }'."\n".
                     'und auf der linken Seite existieren beliebige neutrale Elemente, was auch sehr bemerkenswert ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  'Äquivalenter Vorgänger', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Äquivalenter Vorgänger} \\\\'."\n".
                     'Der Minus-Zwei-Operator ist völlig neutral und wir haben daher auch kein Zählen.'."\n".
                     'Bezüglich des Vorzeichens gilt für den äquivalenten Vorgänger:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
@@ -235,8 +246,10 @@
                   array( 'text', array( text => array(
                     'Hier ist es nicht einmal ein Unterschied, ob bei der Einbettung das Vorzeichen von \lm{ a } mit erhalten werden soll oder nicht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Beim Minus-Zwei-Operator herrscht aus naturphilosophisch zeitlicher Perspektive völlige Konstanz:'."\n".
                     ''))),
 

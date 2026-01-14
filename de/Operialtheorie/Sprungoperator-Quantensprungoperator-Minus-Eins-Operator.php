@@ -21,7 +21,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Sprungoperator:Vortext:X', text =>
                                            
                 'Was ist der Minus-Eins-Operator?', subline =>
                   '')),
@@ -67,7 +67,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  /* array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:XXX', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Sprungoperator:Vortext:XXX', text =>
                                            
                 'XXX')), */
                   array( 'text', array( text => array(
@@ -97,7 +97,7 @@
                     'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Neutrale Elemente des Minus-Eins-Operators', subline =>
                   '')),
@@ -109,11 +109,14 @@
                       'Da beim Minus-Eins-Operator im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
                     'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:X', text =>
+                  'Linksseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Linksseitig neutrales Element} \\\\'."\n".
                     'Um das linksseitig neutrale Element des Minus-Eins-Operators zu bestimmen, setzen wir den Minus-Eins-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
@@ -141,11 +144,14 @@
                   array( 'text', array( text => array(
                     'Wir sehen, dass das linksseitig neutrale Element \lm{ n_{links} } identisch mit dem ursprünglichen Element \lm{ a } ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:X', text =>
+                  'Rechtsseitig neutrales Element', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Rechtsseitig neutrales Element} \\\\'."\n".
                     'Um das rechtsseitig neutrale Element des Minus-Eins-Operators zu bestimmen, setzen wir den Minus-Eins-Operator'."\n".
                     'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
                     ''))),
+
                   array( 'text', array( text => array(
                     '\\\\'."\n",
                       'Sei'."\n".
@@ -178,12 +184,15 @@
                     array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall n_{rechts} \in \mathbb{R}  \;\;  .  }'),
                     ))),
+
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass alle Elemente \lm{ n_{rechts} } rechtsseitig neutrale Elemente des Minus-Eins-Operators sind,'."\n".
                     'weil alle \lm{ n_{rechts} } unser \lm{ a } unverändert lassen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente', text =>
+                  'Einbettung in neutrale Elemente', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Einbettung in neutrale Elemente} \\\\'."\n".
                     'Halten wir also unser jetziges \lm{ a } fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus – \lm{ *a* } mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
@@ -196,8 +205,10 @@
                     'Auf der rechten Seite von \lm{ a } existiert immer das gleiche neutrales Element \lm{ a }'."\n".
                     'und auf der linken Seite existieren beliebige neutrale Elemente, was auch sehr bemerkenswert ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:X', text =>
+                  'Äquivalenter Vorgänger', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Äquivalenter Vorgänger} \\\\'."\n".
                     'Auch im Minus-Eins-Operator haben wir das Zählen, aber nur im Vorzeichen.'."\n".
                     'Bezüglich des Vorzeichens gilt für den äquivalenten Vorgänger:'."\n".
                     ''))),
@@ -229,8 +240,10 @@
                   array( 'text', array( text => array(
                     'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \lm{ a } mit erhalten werden soll oder nicht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:X', text =>
+                  'Naturphilosophische Interpretation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Betrachten wir das Zählen mit dem Minus-Eins-Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
                     'dann können wir unser festgehaltenes oder festgelegtes \lm{ a } auch als die direkt vor uns liegende Vergangenheit verstehen:'."\n".
                     ''))),

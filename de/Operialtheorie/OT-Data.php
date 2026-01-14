@@ -148,6 +148,7 @@
           'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.SpruO.7'),
                    
         'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
           'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'),
       ),
     ),
