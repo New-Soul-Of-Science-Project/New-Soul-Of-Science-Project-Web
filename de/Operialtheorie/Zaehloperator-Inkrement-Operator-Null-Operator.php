@@ -13,7 +13,7 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Zähloperator \\term{0}}',
+                    '\bold{Zähloperator \term{0}}',
                     '• Linksneutrales Element:',
                     '– Ist immer einen kleiner:',
                     '⋅ Kann gedeutet werden als, dass es immer vom Kleineren hierher gekommen ist! Dass dies immer möglich ist.',
@@ -33,13 +33,13 @@
                     'Dann die Addition zählt, wie oft gezählt wird.'."\n",
                       'Daher kommt es auch, dass der Zähloperator, wie ich ihn ab jetzt nennen möchte,'."\n".
                     'die Null zugeordnet bekommen hat, also der Null-Operator ist.'."\n".
-                    'Denn in der Operial-Theoorie wird vom höheren Operator \\italic{gezählt}, wie häufig der Einen'."\n".
+                    'Denn in der Operial-Theoorie wird vom höheren Operator \italic{gezählt}, wie häufig der Einen'."\n".
                     'niedrigere Operator verkettet angewandt wird.'."\n".
                     'Das Zählen stellt also den Zusammenhang innerhalb der Operatoren-Hierarchie her'."\n".
                     'und ist gleichzeitig selber einer der hierarchischen Operatoren.'."\n",
                       'Wir haben es also in der Operatoren-Hierarchie mit einer Selbstbezüglickeit zu tun.'."\n".
                     'Es handelt sich um eine selbstbezügliche und selbstähnliche, also um eine in sich rückgekoppelte, fraktale Struktur.'."\n".
-                    'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n",
+                    'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:OT:Zaehloperator:Vortext:X', text =>
@@ -58,16 +58,16 @@
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Da drei Mal der Null-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} um Drei'."\n".
+                      'Da drei Mal der Null-Operator auf ein beliebiges \term{a} angewandt wird und dies insgesamt \term{a} um Drei'."\n".
                     'erhöhen soll, kann es nur so sein, dass jeder Operator das Ergebnis um Eins erhöht.'."\n".
-                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    'Das bedeutet dann, wenn \term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( 0 *o) a  =  a *o( 1 *o) 1  =  a + 1  }',
-                                               label_name => 'OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins', label_text => '\\name{OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins}', label_incr => true),
+                                               label_name => 'OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins', label_text => '\name{OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( 0 *o) a  =  c *o( 1 *o) 1  =  c + 1  }',
-                                               label_name => 'OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins', label_text => '\\name{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins}', label_incr => true),
+                                               label_name => 'OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins', label_text => '\name{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n",
@@ -81,10 +81,10 @@
                     ''))),
                       
                   array( 'text', array( text => array(
-                    'Das Zählen ist in der Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}}, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
+                    'Das Zählen ist in der Arithmetik\footnote{\const{NSOSP_g_footnote_text_Arithmetik}}, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
                     'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
-                      'So lässt sich Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} konsequenterweise nun wie folgt darstellen:'."\n".
+                      'So lässt sich Formel \jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} konsequenterweise nun wie folgt darstellen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -134,7 +134,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Um das linksseitig neutrale Element des Null-Operators zu bestimmen, setzen wir den Null-Operator'."\n".
-                    'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
+                    'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
@@ -146,7 +146,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
+                      'wegen – Formel \jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -163,24 +163,24 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'mit \\term{n__{links}} in Abhängigkeit von \\term{a}'."\n".
+                      'mit \term{n__{links}} in Abhängigkeit von \term{a}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  a - 1  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die linksseitig neutralen Elemente \\term{n__{links}(a)} des Null-Operators sind von \\term{a} abhängig'."\n".
+                    'Die linksseitig neutralen Elemente \term{n__{links}(a)} des Null-Operators sind von \term{a} abhängig'."\n".
                     'und unterscheiden sich so voneinander.'."\n",
                       'Wir sehen, dass das linksseitig neutrale Element aus dem Zählen geboren ist und'."\n".
-                    'immer den Vorgänger unserer Zahl \\term{a} darstellt.'."\n".
+                    'immer den Vorgänger unserer Zahl \term{a} darstellt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
                   'Rechtsseitig neutrales Element', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Um das rechtsseitig neutrale Element des Null-Operators zu bestimmen, setzen wir den Null-Operator'."\n".
-                    'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
+                    'in den Formalismus \jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
@@ -192,7 +192,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
+                      'wegen – Formel \jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -208,22 +208,22 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
-                    'Es existiert nicht, weil jede Zahl \\term{n__{rechts}} unser \\term{a} um einen hoch zählt.'."\n".
-                    'Es gibt keine Zahl \\term{n__{rechts}}, die unser \\term{a} nicht verändert.'."\n".
+                    'Es existiert nicht, weil jede Zahl \term{n__{rechts}} unser \term{a} um einen hoch zählt.'."\n".
+                    'Es gibt keine Zahl \term{n__{rechts}}, die unser \term{a} nicht verändert.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:EinbettungInNeutraleElemente', text =>
                   'Einbettung in neutrale Elemente', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
-                    'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
+                    'Halten wir also unser jetziges \term{a} fest, dann sieht seine Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus – \term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \nexists q *)  \\\ \qquad\quad\;\;\,  *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*} *o( 0 *o) q  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf der rechten Seite von \\term{a} existiert kein neutrales Element und daher auch keine Einbettung,'."\n".
+                    'Auf der rechten Seite von \term{a} existiert kein neutrales Element und daher auch keine Einbettung,'."\n".
                     'was sehr bemerkenswert ist.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
@@ -231,12 +231,12 @@
                     '')),
                   array( 'text', array( text => array(
                     'Interessanterweise können wir, dazu passend, bei kluger, weil plausibler, Definition der Operatoren als Nachzeichen,'."\n".
-                    'mit dem Null-Operator dann auch überprüfen, ob eine Zahl \\term{q} existiert.\\footnote{Nachfolgende Definition und Herleitungen mit Raimund Welsch erschaffen.}'."\n".
+                    'mit dem Null-Operator dann auch überprüfen, ob eine Zahl \term{q} existiert.\footnote{Nachfolgende Definition und Herleitungen mit Raimund Welsch erschaffen.}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Für alle Operatoren \\term{x} soll gelten, dass der dem Operator als Nachzeichen'."\n".
-                    'virtuell folgende Operand dem rechtsneutralen Element \\term{n__{x,rechts}} des Operators entspricht.'."\n".
-                    'Sollte es kein rechtsneutrales Element geben, wie beim Null-Operator, dann ist dieser Operand \\term{n__{x,rechts}} eben nicht existent:'."\n".
+                    'Für alle Operatoren \term{x} soll gelten, dass der dem Operator als Nachzeichen'."\n".
+                    'virtuell folgende Operand dem rechtsneutralen Element \term{n__{x,rechts}} des Operators entspricht.'."\n".
+                    'Sollte es kein rechtsneutrales Element geben, wie beim Null-Operator, dann ist dieser Operand \term{n__{x,rechts}} eben nicht existent:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
@@ -254,7 +254,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o)  =  a  *]  \;\; .  }',
-                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP}', label_incr => true),
+                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP', label_text => '\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
@@ -266,16 +266,16 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'muss wegen \\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP} gelten:'."\n".
+                      'muss wegen \jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP} gelten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a  *]  \;\; .  }',
-                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht}', label_incr => true),
+                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht', label_text => '\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
-                      'Umgekehrt folgt aus \\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht} die Nicht-Existenz von \\term{q}:'."\n".
+                      'Umgekehrt folgt aus \jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht} die Nicht-Existenz von \term{q}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -291,23 +291,23 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'muss wegen \\jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} gelten:'."\n".
+                      'muss wegen \jumpname{OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins} gelten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 0 *o) q  =  a + 1  *]  \;\; .  }',
-                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert', label_text => '\\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert}', label_incr => true),
+                                               label_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert', label_text => '\name{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
-                      'Umgekehrt folgt aus \\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert} die Existenz von \\term{q} und das alle möglich sind:'."\n".
+                      'Umgekehrt folgt aus \jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert} die Existenz von \term{q} und das alle möglich sind:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists q *) *( \forall q *)  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies gilt so allgemein für alle \\term{q}, weil es nicht darauf ankommt, was \\term{q} ist,'."\n".
+                    'Dies gilt so allgemein für alle \term{q}, weil es nicht darauf ankommt, was \term{q} ist,'."\n".
                     'sondern es kommt nur darauf an, ob es existiert.'."\n",
                       'Wir können mit Hilfe unseres Null-Operators also allgemeine Aussagen über die logische Existenz einer Zahl machen,'."\n".
                     'ganz unabhängig davon, welche es ist.'."\n".
@@ -331,7 +331,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\jumpname{OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins} –'."\n".
+                      'wegen – Formeln \jumpname{OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -348,18 +348,18 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =   a  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \\term{a} mit erhalten werden soll oder nicht.'."\n".
+                    'Es ist also ein Unterschied, ob bei der Einbettung die Veränderung durch das Vorzeichen von \term{a} mit erhalten werden soll oder nicht.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:X', text =>
                   'Naturphilosophische Interpretation', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Betrachten wir das Zählen mit dem Null-Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
-                    'dann können wir unser festgehaltenes oder festgelegtes \\term{a} als die Gegenwart verstehen:'."\n".
+                    'dann können wir unser festgehaltenes oder festgelegtes \term{a} als die Gegenwart verstehen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Diese Gegenwart unserer Zahl \\term{a} hat eine Historie in die sie eingebettet ist, aus der sie folgt.'."\n".
+                      'Diese Gegenwart unserer Zahl \term{a} hat eine Historie in die sie eingebettet ist, aus der sie folgt.'."\n".
                       'Aber sie hat noch keine Zukunft.'."\n".
                       'Ihre Zukunft wird erst durch den Prozess des Zählens, durch das Anhängen eines weiteren Zähloperators'."\n".
                       'mit einer beliebigen Zahl, einer beliebigen Existenz, erschaffen.'."\n".
@@ -373,7 +373,7 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Welt ist eine Erzählung und sozusagen eine historisch geschichtete Geschichte.\\footnote{Mit Raimund Welsch erschaffen.}'."\n".
+                      'Die Welt ist eine Erzählung und sozusagen eine historisch geschichtete Geschichte.\footnote{Mit Raimund Welsch erschaffen.}'."\n".
                     ''))),
 
                   array( 'text', array( text => array(
@@ -381,8 +381,8 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'In jeder Zahl steckt eine Historie.\\footnote{Von Raimund Welsch.}'."\n",
-                        'Die Historie ist ein Pfad und sie entspricht der Seele.\\footnote{Von Raimund Welsch.}'."\n".
+                      'In jeder Zahl steckt eine Historie.\footnote{Von Raimund Welsch.}'."\n",
+                        'Die Historie ist ein Pfad und sie entspricht der Seele.\footnote{Von Raimund Welsch.}'."\n".
                     ''))),
 
                   array( 'text', array( text => array(
@@ -398,7 +398,7 @@
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Nur Dinge, die es gibt, die relevant sind, die einen Unterschied machen, zählen.'."\n",
-                        'Dinge, die zählen, sind relevant, machen einen Unterschied, gibt es.\\footnote{Mit Raimund Welsch erschaffen.}'."\n".
+                        'Dinge, die zählen, sind relevant, machen einen Unterschied, gibt es.\footnote{Mit Raimund Welsch erschaffen.}'."\n".
                     ''))),
                       
                   array( 'text', array( text => array(

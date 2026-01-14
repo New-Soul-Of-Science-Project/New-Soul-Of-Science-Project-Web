@@ -344,7 +344,7 @@
                   array( 'text', array( text => array(
                     'Wie bekannt, ergeben sich auf diese Weise beide neutralen Elemente zu Null.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:AdditionEinbettungInNeutraleElemente', text =>
                   'Einbettung in neutrale Elemente', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -429,7 +429,7 @@
                   array( 'text', array( text => array(
                     'Wie bekannt, ergeben sich auf diese Weise beide neutralen Elemente zu Eins.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:MultiplikationEinbettungInNeutraleElemente', text =>
                   'Einbettung in neutrale Elemente', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -541,7 +541,7 @@
                     'Wie bekannt, ergibt sich das rechtsseitig neutrale Element auf diese Weise zu Eins.'."\n",
                       'Dies gilt auch für alle rechtsseitig neutralen Element der Operatoren größer als Drei, wie noch zu zeigen ist.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:PotenzEinbettungInNeutraleElemente', text =>
                   'Einbettung in neutrale Elemente', subline =>
                     '')),
                   array( 'text', array( text => array(
