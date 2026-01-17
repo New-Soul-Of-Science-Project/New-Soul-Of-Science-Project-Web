@@ -41,10 +41,10 @@
                     'die wir später stellen, eröffnet uns gleich ein neues Zahlenuniversum, dass sich an die Superial-Zahlen anlehnt, sie aber noch erweitert,'."\n".
                     'also über sie hinausgeht, und uns die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{transzendente Zahl \lm{ \e }} besser und detailliert verstehen lässt.'."\n",
                       'Darüber bekommen wir eine Idee, dass auch andere transzendente Zahlen diese Struktur haben könnten.'."\n".
-                    'Bei \lm{ π } liegt dies wegen ihres engen Zusammenhangs mit \lm{ \e } wirklich sehr nahe.'."\n".
-                    'Aber wir vermuten dies ganz allgemein, weil es beim Unterschied zwischen algebraischen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'Bei der Kreiszahl \lm{ π } liegt dies wegen ihres engen Zusammenhangs mit \lm{ \e } wirklich sehr nahe.'."\n".
+                    'Aber wir vermuten dies ganz allgemein, weil es beim Unterschied zwischen reell algebraischen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'und transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}}'."\n".
-                    'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht –'."\n".
+                    'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht;'."\n".
                     'den Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems} der Superial-Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
@@ -328,7 +328,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben geschildert, funktioniert dies für alle rationalen \lm{ x } und für alle \lm{ x }, die ganze Wurzel aus rationalen Zahlen sind,'."\n".
-                    'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen, wie auch für alle anderen reell algebraischen Zahlen.'."\n".
+                    'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen, wie auch für alle anderen reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}.'."\n".
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich in der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung} eingehen möchte.'."\n",
                     ''))),
@@ -798,20 +798,27 @@
                   'Das Pfeilparadoxon Zenons aus naturphilosophischer Perspektive und in superialer Interpretation')),
                   array( 'text', array( text => array(
                     'Bei Zenons Pfeilparadoxon handelt es sich um eine metaphysische und naturphilosophische Betrachtung zum Szenario eines Pfeilflugs'."\n".
-                    'vom Bogen bis ins Ziel.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189.}'."\n".
+                    'vom Abschuss mit dem Bogen bis ins Ziel.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189.}'."\n".
                     'Dabei stellen sich metaphysische Fragen:'."\n",
-                      'Zenons Beschreibung geht davon aus, dass der Pfeil in jedem Moment seines Pfluges in Ruhe sei;'."\n".
+                      'Zenons Beschreibung geht davon aus, dass der Pfeil zu jedem Zeitpunkt seines Pfluges, in der jeweiligen Momentaufnahme, in Ruhe sei;'."\n".
                     'also keinen Weg zurücklegen würde.'."\n".
-                    'Diese Vorstellung führt zu den Paradoxa, die wir schon oben in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung}‹}'."\n".
-                    'beschrieben haben.'."\n",
-                      'Wie dort auch dargelegt und ebenso in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}‹}'."\n".
-                    'am Beispiel im Detail vorgerechnet treten diese Paradoxa mit Hilfe von Superial-Zahlen nicht auf.'."\n".
+                    'Es ergibt sich das philosophische Problem, wie sich sehr viele einzeln betrachtete Zeitpunkte der Ruhe zu einem Flug zusammenfügen können.'."\n".
+                    'Lückenlos lässt sich so etwas nicht machen, wie wir schon zu Beginn der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}'."\n".
+                    'festgestellt haben, denn die Zeitpunkte lassen sich nicht nacheinander kompakt aufreihen, wenn sie keine zeitliche Ausdehnung haben.'."\n".
+                    'Wir können sie nur auf Abstand setzen, womit der Moment quasi eine Ausdehnung bekommt und dann aus seinem Anfangs- und Endzeitpunkt besteht,'."\n".
+                    'also eine Änderung enthält.'."\n".
+                    'Jeder dieser Momente trägt damit die Bewegung in sich.'."\n",
+                      'Die Vorstellung des Zenon im Pfeilparadoxon führt letztlich auch zu den Paradoxa, die wir schon oben in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung}‹}'."\n".
+                    'beschrieben haben.'."\n".
+                    'Wie dort auch dargelegt und ebenso in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}‹}'."\n".
+                    'am Beispiel im Detail vorgerechnet, treten diese Paradoxa mit Hilfe von Superial-Zahlen nicht auf.'."\n".
                     'Dies kommt, weil uns die Superial-Zahlen eine Arithmetik des Unendlichen schenken.'."\n".
                     'Und zwar in der Form, dass uns infinitesimale ganze Zahlen zur Verfügung stehen,'."\n".
                     'mit denen wir die Flugzeit und die Flugbahn des Pfeils in einheitliche aktual unendlich kleine Schritte teilen können.'."\n".
                     'Dabei bleibt die Bahn im Endlichen, bei ihrer Beschreibung durch die Superial-Zahlen, Dicht.'."\n".
                     'Es gibt also zwischen je zwei Zeitpunkten ihrer Flugbahn, die sich in ihren endlichen Werten unterscheiden,'."\n".
-                    'unendlich viele endliche Werte, weil die endlichen Anteile der Zeit – und auch der Orte – mit reell algebraischen Zahlen beschrieben werden.'."\n".
+                    'unendlich viele endliche Werte, weil die endlichen Anteile der Zeit – und auch der Orte – mit reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'beschrieben werden.'."\n".
                     'Zwischen den Zeitpunkten Sekunde \lm{ *〈 5,\!273 *〉.*〈 100 *〉 } und Sekunde \lm{ *〈 5,\!292 *〉.*〈 9 *〉 } liegt zum Beispiel Sekunde \lm{ *〈 5,\!281 *〉.*〈 -2 *〉 }:'."\n",
                     ''))),
                   array( 'equations',
@@ -850,13 +857,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der metaphysische Moment des Pfeilflugs entspricht also dem Abstand zweier benachbarter ganzer infinitesimalen Superial-Zahlen aus der Menge \lm{ \mathbb{S}_{\Z}^{-1} },'."\n".
-                    'also der Länge \lm{ \s^{-1} }.'."\n".
+                    'also dem Abstand \lm{ \s^{-1} }.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
                   'Der Moment als infinitesimaler Prozess', subline =>
                     'Eine metaphysisch naturphilosophische Interpretation')),
                   array( 'text', array( text => array(
-                    'Wir können die infinitesimale Schicht unter der endlichen reell algebraischen Schicht auf mindesten zwei Blickwinkeln betrachten.'."\n".
+                    'Wir können die infinitesimale Schicht, die unter der endlichen reell algebraischen Schicht liegt, aus mindestens zwei Blickwinkeln betrachten.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
                   'Infinitesimale Umgebung', subline =>
@@ -914,7 +921,8 @@
                     'Aus prozesshafter Perspektive sehen wir die infinitesimalen ganzen Zahlen der Umgebung jeder endlichen reell algebraischen Zahl in Zählrichtung ausgerichtet,'."\n".
                     'wie wir in \jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-OntologieGanzeZahlen}'."\n".
                     'anhand der ganzen endlichen Zahlen und der an ihnen hängenden Sägezahn-Intervalle erkennen.'."\n".
-                    'Dies gilt ebenso für infinitesimale ganze Zahlen und \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung}{infinitesimale reell algebraische Zahlen}.'."\n",
+                    'Dies gilt ebenso für infinitesimale ganze Zahlen und \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung}{infinitesimale reell algebraische Zahlen}.'."\n".
+                    'Jedes infinitesimale Sägezahn-Intervall stellt also mit seinem Anfangs- und Endzeitpunkt einen ausgedehnten Moment des Pfeilflugs dar.'."\n",
                       'Detailliert wird dies im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹} dargelegt.'."\n".
                     'Den tiefergehenden Ursprung des prozesshaften Fundaments der Arithmetik der Geometrie haben wir schon im'."\n".
                     'Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹}'."\n".
