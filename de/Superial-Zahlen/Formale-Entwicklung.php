@@ -23,46 +23,51 @@
                     'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst viele'."\n".
                     'Eigenschaften der endlichen natürlichen Zahlen sowie auch der ganzen Zahlen, der Primzahlen und der rationalen Zahlen'."\n".
                     'ins Aktual-Unendliche fortgesetzt werden.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
                     'bezüglich der Addition und Multiplikation.'."\n".
                     'Sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
-                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die durch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Radikale darstellbaren reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'ins Aktual-Unendliche erweitert;'."\n".
-                    'vielleicht sogar alle reell algebraischen Zahlen.'."\n",
-                      'Durch Radikale darstellbare rein reale algebraische Zahlen sind solche, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
-                    'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sind.\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{aktuellen Forschung}.'."\n",
+                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können,'."\n".
+                    'auch die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen'."\n".
+                    'sowie schließlich sogar \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'ins Aktual-Unendliche erweitert.'."\n",
                       'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
-                    'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
+                    'wie die natürlichen Zahlen \lm{ \mathbb{N} }, die ganzen Zahlen \lm{ \mathbb{Z} } und die Primzahlen \lm{ \mathbb{P} } zu den'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \lm{ \mathbb{S}_{\Z} }'."\n".
                     'und sogar zu den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \lm{ \mathbb{S}_{\P} }.'."\n",
-                      'So kommen wir zum Beispiel nicht nur in die Lage \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
-                    'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}'."\n".
-                    'als Summen unendlich vieler, unendlich schmaler Flächenstreifen zu berechnen.'."\n",
-                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n",
-                      'Dies ist genau so, wie bei den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Und unsere aktual unendliche superiale Basis \lm{ \s } ist sogar vom Wert her gleich der besonderen Ordinalzahl \lm{ ω^{ω} }, es \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{gilt also \lm{ \s = ω^{ω} }}.'."\n".
+                      'So kommen wir zum Beispiel in die Lage \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen} mit Superial-Zahlen, und somit ganz ohne Limes, zu definieren.'."\n".
+                    'Und wir können auch aktual unendlich kleine ganzahlige Schritte zählen, wodurch wir jetzt \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}'."\n".
+                    'als gewohnte Summen konkret angegebener unendlich vieler, unendlich schmaler Flächenstreifen berechnen können.'."\n",
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n".
+                    'Dies ist genauso wie bei den endlichen natürlichen Zahlen und den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Und unsere aktual unendliche superiale Basis \lm{ \s } ist sogar vom Wert her gleich der besonderen Ordinalzahl \lm{ ω^{ω} }.'."\n".
+                    'Denn wir finden über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} heraus, dass \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{\lm{ \s = ω^{ω} } ist}.'."\n".
                     'Und auch noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{weitere Eigenschaften verbinden beide Zahlenarten}.'."\n".
                     'Nur haben die Superial-Zahlen im Gegensatz zu den Ordinalzahlen unter anderem den Vorteil, dass wir in ihnen beliebig vorwärts und rückwärts zählen können,'."\n".
                     'was wir für die Integration benötigen.'."\n".
                     'In den Ordinalzahlen ist nur das vorwärts zählen beliebig weit definiert.'."\n".
-                    'Das Rückwärtszählen endet bei ihren Limeszahlen.'."\n",
-                      'Die Sache mit der Anzahl der Vorgänger ist hingegen anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
+                    'Das Rückwärtszählen endet bei ihren Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}}.'."\n",
+                      'Die Sache mit der Anzahl der Vorgänger ist hingegen anders, als bei den von mir erforschten, auch ins Aktual-Unendliche gehenden'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
                     'Aktual unendliche Biordinalzahlen sind ganze Zahlen, die bizarrer Weise \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} haben, also als sie selber groß sind.'."\n".
                     'Und auch in mancherlei anderer Beziehung können wir erkennen, dass diese die noch nicht so „perfekten“ Vorläufer der Superial-Zahlen sind.'."\n".
-                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
+                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
+                    'Sie bringen uns die Möglichkeit, die reell algebraischen Zahlen mengentheoretisch und arithmetisch klar strukturiert'."\n".
+                    'sowie auch für fachmathematische Laien auf die praktische Anwendung bezogen recht verständlich ins Aktual-Unendliche zu erweitern.'."\n".
+                    'Denn um diese zu verstehen braucht es nicht unbedingt alle gleich folgenden mathematischen Definitionen.'."\n",
+                      'Nichtsdestotrotz müssen wir jetzt unsere fachmathematischen Definitionen erarbeiten, damit die Superial-Zahlen auf einem sicheren Fundament'."\n".
+                    'gegründet sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
                       
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } eine möglichst große Anzahl der reellen Zahlen umfassen und ins Aktual-Unendliche erweitern,'."\n".
-                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}'."\n".
-                    'über \lm{ \mathbb{A}_{\S} } definiert werden:'."\n".
+                    'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } alle reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } umfassen und ins Aktual-Unendliche erweitern,'."\n".
+                    'sind die Koeffizienten der ganzzahligen Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten \lm{ \mathbb{A}_{\S} }},'."\n".
+                    'mit \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} }, definiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -71,11 +76,11 @@
                     ))),
                   array( 'text', array( text => array(
                     'Vorstehend sehen wir unschwer im Grunde die Definition eines \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems},'."\n".
-                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise würdigen werden.'."\n",
-                      'Diese ist notwendig, weil die Stellen dieses neuen Stellenwertsystems nicht nur Ziffern, wie im Zehnersystem oder ähnlichen einfachen'."\n".
-                    'Systemen, sein können.'."\n".
-                    'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was Brüche, Wurzeln und sogar auch negative Zahlen umfasst.'."\n".
-                    'Ganze Terme können wir für die Stellen einsetzen.'."\n",
+                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise, wie \lm{ *〈 a_{1} *〉*〈 a_{0} *〉․*〈 a_{-1} *〉 } oder konkreter \lm{ *〈 \frac{ 1 }{ 2 } *〉*〈 \sqrt{ 2 } *〉․*〈 1,\!1 *〉 }, würdigen werden.'."\n",
+                      'Diese Schreibweise erleichtert das Lesen und ist in einer solchen Form hilfreich, weil die Stellen dieses neuen Stellenwertsystems nicht nur Ziffern sein können,'."\n".
+                    'wie im Zehnersystem oder ähnlichen einfachen Systemen.'."\n".
+                    'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was zum Beispiel auch Brüche, Wurzeln und negative Zahlen umfasst.'."\n".
+                    'Sogar beliebige passende formelle Terme können wir für die Stellen einsetzen.'."\n",
                       'Nun nachfolgend aber erst einmal zu den ganzen Superial-Zahlen.'."\n".
                     ''))),
                       
@@ -228,7 +233,7 @@
           ); ?>
           
 
-		    	<!  • Superiale Primzahlen  >
+          <!  • Superiale Primzahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Formale-Entwicklung:PrimSZ',
               '', 'Sc_f_Paragraph',
