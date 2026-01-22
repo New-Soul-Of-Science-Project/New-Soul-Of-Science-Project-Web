@@ -37,7 +37,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen'),
                     )),
                 )
           ); ?>
