@@ -1470,7 +1470,7 @@
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
-                    'verstanden werden und sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
+                    'verstanden werden und sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
                     'Dies gilt in einem noch engeren Sinn, weil sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
                     'als wahr herausgestellt hat.'."\n",
                       'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen aus leeren Mengen bekannt ist, die der Mengendarstellung der Biordinalzahlen'."\n".

@@ -65,15 +65,15 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper'),
                     )),
               )
           ); ?>
 
 
-		    	<!  • S ist ein angeordneter Körper  >
+		    	<!  • S ist ein geordneter Körper  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper',
+            'OM:SupNum:Eigenschaften:SIstGeordneterKoerper',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -91,16 +91,16 @@
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
                       'Wir können nämlich für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
                     'größer als die andere ist, weil sie eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
-                    '\lm{ \mathbb{S} } ist nämlich ein angeordneter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
+                    '\lm{ \mathbb{S} } ist nämlich ein geordneter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
                     '\color{*Bearb}{(Dies ist zu beweisen: die Körpereigenschaft und das Angeordnetsein.)}'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper:X', text =>
                       
-                'Ist \lm{ \mathbb{S} } ein archimedisch angeordneter Körper?', subline =>
+                'Ist \lm{ \mathbb{S} } ein archimedisch geordneter Körper?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Es stellt sich die Frage, ob die Superial-Zahlen, also die Menge \lm{ \mathbb{S} },'."\n".
-                    'auch ein archimedisch angeordneter Körper\footnote{\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
+                    'auch ein archimedisch geordneter Körper\footnote{\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -135,8 +135,8 @@
                     'Wie wir daran sehen, handelt es sich bei den Superial-Zahlen um eine ganz andere Menge,'."\n".
                     'als bei Mengen endlicher Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
-                  'Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch angeordneter Körper ist?', subline =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper:X', text =>
+                  'Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch geordneter Körper ist?', subline =>
                     '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -168,9 +168,9 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper:X', text =>
                       
-                'Aber \lm{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \lm{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
+                'Aber \lm{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \lm{ \mathbb{S}_N } ein archimedisch geordneter Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -192,7 +192,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
@@ -213,7 +213,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstGeordneterKoerper', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

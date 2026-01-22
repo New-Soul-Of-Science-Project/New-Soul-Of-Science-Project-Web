@@ -15,7 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    // '• Ist \lm{ \mathbb{S} } bezüglich der Addition und Multiplikation ein \jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch angeordneter Körper}?',
+                    // '• Ist \lm{ \mathbb{S} } bezüglich der Addition und Multiplikation ein \jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch geordneter Körper}?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -25,7 +25,7 @@
                     'ins Aktual-Unendliche fortgesetzt werden.'."\n",
                       'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
                     'bezüglich der Addition und Multiplikation.'."\n".
-                    'Sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
+                    'Sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
                     'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die durch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Radikale darstellbaren reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'ins Aktual-Unendliche erweitert;'."\n".
                     'vielleicht sogar alle reell algebraischen Zahlen.'."\n",
