@@ -79,7 +79,13 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen', type => 'back'),
                     )),
-                      
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\bold{Totalordnung}',
+                    '• Die Superial-Zahlen haben eine Totalordnung:',
+                    '– Wikipedia: \jump[https://de.wikipedia.org/wiki/Ordnungsrelation]{Totalordnung}{Ordnungsrelation, Totalordnung.}',
+                    ))),
+
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
