@@ -329,6 +329,7 @@
                       
                   array( 'text', array( text => array(
                     'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter Körper.'."\n".
+                    '\color{*Bearb}{(Die Körpereigenschaft ist noch zu beweisen!)}'."\n".
                     'Was nachfolgend zu zeigen ist.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
                     ''))),
@@ -482,7 +483,8 @@
                     '\lm{ ( \mathbb{S},+,\cdot,\le ) } ist ein \italic{linear geordneter Körper}, und die Ordnung ist genau diejenige, die durch den Vergleich an der \italic{größten Stelle} (lexikographisch) gegeben ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Was wir zeigen wollten.'."\n".
+                    'Was wir zeigen wollten.'."\n",
+                      'Mehr zu den Ordnungseigenschaften von \lm{ \mathbb{S} } und ihren Teilmengen im Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS}‹}.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
