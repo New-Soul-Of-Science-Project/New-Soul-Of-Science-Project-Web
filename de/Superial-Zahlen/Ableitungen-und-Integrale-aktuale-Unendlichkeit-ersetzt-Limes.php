@@ -805,9 +805,28 @@
                     'Es ergibt sich das philosophische Problem, wie sich sehr viele einzeln betrachtete Zeitpunkte der Ruhe zu einem Flug zusammenfügen können.'."\n".
                     'Lückenlos lässt sich so etwas nicht machen, wie wir schon zu Beginn der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}'."\n".
                     'festgestellt haben, denn die Zeitpunkte lassen sich nicht nacheinander kompakt aufreihen, wenn sie keine zeitliche Ausdehnung haben.'."\n".
-                    'Wir können sie nur auf Abstand setzen, womit der Moment quasi eine Ausdehnung bekommt und dann aus seinem Anfangs- und Endzeitpunkt besteht,'."\n".
+                    'Wir können sie nur auf Abstand setzen, womit der Moment quasi eine Ausdehnung erhält und dann aus seinem Anfangs- und Endzeitpunkt besteht,'."\n".
                     'also eine Änderung enthält.'."\n".
-                    'Jeder dieser Momente trägt damit die Bewegung in sich.'."\n",
+                    'Jeder dieser Momente trägt damit die Bewegung – den Prozess – in sich.'."\n".
+                    ''))),
+
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
+                  // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
+                  // #!: Auch im Abschnitt „Der metaphysische Moment der Bewegung“! (OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\\small{\\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+
+                  array( 'text', array( text => array(
+                    'Bei der Ableitung und dem Integral geht es, wie gesagt, um die Veränderung.'."\n".
+                    'Eine Veränderung durch eine Bewegung können wir nur feststellen, und auch nur berechnen, wenn wir zwei unterschiedliche Zeitpunkte unterscheiden'."\n".
+                    '– das Eine vom Anderen unterscheiden – können.'."\n",
                       'Die Vorstellung des Zenon im Pfeilparadoxon führt letztlich auch zu den Paradoxa, die wir schon oben in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung}‹}'."\n".
                     'beschrieben haben.'."\n".
                     'Wie dort auch dargelegt und ebenso in \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}‹}'."\n".
@@ -816,10 +835,11 @@
                     'Und zwar in der Form, dass uns infinitesimale ganze Zahlen zur Verfügung stehen,'."\n".
                     'mit denen wir die Flugzeit und die Flugbahn des Pfeils in einheitliche aktual unendlich kleine Schritte teilen können.'."\n".
                     'Dabei bleibt die Bahn im Endlichen, bei ihrer Beschreibung durch die Superial-Zahlen, Dicht.'."\n".
-                    'Es gibt also zwischen je zwei Zeitpunkten ihrer Flugbahn, die sich in ihren endlichen Werten unterscheiden,'."\n".
+                    'Es gibt also zwischen je zwei Zeitpunkten der Flugbahn, die sich in ihren endlichen Werten unterscheiden,'."\n".
                     'unendlich viele endliche Werte, weil die endlichen Anteile der Zeit – und auch der Orte – mit reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'beschrieben werden.'."\n".
-                    'Zwischen den Zeitpunkten Sekunde \lm{ *〈 5,\!273 *〉.*〈 100 *〉 } und Sekunde \lm{ *〈 5,\!292 *〉.*〈 9 *〉 } liegt zum Beispiel Sekunde \lm{ *〈 5,\!281 *〉.*〈 -2 *〉 }:'."\n",
+                    'beschrieben werden.'."\n",
+                      'Zwischen den Zeitpunkten Sekunde \lm{ *〈 5,\!273 *〉.*〈 100 *〉 } und Sekunde \lm{ *〈 5,\!292 *〉.*〈 9 *〉 }'."\n".
+                    'liegt zum Beispiel die Sekunde \lm{ *〈 5,\!281 *〉.*〈 -2 *〉 }:'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -827,8 +847,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}  <  5,\!292 + 9 \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Ist der endliche Zeitpunkt der gleiche, dann unterscheiden sich die Zeitpunkte nur noch im unendlich kleinen Infinitesimalen,'."\n".
-                    'wo wir es nun mit ganzen Zahlen zu tun haben.'."\n".
+                    'Ist der endliche Zeitpunkt der gleiche, dann unterscheiden sich die Zeitpunkte nur noch in ihren unendlich kleinen,'."\n".
+                    'wo wir es nun mit infinitesimalen ganzen Zahlen zu tun haben.'."\n".
                     'Ein Beispiel für zwei solche Superial-Zahlen könnte Sekunde \lm{ *〈 5,\!273 *〉.*〈 -3 *〉 } und Sekunde \lm{ *〈 5,\!273 *〉.*〈 2 *〉 } sein:'."\n".
                     ''))),
                   array( 'equations',
@@ -856,8 +876,8 @@
                       array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 0 *〉 - *〈 5,\!273 *〉.*〈 -1 *〉  =  .*〈 1 *〉  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der metaphysische Moment des Pfeilflugs entspricht also dem Abstand zweier benachbarter ganzer infinitesimalen Superial-Zahlen aus der Menge \lm{ \mathbb{S}_{\Z}^{-1} },'."\n".
-                    'also dem Abstand \lm{ \s^{-1} }.'."\n".
+                    'Der metaphysische Moment des Pfeilflugs entspricht also dem Abstand zweier benachbarten infinitesimalen ganzen Superial-Zahlen aus der Menge \lm{ \mathbb{S}_{\Z}^{-1} },'."\n".
+                    'also dem Abstand \lm{ 1 \s^{-1} }.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen:X', text =>
                   'Der Moment als infinitesimaler Prozess', subline =>
@@ -920,7 +940,7 @@
                   array( 'text', array( text => array(
                     'Aus prozesshafter Perspektive sehen wir die infinitesimalen ganzen Zahlen der Umgebung jeder endlichen reell algebraischen Zahl in Zählrichtung ausgerichtet,'."\n".
                     'wie wir in \jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Fig-OntologieGanzeZahlen}'."\n".
-                    'anhand der ganzen endlichen Zahlen und der an ihnen hängenden Sägezahn-Intervalle erkennen.'."\n".
+                    'anhand der endlichen ganzen Zahlen und der an ihnen hängenden Sägezahn-Intervalle erkennen.'."\n".
                     'Dies gilt ebenso für infinitesimale ganze Zahlen und \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung:Algebraische-infinitesimale-Umgebung}{infinitesimale reell algebraische Zahlen}.'."\n".
                     'Jedes infinitesimale Sägezahn-Intervall stellt also mit seinem Anfangs- und Endzeitpunkt einen ausgedehnten Moment des Pfeilflugs dar.'."\n",
                       'Detailliert wird dies im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹} dargelegt.'."\n".
@@ -937,7 +957,7 @@
                     'Wir bekommen eine Ahnung davon, warum die Infinitesimalrechnung genau am Übergang zwischen Mathematik und Physik liegt'."\n".
                     'sowie warum und wie sie im Detail funktioniert; dass diese Mathematik die Dynamik in ihren Fundamenten trägt.'."\n",
                       'Jeder Moment des Pfeilflugs im Pfeilparadoxon Zenons trägt demnach nicht nur einen Zeitpunkt in sich.'."\n".
-                    'Ein Moment ist seinen infinitesimalen Fundamenten in den Kontext des Zählens eingebettet.'."\n".
+                    'Ein Moment ist mit seinen infinitesimalen Fundamenten in den Kontext des Zählens eingebettet.'."\n".
                     'Bei der Infinitesimalrechnung können wir diesen metaphysischen Kontext nicht einfach ignorieren, denn wir nutzen ihn,'."\n".
                     'um die dynamischen, prozesshaften Verhältnisse von Veränderungen zu berechnen.'."\n".
                     'So wird es zwingend, diesen Kontext zu ergründen und besser zu verstehen.'."\n".
@@ -946,18 +966,18 @@
                   'Ein tieferes Naturverständnis', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Weiten wir unseren Fokus aus, auf die größere naturphilosophische Perspektive, in die die Wissenschaft der Physik und des Lebens integriert sein soll,'."\n".
+                    'Weiten wir unseren Fokus aus, auf die größere naturphilosophische Perspektive, in die die Wissenschaft der Physik und des Lebens integriert sein sollen,'."\n".
                     'so können wir den oft im Verborgenen wirkenden metaphysischen Kontext der infiniten und infinitesimalen Zahlen,'."\n".
                     'in die unsere endliche Realität eingebettet ist, ähnlich verstehen, wie andere Kontexte der Wissenschaft:'."\n",
                       'Physik findet immer im Kontext von Raum und Zeit sowie des Vakuums statt, die auch alle Wechselwirkungen vermitteln.'."\n".
                     'Hierin ist alles eingebettet, was unsere Realität ausmacht.'."\n".
-                    'Darüber hinaus existiert in der auf diesen Seiten entwickelte neue Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie} zusätzlich noch'."\n".
+                    'Darüber hinaus existiert in der auf diesen Seiten entwickelten neuen Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie} zusätzlich noch'."\n".
                     'die Einbettung unseres Kosmos in das innere eines Schwarzen Lochs einer höheren physikalischen Fraktalebene.'."\n".
                     'Diese übergeordnete Ebene entspricht dann eher der infiniten oder unendlich großen Ebene der Zahlen.'."\n",
                       'In der Wissenschaft vom Leben, besonders in der Psychologie und der Psychosomatik und damit auch der Medizin,'."\n".
                     'entspricht der Kontext, in dem das bewusste Leben eingebettet ist, dem Unterbewussten oder Unbewussten sowie dem Unbekannten.'."\n".
                     'Das auf diesen Seiten entwickelte Modell der Psychosomatik beziehungsweise des zentralen Lebensprozesses,'."\n".
-                    'dem \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess oder Achtsamkeitsprozess}, basiert unter anderem auf einem Informationsaustausch'."\n".
+                    'dem \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} oder \jump{OM:SpaLeb:Care-Prozess}{Achtsamkeitsprozess}, basiert unter anderem auf einem Informationsaustausch'."\n".
                     'zwischen dem Bewusstsein und dem Unterbewusstsein.'."\n".
                     'Hier spielt der Austausch zwischen dem bewussten Leben und seinem Kontext eine zentrale Rolle.'."\n",
                       'Bezüglich der Mathematik gibt es noch ein Forschungsthema auf dieser Seite bei dem auch ein Kontext auftaucht,'."\n".
@@ -965,12 +985,12 @@
                     'In der \jump{OM:OT:Home}{Operialtheorie} erkennen wir je nach Operator unterschiedliche neutrale Einbettungen von momentanen Werten:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Beim \jump{OM:OT:Zaehloperator}{Zähloperator}, die \italic{›\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig die Vergangenheit herunter gezählt und rechtsseitig die Zukunft, die noch nicht existiert.'."\n",
-                        'Bei der Addition, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:AdditionEinbettungInNeutraleElemente}‹}, hier beidseitig Nullen.'."\n",
-                        'Bei der Multiplikation, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:MultiplikationEinbettungInNeutraleElemente}‹}, hier beidseitig Einsen.'."\n",
-                        'Bei der Potenz, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:PotenzEinbettungInNeutraleElemente}‹}, hier linksseitig die Momentan-Wert-Wurzel aus dem momentanen Wert und rechtsseitig die Eins.'."\n",
-                        'Beim \jump{OM:OT:Sprungoperator}{Sprungoperator}, die \italic{›\jumpname{OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig der Zählsprung, der vor Ewigkeiten geschah, und rechtsseitig beliebige Werte.'."\n",
-                        'Beim \jump{OM:OT:Konstanzoperator}{Konstanzoperator}, die \italic{›\jumpname{OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}, hier linksseitig die momentane Wert, den es schon ewig gibt, und rechtsseitig beliebige Werte.'."\n",
+                        'Beim \jump{OM:OT:Zaehloperator}{Zähloperator}, die \italic{›\jumpname{OM:OT:Zaehloperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}: \\\\ Linksseitig die Vergangenheit herunter gezählt und rechtsseitig die Zukunft, die noch nicht existiert.'."\n",
+                        'Bei der Addition, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:AdditionEinbettungInNeutraleElemente}‹}: \\\\ Beidseitig Nullen.'."\n",
+                        'Bei der Multiplikation, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:MultiplikationEinbettungInNeutraleElemente}‹}: \\\\ Beidseitig Einsen.'."\n",
+                        'Bei der Potenz, die \italic{›\jumpname{OM:OT:Einleitung:Neutrale-Elemente:PotenzEinbettungInNeutraleElemente}‹}: \\\\ Linksseitig die Momentan-Wert-Wurzel aus dem momentanen Wert und rechtsseitig die Eins.'."\n",
+                        'Beim \jump{OM:OT:Sprungoperator}{Sprungoperator}, die \italic{›\jumpname{OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}: \\\\ Linksseitig der Zählsprung, der vor Ewigkeiten geschah, und rechtsseitig beliebige Werte.'."\n",
+                        'Beim \jump{OM:OT:Konstanzoperator}{Konstanzoperator}, die \italic{›\jumpname{OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente}‹}: \\\\ Linksseitig der momentane Wert, den es schon ewig gibt, und rechtsseitig beliebige Werte.'."\n",
                     ))),
                   array( 'text', array( text => array(
                     'Was all dies tiefer zu bedeuten hat, sollte weiter philosophiert werden.'."\n".
