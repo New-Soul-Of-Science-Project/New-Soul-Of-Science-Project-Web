@@ -61,7 +61,7 @@
                     'gegründet sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
-                      
+
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -76,8 +76,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Vorstehend sehen wir unschwer im Grunde die Definition eines \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems},'."\n".
-                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise, wie \lm{ *〈 a_{1} *〉*〈 a_{0} *〉․*〈 a_{-1} *〉 } oder konkreter \lm{ *〈 \frac{ 1 }{ 2 } *〉*〈 \sqrt{ 2 } *〉․*〈 1,\!1 *〉 }, würdigen werden.'."\n",
-                      'Diese Schreibweise erleichtert das Lesen und ist in einer solchen Form hilfreich, weil die Stellen dieses neuen Stellenwertsystems nicht nur Ziffern sein können,'."\n".
+                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise, wie \lm{ *〈 a_{1} *〉*〈 a_{0} *〉․*〈 a_{-1} *〉 }'."\n".
+                    'oder konkreter \lm{ *〈 \frac{ 1 }{ 2 } *〉*〈 \sqrt{ 2 } *〉․*〈 1,\!1 *〉 }, würdigen.'."\n",
+                      'Diese Schreibweise erleichtert das Lesen und ist hilfreich, weil die Stellen des neuen Stellenwertsystems nicht nur Ziffern sein können,'."\n".
                     'wie im Zehnersystem oder ähnlichen einfachen Systemen.'."\n".
                     'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was zum Beispiel auch Brüche, Wurzeln und negative Zahlen umfasst.'."\n".
                     'Sogar beliebige passende formelle Terme können wir für die Stellen einsetzen.'."\n",
@@ -306,6 +307,185 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • S ist ein geordneter Körper  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter Körper.'."\n".
+                    'Was nachfolgend zu zeigen ist.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+
+                'Ordnung der Superial-Zahlen – Beweis', subline =>
+                  'Lexikographisch über der größten Stelle')),
+                  array( 'text', array( text => array(
+                    'Wir definieren die Ordnung auf den Superial-Zahlen so, dass sie dem \italic{Stellenwertprinzip} zur (formalen) aktual unendlichen Basis \lm{ \s } entspricht:'."\n".
+                    'Verglichen wird an der größten Stelle, an der sich zwei Zahlen unterscheiden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Normalform und größte Stelle', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Eine (nichttriviale) Superial-Zahl \lm{ a } werde in Normalform geschrieben als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a_{k} \in \mathbb{A}_{\S} *) *[  a  =  \sum_{ k \in \mathbb{Z} } a_{k} \s^{k}  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei der \italic{Support}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{ k \in \mathbb{Z} \!: a_{k} \ne 0 *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'nach oben beschränkt ist, es existiert also \lm{ n \in \mathbb{Z} } mit \lm{ \supp(a) \subseteq \;\rbrack \!-\!\infty , n \rbrack_{\mathbb{Z}} }.'."\n".
+                    'Diese „oben-endlich“-Bedingung ist genau die Formalisierung der Aussage, dass es eine \italic{größte Stelle} gibt.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 1 (Existenz der größten Stelle).} \\\\'."\n".
+                    'Ist \lm{ a \ne 0 }, dann besitzt \lm{ \supp(a) } ein Maximum \lm{ k_{max} \in \mathbb{Z} }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Jede nichtleere, nach oben beschränkte Teilmenge von \lm{ \mathbb{Z} } hat ein Maximum.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir definieren für \lm{ a \ne 0 }:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \operatorname{lt}(a) := k_{max} \;\;\;\;\;\;\;\;\;\;\;\; } (Leitexponent, „größte Stelle“),'."\n",
+                        '\lm{ \operatorname{lc}(a) := a_{k_{max}} \in \mathbb{A}_{\S} \;\;\; } (Leitkoeffizient).'."\n",
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Positive Elemente und Vergleich', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir definieren zunächst Positivität:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Positivität).} \\\\'."\n".
+                    'Für \lm{ a \ne 0 } setzen wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a > 0  :\Leftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\S}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und \lm{ a < 0 } entsprechend durch \lm{ \operatorname{lc}(a) < 0 }.'."\n".
+                    'Außerdem gilt \lm{ 0 \ngtr 0 } und \lm{ 0 \nless 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit definieren wir die Ordnung allgemein über Differenzen:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Ordnung).} \\\\'."\n".
+                    'Für \lm{ a, b \in \mathbb{S} } definieren wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a < b  :\Leftrightarrow  b - a > 0  }'),
+                      array( display => 'on',  latex => '{  a \le b  :\Leftrightarrow  *( a < b  \lor  a = b *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Äquivalent (und oft anschaulicher):'."\n".
+                    'Für \lm{ a \ne b } gilt \lm{ a < b } genau dann, wenn in \lm{ h := b − a } an der \italic{größten Stelle} \lm{ \operatorname{lt}(h) }'."\n".
+                    'der Leitkoeffizient \lm{ \operatorname{lc}(h) } positiv ist.'."\n".
+                    'Das ist die lexikographische Ordnung über der größten Stelle.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Linearität (Totalität)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 2 (Trichotomie / Totalität).} \\\\'."\n".
+                    'Für alle \lm{ a, b \in \mathbb{S} } gilt genau eines von \lm{ a < b }, \lm{ a = b }, \lm{ b < a }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Ist \lm{ a = b }, sind wir fertig.'."\n".
+                    'Andernfalls ist \lm{ h = g − f \ne 0 } und besitzt nach \condb{Lemma 1} eine größte Stelle;'."\n".
+                    'dort ist \lm{ \operatorname{lc}(h) \ne 0 }.'."\n".
+                    'Da \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } geordnet ist, gilt \lm{ \operatorname{lc}(h) > 0 } oder \lm{ \operatorname{lc}(h) < 0 },'."\n".
+                    'also \lm{ h > 0 } oder \lm{ h < 0 }, mithin \lm{ a < b } oder \lm{ b < a }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit ist \lm{ ( \mathbb{S}, \le ) } eine \italic{lineare Ordnung}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Verträglichkeit mit Addition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 3 (Monotonie unter Addition).} \\\\'."\n".
+                    'Aus \lm{ a < b } folgt für alle \lm{ h \in \mathbb{S} }: \lm{ f + h < g + h }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    '\lm{ f < g \Leftrightarrow g − f > 0 }. Dann ist \lm{ ( g + h ) − ( f + h ) = g − f > 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Insbesondere ist die Ordnung \italic{translationsinvariant}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Verträglichkeit mit Multiplikation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Um die Multiplikationsverträglichkeit zu formulieren, nutzen wir den Leitkoeffizienten:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 4 (Leitterm bei Produkten).} \\\\'."\n".
+                    'Für \lm{ a, b \ne 0 } gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{lt}(a \cdot b)  =  \operatorname{lt}(a) + \operatorname{lt}(b)  }'),
+                      array( display => 'on',  latex => '{  \operatorname{lc}(a \cdot b)  =  \operatorname{lc}(a) \cdot \operatorname{lc}(b)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Der größte Exponent im Produkt entsteht genau durch die Multiplikation der jeweils größten Stellen; alle anderen Summanden liegen echt darunter.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 5 (Positivität ist multiplikativ).} \\\\'."\n".
+                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ a \cdot b > 0 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ \operatorname{lc}(a) > 0 } und \lm{ \operatorname{lc}(b) > 0 } in \lm{ \mathbb{A}_{\S} },'."\n".
+                    'also \lm{ \operatorname{lc}(a \cdot b) = \operatorname{lc}(a) \cdot \operatorname{lc}(b) > 0 }.'."\n".
+                    'Daher \lm{ a \cdot b > 0}.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Korollar 6 (Ordnung ist verträglich mit \lm{ *( \cdot *) }).} \\\\'."\n".
+                    'Gilt \lm{ a < b } und \lm{ h > 0 }, dann \lm{ a \cdot h < b \cdot h }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Aus \lm{ a < b } folgt \lm{ b − a > 0 }. Mit \lm{ h > 0 } folgt \lm{ ( b − a ) \cdot h > 0 }, also \lm{ b \cdot h − a \cdot h > 0 }, mithin \lm{ a \cdot h < b \cdot h }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
+                  'Ergebnis', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Damit ist die definierte Relation \lm{ *( \le *) } eine \italic{lineare Ordnung}, die mit \lm{ *( + *) } und \lm{ *( \cdot *) } verträglich ist. Unter den üblichen Körperaxiomen für \lm{ \mathbb{S} } folgt:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Satz.} \\\\'."\n".
+                    '\lm{ ( \mathbb{S},+,\cdot,\le ) } ist ein \italic{linear geordneter Körper}, und die Ordnung ist genau diejenige, die durch den Vergleich an der \italic{größten Stelle} (lexikographisch) gegeben ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Was wir zeigen wollten.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
                     )),
               )
@@ -318,7 +498,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(

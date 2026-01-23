@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.12.2025, 22:00h
+  // #: Stand: 23.01.2026, 13:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
+  //                      +:  "MathJax":  Add Macro "supp".
   //           20251221:  >:  "MathJax":  Change Macro "rad" from '\mathrm' to '\operatorname'.
   //                      +:  "MathJax":  Add Macros "lpr", "pr", and "pt".
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*EquationHideSeparatorLine' to '#7F7F7F'.
@@ -261,6 +263,7 @@
     echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
     echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
     echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
+    echo '            supp: "\\\\operatorname{supp}",'."\n"; // for support of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
@@ -696,6 +699,7 @@
                                     array( '  :=  ', '\;\;\;:=\;\;\;'),
                                     array( '  =:  ', '\;\;\;=:\;\;\;'),
                                     array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
+                                    array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
