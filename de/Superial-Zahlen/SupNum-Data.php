@@ -217,7 +217,7 @@
                    
         'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen' => array( headline_text => 'Was lernen wir über rationale beziehungsweise algebraische Zahlen'/* , headline_text_short => 'X' */),
 
-        'OM:SupNum:Eigenschaften:SIstGeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein geordneter Körper',/* headline_text_short => 'X' */),
+        'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS' => array( headline_text => 'Weitere Ordnungseigenschaften von \lm{ \mathbb{S} }',/* headline_text_short => 'X' */),
 
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
 
