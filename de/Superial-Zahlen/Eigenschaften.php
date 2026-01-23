@@ -84,15 +84,16 @@
                     '\bold{Totalordnung}',
                     '• Die Superial-Zahlen haben eine Totalordnung:',
                     '– Wikipedia: \jump[https://de.wikipedia.org/wiki/Ordnungsrelation]{Totalordnung}{Ordnungsrelation, Totalordnung.}',
+                    '\bold{Überarbeiten}',
+                    '• Durch den Beweis der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} und der \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die sinnvollen Koeffizienten der reell algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.',
                     ))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
-                      'Wir können nämlich für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
-                    'größer als die andere ist, weil sie eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
-                    '\lm{ \mathbb{S} } ist nämlich ein geordneter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
-                    '\color{*Bearb}{(Dies ist zu beweisen: die Körpereigenschaft und das Angeordnetsein.)}'."\n".
+                      'Wir können zum Beispiel für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
+                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
+                    'nämlich eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
+                    '\color{*Bearb}{(Die Körpereigenschaft ist zu beweisen!)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
                       
