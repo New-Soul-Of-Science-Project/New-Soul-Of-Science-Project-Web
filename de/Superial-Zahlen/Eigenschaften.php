@@ -91,9 +91,8 @@
                   array( 'text', array( text => array(
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
                       'Wir können zum Beispiel für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
-                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
+                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
                     'nämlich eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
-                    '\color{*Bearb}{(Die Körpereigenschaft ist zu beweisen!)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
                       
@@ -1839,7 +1838,7 @@
                       'Hier kommen die auf diesen Seiten entwickelten Superial-Zahlen, und die mit ihnen verbundenen \jump{OM:BiOrd:Home}{Biordinalzahlen}, ins Spiel.'."\n".
                     'Die Superial-Zahlen begründen das Aktual-Unendliche auf den endlichen Primzahlen und so auf der Arithmetik und bringen sie mit der Mengenlehre zusammen.'."\n".
                     'Sie erweitern so die reell algebraischen Zahlen, die durch Radikale darstellbar sind, und vielleicht sogar alle, auf einen'."\n".
-                    'aktual unendlichen angeordneten algebraischen Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
+                    'aktual unendlichen angeordneten \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{algebraischen Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten Eigenschaften'."\n".
                     'zur Verfügung.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".

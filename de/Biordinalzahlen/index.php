@@ -26,7 +26,7 @@
                       'Dadurch erschaffen wir mit den Biordinalzahlen eine Erweiterung der Ordinalzahlen, die die Eigenschaft eines'."\n".
                     'algebraischen Rings besitzt.'."\n".
                     'Die erneute Erweiterung der Biordinalzahlen führt uns schließlich zu den \\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
-                    'die dann die Eigenschaften eines algebraischen Körpers besitzen.'."\n",
+                    'die dann die Eigenschaften eines \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{algebraischen Körpers} besitzen.'."\n",
                       'Durch die Konstruktion der Superial-Zahlen aus Primzahlen und deren Verbindung zu den Biordinalzahlen'."\n".
                     'stellt sich schließlich auch die Frage, ob es eine Primfaktorzerlegung von \\term{ω} gibt.'."\n".
                     'So entsteht meine \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",

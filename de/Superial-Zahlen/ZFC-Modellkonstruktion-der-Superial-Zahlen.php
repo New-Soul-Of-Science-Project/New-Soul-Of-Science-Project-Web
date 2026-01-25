@@ -39,7 +39,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
                         'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\color{*Bearb}{(Verweis)}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
-                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein Körper – Analysis oder Differentialrechnung wären unmöglich.',
+                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper} – Analysis oder Differentialrechnung wären unmöglich.',
                         'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
                         'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\color{*Bearb}{(Verweis)}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
                         'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – wir müssten die komplette Algebra darauf neu definieren.',
@@ -170,7 +170,7 @@
                         '\bold{Addition:} koeffizientenweise.',
                         '\bold{Multiplikation:} Cauchy-Produkt\color{*Bearb}{(Verweis)} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
                         '\bold{Lexikographische Ordnung:}\color{*Bearb}{(Verweis)} \\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
-                        '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein geordneter Körper ist.',
+                        '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
                         '\bold{Division:} Polynomdivision\color{*Bearb}{(Verweis)}.',
                         '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} ganze Superial-Zahlen, natürliche Superial-Zahlen, gerade und ungerade Superial-Zahlen sowie superiale Primzahlen.\color{*Bearb}{(genauer klären)}',
                         '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.\color{*Bearb}{(genauer klären)}',

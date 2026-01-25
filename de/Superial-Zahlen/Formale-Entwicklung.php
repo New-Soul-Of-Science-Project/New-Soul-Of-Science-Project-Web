@@ -26,7 +26,7 @@
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
                     'bezüglich der Addition und Multiplikation.'."\n".
-                    'Sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
+                    'Sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
                     'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können,'."\n".
                     'auch die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen'."\n".
                     'sowie schließlich sogar \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
@@ -579,8 +579,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter Körper.'."\n".
-                    '\color{*Bearb}{(Die Körpereigenschaft ist noch zu beweisen!)}'."\n".
+                    'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter \jum{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper}.'."\n".
                     'Was nachfolgend zu zeigen ist.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
                     ''))),
