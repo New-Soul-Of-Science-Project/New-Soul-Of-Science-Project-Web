@@ -479,7 +479,7 @@
                   array( 'text', array( text => array(
                     'Sei \lm{ 0 \ne a = \sum a_{k} \s^{k} }.'."\n".
                     'Sei \lm{ n := \max⁡(\supp⁡(a)) } und \lm{ a_{n} \ne 0 }.'."\n".
-                    'Dann'."\n".
+                    'Ziehen wir den größten Term heraus, in Form von'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -551,7 +551,7 @@
                     '\lm{ a \cdot a^{−1} = a_{n} \cdot \s^{n} \cdot (1 + u) \cdot a_{n}^{−1} \cdot \s^{−n} \cdot b = (1 + u) \cdot b = 1 }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Damit besitzt jedes \lm{ f \ne 0 } ein multiplikatives Inverses, also:'."\n".
+                    'Damit besitzt jedes \lm{ a \ne 0 } ein multiplikatives Inverses, also:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\bold{Satz.} \lm{ ( \mathbb{S} , + , \cdot ) } ist ein Körper.'."\n".
@@ -579,8 +579,9 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter \jum{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper}.'."\n".
-                    'Was nachfolgend zu zeigen ist.'."\n",
+                    'Bemerkenswerterweise ist unsere Menge der Superial-Zahlen \lm{ \mathbb{S} } nicht nur ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{algebraischer Körper},'."\n".
+                    'sondern sogar ein linear geordneter Körper,'."\n".
+                    'was wir nachfolgend zeigen.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper:X', text =>
