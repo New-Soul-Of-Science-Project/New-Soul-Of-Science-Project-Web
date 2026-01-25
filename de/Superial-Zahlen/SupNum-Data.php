@@ -343,6 +343,8 @@
 
         'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein geordneter Körper'/* , headline_text_short => 'X' */),
 
+        'OM:SupNum:Formale-Entwicklung:SIstKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein Körper'/* , headline_text_short => 'X' */),
+
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Fo.F.ZM.13'),

@@ -305,7 +305,258 @@
                     'Also gibt es sogar superiale Primzahlen unter den Superial-Zahlen.'."\n".
                     'Noch eine echt bemerkenswerte Eigenschaft der Superial-Zahlen.'."\n".
                     ''))),
-                      
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • S ist ein Körper  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:SIstKoerper',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Eine sehr wichtige Eigenschaft dafür, dass wir die Superial-Zahlen so nutzen können,'."\n".
+                    'wie wir es bei den reell algebraischen Zahlen auch gewohnt sind, zum Beispiel Ableitungen und Integrale berechnen können,'."\n".
+                    'ist ihre Körpereigenschaft.'."\n".
+                    'Wenn wir mit ihnen praktisch umgehen, merken wir recht schnell, dass wir sie für die Grundrechenarten \lm{ ( +, -, \cdot } und bedingt auch \lm{ / , \uparrow ) } sehr frei'."\n".
+                    'und wie gewohnt nutzen können.'."\n".
+                    'Und doch müssen wir selbstverständlich nun explizit zeigen, dass die Menge \lm{ \mathbb{S} } wirklich ein Körper ist.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper:X', text =>
+
+                'Satz: \lm{ \mathbb{S} } ist ein Körper', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir setzen \lm{ K := \mathbb{A}_{\S} = \mathbb{A}_{\R} } und definieren äquivalent zu Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom},'."\n".
+                    'aber noch einmal etwas anders ausgedrückt,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Äquivalent zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{ k \in \mathbb{Z} \!: a_{k} \ne 0 *\} \subseteq \;\rbrack \!-\!\infty , n \rbrack_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'für ein \lm{ n }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper:X', text =>
+                  'Addition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für \lm{ a = \sum a_{k} \cdot \s^{k} } und \lm{ b = \sum b_{k} \cdot \s^{k} } definieren wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a + b  :=  \sum_{ k \in \mathbb{Z} } *( a_{k} + b_{k} *) \cdot \s^{k}  }'),
+                      array( display => 'on',  latex => '{  -a  :=  \sum_{ k \in \mathbb{Z} } *( -a_{k} *) \cdot \s^{k} \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 1 (Abschluss unter \lm{ *( + *) }).} \\\\'."\n".
+                    'Sind'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  \subseteq  \;] \!-\!\infty , n ]_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(b)  \subseteq  \;] \!-\!\infty , m ]_{\mathbb{Z}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a + b)  \subseteq  \;] \!-\!\infty , \max\{ n, m \} ]_{\mathbb{Z}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Für \lm{ k > \max⁡\{ n,m \} } sind \lm{ a_{k } = b_{k} = 0 }, also auch \lm{ a_{k} + b_{k} = 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit sind \lm{ 0 := \sum 0 \cdot \s^{k} } und \lm{ a + (−a) = 0 } offensichtlich.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper:X', text =>
+                  'Multiplikation', subline =>
+                    'Wohldefiniertheit und Abschluss')),
+                  array( 'text', array( text => array(
+                    'Wir definieren das Cauchy-Produkt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot b  :=  \sum_{ k \in \mathbb{Z} } c_{k} \cdot \s^{k}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  c_{k}  :=  \sum_{ i + j = k \in \mathbb{Z} } a_{i} \cdot b_{j}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 2 (Wohldefiniertheit der Koeffizienten \lm{ c_{k} }).} \\\\'."\n".
+                    'Für jedes feste \lm{ k \in \mathbb{Z} } ist die Summe \lm{ c_{k} = \sum_{ i + j = k } a_{i} \cdot b_{j} } endlich (also wohldefiniert in \lm{ K }). \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Wähle \lm{ n, m } mit \lm{ a_{i} = 0 } für \lm{ i > n } und \lm{ b_{j} = 0 } für \lm{ j > m }. \\\\'."\n".
+                    'Ein Summand kann nur dann nicht verschwinden, wenn zugleich \lm{ i \le n } und \lm{ j \le m }.'."\n".
+                    'Aus \lm{ i + j = k } folgt dann \lm{ i = k − j \ge k − m}.'."\n".
+                    'Also liegt \lm{ i } in dem endlichen Intervall'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k - m  \le  i  \le  n  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'also gibt es nur endlich viele mögliche \lm{ i } und damit nur endlich viele nichtverschwindende Summanden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 3 (Abschluss unter \lm{ *( \cdot *) }).} \\\\'."\n".
+                    'Wenn'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  \subseteq  \;] \!-\!\infty , n ]_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(b)  \subseteq  \;] \!-\!\infty , m ]_{\mathbb{Z}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a \cdot b)  \subseteq  \;] \!-\!\infty , n + m ]_{\mathbb{Z}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Für \lm{ k > n + m } gilt:'."\n".
+                    'Für jedes \lm{ i + j = k } ist entweder \lm{ i > n} oder \lm{ j > m }.'."\n".
+                    'Dann ist \lm{ a_{i} \cdot b_{j} = 0 }, also \lm{ c_{k} = 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Definiere \lm{ 1 := 1_{K} \cdot \s^{0} }.'."\n".
+                    'Dann ist \lm{ 1 \cdot a = a } und \lm{ 0 \cdot a = 0 } unmittelbar aus den Koeffizientenformeln.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper:X', text =>
+                  'Ringaxiome', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 4 (Assoziativität, Kommutativität, Distributivität).} \\\\'."\n".
+                    '\lm{ ( \mathbb{S} , + , \cdot )} ist ein kommutativer Ring mit Eins. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Für jede feste Potenz \lm{ \s^{k} } entstehen die Koeffizienten bei \lm{ *( + *) } beziehungsweise \lm{ *( \cdot *) } aus endlichen Summen in \lm{ K }.'."\n".
+                    'Daher darf man in jedem Koeffizienten die üblichen Umformungen, wie Vertauschen, Umklammern, Ausmultiplizieren, durchführen,'."\n".
+                    'weil sie in \lm{ K } gelten und nur endlich viele Terme betreffen.'."\n".
+                    'Somit erben \lm{ *( + *) } und \lm{ *( \cdot *) } Assoziativität, Kommutativität sowie Distributivität von \lm{ K }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Bis hierhin haben wir bereits einen kommutativen Ring mit \lm{ 1 }.'."\n".
+                    'Es bleibt zu zeigen: \italic{jedes} \lm{ a \ne 0 } \italic{hat ein multiplikatives Inverses}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper:X', text =>
+                  'Inverse', subline =>
+                    'Körper-Eigenschaft')),
+                  array( 'text', array( text => array(
+                    'Sei \lm{ 0 \ne a = \sum a_{k} \s^{k} }.'."\n".
+                    'Sei \lm{ n := \max⁡(\supp⁡(a)) } und \lm{ a_{n} \ne 0 }.'."\n".
+                    'Dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  a_{n} \cdot \s^{n} \cdot ( 1 + u )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  u  :=  \sum_{ r < 0 } u_{r} \cdot \s^{r}  }'),
+                      array( display => 'on',  latex => '{  u_{r}  :=  \frac{ a_{n + r} }{ a_{n} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beachte: \lm{ u } enthält nur negative Exponenten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir definieren formal'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( 1 + u *)  :=  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } (-u)^{m}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und setzen dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a^{−1}  :=  a_{n}^{−1} \cdot \s^{−n} \cdot ( 1 + u )^{−1}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Jetzt müssen wir zwei Dinge zeigen: (i) \lm{ \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (−u)^{m} } ist ein Element von \lm{ \mathbb{S} } (wohldefiniert), und (ii) es ist wirklich das Inverse.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 5 (Wohldefiniertheit der geometrischen Reihe).} \\\\'."\n".
+                    'Die Reihe \lm{ b := \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (-u)^{m} } definiert ein Element \lm{ b \in \mathbb{S} }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Jeder Faktor \lm{ u } hat nur Exponenten \lm{ < 0 }.'."\n".
+                    'Daher hat \lm{ (−u)^{m} } nur Exponenten \lm{ \le −m }.'."\n".
+                    'Fixiere einen Exponenten \lm{ k \in \mathbb{Z} }.'."\n".
+                    'Dann kann \lm{ \s^{k} } nur aus den Summanden mit \lm{ m \le −k } Beiträge bekommen (für \lm{ m > −k } liegen alle Exponenten von \lm{ (−u)^{m} } strikt kleiner als \lm{ k }).'."\n".
+                    'Es tragen also nur \italic{endlich viele} \lm{ m } zum Koeffizienten bei \lm{ \s^{k} } bei.'."\n".
+                    'Damit sind alle Koeffizienten von \lm{ b } wohldefiniert.'."\n".
+                    'Außerdem ist der Support nach oben durch \lm{ 0 } beschränkt, weil alle \lm{ (−u)^{m} } keine positiven Exponenten besitzen.'."\n".
+                    'Also \lm{ b \in \mathbb{S} }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 6 (Inverse von \lm{ 1 + u }).} \\\\'."\n".
+                    '\lm{ b \cdot (1 + u) = 1 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'In \lm{ \mathbb{S} } gilt wegen \condb{Lemma 5} (Koeffizientenweise nur endliche Beiträge):'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b \cdot (1 + u)  =  *( \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} *) \cdot (1 + u)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;+ \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! u \cdot (-u)^{m}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;- \sum_{ \forall m \in [ 1, \infty [_{\mathbb{Z}} } \!\! (-u)^{m}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u) \\\ \qquad\quad  =  *( (-u)^{0} + (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *) \\\ \qquad\qquad\qquad\quad\;\;\; - *( (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  (-u)^{0}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  1  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Umindexierung ist zulässig, weil jeder Koeffizient nur endlich viele Summanden sieht (wie in \condb{Lemma 5}).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Korollar 7 (Inverse von \lm{ a }).} \\\\'."\n".
+                    'Mit \lm{ a^{−1} := a_{n}^{−1} \cdot \s^{−n} \cdot b } gilt \lm{ a \cdot a^{−1} = 1 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    '\lm{ a \cdot a^{−1} = a_{n} \cdot \s^{n} \cdot (1 + u) \cdot a_{n}^{−1} \cdot \s^{−n} \cdot b = (1 + u) \cdot b = 1 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit besitzt jedes \lm{ f \ne 0 } ein multiplikatives Inverses, also:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Satz.} \lm{ ( \mathbb{S} , + , \cdot ) } ist ein Körper.'."\n".
+                    ''))),
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper'),
                     )),
@@ -319,14 +570,14 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper', type => 'back'),
                     )),
-                      
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
                     // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
                     ))),
-                      
+
                   array( 'text', array( text => array(
                     'Bemerkenswerterweise ist unserer Menge der Superial-Zahlen \lm{ \mathbb{S} } ein linear geordneter Körper.'."\n".
                     '\color{*Bearb}{(Die Körpereigenschaft ist noch zu beweisen!)}'."\n".
