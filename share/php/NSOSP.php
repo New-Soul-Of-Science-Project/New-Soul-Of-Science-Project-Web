@@ -362,11 +362,13 @@
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
   $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_CauchyProduktformel   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
   $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
+  $SupNum_g_footnote_text_HahnSeries            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
   $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
   $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
   $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
@@ -383,6 +385,7 @@
   $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
   $SupNum_g_footnote_text_PadischeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
   $SupNum_g_footnote_text_PfaffscheForm         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
+  $SupNum_g_footnote_text_Polynomdivision       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Polynomdivision:2025}.';
   $SupNum_g_footnote_text_Primfaktorzerlegung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
   $SupNum_g_footnote_text_Primpolynom           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';

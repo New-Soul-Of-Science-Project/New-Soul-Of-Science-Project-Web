@@ -1750,7 +1750,7 @@
                     'Superial-Zahlen \lm{ \mathbb{S} } gehören, auch, wenn der Beweis oben sie verwendet und dieser entscheidende Konsequenzen für die'."\n".
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} hat.'."\n".
                     'Denn faktoriell sind diese Zahlen, oder besser ihre wesentlichen Eigenschaften, im Primzahl-Flächenprodukt von \lm{ \s } enthalten, jedoch kommen sie eben nicht in Reinform in den Superial-Zahlen vor.'."\n",
-                      'Zur Klasse der Ordinalzahlen gehören die Potenzialzahlen im Allgemeinen ebensowenig.'."\n".
+                      'Zur Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen gehören die Potenzialzahlen im Allgemeinen ebensowenig.'."\n".
                     'Dort lassen sich viele überhaupt gar nicht einordnen, weil sie nicht ihre mengentheoretischen Bedingungen erfüllen,'."\n".
                     'obwohl die Zahl \lm{ 2^{ω} } als Kardinalität mit der \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuumshypothese}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'grundlegend zusammenhängt und diese wiederum mit den Ordinalzahlen.'."\n",

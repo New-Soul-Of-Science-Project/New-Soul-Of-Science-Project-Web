@@ -402,7 +402,7 @@
                   'Multiplikation', subline =>
                     'Wohldefiniertheit und Abschluss')),
                   array( 'text', array( text => array(
-                    'Wir definieren das Cauchy-Produkt'."\n".
+                    'Wir definieren das Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

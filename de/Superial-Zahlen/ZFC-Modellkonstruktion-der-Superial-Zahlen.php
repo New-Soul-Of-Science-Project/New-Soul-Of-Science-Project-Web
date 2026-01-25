@@ -38,10 +38,10 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
-                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\color{*Bearb}{(Verweis)}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
+                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
                         'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper} – Analysis oder Differentialrechnung wären unmöglich.',
                         'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
-                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\color{*Bearb}{(Verweis)}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
+                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
                         'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – wir müssten die komplette Algebra darauf neu definieren.',
                     ))),
                   array( 'text', array( text => array(
@@ -52,9 +52,9 @@
                 'Die Hahn-Reihe als Ausweg', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } — und kodieren die Aussage'."\n".
+                    'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } – und kodieren die Aussage'."\n".
                     '„\lm{ \s } hat bei jeder Primzahl \lm{ p } die Exponentenlänge \lm{ ω }“ rein über \lm{ p }-adische Bewertungen.'."\n".
-                    'Eine Superial-Konstruktion über eine Hahn-Reihe\color{*Bearb}{(Verweis)} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
+                    'Eine Superial-Konstruktion über eine Hahn-Reihe\footnote{\const{SupNum_g_footnote_text_HahnSeries}} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -149,14 +149,15 @@
                 'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
                   '')),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Real-Abgeschlossenheit}',
-                    '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
-                    '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
+                    //%! '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
+                    // '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Superial-Zahlen lassen sich aufgrund der natürlichen Superial-Zahlen und deren multiplikativen Eigenschaften in Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) zerlegen.'."\n".
+                    'Diese Primpolynome verhalten sich wie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -168,12 +169,12 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\bold{Addition:} koeffizientenweise.',
-                        '\bold{Multiplikation:} Cauchy-Produkt\color{*Bearb}{(Verweis)} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
-                        '\bold{Lexikographische Ordnung:}\color{*Bearb}{(Verweis)} \\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
+                        '\bold{Multiplikation:} Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
+                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
                         '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
-                        '\bold{Division:} Polynomdivision\color{*Bearb}{(Verweis)}.',
-                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} ganze Superial-Zahlen, natürliche Superial-Zahlen, gerade und ungerade Superial-Zahlen sowie superiale Primzahlen.\color{*Bearb}{(genauer klären)}',
-                        '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.\color{*Bearb}{(genauer klären)}',
+                        '\bold{Division:} Polynomdivision\footnote{\const{SupNum_g_footnote_text_Polynomdivision}}.',
+                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen}, gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
+                        '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.',
                     ))),
                   array( 'text', array( text => array(
                     'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
