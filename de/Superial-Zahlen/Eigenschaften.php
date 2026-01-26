@@ -71,7 +71,7 @@
           ); ?>
 
 
-		    	<!  • Weitere Ordnungseigenschaften von S  >
+          <!  • Weitere Ordnungseigenschaften von S  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS',
               '', 'Sc_f_Paragraph',
@@ -81,11 +81,9 @@
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\bold{Totalordnung}',
-                    '• Die Superial-Zahlen haben eine Totalordnung:',
-                    '– Wikipedia: \jump[https://de.wikipedia.org/wiki/Ordnungsrelation]{Totalordnung}{Ordnungsrelation, Totalordnung.}',
-                    '\bold{Überarbeiten}',
-                    '• Durch den Beweis der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} und der \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die sinnvollen Koeffizienten der reell algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.',
+                    // '\bold{Totalordnung}',
+                    // '• Die Superial-Zahlen haben eine Totalordnung:',
+                    // '– Wikipedia: \jump[https://de.wikipedia.org/wiki/Ordnungsrelation]{Totalordnung}{Ordnungsrelation, Totalordnung.}',
                     ))),
 
                   array( 'text', array( text => array(
@@ -99,7 +97,7 @@
                 'Ist \lm{ \mathbb{S} } ein archimedisch geordneter Körper?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es stellt sich die Frage, ob die Superial-Zahlen, also die Menge \lm{ \mathbb{S} },'."\n".
+                    'Es stellt sich die Frage, ob die Superial-Zahlen \lm{ \mathbb{S} }'."\n".
                     'auch ein archimedisch geordneter Körper\footnote{\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
                     ''))),
                       
@@ -111,95 +109,92 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Es besagt also, dass alle Elemente des archimedisch angeordneten Körpers endlich sind, es jedoch unendlich viele davon gibt.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies gilt aber nicht für den angeordneten Körper der Superial-Zahlen,'."\n".
-                      'weil es Elemente einer Untermenge \lm{ x \in \mathbb{Q} } gibt, für das es keinen Faktor in \lm{ \mathbb{N} } gibt, um beides als Produkt größer als \lm{ \s } zu machen:'."\n".
+                      'weil es die Untermenge ihrer sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }, der reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, gibt,'."\n".
+                      'für deren Elemente \lm{ x \in \mathbb{A}_{\S} = \mathbb{A}_{\R} } es keinen Faktor in \lm{ \mathbb{N} } gibt,'."\n".
+                      'um ihr Produkt größer als \lm{ \s \in \mathbb{S} } zu machen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall q, x \in \mathbb{Q} *) *( q \cdot \s > x > 0 *) *[  x \cdot n > q \cdot \s  *]  }'),
-                      array( display => 'on',  latex => '{  q \cdot \s \in \mathbb{S}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow *( \nexists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
+                      array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *[  x \cdot n  >  a \cdot \s  *]  }'),
+                      array( display => 'on',  latex => '{  a \cdot \s \in \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow *( \nexists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Denn \lm{ \mathbb{S} } enthält zum Beispiel mit \lm{ q \cdot \s } Elemente, die größer als jede endliche natürliche Zahl und damit unendlich groß sind.'."\n",
+                      'Denn \lm{ \mathbb{S} } enthält zum Beispiel mit \lm{ a \cdot \s } Elemente, die größer als jede endliche natürliche Zahl und damit unendlich groß sind.'."\n".
+                      'Wir haben also eine Menge von Gegenbeispielen gefunden.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wie wir daran sehen, handelt es sich bei den Superial-Zahlen um eine ganz andere Menge,'."\n".
-                    'als bei Mengen endlicher Zahlen.'."\n".
+                    'Wie wir daran sehen, handelt es sich, streng genommen, bei den Superial-Zahlen nicht um einen archimedisch angeordneten Körper.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
-                  'Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch geordneter Körper ist?', subline =>
+                  '\lm{ \mathbb{S} } ist ein superial archimedisch geordneter Körper', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie kann das archimedische Axiom im Prinzip auf die Superial-Zahlen \lm{ \mathbb{S} } zu übertragen werden?'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Wie kann das archimedische Axiom für eine möglichst große Teilmenge von \lm{ \mathbb{S} } erfüllt werden?'."\n".
-                      'Es scheint mir, dass dies erfüllt wird, wenn es keine unendlich großen Summanden in den Elementen der Menge gibt.'."\n".
-                      'Sowohl \lm{ x } als auch \lm{ y } müssen zwischen den endlichen Zahlen liegen:'."\n".
+                      'Sei im archimedischen Axiom die Menge der endlichen natürlichen Zahlen \lm{ \mathbb{N} }'."\n".
+                      'durch die Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } ersetzt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{A}  :=  *\{  x *|* *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[ x \cdot n > y *]  *\}  }'),
+                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'In Anlehnung an die Definition der Menge aller Superial-Zahlen in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}'."\n".
-                      'können wir diese Menge auch so schreiben:'."\n".
+                      'und so das superiale archimedische Axiom erhalten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Unser Gegenbeispiel wird zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{S}_{A}  :=  *\{  x *|* *( \forall d \in \mathbb{Z}_{0}^{-} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *[  x \cdot n  >  a \cdot \s  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'So enthalten diese Superial-Zahlen keine Summanden mit Potenzen von \lm{ \s }, die größer als Null sind.'."\n",
+                      'und mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  \s^{2} \in \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  x \cdot n  >  a \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{2}  >  a \cdot \s  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'sehen wir, dass unser Gegenbeispiel nicht mehr funktioniert.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da die Größe einer Superial-Zahl immer durch ihre größte Potenz von \lm{ \s } bestimmt ist,'."\n".
+                      'die per Definition in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} immer existiert'."\n".
+                      'und weil die Exponenten nach oben hin im Endlichen unbegrenzt sind,'."\n".
+                      'können wir einfach durch die Wahl eines jeweils größeren Exponenten in der natürlichen Superial-Zahl \lm{ n }'."\n".
+                      'eine solche finden, die das superiale archimedische Axiom dann also mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  \s^{\max(\supp(y)) + 1} \in \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  x \cdot n  >  y  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{\max(\supp(y)) + 1}  >  y  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'erfüllt, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Bezüglich der Menge \lm{ \mathbb{S}_{\N} } der natürlichen Superial-Zahlen ist \lm{ \mathbb{S} } ein superial archimedisch geordneter Körper.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
-                      
-                'Aber \lm{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \lm{ \mathbb{S}_N } ein archimedisch geordneter Körper', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\color{*Bearb}{(In Arbeit …)}'."\n",
-                        '\\\\'."\n".
-                      ''))),
 
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                      
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS'),
                     )),
@@ -1029,7 +1024,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteKlasse}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
+                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteEs besagt also, dass alle Elemente}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
                     'nämlich die Elemente \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }.'."\n".
                     'Dies gilt ebenso für das Element \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} },'."\n".
                     'wo \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\N}} } alle Vorgänger enthält.'."\n".
