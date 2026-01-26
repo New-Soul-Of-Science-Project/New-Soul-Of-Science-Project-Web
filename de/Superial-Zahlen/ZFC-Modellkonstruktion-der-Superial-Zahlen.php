@@ -168,13 +168,22 @@
                     'Durch die Hahn-Reihen-Definition erhalten wir nun:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Addition:} koeffizientenweise.',
-                        '\bold{Multiplikation:} Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
-                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
-                        '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
-                        '\bold{Division:} Polynomdivision\footnote{\const{SupNum_g_footnote_text_Polynomdivision}}.',
-                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen}, gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
-                        '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.',
+                        '\bold{Addition:} \\\\'."\n".
+                          'koeffizientenweise.',
+                        '\bold{Multiplikation:} \\\\'."\n".
+                          'Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} \\\\'."\n".
+                          '\lm{ \displaystyle \qquad\qquad\qquad (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\\'."\n".
+                          '(die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
+                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\'."\n".
+                          '\lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
+                        '\bold{Feld­axiome:} \\\\'."\n".
+                          'Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
+                        '\bold{Division:} \\\\'."\n".
+                          'Polynomdivision\footnote{\const{SupNum_g_footnote_text_Polynomdivision}}.',
+                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} \\\\'."\n".
+                          'wie \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen}, gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
+                        '\bold{Primfaktorzerlegung:} \\\\'."\n".
+                          '\lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.',
                     ))),
                   array( 'text', array( text => array(
                     'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
