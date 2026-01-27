@@ -112,13 +112,13 @@
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Es besagt also, dass alle Elemente des archimedisch angeordneten Körpers endlich sind, es jedoch unendlich viele davon gibt.'."\n".
+                      'Es besagt also, dass alle Elemente des archimedisch geordneten Körpers endlich sind, es jedoch unendlich viele davon gibt.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dies gilt aber nicht für den angeordneten Körper der Superial-Zahlen,'."\n".
+                      'Das archimedische Axiom gilt in dieser Form aber nicht für den geordneten Körper der Superial-Zahlen,'."\n".
                       'weil es die Untermenge ihrer sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }, der reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, gibt,'."\n".
                       'für deren Elemente \lm{ x \in \mathbb{A}_{\S} = \mathbb{A}_{\R} } es keinen Faktor in \lm{ \mathbb{N} } gibt,'."\n".
-                      'um ihr Produkt größer als \lm{ \s \in \mathbb{S} } zu machen:'."\n".
+                      'um ihr Produkt größer als jede Superial-Zahl \lm{ \mathbb{S} } zu machen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -133,13 +133,13 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wie wir daran sehen, handelt es sich, streng genommen, bei den Superial-Zahlen nicht um einen archimedisch angeordneten Körper.'."\n".
+                    'Wie wir daran sehen, handelt es sich, streng genommen, bei den Superial-Zahlen nicht um einen archimedisch geordneten Körper.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
                   '\lm{ \mathbb{S} } ist ein superial archimedisch geordneter Körper', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Wie kann das archimedische Axiom im Prinzip auf die Superial-Zahlen \lm{ \mathbb{S} } zu übertragen werden?'."\n".
+                    'Wie kann das archimedische Axiom im Prinzip auf die Superial-Zahlen \lm{ \mathbb{S} } übertragen werden?'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -149,13 +149,13 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und so das superiale archimedische Axiom erhalten.'."\n".
+                      'sodass wir das \italic{superiale archimedische Axiom} erhalten.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Unser Gegenbeispiel wird zu'."\n".
+                      'Unser Gegenbeispiel oben wird auf diese Weise zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
