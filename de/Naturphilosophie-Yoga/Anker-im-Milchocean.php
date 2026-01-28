@@ -540,7 +540,7 @@
           ); ?>
 
 
-		    	<!  • Angkor Wat  >
+          <!  • Angkor Wat  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Anker-im-Milchocean:AngkorWat',
               '', 'Sc_f_Paragraph',
@@ -550,12 +550,22 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• Ich erinnere mich dunkel, dass ich ein Video gesehen habe, in dem tief in einem Schacht mitten im Hauptturm von Angkor Wat eine Schildkrötenstatue (Kurma) in einem Steinkasten gewesen sein soll.',
-                    '– Video: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple} – Sek. 03:15',
-                    '• Dieser Steinkasten im Schacht wird bei jeder Sommersonnen durch ein Loch in der Turmspitze durch einem Lichtstrahl beschienen.',
-                    '• Es ist nach meinem Verständnis Vishnu in Form seines Avatars Kurma, der beim Rühren des Milchoceans den Fels oben hält.',
-                    '• Dadurch kam mein Eindruck auf, Angkor Wat symbolisiert den Milchocean-Mythos.',
-                    '• Und Angkor Wat erscheint gleichzeitig als riesiger Lingam umgeben von einer riesigen Yoni.',
+                    '• Ich habe den starken Eindruck, dass es nicht nur ein Wandrelief im Haupttempel gibt, der ›Das Umrühren des Milchoceans‹ darstellt, sondern der ganze Angkor Wat Tempel stellt den Milchocean-Mythos in sich dar.',
+                    '– In Angkor Wat soll im Fundament des Hauptturms ein Schacht sein, 90 Fuß tief, indem angeblich ein Steinkasten war. Was in diesem Steinkasten war, konnte ich noch nicht definitiv herausfinden, sondern nur aufgrund von Hinweisen vermuten, wie das Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=exJMd8JBLhE]{}{This is inside the MAIN CHAMBER of Angkor Wat? Evidence of Ancient Technology | Deleted Video} – Sek. 07:13',
+                    '– Es gibt in einem Tempel in der Nähe ein Steinkasten, die ähnlich sein soll, siehe Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple} – Sek. 03:15',
+                    '• Der Steinkasten im Schacht wurde bei jeder Frühjahrs-Tag-und-Nachtgleiche durch ein Loch in der Turmspitze vom Licht der Sonne beschienen.',
+                    '– Er könnte symbolisch die Wertvollen Schätze enthalten, die nach dem Mythos aus dem Vorgang oder Prozess des Rührens der Milch hervorgehen.',
+                    '– Der Steinkasten symbolisiert nach meinem Verständnis so auch Vishnu in Form seines Schildkröten-Avatars Kurma, der beim Umrühren des Milchoceans den Fels von unten als Lager oben hält. Zu in der Nähe gefundenen Kurmas ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=__n2X0pNp5E]{}{Archeologists Unearthed this Stone Turtle! What\'s Inside is An Ancient Machine? | Praveen Mohan |}',
+                    '• In meinen Augen symbolisiert das Übergießen der Lingams in Shiva-Tempeln mit Ghee, Butter, Milch oder Wasser im Grunde auch den Milchocean-Mythos.',
+                    '– Dadurch kam mein Eindruck auf, Angkor Wat symbolisiert den Milchocean-Mythos.',
+                    '• Also erscheint mir Angkor Wat gleichzeitig als riesiger Lingam (fünfteilig), umgeben von einer riesigen Yoni:',
+                    '– Diese Einschätzung wurde mir nun bestätigt durch ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=aceMzbmCNk0]{}{108 SECRET LINGAMS Hidden in Angkor Wat? Ancient Energy Machines Revealed |Part VI | Praveen Mohan}',
+                    '• Weitere Videos über Angkor Wat von Praveen Mohan:',
+                    '– \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
+                    '– \jump[https://www.youtube.com/watch?v=C-3_QXV3-w0]{}{EVERY INCH of Angkor Wat has a SECRET | Evidence of Ancient Technology | Part III |Praveen Mohan}',
+                    '– \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
+                    '– \jump[https://www.youtube.com/watch?v=hgITjtZ44uA]{}{Angkor Wat - Everything You Know Is WRONG! Impossible Ancient Technology| Deleted Video - Reuploaded}',
+                    '– \jump[https://www.youtube.com/watch?v=mkQDaxf19w4]{}{This is Inside The Stone Blocks of Angkor Wat? Ancient Engineering Technology |Part 7| Praveen Mohan}',
                     ))),
                       
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
