@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 14.12.2025, 23:00h
+  // #: Stand: 29.01.2026, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20260129:  >:  "To_f_replace_callback__latexcommand__jump":  Third optional "target" parameter and link property implemented.
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*SectionSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
   //                      >:  "To_f_headline_add_hides_end_line":  Use color '*SectionSeparatorLine'.
@@ -947,7 +948,7 @@
     // print_r( '$value: '); print_r( $value);
 
     // #?: Two required parameters defined?
-    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 2))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 3))
     {
       // print_r( 'Two required parameters defined !!!');
       // print_r( 'count( $value): '); print_r( count( $value));
@@ -987,7 +988,7 @@
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
       {
         
-        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : '')." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
         
       }
       else
@@ -1000,7 +1001,7 @@
     }
     else
                                                                     
-      return 'Error: \\jump: Parameter amount is not 2 and 2 optional! Value: $value';
+      return 'Error: \\jump: Parameter amount is not 2 and 3 optional! Value: $value';
                                                                     
   }
 
@@ -1236,7 +1237,7 @@
                                       array( type => 'latexcommand',
                                              search => '\\jump',
                                              param_dim => 2,
-                                             param_optional_max => 2,
+                                             param_optional_max => 3,
                                              callback_f => 'To_f_replace_callback__latexcommand__jump',
                                           ),
                                     'jumpname' =>
