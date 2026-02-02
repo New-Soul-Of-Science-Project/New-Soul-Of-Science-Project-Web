@@ -29,7 +29,10 @@
                       'auf alle anderen Teile des Strings wirken.',
                     '• Der Leptonen-String eines geladenen Teilchens erscheint punktförmig, weil sein elektromagnetisches Feld – oder sogar genauer sein elektroschwaches Feld – so erscheint, dass seine Quelle im Schwerpunkt des Strings liegt.',
                     '\bold{Scheinbare Tabubrüche und vermeintliche Widersprüche zur heutigen Physik}',
-                    '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][*Bearb]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][*Bearb]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner})',
+                    '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][][_blank]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][][_blank]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner}',
+                    '\bold{Aktuelle akademische Physik}',
+                    '• \italic{\bold{Eichtheorie (Gauge Theory)}}',
+                    '• Video von Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=0RcaL4LVlss][][_blank]{}{This is why light exists}',
                     ))),
                       
                   array( 'text', array( text => array(
