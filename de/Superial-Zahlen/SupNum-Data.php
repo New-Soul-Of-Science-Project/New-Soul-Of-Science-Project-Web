@@ -215,7 +215,7 @@
       jump_ary => array(
         'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-        'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen' => array( headline_text => 'Was lernen wir über rationale beziehungsweise algebraische Zahlen'/* , headline_text_short => 'X' */),
+        'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten' => array( headline_text => 'Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS' => array( headline_text => 'Weitere Ordnungseigenschaften von \lm{ \mathbb{S} }',/* headline_text_short => 'X' */),
 

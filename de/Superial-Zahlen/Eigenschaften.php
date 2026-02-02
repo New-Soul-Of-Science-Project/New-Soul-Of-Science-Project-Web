@@ -37,7 +37,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten'),
                     )),
                 )
           ); ?>
@@ -45,9 +45,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Was lernen wir über rationale beziehungsweise algebraische Zahlen  >
+          <!  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen',
+            'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -55,13 +55,75 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\bold{Nachkommastellen}',
-                    '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
-                    '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    // '\bold{Nachkommastellen}',
+                    // '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    // '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Es scheint zunächst banal, jedoch eröffnet die folgende Betrachtung interessante Einsichten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten:X', text =>
+                      
+                'Wie weit ins unendlich Kleine reichen die Summanden der periodischen rationalen Koeffizienten der Superial-Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen stolper wir in viele Fragen.'."\n".
+                    'Eine der Fragen, die aufkommt, ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Nehmen wir an, in der endlichen Stelle wollen wir die Zahl \lm{ ⅓ } darstellen und ein \lm{ \s^{-1} } addieren zu \lm{ ⅓ + \s^{-1} } – nur als Beispiel.'."\n",
+                      'Als Bruch ist dies völlig klar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 \frac{ 1 }{ 3 } *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aber als Dezimalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 0,\!33333\overline{3} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} \\\ \qquad\qquad\qquad\qquad\;\;\;\, + 3 \cdot 10^{-3} + 3 \cdot 10^{-4} + \cdots *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'stellt sich die Frage, wieviele Nachkommastellen die Zahl hat.'."\n".
+                    'Denn wir wissen, dass die algebraische Zahl \lm{ ⅓ } am Ende \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{keine superial kleinen Summanden enthalten darf},'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n".
+                    'Denn sie muss ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} sein.'."\n",
+                      'Schauen wir uns also an, welche Entfernung, sprich Differenz, zu \lm{ ⅓ } wir noch haben, wenn wir \lm{ n } Summanden addieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 a_{0} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  a_{0,n}  =  \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  a - a_{0,n}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ *( \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k} *) \cdot 3 }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ \frac{ 3 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 3 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 9 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 \cdot 10^{-n} }{ 3 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 }{ 3 } \cdot 10^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nehmen wir einmal an, wir ziehen – prozessieren – es einmal in Anzahl der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'oder selbst \lm{ \s }-mal komplett durch,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann stellen wir fest, dass wir immer noch nicht \lm{ ⅓ } erreicht haben, denn die Differenz ist zwar bereits unendlich klein,'."\n".
+                    'aber immer noch nicht verschwunden.'."\n",
+                      'Bei \lm{ n = ω } gibt es dabei zwar keine unendlich kleinen Summanden, aber was nützt es, wenn wir \lm{ ⅓ } ja nicht erreichen.'."\n".
+                    'Bei \lm{ n = \s } haben wir dann schon aktual unendlich kleine Summanden und trotzdem \lm{ ⅓ } nicht erreicht.'."\n".
+                    'Wie können wir die Situation nun verstehen?'."\n".
+                    'Ebenfalls ist die Frage, die \lm{ n } welcher Menge machen hier Sinn oder sind überhaupt erlaubt.'."\n",
+                      'Jedenfalls stellen wir fest, dass wir uns \lm{ ⅓ } immer mehr annähern, je mehr Summanden wir addieren.'."\n".
+                    'Das hört offensichtlich nie auf und geht bis ins Aktual-Unendliche immer weiter.'."\n".
+                    'Wir sehen aber auch, dass wir hoffen können, dass die Summe wieder komplett endlich wird, wenn wir sie nie, auch nicht im Aktual-Unendlichen, enden lassen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -77,7 +139,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten', type => 'back'),
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -108,7 +170,7 @@
                       'die als Faktor jede Zahl einer Menge größer machen kann als eine andere Zahl der gleichen Menge:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -121,7 +183,7 @@
                       'um ihr Produkt größer als jede Superial-Zahl \lm{ \mathbb{S} } zu machen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *[  x \cdot n  >  a \cdot \s  *]  }'),
                       array( display => 'on',  latex => '{  a \cdot \s \in \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow *( \nexists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  }'),
@@ -148,7 +210,7 @@
                       'durch die Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } ersetzt'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n  >  y  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -158,14 +220,14 @@
                       'Unser Gegenbeispiel oben wird auf diese Weise zu'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *[  x \cdot n  >  a \cdot \s  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und mit'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  \s^{2} \in \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  x \cdot n  >  a \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{2}  >  a \cdot \s  }'),
@@ -181,7 +243,7 @@
                       'eine solche finden, die das superiale archimedische Axiom dann also mit'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  \s^{\max(\supp(y)) + 1} \in \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  x \cdot n  >  y  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{\max(\supp(y)) + 1}  >  y  \;\; ,  }'),
