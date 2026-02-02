@@ -38,6 +38,7 @@
           'wiki:SteinDerWeisen:2019',
           'wiki:Supernova:2024',
           'wiki:Thot:2019',
+          'wiki:Veda:2025',
           'wiki:Weisheit:2017',
           'wiki:YinUndYang:2019',
           'wiki:Yoga:2016',

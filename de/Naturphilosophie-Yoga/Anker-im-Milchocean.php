@@ -69,9 +69,12 @@
                     'Daraufhin erklärte Thomas mir, dass Butter in der Schweiz auch \italic{Anke} genannt wird.'."\n".
                     'Dort hatte er länger gelebt.'."\n",
                       'Diese Erkenntnis löste in mir einen Strom von Gedanken und eine Eingebung aus.'."\n".
-                    'Ich dachte unvermittelt an das Video, dass ich ein paar Wochen zuvor sah, was sich um die Darstellung einer Geschichte aus der \color{*Bearb}{Veda}'."\n".
+                    'Ich dachte unvermittelt an das \jump{OM:NPYo:Anker-im-Milchocean:Vortext:YouTube-ChurningTheSeaOfMilk}{Video},'."\n".
+                    'dass ich ein paar Wochen zuvor sah, was sich um die Darstellung einer Geschichte aus der Veda\footnote{\const{NPYo_g_footnote_text_Veda}}'."\n".
                     'im Haupttempel von \italic{Angkor Wat} drehte.'."\n".
-                    'Diese Schöpfungsgeschichte handelte vom quirlen des Milchoceans.'."\n".
+                    'Diese Schöpfungsgeschichte, von der in \jump{OM:NPYo:Anker-im-Milchocean:AngkorWat}{Angkor Wat} erzählt wird,'."\n".
+                    'handelte von der Entstehung des Universums aus den Grundlagen des Prinzips des Lebens – seiner Urkräfte und „Fruchtbarkeit“ –'."\n".
+                    'und erzählt die metaphorische und metaphysische Geschichte vom Quirlen oder \jump{OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans}{Umrühren des Milchoceans}.'."\n".
                     'Da kam mir ins Bewusstsein, dass beim Schlagen, Rühren oder Quirlen von Milch Butter entsteht.'."\n",
                       'Im englischen: \quote{To batter milk into butter.}'."\n".
                     'Zu deutsch: \quote{Milch zu Butter schlagen.}'."\n".
@@ -80,48 +83,101 @@
                   'Die Butterlampen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Nachdem Thomas meine Gedanken erfahren und ich ihm von dem Film erzählt hatte und wir eine Weile über die Symbolik von Milch und Butter diskutierten,'."\n".
+                    'Nachdem Thomas meine Gedanken erfahren, ich ihm von dem Film erzählt hatte und wir eine Weile über die Symbolik von Milch und Butter diskutierten,'."\n".
                     'berichtete er, dass in hinduistischen Tempeln Butterlampen brannten.'."\n",
-                      'Unvermittelt musste ich an Fruchtbarkeit und an das Licht der Erleuchtung denken.'."\n".
+                      'Unvermittelt musste ich an Nahrung oder Nährendes und an das Licht der Erleuchtung denken.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
                                            
-                'Das Umrühren des Milchmeers — Churning the Sea of Milk', subline =>
-                  'Ein Aufwirbeln oder Quirlen des Milchmeers als alchemistisches Urbild der Schöpfung beziehungsweise Materialisierung, Reinigung und Läuterung')),
+                'Das Umrühren des Milchoceans — Churning the Sea of Milk', subline =>
+                  'Ein Aufwirbeln oder Quirlen des Milchoceans als alchemistisches Urbild der Schöpfung beziehungsweise Materialisierung, Reinigung und Läuterung')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Geschichte vom \jump{OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans}{›Umrühren oder Schlagen des Milchoceans‹},'."\n".
+                    'die ich im nachfolgenden Kapitel mehr im Detail beschreibe, verbindet die Aspekte, von denen ich zuvor erzählte,'."\n".
+                    'wie das Kreuz, den Sonnengruß, das Yoga, die Heilung, den ›Phönix aus der Asche‹, die Aufrichtung des Menschen, das Ankh, das Leben,'."\n".
+                    'den Anker, die Hoffnung, den Glauben, die Butter, die Reinigung und Läuterung, die Erleuchtung, die körperliche und metaphysische Fruchtbarkeit'."\n".
+                    'und weitere damit verbundene Aspekte, in einer großen Metapher und metaphysischen Vorstellung miteinander.'."\n".
                     ''))),
 
                   array( 'youtube',
-                    array_merge( $NPYo_g_youtube_ary_ChurningTheSeaOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk'))),
+                    array_merge( $NPYo_g_youtube_ary_ChurningTheSeaOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:Vortext:YouTube-ChurningTheSeaOfMilk'))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Diese Erkenntnis machte und macht uns die tiefe Bedeutung der Aspekte dieser verbindenden Schöpfungsgeschichte deutlich.'."\n".
+                    'Die naturphilosophische Vorstellungswelt unserer Ahnen kann uns klar machen, dass sie die Regeln, Gesetze und Prozesse unseres Lebens'."\n".
+                    'und unserer Welt vermutlich viel grundsätzlicher durchdrungen haben, als wir uns dies im Allgemeinen vorstellen.'."\n".
+                    'Ach, wenn sie es nicht unbedingt genau so wie wir heute auch in Form von Formeln und mathematischen Konzepten ausgedrückt oder niedergelegt haben.'."\n",
+                      'Durch die Forschung über all die Themen und Seiten auf dieser Website wird die Verbindung zwischen dieser Metapher, der Naturphilosophie'."\n".
+                    'und der heutigen akademischen Forschung besonders schön herausgearbeitet.'."\n".
                     ''))),
-
-                  array( 'youtube',
-                    array_merge( $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-TheChurningOfTheOceanOfMilk'))),
-
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                  'Von Lingams und Yonis', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'XXX Lingams und das Übergießen mit Ghee (geklärter Butter), Milch oder Wasser als Reinigung, Läuterung – etwas reinigen, etwas von Fehlern oder Trübendem befreien –'."\n".
+                    'XXX Lingams, auch als quasi phallisches Symbol, stehe auch für „Fruchtbarkeit“ im übertragenen Sinn'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
                                            
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                'Beleuchtung der sprachlichen Bedeutung der phonetisch ähnlichen Begriffe', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Alle drei Begriffe können geometrisch oder prozesshaft mit den althochdeutschen Vorsilben ›ank-‹ oder ›ang-‹ für biegen oder haken – das Gebogene oder Ge­hakte – in Verbindung gebracht werden.'."\n".
+                    'Die drei Begriffe, Ankh, Anker und Anke oder Anken können geometrisch oder prozesshaft mit den althochdeutschen Vorsilben ›ank-‹ oder ›ang-‹ für biegen oder haken – das Gebogene oder Ge­hakte – in Verbindung gebracht werden.'."\n".
                     'Bei der Anke wäre es dann eher das Gerührte oder durch rühren Entstandene, also durch eine gebogene oder kreisförmige Bewegung.'."\n".
                     'Interessant dann auch, dass Schiffsanker in sehr frühen Zeiten schwere Steinringe waren, also geometrisch Kreise.'."\n",
                       'Die Vorsilbe ›ang-‹ finden wir dann nicht nur in der Angel (gebogene Angel zum Fischen), sondern auch im englischen Angle (zu deutsch Winkel oder Kreiswinkel, im Grunde ein Hacken)'."\n".
                     'oder im englischen Angel (zu deutsch Engel), worauf wir gleich zurückkommen.'."\n",
-                      'Erzählen wir nun unsere Geschichte und folgen dabei diesen Ankerpunkten oder Dreh- und Angelpunkten, bekommen wir ein aufschlussreiches, faszinierendes, auch erstaunliches und für uns heute vielleicht etwas bizarres Bild der Vorstellung'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                                           
+                'Metaphysisches Verständnis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Erzählen wir nun unsere Geschichte und folgen dabei diesen Ankerpunkten oder Dreh- und Angelpunkten, bekommen wir ein aufschlussreiches, faszinierendes, auch erstaunliches und für uns heute vielleicht etwas bizarres Bild der Vorstellung'."\n".
                     'von der Schöpfung, zumindest einiger unserer Ahnen, welches auch sehr starke Bezüge in die moderne Physik und besonders in eine von mir konzipierte neue Sicht auf die Physik aufweist.'."\n".
                     'Diese \jump{OM:FrQFT:Home}{›Neue Physik‹} wird von mir auch auf diesen Seiten beschrieben.'."\n",
-                      'Abschließend werde ich noch ein diesbezügliches Gleichnis in der Natur aufzeigen, das im Buddhismus und anderen Religionen und Mythologien an unsere Geschichte etwas anzuknüpfen scheint'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'XXX Elementarteilchen im Vakuum haben Ähnlichkeit mit dem Prozess …'."\n",
+                      'XXX Vulkane, die aus dem Meer kommen, haben Ähnlichkeit mit dem Prozess …'."\n",
+                      'XXX siehe die Kontexte \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung}‹} …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                                           
+                'Die Milchstraße', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                                           
+                'Die Lotusblüte', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Abschließend werde ich noch ein diesbezügliches Gleichnis in der Natur aufzeigen, das im Buddhismus und anderen Religionen und Mythologien an unsere Geschichte etwas anzuknüpfen scheint'."\n".
                     'und in Fernost eine hohe Bedeutung hat, wie auch im Westen jetzt mehr Bedeutung erlangt: die \italic{Lotusblüte} und ihre Natur.'."\n",
-                      'Durch diese Erzählung und diese Betrachtungen erhalten wir, in meinen Augen, ein besseres Verständnis von alten Vorstellungen und Gleichnissen sowie von altem Wissen,'."\n".
-                    'welches wir wieder in unsere Gegenwart holen und für uns durch Aktualisierung lebendig machen sollten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
+                                           
+                'Altes Wissen in die Gegenwart holen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Durch diese Erzählung und diese Betrachtungen erhalten wir, in meinen Augen, ein besseres Verständnis von alten Vorstellungen und Metaphern sowie von altem Wissen,'."\n".
+                    'welches wir wieder in unsere Gegenwart holen und für uns durch Aktualisierung lebendig machen können.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
 
                   array( 'jumplist', array(
@@ -519,18 +575,22 @@
                         '\bold{Kernbilder} sind stabil: Kūrma als Fundament, Mandara als Achse/Quirl, Vāsuki als Seil, Gift→Klärung→Amṛta, Mohinī als List.',
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Video \jumpname{OM:NPYo:Anker-im-Milchocean:Vortext:YouTube-ChurningTheSeaOfMilk}'."\n",
+                      'Video \jumpname{OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilk}'."\n",
+                      'Video \jumpname{OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilkHinduMetho}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'youtube',
-                    array_merge( $NPYo_g_youtube_ary_ChurningTheSeaOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk'))),
+                    array_merge( $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilk'))),
 
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'youtube',
-                    array_merge( $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk, array( name => 'OM:NPYo:Anker-im-Milchocean:YouTube-TheChurningOfTheOceanOfMilk'))),
+                    array_merge( $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilkHinduMetho, array( name => 'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilkHinduMetho'))),
 
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -570,6 +630,9 @@
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
                                            
                 'X')), */
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Anker-im-Milchocean:AngkorWat'),
@@ -589,26 +652,32 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Ich habe den starken Eindruck, dass es nicht nur ein Wandrelief im Haupttempel gibt, der ›Das Umrühren des Milchoceans‹ darstellt, sondern der ganze Angkor Wat Tempel stellt den Milchocean-Mythos in sich dar.',
-                    '– In Angkor Wat soll im Fundament des Hauptturms ein Schacht sein, 90 Fuß tief, indem angeblich ein Steinkasten war. Was in diesem Steinkasten war, konnte ich noch nicht definitiv herausfinden, sondern nur aufgrund von Hinweisen vermuten, wie das Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=exJMd8JBLhE]{}{This is inside the MAIN CHAMBER of Angkor Wat? Evidence of Ancient Technology | Deleted Video} – Sek. 07:13',
-                    '– Es gibt in einem Tempel in der Nähe ein Steinkasten, die ähnlich sein soll, siehe Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple} – Sek. 03:15',
+                    '– In Angkor Wat soll im Fundament des Hauptturms ein Schacht sein, 90 Fuß tief, indem angeblich ein Steinkasten war. Was in diesem Steinkasten war, konnte ich noch nicht definitiv herausfinden, sondern nur aufgrund von Hinweisen vermuten, wie das Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=exJMd8JBLhE][][_blank]{}{This is inside the MAIN CHAMBER of Angkor Wat? Evidence of Ancient Technology | Deleted Video} – Sek. 07:13',
+                    '– Es gibt in einem Tempel in der Nähe ein Steinkasten, die ähnlich sein soll, siehe Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=c8vMwkJSinI][][_blank]{}{Ancient Stone Box Found in Cambodia? Mystery of Banteay Samré Temple} – Sek. 03:15',
                     '• Der Steinkasten im Schacht wurde bei jeder Frühjahrs-Tag-und-Nachtgleiche durch ein Loch in der Turmspitze vom Licht der Sonne beschienen.',
                     '– Er könnte symbolisch die Wertvollen Schätze enthalten, die nach dem Mythos aus dem Vorgang oder Prozess des Rührens der Milch hervorgehen.',
-                    '– Der Steinkasten symbolisiert nach meinem Verständnis so auch Vishnu in Form seines Schildkröten-Avatars Kurma, der beim Umrühren des Milchoceans den Fels von unten als Lager oben hält. Zu in der Nähe gefundenen Kurmas ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=__n2X0pNp5E]{}{Archeologists Unearthed this Stone Turtle! What\'s Inside is An Ancient Machine? | Praveen Mohan |}',
+                    '– Der Steinkasten symbolisiert nach meinem Verständnis so auch Vishnu in Form seines Schildkröten-Avatars Kurma, der beim Umrühren des Milchoceans den Fels von unten als Lager oben hält. Zu in der Nähe gefundenen Kurmas ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=__n2X0pNp5E][][_blank]{}{Archeologists Unearthed this Stone Turtle! What\'s Inside is An Ancient Machine? | Praveen Mohan |}',
                     '• In meinen Augen symbolisiert das Übergießen der Lingams in Shiva-Tempeln mit Ghee, Butter, Milch oder Wasser im Grunde auch den Milchocean-Mythos.',
                     '– Dadurch kam mein Eindruck auf, Angkor Wat symbolisiert den Milchocean-Mythos.',
                     '• Also erscheint mir Angkor Wat gleichzeitig als riesiger Lingam (fünfteilig), umgeben von einer riesigen Yoni:',
-                    '– Diese Einschätzung wurde mir nun bestätigt durch ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=aceMzbmCNk0]{}{108 SECRET LINGAMS Hidden in Angkor Wat? Ancient Energy Machines Revealed |Part VI | Praveen Mohan}',
+                    '– Diese Einschätzung wurde mir nun bestätigt durch ein Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=aceMzbmCNk0][][_blank]{}{108 SECRET LINGAMS Hidden in Angkor Wat? Ancient Energy Machines Revealed |Part VI | Praveen Mohan}',
+                    '• Angkor Wat soll die Anmutung einer riesigen Lotusblüte haben.',
                     '• Weitere Videos über Angkor Wat von Praveen Mohan:',
-                    '– \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
-                    '– \jump[https://www.youtube.com/watch?v=C-3_QXV3-w0]{}{EVERY INCH of Angkor Wat has a SECRET | Evidence of Ancient Technology | Part III |Praveen Mohan}',
-                    '– \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
-                    '– \jump[https://www.youtube.com/watch?v=hgITjtZ44uA]{}{Angkor Wat - Everything You Know Is WRONG! Impossible Ancient Technology| Deleted Video - Reuploaded}',
-                    '– \jump[https://www.youtube.com/watch?v=mkQDaxf19w4]{}{This is Inside The Stone Blocks of Angkor Wat? Ancient Engineering Technology |Part 7| Praveen Mohan}',
+                    '– Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw][][_blank]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
+                    '– Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=C-3_QXV3-w0][][_blank]{}{EVERY INCH of Angkor Wat has a SECRET | Evidence of Ancient Technology | Part III |Praveen Mohan}',
+                    '– Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=wO5rowQ4dzw][][_blank]{}{World\'s Oldest Artificial Island? The Mystery of Angkor Wat - Part I | Praveen Mohan}',
+                    '– Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=hgITjtZ44uA][][_blank]{}{Angkor Wat - Everything You Know Is WRONG! Impossible Ancient Technology| Deleted Video - Reuploaded}',
+                    '– Video von Praveen Mohan: \jump[https://www.youtube.com/watch?v=mkQDaxf19w4][][_blank]{}{This is Inside The Stone Blocks of Angkor Wat? Ancient Engineering Technology |Part 7| Praveen Mohan}',
+                    '– Video von Bizarre Antike Geheimnisse: \jump[https://www.youtube.com/watch?v=ESFZ5YKt24U][][_blank]{}{Bizarre Antike Geheimnisse}',
                     ))),
                       
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
                                            
                 'X')), */
+                  array( 'text', array( text => array(
+                    'Eines der erstaunlichsten Bauwerke der bekannten Menschheitsgeschichte!'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),

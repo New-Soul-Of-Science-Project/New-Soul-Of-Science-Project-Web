@@ -66,10 +66,11 @@
         'OM:NPYo:Anker-im-Milchocean:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
           // 'OM:NPYo:Anker-im-Milchocean:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-            'OM:NPYo:Anker-im-Milchocean:YouTube-ChurningTheSeaOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
-            'OM:NPYo:Anker-im-Milchocean:YouTube-TheChurningOfTheOceanOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+            'OM:NPYo:Anker-im-Milchocean:Vortext:YouTube-ChurningTheSeaOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx),/* headline_text_short => 'X' */),
 
         'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans' => array( headline_text => 'Das Umrühren des Milchoceans'/*, headline_text_short => 'X' */),
+            'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilk' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx),/* headline_text_short => 'X' */),
+            'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:YouTube-TheChurningOfTheOceanOfMilkHinduMetho' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx),/* headline_text_short => 'X' */),
 
         'OM:NPYo:Anker-im-Milchocean:Vishnu' => array( headline_text => 'Vishnu'/*, headline_text_short => 'X' */),
 

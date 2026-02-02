@@ -335,6 +335,7 @@
   $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}.';
   $NPYo_g_footnote_text_SamudraManthana         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SamudraManthana:2025}.';
   $NPYo_g_footnote_text_Trimurti                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Trimurti:2016}.';
+  $NPYo_g_footnote_text_Veda                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Veda:2025}.';
   $NPYo_g_footnote_text_YinUndYang              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:YinUndYang:2019}.';
   $NPYo_g_footnote_text_ZeitDjetNeheh           = '\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
   
@@ -681,7 +682,16 @@
                                                                    'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
                                                                    '');
 
-  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk = array( source => 'https://www.youtube-nocookie.com/embed/MItyUwPAjLA?si=cXzh9t8tPMIjJCVp', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/MItyUwPAjLA?si=cXzh9t8tPMIjJCVp', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'XXX'."\n".
+                                                                   'XXX'."\n".
+                                                                   'XXX'."\n".
+                                                                   'XXX'."\n".
+                                                                   '');
+
+  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilkHinduMetho =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/oLM176M10HI?si=g5U0S30el9pawjD6', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'XXX'."\n".
                                                                    'XXX'."\n".
                                                                    'XXX'."\n".
