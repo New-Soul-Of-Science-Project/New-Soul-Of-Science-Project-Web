@@ -1217,6 +1217,72 @@
                   array( 'text', array( text => array(
                     'Wir fahren fort, weitere Varianten der reell algebraischen Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
                     ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe',
+                Title => '\small{Experimentelle Untersuchung von Zusammenhängen zwischen \lm{ \phi } und \lm{ \s } …}',
+                TitleVis => 'Experimentelle Untersuchung von Zusammenhängen zwischen \lm{ \phi } und \lm{ \s }:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Wir wenden die Definition des Goldenen Schnitts \lm{ \phi } auf \lm{ \s } an:'."\n".
+                    ''))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s^{n} + \s^{m} }{ \s^{n} }   =  \frac{ \s^{n} }{ \s^{m} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s^{n} }{ \s^{n} + \s^{m} }   =  \frac{ \s^{m} }{ \s^{n} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s^{2 n} }{ \s^{n} + \s^{m} }   =  \s^{m}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{2 n}   =  \s^{m} \cdot *( \s^{n} + \s^{m} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{2 n} - *( \s^{m} \cdot \s^{n} + \s^{2m} *)   =  0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{2 n} - \s^{m} \cdot \s^{n} - \s^{2m}   =  0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \s^{n} *)^{2} - *( \s^{m} *) \cdot *( \s^{n} *) - *( \s^{m} *)^{2}   =  0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  - *( \s^{n} *)^{2} + *( \s^{m} *) \cdot *( \s^{n} *) + *( \s^{m} *)^{2}   =  0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \s^{m} *)^{2} + *( \s^{m} *) \cdot *( \s^{n} *) - *( \s^{n} *)^{2}   =  0  }'),
+                      array( display => 'on',  latex => '{  x  =  \s^{m}  }'),
+                      array( display => 'on',  latex => '{  a  =  \s^{n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( x *)^{2} + *( x *) \cdot *( a *) - *( a *)^{2}   =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unter Ansatz der \lm{ p }-\lm{ q }-Formel erhalten wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x^{2} + p x + q  =  0  }'),
+                      array( display => 'on',  latex => '{  p  =  a  }'),
+                      array( display => 'on',  latex => '{  q  =  -a^{2}  }'),
+                      array( display => 'on',  latex => '{  x_{1,2}  =  \frac{ p }{ 2 } \pm \sqrt{ *( \frac{ p }{ 2 } *)^{2} - q }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  \frac{ a }{ 2 } \pm \sqrt{ *( \frac{ a }{ 2 } *)^{2} - *( -a^{2} *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  \frac{ a }{ 2 } \pm \sqrt{ \frac{ a^{2} }{ 4 } + a^{2} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  \frac{ a }{ 2 } \pm \sqrt{ \frac{ 5 a^{2} }{ 4 } }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  \frac{ a }{ 2 } \pm \frac{ \sqrt{ 5 } a }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  a \cdot \frac{ 1 \pm \sqrt{ 5 } }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1,2}  =  \frac{ a }{ 2 } *( 1 \pm \sqrt{ 5 } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1} = \frac{ a }{ 2 } *( 1 + \sqrt{ 5 } *)  \land  x_{2} = \frac{ a }{ 2 } *( 1 - \sqrt{ 5 } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x_{1} = \frac{ \s^{n} }{ 2 } *( 1 + \sqrt{ 5 } *)  \land  x_{2} = \frac{ \s^{n} }{ 2 } *( 1 - \sqrt{ 5 } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{m_{1}} = \frac{ \s^{n} }{ 2 } *( 1 + \sqrt{ 5 } *)  \land  \s^{m_{2}} = \frac{ \s^{n} }{ 2 } *( 1 - \sqrt{ 5 } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{m_{1}} = \phi \s^{n}  \land  \s^{m_{2}} = - \frac{ 1 }{ \phi } \s^{n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  m_{1} = \log_{\s} \phi \s^{n}  \land  m_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } \s^{n} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  m_{1} = \log_{\s} \phi + \log_{\s} \s^{n}  \land  m_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *) + \log_{\s} \s^{n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  m_{1} = \log_{\s} \phi + n  \land  m_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *) + n  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn wir annehmen, dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  m_{i}  =  n - k_{i}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann erhalten wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n - k_{1} = \log_{\s} \phi + n  \land  n - k_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *) + n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  -k_{1} = \log_{\s} \phi  \land  -k_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-k_{1}} = \phi  \land  \s^{-k_{2}} = - \frac{ 1 }{ \phi }  }'),
+                    ))),
+
+                    ))),
+
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln', text =>
                       
                 'Summen und Differenzen von Wurzeln', subline =>
