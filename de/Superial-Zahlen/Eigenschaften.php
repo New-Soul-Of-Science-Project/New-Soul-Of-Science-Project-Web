@@ -1769,7 +1769,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Verweisen auf \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}.',
+                    // '• Verweisen auf \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}.',
                     ))),
                       
                   array( 'text', array( text => array(
