@@ -35,6 +35,7 @@
               'wiki:BijektiveFunktion:2023',
               'wiki:Binomialkoeffizient:2023',
               'wiki:CauchyProduktformel:2024',
+              'wiki:DedekindscherSchnitt:2025',
               'wiki:DifferentialMathematik:2024',
               'wiki:Differentialrechnung:2024',
               'wiki:ElliptischeIntegrale:2024',
