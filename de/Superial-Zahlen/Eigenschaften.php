@@ -1843,9 +1843,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen die Potenz \lm{ 2^{ω} } als ersten Primzahlturm im Produkt von \lm{ \s }.'."\n",
-                      'Weiterhin ergibt sich die neue Erkenntnis, dass \lm{ \aleph_{1} } in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
-                    'Produkt aller Primzahlen enthält:'."\n".
+                    'Auch im Exponenten der Primzahlen kommt die Anzahl aller endlichen natürlichen Zahlen \lm{ ω } vor.'."\n".
+                    'Die besagte Potenz \lm{ 2^{ω} } sehen wir hier nun als ersten Primzahlturm im Primzahl-Flächenprodukt von \lm{ \s },'."\n".
+                    'dass sich ja aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie} ergeben hat.'."\n",
+                      'So wissen wir dann, dass die besagte Potenz \lm{ 2^{ω} } der Mächtigkeit \lm{ \aleph_{1} } gleich ist, welches dann in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
+                    'Produkt aller endlichen Primzahlen enthält:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
