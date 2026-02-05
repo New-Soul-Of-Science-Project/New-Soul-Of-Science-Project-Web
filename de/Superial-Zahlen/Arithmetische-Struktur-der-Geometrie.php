@@ -835,7 +835,7 @@
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten'),
-                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie'),
                     )),
 
 
@@ -880,10 +880,10 @@
                     ''))),
 
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie', text =>
                       
-                'Die Ebene der rein endlichen Koordinaten, der reell algebraischen Zahlen', subline =>
-                  'Ein Kreis, zum Beispiel, hat keine aktual unendlich kleinen Summanden')),
+                'Die rein endlichen Koordinaten der unendlich vielen Punkte der endlichen Geometrie', subline =>
+                  'Ein Kreis, zum Beispiel, hat unendlich viele nur endliche Koordinaten, ohne aktual unendlich kleine Summanden')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',

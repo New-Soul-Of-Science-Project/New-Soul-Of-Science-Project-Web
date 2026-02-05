@@ -1629,7 +1629,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für'."\n".
-                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten}{die Kreiskoordinaten und die Kreisradien die primitiven pythagoreischen Tripel}.'."\n",
+                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie}{die Kreiskoordinaten und die Kreisradien die primitiven pythagoreischen Tripel}.'."\n",
                       'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
                     'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen:'."\n".
                     ''))),

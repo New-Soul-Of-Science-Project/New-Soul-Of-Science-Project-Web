@@ -197,7 +197,7 @@
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten' => array( headline_text => 'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten'/* , headline_text_short => 'X' */),
             'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ebene-rein-endlichen-Koordinaten' => array( headline_text => 'Die Ebene der rein endlichen Koordinaten, der reell algebraischen Zahlen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie' => array( headline_text => 'Die rein endlichen Koordinaten der unendlich vielen Punkte der endlichen Geometrie'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
       ),
