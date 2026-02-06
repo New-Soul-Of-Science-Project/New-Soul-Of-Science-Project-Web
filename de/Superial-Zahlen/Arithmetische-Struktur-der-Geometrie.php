@@ -747,7 +747,7 @@
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins herniedergeht.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
-                  'Explizites Primzahlflächenprodukt von \lm{ \s }', subline =>
+                  'Explizites Primzahl-Flächenprodukt von \lm{ \s }', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Für das Primzahlprodukt von \lm{ \s } ergibt sich in beiden Fällen eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche'."\n".

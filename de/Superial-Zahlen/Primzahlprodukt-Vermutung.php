@@ -2551,7 +2551,7 @@
                         'Wenn \lm{ \s = ω } wäre, dann würde es genau so viele rationale Zahlen, wie natürliche Zahlen geben, was zwar für die Mächtigkeit stimmt, aber in meinen Augen nicht für deren Anzahl.',
                         'Denn die Kombinatorik zur Erzeugung der rationalen Zahlen aus Brüchen zeigt, dass es deutlich mehr rationale Zahlen von ihrer Anzahl her geben muss, als natürliche Zahlen, denn im Calkin-Wilf-Baum enthält schon der letzte Strang alle natürlichen Zahlen und der erste Strang all deren Kehrwerte. \\\\ Die direkte Kombinatorik von Zähler und Nenner wäre jeweils \lm{ ω } und ergäbe sich zu \lm{ ω^2 }, wenn nicht gekürzt werden könnte.',
                         'Anders, als bei der Mächtigkeit, wird bei der von mir gemeinten Anzahl der Zahlen ihre kombinatorische Erzeugung mit der vollständigen Induktion der natürlichen Zahlen ins Verhältnis gesetzt.',
-                        'Und die Definition von \lm{ \s } über das Primzahlflächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
+                        'Und die Definition von \lm{ \s } über das Primzahl-Flächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
                         '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(

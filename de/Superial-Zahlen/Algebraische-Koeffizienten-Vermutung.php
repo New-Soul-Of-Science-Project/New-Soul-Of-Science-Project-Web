@@ -97,7 +97,7 @@
                     'weil die aktuale Unendlichkeit verloren geht, die der Beweis fordert.'."\n".
                     'Einzig endlich oft kürzen ist möglich, ohne diese Bedingung zu verletzen, bringt aber keinerlei zusätzlichen Gewinn.'."\n",
                       'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.'."\n".
-                    'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahlflächenprodukts von \lm{ \s }.'."\n".
+                    'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahl-Flächenprodukts von \lm{ \s }.'."\n".
                     'Dadurch wird jedes Produkt einer Wurzel mit unserer superialen Basis'."\n".
                     ''))),
                   array( 'equations',

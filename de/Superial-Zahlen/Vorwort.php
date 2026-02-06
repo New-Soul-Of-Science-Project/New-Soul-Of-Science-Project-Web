@@ -55,7 +55,7 @@
                     'denn er wollte von mir wissen, was \lm{ \s } denn nun wirklich sei.'."\n".
                     'Ob ich eine genauere Definition hätte, an der es aber leider noch fehlte.'."\n",
                       'So kam ich schließlich in einem tief-nächtlichen Gedankenblitz zu den Überlegungen, die in der Definition von \lm{ \s }'."\n".
-                    'durch ein unendliches Primzahlflächenprodukt mündeten.'."\n",
+                    'durch ein unendliches Primzahl-Flächenprodukt mündeten.'."\n",
                       'Der Ausgangspunkt dieser Überlegungen war vor allem der Gedanke, wie \lm{ \s } beschaffen sein muss, um sinnvoll integrieren zu können.'."\n".
                     'Durch \lm{ \s } sollte es möglich werden, unendlich kleine ganze Zahlen unendlich weit vorwärts wie rückwärts zu zählen und dabei unendlich kleine Flächen zu addieren.'."\n".
                     'Dabei muss eine Summe der unendlich kleinen Flächen entstehen, die letztlich eine endliche Größe bekommt, um das Integral als echte Summe zu definieren.'."\n",
@@ -130,7 +130,7 @@
                       'Die Algebraische-Koeffizienten-Vermutung und die Superiale-Transzendenz-Vermutung ergänzen einander hervorragend und bilden so einen genialen Abschluss der Struktur.'."\n".
                     'So werde ich mich daran setzen beide Vermutungen möglichst bald zu beweisen.'."\n",
                       'Es scheint mir nun gelungen, die Superial-Zahlen über eine ZFC-Modellkonstruktion als Menge zu definieren.'."\n".
-                    'Das erst einmal intuitiv recht klar verständliche, mathematisch jedoch sehr unbestimmte Primzahlflächenprodukt \lm{ \s }'."\n".
+                    'Das erst einmal intuitiv recht klar verständliche, mathematisch jedoch sehr unbestimmte Primzahl-Flächenprodukt \lm{ \s }'."\n".
                     'konnte ich über \lm{ p }-adische Bewertungen und entsprechende Rechenregeln für die aktual unendlichen Potenzen in \lm{ ω }-Größenordnung'."\n".
                     'mathematisch sauber definieren.'."\n".
                     'Das bringt das Projekt sehr voran.'."\n",
