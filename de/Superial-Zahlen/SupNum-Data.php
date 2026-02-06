@@ -162,8 +162,8 @@
       keywords => '',
       text_titel_h1 => 'Algebraische-Koeffizienten-Vermutung (AKV) \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Algebraische-Koeffizienten-Vermutung',
-      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
-      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
+      text_undertitel_h2 => 'Wir beweisen, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen sind',
+      // text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
@@ -488,7 +488,7 @@
       text_titel_h1 => 'Superiale-Transzendenz-Vermutung (STV) \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Superiale-Transzendenz-Vermutung',
       text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
-      text_titel_discr_h3 => '',
+      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
       jump_ary => array(
         'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    

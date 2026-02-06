@@ -30,8 +30,8 @@
                   'Ein Paradigmenwechsel')),
                   array( 'text', array( text => array(
                     'Aus Sicht der klassischen Mathematik enthalten transzendente Zahlen keine unendlich kleinen Summanden.'."\n".
-                    'Dies kommt, weil in ihr transzendente Zahlen durch Grenzwertbetrachtungen mit Hilfe des Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
-                    'definiert sind.'."\n",
+                    'Dies kommt, weil in ihr transzendente Zahlen durch Dedekindsche Schnitte\footnote{\const{SupNum_g_footnote_text_DedekindscherSchnitt}}'."\n".
+                    'und durch Grenzwertbetrachtungen mit Hilfe des Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}} definiert sind.'."\n",
                       'Bei Grenzwertbetrachtungen wird das Verhalten von Funktionen untersucht, wenn sich ihr Parameter'."\n".
                     'einem bestimmten Wert, von unten oder von oben, nähert oder in Richtung Unendlichkeit läuft.'."\n".
                     'Das bedeutet aber eben auch, dass die Werte der Parameter nie wirklich das Endliche verlassen, wodurch dann keine wirklich'."\n".
@@ -40,9 +40,8 @@
                     'Die Parameterwerte sind hier wirklich aktual unendlich große oder kleine Superial-Zahlen.'."\n".
                     'Dadurch bekommen transzendente Zahlen echte unendlich kleine Summanden, auch, wenn ihr führender oder bestimmender Wert'."\n".
                     'im Endlichen verbleibt.'."\n".
-                    'Dies ist die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}, die ich später noch'."\n".
-                    'beweisen möchte.'."\n",
-                      'Sie stellt einen tief gehenden grundsätzlichen Paradigmenwechsel dar, der uns eine Lupe in die'."\n".
+                    'Dies wird durch unseren \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Beweis der Superiale-Transzendenz-Vermutung} gezeigt.'."\n",
+                      'Der Beweis unserer Vermutung stellt einen tief gehenden grundsätzlichen Paradigmenwechsel dar, der uns eine Lupe in die'."\n".
                     '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{feinen Strukturen der Transzendenz} an die Hand gibt.'."\n".
                     'Diese ermöglicht uns ganz neue Einblicke, wie wir bei der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}{superialen Eulerschen Zahl \lm{ \e_{\s} }} und'."\n".
@@ -67,13 +66,11 @@
                     'eines wichtigen Teils der reell algebraischen Zahlen, nämlich den Radikalen\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} – ganzzahligen Wurzeln aus positiven natürlichen Zahlen –,'."\n".
                     'gelungen:'."\n",
                       'Unter den Radikalen befinden sich auch irrationale Zahlen, wie die Wurzel aus Zwei, also \lm{ *| \sqrt{2} \,|* = 2^{½} }.'."\n".
-                    'Solche Zahlen sind, genauer ausgedrückt, gebrochene Zahlen mit unendlich vielen nicht periodischen Nachkommastellen.'."\n".
-                    'Noch genauer betrachtet stellt sich die Frage:'."\n".
-                    'Sind diese Nachkommastellen vom Wert her alle endlich groß?'."\n",
-                      'Der Beweis der Überrationalitätsvermutung zeigt, dass sich diese irrationalen Radikale in jede Schicht des'."\n".
-                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems der Superial-Zahlen} vollständig eingliedern.'."\n".
+                    'Solche Zahlen sind, genauer ausgedrückt, gebrochene Zahlen mit unendlich vielen nicht periodischen Nachkommastellen.'."\n",
+                      'Unser Beweis der Überrationalitätsvermutung zeigt, dass sich diese irrationalen Radikale in jede einzelne Schicht des'."\n".
+                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems der Superial-Zahlen} vollständig integrieren.'."\n".
                     'Das zeigt sich durch eine neue und in diesem Zusammenhang sinnvolle Beantwortung der Frage, durch welchen ganzzahligen Bruch wir'."\n".
-                    'die Wurzel aus Zwei oder jedes andere Radikal darstellen können:'."\n".
+                    'die Wurzel aus Zwei oder jedes andere (irrationale) Radikal darstellen können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -89,15 +86,15 @@
                     'und die allgemeine Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}.'."\n".
                     'Er zeigt, dass für die Frage, wie kann jede ganzzahlige Wurzel aus einer positiven natürlichen Zahl als ganzzahliger Bruch darstellen werden,'."\n".
                     'im Endlichen keine Antwort existiert.'."\n".
-                    'Diese Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
-                      'Wenn man naiv auf beide Formeln schaut, dann könnte man argumentieren, dass diese doch nicht abschließend sind, weil sie noch'."\n".
+                    'Diese generelle Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
+                      'Wenn wir naiv auf beide Formeln schauen, dann könnten wir argumentieren, dass diese doch nicht abschließend sind, weil sie noch'."\n".
                     'gekürzt werden können.'."\n".
-                    'Jedoch ist dies nicht ganz korrekt:'."\n".
-                    'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr gegeben,'."\n".
-                    'weil die aktuale Unendlichkeit verloren geht, die der Beweis fordert.'."\n".
+                    'Jedoch ist dies nicht für irrationale Radikale und damit nicht im allgemeinen ganz korrekt:'."\n".
+                    'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr für die irrationalen Radikale gegeben,'."\n".
+                    'weil die aktuale Unendlichkeit verloren geht, die der Beweis für diese fordert.'."\n".
                     'Einzig endlich oft kürzen ist möglich, ohne diese Bedingung zu verletzen, bringt aber keinerlei zusätzlichen Gewinn.'."\n",
                       'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.'."\n".
-                    'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahl-Flächenprodukts von \lm{ \s }.'."\n".
+                    'Denn die Faktoren \lm{ 2^{ω} }, allgemein \lm{ \rad(n)^{ω} }, sind auch Teil des Primzahl-Flächenprodukts von \lm{ \s }.'."\n".
                     'Dadurch wird jedes Produkt einer Wurzel mit unserer superialen Basis'."\n".
                     ''))),
                   array( 'equations',
@@ -116,7 +113,7 @@
                     'erweitern, dass in Summen von superialen Integralen unendlich kleine Flächenelemente ganzer Anzahl gezählt und zu endlichen Flächeninhalten'."\n".
                     'addiert werden können.'."\n",
                       'Alle Radikale können aus der klassischen \lm{ p }‑adischen Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}}'."\n".
-                    'durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was offensichtlich ist und worauf wir gleich noch zurückkomme.'."\n".
+                    'durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was offensichtlich ist und worauf wir gleich noch zurückkommen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Algebraische Radikalformen', subline =>
@@ -148,7 +145,7 @@
                     'Dies legen wir dort im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}‹} dar.'."\n".
                     'Ein entscheidender Schritt zur Vorbereitung unseres Beweises, dass wirklich alle reell algebraischen Zahlen als Koeffizienten'."\n".
                     'sinnvoll sind.'."\n",
-                      'Und diesen Beweis wollen wir nun angehen.'."\n".
+                      'Und diesen Beweis führen wir nachfolgend.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Beweis-der-Ganz-Abgeschlossenheit-von-As', text =>
                       
@@ -484,7 +481,7 @@
                     ''))),
 
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
+                  /* array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
                 TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
 
@@ -640,9 +637,9 @@
                     'wie tief sie mit den Grenzen der Zahlenmengen verbunden sind.'."\n".
                     ''))),
 
-                    ))),
+                    ))), */
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
+                  /* array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter Ansatz mit elliptischen Integralen …',
                 TitleVis => 'Alter Ansatz mit elliptischen Integralen:', ParagraphList => array(
 
@@ -753,7 +750,7 @@
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
                     ''))),
 
-                    ))),
+                    ))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
