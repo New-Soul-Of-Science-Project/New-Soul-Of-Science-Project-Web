@@ -8,7 +8,10 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
-  //           20260207:  +:  "To_f_Paragraph", "fade-in-area":  Refine code and make some tryouts.
+  //           20260207:  *:  "To_f_Paragraph", "fade-in-area":  Refine code and make some tryouts.
+  //                      +:  "To_f_Paragraph", "fade-in-area":  Add parameter "TitleVisEnd", default undefined (empty).
+  //                      >:  "To_f_Paragraph", "notice":  Add addon text '(Beginn, nicht für inhaltliche Beurteilungen beachten)', parameter "TitleVisEnd" as 'Notizen (Ende, nicht für inhaltliche Beurteilungen beachten)'.
+  //                      +:  "$Glo_g_Color_list":  New entry '*HalfInvisibleHint'.
   //           20260129:  >:  "To_f_replace_callback__latexcommand__jump":  Third optional "target" parameter and link property implemented.
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*SectionSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
@@ -258,6 +261,7 @@
                              '*FigTitle'              => array( color => '000000'),
                              '*FigDescr'              => array( color => '000000'),
                              '*Conclusion'            => array( color => '000AC4'),
+                             '*HalfInvisibleHint'     => array( color => 'C0C0C0'),
                            );
 
   $Glo_g_TextAlign = 'normal';
@@ -2176,12 +2180,15 @@
         
         $title = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title]);
         $titleVis = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]));
+        $titleVisEnd = ((array_key_exists( TitleVisEnd, $text)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[TitleVisEnd]) : '');
         // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-        $triangleDown = '&#9656;';
+        $triangleDown = '&#9660;';
         $triangleDownColor = '#A0A0A0';
         // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-        $triangleRight = '&#9662;';
+        $triangleRight = '&#9658;';
         $triangleRightColor = '#000000';
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleUp = '&#9650;';
 
         $To_g_elements_hides_ary_dim++;
 
@@ -2241,7 +2248,7 @@
         $localDivClass = 'tools-class-fade-in-area-div-hide-content';
         $localDisplay = ($start_display == 'hideContent') ? '' : 'none';
         $localTitle = $title;
-        $localTriangle = $triangleDown;
+        $localTriangle = $triangleRight;
         $localTriangleColor = $triangleDownColor;
         
         // #: identical as below
@@ -2252,7 +2259,7 @@
         echo $offset.'    <tr>'."\n";
         echo $offset.'      <td>'."\n";
         $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangle.'</small></a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'      <td>'."\n";
         echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
@@ -2278,7 +2285,9 @@
         $localDivClass = 'tools-class-fade-in-area-div-show-content';
         $localDisplay = ($start_display == 'hideContent') ? 'none' : '';
         $localTitle = $titleVis;
-        $localTriangle = $triangleRight;
+        $localTitleVisEnd = $titleVisEnd;
+        $localTriangle = $triangleDown;
+        $localTriangleUp = $triangleUp;
         $localTriangleColor = $triangleRightColor;
 
         // #: identical as above
@@ -2289,7 +2298,7 @@
         echo $offset.'    <tr>'."\n";
         echo $offset.'      <td>'."\n";
         $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangle.'</small></a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'      <td>'."\n";
         echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
@@ -2298,7 +2307,21 @@
         echo $offset.'  </table>'."\n";
 
         To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
-        
+
+        if (!empty($localTitleVisEnd)) {
+          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+          echo $offset.'    <tr>'."\n";
+          echo $offset.'      <td>'."\n";
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
+          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangleUp.'</small></a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'      <td>'."\n";
+          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitleVisEnd.'</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'    </tr>'."\n";
+          echo $offset.'  </table>'."\n";
+        }
+
         echo $offset.'</div>'."\n";
         echo "\n";
 
@@ -2315,9 +2338,10 @@
             $text_sum .= $text_ele.' \\\\'."\n";
           
           $Glo_g_Paragraph_fn( 'fade-in-area', $replace_ary, $replace_preg_ary, $offset, array( Display => ((array_key_exists( Display, $text)) ? $text[Display] : 'hideContent'),
-                      Title => '\\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen').'}', ParagraphList => array(
+                      Title => '\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen}\color{*HalfInvisibleHint}{ \small{(Beginn, nicht für inhaltliche Beurteilungen beachten)}').'}',
+                      TitleVisEnd => '\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen}\color{*HalfInvisibleHint}{ \small{(Ende, nicht für inhaltliche Beurteilungen beachten)}').'}', ParagraphList => array(
                     array( 'text', array( text => array(
-                      '\\color{*Bearb}{'."\n".
+                      '\color{*Bearb}{'."\n".
                       $text_sum.
                       '}'."\n"))),
                       )));

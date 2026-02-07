@@ -43,6 +43,7 @@
   const titleColor = 'titleColor';
   const titleClass = 'titleClass';
   const TitleVis = 'TitleVis';
+  const TitleVisEnd = 'TitleVisEnd';
   const url_rel = 'url_rel';
   const url_abs = 'url_abs';
   const titel = 'titel';
