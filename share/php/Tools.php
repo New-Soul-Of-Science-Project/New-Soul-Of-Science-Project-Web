@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 29.01.2026, 20:00h
+  // #: Stand: 07.02.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20260207:  +:  "To_f_Paragraph", "fade-in-area":  Refine code and make some tryouts.
   //           20260129:  >:  "To_f_replace_callback__latexcommand__jump":  Third optional "target" parameter and link property implemented.
   //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*SectionSeparatorLine' to '#7F7F7F'.
   //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
@@ -2165,50 +2166,133 @@
 
         break;
 
-      // !!!: Can not include themselfes at the Moment!
+      // !!!: Can not include themselves at the Moment!
       case 'fade-in-area':
         global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
         
+        
         // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
         $start_display = 'showContent';
+        
+        $title = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title]);
+        $titleVis = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]));
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleDown = '&#9656;';
+        $triangleDownColor = '#A0A0A0';
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleRight = '&#9662;';
+        $triangleRightColor = '#000000';
 
         $To_g_elements_hides_ary_dim++;
 
         $local_elements_hides_ele_num = 1;
-        
-        
+
+
+        /* // #: try to put the redundant code in one function, put doesn't work; probably because of variable scope
+        $clickableTitle = function ( $localDivClass, $localDisplay, $localTitle, $localTriangle, $localTriangleColor, $Content_fn)
+        use ( &$offset, &$text, &$local_elements_hides_ele_num)
+        {
+          global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
+
+          // print_r('Funktion: "'.$localDisplay.'"'."<br>");
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="'.((!empty($localDisplay)) ? 'display: '.$localDisplay.';' : '').'">'."\n";
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $local_elements_hides_ele_num++;
+          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+          echo $offset.'    <tr>'."\n";
+          echo $offset.'      <td>'."\n";
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
+          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'      <td>'."\n";
+          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'    </tr>'."\n";
+          echo $offset.'  </table>'."\n";
+
+          if (isset($Content_fn))
+            $Content_fn();
+          
+          echo $offset.'</div>'."\n";
+          echo "\n";
+        };
+
+        $content = function ()
+        use ( &$offset, &$text, &$replace_ary, &$replace_preg_ary)
+        {
+          global $Glo_g_Paragraph_fn;
+
+          To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
+        }; */
+
+
         // #: 'showContent': Without content.
-        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-hide-content" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
+        /* // print_r('Without content: "'.(($start_display == 'hideContent') ? '' : 'none').'"'."<br>");
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>");
+        $clickableTitle(
+          'tools-class-fade-in-area-div-hide-content',
+          ($start_display == 'hideContent') ? '' : 'none',
+          $title,
+          $triangleDown,
+          $triangleDownColor,
+          null
+        );
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>"); */
+        $localDivClass = 'tools-class-fade-in-area-div-hide-content';
+        $localDisplay = ($start_display == 'hideContent') ? '' : 'none';
+        $localTitle = $title;
+        $localTriangle = $triangleDown;
+        $localTriangleColor = $triangleDownColor;
+        
+        // #: identical as below
+        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="display: '.$localDisplay.';">'."\n";
         $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
         echo $offset.'    <tr>'."\n";
         echo $offset.'      <td>'."\n";
         $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'      <td>'."\n";
-        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
+        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'    </tr>'."\n";
         echo $offset.'  </table>'."\n";
         echo $offset.'</div>'."\n";
         echo "\n";
       
+
         // #: 'hideContent': With content.
-        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-show-content" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
+        /* // print_r('With content: "'.(($start_display == 'hideContent') ? 'none' : '').'"'."<br>");
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>");
+        $clickableTitle(
+          'tools-class-fade-in-area-div-show-content',
+          ($start_display == 'hideContent') ? 'none' : '',
+          $titleVis,
+          $triangleRight,
+          $triangleRightColor,
+          $content
+        );
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>"); */
+        $localDivClass = 'tools-class-fade-in-area-div-show-content';
+        $localDisplay = ($start_display == 'hideContent') ? 'none' : '';
+        $localTitle = $titleVis;
+        $localTriangle = $triangleRight;
+        $localTriangleColor = $triangleRightColor;
+
+        // #: identical as above
+        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="display: '.$localDisplay.';">'."\n";
         $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
         echo $offset.'    <tr>'."\n";
         echo $offset.'      <td>'."\n";
         $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'      <td>'."\n";
-        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]))).'</a>'."\n";
+        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
         echo $offset.'      </td>'."\n";
         echo $offset.'    </tr>'."\n";
         echo $offset.'  </table>'."\n";
