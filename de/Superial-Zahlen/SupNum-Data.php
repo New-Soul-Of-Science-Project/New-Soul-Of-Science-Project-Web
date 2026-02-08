@@ -333,9 +333,11 @@
 
           'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Fo.1'),
 
+        'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform' => array( headline_text => 'Eindeutigkeit der Normalform'/* , headline_text_short => 'X' */),
+                        
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Fo.Z.6'),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Fo.Z.7'),
+          'OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Fo.Z.6'),
+          'OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Fo.Z.7'),
 
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'X' */),
 

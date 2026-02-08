@@ -63,7 +63,7 @@
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
 
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
-                  '')),
+                  'Definition durch die Hahn-Reihe')),
                   array( 'text', array( text => array(
                     'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } alle reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } umfassen und ins Aktual-Unendliche erweitern,'."\n".
                     'sind die Koeffizienten der ganzzahligen Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten \lm{ \mathbb{A}_{\S} }},'."\n".
@@ -82,16 +82,105 @@
                     'wie im Zehnersystem oder ähnlichen einfachen Systemen.'."\n".
                     'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was zum Beispiel auch Brüche, Wurzeln und negative Zahlen umfasst.'."\n".
                     'Sogar beliebige passende formelle Terme können wir für die Stellen einsetzen.'."\n",
-                      'Nun nachfolgend aber erst einmal zu den ganzen Superial-Zahlen.'."\n".
+                      'Nun nachfolgend die Überprüfungen von formell wichtigen Eigenschaften und Definitionen wichtiger Untermengen der Superial-Zahlen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform'),
                     )),
                 )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
+          
+
+          <!  • Eindeutigkeit der Normalform  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Seien \lm{ u, v \in \mathbb{S} } in Normalform gegeben durch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  u  =  \sum_{ \forall k \in E } a_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v  =  \sum_{ \forall k \in F } b_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ a_{k} \ne 0 } für \lm{ k \in E } und \lm{ b_{k} \ne 0 } für \lm{ k \in F }. \\\\'."\n".
+                    'Angenommen \lm{ u = v }.'."\n".
+                    'Dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  F  }'),
+                      array( display => 'on',  latex => '{  *( \forall k *) *[  a_{k}  =  b_{k}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Leitterm).} \\\\'."\n".
+                    'Für \lm{ 0 \ne w = \sum_{ \forall k \in W } c_{k} \s^{k} } sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max(W)  }'),
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  :=  c_{k_{max}} \cdot \s^{k_{max}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Angenommen, die beiden Darstellungen seien nicht identisch.'."\n".
+                    'Dann existiert ein Exponent \lm{ k } mit \lm{ a_{k} \ne b_{k} } (wobei wir stillschweigend fehlende Koeffizienten als \lm{ 0 } auffassen;'."\n".
+                    'äquivalent kann man über \lm{ E \cup F } summieren).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ \forall k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist \lm{ w \ne 0 }.'."\n".
+                    'Sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max *( *\{ e \in E \cup F *|* a_{k} − b_{k} \ne 0 *\} *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist der Leitterm von \lm{ w }'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  =  *( a_{k_{max}} \! - b_{k_{max}} *) \cdot \s^{k_{max}}  \neq  0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ist insbesondere \lm{ w \ne 0 }, also \lm{ u − v \ne 0 }, im Widerspruch zu \lm{ u = v }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \blacksquare }'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ'),
+                    )),
+              )
+          ); ?>
           
 
 		    	<!  • Ganze Superial-Zahlen  >
@@ -100,7 +189,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -144,16 +233,16 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 0 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \in  \mathbb{S}_{\Z}  }',
-                                          label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ}', label_incr => true),
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-negativ', label_text => '\name{OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-negativ}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }',
-                                          label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv}', label_incr => true),
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-positiv', label_text => '\name{OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-positiv}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5,2 *〉․  \notin  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․*〈 1 *〉  \notin  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 \sqrt[3]{7} - \frac{1}{2} *〉*〈 - \frac{ 1 }{ \sqrt{2} } *〉*〈 3 *〉․  \in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ} ist übrigens eine negative ganze Superial-Zahl'."\n".
-                    'und das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv} eine positive ganze Superial-Zahl,'."\n".
+                    'Das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-negativ} ist übrigens eine negative ganze Superial-Zahl'."\n".
+                    'und das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-positiv} eine positive ganze Superial-Zahl,'."\n".
                     'weil die höchste Stelle dominant ist.'."\n",
                       'Nachfolgend nun eine genaue Definition der ganzen Superial-Zahlen:'."\n",
                     ''))),
