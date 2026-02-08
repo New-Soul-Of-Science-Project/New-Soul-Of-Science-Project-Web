@@ -86,102 +86,13 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ'),
                     )),
                 )
           ); ?>
-		    	<br>
+          <br>
           <?php To_f_headline_add_hides_end_line(); ?>
-          
 
-          <!  • Eindeutigkeit der Normalform  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform',
-              '', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
-                    )),
-                      
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{X}',
-                    // '• X',
-                    ))),
-                      
-                  array( 'text', array( text => array(
-                    'Seien \lm{ u, v \in \mathbb{S} } in Normalform gegeben durch:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  u  =  \sum_{ \forall k \in E } a_{k} \s^{k}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'und'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v  =  \sum_{ \forall k \in F } b_{k} \s^{k}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'wobei \lm{ a_{k} \ne 0 } für \lm{ k \in E } und \lm{ b_{k} \ne 0 } für \lm{ k \in F }. \\\\'."\n".
-                    'Angenommen \lm{ u = v }.'."\n".
-                    'Dann gilt:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  E  =  F  }'),
-                      array( display => 'on',  latex => '{  *( \forall k *) *[  a_{k}  =  b_{k}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                  '\bold{Definition (Leitterm).} \\\\'."\n".
-                    'Für \lm{ 0 \ne w = \sum_{ \forall k \in W } c_{k} \s^{k} } sei'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  k_{max}  :=  \max(W)  }'),
-                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  :=  c_{k_{max}} \cdot \s^{k_{max}}  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                  '\bold{Beweis.} \\\\'."\n".
-                    'Angenommen, die beiden Darstellungen seien nicht identisch.'."\n".
-                    'Dann existiert ein Exponent \lm{ k } mit \lm{ a_{k} \ne b_{k} } (wobei wir stillschweigend fehlende Koeffizienten als \lm{ 0 } auffassen;'."\n".
-                    'äquivalent kann man über \lm{ E \cup F } summieren).'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Setze'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ \forall k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dann ist \lm{ w \ne 0 }.'."\n".
-                    'Sei'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  k_{max}  :=  \max *( *\{ e \in E \cup F *|* a_{k} − b_{k} \ne 0 *\} *)  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dann ist der Leitterm von \lm{ w }'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  =  *( a_{k_{max}} \! - b_{k_{max}} *) \cdot \s^{k_{max}}  \neq  0  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Damit ist insbesondere \lm{ w \ne 0 }, also \lm{ u − v \ne 0 }, im Widerspruch zu \lm{ u = v }.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \blacksquare }'."\n".
-                    ''))),
-                      
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ'),
-                    )),
-              )
-          ); ?>
-          
 
 		    	<!  • Ganze Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
@@ -189,7 +100,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -396,11 +307,100 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform'),
                     )),
               )
           ); ?>
 
+
+          <!  • Eindeutigkeit der Normalform  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Seien \lm{ u, v \in \mathbb{S} } in Normalform gegeben durch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  u  =  \sum_{ \forall k \in E } a_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v  =  \sum_{ \forall k \in F } b_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ a_{k} \ne 0 } für \lm{ k \in E } und \lm{ b_{k} \ne 0 } für \lm{ k \in F }. \\\\'."\n".
+                    'Angenommen \lm{ u = v }.'."\n".
+                    'Dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  F  }'),
+                      array( display => 'on',  latex => '{  *( \forall k *) *[  a_{k}  =  b_{k}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Leitterm).} \\\\'."\n".
+                    'Für \lm{ 0 \ne w = \sum_{ \forall k \in W } c_{k} \s^{k} } sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max(W)  }'),
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  :=  c_{k_{max}} \cdot \s^{k_{max}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Angenommen, die beiden Darstellungen seien nicht identisch.'."\n".
+                    'Dann existiert ein Exponent \lm{ k } mit \lm{ a_{k} \ne b_{k} } (wobei wir stillschweigend fehlende Koeffizienten als \lm{ 0 } auffassen;'."\n".
+                    'äquivalent kann man über \lm{ E \cup F } summieren).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ \forall k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist \lm{ w \ne 0 }.'."\n".
+                    'Sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max *( *\{ e \in E \cup F *|* a_{k} − b_{k} \ne 0 *\} *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist der Leitterm von \lm{ w }'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  =  *( a_{k_{max}} \! - b_{k_{max}} *) \cdot \s^{k_{max}}  \neq  0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ist insbesondere \lm{ w \ne 0 }, also \lm{ u − v \ne 0 }, im Widerspruch zu \lm{ u = v }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \blacksquare }'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstKoerper'),
+                    )),
+              )
+          ); ?>
+          
 
           <!  • S ist ein Körper  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
@@ -408,7 +408,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform', type => 'back'),
                     )),
 
                   array( 'notice', array( Display => 'hideContent', text => array(

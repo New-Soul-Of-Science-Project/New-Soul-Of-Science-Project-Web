@@ -332,8 +332,6 @@
         'OM:SupNum:Formale-Entwicklung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
           'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Fo.1'),
-
-        'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform' => array( headline_text => 'Eindeutigkeit der Normalform'/* , headline_text_short => 'X' */),
                         
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:GanzeSZ:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Fo.Z.6'),
@@ -342,6 +340,8 @@
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:PrimSZ' => array( headline_text => 'Superiale Primzahlen'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Formale-Entwicklung:EindeutigkeitNormalform' => array( headline_text => 'Eindeutigkeit der Normalform'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein geordneter Körper'/* , headline_text_short => 'X' */),
 
