@@ -560,6 +560,192 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Standartisierung von Ableitung und Integral  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                    )),
+
+                  array( 'text', array( text => array(
+                    'Im Folgenden geht es darum zu zeigen, dass und wie unsere Superial-Analysis mit der Standardanalysis, also unsere superiale Ableitung und Integration'."\n".
+                    'mit der Standard-Ableitung und der Standard-Integration, in Übereinstimmung zu bringen ist.'."\n",
+                      'Um beide Varianten miteinander vergleichen zu können, bleiben wir für die Standard-Ableitung bei \lm{ f\'(⋅) }'."\n".
+                    'und für die Superial-Ableitung nutzen wir den Operator \lm{ \mathcal{D}_{\s} ⋅ \, }.'."\n".
+                    'Für das Standard-Integral wird weiter der Operator \lm{ \int_{⋅}^{⋅} } genutzt'."\n".
+                    'und für das Superial-Integral nutzen wir, wie gehabt, das Summenzeichen \lm{ \sum_{⋅}^{⋅} } und Formel den Operator \lm{ \mathcal{S}_{\s}( ⋅ ) }'."\n",
+                      'Auch nutzen wir für die superiale Differenzialrechnung die superiale \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise},'."\n".
+                    'wo beispielsweise \lm{ \s^{-1} = \; ․〈1〉 } und \lm{ x + \s^{−1} = 〈x〉․〈1〉 } ist.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+
+                'Ableitung', subline =>
+                  'Standardisierung stimmt mit Standardableitung überein')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Definition (superiale Ableitung)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für eine Funktion \lm{ f } definieren wir, entsprechend zu Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 } \in \mathbb{S}  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Satz (Ableitungs-Kompatibilität)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ist \lm{ f } in einer Umgebung von \lm{ x } zweimal stetig differenzierbar, dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Setze \lm{ \delta := \; ․〈1〉\, }.'."\n".
+                    'Taylor (2. Ordnung) liefert für ein \lm{ \xi } zwischen \lm{ x } und \lm{ x + \delta }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f( x + \delta ) = f( x ) + f\'( x ) \cdot \delta + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta^{2}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Subtrahieren und durch \lm{ \delta } teilen ergibt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x) = f\'( x ) + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
+                    'Damit ist die \lm{ 0 }-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\italic{Bemerkung:}'."\n".
+                    'Die infinitesimalen Schichten von \lm{ \mathcal{D}_{\s} f(x) } sind Teil der superialen Feinstruktur.'."\n".
+                    'Die Standardisierung dient hier nur dem Vergleich mit der Standardanalysis.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral', text =>
+                      
+                'Integral', subline =>
+                  'Standardisierung einer \lm{ ․〈1〉 }-Summe \lm{ = } Riemann-Integral')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Voraussetzung (Gitterkompatible Endpunkte)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Seien \lm{ a, b \in \mathbb{A}_{\R} } mit \lm{ b > a } und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b − a  \in  \mathbb{S}_{\Z}^{-1}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ \mathbb{S}_{\Z}^{−1} = *\{ z \cdot \s^{−1} *|* z \in \mathbb{S}_{\Z} *\} } ist, existiert genau ein \lm{ \mathbb{N} \in \mathbb{S}_{\Z} } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b − a  =  \mathbb{N} \cdot \s^{−1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{N}  =  (b − a ) \cdot \s  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Definition (superiale Riemann-Summe)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für eine Funktion \lm{ f } definieren wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) \\\ *( \mathbb{N} = (b − a) \cdot \s \in \mathbb{S}_{\Z} *) *[  \mathcal{S}_{\s}( f; a, b )  :=  \sum_{k = 0}^{N - 1} ․〈 f(〈a〉․〈k〉) 〉  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie oben gesagt, ist hier \lm{ \mathcal{S}_{\s}( ⋅ ) } \bold{nur ein Symbolname} für diese Summe, also keine Menge der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Satz (Integral-Kompatibilität)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ist \lm{ f } stetig auf \lm{ [ a, b ] } (reell algebraisch), dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \mathcal{S}_{\s}( f; a, b ) *)  =  \int_{a}^{b} f(t) \operatorname{d}\!t  \;\; .  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral', label_text => '\name{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Die Punkte \lm{ 〈a〉․〈k〉 } bilden eine Zerlegung von \lm{ [ a, b ] } mit Maschenweite \lm{ ․〈1〉 } und \lm{ \mathbb{N} } Teilintervallen.'."\n".
+                    'Da \lm{ ․〈1〉 } infinitesimal ist, ist die Maschenweite kleiner als jedes reell algebraische (reelle?) \lm{ \epsilon > 0 }.'."\n".
+                    'Für stetiges \lm{ f } konvergieren Riemann-Summen bei beliebig feiner Maschenweite gegen das Riemann-Integral; daher unterscheidet sich'."\n".
+                    '\lm{ \mathcal{S}_{\s}( f; a, b ) } vom reell algebraischen (reellen?) Integral nur um einen infinitesimalen Anteil.'."\n".
+                    'Folglich ist die \lm{ 0 }-Schicht (Standardisierung) gleich dem Integral:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \mathcal{S}_{\s}( f; a, b ) *)  =  \int_{a}^{b} f(t) \operatorname{d}\!t  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                      
+                'Brücke über das Fundamentalsatz-Paar (FTC) auf 0-Schicht', subline =>
+                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Definition (superiale Stammfunktion über \lm{ \mathcal{S}_{\s} })', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Unter den Voraussetzungen des Abschnittes \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral}‹}'."\n".
+                    'etwas weiter oben (also \lm{ x − a \in \mathbb{S}_{\Z}^{−1} }) definieren wir für stetiges \lm{ f }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  F_{\s}(x)  :=  F_{\s}(a) + \mathcal{S}_{\s}( f; a, x )  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  'Satz (FTC-Brücke, standardisiert)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Dann gilt für alle solchen \lm{ x }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( F_{\s}(x) - F_{\s}(a) *)  =  \int_{a}^{x} f(t) \operatorname{d}\!t  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Insbesondere:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \operatorname{std}*( F_{\s}(b) - F_{\s}(a) *)  =  \int_{a}^{b} f(t) \operatorname{d}\!t  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Aus der Definition folgt \lm{ F_{\s}(x) - F_{\s}(a) = \mathcal{S}_{\s}( f; a, x ) }.'."\n".
+                    'Anwenden von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral} liefert sofort'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( F_{\s}(x) - F_{\s}(a) *)  =  \operatorname{std}*( \mathcal{S}_{\s}( f; a, x ) *)  =  \int_{a}^{x} f(t) \operatorname{d}\!t  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\italic{Bemerkung:}'."\n".
+                    'Diese Aussagen betreffen nur die Standardisierung (\lm{ 0 }-Schicht).'."\n".
+                    'Die superialen Korrekturanteile von \lm{ F_{\s} } bleiben vollständig erhalten und können separat ausgewertet werden.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung'),
                     )),
               )
@@ -572,7 +758,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

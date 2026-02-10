@@ -122,6 +122,10 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.AbIn.IN.20'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.IN.23'),
 
+        'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral' => array( headline_text => 'Standartisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
+
         'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung' => array( headline_text => 'Diskussion der Infinitesimalrechnung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen' => array( headline_text => 'Wohldefinierte Arithmetik des Unendlichen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:BesonderheitInfinitesimalrechnung' => array( headline_text => 'Besonderheit der Infinitesimalrechnung mit Superial-Zahlen'/* , headline_text_short => 'X'*/),
