@@ -42,6 +42,7 @@
               'wiki:ElliptischeKurve:2024',
               'wiki:EulerscheZahl:2023',
               'wiki:Exponentialfunktion:2022',
+              'wiki:FundamentalsatzDerAnalysis:2025',
               'wiki:GanzesElement:2025',
               'wiki:GaussscheSummenformel:2023',
               'wiki:GeordneterKoerper:2022',

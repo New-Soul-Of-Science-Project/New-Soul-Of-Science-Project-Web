@@ -463,49 +463,53 @@
                   array( 'text', array( text => array(
                     'Wie wir sehen, ist es tatsächlich mit den Superial-Zahlen möglich, ein Integral eines Polynoms'."\n".
                     'explizit auszurechnen.'."\n".
-                    'Dies geht so einfach schon mal mit jedem Integral eines Polynoms, ist bei Polynomen höheren Grades aber natürlich entsprechend aufwendiger.'."\n".
-                    'Offensichtlich ist dabei, dass wir so recht einfach verstehen, was bei der Berechnung des Integrals im Detail vor sich geht.'."\n",
-                      'Und das ist ja eines unserer Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
+                    'Dies ist recht einfach für das Integral eines Polynoms niedrigen Grades und im Detail entsprechend aufwendiger bei Polynomen höheren Grades.'."\n".
+                    'Zum einen wird dabei offensichtlich, was bei der Berechnung des Integrals genau vor sich geht.'."\n".
+                    'Zum anderen erkennen wir den tieferen Zusammenhang der Gaußschen Summenformel mit dem Integral und können vermuten, dass dieser auch für weitere verwandte Summenformeln besteht.'."\n",
+                      'Wir haben also auch unser Ziele erreicht, die „Black-Box“ beim Ableiten und besonders beim Integrieren zu erhellen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
                 'Die Ableitung ist die Umkehrung der Integration', subline =>
-                  '')),
+                  'Fundamentalsatz der Analysis (HDI, FTC) – erster Teil')),
                   array( 'text', array( text => array(
                     'Schauen wir uns an, ob wir die Integration einer allgemeinen Funktion mit der Ableitung wieder'."\n".
                     'Rückgängig machen können.'."\n".
-                    'Wir setzen also das Integral für die allgemeine Funktion \lm{ f(x) } in die Ableitung ein:'."\n".
+                    'Dies entspricht dem ersten Teil des Fundamentalsatzes der Analysis.\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1}}'."\n",
+                      'Wir setzen also das Integral für die allgemeine Funktion \lm{ f(x) } in die Ableitung ein:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  f\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  f\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } + \displaystyle{ *( \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n)  }'),
+                      array( display => 'on',  latex => '{  f\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\!\!\! f\'(n) *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } + \displaystyle{ *( \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\!\!\! f\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\; - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\!\!\! f\'(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, x]_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  f\'(x)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen also, dass die Ableitung einer Integration einer allgemeinen Funktion die Integration generell'."\n".
-                    'Rückgängig macht.'."\n".
-                    'Die Ableitung einer Integration ist also deren Umkehrung.'."\n".
-                    'Dies können wir offensichtlich geschlossen zeigen.'."\n".
+                    'Wir sehen also, dass die Ableitung eines Integrals einer allgemeinen stetigen Funktion deren Integration umkehrt, also generell'."\n".
+                    'Rückgängig macht, was wir zeigen wollten.'."\n",
+                      'Wir können den ersten Teil des Fundamentalsatzes der Analysis mit den Superial-Zahlen offensichtlich durch verhältnismäßig simples Rechnen geschlossen beweisen,'."\n".
+                    'weil wir die Infinitesimale in und um die Summen herum sowie die infinitesimalen Intervalle der Summen ganz genau überblicken und präzise im Griff haben.'."\n",
+                      'So demonstrieren wir ihre Anschaulichkeit und ihren Nutzen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung', text =>
                       
                 'Die Integration als Umkehrung der Ableitung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ist nun auch die Integration einer Ableitung ihre Umkehrung?'."\n",
-                      'Dies können wir bisher nicht geschlossen zeigen, wie wir nachfolgend sehen werden.'."\n".
-                    'Wir brauchen dies aber auch nicht unbedingt zeigen, weil wir die Definition der Integration in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
-                    'so konstruiert haben, dass dies der Fall sein muss.'."\n",
-                      'Was wir zeigen können ist, dass wir auch nach Aufspaltung der Ableitungsteile in ihre Teilsummen, die nach dem Kürzen'."\n".
-                    'der Faktoren der Ableitung und des Integrals verbleiben, wir den Summanden \lm{ f(〈n〉․〈1〉) } der ersten Summe'."\n".
-                    'mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
-                    'ersetzen können, die aus der Umformung der Ableitung folgt,'."\n".
-                    'sodass dadurch das Integral der Ableitung wieder zum reinen Integral wird:'."\n",
+                    'Ist nun auch das Integral einer Ableitung ihre Umkehrung?'."\n",
+                      'Dies scheint sonnenklar und banal, weil wir das Integral in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                    'genau auf dieser Grundlage aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
+                    'konstruiert haben.'."\n".
+                    'Unsere Frage ist also ohne große Umschweife zu bejahen.'."\n",
+                      'Was wir zusätzlich zeigen können ist die Durchlässigkeit der Ableitungsdifferenz, indem wir auch nach Aufspaltung der Differenz in ihre Teilsummen, die nach dem Kürzen'."\n".
+                    'der Faktoren der Ableitung und des Integrals verbleiben, den Summanden \lm{ f(〈n〉․〈1〉) } der ersten Summe'."\n".
+                    'mit Hilfe von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
+                    'ersetzen können, die aus der Umformung der Ableitung folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -541,16 +545,16 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(x)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier finde ich aber, dass dies eigentlich kein Beweis ist, sondern nur, wenn wir auch zeigen, dass das Einsetzen'."\n".
-                    'auch für die aufgespaltene Summe gilt.'."\n".
+                    'Dies ist ein ganz einfacher Plausibilitätstest.'."\n".
                     ''))),
 
                     ))),
 
                   array( 'text', array( text => array(
+                    'Dadurch wird das Integral der Ableitung wieder zum reinen Integral, was wir zeigen wollten.'."\n".
                     'Womit wir wieder bei der Definition des Integrals in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
-                    'sind.'."\n",
-                      'Dies ist aber kein wirklicher Beweis, sondern eher ein innerer Plausibilitätstest, dass das Integral und die Ableitung'."\n".
+                    'angekommen sind.'."\n",
+                      'Dies ist also ein innerer Plausibilitätstest, dass das Integral und die Ableitung'."\n".
                     'einander aufheben und dies auch für die Summe des Integrals durchlässig ist.'."\n".
                     ''))),
                       
