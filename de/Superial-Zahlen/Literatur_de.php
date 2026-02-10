@@ -68,6 +68,7 @@
               'wiki:LexikographischeOrdnung:2023',
               'wiki:LoesenVonGleichungen:2024',
               'wiki:MaechtigkeitMathematik:2023',
+              'wiki:MittelwertsatzDerIntegralrechnung:2024',
               'wiki:Nichtstandardanalysis:2025',
               'wiki:NormalitaetKommutativeAlgebra:2022',
               'wiki:Ordinalzahl:2021',

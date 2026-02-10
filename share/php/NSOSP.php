@@ -385,6 +385,7 @@
   $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
   $SupNum_g_footnote_text_Nichtstandardanalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
   $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
   $SupNum_g_footnote_text_PadischeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';

@@ -493,8 +493,9 @@
                     'Wir sehen also, dass die Ableitung eines Integrals einer allgemeinen stetigen Funktion deren Integration umkehrt, also generell'."\n".
                     'Rückgängig macht, was wir zeigen wollten.'."\n",
                       'Wir können den ersten Teil des Fundamentalsatzes der Analysis mit den Superial-Zahlen offensichtlich durch verhältnismäßig simples Rechnen geschlossen beweisen,'."\n".
-                    'weil wir die Infinitesimale in und um die Summen herum sowie die infinitesimalen Intervalle der Summen ganz genau überblicken und präzise im Griff haben.'."\n",
-                      'So demonstrieren wir ihre Anschaulichkeit und ihren Nutzen.'."\n".
+                    'selbst ohne den Mittelwertsatz der Integralrechnung\footnote{\const{SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung}} zu benutzen.'."\n".
+                    'Dies kommt, weil wir die Infinitesimale in und um die Summen herum sowie die infinitesimalen Intervalle der Summen ganz genau überblicken und präzise im Griff haben.'."\n",
+                      'So demonstrieren wir die Anschaulichkeit und den Nutzen der Superial-Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung', text =>
                       
