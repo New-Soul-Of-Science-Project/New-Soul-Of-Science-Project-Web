@@ -88,11 +88,11 @@
                     'Da sowohl Zähler als auch Nenner in der gleichen Größenordnung gegen Null streben,'."\n".
                     'sorgt der Bruch dafür, dass unser Ergebnis im Endlichen verbleibt.'."\n",
                       'Mit Hilfe der aktual unendlichen Superial-Zahlen kommen wir in die Lage, das gegen Null strebende \lm{ \Delta x }'."\n".
-                    'durch eine normierte unendlich kleine Zahl \lm{ \s^{-1} } ersetzen zu können:'."\n".
+                    'durch eine normierte unendlich kleine Zahl \lm{ 1 \s^{-1} = \; ․〈1〉 } ersetzen zu können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  1 \s^{-1}  =  ․〈1〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => true),
@@ -101,11 +101,11 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die letzte Formel ist in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise} der Superial-Zahlen ausgedrückt.'."\n",
-                      'Durch das Einsetzen einer normierten Unendlichkeit können wir nun erkennen, dass das \lm{ \Delta x }'."\n".
-                    'gar nicht von \lm{ x } abhängt, wie es scheinen könnte,'."\n".
-                    'sondern das \lm{ x } in \lm{ \Delta x } kennzeichnet „nur“ die Stelle, an der das \lm{ \Delta x }'."\n".
-                    'eingesetzt wird.'."\n".
-                    'Der Parameter der Funktion \lm{ f(x) } ist allerdings weiter von \lm{ x } abhängig.'."\n",
+                      'Durch das Einsetzen einer normierten Unendlichkeit erkennen wir jetzt, dass das \lm{ \Delta x }'."\n".
+                    'gar nicht vom Wert von \lm{ x } abhängt, wie es schien,'."\n".
+                    'sondern das \lm{ x } in \lm{ \Delta x } kennzeichnet „nur“, dass nach \lm{ x }'."\n".
+                    'abgeleitet wird.'."\n".
+                    'In der superialen Ableitung sehen wir wonach abgeleitet wird daran, dass \lm{ x } unsere infinitesimale Einheit \lm{ ․〈1〉 } drauf summiert bekommt.'."\n",
                       'Vergleichen wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise'."\n".
                     ''))),
                   array( 'equations',
@@ -122,12 +122,12 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \mathrm{d} f(x)  \widehat{=}  f(〈x〉․〈1〉) - f(x)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathrm{d} x  \widehat{=}  ․〈1〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathrm{d} x  \widehat{=}  1 \s^{-1}  =  ․〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Division durch \lm{ ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
+                    'Die Division durch \lm{ 1 \s^{-1} = \; ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
                     'ins Endliche.'."\n".
-                    'Und das können wir auch durch den entsprechenden unendlich großen Faktor \lm{ \s } oder \lm{ 〈1〉_1 \, } erreichen:'."\n".
+                    'Und das können wir auch durch den entsprechenden unendlich großen Einheitsfaktor \lm{ 1 \s = 〈1〉_1 } erreichen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -272,21 +272,21 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wir können daran also erkennen, dass dies nur dann funktioniert, wenn alle \lm{ a \cdot x \cdot \s },'."\n".
-                    'mit \lm{ x \in \mathbb{A}_{\S} \land a \in [ 0, 1 ]_{\mathbb{A}_{\S}} }, oder anders ausgedrückt alle \lm{ a \cdot \s },'."\n".
-                    'mit \lm{ x \in \mathbb{A}_{\S} \land a \in [ 0, x ]_{\mathbb{A}_{\S}} }, immer ganze Zahlen sind.'."\n",
-                      'Daher beschäftigt sich die Theorie der Superial-Zahlen in ihrem Zentrum besonders auch damit, aus welcher Menge \lm{ \mathbb{A}_{\S} } die Zahlen'."\n".
-                    '\lm{ x } unter diesem Aspekt sinnvollerweise sein können, so, dass \lm{ x \cdot \s } ganze Zahlen sind;'."\n".
-                    'also mit den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten von \lm{ \s }}.'."\n",
+                    'mit \lm{ x \in \mathbb{A}_{\S} \land a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }, oder anders ausgedrückt alle \lm{ a \cdot \s },'."\n".
+                    'mit \lm{ x \in \mathbb{A}_{\S} \land a \in \lbrack 0, x \lbrack_{\mathbb{A}_{\S}} }, immer ganze Zahlen sind.'."\n",
+                      'Daher beschäftigt sich die Theorie der Superial-Zahlen in ihrem Zentrum im Besonderen auch damit, aus welcher Menge \lm{ \mathbb{A}_{\S} } die Zahlen'."\n".
+                    '\lm{ x } unter diesem Aspekt sinnvollerweise kommen können, so, dass alle \lm{ x \cdot \s } immer aktual unendlich große ganze Zahlen sind;'."\n".
+                    'also mit den aus dieser Perspektive \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten von \lm{ \s }}.'."\n",
                       'Dabei ist es aufgrund der Definition von \lm{ \s } schnell zu sehen, dass alle rationalen Koeffizienten \lm{ q \cdot \s }, mit \lm{ q \in \mathbb{Q} },'."\n".
-                    'ganze Zahlen sind.'."\n",
-                      'Hingegen mussten wir erst aufwendiger beweisen, dass auch alle Wurzeln der natürlichen Zahlen als Koeffizienten,'."\n".
-                    'wie \lm{ \sqrt{2} \cdot \s }, auch sämtlich ganze Zahlen sind, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
+                    'ganze Zahlen sind.'."\n".
+                    'Hingegen mussten wir erst aufwendiger beweisen, dass ebenfalls alle ganzen Wurzeln der natürlichen Zahlen im Produkt mit \lm{ \s }, wie \lm{ \sqrt{2} \cdot \s },'."\n".
+                    'sämtlich aktual unendlich große ganze Zahlen sind, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
                     'Auf diesen Beweis aufbauend zeigen wir weiter, dass selbst alle durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    '– also \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
-                    'darstellbaren reellen algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
-                    'Darauf aufbauend ist es uns schließlich gelungen im \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis der Algebraische-Koeffizienten-Vermutung}'."\n".
-                    'zu zeigen, dass sogar alle reell algebraischen Zahlen ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
+                    '– also durch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
+                    'darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'sämtlich sinnvolle Koeffizienten von \lm{ \s } sind.'."\n".
+                    'Und schließlich ist es uns gelungen im \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis der Algebraischen-Koeffizienten-Vermutung}'."\n".
+                    'zu zeigen, dass sogar alle reell algebraischen Zahlen sinnvolle Koeffizienten darstellen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -316,7 +316,7 @@
                     'Aber anders als bei den Biordinalzahlen und Superial-Zahlen haben bei den Ordinalzahlen nicht alle Zahlen einen Vorgänger'."\n".
                     'und negative Zahlen gibt es gar nicht.'."\n".
                     'Insofern sind ganze Superial-Zahlen etwas sehr besonderes.'."\n",
-                      'Das dies wahr sein muss, zeigen wir im Abschnitt \italic{\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}},'."\n".
+                      'Das dies wahr sein muss, zeigen wir im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}‹},'."\n".
                     'den sonst könnte das Integral nicht die Umkehrung der Ableitung sein.'."\n",
                       'Summieren wir nun, wie wir es für das Integral benötigen, dann tun wir dies im Intervall einer endlichen, nicht unbedingt ganzen Zahl \lm{ x }'."\n".
                     'jetzt in aktual unendlich kleinen Schritten der Größe \lm{ \s^{-1} = \;.*〈 1 *〉\; }:'."\n".
