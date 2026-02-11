@@ -627,7 +627,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
-                    'Damit ist die \lm{ 0 }-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \blacksquare }'."\n".
+                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".
@@ -686,7 +686,7 @@
                     'Da \lm{ ․〈1〉 } infinitesimal ist, ist die Maschenweite kleiner als jedes reell algebraische (reelle?) \lm{ \epsilon > 0 }.'."\n".
                     'Für stetiges \lm{ f } konvergieren Riemann-Summen bei beliebig feiner Maschenweite gegen das Riemann-Integral; daher unterscheidet sich'."\n".
                     '\lm{ \mathcal{S}_{\s}( f; a, b ) } vom reell algebraischen (reellen?) Integral nur um einen infinitesimalen Anteil.'."\n".
-                    'Folglich ist die \lm{ 0 }-Schicht (Standardisierung) gleich dem Integral:'."\n".
+                    'Folglich ist die Null-Schicht (Standardisierung) gleich dem Integral:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -697,8 +697,8 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
                       
-                'Brücke über das Fundamentalsatz-Paar (FTC) auf 0-Schicht', subline =>
-                  '')),
+                'Fundamentalsatz der Analysis', subline =>
+                  'Brücke über das Fundamentalsatz-Paar (HDI, FTC) auf Null-Schicht')),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
                   'Definition (superiale Stammfunktion über \lm{ \mathcal{S}_{\s} })', subline =>
                     '')),
@@ -741,7 +741,7 @@
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".
-                    'Diese Aussagen betreffen nur die Standardisierung (\lm{ 0 }-Schicht).'."\n".
+                    'Diese Aussagen betreffen nur die Standardisierung (Null-Schicht).'."\n".
                     'Die superialen Korrekturanteile von \lm{ F_{\s} } bleiben vollständig erhalten und können separat ausgewertet werden.'."\n".
                     ''))),
                       
