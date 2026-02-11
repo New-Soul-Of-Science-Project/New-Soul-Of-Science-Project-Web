@@ -332,9 +332,9 @@
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich in der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung} eingehen möchte.'."\n",
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Definition-des-Integrals', text =>
                       
-                'Definition der Integration', subline =>
+                'Definition des Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Bei der Integration summieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \lm{ \s^{-1} } der Ableitung als'."\n".
@@ -468,14 +468,40 @@
                     'Zum anderen erkennen wir den tieferen Zusammenhang der Gaußschen Summenformel mit dem Integral und können vermuten, dass dieser auch für weitere verwandte Summenformeln besteht.'."\n",
                       'Wir haben also auch unser Ziele erreicht, die „Black-Box“ beim Ableiten und besonders beim Integrieren zu erhellen.'."\n".
                     ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Fundamentalsatz der Analysis  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                    )),
+
+                  array( 'text', array( text => array(
+                    'Um den ersten Teil des Fundamentalsatzes der Analysis\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1}}'."\n".
+                    'zu beweisen, müssen wir nach dem Zeigen der Existenz der Stammfunktion, siehe \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Definition-des-Integrals}‹} oben, zeigen,'."\n".
+                    'dass die Ableitung der stetigen Stammfunktion einer stetigen Ausgangsfunktion – ihres bestimmten Integrals –'."\n".
+                    'wieder die Ausgangsfunktion ergibt.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
                 'Die Ableitung ist die Umkehrung der Integration', subline =>
                   'Fundamentalsatz der Analysis (HDI, FTC) – erster Teil')),
                   array( 'text', array( text => array(
-                    'Schauen wir uns an, ob wir die Integration einer allgemeinen Funktion mit der Ableitung wieder'."\n".
-                    'Rückgängig machen können.'."\n".
-                    'Dies entspricht dem ersten Teil des Fundamentalsatzes der Analysis.\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1}}'."\n",
+                    'Schauen wir uns an, ob wir das bestimmte Integral einer allgemeinen stetigen Ausgangsfunktion mit seiner Ableitung wieder'."\n".
+                    'zur Ausgangsfunktion zurückführen können.'."\n".
+                    'Dies entspricht dem ersten Teil des Fundamentalsatzes der Analysis.'."\n",
+                      'An einem \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{konkreten einfachen Beispiel}'."\n".
+                    'haben wir dies schon gezeigt.'."\n".
+                    'Nun zeigen wir, dass dies ganz allgemein funktioniert.'."\n",
                       'Wir setzen also das Integral für die allgemeine Funktion \lm{ f(x) } in die Ableitung ein:'."\n".
                     ''))),
                   array( 'equations',
@@ -572,7 +598,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis', type => 'back'),
                     )),
 
                   array( 'text', array( text => array(
