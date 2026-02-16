@@ -124,13 +124,13 @@
 
                   ...$SupNum_g_paragraphList_Terminologie,
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Ansatz superiales Kronecker-Kriterium', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Unser Ansatz in Kurzform.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Die Idee in einem Satz', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -138,7 +138,7 @@
                     'das \lm{ \alpha } \bold{gleichzeitig} (i) in allen nichtarchimedischen Bewertungen „sehr teilbar“ macht und (ii) archimedisch „sehr klein“ auswertet'."\n".
                     '– und zwar so kohärent, dass die Folge \lm{ (P_{k}) } zu einem \bold{monischen} Grenzpolynom \lm{ P \in \mathbb{Z}[x] } mit \lm{ P(\alpha) = 0 } stabilisiert.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Was heißt das konkret?', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -172,7 +172,7 @@
                     'Die \lm{ P_{k} } liegen in wachsend feinen Restklassen \lm{ P_{k + 1} \equiv P_{k} \; (\mathrm{mod} \, M_{k}) } (mit \lm{ M_{k + 1} \ge 2 M_{k} }) und sind monisch;'."\n".
                     'zudem wählen wir stets „kleinste Repräsentanten“ der Koeffizienten (Höhenkontrolle).'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Warum reicht das? (Mechanik des Beweises)', subline =>
                     '')),
                       
@@ -183,7 +183,7 @@
                         'Grenzübergang in \bold{2)} gibt \lm{ P(\alpha) = 0 \Rightarrow \alpha } ist algebraisch.',
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Was unterscheidet das vom „klassischen“ Kronecker-Geist?', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -192,7 +192,7 @@
                     'liefert simultan hohe \lm{ p }-Adizität für alle endlichen Primzahlen), während die archimedische Seite über Dirichlet/Siegel (Geometrie der Zahlen) gesteuert wird.'."\n".
                     'Die profinite Kohärenz sorgt schließlich dafür, dass die Kleinheiten nicht nur „näherungsweise“, sondern exakt in einer ganzzahligen Nullstelle münden.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Kurzformel', subline =>
                     '')),
                   array( 'equations',
@@ -216,13 +216,13 @@
                     'Gelingt es, \lm{ \alpha } durch eine kohärente Folge ganzzahliger Polynome zugleich überall \lm{ p }-adisch „verschwinden zu lassen“ und reell gegen \lm{ 0 } zu drücken, dann muss \lm{ \alpha } eine Nullstelle eines monischen ganzzahligen Polynoms sein.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Unser Vorgehen', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Nun unser Vorgehen etwas ausführlicher geschildert.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Entsprechend unserer Algebraischen-Koeffizienten-Vermutung (AKV)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -236,7 +236,7 @@
                     'Das \bold{Ganzheitsargument} liefert sodann die \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}{AKV-Richtung} \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} }:'."\n".
                     'Für reell algebraisches \lm{ \alpha } ist \lm{ Y = \alpha \s } Nullstelle eines monischen Polynoms über \lm{ \mathbb{S}_{\Z} }, also \lm{ Y \in \mathbb{S}_{\Z} } und damit \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Zusätzliche für den Beweis unsere Superialen-Transzendenz-Vermutung (STV)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -251,7 +251,7 @@
                     'Zusammen mit AKV folgt schließlich die Gleichheit \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} }.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Rahmen und Notation', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -277,10 +277,10 @@
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\; .  }'),
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Drei Schlüssellemmata', subline =>
                     '')),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   '1) \lm{ p }-adischer „Schub“ aus \lm{ s }', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -308,7 +308,7 @@
                         'Keine Feinabstimmung-Kongruenzen nötig.'."\n".
                         ''))),
 
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   '2) Archimedisch kleine Werte mit vorgegebener Restklasse', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -401,7 +401,7 @@
                         'Wählt man \lm{ m_{i} } zusätzlich so, dass \lm{ *| c_{i} |* \le M / 2 } stets gilt (durch geeignetes „Zentrieren“ der Box), erhält man die \italic{Minimalrepräsentanten} \lm{ *| c_{i} |* \le M / 2 }, was wir gleich für die Stabilisierung nutzen.'."\n".
                         ''))),
 
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   '3) Stabilisierung von Koeffizienten (profiniter Diagonal-Schritt)', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -432,7 +432,7 @@
                     'Also stationär. \lm{ \blacksquare }'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Hauptsatz und Beweis', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -505,7 +505,7 @@
                       array( display => 'on',  latex => '{  \boxed{\;\; \mathbb{A}_{\S}  =  \mathbb{A}_{\R} \;\;}  \;\; .  }'),
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Zusammenfassung der Beweisschritte', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -539,7 +539,7 @@
                     'wie bekannt.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Die Superial-Zahlen stellen die reellen Zahlen in ein neues Licht', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -550,7 +550,7 @@
                       'Diese Sicht offenbart die tiefe Verbindung des Zählens und der endlichen Primzahlen mit dem Aktual-Unendlichen.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Das Langlands-Programm', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -564,7 +564,7 @@
                 Title => 'Beweisentwurf …',
                 TitleVis => 'Beweisentwurf:', ParagraphList => array(
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Rahmen und Notation', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -590,7 +590,7 @@
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\;  \text{(Summe ganzer Superial-Zahlen)}  \;\; .  }'),
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   '\lm{ p }-adischer „Schub“ aus der Schichtenstruktur', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -617,7 +617,7 @@
                         'Keine Koeffizienten-Feinabstimmung nötig.'."\n".
                         ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Archimedisch kleine Werte mit Kongruenzvorgabe', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -654,7 +654,7 @@
                         'Damit kann man monische \lm{ P } erzwingen.'."\n".
                         ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Profiniter „Diagonalschritt“ \lm{ = } Koeffizienten stabilisieren', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
@@ -681,7 +681,7 @@
                     'Also stationär. \lm{ \blacksquare }'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Satz und Reduktion', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
