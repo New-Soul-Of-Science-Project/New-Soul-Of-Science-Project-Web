@@ -30,7 +30,7 @@
                       'Sollte die Vermutung stimmen, dass alle transzendenten Zahlen superial kleine Summanden enthalten, der sich dieses Kapitel widmet,'."\n".
                     'dann wären die reell algebraischen Zahlen die \italic{vollständigen} sinnvollen Koeffizienten des Stellenwertsystems der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Die transzendente eulersche Zahl \lm{ \e }', subline =>
                   'Eine transzendente Zahl durch die Lupe der Superial-Zahlen')),
@@ -80,7 +80,7 @@
                     'sondern eine Erweiterung dieser darstellt, die auch superiale Exponenten der superialen Basis \lm{ \s } zulassen,'."\n".
                     'hier \lm{ \s^{-\s} }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Unsere Vermutung, dass transzendente Zahlen immer superial kleine Summanden besitzen', subline =>
                   '')),
@@ -95,9 +95,9 @@
                     'müssen alle transzendenten Zahlen superial kleine Summanden enthalten.'."\n",
                       'Wir sehen …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
-                'Es ist eigentlich die Vermutung, dass die reell algebraischen Zahlen die vollständigen Koeffizienten der Superial-Zahlen sind', subline =>
+                'Die Vermutung, dass die reell algebraischen Zahlen die vollständigen Koeffizienten der Superial-Zahlen sind', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Wie kommen wir zu dem Wissen, dass die reell algebraischen Zahlen die \italic{vollständigen} Koeffizienten der Superial-Zahlen sind?'."\n",
@@ -112,7 +112,9 @@
                       array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?\subseteq  \mathbb{A}_{\R}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
                 'Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
                   '')),
@@ -519,7 +521,7 @@
                         'Der \lm{ p }-adische „Schub“ ist \bold{uniform}: \lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.',
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
                 'Fazit', subline =>
                   '')),
@@ -695,7 +697,7 @@
                 Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
                 TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
                 'Beweis: Nicht-Einbettung jeder transzendenten Zahl in eine einzige Ebene der Superial-Zahlen', subline =>
                   'Die vollständigen sinnvollen Koeffizienten sind die reell algebraischen Zahlen')),
@@ -917,7 +919,7 @@
                     'Was uns wiederum erkennen lässt, dass es sich bei den transzendenten Zahlen tatsächlich um echte superiale Zahlen oder,'."\n".
                     'wie im Fall der eulersche Zahl \lm{ \e_{\s} }, sogar noch um deren Erweiterungen handeln muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'X', subline =>
                   '')),
