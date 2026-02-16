@@ -147,7 +147,7 @@
                     'sinnvoll sind.'."\n",
                       'Und diesen Beweis führen wir nachfolgend.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Algebraischen-Koeffizienten-Vermutung (AKV)', subline =>
                   '')),
@@ -210,7 +210,7 @@
                           'Nach dem Herausziehen des \lm{ \s }-Vorrats hat \lm{ X^{(0)} } nur \italic{endlich viele} endliche Primteiler.',
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 '\small{Teil A} \\\\ Schnittdarstellung und Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
                   '')),
@@ -325,7 +325,7 @@
                     'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.'."\n".
                     'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \blacksquare }'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 '\small{Teil B} \\\\ Algebraische Zahlen sind sinnvolle Koeffizienten', subline =>
                   '')),
@@ -461,7 +461,7 @@
                     'Als Produkt zweier Elemente aus \lm{ \mathbb{S}_{\Z} } liegt \lm{ \alpha \cdot \s } wieder in \lm{ \mathbb{S}_{\Z} },'."\n".
                     'also ist \lm{ \alpha } ein sinnvoller Koeffizient. \lm{ \blacksquare }'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Schlussfolgerung', subline =>
                   '')),
@@ -472,7 +472,7 @@
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  }'),
                     ))),
-                  /* array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
                   '')),
@@ -831,7 +831,7 @@
                       'Diese Idee verbindet klassische algebraische Methoden (\lm{ p }‑adische Bewertungen, Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}'."\n".
                     'mit der neuen transfiniten oder aktual unendlichen Struktur der Superial-Zahlen und erscheint als vielversprechender Ansatz, um die Frage systematisch anzugehen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis: Einbettung reell algebraischer Zahlen in das System der Superial-Zahlen', subline =>
                   '')),
