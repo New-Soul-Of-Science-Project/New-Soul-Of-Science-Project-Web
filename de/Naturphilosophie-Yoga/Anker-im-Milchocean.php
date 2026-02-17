@@ -153,6 +153,12 @@
                                            
                 'Die Milchstraße', subline =>
                   '')),
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '• Zu einem bestimmten Zeitpunkt legt sich die Milchstraße einmal wie eine weiße Schlange am nächtlichen Horizont um die Erde. Als wenn die Erde der Fels oder Berg wäre, der im Milchocean schwimmt, und von der Schlange umschlungen wäre.',
+                    '– Erwähnt im Video von AboraTV: \jump[https://www.youtube.com/watch?v=0mT57-kM9xI][][_blank]{}{ABORA 5: Das waghalsigste Experiment der Experimentalarchäologie? - Jahresrückblick (Teil 2) AboraTV}, Sek. 18:42.',
+                    ))),
+
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
