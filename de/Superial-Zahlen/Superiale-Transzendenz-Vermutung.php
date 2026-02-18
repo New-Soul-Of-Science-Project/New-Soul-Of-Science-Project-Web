@@ -173,7 +173,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{ \alpha \in \mathbb{R}_{\text{fin}} *|* \alpha \cdot \s \in \mathbb{S}_{\Z, *\{ 1 *\}} *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{ \alpha \in \mathbb{R}_{\text{fin}}  *|*  \alpha \cdot \s \in \mathbb{S}_{\Z, *\{ 1 *\}} *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Für ein Polynom'."\n".
@@ -221,15 +221,19 @@
                   array( 'text', array( intent => '0em', text => array(
                     'Insbesondere \lm{ \Phi_{P}(\alpha) \in p^{d} \mathbb{S}_{\Z} } und damit \lm{ \Phi_{P}(\alpha) \in \bigcap_{p} p^{d} \mathbb{S}_{\Z} }.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
                   array( 'text', array( intent => '0em', text => array(
-                  '\bold{Beweis.} \\\\'."\n".
                     'Aus Formel \jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s} folgt:'."\n".
                     'Jeder Summand \lm{ c_{i} \cdot T^{i} \cdot \s^{d - i} } hat wegen \lm{ p | \s } und \lm{ p | T } mindestens'."\n".
                     '\lm{p}-Bewertung \lm{ i + (d − i) = d }.'."\n".
                     'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }. \lm{ \blacksquare }'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Konsequenz', subline =>
+                    '')),
                   array( 'text', array( intent => '0em', text => array(
-                  '\bold{Konsequenz.} \\\\'."\n".
                     'Um \lm{ v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p } zu erzwingen, genügt schlicht:'."\n".
                     ''))),
                   array( 'equations',
@@ -300,8 +304,10 @@
                     'das heißt es existiert \lm{ c_{i} \in \mathbb{Z} } mit \lm{ c_{i}^{(k)} = c_{i} } für alle großen \lm{ k }.'."\n".
                     'Insbesondere konvergiert \lm{ P_{k} } koeffizientenweise zu einem \lm{ P \in \mathbb{Z}[x] }.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
                   array( 'text', array( intent => '0em', text => array(
-                    '\bold{Beweis.} \\\\'."\n".
                     'Fixiere \lm{ i }.'."\n".
                     'Aus \lm{ c_{i}^{(k + 1)} ​\equiv c_{i}^{(k)} \; (\operatorname{mod} M_{k}) } folgt'."\n".
                     '\lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} \cdot M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
@@ -309,15 +315,110 @@
                     'Mit \lm{ *| \, c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} }'."\n".
                     'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }. \lm{ \blacksquare }'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Hauptbeweis: \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} }', subline =>
+                    '')),
                   array( 'text', array( intent => '0em', text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
+                    'Wir konstruieren eine Folge \lm{ P_{k} \in \mathbb{Z}[x] } mit:'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{(A)} \lm{ \operatorname{deg} P_{k} = d_{k} \ge k }.'."\n",
+                    '\bold{(B)} \lm{ *| P_{k}(\alpha) |* \le 2^{−k} }.'."\n",
+                    '\bold{(C)} \lm{ P_{k + 1} \equiv P_{k} \; (\operatorname{mod} M_{k}) } für eine Modulkette \lm{ M_{k + 1} \ge 2 M_{k} }.'."\n",
+                    '\bold{(D)} Koeffizienten sind stets als kleinste Repräsentanten gewählt: \lm{ *| \, c_{i}^{(k)} |* \le M_{k} / 2 }.'."\n",
+                    '\bold{(E)} \lm{ P_{k} } ist monisch.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schritt 1 — Start', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Setze \lm{ M_{1} := 2 }.'."\n",
+                    'Wende \bold{Lemma 2} (Dirichlet–Siegel mit Restklassen und Monizität) mit \lm{ d_{1} = 1 }, \lm{ \epsilon = \frac{ 1 }{ 2 } }'."\n".
+                    'und der Restklasse \lm{ \overline{c}_{1} \equiv  1 \; (\operatorname{mod} 2) } an.'."\n",
+                    'Erhalte ein monisches \lm{ P_{1} } mit \lm{ *| P_{1}(\alpha) |* \le \frac{ 1 }{ 2 } }'."\n".
+                    'und wähle die Koeffizienten als kleinste Repräsentanten modulo \lm{ 2 }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schritt 2 — Induktionsschritt', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Angenommen, \lm{ P_{k} } und \lm{ M_{k} } sind konstruiert.'."\n",
+                    'Wähle \lm{ M_{k + 1} } so, dass \lm{ M_{k} | M_{k + 1} } und \lm{ M_{k+1} \ge 2 M_{k} }.'."\n",
+                    'Wähle \lm{ d_{k + 1} \ge k + 1 }.'."\n".
+                    'Fixiere eine Restklasse \lm{ \overline{C} } modulo \lm{ M_{k + 1} }, die zugleich'."\n",
+                    ''))),
 
-                'XXX Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'die Kohärenz \lm{ P_{k + 1} \equiv P_{k} \; (\operatorname{mod} M_{k}) } sicherstellt, und',
+                        'Monizität \lm{ c_{d_{k + 1}} \equiv 1 \; (\operatorname{mod} M_{k + 1}) } erzwingt.',
+                    ))),
+
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wende \bold{Lemma 2} mit \lm{ \epsilon = 2^{−(k+1)} } an und erhalte \lm{ P_{k + 1} } mit \bold{(B)}, \bold{(C)}, \bold{(E)}.'."\n".
+                    'Wähle wieder die kleinsten Repräsentanten \bold{(D)}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schritt 3 — \lm{ p }-adische Seite „gratis“', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Aus \bold{(A)} und \bold{Lemma 1} folgt für jede endliche Primzahl \lm{ p }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}(\Phi_{P_{k}}(\alpha))  \ge  d_{k}  \ge  k  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Also erfüllt jedes \lm{ P_{k} } simultan die gewünschte \lm{ p }-adische Hoch-Teilbarkeit.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schritt 4 — Koeffizienten stabilisieren', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Aus \bold{(C)}, \bold{(D)} und \lm{ M_{k + 1} \ge 2 M_{k} } folgt mit \bold{Lemma 3}:'."\n",
+                    '\lm{ P_{k} } konvergiert koeffizientenweise zu einem Polynom \lm{ P \in \mathbb{Z}[x] }.'."\n",
+                    'Wegen \bold{(E)} ist \lm{ P } zudem \italic{monisch} und nichttrivial.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schritt 5 — Grenzübergang: \lm{ P(\alpha) = 0 }', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Aus \bold{(B)} folgt \lm{ P_{k}(\alpha) \rightarrow 0 } im reellen Sinn.'."\n",
+                    'Da die Koeffizienten von \lm{ P_{k} } für jedes feste \lm{ i } ab einem Index stabil sind,'."\n".
+                    'ergibt sich (wie auf deiner Seite formuliert):'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P(\alpha)  =  \lim\limits_{ k \rightarrow \infty } P_{k}(\alpha)  =  0  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Damit existiert ein monisches \lm{ P \in \mathbb{Z}[x] \setminus *\{ 0 *\} } mit \lm{ P(\alpha) = 0 }.'."\n".
+                    'Also ist \lm{ \alpha } \italic{reell algebraisch}, das heißt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\R}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Damit ist gezeigt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; . \;\; \blacksquare  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Schluss (STV + AKV \lm{ \Rightarrow } Vollständigkeit)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Da bereits in AKV  \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} } gezeigt ist, folgt insgesamt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  \;\; .  }'),
+                    ))),
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+
+                'Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Über das superiale Kronecker-Kriterium nehmen wir nachfolgend den Beweis der Superialen-Transzendenz-Vermutung in Angriff.'."\n".
@@ -720,7 +821,7 @@
                         'Der archimedische Teil (\condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität}) ist reine Geometrie der Zahlen plus Restklassen-Fixierung; Monizität lässt sich über \lm{ \overline{c}_{d} \equiv 1 } erzwingen.',
                         'Die Stabilisierung (\condb{Lemma – Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten}) nutzt allein \lm{ M_{k + 1} \ge 2 M_{k} } und Minimalrepräsentanten.',
                         'Der \lm{ p }-adische „Schub“ ist \bold{uniform}: \lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.',
-                    ))),
+                    ))), */
 
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
@@ -763,397 +864,7 @@
                       'Wenn sich dies so bestätigt, sind die Superial-Zahlen ein wichtiger Baustein des Langlands-Programms\footnote{\const{SupNum_g_footnote_text_LanglandsProgramm}}.'."\n".
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',
-                Title => 'Beweisentwurf …',
-                TitleVis => 'Beweisentwurf:', ParagraphList => array(
-
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  'Rahmen und Notation', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Wir setzen:'."\n".
-                    ''))),
-                      
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '\lm{ \mathbb{S}_{\Z} = V_{s} \cap \bigcap p V_{p} } (Schnitt über \bold{alle endlichen Primzahlen} \lm{ p }); \lm{ \mathbb{S}_{\Q} = \mathrm{Frac}(\mathbb{S}_{\Z}) }).',
-                        '\lm{ \s } „trägt alle Primzahlen“; in \lm{ \mathbb{S} } sind negative \lm{ \s }-Exponenten erlaubt, in \lm{ \mathbb{S}_{\Z} } nicht und die nullte Schicht darf nur ganzzahlig sein.',
-                        '\lm{ \mathbb{A}_{\S} := *\{ a \in \mathbb{R} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} } (nur die Schicht \lm{ s^{1} } belegt).',
-                        'Für \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x_{i} \in \mathbb{Z}[x] } setze',
-                    ))),
-
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
-                    ))),
-                  array( 'text', array( intent => '0em', text => array(
-                    'Schreibe \lm{ T := \alpha \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} }. Dann gilt in \lm{ \mathbb{S} } auch'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\;  \text{(Summe ganzer Superial-Zahlen)}  \;\; .  }'),
-                    ))),
-
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  '\lm{ p }-adischer „Schub“ aus der Schichtenstruktur', subline =>
-                    '')),
-                  array( 'text', array( intent => '0em', text => array(
-                  '\bold{Lemma – Schichten-bedingte \lm{ p }-Adik:} \\\\'."\n".
-                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} }.'."\n".
-                    'Für \bold{jedes} \lm{ P \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P = d } und \bold{jede} endliche Primzahl \lm{ p } gilt'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d  \;\; .  }'),
-                    ))),
-                  array( 'text', array( intent => '0em', text => array(
-                    'Insbesondere \lm{ \Phi_{P}(\alpha) \in p^{d} \mathbb{S}_{\Z} }, also \lm{ \Phi_{P}(\alpha) \in \bigcap_{p} p^{d} \mathbb{S}_{\Z} }.'."\n",
-                    ''))),
-                  array( 'text', array( intent => '0em', text => array(
-                    '\italic{Beweis (1 Zeile):}'."\n".
-                    'Schreibe \lm{ \Phi_{P}(\alpha) = \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i} } mit \lm{ T = \alpha \cdot \s }.'."\n".
-                    'Da \lm{ v_{p}(\s) \ge 1 } und \lm{ v_{p}(T) \ge 1 } für \bold{alle} \lm{ p }, hat \bold{jeder} Summand \lm{ p }-Bewertung \lm{ \ge i \cdot 1 + ( d − i ) \cdot 1 = d }; damit auch die Summe. \lm{ \blacksquare }'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                        '\italic{Konsequenz:}'."\n".
-                        'Für das in SKK gebrauchte „\lm{ \Phi_{P_k}(\alpha) \in p^{k}\mathbb{S}_{\Z} } für alle \lm{ p }“ genügt schlicht \lm{ \mathrm{deg} P_k \ge k }.'."\n".
-                        'Keine Koeffizienten-Feinabstimmung nötig.'."\n".
-                        ''))),
-
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  'Archimedisch kleine Werte mit Kongruenzvorgabe', subline =>
-                    '')),
-                  array( 'text', array( intent => '0em', text => array(
-                  '\bold{Lemma – Dirichlet–Siegel mit Restklassen:} \\\\'."\n".
-                    'Sei \lm{ \alpha \in \mathbb{R} \text{(endlich)} }, \lm{ d \ge 1 }, \lm{ M \ge 2 } ein Modul.'."\n".
-                    'Für \bold{jede} vorgegebene Restklasse \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } und \bold{jedes} \lm{ \epsilon > 0 } existiert ein \bold{nichttriviales} \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x^{i} \in \mathbb{Z}[x] } mit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
-                      array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( intent => '0em', text => array(
-                    'und mit einer expliziten Höhenkontrolle \lm{ \mathrm{max}_{i} *| c_{i} |* \le H(d, M, \epsilon, \alpha) }.'."\n".
-                    ''))),
-                  array( 'text', array( intent => '0em', text => array(
-                    '\italic{Beweisskizze:} \\\\'."\n",
-                    'Betrachte das Gitter \lm{ \Lambda = *\{ c \in \mathbb{Z}^{d + 1} *|* c \equiv \overline{C} \; (\mathrm{mod} \, M) *\} } und die lineare Form \lm{ L_{\alpha}(c) = \sum_{i = 0}^{d} c_{i} \alpha^{i} }.'."\n".
-                    'Wähle die Box'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{B}  =  *\{ c \in \mathbb{R}^{d + 1}  *|*  \Vert c \Vert_{\infty} \le  H *\}  }'),
-                    ))),
-                  array( 'text', array( intent => '0em', text => array(
-                    'und wende den \bold{Satz vom Schubfach}/die \bold{Geometrie der Zahlen} (Dirichlet/Minkowski) auf die Bilder \lm{ L_{\alpha}(\Lambda \cap \mathfrak{B}) } an:'."\n".
-                    'Für \lm{ H } groß genug liegen zwei Gitterpunkte in einem Intervall der Länge \lm{ \epsilon }; ihre Differenz \lm{ c \in \Lambda \setminus *\{ 0 *\} } erfüllt die beiden Bedingungen.'."\n".
-                    'Die explizite Schranke \lm{ H(\cdot) } ergibt sich aus den Volumina (Standard). \lm{ \blacksquare }'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                        '\italic{Zusatz (Monizität erzwingbar):}'."\n".
-                        'Fügt man die Kongruenz \lm{ c_{d} \equiv 1 \;\; (\mathrm{mod} \, M) } hinzu und wählt hinterher den eindeutigen Vertreter mit \lm{ *| c_{d} |* \le M / 2 }, so ist für \lm{ M > 2 } bereits \lm{ c_{d} = 1 }.'."\n".
-                        'Damit kann man monische \lm{ P } erzwingen.'."\n".
-                        ''))),
-
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  'Profiniter „Diagonalschritt“ \lm{ = } Koeffizienten stabilisieren', subline =>
-                    '')),
-                  array( 'text', array( intent => '0em', text => array(
-                  '\bold{Lemma – Kohärente Kette \lm{ \Rightarrow } stationäre Koeffizienten:} \\\\'."\n".
-                    'Sei \lm{ M_{1} | M_{2} | M_{3} | \cdots } mit \lm{ M_{k} \rightarrow \infty }.'."\n".
-                    'Angenommen, es gibt eine Folge \lm{ P_{k}(x) = \sum_{i=0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } mit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  P_{k + 1}  \equiv  P_{k}​ \;\; (\mathrm{mod} \, M) \;\;\; \text{(koheränt)}  }'),
-                      array( display => 'on',  latex => '{  \mathrm{max}_{i} *| c_{i}^{(k)} |*  \le  \frac{ 1 }{ 2 } M_{k}​ \;\;\; \text{(minimale Repräsentanten)}  }'),
-                    ))),
-                  array( 'text', array( intent => '0em', text => array(
-                    'Dann existieren eindeutig bestimmte Integers \lm{ c_{i} } mit \lm{ c_{i}^{(k)} = c_{i} } für alle genügend großen \lm{ k } (für jedes feste \lm{ i }).'."\n".
-                    'Mit anderen Worten:'."\n".
-                    '\bold{alle Koeffizienten stabilisieren}; die Folge \lm{ (P_{k}) } konvergiert zu einem echten ganzzahligen Polynom \lm{ P(x) = \sum_{i} c_{i} x^{i} }.'."\n".
-                    ''))),
-                  array( 'text', array( intent => '0em', text => array(
-                    '\italic{Beweis:}'."\n".
-                    'Fixiere \lm{ i }.'."\n".
-                    'Aus \lm{ c_{i}^{(k + 1)} \equiv c_{i}^{(k)} \; (\mathrm{mod} \, M_{k}) } folgt \lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
-                    'Wegen \lm{ *| c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| c_{i}^{(k + 1)} |* + *| c_{i}^{(k)} |* \le M_{k} } muss \lm{ t_{k} \in \{ −1, 0, 1 \} }.'."\n".
-                    'Doch \lm{ *| c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} } (ggf. Modulkette so gewählt) erzwingen \lm{ t_{k} = 0 } für alle großen \lm{ k }.'."\n".
-                    'Also stationär. \lm{ \blacksquare }'."\n".
-                    ''))),
-
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  'Satz und Reduktion', subline =>
-                    '')),
-                  array( 'text', array( intent => '0em', text => array(
-                  '\bold{Satz – Superiales Kronecker-Kriterium:} \\\\'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
-                    ))),
-
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X',
-                Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
-                TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
-
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-
-                'Beweis: Nicht-Einbettung jeder transzendenten Zahl in eine einzige Ebene der Superial-Zahlen', subline =>
-                  'Die vollständigen sinnvollen Koeffizienten sind die reell algebraischen Zahlen')),
-
-                  /* array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{Erklärungs-Video}',
-                    '• Negative reell algebraische Zahlen und die Null korrekt berücksichtigen.',
-                    '• Hier ist noch wichtig, dass  \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } nur dann eine ganze Zahl sein darf (Beweis), wenn \lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} }.',
-                    '– Wenn \lm{ \mathrm{v}_{\!p}(a) \in *( \mathbb{A}_{\R} \setminus \mathbb{Q} *) }, dann sollte \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } keine ganze Zahl sein.',
-                    ))), */
-                      
-                  array( 'text', array( text => array(
-                    'Unser Beweis stütz sich auf die \lm{ p }‑adische Argumentation, also auf die Idee, dass jede reell algebraische Zahl \lm{ a \neq 0 } über'."\n".
-                    'eine Zerlegung in ihre \lm{ p }‑adischen Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} \lm{ \mathrm{v}_{\!p}(a) } zu beschreiben ist.'."\n".
-                    'Bei einer algebraischen Zahl ist \lm{ *\{ \mathrm{v}_{\!p}(a) \neq 0 *\} } stets eine endliche Indexmenge'."\n".
-                    '(nur endlich viele Primzahlen \lm{ p } haben von Null verschiedene Bewertungen), und jeder Index'."\n".
-                    '\lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} } ist rational.'."\n".
-                    'Genau diese Eigenschaft „endlich viele, rationale \lm{ p }‑adische Bewertungen“'."\n".
-                    'ermöglicht es, dass \lm{ a } durch'."\n".
-                    '\lm{ a \cdot \s } in die erste Schicht der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } eingebettet wird.'."\n",
-                      'Für transzendente Zahlen soll nun das Gegenteil gelten:'."\n".
-                    'Sie können nicht alleine durch Multiplikation mit \lm{ \s } zu einer aktual unendlichen ganzen Superial-Zahl werden,'."\n".
-                    'ohne eine niedrigere Schicht des superialen Stellenwertsystems mit einem Wert ungleich Null zu belegen.'."\n".
-                    'Das bedeutet, sie sind keine sinnvollen Koeffizienten der Superial-Zahlen, sondern selber Superial-Zahlen mit aktual unendlich kleinen Summanden.'."\n",
-                      'Im Detail:'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Sei die Grundlage für unseren folgenden Widerspruchsbeweis unser vorheriger'."\n".
-                      '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\condb{Das \lm{ p }‑adische Grundprinzip} \\\\'."\n".
-                      'Unser Beweis zu den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen superialen Koeffizienten} geht folgendermaßen.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\cond{\lm{ p }‑adische Bewertung} \\\\'."\n".
-                      'Für jede Primzahl \lm{ p } und jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } ist in der klassischen Zahlentheorie der'."\n".
-                      '\italic{\lm{ p }‑adische Betrag} \lm{ *| a |*_{p} } beziehungsweise für jede \lm{ a \in \mathbb{A}_{\R} \setminus *\{ 0 *\} }'."\n".
-                      'die \italic{\lm{ p }‑adische Bewertung} \lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} } definiert.'."\n".
-                      'Grob gesagt misst \lm{ \mathrm{v}_{\!p}(a) } \italic{wie oft} \lm{ p } als Faktor in \lm{ a } steckt.'."\n".
-                      'Etwa:'."\n".
-                      ''))),
-
-                  array( 'bulletlist', array( Shape  => 'derivation', bullet_ary => array(
-                        'Wenn \lm{ a = p^{\delta_{p}} \times \,} (ein \lm{ p }‑adisch invertierbares Element), dann ist \lm{ \mathrm{v}_{\!p}(a) = \delta_{p} }.',
-                        'Für reell algebraische \lm{ a } ist \lm{ \mathrm{v}_{\!p}(a) } eine \italic{endliche} rationale Zahl'."\n".
-                          '(positiv, negativ oder Null), und nur finit viele \lm{ p } tragen tatsächlich bei (\lm{ \mathrm{v}_{\!p}(a) \neq 0 }).',
-                    ))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\cond{Interpretation im Superial-System} \\\\'."\n".
-                      'Die Basis \lm{ \s } enthält pro Primzahl \lm{ p } \lm{ ω }-viele Faktoren (exponentiell):'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \prod_{\substack{p \in \mathbb{P}}} p^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\const{SupNum_g_text_ZFCkonform}'."\n",
-                        'Eine unendlich große ganze Superial-Zahl in \lm{ \mathbb{S}_{\Z} } hat \lm{ ω }-viele Faktoren pro Primzahl'."\n".
-                      '– eventuell plus eine endliche oder rationale Verschiebung.'."\n".
-                      'Das heißt:'."\n".
-                      'Jedes Produkt einer positiven reell algebraischen Zahl mit \lm{ \s } hat eine \italic{transfinite Primfaktorzerlegung} der Form'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a \cdot \s  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wobei \lm{ \mathrm{v}_{\!p}(a) } für (fast) alle \lm{ p } Null oder ein (endlicher) rationaler Wert ist.'."\n".
-                      'Anders gesagt:'."\n".
-                      'Jede Primzahl kommt in diesem Produkt unendlich oft vor, nur mit einem \italic{kleinen} rationalen Offset in der Exponentenhöhe.'."\n".
-                      'Und nach dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
-                      'zusammen mit dem Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}‹},'."\n".
-                      'ist jeder Primzahlturm \lm{ p^{ω + \mathrm{v}_{p}(a)} } eine aktual unendliche ganze Zahl, wenn \lm{ \mathrm{v}_{p}(a) \in \mathbb{Q} }, obwohl \lm{ ω + \mathrm{v}_{p}(a) } eine gebrochene Zahl sein kann,'."\n".
-                      'weil \lm{ ω } so groß ist, dass ein endlicher rationaler Summand daran nichts ändert.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\condb{Warum algebraische Zahlen „aufgesaugt“ werden können} \\\\'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Für die höheren Schichten der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } stellen sich die Verhältnisse wie folgt dar.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\cond{Satz} \\\\'."\n".
-                      'Ist \lm{ a } algebraisch und nicht Null, dann existieren eine (endliche!) Menge von Primzahlen \lm{ p },'."\n".
-                      'rationale Exponenten \lm{ \mathrm{v}_{\!p}(a) \neq 0 } und für alle anderen \lm{ p } gilt \lm{ \mathrm{v}_{\!p}(a) = 0 }. \\\\'."\n".
-                      'Das ist letztlich eine Verallgemeinerung des Faktorsatzes für rationale Zahlen auf algebraische:'."\n".
-                      'mittels Minimalpolynom und resultierender Faktorisierung kann man argumentieren, dass \lm{ a } sich \lm{ p }‑adisch nur „endlich oft“ auswirkt,'."\n".
-                      'und die \lm{ p }‑adischen Bewertungen rational sind.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\cond{Einbettung in eine einzelne Schicht der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } einer Potenz größer gleich Eins} \\\\'."\n".
-                      'Nimmt man nun \lm{ a \cdot \s^{n} } (für \lm{ n \geq 1 }), also eine einzelne höhere Schicht der ganzen Superial-Zahlen,'."\n".
-                      'dann ist die exponentielle \lm{ p }-Komponente'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(a \cdot \s^{n})  =  \mathrm{v}_{\!p}(a) + \mathrm{v}_{\!p}(\s^{n})  =  \mathrm{v}_{\!p}(a) + n \cdot ω \;  \;\; .  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Da ω „infinit groß“ ist, ist \lm{ n \cdot ω } unendlich; also hat man \lm{ n \cdot ω \, + } (noch etwas Rationales).'."\n".
-                      'Das ergibt eine Darstellung'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a \cdot \s^{n}  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'was genau in einer Schicht in \lm{ \mathbb{S}_{\Z} } liegt.'."\n".
-                      'Also:'."\n".
-                      '\lm{ a } ist ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient}.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Daraus folgt:'."\n".
-                      'Alle reell algebraischen \lm{ a } werden durch \lm{ a \cdot \s^{n} } zu ganzen Superial-Zahlen.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\condb{Widerspruch für transzendente Zahlen} \\\\'."\n".
-                      'Jetzt nehmen wir an (zum Ausschluss), es gäbe eine \lm{ \tau \in \mathbb{R} } \italic{transzendent}, die \italic{doch} durch ein'."\n".
-                      '\lm{ a = \tau } (\lm{ \tau } genannt Tau) und ein nichtnegatives \lm{ n } so in \lm{ \mathbb{S}_{\Z} } landet, also'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \tau \cdot \s^{n}  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \delta_{p}}  \;\; .  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Daraus bekäme man (formal) eine Primfaktorzerlegung von \lm{ \tau } indem man „dividiert“ durch \lm{ \s^{n} }.'."\n".
-                      'Klassisch auf \lm{ p }‑adisch formuliert hieße das:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(\tau \cdot \s^{n})  =  \mathrm{v}_{\!p}(\tau) + \mathrm{v}_{\!p}(\s^{n})  =  \mathrm{v}_{\!p}(\tau) + n \cdot ω  }'),
-                      array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(\tau) + n \cdot ω  =  n \cdot ω + \delta_{p}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Somit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(\tau)  =  \delta_{p}  \;\;.  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Denn in unserer transfiniten Arithmetik von Exponenten müssten wir annehmen \lm{ \delta_{p} } sei rational,'."\n".
-                      'und es gäbe nur endlich viele Primzahlen \lm{ p } mit \lm{ \delta_{p} \neq 0 }.'."\n".
-                      ''))),
-                      
-                  array( 'text', array( Shape  => 'italic', intent => '0em', text => array(
-                      'Das aber heißt, \lm{ \tau } hätte eine endliche, rationale \lm{ p }‑adische Bewertungsmenge \lm{ *\{ \delta_{p} *\} }.'."\n".
-                      'In der klassischen (Standard-)Mathematik würde sie also \italic{algebraisch} sein, denn Transzendenz setzt voraus,'."\n".
-                      'dass man kein solches „endliches Rational-Profil“ an \lm{ p }‑adischen Bewertungen findet,'."\n".
-                      'das \lm{ \tau } in eine Polynomgleichung endlicher Ordnung zwingt.'."\n".
-                      ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'So entstünde ein Widerspruch:'."\n".
-                      ''))),
-
-                  array( 'bulletlist', array( Shape  => 'derivation', bullet_ary => array(
-                        '\lm{ \tau } wäre transzendent,',
-                        '\lm{ \tau } hätte aber \lm{ p }‑adische Bewertungen \lm{ \delta_{p} \in \mathbb{Q} } nur für endlich viele \lm{ p },',
-                        'was die typischen Argumente zur Algebraizität auslöst.',
-                    ))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist klar, dass keine echt transzendente Zahl \lm{ \tau } durch bloßes Multiplizieren'."\n".
-                      'mit \lm{ \s^{n} } wo (wo \lm{ n \geq 1 }) in \lm{ \mathbb{S}_{\Z} } eintreten kann.'."\n".
-                      'Folglich ist \lm{ \tau } \italic{kein sinnvoller Koeffizient}, wenn wir die sinnvollen Koeffizienten'."\n".
-                      'so definieren, dass sie via Multiplikation mit einer (positiven) Potenz \lm{ n } von \lm{ \s }'."\n".
-                      'zu einer ganzen Superial-Zahl werden, die auch nur in der \lm{ n }-ten Schicht einen Wert ungleich Null erhält.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    '\condb{Schlussfolgerung} \\\\'."\n".
-                      'Die \lm{ p }‑adische Argumentation läuft also so:'."\n".
-                      ''))),
-
-                  array( 'bulletlist', array( Shape  => 'derivation', bullet_ary => array(
-                        'Für algebraische Zahlen \lm{ a \neq 0 } existiert eine endliche Indexmenge relevanter \lm{ p }, der \lm{ \mathrm{v}_{\!p}(a) \neq 0 }.'."\n".
-                          'Jeder \lm{ \mathrm{v}_{\!p}(a) } ist rational.'."\n".
-                          'Dann ist \lm{ a \cdot \s^{n} } in \lm{ \mathbb{S}_{\Z} }.'."\n",
-                        'Für transzendente Zahlen \lm{ \tau } kann \lm{ \tau \cdot \s^{n} } \italic{keinesfalls} in \lm{ \mathbb{S}_{\Z} } liegen,'."\n".
-                          'da man sonst eine endliche Primfaktorzerlegung mit rationalen Exponenten konstruieren könnte (aus'."\n".
-                          '\lm{ \mathrm{v}_{\!p}(\tau) = \delta_{p} }), was \lm{ \tau } zurück in eine algebraische Zahl verwandeln würde – ein Widerspruch.'."\n",
-                    ))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Diese \lm{ p }‑adische Sicht bildet damit genau das Fundament für:'."\n".
-                      ''))),
-                      
-                  array( 'text', array( Shape  => 'italic', intent => '0em', text => array(
-                      '\bold{Alle und nur reell algebraische Zahlen} sind in der Lage, durch Multiplikation mit einer'."\n".
-                      '\italic{nichtnegativen} Potenz von \lm{ \s } in eine einzige aktual unendliche Schicht der ganzen Zahlen \lm{ \mathbb{S}_{\Z} }'."\n".
-                      'der Superial-Zahlen überzugehen.'."\n".
-                      ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die transzendente Zahl \lm{ \tau } als sinnvoller Koeffizient \italic{ausgeschlossen}.'."\n".
-                      'Sobald man \lm{ \tau } \italic{doch} im superialen Stellenwertsystem repräsentieren will, muss man auf negative Potenzen zurückgreifen.'."\n",
-                        '\\\\'."\n".
-                      ''))),
-
-                  array( 'text', array( text => array(
-                    'Wir sehen auch hier wieder, dass die Superial-Zahlen in der Zahlentheorie eine außergewöhnliche Bedeutung haben.'."\n",
-                      'Sie fungieren als Lupe, die uns erlaubt in tiefe aktual unendliche Feinstrukturen der reellen Zahlen hineinzublicken.'."\n".
-                    'Wodurch sie unser Verständnis der algebraischen Zahlen weiter erhellen und besonders auch zum weiteren Verständnis'."\n".
-                    'der transzendenten Zahlen beitragen, siehe die Abgrenzung zwischen algebraischen und transzendenten Zahlen'."\n".
-                    'und konkret die eulersche Zahl \lm{ \e_{\s} }, und sicher noch weiter beitragen werden.'."\n".
-                    'Denn sie geben uns einen intuitiv nachvollziehbaren Grund dafür, warum dies alles so ist.'."\n".
-                    'Den finden wir in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur} der Geometrie, die uns wieder über den'."\n".
-                    '\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung und deren Beweis} zu einem neuen Verständnis'."\n".
-                    'aktual unendlich feiner Raster und deren Zusammenhang mit irrationalen Wurzeln führt.'."\n",
-                      'Erst dieses neue Verständnis der irrationalen Wurzeln und ihre überrationale Darstellung mittels aktual unendlich feiner Raster'."\n".
-                    'ermöglicht uns schließlich'."\n".
-                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle algebraischen Zahlen als auf diesem Raster liegend}'."\n".
-                    'zu begreifen.'."\n".
-                    'Was uns wiederum erkennen lässt, dass es sich bei den transzendenten Zahlen tatsächlich um echte superiale Zahlen oder,'."\n".
-                    'wie im Fall der eulersche Zahl \lm{ \e_{\s} }, sogar noch um deren Erweiterungen handeln muss.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                      
-                'X', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Wenn transzendente Zahlen superial kleine Summanden besitzen, dann sind es zum Beispiel Zahlen der Form:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{0} \in \mathbb{A}_{\S}^{0+} *) *( \forall a_{-1} \in \mathbb{A}_{\S}^{+} *)  *[  0  <  *〈 a_{0} *〉.*〈 a_{-1} *〉  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 a_{0} *〉.*〈 a_{-1} *〉  :\in  \mathbb{R}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Sie müssten demnach folglich Elemente der Menge der reellen Zahlen \lm{ \mathbb{R} } sein.'."\n",
-                      'Wenn dem so ist, dann X:'."\n",
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  \s  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  *[  r  <  n  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  *[  - \s  <  r  <  \s  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{R}^{+} *)  *[  0  <  \s^{-1}  <  r  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R}^{+} *)  \\\ \qquad\qquad  *[  k - r  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + r  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
-                    ))),
-                      
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen'),
                       array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
                     )),
                 )
