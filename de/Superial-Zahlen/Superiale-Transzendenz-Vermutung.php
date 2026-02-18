@@ -113,10 +113,211 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
-                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+
+                'Beweis der Superialen-Transzendenz-Vermutung (STV) über das superiale Kronecker-Kriterium (SKK)', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Über das superiale Kronecker-Kriterium nehmen wir nachfolgend den Beweis der Superialen-Transzendenz-Vermutung in Angriff.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'STV in Kürze', subline =>
+                    'Beweisidee')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} } und \lm{ T = \alpha \cdot \s \in \mathbb{S}_{\Z, *\{ 1 *\}} }.'."\n".
+                    'Für \lm{ P \in \mathbb{Z}[x] } setze \lm{ \Phi_{P}(\alpha) = P(\alpha)\s^{\operatorname{deg} P} = \sum_{i=0}^{d} c_{i} \cdot \, T^{i} \cdot \s^{d−i} }.'."\n".
+                    'Dann gilt für jede endliche Primzahl \lm{ p }: weil \lm{ p | T } und \lm{ p | \s }, hat jeder Summand mindestens \lm{ d p }-Faktoren,'."\n".
+                    'also \lm{ v_{p}(\Phi_{P}(\alpha)) \ge d } (uniformer \lm{ p }-adischer Schub).'."\n",
+                    'Mit dem Dirichlet–Siegel-Lemma konstruiert man induktiv monische Polynome \lm{ P_{k} } mit \lm{ \operatorname{deg} P_{k} \ge k },'."\n".
+                    '\lm{ *| P_{k}(\alpha) |* \le 2^{−k} } und Kongruenz-Kohärenz \lm{ P_{k + 1} \equiv P_{k}(\operatorname{mod} M_{k}) }'."\n".
+                    'bei wachsendem \lm{ M_{k+1} \ge 2 M_{k} } (Minimalrepräsentanten).'."\n".
+                    'Aus der Kohärenz stabilisieren die Koeffizienten, also konvergiert \lm{ P_{k} } zu einem monischen \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} }.'."\n".
+                    'Da zugleich \lm{ P_{k}(\alpha) \rightarrow 0 }, folgt \lm{ P(\alpha) = 0 }; also ist \lm{ \alpha } algebraisch'."\n".
+                    'und damit \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} \Rightarrow \mathbb{A}_{\S} = \mathbb{A}_{\R} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Ziel (STV)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir zeigen die \italic{Gegenrichtung} zur AKV:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  \subseteq  \mathbb{A}_{\R}  \;\;}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Zusammen mit der bereits \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{bewiesenen AKV-Richtung \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} }} folgt dann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Stehende Annahmen (SA) und Notation', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  V_{s} \cap \bigcap_{p} V_{p}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'erhalten wir den Quotientenkörper:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Q}  :=  \operatorname{Frac}*( \mathbb{S}_{\Z} *)  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Definiere die \italic{sinnvollen Koeffizienten} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{ \alpha \in \mathbb{R}_{\text{fin}} *|* \alpha \cdot \s \in \mathbb{S}_{\Z, *\{ 1 *\}} *\}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für ein Polynom'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( d = \operatorname{deg} P *) *[  P(x)  =  \sum_{i = 0}^{d} c_{i} \cdot x^{i}  \in  \mathbb{Z}[x]  *]  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Fixiere nun \lm{ \alpha \in \mathbb{A}_{\S} } und setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  T  :=  \alpha \cdot \s  \in  \mathbb{S}_{\Z, *\{ 1 *\}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann kann man \lm{ \Phi_{P}(\alpha) } umschreiben zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} \cdot T^{i} \cdot \s^{d - i}  }',
+                                          label_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s', label_text => '\name{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s}', label_incr => true),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma 1 — Uniformer \lm{ p }-adischer „Schub“ aus \lm{ \s }', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma (Uniforme \lm{ p }-Adik)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Sei \lm{ \alpha \in \mathbb{A}_{\S} } und \lm{ P \in \mathbb{Z}[x] } mit \lm{ \operatorname{deg} P = d }.'."\n".
+                    'Dann gilt für jede endliche Primzahl \lm{ p }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha))  \ge  d  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Insbesondere \lm{ \Phi_{P}(\alpha) \in p^{d} \mathbb{S}_{\Z} } und damit \lm{ \Phi_{P}(\alpha) \in \bigcap_{p} p^{d} \mathbb{S}_{\Z} }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Aus Formel \jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s} folgt:'."\n".
+                    'Jeder Summand \lm{ c_{i} \cdot T^{i} \cdot \s^{d - i} } hat wegen \lm{ p | \s } und \lm{ p | T } mindestens'."\n".
+                    '\lm{p}-Bewertung \lm{ i + (d − i) = d }.'."\n".
+                    'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Konsequenz.} \\\\'."\n".
+                    'Um \lm{ v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p } zu erzwingen, genügt schlicht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{deg} P_{k}​  \ge  k  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '(Keine „Feinabstimmung“ über \lm{ p }-adische Kongruenzen nötig.)'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma 2 — Archimedisch kleine Werte mit Kongruenzvorgabe (Dirichlet–Siegel)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir brauchen nun: \italic{zu vorgegebenen Restklassen der Koeffizienten} ein ganzzahliges Polynom, das bei \lm{ \alpha } \italic{sehr klein} wird.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma (Dirichlet–Siegel mit Restklassen)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Seien \lm{ \alpha \in \mathbb{R}_{\text{fin}} }, \lm{ d \ge 1 }, \lm{ M \ge  2 }, eine Restklasse'."\n".
+                    '\lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } und'."\n".
+                    '\lm{ \epsilon > 0 } gegeben.'."\n".
+                    'Dann existiert ein nichttriviales'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P(x)  =  \sum_{i = 0}^{d} c_{i} \cdot x^{i}  \in  \mathbb{Z}[x]  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \; (\operatorname{mod} M)  }'),
+                      array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'für alle \lm{ i }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Zusatz:}'."\n".
+                    'Man kann \italic{Monizität} erzwingen, indem man zusätzlich \lm{ c_{d} \equiv 1 \; (\operatorname{mod} M) }'."\n".
+                    'fordert und \lm{ P } monisch wählt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma 3 — Kohärenz \lm{ \Rightarrow } stationäre Koeffizienten (profiniter Diagonalschritt)', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
+                  'Lemma (Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Sei \lm{ M_{1} | M_{2} | M_{3} | \cdots } mit \lm{ M_{k + 1} \ge 2 \! M_{k} }.'."\n",
+                    'Sei \lm{ P_{k}(x) = \sum_{i = 0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } eine Folge mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P_{k + 1} ​  \equiv   P_{k} \; (\mathrm{mod} \, M_{k})  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'und „kleinsten Repräsentanten“'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \, c_{i}^{(k)} |*   \le   \frac{ M_{k} }{ 2 }​​  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann wird für jedes feste \lm{ i } die Folge \lm{ c_{i}^{(k)} } \italic{stationär},'."\n".
+                    'das heißt es existiert \lm{ c_{i} \in \mathbb{Z} } mit \lm{ c_{i}^{(k)} = c_{i} } für alle großen \lm{ k }.'."\n".
+                    'Insbesondere konvergiert \lm{ P_{k} } koeffizientenweise zu einem \lm{ P \in \mathbb{Z}[x] }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\bold{Beweis.} \\\\'."\n".
+                    'Fixiere \lm{ i }.'."\n".
+                    'Aus \lm{ c_{i}^{(k + 1)} ​\equiv c_{i}^{(k)} \; (\operatorname{mod} M_{k}) } folgt'."\n".
+                    '\lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} \cdot M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
+                    'Wegen \lm{ *| \, c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| \, c_{i}^{(k + 1)} |* + *| \, c_{i}^{(k)} |* \le M_{k} } ist \lm{ t_{k} \in \{ −1, 0, 1 \} }.'."\n".
+                    'Mit \lm{ *| \, c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} }'."\n".
+                    'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
-                'Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
+                'XXX Beweis über das superiale Kronecker-Kriterium (SKK)', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Über das superiale Kronecker-Kriterium nehmen wir nachfolgend den Beweis der Superialen-Transzendenz-Vermutung in Angriff.'."\n".
