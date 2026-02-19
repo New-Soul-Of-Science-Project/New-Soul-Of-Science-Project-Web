@@ -44,7 +44,7 @@
                     '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem} sehen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => false),
                     ))),
@@ -56,7 +56,7 @@
                     'indem wir \lm{ \e_{\s} } berechnen, dann erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  〈1〉․〈1〉^{〈1〉_{1}}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
@@ -69,7 +69,7 @@
                     'eulerschen Zahl finden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e  =  \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! }  =  \sum_{ \forall k \in \mathbb{N} } \frac{ 1 }{ k! }  }',
                                                footnote => '\\const{SupNum_g_footnote_text_EulerscheZahl}'),
                     ))),
@@ -106,7 +106,7 @@
                     'Dann folgt zusammen die Gleichheit:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
                                           label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => false),
                       array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?\subseteq  \mathbb{A}_{\R}  }'),
@@ -141,14 +141,14 @@
                     'Wir zeigen die \italic{Gegenrichtung} zur AKV:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  \subseteq  \mathbb{A}_{\R}  \;\;}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Zusammen mit der bereits \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{bewiesenen AKV-Richtung \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} }} folgt dann:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
@@ -158,49 +158,49 @@
                     'Mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  V_{s} \cap \bigcap_{p} V_{p}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'erhalten wir den Quotientenkörper:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Q}  :=  \operatorname{Frac}*( \mathbb{S}_{\Z} *)  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Definiere die \italic{sinnvollen Koeffizienten} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{ \alpha \in \mathbb{R}_{\text{fin}}  *|*  \alpha \cdot \s \in \mathbb{S}_{\Z, *\{ 1 *\}} *\}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Für ein Polynom'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( d = \operatorname{deg} P *) *[  P(x)  =  \sum_{i = 0}^{d} c_{i} \cdot x^{i}  \in  \mathbb{Z}[x]  *]  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'setze'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Fixiere nun \lm{ \alpha \in \mathbb{A}_{\S} } und setze'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  T  :=  \alpha \cdot \s  \in  \mathbb{S}_{\Z, *\{ 1 *\}}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Dann kann man \lm{ \Phi_{P}(\alpha) } umschreiben zu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} \cdot T^{i} \cdot \s^{d - i}  }',
                                           label_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s', label_text => '\name{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s}', label_incr => true),
                     ))),
@@ -215,7 +215,7 @@
                     'Dann gilt für jede endliche Primzahl \lm{ p }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha))  \ge  d  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -237,7 +237,7 @@
                     'Um \lm{ v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p } zu erzwingen, genügt schlicht:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \operatorname{deg} P_{k}​  \ge  k  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -259,14 +259,14 @@
                     'Dann existiert ein nichttriviales'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  P(x)  =  \sum_{i = 0}^{d} c_{i} \cdot x^{i}  \in  \mathbb{Z}[x]  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \; (\operatorname{mod} M)  }'),
                       array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  }'),
                     ))),
@@ -289,14 +289,14 @@
                     'Sei \lm{ P_{k}(x) = \sum_{i = 0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } eine Folge mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  P_{k + 1} ​  \equiv   P_{k} \; (\mathrm{mod} \, M_{k})  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'und „kleinsten Repräsentanten“'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| \, c_{i}^{(k)} |*   \le   \frac{ M_{k} }{ 2 }​​  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -365,7 +365,7 @@
                     'Aus \bold{(A)} und \bold{Lemma 1} folgt für jede endliche Primzahl \lm{ p }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}(\Phi_{P_{k}}(\alpha))  \ge  d_{k}  \ge  k  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -388,7 +388,7 @@
                     'ergibt sich (wie auf deiner Seite formuliert):'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  P(\alpha)  =  \lim\limits_{ k \rightarrow \infty } P_{k}(\alpha)  =  0  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -396,14 +396,14 @@
                     'Also ist \lm{ \alpha } \italic{reell algebraisch}, das heißt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\R}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Damit ist gezeigt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; . \;\; \blacksquare  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
@@ -413,7 +413,7 @@
                     'Da bereits in AKV  \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} } gezeigt ist, folgt insgesamt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  \;\; .  }'),
                     ))),
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
@@ -454,7 +454,7 @@
                     '\lm{ \mathrm{deg} P_{k} \ge k \Rightarrow } (wegen „\lm{ \s } trägt alle Primzahlen“)'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Phi_{P_{k}}(\alpha)  \in  p^{k} \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -465,7 +465,7 @@
                   '\bold{2. archimedische Seite:} \\\\'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| P_{k}(\alpha) |* \le 2^{−k}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -500,7 +500,7 @@
                   'Kurzformel', subline =>
                     '')),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\S}  \;\;\;  \text{ist algebraisch}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \exists P_{k}  \in  \mathbb{Z}[x]  \;\;\;  \text{monisch}  }'),
                     ))),
@@ -508,7 +508,7 @@
                     'Das bedeutet'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathrm{deg} P_{k}  \ge  k  }'),
                       array( display => 'on',  latex => '{  \Phi_{P_{k}}(\alpha)  \in  \bigcap_{p} p^{k} \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  *| P_{k}(\alpha) |*  \le  2^{−k}  }'),
@@ -570,14 +570,14 @@
                     ))),
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  \in  \mathbb{S}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Mit \lm{ T := \alpha \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } gilt in \lm{ \mathbb{S} } auch'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  =  \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i}  \;\; .  }'),
                     ))),
 
@@ -593,7 +593,7 @@
                     'Für \bold{jedes} \lm{ P \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P = d } und \bold{jede} endliche Primzahl \lm{ p } gilt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -620,7 +620,7 @@
                     '\lm{ d \ge 1 } und \lm{ M \ge 2 } und eine Restklasse\footnote{\const{SupNum_g_footnote_text_Restklasse}} \lm{ \overline{C} = (\overline{c}_{0}, \cdots , \overline{c}_{d}) \in (\mathbb{Z} / M \mathbb{Z})^{d + 1} } wählen wir einen festen Vertreter \lm{ C^{0} = (c_{0}^{0}, \cdots , c_{d}^{0}) \in \mathbb{Z}^{d + 1} } mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{d}^{0}  =  1  }'),
                       array( display => 'on',  latex => '{  c_{i}^{0}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }',
                                                footnote => '\\const{SupNum_g_footnote_text_Kongruenz}'),
@@ -632,7 +632,7 @@
                     'Dann existiert ein \bold{monisches} \lm{ P(x) = \sum_{i = 0}^{d} c_{i} x^{i} \in \mathbb{Z}[x] } mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{i}  \equiv  \overline{c}_{i} \;\; (\mathrm{mod} \, M)  }'),
                       array( display => 'on',  latex => '{  c_{d}  =  1  }'),
                       array( display => 'on',  latex => '{  *| P(\alpha) |*  \le  \epsilon  \;\; ,  }'),
@@ -641,14 +641,14 @@
                     'und Höhenkontrolle'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \max_{0 \le i \le d} *| c_{i} |*   \le   *| c_{i}^{0} |* + M H \;\; (0 \le i \le d - 1)  \;\; ,  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'wobei man \lm{ H } so wählen kann, dass'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  H   \le   C(d, \alpha) *( \frac{ M }{ \epsilon } *)^{\frac{ 1 }{ d }}​  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -658,7 +658,7 @@
                     'Definiere'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{i}  :=  c_{i}^{0} + M m_{i} \;\; (0 \le i \le d − 1)  }'),
                       array( display => 'on',  latex => '{  c_{d}  :=  1  }'),
                     ))),
@@ -666,7 +666,7 @@
                     'und'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  P(x)  =  \sum_{i = 0}^{d} c_{i} x^{i}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -677,7 +677,7 @@
                     'Die Menge \lm{ *\{ L_{\alpha}(m) *|* 0 \le m_{i} \le H *\} } hat \lm{ ( H + 1 )^{d} } Elemente und liegt in einem Intervall der Länge'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{    \le  H \sum_{i = 0}^{d − 1} *| \alpha |*^{i}   \le   H \cdot d \cdot \max *\{ 1, *| \alpha |*^{d − 1} *\}  =:  L  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -685,14 +685,14 @@
                     'Wähle \lm{ m } so, dass'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| \, L_{\alpha}(m) + \frac{ 1 }{ M } \sum_{i = 0}^{d} c_{i}^{0} \alpha^{i} \, |*   \le   \frac{ C( d, \alpha ) }{ H^{d} }  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Dann'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| P(\alpha) |*  =  *| \, \sum_{i = 0}^{d} c_{i} \alpha^{i} \, |*   =   *| \, \sum_{i = 0}^{d} c_{i}^{0} \alpha^{i} + M L_{\alpha}(m) \, |*  \\\ \qquad\qquad\qquad\qquad\;\;   \le   M \frac{ C( d, \alpha ) }{ H^{d} }  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -714,14 +714,14 @@
                     'Sei \lm{ P_{k}(x) = \sum_{i = 0}^{d_{k}} c_{i}^{(k)} x^{i} \in \mathbb{Z}[x] } eine Folge mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  P_{k + 1} ​  \equiv   P_{k} \; (\mathrm{mod} \, M_{k})  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'und'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *| \, c_{i}^{(k)} |*   \le   \frac{ M_{k} }{ 2 }​​  \;\;  ( 0 \le i \le d_{k} ​)  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -746,7 +746,7 @@
                     'In Verbindung mit \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{AKV} folgt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -774,7 +774,7 @@
                     'Wähle einen Zielgrad \lm{ d_{k + 1} \ge k + 1 } und eine Restklasse \lm{ \overline{C}^{(k + 1)} \in (\mathbb{Z} / M^{k+1} \mathbb{Z})^{d_{k + 1} + 1} } mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \overline{C}^{(k + 1)} \equiv P_{k}​ \; (\mathrm{mod} \, M_{k}​)  }'),
                       array( display => 'on',  latex => '{  \overline{c}_{d_{k+1}}^{​(k + 1)}​ \equiv 1 \; (\mathrm{mod} \, M_{k + 1}​)  \;\; .  }'),
                     ))),
@@ -787,7 +787,7 @@
                     'Aus \bold{(A)} und \condb{Lemma – Uniforme \lm{ p }-Adik} folgt für \bold{alle} endlichen Primzahlen \lm{ p }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}​(\Phi_{P}(\alpha)) \ge d_{k} \ge k  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
@@ -805,7 +805,7 @@
                     'Da wir bereits (AKV) \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} } bewiesen haben, liefert der Satz \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} } und damit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\; \mathbb{A}_{\S}  =  \mathbb{A}_{\R} \;\;}  \;\; .  }'),
                     ))),
 
@@ -828,16 +828,16 @@
                 'Fazit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'So erreichen wir den Nachweis, dass der Übergang von der endlichen, nullten Schicht oder Stelle des Stellenwertsystems der Superial-Zahlen'."\n".
-                    'zu zusätzlichen superialen Nachkommastellen, die nicht alle Null sind, – also durch das Hinzufügen von aktual unendlich kleinen Summanden zu endlichen reell algebraischen Zahlen –,'."\n".
-                    'aus Perspektive der Superial-Zahlen,'."\n".
+                    'So erreichen wir den Nachweis, dass der Übergang von der endlichen, reinen Null-Schicht des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems}'."\n".
+                    'der Superial-Zahlen zu zusätzlichen superial-infinitesimalen Nachkommastellen, die nicht alle Null sind'."\n".
+                    '– also durch das Hinzufügen von aktual unendlich kleinen Summanden zu endlichen reell algebraischen Zahlen –,'."\n".
                     'tatsächlich auch dem Übergang von den reell algebraischen Zahlen zu den transzendenten Zahlen entspricht.'."\n",
                       'Daraus folgt dann auch'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  \subset  \mathbb{R}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{R}  \not\subset  \mathbb{A}_{\S}  \;\; ,  }'),
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  \subset  \mathbb{R}_{\text{fin}}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{R}_{\text{fin}}  \not\subset  \mathbb{A}_{\S}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'wie bekannt.'."\n".
@@ -848,9 +848,19 @@
                     '')),
                   array( 'text', array( text => array(
                     'Die Veränderung unserer Perspektive von genereller Anwendung des Limes hin zu aktualer Unendlichkeit, wo dies möglich ist,'."\n".
-                    'eröffnet auch eine neue Perspektive auf die reellen Zahlen \lm{ \mathbb{R} }, wie wir erkennen.'."\n",
-                      'Dies ist die Perspektive der Superial-Zahlen und deren Erweiterungen,'."\n".
-                    'in der die Definition der reellen Zahlen, in Form von superialen reellen Zahlen \lm{ \mathbb{R}_{\S} } oder \lm{ \mathbb{S}_{\R} }, dann zu überdenken ist.'."\n",
+                    'eröffnet auch eine neue Perspektive auf die reellen Zahlen \lm{ \mathbb{R}_{\text{fin}} }, wie wir jetzt erkennen können.'."\n",
+                      'Denn eine Frage, die sich daraus ergibt, ist, welche endlichen Zahlen sind noch in den reellen Zahlen \lm{ \mathbb{R}_{\text{fin}} },'."\n".
+                    'die nicht in den reell algebraischen Zahlen \lm{ \mathbb{A}_{\S} } sind'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{T}_{\text{fin}}  :=  \mathbb{R}_{\text{fin}} \setminus \mathbb{A}_{\S}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die wir über die superiale Basis \lm{ \s } und ihre endlichen Primzahlen so separiert haben.'."\n".
+                    'Dies sind rein endliche transzendente Zahlen \lm{ \mathbb{T}_{\text{fin}} }, ohne infinite Summanden.'."\n".
+                    'Diese sollten ja den gerade hergeleiteten transzendenten Zahlen mit superial-infinitesimalen Summanden entsprechen.'."\n".
+                    'Darüber \jump{OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises}{diskutieren} wir gleich.'."\n",
                       'Diese Sicht offenbart die tiefe Verbindung des Zählens und der endlichen Primzahlen mit dem Aktual-Unendlichen.'."\n".
                     ''))),
 
