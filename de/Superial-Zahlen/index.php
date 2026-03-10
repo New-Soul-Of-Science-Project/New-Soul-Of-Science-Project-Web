@@ -22,13 +22,14 @@
                     'der vollständigen Induktion, ist: \\\\ \lm{ \s := *( \prod_{ \forall p \in \mathbb{P} } p *)^{ω} = ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )^{ω} \; }. \\\\'."\n".
                     'Und es gelingt uns sogar, die Eigenschaften dieses unendlichen Produkts auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems (ZFC) über \lm{ p }-adische Bewertungen formal sicher zu definieren.'."\n",
                       'Es ist offensichtlich, dass \lm{ \s } im Produkt mit jeder rationalen Zahl eine aktual unendlich große ganze Zahl ergibt.'."\n",
-                      'Wir werden Beweisen, dass dies nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
+                      'Wir werden die ›\name{OM:SupNum:Ueberrationalitaetsvermutung}‹ Beweisen und damit zeigen, dass diese unendliche Ganzheit nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
                     'durch Radikale darstellbaren reell algebraischen Zahlen, wie \lm{ *| \sqrt{ 2 } |* = 2^{\frac{1}{2}} }, und abschließend sogar für das Produkt'."\n".
                     'jeder reell algebraischen Zahl mit \lm{ \s }, also auch für alle irrationalen reell algebraischen Zahlen.'."\n".
-                    'Dies gelingt uns über die \lm{ p }-adische Bewertung \lm{ \mathrm{v}_{\!p}(a) } jedes reell algebraischen Faktors: \\\\ \lm{ a = \prod_{ \forall p \in \mathbb{P} } p^{\mathrm{v}_{p}(a)} }, mit \lm{ a \in \mathbb{A}_{\R} \land \mathrm{v}_{\!p}(a) \in \mathbb{Q} \; }.'."\n".
-                    '\\\\ Das ist eine bedeutende Erkenntnis.'."\n",
-                      'Der Beweis zeigt uns, wie wir aus jeder \lm{ x }-ten irrationalen Wurzel aus einer endlichen natürlichen Zahl \lm{ n }'."\n".
-                    'durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, also \lm{ \sqrt[x]{n} \cdot \rad(n)^{ω} },'."\n".
+                    //%! 'Dies gelingt uns über die \lm{ p }-adische Bewertung \lm{ \mathrm{v}_{\!p}(a) } jedes reell algebraischen Faktors: \\\\ \lm{ a = \prod_{ \forall p \in \mathbb{P} } p^{\mathrm{v}_{p}(a)} }, mit \lm{ a \in \mathbb{A}_{\R} \land \mathrm{v}_{\!p}(a) \in \mathbb{Q} \; }.'."\n".
+                    'Dazu Beweisen wir auch die ›\name{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹ und die ›\name{OM:SupNum:Superiale-Transzendenz-Vermutung}‹.'."\n".
+                    'Das ist eine bedeutende Erkenntnis.'."\n",
+                      'Der Beweis der ›\name{OM:SupNum:Ueberrationalitaetsvermutung}‹ zeigt uns, wie wir aus jeder \lm{ x }-ten ganzzahligen Wurzel aus einer endlichen natürlichen Zahl \lm{ n },'."\n".
+                    'auch, wenn sie ein irrationales Ergebnis hat, durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, also \lm{ \sqrt[x]{n} \cdot \rad(n)^{ω} },'."\n".
                     'eine aktual unendlich große ganze Zahl machen können.'."\n".
                     'Wodurch alle irrationalen Wurzeln aus natürlichen Zahlen als Bruch aktual unendlich großer ganzzahliger Quotienten, also mit \lm{ \sqrt[x]{n} = \frac{ \sqrt[x]{n} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } }, dargestellt werden können.'."\n".
                     'Was ja mit rationalen Brüchen endlicher Quotienten nicht geht.'."\n".
