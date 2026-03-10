@@ -196,30 +196,30 @@ Integration von Yogapraxis mit moderner Naturphilosophie und Quantenphysik. Yoga
 **Verzeichnis:** `de/Superial-Zahlen/` (~20 Seiten)
 
 #### Worum geht es?
-Eine neue Zahlentheorie der Analysis, die den klassischen Limes durch **aktual unendliche Zahlen** ersetzt. Grundlage ist die **superialen Basis σ** (sigma).
+Eine neue Zahlentheorie der Analysis, die den klassischen Limes durch **aktual unendliche Zahlen** ersetzt. Grundlage ist die **superiale Basis s**.
 
 #### Definition der superialen Basis
 ```
-σ := ∏(p∈P) p^ω = (2·3·5·7·11·13·17·...)^ω
+s := ∏(p∈P) p^ω = (2·3·5·7·11·13·17·...)^ω
 ```
 Das unendliche Produkt aller endlichen Primzahlen in ω-ter Potenz bildet die Basis eines aktual unendlichen Stellenwertsystems.
 
 #### Mathematische Eigenschaften
 - **Algebraische Struktur**: Angeordneter algebraischer Körper
-- **Aktual unendlich klein**: σ⁻¹ ersetzt das Differential dx
-- **Aktual unendlich groß**: Vielfache von σ
+- **Aktual unendlich klein**: s⁻¹ ersetzt das Differential dx
+- **Aktual unendlich groß**: Vielfache von s
 - **Fraktale Struktur**: Über Primzahlpotenzen organisiert
 
 #### Ableitungen ohne Limes
-- f(x) = x² → f'(x) = 2x + σ⁻¹
-- f(x) = x³ → f'(x) = 3x² + 3x·σ⁻¹ + σ⁻²
-- σ⁻¹ als unendlich kleine, aber definite Größe
+- f(x) = x² → f'(x) = 2x + s⁻¹
+- f(x) = x³ → f'(x) = 3x² + 3x·s⁻¹ + s⁻²
+- s⁻¹ als unendlich kleine, aber definite Größe
 
 #### Offene Vermutungen
 1. **Primzahlprodukt-Vermutung**: ω = 2·3·5·7·11·... (als bewiesen dargestellt)
 2. **Überrationalitätsvermutung**: Radikale als sinnvolle Koeffizienten
 3. **Algebraische-Koeffizienten-Vermutung**: Alle reell algebraischen Zahlen als Koeffizienten
-4. **Superiale-Transzendenz-Vermutung**: Struktur transzendenter Zahlen in σ-Potenzen
+4. **Superiale-Transzendenz-Vermutung**: Struktur transzendenter Zahlen in s-Potenzen
 5. Neue Einsichten zur **Kontinuumshypothese** und **Riemannschen Vermutung**
 
 #### Kapitelstruktur
@@ -246,7 +246,7 @@ Erweiterung der klassischen Ordinalzahlen um **Rückwärtszählen ins Negative**
 - Ontologische Deutung: Negative Zahlen als „fehlende" Mengen
 
 #### Verbindung zu anderen Sektionen
-- Erklärt die Struktur von σ = ω^ω in den Superial-Zahlen
+- Erklärt die Struktur von s = ω^ω in den Superial-Zahlen
 - Zeigt, warum ω eine Primfaktorzerlegung besitzt
 - Mögliche Relevanz für die Riemannsche Vermutung
 
