@@ -82,8 +82,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a  =  *〈 1 *〉.*〈 \frac{ 1 }{ 2 } \s *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  1 \s^{0} + *( \frac{ 1 }{ 2 } \s *) \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *( 1 + \frac{ 1 }{ 2 } *) \s^{0}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  1 \s^{0} + *( \frac{ 1 }{ 2 } \s *) \cdot \s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  *( 1 + \frac{ 1 }{ 2 } *) \s^{0}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 \frac{ 3 }{ 2 } *〉.  }'),
                     ))),
                   array( 'text', array( text => array(
