@@ -267,7 +267,7 @@ Zähl-Operator        o(0)    — Inkrement (+1) / Zeit
 Addition             o(1)    — a + b
 Multiplikation       o(2)    — a · b
 Exponentiation       o(3)    — a^b
-Tetration            o(4)    — a↑↑b = a^(a^...^a)
+niedere Tetration            o(4)    — _b a = ((a^a)^a)^a...
 ...                  ...
 ```
 
