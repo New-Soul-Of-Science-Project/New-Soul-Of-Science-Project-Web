@@ -55,7 +55,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner als auch einen Zähler geben muss, die teilerfremd sind'."\n".
@@ -120,8 +121,10 @@
                       array( display => 'on',  latex => '{  \vdots  }'),
                       array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und immer so fort, für alle endlichen ganzen Potenzen von Zwei – \lm{ 2^{x} }.'."\n".
@@ -162,21 +165,50 @@
                 'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'So verstanden und allgemeiner ausgedrückt, ergibt sich die Struktur der Lösung wie folgt:'."\n".
+                    'Der obige Widerspruchsbeweis macht die Bedingungen eines Beweises und damit die Struktur der Lösung des Problems sichtbar:'."\n".
+                    ''))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Bei den rationalen Zahlen sind Zähler und Nenner endliche ganze Zahlen, nur, dass der Zähler nicht Null sein kann.'."\n".
+                          'Dadurch sind Nenner und Zähler bei diesen Zahlen ganz generell nur endlich oft zu kürzen. (Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational})',
+                        'Dann muss das Quadrat des Nenners genau doppelt so groß sein, wie das Quadrat des Zählers (Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}).'."\n".
+                          'Woraus folgt, wie wir zeigten: Zähler und Nenner müssen gleichzeitig beliebig endlich oft durch \lm{ 2 } teilbar sein. (Formeln \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar} und \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar})',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Und beides steht im Widerspruch, wie wir sahen.'."\n",
+                      'An der letzen Bedingung können und wollen wir nichts ändern.'."\n".
+                    'Aber die erste Bedingung, dass es rationale Zahlen mit endlichen Quotienten sein müssen, sollten wir auf unsere Möglichkeiten überprüfen,'."\n".
+                    'denn wir beschäftigen uns hier ja mit der Einführung neuer Zahlen.'."\n",
+                      'Der Widerspruch tritt ja nur dann auf, wenn wir die Bedingung aufrechterhalten, dass Zähler und Nenner endliche Zahlen sein sollen'."\n".
+                    'und dadurch nur endlich oft zu kürzen sind.'."\n".
+                    'Aber wir beschäftigen uns hier ja gerade mit der Einführung neuer Zahlen mit neuen Eigenschaften.'."\n".
+                    'So lassen wir diese Bedingung im Rahmen der Superial-Zahlen insofern fallen, dass wir aktual unendliche Zähler und Nenner zulassen und der Bruch damit \italic{überrational} wird.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die aktual unendliche Teilbarkeit vom Zähler und vom Nenner', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Demnach kann und muss sich die Anzahl der Teilbarkeit durch \lm{ 2 }, jeweils von Zähler und Nenner, im Aktual-Unendlichen befinden'."\n".
+                    'als auch ihr Verhältnis dem Betrag der Wurzel aus Zwei entsprechen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall g \in \mathbb{N}_{\infty} *) *( \forall i \in \mathbb{N} *) *( i < g *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{g} }{ 2^{g} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall g \in \mathbb{N}_{\infty} *) *( \forall i \in \mathbb{N} *) *( i < g *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{g} }{ 2^{g} }  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der obige Widerspruchsbeweis erzeugt eine Lösung des Problems darüber, dass Nenner und Zähler immer wieder'."\n".
-                    'durch \lm{ 2 } teilbar sein müssen.'."\n".
-                    'Und die Anzahl der Teilbarkeit muss sich im Aktual-Unendlichen befinden.'."\n".
-                    'Damit lässt sich die Anzahl der Teilbarkeit durch die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'normieren.'."\n",
-                      'Für die vollständige Induktion verwenden wir das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }} mit dem ihm entsprechenden aktual'."\n".
-                    'unendlich großen Wert.'."\n".
-                    'Und \lm{ ω } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
+                    'was uns die Struktur der möglichen Lösungen liefert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Normung der Teilbarkeit', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Um die Menge der Lösungen auf eine bestimmte zu reduzieren, lässt sich die Anzahl der Teilbarkeit auf die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'normieren.'."\n".
+                    'Die vollständige Induktion wird durch das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }}, mit seinem entsprechenden aktual'."\n".
+                    'unendlich großen Wert, dargestellt und wir setzen es in die vorstehende Formel für \lm{ g } ein.'."\n".
+                    'Damit bleibt die Bedingung der fortlaufenden Teilbarkeit erfüllt.'."\n".
+                    'So erhalten wir'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -186,40 +218,34 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen in \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}, hier \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s}},'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n",
-                      'Im Nenner erhalten wir nun offensichtlich eine ganze Zahl, weil es sich um eine unendliche ganze Potenz einer endlichen ganzen Zahl handelt:'."\n",
+                    'gilt.'."\n",
+                      'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Ganzzahligkeit von Zähler und Nenner', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Nenner erhalten wir nun offensichtlich die ganze Zahl'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aber im Zähler können wir uns dessen noch nicht sicher sein,'."\n".
-                    'da er, wie wir sehen, in einen Anteil zerlegt werden kann,'."\n".
-                    'der dem Nenner entspricht und der übrige Faktor ist genau die irrationale Wurzel aus Zwei,'."\n".
-                    'die ein wesentlicher Teil unseres Problems ist, wofür wir eine Lösung suchen.'."\n",
-                      'Führt das also wirklich zur Lösung unseres Problems, wenn wir einfach nicht mehr darauf bestehen,'."\n".
-                    'dass Nenner und Zähler endliche Zahlen sein müssen?'."\n",
-                      'Eine auf den ersten Blick nicht gleich realistisch erscheinende Möglichkeit ist,'."\n".
-                    'das es ja durchaus sein könnte, dass der Zähler ansich bereits so wie er ist, genau wie der Nenner, eine ganze Zahl darstellt.'."\n",
-                      'Ich komme darauf, weil uns der obige Widerspruchsbeweis einen Hinweis darauf gibt,'."\n".
-                    'dass die Darstellung der Wurzel aus Zwei mit einem Bruch aus zwei ganzen Zahlen nur dann möglich ist, wenn beliebig endlich oft'."\n".
-                    '– und damit potenziell endlos – Zweien gekürzt werden können.'."\n".
-                    'Die Lösung könnte also sein, dass eine aktual unendlich große natürliche Potenz von Zwei multipliziert mit der Wurzel aus Zwei'."\n".
-                    'einfach schon eine ganze unendlich große Zahl ergibt.'."\n".
-                    'Denn so erhalten wir, in einem Exponenten zusammengefasst, einen unendlich großen ganzen Exponenten plus Einhalb.'."\n".
-                    'Und anders als das bei endlichen Exponenten, die rationale Anteile in der Summe haben, der Fall ist, ergibt unser Exponent direkt eine ganze Zahl.'."\n",
-                      'Der Widerspruchsbeweis enthält eine Vorschrift, wie die Lösung aussieht:'."\n".
-                    'Auch der so konstruierte Zähler des Bruchs muss eine unendlich große ganze Zahl sein, wie der Beweis zeigt, eben einfach schon dadurch, dass er beliebig endlich oft durch \lm{ 2 } teilbar ist.'."\n".
-                    'Mit anderen Worten, der Faktor \lm{ 2^{ω} } vor \lm{ 2^{\frac{ 1 }{ 2 }} } macht, nach unserem Beweis, aus der Wurzel aus Zwei'."\n".
+                    'weil es sich um eine aktual unendliche ganze Potenz einer endlichen ganzen Zahl handelt.'."\n",
+                      'Im Zähler muss es sich ebenfalls um eine ganze Zahl handeln, denn dies ist eine der Bedingungen, die zum Widerspruch geführt hatten.'."\n".
+                    'Damit ist die Ganzzahligkeit des Zählers in der Struktur des Widerspruchsbeweises und der Möglichkeiten seiner Lösung, hin zum Beweises,'."\n".
+                    'wenn wir Aktual-Unendlichkeit zulassen, verankert.'."\n".
+                    'Diese Bedingung ergibt sich ja aus der Suche nach einem rationalen Bruch zur Darstellung der Wurzel.'."\n".
+                    'Also macht der Faktor \lm{ 2^{ω} } tatsächlich aus der Wurzel aus Zwei, also aus \lm{ 2^{\frac{ 1 }{ 2 }} },'."\n".
                     'eine ganze unendlich große Zahl:'."\n".
                     ''))),
                   array( 'equations',
@@ -229,8 +255,30 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => true),
                     ))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Eine selbstbezügliche Lösung – der sonst unsichtbarer Kontext', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Darüber hinaus müssen der Nenner \lm{ b } und der Zähler \lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
+                    'Was im ersten Moment erstaunlich erscheint, und einem Kopfschmerzen bereiten kann, ist,'."\n".
+                    'dass der Zähler gerade den Term \lm{ 2^{\frac{ 1 }{ 2 }} } beinhaltet, für dessen Darstellung wir einen Bruch aus zwei ganzen Zahlen suchen.'."\n".
+                    'Wie kann der gesuchte Wert eines Bruchs ein Teil des Bruchs, also der Lösung, sein?'."\n".
+                    'Handelt es sich dann nicht um einen unzulässigen Zirkelschluss?'."\n",
+                      'Dies kann sein, weil wir nichts anderes gesucht haben, als einen Bruch aus zwei ganzen Zahlen, die beide beliebig endlich oft'."\n".
+                    'durch Zwei zu teilen sind und deren Verhältnis eben genau \lm{ 2^{\frac{ 1 }{ 2 }} } ist.'."\n".
+                    'Und genau das liefert unsere Lösung mit dem „neuen“ aktual unendlichen Term oder Symbol \lm{ 2^{ω} } in Zähler und Nenner,'."\n".
+                    'weil der Faktor \lm{ 2^{ω} } aus \lm{ 2^{\frac{ 1 }{ 2 }} }, mit \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }, eine ganze Zahl macht.'."\n".
+                    'Und nur dafür brauchten wir eine Lösung, die wir so gefunden haben.'."\n".
+                    'Dafür spielt es keine Rolle, ob der gesuchte Wert des Bruchs als Faktor im Zähler Teil unserer Lösung ist.'."\n".
+                    'Dieser Selbstbezug ist also kein unzulässiger Zirkelschluss.'."\n",
+                      'Der Kontext in dem die Wurzel aus Zwei steht, der sonst unsichtbar im Hintergrund wirkt, wird hier nur sichtbar,'."\n".
+                    'weil die Bedingung, einen Bruch aus zwei ganzen Zahlen zu finden, der diesen Wert besitzt, ihn erst zu Tage fördert.'."\n".
+                    'Denn ohne diese Bedingung verschwindet dieser Kontext durch kürzen einfach.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Gegenprobe', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nun machen wir die Gegenprobe, ob der Zähler \lm{ a } und der Nenner \lm{ b }, die wir im Beweis gefunden haben, die Bedingung wirklich erfüllen:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -239,7 +287,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unseren Lösungsansatz eingesetzt, führt zu'."\n".
@@ -762,23 +811,23 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
-                      'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
-                      'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
-                      'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
-                      'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
-                      'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
-                      'beschäftigen wir uns im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}}.'."\n",
+                      'Die irrationalen Wurzeln gehören zu den \italic{überrationalen Zahlen}.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Die algebraischen irrationalen Koeffizienten gehören zu den \italic{überrationalen Zahlen}.'."\n",
-                      'Dass ein Produkt einer bestimmten riesigen Zahl mit einer dazu passenden irrationalen Wurzel'."\n".
-                    'immer noch eine ganze Zahl ergibt, ist etwas sehr bemerkenswertes.'."\n".
-                    'Wir erhalten eine aktual unendlich große Potenz, mit einem rationalen Summanden, die trotzdem eine ganze Zahl ergibt.'."\n",
-                      'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
-                    'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
+                    'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
+                    'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
+                    'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
+                    'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
+                    'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
+                    'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
+                    'beschäftigen wir uns im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹}.'."\n",
+                      'Dass es zu jeder irrationalen Wurzel einen passenden aktual unendlich großen Faktor gibt,'."\n".
+                    'die im Produkt eine ganze Zahl ergeben, ist etwas sehr bemerkenswertes.'."\n".
+                    'Wir erhalten eine aktual unendlich große ganze Potenz einer endlichen ganzen Zahl, die einen rationalen Summanden enthält, die trotzdem immer eine ganze Zahl ergibt.'."\n".
+                    'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
+                    'Sie eröffnet eine neue Welt, in der weiter ein großes Entdeckungspotenzial steckt.'."\n".
                     ''))),
                   /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
