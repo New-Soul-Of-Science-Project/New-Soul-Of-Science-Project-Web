@@ -75,30 +75,31 @@
                       array( display => 'on',  latex => '{  *( \exists z_{k}, z_{g} \in \mathbb{Z} *) *( \forall a \in \mathbb{R} *)  *[  z_{k}  <  a  <  z_{g}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Als Gegenbeispiel betrachten wir den Koeffizienten \lm{ \frac{1}{2} \s } in der Stelle \lm{ \s^{-1} }.'."\n".
-                    'Er ist selbst von der aktual unendlichen Größenordnung \lm{ \s } und damit keine endliche Zahl —'."\n".
-                    'er erzeugt deshalb einen Übertrag in die endliche Stelle:'."\n".
+                    'Als Gegenbeispiel betrachten wir den Koeffizienten \lm{ \frac{1}{2} \s + 3 \s^{-1} } in der Stelle \lm{ \s^{-1} }.'."\n".
+                    'Er ist selbst von der aktual unendlichen Größenordnung \lm{ \s }, trägt einen infiniten Anteil von \lm{ \s^{-1} } und ist damit keine rein endliche Zahl —'."\n".
+                    'er erzeugt deshalb einen Übertrag in die endliche Stelle und in eine infinite Stelle:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  *〈 1 *〉.*〈 \frac{ 1 }{ 2 } \s *〉  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  1 \s^{0} + *( \frac{ 1 }{ 2 } \s *) \cdot \s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  *( 1 + \frac{ 1 }{ 2 } *) \s^{0}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 \frac{ 3 }{ 2 } *〉.  }'),
+                      array( display => 'on',  latex => '{  a  =  *〈 1 *〉.*〈 \frac{ 1 }{ 2 } \s + 3 \s^{-1} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  1 \s^{0} + *( \frac{ 1 }{ 2 } \s + 3 \s^{-1} *) \cdot \s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a  =  *( 1 + \frac{ 1 }{ 2 } *) \s^{0} + 3 \s^{-2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 \frac{ 3 }{ 2 } *〉.*〈 0 *〉*〈 3 *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen: \lm{ \frac{1}{2} \s } ist kein sinnvoller Koeffizient, weil das Produkt \lm{ \frac{1}{2} \s \cdot \s^{-1} = \frac{1}{2} }'."\n".
-                    'die endliche Stelle verändert und einen Übertrag erzeugt — er enthält selbst eine aktual unendliche Größe.'."\n",
+                    'Wir sehen: \lm{ \frac{1}{2} \s + 3 \s^{-1} } ist kein sinnvoller Koeffizient, weil die Produkte \lm{ \frac{1}{2} \s \cdot \s^{-1} = \frac{1}{2} }'."\n".
+                    'sowie \lm{ 3 \s^{-1} \cdot \s^{-1} = 3 \s^{-2} }'."\n".
+                    'die endliche Stelle und eine unendlich kleine Stelle verändern und damit Überträge erzeugen — er enthält selbst aktual unendliche Größen.'."\n",
                       'Es darf sich eben bei \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
                     'außer die Stelle mit der Potenz Eins von \lm{ \s }.'."\n".
-                    'Das heißt, dass \lm{ a } keine aktual unendlich kleinen Summanden enthalten darf.'."\n".
+                    'Das heißt, dass \lm{ a } keine aktual unendlich  großen, aber eben auch keine aktual unendlich kleinen Summanden enthalten darf.'."\n".
                     'Das Produkt \lm{ a \cdot \s } muss eben wirklich eine ganze rein aktual unendlich große Zahl sein.'."\n".
                     'Das bedeutet, sie muss \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{ohne ihre Nachkommastellen, welcher Art auch immer, die gleiche Zahl}'."\n".
                     'bleiben, wie in Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich} definiert.'."\n".
                     'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n",
                       'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n",
                       'Für die Definition der Menge der sinnvollen Koeffizienten darf die Ausgangsmenge keine unendlich großen und unendlich kleinen, also keine infinitesimalen Elemente beinhalten.'."\n".
-                    'Zum einen sollte die Menge der reellen Zahlen, nach Standarddefinition, solche Elemente nicht enthalten:'."\n".
+                    'Zum einen sollte die Menge der reellen Zahlen \lm{ \mathbb{R}_{\text{fin}} }, nach Standarddefinition, solche Elemente nicht enthalten:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'quote', text => array(
