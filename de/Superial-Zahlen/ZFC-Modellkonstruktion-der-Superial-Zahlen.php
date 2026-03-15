@@ -129,7 +129,7 @@
                   array( 'text', array( text => array(
                     'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s', text =>
                       
                 'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
