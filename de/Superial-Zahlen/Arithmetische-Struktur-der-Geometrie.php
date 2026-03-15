@@ -409,15 +409,16 @@
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
+                    'gilt.'."\n",
+                      'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
                     'Denn der Faktor \lm{ 2^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
                     'könnte deshalb natürlich direkt gekürzt werden.'."\n".
                     'Womit wir auch sofort erkennen, dass die Formel wahr ist.'."\n",
