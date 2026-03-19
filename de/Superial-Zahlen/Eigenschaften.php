@@ -1443,7 +1443,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen'),
                     )),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen', text =>
@@ -1607,13 +1607,13 @@
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen', text =>
                       
-                'Aktual-Unendliche Exponenten der Primzahlen in Potenzzahlen', subline =>
+                'Aktual-Unendliche Exponenten der Primzahlen in Potenzialzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} bringt neue Erkenntnisse bezüglich'."\n".
-                    'des Rechnens mit aktual unendlichen Potenzen von Primzahlen oder allgemeiner von natürlichen Zahlen in \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzzahlen} mit sich.'."\n".
+                    'des Rechnens mit aktual unendlichen Potenzen von Primzahlen oder allgemeiner von natürlichen Zahlen in \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzialzahlen} mit sich.'."\n".
                     'Diese betreffen die Ganzzahligkeit von aktual unendlichen Exponenten mit endlichen rationalen Anteilen in ihrer Summe:'."\n".
                     ''))),
                   array( 'equations',
@@ -1707,7 +1707,7 @@
                     array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  }',
-                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'So sind die Potenzialzahlen diesbezüglich einfach ein Spezialfall.'."\n".

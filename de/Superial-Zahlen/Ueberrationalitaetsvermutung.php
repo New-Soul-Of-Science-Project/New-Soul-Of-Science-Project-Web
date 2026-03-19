@@ -66,8 +66,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *)  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'denn ein rationaler Bruch lässt bis auf einen kleinsten Nenner und Zähler kürzen,'."\n".
-                      'bis sie keine gemeinsamen Primfaktoren mehr haben.'."\n".
+                      'denn ein rationaler Bruch lässt, bis auf einen kleinsten Nenner und Zähler endlich oft kürzen,'."\n".
+                      'bis sie keine gemeinsamen Primfaktoren mehr haben, da beide Quotienten endliche ganze Zahlen sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
@@ -226,8 +226,8 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'gilt.'."\n",
-                      'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n".
+                    'gilt.'."\n".
+                    'Wodurch wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen können.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Die Ganzzahligkeit von Zähler und Nenner', subline =>
@@ -255,8 +255,44 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => true),
                     ))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Eine selbstbezügliche Lösung – der sonst unsichtbarer Kontext', subline =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Existenz der neuen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Weil \lm{ 2^{ω} } und \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } sehr interessante und wichtige Zahlen, aber keine Superial-Zahlen, sind,'."\n".
+                    'ist die Frage, wo sie „leben“; sprich, in welcher Menge oder Klasse sie existieren.'."\n".
+                    'Dazu mehr im Kapitel \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}‹}'."\n".
+                    'und im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen}‹},'."\n".
+                    'wo wir sie Potenzialzahlen nennen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Betrachtung im Rahmen der Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir forschen und beweisen unsere Vermutung ja im Rahmen der Superial-Zahlen.'."\n".
+                    'So interessiert uns natürlich besonders, welche Bedeutung unsere Erkenntnis hier haben'."\n",
+                      'Unser normierter Faktor \lm{ 2^{ω} } ist Teil des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}.'."\n".
+                    'Daher können wir den Faktor auch wie folgt ersetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot \s }{ \s }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hier ist ebenso erfüllt, dass \lm{ \s } beliebig endlich oft durch Zwei teilbar ist.'."\n".
+                    'und sowohl Zähler als auch Nenner ganze Zahlen sind.'."\n".
+                    'Und die Eigenschaft der Ganzzahligkeit bezüglich des Zählers mit \lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s } für die Superial-Zahlen von entscheidender Bedeutung.'."\n".
+                    'Denn damit wird \lm{ 2^{\frac{ 1 }{ 2 }} } ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient}'."\n".
+                    'der Superial-Zahlen.'."\n".
+                    'Und so existiert die unendlich große Zahl'."\n".
+                    '\lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } als ganze Superial-Zahl der ersten Schicht,'."\n".
+                    'was die einzige bisher ungeklärte Frage gewesen ist.'."\n".
+                    'Und so können wir auch sagen, dass die eingangs gefundene ganze Zahl \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } im Sinne eines Teilprodukts'."\n".
+                    'von \lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s } existiert,'."\n".
+                    'und so auch als ganze \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzialzahl}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Eine selbstbezügliche Lösung – der sonst unsichtbare Kontext', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Was im ersten Moment erstaunlich erscheint, und einem Kopfschmerzen bereiten kann, ist,'."\n".
@@ -267,6 +303,7 @@
                     'durch Zwei zu teilen sind und deren Verhältnis eben genau \lm{ 2^{\frac{ 1 }{ 2 }} } ist.'."\n".
                     'Und genau das liefert unsere Lösung mit dem „neuen“ aktual unendlichen Term oder Symbol \lm{ 2^{ω} } in Zähler und Nenner,'."\n".
                     'weil der Faktor \lm{ 2^{ω} } aus \lm{ 2^{\frac{ 1 }{ 2 }} }, mit \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }, eine ganze Zahl macht.'."\n".
+                    'Gleiches gilt, wie gesagt, auch für \lm{ \s }.'."\n".
                     'Und nur dafür brauchten wir eine Lösung, die wir so gefunden haben.'."\n".
                     'Dafür spielt es keine Rolle, ob der gesuchte Wert des Bruchs als Faktor im Zähler Teil unserer Lösung ist.'."\n".
                     'Dieser Selbstbezug ist also kein unzulässiger Zirkelschluss.'."\n",
@@ -1828,12 +1865,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'Für Einträge, die ins Aktual-Unendliche gehen, ist zu berücksichtigen, dass folgende'."\n".
-                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k, m, x \in \mathbb{N}^{+} *) *( \forall y \in \mathbb{Z} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Hier die Einträge nach dem gemeinsamen Teiler der Potenzen, also der Oberpotenz, und innerhalb dieser nach der Größe der Oberpotenzbasis sortiert:'."\n".
