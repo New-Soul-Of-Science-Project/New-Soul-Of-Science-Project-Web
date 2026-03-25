@@ -30,6 +30,8 @@
                     '\bold{Persönliche Erfahrung}',
                     '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
                     '\bold{Weitere Mythen}',
+                    '• Jachin und Boas: So werden die Säulen am Salomonischen Tempel in Jerusalem genannt.',
+                    '– Jachin wird mit dem Mond und Boas mit der Sonne identifiziert und beide stehen offenbar auch für das weibliche und männliche Prinzip.',
                     '• Das Hexagramm oder der Davidstern symbolisiert die Schlangen des Hermesstabs – eine Zweipoligkeit –, männlich und weiblich sowie oben und unten und so weiter.',
                     '– Das Hexagramm steht auch für die Alchemie des Hermitismus, für die Elemente.',
                     '– Ich meine im Hexagramm auch das hermitische ›solve et coagula‹ widerzuerkennen. Solve für das nach oben zeigende und coagula für das nach unten zeigende Dreieck, entsprechen der tiefen Atmung und ihrer Funktion im Kundalini-Prozess.',

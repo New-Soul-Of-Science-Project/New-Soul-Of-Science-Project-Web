@@ -13,8 +13,9 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{X}',
-                    // '• X',
+                    '• Jachin und Boas: So werden die Säulen am Salomonischen Tempel in Jerusalem genannt.',
+                    '– Jachin wird mit dem Mond und Boas mit der Sonne identifiziert und beide stehen offenbar auch für das weibliche und männliche Prinzip.',
+                    '– In der Freimaurerei kennen wir noch den Abschlussstein über Jachin und Boas als das Heilige Kind, dass aus beiden gemeinsam geboren wird.',
                     ))),
                       
                   array( 'text', array( text => array(
