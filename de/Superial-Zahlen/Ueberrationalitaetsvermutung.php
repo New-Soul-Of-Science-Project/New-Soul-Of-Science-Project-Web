@@ -866,6 +866,14 @@
                     'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
                     'Sie eröffnet eine neue Welt, in der weiter ein großes Entdeckungspotenzial steckt.'."\n".
                     ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Die Ganzzahligkeit von Zähler und Nenner sowie die Existenz der neuen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Ganzzahligkeit der Quotienten und deren Existenz haben wir schon zuvor beim Beweis der Überrationalität der Wurzel aus Zwei besprochen'."\n".
+                    'und sind im wesentlichen, unter Berücksichtigung der Primzahlen und ihrer Potenzen, auf unser nun allgemeines Ergebnis zu übertragen.'."\n".
+                    ''))),
                   /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
                 'X Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>

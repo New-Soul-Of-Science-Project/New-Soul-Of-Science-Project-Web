@@ -1706,7 +1706,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  :\in  \mathbb{Pn}  }',
                                           label_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
