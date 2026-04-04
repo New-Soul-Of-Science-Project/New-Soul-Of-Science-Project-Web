@@ -875,7 +875,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
+                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises'),
                     )),
                 )
           ); ?>
@@ -883,9 +883,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • X Konsequenzen des Beweises zu den transzendenten Zahlen  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen',
+          <!  • Diskussion des Beweises  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -898,68 +898,37 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wie schon im Kapitel \color{*Bearb}{Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen (gelöscht, da verkehrt)} \hidden{\italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}}'."\n".
-                    'gesagt, können wir tatsächlich jede endliche Indexmenge von \lm{ p }-adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) = q_{p} },'."\n".
-                    'mit \lm{ q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} }, wählen und erhalten eine reell algebraische Zahl:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  \mathrm{v}_{\!p}(a)  =  q_{p}  *]  }'),
-                      array( display => 'on',  latex => '{  a  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{q_{p}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a  \in  \mathbb{A}_{\R}  }'),
-                    ))),
+                    'Die transzendenten Zahlen sind so extrem, dass an ihnen die facettenreichen Eigenschaften des Unendlichen sichtbar werden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises:X', text =>
+
+                'Zwei Perspektiven auf die transzendenten Zahlen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Dies ist tatsächlich eine bidirektionale Abbildung, bis auf den Fall \lm{ a = 0 } und das Vorzeichen.'."\n",
-                      'Und dies hat nun Konsequenzen für Exponenten endlich vieler Primzahlen \lm{ \iota_{p} } (\lm{ \iota } genannt Iota) die irrational reell algebraisch sind.'."\n".
-                      'Wenn \lm{ \mathbb{I} } für die Menge der irrationalen Zahlen und \lm{ \mathbb{T} } für die Menge der transzendenten Zahlen steht:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{I}  =  \mathbb{R} \setminus \mathbb{Q}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{T}  =  \mathbb{R} \setminus \mathbb{A}_{\R}  }'),
-                      array( display => 'on',  latex => '{  *( \forall \iota_{p} \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \mathrm{v}_{\!p}(\tau)  =  \iota_{p}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall \iota_{p} \in \mathbb{I} \setminus *\{ 0 *\} *) *( \#\!*\{ \iota_{p} *\} \in \mathbb{N}^{+} *)  *[  \tau  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{\iota_{p}}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \tau  \in  \mathbb{T}  }'),
-                    ))),
+                    'Auf der einen Seite haben wir die transzendenten Zahlen als Teil der reellen Zahlen, wenn wir durch die Brille des Limes und der Dedekindschen Schnitte gucken.'."\n".
+                    'Hier stellen sie sich als rein endliche Zahlen dar, die keine infinitesimalen Summanden enthalten.'."\n".
+                    'Auf der anderen Seite sehen wir, dass transzendente Zahlen die sind, die immer infinitesimale Summanden enthalten,'."\n".
+                    'wenn wir durch die Brille der Superial-Zahlen mit ihrer fraktalen Aktual-Unendlichkeit gucken.'."\n",
+                      'Ist dies ein Widerspruch?'."\n".
+                    'Oder ist eine Erklärung denkbar, die beide Seiten zusammenbringen kann?'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises:X', text =>
+
+                'Das Potential-Unendliche verhält sich wie das Aktual-unendliche', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Unser \lm{ \tau } (genannt Tau) ist also eine transzendente Zahl, wenn seine p-adische Bewertung (Primzahlbewertung)'."\n".
-                    'in ihren Potenzen irrationale Zahlen besitzt.'."\n",
-                      'Daher ist schon jede einzelne Primzahl mit irrationaler Potenz eine transzendente Zahl,'."\n".
-                      'denn die Anzahl der Potenzen in der Indexmenge \lm{ \#\!*\{ \iota_{p} *\} } kann ja auch nur Eins sein:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall \iota \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \tau  =  \pm p^{\iota}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \tau  \in  \mathbb{T}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Frage ist nun, ist ein überrationaler Bruch einer Potenz in der Größenordnung \lm{ ω } kein aktual unendlicher ganzzahliger Bruch mehr?'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall \iota \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \frac{ a }{ b }  =  \frac{ p^{ω + \iota} }{ p^{ω} }  *]  }'),
-                      array( display => 'on',  latex => '{  p^{ω}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \frac{ a }{ b }  \in  \mathbb{T}  }'),
-                      array( display => 'on',  latex => '{  ?\Rightarrow  p^{ω + \iota}  \notin  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Bedingung, dass die reell algebraischen Zahlen die \italic{vollständigen} Koeffizienten der Superial-Zahlen sind,'."\n".
-                    'impliziert, dass jede transzendente Zahl im Produkt mit \lm{ \s = \s^{1} } auch mindestens eine superiale Schicht kleiner als Eins'."\n".
-                    'mit Koeffizienten ungleich Null belegen muss.'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a_{-k} \neq 0 *) *( \forall k \in \mathbb{N} *)  *[  X  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der scheinbare Widerspruch löst sich auf, wenn wir verstehen, dass sich der Übergang ins Aktual-Unendliche, also das Potential-Unendliche,'."\n".
+                    'äquivalent zum Aktual-unendlichen verhält.'."\n",
+                      'Insofern sind beide unterschiedlichen Perspektiven gleichzeitig real.'."\n".
+                    'Jenachdem wie wir den Fokus setzen, auf das Potenzial-Unendliche oder das Aktual-Unendliche, sehen wir die transzendenten Zahlen als rein endliche Zahlen'."\n".
+                    'im Potenzial-Unendlichen oder als Zahlen mit infinitesimalen Summanden nach dem Übergang ins Aktual-Unendliche, wie in den Superial-Zahlen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
