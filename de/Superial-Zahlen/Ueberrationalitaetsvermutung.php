@@ -200,7 +200,7 @@
                     'was uns die Struktur der möglichen Lösungen liefert.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Die Normung der Teilbarkeit', subline =>
+                  'Die Normierung der Teilbarkeit', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Um die Menge der Lösungen auf eine bestimmte zu reduzieren, lässt sich die Anzahl der Teilbarkeit auf die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
