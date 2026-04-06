@@ -680,7 +680,7 @@
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
   $NPYo_g_youtube_ary_ChurningTheSeaOfMilk      = array( source => 'https://www.youtube-nocookie.com/embed/Bu9vjNj1sqQ?si=3YDi1CNr3oeqSfWs', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
-                                                         text => '›Churning the sea of milk.‹ meint ›Das Milchmeer umrühren.‹ oder ›Den Milchocean quirlen.‹'."\n".
+                                                         text => '›Churning the sea of milk‹ meint ›Das Milchmeer umrühren‹ oder ›Den Milchocean quirlen‹.'."\n".
                                                                    'Dies ist eine zentrale hinduistische Legende, bei der Götter (Devas) und Dämonen (Asuras) gemeinsam den kosmischen Ozean aufwirbelten, um den Nektar der Unsterblichkeit (Amrita) zu gewinnen.'."\n".
                                                                    'Dafür verwendeten sie den Berg Mandara als Quirlstab und die Schlangenkönigin Vasuki als Quirlseil.'."\n".
                                                                    'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
@@ -688,18 +688,14 @@
 
   $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk =
                                                   array( source => 'https://www.youtube-nocookie.com/embed/MItyUwPAjLA?si=cXzh9t8tPMIjJCVp', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
-                                                         text => 'XXX'."\n".
-                                                                   'XXX'."\n".
-                                                                   'XXX'."\n".
-                                                                   'XXX'."\n".
+                                                         text => '›Ayurveda – the Churning of the Ocean of Milk‹ meint ›Ayurveda – Das Umrühren des Milchozeans‹.'."\n".
+                                                                   'In diesem Video wird das ›Umrühren des Milchozeans‹ als mythologischer Ursprung des Ayurveda, und damit des Lebens und der Heilung, beschrieben.'."\n".
                                                                    '');
 
   $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilkHinduMetho =
                                                   array( source => 'https://www.youtube-nocookie.com/embed/oLM176M10HI?si=g5U0S30el9pawjD6', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
-                                                         text => 'XXX'."\n".
-                                                                   'XXX'."\n".
-                                                                   'XXX'."\n".
-                                                                   'XXX'."\n".
+                                                         text => '›The Churning of the Ocean of Milk | Hindu Mythology‹ meint ›Das Umrühren des Milchozeans‹.'."\n".
+                                                                   'In diesem Video wird das ›Umrühren des Milchozeans‹ als kosmologische Schöpfungsgeschichte dargestellt.'."\n".
                                                                    '');
 
   $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =

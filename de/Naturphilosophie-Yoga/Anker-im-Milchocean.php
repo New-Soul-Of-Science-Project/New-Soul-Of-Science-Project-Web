@@ -114,14 +114,8 @@
                   'Von Lingams und Yonis', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    'XXX Lingams und das Übergießen mit Ghee (geklärter Butter), Milch oder Wasser als Reinigung, Läuterung – etwas reinigen, etwas von Fehlern oder Trübendem befreien –'."\n".
-                    'XXX Lingams, auch als quasi phallisches Symbol, stehe auch für „Fruchtbarkeit“ im übertragenen Sinn'."\n",
+                    '\color{*Bearb}{(In Arbeit …)} Lingams und das Übergießen mit Ghee (geklärter Butter), Milch oder Wasser als Reinigung, Läuterung – etwas reinigen, etwas von Fehlern oder Trübendem befreien –'."\n".
+                    '\color{*Bearb}{(In Arbeit …)} Lingams, auch als quasi phallisches Symbol, stehe auch für „Fruchtbarkeit“ im übertragenen Sinn'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
@@ -143,10 +137,9 @@
                     'Erzählen wir nun unsere Geschichte und folgen dabei diesen Ankerpunkten oder Dreh- und Angelpunkten, bekommen wir ein aufschlussreiches, faszinierendes, auch erstaunliches und für uns heute vielleicht etwas bizarres Bild der Vorstellung'."\n".
                     'von der Schöpfung, zumindest einiger unserer Ahnen, welches auch sehr starke Bezüge in die moderne Physik und besonders in eine von mir konzipierte neue Sicht auf die Physik aufweist.'."\n".
                     'Diese \jump{OM:FrQFT:Home}{›Neue Physik‹} wird von mir auch auf diesen Seiten beschrieben.'."\n",
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'XXX Elementarteilchen im Vakuum haben Ähnlichkeit mit dem Prozess …'."\n",
-                      'XXX Vulkane, die aus dem Meer kommen, haben Ähnlichkeit mit dem Prozess …'."\n",
-                      'XXX siehe die Kontexte \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung}‹} …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Elementarteilchen im Vakuum haben Ähnlichkeit mit dem Prozess …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Vulkane, die aus dem Meer kommen, haben Ähnlichkeit mit dem Prozess …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} siehe die Kontexte \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung}‹} …'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:NPYo:Anker-im-Milchocean:Vortext:X', text =>
@@ -177,13 +170,7 @@
                   array( 'text', array( text => array(
                     'Durch diese Erzählung und diese Betrachtungen erhalten wir, in meinen Augen, ein besseres Verständnis von alten Vorstellungen und Metaphern sowie von altem Wissen,'."\n".
                     'welches wir wieder in unsere Gegenwart holen und für uns durch Aktualisierung lebendig machen können.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'jumplist', array(
@@ -469,32 +456,15 @@
                     'Nachdem die Devas getrunken haben, kehrt ihre Kraft zurück.'."\n".
                     'Es folgt die Schlacht; die Asuras werden zurückgedrängt.'."\n".
                     'Ordnung (dharma) ist geklärt und erneuert.'."\n".
-                    'Der Fluch Durvāsas – die Anfangskrise – ist überwunden; Lakṣmī ist zurück, Glanz (tejas/śrī) wiederhergestellt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Der Fluch Durvāsas – die Anfangskrise – ist überwunden; Lakṣmī ist zurück, Glanz (tejas/śrī) wiederhergestellt.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:NPYo:Anker-im-Milchocean:Umruehren-des-Milchoceans:X', text =>
-                  'XXX', subline =>
+                  '\color{*Bearb}{(In Arbeit …)}', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Samudra Manthana\footnote{\const{NPYo_g_footnote_text_SamudraManthana}} (das Quirlen des Ozeans) (Sanskrit: समुद्रमन्थन; lit. "churning of the ocean")'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Samudra Manthana\footnote{\const{NPYo_g_footnote_text_SamudraManthana}} (das Quirlen des Ozeans) (Sanskrit: समुद्रमन्थन; lit. "churning of the ocean")'."\n".
                     'ist eine zentrale Erzählung der hinduistischen Mythologie,'."\n".
                     'in der Götter (Devas) und Dämonen (Asuras) zusammenarbeiten den Milchozean aufzurühren – zu quirlen –, um Amrita,'."\n".
                     'den Nektar der Unsterblichkeit, für sie alle zu gewinnen.'."\n".
