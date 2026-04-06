@@ -918,10 +918,31 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der scheinbare Widerspruch löst sich auf, wenn wir verstehen, dass sich der Übergang ins Aktual-Unendliche, also das Potential-Unendliche,'."\n".
-                    'äquivalent zum Aktual-unendlichen verhält.'."\n",
+                    'äquivalent zum Aktual-Unendlichen verhält.'."\n",
                       'Insofern sind beide unterschiedlichen Perspektiven gleichzeitig real.'."\n".
                     'Jenachdem wie wir den Fokus setzen, auf das Potenzial-Unendliche oder das Aktual-Unendliche, sehen wir die transzendenten Zahlen als rein endliche Zahlen'."\n".
                     'im Potenzial-Unendlichen oder als Zahlen mit infinitesimalen Summanden nach dem Übergang ins Aktual-Unendliche, wie in den Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises:X', text =>
+
+                'Jede der beiden Perspektiven hat ihre eigenen Vor- und Nachteile', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Schauen wir durch die Augen des Potenzial-Unendlichen, so haben wir den Vorteil, dass wir uns nicht wirklich mit aktual unendlichen'."\n".
+                    'Größen beziehungsweise Werten auseinandersetzen müssen, denn dies bringt eine Komplexität mit sich, die dann immer zu berücksichtigen ist.'."\n".
+                    'Der Preis, den wir uns dafür einhandeln, ist eine gewisse Unschärfe im Bereich des Überganges hin zum Unendlichen.'."\n".
+                    'Denn bleiben wir im Potenzial-Unendlichen, so sehen wir, wegen der zuvor angesprochenen Äquivalenz,'."\n".
+                    'eine Überlagerung der komplexen Ebenen des Unendlichen noch im Endlichen.'."\n".
+                    'Wir müssen dann einen erheblichen Aufwand betreiben, diese Überlagerungen zu differenzieren.'."\n",
+                      'Wenn wir durch die Augen des Aktual-Unendlichen schauen, hier im Besonderen durch die der Superial-Zahlen, dann erhalten wir ein Skalenspektrum'."\n".
+                    'des Aktual-Unendlichen.'."\n".
+                    'Das Skalenspektrum bedeutet, dass sich bestimmte Aspekte des Unendlichen in die Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems}'."\n".
+                    'spalten und sich dadurch ihre Summanden auftrennen.'."\n".
+                    'Diese Auftrennung erzeugt eine gewisse Übersichtlichkeit, die einer sonst verborgenen Komplexität im Unendlichen folgt.'."\n".
+                    'Im Rahmen der Superial-Zahlen erhalten wir dazu eine \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{neue Arithmetik des Aktual-Unendlichen},'."\n".
+                    'die viele Vorteile mit sich bringt und Dinge ermöglicht, die zuvor nicht möglich waren.'."\n".
+                    'In dieser Perspektive zahlen wir den Preis für die Vorteile damit, immer diese höhere Komplexität mitzuschleppen, wenn wir ganz genau bleiben wollen.'."\n".
+                    'Allerdings mit der Möglichkeit, die Komplexität an infinitesimalen Summanden jederzeit fallen lassen zu können, wenn wir es für angebracht halten, indem wir sie einfach wegkürzen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
