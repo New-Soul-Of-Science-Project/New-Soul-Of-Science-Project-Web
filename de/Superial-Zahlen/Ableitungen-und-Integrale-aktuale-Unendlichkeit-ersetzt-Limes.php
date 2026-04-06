@@ -1060,8 +1060,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 100 *〉  <  *〈 5,\!281 *〉.*〈 -2 *〉  <  *〈 5,\!292 *〉.*〈 9 *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}  <  5,\!292 + 9 \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 100 *〉  <  *〈 5,\!281 *〉.*〈 -2 *〉  \\\ \qquad\qquad\quad  <  *〈 5,\!292 *〉.*〈 9 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}〉  \\\ \qquad\qquad\qquad\qquad\;  <  5,\!292 + 9 \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ist der endliche Zeitpunkt der gleiche, dann unterscheiden sich die Zeitpunkte nur noch in ihren unendlich kleinen,'."\n".
