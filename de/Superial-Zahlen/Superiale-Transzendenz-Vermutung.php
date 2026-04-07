@@ -933,14 +933,16 @@
                     'Der Preis, den wir uns dafür einhandeln, ist eine gewisse Unschärfe im Bereich des Überganges hin zum Unendlichen.'."\n".
                     'Denn bleiben wir im Potenzial-Unendlichen, so sehen wir, wegen der zuvor angesprochenen Äquivalenz,'."\n".
                     'eine Überlagerung der komplexen Ebenen des Unendlichen noch im Endlichen.'."\n".
-                    'Wir müssen dann einen erheblichen Aufwand betreiben, diese Überlagerungen zu differenzieren.'."\n",
+                    'Wir müssen dann einen erheblichen Aufwand betreiben, diese Überlagerungen zu differenzieren.'."\n".
+                    'Das wesentliche Problem ist jedoch, dass wir im Potenzial-Unendlichen offenbar keine Normierung des Finiten und des Infinitesimalen finden.'."\n",
                       'Wenn wir durch die Augen des Aktual-Unendlichen schauen, hier im Besonderen durch die der Superial-Zahlen, dann erhalten wir ein Skalenspektrum'."\n".
                     'des Aktual-Unendlichen.'."\n".
                     'Das Skalenspektrum bedeutet, dass sich bestimmte Aspekte des Unendlichen in die Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems}'."\n".
                     'spalten und sich dadurch ihre Summanden auftrennen.'."\n".
                     'Diese Auftrennung erzeugt eine gewisse Übersichtlichkeit, die einer sonst verborgenen Komplexität im Unendlichen folgt.'."\n".
-                    'Im Rahmen der Superial-Zahlen erhalten wir dazu eine \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{neue Arithmetik des Aktual-Unendlichen},'."\n".
-                    'die viele Vorteile mit sich bringt und Dinge ermöglicht, die zuvor nicht möglich waren.'."\n".
+                    'Im Rahmen der Superial-Zahlen erhalten wir dazu eine fraktale Normierung des Finiten und des Infiniten,'."\n".
+                    'die eine \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{neue Arithmetik des Aktual-Unendlichen}'."\n".
+                    'beinhaltet, die viele Vorteile mit sich bringt und Dinge ermöglicht, die zuvor nicht möglich erschienen.'."\n".
                     'In dieser Perspektive zahlen wir den Preis für die Vorteile damit, immer diese höhere Komplexität mitzuschleppen, wenn wir ganz genau bleiben wollen.'."\n".
                     'Allerdings mit der Möglichkeit, die Komplexität an infinitesimalen Summanden jederzeit fallen lassen zu können, wenn wir es für angebracht halten, indem wir sie einfach wegkürzen.'."\n".
                     ''))),
