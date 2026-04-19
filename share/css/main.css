@@ -9,6 +9,10 @@ html, body {
 	margin: 0;
   padding: 0;
 	background: #A0A0A0;
+
+  /* #: no text size adjustment on iPhones if holding it landscaped */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 body, div, h1, h2, h3, h4, h5, p, table, td, tr, ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -20,7 +24,7 @@ h1, h2, h3, h4, h5, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
-/* #: SchriftstŠrke der †berschriften und starker Schrift. */
+/* #: Schriftstï¿½rke der ï¿½berschriften und starker Schrift. */
 h1, h2, h3, h4, h5 {
   /*font-weight: bold;*/
   font-weight: 600;
@@ -31,7 +35,7 @@ strong {
   font-weight: 600;
 }
 
-/* #: Allgemeine Schriftgrš§e. */
+/* #: Allgemeine SchriftgrÃ¶ÃŸe. */
 body, div, p, table, td, tr, ul {
 	font-size: 13px;
 }
@@ -163,10 +167,10 @@ a:hover {
 	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
 		background: #FFFFFF;
 
-    /*height: 100%; / #: Richtet die Website-Größe nach dem Inhalt. */
+    /*height: 100%; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
 		/* @note scrollbars for content-area */
     /*height: 933px;*/
-    /*height: auto; / #: Richtet die Website-Größe nach dem Inhalt. */
+    /*height: auto; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
     height: 933px;
     overflow: auto;
 	}
