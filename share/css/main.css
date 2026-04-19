@@ -685,6 +685,12 @@ td.tools-class-text-figure {
     display: block;
   }
 
+  .main-menu {
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .content-google-translate-paypal-list {
     display: flex;
   }
