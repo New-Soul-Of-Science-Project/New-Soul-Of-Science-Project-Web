@@ -167,10 +167,10 @@ a:hover {
 	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
 		background: #FFFFFF;
 
-    /*height: 100%; / #: Richtet die Website-Gr��e nach dem Inhalt. */
+    /*height: 100%; / #: Richtet die Website-Größe nach dem Inhalt. */
 		/* @note scrollbars for content-area */
     /*height: 933px;*/
-    /*height: auto; / #: Richtet die Website-Gr��e nach dem Inhalt. */
+    /*height: auto; / #: Richtet die Website-Größe nach dem Inhalt. */
     height: 933px;
     overflow: auto;
 	}
