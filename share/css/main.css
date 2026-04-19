@@ -1,4 +1,4 @@
-/* 2018.04.27: +: XXX */
+/* 2018.04.27: +: X */
 
 /**
  * Project Styles
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
-/* #: Schriftst�rke der �berschriften und starker Schrift. */
+/* #: Schriftstärke der Überschriften und starker Schrift. */
 h1, h2, h3, h4, h5 {
   /*font-weight: bold;*/
   font-weight: 600;
