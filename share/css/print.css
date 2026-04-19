@@ -45,6 +45,13 @@ html, body {
 	}
 
 
+/* Links */
+
+a:visited {
+  color: inherit;
+}
+
+
 /* main Classes */
 
 .main-function-buttons-sticky {
