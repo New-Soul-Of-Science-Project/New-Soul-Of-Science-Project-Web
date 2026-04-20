@@ -137,6 +137,8 @@ a:hover {
 .container {
   /*background:url(../images/bg-navigation.gif) top right repeat-y;*/
 	/*background: #EEEEEE;*/
+  /* #: Faux Columns: fill gap when navigation is taller than content */
+  background: linear-gradient(to right, #FFFFFF 730px, #EEEEEE 730px);
 }
 
 /* == Header == */
