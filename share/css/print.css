@@ -10,8 +10,19 @@ html, body {
 
 /* == Container == */
 .container {
-  height: 100%;
+  height: auto;
   width: 731px !important;
+}
+
+/* == Layout: floats → blocks == */
+/* #: In print, the float-based layout (wrapper float:left, footer clear:both) */
+/* #: causes Safari to miscalculate the footer position. Use simple block flow. */
+#wrapper {
+  float: none;
+  width: 100%;
+}
+#footer {
+  clear: none;
 }
 
 /* .header,
@@ -40,8 +51,9 @@ html, body {
 	.content {
 		background: #FFFFFF;
 
-    height: 100%;
-    overflow: visible;
+    /* #: JS sets content.style.height as inline style → needs !important to override */
+    height: auto !important;
+    overflow: visible !important;
 	}
 
 
