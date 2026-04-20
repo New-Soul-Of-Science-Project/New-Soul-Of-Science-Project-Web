@@ -494,6 +494,10 @@ svg {
   border-spacing: 0 20px;
 }
 
+.tools-class-print-image {
+  display: none;
+}
+
 .tools-class-fig, .tools-class-vid {
   /* shadow */
   -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Safari */

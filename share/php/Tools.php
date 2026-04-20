@@ -2137,6 +2137,8 @@
                       break;
                     case 'iframe':
                       echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";
+                      if (array_key_exists( print_image, $value_ary))
+                        echo '            <img class="tools-class-print-image" src="'.($value_ary[print_image]).'" width="'.($value_ary[width]).'" alt="'.(array_key_exists( print_image_alt, $value_ary) ? htmlspecialchars($value_ary[print_image_alt]) : '').'">'."\n";
                       break;
                   }
                   echo '              </td>'."\n";

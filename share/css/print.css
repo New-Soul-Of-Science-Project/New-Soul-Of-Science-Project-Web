@@ -90,6 +90,18 @@ a:visited {
 }
 
 
+/* 3D-Animationen */
+
+/* #: WebGL/Canvas in iframes kann der Browser-Druckmotor nicht rendern (schwarz).   */
+/* #: Der iframe wird ausgeblendet; das statische Standbild (print_image) erscheint.  */
+iframe.tools-class-vid {
+  display: none;
+}
+.tools-class-print-image {
+  display: block;
+}
+
+
 /* Tools Classes */
 
 .tools-class-fig, .tools-class-vid {
