@@ -48,6 +48,12 @@ html, body {
   display: block;
 }
 
+/* #: Force background color in print — browsers suppress backgrounds by default. */
+.footer {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 /* == Content == */
 	.content {
 		background: #FFFFFF;
