@@ -3268,8 +3268,6 @@
     echo '  <script type="text/javascript">'."\n";
     echo 'function googleTranslateElementInit() {'."\n";
     echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
-    // correct Google navigator right overflow
-    echo '  To_f_googleTranslateCorrect();'."\n";
     echo '}'."\n";
     echo '  </script>'."\n";
     echo '  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";

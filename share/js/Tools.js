@@ -740,16 +740,6 @@ function To_f_showMenuHideOnOutsideOrItemClick( event) {
 
 
 
-function To_f_googleTranslateCorrect()
-{
-  // correct Google navigator right overflow
-  // see: https://javascript.info/searching-elements-dom
-  
-  // find element after the Google script has load the translation elements
-  let element = document.querySelector('a[href="https://translate.google.com"]')
-  element.style.display = 'block';
-}
-
 
 
 function To_f_manage_site_end( autoResize = false, customResizeCallback = null)

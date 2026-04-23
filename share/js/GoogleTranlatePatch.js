@@ -42,11 +42,6 @@ function googleTranslateElementInit() {
   // added by Wolle
   new google.translate.TranslateElement(({pageLanguage: 'de', gaTrack: true, gaId: 'UA-5051897-3'}, 'google_translate_element'));
   
-  // added by Wolle
-  // correct Google navigator right overflow
-  To_f_googleTranslateCorrect();
-
-
   let first = $('#google_translate_element');
   let second = $('#google_translate_element_content');
 

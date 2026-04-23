@@ -384,12 +384,13 @@ a:hover {
   padding-right: 10px !important;
   max-width: 100px !important;
 }
-
 .goog-te-combo {
   max-width: 180px !important;
   width: 180px !important;
 }
-
+a[href="https://translate.google.com"] {
+  display: block !important;
+}
 .main-google-translate-content {
   font-size: 8px !important;
   padding-left: 0px !important;
