@@ -49,13 +49,13 @@
                     'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
                     'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ein fundamentales Problem', subline =>
                   'Keine Hochstapelei')),
                   array( 'text', array( text => array(
                     'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
-                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13.}'."\n".
+                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13. \\\\ Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189, hier S. 186-189.}'."\n".
                     'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
                     'die Linie füllen, dicht an dicht.'."\n".
                     'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
@@ -69,7 +69,7 @@
                     'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
                       'Aber was funktioniert dann?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
@@ -84,9 +84,10 @@
                     'Hierdurch wird das Gewebe zwischen unseren Ausgangspunkten immer dichter gewebt und'."\n".
                     'wir spannen ein Netz von Punkten auf, wodurch wir immer mehr Punkte auf der Strecke zwischen Null und Eins erhalten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Selbstähnlichkeit', subline =>
+                    'Die Auflösung und Struktur des Inneren')),
                   array( 'text', array( text => array(
-                  '\condb{Selbstähnlichkeit} \\\\'."\n".
-                  '\cond{Die Auflösung und Struktur des Inneren} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
                       'Die gesamte Anzahl der Punkte \lm{ n } sowie ihre Koordinaten \lm{ r }, ihre Dichte, als auch die Anzahl der Teilstrecken, \lm{ \rho } und'."\n".
                     'ihr Abstand \lm{ d } berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
@@ -106,9 +107,10 @@
                     'bis zum \lm{ n }-ten Punkt mit Hilfe der entsprechenden \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     '\lm{ [0, n] } aus \lm{ \mathbb{N} }.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Das Zählen', subline =>
+                    'Die Erweiterung nach außen, die nach innen zurück wirkt')),
                   array( 'text', array( text => array(
-                  '\condb{Das Zählen} \\\\'."\n".
-                  '\cond{Die Erweiterung nach außen, die nach innen zurück wirkt} \\\\'."\n".
                     'Beginnen wir noch einmal von vorne mit den Punkten Null und Eins.'."\n",
                       'Verdoppeln wir diese beiden Punkte, verschieben also den Punkt Null so auf die Eins, dass sich'."\n".
                     'die Länge und Richtung der Verbindungsstrecke der neuen Punkte nicht verändert, dann schöpfen wir so den Punkt Zwei.'."\n".
@@ -126,6 +128,7 @@
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
                   // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
                   // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
+                  // #!: Auch im Abschnitt „Der metaphysische Moment der Bewegung“! (OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
@@ -142,8 +145,10 @@
                     'Beide Punktmengen sind von ihrer fraktalen Struktur her gleich, weil durch das halbieren und verdoppeln'."\n".
                     'in beiden die reinen Potenzen von Zwei stecken.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Neue Teilungen durch weitere Primzahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Neue Teilungen durch weitere Primzahlen} \\\\'."\n".
                     'Machen wir nun bei der Strecke Null, Eins und Zwei weiter und verlängern diese um einen weiteren Punkt,'."\n".
                     'wie zuvor, dann erhalten wir den Punkt Drei.'."\n",
                       'Wenn wir jetzt diese neue Struktur aus vier Punkten verkleinern und zwischen die Null und die Eins legen,'."\n".
@@ -197,8 +202,10 @@
                   array( 'text', array( text => array(
                     'So geht es nun immer weiter.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Das komplette Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Das komplette Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'Die Sechs und ihre Sechsteilung haben wir schon komplett durch die Zwei-/Dreiteilung.'."\n".
                     'Die Sieben ist wieder eine neue Primzahl, die auch wieder mit allen vorherigen kombiniert werden kann.'."\n".
                     'Die Acht, die Neun und die Zehn haben wir schon durch die Zwei, Drei und Fünf.'."\n".
@@ -216,8 +223,10 @@
                   array( 'text', array( text => array(
                     'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen', text =>
+                  'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{}Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
                     'Um diese Struktur auf alle natürlichen Zahlen auszudehnen, brauchen wir ein passendes Symbol:'."\n",
                       'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
                     'auszudrücken, der so groß ist, dass er per Definition genau alle natürlichen Zahlen beinhaltet.'."\n".
@@ -250,7 +259,7 @@
                       'Dass es \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{genau gleich viele negative Zahlen wie natürliche Zahlen, mit der Null},'."\n".
                     'geben muss, sehen wir in den \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Immer noch Lückenhaft', subline =>
                   '')),
@@ -261,7 +270,7 @@
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
                       'Wie können wir aber die Lücken nun so schließen, dass sie keine endliche Größe mehr haben?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Übergang ins Unendliche', subline =>
                   'Die vollständige Induktion der Teilungen')),
@@ -320,8 +329,10 @@
                     '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'So müssen wir also die Teilung mit allen endlichen Primzahlen bis in die vollständige Induktion'."\n".
                     'vorantreiben:'."\n".
                     // '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig. Später lernen wir, dass \lm{ m } aus \lm{ [0, n_{\s}]_{\mathbb{S}_{\Z}} } sein muss, aber diese Menge ist an dieser Stelle hier von der Systematik her ja noch nicht bekannt.)}'."\n".
@@ -349,7 +360,7 @@
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich dadurch nicht.'."\n",
                       'Können wir nun davon sprechen, dass ein solches Gewebe dann keine durch endliche Teilungen erreichbaren Lücken mehr hat?'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Irrationale algebraische Zahlen', subline =>
                   'Gibt es noch Lücken im Gewebe?')),
@@ -358,10 +369,12 @@
                     'inklusive dem Integrieren, noch die irrationalen algebraischen Zahlen, die allesamt mögliche Lösungen'."\n".
                     'der Nullstellen von Polynomen darstellen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Sind Zahlen, wie die zweite Wurzel aus Zwei \lm{ \sqrt{2} }, im Raster enthalten?', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Sind Zahlen, wie die zweite Wurzel aus Zwei \lm{ \sqrt{2} }, im Raster enthalten?} \\\\'."\n".
                     'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'mit den auf ihm aufbauenden, nachfolgenden Beweisen\color{*Bearb}{(Link)} zeigt,'."\n".
+                    'mit den auf ihm \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{aufbauenden, nachfolgenden Beweisen}, zeigt,'."\n".
                     'dass die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind,'."\n".
                     'wenn wir mit den Teilungen und damit auch mit den negativen Potenzen der Abstände ins Aktual-Unendliche übergehen.'."\n",
                       'Die Radikale der irrationalen algebraischen Zahlen sind die irrationalen algebraischen Zahlen,'."\n".
@@ -380,8 +393,10 @@
                     'erreichen so auch eine höhere Güte.'."\n".
                     'Dadurch wird der Beweis aber auch schwieriger zu führen, was ihn bisher verhindert.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Warum ist nun zum Beispiel die zweite Wurzel aus Zwei \lm{ \sqrt{2} } schon ein Punkt des Rasters?', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Warum ist nun zum Beispiel die zweite Wurzel aus Zwei \lm{ \sqrt{2} } schon ein Punkt des Rasters?} \\\\'."\n".
                     'Dies kommt nach dem Beweis durch den Übergang der Potenz ins ganzzahlige Aktual-Unendliche.'."\n".
                     'Er zeigt, dass die Wurzel aus Zwei erst mit aktual unendlich großem Nenner und Zähler'."\n".
                     'als Bruch aus ganzen Zahlen dargestellt werden kann:'."\n".
@@ -394,15 +409,16 @@
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
+                    'gilt.'."\n",
+                      'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
                     'Denn der Faktor \lm{ 2^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
                     'könnte deshalb natürlich direkt gekürzt werden.'."\n".
                     'Womit wir auch sofort erkennen, dass die Formel wahr ist.'."\n",
@@ -440,8 +456,10 @@
                     'eine ganze Zahl macht; sie also auf dem Zählraster landet.'."\n".
                     'Damit ist bestätigt, dass die Wurzel aus Zwei, also \lm{ 1,\!41421356237309\cdots }, wirklich auf dem aktual unendlichen Zweiteilungsraster liegt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *| \sqrt[k]{2} |*^{m} }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *| \sqrt[k]{2} |*^{m} }} \\\\'."\n".
                     'Der Beweis zeigt, dies gilt für alle Wurzeln aus Zwei, die wir nachfolgend als Potenzen von Zwei schreiben:'."\n".
                     ''))),
                   array( 'equations',
@@ -453,8 +471,10 @@
                   array( 'text', array( text => array(
                     'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln', text =>
+                  'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen, also für \lm{ *| \sqrt[k]{c} |*^{m} }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *| \sqrt[k]{c} |*^{m} }} \\\\'."\n".
                     'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
                     ''))),
                   array( 'equations',
@@ -495,7 +515,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \rad(980)  =  \rad(2^{2} \cdot 5 \cdot 7^{2})  =  2 \cdot 5 \cdot 7  =  70  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \rad(980)  =  \rad*( 2^{2} \cdot 5 \cdot 7^{2} *)  =  2 \cdot 5 \cdot 7  =  70  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'können wir also formulieren,'."\n".
@@ -523,7 +543,7 @@
                       'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen reell algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die besondere Rolle der normierten Einheit \lm{ ω }', subline =>
                   '')),
@@ -540,7 +560,7 @@
                       'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
                     'sehen, dass \lm{ ω } – also die vollständige Induktion selber – eine Primfaktorzerlegung in Form des Produkts aller endlichen Primzahlen besitzt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
                                            
                 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', subline =>
                   '')),
@@ -589,9 +609,10 @@
                     'die auf diese Weise nur ganze Zahlen in ihren aktual unendlich kleinen Summanden, in ihrem Ort – ihren Koordinaten – haben,'."\n".
                     'aber doch normiert aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile', text =>
+                  'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile', subline =>
+                    'Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{}Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile} \\\\'."\n".
-                  '\cond{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
                   /*  ''))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -650,7 +671,7 @@
                     'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
                     'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
@@ -665,11 +686,13 @@
                     'wie eben erklärt, durch die es keine endlichen Abstände mehr gibt und keine Punkte, die durch endliche Teilung,'."\n".
                     'selbst in Potenz der vollständigen Induktion, noch unbelegt oder unerreicht sind.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Wenn Kontinuum bedeutet, dass wir keine aktual unendlich kleinen Summanden in den Adressen der Zahlengerade haben wollen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Wenn Kontinuum bedeutet, dass wir keine aktual unendlich kleinen Summanden in den Adressen der Zahlengerade haben wollen} \\\\'."\n".
                     'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die Anzahl der sinnvollen'."\n".
                     'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
-                    'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}‹}'."\n".
+                    'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
                     'lernen, dann muss es insgesamt \lm{ \# \mathbb{A}_{\S} = \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
                       'Es gilt also \lm{ \# \mathbb{A}_{\S} = \s }.'."\n".
                     'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
@@ -690,7 +713,7 @@
                       'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                       
                 'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
@@ -700,9 +723,9 @@
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n".
-                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen', subline =>
+                    '')),
                       
                   array( 'figure',
                     array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung'))),
@@ -712,9 +735,9 @@
                     'Am jeweiligen Ende der Punktreihe werden stets die nötigen Punkte angehängt, um den Rhythmus der nächsten natürlichen Zahl zu integrieren,'."\n".
                     'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Definition von \lm{ \s^{-1} } über den Regen der natürlichen Zahlen} \\\\'."\n".
-                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Definition von \lm{ \s^{-1} } über den Regen der natürlichen Zahlen', subline =>
+                    '')),
                       
                   array( 'figure',
                     array_merge( $SupNum_g_figure_ary_sGeomKonstruktTeilung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung'))),
@@ -724,8 +747,10 @@
                     'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins herniedergeht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Explizites Primzahl-Flächenprodukt von \lm{ \s }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Explizites Primzahlflächenprodukt von \lm{ \s }} \\\\'."\n".
                     'Für das Primzahlprodukt von \lm{ \s } ergibt sich in beiden Fällen eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche'."\n".
                     ''))),
                   array( 'equations',
@@ -740,7 +765,7 @@
                   array( 'text', array( text => array(
                     'wie wir sie oben schon definiert haben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Wie wir aus Punkten eine Linie konstruieren können', subline =>
                   'Ein naturphilosophisches Problem gibt uns einen Einblick in die fraktale Realität der Geometrie')),
@@ -790,7 +815,7 @@
           <!  • Die Ontologie der Geometrie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie',
-              'Eine Diskussion – ein Versuch der Annäherung', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie', type => 'back'),
@@ -802,14 +827,78 @@
                     ))),
                       
                   array( 'text', array( text => array(
+                    'Die Ontologie der Geometrie beschäftigt sich mit unterschiedlichen strukturellen Eigenschaften der Geometrie.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten'),
+                      array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie'),
+                    )),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten', text =>
+                      
+                'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten', subline =>
+                  'Ihre komplementäre Ergänzung sowie die Asymmetrie des Zählens im Zusammenspiel von Punkten und Abständen')),
+                      
+                  array( 'text', array( text => array(
+                    'Wir entwickeln die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie}{arithmetische Struktur der Geometrie} oben'."\n".
+                    'unter anderem durch die Zerlegung der Strecke zwischen Null und Eins in Teilstrecken.'."\n".
+                    'Diese Teilstrecken werden von Punkten begrenzt, beginnend bei der Null, fortgesetzt mit den Punkten zwischen Null und Eins sowie abgeschlossen mit dem Punkt Eins.'."\n",
+                      'Nun gibt es einen Unterschied zwischen der Anzahl der Teilstrecken und der Anzahl der Begrenzungspunkte.'."\n".
+                    'Die Anzahl der Begrenzungspunkte sind immer einer mehr als die Anzahl der Teilstrecken.'."\n",
+                      'Erweitern wir das Muster von der Eins bis zur Zwei, indem wir dieses Muster bei der Eins aneinander legen, dass es bis zur Zwei reicht.'."\n".
+                    'Dann ist der Punkt auf der Eins doppelt.'."\n".
+                    'Ein Punkt kann vom Muster her aber nicht doppelt sein.'."\n".
+                    'Er zählt also nur ein Mal, weil wir einen Punkt strukturell nicht teilen oder doppeln können, wenn er am selben Ort ist.'."\n",
+                      'Eine Teilstrecke hingegen können wir weiter teilen, weil sich die neuen Teilstrecken nicht überschneiden, außer an ihrem Berührungspunkt.'."\n".
+                    'Daran sehen wir aber auch, dass wir uns im Grunde entscheiden müssen, zu welcher der beiden neuen Teilstrecken der Berührungspunkt gehören soll.'."\n".
+                    'Er kann eigentlich nur zur einen oder zur anderen gehören.'."\n".
+                    'Das ist das, worauf ich hinaus möchte.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Gleiches gilt nämlich auch bei der Verdoppelung der Strecke von der Null zur Eins dann zur Zwei.'."\n".
+                    'Wir müssen uns entscheiden, ob der Punkt der Eins zur Strecke von Null bis Eins oder zu der Strecke von Eins bis Zwei gehört.'."\n".
+                    'Denn einen Punkt können wir nicht halbieren, also teilen.'."\n".
+                    'Hierin spiegelt sich wiederum die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie des Zählens},'."\n".
+                    'die wir auch bei den \jump{OM:BiOrd:Home}{Biordinalzahlen} entdeckt haben'."\n".
+                    'und die bei der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{Berechnung der Anzahl aller endlichen ganzen Zahlen} entscheidend ist.'."\n",
+                      'Nehmen wir also alle Punkte von der Null bis ohne die Eins, dann wird diese geometrische Asymmetrie deutlich und'."\n".
+                    'wir haben genau so viele Punkte wie Teilstrecken.'."\n".
+                    'Auch die Fortsetzung dieses neuen Musters bis zur Zwei hat dann bei der Eins nicht einen Punkt, der doppelt ist, sich also überlagert.'."\n".
+                    'Dieses Muster können wir nun durch Verschiebung ohne Schwierigkeiten bis ins Unendliche fortsetzen, wie auch Rückwärts dann ins Negativ-Unendliche.'."\n",
+                      'Wir können so erkennen: der Punkt und die Strecke sind ontologisch gesehen Strukturen, die sich komplementär ergänzen'."\n".
+                    'und sogar die Asymmetrie des Zählens in ihrem Zusammenspiel beinhalten.'."\n".
+                    'Die Asymmetrie des Zählens enthält den Funken der Veränderung; das Prozesshafte in der nur scheinbar statischen Natur der Mathematik.'."\n".
+                    ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Rein-endliche-Koordinaten-der-unendlich-vielen-Punkte-der-endlichen-Geometrie', text =>
+                      
+                'Die rein endlichen Koordinaten der unendlich vielen Punkte der endlichen Geometrie', subline =>
+                  'Ein Kreis, zum Beispiel, hat unendlich viele nur endliche Koordinaten, ohne aktual unendlich kleine Summanden')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Hinweis auf \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Verwandtschaft-Primzahlen-pythagoreische-Tripel}‹} einfügen.',
+                    ))),
+
+                  array( 'text', array( text => array(
                     'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
-                      
-                'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
+                    'Kurz und knapp würde ich sagen, um einfache geometrische Strukturen abzubilden brauchen wir'."\n".
                     'zunächst keine transzendenten Zahlen.'."\n".
                       'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
                     '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
@@ -840,20 +929,18 @@
                     'Das entspricht aber nicht der hier anvisierten Geometrie, in der die Eingangswerte und Ergebniswerte aus der selben Zahlenmenge,'."\n".
                     'nämlich der gefundenen arithmetischen Struktur der Geometrie, vermutlich den reell algebraischen Zahlen, kommen sollen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
-                      
-                'Wann kommen transzendente Zahlen ins Spiel?', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  'Wann kommen transzendente Zahlen ins Spiel?', subline =>
+                    '')),
                   array( 'text', array( text => array(
                     'Die transzendenten Zahlen kommen ins Spiel, wenn wir uns beispielsweise mit der Länge der Kurven beschäftigen oder'."\n".
                     'zu den Exponentialfunktionen übergehen wollen.'."\n",
                       'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
-                      
-                'Können wir einen Kreis entlang des Kreisumfangs so parametrisieren, dass wir nur rein reell algebraische Koordinaten erhalten?', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                  'Können wir einen Kreis entlang des Kreisumfangs so parametrisieren, dass wir nur rein reell algebraische Koordinaten erhalten?', subline =>
+                    '')),
                   array( 'text', array( text => array(
                     'Nutzen wir die \lm{ \e }-Funktion zur Parametrisierung einen Kreises entlang seines Kreisumfanges mit reellen Zahl als Parameter,'."\n".
                     'ist es völlig klar, dass diese auch transzendente Koordinaten liefert.'."\n".
@@ -893,8 +980,10 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Tabelle der Koordinatendreiecke für das 16-Eck', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Tabelle der Koordinatendreiecke für das 16-Eck} \\\\'."\n".
                     'Jeder Punkt \lm{ P_{k} }​ liegt auf dem Einheitskreis bei:'."\n".
                     ''))),
                   array( 'equations',
@@ -957,12 +1046,13 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
-                      
-                'Beweis: Die Koordinaten der Ecken eines regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  'Beweis: Die Koordinaten der Ecken eines regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Schritt 1: Darstellung der Ecken in komplexer Form', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Schritt 1: Darstellung der Ecken in komplexer Form} \\\\'."\n".
                     'Die Eckpunkte eines regelmäßigen \lm{ m }-Ecks auf dem Einheitskreis sind durch die komplexen Zahlen'."\n".
                     ''))),
                   array( 'equations',
@@ -989,8 +1079,10 @@
                   array( 'text', array( text => array(
                     'Unsere Aufgabe ist es zu zeigen, dass \lm{ x_{k} } und \lm{ y_{k} } reell algebraische Zahlen sind, also Lösungen eines Polynoms mit ganzzahligen Koeffizienten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Schritt 2: Minimalpolynom der Einheitswurzeln', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Schritt 2: Minimalpolynom der Einheitswurzeln} \\\\'."\n".
                     'Die Gleichung'."\n".
                     ''))),
                   array( 'equations',
@@ -1010,8 +1102,10 @@
                     'Wobei \lm{ \gcd(k, m) } (auch ggT genannt) die größte natürliche Zahl ist, durch die die beiden Zahlen \lm{ k } und \lm{ m } teilbar sind.'."\n",
                       'Dieses Polynom hat \italic{ganzzahlige Koeffizienten}, was zeigt, dass jede Einheitswurzel \lm{ e^{2\pi i k / m} } eine algebraische Zahl ist.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Schritt 3: Kosinus und Sinus sind ebenfalls algebraisch', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Schritt 3: Kosinus und Sinus sind ebenfalls algebraisch} \\\\'."\n".
                     'Da ja, wie oben beschrieben, gilt'."\n".
                     '\color{*Bearb}{(auf obere Formel verweisen, Nummerierung!)}'."\n".
                     ''))),
@@ -1032,13 +1126,15 @@
                     'Da sowohl \lm{ e^{i\theta} } als auch \lm{ e^{-i\theta} } algebraische Zahlen sind – weil sie Einheitswurzeln sind –,'."\n".
                     'folgt aus diesen Linearkombinationen, dass auch \lm{ \cos \theta } und \lm{ \sin \theta } algebraische Zahlen sind.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Schritt 4: Fazit', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Schritt 4: Fazit} \\\\'."\n".
                     'Da sich \lm{ \cos \frac{2\pi k}{m} } und \lm{ \sin \frac{2\pi k}{m} } als Linearkombinationen von Einheitswurzeln ausdrücken lassen'."\n".
                     'und Einheitswurzeln algebraische Zahlen sind, folgt:'."\n",
                       'Die Koordinaten aller Ecken eines beliebigen regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
                 'Analyse des Beweises und Projektion der Bedeutung in der betrachteten Geometrie', subline =>
                   '')),
@@ -1047,9 +1143,10 @@
                     'sowohl in der Basis als auch im Exponenten, bis auf beim Ausgangseckpunkt \lm{ k = 0 }, nur mit rein transzendenten Zahlen zu tun haben.'."\n".
                     'Diese neutralisieren sich hier aber vollständig in Bezug auf ihre Transzendenz.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Was passiert, wenn wir mit der Anzahl der Ecken ins Unendliche übergehen?', subline =>
+                    'Abschätzung der Anzahl an Ecken, die algebraische Koordinaten haben können')),
                   array( 'text', array( text => array(
-                  '\condb{Was passiert, wenn wir mit der Anzahl der Ecken ins Unendliche übergehen?} \\\\'."\n".
-                  '\cond{Abschätzung der Anzahl an Ecken, die algebraische Koordinaten haben können} \\\\'."\n".
                     'In Bezug auf die Kreisrelation des Einheitskreises, die wir weiter oben betrachtet haben, kann sowohl die \lm{ x }-Koordinate als auch die \lm{ y }-Koordinate'."\n".
                     'alle algebraischen Zahlen zwischen minus Eins und plus Eins annehmen, nur nicht in freier Kombination.'."\n".
                     'Wenn \lm{ x } von minus Eins bis plus Eins durchläuft, dann treten, außer an den Scheitelpunkten, immer zwei verschiedene \lm{ y }-Koordinaten auf,'."\n".
@@ -1071,8 +1168,10 @@
                     '\lm{ 2 \cdot \# ( [ -1, 1 ]_{\mathbb{A}_{\R}} ) - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Die Betrachtung der Verhältnisse im Kreis verlagert die Fragestellung der sinnvollen Koeffizienten geometrisch ins Endliche', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Betrachtung der Verhältnisse im Kreis verlagert die Fragestellung der sinnvollen Koeffizienten geometrisch ins Endliche} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
@@ -1086,8 +1185,10 @@
                   array( 'text', array( text => array(
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  'Gibt es überrationale Zahlen, die sich nicht wie die ganzen Wurzeln aus natürlichen Zahlen verhalten?', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Gibt es überrationale Zahlen, die sich nicht wie die ganzen Wurzeln aus natürlichen Zahlen verhalten?} \\\\'."\n".
                     'Wir wollen schauen, welche reell algebraischen Zahlen der Menge \lm{ \mathbb{A}_{\R} } es noch geben kann, die durch ein Produkt mit einem unendlichen Teilprodukt des Primzahl-Flächenprodukts'."\n".
                     'von \lm{ \s } noch aktual unendliche natürliche Zahlen ergeben können.'."\n".
                     'Hier ein mögliches Beispiel, dass sich an überrationale Zahlen, genauer an überrationalen Brüchen, orientiert.'."\n".
@@ -1108,6 +1209,13 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+
+                '', subline =>
+                  '')),
+
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie'),
@@ -1134,17 +1242,19 @@
                     'Unsere superiale Basis \lm{ \s } geht über ihre Primfaktorzerlegung in „Resonanz“ mit jeder ganzen, jeder rationalen und sogar'."\n".
                     'jeder algebraischen Zahl, also auch mit allen Brüchen, ganzen Exponenten und ganzen Wurzeln sowie deren algebraische Kombinationen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
                       
                 'Wie wird Resonanz in diesem Zusammenhang verstanden?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Resonanz bedeutet hier, dass alle endlichen algebraischen Zahlen sowohl auf der Grundlage der superial kleinen Basis \lm{ \s^{-1} }'."\n".
                     '„tanzen“ – also „schwingen“ –, als auch der Ganzheit \lm{ \s } entgegenstreben, die sie als größere Vollkommenheit quasi anzieht.'."\n",
-                      'Ich lasse mich hier von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
+                      'Ich lasse mich von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
                     'Verhältnissen zu tun haben.'."\n".
                     'Denn mir ist bewusst, dass die Primzahlen zwar statisch erscheinen, gleichzeitig aber aus dem dynamischen Prozess des Zählens resultieren,'."\n".
-                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n",
+                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n".
+                    'Dass das Zählen, und damit das Prozesshafte, tief in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{arithmetischen Struktur der Geometrie} verankert ist,'."\n".
+                    'haben wir oben ja schon im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹} erkannt.'."\n",
                       'Zum einen erscheint jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } aus der Perspektive ihres grundlegenden Rasters der Größenordnung \lm{ \s^{-1} }'."\n".
                     'als ganze Zahl.'."\n".
                     'Mit anderen Worten: \lm{ z \cdot \s^{-1} = a } bedeutet, dass ihr Faktor \lm{ z = a \cdot \s } eine ganze Zahl ist, wenn auch eine aktual unendlich große.'."\n",
@@ -1161,7 +1271,7 @@
                     'Wollen wir diese nicht haben, dann nehmen wir im Endlichen einfach nur die reell algebraischen Koeffizienten \lm{ a },'."\n".
                     'die auch alle auf diesem Raster liegen, wenn \lm{ z = 0 }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
                       
                 'Verfeinerung der Perspektive der Resonanz', subline =>
                   '… führt vermutlich zur Riemannschen Vermutung')),

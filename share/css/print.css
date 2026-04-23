@@ -10,8 +10,20 @@ html, body {
 
 /* == Container == */
 .container {
-  height: 100%;
+  height: auto;
   width: 731px !important;
+  background: none;
+}
+
+/* == Layout: floats → blocks == */
+/* #: In print, the float-based layout (wrapper float:left, footer clear:both) */
+/* #: causes Safari to miscalculate the footer position. Use simple block flow. */
+#wrapper {
+  float: none;
+  width: 100%;
+}
+#footer {
+  clear: none;
 }
 
 /* .header,
@@ -36,13 +48,27 @@ html, body {
   display: block;
 }
 
+/* #: Force background color in print — browsers suppress backgrounds by default. */
+.footer {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 /* == Content == */
 	.content {
 		background: #FFFFFF;
 
-    height: 100%;
-    overflow: visible;
+    /* #: JS sets content.style.height as inline style → needs !important to override */
+    height: auto !important;
+    overflow: visible !important;
 	}
+
+
+/* Links */
+
+a:visited {
+  color: inherit;
+}
 
 
 /* main Classes */
@@ -67,6 +93,18 @@ html, body {
   -o-box-shadow: none;  /* #: Opera */
   -ms-box-shadow: none;  /* #: Internet Explorer */
   box-shadow: none;  /* #: Standard */
+}
+
+
+/* 3D-Animationen */
+
+/* #: WebGL/Canvas in iframes kann der Browser-Druckmotor nicht rendern (schwarz).   */
+/* #: Der iframe wird ausgeblendet; das statische Standbild (print_image) erscheint.  */
+iframe.tools-class-vid {
+  display: none;
+}
+.tools-class-print-image {
+  display: block;
 }
 
 

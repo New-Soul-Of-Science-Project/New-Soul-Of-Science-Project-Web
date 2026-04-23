@@ -3,10 +3,17 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 23.09.2025, 20:00h
+  // #: Stand: 23.01.2026, 13:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
+  //                      +:  "MathJax":  Add Macro "supp".
+  //           20251221:  >:  "MathJax":  Change Macro "rad" from '\mathrm' to '\operatorname'.
+  //                      +:  "MathJax":  Add Macros "lpr", "pr", and "pt".
+  //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*EquationHideSeparatorLine' to '#7F7F7F'.
+  //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*EquationHideSeparatorLine'.
+  //                      >:  "Sc_f_equation_list_HideLine_html", "Sc_f_equation_list":  Use color '*EquationHideSeparatorLine'.
   //           20250923:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subset  ' -> '\;\;\;\not\subset\;\;\;'
   //           20250918:  +:  "$Sc_g_equation_replace_ary":  Add '  =:  ' -> '\;\;\;=:\;\;\;', '=:' -> '≕'
   //           20250911:  +:  "$Sc_g_equation_replace_ary":  Add '  \le  ' -> '\;\;\;\le\;\;\;', '  \ge  ' -> '\;\;\;\ge\;\;\;', '  \equiv  ' -> '\;\;\;\equiv\;\;\;'
@@ -190,10 +197,9 @@
   
 
   $Glo_g_Color_list = array_merge( array(
-                             // '*Formular'              => array( color => '505050'),
-                             '*Formular'              => array( color => '000000'),
-                             // '*Equation-Number'       => array( color => 'A0A0A0'),
-                             '*Equation-Number'       => array( color => '000000'),
+                             '*Formular'                  => array( color => '000000'),
+                             '*EquationHideSeparatorLine' => array( color => '#7F7F7F'),
+                             '*Equation-Number'           => array( color => '000000'),
                            ), $Glo_g_Color_list);
   
   $Glo_g_Paragraph_fn = 'Sc_f_Paragraph';
@@ -253,7 +259,11 @@
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
-    echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
+    echo '            lpr: "\\\\operatorname{lpr}",'."\n"; // for gapless prime tower power grid set of
+    echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
+    echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
+    echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
+    echo '            supp: "\\\\operatorname{supp}",'."\n"; // for support of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
@@ -689,6 +699,7 @@
                                     array( '  :=  ', '\;\;\;:=\;\;\;'),
                                     array( '  =:  ', '\;\;\;=:\;\;\;'),
                                     array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
+                                    array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
@@ -941,7 +952,7 @@
   
   function Sc_f_equation_list_HideLine_html()
   {
-    return '<div style="border: none; border-top: 1px dashed #dcdcdc; border-bottom: 1px solid #FFFFFF; clear: both; height: 0; width: 420px; margin: 0; padding: 0;"></div>';
+    return '<div style="border: none; border-top: 1px dashed '.(To_f_Color('*EquationHideSeparatorLine', false)).'; border-bottom: 1px solid #FFFFFF; clear: both; height: 0; width: 420px; margin: 0; padding: 0;"></div>';
   }
   
   
@@ -1031,7 +1042,7 @@
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr><td height="10"></td></tr>'."\n";
           echo "\n";
@@ -1101,13 +1112,13 @@
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';"><td height="10"></td></tr>'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;

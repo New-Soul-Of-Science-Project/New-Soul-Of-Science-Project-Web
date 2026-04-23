@@ -14,6 +14,15 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Konstruktivismus}',
+                    '• David Foster Wallace berichtet über den Konflikt zwischen Konstruktivisten und Platonisten (um diese Gruppen grob zu klassifizieren), siehe \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 6 f., S. 286-291 (auch in den Fußnoten).',
+                    '– Zitat: \quote{Die Grundprinzipien des Konstruktivismus, wie er von Kronecker praktiziert und von J. H. Poincaré, L. E. J. Brouwer und anderen bedeutenden Vertretern des Intuitionismus kodifiziert wurde, lauten: (1) Jede mathematische Aussage beziehungsweise jeder mathematische Satz, der komplizierter oder abstrakter ist als die schlichte alte Arithmetik der ganzen Zahlen, muss explizit mit Hilfe endlich vieler rein deduktiver Schritte aus der ganzzahligen Arithmetik abgeleitet (das heißt »konstruiert«) werden. (2) Die einzigen gültigen Beweise in der Mathematik sind konstruktive Beweise, wobei das Adjektiv hier bedeutet, dass der Beweis eine Methode zum Auffinden (das heißt »Konstruieren«) der mathematischen Objekte ist, mit denen er sich befasst.}, hier S. 287.',
+                    '– Können wir die ›ZFC-Modellkonstruktion‹ als Konstruktivismus bezeichnen, als Ansatz im Sinne der Konstruktivisten?',
+                    '⋅ Der konstruktivistische Ansatz des Primzahl-Flächenproduktes, ganzzahlige Teilbarkeit etc. (Kommensurabilität – die Eigenschaft, vergleichbar oder durch einen gemeinsamen Maßstab messbar zu sein) von \lm{ \s } herzustellen, erscheint mir als konstruktives Element.',
+                    '⋅ Die ZFC-Modellkonstruktion scheint mir dieses Ansinnen zu ergänzen und mit sicherem Grund zu untermauern, auch, wenn kritisiert werden könnte, dass \lm{ \s } so auch monische Eigenschaften bekommt, die als blockhaft beziehungsweise in gewisser Hinsicht als Unteilbarkeit interpretiert werden könnten. Aber das Spannungsfeld der Kombination dieser scheinbar gegensätzlichen Eigenschaften ist ja genau der Clou der Modellkonstruktion.',
+                    '– Wenn es das Gegenteil zum Platonismus sein soll, was würde Platonisten daran stören?',
+                    '– Festzustellen ist für mich, dass wir diese Konstruktion machen, weil wir Erfahren haben – uns intuitiv klar geworden ist als auch dann praktisch entdeckt und dabei festgestellt haben –, dass eine solche Konstruktion tieferen Sinn macht.',
+                    '⋅ Insofern habe ich den Eindruck, dass wir hier sowohl platonisch eine Ideenwelt erkannt oder entdeckt haben, als auch diese durch eine Konstruktion in Klarheit ausdrücken und sie dadurch schließlich sicher praktisch nutzbar machen.',
                     '\bold{Real-Abgeschlossenheit}',
                     '• Wenn wir als Exponenten von \lm{ \s }, also für \lm{ \Gamma }, rationale Zahlen zulassen, dann erhalten wir Real-Abgeschlossenheit, meint ChatGPT. Das bedeutet, dass auch Wurzeln aus jeder Superial-Zahl gezogen werden können.',
                     ))),
@@ -38,23 +47,23 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
-                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\color{*Bearb}{(Verweis)}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
-                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein Körper – Analysis oder Differentialrechnung wären unmöglich.',
+                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine eigentliche Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
+                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper} – Analysis oder Differentialrechnung wären unmöglich.',
                         'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
-                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\color{*Bearb}{(Verweis)}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
+                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
                         'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – wir müssten die komplette Algebra darauf neu definieren.',
                     ))),
                   array( 'text', array( text => array(
                     'Und diese Probleme und Unsicherheiten wollen wir nun lösen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg', text =>
                       
                 'Die Hahn-Reihe als Ausweg', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } — und kodieren die Aussage'."\n".
+                    'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s := *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } – und kodieren die Aussage'."\n".
                     '„\lm{ \s } hat bei jeder Primzahl \lm{ p } die Exponentenlänge \lm{ ω }“ rein über \lm{ p }-adische Bewertungen.'."\n".
-                    'Eine Superial-Konstruktion über eine Hahn-Reihe\color{*Bearb}{(Verweis)} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
+                    'Eine Superial-Konstruktion über eine Hahn-Reihe\footnote{\const{SupNum_g_footnote_text_HahnSeries}} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -62,6 +71,8 @@
                       array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  :>  0  }'),
                       array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  v_{p}*( \s *)  =  ω  *]  }',
+                                               label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'kapseln.'."\n".
@@ -118,7 +129,7 @@
                   array( 'text', array( text => array(
                     'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s', text =>
                       
                 'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
@@ -149,14 +160,15 @@
                 'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
                   '')),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Real-Abgeschlossenheit}',
-                    '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
-                    '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
+                    //%! '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
+                    // '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Superial-Zahlen lassen sich aufgrund der natürlichen Superial-Zahlen und deren multiplikativen Eigenschaften in Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) zerlegen.'."\n".
+                    'Diese Primpolynome verhalten sich wie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -167,13 +179,22 @@
                     'Durch die Hahn-Reihen-Definition erhalten wir nun:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Addition:} koeffizientenweise.',
-                        '\bold{Multiplikation:} Cauchy-Produkt\color{*Bearb}{(Verweis)} \\\\ \lm{ \displaystyle (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\ (die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
-                        '\bold{Lexikographische Ordnung:}\color{*Bearb}{(Verweis)} \\\ \lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
-                        '\bold{Feld­axiome:} Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein geordneter Körper ist.',
-                        '\bold{Division:} Polynomdivision\color{*Bearb}{(Verweis)}.',
-                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} ganze Superial-Zahlen, natürliche Superial-Zahlen, gerade und ungerade Superial-Zahlen sowie superiale Primzahlen.\color{*Bearb}{(genauer klären)}',
-                        '\bold{Primfaktorzerlegung:} \lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.\color{*Bearb}{(genauer klären)}',
+                        '\bold{Addition:} \\\\'."\n".
+                          'koeffizientenweise.',
+                        '\bold{Multiplikation:} \\\\'."\n".
+                          'Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} \\\\'."\n".
+                          '\lm{ \displaystyle \qquad\qquad\qquad (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\\'."\n".
+                          '(die Summe ist endlich, weil eine wohltgeordnete Menge keine unendliche absteigende Kette besitzt).',
+                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\'."\n".
+                          '\lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft. Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
+                        '\bold{Feld­axiome:} \\\\'."\n".
+                          'Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
+                        '\bold{Division:} \\\\'."\n".
+                          'Polynomdivision\footnote{\const{SupNum_g_footnote_text_Polynomdivision}}.',
+                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} \\\\'."\n".
+                          'wie \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen}, gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
+                        '\bold{Primfaktorzerlegung:} \\\\'."\n".
+                          '\lm{ \s } und alle anderen natürlichen Superial-Zahlen können in Primfaktoren zerlegt werden.',
                     ))),
                   array( 'text', array( text => array(
                     'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".

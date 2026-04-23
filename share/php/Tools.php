@@ -4,10 +4,18 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 25.10.2025, 17:00h
+  // #: Stand: 07.02.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20260207:  *:  "To_f_Paragraph", "fade-in-area":  Refine code and make some tryouts.
+  //                      +:  "To_f_Paragraph", "fade-in-area":  Add parameter "TitleVisEnd", default undefined (empty).
+  //                      >:  "To_f_Paragraph", "notice":  Add addon text '(Beginn, nicht für inhaltliche Beurteilungen beachten)', parameter "TitleVisEnd" as 'Notizen (Ende, nicht für inhaltliche Beurteilungen beachten)'.
+  //                      +:  "$Glo_g_Color_list":  New entry '*HalfInvisibleHint'.
+  //           20260129:  >:  "To_f_replace_callback__latexcommand__jump":  Third optional "target" parameter and link property implemented.
+  //           20251214:  +:  "$Glo_g_Color_list":  Change entry '*SectionSeparatorLine' to '#7F7F7F'.
+  //           20251212:  +:  "$Glo_g_Color_list":  Add entry '*SectionSeparatorLine'.
+  //                      >:  "To_f_headline_add_hides_end_line":  Use color '*SectionSeparatorLine'.
   //           20251025:  >:  "To_f_Paragraph" type "headline":  Change 'horizontalLineBefore' from 'To_f_headline_add_hides_end_line($offset, 100, 90, 90)' to 'To_f_headline_add_hides_end_line($offset, 100, 60, 60)'.
   //           20250826:  +:  "To_f_Paragraph":  Move constants to file 'Consts.php'.
   //                      >:  "To_f_Paragraph", 'headline':  Add array parameter for the headline tag with default 'h3' which was 'h4' before.
@@ -245,18 +253,15 @@
   
   $Glo_g_Color_list = array(
                              '*Error:ColorNotFound'   => array( color => 'FF0000'),  // #!: Do not remove!
-                             // '*SiteUndertitleH2'      => array( color => '#505050'),
                              '*SiteUndertitleH2'      => array( color => '#000000'),
+                             '*SectionHeadlineAddon'  => array( color => '#000000'),
+                             '*SectionSeparatorLine'  => array( color => '#7F7F7F'),
                              '*ContListDots'          => array( color => 'A0A0A0'),
                              '*ContListDescr'         => array( color => '000000'),
-                             // '*SectionHeadlineAddon'  => array( color => '#A0A0A0'),
-                             '*SectionHeadlineAddon'  => array( color => '#000000'),
-                             // '*FigTitle'              => array( color => '505050'),
                              '*FigTitle'              => array( color => '000000'),
-                             //%! '*FigDescr'              => array( color => 'A0A0A0'),
-                             // '*FigDescr'              => array( color => '707070'),
                              '*FigDescr'              => array( color => '000000'),
                              '*Conclusion'            => array( color => '000AC4'),
+                             '*HalfInvisibleHint'     => array( color => 'C0C0C0'),
                            );
 
   $Glo_g_TextAlign = 'normal';
@@ -948,7 +953,7 @@
     // print_r( '$value: '); print_r( $value);
 
     // #?: Two required parameters defined?
-    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 2))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 3))
     {
       // print_r( 'Two required parameters defined !!!');
       // print_r( 'count( $value): '); print_r( count( $value));
@@ -988,7 +993,7 @@
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
       {
         
-        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : '')." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
         
       }
       else
@@ -1001,7 +1006,7 @@
     }
     else
                                                                     
-      return 'Error: \\jump: Parameter amount is not 2 and 2 optional! Value: $value';
+      return 'Error: \\jump: Parameter amount is not 2 and 3 optional! Value: $value';
                                                                     
   }
 
@@ -1237,7 +1242,7 @@
                                       array( type => 'latexcommand',
                                              search => '\\jump',
                                              param_dim => 2,
-                                             param_optional_max => 2,
+                                             param_optional_max => 3,
                                              callback_f => 'To_f_replace_callback__latexcommand__jump',
                                           ),
                                     'jumpname' =>
@@ -2023,7 +2028,7 @@
           //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
           // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
           echo '          <div class="content-horizontal-scrollable">'."\n";
-          echo '          <table class="" border="0px" width="660px" style="margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
+          echo '          <table class="" border="0px" style="width: 100%; max-width: 660px; margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
           echo '            <tr>'."\n";
           
           // #: Margin left as column.
@@ -2132,6 +2137,8 @@
                       break;
                     case 'iframe':
                       echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";
+                      if (array_key_exists( print_image, $value_ary))
+                        echo '            <img class="tools-class-print-image" src="'.($value_ary[print_image]).'" width="'.($value_ary[width]).'" alt="'.(array_key_exists( print_image_alt, $value_ary) ? htmlspecialchars($value_ary[print_image_alt]) : '').'">'."\n";
                       break;
                   }
                   echo '              </td>'."\n";
@@ -2165,123 +2172,163 @@
 
         break;
 
-      // !!!: Can not include themselfes at the Moment!
+      // !!!: Can not include themselves at the Moment!
       case 'fade-in-area':
         global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
         
+        
         // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
         $start_display = 'showContent';
+        
+        $title = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title]);
+        $titleVis = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]));
+        $titleVisEnd = ((array_key_exists( TitleVisEnd, $text)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[TitleVisEnd]) : '');
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleDown = '&#9660;';
+        $triangleDownColor = '#A0A0A0';
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleRight = '&#9658;';
+        $triangleRightColor = '#000000';
+        // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+        $triangleUp = '&#9650;';
 
         $To_g_elements_hides_ary_dim++;
 
         $local_elements_hides_ele_num = 1;
-        
-        
-        if (/*Vue.js*/ false)
-        //if (/*Vue.js*/ true)
-        {
-          // !!! correct after the else case, because content was in the wrong place !!!
-          
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'">'."\n";
-          echo "\n";
 
-          // #: Elements for visibility.
-          //%!echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" style="background-color: #F9F9F9;">'."\n";
-          echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" class="tools-class-fade-in-area-div-show-content">'."\n";
-          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
-          $local_elements_hides_ele_num++;
-          echo $offset.'    <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
-          echo $offset.'      <tr>'."\n";
-          echo $offset.'        <td>'."\n";
-          // @click="display = false"
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-          echo $offset.'      <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
-          echo $offset.'        </td>'."\n";
-          echo $offset.'        <td>'."\n";
-          echo $offset.'          <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
-          echo $offset.'        </td>'."\n";
-          echo $offset.'      </tr>'."\n";
-          echo $offset.'    </table>'."\n";
-          To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
-          echo $offset.'  </div>'."\n";
-          echo "\n";
-        
-          // #: Elements for invisibility.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" v-else class="tools-class-fade-in-area-div-hide-content">'."\n";
-          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
-          $local_elements_hides_ele_num++;
-          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
-          echo $offset.'    <tr>'."\n";
-          echo $offset.'      <td>'."\n";
-          // @click="display = true"
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'      <td>'."\n";
-          //%!echo $offset.'        <a href="'.$local_JavaRef.'" style="text-decoration: none;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
-          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]))).'</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'    </tr>'."\n";
-          echo $offset.'  </table>'."\n";
-          echo $offset.'</div>'."\n";
-          echo "\n";
 
-          // #: Here "Display" have to be inverted, because (XXX?)!
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : (($text[Display] == 'showContent') ? 'hideContent' : 'showContent')));
-          
-          echo "\n";
-          echo $offset.'</div>'."\n";
-        }
-        else
+        /* // #: try to put the redundant code in one function, put doesn't work; probably because of variable scope
+        $clickableTitle = function ( $localDivClass, $localDisplay, $localTitle, $localTriangle, $localTriangleColor, $Content_fn)
+        use ( &$offset, &$text, &$local_elements_hides_ele_num)
         {
-          // #: 'showContent': Without content.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-hide-content" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
-          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
-          $local_elements_hides_ele_num++;
-          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
-          echo $offset.'    <tr>'."\n";
-          echo $offset.'      <td>'."\n";
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'      <td>'."\n";
-          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'    </tr>'."\n";
-          echo $offset.'  </table>'."\n";
-          echo $offset.'</div>'."\n";
-          echo "\n";
-        
-          // #: 'hideContent': With content.
-          //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-show-content" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
+          global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
+
+          // print_r('Funktion: "'.$localDisplay.'"'."<br>");
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="'.((!empty($localDisplay)) ? 'display: '.$localDisplay.';' : '').'">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'    <tr>'."\n";
           echo $offset.'      <td>'."\n";
           $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
-          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-          //echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
-          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
+          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';">'.$localTriangle.'</a>'."\n";
           echo $offset.'      </td>'."\n";
           echo $offset.'      <td>'."\n";
-          //%!echo $offset.'        <a href="'.$local_JavaRef.'" style="text-decoration: none;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
-          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, ((array_key_exists( TitleVis, $text)) ? $text[TitleVis] : $text[Title]))).'</a>'."\n";
+          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
           echo $offset.'      </td>'."\n";
           echo $offset.'    </tr>'."\n";
           echo $offset.'  </table>'."\n";
-          To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
+
+          if (isset($Content_fn))
+            $Content_fn();
+          
           echo $offset.'</div>'."\n";
           echo "\n";
+        };
 
-          //%! #: Here "Display" have to be inverted, because (XXX?)!
-          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : (($text[Display] == 'showContent') ? 'hideContent' : 'showContent')));
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : $text[Display]));
+        $content = function ()
+        use ( &$offset, &$text, &$replace_ary, &$replace_preg_ary)
+        {
+          global $Glo_g_Paragraph_fn;
+
+          To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
+        }; */
+
+
+        // #: 'showContent': Without content.
+        /* // print_r('Without content: "'.(($start_display == 'hideContent') ? '' : 'none').'"'."<br>");
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>");
+        $clickableTitle(
+          'tools-class-fade-in-area-div-hide-content',
+          ($start_display == 'hideContent') ? '' : 'none',
+          $title,
+          $triangleDown,
+          $triangleDownColor,
+          null
+        );
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>"); */
+        $localDivClass = 'tools-class-fade-in-area-div-hide-content';
+        $localDisplay = ($start_display == 'hideContent') ? '' : 'none';
+        $localTitle = $title;
+        $localTriangle = $triangleRight;
+        $localTriangleColor = $triangleDownColor;
+        
+        // #: identical as below
+        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="display: '.$localDisplay.';">'."\n";
+        $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+        $local_elements_hides_ele_num++;
+        echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+        echo $offset.'    <tr>'."\n";
+        echo $offset.'      <td>'."\n";
+        $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangle.'</small></a>'."\n";
+        echo $offset.'      </td>'."\n";
+        echo $offset.'      <td>'."\n";
+        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
+        echo $offset.'      </td>'."\n";
+        echo $offset.'    </tr>'."\n";
+        echo $offset.'  </table>'."\n";
+        echo $offset.'</div>'."\n";
+        echo "\n";
+      
+
+        // #: 'hideContent': With content.
+        /* // print_r('With content: "'.(($start_display == 'hideContent') ? 'none' : '').'"'."<br>");
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>");
+        $clickableTitle(
+          'tools-class-fade-in-area-div-show-content',
+          ($start_display == 'hideContent') ? 'none' : '',
+          $titleVis,
+          $triangleRight,
+          $triangleRightColor,
+          $content
+        );
+        // print_r('local_elements_hides_ele_num: "'.$local_elements_hides_ele_num.'"'."<br>"); */
+        $localDivClass = 'tools-class-fade-in-area-div-show-content';
+        $localDisplay = ($start_display == 'hideContent') ? 'none' : '';
+        $localTitle = $titleVis;
+        $localTitleVisEnd = $titleVisEnd;
+        $localTriangle = $triangleDown;
+        $localTriangleUp = $triangleUp;
+        $localTriangleColor = $triangleRightColor;
+
+        // #: identical as above
+        echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="'.$localDivClass.'" style="display: '.$localDisplay.';">'."\n";
+        $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+        $local_elements_hides_ele_num++;
+        echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+        echo $offset.'    <tr>'."\n";
+        echo $offset.'      <td>'."\n";
+        $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
+        echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangle.'</small></a>'."\n";
+        echo $offset.'      </td>'."\n";
+        echo $offset.'      <td>'."\n";
+        echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitle.'</a>'."\n";
+        echo $offset.'      </td>'."\n";
+        echo $offset.'    </tr>'."\n";
+        echo $offset.'  </table>'."\n";
+
+        To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
+
+        if (!empty($localTitleVisEnd)) {
+          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+          echo $offset.'    <tr>'."\n";
+          echo $offset.'      <td>'."\n";
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
+          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: '.$localTriangleColor.';"><small>'.$localTriangleUp.'</small></a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'      <td>'."\n";
+          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.$localTitleVisEnd.'</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'    </tr>'."\n";
+          echo $offset.'  </table>'."\n";
         }
+
+        echo $offset.'</div>'."\n";
+        echo "\n";
+
+        To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : $text[Display]));
+
 
         break;
 
@@ -2293,9 +2340,10 @@
             $text_sum .= $text_ele.' \\\\'."\n";
           
           $Glo_g_Paragraph_fn( 'fade-in-area', $replace_ary, $replace_preg_ary, $offset, array( Display => ((array_key_exists( Display, $text)) ? $text[Display] : 'hideContent'),
-                      Title => '\\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen').'}', ParagraphList => array(
+                      Title => '\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen}\color{*HalfInvisibleHint}{ \small{(Beginn, nicht für inhaltliche Beurteilungen beachten)}').'}',
+                      TitleVisEnd => '\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen}\color{*HalfInvisibleHint}{ \small{(Ende, nicht für inhaltliche Beurteilungen beachten)}').'}', ParagraphList => array(
                     array( 'text', array( text => array(
-                      '\\color{*Bearb}{'."\n".
+                      '\color{*Bearb}{'."\n".
                       $text_sum.
                       '}'."\n"))),
                       )));
@@ -2761,8 +2809,7 @@
   
   function To_f_headline_add_hides_end_line( $offset='          ', $relLineInset=0, $marginTop=0, $marginBottom=0)
   {
-    //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid '.(To_f_Color('*SectionSeparatorLine', false)).'; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
   }
   
   
@@ -2815,7 +2862,10 @@
 
     // #!: "<!--" and "-->" is not working in the inner of the "script" tags.
     //%!return '<script> document.write( \'<a href="javascript:To_f_anchor_JumpToBy_hash( \\\'#'.$anchor_name.'\\\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').(($text_num_color != '') ? ' '.((0 < strlen( $hint_title)) ? 'title="'.$hint_title.'" ' : '').'style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a>\'); </script><noscript><a href="#'.$anchor_name.'"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').(($text_num_color != '') ? ' '.((0 < strlen( $hint_title)) ? 'title="'.$hint_title.'" ' : '').'style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a></noscript>';
-    return '<script> document.write( \'<a href="javascript:To_f_anchor_JumpToBy_hash( \\\'#'.$anchor_name.'\\\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a>\'); </script><noscript><a href="#'.$anchor_name.'"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a></noscript>';
+    // return '<script> document.write( \'<a href="javascript:To_f_anchor_JumpToBy_hash( \\\'#'.$anchor_name.'\\\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a>\'); </script><noscript><a href="#'.$anchor_name.'"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a></noscript>';
+    // #!: I removed the 'document.write()' because if it's there '\latexmath' or '\lm' are not working in the title.
+    // !!!: But raw latex ist still in 'title' property. May create a selfmade hint menu.
+    return '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$anchor_name.'\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text)).'</a>';
 
   }
   

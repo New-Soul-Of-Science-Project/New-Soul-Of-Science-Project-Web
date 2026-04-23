@@ -37,7 +37,7 @@
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
                     'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Erreichte und erwartete Erkenntnisgewinne', subline =>
                   '')),
@@ -53,7 +53,7 @@
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
                     'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
                       
                 'Ordinalzahlen', subline =>
                   '')),
@@ -102,7 +102,7 @@
                     'die den Schritten einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Grundsätzliche Idee zur Erweiterung der Ordinalzahlen ins Negative', subline =>
                   'Der Ansatz vorerst beispielhaft mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} }, zum einfachen Einstieg und erweiterten Verständnis')),
@@ -124,7 +124,7 @@
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Der Ansatz mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} } trägt nur bedingt', subline =>
                   '')),
@@ -144,7 +144,7 @@
                     'wenn wir endlos rückwärts ins Negative zählen, denn es bleiben alle anderen Mengen, die nicht den Ordinalzahlen entsprechen,'."\n".
                     'übrig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Biordinalzahlen als Erweiterung der Ordinalzahlen', subline =>
                   'Der Ansatz mit dem Mengenuniversum \lm{ \mathbb{U} } zur allgemeinen Definition der Subtraktion von Ordinalzahlen')),
@@ -155,8 +155,10 @@
                     'Noch größere unendliche negative Ordinalzahlen lassen sich so generell nicht darstellen, denn an der Menge'."\n".
                     'der natürlichen Zahlen \lm{ \mathbb{N} } können nicht mehr Zahlen fehlen, als drinne sind.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Negative Ordinalzahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Negative Ordinalzahlen} \\\\'."\n".
                     'Die Lösung dieses Problems finden wir, wie gesagt, darin, anstatt Zahlen an der Menge der natürlichen Zahlen fehlen zu lassen,'."\n".
                     'sie aus dem Mengenuniversum\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Allklasse:2020}.} zu entfernen.'."\n",
                       'Das Mengenuniversum \lm{ \mathbb{U} } ist die kleinste Klasse von Mengen, die alle Mengen enthält, die definierbar sind.'."\n".
@@ -180,8 +182,10 @@
                     'Auch in diesem Fall wird konsequenterweise das Prinzip aufrecht erhalten, dass die Klasse – das Mengenuniversum ist auch ein Container, aber definitionsgemäß keine Menge, sondern eine Klasse –, die eine Zahl repräsentiert zum Negativen hin'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Erweiterung der Limeszahlen um ihre Vorgänger', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Erweiterung der Limeszahlen um ihre Vorgänger} \\\\'."\n".
                     'Wir möchten ja erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen, also die Vorgänger benennen, können.'."\n".
                     'Die sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
@@ -197,8 +201,10 @@
                   array( 'text', array( text => array(
                     'Diese Definition, basierend auf \lm{ \mathbb{N} }, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis} \\\\'."\n".
                     'Aber wie steht es mit der Eindeutigkeit, der Praktikabilität und der generellen Plausibilität in komplizierteren Fällen?'."\n".
                     'An folgendem Beispiel können wir einmal sehen, worum es geht:'."\n".
                     ''))),
@@ -257,7 +263,7 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Die Menge der Biordinalzahlen \lm{ \mathbb{Bn} }', subline =>
                   '')),
@@ -270,7 +276,7 @@
                 Title => 'Verworfene Möglichkeiten …',
                 TitleVis => 'Verworfene Möglichkeiten:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Umgekehrte Klammerung', subline =>
                   '')),
@@ -306,7 +312,7 @@
                       'Deshalb ist für mich diese Möglichkeit zu verwerfen, wenn wir oben eine wunderbar einfache Möglichkeit gefunden haben,'."\n".
                     'dasselbe sehr übersichtlich und plausibel zu leisten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Entfernen der (nur einer) Menge mit den Zahlen vom Mengenuniversum', subline =>
                   '')),
@@ -477,7 +483,7 @@
                     'Welche Bedeutung \lm{ ω } hat, ist eine interessante und auch sehr philosophische Frage.'."\n".
                     'Sie offenbart bei näherer Betrachtung ein Spannungsfeld zwischen zwei wahren, fast widersprüchlichen Perspektiven.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Prozessdeutung:X', text =>
                       
                 'Wie lässt sich das Symbol \lm{ ω } verstehen?', subline =>
                   '')),
@@ -561,7 +567,7 @@
                     'Was geht beim Arbeiten mit Mengen implizit vor sich, was wir wohl nicht sehen, was uns nicht bewusst ist?'."\n",
                       'Wir wollen dies hier vor allem ontologisch betrachten, also die Lehre von Seienden betreffend.\color{*Bearb}{(Verweis)}'."\n".
                     'Seiend auch besonders im Sinne von Struktur und hier von verborgener Struktur.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Funktion unseres Fokus', subline =>
                   'Der Auswahldualismus oder Bewusstseinsdualismus')),
@@ -646,7 +652,7 @@
                       'Die Zuordnung der Werte zur ontologischen Struktur führt zu einer naturphilosophisch sehr interessanten '."\n".
                     '\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Aussagenlogik', subline =>
                   '')),
@@ -686,7 +692,7 @@
                     'Beides macht einen erheblichen Unterschied und versetzt uns in die Lage, plausibel und logisch sinnvoll'."\n".
                     'Gewähltes als Positives und Weggelassenes als Negatives zu differenzieren.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologie der Dualität der Auswahl und Auslassung', subline =>
                   'Dualität bringt etwas zur Existenz und zur Wirkung')),
@@ -696,7 +702,7 @@
                     'Es ist ein \jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
                     'ganz wie in der \jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein', text =>
                       
                 'Ontologie der Dualität allgemein', subline =>
                   'Dualitäten „gebären“ weitere Dimension – „göttliche Kinder“ –, die zählen')),
@@ -719,6 +725,7 @@
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
                   // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
                   // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
+                  // #!: Auch im Abschnitt „Der metaphysische Moment der Bewegung“! (OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
@@ -736,7 +743,7 @@
                     'Alles drei wird wieder zusammengefasst und daraus entsteht das Vierte, und so fort.'."\n",
                       'Ähnliches finden wir übrigens auch in der neuen Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik', text =>
                       
                 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
                   'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
@@ -772,11 +779,26 @@
 
                   array( 'text', array( text => array(
                     'Wir können durch das Vorstehende erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
-                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n".
+                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört.'."\n".
+                    'Dadurch sind die natürlichen Zahlen \lm{ \mathbb{N} } ontologisch – von ihrem Strukturmuster her – einschließlich der Null zu verstehen.'."\n",
+                      'Daraus und auch sonst ergeben sich weitere neue Einsichten, wenn wir diese Gedanken konsequent fortsetzen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:WeiterentwicklungZuDenSuperialZahlen'),
+                    )),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
                       
                 'Eine fundamentale Asymmetrie', subline =>
                   'Die ontologische Struktur der Zahlen beinhaltet die Zählrichtung')),
@@ -786,74 +808,21 @@
                     '• Hier wird ebenso eine Asymmetrie zwischen einer ontologischen Existenz und ihrem assoziierten „Wert“ aufgezeigt.',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent',
-                    Title => 'Zwischenzeitlicher, wohl falscher Text …', TitleVis => 'Zwischenzeitlicher, wohl falscher Text:', ParagraphList => array(
-
-                  array( 'text', array( text => array(
-                    'Interessanterweise können wir so erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
-                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n",
-                      'Da es zur Null keine Antimenge und damit auch ontologisch kein negatives Komplementär gibt,'."\n".
-                    'was perfekt zur Eindeutigkeit und gewünschten Bidirektionalität in Bezug auf die Zahlenwerte passt,'."\n".
-                    'gibt es tatsächlich genauso viele negative wie positive Zahlen,'."\n".
-                    'eben beides ohne die Null.'."\n",
-                      'Es gibt also eine fundamentale Asymmetrie zwischen der ontologischen Struktur der Ordinalzahlen'."\n".
-                    'und der ontologischen Struktur der aus ihnen abgeleiteten negativen Zahlen.'."\n".
-                    'Dies gilt also auch für alle endlichen ganzen positiven Zahlen mit der Null und'."\n".
-                    'für die endlichen ganzen negativen Zahlen, ohne die Null:'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
-                      'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  ω  =  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  ω - 1  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω - 1  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Summe aller endlichen ganzen Zahlen ist demnach Null:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; + \sum_{ \forall n \in \mathbb{Z}^{-} } \! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0 \; + \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ n = 1 }^{ ω - 1 } n \; - \; \sum_{ n = 1 }^{ ω - 1 } n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω - 1 *)^{2} + *( ω - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω^{2} - 2 \cdot ω + 1 *) + *( ω - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( ω^{2} - ω *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Der Durchschnitt aller endlichen ganzen Zahlen ist demnach Null:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  \frac{ 0 }{ 2 \cdot ω - 1 }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  0  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω - 1 }  =  0  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
-                    ))),
-                      
                   array( 'text', array( text => array(
                     'Interessanterweise ergibt sich so, dass es eine negative Zahl mehr gibt als positive Zahlen, ohne die Null.'."\n".
                     'Wie kann das sein?'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Ontologische Begründung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Ontologische Begründung} \\\\'."\n".
                     'Aus ontologischer Sicht, also aus Sicht der Struktur des Seins oder die Realität betreffend, hat mir mein Freund Raimund Welsch nahegelegt:'."\n".
                     'Begreifen wir jede nach oben gezählten Abstand Eins als Welle – oder alternativ als Sägezahn, wie ich es selber schon früher gedacht hab – dann fängt jede dieser Wellen bei einer ganzen'."\n".
                     'Zahl an.'."\n".
                     'Die darauf folgende nächste ganze Zahl ist schon der Beginn der nächsten Welle und gehört nicht mehr zu der, die wir gerade gezählt haben.'."\n",
-                      'Die nullte Welle oder der nullte Zahn beginnt also bei der Null und endet vor der Eins.'."\n".
+                      'Die nullte Welle oder der nullte Zahn beginnt also bei der Null und endet vor der Eins, ähnlich einem Fähnchen, das an einem Mast in Zählrichtung weht,'."\n".
+                    'was wir interessanter Weise auch im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹}'."\n".
+                    'auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹} des Themas \italic{›\jumpname{OM:SupNum:Home}‹} finden.'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -882,12 +851,14 @@
                     'Denn die Intervalle der Zwischenräume, die an den ganzen Zahlen in Zählrichtung hängen, sind der Grund für'."\n".
                     'die Zahlenwert-Symmetrie, die sich an der Null spiegelt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Kombinatorische Begründung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Kombinatorische Begründung} \\\\'."\n".
                     'Schauen wir uns hier noch einmal die oben stehenden Formeln \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega} an:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }',
                                           /* label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-ninus-n', */label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n}', label_incr => false),
                       array( display => 'on',  latex => '{  -ω  :=  \mathbb{U} \setminus ω  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
@@ -902,8 +873,10 @@
                     'Und diese kombinatorische Anzahl wird in \lm{ -ω } ausgedrückt und ihr absoluter Wert ist eben \lm{ ω }.'."\n".
                     'Also gibt es auch aus dieser Perspektive eine negative ganze Zahl mehr, als es positive ohne die Null gibt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung} \\\\'."\n".
                     'Um auszudrücken, wie jede negative ganze Zahl jeweils aus einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
                     'im Ansatz die oben entwickelte, ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
                     'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n",
@@ -911,19 +884,19 @@
                     'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - *( 2 \cdot n + 1 *)  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Intervalle, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben,'."\n".
-                    'was wir bei den \jump{OM:SupNum:Home}{Superial-Zahl} noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{expliziter erkennen} können.'."\n".
+                    'was wir bei den \jump{OM:SupNum:Home}{Superial-Zahl} noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}{expliziter erkennen} können.'."\n".
                     'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
                     'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null.'."\n".
                     'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",
                       'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
@@ -932,8 +905,10 @@
                   array( 'text', array( text => array(
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen', text =>
+                  'Anzahl der endlichen ganzen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{}Anzahl der endlichen ganzen Zahlen} \\\\'."\n".
                     'So kommen wir zu Aussagen über die Anzahl der ganzen endlichen Zahlen:'."\n".
                     ''))),
                       
@@ -943,10 +918,10 @@
                       'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{+}  =  \# *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
                     ))),
@@ -958,16 +933,18 @@
                   array( 'text', array( text => array(
                     'Diese Aussagen sind durchaus bemerkenswert und führen uns zu einer fundamentalen und sehr spannenden Asymmetrie.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Daraus folgt eine prinzipielle Asymmetrie', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Daraus folgt eine prinzipielle Asymmetrie} \\\\'."\n".
                     'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine prinzipielle und fundamentale Asymmetrie,'."\n".
                     'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt,'."\n".
                     'weil jede negative ganze Zahl um minus Eins kleiner ist, als die natürlich Zahl, aus deren Verschiebung sie gebildet wird (siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}):'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n \; + \sum_{ \forall n \in \mathbb{N}} - *( n + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n \; - \sum_{ \forall n \in \mathbb{N}} n \; - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
@@ -977,16 +954,16 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \lm{ –ω }'."\n".
+                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \lm{ –\!ω }'."\n".
                       'und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Der Wert \lm{ –ω } dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                    'Der Wert \lm{ –\!ω } dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
                       'Das die Summe aller endlichen ganzen Zahlen negativ ist, dürfte den einen oder anderen erstaunen.'."\n".
                     'Denn naiv neigen wir wohl zumeist dazu anzunehmen, dass sich alle endlichen ganzen Zahlen zu Null summieren,'."\n".
                     'weil wir von einer Werte- und Zahlensymmetrie bei Null ausgehen.'."\n".
-                    'Das wirklich \lm{ –ω } die Summe aller endlichen ganzen Zahlen ist und ebenso auch \lm{ 2 ω } die Anzahl'."\n".
+                    'Das wirklich \lm{ –\!ω } die Summe aller endlichen ganzen Zahlen ist und ebenso auch \lm{ 2 ω } die Anzahl'."\n".
                     'aller endlichen ganzen Zahlen, bestätigt sich durch die plausible Herleitung'."\n".
                     'der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration} auf Basis der'."\n".
                     '\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
@@ -995,17 +972,17 @@
                     'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω }  =  \frac{ - ω }{ 2 \cdot ω }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω }  =  \frac{ - ω }{ 2 \cdot ω }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω }  =  - \frac{ 1 }{ 2 }  }'),
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'In Worten ausgedrückt bedeutet dies:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \lm{ –½ } und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \lm{ –\!½ } und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -1017,7 +994,7 @@
                 Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
                 TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{Notiz}', subline =>
                   '')),
@@ -1033,7 +1010,7 @@
                     '\lm{\zeta(s)} beim Funktionswert \lm{ 0 }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(0)  =  - \frac{ 1 }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1043,10 +1020,10 @@
                     'liegt beim Funktionswert \lm{ -1 } der Zeta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(-1)  =  - \frac{ 1 }{ 12 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichletsche Eta-Funktion', subline =>
                   '')),
@@ -1054,7 +1031,7 @@
                     'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \lm{ 1 } ist:'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(0)  :=  \frac{ 1 }{ 1^{0} } + \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } + \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -1072,7 +1049,7 @@
                     '\lm{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \lm{\zeta(s)}:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( s \neq 1 *) *[  \zeta(s)  :=  \frac{ \eta(s) }{ 1 - 2^{1 - s} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1080,7 +1057,7 @@
                       'Wir beginnen einmal mit der einfachsten Definition der Dirichletschen Eta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *)  *( Re(s) > 0 *) *[  \eta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ *( -1 *)^{n - 1} }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \eta(s)  :=  \frac{ 1 }{ 1^{s} } - \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } - \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \eta(0)  :=  \frac{ 1 }{ 1^{0} } - \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } - \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -1099,7 +1076,7 @@
                     'Benutzen wir die Formel von oben, dann ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(0)  ?=  \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1}  ?=  \frac{ 1 }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ 1 - 1 + 1 - 1 + 1 + \cdots }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1} }  }'),
@@ -1113,7 +1090,7 @@
                       'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \lm{ ¼ } erhalten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(-1)  :=  1 - 2 + 3 - 4 + 5 + \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
@@ -1124,7 +1101,7 @@
                     'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}} benutzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                       array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
@@ -1132,7 +1109,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichlet-Reihe', subline =>
                   '')),
@@ -1141,7 +1118,7 @@
                     'die Summe aller endlichen, natürlichen Zahlen hätte ein negatives Ergebnis:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Dirichlet-Reihe.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -1154,18 +1131,18 @@
                       'Dennoch betrachten wir einmal, was das Ergebnis wäre:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ n = 1 }^{\infty} n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)} Siehe Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Primzahlprodukt-Vermutung', subline =>
                   '')),
@@ -1179,7 +1156,7 @@
                       'Was wäre wenn:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} \setminus *\{ 1 *\} *) *[  \zeta(s)  :=  \sum_{ n = 0 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 0^{s} } + \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 0^{-1} } + \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -1199,9 +1176,10 @@
                     ''))),
 
                     ))),
-                      
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
+
                 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -1210,7 +1188,7 @@
                     'der endlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  ω - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1222,15 +1200,16 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
-                      '\color{*Bearb}{(Ist das wirklich eine Begründung? Die Lücke ist so groß nun auch wieder nicht, siehe unten. Außerdem geht es ja um den Wert von \lm{ ω }, der sich aus dem Produkt aller endlichen Primzahlen ergeben soll, und nicht darum, wieviele ganze Zahlen vor \lm{ ω } kommen.)}'."\n".
+                      'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr ist, wie wir bewiesen haben.'."\n".
                     ''))),
                       
                   array( 'text', array( text => array(
                     'Diese Lücke hat eine wichtige Bedeutung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
+
                 'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', subline =>
                   'Eine Paradox erscheinende, bizarre Situation')),
                   array( 'text', array( text => array(
@@ -1240,7 +1219,7 @@
                       'Die Ordinalzahlen sind so definiert, dass nach den endlichen natürlichen Zahlen gleich \lm{ ω } folgt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.MZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{ 0, 1, 2, 3, 4, 5, \cdots , ω *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1255,7 +1234,7 @@
                     'der Ellipse und \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.MZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *\{ 0, 1, 2, 3, \cdots , \cdots , ω - 3, ω - 2, ω - 1, ω *\}  }'),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  *\{ 0, 1, 2, 3, \cdots , \cdots , ω - 3, ω - 2, ω - 1, ω - 0 *\}  }'),
                     ))),
@@ -1267,7 +1246,7 @@
                     'Es kommen \lm{ ω } weitere Zahlen hinzu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.MZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'on',  latex => '{  \Rightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , ω - 2, ω - 1, ω - 0 *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  2 \cdot ω + 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , ω - 2, ω - 1 *\}  =  2 \cdot ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}', label_incr => true),
@@ -1279,8 +1258,10 @@
                     'Denn, wie wir noch sehen werden,'."\n".
                     'können wir so überhaupt erst die Anzahl der Zahlen in bestimmten Mengen ausdrücken.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Eine größere Anzahl von Vorgängern, als eine Zahl groß ist, kennen wir schon von rationalen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Eine größere Anzahl von Vorgängern, als eine Zahl groß ist, kennen wir schon von rationalen Zahlen} \\\\'."\n".
                     'Bei den Biordinalzahlen haben wir es offenbar mit einer Mischform auf dem Weg zu den rationalen Zahlen zu tun.'."\n",
                       'Denn auch bei den rationalen Zahlen haben wir mehr Vorgänger, sagen wir beispielsweise vor der \lm{ ½ },'."\n".
                     'als die Zahl groß ist.'."\n".
@@ -1288,15 +1269,19 @@
                     'Nur handelt es sich nicht um ganze Zahlen, sondern die rationalen Zahlen liegen dicht\color{*Bearb}{(Verweis)},'."\n".
                     'während die Biordinalzahlen alle noch ganze Zahlen sind und noch nicht dicht liegen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Bezug zu den Superial-Zahlen und zur Anzahl der rationalen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Bezug zu den Superial-Zahlen und zur Anzahl der rationalen Zahlen} \\\\'."\n".
                     'Das vorstehende Ergebnis spielt bei der Analyse der \jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} und damit auch im Hinblick auf'."\n".
                     'die Anzahl der rationalen Zahlen eine zentrale Rolle.'."\n",
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
+
                 'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen', subline =>
                   'Biordinalzahlen machen es möglich')),
                   array( 'text', array( text => array(
@@ -1313,7 +1298,7 @@
                       'den letzten Summanden abziehen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
@@ -1332,7 +1317,7 @@
                       '\lm{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \lm{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{N}_{\infty}\!: \, *( \forall x\!: \, *( x \geq 0 \;\land\; x - \left\lfloor x \right\rfloor = 0  \Rightarrow  x \in \mathbb{N}_{\infty} *) *)  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}', label_incr => true),
                     ))),
@@ -1340,7 +1325,7 @@
                       'Die Elemente sowohl der Ordinalzahlen sowie die der Biordinalzahlen gehören offensichtlich auch zu \lm{ \mathbb{N}_{\infty} }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
@@ -1350,7 +1335,7 @@
                       'Diese Klassen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen zusammen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c}', label_incr => true),
                     ))),
@@ -1358,7 +1343,7 @@
                       'Die Definition der Ordinalzahlen erfüllt dieses Kriterium offensichtlich, während die Biordinalzahlen es nicht erfüllen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c}', label_incr => true),
                       array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
@@ -1371,7 +1356,7 @@
                       'Dies sind unendlich große Klassen – Mengen sind dabei nur besondere Klassen –, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
@@ -1382,7 +1367,7 @@
                       'auch zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen gehören muss und umgekehrt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \Leftrightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{On}  \in  \mathbb{K}_{\infty,g}  \;\; ,  }',
@@ -1397,7 +1382,7 @@
                       'zur Klasse der Gauß-Summen äquivalenten Klassen gehört,'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ ω^{2} - ω }{ 2 }  \;\;  ,  }',
@@ -1418,10 +1403,12 @@
                       '\color{*Entwick}{Interessant wäre, ob sich durch die Bestimmung weiterer Summen die Plausibilität des Beweises der Primzahlprodukt-Vermutung vertiefen lässt.'."\n".
                     'Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
-                      
-                'Die Menge der Ordinalzahlen nur ins Negative erweitert', subline =>
-                  'Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negativen Zahlen adressieren')),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
+
+                'Rein die Menge der Ordinalzahlen ins echt Negative erweitert', subline =>
+                  'Keine Vorgänger der unendlichen Limeszahlen. Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negative Zahlen adressieren')),
                   array( 'text', array( text => array(
                     'Wollen wir alle natürlichen Zahlen \lm{ n } adressieren, von der Null an bis ins potenziell Unendliche,'."\n".
                     'dann nutzen wir dafür die Menge der natürlichen Zahlen \lm{ \mathbb{N} } durch \lm{ n \in \mathbb{N} }'."\n".
@@ -1433,8 +1420,10 @@
                       'Oder im anderen Fall über \lm{ n \in [5, ω + 56]_{2 ω} } oder \lm{ n \in [5, ω + 56]_{\mathbb{On}} },'."\n".
                     'deren Teilmengen ebenfalls alle gleich sind, auch, wenn sich die Basismengen unterscheiden.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  'Anders bei ganzen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Anders bei ganzen Zahlen} \\\\'."\n".
                     'Es gibt Fälle, in denen wir Mengen aller endlichen ganzen Zahlen, aber dazu auch von ihrem Wert her über das endliche hinausgehende'."\n".
                     'aktual unendliche ganze Zahlen benötigen.'."\n".
                     'Und zwar auch im negativen Bereich.'."\n".
@@ -1454,7 +1443,7 @@
                       'Ebenso nicht im Falle der Teilmenge \lm{ z \in [- (ω + 87), ω + 56]_{\mathbb{Bn}} } mit Zahlen wie'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), \\\ \quad\, -ω, - (ω - 1), - (ω - 2), \cdots {-3}, -2, -1, \\\ \quad\; 0, 1, 2, \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2, \cdots ]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1465,7 +1454,7 @@
                     'ins Negative gespiegelt und verschoben sind, enthält:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}^{-}  =  *( n \in \mathbb{On} *)  *[  z \in \mathbb{Bn}  *|*  z = -n - 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{On}^{-}  =  *( n \in \mathbb{On} \setminus *\{ \varnothing *\} *)  *[  z  *|*  z = \mathbb{U} \setminus n  *]  }'),
                       array( display => 'on',  latex => '{  \mathbb{On}_{0}^{\pm}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
@@ -1473,28 +1462,32 @@
                   array( 'text', array( text => array(
                     'So erhalten wir die Basismenge, die wir zum Adressieren benötigen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
-                      
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:WeiterentwicklungZuDenSuperialZahlen', text =>
+
                 'Weiterentwicklung zu den Superial-Zahlen', subline =>
                   'Die superiale Basis \lm{ \s} hat \lm{ \s } natürliche Superial-Zahlen als Vorgänger')),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
-                    'verstanden werden und sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
-                    'Dies gilt in einem noch engeren Sinn, wenn sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
-                    'als wahr herausstellen sollte.'."\n",
-                      'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen bekannt ist, die der der Biordinalzahlen'."\n".
+                    'verstanden werden und sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
+                    'Dies gilt in einem noch engeren Sinn, weil sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
+                    'als wahr herausgestellt hat.'."\n",
+                      'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen aus leeren Mengen bekannt ist, die der Mengendarstellung der Biordinalzahlen'."\n".
                     'entspricht, so waren für mich die Superial-Zahlen und ihre Eigenschaft, dass die Subtraktion vollständig definiert ist,'."\n".
                     'der Anlass zur Entwicklung der Biordinalzahlen aus den Ordinalzahlen, um die ontologische Struktur'."\n".
                     'von aktual unendlichen Zahlen besser zu verstehen.'."\n".
                     'Daher liegt es auf der Hand, deren Eigenschaften in Bezug auf ihre Vorgänger zu vergleichen.'."\n",
                       'Mit den Ordinalzahlen und den Biordinalzahlen befinden wir uns strukturell sozusagen am Sockel'."\n".
-                    'der Fraktalität des Aktual-Unendlichen.'."\n".
+                    'der Fraktalität des Aktual-Unendlichen Großen ganzen Zahlen.'."\n".
                     'Dies erscheint mir ein Grund dafür, dass wir in bizarre und auch interessante, scheinbar paradoxe Situationen kommen.'."\n",
                       'Mit den Superial-Zahlen kommen wir dann quasi in die höheren Sphären der Fraktalität,'."\n".
                     'was zur Folge hat, dass uns die Dinge wieder harmonischer erscheinen.'."\n".
                     'Denn in den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} haben wir wieder so viele Vorgänger,'."\n".
-                    'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist.'."\n".
+                    'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist;'."\n".
+                    'diesmal allerdings mit reell algebraischen Koeffizienten und nicht nur mit ganzen Zahlen als Koeffizienten, wie bei den Biordinalzahlen.'."\n",
+                      'In den Superial-Zahlen machen wir einen \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{Vergleich der Struktur beider Zahlenklassen}.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

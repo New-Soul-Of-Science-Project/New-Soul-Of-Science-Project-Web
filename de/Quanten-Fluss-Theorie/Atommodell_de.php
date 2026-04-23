@@ -17,12 +17,22 @@
                     '• In der Quanten-Fluss-Theorie ist der Elektronen-String viel größer als jeder String im Atomkern. Daher kann das Elektron sich nur zum Atomkern zentrieren und niemals hineinfallen.'."\n",
                     '• Die elektrische Ladung des Elektrons hat aber trotzdem ein Feld, dessen Quelle im Schwerpunkt seines Wirkungsquanten-Strings liegt, siehe \jump{OM:FrQFT:Lepton}{Leptonen-Modell}.'."\n",
                     '• Welche Rolle spielt die Herleitung Heisenbergs Unschärferelation\footnote{\cite{Heisenberg:UeberQuantKinMech1927Scan}.} im Atommodell? Im Besonderen die Relation \( p \cdot q - q \cdot p = \frac{\hbar}{2 \pi i} \). Noch einmal lesen.'."\n",
-                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \jump[https://www.youtube.com/watch?v=Vf98gzuXsgI&t=170s]{}{The Nature of the Electron SIMPLIFIED in 5 Minutes!}.'."\n",
-                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \jump[https://www.youtube.com/watch?v=qJZ1Ez28C-A]{}{Something Strange Happens When You Trust Quantum Mechanics}.'."\n",
+                    '• Informative Filme zum Elektron und seiner Rolle im Atommodell:'."\n",
+                    '– Chemistorian: \jump[https://www.youtube.com/watch?v=Vf98gzuXsgI&t=170s][][_blank]{}{The Nature of the Electron SIMPLIFIED in 5 Minutes!}.'."\n",
+                    '– Veritasium: \jump[https://www.youtube.com/watch?v=qJZ1Ez28C-A][][_blank]{}{Something Strange Happens When You Trust Quantum Mechanics}.'."\n",
+                    '– Veritasium: \jump[https://www.youtube.com/watch?v=Y-W-w8yNiKU&t=497s][][_blank]{}{The Man Who Accidentally Discovered Antimatter}.'."\n",
+                    '– FloatHeadPhysics: \jump[https://www.youtube.com/watch?v=M--6_0F62pQ][][_blank]{}{I finally understood orbital shapes intuitively! (My mind is blown)}.'."\n",
+                    '– FloatHeadPhysics: \jump[https://www.youtube.com/watch?v=kgGq8xXJdIk][][_blank]{}{I learnt chemistry using physics! (It blew my mind)}.'."\n",
+                    '\bold{Aktuelle Forschung}'."\n",
+                    '• Spektrum der Wissenschaft, Manon Bischoff: \jump[https://www.spektrum.de/news/zeit-in-der-quantenwelt-wie-lange-dauert-ein-quantensprung/2309215][][_blank]{}{Wie lange dauert ein Quantensprung?}'."\n",
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    'In seinem Video ›I finally understood orbital shapes intuitively!‹ (zu deutsch: ›Endlich habe ich die Formen der Umlaufbahnen intuitiv verstanden!‹)'."\n".
+                    'erklärt Mahesh Shenoy ziemlich eindrucksvoll, wie sich die Elektronen-Orbitale'."\n".
+                    'als Wahrscheinlichkeitswellen des Elektronenaufenthalts als Anregungszustände der Elektronen in Form von stehenden Wellen im dreidimensionalen Raum ergeben.'."\n",
+                      'Um im Laufe der Zeit eine Idee davon zu bekommen, wie …'."\n",
+                      '\color{*Bearb}{In Arbeit …}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

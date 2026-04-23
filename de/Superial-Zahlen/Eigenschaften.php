@@ -37,7 +37,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten'),
                     )),
                 )
           ); ?>
@@ -45,9 +45,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Was lernen wir über rationale beziehungsweise algebraische Zahlen  >
+          <!  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen',
+            'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -55,143 +55,209 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\bold{Nachkommastellen}',
-                    '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
-                    '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    // '\bold{Nachkommastellen}',
+                    // '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    // '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Es scheint zunächst banal, jedoch eröffnet die folgende Betrachtung interessante Einsichten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten:X', text =>
+                      
+                'Wie weit ins unendlich Kleine reichen die Summanden der periodischen rationalen Koeffizienten der Superial-Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen stolper wir in viele Fragen.'."\n".
+                    'Eine der Fragen, die aufkommt, ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Nehmen wir an, in der endlichen Stelle wollen wir die Zahl \lm{ ⅓ } darstellen und ein \lm{ \s^{-1} } addieren zu \lm{ ⅓ + \s^{-1} } – nur als Beispiel.'."\n",
+                      'Als Bruch ist dies völlig klar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 \frac{ 1 }{ 3 } *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aber als Dezimalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 0,\!33333\overline{3} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} \\\ \qquad\qquad\qquad\qquad\;\;\;\, + 3 \cdot 10^{-3} + 3 \cdot 10^{-4} + \cdots *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'stellt sich die Frage, wieviele Nachkommastellen die Zahl hat.'."\n".
+                    'Denn wir wissen, dass die algebraische Zahl \lm{ ⅓ } am Ende \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{keine superial kleinen Summanden enthalten darf},'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n".
+                    'Denn sie muss ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} sein.'."\n",
+                      'Schauen wir uns also an, welche Entfernung, sprich Differenz, zu \lm{ ⅓ } wir noch haben, wenn wir \lm{ n } Summanden addieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 a_{0} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  a_{0,n}  =  \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  a - a_{0,n}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ *( \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k} *) \cdot 3 }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ \frac{ 3 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 3 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 9 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 \cdot 10^{-n} }{ 3 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 }{ 3 } \cdot 10^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nehmen wir einmal an, wir ziehen – prozessieren – es einmal in Anzahl der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'oder selbst \lm{ \s }-mal komplett durch,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann stellen wir fest, dass wir immer noch nicht \lm{ ⅓ } erreicht haben, denn die Differenz ist zwar bereits unendlich klein,'."\n".
+                    'aber immer noch nicht verschwunden.'."\n",
+                      'Bei \lm{ n = ω } gibt es dabei zwar keine unendlich kleinen Summanden, aber was nützt es, wenn wir \lm{ ⅓ } ja nicht erreichen.'."\n".
+                    'Bei \lm{ n = \s } haben wir dann schon aktual unendlich kleine Summanden und trotzdem \lm{ ⅓ } nicht erreicht.'."\n".
+                    'Wie können wir die Situation nun verstehen?'."\n".
+                    'Ebenfalls ist die Frage, die \lm{ n } welcher Menge machen hier Sinn oder sind überhaupt erlaubt.'."\n",
+                      'Jedenfalls stellen wir fest, dass wir uns \lm{ ⅓ } immer mehr annähern, je mehr Summanden wir addieren.'."\n".
+                    'Das hört offensichtlich nie auf und geht bis ins Aktual-Unendliche immer weiter.'."\n".
+                    'Wir sehen aber auch, dass wir hoffen können, dass die Summe wieder komplett endlich wird, wenn wir sie nie, auch nicht im Aktual-Unendlichen, enden lassen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS'),
                     )),
               )
           ); ?>
 
 
-		    	<!  • S ist ein angeordneter Körper  >
+          <!  • Weitere Ordnungseigenschaften von S  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper',
+            'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten', type => 'back'),
                     )),
-                      
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Totalordnung}',
+                    // '• Die Superial-Zahlen haben eine Totalordnung:',
+                    // '– Wikipedia: \jump[https://de.wikipedia.org/wiki/Ordnungsrelation]{Totalordnung}{Ordnungsrelation, Totalordnung.}',
+                    ))),
+
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
-                      'Wir können nämlich für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
-                    'größer als die andere ist, weil sie eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
-                    '\lm{ \mathbb{S} } ist nämlich ein angeordneter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
-                    '\color{*Bearb}{(Dies ist zu beweisen: die Körpereigenschaft und das Angeordnetsein.)}'."\n".
+                      'Wir können zum Beispiel für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
+                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
+                    'nämlich eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
                       
-                'Ist \lm{ \mathbb{S} } ein archimedisch angeordneter Körper?', subline =>
+                'Ist \lm{ \mathbb{S} } ein archimedisch geordneter Körper?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es stellt sich die Frage, ob die Superial-Zahlen, also die Menge \lm{ \mathbb{S} },'."\n".
-                    'auch ein archimedisch angeordneter Körper\footnote{\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
+                    'Es stellt sich die Frage, ob die Superial-Zahlen \lm{ \mathbb{S} }'."\n".
+                    'auch ein archimedisch geordneter Körper\footnote{\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Das archimedische Axiom\footnote{\const{NSOSP_g_footnote_text_ArchimedischesAxiom}} besagt,'."\n".
-                      'dass in einem archimedisch angeordneten Körper \lm{ \mathbb{K} } immer eine natürliche Zahl existiert,'."\n".
+                      'dass in einem archimedisch geordneten Körper \lm{ \mathbb{K} } immer eine ganze Zahl existiert,'."\n".
                       'die als Faktor jede Zahl einer Menge größer machen kann als eine andere Zahl der gleichen Menge:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x, y \in \mathbb{K} *) *( y > x > 0 *) *( \exists z \in \mathbb{Z} *) *[  x \cdot z  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Es besagt also, dass alle Elemente des archimedisch angeordneten Körpers endlich sind, es jedoch unendlich viele davon gibt.'."\n".
+                      'Es besagt also, dass alle Elemente des archimedisch geordneten Körpers endlich sind, es jedoch unendlich viele davon gibt.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dies gilt aber nicht für den angeordneten Körper der Superial-Zahlen,'."\n".
-                      'weil es Elemente einer Untermenge \lm{ x \in \mathbb{Q} } gibt, für das es keinen Faktor in \lm{ \mathbb{N} } gibt, um beides als Produkt größer als \lm{ \s } zu machen:'."\n".
+                      'Das archimedische Axiom gilt in dieser Form aber nicht für den geordneten Körper der Superial-Zahlen,'."\n".
+                      'weil es die Untermenge ihrer sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }, der reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, gibt,'."\n".
+                      'für deren Elemente \lm{ x \in \mathbb{A}_{\S} = \mathbb{A}_{\R} } es keinen Faktor in \lm{ \mathbb{Z} } gibt,'."\n".
+                      'um ihr Produkt größer als jede Superial-Zahl \lm{ \mathbb{S} } zu machen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall q, x \in \mathbb{Q} *) *( q \cdot \s > x > 0 *) *[  x \cdot n > q \cdot \s  *]  }'),
-                      array( display => 'on',  latex => '{  q \cdot \s \in \mathbb{S}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow *( \nexists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *( \nexists z \in \mathbb{Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
+                      array( display => 'on',  latex => '{  a \cdot \s \in \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *( \nexists z \in \mathbb{Z} *) *[  x \cdot z  >  y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Denn \lm{ \mathbb{S} } enthält zum Beispiel mit \lm{ q \cdot \s } Elemente, die größer als jede endliche natürliche Zahl und damit unendlich groß sind.'."\n",
+                      'Denn \lm{ \mathbb{S} } enthält zum Beispiel mit \lm{ a \cdot \s } Elemente, die größer als jede endliche ganze Zahl und damit unendlich groß sind.'."\n".
+                      'Wir haben also eine Menge von Gegenbeispielen gefunden.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wie wir daran sehen, handelt es sich bei den Superial-Zahlen um eine ganz andere Menge,'."\n".
-                    'als bei Mengen endlicher Zahlen.'."\n".
+                    'Wie wir daran sehen, handelt es sich, streng genommen, bei den Superial-Zahlen nicht um einen archimedisch geordneten Körper.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
+                  '\lm{ \mathbb{S} } ist ein \lm{ \mathbb{S}_{\Z} }-archimedisch geordneter Körper', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch angeordneter Körper ist?} \\\\'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie kann das archimedische Axiom im Prinzip auf die Superial-Zahlen \lm{ \mathbb{S} } übertragen werden?'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Wie kann das archimedische Axiom für eine möglichst große Teilmenge von \lm{ \mathbb{S} } erfüllt werden?'."\n".
-                      'Es scheint mir, dass dies erfüllt wird, wenn es keine unendlich großen Summanden in den Elementen der Menge gibt.'."\n".
-                      'Sowohl \lm{ x } als auch \lm{ y } müssen zwischen den endlichen Zahlen liegen:'."\n".
+                      'Sei im archimedischen Axiom die Menge der endlichen ganzen Zahlen \lm{ \mathbb{Z} }'."\n".
+                      'durch die Menge der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }'."\n".
+                      'und der Körper \lm{ \mathbb{K} } durch die Superial-Zahlen \lm{ \mathbb{S} } ersetzt'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{A}  :=  *\{  x *|* *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[ x \cdot n > y *]  *\}  }'),
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *( \exists z \in \mathbb{S}_{\Z} *) *[  x \cdot z  >  y  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'In Anlehnung an die Definition der Menge aller Superial-Zahlen in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}'."\n".
-                      'können wir diese Menge auch so schreiben:'."\n".
+                      'sodass wir das \italic{\lm{ \mathbb{S}_{\Z} }-archimedische Axiom} erhalten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Unser Gegenbeispiel oben wird auf diese Weise zu'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{S}_{A}  :=  *\{  x *|* *( \forall d \in \mathbb{Z}_{0}^{-} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }'),
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *( \exists z \in \mathbb{S}_{\Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'So enthalten diese Superial-Zahlen keine Summanden mit Potenzen von \lm{ \s }, die größer als Null sind.'."\n",
+                      'und mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z  =  \s^{2} \in \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  x \cdot z  >  a \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{2}  >  a \cdot \s  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'sehen wir, dass unser Gegenbeispiel nicht mehr funktioniert.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da die Größe einer Superial-Zahl immer durch den Koeffizienten ihrer größten Potenz von \lm{ \s } bestimmt ist,'."\n".
+                      'die per Definition in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} immer existiert,'."\n".
+                      'und, weil die Exponenten von \lm{ \s } nach oben hin im Endlichen unbegrenzt sind,'."\n".
+                      'können wir einfach durch die Wahl eines jeweils größeren Exponenten in der ganzen Superial-Zahl \lm{ z }'."\n".
+                      'eine solche finden, die das \lm{ \mathbb{S}_{\Z} }-archimedische Axiom dann also mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z  =  \s^{\max(\supp(y)) + 1} \in \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  x \cdot z  >  y  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \s^{\max(\supp(y)) + 1}  >  y  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'erfüllt, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Bezüglich der Menge \lm{ \mathbb{S}_{\Z} } der ganzen Superial-Zahlen ist \lm{ \mathbb{S} } ein \lm{ \mathbb{S}_{\Z} }-archimedisch geordneter Körper.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
-                      
-                'Aber \lm{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \lm{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\color{*Bearb}{(In Arbeit …)}'."\n",
-                        '\\\\'."\n".
-                      ''))),
 
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                      
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS'),
                     )),
@@ -205,7 +271,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -225,10 +291,12 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm'),
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich'),
                     )),
+
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
@@ -286,12 +354,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \# \mathbb{N} + \# *( ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \# \mathbb{Z} + \# \mathbb{Z^{-}}  }'),
+                      array( display => 'on',  latex => '{  \s  =  \# \mathbb{N} + \# ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \# \mathbb{Z} + \# \mathbb{Z^{-}}  }'),
                       array( display => 'off', latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z^{-}} }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \# \mathbb{Z} + \# *( ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \# \mathbb{Z}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \# *( ] 0, 1 [_{\mathbb{A}_{\S}} *) *) \cdot \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; 2 ω  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \# \mathbb{Z} + \# ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \# \mathbb{Z}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \# ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \# \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; \# \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; 2 ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was der Anzahl aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
@@ -308,8 +376,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  2 ω \; \cdot \; \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  2 ω \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  \s  \;\; ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => true),
                     ))),
@@ -322,10 +390,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω} }{ 2 ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
+                      array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'off', latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
@@ -341,59 +411,73 @@
                 'Ausgangspunkt der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Und wir können sogar noch weiter gehen und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
+                    'Und wir können sogar noch weiter gehen als im vorherigen Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
+                    'und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
                     'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
-                    'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
+                    'in \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
                     'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
                       'Doch welches Teilprodukt von \lm{ \s } ist \lm{ ω }, wenn klar ist, dass \lm{ \s } unendlich viel größer ist'."\n".
                     'als \lm{ ω }?'."\n".
-                    'Denn schon die Potenz oder der Turm der kleinsten Primzahl \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
+                    'Denn schon die Potenz beziehungsweise der Turm des Produkts der kleinsten Primzahl \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p_{i}^{ω} }, mit \lm{ p_{i} \in \mathbb{P} }, können so nicht als Faktoren in \lm{ ω } enthalten sein.'."\n",
                       'Das aktual unendlich große Primzahlprodukt, dass auf den ersten Blick bleibt, um \lm{ ω } darzustellen, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
                     'dass \lm{ ω ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'zu sein, die ja mit \lm{ ω } ausgedrückt wird.'."\n".
+                    'Jedoch haben wir bei den \italic{›\jumpname{OM:BiOrd:Home}‹} schon erkannt, dass zwischen den endlichen natürlichen Zahlen'."\n".
+                    'und \lm{ ω } noch aktual unendlich viele ganze Zahlen liegen und es demnach insgesamt sogar'."\n".
+                    '\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr natürliche Zahlen vor \lm{ ω } gibt, als sein Wert ausdrückt}.'."\n",
                     // 'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     // 'eine bestimmte Bedingung:'."\n".
                     // 'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
                     //   'Ob diese Bedingung hinreicht, beleuchten wir in der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
                     // 'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
                     // 'dass unsere Vermutung stimmen könnte.'."\n".
-                    'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns tatsächlich zu zeigen,'."\n".
+                      'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns nun zu zeigen,'."\n".
                     'dass wirklich \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } gilt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
-                      
-                'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen', subline =>
-                  'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen', text =>
+
+                'Erklärung der Anzahl der reell algebraischen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen', subline =>
+                  'Die Entstehung der negativen reell algebraischen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
                   array( 'text', array( text => array(
                     'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
                     'Dies bestimmt zum einen, ob sich wirklich plausibel eine ganze Anzahl an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
                     'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } ergibt, sodass wir keinen logischen Bruch und damit einen Widerspruch erhalten.'."\n".
                     'Und damit wird bestimmt, ob wir sagen können, dass \lm{ ω } gemeinsame Teiler mit \lm{ \s } haben muss.'."\n",
-                      'Dies ist einer der Gründe, weswegen ich mich mit den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
-                    'beschäftigt, diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
+                      'Dies ist einer der Gründe, weswegen wir uns mit den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'beschäftigt, diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht haben.'."\n".
                     'Darauf basierend haben wir eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
                     'herausgearbeitet, die der von uns gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
                     '\lm{ 2 ω } zugrunde liegt.'."\n",
-                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen bleibenden Zählrichtung, die auch dort in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
-                    'weil alle Zahlen letztendlich aus dem Zählen hervorgehen.'."\n".
-                    'Siehe dazu auch den \italic{›\jumpname{OM:OT:Zaehloperator}‹} in der \italic{›\jumpname{OM:OT:Home}‹}.'."\n",
-                      'Um auszudrücken, dass jeder negative sinnvolle Koeffizient der Superial-Zahlen Teil eines an einer negativen ganzen Zahl hängenden Zahlenintervalls ist,'."\n".
-                    'wo jedes negative Zahlenintervall jeweils aus einem Zahlenintervall an einer natürlichen, also positiven Zahl oder der Null entsteht, berücksichtigen wir'."\n".
-                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Sägezähne – oder spezielle Wellen – von einer Zahl zur nächsten handelt.'."\n".
-                    'Diese Sägezähne hängen in Zählrichtung an den ganzen Zahlen.'."\n".
+                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen bleibenden Zählrichtung,'."\n".
+                    'die dort ebenfalls in Richtung der größer werdenden und schließlich positiven Zahlen ausgerichtet ist,'."\n".
+                    'weil auch die negativen, gar alle Zahlen letztendlich aus dem Zählen hervorgehen.'."\n".
+                    'Siehe dazu auch den \italic{›\jumpname{OM:OT:Zaehloperator}‹} in der \italic{›\jumpname{OM:OT:Home}‹}.'."\n".
+                    'Dass das Zählen, und damit auch das Prozesshafte, tief in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}{arithmetischen Struktur der Geometrie} verankert ist,'."\n".
+                    'haben wir bereits im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten}‹} erkannt.'."\n".
                     ''))),
-                      
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen:X', text =>
+                  'Reell algebraische Zahlen bestehen aus Intervallen der Größe Eins', subline =>
+                    'Ihr natürlicher Aufbau, der die Zählrichtung sichtbar macht')),
+                  array( 'text', array( text => array(
+                    'Um auszudrücken, dass jeder negative sinnvolle Koeffizient der Superial-Zahlen Teil eines an einer negativen ganzen Zahl hängenden Zahlenintervalls ist –'."\n".
+                    'wobei jedes negative Zahlenintervall jeweils aus einem Zahlenintervall an einer natürlichen, also positiven, Zahl oder der Null entsteht –, berücksichtigen wir'."\n".
+                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Sägezähne – wie Fähnchen oder spezielle Wellen – von einer Zahl zur nächsten handelt.'."\n".
+                    'Diese Sägezähne entsprechen genau den von uns nun betrachteten Zahlenintervallen und hängen in Zählrichtung an allen ganzen Zahlen.'."\n".
+                    ''))),
+
                   array( 'figure',
                     array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen'))),
-                                            
+
                   array( 'text', array( text => array(
                     'Die negativen Zahlen entstehen also eigentlich nicht durch eine Spiegelung all dieser Sägezähne an der Null, sondern durch deren jeweils einzelne Verschiebung.'."\n".
-                    'Bei einer Spiegelung an der Null wäre die Null auch strukturell gedoppelt – ontologisch redundant –, was keinen Sinn macht,'."\n".
-                    'und die Sägezähne drehten sich um, was, wie gesagt, ebenfalls unsinnig erscheint, weil es eine Umkehrung der Zählrichtung bedeutete.'."\n",
+                    'Bei einer Spiegelung an der Null wäre die Null strukturell gedoppelt – ontologisch redundant –, was keinen Sinn macht,'."\n".
+                    'und die Sägezähne drehten sich in ihrer Richtung zum negativen hin um, was ebenfalls unsinnig erscheint, weil es eine Umkehrung der Zählrichtung im Negativen bedeutete, die nicht real ist.'."\n",
                       'Dieser Zusammenhang soll sich ganz korrekt in der Struktur der ersten Formulierung der Entstehung der negativen Sägezahnintervalle von \lm{ \mathbb{A}_{\S}^{-} } ausdrücken,'."\n".
                     'die wir auf Basis der Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
                     ''))),
@@ -422,7 +506,7 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{N}  =  ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}^{-}  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \, \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}^{-}  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \, \cdot \; ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
@@ -432,23 +516,110 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \s  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => false),
                       array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \# \mathbb{A}_{\S}^{-} \; + \; \# \mathbb{A}_{\S}^{0,+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S}^{-}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es gibt also eine quasi Spiegelung der Anzahlen von positiven und negativen ganzen Zahlen.'."\n",
-                      'Aber die Spiegelung der Werte der ganzen Zahlen an der Null ist nicht korrekt.'."\n".
-                    'Die Spiegelung der Werte findet beim Wert \lm{ -½ } statt (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
-                    'Wir sehen, es kann der falsche Eindruck einer Spiegelung der Entitäten der ganzen Zahlen oder der reell algebraischen Zahlen entstehen,'."\n".
-                    'wenn wir die Intervalle zwischen den ganzen Zahlen nicht explizit berücksichtigen und durch Dranhängen visualisieren würden.'."\n",
-                      'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
-                    'wirklich \lm{ 2 ω } ist.'."\n".
+                    'Es gibt also eine quasi Spiegelung der Anzahlen von positiven, mit der Null, und negativen ganzen Zahlen.'."\n",
+                      'Die Anzahl der rein positiven Zahlen ist allerdings mit'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{+}  =  \# \mathbb{A}_{\S}^{-} - 1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'eine weniger, als die der negativen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen:X', text =>
+                  'Die Spiegelung der Entitäten und der Mittelwert der reell algebraischen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Jedoch, die langläufige stillschweigende Annahme der Spiegelung der Werte der \italic{ganzen Zahlen} an der Null und ihr Mittelwert Null sind nicht korrekt.'."\n".
+                    'Die Spiegelung der Werte aller \italic{ganzen Zahlen} findet bei \lm{ -½ } statt, wie wir in der \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen} erkennen.'."\n".
+                    'Die Summe aller  \italic{ganzen Zahlen} und ihr Mittelwert sind nach den Formeln \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z} und \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen, es kann leicht der falsche Eindruck einer Spiegelung der Entitäten der ganzen Zahlen an der Null entstehen,'."\n".
+                    'wenn wir uns nicht differenziert mit dem Muster und der Bedeutung des Zählens bis ins aktual unendliche auseinander setzen.'."\n".
+                    'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
+                    'wirklich \lm{ 2 ω } ist.'."\n",
+                      'Wie ist es nun bezüglich der Summe und des Mittelwerts aller reell algebraischen Zahlen?'."\n".
+                    'Diese können wir nur verstehen, wenn wir die Intervalle zwischen den ganzen Zahlen explizit berücksichtigen und durch Dranhängen an die ganzen Zahlen visualisieren.'."\n",
+                      'So erhalten wir für die Summe aller reell algebraischen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z + u  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
+                      array( display => 'off', latex => '{  x  =  1  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \# \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ \forall z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  -ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Anteile der positiven und negativen Sägezähne heben sich auf und es bleibt einfach die Summe aller ganzen Zahlen übrig.'."\n".
+                    'Sehr interessant und beim Einmal-drüber-nachdenken plausibel.'."\n",
+                      'Der Mittelwert aller reell algebraischen Zahlen ergibt sich mit Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} dann zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
+                      array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
+                    'wie wir in \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen} sehen.'."\n".
+                    'Nur der Abstand zum quasi letzen fehlenden Punkt bringt ein negatives Ungleichgewicht hinein,'."\n".
+                    'dass allerdings unendlich klein ausfällt, wie wir in Bild und Wert erkennen können.'."\n",
+                      'Diese Summe kennen wir aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}'."\n".
+                    'in etwas anderer Form schon aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}‹}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ \forall z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
+                    'Es erscheint mir aber sehr interessant.'."\n".
+                    ''))),
+
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung', text =>
-                      
+
                 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung', subline =>
                   '')),
                       
@@ -466,11 +637,13 @@
                     'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
                     'Eine bemerkenswerte Doppelung, wie ich finde, wo die eine Seite schließlich perfekt in die andere Seite greift.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Eine bemerkenswerte Doppelung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Eine bemerkenswerte Doppelung} \\\\'."\n".
                     'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
-                    'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.'."\n".
+                    'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} = \s }.'."\n".
                     'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
                     'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecken der Länge \lm{ \s^{-1} } führen muss.'."\n",
                       'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
@@ -489,8 +662,10 @@
                     'Das tun sie zum einen in den Differenzen der Ableitung und sodann auch, zum anderen, bei der Integration, wo die superial kleinen ganzen Zahlen'."\n".
                     'als Indizes der Summenglieder auftreten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Existenz der maximalen Dichte der Zahlengeraden', subline =>
+                    'Mit endlichen Koordinatenwerten, also ohne aktual unendlich kleine Summanden')),
                   array( 'text', array( text => array(
-                  '\condb{Existenz der maximalen Dichte der Zahlengeraden} \\\\'."\n".
                     'Die eben entwickelte Vorstellung, dass eine weitere Verdichtung der maximaldichten rein endlichen Zahlengeraden zum „herausfallen“ aktual unendlich kleiner ganzer Summanden führt,'."\n".
                     'passt, wie oben gesagt, genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.'."\n",
                       'Dort teilen wir die Strecke von der Null bis zur Eins mit Hilfe unserer endlichen Primzahlen jeweils bis zur Potenz der vollständigen Induktion \lm{ ω }.'."\n".
@@ -508,27 +683,30 @@
                     'Das würde also gut die bekannte Aufteilung der Zahlenmengen und deren Trennung ontologisch klar und verständlich erklären.'."\n",
                       'Und auch die Einblicke in die Zusammenhänge zwischen ganzen und reell algebraischen Zahlen vertieften sich deutlich und klar.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Tiefer Zusammenhang zwischen den Primzahlen und den reell algebraischen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Tiefer Zusammenhang zwischen den Primzahlen und den sinnvollen Koeffizienten der Superial-Zahlen} \\\\'."\n".
-                  '\cond{Möglicherweise sogar zwischen den Primzahlen und den reell algebraischen Zahlen} \\\\'."\n".
-                    'Entspricht die Menge \lm{ \mathbb{A}_{\S} } tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} },'."\n".
-                    'dann werden diese in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
-                    'und die Anlass zu der Annahme gibt, dass wir diese in Zukunft noch detaillierter formulieren können.'."\n",
+                    'Da die Menge \lm{ \mathbb{A}_{\S} } nach unserem \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis unserer Algebraischen-Koeffizienten-Vermutung} tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } gleich ist,'."\n".
+                    'werden die reell algebraischen Zahlen in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
+                    'und diese gibt Anlass zu der Annahme, dass wir sie in Zukunft noch detaillierter formulieren können.'."\n",
                       'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
                     'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – verwoben ist.'."\n".
                     'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\S} }, müssen nach Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As} ganze Zahl sein,'."\n".
                     'siehe \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
                     'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",
                       'Der Beweis der Überrationalitätsvermutung zeigt beispielsweise für'."\n".
-                    '\lm{ a = \sqrt{2} = \frac{ \sqrt{2} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ \sqrt{2} \cdot \s } eine ganze Zahl ist.'."\n".
-                    'Und zwar, weil \lm{ \sqrt{2} \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
-                    'Deshalb ist \lm{ \sqrt{2} } ein sinnvoller Koeffizient und es gilt \lm{ \sqrt{2} \in \mathbb{A}_{\S} }.'."\n".
+                    '\lm{ a = *| \sqrt{2} \,|* = \frac{ *| \sqrt{2} \,|* \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ *| \sqrt{2} \,|* \cdot \s } eine ganze Zahl ist.'."\n".
+                    'Und zwar, weil \lm{ *| \sqrt{2} \,|* \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
+                    'Deshalb ist \lm{ *| \sqrt{2} \,|* } ein sinnvoller Koeffizient und es gilt \lm{ *| \sqrt{2} \,|* \in \mathbb{A}_{\S} }.'."\n".
                     'Schon hierin liegen einige erstaunliche neue Erkenntnisse, die bisher offenbar unbekannt waren.'."\n".
                     'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
                     'Und wir lernen, auch, wenn das Kürzen eines überrationalen Bruchs möglich ist, kann es dazu führen, dass wir eine gesuchte Lösung nicht finden können, wenn wir es tun.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Die Ähnlichkeit beider Mengen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Ähnlichkeit beider Mengen} \\\\'."\n".
                     'Die Mengen werden beide mit sehr ähnlichen Definitionen beschrieben, an denen wir auch recht schnell erkennen können,'."\n".
                     'dass sie tatsächlich die gleiche Anzahl an Elementen beinhalten müssen:'."\n".
                     ''))),
@@ -611,8 +789,10 @@
                       'Wenn nun aber beide Mengen die gleiche Anzahl an Elementen, sprich Zahlen, haben, dann stellt sich die Frage,'."\n".
                     'ob und wie wir die Mengen aufeinander abbilden können.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen} \\\\'."\n".
                     'Die Menge \lm{ \mathbb{A}_{\S} } steht im \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'der Superial-Zahlen für alle sinnvollen Koeffizienten,'."\n".
                     'dann entspricht die Anzahl ihrer Elemente quasi der Anzahl der möglichen Ziffern, nämlich \lm{ \s }.'."\n".
@@ -629,8 +809,10 @@
                     'Dies kommt, weil bei den natürlichen Superial-Zahlen keine reinen Ziffern, sondern beim Übergang ins Aktual-Unendliche selber schon'."\n".
                     'gemischte Zahlen im Sinne des Stellenwertsystems, wie beispielsweise \lm{ *〈 ⅔ *〉*〈 7 *〉. = ⅔ \s + 7 }, auftreten.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Die wirkliche Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Die absolute Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen} \\\\'."\n".
                     'Die sinnvollen Koeffizienten und das natürliche Zählen fallen bei den Superial-Zahlen auseinander und passen gleichzeitig so auch perfekt ineinander.'."\n".
                     'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n",
                       'Diese Zwittrigkeit oder Zwitternatur der Anzahl \lm{ \s } in den ihr entsprechenden wichtigen Mengen unseres neuen Stellenwertsystemens,'."\n".
@@ -643,12 +825,11 @@
                         '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}}?}',
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar',
                 Title => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar? …',
                 TitleVis => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar?', ParagraphList => array(
 
                   array( 'text', array( text => array(
-                  // '\condb{Sind beide aufeinander linear abbildbar?} \\\\'."\n".
                     'Naiv können wir einmal annehmen, da die Werte beider Mengen offenbar nicht nur wohlgeordnet sind, sondern auch'."\n".
                     'alle je in ihrer Menge die gleichen Abstände untereinander haben, dass sie vielleicht rein durch Verschiebung und einen Faktor'."\n".
                     'Element für Element ihrer Reihenfolge nach aufeinander abgebildet werden können.'."\n".
@@ -710,8 +891,10 @@
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Das Problem scheint …'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:X', text =>
+                  'Gleich mächtig, aber nur bedingt abbildbar …', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Gleich mächtig, aber nur bedingt abbildbar …} \\\\'."\n".
                     'Die Elemente beider Mengen sind nicht nach ihrer Größe geordnet aufeinander abbildbar, sondern nur,'."\n".
                     'wenn wir ihre Reihenfolge verändern ???'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -761,7 +944,7 @@
                     'von Null bis ausschließlich Eins zählen.'."\n".
                     'Dies wären dann aber \lm{ 2 ω \cdot \s } Schritte, wenn \lm{ a } jeden Punkt von \lm{ \s }'."\n".
                     'adressieren würde.'."\n".
-                    'Angelehnt an Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
+                    'Angelehnt an Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}'."\n".
                     'können wir die Menge der Punktkoordinaten schreiben als:'."\n".
                     ''))),
                   array( 'equations',
@@ -880,11 +1063,13 @@
                     'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
                       'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
                     ''))), */
+
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
-                      
-                'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
-                  'Vom Wert her gleich und doch verschieden')),
-                      
+
+                'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich', subline =>
+                  'Vom aktual unendlichen algebraischen Wert her gleich sowie gleich viele ganze Vorgänger; und doch führen unterschiedliche Wertpfade dorthin: Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} }')),
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     // '• \lm{ \mathbb{On} } ist eine echte Klasse\color{*Bearb}{(Verweis)}, während \lm{ \mathbb{S_{\N}} } eine Menge ist.',
@@ -902,7 +1087,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteKlasse}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
+                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteEs besagt also, dass alle Elemente}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
                     'nämlich die Elemente \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }.'."\n".
                     'Dies gilt ebenso für das Element \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} },'."\n".
                     'wo \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\N}} } alle Vorgänger enthält.'."\n".
@@ -1073,7 +1258,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ \forall n \in \mathbb{N} } n  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
-                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
@@ -1182,7 +1367,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1196,7 +1381,34 @@
                   array( 'text', array( text => array(
                     'zu verstehen, denn beide Zahlensysteme ergänzen sich auf faszinierende Weise.'."\n".
                     ''))),
+
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich', text =>
                       
+                'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?', subline =>
+                  '')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Ähnliches machen wir ja auch im jetzigen Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} im Abschnitt hier: \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar}‹}',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Da beide Klassen bei Null mit den selben Elementen – mit den endlichen natürlichen Zahlen – beginnen,'."\n".
+                    'sind diese schon einmal aufeinander abbildbar.'."\n",
+                      'Um es erst einmal zu vereinfachen untersuchen wir zunächst nur …'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich:X', text =>
+                  'Die Zahlen von Null bis \lm{ \s } beziehungsweise \lm{ ω^{ω} }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Bei den Ordinalzahlen ist die erste aktual unendlich große Zahl, die auf die endlichen folgt, bekannt, nämlich \lm{ ω }.'."\n".
+                    'Bei den natürlichen Superial-Zahlen ist die erste aktual unendlich große Zahl unbekannt, weil sie in ihren aktual unendlichen Schichten,'."\n".
+                    'in den algebraischen Koeffizienten \lm{ a_{i} } von \lm{ a_{1} \s^{1}, a_{2} \s^{2}, a_{3} \s^{3} \cdots }, dicht sind.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen'),
                     )),
@@ -1231,7 +1443,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen'),
                     )),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen', text =>
@@ -1252,7 +1464,7 @@
                       'eine ganze Superial-Zahl der ersten Exponentenschicht'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.WSZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
@@ -1261,7 +1473,7 @@
                       'was durch Umformung unsere Behauptung zeigt, denn die Summanden sind auch ganze Superial-Zahlen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.WSZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  }'),
                       array( display => 'on',  latex => '{  b_{s} \s^{y}  \in  \mathbb{S}_{\N,\{ y \}}^{+}  \;\; ,  }'),
                     ))),
@@ -1284,10 +1496,10 @@
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Pythagoreische Tripel im Endlichen', subline =>
+                  'Im Endlichen', subline =>
                     '')),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
                       array( display => 'on',  latex => '{  c^{2}  =  a^{2} + b^{2}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
@@ -1295,7 +1507,7 @@
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Pythagoreische Tripel im Superialen', subline =>
+                  'Im Superialen', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1303,7 +1515,7 @@
                       'Sei:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall a_{s}, b_{s}, c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{2}  =  a_{s}^{2} + b_{s}^{2}  }'),
@@ -1314,7 +1526,7 @@
                       'In dem Moment, wo wir sie ins Superiale skalieren'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{2} + b_{s}^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{2} \s^{2} + b_{s}^{2} \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
@@ -1335,6 +1547,7 @@
                     'ebenso auf dieses Raster fallen.'."\n".
                     ''))),
 
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz', text =>
 
                 'Großer Fermatscher Satz', subline =>
@@ -1342,21 +1555,21 @@
                   array( 'text', array( text => array(
                     'Die pythagoreischen Tripel lassen sich auf höhere Potenzen als zwei erweitern und wir landen bei den Fermatschen Tripeln'."\n".
                     'und damit beim Großen Fermatschen Satz\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.}.'."\n".
-                    'Dieser besagt, dass es keine einzige Kombination ganzen Zahlen gibt, die die Gleichung erfüllt.'."\n".
+                    'Dieser besagt, dass es keine einzige Kombination natürlicher Zahlen gibt, die die folgende Gleichung erfüllt.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Großer Fermatscher Satz im Endlichen', subline =>
+                  'Im Endlichen', subline =>
                     '')),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( \forall n \in \mathbb{N} > 2 *)  *[  c^{n}  =  a^{n} + b^{n}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:X', text =>
-                  'Fermatsche Tripel im Superialen', subline =>
+                  'Im Superialen', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1364,7 +1577,7 @@
                       'Sei:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall a_{s} , b_{s} , c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{n}  =  a_{s}^{n} + b_{s}^{n}  }'),
@@ -1375,7 +1588,7 @@
                       'In dem Moment, wo wir es ins Superiale skalieren'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ei.NR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} + b_{s}^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( *( a_{s}^{n} + b_{s}^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{s} \s  =  *( a_{s}^{n} \s^{n} + b_{s}^{n} \s^{n} *)^{\frac{ 1 }{ n }}  }'),
@@ -1394,13 +1607,13 @@
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen', text =>
                       
-                'Aktual-Unendliche Exponenten der Primzahlen in Potenzzahlen', subline =>
+                'Aktual-Unendliche Exponenten der Primzahlen in Potenzialzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} bringt neue Erkenntnisse bezüglich'."\n".
-                    'des Rechnens mit aktual unendlichen Potenzen von Primzahlen oder allgemeiner von natürlichen Zahlen in \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzzahlen} mit sich.'."\n".
+                    'des Rechnens mit aktual unendlichen Potenzen von Primzahlen oder allgemeiner von natürlichen Zahlen in \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzialzahlen} mit sich.'."\n".
                     'Diese betreffen die Ganzzahligkeit von aktual unendlichen Exponenten mit endlichen rationalen Anteilen in ihrer Summe:'."\n".
                     ''))),
                   array( 'equations',
@@ -1493,8 +1706,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  }',
-                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  :\in  \mathbb{Pn}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'So sind die Potenzialzahlen diesbezüglich einfach ein Spezialfall.'."\n".
@@ -1557,7 +1770,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Verweisen auf \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}.',
+                    // '• Verweisen auf \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1594,7 +1807,8 @@
                     'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
                       'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen.'."\n".
                       'Sondern ich möchte die Kontinuumshypothese durch die mit den Superial-Zahlen gefundene Struktur des Unendlichen,'."\n".
-                    'der Dichte oder das Rasters der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
+                    'der Dichte oder das Rasters der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie}'."\n".
+                    '(Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}‹}),'."\n".
                     'differenzierter und tiefer beleuchten sowie gegebenenfalls sinnvoller formulieren, um weitere Erkenntnisse zu gewinnen.'."\n",
                       'Mit der Kontinuumshypothese wird angenommen:'."\n".
                     ''))),
@@ -1630,9 +1844,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen die Potenz \lm{ 2^{ω} } als ersten Primzahlturm im Produkt von \lm{ \s }.'."\n",
-                      'Weiterhin ergibt sich die neue Erkenntnis, dass \lm{ \aleph_{1} } in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
-                    'Produkt aller Primzahlen enthält:'."\n".
+                    'Auch im Exponenten der Primzahlen kommt die Anzahl aller endlichen natürlichen Zahlen \lm{ ω } vor.'."\n".
+                    'Die besagte Potenz \lm{ 2^{ω} } sehen wir hier nun als ersten Primzahlturm im Primzahl-Flächenprodukt von \lm{ \s },'."\n".
+                    'dass sich ja aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie} ergeben hat.'."\n",
+                      'So wissen wir dann, dass die besagte Potenz \lm{ 2^{ω} } der Mächtigkeit \lm{ \aleph_{1} } gleich ist, welches dann in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
+                    'Produkt aller endlichen Primzahlen enthält:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1649,43 +1865,46 @@
                   array( 'text', array( text => array(
                     'Nun geht es bei der Kontinuumshypothese auch um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen;'."\n".
                     'schließlich ja um die Frage, ob es noch eine Mächtigkeit zwischen denen dieser beiden Mengen gibt.'."\n",
-                      'Die superiale Basis \lm{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jeder reell algebraischen Zahl,'."\n".
-                    'die durch Radikale darstellbar ist,'."\n".
-                    'eine ganze Zahl ergibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} zeigen.'."\n".
-                    'Dies gelingt unter anderem mit Hilfe unseres Beweises der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n".
-                    'Und wir \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermuten, dass dies sogar für alle reell algebraischen Zahlen gilt},'."\n".
-                    'was allerdings noch zu beweisen aussteht.'."\n",
+                      'Die superiale Basis \lm{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{jeder reell algebraischen Zahl},'."\n".
+                    'also im besonderen auch im Produkt mit allen Zahlen, die durch Radikale darstellbar sind,'."\n".
+                    'eine ganze Zahl ergibt, wie wir auf der Seite \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} zeigen.'."\n".
+                    'Dies gelingt unter anderem mit Hilfe unseres \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweises der Überrationalitätsvermutung}.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Es ist offensichtlich, dass \\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{jedes Produkt einer rationalen Zahl mit unserer superialen Basis \lm{ \s } eine ganze Zahl ergibt}.'."\n".
                     'Wir können daran erkennen, dass schon die Struktur der reell algebraischen Zahlen es erfordert, nicht nur'."\n".
                     '\lm{ 2^{ω} }, sondern auch \lm{ 3^{ω} } und ebenso alle'."\n".
                     'anderen aktual unendlichen Potenzen endlicher Primzahlen bis ins Unendliche, einzubeziehen.'."\n".
                     'Da scheint es Fraglich, ob \lm{ 2^{ω} } ausreichen kann,'."\n".
                     'die Komplexität oder Feinheit der Struktur aller reellen Zahlen darzustellen.'."\n".
-                    'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten sollen, was im Rahmen der Superial-Zahlen weitere interessante Fragen aufwirft,'."\n".
+                    'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten, was im Rahmen der Superial-Zahlen weitere interessante Fragen aufwirft,'."\n".
                     'siehe Seite \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹}'."\n".
                     'oder auch den folgenden Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}‹}.'."\n",
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
                     'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
-                      'Durch die Superial-Zahlen sehen wir nun, dass die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \# \mathbb{A}_{\S} } dem besagten'."\n".
+                      'Durch die Superial-Zahlen sehen wir nun, dass die Anzahl – wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren – der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \# \mathbb{A}_{\S} = \# \mathbb{A}_{\R} = *| \mathbb{A}_{\R} |* } dem besagten'."\n".
                     'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \# \mathbb{Z} = 2 \cdot ω }, also \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
                     'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
-                      'Wenn wir dies alles in einer Gesamtschau betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
+                      'Wenn wir dies alles in einer Gesamtschau betrachten, bekommen wir nun den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
+                  'Unabhängigkeit von der Mengenlehre (ZFC)', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                  '\condb{Unabhängigkeit von der Mengenlehre (ZFC)} \\\\'."\n".
                     'An dieser Stelle möchte ich darauf aufmerksam machen, dass die Kontinuumshypothese von der'."\n".
                     'Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) insgesamt unabhängig ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Unabhängigkeit von ZFC.}'."\n".
                     'Dass bedeutet, die Mengenlehre – genauer die ZFC-Mengenlehre – gibt uns nicht die Möglichkeit zu entscheiden, ob die Kontinuumshypothese wahr oder falsch ist.'."\n",
                       'Hier kommen die auf diesen Seiten entwickelten Superial-Zahlen, und die mit ihnen verbundenen \jump{OM:BiOrd:Home}{Biordinalzahlen}, ins Spiel.'."\n".
                     'Die Superial-Zahlen begründen das Aktual-Unendliche auf den endlichen Primzahlen und so auf der Arithmetik und bringen sie mit der Mengenlehre zusammen.'."\n".
-                    'Sie erweitern so die reell algebraischen Zahlen, die durch Radikale darstellbar sind, und vielleicht sogar alle, auf einen'."\n".
-                    'aktual unendlichen angeordneten algebraischen Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
+                    'Sie erweitern so die reell algebraischen Zahlen auf einen'."\n".
+                    'aktual unendlichen \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneten algebraischen Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten Eigenschaften'."\n".
                     'zur Verfügung.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
-                    'also der Erweiterung des Zählens, und der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
-                    'der Definition von irrationalen reell algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen, die irrationale Wurzeln und ähnliches beschreiben.'."\n",
+                    'also der Erweiterung des Zählens sowie der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
+                    'der Darstellung von irrationalen reell algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen,'."\n".
+                    'die irrationale Wurzeln beschreiben, und mit deren Hilfe auch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{alle Radikalformen}'."\n".
+                    'beschreibbar sind.'."\n",
                       'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>
@@ -1695,25 +1914,24 @@
                   array( 'text', array( text => array(
                     'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der superialen Eulerschen Zahl \lm{ \e_\s } zeigen,'."\n".
                     'dass sich hier weitere Fragen ergeben:'."\n",
-                      'Auf der Seite \italic{\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}}'."\n".
+                      'Auf der Seite \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}‹}'."\n".
                     'kommen wir zu dem Schluss, dass die Eulersche Zahl keine rein endliche irrationale Zahl ist, nicht einmal eine'."\n".
-                    'Superial-Zahl der auf dieser Seite definierten 1. Ordnung, weil sie unweigerlich'."\n".
-                    'aktual unendlich kleine Summanden der Größenordnung \lm{ \s^{-\s} } enthält, die nicht Null werden können.'."\n".
-                    'Wie gesagt, fällt sie hierdurch selbst aus der Menge \lm{ \mathbb{S} } der Superial-Zahlen heraus.'."\n".
-                    'Sie ist also keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
-                      'An dieser Stelle würde ich sagen, dass zumindestens \lm{ \e_\s } keine reelle Zahl ist'."\n".
-                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen eigentlich gar keine reellen Zahlen sind.'."\n".
-                    'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
-                    'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
-                    'wie groß diese minimale Unendlichkeit der Nachkommastellen denn eigentlich ist;'."\n".
-                    'ob es nicht vielleicht unendliche Größenordnungen mehr sind, als die Unendlichkeit der vollständigen Induktion, also \lm{ \s = ω^{ω}} viele Nachkommastellen.'."\n".
+                    'Superial-Zahl aus der Menge \lm{ \mathbb{S} } der auf dieser Website definierten 1. Ordnung, weil sie unweigerlich'."\n".
+                    'aktual unendlich kleine Summanden der Größenordnung \lm{ \s^{-\s} } enthält, die nicht Null sind.'."\n".
+                    'Sie ist im Rahmen der Superial-Zahlen also keine rein endliche „reelle“ Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
+                      'An dieser Stelle wird auch im Rahmen der Superial-Zahlen klar, dass \lm{ \e_\s } keine reell algebraische Zahl ist'."\n".
+                    'und die Frage drängt sich auf und wird offensichtlich, ob dann nicht auch alle anderen transzendenten Zahlen superial-infinitesimale Summanden haben müssen.'."\n".
+                    'Wir lassen uns vermutlich dadurch täuschen, dass wir glauben, transzendente Zahlen wären in jedem Fall durch Dezimalzahlen'."\n".
+                    'mit unendlich vielen Nachkommastellen darstellbar, ohne infinitesimale Summanden.'."\n".
+                    'Dies ist aber mit der heute üblichen Definition der reellen Zahlen über Dedekindsche Schnitte\footnote{\const{SupNum_g_footnote_text_DedekindscherSchnitt}} und den Limes verbunden.'."\n".
+                    'Doch im Rahmen der Perspektive der Superial-Zahlen ändert sich dies.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
                 'Schlussfolgerung zur Untersuchung der Kontinuumshypothese', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ich denke, wir sollten die Struktur der reellen Zahlen und ihre Aufteilung in Untermengen'."\n".
+                    'Ich denke, wir sollten die Struktur der „reellen“ Zahlen und ihre Aufteilung in Untermengen'."\n".
                     'mit Hilfe der Primzahlen – und somit mit Hilfe der Superial-Zahlen – tiefer untersuchen und verstehen,'."\n".
                     'damit wir in die Lage kommen, die Kontinuumshypothese im Detail zu beleuchten und hoffentlich dann für uns sinnvolle Antworten zu finden.'."\n".
                     ''))),

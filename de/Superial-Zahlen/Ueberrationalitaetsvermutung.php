@@ -55,7 +55,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner als auch einen Zähler geben muss, die teilerfremd sind'."\n".
@@ -65,8 +66,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *)  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'denn ein rationaler Bruch lässt bis auf einen kleinsten Nenner und Zähler kürzen,'."\n".
-                      'bis sie keine gemeinsamen Primfaktoren mehr haben.'."\n".
+                      'denn ein rationaler Bruch lässt, bis auf einen kleinsten Nenner und Zähler endlich oft kürzen,'."\n".
+                      'bis sie keine gemeinsamen Primfaktoren mehr haben, da beide Quotienten endliche ganze Zahlen sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
@@ -120,8 +121,10 @@
                       array( display => 'on',  latex => '{  \vdots  }'),
                       array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Und immer so fort, für alle endlichen ganzen Potenzen von Zwei – \lm{ 2^{x} }.'."\n".
@@ -162,21 +165,50 @@
                 'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'So verstanden und allgemeiner ausgedrückt, ergibt sich die Struktur der Lösung wie folgt:'."\n".
+                    'Der obige Widerspruchsbeweis macht die Bedingungen eines Beweises und damit die Struktur der Lösung des Problems sichtbar:'."\n".
+                    ''))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Bei den rationalen Zahlen sind Zähler und Nenner endliche ganze Zahlen, nur, dass der Zähler nicht Null sein kann.'."\n".
+                          'Dadurch sind Nenner und Zähler bei diesen Zahlen ganz generell nur endlich oft zu kürzen. (Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational})',
+                        'Dann muss das Quadrat des Nenners genau doppelt so groß sein, wie das Quadrat des Zählers (Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}).'."\n".
+                          'Woraus folgt, wie wir zeigten: Zähler und Nenner müssen gleichzeitig beliebig endlich oft durch \lm{ 2 } teilbar sein. (Formeln \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-a-ist-beliebig-endlich-oft-durch-2-teilbar} und \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-b-ist-beliebig-endlich-oft-durch-2-teilbar})',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Und beides steht im Widerspruch, wie wir sahen.'."\n",
+                      'An der letzen Bedingung können und wollen wir nichts ändern.'."\n".
+                    'Aber die erste Bedingung, dass es rationale Zahlen mit endlichen Quotienten sein müssen, sollten wir auf unsere Möglichkeiten überprüfen,'."\n".
+                    'denn wir beschäftigen uns hier ja mit der Einführung neuer Zahlen.'."\n",
+                      'Der Widerspruch tritt ja nur dann auf, wenn wir die Bedingung aufrechterhalten, dass Zähler und Nenner endliche Zahlen sein sollen'."\n".
+                    'und dadurch nur endlich oft zu kürzen sind.'."\n".
+                    'Aber wir beschäftigen uns hier ja gerade mit der Einführung neuer Zahlen mit neuen Eigenschaften.'."\n".
+                    'So lassen wir diese Bedingung im Rahmen der Superial-Zahlen insofern fallen, dass wir aktual unendliche Zähler und Nenner zulassen und der Bruch damit \italic{überrational} wird.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die aktual unendliche Teilbarkeit vom Zähler und vom Nenner', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Demnach kann und muss sich die Anzahl der Teilbarkeit durch \lm{ 2 }, jeweils von Zähler und Nenner, im Aktual-Unendlichen befinden'."\n".
+                    'als auch ihr Verhältnis dem Betrag der Wurzel aus Zwei entsprechen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall g \in \mathbb{N}_{\infty} *) *( \forall i \in \mathbb{N} *) *( i < g *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{g} }{ 2^{g} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall g \in \mathbb{N}_{\infty} *) *( \forall i \in \mathbb{N} *) *( i < g *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{g} }{ 2^{g} }  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der obige Widerspruchsbeweis erzeugt eine Lösung des Problems darüber, dass Nenner und Zähler immer wieder'."\n".
-                    'durch \lm{ 2 } teilbar sein müssen.'."\n".
-                    'Und die Anzahl der Teilbarkeit muss sich im Aktual-Unendlichen befinden.'."\n".
-                    'Damit lässt sich die Anzahl der Teilbarkeit durch die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'normieren.'."\n",
-                      'Für die vollständige Induktion verwenden wir das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }} mit dem ihm entsprechenden aktual'."\n".
-                    'unendlich großen Wert.'."\n".
-                    'Und \lm{ ω } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
+                    'was uns die Struktur der möglichen Lösungen liefert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Normierung der Teilbarkeit', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Um die Menge der Lösungen auf eine bestimmte zu reduzieren, lässt sich die Anzahl der Teilbarkeit auf die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'normieren.'."\n".
+                    'Die vollständige Induktion wird durch das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }}, mit seinem entsprechenden aktual'."\n".
+                    'unendlich großen Wert, dargestellt und wir setzen es in die vorstehende Formel für \lm{ g } ein.'."\n".
+                    'Damit bleibt die Bedingung der fortlaufenden Teilbarkeit erfüllt.'."\n".
+                    'So erhalten wir'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -186,40 +218,34 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen in \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}, hier \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s}},'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n",
-                      'Im Nenner erhalten wir nun offensichtlich eine ganze Zahl, weil es sich um eine unendliche ganze Potenz einer endlichen ganzen Zahl handelt:'."\n",
+                    'gilt.'."\n".
+                    'Wodurch wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen können.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Ganzzahligkeit von Zähler und Nenner', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Nenner erhalten wir nun offensichtlich die ganze Zahl'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aber im Zähler können wir uns dessen noch nicht sicher sein,'."\n".
-                    'da er, wie wir sehen, in einen Anteil zerlegt werden kann,'."\n".
-                    'der dem Nenner entspricht und der übrige Faktor ist genau die irrationale Wurzel aus Zwei,'."\n".
-                    'die ein wesentlicher Teil unseres Problems ist, wofür wir eine Lösung suchen.'."\n",
-                      'Führt das also wirklich zur Lösung unseres Problems, wenn wir einfach nicht mehr darauf bestehen,'."\n".
-                    'dass Nenner und Zähler endliche Zahlen sein müssen?'."\n",
-                      'Eine auf den ersten Blick nicht gleich realistisch erscheinende Möglichkeit ist,'."\n".
-                    'das es ja durchaus sein könnte, dass der Zähler ansich bereits so wie er ist, genau wie der Nenner, eine ganze Zahl darstellt.'."\n",
-                      'Ich komme darauf, weil uns der obige Widerspruchsbeweis einen Hinweis darauf gibt,'."\n".
-                    'dass die Darstellung der Wurzel aus Zwei mit einem Bruch aus zwei ganzen Zahlen nur dann möglich ist, wenn beliebig endlich oft'."\n".
-                    '– und damit potenziell endlos – Zweien gekürzt werden können.'."\n".
-                    'Die Lösung könnte also sein, dass eine aktual unendlich große natürliche Potenz von Zwei multipliziert mit der Wurzel aus Zwei'."\n".
-                    'einfach schon eine ganze unendlich große Zahl ergibt.'."\n".
-                    'Denn so erhalten wir, in einem Exponenten zusammengefasst, einen unendlich großen ganzen Exponenten plus Einhalb.'."\n".
-                    'Und anders als das bei endlichen Exponenten, die rationale Anteile in der Summe haben, der Fall ist, ergibt unser Exponent direkt eine ganze Zahl.'."\n",
-                      'Der Widerspruchsbeweis enthält eine Vorschrift, wie die Lösung aussieht:'."\n".
-                    'Auch der so konstruierte Zähler des Bruchs muss eine unendlich große ganze Zahl sein, wie der Beweis zeigt, eben einfach schon dadurch, dass er beliebig endlich oft durch \lm{ 2 } teilbar ist.'."\n".
-                    'Mit anderen Worten, der Faktor \lm{ 2^{ω} } vor \lm{ 2^{\frac{ 1 }{ 2 }} } macht, nach unserem Beweis, aus der Wurzel aus Zwei'."\n".
+                    'weil es sich um eine aktual unendliche ganze Potenz einer endlichen ganzen Zahl handelt.'."\n",
+                      'Im Zähler muss es sich ebenfalls um eine ganze Zahl handeln, denn dies ist eine der Bedingungen, die zum Widerspruch geführt hatten.'."\n".
+                    'Damit ist die Ganzzahligkeit des Zählers in der Struktur des Widerspruchsbeweises und der Möglichkeiten seiner Lösung, hin zum Beweises,'."\n".
+                    'wenn wir Aktual-Unendlichkeit zulassen, verankert.'."\n".
+                    'Diese Bedingung ergibt sich ja aus der Suche nach einem rationalen Bruch zur Darstellung der Wurzel.'."\n".
+                    'Also macht der Faktor \lm{ 2^{ω} } tatsächlich aus der Wurzel aus Zwei, also aus \lm{ 2^{\frac{ 1 }{ 2 }} },'."\n".
                     'eine ganze unendlich große Zahl:'."\n".
                     ''))),
                   array( 'equations',
@@ -229,8 +255,67 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => true),
                     ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Existenz der neuen Zahlen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Darüber hinaus müssen der Nenner \lm{ b } und der Zähler \lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
+                    'Weil \lm{ 2^{ω} } und \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } sehr interessante und wichtige Zahlen, aber keine Superial-Zahlen, sind,'."\n".
+                    'ist die Frage, wo sie „leben“; sprich, in welcher Menge oder Klasse sie existieren.'."\n".
+                    'Dazu mehr im Kapitel \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}‹}'."\n".
+                    'und im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen}‹},'."\n".
+                    'wo wir sie Potenzialzahlen nennen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Betrachtung im Rahmen der Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir forschen und beweisen unsere Vermutung ja im Rahmen der Superial-Zahlen.'."\n".
+                    'So interessiert uns natürlich besonders, welche Bedeutung unsere Erkenntnis hier haben'."\n",
+                      'Unser normierter Faktor \lm{ 2^{ω} } ist Teil des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}.'."\n".
+                    'Daher können wir den Faktor auch wie folgt ersetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot \s }{ \s }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hier ist ebenso erfüllt, dass \lm{ \s } beliebig endlich oft durch Zwei teilbar ist.'."\n".
+                    'und sowohl Zähler als auch Nenner ganze Zahlen sind.'."\n".
+                    'Und die Eigenschaft der Ganzzahligkeit bezüglich des Zählers mit \lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s } für die Superial-Zahlen von entscheidender Bedeutung.'."\n".
+                    'Denn damit wird \lm{ 2^{\frac{ 1 }{ 2 }} } ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient}'."\n".
+                    'der Superial-Zahlen.'."\n".
+                    'Und so existiert die unendlich große Zahl'."\n".
+                    '\lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } als ganze Superial-Zahl der ersten Schicht,'."\n".
+                    'was die einzige bisher ungeklärte Frage gewesen ist.'."\n".
+                    'Und so können wir auch sagen, dass die eingangs gefundene ganze Zahl \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } im Sinne eines Teilprodukts'."\n".
+                    'von \lm{ 2^{\frac{ 1 }{ 2 }} \cdot \s } existiert,'."\n".
+                    'und so auch als ganze \jump{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen}{Potenzialzahl}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Eine selbstbezügliche Lösung – der sonst unsichtbare Kontext', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Was im ersten Moment erstaunlich erscheint, und einem Kopfschmerzen bereiten kann, ist,'."\n".
+                    'dass der Zähler gerade den Term \lm{ 2^{\frac{ 1 }{ 2 }} } beinhaltet, für dessen Darstellung wir einen Bruch aus zwei ganzen Zahlen suchen.'."\n".
+                    'Wie kann der gesuchte Wert eines Bruchs ein Teil des Bruchs, also der Lösung, sein?'."\n".
+                    'Handelt es sich dann nicht um einen unzulässigen Zirkelschluss?'."\n",
+                      'Dies kann sein, weil wir nichts anderes gesucht haben, als einen Bruch aus zwei ganzen Zahlen, die beide beliebig endlich oft'."\n".
+                    'durch Zwei zu teilen sind und deren Verhältnis eben genau \lm{ 2^{\frac{ 1 }{ 2 }} } ist.'."\n".
+                    'Und genau das liefert unsere Lösung mit dem „neuen“ aktual unendlichen Term oder Symbol \lm{ 2^{ω} } in Zähler und Nenner,'."\n".
+                    'weil der Faktor \lm{ 2^{ω} } aus \lm{ 2^{\frac{ 1 }{ 2 }} }, mit \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }, eine ganze Zahl macht.'."\n".
+                    'Gleiches gilt, wie gesagt, auch für \lm{ \s }.'."\n".
+                    'Und nur dafür brauchten wir eine Lösung, die wir so gefunden haben.'."\n".
+                    'Dafür spielt es keine Rolle, ob der gesuchte Wert des Bruchs als Faktor im Zähler Teil unserer Lösung ist.'."\n".
+                    'Dieser Selbstbezug ist also kein unzulässiger Zirkelschluss.'."\n",
+                      'Der Kontext in dem die Wurzel aus Zwei steht, der sonst unsichtbar im Hintergrund wirkt, wird hier nur sichtbar,'."\n".
+                    'weil die Bedingung, einen Bruch aus zwei ganzen Zahlen zu finden, der diesen Wert besitzt, ihn erst zu Tage fördert.'."\n".
+                    'Denn ohne diese Bedingung verschwindet dieser Kontext durch kürzen einfach.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Gegenprobe', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nun machen wir die Gegenprobe, ob der Zähler \lm{ a } und der Nenner \lm{ b }, die wir im Beweis gefunden haben, die Bedingung wirklich erfüllen:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -239,7 +324,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unseren Lösungsansatz eingesetzt, führt zu'."\n".
@@ -762,23 +848,31 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
-                      'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
-                      'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
-                      'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
-                      'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
-                      'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
-                      'beschäftigen wir uns im Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}}.'."\n",
+                      'Die irrationalen Wurzeln gehören zu den \italic{überrationalen Zahlen}.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Die algebraischen irrationalen Koeffizienten gehören zu den \italic{überrationalen Zahlen}.'."\n",
-                      'Dass ein Produkt einer bestimmten riesigen Zahl mit einer dazu passenden irrationalen Wurzel'."\n".
-                    'immer noch eine ganze Zahl ergibt, ist etwas sehr bemerkenswertes.'."\n".
-                    'Wir erhalten eine aktual unendlich große Potenz, mit einem rationalen Summanden, die trotzdem eine ganze Zahl ergibt.'."\n",
-                      'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
-                    'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
+                    'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
+                    'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
+                    'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
+                    'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
+                    'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
+                    'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
+                    'beschäftigen wir uns im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹}.'."\n",
+                      'Dass es zu jeder irrationalen Wurzel einen passenden aktual unendlich großen Faktor gibt,'."\n".
+                    'die im Produkt eine ganze Zahl ergeben, ist etwas sehr bemerkenswertes.'."\n".
+                    'Wir erhalten eine aktual unendlich große ganze Potenz einer endlichen ganzen Zahl, die einen rationalen Summanden enthält, die trotzdem immer eine ganze Zahl ergibt.'."\n".
+                    'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
+                    'Sie eröffnet eine neue Welt, in der weiter ein großes Entdeckungspotenzial steckt.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  'Die Ganzzahligkeit von Zähler und Nenner sowie die Existenz der neuen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Ganzzahligkeit der Quotienten und deren Existenz haben wir schon zuvor beim Beweis der Überrationalität der Wurzel aus Zwei besprochen'."\n".
+                    'und sind im wesentlichen, unter Berücksichtigung der Primzahlen und ihrer Potenzen, auf unser nun allgemeines Ergebnis zu übertragen.'."\n".
                     ''))),
                   /*%! array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
@@ -1738,7 +1832,7 @@
                     'So sind die Ordinalzahlen, bis auf die endlichen natürlichen Zahlen und dann \lm{ \s = ω^{ω} }, \lm{ \s^{2} = ω^{2 ω} } und ähnliche, keine Superial-Zahlen.'."\n",
                       'Systematisch gesehen gibt es auch noch die aktual unendlichen Potenzen der natürlichen Zahlen, wie \lm{ 2^{ω} }, oder allgemeiner \lm{ n^{ω} },'."\n".
                     'die ich \italic{Potenzialzahlen} nenne und die in der oben bewiesenen Überrationalitätsvermutung ja die zentrale Rolle spielen.'."\n".
-                    'Auch diese sind keine Superial-Zahlen!'."\n".
+                    'Auch diese sind im Allgemeinen keine Superial-Zahlen!'."\n".
                     'Daher sollten wir uns mit ihnen noch näher befassen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
@@ -1750,8 +1844,9 @@
                     'Superial-Zahlen \lm{ \mathbb{S} } gehören, auch, wenn der Beweis oben sie verwendet und dieser entscheidende Konsequenzen für die'."\n".
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} hat.'."\n".
                     'Denn faktoriell sind diese Zahlen, oder besser ihre wesentlichen Eigenschaften, im Primzahl-Flächenprodukt von \lm{ \s } enthalten, jedoch kommen sie eben nicht in Reinform in den Superial-Zahlen vor.'."\n",
-                      'Zur Menge der Ordinalzahlen gehören die Potenzialzahlen ebensowenig.'."\n".
-                    'Dort lassen sie sich überhaupt gar nicht einordnen, obwohl die Zahl \lm{ 2^{ω} } als Kardinalität mit der \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuumshypothese}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
+                      'Zur Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen gehören die Potenzialzahlen im Allgemeinen ebensowenig.'."\n".
+                    'Dort lassen sich viele überhaupt gar nicht einordnen, weil sie nicht ihre mengentheoretischen Bedingungen erfüllen,'."\n".
+                    'obwohl die Zahl \lm{ 2^{ω} } als Kardinalität mit der \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuumshypothese}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'grundlegend zusammenhängt und diese wiederum mit den Ordinalzahlen.'."\n",
                     ''))),
 
@@ -1778,30 +1873,93 @@
                     ))),
                   array( 'text', array( text => array(
                     'Für Einträge, die ins Aktual-Unendliche gehen, ist zu berücksichtigen, dass folgende'."\n".
-                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen}{aktual unendliche gebrochene Potenzen auch aktual unendliche ganze Zahlen} ergeben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k, m, x \in \mathbb{N}^{+} *) *( \forall y \in \mathbb{Z} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Hier die Einträge nach dem gemeinsamen Teiler der Potenzen, also der Oberpotenz, und innerhalb dieser nach der Größe der Oberpotenzbasis sortiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, 1, \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{1} *) } \\\ \qquad\quad\,\, 2, 3, 5, 6 = 2 \cdot 3, 7, 10= 2 \cdot 5, \\\ \qquad\quad\, 11, 12 = 2^{2} \cdot 3, 13, 14 = 2 \cdot 7, 15 = 3 \cdot 5, 17, \\\ \qquad\quad\, 18 = 2 \cdot 3^{2}, 19, 20 = 2^{2} \cdot 5, 21 = 3 \cdot 7, \\\ \qquad\quad\, 22 = 2 \cdot 11, 23, 24 = 2^{3}, 26 = 2 \cdot 13, 28 = 2^{2} \cdot 7 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{2} *) } \\\ \qquad\quad\;\, 2^{2} = 4, 3^{2} = 9, 5^{2} = 25 \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\; 12^{2} = *( 2^{2} \cdot 3 *)^{2} = 2^{4} \cdot 3^{2} = 144 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{3} *) } \\\ \qquad\quad\;\, 2^{3} = 8, 3^{3} = 27 \cdots \\\ \quad\quad\; \quad \color{grey} { — *( _{\perp}n^{4} *) } \\\ \qquad\quad\; 2^{4} = 16 \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω - \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω - \frac{ 1 }{ 2 }}, 3^{ω - \frac{ 1 }{ 2 }}, 5^{ω - \frac{ 1 }{ 2 }}, 6^{ω - \frac{ 1 }{ 2 }}, 7^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω} *) } \\\ \qquad\quad\;\, 2^{ω}, 3^{ω}, 5^{ω}, 6^{ω}, 7^{ω} \cdots ω^{ω} \cdots \quad \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{ω + \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω + \frac{ 1 }{ 2 }}, 3^{ω + \frac{ 1 }{ 2 }}, 5^{ω + \frac{ 1 }{ 2 }}, 6^{ω + \frac{ 1 }{ 2 }}, 7^{ω + \frac{ 1 }{ 2 }} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey} { — *( _{\perp}n^{2 ω} *) } \\\ \qquad\quad\;\, 2^{2 ω} = 4^{ω} \cdots ω^{2 ω} \cdots \quad *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, 1, \\\ \quad\quad\; \quad \color{grey}{ — *( _{\perp}n^{1} *) } \\\ \qquad\quad\,\, 2, 3, 5, 6 = 2 \cdot 3, 7, 10= 2 \cdot 5, \\\ \qquad\quad\, 11, 12 = 2^{2} \cdot 3, 13, 14 = 2 \cdot 7, 15 = 3 \cdot 5, 17, \\\ \qquad\quad\, 18 = 2 \cdot 3^{2}, 19, 20 = 2^{2} \cdot 5, 21 = 3 \cdot 7, \\\ \qquad\quad\, 22 = 2 \cdot 11, 23, 24 = 2^{3}, 26 = 2 \cdot 13, 28 = 2^{2} \cdot 7 \cdots \\\ \quad\quad\; \quad \color{grey}{ — *( _{\perp}n^{2} *) } \\\ \qquad\quad\;\, 2^{2} = 4, 3^{2} = 9, 5^{2} = 25 \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\; 12^{2} = *( 2^{2} \cdot 3 *)^{2} = 2^{4} \cdot 3^{2} = 144 \cdots \\\ \quad\quad\; \quad \color{grey}{ — *( _{\perp}n^{3} *) } \\\ \qquad\quad\;\, 2^{3} = 8, 3^{3} = 27 \cdots \\\ \quad\quad\; \quad \color{grey}{ — *( _{\perp}n^{4} *) } \\\ \qquad\quad\; 2^{4} = 16 \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey}{ — *( _{\perp}n^{ω - \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω - \frac{ 1 }{ 2 }}, 3^{ω - \frac{ 1 }{ 2 }}, 5^{ω - \frac{ 1 }{ 2 }}, 6^{ω - \frac{ 1 }{ 2 }}, 7^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey}{ — *( _{\perp}n^{ω} *) } \\\ \qquad\quad\;\, 2^{ω}, 3^{ω}, 5^{ω}, 6^{ω}, 7^{ω} \cdots ω^{ω} \cdots \quad \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey}{ — *( _{\perp}n^{ω + \frac{ 1 }{ 2 }} *) } \\\ \qquad\quad\;\, 2^{ω + \frac{ 1 }{ 2 }}, 3^{ω + \frac{ 1 }{ 2 }}, 5^{ω + \frac{ 1 }{ 2 }}, 6^{ω + \frac{ 1 }{ 2 }}, 7^{ω + \frac{ 1 }{ 2 }} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad\quad\;\, \quad \color{grey}{ — *( _{\perp}n^{2 ω} *) } \\\ \qquad\quad\;\, 2^{2 ω} = 4^{ω} \cdots ω^{2 ω} \cdots \quad *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier die Einträge erst nach der Oberpotenzbasis und innerhalb dieser nach den Oberpotenzen sortiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, \\\ \qquad\quad\, 1, \\\ \qquad\quad\, 2^{1}, 2^{2}, 2^{3} \cdots 2^{ω - \frac{ 1 }{ 2 }} \cdots 2^{ω} \cdots 2^{ω + \frac{ 1 }{ 2 }} \cdots 2^{2 ω - \frac{ 1 }{ 3 }} \cdots 2^{2 ω} \cdots \\\ \qquad\quad\, 3^{1}, 3^{2}, 3^{3} \cdots 3^{ω - \frac{ 1 }{ 2 }} \cdots 3^{ω} \cdots 3^{ω + \frac{ 1 }{ 2 }} \cdots 3^{2 ω - \frac{ 1 }{ 3 }} \cdots 3^{2 ω} \cdots \\\ \qquad\quad\, 5^{1}, 5^{2}, 5^{3} \cdots 5^{ω - \frac{ 1 }{ 2 }} \cdots 5^{ω} \cdots 5^{ω + \frac{ 1 }{ 2 }} \cdots 5^{2 ω - \frac{ 1 }{ 3 }} \cdots 5^{2 ω} \cdots \\\ \qquad\quad\, 6^{1}, 6^{2}, 6^{3} \cdots 6^{ω - \frac{ 1 }{ 2 }} \cdots 6^{ω} \cdots 6^{ω + \frac{ 1 }{ 2 }} \cdots 6^{2 ω - \frac{ 1 }{ 3 }} \cdots 6^{2 ω} \cdots \\\ \qquad\quad\, 7^{1}, 7^{2}, 7^{3} \cdots 7^{ω - \frac{ 1 }{ 2 }} \cdots 7^{ω} \cdots 7^{ω + \frac{ 1 }{ 2 }} \cdots 7^{2 ω - \frac{ 1 }{ 3 }} \cdots 7^{2 ω} \cdots \\\ \qquad\quad\, 10^{1}, 10^{2}, 10^{3} \cdots 10^{ω - \frac{ 1 }{ 2 }} \cdots 10^{ω} \cdots 10^{ω + \frac{ 1 }{ 2 }} \cdots 10^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 11^{1}, 11^{2}, 11^{3} \cdots 11^{ω - \frac{ 1 }{ 2 }} \cdots 11^{ω} \cdots 11^{ω + \frac{ 1 }{ 2 }} \cdots 11^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 12^{1}, 12^{2}, 12^{3} \cdots 12^{ω - \frac{ 1 }{ 2 }} \cdots 12^{ω} \cdots 12^{ω + \frac{ 1 }{ 2 }} \cdots 12^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 13^{1}, 13^{2}, 13^{3} \cdots 13^{ω - \frac{ 1 }{ 2 }} \cdots 13^{ω} \cdots 13^{ω + \frac{ 1 }{ 2 }} \cdots 13^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 14^{1}, 14^{2}, 14^{3} \cdots 14^{ω - \frac{ 1 }{ 2 }} \cdots 14^{ω} \cdots 14^{ω + \frac{ 1 }{ 2 }} \cdots 14^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 15^{1}, 15^{2}, 15^{3} \cdots 15^{ω - \frac{ 1 }{ 2 }} \cdots 15^{ω} \cdots 15^{ω + \frac{ 1 }{ 2 }} \cdots 15^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 17^{1}, 17^{2}, 17^{3} \cdots 17^{ω - \frac{ 1 }{ 2 }} \cdots 17^{ω} \cdots 17^{ω + \frac{ 1 }{ 2 }} \cdots 17^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{1}, ω^{2}, ω^{3} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots \quad *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Pn}  =  \\\  \quad *\{  \quad\,  0, \\\ \qquad\quad\, 1, \\\ \qquad\quad\, 2^{1}, 2^{2}, 2^{3} \cdots 2^{ω - \frac{ 1 }{ 2 }} \cdots 2^{ω} \cdots 2^{ω + \frac{ 1 }{ 2 }} \cdots 2^{2 ω - \frac{ 1 }{ 3 }} \cdots 2^{2 ω} \cdots \\\ \qquad\quad\, 3^{1}, 3^{2}, 3^{3} \cdots 3^{ω - \frac{ 1 }{ 2 }} \cdots 3^{ω} \cdots 3^{ω + \frac{ 1 }{ 2 }} \cdots 3^{2 ω - \frac{ 1 }{ 3 }} \cdots 3^{2 ω} \cdots \\\ \qquad\quad\, 5^{1}, 5^{2}, 5^{3} \cdots 5^{ω - \frac{ 1 }{ 2 }} \cdots 5^{ω} \cdots 5^{ω + \frac{ 1 }{ 2 }} \cdots 5^{2 ω - \frac{ 1 }{ 3 }} \cdots 5^{2 ω} \cdots \\\ \qquad\quad\, 6^{1}, 6^{2}, 6^{3} \cdots 6^{ω - \frac{ 1 }{ 2 }} \cdots 6^{ω} \cdots 6^{ω + \frac{ 1 }{ 2 }} \cdots 6^{2 ω - \frac{ 1 }{ 3 }} \cdots 6^{2 ω} \cdots \\\ \qquad\quad\, 7^{1}, 7^{2}, 7^{3} \cdots 7^{ω - \frac{ 1 }{ 2 }} \cdots 7^{ω} \cdots 7^{ω + \frac{ 1 }{ 2 }} \cdots 7^{2 ω - \frac{ 1 }{ 3 }} \cdots 7^{2 ω} \cdots \\\ \qquad\quad\, 10^{1}, 10^{2}, 10^{3} \cdots 10^{ω - \frac{ 1 }{ 2 }} \cdots 10^{ω} \cdots 10^{ω + \frac{ 1 }{ 2 }} \cdots 10^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 11^{1}, 11^{2}, 11^{3} \cdots 11^{ω - \frac{ 1 }{ 2 }} \cdots 11^{ω} \cdots 11^{ω + \frac{ 1 }{ 2 }} \cdots 11^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 12^{1}, 12^{2}, 12^{3} \cdots 12^{ω - \frac{ 1 }{ 2 }} \cdots 12^{ω} \cdots 12^{ω + \frac{ 1 }{ 2 }} \cdots 12^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 13^{1}, 13^{2}, 13^{3} \cdots 13^{ω - \frac{ 1 }{ 2 }} \cdots 13^{ω} \cdots 13^{ω + \frac{ 1 }{ 2 }} \cdots 13^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 14^{1}, 14^{2}, 14^{3} \cdots 14^{ω - \frac{ 1 }{ 2 }} \cdots 14^{ω} \cdots 14^{ω + \frac{ 1 }{ 2 }} \cdots 14^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 15^{1}, 15^{2}, 15^{3} \cdots 15^{ω - \frac{ 1 }{ 2 }} \cdots 15^{ω} \cdots 15^{ω + \frac{ 1 }{ 2 }} \cdots 15^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \qquad\quad\, 17^{1}, 17^{2}, 17^{3} \cdots 17^{ω - \frac{ 1 }{ 2 }} \cdots 17^{ω} \cdots 17^{ω + \frac{ 1 }{ 2 }} \cdots 17^{2 ω - \frac{ 1 }{ 3 }} \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, \color{grey}{ ? *( ω^{1}, ω^{2}, ω^{3} \cdots ω^{ω - \frac{ 1 }{ 2 }} \cdots ω^{ω} \cdots ω^{ω + \frac{ 1 }{ 2 }} \cdots *) } \quad *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      '… \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen}‹} → \italic{›\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzzahlen}‹} …'."\n".
+                    'Eine maßgebliche Frage ist: kommt die grau eingefärbte Zeile \lm{ ω^{1}, ω^{2}, ω^{3} \cdots } in den Potenzialzahlen wirklich vor?'."\n".
+                    'Denn die dahinter liegende Frage ist, auf welcher Grundlage – durch welche Systematik – wir die Potenzialzahlen erzeugt sehen.'."\n",
+                      'Grundlage könnte die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetische Struktur der Geometrie} sein.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                      
+                'Verständnis des Rechnens', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                      
+                'Addition', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  3^{1} + 10^{1}  =  3 + *( 2 \cdot 5 *)  =  13  =  13^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{2} + 10^{1}  =  3^{2} + *( 2 \cdot 5 *)  =  19  =  19^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{1} + 10^{2}  =  3 + *( 2^{2} \cdot 5^{2} *)  =  103  =  103^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{2} + 10^{2}  =  3^{2} + *( 2^{2} \cdot 5^{2} *)  \\\ \qquad\quad\,  =  109  =  109^{1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  5^{1} + 10^{1}  =  5 + *( 2 \cdot 5 *)  =  15  =  3 \cdot 5  =  15^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{2} + 10^{1}  =  5^{2} + *( 2 \cdot 5 *)  =  35  =  5 \cdot 7  =  35^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{1} + 10^{2}  =  5 + *( 2^{2} \cdot 5^{2} *)  \\\ \qquad\quad\,  =  105  =  3 \cdot 5 \cdot 7  =  105^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{2} + 10^{2}  =  5^{2} + *( 2^{2} \cdot 5^{2} *)  \\\ \qquad\quad\,  =  125  =  5^{3}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen:X', text =>
+                      
+                'Multiplikation', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  3^{1} \cdot 10^{1}  =  3 \cdot *( 2 \cdot 5 *)  =  2 \cdot 3 \cdot 5  =  30^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{2} \cdot 10^{1}  =  3^{2} \cdot *( 2 \cdot 5 *)  =  2 \cdot 3^{2} \cdot 5  =  90^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{1} \cdot 10^{2}  =  3 \cdot *( 2^{2} \cdot 5^{2} *)  =  2^{2} \cdot 3 \cdot 5^{2}  =  300^{1}  }'),
+                      array( display => 'on',  latex => '{  3^{2} \cdot 10^{2}  =  3^{2} \cdot *( 2^{2} \cdot 5^{2} *)  \\\ \qquad\;\;\;  =  2^{2} \cdot 3^{2} \cdot 5^{2}  =  900  =  30^{2}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  5^{1} \cdot 10^{1}  =  5 \cdot *( 2 \cdot 5 *)  =  2 \cdot 5^{2}  =  50^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{2} \cdot 10^{1}  =  5^{2} \cdot *( 2 \cdot 5 *)  =  2 \cdot 5^{3}  =  250^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{1} \cdot 10^{2}  =  5 \cdot *( 2^{2} \cdot 5^{2} *)  =  2^{2} \cdot 5^{3}  =  500^{1}  }'),
+                      array( display => 'on',  latex => '{  5^{2} \cdot 10^{2}  =  5^{2} \cdot *( 2^{2} \cdot 5^{2} *)  \\\ \qquad\;\;\;  =  2^{2} \cdot 5^{4}  =  2500  =  50^{2}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

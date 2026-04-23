@@ -21,7 +21,7 @@
       header_links_marginLeft => '355px',
       copy_right =>
         'Operialtheorie (OT) \\\\'."\n".
-        '© 1986–2025 by \\\\'."\n".
+        '© 1986–2026 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
@@ -72,6 +72,9 @@
         'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
           'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'),
           'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'),
+          'OM:OT:Einleitung:Neutrale-Elemente:AdditionEinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Einleitung:Neutrale-Elemente:MultiplikationEinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Einleitung:Neutrale-Elemente:PotenzEinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
                    
         'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'X' */),
                    
@@ -94,6 +97,7 @@
           'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.KonO.7'),
 
         'OM:OT:Konstanzoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Konstanzoperator:Neutrale-Elemente:EinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:OT:Literatur' => array(
@@ -145,6 +149,7 @@
           'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.SpruO.7'),
                    
         'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Sprungoperator:Neutrale-Elemente:EinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
           'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'),
       ),
     ),
@@ -180,9 +185,10 @@
                    
         'OM:OT:Zaehloperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'X' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:EinbettungInNeutraleElemente' => array( headline_text => 'Einbettung in neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.12'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.14'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.17'),
       ),
     ),
   );

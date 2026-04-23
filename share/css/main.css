@@ -1,4 +1,4 @@
-/* 2018.04.27: +: XXX */
+/* 2018.04.27: +: X */
 
 /**
  * Project Styles
@@ -9,6 +9,10 @@ html, body {
 	margin: 0;
   padding: 0;
 	background: #A0A0A0;
+
+  /* #: no text size adjustment on iPhones if holding it landscaped */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 body, div, h1, h2, h3, h4, h5, p, table, td, tr, ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -20,7 +24,7 @@ h1, h2, h3, h4, h5, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
-/* #: Schriftstärke der Überschriften und starker Schrift. */
+/* #: Schriftst√§rke der √úberschriften und starker Schrift. */
 h1, h2, h3, h4, h5 {
   /*font-weight: bold;*/
   font-weight: 600;
@@ -31,7 +35,7 @@ strong {
   font-weight: 600;
 }
 
-/* #: Allgemeine Schriftgröße. */
+/* #: Allgemeine Schriftgr√∂√üe. */
 body, div, p, table, td, tr, ul {
 	font-size: 13px;
 }
@@ -133,6 +137,8 @@ a:hover {
 .container {
   /*background:url(../images/bg-navigation.gif) top right repeat-y;*/
 	/*background: #EEEEEE;*/
+  /* #: Faux Columns: fill gap when navigation is taller than content */
+  background: linear-gradient(to right, #FFFFFF 730px, #EEEEEE 730px);
 }
 
 /* == Header == */
@@ -163,12 +169,13 @@ a:hover {
 	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
 		background: #FFFFFF;
 
-    /*height: 100%; / #: Richtet die Website-Grˆﬂe nach dem Inhalt. */
+    /*height: 100%; / #: Richtet die Website-Gr√∂√üe nach dem Inhalt. */
 		/* @note scrollbars for content-area */
     /*height: 933px;*/
-    /*height: auto; / #: Richtet die Website-Grˆﬂe nach dem Inhalt. */
+    /*height: auto; / #: Richtet die Website-Gr√∂√üe nach dem Inhalt. */
     height: 933px;
     overflow: auto;
+    scrollbar-gutter: stable;
 	}
   .content form,
 	.content h1,
@@ -207,7 +214,7 @@ a:hover {
 	}
 	.content h3 {
     /*font-size: 18px;*/
-    font-size: 20px;
+    font-size: 22px;
 	}
   .content h4 {
     /*font-size: 16px;*/
@@ -215,7 +222,7 @@ a:hover {
   }
 	.content h5 {
     /*font-size: 16px;*/
-    font-size: 16px;
+    font-size: 15px;
 	}
 
   .content-horizontal-scrollable {
@@ -377,6 +384,13 @@ a:hover {
   padding-right: 10px !important;
   max-width: 100px !important;
 }
+.goog-te-combo {
+  max-width: 180px !important;
+  width: 180px !important;
+}
+a[href="https://translate.google.com"] {
+  display: block !important;
+}
 .main-google-translate-content {
   font-size: 8px !important;
   padding-left: 0px !important;
@@ -411,7 +425,7 @@ a:hover {
 .main-function-buttons-div {
   position: absolute;
   top: 10px;
-  right: 2px;
+  right: 9px;
 }
 
 .main-function-button {
@@ -486,6 +500,10 @@ svg {
 .tools-class-contentlist-table {
   border-collapse: separate;
   border-spacing: 0 20px;
+}
+
+.tools-class-print-image {
+  display: none;
 }
 
 .tools-class-fig, .tools-class-vid {
@@ -679,6 +697,12 @@ td.tools-class-text-figure {
   
   .main-function-button-menu {
     display: block;
+  }
+
+  .main-menu {
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .content-google-translate-paypal-list {

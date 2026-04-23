@@ -30,8 +30,8 @@
                   'Ein Paradigmenwechsel')),
                   array( 'text', array( text => array(
                     'Aus Sicht der klassischen Mathematik enthalten transzendente Zahlen keine unendlich kleinen Summanden.'."\n".
-                    'Dies kommt, weil in ihr transzendente Zahlen durch Grenzwertbetrachtungen mit Hilfe des Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
-                    'definiert sind.'."\n",
+                    'Dies kommt, weil in ihr transzendente Zahlen durch Dedekindsche Schnitte\footnote{\const{SupNum_g_footnote_text_DedekindscherSchnitt}}'."\n".
+                    'und durch Grenzwertbetrachtungen mit Hilfe des Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}} definiert sind.'."\n",
                       'Bei Grenzwertbetrachtungen wird das Verhalten von Funktionen untersucht, wenn sich ihr Parameter'."\n".
                     'einem bestimmten Wert, von unten oder von oben, nähert oder in Richtung Unendlichkeit läuft.'."\n".
                     'Das bedeutet aber eben auch, dass die Werte der Parameter nie wirklich das Endliche verlassen, wodurch dann keine wirklich'."\n".
@@ -40,9 +40,8 @@
                     'Die Parameterwerte sind hier wirklich aktual unendlich große oder kleine Superial-Zahlen.'."\n".
                     'Dadurch bekommen transzendente Zahlen echte unendlich kleine Summanden, auch, wenn ihr führender oder bestimmender Wert'."\n".
                     'im Endlichen verbleibt.'."\n".
-                    'Dies ist die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}, die ich später noch'."\n".
-                    'beweisen möchte.'."\n",
-                      'Sie stellt einen tief gehenden grundsätzlichen Paradigmenwechsel dar, der uns eine Lupe in die'."\n".
+                    'Dies wird durch unseren \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Beweis der Superiale-Transzendenz-Vermutung} gezeigt.'."\n",
+                      'Der Beweis unserer Vermutung stellt einen tief gehenden grundsätzlichen Paradigmenwechsel dar, der uns eine Lupe in die'."\n".
                     '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{feinen Strukturen der Transzendenz} an die Hand gibt.'."\n".
                     'Diese ermöglicht uns ganz neue Einblicke, wie wir bei der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}{superialen Eulerschen Zahl \lm{ \e_{\s} }} und'."\n".
@@ -67,13 +66,11 @@
                     'eines wichtigen Teils der reell algebraischen Zahlen, nämlich den Radikalen\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} – ganzzahligen Wurzeln aus positiven natürlichen Zahlen –,'."\n".
                     'gelungen:'."\n",
                       'Unter den Radikalen befinden sich auch irrationale Zahlen, wie die Wurzel aus Zwei, also \lm{ *| \sqrt{2} \,|* = 2^{½} }.'."\n".
-                    'Solche Zahlen sind, genauer ausgedrückt, gebrochene Zahlen mit unendlich vielen nicht periodischen Nachkommastellen.'."\n".
-                    'Noch genauer betrachtet stellt sich die Frage:'."\n".
-                    'Sind diese Nachkommastellen vom Wert her alle endlich groß?'."\n",
-                      'Der Beweis der Überrationalitätsvermutung zeigt, dass sich diese irrationalen Radikale in jede Schicht des'."\n".
-                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems der Superial-Zahlen} vollständig eingliedern.'."\n".
+                    'Solche Zahlen sind, genauer ausgedrückt, gebrochene Zahlen mit unendlich vielen nicht periodischen Nachkommastellen.'."\n",
+                      'Unser Beweis der Überrationalitätsvermutung zeigt, dass sich diese irrationalen Radikale in jede einzelne Schicht des'."\n".
+                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems der Superial-Zahlen} vollständig integrieren.'."\n".
                     'Das zeigt sich durch eine neue und in diesem Zusammenhang sinnvolle Beantwortung der Frage, durch welchen ganzzahligen Bruch wir'."\n".
-                    'die Wurzel aus Zwei oder jedes andere Radikal darstellen können:'."\n".
+                    'die Wurzel aus Zwei oder jedes andere (irrationale) Radikal darstellen können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -89,15 +86,15 @@
                     'und die allgemeine Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}.'."\n".
                     'Er zeigt, dass für die Frage, wie kann jede ganzzahlige Wurzel aus einer positiven natürlichen Zahl als ganzzahliger Bruch darstellen werden,'."\n".
                     'im Endlichen keine Antwort existiert.'."\n".
-                    'Diese Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
-                      'Wenn man naiv auf beide Formeln schaut, dann könnte man argumentieren, dass diese doch nicht abschließend sind, weil sie noch'."\n".
+                    'Diese generelle Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
+                      'Wenn wir naiv auf beide Formeln schauen, dann könnten wir argumentieren, dass diese doch nicht abschließend sind, weil sie noch'."\n".
                     'gekürzt werden können.'."\n".
-                    'Jedoch ist dies nicht ganz korrekt:'."\n".
-                    'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr gegeben,'."\n".
-                    'weil die aktuale Unendlichkeit verloren geht, die der Beweis fordert.'."\n".
+                    'Jedoch ist dies nicht für irrationale Radikale und damit nicht im allgemeinen ganz korrekt:'."\n".
+                    'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr für die irrationalen Radikale gegeben,'."\n".
+                    'weil die aktuale Unendlichkeit verloren geht, die der Beweis für diese fordert.'."\n".
                     'Einzig endlich oft kürzen ist möglich, ohne diese Bedingung zu verletzen, bringt aber keinerlei zusätzlichen Gewinn.'."\n",
                       'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.'."\n".
-                    'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahlflächenprodukts von \lm{ \s }.'."\n".
+                    'Denn die Faktoren \lm{ 2^{ω} }, allgemein \lm{ \rad(n)^{ω} }, sind auch Teil des Primzahl-Flächenprodukts von \lm{ \s }.'."\n".
                     'Dadurch wird jedes Produkt einer Wurzel mit unserer superialen Basis'."\n".
                     ''))),
                   array( 'equations',
@@ -116,7 +113,7 @@
                     'erweitern, dass in Summen von superialen Integralen unendlich kleine Flächenelemente ganzer Anzahl gezählt und zu endlichen Flächeninhalten'."\n".
                     'addiert werden können.'."\n",
                       'Alle Radikale können aus der klassischen \lm{ p }‑adischen Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}}'."\n".
-                    'durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was offensichtlich ist und worauf wir gleich noch zurückkomme.'."\n".
+                    'durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was offensichtlich ist und worauf wir gleich noch zurückkommen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Algebraische Radikalformen', subline =>
@@ -148,9 +145,334 @@
                     'Dies legen wir dort im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}‹} dar.'."\n".
                     'Ein entscheidender Schritt zur Vorbereitung unseres Beweises, dass wirklich alle reell algebraischen Zahlen als Koeffizienten'."\n".
                     'sinnvoll sind.'."\n",
-                      'Und diesen Beweis wollen wir nun angehen.'."\n".
+                      'Und diesen Beweis führen wir nachfolgend.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Beweis-der-Ganz-Abgeschlossenheit-von-As', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                'Beweis der Algebraischen-Koeffizienten-Vermutung (AKV)', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Um den gesuchten Beweis zu führen, habe ich, neben eigenen Ansatzideen und dazugehörigen Recherchen, auch ChatGPT 5 Thinking um Ideen dazu befragt.'."\n".
+                    'Nachfolgend nun der so gefundene Beweis, dessen Ansatz und Vorgehensweise ich, zum besseren Verständnis, vorab darlege.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'AKV in Kürze', subline =>
+                    'Beweisidee')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir zeigen zunächst mit \lm{ p }-Bewertungen \lm{ v _{p} } und den Bewertungsringen'."\n".
+                    '\lm{ V_{p} = *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} },'."\n".
+                    'dass \lm{ \mathbb{S}_{\Z} = \bigcap_{ p } V_{p} }.'."\n".
+                    'Daraus folgt, dass \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist.'."\n",
+                    'Dann gilt:'."\n".
+                    'Für jede algebraische Ganzzahl \lm{ \beta } ist \lm{ Y = \beta \cdot \s } ganz über \lm{ \mathbb{S}_{\Z} },'."\n".
+                    'also \lm{ Y \in \mathbb{S}_{\Z} }.'."\n",
+                    'Für eine beliebige reell algebraische \lm{ \alpha } wähle \lm{ m \in \mathbb{Z} \setminus *\{ 0 *\} } mit'."\n".
+                    '\lm{ \beta = m \cdot \alpha } algebraisch ganz; außerdem absorbiert \lm{ \s } jeden endlichen Nenner,'."\n".
+                    'also \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }.'."\n",
+                    'Damit \lm{ \alpha \cdot \s = \beta \cdot \frac{ \s }{ m } \in \mathbb{S}_{\Z, \{ 1 \}} }, also \lm{ \mathbb{A}_{\R} \subseteq \mathbb{A}_{\S} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Ziel (AKV)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir zeigen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'also, dass jede reell algebraische Zahl \lm{ \alpha } ein sinnvoller Koeffizient'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \alpha \cdot \s  \in  \mathbb{S}_{\Z, \{ 1 \}}  \;\;}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'sprich, jedes \lm{ \alpha \cdot \s } eine ganze Superial-Zahl der Eins-Schicht ist.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Stehende Annahmen (SA) und Notation', subline =>
+                    '')),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \mathbb{S}_{\Z} } ist der Ring der \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} (Eins-Schicht-Ganzheit).',
+                        '\lm{ \mathbb{S}_{\Q} := \operatorname{Frac}*( \mathbb{S}_{\Z} *) } ist der Quotientenkörper.',
+                        '\lm{ \s \in \mathbb{S}_{\Z} } ist so definiert, dass \italic{jede endliche Primzahl} \lm{ p }'."\n".
+                          'in einem aktual unendlichen Vorrat der Größe \lm{ ω } im inneren Primzahl-Flächenprodukt'."\n".
+                          'von \lm{ \s } enthalten ist (im Sinn der \lm{ p }-adischen Bewertungen,'."\n".
+                          'siehe \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}).',
+                        'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } gibt es die \lm{ \s }-Ordnung \lm{ \operatorname{ord}_{\s}(X) }'."\n".
+                          'und die Zerlegung \\\\'."\n".
+                            '\lm{ \qquad\qquad  X  =  \s^{\operatorname{ord}_{\s}(X)} \cdot X^{(0)} \;\; , } \\\\'."\n".
+                          'wobei \lm{ X^{(0)} } \lm{ \s }-primitiv ist.',
+                        '\bold{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:} \\\\'."\n".
+                          'Nach dem Herausziehen des \lm{ \s }-Vorrats hat \lm{ X^{(0)} } nur \italic{endlich viele} endliche Primteiler.',
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                '\small{Teil A} \\\\ Schnittdarstellung und Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
+                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{A.1} \\\\ \lm{ p }-Bewertungen und Bewertungsringe', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für jede endliche Primzahl \lm{ p } gibt es eine \lm{ p }-Bewertung \lm{ v_{p} } auf \lm{ \mathbb{S}_{\Q}^{\times} } mit den üblichen Eigenschaften:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}​(x \cdot y)  =  v_{p}​(x) + v_{p}​(y)  }'),
+                      array( display => 'on',  latex => '{  *( x + y = 0 *) *[  v_{p}​(x+y)  \ge  \min\!*( v_{p}​(x), v_{p}​(y) *)  *]  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Wir definieren den zugehörigen Bewertungsring'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  V_{p}  :=  *\{ x \in \mathbb{S}_{\Q}  *|*  v_{p}​(x) \ge 0 *\} \cup *\{ 0 *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '\italic{Bekannt:} Jeder Bewertungsring \lm{ V_{p} } ist ganz abgeschlossen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{A.2} \\\\ Schnittdarstellung \lm{ \mathbb{S}_{\Z} = \bigcap_{p} V_{p} }', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Lemma A1', subline =>
+                    '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{S}_{\Z} = \bigcap_{p} V_{p}  \;\;}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{(1) \lm{ \subseteq }:} \\\\'."\n".
+                    'Sei \lm{ X \in \mathbb{S}_{\Z} }.'."\n".
+                    'Dann besitzt \lm{ X } keine negativen \lm{ p }-Exponenten, also \lm{ v_{p}(X) \ge 0 } für alle \lm{ p }.'."\n".
+                    'Damit \lm{ X \in V_{p} } für alle \lm{ p }, also \lm{ X \in \bigcap_{p} V_{p} }.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{(2) \lm{ \supseteq }:} \\\\'."\n".
+                    'Sei \lm{ x \in \bigcap_{p} V_{p} }.'."\n".
+                    'Schreibe \lm{ x = \frac{ X }{ Y } } mit \lm{ X, Y \in \mathbb{S}_{\Z} }, \lm{ Y \ne 0 }.'."\n".
+                    'Ziehe den \lm{ \s }-Vorrat aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  X  =  \s^{a} \cdot X^{(0)}  }'),
+                      array( display => 'on',  latex => '{  Y  =  \s^{b} \cdot Y^{(0)}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  \s^{a - b} \cdot \frac{ X^{(0)} }{ Y^{(0)} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Da \lm{ \s^{a - b} \in \mathbb{S}_{\Z} }, genügt es \lm{ \frac{ X^{(0)} }{ Y^{(0)} } \in \mathbb{S}_{\Z} } zu zeigen.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Weil \lm{ x \in V_{p} } für alle \lm{ p }, gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p *) *[  v_{p}(X) - v_{p}(Y)  \ge  0  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Nach dem Herausziehen des \lm{ \s }-Vorrats heißt das insbesondere:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p *) *[  v_{p}(X^{(0)})  \ge  v_{p}(Y^{(0)})  *]  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Nun hat \lm{ Y^{(0)} } nach \bold{SA} nur endlich viele Primteiler.'."\n".
+                    'Sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  F  :=  *\{  p  *|*  v_{p}​(Y^{(0)}) > 0  *\} \;\; ,  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'dann ist \lm{ F } endlich.'."\n".
+                    'Für jedes \lm{ p \in F } gilt \lm{ v_{p}(X^{(0)}) \ge v_{p}(Y^{(0)}) }, also enthält \lm{ X^{(0)} }'."\n".
+                    'jeden Primfaktor von \lm{ Y^{(0)} } mit mindestens gleicher Vielfachheit.'."\n".
+                    'Damit teilt \lm{ Y^{(0)} } den Zähler \lm{ X^{(0)} }, also existiert \lm{ Z \in \mathbb{S}_{\Z} } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  X^{(0)}  =  Y^{(0)} \cdot Z  \;\; .  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Folglich \lm{ \frac{ X^{(0)} }{ Y^{(0)} } = Z \in \mathbb{S}_{\Z} }, damit \lm{ x \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{A.3} \\\\ Korollar: \lm{ \mathbb{S}_{\Z} } ist ganz abgeschlossen', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Korollar A2', subline =>
+                    '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{S}_{\Z}  \; \text{ist ganz abgeschlossen in}  \; \mathbb{S}_{\Q} \; .  \;\;}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.'."\n".
+                    'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                '\small{Teil B} \\\\ Algebraische Zahlen sind sinnvolle Koeffizienten', subline =>
+                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{B.1} \\\\ Lemma: \lm{ \s } absorbiert jeden endlichen Nenner', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Lemma B1 (Nenner-Absorption)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für jedes \lm{ m \in \mathbb{Z} \setminus *\{ 0 *\} } gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \frac{ \s }{ m }  \in  \mathbb{S}_{\Z}  \;\;}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Für eine Primzahl \lm{ p } ist \lm{ v_{p}(m) } endlich.'."\n".
+                    'Da \lm{ \s } jede endliche Primzahl „mit Reserve“ enthält,'."\n".
+                    'ist wegen Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega} \lm{ v_{p}(\s) = ω }'."\n".
+                    'gegenüber jedem endlichen Exponenten groß genug, so dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}*( \frac{ \s }{ m } *)  =  v_{p}(\s) - v_{p}(m)  \ge  0  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'für alle \lm{ p }.'."\n".
+                    'Also \lm{ \frac{ \s }{ m } \in V_{p} } für alle \lm{ p }.'."\n".
+                    'Mit Lemma \bold{A1} folgt \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{B.2} \\\\ Lemma: Algebraische Ganzzahlen liefern \lm{ \alpha \cdot \s \in \mathbb{S}_{\Z} }', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Lemma B2 (algebraische Ganzzahl)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Sei \lm{ \beta } eine reell algebraische Ganzzahl, also Nullstelle eines \italic{monischen} Polynoms:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( c_{i} \in \mathbb{Z} *) *[  \beta^{d} + c_{d - 1} \cdot \beta^{d - 1} + \cdots + c_{1} \cdot \beta^{1} + c_{0}  =  0  *]  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \beta \cdot \s  \in  \mathbb{S}_{\Z}  \;\;}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Setze \lm{ Y := \beta \cdot \s \in \mathbb{S}_{\Q} }.'."\n".
+                    'Multipliziere die Gleichung mit \lm{ \s^{d} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \beta \cdot \s *)^{d} + c_{d - 1} \cdot \s \cdot *( \beta \cdot \s *)^{d - 1} + \cdots \\\ \qquad \cdots + c_{1} \cdot \s^{d - 1} \cdot *( \beta \cdot \s *) + c_{0} \cdot \s^{d}  =  0  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Also erfüllt \lm{ Y } eine \italic{monische} Polynomgleichung mit \lm{ a_{i} = c_{i} \cdot \s^{d - i} \in \mathbb{S}_{\Z} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  Y^{d} + a_{d - 1} \cdot Y^{d - 1} + \cdots + a_{1} \cdot Y^{1} + a_{0}  =  0  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Damit ist \lm{ Y } ganz über \lm{ \mathbb{S}_{\Z} }.'."\n".
+                    'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist (\bold{Korollar A2}), folgt \lm{ Y \in \mathbb{S}_{\Z} }.'."\n".
+                    'Also \lm{ \beta \cdot \s \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{B.3} \\\\ Lemma: Jede algebraische Zahl wird nach Multiplikation ganz', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Lemma B3 (Standardfakt aus der Algebra)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für jede reell algebraische Zahl \lm{ \alpha } gibt es ein \lm{ m \in \mathbb{Z} \setminus *\{ 0 *\} }, so dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \beta  :=  m \cdot \alpha  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'eine algebraische Ganzzahl ist.'."\n".
+                    ''))),
+                  array( 'text', array( intent => '0em', text => array(
+                    '(Man nimmt z.B. den Leitkoeffizienten eines primitiven Minimalpolynoms von \lm{ \alpha }.)'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  '\small{B.4} \\\\ Hauptsatz (AKV)', subline =>
+                    '')),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  'Satz (AKV)', subline =>
+                    '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Für jede reell algebraische Zahl \lm{ \alpha } gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha \cdot \s  \in  \mathbb{S}_{\Z, \{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Sei \lm{ \alpha } reell algebraisch.'."\n".
+                    'Wähle \lm{ m \ne 0 } so, dass \lm{ \beta := m \cdot \alpha } algebraische Ganzzahl ist (\bold{Lemma B3}).'."\n".
+                    'Dann ist'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \beta \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'nach \bold{Lemma B2}.'."\n".
+                    'Außerdem gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s }{ m }  \in  \mathbb{S}_{\Z}  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'nach \bold{Lemma B1}.'."\n".
+                    'Nun:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha \cdot \s  =  \frac{ \beta \cdot \s }{ m }  =  \beta \cdot \frac{ \s }{ m }  }'),
+                    ))),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Als Produkt zweier Elemente aus \lm{ \mathbb{S}_{\Z} } liegt \lm{ \alpha \cdot \s } wieder in \lm{ \mathbb{S}_{\Z} },'."\n".
+                    'also ist \lm{ \alpha } ein sinnvoller Koeffizient. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                'Schlussfolgerung', subline =>
+                  '')),
+                  array( 'text', array( intent => '0em', text => array(
+                    'Damit ist die AKV-Inklusion gezeigt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  }'),
+                    ))),
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
                   '')),
@@ -481,10 +803,10 @@
                   array( 'text', array( text => array(
                     'Deshalb besitzt jedes \lm{ X \in \mathbb{S}_{\Z} } nur endlich viele Primteiler (SA \condb{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat}),'."\n".
                     'welche damit kompatibel mit der bestehenden Arithmetik in den Superial-Zahlen und den Beweisen oben ist.'."\n".
-                    ''))),
+                    ''))), */
 
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
+                  /* array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen …',
                 TitleVis => 'Alter, verkehrter Ansatz rein über \lm{ p }-adische Bewertungen:', ParagraphList => array(
 
@@ -509,7 +831,7 @@
                       'Diese Idee verbindet klassische algebraische Methoden (\lm{ p }‑adische Bewertungen, Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}'."\n".
                     'mit der neuen transfiniten oder aktual unendlichen Struktur der Superial-Zahlen und erscheint als vielversprechender Ansatz, um die Frage systematisch anzugehen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis: Einbettung reell algebraischer Zahlen in das System der Superial-Zahlen', subline =>
                   '')),
@@ -640,9 +962,9 @@
                     'wie tief sie mit den Grenzen der Zahlenmengen verbunden sind.'."\n".
                     ''))),
 
-                    ))),
+                    ))), */
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
+                  /* array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter Ansatz mit elliptischen Integralen …',
                 TitleVis => 'Alter Ansatz mit elliptischen Integralen:', ParagraphList => array(
 
@@ -753,7 +1075,7 @@
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
                     ''))),
 
-                    ))),
+                    ))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung'),

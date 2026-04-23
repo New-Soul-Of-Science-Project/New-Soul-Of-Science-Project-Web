@@ -29,7 +29,10 @@
                       'auf alle anderen Teile des Strings wirken.',
                     '• Der Leptonen-String eines geladenen Teilchens erscheint punktförmig, weil sein elektromagnetisches Feld – oder sogar genauer sein elektroschwaches Feld – so erscheint, dass seine Quelle im Schwerpunkt des Strings liegt.',
                     '\bold{Scheinbare Tabubrüche und vermeintliche Widersprüche zur heutigen Physik}',
-                    '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][*Bearb]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][*Bearb]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner})',
+                    '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][][_blank]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][][_blank]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner}',
+                    '\bold{Aktuelle akademische Physik}',
+                    '• \italic{\bold{Eichtheorie (Gauge Theory)}}',
+                    '• Video von Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=0RcaL4LVlss][][_blank]{}{This is why light exists}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -456,6 +459,11 @@
                     '– Herr Gaßner stellt fest, dass die Schrödinger-Gleichung so nicht stimmen kann und dass in der Quantenmechanik nichts entstehen und vergehen kann. Siehe Sek. 16:37.',
                     '– In der FrQFT kann etwas entstehen und vergehen! Auch insofern ergänzt sie die De-Broglie-Bohm-Theorie und sogar die ganze Quantenmechanik.',
                     '\bold{Aktuelle Fachdiskussion}',
+                    '\italic{\bold{Dunkle Photonen}}: Elapsonen können auch als dunkle Photonen verstanden werden, die kein elektromagnetisches Feld besitzen, wie ich an anderen Stellen schon bemerkt habe. Sabine Hossenfelder stellt eine mathematische Interpretation des Doppelspaltexperiments vor, dass dunkle Photonen einbezieht:',
+                    '– Video von Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=DpMcC-E5l5c][][_blank]{}{Did We Get the Double Slit Experiment All Wrong?}',
+                    '– Dies hat große Ähnlichkeit mit den Elapsonen-Fluss-Projektionen.',
+                    '\italic{\bold{Nichtlokal (non-local) und Versteckte Variablen (Hidden Variables)}}:',
+                    '– Genau erklärt, wie dies nach heutigem Wissen zu verstehen ist, und wie Bell\'s Theorem falsch verstanden wurde (auch von ihm selber), siehe Video von Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=hpkgPJo_z6Y][][_blank]{}{Why is quantum mechanics non-local? (I wish someone had told me this 20 years ago.)}',
                     '• Unerklärliches Phänomen in der Quantenphysik? Siehe: Quantenzigarren in rätselhaftem Gleichtakt. In: Spektrum der Wissenschaft 09/2018. 26-28.',
                     '• Wann und wie gehen die Bereiche der Quantenphysik und der klassischen Physik ineinander über? Siehe: An der Grenze zur Quantenwelt. In: Spektrum der Wissenschaft 08/2018. 12-17.',
                     '• Inwieweit entspricht das hier vorgestellte Interferenzmuster des Vakuums der Pilotwellentheorie von de Broglie und Bohm? Siehe \jump[https://resonance.is/particle-interacting-associated-wave-field/]{}{Val Baker, Amira, It’s a Particle Interacting with the Associated Wave Field! URL: https://resonance.is/particle-interacting-associated-wave-field/}',
@@ -466,9 +474,10 @@
                         '\color{*Bearb}{(Der Film "Geheimnisse des Universums Kleinste Teilchen" stellt eine angebliche Wirkung der Beobachutng eines Experiments auf die Vergangenheit dar. Dies bezieht sich auf ein Doppelspaltexperiment in dem die Elementarteilchen zwischen Doppelspaltblende und Schirm beobachtet werden. Angeblich verursacht dies, dass die detektierten Elementarteilchen nicht durch beide Spalte, sondern doch nur durch einen Spalt gegangen sind. Diese Interpretation aus Sicht der Quanten-Fluss-Theorie analysieren. )}',
                     ))),*/
                   array( 'normal',
-                    'Beim Doppelspaltexperiment\footnote{XXX}'."\n".
-                    'wird ein diffuser Strahl, bespielsweise aus Elektronen, auf eine Doppelspaltblende projeziert.'."\n".
+                    'Beim Doppelspaltexperiment\color{*Bearb}{(Verweis)}'."\n".
+                    'wird ein diffuser Strahl, beispielsweise aus Elektronen, auf eine Doppelspaltblende projiziert.'."\n".
                     'Das sich ergebende Bild wird auf einem hinter der Blende positionierten Schirm detektiert (siehe \jump{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}{\name{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}}).'."\n"),
+
                   array( 'figure',
                     array( fig_file_name => 'Doppelspaltexperiment_v08', fig_alt_description => 'Das Doppelspaltexperiment mit Elementarteilchen', width => '458px', height => '443px', name => 'OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment',
                            text => 'Die Darstellung zeigt das Doppelspaltexperiment mit Elementarteilchenquelle, Doppelspaltblende, räumlichem'."\n".
@@ -476,6 +485,7 @@
                                     'Die neue Interpretation geht davon aus, dass das Interferenzmuster alleine durch das Vorhandensein der Doppelspaltblende im Vakuum entsteht.'."\n".
                                     'Die Elementarteilchen, welche durch einen der Spalte geflogen sind, interferieren mit dem bis dahin unsichtbar im Vakuum zwischen'."\n".
                                     'Blende und Schirm vorhandenem Muster und machen es dadurch sichtbar.')),
+
                   array( 'normal',
                     'Bemerkenswert an diesem Experiment ist das Auftreten des Interferenzmusters selbst dann, wenn nur ein Elementarteilchen'."\n".
                     'zur selben Zeit durch die Spalte fliegt und daher eigentlich keine Interferenz zwischen Elementarteilchen auftreten'."\n".
@@ -483,7 +493,7 @@
                   array( 'normal',
                     'Die neue Interpretation des Experiments geht von einem Interferenzeffekt aus, der auf eine direkte Wechselwirkung'."\n".
                     'zwischen den Elementarteilchen völlig verzichten kann.'."\n".
-                    'Es geht vielmehr um eine Wechselwirkung zwischen einem sowieso durch den Versuchsaufbau im Raum vorhandenen, statischen Interferenzmuster des \jump{OM:FrQFT:Vakuum}{Vakuums} und jedem einzelnen'."\n".
+                    'Es geht vielmehr um eine Wechselwirkung zwischen einem sowieso durch den Versuchsaufbau im Raum vorhandenen, statischen Interferenzmusters des \jump{OM:FrQFT:Vakuum}{Vakuums} und jedem einzelnen'."\n".
                     'Elementarteilchen, welches durch einen der Spalte Richtung Schirm geflogen ist.\footnote{Vgl. \cite{Huss:GFTv7.381j2012}, Kap. 5.4 Welleneigenschaften, S. 109-110.}'."\n"),
                   array( 'normal',
                     '<h3 style="margin-top: 20px;">Interferenzmuster des Vakuums</h3>'."\n"),

@@ -333,7 +333,9 @@
   $NPYo_g_footnote_text_HermesTrismegistos      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HermesTrismegistos:2019}.';
   $NPYo_g_footnote_text_Hermetik                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Hermetik:2019}.';
   $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}.';
+  $NPYo_g_footnote_text_SamudraManthana         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SamudraManthana:2025}.';
   $NPYo_g_footnote_text_Trimurti                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Trimurti:2016}.';
+  $NPYo_g_footnote_text_Veda                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Veda:2025}.';
   $NPYo_g_footnote_text_YinUndYang              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:YinUndYang:2019}.';
   $NPYo_g_footnote_text_ZeitDjetNeheh           = '\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
   
@@ -361,11 +363,17 @@
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
   $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_CauchyProduktformel   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
+  $SupNum_g_footnote_text_DedekindscherSchnitt  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
   $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
+  $SupNum_g_footnote_text_HahnSeries            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
+  $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
   $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
   $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
@@ -377,8 +385,12 @@
   $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
+  $SupNum_g_footnote_text_Nichtstandardanalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
   $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
   $SupNum_g_footnote_text_PadischeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
+  $SupNum_g_footnote_text_PfaffscheForm         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
+  $SupNum_g_footnote_text_Polynomdivision       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Polynomdivision:2025}.';
   $SupNum_g_footnote_text_Primfaktorzerlegung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
   $SupNum_g_footnote_text_Primpolynom           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
@@ -668,10 +680,22 @@
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
   $NPYo_g_youtube_ary_ChurningTheSeaOfMilk      = array( source => 'https://www.youtube-nocookie.com/embed/Bu9vjNj1sqQ?si=3YDi1CNr3oeqSfWs', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
-                                                         text => '›Churning the sea of milk.‹ meint ›Das Milchmeer umrühren.‹ oder ›Den Milchocean quirlen.‹'."\n".
+                                                         text => '›Churning the sea of milk‹ meint ›Das Milchmeer umrühren‹ oder ›Den Milchocean quirlen‹.'."\n".
                                                                    'Dies ist eine zentrale hinduistische Legende, bei der Götter (Devas) und Dämonen (Asuras) gemeinsam den kosmischen Ozean aufwirbelten, um den Nektar der Unsterblichkeit (Amrita) zu gewinnen.'."\n".
                                                                    'Dafür verwendeten sie den Berg Mandara als Quirlstab und die Schlangenkönigin Vasuki als Quirlseil.'."\n".
                                                                    'Während dieses Prozesses entstanden zahlreiche Wunderwesen und Schätze, darunter die Göttin Lakshmi, aber auch das tödliche Gift Halahala.'."\n".
+                                                                   '');
+
+  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilk =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/MItyUwPAjLA?si=cXzh9t8tPMIjJCVp', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => '›Ayurveda – the Churning of the Ocean of Milk‹ meint ›Ayurveda – Das Umrühren des Milchozeans‹.'."\n".
+                                                                   'In diesem Video wird das ›Umrühren des Milchozeans‹ als mythologischer Ursprung des Ayurveda, und damit des Lebens und der Heilung, beschrieben.'."\n".
+                                                                   '');
+
+  $NPYo_g_youtube_ary_TheChurningOfTheOceanOfMilkHinduMetho =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/oLM176M10HI?si=g5U0S30el9pawjD6', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => '›The Churning of the Ocean of Milk | Hindu Mythology‹ meint ›Das Umrühren des Milchozeans‹.'."\n".
+                                                                   'In diesem Video wird das ›Umrühren des Milchozeans‹ als kosmologische Schöpfungsgeschichte dargestellt.'."\n".
                                                                    '');
 
   $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =
@@ -791,7 +815,9 @@
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
   $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
-                                                         text => '\color{*Bearb}{(In Arbeit …)}'."\n");
+                                                         text => '\color{*Bearb}{(In Arbeit …)}'."\n",
+                                                         print_image => $Glo_PathRel_back.'../share/images/Spannungsspiel-des-Lebens/Sterntetraeder-3D-print.png',
+                                                         print_image_alt => 'Sterntetraeder (Merkaba) — 3D-Animation');
 
   $SpaLeb_g_figure_ary_TomOriginalGesicht      = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Original_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms originales Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
                                                          text => 'Toms originales Gesicht.');
@@ -2127,7 +2153,7 @@
            header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
            header_links_marginLeft => '369px',
            copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
-                          '© 1986–2025 by \\\\'."\n".
+                          '© 1986–2026 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -2815,7 +2841,7 @@
            header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
            header_links_marginLeft => '383px',
            copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                          '© 1990–2025 by \\\\'."\n".
+                          '© 1990–2026 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -3137,7 +3163,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2025-11-20T23:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2026-04-23T21:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3167,8 +3193,8 @@
     echo '    <link rel="stylesheet" type="text/css" href="'.$Glo_PathRel_back.'../share/css/print.css" media="print" />'."\n";
     echo ''."\n";
     // #: Vue.js
-    echo '    <!-- Vue.js: production version, optimized for size and speed -->'."\n";
-    echo '    <script src="https://cdn.jsdelivr.net/npm/vue"></script>'."\n";
+    // echo '    <!-- Vue.js: production version, optimized for size and speed -->'."\n";
+    // echo '    <script src="https://cdn.jsdelivr.net/npm/vue"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/NSOSP.js" type="text/javascript" language="JavaScript"></script>'."\n";
     // #: Additionals
     Sc_f_HeaderElements();
@@ -3242,8 +3268,6 @@
     echo '  <script type="text/javascript">'."\n";
     echo 'function googleTranslateElementInit() {'."\n";
     echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
-    // correct Google navigator right overflow
-    echo '  To_f_googleTranslateCorrect();'."\n";
     echo '}'."\n";
     echo '  </script>'."\n";
     echo '  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
@@ -3330,11 +3354,11 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2025 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2026 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.39-d20251120-t2300" target="_blank">v9.39</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.40-d20260423-t2100" target="_blank">v9.40</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3490,7 +3514,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 20. November 2025, 23:00 CET.'."\n";
+    echo $offset.'      Stand 23. April 2026, 21:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";
