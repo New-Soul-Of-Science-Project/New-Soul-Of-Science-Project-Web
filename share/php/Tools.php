@@ -2028,7 +2028,7 @@
           //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
           // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
           echo '          <div class="content-horizontal-scrollable">'."\n";
-          echo '          <table class="" border="0px" width="660px" style="margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
+          echo '          <table class="" border="0px" style="width: 100%; max-width: 660px; margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
           echo '            <tr>'."\n";
           
           // #: Margin left as column.
