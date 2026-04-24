@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 07.02.2026, 19:00h
+  // #: Stand: 24.04.2026, 11:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
-  
+
+  //           20260424:  >:  "To_f_replace_callback__latexcommand__jump":  Default 'target="_blank"' if URL parameter is set and no explicit target given.
+  //           20260423:  *:  "To_f_Paragraph" figure/youtube/iframe:  Change outer table from fixed 'width="660px"' to 'width: 100%; max-width: 660px' to prevent horizontal overflow on Windows.
   //           20260207:  *:  "To_f_Paragraph", "fade-in-area":  Refine code and make some tryouts.
   //                      +:  "To_f_Paragraph", "fade-in-area":  Add parameter "TitleVisEnd", default undefined (empty).
   //                      >:  "To_f_Paragraph", "notice":  Add addon text '(Beginn, nicht für inhaltliche Beurteilungen beachten)', parameter "TitleVisEnd" as 'Notizen (Ende, nicht für inhaltliche Beurteilungen beachten)'.
@@ -993,7 +995,7 @@
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
       {
         
-        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : '')." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : ((0 < strlen( $value[1][0])) ? ' target="_blank"' : ''))." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
         
       }
       else
