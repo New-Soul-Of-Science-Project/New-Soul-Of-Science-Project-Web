@@ -290,7 +290,7 @@
                 'Der Kundalini-Prozess', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Aus der Kundalini\color{*Bearb}{(Verweis aufs Yogawiki \jump[https://wiki.yoga-vidya.de/Kundalini]{}{Kundalini} und \jump[https://www.yoga-vidya.de/kundalini-yoga/]{}{Kundalini Yoga})}'."\n".
+                    'Aus der Kundalini\footnote{\const{SpaLeb_g_footnote_text_Kundalini}}'."\n".
                     'Tradition des Tantra, auch im Kundalini Yoga, ist ein Prozess bekannt, der zur Heilung durch Weisheit und Erleuchtung führen soll, der Kundalini-Prozess.'."\n".
                     ''))),
                       

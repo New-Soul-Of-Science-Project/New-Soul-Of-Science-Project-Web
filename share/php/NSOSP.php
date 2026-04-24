@@ -351,6 +351,7 @@
   $SpaLeb_g_footnote_text_Biomechanik           = 'Internet: \\\\ Vgl. \cite{wiki:Biomechanik:2015}.';
   $SpaLeb_g_footnote_text_ErkenneDichSelbst     = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}, 1 Philosophie und Yoga, S. 4-6, hier S. 5. \\\\ Vgl. \cite{Kitzler:PhilosophieToGo:2015}, Selbsterkenntnis, S. 23-30. \\\\ Internet: \\\\ Vgl. \cite{wiki:GnothiSeauton:2015}.';
   $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \cite{wiki:LateralisationDesGehirns:2016}.';
+  $SpaLeb_g_footnote_text_Kundalini             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{YogaVidya:KundaliniYoga:2026}. \\\\ Vgl. \cite{Yogawiki:Kundalini:2025}.';
   $SpaLeb_g_footnote_text_LeibSeeleProblem      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Poser:DieVernuenftigGeordneteWelt:2016}, Monaden, S. 56-58. \\\\ Internet: \\\\ Vgl. \cite{wiki:PhilosophieDesGeistes:2015}.';
   $SpaLeb_g_footnote_text_Psyche                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2017}.';
   $SpaLeb_g_footnote_text_PsycheErlebUndVerhalt = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2015}, Definition und Allgemeines.';
