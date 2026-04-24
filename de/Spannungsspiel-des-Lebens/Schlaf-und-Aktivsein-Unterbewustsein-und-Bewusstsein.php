@@ -51,6 +51,10 @@
                     '– Daher sind die Begriffe Unendlichkeit und Absolutheit ganz sicher in diesem Sinne fehl am Platz. In dem Moment, wo wir sie gebrauchen, sind sie schon zu konkret, um nicht strittig zu sein.',
                     '– Daher sind sie als Platzhalter für das zu verstehen, was wir nicht wissen.',
                     '– \jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität} ist in meinen Augen dann übrigens unser Glaube an einen fruchtbaren und hilfreichen Dialog unseres Bewusstseins mit unserem Unterbewusstsein oder mit Gott oder mit dem Universum oder dem Vakuum oder wie immer wir das, was wir nicht wissen oder kennen, bezeichnen und natürlich dann auch unsere Praxis dieses Dialogs.',
+                    '\bold{Mythologie}',
+                    '• Tantra:',
+                    '– \quote{Kundalini Yoga hat eine sehr detaillierte philosophische Grundlage. Im Kundalini Yoga wird die Shiva Shakti Philosophie auch Tantra-Philosophie genannt. Diese beschreibt das Universum als ein Zusammenspiel zweier göttlicher Prinzipien, nämlich Shiva (Bewusstsein) und Shakti (Kosmische Energie).}, siehe \cite{Yogawiki:Kundalini:2025}, Was ist Kundalini?, Shiva-Shakti-Philosophie.',
+                    '⋅ Die Kosmische Energie steht hier für das Unterbewusste.',
                     ))),
                       
                   array( 'text', array( text => array(
