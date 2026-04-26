@@ -322,10 +322,11 @@
                   /*array( 'bulletlist', array( bullet_ary => array(
                         '\color{*Bearb}{(Der Film "Geheimnisse des Universums Kleinste Teilchen" stellt eine angebliche Wirkung der Beobachutng eines Experiments auf die Vergangenheit dar. Dies bezieht sich auf ein Doppelspaltexperiment in dem die Elementarteilchen zwischen Doppelspaltblende und Schirm beobachtet werden. Angeblich verursacht dies, dass die detektierten Elementarteilchen nicht durch beide Spalte, sondern doch nur durch einen Spalt gegangen sind. Diese Interpretation aus Sicht der Quanten-Fluss-Theorie analysieren. )}',
                     ))),*/
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     'Beim Doppelspaltexperiment\color{*Bearb}{(Verweis)}'."\n".
                     'wird ein diffuser Strahl, beispielsweise aus Elektronen, auf eine Doppelspaltblende projiziert.'."\n".
-                    'Das sich ergebende Bild wird auf einem hinter der Blende positionierten Schirm detektiert (siehe \jump{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}{\name{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}}).'."\n"),
+                    'Das sich ergebende Bild wird auf einem hinter der Blende positionierten Schirm detektiert (siehe \jump{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}{\name{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}}).'."\n".
+                    ''))),
 
                   array( 'figure',
                     array( fig_file_name => 'Doppelspaltexperiment_v08', fig_alt_description => 'Das Doppelspaltexperiment mit Elementarteilchen', width => '458px', height => '443px', name => 'OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment',
@@ -335,18 +336,19 @@
                                     'Die Elementarteilchen, welche durch einen der Spalte geflogen sind, interferieren mit dem bis dahin unsichtbar im Vakuum zwischen'."\n".
                                     'Blende und Schirm vorhandenem Muster und machen es dadurch sichtbar.')),
 
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     'Bemerkenswert an diesem Experiment ist das Auftreten des Interferenzmusters selbst dann, wenn nur ein Elementarteilchen'."\n".
                     'zur selben Zeit durch die Spalte fliegt und daher eigentlich keine Interferenz zwischen Elementarteilchen auftreten'."\n".
-                    'kann, weil keine Teilchen zur selben Zeit am selben Ort sind.\footnote{Vgl. \cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, 1.4 Ein Experiment mit Elektronen, S. 5-7, hier S. 6. \\\\ Vgl. \cite{wiki:Doppelspaltexp2013}, Experimentelle Beobachtung.}'."\n"),
-                  array( 'normal',
-                    'Die neue Interpretation des Experiments geht von einem Interferenzeffekt aus, der auf eine direkte Wechselwirkung'."\n".
+                    'kann, weil keine Teilchen zur selben Zeit am selben Ort sind.\footnote{Vgl. \cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, 1.4 Ein Experiment mit Elektronen, S. 5-7, hier S. 6. \\\\ Vgl. \cite{wiki:Doppelspaltexp2013}, Experimentelle Beobachtung.}'."\n",
+                      'Die neue Interpretation des Experiments geht von einem Interferenzeffekt aus, der auf eine direkte Wechselwirkung'."\n".
                     'zwischen den Elementarteilchen völlig verzichten kann.'."\n".
                     'Es geht vielmehr um eine Wechselwirkung zwischen einem sowieso durch den Versuchsaufbau im Raum vorhandenen, statischen Interferenzmusters des \jump{OM:FrQFT:Vakuum}{Vakuums} und jedem einzelnen'."\n".
-                    'Elementarteilchen, welches durch einen der Spalte Richtung Schirm geflogen ist.\footnote{Vgl. \cite{Huss:GFTv7.381j2012}, Kap. 5.4 Welleneigenschaften, S. 109-110.}'."\n"),
-                  array( 'normal',
-                    '<h3 style="margin-top: 20px;">Interferenzmuster des Vakuums</h3>'."\n"),
-                  array( 'normal',
+                    'Elementarteilchen, welches durch einen der Spalte Richtung Schirm geflogen ist.\footnote{Vgl. \cite{Huss:GFTv7.381j2012}, Kap. 5.4 Welleneigenschaften, S. 109-110.}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen:X', text =>
+                                           
+                'Interferenzmuster des Vakuums')),
+                  array( 'text', array( text => array(
                     'Um zu verstehen, wie sich im Vakuum, aufgrund des bloßen Vorhandenseins der Doppelspaltblende, ein Interferenzmuster'."\n".
                     'herausbilden kann, hilft es, sich zunächst mit einem verwandten Phänomen zu beschäfftigen, dem Casimir-Effekt\footnote{Vgl. \cite{wiki:CasimirEffekt2012}.}. \\\\'."\n".
                     'Anders als bei der Interferenz, geht es beim Casimir-Effekt um Kräfte, welche das Vakuum auf zwei Platten ausüben'."\n".
@@ -354,9 +356,8 @@
                     'Casimir-Effekt auf einer Einschränkung des Frequenzspektrums der sogenannten Quantenfluktuationen des'."\n".
                     'Vakuum zwischen den Platten beruht.'."\n".
                     'Außerhalb des Plattenspalts ist hingegen ein kontinuierliches Spektrum im Vakuum vorhanden.'."\n".
-                    'Dieser Unterschied übt von außen eine Kraft auf die Platten aus, welche die Platten aufeinander zu drückt.\footnote{Vgl. \cite{wiki:CasimirEffekt2012}, Vereinfachte Darstellung.}'."\n"),
-                  array( 'normal',
-                    'Das Vakuum der Quanten-Fluss-Theorie besitzt nun besondere Eigenschaften:'."\n".
+                    'Dieser Unterschied übt von außen eine Kraft auf die Platten aus, welche die Platten aufeinander zu drückt.\footnote{Vgl. \cite{wiki:CasimirEffekt2012}, Vereinfachte Darstellung.}'."\n",
+                      'Das Vakuum der Quanten-Fluss-Theorie besitzt nun besondere Eigenschaften:'."\n".
                     'Es besteht aus wellenartigen \jump{*Wirkungsquanten-Herlei}{Wirkungsquanten}, die alle zusammen einen \jump{*Bewegungsraum-Herlei}{Bewegungsraum} bilden.'."\n".
                     'Die Wirkungsquanten bewegen sich sehr konstant auf helixförmigen Spiralbahnen, deren'."\n".
                     'Translationsgeschwindigkeit der Lichtgeschwindigkeit im Dreidimensionalen Raum entspricht; daher der neue Begriff Bewegungsraum.'."\n".
@@ -369,12 +370,16 @@
                     'Befindet sich nun eine Doppelspaltblende im Vakuum, so können sich die Elapsonen im Vakuum nicht völlig ungehindert ausbreiten.'."\n".
                     'Ähnlich dem Casimir-Effekt können nur Elapsonen bestimmter Frequenzen und damit Wellenlängen zwischen den Spaltwänden existieren und so die Spalte passieren.'."\n".
                     'Die kontinuierliche Bewegung der Elapsonen des Vakuums und der Filtereffekt der Doppelspaltblende erzeugen zwischen der Blende und dem Schirm ein Interferenzmuster im Vakuum.'."\n".
-                    'Denn die durch die Doppelspaltblende gefilterten Elapsonen haben untereinander durch den Prozess des Filterns sehr ähnliche Welleneigenschaften und bewegen sich von den Spalten ausgehend Richtung Schirm und interferieren deshalb miteinander, wie man es von solchen Wellen im Raum erwartet.'."\n"),
-                  array( 'normal',
-                    '<h3 style="margin-top: 20px;">Wirkung des Interferenzmusters auf Elementarteilchen </h3>'."\n"),
-                  array( 'normal',
+                    'Denn die durch die Doppelspaltblende gefilterten Elapsonen haben untereinander durch den Prozess des Filterns sehr ähnliche Welleneigenschaften und bewegen sich von den Spalten ausgehend Richtung Schirm und interferieren deshalb miteinander, wie man es von solchen Wellen im Raum erwartet.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen:X', text =>
+                                           
+                'Wirkung des Interferenzmusters auf Elementarteilchen')),
+                  array( 'text', array( text => array(
                     'Elementarteilchen, die gemeinsam mit den gefilterten Elapsonen die Doppelspaltblende in Richtung Schirm passieren werden ebenfalls gefiltert und haben daher auch entsprechende Welleneigenschaften wie diese.'."\n".
-                    'So interferieren diese Elementarteilchen mit dem Interferenzmuster der Elapsonen zu einem Gesamtinterferenzmuster (siehe \jump{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}{\name{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}}).'."\n"),
+                    'So interferieren diese Elementarteilchen mit dem Interferenzmuster der Elapsonen zu einem Gesamtinterferenzmuster (siehe \jump{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}{\name{OM:FrQFT:Elementarteilchen:Fig-Doppelspaltexperiment}}).'."\n".
+                    ''))),
+
                   array( 'conclusion',
                         'Ich folgere, dass das Doppelspaltexperiment ein Interferenzmuster des Vakuums sichtbar macht, welches durch die'."\n".
                         'Filterwirkung der Doppelspaltblende im Bewegungsraum der Quanten-Fluss-Theorie erklärt werden kann.'."\n".
@@ -385,23 +390,21 @@
                         'passieren,\footnote[000AC4]{Vgl. \cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, 1.6 Beobachtung der Elektronen, S. 8-12.} dann werden die Elementarteilchen so von ihrem Weg abgebracht, dass das Experiment das Interferenzmuster des Vakuums'."\n".
                         'nicht mehr sichtbar machen kann.'."\n".
                         '\color{*Bearb}{(Begründen warum: Beeinflusst nur die Messung des Teilchenorts das Experiment, oder auch die Messaperatur das Interferenzmuster des Vakuums? Nachlesen!)}'."\n"),
-                  array( 'normal',
+
+                  array( 'text', array( text => array(
                     'In diesem Sinn ist das Doppelspaltexperiment ein Nachweis der Vakuuminterferenzmuster, welche die Quanten-Fluss-Theorie vorhersagt'."\n".
                     'und hier allgemeiner \italic{Elapsonen-Fluss-Projektionen}\footnote{Vgl. \cite{Huss:GFTv7.381j2012}, Kap. 5.4 Welleneigenschaften, S. 109-110, hier S. 109. Wirkungsquanten werden hier noch als Gravitonen bezeichnet.}'."\n".
                     'genannt werden.'."\n".
                     'Nach meinem Eindruck korrespondieren die Elapsonen-Fluss-Projektionen mit der \jump{OM:FrQFT:De-Broglie-Bohm-Theorie}{De-Broglie-Bohm-Theorie}'."\n".
-                    'und ich versuche auf einer separaten Seite beide Ansätze zueinander zu bringen.'."\n".
-                    ''),
-                  array( 'normal',
-                    '\color{*Entwick}{(Eventuell ist ein modifizierter Erklärungsansatz notwendig, um den Pfadintegralen der Feynman\'schen Formulierung der Quantenmechanik gerecht zu werden:'."\n".
+                    'und ich versuche auf einer separaten Seite beide Ansätze zueinander zu bringen.'."\n",
+                      '\color{*Entwick}{(Eventuell ist ein modifizierter Erklärungsansatz notwendig, um den Pfadintegralen der Feynman\'schen Formulierung der Quantenmechanik gerecht zu werden:'."\n".
                     'Danach sendet die Quelle der Elementarteilchen gleichzeitig zu diesen in Massen durch Elapsonen gebildete, virtuelle Elementarteilchen der gleichen Frequenz aus.'."\n".
                     'Diese virtuellen Elementarteilchen nehmen dann alle möglichen Wege deren Wahrscheinlichkeit größer als Null ist, weil sie sich im Wesentlichen wie Elementarteilchen verhalten.'."\n".
                     'Dabei interferieren die virtuellen mit den normalen Elementarteilchen, wodurch jedes virtuelle Elementarteilchen am Ende – also bei der Messung – zum normalen Elementarteilchen werden kann. \\\\'."\n".
                     'Besonders interessant wäre dann was genau „im Wesentlichen“ heißt. \\\\'."\n".
                     'Um zu beurteilen, ob diese Alternative notwendig ist, wäre es ein Ansatz zu gucken, wie eine Beobachtung zwischen Quelle und Blende das Bild auf dem Schirm verändert.'."\n".
-                    'Würde die Beobachtung das Bild auf dem Schirm zerstören, so könnte die Alternative notwendig werden, wenn der Ort der Quelle eine Rolle zu spielen scheint.)}'."\n"),
-                  array( 'normal',
-                    '\color{*Entwick}{(Eine generelle Möglichkeit die Natur der Abstrahlungen der Quelle im Doppelspaltexperiment zu testen geht über die Impulserhaltung:'."\n".
+                    'Würde die Beobachtung das Bild auf dem Schirm zerstören, so könnte die Alternative notwendig werden, wenn der Ort der Quelle eine Rolle zu spielen scheint.)}'."\n",
+                      '\color{*Entwick}{(Eine generelle Möglichkeit die Natur der Abstrahlungen der Quelle im Doppelspaltexperiment zu testen geht über die Impulserhaltung:'."\n".
                     'Die Frage ist, welchen Vektorimpuls erhält die Teilchenquelle durch die Abstrahlung der Elementarteilchen und zu welchem Zeitpunkt wird er auf die Quelle übertragen?'."\n".
                     'Dahinter steht, ob jedes einzelne abgestrahle Teilchen zum Zeitpunkt der Abstrahlung jeweils einen sich in der Richtung unterscheidenden Impuls auf die Quelle überträgt.'."\n".
                     'Wenn ja, wäre bekannt, durch welchen Spalt es geht.'."\n".
@@ -411,12 +414,11 @@
                     'Wenn ja, könnte dann auch innerhalb einer der Blendespalte das Interferenzmuster erzeugt werden? \\\\'."\n".
                     'Was ergibt eine Messung des Vektorimpulses, welcher auf den Schirm übertragen wird?'."\n".
                     'Darüber könnte eventuell festgestellt werden, durch welchen Spalt das Teilchen kam. \\\\'."\n".
-                    'Nebenfrage: Wird schon durch die Messung des Quellimpulses und/oder des Blendenimpulses und/oder des Schirmimpulses das Interferenzmuster auf dem Schirm zerstört?)}'."\n"),
-                  array( 'jumplist',
-                    array(
-                      array(  jump_name => 'OM:FrQFT:Lepton:Quantenmechanik'),
-                      array(  jump_name => 'OM:FrQFT:Lepton:Welle-Teilchen-Dualismus'),
-                      array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe'),
+                    'Nebenfrage: Wird schon durch die Messung des Quellimpulses und/oder des Blendenimpulses und/oder des Schirmimpulses das Interferenzmuster auf dem Schirm zerstört?)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Virtuelle-Teilchen'),
                     )),
               )
           ); ?>
@@ -427,155 +429,85 @@
             'OM:FrQFT:Elementarteilchen:Virtuelle-Teilchen',
               '', 'Sc_f_Paragraph',
                 array(
-                  array( 'normal',
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Virtuelle-Teilchen sind real)}',
+                    '• XXX',
+                    ))),
+
+                  array( 'text', array( text => array(
                     'Die Abstrahlungen des konstituierenden Wirkungsquanten-Strings erzeugt im umgebenden Vakuum virtuelle oder besteht selbst aus virtuellen Teilchen.'."\n".
                     'Bezüglich der Gravitation sind dies \jump{*Wirkungsquanten-virtuelle-Einfuehr}{virtuelle Wirkungsquanten}, welche abgestrahlt werden.'."\n".
                     'Diese verursachen eine Anhäufung von Wirkungsquanten des Vakuums um das konstituierende Elementarteilchen, welche seine Masse und Energie erhöhen – Higgs-Mechanismus.'."\n".
                     'Bezüglich der elektroschwachen Wechselwirkung ist dies ähnlich.'."\n".
-                    'Der String-Versatz der starken Wechselwirkung aus dem Wirkungsquanten-Rotationszentrum heraus sollte auch ähnliches hervorbringen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    '\color{*Bearb}{In Arbeit …}'."\n"),
+                    'Der String-Versatz der starken Wechselwirkung aus dem Wirkungsquanten-Rotationszentrum heraus sollte auch ähnliches hervorbringen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
 
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Verschraenkung'),
                     )),
               )
           ); ?>
 
           
-		    	<!  • Verschränkung:  >
+		    	<!  • Verschränkung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Verschraenkung',
               'Die Entwicklung eines Bildes', 'Sc_f_Paragraph',
                 array(
-                  array( 'normal',
-                    'Eine Beschreibung der Verschränkung in Bezug auf den Spin von Elektronen wird hier beschrieben: \cite{Sachdev:StringtheorieFuerFestkoerper2014}, S. 43-45.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'quote',
-                      'Verschränkung bedeutet Überlagerung von zwei Zuständen. Angenommen, zwei Elektronen, von denen eines Up­Spin und das andere Down­Spin aufweist, sitzen an unterschiedlichen Orten im Festkörper. Da Elektronen prinzipiell ununterscheidbar sind, lässt sich nicht sagen, welches up und welches down ist; bei­ de sind mit gleicher Wahrscheinlichkeit up oder down. Wir wissen nur: Wenn wir an dem einen Elektron Aufwärtsspin messen, weist der andere Spin garantiert abwärts. Anders gesagt, beide Spins sind antikorreliert. Kennen wir einen, so wissen wir auch über den anderen Bescheid. Auf den ersten Blick mutet die Verschränkung gar nicht seltsam an. Antikorrelationen gibt es oft: Wenn man den ei­ nen Schuh vor die Haustür stellt und den anderen in den Hin­ terhof, dann weiß man, sobald man an dem einen Ort den lin­ken Schuh findet, sofort, dass der andere der rechte sein muss. Das Quantenphänomen ist aber vertrackter. Ein Schuh ist immer entweder der linke oder der rechte, selbst wenn man nicht weiß, welcher von beiden er ist; doch der Spin eines Elek­ trons wird erst durch den Messvorgang definiert. Das Elektron hat gewissermaßen zugleich Spin up und Spin down, bis es durch eine Messung gezwungen wird, sich zu entscheiden. Rätselhaft ist, wie die Elektronen antikorreliert bleiben. Wenn ein Elektron durch Messung einen definierten Spin bekommt, steht der andere Spin sofort auch fest. Woher wis­ sen sie, dass sie gegensätzliche Spins einnehmen müssen? Anscheinend gelangt die Information über den Quanten­ zustand des ersten Teilchens augenblicklich zum zweiten. Tatsächlich hat keines der beiden einen eigenen Quanten­ zustand, sondern nur das Teilchenpaar als Ganzes. Diese Nichtlokalität fand Einstein als »spukhafte Fernwirkung« so fragwürdig, dass er gleich die gesamte Quantenmechanik für ergänzungsbedürftig hielt. Unterdessen hat sich die Nichtlokalität in zahlreichen Ex­ perimenten bestätigt'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n"),
-                  array( 'normal',
-                    'Fragen: \\\\'."\n".
-                    '• Welche Observablen (siehe Wiki \url{http://de.wikipedia.org/wiki/Quantenverschränkung}) können Verschränkt sein? Nur der Spin oder auch andere? \\\\'."\n"),
-                  array( 'normal',
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    '\color{*Bearb}{In Arbeit …}'."\n"),
-                  array( 'jumplist',
-                    array(
-                      //array(  jump_name => 'XXX'),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Virtuelle-Teilchen', type => 'back'),
+                    )),
+
+                  array( 'text', array( text => array(
+                    'Eine Beschreibung der Verschränkung in Bezug auf den Spin von Elektronen wird hier beschrieben: \cite{Sachdev:StringtheorieFuerFestkoerper2014}, S. 43-45.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Verschränkung bedeutet Überlagerung von zwei Zuständen. Angenommen, zwei Elektronen, von denen eines Up­Spin und das andere Down­Spin aufweist, sitzen an unterschiedlichen Orten im Festkörper. Da Elektronen prinzipiell ununterscheidbar sind, lässt sich nicht sagen, welches up und welches down ist; bei­ de sind mit gleicher Wahrscheinlichkeit up oder down. Wir wissen nur: Wenn wir an dem einen Elektron Aufwärtsspin messen, weist der andere Spin garantiert abwärts. Anders gesagt, beide Spins sind antikorreliert. Kennen wir einen, so wissen wir auch über den anderen Bescheid. Auf den ersten Blick mutet die Verschränkung gar nicht seltsam an. Antikorrelationen gibt es oft: Wenn man den ei­ nen Schuh vor die Haustür stellt und den anderen in den Hin­ terhof, dann weiß man, sobald man an dem einen Ort den lin­ken Schuh findet, sofort, dass der andere der rechte sein muss. Das Quantenphänomen ist aber vertrackter. Ein Schuh ist immer entweder der linke oder der rechte, selbst wenn man nicht weiß, welcher von beiden er ist; doch der Spin eines Elek­ trons wird erst durch den Messvorgang definiert. Das Elektron hat gewissermaßen zugleich Spin up und Spin down, bis es durch eine Messung gezwungen wird, sich zu entscheiden. Rätselhaft ist, wie die Elektronen antikorreliert bleiben. Wenn ein Elektron durch Messung einen definierten Spin bekommt, steht der andere Spin sofort auch fest. Woher wis­ sen sie, dass sie gegensätzliche Spins einnehmen müssen? Anscheinend gelangt die Information über den Quanten­ zustand des ersten Teilchens augenblicklich zum zweiten. Tatsächlich hat keines der beiden einen eigenen Quanten­ zustand, sondern nur das Teilchenpaar als Ganzes. Diese Nichtlokalität fand Einstein als »spukhafte Fernwirkung« so fragwürdig, dass er gleich die gesamte Quantenmechanik für ergänzungsbedürftig hielt. Unterdessen hat sich die Nichtlokalität in zahlreichen Ex­perimenten bestätigt'."\n",
+                        '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Fragen:'."\n",
+                      '• Welche Observablen (siehe Wiki \url{http://de.wikipedia.org/wiki/Quantenverschränkung}) können Verschränkt sein? Nur der Spin oder auch andere? \\\\'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Punktfoermige-Erscheinung'),
                     )),
               )
           ); ?>
 
           
-		    	<!  • XXX:  >
+		    	<!  • Punktfoermige Erscheinung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Punktfoermige-Erscheinung',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
-                  array( 'normal',
-                    'Warum kann ein Wirkungsquanten-String mit Ausdehnung ein fast Punktförmig erscheinendes Teilchen darstellen? Die Erste Frage ist, was erscheint Punktförmig an einem Elementarteilchen? Die Struktur der schwachen WW weißt auf eine Ausdehnung hin. Das magnetische Moment eines Elektrons weißt daraufhin, dass es sich wie ein Magnet mit Nord- und Südpol verhält (vgl. SdW 12/2013 Preonen-Artikel. S. 52.) Ich vermute das elektromagnetische Feld erschein erscheint Punktförmig. Schwingt es, wie in der FrQFT?'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    '\color{*Bearb}{In Arbeit …}'."\n"),
-                  array( 'jumplist',
-                    array(
-                      //array(  jump_name => 'XXX'),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Verschraenkung', type => 'back'),
+                    )),
+
+                  array( 'text', array( text => array(
+                    'Warum kann ein Wirkungsquanten-String mit Ausdehnung ein fast Punktförmig erscheinendes Teilchen darstellen? Die Erste Frage ist, was erscheint Punktförmig an einem Elementarteilchen? Die Struktur der schwachen WW weißt auf eine Ausdehnung hin. Das magnetische Moment eines Elektrons weißt daraufhin, dass es sich wie ein Magnet mit Nord- und Südpol verhält (vgl. SdW 12/2013 Preonen-Artikel. S. 52.) Ich vermute das elektromagnetische Feld erschein erscheint Punktförmig. Schwingt es, wie in der FrQFT?'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe'),
                     )),
               )
           ); ?>
 
-          
-		    	<!  • X  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Elementarteilchen:X',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
-                array(
-                  array( 'normal',
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    '\color{*Bearb}{In Arbeit …}'."\n"),
-                  array( 'jumplist',
-                    array(
-                      //array(  jump_name => 'XXX'),
-                    )),
-              )
-          ); */ ?>
 
-          
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
 
-	
+
 <?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>
