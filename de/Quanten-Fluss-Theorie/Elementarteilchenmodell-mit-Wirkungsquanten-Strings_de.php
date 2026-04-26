@@ -433,9 +433,9 @@
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'hideContent', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\bold{Virtuelle-Teilchen sind real)}',
-                    '• XXX',
+                    '• Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=U4gpio58908]{}{Scientists Prove That “Virtual” Particles Are Actually Real}.'."\n",
                     ))),
 
                   array( 'text', array( text => array(
