@@ -14,16 +14,16 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}',
-                    '• Siehe \\italic{\\jumpname{OM:NPYo:HaTha}}.',
-                    '• Siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}.',
-                    '• Siehe \\italic{\\jumpname{OM:NPYo:Spiritualitaet-Psychologie}}.',
-                    '\\bold{Persönliche Erfahrung}',
+                    '\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}',
+                    '• Siehe \italic{\jumpname{OM:NPYo:HaTha}}.',
+                    '• Siehe \italic{\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}.',
+                    '• Siehe \italic{\jumpname{OM:NPYo:Spiritualitaet-Psychologie}}.',
+                    '\bold{Persönliche Erfahrung}',
                     '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, und auch sein \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, ist kein nur theoretisches Konstrukt.'."\n".
+                    'Der \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, und auch sein \jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, ist kein nur theoretisches Konstrukt.'."\n".
                     'Wir beobachten ihn, repräsentiert durch seine Pole, in bestimmten Aspekten der Geometrie unseres Körpers.'."\n".
                     'So wird deutlich, wie unsere Psyche, unser individuelles Erleben und Verhalten, mit unserem Körper und seinen Spannungen verwoben ist.'."\n",
                       'Psychosomatik ist genau diese Verwobenheit der Spannungen unserer Psyche und unseres Körpers.'."\n"))),
@@ -38,12 +38,12 @@
                 'Geschichte', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Pole des Achtsamkeitsprozesses werden in \\jump{OM:NPYo:HaTha}{Religionen, Mythen sowie im Yoga und Tantra} auch Auge des Ra (oder Re) und Auge des Horus\\color{*Bearb}{(Verweis)} oder Ha und Tha\\color{*Bearb}{(Verweis)},'."\n".
+                    'Die Pole des Achtsamkeitsprozesses werden in \jump{OM:NPYo:HaTha}{Religionen, Mythen sowie im Yoga und Tantra} auch Auge des Ra (oder Re) und Auge des Horus\color{*Bearb}{(Verweis)} oder Ha und Tha\color{*Bearb}{(Verweis)},'."\n".
                     'also Sonne und Mond oder männlich und weiblich, genannt.'."\n",
-                      'Sie begegnen uns in den zwei Schlangen und den beiden Flügeln am \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstab}\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} (siehe \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails}\\hidden{\\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab}})'."\n".
+                      'Sie begegnen uns in den zwei Schlangen und den beiden Flügeln am \jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstab}\footnote{\const{NPYo_g_footnote_text_Hermesstab}} (siehe \jumpname{OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails}\hidden{\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab}})'."\n".
                     'des griechisch-ägyptischen Gottes Thot-Hermes – Hermes Trismegistos –, der bei den Römern Mercurius genannt wird.'."\n".
-                    'Dessen Weisheit ist auf den sogenannten smaragdenen Tafeln\\color{*Bearb}{(Verweis)} und den hermetischen Schriften festgehalten und im ›Stein der Weisen‹ der Alchemie symbolisiert.'."\n".
-                    'Im Hexagramm\\color{*Bearb}{(Verweis)} (siehe \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails}\\hidden{\\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm}}) sind diese Pole durch die beiden sich überlappenden Dreiecke dargestellt.'."\n",
+                    'Dessen Weisheit ist auf den sogenannten smaragdenen Tafeln\color{*Bearb}{(Verweis)} und den hermetischen Schriften festgehalten und im ›Stein der Weisen‹ der Alchemie symbolisiert.'."\n".
+                    'Im Hexagramm\color{*Bearb}{(Verweis)} (siehe \jumpname{OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails}\hidden{\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm}}) sind diese Pole durch die beiden sich überlappenden Dreiecke dargestellt.'."\n",
                       'Bei diesem Wissen handelt es sich um eine uralte Weißheit unserer Vorfahren.'."\n".
                     'Es offenbart die Verbindungen der Veda, dem alten, in Sanskrit formulierten Wissen, das dem Yoga, dem Hinduismus und dem Buddhismus zugrunde liegt, mit dem Glauben und den Mythen der alten Ägypter.'."\n".
                     'Dieses Wissen ist in Teilen auch ins Judentum und ins Christentum wie wohl auch in den Islam übergegangen.'."\n"))),
@@ -64,16 +64,16 @@
                   array( 'text', array( text => array(
                     'Der Hermesstab des Hermes Trismegistos zeigt,'."\n".
                     'mit den beiden am Stab aufsteigenden Schlangen, eine Symbolik, die heute aus dem Kundalini-Prozess des Yoga bekannt ist.'."\n".
-                    'Mit einer einzelnen Schlange kennen wir diesen als Äskulap- oder Asklepiosstab\\footnote{\\const{FrQFT_g_footnote_text_Aeskulapstab}}, der seinem Sohn gehört.'."\n".
+                    'Mit einer einzelnen Schlange kennen wir diesen als Äskulap- oder Asklepiosstab\footnote{\const{FrQFT_g_footnote_text_Aeskulapstab}}, der seinem Sohn gehört.'."\n".
                     'Dieses Symbol der Alchemie finden wir heute noch bei den Apothekern.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Tempelritter, der Heilige Gral und die Freimaurer', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es gibt Vermutungen, die ich spannend finde, die Tempelritter kamen im Mittelalter nach ihren Kreuzzügen mit dieser Weisheit, dem sagenumwobenen Heiligen Gral\\color{*Bearb}{(Verweis)}, aus dem Heiligen Land zurück.'."\n".
+                    'Es gibt Vermutungen, die ich spannend finde, die Tempelritter kamen im Mittelalter nach ihren Kreuzzügen mit dieser Weisheit, dem sagenumwobenen Heiligen Gral\color{*Bearb}{(Verweis)}, aus dem Heiligen Land zurück.'."\n".
                     'Dies stieß bei den Kirchenfürsten nicht auf uneingeschränkte Begeisterung.'."\n".
-                    'Nach der Verfolgung der Tempelritter\\color{*Bearb}{(Verweis)} durch die Kirche überdauerte dieses Wissen offensichtlich und tauchte teilweise bei den Freimaurern wieder auf, bei denen es, auf die Spitze getrieben, im Baphomet\\color{*Bearb}{(Verweis)} wiederzuerkennen ist.'."\n"))),
+                    'Nach der Verfolgung der Tempelritter\color{*Bearb}{(Verweis)} durch die Kirche überdauerte dieses Wissen offensichtlich und tauchte teilweise bei den Freimaurern wieder auf, bei denen es, auf die Spitze getrieben, im Baphomet\color{*Bearb}{(Verweis)} wiederzuerkennen ist.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm',
@@ -86,7 +86,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Im Hexagramm werden die Pole oben und unten dargestellt.'."\n".
-                    'Teilweise in verwobener Form, wie beim Davidstern\\color{*Bearb}{(Verweis)}, um ihre untrennbare Durchdringung zu versinnbildlichen.'."\n".
+                    'Teilweise in verwobener Form, wie beim Davidstern\color{*Bearb}{(Verweis)}, um ihre untrennbare Durchdringung zu versinnbildlichen.'."\n".
                     'So ist es auch als Yin und Yang Symbolik zu verstehen.'."\n".
                     'Es gibt auch Darstellungen, in denen das Hexagramm von einem Kreis eingefasst ist.'."\n".
                     'Der Kreis zeigt in einigen Fällen zwei Schlangen, die als Symbol der Unendlichkeit – des unendlichen Kreislaufs – einander in den Schwanz beißen.'."\n",
@@ -104,13 +104,13 @@
                 'Die Mythologie der alten Ägypter', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Schon die alten Ägypter kannten die Pole des Achtsamkeitsprozesses, die durch das \\jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Auge des Ra und das Auge des Horus} verkörpert wurden.'."\n".
+                    'Schon die alten Ägypter kannten die Pole des Achtsamkeitsprozesses, die durch das \jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Auge des Ra und das Auge des Horus} verkörpert wurden.'."\n".
                     'Das Auge des Ra steht hier auch für die Sonne, das männliche Prinzip, während das Auge des Horus für den Mond, das weibliche Prinzip, steht.'."\n",
                       'Gleichbedeutend finden wir dies im Tantra und Hatha Yoga.'."\n".
                     'Ha heißt hierin Sonne und Tha heißt Mond.'."\n".
                     'Beide stehen auch für männliches und weibliches Prinzip.'."\n",
                       'Auch die aufsteigenden Schlangen gehörten als Teil des Entwicklungsprozesses des Lebens zu dieser Symbolik.'."\n".
-                    'Das unten in \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab} zu sehende Ei der Metamorphose steht für den Schoß,'."\n".
+                    'Das unten in \jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab} zu sehende Ei der Metamorphose steht für den Schoß,'."\n".
                     'den Anus/Beckenboden, in dem die Schlangen ruhen und hier erwachen und schlüpfen, bevor sie von dort aufsteigen, wenn der Mensch heran wächst und dabei klüger und weiser wird.'."\n".
                     'Im Kundalini-Prozess des Tantra und Yoga steigen die Schlangen auf zum Dritten Auge und ins Kronen-Chakra.'."\n"))),
                     ))),
@@ -169,7 +169,7 @@
                     'Bei hoher Aktivierung des Achtsamkeitsgradienten wird eine intensive Spannung zwischen dem Anus und dem Dritten Auge im Körper aufgebaut.'."\n".
                     'Dies geschieht durch eine starke Aktivierung der Anus-/Beckenbodenmuskulatur und durch das intensive Öffnen der Räume im Kopf hin zum Dritten Auge, bis zur Nasenspitze und hin zum Kronen-Chakra.'."\n",
                       'Dieser Zusammenhang war schon den alten Ägyptern, sowie vielen anderen alten Kulturen, bekannt, in deren Wandbildern sowohl die Pole des Achtsamkeitsprozesses als auch der Anus/Beckenboden,'."\n".
-                    'als Ei der Metamorphose, und das Dritte Auge zu finden sind (siehe \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab}).'."\n",
+                    'als Ei der Metamorphose, und das Dritte Auge zu finden sind (siehe \jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab}).'."\n",
                       'In diesem Zusammenhang ist der eigentliche Grund für den aufrechten Gang des Menschen zu sehen:'."\n".
                     'Zum einen haben wir hierdurch in mancherlei Hinsicht die Möglichkeit bekommen, besser, also vielfältiger, feiner und intensiver, in Handlung zu kommen.'."\n".
                     'Zum anderen können wir auf diese Weise unsere sensible Informationsaustausch-Seite besser auf unsere Umwelt, auf unsere Mitmenschen richten.'."\n",
@@ -184,8 +184,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Auf der Spannung des Achtsamkeitsgradienten findet unsere Atmung statt.'."\n".
-                    'Sie ist stark mit der unseren Oberkörper in Richtung des Handlungsgradienten aufrichtenden \\jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Atemspannung}'."\n".
-                    'und unserer \\jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Oberkörperbalancespannung} verbunden.'."\n".
+                    'Sie ist stark mit der unseren Oberkörper in Richtung des Handlungsgradienten aufrichtenden \jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Atemspannung}'."\n".
+                    'und unserer \jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Oberkörperbalancespannung} verbunden.'."\n".
                     'Gleiches gilt für unseren Gefühlsgradienten, in dessen Richtung uns unsere Atmung auch ausdehnt und aktiviert.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
@@ -213,7 +213,7 @@
                       'Mit der Atmung vollzieht sich das in kleinen oder kleinsten Schritten:'."\n".
                     'Mit jeder tiefen, intensiven Einatmung kann es sich ein kleines Stück weit lösen – solve –, wenn wir dies bewusst in uns einspeisen, und findet mit der Ausatmung die neue Ordnung – coagula.'."\n".
                     'So, dass auch insgesamt über einen längeren Zeitraum ein Veränderungsprozess stattfindet, auf den wir gleich kommen.'."\n",
-                      'Die aus der Alchemie\\color{*Bearb}{(Verweis)} des Hermetismus\\color{*Bearb}{(Verweis)} stammende Bezeichnung ›solve et coagula‹ – löse und verbinde – hat also nicht nur eine wichtige Bedeutung in'."\n".
+                      'Die aus der Alchemie\color{*Bearb}{(Verweis)} des Hermetismus\color{*Bearb}{(Verweis)} stammende Bezeichnung ›solve et coagula‹ – löse und verbinde – hat also nicht nur eine wichtige Bedeutung in'."\n".
                     'Bezug auf die (materielle) Chemie, sondern auch gerade in der Psychosomatik auf der psychischen wie auf der körperlichen Ebene.'."\n",
                       'Unsere Redewendung:'."\n"))),
                       
@@ -229,25 +229,25 @@
                   array( 'text', array( text => array(
                     'Ist sicherlich nicht rein zufällig in unseren Sprachgebrauch gelangt.'."\n",
                       'Ich vermute, dass auch gerade dieses Heilen und Weise-Werden als sich transformieren durch lernen, dadurch, dass wir uns fortentwickeln,'."\n".
-                    'mit dem \\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{›Stein der Weisen‹} der Alchemie des Gottes Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}} (Thot-Hermes) gemeint ist.'."\n"))),
+                    'mit dem \jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{›Stein der Weisen‹} der Alchemie des Gottes Hermes Trismegistos\footnote{\const{NPYo_g_footnote_text_HermesTrismegistos}} (Thot-Hermes) gemeint ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:Care', text =>
                       
                 'Care oder Fürsorge – fühlen, mitfühlen, sich kümmern und dabei lernen', subline =>
                   'Der Stein der Weisen')),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{X:}',
-                    '• Der ›Stein der Weisen‹ ist sehr mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Thymos&oldid=229460544]{}{Thymos} verbunden:',
-                    '– Der Thymos, die Lebenskraft, ist ein altgriechisches Konzept und ein Ausdruck für die Gemütslage eines Menschen. Dieser wurde hauptsächlich mit dem \\jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Zwerchfell} (Link von dort hierher setzen ggf.) in Verbindung gebracht. Sehr interessant!',
+                    // '\bold{X:}',
+                    '• Der ›Stein der Weisen‹ ist sehr mit dem \jump[https://de.wikipedia.org/w/index.php?title=Thymos&oldid=229460544]{}{Thymos} verbunden:',
+                    '– Der Thymos, die Lebenskraft, ist ein altgriechisches Konzept und ein Ausdruck für die Gemütslage eines Menschen. Dieser wurde hauptsächlich mit dem \jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Zwerchfell} (Link von dort hierher setzen ggf.) in Verbindung gebracht. Sehr interessant!',
                     '– Die Lebenskraft ist ganz offenbar mit der Psychosomatik eng verbunden.',
-                    '– Da die Lebenskraft \\jump[https://de.wikipedia.org/w/index.php?title=Thymus&oldid=241891192]{}{Thymusdrüse}. Diese sitzt beim Menschen hinter dem Brustbein.',
+                    '– Da die Lebenskraft \jump[https://de.wikipedia.org/w/index.php?title=Thymus&oldid=241891192]{}{Thymusdrüse}. Diese sitzt beim Menschen hinter dem Brustbein.',
                     '– Über die Lebenskraft gibt es eine tiefe Verbindung zum Care-Prozess.',
-                    '– Die \\jump{OM:SpaLeb:Psychosomatik:Stolze-Brust}{stolze geschwellte Brust} ist ein Ausdruck der aktivierten Lebenskraft.',
-                    '– Nach Alexander Stier galt der Thymos, verortet im Zwerchfell, als Sitz der Götter in uns oder als körperlicher Ort, der mit den Göttern verbunden ist oder über den wir Kontakt zu den Göttern haben oder aufnehmen: \\jump[https://www.youtube.com/watch?v=ASuc7c7D58c]{}{Alexander Stier – Das geheime Wissen über das Immunsystem (Ein olympisches Mysterium)} (ich teile sicherlich nicht alle Meinungsäußerungen von Alexander Stier in diesem Video)',
+                    '– Die \jump{OM:SpaLeb:Psychosomatik:Stolze-Brust}{stolze geschwellte Brust} ist ein Ausdruck der aktivierten Lebenskraft.',
+                    '– Nach Alexander Stier galt der Thymos, verortet im Zwerchfell, als Sitz der Götter in uns oder als körperlicher Ort, der mit den Göttern verbunden ist oder über den wir Kontakt zu den Göttern haben oder aufnehmen: \jump[https://www.youtube.com/watch?v=ASuc7c7D58c]{}{Alexander Stier – Das geheime Wissen über das Immunsystem (Ein olympisches Mysterium)} (ich teile sicherlich nicht alle Meinungsäußerungen von Alexander Stier in diesem Video)',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'In meinen Augen ist der innere \\jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹} tief mit unserer Psychosomatik verbunden.'."\n".
+                    'In meinen Augen ist der innere \jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹} tief mit unserer Psychosomatik verbunden.'."\n".
                     'Er ist das Symbol für das Sich-Kümmern; für die innere und äußere Fürsorge, für die Liebe und Leidenschaft; für die emotionale und handelnde Verbundenheit'."\n".
                     'zu sich selbst, zu anderen und unserer Lebenswelt.'."\n".
                     'Und dabei lernen wir, wie das zusammenhängt; wir werden weiser über das Leben.'."\n"))),
@@ -261,7 +261,7 @@
                     'Unser Herzkreislaufsystem mit unserem Herzschlag besorgt unsere innere Versorgung und kümmert sich so darum, unseren Stoffwechsel in Gang zu halten.'."\n".
                     'Dieser Prozess läuft weitgehend unbewusst und gehört deshalb zum weiblichen Aspekt unseres Bewusstseins/Unbewusstseins-Pols.'."\n".
                     'Das Herz sitzt auf der Gefühlsseite unserer Körperhälften.'."\n",
-                      'Unsere \\jump{OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten}{Atmung} versorgt unser Inneres mit wichtigen Stoffen von außen und entsorgt andere nach außen.'."\n".
+                      'Unsere \jump{OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten}{Atmung} versorgt unser Inneres mit wichtigen Stoffen von außen und entsorgt andere nach außen.'."\n".
                     'Die Atmung ist ein eher bewusster und nur teils unbewusster Vorgang und daher mehr auf der Handlungsseite unserer Körperhälften verortet.'."\n".
                     'Der Lungenflügel auf der Handlungsseite ist deutlich größer als der auf der Gefühlsseite.'."\n"))),
                       
@@ -284,13 +284,13 @@
                     'Wir lernen uns und unsere Lebenswelt durch fühlen, mitfühlen – durch hinein horchen, zuhören, kommunizieren – und uns kümmern kennen.'."\n".
                     'Wir machen eine Persönlichkeitsentwicklung durch und werden weiser.'."\n".
                     'Uns darum zu kümmern, wie es uns geht, und dafür zu sorgen, dass es uns und unserer Lebenswelt immer besser geht,'."\n".
-                    'fördert und beflügelt unsere Selbstheilung, ausgedrückt durch den Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} (heute meist Äskulapstab oder Asklepiosstab\\footnote{\\const{FrQFT_g_footnote_text_Aeskulapstab}}).'."\n"))),
+                    'fördert und beflügelt unsere Selbstheilung, ausgedrückt durch den Hermesstab\footnote{\const{NPYo_g_footnote_text_Hermesstab}} (heute meist Äskulapstab oder Asklepiosstab\footnote{\const{FrQFT_g_footnote_text_Aeskulapstab}}).'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess', text =>
                       
                 'Der Kundalini-Prozess', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Aus der Kundalini\\color{*Bearb}{(Verweis aufs Yogawiki \\jump[https://wiki.yoga-vidya.de/Kundalini]{}{Kundalini} und \\jump[https://www.yoga-vidya.de/kundalini-yoga/]{}{Kundalini Yoga})}'."\n".
+                    'Aus der Kundalini\footnote{\const{SpaLeb_g_footnote_text_Kundalini}}'."\n".
                     'Tradition des Tantra, auch im Kundalini Yoga, ist ein Prozess bekannt, der zur Heilung durch Weisheit und Erleuchtung führen soll, der Kundalini-Prozess.'."\n".
                     ''))),
                       
@@ -303,7 +303,7 @@
                     'Dieser Prozess trägt sowohl psychische Aspekte in sich, wie die Aussage ›Heilung durch Weisheit‹ oder in etwas abgemilderter Form ›Heilung durch Klugheit‹ schon zum Ausdruck bringt,'."\n".
                     'als auch körperliche Aspekte, die sich in unserer intensiven Atmung und der Flexibilisierung unseres Körpers ausdrücken.'."\n",
                       'Mit Klugheit ist unter anderem die philosophische Einsicht gemeint, dass unser kurzfristiges Wohlgefühl und unser längerfristiges Wohlbefinden auch entscheidend davon abhängen,'."\n".
-                    'welche inneren Perspektiven wir auf unser Leben einnehmen und wie wir mit diesen umgehen.\\color{*Bearb}{(Verweis auf Albert Kitzler, »Denken heilt!«)}'."\n"))),
+                    'welche inneren Perspektiven wir auf unser Leben einnehmen und wie wir mit diesen umgehen.\color{*Bearb}{(Verweis auf Albert Kitzler, »Denken heilt!«)}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Ausgeglichenheit', subline =>
@@ -314,8 +314,8 @@
                   array( 'text', array( text => array(
                     'Bei unserer Ausgeglichenheit geht es um eine angenehme Balance zwischen unseren Gefühlen – unserer Wahnehmung - und unseren Handlungen.'."\n".
                     'Diese Balance zwischen den Polen zu finden ist ein wesentlicher Teil des Kundalini-Prozesses.'."\n".
-                    'Ich möchte sie in der \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage}{folgenden Abbildung} noch einmal explizit darstellen, '."\n".
-                    'weil sie in der \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Abbildung des Kundalini-Prozesses} nicht direkt erkennbar ist.'."\n"))),
+                    'Ich möchte sie in der \jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage}{folgenden Abbildung} noch einmal explizit darstellen, '."\n".
+                    'weil sie in der \jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Abbildung des Kundalini-Prozesses} nicht direkt erkennbar ist.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $SpaLeb_g_figure_ary_GefuehlsHandlungspolWaage, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage',
@@ -354,22 +354,22 @@
                     'Beim finden von neuen Perspektiven spielt folgende Erkenntnis eine besondere Rolle:'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Wir können jeder Sache \\bold{auch} etwas Gutes abgewinnen …'."\n"))),
+                      'Wir können jeder Sache \bold{auch} etwas Gutes abgewinnen …'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Und umgekehrt gilt dies auch, in jeder Sache liegt auch etwas nicht so gutes.'."\n".
                     'Damit kommen schnell viele kluge Perspektiven in unser Leben.'."\n".
                     'Jede dieser Perspektiven erzeugt in uns andere Gefühle und damit auch andere mögliche Handlungen und so eine andere Zukunft.'."\n".
                     'Unser ›Raum der Möglichkeiten‹ erweitert sich.'."\n",
-                      'Der \\jump{OM:SpaLeb:Psychosomatik-Entscheidungen}{kluge Umgang mit diesen Perspektiven} auf unser Leben bezieht sich dabei auf drei Möglichkeiten:'."\n"))),
+                      'Der \jump{OM:SpaLeb:Psychosomatik-Entscheidungen}{kluge Umgang mit diesen Perspektiven} auf unser Leben bezieht sich dabei auf drei Möglichkeiten:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Wir können sie nebeneinander, in gewisser Widersprüchlichkeit, bestehen lassen. (Ambiguitätstoleranz\\color{*Bearb}{(Verweis)}, Ambiguismus\\color{*Bearb}{(Verweis)})',
-                        'Wir können sie durch Plausibilisierung verschmelzen, in ein gemeinsames plausibles Gedankengebäude einbauen. (Plausibilismus\\color{*Bearb}{(Verweis)})',
-                        'Oder wir können uns zwischen ihnen entscheiden. (Discrimismus\\color{*Bearb}{(Verweis)})',
+                        'Wir können sie nebeneinander, in gewisser Widersprüchlichkeit, bestehen lassen. (Ambiguitätstoleranz\color{*Bearb}{(Verweis)}, Ambiguismus\color{*Bearb}{(Verweis)})',
+                        'Wir können sie durch Plausibilisierung verschmelzen, in ein gemeinsames plausibles Gedankengebäude einbauen. (Plausibilismus\color{*Bearb}{(Verweis)})',
+                        'Oder wir können uns zwischen ihnen entscheiden. (Discrimismus\color{*Bearb}{(Verweis)})',
                     ))),
                   array( 'text', array( text => array(
                     'Beim klugen Finden und beim klugen Umgang mit diesen Perspektiven spielt unser intuitives Gefühl und unsere intuitive Handlung eine wichtige Rolle.'."\n".
-                    'Klugheit meint hier, sich etwas „geniales“ einfallen zu lassen, dass uns insgesamt nützlich ist, uns weiter bringt (Ingeniumismus-Viabilismus\\color{*Bearb}{(Verweis)}).'."\n".
+                    'Klugheit meint hier, sich etwas „geniales“ einfallen zu lassen, dass uns insgesamt nützlich ist, uns weiter bringt (Ingeniumismus-Viabilismus\color{*Bearb}{(Verweis)}).'."\n".
                     'Krampfhaftes Im-Kreis-Denken und köperliche Verspannungen stehen dem intuitiven, kreativen Fluss dieses Prozesses eher im Weg.'."\n",
                       'Durch intensive Atmung, durch intensive meditative Körperübungen und natürlich durch ruhigere Meditation kann dieser Prozess der Klugheit in Gang gesetzt werden,'."\n".
                     'der Geist und Körper lockert und so Verspannungen und Blockaden löst.'."\n".
@@ -391,7 +391,7 @@
                       'Hinter der wohl zentralsten Frage unseres Lebens steht ein innerer Dialog:'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Wie geht es uns? Geht es uns \\bold{gut}?'."\n"))),
+                      'Wie geht es uns? Geht es uns \bold{gut}?'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dieser Dialog findet zwischen Teilen von uns selber statt, die ich als Pole, Chakras oder Organellen bezeichne.'."\n".
@@ -432,7 +432,7 @@
                     'Nehmen wir sie an, dann verringert sich unser innerer Stress und das ist oft schon ein großes Stück des Wegs zu einer möglichen Lösung.'."\n".
                     'Denn wir lösen eine Blockade auf.'."\n".
                     'Und Bewusstwerdung ist der Anfang jeder Veränderung.'."\n",
-                      'Die Traumatherapeutin und Heilpraktikerin für Psychotherapie Maria Sanchez (›Neue Psychologie‹, ›Sehnsucht und Hunger‹, ›EssentialCore‹) bringt das in einem Gespräch im folgenden Video wunderbar auf den Punkt, indem sie aufzeigt, dass unsere biographischen Wunden nur verheilen können, wenn wir „das ungeliebte Kind“ in uns in Liebe annehmen: \\jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens}'."\n"))),
+                      'Die Traumatherapeutin und Heilpraktikerin für Psychotherapie Maria Sanchez (›Neue Psychologie‹, ›Sehnsucht und Hunger‹, ›EssentialCore‹) bringt das in einem Gespräch im folgenden Video wunderbar auf den Punkt, indem sie aufzeigt, dass unsere biographischen Wunden nur verheilen können, wenn wir „das ungeliebte Kind“ in uns in Liebe annehmen: \jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Wer ständig mit sich selber kämpft, wird verlieren', subline =>
@@ -445,10 +445,10 @@
                       
                   array( 'text', array( text => array(
                     'Im Sinne unseres inneren Dialogs stelle ich fest, dass der Krebs ein Teil unseres Körpers ist.'."\n".
-                    'In meinen Augen geht es nicht \\italic{unbedingt} darum, ihn operativ entfernen zu müssen.'."\n".
-                    'Dies ist nur \\italic{eine} Option, die in jedem Fall auch schädliche Seiten in sich trägt.'."\n",
+                    'In meinen Augen geht es nicht \italic{unbedingt} darum, ihn operativ entfernen zu müssen.'."\n".
+                    'Dies ist nur \italic{eine} Option, die in jedem Fall auch schädliche Seiten in sich trägt.'."\n",
                       'Es gibt nämlich auch Perspektiven auf viele Krebsarten, die davon ausgehen, dass der Krebs eine Organelle unseres Körpers ist, die unseren Körper in einer möglichst vorrübergehenden Notmaßnahme'."\n".
-                    'vor einer sehr schädlichen Stoffwechsellage schützt, einer schädlichen Überbelastung unserer Zellen mit Zucker.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{KenFM:ImGespraechMitLotharHirneise:2019}.}'."\n".
+                    'vor einer sehr schädlichen Stoffwechsellage schützt, einer schädlichen Überbelastung unserer Zellen mit Zucker.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{KenFM:ImGespraechMitLotharHirneise:2019}.}'."\n".
                     'Diese Stoffwechsellage hätte dann mit Stress oder anderen inneren Zuständen zu tun, die auch von außen, beispielsweise durch Gifte, ausgelöst sein kann.'."\n",
                       'Sollte diese Perspektive einen Wahrheitsgehalt haben und wir entfernen den Krebs, ohne die Ursache dieser schädlichen Stoffwechsellage unseres Körpers zu beseitigen,'."\n".
                     'dann entfernen wir gar das Organisationszentrum unseres körpereigenen Not- und Rettungsprogramms.'."\n".
@@ -459,7 +459,7 @@
                     'Bevor wir also schicksalhafte Entscheidungen und Maßnahmen ergreifen, ist es klug, mit sich in einen inneren Dialog zu gehen;'."\n".
                     'gegebenenfalls auch mit unserem eigenen Krebs.'."\n".
                     'Wir sind klug, wenn wir versuchen zu verstehen, wie die Dinge – in uns selber – liegen, und das natürlich auch durch externen Rat.'."\n".
-                    'Dies schließt die Entscheidung für eine Chemotherapie und eine Operation oder jede andere Maßnahme ausdrücklich mit ein, denn es ist \\italic{unser} Leben.'."\n",
+                    'Dies schließt die Entscheidung für eine Chemotherapie und eine Operation oder jede andere Maßnahme ausdrücklich mit ein, denn es ist \italic{unser} Leben.'."\n",
                       'Wenn wir allerdings in einem ständigen Kampf mit uns selber sind, zerstören wir uns selbst und wir werden so verlieren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
@@ -469,7 +469,7 @@
                     'Mit den folgenden Aussagen lohnt es sich zu beschäftigen:'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Jede \\hidden{\\small{(freiwillige)}} Heilung ist eine Selbstheilung.'."\n"))),
+                      'Jede \hidden{\small{(freiwillige)}} Heilung ist eine Selbstheilung.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Bei der Heilung gibt es von außen nur unterstützende Maßnahmen.'."\n".
@@ -515,14 +515,14 @@
                       'Ich bin in der Lage, mit meiner sensiblen Vorderseite intensiven Kontakt zu anderen Menschen und zu meiner Umwelt aufzunehmen.'."\n".
                     'Meine Wahrnehmungs- und Emotionsfilter funktionieren flexibel und ich kann mit den auf mich einströmenden Informationen und Gefühlen klug umgehen.'."\n",
                       'Sollte ich bei meinen Handlungen und Emotionen Probleme haben oder erkennen, dann nutze ich diese, um zu lernen und daran zu wachsen.'."\n".
-                    'Dabei denke ich Kreativ und benutze meinen Verstand mit Leichtigkeit, um \\italic{Lösungen} zu finden.'."\n"))),
+                    'Dabei denke ich Kreativ und benutze meinen Verstand mit Leichtigkeit, um \italic{Lösungen} zu finden.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Detailierter …', TitleVis => 'Detailierter:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Bei gut funktionierendem Achtsamkeitsprozess bin ich in mir, in meinem inneren Dialog meiner Bedürfnisse und (Handlungs-)Möglichkeiten,'."\n".
                     'recht gut orientiert und in der Lage, facettenreich zu sehen und kluge Prioritäten zu setzen.'."\n".
-                    'Es gelingt mir, flexible Räume der Möglichkeiten zu erschaffen, indem ich \\jump{OM:SpaLeb:Psychosomatik:Vortext:Perspektiven}{kluge Perspektiven kreiere} und, gemessen an der emotionalen Nützlichkeit,'."\n".
+                    'Es gelingt mir, flexible Räume der Möglichkeiten zu erschaffen, indem ich \jump{OM:SpaLeb:Psychosomatik:Vortext:Perspektiven}{kluge Perspektiven kreiere} und, gemessen an der emotionalen Nützlichkeit,'."\n".
                     'zwischen diesen Perspektiven entscheide, sie nebeneinander stehen lasse oder sie durch Plausibilisierung vereinige.'."\n",
                       'Dadurch komme ich in die Lage, im genannten Sinne zu wachsen, zu lernen und mich weiter zu entwickeln.'."\n".
                     'Dies erweitert wiederum meine Fähigkeit, zu handeln und kluge Perspektiven zu kreieren, und so erweitert es auch die Räume meiner Möglichkeiten.'."\n".
@@ -550,21 +550,21 @@
                 'Die Psychosomatik bei Stress und Angst', subline =>
                   '… geht mit einem nicht gut funktionierenden Achtsamkeitsprozess einher')),
                   array( 'text', array( text => array(
-                    'Wenn ich chronische Angst oder Stress habe, dann lasse ich die \\jump{OM:SpaLeb:Psychosomatik-Stress}{Schultern hängen} nach vorne und verliere eventuell auch \\jump{OM:SpaLeb:Psychosomatik-Stress}{meine Körperstabilität}.'."\n".
+                    'Wenn ich chronische Angst oder Stress habe, dann lasse ich die \jump{OM:SpaLeb:Psychosomatik-Stress}{Schultern hängen} nach vorne und verliere eventuell auch \jump{OM:SpaLeb:Psychosomatik-Stress}{meine Körperstabilität}.'."\n".
                     'Es zieht mich geradewegs nach vorne, nach unten.'."\n".
                     'Meine Aufrichtung fällt mir schwer.'."\n".
                     'Ich habe meine Leichtigkeit in meinen Handlungen und meiner Psyche verloren.'."\n",
                       'Rolle ich mich nach vorne auf, schütze ich meine sensible Vorderseite.'."\n".
                     'Ich krümme mich in Richtung Empryonalstellung; gebe mir selber Sicherheit und Geborgenheit.'."\n".
-                    'Die entsprechenden \\jump{OM:SpaLeb:Psychosomatik-Stress}{Muskeln spannen sich an und verspannen sich} gegen ihre Gegenmuskulatur, die versucht mich aufrecht zu halten.'."\n",
+                    'Die entsprechenden \jump{OM:SpaLeb:Psychosomatik-Stress}{Muskeln spannen sich an und verspannen sich} gegen ihre Gegenmuskulatur, die versucht mich aufrecht zu halten.'."\n",
                       'Sorgen mit Kreisgedanken bestimmen mich.'."\n".
                     'Mein Körper und meine Psyche geraten in ein inneres und äußeres Ringen um die Lösung, in einen inneren und äußeren Kampf um Selbstschutz oder mich gerade und deutlich machen.'."\n",
                       'Meine Wahrnehmung ist eingeschränkt, denn die Filter meiner Wahrnehmung und Emotionalität sind unflexibel und nicht gut justiert. '."\n".
-                    'Meine Stimmung ist niedergeschlagen und dies drückt sich auch in meiner \\jump{OM:SpaLeb:Gesangstechnik}{Stimme} aus;'."\n".
-                    'und natürlich auch in meinem \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesicht}.'."\n",
+                    'Meine Stimmung ist niedergeschlagen und dies drückt sich auch in meiner \jump{OM:SpaLeb:Gesangstechnik}{Stimme} aus;'."\n".
+                    'und natürlich auch in meinem \jump{OM:SpaLeb:Gesichtsausdruck}{Gesicht}.'."\n",
                       'Denn ein nicht gut funktionierender Achtsamkeitsprozess zeigt sich in einer Imbalance meiner psychosomatischen Pole.'."\n".
-                    'Und diese Pole spiegeln sich auch in meinen \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtshälften} wider.'."\n".
-                    'Eine solche Imbalance kann in einer \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Gesichtsspiegelung} sichtbar gemacht werden.'."\n"))),
+                    'Und diese Pole spiegeln sich auch in meinen \jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtshälften} wider.'."\n".
+                    'Eine solche Imbalance kann in einer \jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Gesichtsspiegelung} sichtbar gemacht werden.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\small{Detaillierter …}',
@@ -629,19 +629,19 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X:}',
+                    // '\bold{X:}',
                     // '• X',
                     ))),
                       
                    array( 'text', array( text => array(
                     'Eine Sache, für die ich etwas länger gebraucht habe, sie besser zu verstehen, ist,'."\n".
                     'unsere Stolz geschwelte Brust und welche Rolle unsere Brustwarzen, unsere Nippel, dabei spielen:'."\n",
-                      'Ich argumentiere oben für den \\jump{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}{aufrechten Gang}'."\n".
+                      'Ich argumentiere oben für den \jump{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}{aufrechten Gang}'."\n".
                     'des Menschen, dass wir'."\n".
-                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:GutFunktionierendemAchtsamkeitsprozess}{unsere sensible Seite nach vorne in die Welt richten}'."\n".
+                    '\jump{OM:SpaLeb:Psychosomatik:Vortext:GutFunktionierendemAchtsamkeitsprozess}{unsere sensible Seite nach vorne in die Welt richten}'."\n".
                     'und auf diese Weise in die feine Wahrnehmung und das sensible Fühlen unserer Umwelt, als auch'."\n".
                     'in die intentionale Handlung gegenüber unserer Umwelt und unserer Mitmenschen kommen,'."\n".
-                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{in die Fürsorge und in das Uns-Kümmern}.'."\n".
+                    '\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{in die Fürsorge und in das Uns-Kümmern}.'."\n".
                     'Durch den aufrechten Gang werden natürlich unsere Hände frei, was sehr wichtig ist.'."\n".
                     'Aber diese Begründung geht über das Frei-Werden unserer Hände weit hinaus.'."\n",
                       'Richten wir uns sehr aktiviert auf, dann gehen wir selbstsicher und mit stolzer Brust durch die Welt.'."\n".
@@ -730,7 +730,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X:}',
+                    // '\bold{X:}',
                     '• Wenn wir uns gegen unsere eigenen Gefühle schützen, dann ergibt sich nach meiner eigenen Erfahrung auf der Gefühlsseite ein verdecktes Taubheitsgefühl.',
                     '• Auf der Handlungsseite stellt es sich mir als Lähmung dar; wir können uns nicht zu einer Handlung entscheiden oder wollen alles zu gleich.',
                     '• Ein näherer Blick darauf zeigt für mich: Wir sind nicht aktiv bereit und fähig klug zu fühlen. Wir sind nicht aktiv bereit klug zu handeln:',
@@ -738,7 +738,7 @@
                     '⋅ Diese Verspannungen kommen nach meinem Eindruck dadurch, dass unser Unterbewusstsein ein Notprogramm fährt, in dem es eine unflexible Grund- oder Notstabilität herstellt.',
                     '⋅ Geben wir unserem Unterbewusstsein das mehr bewusste Signal, wir  kümmern uns, ›we care‹, dann kann das Notprogramm zurückgefahren werden.',
                     '⋅ Achtung: Wenn dies so einen guten Realitätsbezug hat, dies so stimmt, dann ist Progressive Muskelentspannung nach Jacobson(link) nicht so ganz das Richtige. Das kommt weil bei Jacobson das Risiko besteht, dass es zu einer Überentspannung führt, weil perspektivisch der Grundtonus unserer Muskulatur reduziert werden kann, was ja nach meiner Erfahrung und Analyse genau das Problem hervorruft. Jacobson könnte demnach vorwiegend eine anfängliche Erleichterung bringen und später das Problem verstärken, wenn wir uns nicht um den Erhalt unseres Muskulgrundtonus kümmern.',
-                    '• Dies alles führt zu Verspannungen, weil das Unterbewusstsein die Faszien in einen stabilisierenden Notmodus bringt (siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Stress}}).',
+                    '• Dies alles führt zu Verspannungen, weil das Unterbewusstsein die Faszien in einen stabilisierenden Notmodus bringt (siehe \italic{\jumpname{OM:SpaLeb:Psychosomatik-Stress}}).',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -763,18 +763,18 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X:}',
+                    // '\bold{X:}',
                     '• Die Verlängerungen der Faszien unseres Körpers, die in unseren Kopf laufen, regeln eine Art Grundspannung auf vielen Hauptfaszien.',
-                    '• Ähnlich, wie bei einer Geige im \\jump[https://de.wikipedia.org/wiki/Wirbelkasten]{}{Wirbelkasten} die Saiten gespannt werden, fungiert unser Kopf wie ein dynamischer „Wirbelkasten“ als unser körperliches Stimmungssystem.',
+                    '• Ähnlich, wie bei einer Geige im \jump[https://de.wikipedia.org/wiki/Wirbelkasten]{}{Wirbelkasten} die Saiten gespannt werden, fungiert unser Kopf wie ein dynamischer „Wirbelkasten“ als unser körperliches Stimmungssystem.',
                     '• Die Dynamik dieses Kopf-Stimmungssystems hat etwas von einem inneren Marionettenspieler.',
                     '• Bei Aktivierung unseres Kopf-Stimmungssystems, öffnen sich die Räume im Kopf, und öffnen damit auch stark den Klang und die Möglichkeiten unserer Stimme, unserer Stimmungen.',
                     '• Unser Körper ist auf diese Weise ein kombiniertes Saiten-Blasinstrument.',
                     '⋅ Unser Kopf-Stimmungssystem ist tief mit unserer Atmung und Atemspannung verwoben.',
-                    '⋅ Unser Kopf-Stimmungssystem kann uns bei intensiver Aktivierung das Gefühl vermitteln einen Drachen aus unserem Dritten Auge steigen zu lassen (siehe \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Atmung-Atemspannung}) und so eine Verbindung zum Kosmos aufzubauen.',
+                    '⋅ Unser Kopf-Stimmungssystem kann uns bei intensiver Aktivierung das Gefühl vermitteln einen Drachen aus unserem Dritten Auge steigen zu lassen (siehe \jumpname{OM:SpaLeb:Psychosomatik:Vortext:Fig-Atmung-Atemspannung}) und so eine Verbindung zum Kosmos aufzubauen.',
                     '• Geht diese Grundspannung durch Sorgen und Ängste teils verloren, dann:',
                     '⋅ … gerät unser Körper in eine Spannungsimbalance,',
                     '⋅ … entwickeln sich Verspannungen, besonders im Hals- und Nackenbereich, aber auch im Rücken, an den Schulterblättern und so weiter, die versuchen die fehlende Grundspannung wieder auszugleichen. Diese Verspannungsketten laufen nach und nach durch den ganzen Körper bis in die Gliedmaßen.',
-                    '• Ein Gegenpart zum Kopf-Stimmungssystems ist auch der Anus-Beckenboden und hier im Besonderen der PC-Muskel\\footnote{Vgl. \\cite{wiki:MusculusPubococcygeus:2024}.}:',
+                    '• Ein Gegenpart zum Kopf-Stimmungssystems ist auch der Anus-Beckenboden und hier im Besonderen der PC-Muskel\footnote{Vgl. \cite{wiki:MusculusPubococcygeus:2024}.}:',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -800,9 +800,9 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
-                    // '\\bold{X:}',
+                    // '\bold{X:}',
                     '• Unsere muskulöse Körperrückseite ist, wenn wir in einer generalisierten Schonhaltung sind, deaktiviert und verspannt.',
-                    '• Eine generalisierte Schonhaltung können wir verlassen, wenn wir diese Muskulatur aktivieren. Dazu gehört auch die Muskulatur unseres \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}, die unter anderem die Räume im Kopf öffnet.',
+                    '• Eine generalisierte Schonhaltung können wir verlassen, wenn wir diese Muskulatur aktivieren. Dazu gehört auch die Muskulatur unseres \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}, die unter anderem die Räume im Kopf öffnet.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -827,7 +827,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X:}',
+                    // '\bold{X:}',
                     '• In unserem Körper gibt es, etwas vereinfachend betrachtet, zwei Sterntetraeder, die unsere stabil-dynamische Struktur veranschaulichen.',
                     '– Ein Sterntetraeder ist im Rumpf:',
                     '⋅ Er steht nicht auf der Spitze, sondern auf einem seiner Kreuze so, dass zwei der Spitzen dieses unteren Kreuzes zur Hüfte zeigen. Die anderen beiden zeigen zum Schambein und zum Steiß.',
@@ -835,7 +835,7 @@
                     '– Der andere Sterntetraeder ist im Kopf, vom Nacken beginnend:',
                     '⋅ Er sitzt mit seinem unteren Kreuz genau auf dem oberen Kreuz des Sterntetraeders des Rumpfes.',
                     '⋅ Zwei der gegenüberliegenden Spitzen zeigen auf die große Kaumuskulatur über den Ohren. Und die anderen beiden Spitzen zeigen zum Dritten Auge und zur Fontanelle.',
-                    '• Die Merkaba, der sogenannte \\jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Vektor-Gleichgewicht}{Thronwagen Gottes}, steht mit dem 3-dimensionalen Vektor-Gleichgewicht, dem Kuboktaeder, in direktem Zusammenhang, der die Stabilität des Raumes oder räumlicher Strukturen darstellt. Der Sterntetraeder hat eine tiefe religiös-esoterische Bedeutung.',
+                    '• Die Merkaba, der sogenannte \jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Vektor-Gleichgewicht}{Thronwagen Gottes}, steht mit dem 3-dimensionalen Vektor-Gleichgewicht, dem Kuboktaeder, in direktem Zusammenhang, der die Stabilität des Raumes oder räumlicher Strukturen darstellt. Der Sterntetraeder hat eine tiefe religiös-esoterische Bedeutung.',
                     ))),
                       
                   array( 'iframe',

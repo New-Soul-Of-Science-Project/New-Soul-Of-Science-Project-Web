@@ -94,6 +94,8 @@
               'wiki:Yoga:2016',
               'wiki:Zeitdilatation2014',
               'Wildermuth:PilzbefallBeiAlzheimerEntdeckt:2015',
+              'YogaVidya:KundaliniYoga:2026',
+              'Yogawiki:Kundalini:2025',
             ));
           ?>
             
