@@ -34,10 +34,10 @@
                     'Auf die Primzahlprodukt-Vermutung bin ich durch das Herumspielen mit der'."\n".
                     '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n",
                       'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
-                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
-                    '– \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermutliche alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} –'."\n".
-                    'als Koeffizienten des Unendlichen \lm{ a \cdot \s + z }'."\n".
-                    'mitgezählt, wenn die endlichen ganzen Zahlen \lm{ z } als endlicher Summand immer wieder durchlaufen.'."\n".
+                    'Beim Zählen von natürlichen Superial-Zahlen von Null bis ohne \lm{ \s }, in Form von \lm{ a \cdot \s + z }, werden endliche \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                    '– alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} von Null bis ohne Eins –'."\n".
+                    'als Koeffizienten des Aktual-Unendlichen Summanden \lm{ a \cdot \s } mitgezählt,'."\n".
+                    'während dabei die endlichen ganzen Zahlen \lm{ z } im endlichen Summand für jedes \lm{ a } immer wieder vollständig durchlaufen.'."\n".
                     'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Anzahl der endlichen sinnvollen Koeffizienten'."\n".
                     'und der endlichen ganzen Zahlen, dann scheint intuitiv die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
@@ -341,7 +341,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  x = n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\  \\\\  \begin{aligned} *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}_{\infty} *) \; \\\ \!\! *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \;\; n \geq 2  \end{cases}  *\}  }'),
+                      array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n  \widehat{=}  \pt(n)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -418,11 +418,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \pt_{0,1}(n)  :=  \{ 0, 1 \} \cup \pt(n)  }'),
-                      // array( display => 'on',  latex => '{  \pr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( \forall j \in \pt(n) \setminus \{ 0, 1 \} *) *( \forall k \in \mathbb{N}^{+} *) \\\ \qquad\qquad\qquad\quad\;\, *( i \in \{ 0, 1 \} \lor \frac{ i }{ j^{k} } \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\;\, *[  x = i  *]  *\}  }'),
-                      // array( display => 'on',  latex => '{  \pr(n)  :=  *\{  x  *|*  \begin{cases}  x = n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\  \\\\  \begin{aligned} *( \forall i \in \mathbb{N} \setminus \{ 0, 1 \} *) \\\ \! *( \forall j \in \pt(n) \setminus \{ 0, 1 \} *) \\\ *( \forall k \in \mathbb{N}^{+} *) \\\ *( \frac{ i }{ j^{k} } \in \mathbb{N} *) *[ x = i *] \end{aligned}  &  \text{ falls } \;\; n \geq 2  \end{cases}  *\}  }'),
-                      // array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall i \in \mathbb{N} \setminus \{ 0, 1 \} *) \\\ \! *( \forall j \in \pt(n) \setminus \{ 0, 1 \} *) \\\ *( \forall k \in \mathbb{N}^{+} *) \\\ *( \frac{ i }{ j^{k} } \in \mathbb{N} *) *[ x = i *] \end{aligned}  *\}  &  \text{ falls } \;\; n \geq 2  \end{cases}  }'),
-                      // array( display => 'on',  latex => '{  \pr(n)  :=  *\{  x  *|*  *( \forall i \in \# \pt(n) *) *( \forall j_{i} \in \pt(n) *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\, *[  x = \prod_{ \forall i }  j_{i}^{k_{i}}  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall i \in \# \pt_{0,1}(n) *) \, \\\ *( \forall j_{i} \in \pt_{0,1}(n) *) \, \\\ *( \forall k_{i} \in \mathbb{N}_{\infty} *) \, \\\ \! *[ x = \prod_{ \forall i }  j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \;\; n \geq 2  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall n \in \mathbb{N}_{\infty} *) \\\ *( \forall j_{i} \in \pt_{0,1}(n) *) \\\ *( \forall k_{i} \in \mathbb{On} *) \\\ \! *[ x = \!\!\! \prod_{ \forall i \in \# \! \pt_{0,1}(n) } \!\!\! j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \; n \geq 2  \end{cases}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       // 'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \lm{ i } darauf geprüft werden, ob sie entweder'."\n".
@@ -471,10 +467,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subseteq \pr(n) *) *[  x = i  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{On} *) *( i \subseteq \pr(n) *) *[  x = i  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\color{*Bearb}{(\lm{ \mathbb{N} } sollte hier auf aktual unendliche natürliche Zahlen erweitert werden. Allerdings wäre \lm{ \mathbb{N}_\infty } hier nicht ganz richtig, weil es im Sinne der Biordinalzahlen nur um die Ordinalzahlen geht, also um Limeszahlen \lm{ \lambda + n } und nicht um solche wie \lm{ \lambda - n }, also z.B. \lm{ ω - 1 }.)} \\\\'."\n".
                       '\color{*Bearb}{(Diese Funktion könnten wir vielleicht auch durch Mengennegation und das Herauskristallisieren'."\n".
                       'der kleinsten Zahl in der Antimenge realisieren.)} \\\\'."\n".
                       'Diese Menge erhalten wir, indem wir alle natürlichen Zahlen \lm{ i } in einer Menge sammeln,'."\n".
