@@ -55,13 +55,22 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen.'."\n",
-                      'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
+                      'Wichtig zu beachten ist:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ ω } wird ab jetzt nicht nur als gewöhnliches von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} verwendet,'."\n".
+                      'sondern als arithmetisch erweiterte Ordinaleinheit, deren arithmetische Eigenschaften wir nachfolgend aufklären wollen.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
+                    'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} steht'."\n".
                     '\lm{ \s } für die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
                       'Wir vergleichen hierbei aber nicht die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
                     'der Menge der sinnvollen Koeffizienten und die Mächtigkeit der natürlichen Zahlen,'."\n".
-                    'wobei es darum ginge, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
+                    'wobei es diesbezüglich darum ginge, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
                     'Sondern wir meinen hier die kombinatorische Erzeugung von Elementen der unendlich großen Menge der sinnvollen Koeffizienten'."\n".
                     'im Verhältnis zur vollständigen Induktion bei der Erzeugung der Menge der natürlichen Zahlen.'."\n",
                       'Die unendlich viel größere Erzeugungskombinatorik drücken wir mit dem Symbol \lm{ \overset{\infty}{\ggg} } aus:'."\n".
@@ -81,7 +90,8 @@
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Da, wie oben geschildert, alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen,'."\n".
+                    '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      'Da, wie oben geschildert, alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen,'."\n".
                     'muss \lm{ 2 ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
@@ -1478,8 +1488,36 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Hiermit erhalten wir den Beweis unserer Primzahlprodukt-Vermutung.'."\n",
-                      'Ein sehr interessanter, weil aufschlussreicher, Übergang,'."\n".
+                    'Hiermit erhalten wir den Beweis unserer Primzahlprodukt-Vermutung und können sagen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die arithmetische Erweiterung von ω trägt die vollständige Primfakultät aller endlichen Primzahlen.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Weiter ist zu beachten:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Dies ist keine Aussage der gewöhnlichen Ordinalarithmetik, sondern eine Aussage der erweiterten Ordinalarithmetik.'."\n".
+                      'In dieser wird \lm{ ω } nicht nur als Ordnungstyp der vollständigen Induktion,'."\n".
+                      'sondern zugleich als vollständiges Primfakultätsobjekt der endlichen Primzahlen verstanden.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Und zur Allgemeingültigkeit können wir sagen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Diese Aussage gilt auch unabhängig von der Theorie der Superial-Zahlen,'."\n".
+                      'weil die Beweisstruktur auf der ZFC-Mengenlehre, der Arithmetik der endlichen natürlichen Zahlen, dem ›Fundamentalsatzes der Arithmetik‹,'."\n".
+                      'der Ordinalarithmetik und auf unserer Lemma-Kette sowie deren Beweis beruht,'."\n".
+                      'auch, wenn uns die Superial-Zahlen zur Primzahlprodukt-Vermutung geführt haben.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Es handelt sich um einen sehr interessanten, weil aufschlussreichen, Übergang,'."\n".
                     'durch den wir eine Primfaktorzerlegung für \lm{ ω } erhalten.'."\n".
                     'Eine mir bisher unbekannte Eigenschaft der unendlichen Größe der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
                     ''))),
