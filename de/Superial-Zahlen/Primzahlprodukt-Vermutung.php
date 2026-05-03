@@ -374,19 +374,43 @@
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen und aktual unendlichen natürlichen Zahl \lm{ n \in \mathbb{N}_\infty }}:'."\n".
+                      'Sei \lm{ E_{\infty} } die Menge der gleich in \lm{ \mathbb{N}_{\infty,v_{p}} } zugelassenen ordinalen Exponenten'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n  \widehat{=}  \pt(n)  }'),
+                      array( display => 'on',  latex => '{  E_{\infty}  :\subset  \mathbb{On}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \lm{ n } noch ganzzahlig teilt,'."\n".
+                      'als echte Teilklasse der Ordinalzahlen, um eine Menge und keine echte Klasse zu sein:'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sei \lm{ \mathbb{N}_{\infty,v_{p}} } die Teilmenge aus der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge der endlichen und aktual unendlichen natürlichen Zahlen \lm{ \mathbb{N}_\infty }}'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  \exists v_{p}(n) \in E_{\infty}  *\}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \lm{ n \in \mathbb{N}_{\infty,v_{p}} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      //%! array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
+                      array( display => 'on',  latex => '{  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{v_{p}(n)} *|* p \in \mathbb{P} , 0 < v_{p}(n) \in E_{\infty} *\} ,  &  n \geq 2  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  \widehat{=}  \pt(n)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'einmal definiert über die \lm{ p }-adische Bewertung und einmal über die exakte Teilung,'."\n".
+                      'dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \lm{ n } noch ganzzahlig teilt,'."\n".
                       'oder sie enthält im Falle von Null nur die Null oder im Falle von Eins nur die Eins.'."\n".
                       'Die Null und die Eins werden hier berücksichtigt, weil wir die natürlichen Zahlen komplett abbilden wollen.'."\n".
-                      'Der Parameter \lm{ n } und sein Funktionswert, seine Primturmzerlegung, entsprechen einander. \\\\'."\n".
-                      'Die ersten Werte dieser Funktion sind'."\n".
+                      'Der Parameter \lm{ n } und sein Funktionswert, seine Primturmzerlegung, entsprechen einander demnach eineindeutig,'."\n".
+                      'da es zu jedem \lm{ n } genau eine jeweils andere \italic{Primturmmenge} gibt.'."\n",
+                      'Die ersten Primturmmengen dieser Funktion sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
