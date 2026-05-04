@@ -443,7 +443,7 @@
                   array( 'text', array( text => array(
                     'Die Menge der Anzahl der ersten \lm{ n } natürlichen Zahlen, von der Null an,'."\n".
                     'stellt den Zählaspekt der Zahl \lm{ n } dar, also die Menge an Zahlen, die bis zu ihr erzeugt werden.'."\n",
-                      'Die Primturmzerlegung ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
+                      'Deren Primturmzerlegung \lm{ \pt(n) } ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
                     'darstellt.'."\n".
                     'Sie bezieht sich aber nicht direkt auf die Erzeugung einer Menge – ein Spektrum oder Raster – natürlicher Zahlen, die mit ihrer'."\n".
                     'Primturmzerlegung in Verbindung stehen, also die durch die in ihr enthaltenen Primzahltürme erzeugt werden.'."\n",
@@ -478,17 +478,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pt_{0,1}(n)  :=  \{ 0, 1 \} \cup \pt(n)  }'),
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall n \in \mathbb{N}_{\infty} *) \\\ *( \forall j_{i} \in \pt_{0,1}(n) *) \\\ *( \forall k_{i} \in \mathbb{On} *) \\\ \! *[ x = \!\!\! \prod_{ \forall i \in \# \! \pt_{0,1}(n) } \!\!\! j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \; n \geq 2  \end{cases}  }'),
+                      //%! array( display => 'on',  latex => '{  \pt_{0,1}(n)  :=  \{ 0, 1 \} \cup \pt(n)  }'),
+                      //%! array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall n \in \mathbb{N}_{\infty} *) \\\ *( \forall j_{i} \in \pt_{0,1}(n) *) \\\ *( \forall k_{i} \in \mathbb{On} *) \\\ \! *[ x = \!\!\! \prod_{ \forall i \in \# \! \pt_{0,1}(n) } \!\!\! j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \; n \geq 2  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \{ 0, 1 \} \; \cup \; *\{  \prod_{ t \in \pt(n) } t^{k_{p}}  *|*  k_{p} \in E_{\infty}  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       // 'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \lm{ i } darauf geprüft werden, ob sie entweder'."\n".
                       // 'Null oder Eins sind oder mindestens ein Primfaktoranteil von \lm{ n } die Zahl \lm{ i } ganzzahlig teilt.'."\n",
-                      'Die Menge wird hier erzeugt, indem alle Elemente in \lm{ \pt(n) }, geordnet nach ihrem Index \lm{ i }, in jeder natürlichen Potenz'."\n".
-                      'miteinander kombiniert werden.'."\n",
-                        'Im zweiten Fall sind die Null und Eins in der Menge immer dabei, weil sie in diesem Fall immer Teil der Primturmzerlegung sind.'."\n".
-                      'Und durch die jeweiligen Potenzen von Null und Eins, wie \lm{ 0 = 0^1 \cdot 1^0 \cdot j_i^0 \cdots }'."\n".
-                      'und \lm{ 1 = 0^0 \cdot 1^1 \cdot j_i^0 \cdots } kommen beide dann ins Primturm-Potenzraster.'."\n",
+                      'Die Menge des Primturm-Potenzrasters wird hier erzeugt, indem alle Elemente in \lm{ \pt(n) } in jeder möglichen endlichen und aktual unendlichen natürlichen Potenz'."\n".
+                      'miteinander kombiniert werden, denn \lm{ E_{\infty} } enthält ja auch die Null.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -508,7 +506,8 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'was eben keine Gleichheit bedeutet. \\\\'."\n",
+                      'was eben keine Gleichheit im Sinne der Ordinalzahlen bedeutet, denn es hat unter Umständen Lücken vor \lm{ n },'."\n".
+                      'enthält \lm{ n } selber und auch Zahlen, die weit über \lm{ n } hinaus gehen, bis ins aktual unendliche.'."\n",
                         '\\\\'."\n".
                       ''))),
 
