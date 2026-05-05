@@ -503,9 +503,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'on',  latex => '{  \pt_{0,1}(n)  :=  \{ 0, 1 \} \cup \pt(n)  }'),
-                      //%! array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall n \in \mathbb{N}_{\infty} *) \\\ *( \forall j_{i} \in \pt_{0,1}(n) *) \\\ *( \forall k_{i} \in \mathbb{On} *) \\\ \! *[ x = \!\!\! \prod_{ \forall i \in \# \! \pt_{0,1}(n) } \!\!\! j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \; n \geq 2  \end{cases}  }'),
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \{ 0, 1 \} \; \cup \; *\{  \prod_{ t \in \pt(n) } t^{k_{p}}  *|*  k_{p} \in E_{\infty}  *\}  }'),
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0   \\\\ \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \prod_{ t \in \pt(n) } t^{k_{p}}  }  *|*  k_{p} \in E_{\infty}  *\} ,  &  n \geq 1  \end{cases}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Menge des Primturm-Potenzrasters wird hier erzeugt, indem alle Elemente in \lm{ \pt(n) } in jeder möglichen endlichen und aktual unendlichen natürlichen Potenz'."\n".
@@ -591,7 +589,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \pt( 0 )  =  *\{ 0 *\}  }'),
-                      array( display => 'on',  latex => '{  \pr( 0 )  =  \pr( 0^{1} \cdot 1^{0} )  }'),
+                      array( display => 'on',  latex => '{  \pr( 0 )  =  \pr( 0 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 0 )  =  \varnothing  }'),
                       array( display => 'on',  latex => '{  \lpr( 0 )  =  0  =  \varnothing  }'),
                     ))),
@@ -602,8 +600,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \pt( 1 )  =  \varnothing  }'),
-                      array( display => 'on',  latex => '{  \pt( 1 )  =  *\{ 1 *\}  }'),
-                      array( display => 'on',  latex => '{  \pr( 1 )  =  \pr( 0^{0} \cdot 1^{1} )  }'),
+                      array( display => 'on',  latex => '{  \pr( 1 )  =  \pr( 1 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 1 )  =  *\{ 0 *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 1 )  =  1  =  *\{ 0 *\}  }'),
                     ))),
