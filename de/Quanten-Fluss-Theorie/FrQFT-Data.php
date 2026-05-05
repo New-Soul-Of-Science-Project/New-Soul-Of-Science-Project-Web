@@ -1,4 +1,6 @@
 <?php
+  $nSOSp_g_formelName_Un_10 = 'Un.10';
+
   $FrQFT_g_Site_ary = array(
     'OM:FrQFT:' =>
       array_merge(
@@ -64,6 +66,39 @@
       //text_titel_discr_h3 => 'XXX',
       jump_ary => array(
         'OM:FrQFT:Atommodell:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+      ),
+    ),
+    'OM:FrQFT:HeisenbergUnschaerfe' => array(
+      url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
+      url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
+      titel => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
+      description => 'Die Formeln der Heisenbergsche Unschärferelation und das Plancksches Wirkungsquantum ergeben sich in der Quanten-Fluss-Theorie aus einem prinzipiellen Abzählproblem von fundamentalen Wirkungsquanten.',
+      keywords => '',
+      text_titel_h1 => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum',
+      text_titel_short => 'Heisenbergsche Unschärferelation',
+      text_undertitel_h2 => 'Ein prinzipielles Abzählproblem als neuer Zugang zur Vereinheitlichung der Physik',
+      text_titel_discr_h3 => 'Eine neue körnige Struktur von dynamischen Energieeinheiten und Masseneinheiten ist Grundlage der Quantenmechanik und Quantengravitation',
+      jump_ary => array(
+        'OM:FrQFT:HeisenbergUnschaerfe:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+
+          'OM:FrQFT:HeisenbergUnschaerfe:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:FrQFT:HeisenbergUnschaerfe:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:FrQFT:HeisenbergUnschaerfe:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+
+        'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit' => array( headline_text => 'Energie und Zeit', headline_text_short => 'Energie und Zeit'),
+          'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.($FrQFT_g_Fig_idx = 1), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequAnzahlProZeit' => array( headline_text => 'Un.1'),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequenzWQZaehlen' => array( headline_text => 'Un.3'),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-DeltaFrequenzAusEinerProDeltaZeit' => array( headline_text => 'Un.4'),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen' => array( headline_text => 'Un.5'),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_Un_10),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14'),
+
+        'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur' => array( headline_text => 'Energie und Zeit – Übergang zur Substruktur'/* , headline_text_short => '' */),
+          'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung' => array( headline_text => 'Un.18'),
+
+        'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort' => array( headline_text => 'Impuls und Ort', headline_text_short => 'Impuls und Ort'),
+        'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik' => array( headline_text => 'Schlussfolgerung für die Quantenmechanik', headline_text_short => 'Schlussfolgerung für die Quantenmechanik'),
       ),
     ),
   );

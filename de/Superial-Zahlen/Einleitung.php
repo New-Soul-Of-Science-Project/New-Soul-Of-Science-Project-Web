@@ -41,20 +41,43 @@
                     ))),
                       
                   array( 'text', array( text => array(
+                    'Welche immense Bedeutung das Unendliche in der Mathematik, und auch in der Physik, inne hat,'."\n".
+                    'gibt ein Zitat von Hermann Weyl wieder:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Mathematik ist die Wissenschaft vom Unendlichen;'."\n".
+                        'ihr Ziel ist die symbolische Erfassung des Unendlichen mit menschlichen, das heißt endlichen Mitteln.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Weyl:DieStufenDesUnendlichen:1931}.}')),
+
+                  array( 'text', array( text => array(
+                    'Er möchte offenbar damit auch zum Ausdruck bringen, dass wir in der Mathematik an allen Ecken und Enden auf Unendliches stoßen'."\n".
+                    'und versuchen es für Menschen möglichst verständlich, übersichtlich und gut nutzbar zu machen.'."\n".
+                    'Dazu habe ich die Superial-Zahlen entwickelt; um unserem Verständnis und unseren Ausdrucksmöglichkeiten'."\n".
+                    'des Unendlichen weitere nützliche Perspektiven hinzuzufügen.'."\n",
+                      'Zur weiteren Einstimmung auf das Unendliche und seine Geschichte möchte ich dem Leser ein Video von Edmund Weitz'."\n".
+                    'ans Herz legen: \jump[https://www.youtube.com/watch?v=H8ZBjsYU4JE]{}{Die Eroberung der Unendlichkeit (Kurze Geschichte der Mathematik 3)}.'."\n".
+                    'Und wer tiefer einsteigen und verstehen möchte – eher mit Vorkenntnissen –, dem lege ich das Buch von David Foster \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, nahe.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
                     'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
                     'sowie durch auf ihm aufbauende Beweise,'."\n".
-                    'sogar die Menge der Radikale der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
-                    'inklusive aller Ausdrücke der irrationalen Wurzeln, die durch die Grundrechenarten entstehen, auf fraktale Weise ins Aktual-Unendliche.'."\n".
-                    'So geben wir der aktualen Unendlichkeit eine facettenreiche und der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
+                    'sogar die Mengen der Radikale, Radikalformen und reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'inklusive aller irrationalen Wurzeln, auf fraktale Weise ins Aktual-Unendliche.'."\n".
+                    'So geben wir der aktualen Unendlichkeit eine facettenreiche arithmetische und fraktale Struktur sowie der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
-                    'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes zu benutzen.'."\n",
-                      'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen Zählschritten beschreiben,'."\n".
-                    'deren Anzahl dann aktual unendlich groß sind und sich so wieder zu endliche Zahlen aufsummieren.'."\n",
-                      'Nutzen wir auch die Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Summen ausrechnen,'."\n".
+                    'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes, also ohne Grenzwerte\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}},'."\n".
+                    'zu benutzen.'."\n",
+                      'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen ganzen Zählschritten beschreiben,'."\n".
+                    'deren Anzahl dann aktual unendlich groß ist und sich so wieder zu endlichen Zahlen aufsummiert.'."\n".
+                    'Dies wird möglich, weil es uns gelingt das unendlich Kleine, das Infinitesimale, und das unendlich Große, das Infinite,'."\n".
+                    'zu normieren.'."\n",
+                      'Nutzen wir zusätzlich die Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Elementanzahlen von Mengen sowie Summen ausrechnen,'."\n".
                     'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
                     'Die Summe aller endlichen ganzen Zahlen oder die Summe aller reell algebraischen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
@@ -72,14 +95,15 @@
                       'Wir erschaffen so eine Zahlentheorie der Analysis, die auf den uns bekannten endlichen Primzahlen basiert, die im unendlich großen Produkt'."\n".
                     'aller endlichen Primzahlen zur \lm{ ω }-ten Potenz ihre Grundlage findet, der \italic{superialen Basis} \lm{ \s }.'."\n".
                     'Dabei finden wir heraus, dass \lm{ ω } selbst – die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –'."\n".
-                    'ein Primzahlprodukt ist.'."\n",
+                    'einem unendlichen Primzahlprodukt entspricht und somit um eine tiefere Arithmetik erweitert wird.'."\n",
                       'Die superiale Basis \lm{ \s } ist nicht einfach irgendeine aktual unendliche Zahl.'."\n".
-                    'Sie ist so auf die einfachste Weise symmetrisch strukturiert, dass sie genau zu den Eigenschaften der rationalen und algebraischen Zahlen passt,'."\n".
+                    'Sie ist so auf die einfachste Weise symmetrisch strukturiert, dass sie genau zu den Eigenschaften der rationalen und reell algebraischen Zahlen passt,'."\n".
                     'sodass diese als ihre Koeffizienten, mit ihr im Produkt, immer aktual unendlich große ganze Zahlen ergeben.'."\n".
                     'Daher spielt die superiale Basis \lm{ \s } eine zwar andere, aber vergleichbare Rolle für das Aktual-Unendliche, wie die imaginäre Einheit \lm{ \i }'."\n".
                     'für die komplexen Zahlen.'."\n".
                     'Ich habe mir Ableitungen und Integrale genau angeguckt und versucht zu verstehen, welche Eigenschaften \lm{ \s } hat.'."\n".
                     'Darüber hab ich letztendlich die Definition von \lm{ \s } als aktual unendliches Primzahlprodukt in Kombination mit vollständiger Induktion gefunden.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
                     ''))),

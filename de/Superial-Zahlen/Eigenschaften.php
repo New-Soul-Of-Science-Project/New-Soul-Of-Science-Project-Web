@@ -1087,7 +1087,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteEs besagt also, dass alle Elemente}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
+                    'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteKlasse}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
                     'nämlich die Elemente \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }.'."\n".
                     'Dies gilt ebenso für das Element \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} },'."\n".
                     'wo \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\N}} } alle Vorgänger enthält.'."\n".
@@ -1892,13 +1892,13 @@
                     '')),
                   array( 'text', array( text => array(
                     'An dieser Stelle möchte ich darauf aufmerksam machen, dass die Kontinuumshypothese von der'."\n".
-                    'Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) insgesamt unabhängig ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Unabhängigkeit von ZFC.}'."\n".
+                    'Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) insgesamt unabhängig ist.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010} § 7 g, S. 370–388, hier S. 382–385. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Unabhängigkeit von ZFC.}'."\n".
                     'Dass bedeutet, die Mengenlehre – genauer die ZFC-Mengenlehre – gibt uns nicht die Möglichkeit zu entscheiden, ob die Kontinuumshypothese wahr oder falsch ist.'."\n",
                       'Hier kommen die auf diesen Seiten entwickelten Superial-Zahlen, und die mit ihnen verbundenen \jump{OM:BiOrd:Home}{Biordinalzahlen}, ins Spiel.'."\n".
                     'Die Superial-Zahlen begründen das Aktual-Unendliche auf den endlichen Primzahlen und so auf der Arithmetik und bringen sie mit der Mengenlehre zusammen.'."\n".
                     'Sie erweitern so die reell algebraischen Zahlen auf einen'."\n".
                     'aktual unendlichen \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{geordneten algebraischen Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
-                    'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten Eigenschaften'."\n".
+                    'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten, normierten Eigenschaften'."\n".
                     'zur Verfügung.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
                     'also der Erweiterung des Zählens sowie der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".

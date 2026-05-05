@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 23.01.2026, 13:00h
+  // #: Stand: 03.05.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260503:  +:  "$Sc_g_equation_replace_ary":  Add '  :\subset  ' -> '\;\;\;:\subset\;\;\;', ':\subset' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'
   //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
   //                      +:  "MathJax":  Add Macro "supp".
   //           20251221:  >:  "MathJax":  Change Macro "rad" from '\mathrm' to '\operatorname'.
@@ -707,6 +708,7 @@
                                     array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  :\subset  ', '\;\;\;:\subset\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
@@ -719,8 +721,9 @@
                                     array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
-                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
+                                    array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
+                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
