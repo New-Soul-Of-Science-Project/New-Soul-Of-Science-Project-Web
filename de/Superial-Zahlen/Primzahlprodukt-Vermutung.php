@@ -398,8 +398,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{v_{p}(n)} *|* p \in \mathbb{P} , 0 < v_{p}(n) \in E_{\infty} *\} ,  &  n \geq 2  \end{cases}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \pt(n)  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0  \\\\  \varnothing \; ,  &  n = 1  \\\\  *\{ p^{v_{p}(n)} *|* p \in \mathbb{P} , 0 < v_{p}(n) \in E_{\infty} *\} ,  &  n \geq 2  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pt(n)  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0  \\\\  \varnothing \; ,  &  n = 1  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'einmal definiert über die \lm{ p }-adische Bewertung und einmal über die exakte Teilung,'."\n".
@@ -412,19 +412,19 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pt(0)  =  *\{ 0 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(1)  =  *\{ 1 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(2)  =  *\{ 2 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(3)  =  *\{ 3 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(4)  =  *\{ 4 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(5)  =  *\{ 5 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(6)  =  *\{ 2, 3 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(7)  =  *\{ 7 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(8)  =  *\{ 8 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(9)  =  *\{ 9 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(10)  =  *\{ 2, 5 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(11)  =  *\{ 11 *\}  }'),
-                      array( display => 'on',  latex => '{  \pt(12)  =  *\{ 4, 3 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 0 )  =  *\{ 0 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 1 )  =  \varnothing  }'),
+                      array( display => 'on',  latex => '{  \pt( 2 )  =  *\{ 2 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 3 )  =  *\{ 3 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 4 )  =  *\{ 4 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 5 )  =  *\{ 5 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 6 )  =  *\{ 2, 3 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 7 )  =  *\{ 7 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 8 )  =  *\{ 8 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 9 )  =  *\{ 9 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 10 )  =  *\{ 2, 5 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 11 )  =  *\{ 11 *\}  }'),
+                      array( display => 'on',  latex => '{  \pt( 12 )  =  *\{ 4, 3 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so fort.'."\n",
@@ -595,27 +595,18 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 0 )  =  \varnothing  }'),
                       array( display => 'on',  latex => '{  \lpr( 0 )  =  0  =  \varnothing  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 1 } haben wir:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \pt( 1 )  =  \varnothing  }'),
                       array( display => 'on',  latex => '{  \pt( 1 )  =  *\{ 1 *\}  }'),
                       array( display => 'on',  latex => '{  \pr( 1 )  =  \pr( 0^{0} \cdot 1^{1} )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 1 )  =  *\{ 0 *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 1 )  =  1  =  *\{ 0 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 2 } haben wir:'."\n".
@@ -628,11 +619,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 2 )  =  *\{ 0, 1, 2, 8, 16, 32, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 4 } haben wir:'."\n".
@@ -645,11 +631,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 4 )  =  *\{ 0, 1, 4, 16, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 4 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 6 = 5\overline{\#} = 4\overline{\#} } haben wir:'."\n".
@@ -661,11 +642,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 6 )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 6 )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 9 } haben wir:'."\n".
@@ -678,11 +654,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 9 )  =  *\{ 0, 1, 9, 81, 729, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 9 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 10 } haben wir:'."\n".
@@ -695,11 +666,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 10 )  =  *\{ 0, 1, 2, 4, 5, 8, 10, 16, 20, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 25, 32, 40, 50, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 10 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 18 } haben wir:'."\n".
@@ -712,11 +678,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 18 )  =  *\{ 0, 1, 2, 4, 8, 9, 16, 18, 32, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 36, 64, 72, 81, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 18 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 20 } haben wir:'."\n".
@@ -729,11 +690,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 20 )  =  *\{ 0, 1, 4, 5, 16, 20, 25, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 20 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 30 = 7\overline{\#} = 6\overline{\#} } haben wir:'."\n".
@@ -746,11 +702,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 30 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad 12, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 30 )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 210 = 11\overline{\#} = 10\overline{\#} = 9\overline{\#} = 8\overline{\#} } haben wir:'."\n".
@@ -762,11 +713,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 210 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 12, 14, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 210 )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Wenn die Primzahlprodukt-Vermutung stimmt, dann gilt:'."\n",
@@ -780,11 +726,6 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \lpr\!*( ω\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  ω  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'X'."\n".
-                      'X'."\n",
-                        '\\\\'."\n".
-                      ''))), */
 
                   array( 'text', array( text => array(
                     'So können wir vielleicht schon ein wenig erkennen, wohin die Reise geht.'."\n".
@@ -805,10 +746,6 @@
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
                     'und über eine zu diesem Zweck etwas abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
-                //  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                      
-                //'Die vollständige Primfakultät und die Anzahl von natürlichen Zahlen in einer Menge', subline =>
-                //  'Gibt es eine Beschreibung der Größe von Zahlenmengen aus natürlichen Zahlen, die auf der Primfakultät beruhen, die bei der Annäherung an die vollständige Primfakultät die Menge der natürlichen Zahlen beschreibt?')),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
