@@ -292,8 +292,7 @@
                     'Nach dem ›Fundamentalsatz der Arithmetik‹ ist jede natürliche Zahl \lm{ n \ge 2 } entweder selber eine Primzahl oder'."\n".
                     'besteht aus einem Produkt von Primzahlen, die allesamt kleiner sein müssen als sie selber.'."\n",
                       'Damit müssen alle natürlichen Zahlen \lm{ n \ge 2 }, die kleiner als eine bestimmte Primzahl \lm{ p } sind,'."\n".
-                    'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind,'."\n".
-                    'womit das Lemma bewiesen ist.'."\n".
+                    'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind. \lm{ \blacksquare }'."\n".
                     ''))),
 
                   array( 'text', array( text => array(
@@ -400,8 +399,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
                       array( display => 'on',  latex => '{  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{v_{p}(n)} *|* p \in \mathbb{P} , 0 < v_{p}(n) \in E_{\infty} *\} ,  &  n \geq 2  \end{cases}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n  \widehat{=}  \pt(n)  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pt(n)  :=  \begin{cases}  *\{ n *\} ,  &  n \in *\{ 0, 1 *\}  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'einmal definiert über die \lm{ p }-adische Bewertung und einmal über die exakte Teilung,'."\n".
@@ -434,7 +432,34 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Diese Menge können wir nun nutzen, um daraus das Primfaktor-Spektrum oder Primfaktor-Raster'."\n".
+                    'Was uns ein Gefühl für die Eineindeutigkeit beziehungsweise Bijektivität der Funktion gibt, die wir nun zeigen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
+                  'Lemma 2: Primturmzerlegungs-Entsprechung', subline =>
+                    '')),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Die Primturmmenge \lm{ \pt(n) } der Primturmzerlegung einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
+                        'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BijektiveFunktion:2023}.}'."\n".
+                        'zwischen \lm{ n } und \lm{ \pt(n) }.'."\n".
+                        ''))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  \widehat{=}  \pt(n)  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nach dem „Fundamentalsatz der Arithmetik“ lässt sich jede endliche natürliche Zahl, die größer oder gleich Zwei ist, eineindeutig in Primfaktoren zerlegen.'."\n".
+                    'Diese Zerlegung entspricht eineindeutig der Primturmmenge jeder Zahl größer oder gleich Zwei.'."\n".
+                    'Die noch fehlenden Zahlen Null und Eins entsprechen eineindeutig den noch nicht belegten Mengen mit der jeweils gleichen Zahl als Element,'."\n".
+                    'also \lm{ 0 \widehat{=} \{ 0 \} } und \lm{ 1 \widehat{=} \{ 1 \} }.'."\n",
+                      'Damit ist die Funktion \lm{ \pt(n) } komplett bijektiv, also eineindeutig, und damit eine Entsprechung. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Diese Primturmmenge können wir nun nutzen, um daraus das Primfaktor-Spektrum oder Primfaktor-Raster'."\n".
                     'der natürlichen Zahl zu bestimmen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -483,40 +508,49 @@
                       array( display => 'on',  latex => '{  \pr(n)  :=  \{ 0, 1 \} \; \cup \; *\{  \prod_{ t \in \pt(n) } t^{k_{p}}  *|*  k_{p} \in E_{\infty}  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      // 'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \lm{ i } darauf geprüft werden, ob sie entweder'."\n".
-                      // 'Null oder Eins sind oder mindestens ein Primfaktoranteil von \lm{ n } die Zahl \lm{ i } ganzzahlig teilt.'."\n",
                       'Die Menge des Primturm-Potenzrasters wird hier erzeugt, indem alle Elemente in \lm{ \pt(n) } in jeder möglichen endlichen und aktual unendlichen natürlichen Potenz'."\n".
                       'miteinander kombiniert werden, denn \lm{ E_{\infty} } enthält ja auch die Null.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Das Primturm-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl.'."\n".
-                    'Dies kommt daher, weil jede natürliche Zahl, wie oben gezeigt, ihre einzigartige Primturmzerlegung hat,'."\n".
-                    'aufgrund derer sich das Primturm-Potenzraster ebenso einzigartige berechnet.'."\n".
+                    'Das Primturm-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl, wie wir nun zeigen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
+                  'Lemma 3: Primturm-Potenzraster-Entsprechung', subline =>
+                    '')),
 
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Entspreche also jede natürliche Zahl ihrem Primturm-Potenzraster'."\n".
-                      ''))),
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Die Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
+                        'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung'."\n".
+                        'zwischen \lm{ n } und \lm{ \pr(n) }.'."\n".
+                        ''))),
+
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  \pr( n )  *]  \;\;,  }',
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  \pr( n )  *]  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'was eben keine Gleichheit im Sinne der Ordinalzahlen bedeutet, denn es hat unter Umständen Lücken vor \lm{ n },'."\n".
-                      'enthält \lm{ n } selber und auch Zahlen, die weit über \lm{ n } hinaus gehen, bis ins aktual unendliche.'."\n",
-                        '\\\\'."\n".
-                      ''))),
 
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Mit Entsprechung ist hier und nachfolgend – generell in dieser Arbeit – gemeint, dass eine'."\n".
-                    'bijektive Funktion\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BijektiveFunktion:2023}.}'."\n".
-                    'existiert, die beide Dinge eineindeutig aufeinander abbildet.'."\n".
-                    'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt.'."\n",
-                      'Das Primturm-Potenzraster nutzen wir nun, um seinen lückenlosen Anteil an seinem Beginn'."\n".
+                    'Dies ist eine ebenso eineindeutige, bijektive Abbildung, wie die Primturmmenge,'."\n".
+                    'weil das Primturm-Potenzraster die Primturmzerlegung als kleinste Elemente auf Basis der entsprechenden'."\n".
+                    'Primzahlen enthält, also \lm{ \pt(n) \subset \pr(n) }.'."\n".
+                    'Diese Untermenge wird dann ja nur noch um all die Produkte aller möglichen Exponentenkombinationen erweitert.'."\n".
+                    'Die Einzigartigkeit der Primturmzerlegung bleibt im Primturm-Potenzraster dabei erhalten,'."\n".
+                    'denn es kommen ja nur Produktkombinationen mit gleich großen oder ganzzahlig größeren Potenzen oder Null-Potenzen der enthaltenen Primzahlen hinzu,'."\n".
+                    'die so niemals dazu führen können, dass die entsprechende Erweiterung einer Primturmmenge'."\n".
+                    'dem Primturm-Potenzraster einer anderen Primturmmenge gleicht.'."\n",
+                      'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \blacksquare }'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Definition: Das lückenlosen Primturm-Potenzraster', subline =>
+                    'Der Lückenlose Beginn des Primturm-Potenzrasters')),
+                  array( 'text', array( text => array(
+                    'Das Primturm-Potenzraster nutzen wir nun, um seinen lückenlosen Anteil an seinem Beginn'."\n".
                     'zu berechnen.'."\n".
                     ''))),
 
