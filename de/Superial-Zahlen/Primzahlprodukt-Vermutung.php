@@ -557,16 +557,16 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ \lpr(n) } die maximale lückenlose Menge natürlicher Zahlen, von der Null an,'."\n".
-                      'im Primturm-Potenzraster \lm{ \pr(n) }:'."\n".
+                      'im Primturm-Potenzraster \lm{ \pr(n) }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N}_{\infty} *) *( i \subseteq \pr(n) *) *[  x = i  *]  *\}  }'),
+                      //%! array( display => 'on',  latex => '{  \lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N}_{\infty} *) *( i \subseteq \pr(n) *) *[  x = i  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \lpr(n)  :=  *\{  x \in \mathbb{N}_{\infty,v_{p}}  *|*  [0 , x]_{\mathbb{N}_{\infty,v_{p}}} \subseteq \pr(n)  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\color{*Bearb}{(Diese Funktion könnten wir vielleicht auch durch Mengennegation und das Herauskristallisieren'."\n".
-                      'der kleinsten Zahl in der Antimenge realisieren.)} \\\\'."\n".
-                      'Diese Menge erhalten wir, indem wir alle natürlichen Zahlen und Ordinalzahlen \lm{ i } in einer Menge sammeln,'."\n".
+                      'die wir erhalten, indem wir alle endlichen und aktual unendlichen natürlichen Zahlen mit existierender \lm{ p }-adischer Bewertung,'."\n".
+                      'von Null bis einschließlich \lm{ x }, in einer \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} zusammenfassen,'."\n".
                       'die echte Teilmenge\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilmenge:2023}.}'."\n".
                       'des Primturm-Potenzrasters sind.'."\n",
                         '\\\\'."\n".
