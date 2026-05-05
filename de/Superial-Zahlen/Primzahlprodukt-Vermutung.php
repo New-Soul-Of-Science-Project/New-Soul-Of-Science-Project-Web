@@ -535,13 +535,15 @@
                     '')),
                   array( 'text', array( text => array(
                     'Dies ist eine ebenso eineindeutige, bijektive Abbildung, wie die Primturmmenge,'."\n".
-                    'weil das Primturm-Potenzraster die Primturmzerlegung als kleinste Elemente auf Basis der entsprechenden'."\n".
+                    'weil das Primturm-Potenzraster die Primturmzerlegung als kleinste Elemente beziehungsweise kleinste Potenzen auf Basis der entsprechenden'."\n".
                     'Primzahlen enthält, also \lm{ \pt(n) \subset \pr(n) }.'."\n".
                     'Diese Untermenge wird dann ja nur noch um all die Produkte aller möglichen Exponentenkombinationen erweitert.'."\n".
                     'Die Einzigartigkeit der Primturmzerlegung bleibt im Primturm-Potenzraster dabei erhalten,'."\n".
                     'denn es kommen ja nur Produktkombinationen mit gleich großen oder ganzzahlig größeren Potenzen oder Null-Potenzen der enthaltenen Primzahlen hinzu,'."\n".
                     'die so niemals dazu führen können, dass die entsprechende Erweiterung einer Primturmmenge'."\n".
                     'dem Primturm-Potenzraster einer anderen Primturmmenge gleicht.'."\n",
+                      'Diese Einzigartigkeit bleibt auch dann erhalten, wenn bei \lm{ n \ge 1 } generell die Elemente \lm{ \{ 0, 1 \} } hinzugefügt werden.'."\n".
+                    'Für den Fall \lm{ n = 0 } wird dann die Menge \lm{ \{ 0 \} } gesetzt, die bei den Fällen \lm{ n \ge 1 } nicht herauskommen kann und so auch einzigartig ist.'."\n",
                       'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
