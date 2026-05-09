@@ -503,7 +503,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0   \\\\ \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \prod_{ t \in \pt(n) } t^{k_{p}}  }  *|*  k_{p} \in E_{\infty}  *\} ,  &  n \geq 1  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0   \\\\ \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \prod_{ t \in \pt(n) } t^{k_{t}}  }  *|*  k_{t} \in E_{\infty}  *\} ,  &  n \geq 1  \end{cases}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Menge des Primturm-Potenzrasters wird hier erzeugt, indem alle Elemente in \lm{ \pt(n) } in jeder möglichen endlichen und aktual unendlichen natürlichen Potenz'."\n".
