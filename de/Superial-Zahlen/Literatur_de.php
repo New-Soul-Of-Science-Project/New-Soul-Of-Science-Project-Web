@@ -99,6 +99,7 @@
               'wiki:Unendlichkeitsaxiom:2021',
               'wiki:ValuationRing:2024',
               'wiki:VollstaendigeInduktion:2024',
+              'wiki:ZermeloFraenkelMengenlehre:2026',
             ));
           ?>
 

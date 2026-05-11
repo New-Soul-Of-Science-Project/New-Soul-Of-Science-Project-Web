@@ -387,10 +387,11 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  \exists v_{p}(n) \in E_{\infty}  *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[  \exists v_{p}(n)  \in  E_{\infty}  *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
+                      'Wobei diese Bewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \lm{ n \in \mathbb{N}_{\infty,v_{p}} }'."\n".
@@ -797,11 +798,18 @@
                       array( display => 'off', latex => '{  \mathbb{N}\overline{\#}  =  \!\! \prod_{ \forall p \in \mathbb{N} \cap \mathbb{P} }  \! p  }'),
                       array( display => 'on',  latex => '{  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prod_{ \forall p \in \mathbb{P} }  p  }',
                                     latex_if_visible => '{  \Leftrightarrow  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prod_{ \forall p \in \mathbb{P} }  \; p  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  ω_{\forall p}  =  ω\overline{\#}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  ω_{\forall p}  =  ω\overline{\#}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Denn hier liefert uns \lm{ ω\overline{\#} }'."\n".
-                      'ein Produkt aller Primzahlen in \lm{ \mathbb{N} }, also ein Produkt aller endlichen Primzahlen.'."\n".
+                      'denn hier liefert uns \lm{ ω\overline{\#} }'."\n".
+                      'ein Produkt aller Primzahlen in \lm{ \mathbb{N} }, also ein Produkt aller endlichen Primzahlen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  v_{p}*( ω\overline{\#} *)  =  1  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'einfacher Potenz.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Und so gesehen stellt sich unsere Vermutung nun als'."\n".
@@ -1374,7 +1382,17 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'muss folglich wahr sein, was wir zeigen wollten.'."\n",
+                      'muss folglich wahr sein, was wir zeigen wollten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Damit haben wir eine ZFC-konforme Definition der algebraischen Eigenschaften der vollständigen Induktion mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall p \in \mathbb{P} *) *[  v_{p}*( ω *)  =  1  *]  \;\;} \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'indem wir feststellen, dass die \lm{ p }-adische Bewertung von \lm{ ω } in Bezug auf alle endlichen Primzahlen gleich Eins ist.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1383,7 +1401,8 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die arithmetische Erweiterung von ω trägt die vollständige Primfakultät aller endlichen Primzahlen.'."\n".
+                      'Die arithmetische Erweiterung von ω trägt die vollständige Primfakultät aller endlichen Primzahlen,'."\n".
+                      'die konform mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}} ist'."\n".
                       ''))),
  
                   array( 'text', array( text => array(
@@ -1403,12 +1422,13 @@
                   array( 'text', array( Shape => 'italic', text => array(
                       'Diese Aussage gilt auch unabhängig von der Theorie der Superial-Zahlen,'."\n".
                       'weil die Beweisstruktur auf der ZFC-Mengenlehre, der Arithmetik der endlichen natürlichen Zahlen, dem ›Fundamentalsatzes der Arithmetik‹,'."\n".
-                      'der Ordinalarithmetik und auf unserer Lemma-Kette sowie deren Beweis beruht,'."\n".
-                      'auch, wenn uns die Superial-Zahlen zur Primzahlprodukt-Vermutung geführt haben.'."\n".
+                      'der Ordinalarithmetik und auf unserer Lemma-Kette sowie deren Beweis beruht.'."\n".
                       ''))),
  
                   array( 'text', array( text => array(
-                    'Es handelt sich um einen sehr interessanten, weil aufschlussreichen, Übergang,'."\n".
+                    'Auch, wenn uns die Superial-Zahlen zur Primzahlprodukt-Vermutung geführt haben,'."\n".
+                    'sind sie kein essenzieller Teil dieses Beweises.'."\n",
+                      'Es handelt sich um einen sehr interessanten, weil aufschlussreichen, Übergang,'."\n".
                     'durch den wir eine Primfaktorzerlegung für \lm{ ω } erhalten.'."\n".
                     'Eine mir bisher unbekannte Eigenschaft der unendlichen Größe der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
                     ''))),
