@@ -297,8 +297,9 @@
 
                   array( 'text', array( text => array(
                     'Nun finden wir heraus, wie wir diese Erkenntnis in Verbindung mit dem ›Satz des Euklid‹ für unseren Beweis nutzen können.'."\n".
-                    'Dies tun wir, indem wir daraus sowohl die Menge der endlichen Primzahlen als auch die der endlichen natürlichen Zahlen konstruieren.'."\n".
-                    'Diese neue Mengenkonstruktion der natürlichen Zahlen, diese Entsprechung, können wir zum Beweis ins Aktual-Unendliche fortsetzen.'."\n".
+                    'Dies tun wir, indem wir daraus sowohl die Menge der endlichen Primzahlen konstruieren als auch die der endlichen natürlichen Zahlen rekonstruieren.'."\n".
+                    'Diese neue Mengenkonstruktion der endlichen Primzahlen sowie die durch sie ermöglichte Rekonstruktion der natürlichen Zahlen'."\n".
+                    'und im Besonderen die sich daraus ergebenden Entsprechungen können wir für unseren Beweis ins Aktual-Unendliche fortsetzen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Wissen: Unser Einstieg über die Primfakultät', subline =>
