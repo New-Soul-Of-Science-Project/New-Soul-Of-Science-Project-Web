@@ -1089,8 +1089,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \bigcup_{ p \in \mathbb{P} } \lpr\!*( p\overline{\#} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  ω  =  \mathbb{N}  =  \bigcup_{ p \in \mathbb{P} } p  }'),
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \bigcup_{ \forall p \in \mathbb{P} } \lpr\!*( p\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  ω  =  \mathbb{N}  =  \bigcup_{ \forall p \in \mathbb{P} } p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'aller endlichen natürlichen Zahlen; aus allen Primzahlen konstruiert;'."\n".
