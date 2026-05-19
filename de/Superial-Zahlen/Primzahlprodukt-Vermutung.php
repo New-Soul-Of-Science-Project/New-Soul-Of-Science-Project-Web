@@ -381,11 +381,11 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{\infty}  :\subset  \mathbb{On}  }'),
-                      array( display => 'on',  latex => '{  v_{p}(n)  :\in  E_{\infty}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  v_{p}( n )  :\in  E_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und damit die Menge der \lm{ p }-adischen Bewertungen.'."\n",
-                        'Hier bezeichnet \lm{ v_{p}(n) } die superiale Erweiterung der \lm{ p }-adischen Bewertung.'."\n".
+                      'und damit sei \lm{ E_{\infty} } auch die Menge der existierenden \lm{ p }-adischen Bewertungen \lm{ v_{p}( n ) }.'."\n",
+                        'Hier bezeichnet \lm{ v_{p}( n ) } die Erweiterung der \lm{ p }-adischen Bewertung.'."\n".
                       'Ihr Wertebereich ist nicht mehr nur \lm{ \mathbb{Z} }, sondern eine ordinal-arithmetisch erweiterte Wertstruktur,'."\n".
                       'in der \lm{ ω } als arithmetisierte Einheit der vollständigen Induktion auftritt.'."\n".
                       ''))),
@@ -394,7 +394,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[  \exists v_{p}(n)  \in  E_{\infty}  *]  *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[ \exists v_{p}(n) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
@@ -1217,7 +1217,7 @@
                     'das vollständige einpotenzige Produkt aller endlichen Primzahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Da jede endliche Primzahl \lm{ p \in P_{ω} } genau einfach vorkommt, gilt'."\n".
+                    'Da jede endliche Primzahl \lm{ p \in \mathbb{P} } genau einfach vorkommt, gilt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1409,7 +1409,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \, *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N} *) \\\ *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]   \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \\\ *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]   \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\bold{Beweis}'."\n".
@@ -1511,7 +1511,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \lpr*( ω\overline{\#} *)  =  ω  \;\;}   \;\; .  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  /* array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Kurzinterpretation', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -1556,7 +1556,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \lpr*( ω\overline{\#} *)  =  ω  \;\;}   \;\; .  }'),
-                    ))),
+                    ))), */
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 2: Identitätssatz – Kanonisches Identitätsprinzip', subline =>
                     '')),
@@ -1664,7 +1664,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  v_{p}*( P_{ω} *)  =  1  *]  \;\; .  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  /* array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Lückenloser Anfang von \lm{ P_{ω} }', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -1757,7 +1757,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \lpr*( ω\overline{\#} *)  =  ω  \;\;}  \;\; .  }'),
-                    ))),
+                    ))), */
                   array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Kanonisches Identitätsprinzip', subline =>
                     '')),
@@ -1804,7 +1804,7 @@
                       array( display => 'on',  latex => '{  \boxed{\;\;  *[ x = \lim\limits_{m \rightarrow ω}{ P_{m} } \land *( \forall p \in \mathbb{P} *) *( v_{p}*( x *) = 1 *) \\\ \qquad\qquad\quad\; \land \pt*( x *) = \mathbb{P} \land \lpr*( x *) = ω *]  \Rightarrow  x = ω  \;\; .  \;\;}  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Beweis des Identitätssatzes', subline =>
+                  'Verifikation der Bedingungen des kanonischen Identitätsprinzips', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Setze'."\n".
@@ -2117,10 +2117,10 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Diese Aussage gilt auch unabhängig von der Theorie der Superial-Zahlen,'."\n".
-                      'weil die Beweisstruktur auf der ZFC-Mengenlehre, der Arithmetik der endlichen natürlichen Zahlen, dem ›Fundamentalsatzes der Arithmetik‹,'."\n".
-                      'der Ordinalarithmetik und auf unserer Lemma-Kette sowie deren Beweisen beruht.'."\n",
-                        'Die Gleichheit selbst ist aber keine Gleichheit der gewöhnlichen Ordinalarithmetik,'."\n".
+                      'Die Beweisstruktur verwendet keine speziellen Eigenschaften von \lm{ \s };'."\n".
+                      'der letzte Gleichheitsschritt bleibt aber eine kanonische Identifikation der erweiterten Ordinalarithmetik.'."\n".
+                      'Diese Aussage gilt also unabhängig von der Theorie der Superial-Zahlen;'."\n".
+                      'sie ist aber keine Gleichheit der gewöhnlichen Ordinalarithmetik,'."\n".
                       'sondern eine kanonische Identifikation der erweiterten Theorie.'."\n".
                       ''))),
  
