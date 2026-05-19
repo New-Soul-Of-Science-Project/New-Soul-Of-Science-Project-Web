@@ -1382,6 +1382,9 @@
                     'Es bleibt zu zeigen, dass kein aktual unendliches Element zu \lm{ \lpr*( P_{ω} *) } gehört.'."\n".
                     ''))),
                   array( 'text', array( text => array(
+                    '\bold{Lemma 4: Lückenabstiegsprinzip – Lückenabstieg im aktual-unendlichen Bereich​}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     'Sei also'."\n".
                     ''))),
                   array( 'equations',
@@ -1392,99 +1395,62 @@
                     'aktual unendlich.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Wir betrachten endliche einpotenzige Primzahlprodukte'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  F_{\text{fin}}  \subseteq  \mathbb{P}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'endlich ist.'."\n".
-                    'Die Menge dieser Produkte sei'."\n".
+                    'Seien'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, \; \text{endlich}  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für jedes solche \lm{ d \in D_{\text{fin}} } ist'."\n".
+                    'endliche einpotenzige Primzahlprodukte.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Dann gilt das \italic{Lückenabstiegsprinzip}, das sich formal schreiben lässt als:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'wieder ein aktual-unendliches Rasterelement von \lm{ \pr*( P_{ω} *) },'."\n".
-                    'denn \lm{ \frac{ P_{ω} }{ d } } entsteht aus \lm{ P_{ω} },'."\n".
-                    'indem endlich viele Primfaktoren aus dem einpotenzigen vollständigen Primzahlprodukt entfernt werden.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Insbesondere liegen Elemente der Form'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ 2 } \, , \; \frac{ P_{ω} }{ 3 } \, , \; \frac{ P_{ω} }{ 5 } \, , \; \frac{ P_{ω} }{ 2 \cdot 3 } \, , \; \cdots  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'im Raster \lm{ \pr*( P_{ω} *) }.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Diese Elemente zeigen, dass das Raster von \lm{ P_{ω} } über den endlichen Bereich hinaus aktual-unendlich weiterläuft.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Für die Lückenhaftigkeit betrachten wir jedoch nicht diese Rasterpunkte selbst, sondern ihre endlichen Vorgänger'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( d \in D_{\text{fin}} *) *( n \in \mathbb{N} *) *[  \frac{ P_{ω} }{ d } - n   \in  \mathbb{N}_{\infty,v_{p}}  *]  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Solche Zahlen liegen unterhalb des Rasterpunktes \lm{ \frac{ P_{ω} }{ d } },'."\n".
-                    'sind aber im Allgemeinen keine reinen Primturm-Potenzprodukte aus \lm{ \pt*( P_{ω} *) }.'."\n".
-                    'Denn \lm{ \pr*( P_{ω} *) } besteht aus \lm{ 0, 1 } und Produkten von Primzahlpotenzen.'."\n".
-                    'Eine Differenz der Form \lm{ \frac{ P_{ω} }{ d } - n } ist dagegen keine solche reine Produktbildung,'."\n".
-                    'sondern eine additive Verschiebung eines aktual-unendlichen Produktterms.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Daher gilt für geeignete \lm{ d \in D_{\text{fin}} } und \lm{ n \in \mathbb{N} }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  \notin  \pr*( P_{ω} *)  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Da \lm{ d } durch Hinzunahme weiterer endlicher Primfaktoren beliebig groß gewählt werden kann,'."\n".
-                    'wird der aktual-unendliche Term \lm{ \frac{ P_{ω} }{ d } } immer weiter nach unten getragen.'."\n".
-                    'Entsprechend treten die Lücken \lm{ \frac{ P_{ω} }{ d } - n }'."\n".
-                    'beliebig tief im aktual-unendlichen Bereich auf.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\bold{Lemma 4: Lückenabstieg im aktual-unendlichen Bereich​}'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Formal lässt sich dies als Lückenabstiegsprinzip schreiben:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'on',  latex => '{  \, *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists n \in \mathbb{N} *) \\\ *[  \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]   \;\; .  }'),
                       array( display => 'on',  latex => '{  \, *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N} *) \\\ *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]   \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\bold{Begründung.​}'."\n".
+                    '\bold{Beweis}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Da \lm{ d } über alle endlichen einpotenzigen Primzahlprodukte läuft, kann der Quotient \lm{ \frac{ P_{ω} }{ d } }'."\n".
+                    '\italic{\bold{Quotientenabstieg:}}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ d } über alle endlichen einpotenzigen Primzahlprodukte läuft, kann der Quotient'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d }  =  \frac{ P_{ω} }{ 2 } \, , \; \frac{ P_{ω} }{ 3 } \, , \; \frac{ P_{ω} }{ 5 } \, , \; \frac{ P_{ω} }{ 2 \cdot 3 } \, , \; \cdots  \in  \mathbb{N}_{\infty,v_{p}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'durch Vergrößerung von \lm{ d } beliebig tief in den aktual-unendlichen Bereich hinabgetragen werden.'."\n".
                     'Daher liegt unterhalb jedes aktual-unendlichen \lm{ x } ein solcher Quotient oder ein endlicher Vorgänger eines solchen Quotienten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Die Zahlen \lm{ \frac{ P_{ω} }{ d } } selbst sind Rasterpunkte von \lm{ \pr*( P_{ω} *) }.'."\n".
-                    'Ihre endlichen Vorgänger \lm{ \frac{ P_{ω} }{ d } - n } sind dagegen additive endliche Verschiebungen aktual unendlicher Rastermonome.'."\n".
-                    'Da \lm{ \pr*( P_{ω} *) } nur aus \lm{ 0, 1 } und den durch \lm{ E_{\infty,\mathbb{P} } zugelassenen'."\n".
-                    'Primmonomen besteht, gehören diese additiven Verschiebungen nicht zu \lm{ \pr*( P_{ω} *) }. \lm{ \blacksquare }'."\n".
+                    '\italic{\bold{Lückenhaftigkeit — Rasterausschluss additiver Verschiebungen:}}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Damit liegt unterhalb jedes aktual unendlichen \lm{ x } bereits eine Lücke des Primzahl-Potenzrasters.'."\n".
+                    'Die Zahlen \lm{ \frac{ P_{ω} }{ d } } selbst sind Rasterpunkte von \lm{ \pr*( P_{ω} *) },'."\n".
+                    'weil einfach endlich viele Primfaktoren aus dem einpotenzigen vollständigen Primzahlprodukt entfernt werden.'."\n".
+                    'Ihre endlichen Vorgänger'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  \in  \mathbb{N}_{\infty,v_{p}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sind dagegen additive endliche Verschiebungen aktual unendlicher Rastermonome.'."\n".
+                    'Da \lm{ \pr*( P_{ω} *) } nur aus \lm{ 0, 1 } und den durch \lm{ E_{\infty,\mathbb{P}} } zugelassenen'."\n".
+                    'Primmonomen besteht, gehören diese additiven Verschiebungen nicht zu \lm{ \pr*( P_{ω} *) }, also gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  \notin  \pr*( P_{ω} *)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'womit unterhalb jedes aktual unendlichen \lm{ x } bereits eine Lücke des Primzahl-Potenzrasters liegt. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Also gilt für jedes'."\n".
