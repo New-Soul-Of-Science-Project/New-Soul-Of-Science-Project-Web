@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.05.2026, 22:00h
+  // #: Stand: 17.05.2026, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260517:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subseteq  ' -> '\;\;\;\not\subseteq\;\;\;'
   //           20260503:  +:  "$Sc_g_equation_replace_ary":  Add '  :\subset  ' -> '\;\;\;:\subset\;\;\;', ':\subset' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'
   //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
   //                      +:  "MathJax":  Add Macro "supp".
@@ -712,6 +713,7 @@
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
+                                    array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
