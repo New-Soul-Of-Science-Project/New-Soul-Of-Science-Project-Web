@@ -22,6 +22,7 @@
               'Haramein:DieEntschluesselungDesUniversums:2011',
               'Plichta:GottesGeheimeFormel:1995',
               'Wallace:DieEntdeckungDesUnendlichen:2010',
+              'Weyl:DieStufenDesUnendlichen:1931',
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
               'wiki:AlgebraicNumber:2025',
@@ -98,6 +99,7 @@
               'wiki:Unendlichkeitsaxiom:2021',
               'wiki:ValuationRing:2024',
               'wiki:VollstaendigeInduktion:2024',
+              'wiki:ZermeloFraenkelMengenlehre:2026',
             ));
           ?>
 
