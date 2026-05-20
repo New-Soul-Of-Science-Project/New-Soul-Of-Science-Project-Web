@@ -525,7 +525,7 @@
                       'Wobei \lm{ E_{\infty, \pt(n)} } die Menge der zugelassenen Exponentenbelegungen ist.'."\n",
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Beim Übergang von \lm{ \pt(n) \rightarrow \mathbb{P} }, vom Endlichen uns Aktual-Unendliche, enthält \lm{ E_{\infty, \mathbb{P}} } mindestens:'."\n",
+                      'Beim Übergang von \lm{ \pt(n) \rightarrow \mathbb{P} }, vom Endlichen ins Aktual-Unendliche, enthält \lm{ E_{\infty, \mathbb{P}} } mindestens:'."\n",
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{1.}    endliche Support-Belegungen, damit alle endlichen natürlichen Zahlen entstehen,'."\n",
@@ -1382,7 +1382,7 @@
                     'Es bleibt zu zeigen, dass kein aktual unendliches Element zu \lm{ \lpr*( P_{ω} *) } gehört.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    '\bold{Lemma 4: Lückenabstiegsprinzip – Lückenabstieg im aktual-unendlichen Bereich​}'."\n".
+                    '\bold{Lemma 4: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Sei also'."\n".
@@ -1425,7 +1425,12 @@
                       array( display => 'on',  latex => '{  \mathcal{L}\!*( P_{ω} *)  :=  *\{  \frac{ P_{ω} }{ d } - n  *|*  d \in D_{\text{fin}} , n \in \mathbb{N}_{>0} , 0 \le \frac{ P_{ω} }{ d } - n  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'koinitial im aktual unendlichen Bereich von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
+                    'koinitial im aktual unendlichen Bereich von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n",
+                      'Diese Koinitialität ist eine Ordnungseigenschaft von \lm{ \mathbb{N}_{\infty,v_{p}} }:'."\n".
+                    'Durch Division von \lm{ P_{ω} } durch endliche einpotenzige Primzahlprodukte werden die Quotienten'."\n".
+                    'samt ihrer endlichen Vorgänger in jedem aktual unendlichen Anfangsbereich erreicht.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     'Das heißt:'."\n".
                     ''))),
                   array( 'equations',
@@ -1469,7 +1474,11 @@
                       array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d }  =  \frac{ P_{ω} }{ 2 } \, , \; \frac{ P_{ω} }{ 3 } \, , \; \frac{ P_{ω} }{ 5 } \, , \; \frac{ P_{ω} }{ 2 \cdot 3 } \, , \; \cdots  \in  \mathbb{N}_{\infty,v_{p}} \setminus ω  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'selbst sind solche Primmonome und gehören daher zu \lm{ \pr*( P_{ω} *) }.'."\n".
+                    'selbst sind solche Primmonome und gehören daher zu \lm{ \pr*( P_{ω} *) }.'."\n",
+                      'Das Primturm-Potenzraster wird hier also als formal erzeugtes Primmonomraster verstanden;'."\n".
+                    'Zugehörigkeit zu \lm{ \pr*( P_{ω} *) } bedeutet Zugehörigkeit zu einer zugelassenen Primmonom-Normalform.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     'Ihre endlichen Vorgänger'."\n".
                     ''))),
                   array( 'equations',
@@ -1486,7 +1495,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  *( n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) \;\; \\\\ \;\; *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Womit unterhalb jedes aktual unendlichen \lm{ x } bereits eine Lücke des Primzahl-Potenzrasters liegt. \lm{ \blacksquare }'."\n".
@@ -1542,14 +1551,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  \notin  \pr*( P_{ω} *)  \;\; .  }'),
+                      array( display => 'on',  latex => '{  x  \notin  \lpr*( P_{ω} *)  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Da dies für jedes'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  \notin  \mathbb{N}_{\infty,v_{p}} \setminus ω  }'),
+                      array( display => 'on',  latex => '{  x  \in  \mathbb{N}_{\infty,v_{p}} \setminus ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'gilt, folgt:'."\n".
@@ -1621,22 +1630,22 @@
                     'Deshalb erzeugt sein Primturm-Potenzraster alle endlichen natürlichen Zahlen lückenlos.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Zwar enthält dieses Raster auch aktual-unendliche Rasterpunkte wie'."\n".
+                    'Zwar enthält dieses Raster auch aktual unendliche Rasterpunkte wie'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \cdots \, , \; \frac{ ω\overline{\#} }{ 2 \cdot 3 } \, , \; \frac{ ω\overline{\#} }{ 5 } \, , \; \frac{ ω\overline{\#} }{ 3 } \, , \; \frac{ ω\overline{\#} }{ 2 } \, , \; ω\overline{\#} \, , \; 2 ω\overline{\#} \, , \; 3 ω\overline{\#} \, , \; 4 ω\overline{\#} \, , \; \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'aber zwischen den endlichen Zahlen und diesen aktual-unendlichen Rasterpunkten treten stets Lücken auf, etwa von der Form'."\n".
+                    'aber zwischen den endlichen Zahlen und diesen aktual unendlichen Rasterpunkten treten stets Lücken auf, etwa von der Form'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ ω\overline{\#} }{ d } - n  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Da solche Lücken unterhalb jedes aktual-unendlichen Kandidaten auftreten,'."\n".
-                    'kann kein aktual-unendliches Anfangssegment lückenlos im Raster liegen.'."\n".
+                    'Da solche Lücken unterhalb jedes aktual unendlichen Kandidaten auftreten,'."\n".
+                    'kann kein aktual unendliches Anfangssegment lückenlos im Raster liegen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Der größte lückenlose Anfang des Rasters ist daher genau'."\n".
@@ -1656,7 +1665,7 @@
                   'Satz 2: Identitätssatz – Kanonisches Identitätsprinzip', subline =>
                     '')),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn ein aktual-unendliches natürliches Objekt durch sein Primzahl-Potenzraster'."\n".
+                      'Wenn ein aktual unendliches natürliches Objekt durch sein Primzahl-Potenzraster'."\n".
                       'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
                       'und dieses Objekt zugleich das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
                       'dann ist es mit \lm{ ω } zu identifizieren.'."\n".
@@ -1823,7 +1832,7 @@
                       array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  \notin  \pr*( P_{ω} *)  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit ist kein aktual-unendlicher Anfangsabschnitt lückenlos in \lm{ \pr*( P_{ω} *) } enthalten.'."\n".
+                    'Damit ist kein aktual unendlicher Anfangsabschnitt lückenlos in \lm{ \pr*( P_{ω} *) } enthalten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Also:'."\n".
@@ -1857,7 +1866,7 @@
                   'Kanonisches Identitätsprinzip', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Ein aktual-unendliches Objekt \lm{ x \in \mathbb{N}_{\infty,v_{p}} }'."\n".
+                    'Ein aktual unendliches Objekt \lm{ x \in \mathbb{N}_{\infty,v_{p}} }'."\n".
                     'heißt kanonischer Primfakultätsvertreter von \lm{ ω }, wenn gilt:'."\n".
                     ''))),
                   array( 'text', array( text => array(

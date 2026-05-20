@@ -29,7 +29,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
-                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
+                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual unendliche Primzahl).'."\n".
                     'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
                     ''))),
                 ); */
