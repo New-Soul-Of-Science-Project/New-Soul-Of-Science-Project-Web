@@ -376,7 +376,8 @@
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ E_{\infty} } die Menge der zugelassenen ordinalen Exponenten'."\n".
+                      '\lm{ E_{\infty} } ist eine Menge zugelassener ordinaler Exponenten mit \lm{ E_{\infty} \subset \mathbb{On} }.'."\n".
+                      'Also setzen wir'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -384,7 +385,7 @@
                       array( display => 'on',  latex => '{  v_{p}( n )  :\in  E_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und damit sei \lm{ E_{\infty} } auch die Menge der existierenden \lm{ p }-adischen Bewertungen \lm{ v_{p}( n ) }.'."\n",
+                      'und damit ist \lm{ E_{\infty} } auch die Menge der existierenden \lm{ p }-adischen Bewertungen \lm{ v_{p}( n ) }.'."\n",
                         'Hier bezeichnet \lm{ v_{p}( n ) } die Erweiterung der \lm{ p }-adischen Bewertung.'."\n".
                       'Ihr Wertebereich ist nicht mehr nur \lm{ \mathbb{Z} }, sondern eine ordinal-arithmetisch erweiterte Wertstruktur,'."\n".
                       'in der \lm{ ω } als arithmetisierte Einheit der vollständigen Induktion auftritt.'."\n".
@@ -394,7 +395,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  \forall n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[ \exists v_{p}(n) \in E_{\infty} *]  *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[ \exists v_{p}(n) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
@@ -572,16 +573,17 @@
                   'Beweis', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Dies ist eine ebenso eineindeutige, bijektive Abbildung, wie die Primturmmenge,'."\n".
-                    'weil das Primturm-Potenzraster die Primturmzerlegung als kleinste Elemente beziehungsweise kleinste Potenzen auf Basis der entsprechenden'."\n".
-                    'Primzahlen enthält, also \lm{ \pt(n) \subset \pr(n) }.'."\n".
+                    'Dies ist eine ebenso eineindeutige, bijektive Abbildung, wie die Primturmmenge.'."\n",
+                      'Denn für die Fälle \lm{ n \ge 2 } gilt dies, weil das Primturm-Potenzraster die Primturmzerlegung als kleinste Elemente beziehungsweise kleinste Potenzen auf Basis der entsprechenden'."\n".
+                    'Primzahlen enthält, also \lm{ \pt(n) \subseteq \pr(n) }.'."\n".
                     'Diese Untermenge wird dann ja nur noch um all die Produkte aller möglichen Exponentenkombinationen erweitert.'."\n".
                     'Die Einzigartigkeit der Primturmzerlegung bleibt im Primturm-Potenzraster dabei erhalten,'."\n".
                     'denn es kommen ja nur Produktkombinationen mit gleich großen oder ganzzahlig größeren Potenzen oder Null-Potenzen der enthaltenen Primzahlen hinzu,'."\n".
                     'die so niemals dazu führen können, dass die entsprechende Erweiterung einer Primturmmenge'."\n".
-                    'dem Primturm-Potenzraster einer anderen Primturmmenge gleicht.'."\n",
-                      'Diese Einzigartigkeit bleibt auch dann erhalten, wenn bei \lm{ n \ge 1 } generell die Elemente \lm{ \{ 0, 1 \} } hinzugefügt werden.'."\n".
-                    'Für den Fall \lm{ n = 0 } wird dann die Menge \lm{ \{ 0 \} } gesetzt, die bei den Fällen \lm{ n \ge 1 } nicht herauskommen kann und so auch einzigartig ist.'."\n",
+                    'dem Primturm-Potenzraster einer anderen Primturmmenge gleicht.'."\n".
+                    'Diese Einzigartigkeit bleibt auch dann erhalten, wenn bei \lm{ n \ge 2 } generell die Elemente \lm{ \{ 0, 1 \} } hinzugefügt werden.'."\n",
+                      'Und für den Sonderfall \lm{ n = 0 } wird dann die Menge \lm{ \pr*( 0 *) = \varnothing } und für den Sonderfall \lm{ n = 1 } wird \lm{ \pr*( 1 *) = \{ 0, 1 \} } gesetzt,'."\n".
+                    'die beide in den Fällen \lm{ n \ge 2 } nicht auftreten und so auch einzigartig sind.'."\n",
                       'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -1495,7 +1497,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) \;\; \\\\ \;\; *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall d \in D_{\text{fin}} *) *( \forall n \in \mathbb{N}_{>0} *) \;\; \\\\ \;\; *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Womit unterhalb jedes aktual unendlichen \lm{ x } bereits eine Lücke des Primzahl-Potenzrasters liegt. \lm{ \blacksquare }'."\n".
