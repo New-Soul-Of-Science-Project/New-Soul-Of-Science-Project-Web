@@ -402,7 +402,8 @@
                       'Wobei diese Bewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dabei ist \lm{ \le_{\infty,v_{p}} } die kanonische Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }'."\n".
+                      'Dabei ist \lm{ \le_{\infty,v_{p}} } die kanonische Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
+                      'Die zugehörige geordnete bewertete Struktur sei'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -479,9 +480,9 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\italic{Notationsvereinbarung:}'."\n".
-                      'Auf \lm{ \mathbb{N}_{\infty,v_{p}} } bezeichnet \lm{ ≤ }, und vergleichbare Ordnungsrelationen, im Folgenden stets'."\n".
-                      'die Ordnung \lm{ \le_{\infty,v_{p}} }, oder vergleichbare Ordnungsrelationen, der Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} }.'."\n".
-                      'Ebenso ist jede Intervall-Menge \lm{ [a,b]_{\mathbb{N}_{\infty,v_{p}}} }, oder vergleichbare Intervall-Mengen-Schreibweisen, bezüglich dieser Ordnung zu verstehen.'."\n".
+                      'Auf \lm{ \mathbb{N}_{\infty,v_{p}} } bezeichnet \lm{ ≤ } im Folgenden stets'."\n".
+                      'die Ordnung \lm{ \le_{\infty,v_{p}} } der Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} }.'."\n".
+                      'Ebenso ist jede Intervall-Menge \lm{ [a,b]_{\mathbb{N}_{\infty,v_{p}}} } bezüglich dieser Ordnung zu verstehen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \lm{ n \in \mathbb{N}_{\infty,v_{p}} }'."\n".
@@ -1342,7 +1343,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  \in  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  n  \in  \mathbb{N}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Falls \lm{ n = 0 } oder \lm{ n = 1 }, gilt unmittelbar'."\n".
@@ -1374,7 +1375,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a_{1}, a_{2}, \cdots , a_{m}  \in  ω  =  \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  a_{1}, a_{2}, \cdots , a_{m}  \in  \mathbb{N}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'endliche Exponenten.'."\n".
@@ -1430,14 +1431,14 @@
                     'bezüglich der Ordnung von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Aus'."\n".
+                    'Aus \color{*Bearb}{(Label als Link auf identische Formel SN.PP.171)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'folgt unmittelbar, dass jeder endliche Anfangsabschnitt lückenlos in pr(P) enthalten ist.'."\n".
+                    'folgt unmittelbar, dass jeder endliche Anfangsabschnitt lückenlos in \lm{ \pr*( P_{ω} *) } enthalten ist.'."\n".
                     'Für jedes'."\n".
                     ''))),
                   array( 'equations',
