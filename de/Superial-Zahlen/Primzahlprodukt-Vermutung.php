@@ -1499,6 +1499,10 @@
                     '\bold{Beweis Lemma 4: Lückenabstiegsprinzip}'."\n".
                     ''))),
                   array( 'text', array( text => array(
+                    'Das folgende \bold{Unterlemma 4a} ist eine definierende Ordnungseigenschaft von \lm{ \mathbb{N}_{\infty,v_{p}} },'."\n".
+                    'während das \bold{Unterlemma 4b} ein Normalformprinzip des Primmonomrasters \lm{ \pr*( P_{ω} *) } ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     '\italic{\bold{Unterlemma 4a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -2292,7 +2296,10 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Dies ist keine Aussage der gewöhnlichen Ordinalarithmetik, sondern eine Aussage der erweiterten Ordinalarithmetik.'."\n".
+                      'Der Beweis zeigt:'."\n".
+                      'Wenn die Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} } mit den angegebenen Ordnungseigenschaften und Normalformen akzeptiert wird,'."\n".
+                      'dann folgt \lm{ \lpr*( ω\overline{\#} *) = ω } und über das kanonische Identitätsprinzip \lm{ ω = ω\overline{\#} }.'."\n",
+                        'Dies ist also keine Aussage der gewöhnlichen Ordinalarithmetik, sondern eine Aussage der erweiterten Ordinalarithmetik.'."\n".
                       'In dieser wird \lm{ ω } nicht nur als Ordnungstyp der vollständigen Induktion,'."\n".
                       'sondern zugleich als vollständiges Primfakultätsobjekt der endlichen Primzahlen verstanden.'."\n".
                       ''))),
