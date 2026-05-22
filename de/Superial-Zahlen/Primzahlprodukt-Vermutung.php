@@ -395,7 +395,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\, *[ v_{p}( n ) \; \text{existier und} \; v_{p}( n ) \in E_{\infty} *]  *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\, *[ v_{p}( n ) \; \text{existiert und} \; v_{p}( n ) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
@@ -458,7 +458,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Damit sichergestellt ist, dass die später verwendeten Lücken im nachfolgend definierten Primturm-Potenzraster Elemente von \lm{ \mathbb{N}_{\infty,v_{p}} } sind.'."\n",
-                      '\bold{4.Quotienten-Koinitialität}'."\n",
+                      '\bold{4. Quotienten-Koinitialität}'."\n",
                       'Sei die Menge der endlichen Vorgänger der Quotienten'."\n".
                     ''))),
                   array( 'equations',
