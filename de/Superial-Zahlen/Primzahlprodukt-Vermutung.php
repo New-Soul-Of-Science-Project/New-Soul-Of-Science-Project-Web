@@ -395,18 +395,99 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) *[ \exists v_{p}(n) \in E_{\infty} *]  *\}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\, *[ v_{p}( n ) \; \text{existier und} \; v_{p}( n ) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
                       'Wobei diese Bewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Dabei ist \lm{ \le_{\infty,v_{p}} } die kanonische Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathfrak{N}_{\infty,v_{p}}  :=  *( \mathbb{N}_{\infty,v_{p}} , \le_{\infty,v_{p}} , *( v_{p} *)_{p \in \mathbb{P}} *)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'welche die gewöhnliche Ordnung auf \lm{ \mathbb{N} } erweitert'."\n".
+                      'und die aktual unendlichen Quotientenbereiche der in \lm{ \mathbb{N}_{\infty,v_{p}} } enthaltenen'."\n".
+                      'vollständigen Primfakultät aller endlichen Primzahlen \lm{ P_{ω} := 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots } ordnet.'."\n",
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die entscheidenden Ordnungseigenschaften sind:'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{1. Erweiterung der endlichen Ordnung}'."\n",
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{N} *) *[  a \le_{\infty,v_{p}} b  \Leftrightarrow  a \le b  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit bleibt die gewöhnliche Ordnung der endlichen natürlichen Zahlen unverändert.'."\n",
+                      '\bold{2. Endliche Zahlen liegen unter aktual unendlichen Zahlen}'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{N} *) *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *[  a  \;\;\;<_{\infty,v_{p}}\;\;\;  x  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das entspricht der Definition der \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}:'."\n".
+                      'Aktual unendliche natürliche Zahlen liegen oberhalb jeder endlichen natürlichen Zahl.'."\n",
+                      '\bold{3. Existenz der Quotienten und ihrer endlichen Vorgänger}'."\n",
+                      'Seien'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Dann gilt für die Quotienten:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall d \in D_{\text{fin}} *) *[  \frac{ P_{ω} }{ d }  \in  \mathbb{N}_{\infty,v_{p}}  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Und für deren endliche Vorgänger:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall d \in D_{\text{fin}} *) *( \forall n \in \mathbb{N}_{>0} *) \\\ *[  0 \le_{\infty,v_{p}} \frac{ P_{ω} }{ d } - n  \Rightarrow  \frac{ P_{ω} }{ d } - n  \in  \mathbb{N}_{\infty,v_{p}}  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit sichergestellt ist, dass die später verwendeten Lücken im nachfolgend definierten Primturm-Potenzraster Elemente von \lm{ \mathbb{N}_{\infty,v_{p}} } sind.'."\n",
+                      '\bold{4.Quotienten-Koinitialität}'."\n",
+                      'Sei die Menge der endlichen Vorgänger der Quotienten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathcal{L}\!*( P_{ω} *)  :=  *\{  \frac{ P_{ω} }{ d } - n  *|*  d \in D_{\text{fin}} , n \in \mathbb{N}_{>0} , 0 \le_{\infty,v_{p}} \frac{ P_{ω} }{ d } - n  *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Für diese Vorgänger soll'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists \ell \in \mathcal{L}\!*( P_{ω} *) *) *[  \ell  \;\;\;\le_{\infty,v_{p}}\;\;\;  x  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'gelten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Dies alles haben wir konkret festgelegt, damit unser späteres Lückenargument besser kontrollierbar ist.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\italic{Notationsvereinbarung:}'."\n".
+                      'Auf \lm{ \mathbb{N}_{\infty,v_{p}} } bezeichnet \lm{ ≤ }, und vergleichbare Ordnungsrelationen, im Folgenden stets'."\n".
+                      'die Ordnung \lm{ \le_{\infty,v_{p}} }, oder vergleichbare Ordnungsrelationen, der Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} }.'."\n".
+                      'Ebenso ist jede Intervall-Menge \lm{ [a,b]_{\mathbb{N}_{\infty,v_{p}}} }, oder vergleichbare Intervall-Mengen-Schreibweisen, bezüglich dieser Ordnung zu verstehen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \lm{ n \in \mathbb{N}_{\infty,v_{p}} }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'on',  latex => '{  \pt(n)  :=  *\{  x  *|*  \begin{cases}  \;\, x = n  &  \text{ falls } \; n \in *\{ 0, 1 *\}  \\\\  \\\\  \!\!\! \begin{aligned} *( \forall n \in \mathbb{N}_\infty *) \qquad\quad\;\;\; \\\ *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{On} *) \;\, \\\ *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \qquad\;\;\;\; \\\ \qquad\;\; \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \, \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \; n \geq 2  \end{cases}  *\}  }'),
                       array( display => 'on',  latex => '{  \pt( n )  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0  \\\\  \varnothing \; ,  &  n = 1  \\\\  *\{ p^{v_{p}( n )} *|* p \in \mathbb{P} , 0 < v_{p}( n ) \in E_{\infty} *\} ,  &  n \geq 2  \end{cases}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pt( n )  :=  \begin{cases}  *\{ 0 *\} ,  &  n = 0  \\\\  \varnothing \; ,  &  n = 1  \\\\  *\{ p^{k} *|* p \in \mathbb{P} , k \in E_{\infty} , p^{k} \!\parallel\! n *\} ,  &  n \geq 2  \end{cases}  \;\; ,  }'),
@@ -1397,11 +1478,11 @@
                     'aktual unendlich.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Seien'."\n".
+                    'Seien \color{*Bearb}{(Formelnummer-Verweis auf Definition oben)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, \; \text{endlich}  *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'endliche einpotenzige Primzahlprodukte.'."\n".
@@ -1420,17 +1501,14 @@
                     '\italic{\bold{Unterlemma 4a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Dann ist die Menge der endlichen Vorgänger der Quotienten'."\n".
+                    'Nach der Definition der Ordnung \lm{ ≤_{\infty,v_{p}} } ist die Menge'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{L}\!*( P_{ω} *)  :=  *\{  \frac{ P_{ω} }{ d } - n  *|*  d \in D_{\text{fin}} , n \in \mathbb{N}_{>0} , 0 \le \frac{ P_{ω} }{ d } - n  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathcal{L}\!*( P_{ω} *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'koinitial im aktual unendlichen Bereich von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n",
-                      'Diese Koinitialität ist eine Ordnungseigenschaft von \lm{ \mathbb{N}_{\infty,v_{p}} }:'."\n".
-                    'Durch Division von \lm{ P_{ω} } durch endliche einpotenzige Primzahlprodukte werden die Quotienten'."\n".
-                    'samt ihrer endlichen Vorgänger in jedem aktual unendlichen Anfangsbereich erreicht.'."\n".
+                    'koinitial im aktual unendlichen Bereich von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Das heißt:'."\n".
