@@ -1248,7 +1248,11 @@
                       'Da \lm{ ω } die Menge der natürlichen Zahlen \lm{ \mathbb{N} } repräsentiert,'."\n".
                     'enthält es natürlich auch alle endlichen Primzahlen.'."\n".
                     'Die Mengen-Primfakultät der vollständigen Induktion \lm{ ω\overline{\#} } ist also das Produkt'."\n".
-                    'aller endlichen Primzahlen, wie schon gesagt.'."\n".
+                    'aller endlichen Primzahlen, wie schon gesagt.'."\n",
+                      'Nachfolgend zeigen wir zunächst, dass das lückenlose Primturm-Potenzraster der Mengen-Primfakultät'."\n".
+                    'der vollständigen Induktion tatsächlich den lückenlosen Anfang \lm{ ω } besitzt.'."\n".
+                    'Aus diesem Ergebnis leiten wir anschließend die Motivation des Identitätssatzes her,'."\n".
+                    'um verständlich zu machen, warum diese kanonische Identifikation in der erweiterten Ordinalarithmetik naheliegt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 1: Grenzübergangsprinzip der Primfakultät', subline =>
