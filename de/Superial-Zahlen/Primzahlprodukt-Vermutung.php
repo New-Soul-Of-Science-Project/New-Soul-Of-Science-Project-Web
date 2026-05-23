@@ -1706,10 +1706,11 @@
                     'Was wir zeigen wollten. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Herleitung der Identität von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
+                  'Herleitung und Motivation der Identifikation von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang ins Aktual-Unendliche zu \lm{ ω } betrachte:'."\n",
+                    'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang'."\n".
+                    'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte:'."\n",
                       'Als erstes sehen wir eine Entsprechung jeder endlichen natürlichen Zahl und ihrer Primturmzerlegung,'."\n".
                     'die wir sogleich als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -1721,8 +1722,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Primturmzerlegung von \lm{ ω } soll \lm{ ω } entsprechen, was ein Hinweis darauf ist,'."\n".
-                    'dass diese existiert und ebenso aus endlichen Primzahlen bestehen muss.'."\n",
-                      'Dann haben wir die Entsprechung einer jeden endlichen natürlichen Zahl und ihrem Primturm-Potenzrater,'."\n".
+                    'dass diese existiert und ebenso aus endlichen Primzahlen bestehen sollte;'."\n".
+                    'hier und nachfolgend noch im Sinne der kanonischen Entsprechung, nicht bereits als bewiesene Gleichheit.'."\n",
+                      'Dann haben wir die Entsprechung einer jeden endlichen natürlichen Zahl und ihrem Primturm-Potenzraster,'."\n".
                     'die wir auch als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
                   array( 'equations',
@@ -1802,20 +1804,31 @@
                     'der in seiner Mengendarstellung enthaltenen Vorgänger basiert.'."\n".
                     'Und in diesem Sinne basiert auch die Existenz von \lm{ ω } auf der Primfakultät'."\n".
                     'der in seiner Mengendarstellung enthaltenen Vorgänger.'."\n",
-                      'Zusammen mit den eben dargelegten Eigenschaften der Primturmzerlegung von \lm{ ω }'."\n".
-                    'kommen wir zu dem Schluss, dass die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} }'."\n".
-                    'nach dem Übergang zur Gleichheit wird und wir damit die Primturmzerlegung oder Primfaktorisierung'."\n".
-                    'in \lm{ ω\overline{\#} } gefunden haben.'."\n",
-                      'Diese Feststellung motiviert unseren nun auszuführenden \italic{Identitätssatz}.'."\n".
+                      'Zusammen mit den eben dargelegten Eigenschaften der Primturmzerlegung von \lm{ ω } motiviert dies den Schluss,'."\n".
+                    'die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} } im nächsten Schritt als kanonische Gleichheit'."\n".
+                    'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 2: Identitätssatz – Kanonisches Identitätsprinzip', subline =>
                     '')),
+                  array( 'text', array( text => array(
+                    'Diese vorstehende Feststellung motiviert die nun folgende Identifikationsregel:'."\n".
+                    ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn ein aktual unendliches natürliches Objekt durch sein Primzahl-Potenzraster'."\n".
+                      'Wenn ein aktual unendliches Objekt durch sein Primzahl-Potenzraster'."\n".
+                      'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
+                      'dieselbe kanonische Rolle erfüllt wie \lm{ ω }, und zugleich'."\n".
+                      'das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
+                      'dann wird es in der erweiterten Ordinalarithmetik mit \lm{ ω } identifiziert.'."\n".
+                      /*%!'Wenn das aktual unendliche Objekt \lm{ ω\overline{\#} } durch sein Primzahl-Potenzraster'."\n".
+                      'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
+                      'und dieselbe kanonische Rolle erfüllt wie \lm{ ω }'."\n".
+                      'und dieses Objekt zugleich das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
+                      'dann wird es in der erweiterten Ordinalarithmetik mit \lm{ ω } identifiziert.'."\n". */
+                      /*%! 'Wenn ein aktual unendliches natürliches Objekt durch sein Primzahl-Potenzraster'."\n".
                       'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
                       'und dieses Objekt zugleich das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
-                      'dann ist es mit \lm{ ω } zu identifizieren.'."\n".
+                      'dann ist es mit \lm{ ω } zu identifizieren.'."\n". */
                       ''))),
                   array( 'text', array( text => array(
                     'Seien'."\n".
