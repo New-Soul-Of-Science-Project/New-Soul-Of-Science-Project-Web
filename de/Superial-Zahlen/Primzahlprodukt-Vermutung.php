@@ -272,6 +272,7 @@
                     '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n".
                         'Alle natürlichen Zahlen \lm{ n \ge 2 }, die kleiner als eine bestimmte Primzahl \lm{ p } sind, lassen sich aus einem Produkt der Primzahlen bilden,'."\n".
                         'die kleiner als \lm{ p } sind.'."\n".
                         ''))),
@@ -281,7 +282,8 @@
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                        'Lässt sich eine natürliche Zahl \lm{ n \ge 2 } nicht aus einem Produkt von Primzahlen bilden, die kleiner sind als sie selber, dann ist es eine neue Primzahl.'."\n".
+                        'Lässt sich eine natürliche Zahl \lm{ n \ge 2 } nicht aus einem Produkt von Primzahlen bilden, die kleiner sind als sie selber, dann ist es eine neue Primzahl.'."\n",
+                          '\\\\'."\n".
                         ''))),
 
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -537,6 +539,7 @@
                   '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n".
                         'Die Primturmmenge \lm{ \pt(n) } der Primturmzerlegung einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
                         'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BijektiveFunktion:2023}.}'."\n".
                         'zwischen \lm{ n } und \lm{ \pt(n) }.'."\n".
@@ -648,6 +651,7 @@
                   '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n".
                         'Die Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
                         'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung'."\n".
                         'zwischen \lm{ n } und \lm{ \pr(n) }.'."\n".
@@ -1356,9 +1360,9 @@
                       'die bei der Definition des Primturm-Potenzrasters in Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr}'."\n".
                       'nachfolgend festgelegt wurde, um das Lückenargument besser kontrollierbar zu machen.'."\n".
                       ''))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  '1. Alle endlichen natürlichen Zahlen liegen im Raster', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{1. Alle endlichen natürlichen Zahlen liegen im Raster}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei'."\n".
                       ''))),
@@ -1429,9 +1433,9 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Der gesamte endliche Anfang liegt also lückenlos im Primzahl-Potenzraster von \lm{ P_{ω} }.'."\n".
                       ''))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  '2. Definition des lückenlosen Anfangs', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{2. Definition des lückenlosen Anfangs}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir verwenden nun die Definition des lückenlosen Anfangs'."\n".
                       ''))),
@@ -1452,8 +1456,8 @@
                       'bezüglich der Ordnung von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                    'Aus \color{*Bearb}{(Label als Link auf identische Formel SN.PP.171)}'."\n".
-                    ''))),
+                      'Aus \color{*Bearb}{(Label als Link auf identische Formel SN.PP.171)}'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  }'),
@@ -1480,15 +1484,15 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( P_{ω} *)  \;\; .  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  '3. Im aktual unendlichen Bereich treten Lücken auf', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{3. Im aktual unendlichen Bereich treten Lücken auf}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Es bleibt zu zeigen, dass kein aktual unendliches Element zu \lm{ \lpr*( P_{ω} *) } gehört.'."\n".
                       ''))),
-                  array( 'text', array( text => array(
-                    '\bold{Lemma 4: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{Lemma 4: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
+                      ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
@@ -1518,16 +1522,16 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    '\bold{Beweis Lemma 4: Lückenabstiegsprinzip}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{Beweis Lemma 4: Lückenabstiegsprinzip}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das folgende \bold{Unterlemma 4a} ist eine definierende Ordnungseigenschaft von \lm{ \mathbb{N}_{\infty,v_{p}} },'."\n".
                       'während das \bold{Unterlemma 4b} ein Normalformprinzip des Primmonomrasters \lm{ \pr*( P_{ω} *) } ist.'."\n".
                       ''))),
-                  array( 'text', array( text => array(
-                    '\italic{\bold{Unterlemma 4a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\italic{\bold{Unterlemma 4a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach der Definition der Ordnung \lm{ ≤_{\infty,v_{p}} } ist die Menge'."\n".
                       ''))),
@@ -1552,18 +1556,18 @@
                         '\\\\'."\n".
                       ''))),
 
-                  array( 'text', array( text => array(
-                    '\italic{\bold{Unterlemma 4b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\italic{\bold{Unterlemma 4b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
+                      ''))),
 
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall d \in D_{\text{fin}} *) *( \forall n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
 
-                  array( 'text', array( text => array(
-                    '\italic{\bold{Begründung Unterlemma 4b}}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\italic{\bold{Begründung Unterlemma 4b}}'."\n".
+                      ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
@@ -1616,9 +1620,9 @@
                         '\\\\'."\n".
                       ''))),
 
-                  array( 'text', array( text => array(
-                    '\italic{\bold{Fortsetzung des Beweises des Lemmas 4}}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\italic{\bold{Fortsetzung des Beweises des Lemmas 4}}'."\n".
+                      ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
@@ -1696,9 +1700,9 @@
                         '\\\\'."\n".
                       ''))),
 
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  '4. Ergebnis', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{4. Ergebnis}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir haben gezeigt:'."\n".
                       ''))),
@@ -1851,12 +1855,13 @@
                     ''))),
 
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Wenn ein aktual unendliches Objekt durch sein Primzahl-Potenzraster'."\n".
-                      'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
-                      'dieselbe kanonische Rolle erfüllt wie \lm{ ω }, und zugleich'."\n".
-                      'das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
-                      'dann wird es in der erweiterten Ordinalarithmetik mit \lm{ ω } identifiziert.'."\n".
-                      ''))),
+                        '\\\\'."\n".
+                        'Wenn ein aktual unendliches Objekt durch sein Primzahl-Potenzraster'."\n".
+                        'genau denselben größten lückenlosen Anfang besitzt wie \lm{ ω }, nämlich \lm{ ω } selbst,'."\n".
+                        'dieselbe kanonische Rolle erfüllt wie \lm{ ω }, und zugleich'."\n".
+                        'das kanonische vollständige einpotenzige Primzahlprodukt ist,'."\n".
+                        'dann wird es in der erweiterten Ordinalarithmetik mit \lm{ ω } identifiziert.'."\n".
+                        ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
@@ -1926,9 +1931,9 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sup_{ m < ω } \lpr*( P_{m} *)  =  ω  \;\; .  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Übergang ins Aktual-Unendliche', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{Übergang ins Aktual-Unendliche}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das aktual unendliche Primfakultätsobjekt wird als kanonischer Grenzübergang der endlichen Primfakultäten definiert:'."\n".
                       ''))),
@@ -2051,9 +2056,9 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \lpr*( ω\overline{\#} *)  =  ω  \;\;}  \;\; .  }'),
                     ))), */
-                  array( 'headline', array( headlineTag => 'h6', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Kanonisches Identitätsprinzip', subline =>
-                    '')),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{Kanonisches Identitätsprinzip}'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Ein aktual unendliches Objekt \lm{ x \in \mathbb{N}_{\infty,v_{p}} }'."\n".
                       'heißt kanonischer Primfakultätsvertreter von \lm{ ω }, wenn gilt:'."\n".
@@ -2096,10 +2101,13 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  *[ x = \lim\limits_{m \rightarrow ω}{ P_{m} } \land *( \forall p \in \mathbb{P} *) *( v_{p}*( x *) = 1 *) \\\ \qquad\qquad\quad\; \land \pt*( x *) = \mathbb{P} \land \lpr*( x *) = ω *]  \Rightarrow  x = ω  \;\; .  \;\;}  }'),
                     ))),
+
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Verifikation der Bedingungen des kanonischen Identitätsprinzips', subline =>
                     '')),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
                       'Setze'."\n".
                       ''))),
                   array( 'equations',
