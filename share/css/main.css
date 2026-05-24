@@ -14,24 +14,22 @@ html, body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
-body, div, h1, h2, h3, h4, h5, p, table, td, tr, ul {
+body, div, h1, h2, h3, h4, h5, h6, p, table, td, tr, ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* #: Allgemeiner Abstand nach rechts und links. */
-h1, h2, h3, h4, h5, p, table, td, tr, ul {
+h1, h2, h3, h4, h5, h6, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
 /* #: Schriftstärke der Überschriften und starker Schrift. */
-h1, h2, h3, h4, h5 {
-  /*font-weight: bold;*/
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 strong {
   font-style: inherit;
-  /*font-weight: bold;*/
   font-weight: 600;
 }
 
@@ -55,7 +53,10 @@ h4 {
   font-size: 13px;
 }
 h5 {
-	font-size: 10px;
+  font-size: 10px;
+}
+h6 {
+  font-size: 8px;
 }
 img {
 	border-style: solid;
@@ -182,7 +183,8 @@ a:hover {
 	.content h2,
 	.content h3,
   .content h4,
-	.content h5,
+  .content h5,
+  .content h6,
   .content input,
   .content p,
 	.content table,
@@ -199,30 +201,26 @@ a:hover {
 	.content table,
 	.content td,
 	.content ul {
-		/*font-size: 14px;*/
 		font-size: 16px;
-    /*line-height: 1.4em;*/
     line-height: 1.6em;
 	}
 	.content h1 {
-    /*font-size: 32px;*/
     font-size: 36px;
 	}
 	.content h2 {
-    /*font-size: 24px;*/
     font-size: 26px;
 	}
 	.content h3 {
-    /*font-size: 18px;*/
     font-size: 22px;
 	}
   .content h4 {
-    /*font-size: 16px;*/
     font-size: 18px;
   }
-	.content h5 {
-    /*font-size: 16px;*/
-    font-size: 15px;
+  .content h5 {
+    font-size: 17px;
+  }
+  .content h6 {
+    font-size: 16px;
 	}
 
   .content-horizontal-scrollable {

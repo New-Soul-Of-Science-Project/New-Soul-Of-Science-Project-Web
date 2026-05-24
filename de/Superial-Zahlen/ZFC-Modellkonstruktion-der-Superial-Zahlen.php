@@ -29,7 +29,7 @@
                       
                   array( 'text', array( text => array(
                     'Wir entwickeln die Superial-Zahlen von ihrer intuitiven Definition weiter, indem wir sie mit einer'."\n".
-                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) kompatibel ist.'."\n".
+                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}} kompatibel ist.'."\n".
                     'Dabei hab ich mich von einer Konversation mit ChatGPT inspirieren lassen, in der ein Vorschlag entstand,'."\n".
                     'wie eine sichere Fundierung der Superial-Zahlen aussehen kann.'."\n",
                       'Eine Unsicherheit besteht in der Definition unserer superialen Basis \lm{ \s } durch das unendlich große Produkt von Primzahlen'."\n".

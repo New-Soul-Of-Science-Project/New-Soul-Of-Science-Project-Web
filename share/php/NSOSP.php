@@ -185,6 +185,7 @@
   $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
   $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
   $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
+  $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
 
   $FrQFT_g_footnote_text_ActioUndReactio        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ActioUndReactio:2018}.';
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Aequivalenzprinzip2014}.';
@@ -351,6 +352,7 @@
   $SpaLeb_g_footnote_text_Biomechanik           = 'Internet: \\\\ Vgl. \cite{wiki:Biomechanik:2015}.';
   $SpaLeb_g_footnote_text_ErkenneDichSelbst     = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}, 1 Philosophie und Yoga, S. 4-6, hier S. 5. \\\\ Vgl. \cite{Kitzler:PhilosophieToGo:2015}, Selbsterkenntnis, S. 23-30. \\\\ Internet: \\\\ Vgl. \cite{wiki:GnothiSeauton:2015}.';
   $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \cite{wiki:LateralisationDesGehirns:2016}.';
+  $SpaLeb_g_footnote_text_Kundalini             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{YogaVidya:KundaliniYoga:2026}. \\\\ Vgl. \cite{Yogawiki:Kundalini:2025}.';
   $SpaLeb_g_footnote_text_LeibSeeleProblem      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Poser:DieVernuenftigGeordneteWelt:2016}, Monaden, S. 56-58. \\\\ Internet: \\\\ Vgl. \cite{wiki:PhilosophieDesGeistes:2015}.';
   $SpaLeb_g_footnote_text_Psyche                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2017}.';
   $SpaLeb_g_footnote_text_PsycheErlebUndVerhalt = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2015}, Definition und Allgemeines.';
@@ -952,7 +954,6 @@
   
   $nSOSp_g_formelName_FP_2 = 'FP.2';
   $nSOSp_g_formelName_FP_3 = 'FP.3';
-  $nSOSp_g_formelName_Un_10 = 'Un.10';
 
   $FrQFT_g_Ani_idx = 0;
   $FrQFT_g_Fig_idx = 0;
@@ -1295,37 +1296,6 @@
                   'OM:FrQFT:Gravitation:Traege-und-schwere-Masse-im-Gravitationsfeld' => array( headline_text => 'Träge und schwere Masse im Gravitationsfeld', headline_text_short => 'Träge und schwere Masse im Gravitationsfeld'),
                   'OM:FrQFT:Gravitation:Schwarze-Loecher' => array( headline_text => 'Schwarze Löcher', headline_text_short => 'Schwarze Löcher'),
                   'OM:FrQFT:Gravitation:Phaenomen-der-Dunkle-Materie-oder-MOND' => array( headline_text => 'Phänomen der Dunklen Materie oder MOND', headline_text_short => 'Phänomen der Dunklen Materie oder MOND'),
-                ),
-         ),
-  'OM:FrQFT:HeisenbergUnschaerfe' =>
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
-           titel => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'Die Formeln der Heisenbergsche Unschärferelation und das Plancksches Wirkungsquantum ergeben sich in der Quanten-Fluss-Theorie aus einem prinzipiellen Abzählproblem von fundamentalen Wirkungsquanten.',
-           keywords => '',
-           text_titel_h1 => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum',
-           text_titel_short => 'Heisenbergsche Unschärferelation',
-           text_undertitel_h2 => 'Ein prinzipielles Abzählproblem als neuer Zugang zur Vereinheitlichung der Physik',
-           text_titel_discr_h3 => 'Eine neue körnige Struktur von dynamischen Energieeinheiten und Masseneinheiten ist Grundlage der Quantenmechanik und Quantengravitation',
-           jump_ary => array(
-                  'OM:FrQFT:HeisenbergUnschaerfe:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                             
-                    'OM:FrQFT:HeisenbergUnschaerfe:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                  'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit' => array( headline_text => 'Energie und Zeit', headline_text_short => 'Energie und Zeit'),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.($FrQFT_g_Fig_idx = 1), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequAnzahlProZeit' => array( headline_text => 'Un.1'),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequenzWQZaehlen' => array( headline_text => 'Un.3'),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-DeltaFrequenzAusEinerProDeltaZeit' => array( headline_text => 'Un.4'),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen' => array( headline_text => 'Un.5'),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_Un_10),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14'),
-                  'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur' => array( headline_text => 'Energie und Zeit – Übergang zur Substruktur'/* , headline_text_short => '' */),
-                    'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung' => array( headline_text => 'Un.18'),
-                  'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort' => array( headline_text => 'Impuls und Ort', headline_text_short => 'Impuls und Ort'),
-                  'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik' => array( headline_text => 'Schlussfolgerung für die Quantenmechanik', headline_text_short => 'Schlussfolgerung für die Quantenmechanik'),
                 ),
          ),
   'OM:FrQFT:Lepton' =>
@@ -3163,7 +3133,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2026-04-23T21:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2026-05-24T13:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3358,7 +3328,7 @@
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.40-d20260423-t2100" target="_blank">v9.40</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.41-d20260524-t1300" target="_blank">v9.41</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3514,7 +3484,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 23. April 2026, 21:00 CET.'."\n";
+    echo $offset.'      Stand 24. Mai 2026, 13:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";

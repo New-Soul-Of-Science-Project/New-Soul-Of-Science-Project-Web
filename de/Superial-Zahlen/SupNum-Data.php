@@ -29,7 +29,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Im Folgenden bedeutet „Primzahl“ stets endliche Primzahl (das heißt eine Primzahl aus \lm{ \mathbb{Z} }).'."\n".
-                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual-unendliche Primzahl).'."\n".
+                    'Unter „superialer Primzahl“ verstehen wir ein Primelement in \lm{ \mathbb{S}_{\Z} } (aktual unendliche Primzahl).'."\n".
                     'Bewertungen \lm{ v_{p} }, Ideale \lm{ p \mathbb{S}_{\Z} } und alle Teilbarkeitsaussagen sind über endliche Primzahlen \lm{ p } indiziert.'."\n".
                     ''))),
                 ); */
@@ -395,25 +395,39 @@
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'Wir vermuten, dass \lm{ ω } die vollständige Primfakultät aller endlichen Primzahlen ist' , headline_text_short => 'Wir vermuten, dass ω die vollständige Primfakultät aller endlichen Primzahlen ist'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:omega-kann-nicht-einer-der-unendlich-grossen-Primzahltuerme' => array( headline_text => '\lm{ ω } kann nicht einer der unendlich großen Primzahltürme des Primzahl-Flächenprodukts sein'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'Wir vermuten, dass \lm{ ω } die vollständige Primfakultät aller endlichen Primzahlen ist',/* headline_text_short => 'X' */),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'SN.PP.6'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.7'),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid' => array( headline_text => 'Satz des Euklid'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid' => array( headline_text => 'Wissen: Zum ›Satz des Euklid‹'/* , headline_text_short => 'X'*/),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.34'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1' => array( headline_text => 'Lemma 1: Primfaktorinterval'/* , headline_text_short => 'X'*/),
+
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin' => array( headline_text => 'SN.PP.23'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp' => array( headline_text => 'SN.PP.28'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n' => array( headline_text => 'SN.PP.43'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr' => array( headline_text => 'SN.PP.44'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.45'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.46'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-lpr-n' => array( headline_text => 'SN.PP.47'),
+
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.89'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.131'),
+
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
+
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.132'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.136'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.137'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega' => array( headline_text => 'SN.PP.164'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.171'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.172'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.173'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.174'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.121'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1' => array( headline_text => 'SN.PP.123'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.124'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.125'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.170'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.199'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.233'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.234'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.235'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.238'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Bewertung-s-ist-omega' => array( headline_text => 'SN.PP.239'),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis' => array( headline_text => 'Interpretation des Beweises'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.Prim.4'),
