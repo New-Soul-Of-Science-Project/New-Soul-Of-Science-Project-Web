@@ -35,7 +35,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                'Einleitung: Ursprung der Vermutung', subline =>
+                'Einleitung und Ursprung der Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
@@ -162,7 +162,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Wissen: Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
+                'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.}'."\n".
@@ -212,7 +212,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
-                'Wissen: Zum ›Satz des Euklid‹', subline =>
+                'Zum ›Satz des Euklid‹', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis des ›Satz des Euklid‹'."\n".
@@ -307,7 +307,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Wissen: Unser Einstieg über die Primfakultät', subline =>
+                'Unser Einstieg über die Primfakultät', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Berechnen wir Beispielhaft das Produkt der endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# },'."\n".
@@ -331,7 +331,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Wissen: Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge', subline =>
+                'Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}, und in erweiterter Form die \jump{OM:BiOrd:Home}{Biordinalzahlen},'."\n".
