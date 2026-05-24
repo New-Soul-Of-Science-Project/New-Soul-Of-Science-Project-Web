@@ -445,7 +445,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  \;\; .  }',
+                                          label_name => 'OOM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann gilt für die Quotienten:'."\n".
@@ -1428,7 +1429,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  \;\; .  }'),
+                      array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  \;\; .  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Der gesamte endliche Anfang liegt also lückenlos im Primzahl-Potenzraster von \lm{ P_{ω} }.'."\n".
@@ -1456,11 +1458,12 @@
                       'bezüglich der Ordnung von \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Aus \color{*Bearb}{(Label als Link auf identische Formel SN.PP.171)}'."\n".
+                      'Aus'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  }'),
+                      array( display => 'on',  latex => '{  ω  \subseteq  \pr*( P_{ω} *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'folgt unmittelbar, dass jeder endliche Anfangsabschnitt lückenlos in \lm{ \pr*( P_{ω} *) } enthalten ist.'."\n".
@@ -1506,11 +1509,12 @@
                       'aktual unendlich.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Seien \color{*Bearb}{(Formelnummer-Verweis auf Definition oben)}'."\n".
+                      'Seien'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  }'),
+                      array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'endliche einpotenzige Primzahlprodukte.'."\n".
@@ -1831,7 +1835,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \neq  \lpr\!*( n *)  *]  }',
-                      //                     label_text => '\jumpname{XXX}', label_incr => false),
+                      //                     label_text => '\jumpname{X}', label_incr => false),
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  n  \neq  \lpr\!*( n\overline{\#} *)  *]  }'),
                     ))),
                   array( 'text', array( text => array(
