@@ -574,15 +574,16 @@
                 'Definition: Das Primturm-Potenzraster', subline =>
                   'Die Erweiterung der Primturmzerlegung zu einem Potenzrasters oder Potenzspektrum')),
                   array( 'text', array( text => array(
-                    'Die Menge der Anzahl der ersten \lm{ n } natürlichen Zahlen, von der Null an,'."\n".
-                    'stellt den Zählaspekt der Zahl \lm{ n } dar, also die Menge an Zahlen, die bis zu ihr erzeugt werden.'."\n",
+                    'Im Rahmen der Mengendarstellung der Ordinalzahlen wird jede endliche natürliche Zahl  \lm{ n }, von der Null an,'."\n".
+                    'durch eine Menge repräsentiert, die all ihre Vorgänger enthält.'."\n".
+                    'Dies stellt den Zählaspekt dieser Zahlen dar, also auch die Anzahl an Zahlen in dieser Menge, die ihrem Wert entspricht.'."\n",
                       'Deren Primturmzerlegung \lm{ \pt(n) } ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
                     'darstellt.'."\n".
                     'Sie bezieht sich aber nicht direkt auf die Erzeugung einer Menge – ein Spektrum oder Raster – natürlicher Zahlen, die mit ihrer'."\n".
                     'Primturmzerlegung in Verbindung stehen, also die durch die in ihr enthaltenen Primzahltürme erzeugt werden.'."\n",
                       'Diese Menge möchte ich nun vorstellen und nenne sie das \italic{Primturm-Potenzraster}.'."\n",
-                      'Beim Primturm-Potenzraster geht es darum zu analysieren, welche anderen natürliche Zahlen sich mit'."\n".
-                    'den in einer natürlichen Zahl vorhandenen Primzahltürmen durch Variation ihrer Potenzen darstellen lassen.'."\n".
+                      'Beim Primturm-Potenzraster geht es darum zu analysieren, welche anderen natürliche Zahlen sich, mit'."\n".
+                    'den in einer natürlichen Zahl vorhandenen Primzahltürme, durch Variation ihrer Potenzen darstellen lassen.'."\n".
                     'Denn es geht im Besonderen in einem zweiten Schritt darum, mit einer natürlichen Zahl ein Raster zu beschreiben, das zeigt,'."\n".
                     'wie vollständig sich die natürlichen Zahlen, von der Null an, mit der Variation der Potenzen ihrer Primzahltürme'."\n".
                     'beschreiben lassen.'."\n",
@@ -593,19 +594,19 @@
                     'Reduzieren wir also einen Primzahlturm auf seine Primzahlbasis, dann eliminieren wir einen essenziellen Teil'."\n".
                     'seiner Eigenschaften, seines Charakters.'."\n",
                       'Würden wir in dem Fall also nur die einzelnen Primfaktoren berücksichtigen und in ihrer Potenz variieren,'."\n".
-                    'dann erhielten wir aufgrund der Reduktion der Primzahlpotenzen auf ihre Primzahlbasis Doppeldeutigkeiten,'."\n".
+                    'dann erhielten wir, aufgrund der Reduktion der Primzahlpotenzen auf ihre Primzahlbasis, Doppeldeutigkeiten,'."\n".
                     'die eine vollständige und damit differenzierte Beschreibung der möglichen Spektren oder Raster unmöglich machen.'."\n".
                     'So gesehen ist die Variation von Primzahltürmen keine Willkür, sondern zwingend, um Eineindeutigkeit zwischen'."\n".
                     'der Menge des jeweiligen Primturm-Potenzrasters und der natürlichen Zahl, die es beschreibt, zu gewährleisten.'."\n",
-                      'Zur Definition der Menge des Primturm-Potenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
-                    'endlicher und aktual unendlicher natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir im Folgenden also die Menge der Primfaktoranteile'."\n".
-                    'einer solchen Zahl.'."\n".
+                      'Zur Definition der Menge des Primturm-Potenzrasters einer Zahl \lm{ n } und der Berechnung der lückenlosen Intervall-Menge'."\n".
+                    'endlicher und aktual unendlicher natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir im Folgenden also die Menge'."\n".
+                    'der Primturmzerlegung \lm{ \pt( n ) } dieser Zahl.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ \pr(n) } das Primturm-Potenzraster beziehungsweise die unendliche Primturm-Potenzraster-Menge,'."\n".
-                      'erzeugt aus ihrem \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen oder aktual unendlichen natürlichen Parameter \lm{ n \in \mathbb{N}_\infty }},'."\n".
+                      'erzeugt aus ihrem endlichen oder aktual unendlichen natürlichen Parameter \lm{ n \in \mathbb{N}_{\infty,v_{p}} },'."\n".
                       'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primzahltürme enthält,'."\n".
                       'wobei die Null und die Eins dazu genommen werden:'."\n".
                       ''))),
@@ -653,7 +654,7 @@
 
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n".
-                        'Die Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
+                        'Das Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
                         'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung'."\n".
                         'zwischen \lm{ n } und \lm{ \pr(n) }.'."\n".
                         ''))),
@@ -1024,7 +1025,7 @@
                     'bevor in Bezug auf das Zählen diese Primzahl als  neue Zahl zur Menge, und damit zu diesem Produkt, hinzukommt.'."\n".
                     'Das lückenlose Primturm-Potenzraster  \lm{ \lpr*( p_i\overline{\#} *) } der Mengen-Primfakultät \lm{ p_i\overline{\#} } der Menge einer Primzahl \lm{ p_i }'."\n".
                     'ist also die größte Menge mit natürlichen Zahlen \lm{ 0 \leq x < p_i },'."\n".
-                    'die durch ihr Primturm-Potenzraster aller kleineren Primzahlen \lm{ p < p_i } in dieser Menge lückenlos dargestellt wird.'."\n".
+                    'die durch ihr Primturm-Potenzraster aller kleineren Primzahlen \lm{ p_{< i} < p_{i} } in dieser Menge lückenlos dargestellt wird.'."\n".
                     'Dieses spezielle \italic{lückenlose Primturm-Potenzraster einer Primzahl} entspricht also auch eben dieser Mengen-Primfakultät.'."\n".
                     ''))),
 
@@ -1415,7 +1416,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'gilt, kommen alle Primzahlen \lm{ p_{i} } als Primtürme im Raster von \lm{ P_{ω} } vor.'."\n".
-                      'Da außerdem alle endlichen Exponenten in \lm{ E_{\infty} } enthalten sind, kann \lm{ n } als Element von \lm{ \pr*( P_{ω} *) } erzeugt werden.'."\n".
+                      'Da außerdem alle endlichen Exponenten in \lm{ E_{\infty,\pt( P_{ω} )} } enthalten sind, kann \lm{ n } als Element von \lm{ \pr*( P_{ω} *) } erzeugt werden.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Also gilt'."\n".
@@ -1485,7 +1486,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( P_{ω} *)  \;\; .  }'),
+                      array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( P_{ω} *)  \;\; .  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{3. Im aktual unendlichen Bereich treten Lücken auf}'."\n".
@@ -1524,7 +1526,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{Beweis Lemma 4: Lückenabstiegsprinzip}'."\n".
@@ -1690,14 +1693,16 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  \;\; .  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was der Beweis für das gesamte \bold{Lemma 4} ist und damit für'."\n".
+                      'Was der Beweis für das gesamte \bold{Lemma 4} und damit für unser Lückenabstiegsprinzip'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ist. \lm{ \blacksquare }'."\n",
@@ -1712,14 +1717,16 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( P_{ω} *)  }'),
+                      array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( P_{ω} *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daher gilt'."\n".
