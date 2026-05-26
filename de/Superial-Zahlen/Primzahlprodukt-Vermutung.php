@@ -1309,7 +1309,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  \;\; .  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
 
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -1748,7 +1749,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \lpr*( ω\overline{\#} *)  =  ω  \;\;}  \;\; .  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Was wir zeigen wollten. \lm{ \blacksquare }'."\n",
@@ -1760,7 +1761,8 @@
                     '')),
                   array( 'text', array( text => array(
                     'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang'."\n".
-                    'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte:'."\n",
+                    'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte;'."\n".
+                    'hier und nachfolgend noch im Sinne der kanonischen Entsprechung, nicht bereits als bewiesene Gleichheit:'."\n",
                       'Als erstes sehen wir eine Entsprechung jeder endlichen natürlichen Zahl und ihrer Primturmzerlegung,'."\n".
                     'die wir sogleich als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -1772,8 +1774,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Primturmzerlegung von \lm{ ω } soll \lm{ ω } entsprechen, was ein Hinweis darauf ist,'."\n".
-                    'dass diese existiert und ebenso aus endlichen Primzahlen bestehen sollte;'."\n".
-                    'hier und nachfolgend noch im Sinne der kanonischen Entsprechung, nicht bereits als bewiesene Gleichheit.'."\n",
+                    'dass diese existiert und ebenso aus endlichen Primzahlen bestehen sollte.'."\n",
                       'Dann haben wir die Entsprechung einer jeden endlichen natürlichen Zahl und ihrem Primturm-Potenzraster,'."\n".
                     'die wir auch als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -1815,7 +1816,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die entstehenden Primzahlen \lm{ p_{i} } sammeln in ihrer Mengendarstellung beim Größerwerden von \lm{ i }'."\n".
-                    'nach und nach alle Primzahlen \lm{ p_{i - k} }, mit \lm{ k > 0 }, ein.'."\n".
+                    'nach und nach alle Primzahlen \lm{ p_{< i} } ein.'."\n".
                     'Dies führt beim Übergang zu einer Menge aller endlichen natürlichen Zahlen, die alle endlichen Primzahlen enthält,'."\n".
                     'nämlich zu \lm{ ω } selbst'."\n".
                     ''))),
@@ -1853,7 +1854,7 @@
                     'Es wird sichtbar, dass die Existenz jeder Primzahl auf der Primfakultät'."\n".
                     'der in seiner Mengendarstellung enthaltenen Vorgänger basiert.'."\n".
                     'Und in diesem Sinne basiert auch die Existenz von \lm{ ω } auf der Primfakultät'."\n".
-                    'der in seiner Mengendarstellung enthaltenen Vorgänger.'."\n",
+                    'der in seiner Mengendarstellung enthaltenen endlichen Vorgänger-Primzahlen.'."\n",
                       'Zusammen mit den eben dargelegten Eigenschaften der Primturmzerlegung von \lm{ ω } motiviert dies den Schluss,'."\n".
                     'die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} } im nächsten Schritt als kanonische Gleichheit'."\n".
                     'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
@@ -1908,7 +1909,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( P_{m} *)  =  p_{m}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \lpr*( P_{m} *)  =  p_{m}  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-m-ist-p-m', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-m-ist-p-m}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\lm{ p_{m} } als Mengendarstellung der Ordinalzahl gesehen.'."\n",
@@ -1926,7 +1928,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( P_{m} *)  =  p_{m}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \lpr*( P_{m} *)  =  p_{m}  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-m-ist-p-m}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da die endlichen Primzahlen in \lm{ ω } unbeschränkt sind, gilt:'."\n".
@@ -2434,11 +2437,10 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Beweisstruktur verwendet keine speziellen Eigenschaften von \lm{ \s };'."\n".
-                      'der letzte Gleichheitsschritt bleibt aber eine kanonische Identifikation der erweiterten Ordinalarithmetik.'."\n".
-                      'Diese Aussage gilt also unabhängig von der Theorie der Superial-Zahlen;'."\n".
-                      'sie ist aber keine Gleichheit der gewöhnlichen Ordinalarithmetik,'."\n".
-                      'sondern eine kanonische Identifikation der erweiterten Theorie.'."\n".
+                      'Die Beweisstruktur verwendet keine speziellen Eigenschaften der superialen Basis \lm{ \s };'."\n".
+                      'diese Aussage gilt also unabhängig von der Theorie der Superial-Zahlen.'."\n".
+                      'Der letzte Gleichheitsschritt ist eine kanonische Identifikation der so erweiterten Ordinalarithmetik,'."\n".
+                      'ist also keine Gleichheit der gewöhnlichen Ordinalarithmetik.'."\n".
                       ''))),
  
                   array( 'text', array( text => array(
