@@ -42,7 +42,7 @@
                       'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n".
                     'Dies ist genauso wie bei den endlichen natürlichen Zahlen und den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
                     'Und unsere aktual unendliche superiale Basis \lm{ \s } ist sogar vom Wert her gleich der besonderen Ordinalzahl \lm{ ω^{ω} }.'."\n".
-                    'Denn wir finden über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} heraus, dass \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{\lm{ \s = ω^{ω} } ist}.'."\n".
+                    'Denn wir finden über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} heraus, dass \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}{\lm{ \s = ω^{ω} } ist}.'."\n".
                     'Und auch noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{weitere Eigenschaften verbinden beide Zahlenarten}.'."\n".
                     'Nur haben die Superial-Zahlen im Gegensatz zu den Ordinalzahlen unter anderem den Vorteil, dass wir in ihnen beliebig vorwärts und rückwärts zählen können,'."\n".
                     'was wir für die Integration benötigen.'."\n".
@@ -944,13 +944,13 @@
                       array( display => 'on', latex => '{  \Rightarrow  \nexists \, \mathrm{groesstes}(\mathbb{N})  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Jedoch kann die Anzahl der Elemente in \lm{ \mathbb{N} } nach den Definitionen \jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}'."\n".
+                    'Jedoch kann die Anzahl der Elemente in \lm{ \mathbb{N} } nach den Definitionen \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}'."\n".
                     'mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  :=  \#\mathbb{N}  }',
-                                               label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \#\mathbb{N}  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  -ω  <  a  <  ω  *]  }'),
