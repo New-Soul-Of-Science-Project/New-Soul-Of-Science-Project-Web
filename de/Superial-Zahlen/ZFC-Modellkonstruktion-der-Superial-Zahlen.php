@@ -123,6 +123,7 @@
                     'was bedeutet, dass die \lm{ p }-adische Bewertung von \lm{ \s } in Bezug auf jede endliche Primzahl'."\n".
                     'den Wert \lm{ ω } hat.'."\n",
                       'So gesehen erscheint der Übergang von \lm{ ω } zu \lm{ \s } als eine natürliche nächste Erweiterung.'."\n".
+                    'Der Zusammenhang \lm{ \s = ω^{ω} } ist aufgrund seiner Erkenntnisbedeutung auch Thema des Theorielogos.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Anmerkung:}'."\n".
