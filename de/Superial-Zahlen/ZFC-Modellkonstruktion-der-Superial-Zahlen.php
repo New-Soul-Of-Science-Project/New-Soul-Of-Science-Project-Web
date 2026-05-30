@@ -129,7 +129,7 @@
                     'Auf dieser Seite und in der ganzen Arbeit zu den Superial-Zahlen wird \lm{ ω } nicht als die aus'."\n".
                     'ZFC bekannte Ordinaleinheit, sondern als die durch den Beweis der ›Primzahlprodukt-Vermutung‹'."\n".
                     'zum Primfakultätsobjekt erweiterte Ordinaleinheit gesehen, aber weiterhin mit \lm{ ω } bezeichnet.'."\n".
-                    'Für diese erweiterte Lesart von \lm{ ω } ist die im Beweis festgelegte Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} },'."\n".
+                    'Für diese erweiterte Lesart von \lm{ ω } ist die im Beweis festgelegte Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} }'."\n".
                     'maßgeblich, mit ihren \lm{ p }-adischen Bewertungen, Ordnungseigenschaften und Normalformen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg', text =>
@@ -265,7 +265,8 @@
                           '(Das Cauchy-Produkt ist wohldefiniert, weil die Supportbedingungen der Hahn-Reihen die relevanten Koeffizientensummen kontrollieren.)',
                         '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\'."\n".
                           '\lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft.'."\n".
-                          'Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein.',
+                          'Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein,'."\n".
+                          'siehe Kapitel \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}‹}',
                         '\bold{Feld­axiome:} \\\\'."\n".
                           'Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
                         '\bold{Division:} \\\\'."\n".
@@ -274,7 +275,8 @@
                           'Wie \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen},'."\n".
                           'gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
                         '\bold{Primfaktorzerlegung:} \\\\'."\n".
-                          '\lm{ \s } und alle anderen natürlichen Superial-Zahlen können in endliche und aktual unendliche superiale Primfaktoren zerlegt werden.',
+                          '\lm{ \s } und alle anderen natürlichen Superial-Zahlen können, wie im Kapitel \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:PrimSZ}‹}'."\n".
+                          'gezeigt wird, in endliche und aktual unendliche superiale Primfaktoren zerlegt werden.',
                     ))),
                   array( 'text', array( text => array(
                     'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
