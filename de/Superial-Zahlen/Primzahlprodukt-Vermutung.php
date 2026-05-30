@@ -2410,7 +2410,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall p \in \mathbb{P} *) *[  v_{p}*( ω *)  =  1  *]  \;\;} \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall p \in \mathbb{P} *) *[  v_{p}*( ω *)  =  1  *]  \;\;} \;\; ,  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'erhalten wir eine ZFC-konform\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}'."\n".
@@ -2453,14 +2454,14 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'So ist nun auch klar, dass'."\n".
+                      'So ist nun auch klar, dass nach Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \s  =  ω^{ω}  \;\;}  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \boxed{\;\;  v_{p}( \s )  =  ω  \;\;}  \;\;,  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Bewertung-s-ist-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Bewertung-s-ist-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  v_{p}( \s )  =  ω  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'wodurch wir auch ein genaueres Bild von \lm{ \s } bekommen.'."\n",
@@ -2939,7 +2940,7 @@
                       '\color{*Bearb}{(Nicht ganz sicher ist für mich, ob die Potenzen mit Differenzen wirklich dazu gehören. Gehören sie dazu, dann wären es nicht nur die ordinalen Limeszahlen, sondern wohl Zahlen die aus den Biordinalzahlen als Potenzen entspringen. !!! Nach der jetzigen Definition gehören diese Potenzen nicht dazu !!!)}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Teile davon können wir nun wegen unseres Beweises durch Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
+                      'Teile davon können wir nun wegen unseres Beweises durch Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
                       'auch mit \lm{ \s } ausdrücken:'."\n".
                       ''))),
                   array( 'equations',
@@ -2990,7 +2991,7 @@
                 'Die Größenordnung und Struktur von \lm{ \s } und \lm{ \s^{-1} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
+                    'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
                     'offenbart einen tiefen Zusammenhang zwischen \lm{ \s } und \lm{ ω }.'."\n".
                     'Auch der Kehrwert von \lm{ \s } lässt sich so einfach mit \lm{ ω }'."\n".
                     'ausdrücken:'."\n".
@@ -3003,7 +3004,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'ist, dann ist die Körnung der von uns definierten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitung}'."\n".
@@ -3042,8 +3043,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  ω \cdot ω^{ω - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  2^{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots  }'),
@@ -3531,10 +3532,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
-                                               label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
-                                               label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\const{SupNum_g_text_ZFCkonform}'."\n",

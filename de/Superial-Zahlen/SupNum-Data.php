@@ -284,12 +284,9 @@
 
           'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
             'OM:SupNum:Einleitung:Vortext:Definition-von-s' => array( headline_text => 'Die Definition von \lm{ \s }',/* headline_text_short => 'X' */),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.24'),
-            'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.25'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.26'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.Ein.27'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.28'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.29'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.Ein.25'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.26'),
+            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.27'),
 
           'OM:SupNum:Einleitung:Vortext:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', headline_text_short => 'Die Veränderung der Primfaktorzerlegung von s durch rationale Koeffizienten'),
 
@@ -430,8 +427,7 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.228'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.229'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.230'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.233'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Bewertung-s-ist-omega' => array( headline_text => 'SN.PP.234'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.232'),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis' => array( headline_text => 'Interpretation des Beweises'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.Prim.4'),
@@ -595,9 +591,14 @@
       text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                   
+
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.ZFC.1'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.ZFC.2'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.ZFC.3'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.ZFC.7'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega' => array( headline_text => 'SN.ZFC.8'),
+
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega' => array( headline_text => 'SN.ZFC.6'),
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s' => array( headline_text => 'Tiefere Betrachtung der Potenzen von \lm{ \s }'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),

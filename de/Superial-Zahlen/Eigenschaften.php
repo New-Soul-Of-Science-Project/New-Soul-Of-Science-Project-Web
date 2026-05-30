@@ -318,7 +318,7 @@
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Demnach hat \lm{ \s } also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n".
                     'Interessanterweise ist das \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{ebenso, wie bei \lm{ ω^{ω} } innerhalb der Ordinalzahlen},'."\n".
-                    'obwohl es sich trotz \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{gleicher Werte \lm{ \s = ω^{ω} } um unterschiedliche Strukturen} handelt.'."\n".
+                    'obwohl es sich trotz \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}{gleicher Werte \lm{ \s = ω^{ω} } um unterschiedliche Strukturen} handelt.'."\n".
                     'Die Anzahl der Vorgänger von \lm{ \s } ist dann:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
@@ -393,12 +393,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => true),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'off', latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
+                      'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
                         '\\\\'."\n".
                       ''))),
                       
@@ -413,7 +413,7 @@
                   array( 'text', array( text => array(
                     'Und wir können sogar noch weiter gehen als im vorherigen Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
                     'und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
-                    'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
+                    'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
                     'in \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
                     'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
@@ -592,7 +592,7 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
@@ -1084,7 +1084,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'In der echten Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlEchteKlasse}} hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
@@ -1197,7 +1197,7 @@
                     'Ordinalzahlen, die dazu gemacht sind, solche Zusammenhänge über die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'der natürlichen Zahlen auszudrücken.'."\n".
                     'Nur, dass der Wert ohne die Biordinalzahlen bisher nicht ausgedrückt werden konnte, was nun möglich ist.'."\n",
-                      'Aus der Wertgleichheit beider Werte in der Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
+                      'Aus der Wertgleichheit beider Werte in der Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
                     'folgt dann'."\n".
                     ''))),
                   array( 'equations',
@@ -1838,7 +1838,7 @@
                       array( display => 'on',  latex => '{  ω  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots  }'),

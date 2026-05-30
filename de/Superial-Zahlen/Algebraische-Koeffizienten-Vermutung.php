@@ -889,12 +889,12 @@
                       array( display => 'on',  latex => '{  \mathrm{P}(a)  :=  \pm \prod_{\substack{p \in \mathbb{P}}} p^{\!\mathrm{V}_{\!p}(a)}  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'sowie das Basiselement, wie bereits aus Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega} bekannt,'."\n".
+                      'sowie das Basiselement, wie bereits aus Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega} bekannt,'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  \prod_{\substack{p \in \mathbb{P}}} p^{ω}  \;\; .  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
