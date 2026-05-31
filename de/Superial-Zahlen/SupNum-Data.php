@@ -597,6 +597,7 @@
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.ZFC.3'),
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.ZFC.7'),
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega' => array( headline_text => 'SN.ZFC.8'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.13'),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s' => array( headline_text => 'Tiefere Betrachtung der Potenzen von \lm{ \s }'/* , headline_text_short => 'X'*/),

@@ -158,7 +158,8 @@
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}((\s^{\Gamma}))  }'),
                       array( display => 'on',  latex => '{  \Gamma  :=  \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  \;\; ,  }',
+                                          label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'wenn \lm{ \mathbb{A}_{\R} } das Koeffizientenfeld der reell algebraischen Zahlen und'."\n".
@@ -167,7 +168,6 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \mathbb{Z}}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\; \underbrace{ \operatorname{supp} f := *\{ k *|* a_k \neq 0 *\} }_{\text{ist wohlgeordnet}}  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\,  \;\land\; \underbrace{\exists n \in \mathbb{Z}:\; \operatorname{supp} f \subseteq ( -\infty, n ]}_{\text{oben endlich}}  *\}  }'),
                       array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \mathbb{Z}}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\; \underbrace{ \operatorname{supp} f := *\{ k *|* a_k \neq 0 *\} }_{\text{ist reverse-wohlgeordnet}}  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\,  \;\land\; \underbrace{\exists n \in \mathbb{Z}:\; \operatorname{supp} f \subseteq \; ] \! -\!\infty, n ]}_{\text{oben endlich}}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -182,6 +182,61 @@
                     'Damit können wir die Algebra sauber definieren, ohne etwas zu fordern, was ZFC nicht als Element kennt.'."\n".
                     'Die Hahn-Reihe liefert den geordneten Körper; die \lm{ p }-adische Interpretation von \lm{ \s } liefert zusätzlich'."\n".
                     'die gewünschte Primfaktorwirkung.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg', text =>
+                      
+                'Die Superial-Struktur \lm{ \mathfrak{S} } als geordneter bewerteter Körper', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir definieren die Superial-Struktur des geordneten bewerteten Körpers der Superial-Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *( \mathbb{S} , + , \cdot , < , \s , \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der Hahn-Reihen-Körper,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist das ausgezeichnete unendlich große Monom,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{ord}_{\s}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist die Schichtbewertung nach dem größten vorkommenden \lm{ \s }-Exponenten, und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( v_{p} *)_{p \in \mathbb{P}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist die zusätzliche \lm{ p }-adische Bewertungsinterpretation mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Familie \lm{ *( v_{p} *)_{p \in \mathbb{P}} } bezieht sich zunächst auf die endlichen klassischen Primzahlen'."\n".
+                    'und kodiert die Primfaktorwirkung der superialen Basis \lm{ \s }.'."\n".
+                    'Für die spätere Theorie der superialen Primzahlen kann diese Bewertungsfamilie zu einer Familie'."\n".
+                    '\lm{ *( v_{\mathfrak{p}} *)_{\mathfrak{p} \in \mathbb{S}_{\P}} } entlang der superialen Primzahlen'."\n".
+                    'erweitert beziehungsweise ergänzt werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
