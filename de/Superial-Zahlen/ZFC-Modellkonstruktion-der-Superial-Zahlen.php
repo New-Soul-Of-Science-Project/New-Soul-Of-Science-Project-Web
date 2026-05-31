@@ -183,7 +183,7 @@
                     'Die Hahn-Reihe liefert den geordneten Körper; die \lm{ p }-adische Interpretation von \lm{ \s } liefert zusätzlich'."\n".
                     'die gewünschte Primfaktorwirkung.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
                 'Die Superial-Struktur \lm{ \mathfrak{S} } als geordneter bewerteter Körper', subline =>
                   '')),
