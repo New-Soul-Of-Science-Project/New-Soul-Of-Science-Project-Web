@@ -238,64 +238,18 @@
                     '\lm{ *( v_{\mathfrak{p}} *)_{\mathfrak{p} \in \mathbb{S}_{\P}} } entlang der superialen Primzahlen'."\n".
                     'erweitert beziehungsweise ergänzt werden.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl', text =>
                       
                 'Die Erzeugungsanzahl', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'In dieser Arbeit unterscheiden wir zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n",
-                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
-                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
-                    'wenn diese Erzeugung relativ zur vollständigen Induktion beziehungsweise zur superialen Basis betrachtet wird.'."\n",
-                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
-                    'schreiben wir auch kurz'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dabei ist \lm{ \overline{\#}_{\mathrm{erz}} } \italic{nicht mit der gewöhnlichen Mächtigkeit gleichzusetzen}.'."\n".
-                    '\italic{Vielmehr beschreibt} \lm{ \overline{\#}_{\mathrm{erz}}( A ) } die kombinatorische Anzahl'."\n".
-                    'der Elemente von \lm{ A } innerhalb der jeweils zugrunde gelegten Erzeugungsstruktur.'."\n",
-                      'Für die endlichen natürlichen Zahlen gilt im Sinne der vollständigen Induktion:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( \mathbb{N} )  =  ω  \;\; .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die gewöhnliche Mengenlehre erfasst die Größe von \lm{ \mathbb{N} } über dessen Mächtigkeit.'."\n".
-                    'Die hier verwendete Erzeugungsanzahl betrachtet jedoch zusätzlich die arithmetische'."\n".
-                    'und kombinatorische Struktur, durch die die betreffenden Objekte erzeugt werden.'."\n",
-                      'Insbesondere soll die Erzeugungsanzahl später dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
-                    'und unterschiedlicher Erzeugungskombinatorik zu unterscheiden.'."\n".
-                    'So können Mengen gleicher Mächtigkeit im Sinne von ZFC dennoch verschiedene Erzeugungsanzahlen besitzen,'."\n".
-                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion beziehungsweise'."\n".
-                    'aus der superialen Struktur hervorgehen.'."\n",
-                      'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an die Mengen-Primfakultät \lm{ A \overline{\#} } angelehnt,'."\n".
-                    'bleibt aber von ihr unterschieden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n".
+                    'In dieser Arbeit unterscheiden wir zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
+                    'Die in dieser Struktur verwendete Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }'."\n".
+                    'wird als eigener formaler Operator verstanden.'."\n".
+                    'Ihre Berechnung erfolgt stets relativ zur vollständigen Induktion \lm{ ω }, auch bei \lm{ \s = ω^{ω} }.'."\n".
+                    'Die Erzeugungsanzahl verbindet damit einen kardinalen und einen ordinalen Aspekt der Zahlen.'."\n",
+                      'Die ausführliche Definition und Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
+                    'der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       

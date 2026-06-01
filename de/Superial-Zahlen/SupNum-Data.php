@@ -248,6 +248,8 @@
 
           'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich' => array( headline_text => 'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?'/* , headline_text_short => 'X' */),
                    
+        'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele' => array( headline_text => 'Erzeugungsanzahl in Beispielen'/* , headline_text_short => 'X' */),
+
         'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
@@ -351,6 +353,8 @@
         'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein geordneter Körper'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:SIstKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein Körper'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
@@ -600,6 +604,7 @@
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.13'),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s' => array( headline_text => 'Tiefere Betrachtung der Potenzen von \lm{ \s }'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),

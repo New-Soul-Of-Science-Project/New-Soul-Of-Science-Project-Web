@@ -828,6 +828,214 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'In dieser Arbeit unterscheiden wir zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
+                    'Die Erzeugungsanzahl wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} motiviert und hier formal eingeführt.'."\n",
+                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
+                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
+                    'wenn diese Erzeugung relativ zur vollständigen Induktion \lm{ ω } und den aus ihr abgeleiteten superialen Strukturen betrachtet wird.'."\n",
+                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei ist \lm{ \overline{\#}_{\mathrm{erz}} } \italic{nicht mit der gewöhnlichen Mächtigkeit gleichzusetzen}.'."\n".
+                    '\italic{Vielmehr beschreibt} \lm{ \overline{\#}_{\mathrm{erz}}( A ) } die kombinatorische Anzahl'."\n".
+                    'der Elemente von \lm{ A } innerhalb der jeweils zugrunde gelegten Erzeugungsstruktur.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Definition', subline =>
+                    '')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}}( A ) } eines Objekts, einer Menge oder Struktur \lm{ A }'."\n".
+                      'bezeichnet die Anzahl ihrer Elemente beziehungsweise Erzeugungspositionen relativ zur vollständigen Induktion \lm{ ω }.'."\n".
+                      'Sie unterscheidet sich von der gewöhnlichen Mächtigkeit,'."\n".
+                      'weil sie nicht nur fragt, ob \lm{ A } bijektiv zu einer anderen Menge ist,'."\n".
+                      'sondern wie \lm{ A } innerhalb der durch ω gegebenen Erzeugungsordnung hervorgebracht wird.'."\n".
+                      ''))),
+ 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Berechnung der Erzeugungsanzahl', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Erzeugungsanzahl wird stets relativ zur vollständigen Induktion \lm{ ω } berechnet.'."\n".
+                    'Dabei zählt sie nicht nur Elemente bis auf Bijektion, sondern die durch \lm{ ω } gegebenen Erzeugungspositionen,'."\n".
+                    'Erzeugungsrichtungen, Teilbelegungen oder iterierten Kombinationsmöglichkeiten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Für die endlichen natürlichen Zahlen gilt im Sinne der vollständigen Induktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( \mathbb{N} )  =  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die gewöhnliche Mengenlehre erfasst die Größe von \lm{ \mathbb{N} } über dessen Mächtigkeit.'."\n".
+                    'Die hier verwendete Erzeugungsanzahl betrachtet jedoch zusätzlich die arithmetische'."\n".
+                    'und kombinatorische Struktur, durch die die betreffenden Objekte erzeugt werden.'."\n",
+                      'Die Erzeugungsanzahl verbindet damit einen kardinalen und einen ordinalen Gesichtspunkt.'."\n".
+                    'Kardinal ist sie, weil sie eine Anzahl ausdrücken soll.'."\n".
+                    'Ordinal ist sie, weil diese Anzahl nicht unabhängig von der Erzeugungsordnung'."\n".
+                    'und der zugrunde gelegten Erzeugungsstruktur betrachtet wird.'."\n".
+                    'Sie fragt also nicht nur, ob zwei Mengen gleichmächtig sind, sondern auch,'."\n".
+                    'auf welche Weise ihre Elemente durch eine bestimmte Ordnung, Operation oder Kombinatorik hervorgebracht werden.'."\n".
+                      'Insbesondere soll die Erzeugungsanzahl später dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
+                    'und unterschiedlicher Erzeugungskombinatorik zu unterscheiden.'."\n".
+                    'So können Mengen gleicher Mächtigkeit im Sinne von ZFC dennoch verschiedene Erzeugungsanzahlen besitzen,'."\n".
+                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion beziehungsweise'."\n".
+                    'aus der superialen Struktur hervorgehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Beispiele', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein einfaches Beispiel liefert die Menge der geraden natürlichen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 \mathbb{N}  =  *\{ 0, 2, 4, 6, 8, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Klassisch gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| 2 \mathbb{N} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Als geordnete Teilmenge der natürlichen Zahlen wird \lm{ 2 \mathbb{N} } jedoch nicht durch'."\n".
+                    'den Einschritt \lm{ +1 }, sondern durch den Zweierschritt \lm{ +2 } durchlaufen.'."\n".
+                    'So erkennen wir, dass nur jede zweite Zahl vorhanden ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( 2 \mathbb{N} *)  =  \frac{ ω }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \frac{ ω }{ 2 } } ist hier im Sinne der erweiterten arithmetischen Struktur von \lm{ ω }'."\n".
+                    'im Beweis der \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹} zu verstehen.'."\n".
+                    'Die gewöhnliche Mächtigkeit sieht diesen Unterschied nicht;'."\n".
+                    'die Erzeugungsanzahl soll solche Unterschiede der Erzeugungsstruktur erfassbar machen.'."\n",
+                      'Ein wichtiges Beispiel liefert die Menge der ganzen Zahlen \lm{ \mathbb{Z} }.'."\n".
+                    'In der gewöhnlichen Mengenlehre gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \mathbb{Z} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die natürlichen und die ganzen Zahlen besitzen also dieselbe Mächtigkeit.'."\n".
+                    'Ihre Erzeugungsstruktur ist jedoch verschieden.'."\n".
+                    'Die natürlichen Zahlen entstehen von der Null aus einseitig durch fortgesetzte Nachfolgerbildung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die ganzen Zahlen besitzen dagegen in der Ordnungsstruktur der \jump{OM:BiOrd:Home:Inhalt}{Biordinalzahlen}'."\n".
+                    'eine zweiseitige Erzeugung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}  =  *\{ \cdots , -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit zeigt \lm{ \mathbb{Z} }, dass Gleichmächtigkeit nicht bedeutet, dass zwei Mengen dieselbe erzeugende Ordnung besitzen.'."\n".
+                    'Die Erzeugungsanzahl soll genau solche Unterschiede erfassen.'."\n",
+                      'Im Rahmen der Biordinalzahlen wird jede negative Zahl in \lm{ \mathbb{Z} } in ihrer'."\n".
+                    'mengentheoretischen Ontologie unter Berücksichtigung der Zählrichtung aus einer jeweiligen'."\n".
+                    'natürlichen Zahl in \lm{ \mathbb{N} } dargestellt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  \rightarrow  -1  }'),
+                      array( display => 'on',  latex => '{  1  \rightarrow  -2  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  n  \rightarrow  - *( n + 1 *) }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es handelt sich dabei um ein Rückwärtszählen, bei dem die ontologische Zählrichtung der zugrunde'."\n".
+                    'liegenden natürlichen Zahl dennoch in Richtung \lm{ +1 } erhalten bleibt.'."\n",
+                      'In dieser Hinsicht trägt \lm{ \mathbb{Z} } nicht nur die abzählbare Mächtigkeit,'."\n".
+                    'sondern auch eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{zweiseitige Erzeugungsstruktur},'."\n".
+                    'also gilt demnach für ihre Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  =  2 ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch \lm{ 2 ω } ist hier als Erzeugungsanzahl in der erweiterten arithmetischen Struktur von \lm{ ω } zu verstehen.'."\n".
+                    'Die biordinale Darstellung der negativen Zahlen zeigt dabei,'."\n".
+                    'wie negative Zahlen innerhalb einer mengentheoretischen Ontologie dargestellt werden können.'."\n".
+                    'Die Erzeugungsanzahl knüpft an diese Darstellung an, indem sie nicht nur die Anzahl der Elemente,'."\n".
+                    'sondern auch die Richtung und Struktur ihrer Erzeugung berücksichtigt.'."\n",
+                      'Und für die superiale Basis ist die Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \s *)  =  \s  =  ω^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hierbei bleibt die zugrunde liegende Erzeugungseinheit \lm{ ω }.'."\n".
+                    'Die Potenzierung beschreibt nicht eine andere Grund-Erzeugungsstruktur,'."\n".
+                    'sondern eine durch \lm{ ω } iterierte Erzeugungskombinatorik.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Schreibweise der Funktion', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an die Mengen-Primfakultät \lm{ A \overline{\#} } angelehnt,'."\n".
+                    'bleibt aber von ihr unterschieden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n",
+                      'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
+                    'schreiben wir auch kurz'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
+                    ))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
                     )),
               )
@@ -840,7 +1048,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(

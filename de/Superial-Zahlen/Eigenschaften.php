@@ -1410,6 +1410,39 @@
 
 
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Erzeugungsanzahl in Beispielen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    '• Einführung im Abschnitt \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}‹}.',
+                    '• Definition und Beispiele im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹} der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen:X', text =>
+                      
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen'),
                     )),
               )
@@ -1422,7 +1455,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
