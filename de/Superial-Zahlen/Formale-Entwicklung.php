@@ -878,6 +878,34 @@
                       ''))),
  
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Schreibweise des Operators', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an'."\n".
+                    'die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
+                    '\lm{ A \overline{\#} } angelehnt, bleibt aber von ihr unterschieden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n",
+                      'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
+                    'schreiben wir auch kurz'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   'Berechnung der Erzeugungsanzahl', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -1007,33 +1035,6 @@
                     'Die Potenzierung beschreibt nicht eine andere Grund-Erzeugungsstruktur,'."\n".
                     'sondern eine durch \lm{ ω } iterierte Erzeugungskombinatorik.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                  'Schreibweise der Funktion', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an die Mengen-Primfakultät \lm{ A \overline{\#} } angelehnt,'."\n".
-                    'bleibt aber von ihr unterschieden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n",
-                      'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
-                    'schreiben wir auch kurz'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
-                    ))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
