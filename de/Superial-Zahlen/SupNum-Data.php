@@ -415,7 +415,8 @@
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet' => array( headline_text => 'Definition: Die Mengen-Primfakultät'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.121'),
