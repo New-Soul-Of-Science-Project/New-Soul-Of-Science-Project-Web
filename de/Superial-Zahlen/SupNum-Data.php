@@ -309,6 +309,7 @@
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.15'),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes' => array( headline_text => 'SN.EuZa.16'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s' => array( headline_text => 'SN.EuZa.19'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck' => array( headline_text => 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck' , headline_text_short => 'Die e-Funktion und das Pascalsche Dreieck'),
