@@ -664,7 +664,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
-                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    '• Ich denke, wir können zeigen, dass \lm{ \mathbb{S} } eine \jump[https://de.wikipedia.org/wiki/Topologische_Gruppe]{}{topologische Gruppe} und sogar ein \jump[https://de.wikipedia.org/wiki/Topologischer_Ring]{}{topologischer Körper} ist.',
                     ))),
 
                   array( 'text', array( text => array(
