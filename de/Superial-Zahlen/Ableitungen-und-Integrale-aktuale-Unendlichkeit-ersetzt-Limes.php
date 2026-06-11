@@ -108,6 +108,47 @@
                     'In der superialen Ableitung sehen wir wonach abgeleitet wird daran, dass \lm{ x } unsere infinitesimale Einheit \lm{ ․〈1〉 } drauf summiert bekommt.'."\n",
                       'Vergleichen wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                      
+                'Warum \lm{ \s^{−1} } die Standardnormierung ist', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Unsere superiale Basis \lm{ \s } ist nicht einfach „jede Grenzwert-Unendlichkeit“.'."\n".
+                    '\lm{ \s } ist die kanonische aktual unendliche Recheneinheit der Superial-Analysis.'."\n".
+                    'So ist dann \lm{ \s^{−1} } die erste normierte infinitesimale Schrittweite.'."\n".
+                    'Und mit \lm{ \s } Schritten der Breite \lm{ \s^{−1} } entsteht dann genau eine endliche Einheit:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s \cdot \s^{−1}  =  1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ a \cdot \s } ganzzahlige, reell algebraische, unendlich kleine Schritte der Breite \lm{ \s^{−1} }'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  *( a \cdot \s *) \cdot \s^{−1}  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erlauben uns, von Null nach \lm{ a } unendlich fein und algebraisch zu schreiten.'."\n".
+                    'Dies ist die Grundlage der Integration und der Ableitung – der Differenzialrechnung.'."\n".
+                    'Weil \lm{ \s } genau die normierte Größe ist, die uns das erlaubt, ist sie die exakt passende Standardnormierung'."\n".
+                    'der Analysis.'."\n",
+                      'Wäre \lm{ \s } nicht genau so über das \jump{OM:SupNum:Einleitung:Vortext:Definition-von-s}{Primzahl-Flächenprodukt} definiert,'."\n".
+                    'dann wären nicht alle reell algebraischen Zahlen'."\n".
+                    'im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Produkt mit ihr ganzzahlig}.'."\n".
+                    'Wäre sie größer, wie \lm{ \s^{2} }, dann entstünden Schichten mit Nullkoeffizienten im Infinitesimalen,'."\n".
+                    'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n",
+                      'Die klassische Grenzwertrechnung an dieser Stelle \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{vernichtet die Differenz nach der Division};'."\n".
+                    'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{Superial-Analysis erhält sie als Spur}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                      
+                'Vergleich mit der Differential-Schreibweise', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise vergleichen'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  \widehat{=}  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;,  }'),
@@ -127,12 +168,13 @@
                   array( 'text', array( text => array(
                     'Die Division durch \lm{ 1 \s^{-1} = \; ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
                     'ins Endliche.'."\n".
-                    'Und das können wir auch durch den entsprechenden unendlich großen Einheitsfaktor \lm{ 1 \s = 〈1〉_1 } erreichen:'."\n".
+                    'Und das können wir in der Superial-Arithmetik nun auch'."\n".
+                    'durch den entsprechenden unendlich großen Einheitsfaktor \lm{ 1 \s = 〈1〉_1 } erreichen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  *( f(x + \s^{-1}) - f(x) *) \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  *( f(〈x〉․〈1〉) - f(x) *) \cdot 〈1〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
@@ -194,6 +236,47 @@
                     'Wir können tatsächlich recht einfach erkennen, welche \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Funktion ihrer eigenen Ableitung gleich} ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung, auch in Bezug auf transzendente Zahlen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen', text =>
+                      
+                'Grenzwert, \lm{ \s }-Auswertung und Grenzwertspur', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der klassische Grenzwert ist ungleich der über die Superial-Zahlen eingeführten \lm{ \s }-Auswertung.'."\n".
+                    'Also:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'vernichtet den Rest, während'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Delta x  =  \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die Rechenspur sichtbar hält; die Grenzwertspur.'."\n",
+                      'Diesbezüglich eine kurze Vorwegnahme der superialen eulerschen Zahl \lm{ \e_{\s} }: '."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der klassische Zielwert,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  〈1〉․〈1〉^{〈1〉_{1}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist die superiale Standardauswertung dieser normierten Rechenstruktur.'."\n".
+                    'Hier können wir erahnen, welche Struktur die Grenzwertspur hat, die auf der Seite \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}‹}'."\n".
+                    'errechnet wird.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Kommen wir nun im nächsten Abschnitt aber zur Umkehrung der Ableitung, der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}.'."\n".
                     ''))),
@@ -225,10 +308,58 @@
                     'Summe darauf basierend wohldefiniert, also auf eine Weise ganzzahlig zählbar sein.'."\n",
                       'Da \lm{ \s^{-1} } als eine aktual unendlich kleine Einheit, als normiertes Infinitesimal, verstanden wird,'."\n".
                     'findet die Summation in diesen normierten einheitlich winzigen Schritten statt.'."\n".
-                    'Die Schritte der Summe werden also in Infinitesimal gezählt, was uns zum Zählen und'."\n".
+                    'Die Schritte der Summe werden also in normierten Infinitesimalen gezählt, was uns zum Zählen und'."\n".
                     'so zu einem Verständnis von ganzen Zahlen innerhalb der Superial-Zahlen führt.'."\n".
-                    'Durch das Zählen von der Null an dann selbstverständlich auch zu natürlichen Zahlen innerhalb der Superial-Zahlen.'."\n",
-                      'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben.'."\n".
+                    'Durch das Zählen von der Null an dann selbstverständlich auch zu natürlichen Zahlen innerhalb der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sum_{ \forall [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sum^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ}', label_incr => false),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben.'."\n".
+                    'Denn die Zählschritte vollziehen sich in ganzen Zahlen, die ins Infinitesimale skaliert sind.'."\n".
+                    'So ergibt sich die Standardnormierung der Superial-Analysis, und ich denke der Analysis im Allgemeinen,'."\n".
+                    'als die Anzahl von \lm{ x \cdot \s } ganzen Schritten der Größe \lm{ \s^{-1} },'."\n".
+                    'wobei \lm{ x } für jede reell algebraische Zahl ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient von \lm{ \s }}'."\n".
+                    'sein kann, so dass sich immer ganze aktual unendliche Zahlen durch ihr Produkt ergeben.'."\n",
+                      'Darum ist \lm{ \s } oder \lm{ \s^{-1} } unsere Standardnormierung, die erst die Integration in Form einer sinnvollen Summe als Umkehr der Ableitung ermöglicht.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
+                      
+                'Momentaufnahme und infinitesimale Verdickung', subline =>
+                  'Eine alte metaphysische Überlegung')),
+                  array( 'text', array( text => array(
+                    'Eine Bewegung lässt sich nicht aus lauter Momenten zusammensetzen, die die Ausdehnung Null haben,'."\n".
+                    'wie wir im Abschnitt'."\n".
+                    '\italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:MetaphysischeMomentBewegung}‹}'."\n".
+                    'detailliert betrachten.'."\n".
+                    'Wenn ein Moment rechnerisch wirksam sein soll, muss er mindestens eine infinitesimale Verdickung besitzen.'."\n".
+                    'Diese Verdickung in der Superial-Analysis ist normiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{d} t  =  \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aus diesem Grund wird Geschwindigkeit hier nicht als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \mathrm{d} x }{ 0 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gedacht, sondern als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \mathrm{d} x }{ \s^{-1} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies als philosophischer Einschub, um unsere Motivation erkennbar zu machen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -250,7 +381,7 @@
                       'Als normalisierte infinitesimale natürliche Superial-Zahlen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [0, x[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \quad\,  0 \s^{-1}, 1 \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 \s^{-1},\; \frac{1}{2} x - \s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + \s^{-1},\; \frac{1}{2} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 \s^{-1},\; \frac{2}{3} x - \s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + \s^{-1},\; \frac{2}{3} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 \s^{-1}, x - 2 \s^{-1}, x - \s^{-1}   \quad *\}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}', label_incr => true),
                     ))),
@@ -325,7 +456,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sum_{ \forall [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sum^{ z - 1 }_{ i = 0 } 1  =  z  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sum_{ \forall [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sum^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Dies verhält sich also genau so, wie wir es von endlichen Zahlen kennen.'."\n",
@@ -343,7 +475,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \! .*〈 1 *〉  =  x  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -391,7 +524,9 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, weil wir eine schlüssige Definition'."\n".
+                    'Die Wahl derselben normierten Schrittweite \lm{ \s^{−1} } in Ableitung und Integration ist entscheidend,'."\n".
+                    'weil nur dadurch beide Operationen auf derselben superialen Rasterstruktur zueinander umkehrbar werden.'."\n",
+                      'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, weil wir eine schlüssige Definition'."\n".
                     'der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beziehungsweise der superial kleinen ganzen Zahlen'."\n".
                     '\lm{ \mathbb{S}_{\Z}^{-1} } entwickelt haben.'."\n",
                       'Im Falle, dass die Grenzen des Integrals in ihrer Größe vertauscht sind, also, wenn \lm{ x < a } gilt,'."\n".
@@ -451,7 +586,7 @@
                         'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
                       'Das bedeutet, dass wir es mit \lm{ x \cdot s } Elementen zu tun haben – anstatt mit \lm{ x } –,'."\n".
                       'was in der oben stehenden Formel auf der Ergebnisseite als \lm{ x \cdot s } für \lm{ n } eingeht.'."\n".
-                      'Jedoch ist die Größe der einzelnen Summanden auf Ebene der ganzen Zahlen superial klein, sodass wir das Ergebnis um eine superiale Potenz \lm{ s }'."\n".
+                      'Jedoch ist die Größe der einzelnen Summanden auf Ebene der ganzen Zahlen superial klein, sodass wir das Ergebnis um eine superiale Potenz \lm{ \s }'."\n".
                       'verringern müssen:'."\n".
                       ''))),
                   array( 'equations',
@@ -487,6 +622,8 @@
                     'Zum einen wird dabei offensichtlich, was bei der Berechnung des Integrals genau vor sich geht.'."\n".
                     'Zum anderen erkennen wir den tieferen Zusammenhang der Gaußschen Summenformel mit dem Integral und können vermuten, dass dieser auch für weitere verwandte Summenformeln besteht.'."\n",
                       'Wir haben also auch unser Ziele erreicht, die „Black-Box“ beim Ableiten und besonders beim Integrieren zu erhellen.'."\n".
+                    'Genau hierin zeigt sich die Bedeutung der Standardnormierung durch \lm{ \s^{−1} }:'."\n".
+                    'Die Rechnung bleibt sichtbar, statt in einem Limes-Operator verborgen zu werden.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -510,6 +647,7 @@
                     'zu beweisen, müssen wir nach dem Zeigen der Existenz der Stammfunktion, siehe \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Definition-des-Integrals}‹} oben, zeigen,'."\n".
                     'dass die Ableitung der stetigen Stammfunktion einer stetigen Ausgangsfunktion – ihres bestimmten Integrals –'."\n".
                     'wieder die Ausgangsfunktion ergibt.'."\n".
+                    'Diese Umkehrbarkeit hängt wesentlich daran, dass Ableitung und Integration dieselbe normierte Schrittweite \lm{ \s^{−1} } verwenden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
