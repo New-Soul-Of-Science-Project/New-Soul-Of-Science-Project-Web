@@ -128,9 +128,9 @@
 
         'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis' => array( headline_text => 'Fundamentalsatz der Analysis'/* , headline_text_short => 'X' */),
 
-        'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral' => array( headline_text => 'Standartisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
+        'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral' => array( headline_text => 'Standardisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
 
         'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung' => array( headline_text => 'Diskussion der Infinitesimalrechnung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen' => array( headline_text => 'Wohldefinierte Arithmetik des Unendlichen'/* , headline_text_short => 'X'*/),

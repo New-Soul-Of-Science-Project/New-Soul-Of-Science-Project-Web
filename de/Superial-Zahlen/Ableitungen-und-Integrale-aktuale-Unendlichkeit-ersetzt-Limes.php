@@ -137,7 +137,8 @@
                       'Wäre \lm{ \s } nicht genau so über das \jump{OM:SupNum:Einleitung:Vortext:Definition-von-s}{Primzahl-Flächenprodukt} definiert,'."\n".
                     'dann wären nicht alle reell algebraischen Zahlen'."\n".
                     'im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Produkt mit ihr ganzzahlig}.'."\n".
-                    'Wäre sie größer, wie \lm{ \s^{2} }, dann entstünden Schichten mit Nullkoeffizienten im Infinitesimalen,'."\n".
+                    'Würden wir statt s eine feinere Normierung wie \lm{ \s^{2} } als Standard-Schrittanzahl verwenden,'."\n".
+                    'dann entstünden im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten,'."\n".
                     'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n",
                       'Die klassische Grenzwertrechnung an dieser Stelle \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{vernichtet die Differenz nach der Division};'."\n".
                     'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{Superial-Analysis erhält sie als Spur}.'."\n".
@@ -228,14 +229,6 @@
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass die Vorgehensweise mit dem Limes Details der Vorgänge verbirgt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
-                      
-                'Welche Funktion ist nach dieser Definition ihre eigene Ableitung?', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Wir können tatsächlich recht einfach erkennen, welche \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Funktion ihrer eigenen Ableitung gleich} ist.'."\n".
-                    'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung, auch in Bezug auf transzendente Zahlen.'."\n".
-                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen', text =>
                       
                 'Grenzwert, \lm{ \s }-Auswertung und Grenzwertspur', subline =>
@@ -256,7 +249,7 @@
                       array( display => 'on',  latex => '{  \Delta x  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'die Rechenspur sichtbar hält; die Grenzwertspur.'."\n",
+                    'hält die Rechenspur sichtbar, also jene Grenzwertspur, die der klassische Grenzwert vernichtet.'."\n",
                       'Diesbezüglich eine kurze Vorwegnahme der superialen eulerschen Zahl \lm{ \e_{\s} }: '."\n".
                     ''))),
                   array( 'equations',
@@ -274,8 +267,16 @@
                     ))),
                   array( 'text', array( text => array(
                     'ist die superiale Standardauswertung dieser normierten Rechenstruktur.'."\n".
-                    'Hier können wir erahnen, welche Struktur die Grenzwertspur hat, die auf der Seite \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}‹}'."\n".
+                    'Hier deutet sich bereits an, welche Struktur die Grenzwertspur besitzt, die auf der Seite \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}‹}'."\n".
                     'errechnet wird.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                      
+                'Welche Funktion ist nach dieser Definition ihre eigene Ableitung?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir können tatsächlich recht einfach erkennen, welche \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Funktion ihrer eigenen Ableitung gleich} ist.'."\n".
+                    'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung, auch in Bezug auf transzendente Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Kommen wir nun im nächsten Abschnitt aber zur Umkehrung der Ableitung, der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}.'."\n".
@@ -345,14 +346,14 @@
                       array( display => 'on',  latex => '{  \mathrm{d} t  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aus diesem Grund wird Geschwindigkeit hier nicht als'."\n".
+                    'Geschwindigkeit wird hier nicht als Grenzfall eines Quotienten mit verschwindendem Nenner'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ \mathrm{d} x }{ 0 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'gedacht, sondern als'."\n".
+                    'gedacht, sondern als Quotient über die normierte infinitesimale Zeiteinheit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -744,15 +745,15 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral'),
                     )),
               )
           ); ?>
 
 
-          <!  • Standartisierung von Ableitung und Integral  >
+          <!  • Standardisierung von Ableitung und Integral  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral',
+            'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -769,11 +770,11 @@
                       'Auch nutzen wir für die superiale Differenzialrechnung die superiale \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise},'."\n".
                     'wo beispielsweise \lm{ \s^{-1} = \; ․〈1〉 } und \lm{ x + \s^{−1} = 〈x〉․〈1〉 } ist.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
 
-                'Ableitung', subline =>
+                'Standardisierung der Ableitung', subline =>
                   'Standardisierung stimmt mit Standardableitung überein')),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Definition (superiale Ableitung)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -783,7 +784,7 @@
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 } \in \mathbb{S}  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Satz (Ableitungs-Kompatibilität)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -818,11 +819,11 @@
                     'Die infinitesimalen Schichten von \lm{ \mathcal{D}_{\s} f(x) } sind Teil der superialen Feinstruktur.'."\n".
                     'Die Standardisierung dient hier nur dem Vergleich mit der Standardanalysis.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Integral', text =>
                       
-                'Integral', subline =>
+                'Standardisierung des Integrals', subline =>
                   'Standardisierung einer \lm{ ․〈1〉 }-Summe \lm{ = } Riemann-Integral')),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Voraussetzung (Gitterkompatible Endpunkte)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -833,14 +834,14 @@
                       array( display => 'on',  latex => '{  b − a  \in  \mathbb{S}_{\Z}^{-1}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Da \lm{ \mathbb{S}_{\Z}^{−1} = *\{ z \cdot \s^{−1} *|* z \in \mathbb{S}_{\Z} *\} } ist, existiert genau ein \lm{ \mathbb{N} \in \mathbb{S}_{\Z} } mit'."\n".
+                    'Da \lm{ \mathbb{S}_{\Z}^{−1} = *\{ z \cdot \s^{−1} *|* z \in \mathbb{S}_{\Z} *\} } ist, existiert genau ein \lm{ N \in \mathbb{S}_{\Z} } mit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  b − a  =  \mathbb{N} \cdot \s^{−1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{N}  =  (b − a ) \cdot \s  \;\; .  }'),
+                      array( display => 'on',  latex => '{  b − a  =  N \cdot \s^{−1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  N  =  (b − a ) \cdot \s  \;\; .  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Definition (superiale Riemann-Summe)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -853,7 +854,7 @@
                   array( 'text', array( text => array(
                     'Wie oben gesagt, ist hier \lm{ \mathcal{S}_{\s}( ⋅ ) } \bold{nur ein Symbolname} für diese Summe, also keine Menge der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Satz (Integral-Kompatibilität)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -862,14 +863,14 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \operatorname{std}*( \mathcal{S}_{\s}( f; a, b ) *)  =  \int_{a}^{b} f(t) \operatorname{d}\!t  \;\; .  }',
-                                          label_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral', label_text => '\name{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral}', label_incr => true),
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral', label_text => '\name{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                   '\bold{Beweis.} \\\\'."\n".
                     'Die Punkte \lm{ 〈a〉․〈k〉 } bilden eine Zerlegung von \lm{ [ a, b ] } mit Maschenweite \lm{ ․〈1〉 } und \lm{ \mathbb{N} } Teilintervallen.'."\n".
-                    'Da \lm{ ․〈1〉 } infinitesimal ist, ist die Maschenweite kleiner als jedes reell algebraische (reelle?) \lm{ \epsilon > 0 }.'."\n".
-                    'Für stetiges \lm{ f } konvergieren Riemann-Summen bei beliebig feiner Maschenweite gegen das Riemann-Integral; daher unterscheidet sich'."\n".
-                    '\lm{ \mathcal{S}_{\s}( f; a, b ) } vom reell algebraischen (reellen?) Integral nur um einen infinitesimalen Anteil.'."\n".
+                    'Da \lm{ ․〈1〉 } infinitesimal ist, ist die Maschenweite kleiner als jedes positive reelle \lm{ \epsilon > 0 }.'."\n".
+                    'Nach dem klassischen Riemann-Integralsatz liegen Riemann-Summen bei hinreichend feiner Maschenweite beliebig nahe am Riemann-Integral.'."\n".
+                    'Da die Maschenweite \lm{ \s^{−1} } infinitesimal ist, unterscheidet sich die superiale Summe vom klassischen Integral nur um einen infinitesimalen Anteil.'."\n".
                     'Folglich ist die Null-Schicht (Standardisierung) gleich dem Integral:'."\n".
                     ''))),
                   array( 'equations',
@@ -879,22 +880,22 @@
                   array( 'text', array( text => array(
                     '\lm{ \blacksquare }'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                       
                 'Fundamentalsatz der Analysis', subline =>
                   'Brücke über das Fundamentalsatz-Paar (HDI, FTC) auf Null-Schicht')),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Definition (superiale Stammfunktion über \lm{ \mathcal{S}_{\s} })', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Unter den Voraussetzungen des Abschnittes \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral}‹}'."\n".
+                    'Unter den Voraussetzungen des Abschnittes \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Integral}‹}'."\n".
                     'etwas weiter oben (also \lm{ x − a \in \mathbb{S}_{\Z}^{−1} }) definieren wir für stetiges \lm{ f }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  F_{\s}(x)  :=  F_{\s}(a) + \mathcal{S}_{\s}( f; a, x )  }'),
                     ))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Satz (FTC-Brücke, standardisiert)', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -914,7 +915,7 @@
                   array( 'text', array( text => array(
                   '\bold{Beweis.} \\\\'."\n".
                     'Aus der Definition folgt \lm{ F_{\s}(x) - F_{\s}(a) = \mathcal{S}_{\s}( f; a, x ) }.'."\n".
-                    'Anwenden von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral} liefert sofort'."\n".
+                    'Anwenden von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral} liefert sofort'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -942,7 +943,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -973,7 +974,7 @@
                   array( 'text', array( text => array(
                     'Das Aufkommen der Infinitesimalrechnung am Ende des 17. Jahrhunderts löst eine Krise in der Mathematik aus.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 a., S. 162-176, hier S. 162.}'."\n".
                     'Diese Krise hat mit der Frage zu tun, wie mit infinitesimalen Größen oder mit endlichen Werten, die sich diesen nähern, umzugehen ist.'."\n".
-                    'Denn Berechnung einer Ableitung wird umso genauer, je kleiner Nenner und Zähler im Quotienten'."\n".
+                    'Denn die Berechnung einer Ableitung wird umso genauer, je kleiner Nenner und Zähler im Quotienten'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -1175,7 +1176,7 @@
                     'Bei Zenons Pfeilparadoxon handelt es sich um eine metaphysische und naturphilosophische Betrachtung zum Szenario eines Pfeilflugs'."\n".
                     'vom Abschuss mit dem Bogen bis ins Ziel.\footnote{Vgl. \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, § 4 b., S. 177-189.}'."\n".
                     'Dabei stellen sich metaphysische Fragen:'."\n",
-                      'Zenons Beschreibung geht davon aus, dass der Pfeil zu jedem Zeitpunkt seines Pfluges, in der jeweiligen Momentaufnahme, in Ruhe sei;'."\n".
+                      'Zenons Beschreibung geht davon aus, dass der Pfeil zu jedem Zeitpunkt seines Fluges, in der jeweiligen Momentaufnahme, in Ruhe sei;'."\n".
                     'also keinen Weg zurücklegen würde.'."\n".
                     'Es ergibt sich das philosophische Problem, wie sich sehr viele einzeln betrachtete Zeitpunkte der Ruhe zu einem Flug zusammenfügen können.'."\n".
                     'Lückenlos lässt sich so etwas nicht machen, wie wir schon zu Beginn der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}'."\n".
@@ -1209,7 +1210,7 @@
                     'Dies kommt, weil uns die Superial-Zahlen eine Arithmetik des Unendlichen schenken.'."\n".
                     'Und zwar in der Form, dass uns infinitesimale ganze Zahlen zur Verfügung stehen,'."\n".
                     'mit denen wir die Flugzeit und die Flugbahn des Pfeils in einheitliche aktual unendlich kleine Schritte teilen können.'."\n".
-                    'Dabei bleibt die Bahn im Endlichen, bei ihrer Beschreibung durch die Superial-Zahlen, Dicht.'."\n".
+                    'Dabei bleibt die Bahn im Endlichen, bei ihrer Beschreibung durch die Superial-Zahlen, dicht.'."\n".
                     'Es gibt also zwischen je zwei Zeitpunkten der Flugbahn, die sich in ihren endlichen Werten unterscheiden,'."\n".
                     'unendlich viele endliche Werte, weil die endlichen Anteile der Zeit – und auch der Orte – mit reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'beschrieben werden.'."\n",
