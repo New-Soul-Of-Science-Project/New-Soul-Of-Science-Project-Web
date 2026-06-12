@@ -357,7 +357,9 @@
 
         'OM:SupNum:Formale-Entwicklung:SIstKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein Körper'/* , headline_text_short => 'X' */),
 
-        'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }' , headline_text_short => 'Die Erzeugungsanzahl'),
+        'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }', headline_text_short => 'Die Erzeugungsanzahl'),
+
+        'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste' => array( headline_text => 'Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste'/* , headline_text_short => '' */),
 
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),

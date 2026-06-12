@@ -1037,6 +1037,192 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Nachkommastellen}',
+                    // '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    // '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen, stolpern wir über viele Fragen.'."\n".
+                    'Eine der Fragen ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Rationale Zahlen wie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ 3 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sind direkt \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
+                    'Auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\overline{3}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist exakt als sinnvoller Koeffizient geeignet, sofern es als periodische Regel beziehungsweise Grenzwertabschluss verstanden wird.'."\n".
+                    'Denn nach der algebraischen Koeffizientenstruktur beziehungsweise \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{AKV}'."\n".
+                    'darf die algebraische Zahl \lm{ ⅓ } als'."\n".
+                    'exakter sinnvoller Koeffizient keine superial kleinen Restanteile besitzen,'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n",
+                      'Aber'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist nicht exakt gleich \lm{ ⅓ }, sondern besitzt den Rest'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Also ist der Wert nur'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit wird klar:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist nicht das Ende jeder unendlichen Darstellung.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Sondern:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist die Standard-Schrittanzahl der Superial-Analysis'."\n".
+                      'und kann als natürliche Standardnormierung der Analysis allgemein verstanden werden.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Als Kontrastbeispiel schauen wir uns die Berechnung der Eulerschen Zahl an:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der klassische Grenzwertabschluss.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die superiale Standardauswertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  〈1〉․〈1〉^{〈1〉_{1}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist dagegen eine \lm{ \s }-Auswertung in der Standardnormierung der Superial-Analysis.'."\n",
+                      'Damit gilt sinngemäß:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \e_{\s} *)  =  \e  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'aber \lm{ \e_{\s} } enthält zusätzlich die superiale Grenzwertspur,'."\n".
+                    'wobei \lm{ \operatorname{std} } hier die Standardisierung beziehungsweise die Null-Schicht-Projektion bezeichnet.'."\n".
+                    ''))),
+                  /*%! array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Es scheint zunächst banal, jedoch eröffnet die folgende Betrachtung interessante Einsichten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten:X', text =>
+                      
+                'Wie weit ins unendlich Kleine reichen die Summanden der periodischen rationalen Koeffizienten der Superial-Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen stolper wir in viele Fragen.'."\n".
+                    'Eine der Fragen, die aufkommt, ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Nehmen wir an, in der endlichen Stelle wollen wir die Zahl \lm{ ⅓ } darstellen und ein \lm{ \s^{-1} } addieren zu \lm{ ⅓ + \s^{-1} } – nur als Beispiel.'."\n",
+                      'Als Bruch ist dies völlig klar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 \frac{ 1 }{ 3 } *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aber als Dezimalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 0,\!33333\overline{3} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} \\\ \qquad\qquad\qquad\qquad\;\;\;\, + 3 \cdot 10^{-3} + 3 \cdot 10^{-4} + \cdots *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'stellt sich die Frage, wieviele Nachkommastellen die Zahl hat.'."\n".
+                    'Denn wir wissen, dass die algebraische Zahl \lm{ ⅓ } am Ende \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{keine superial kleinen Summanden enthalten darf},'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n".
+                    'Denn sie muss ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} sein.'."\n",
+                      'Schauen wir uns also an, welche Entfernung, sprich Differenz, zu \lm{ ⅓ } wir noch haben, wenn wir \lm{ n } Summanden addieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 a_{0} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  a_{0,n}  =  \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  a - a_{0,n}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ *( \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k} *) \cdot 3 }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ \frac{ 3 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 3 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 9 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 \cdot 10^{-n} }{ 3 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 }{ 3 } \cdot 10^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nehmen wir einmal an, wir ziehen – prozessieren – es einmal in Anzahl der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'oder selbst \lm{ \s }-mal komplett durch,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann stellen wir fest, dass wir immer noch nicht \lm{ ⅓ } erreicht haben, denn die Differenz ist zwar bereits unendlich klein,'."\n".
+                    'aber immer noch nicht verschwunden.'."\n",
+                      'Bei \lm{ n = ω } gibt es dabei zwar keine unendlich kleinen Summanden, aber was nützt es, wenn wir \lm{ ⅓ } ja nicht erreichen.'."\n".
+                    'Bei \lm{ n = \s } haben wir dann schon aktual unendlich kleine Summanden und trotzdem \lm{ ⅓ } nicht erreicht.'."\n".
+                    'Wie können wir die Situation nun verstehen?'."\n".
+                    'Ebenfalls ist die Frage, die \lm{ n } welcher Menge machen hier Sinn oder sind überhaupt erlaubt.'."\n",
+                      'Jedenfalls stellen wir fest, dass wir uns \lm{ ⅓ } immer mehr annähern, je mehr Summanden wir addieren.'."\n".
+                    'Das hört offensichtlich nie auf und geht bis ins Aktual-Unendliche immer weiter.'."\n".
+                    'Wir sehen aber auch, dass wir hoffen können, dass die Summe wieder komplett endlich wird, wenn wir sie nie, auch nicht im Aktual-Unendlichen, enden lassen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))), */
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
                     )),
               )
@@ -1049,7 +1235,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
