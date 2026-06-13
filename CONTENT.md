@@ -193,37 +193,79 @@ Integration von Yogapraxis mit moderner Naturphilosophie und Quantenphysik. Yoga
 
 ### 4. Superial-Zahlen (SupNum)
 
-**Verzeichnis:** `de/Superial-Zahlen/` (~20 Seiten)
+**Verzeichnis:** `de/Superial-Zahlen/` (~16 Seiten)
 
 #### Worum geht es?
-Eine neue Zahlentheorie der Analysis, die den klassischen Limes durch **aktual unendliche Zahlen** ersetzt. Grundlage ist die **superiale Basis s**.
+Eine neue Zahlentheorie der Analysis, die den klassischen Limes durch **aktual unendliche Zahlen** ersetzt und dem Unendlichen eine fundamentale, fraktale Struktur gibt. Untertitel: *„Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche"*. Die Superial-Zahlen bilden einen **aktual unendlichen geordneten algebraischen Körper** als Erweiterung der reell algebraischen Zahlen; Grundlage ist die **superiale Basis s**.
 
 #### Definition der superialen Basis
 ```
 s := ∏(p∈P) p^ω = (2·3·5·7·11·13·17·...)^ω
 ```
-Das unendliche Produkt aller endlichen Primzahlen in ω-ter Potenz bildet die Basis eines aktual unendlichen Stellenwertsystems.
+Das unendliche Produkt aller endlichen Primzahlen in ω-ter Potenz bildet die Basis eines aktual unendlichen Stellenwertsystems. Nach der bewiesenen **Primzahlprodukt-Vermutung** gilt: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen.
 
 #### Mathematische Eigenschaften
-- **Algebraische Struktur**: Angeordneter algebraischer Körper
-- **Aktual unendlich klein**: s⁻¹ ersetzt das Differential dx
-- **Aktual unendlich groß**: Vielfache von s
-- **Fraktale Struktur**: Über Primzahlpotenzen organisiert
+- **Algebraische Struktur**: Aktual unendlicher geordneter algebraischer Körper; Erweiterung der reell algebraischen Zahlen
+- **Aktual unendlich klein**: s⁻¹ ersetzt das Differential dx; algebraisch definiert, kein Grenzprozess nötig
+- **Aktual unendlich groß**: Vielfache von s; superiale Basis ist strukturell äquivalent zu ω^ω (Ordinalzahl-Vergleich)
+- **Fraktale Struktur**: Über Primzahlpotenzen organisiert; jede Ebene teilt alle endlichen Primzahlen
+- **ZFC-Darstellung**: ZFC-konform als Hahn-Reihe mit Wertgruppe ℤ konstruiert; über p-adische Bewertungen fundiert
 
-#### Ableitungen ohne Limes
-- f(x) = x² → f'(x) = 2x + s⁻¹
-- f(x) = x³ → f'(x) = 3x² + 3x·s⁻¹ + s⁻²
-- s⁻¹ als unendlich kleine, aber definite Größe
+#### s als normierte aktuale Unendlichkeit der Analysis
+`s` ist nicht einfach eine beliebige Grenzwert-Unendlichkeit, sondern die **kanonische aktual unendliche Recheneinheit** der Superial-Analysis — und kann als **Standardnormierung der allgemeinen Analysis** verstanden werden:
+- `s · s⁻¹ = 1`: s⁻¹ ist die erste normierte infinitesimale Schrittweite
+- `(a · s) · s⁻¹ = a` für alle reell algebraischen a: Von 0 nach a lässt sich unendlich fein und algebraisch schreiten
+- Wäre s nicht genau über das Primzahl-Flächenprodukt definiert, wären nicht alle reell algebraischen Zahlen im Produkt mit s ganzzahlig
+- Eine feinere Normierung wie s² erzeugt im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten ohne Informationsgewinn
+- Die klassische Grenzwertrechnung vernichtet die Differenz nach der Division; die Superial-Analysis **erhält sie als Spur** (aktual unendlich kleiner Rest)
 
-#### Offene Vermutungen
-1. **Primzahlprodukt-Vermutung**: ω = 2·3·5·7·11·... (als bewiesen dargestellt)
-2. **Überrationalitätsvermutung**: Radikale als sinnvolle Koeffizienten
-3. **Algebraische-Koeffizienten-Vermutung**: Alle reell algebraischen Zahlen als Koeffizienten
-4. **Superiale-Transzendenz-Vermutung**: Struktur transzendenter Zahlen in s-Potenzen
-5. Neue Einsichten zur **Kontinuumshypothese** und **Riemannschen Vermutung**
+#### Infinitesimalrechnung ohne Limes
+- Ableitung: f'(x) := (f(x + s⁻¹) − f(x)) · s → exakte Ableitung mit **normierter Schrittweite** s⁻¹, kein Grenzprozess
+  - f(x) = x² → f'(x) = 2x + s⁻¹
+  - f(x) = x³ → f'(x) = 3x² + 3x·s⁻¹ + s⁻²
+- Integration: Summe über alle superial kleinen ganzzahligen Schritte der Breite s⁻¹ im Intervall
+- **Fundamentalsatz der Analysis** gilt im superialen Rahmen analog
+- **Standardisierung** (Null-Schicht-Projektion): Übergang zur klassischen Analysis durch Projektion auf den endlichen Teil; Standardisierung der superialen Ableitung/Integration stimmt mit Standardanalysis überein
+- s⁻¹ als algebraisch definierte, aktual unendlich kleine Größe — keine Näherung
+
+#### Erzeugungsanzahl einer Menge
+Neues Konzept: Unterscheidung zwischen gewöhnlicher **Mächtigkeit** (Bijektion) und **Erzeugungsanzahl** `#̄_erz(A)`:
+- Mächtigkeit fragt: lässt sich A bijektiv zuordnen?
+- Erzeugungsanzahl fragt: wie viele Objekte entstehen innerhalb der Erzeugungsstruktur, relativ zur vollständigen Induktion ω?
+- Verbindet kardinalen und ordinalen Gesichtspunkt
+- Mengen gleicher Mächtigkeit können verschiedene Erzeugungsanzahlen haben
+
+Beispiele:
+```
+#̄_erz(ℕ) = ω
+#̄_erz(2ℕ) = ω/2    (nur jede zweite Zahl)
+#̄_erz(ℤ) = 2ω      (zweiseitige Erzeugungsstruktur, via Biordinalzahlen)
+#̄_erz(s) = s = ω^ω  (ω-fach iterierte Erzeugungskombinatorik)
+```
+
+#### Bewiesene Vermutungen
+1. **Primzahlprodukt-Vermutung** *(bewiesen)*: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen; jede endliche Primzahl teilt ω genau einmal
+2. **Überrationalitätsvermutung** *(bewiesen)*: Irrationale x-te Wurzeln aus n sind als Bruch aktual unendlicher ganzer Zahlen darstellbar (Nenner und Zähler ∼ n^ω)
+3. **Algebraische-Koeffizienten-Vermutung** *(bewiesen)*: Alle reell algebraischen Zahlen sind sinnvolle Koeffizienten des superialen Stellenwertsystems (𝔸_ℝ ⊆ 𝔸_𝕊)
+4. **Superiale-Transzendenz-Vermutung** *(bewiesen)*: Alle transzendenten Zahlen besitzen superial kleine Summanden; die Trennlinie algebraisch ↔ transzendent entspricht den Fraktalebenen von 𝕊
+5. Neue Einsichten zur **Kontinuumshypothese** (𝕊_ℤ ∈ K_∞) und Verbindungen zur **Riemannschen Vermutung**
 
 #### Kapitelstruktur
-Einleitung, Arithmetische Struktur der Geometrie, Formale Entwicklung, Sinnvolle Koeffizienten, Ableitungen und Integrale, Eulersche Zahl e, Eigenschaften, Primzahlprodukt-Vermutung, Überrationalitätsvermutung, Algebraische-Koeffizienten-Vermutung, Superiale-Transzendenz-Vermutung, ZFC-Modellkonstruktion
+| Kapitel | Thema |
+|---------|-------|
+| Vorwort | Persönliche Motivation |
+| Einleitung | Zahlentheorie der Analysis; Fraktale Struktur des Aktual-Unendlichen entdecken |
+| Arithmetische Struktur der Geometrie | Herleitung von s aus der Geometrie der Primzahlteile; Kontinuum |
+| Formale Entwicklung | Definitionen; Teilmengen (ℕ, ℤ, Primzahlen); Normalform; 𝕊 ist Körper und geordneter Körper; Erzeugungsanzahl; Grenzwertabschluss und s-Auswertung |
+| Sinnvolle Koeffizienten | Welche endlichen Zahlen ergeben im Produkt mit s aktual unendliche ganze Zahlen |
+| Ableitungen und Integrale | Normierte aktuale Unendlichkeit ersetzt Limes/Differential; Fundamentalsatz; Standardisierung (Null-Schicht); s als Standardnormierung der Analysis |
+| Eulersche Zahl e und Exponentialfunktion | Neue Definition über aktual unendliche Zahlen; Transzendenz von e; Quadratur des Kreises |
+| Eigenschaften | Algebraische Koeffizienten; Ordnungseigenschaften; Strukturvergleich mit Ordinalzahlen; Kontinuumshypothese |
+| Primzahlprodukt-Vermutung | Beweis: ω = Mengen-Primfakultät aller endlichen Primzahlen |
+| Überrationalitätsvermutung | Beweis: Irrationale Wurzeln als aktual-unendliche Brüche |
+| Algebraische-Koeffizienten-Vermutung | Beweis: Reell algebraische Zahlen als sinnvolle Koeffizienten |
+| Superiale-Transzendenz-Vermutung | Beweis: Transzendente Zahlen durch superiale Fraktalstruktur charakterisiert |
+| ZFC-Modellkonstruktion | ZFC-konforme Fundierung als Hahn-Reihe (Wertgruppe ℤ); p-adische Bewertungen; Erzeugungsanzahl motiviert; Grenzwertabschluss erklärt |
 
 ---
 
