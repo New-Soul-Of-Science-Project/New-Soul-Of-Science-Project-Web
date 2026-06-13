@@ -211,6 +211,21 @@ Das unendliche Produkt aller endlichen Primzahlen in ω-ter Potenz bildet die Ba
 - **Fraktale Struktur**: Über Primzahlpotenzen organisiert; jede Ebene teilt alle endlichen Primzahlen
 - **ZFC-Darstellung**: ZFC-konform als Hahn-Reihe mit Wertgruppe ℤ konstruiert; über p-adische Bewertungen fundiert
 
+#### Schichtstruktur
+Jede Superial-Zahl ist eine Hahn-Reihe mit drei klar getrennten Schichten:
+
+```
+x = Σ(k>0) aₖ sᵏ  +  a₀  +  Σ(k<0) aₖ sᵏ
+    └─ aktual ∞ ─┘   └─ Null-Schicht ─┘   └─ infinitesimal ─┘
+```
+
+- **Ordnungsfunktion** `ord_s(x) = max(Träger(x))`: der größte vorkommende s-Exponent
+  - `ord_s(x) > 0`: x besitzt aktual unendlichen Anteil
+  - `ord_s(x) = 0`: x liegt in der endlichen Hauptschicht (kann aber infinitesimale Reste besitzen)
+  - `ord_s(x) < 0`: x ist rein infinitesimal
+- **Endliche Superial-Zahlen** 𝕊_fin := {x | ord_s(x) ≤ 0} — ohne aktual unendlichen Anteil, aber mit infinitesimalen Verdickungen. Beispiel: 3 + s⁻¹ ∈ 𝕊_fin; 3 + s ∉ 𝕊_fin
+- **Kurzformel**: Die klassische reelle Zahl ist der Zielwert. Die superiale Zahl ist **Zielwert plus Schicht- und Grenzwertspur**.
+
 #### s als normierte aktuale Unendlichkeit der Analysis
 `s` ist nicht einfach eine beliebige Grenzwert-Unendlichkeit, sondern die **kanonische aktual unendliche Recheneinheit** der Superial-Analysis — und kann als **Standardnormierung der allgemeinen Analysis** verstanden werden:
 - `s · s⁻¹ = 1`: s⁻¹ ist die erste normierte infinitesimale Schrittweite
@@ -218,6 +233,13 @@ Das unendliche Produkt aller endlichen Primzahlen in ω-ter Potenz bildet die Ba
 - Wäre s nicht genau über das Primzahl-Flächenprodukt definiert, wären nicht alle reell algebraischen Zahlen im Produkt mit s ganzzahlig
 - Eine feinere Normierung wie s² erzeugt im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten ohne Informationsgewinn
 - Die klassische Grenzwertrechnung vernichtet die Differenz nach der Division; die Superial-Analysis **erhält sie als Spur** (aktual unendlich kleiner Rest)
+
+**Grenzwertabschluss ≠ s-Auswertung:** s ist *nicht* das Ende jeder unendlichen Darstellung.
+- 1/3 als periodische Regel `0,3̄` ist exakt (Grenzwertabschluss)
+- Eine Dezimalzahl mit *genau* s Dreien ist dagegen nur `1/3 − (1/3)·10⁻ˢ` — sie hat einen **Darstellungsrest** der Größe `(1/3)·10⁻ˢ`
+- s ist die Standard-Schrittanzahl der Analysis — nicht das Ende jeder unendlichen Folge
+
+**Abgrenzung zu hyperreellen Zahlen:** Ähnlichkeit in infinitesimalen und unendlichen Größen; Unterschied durch die ausgezeichnete arithmetische Einheit s, deren Primfaktorinterpretation `vₚ(s) = ω`, die Erzeugungsanzahl und die Verbindung zu algebraischen Koeffizienten.
 
 #### Infinitesimalrechnung ohne Limes
 - Ableitung: f'(x) := (f(x + s⁻¹) − f(x)) · s → exakte Ableitung mit **normierter Schrittweite** s⁻¹, kein Grenzprozess
@@ -243,12 +265,23 @@ Beispiele:
 #̄_erz(s) = s = ω^ω  (ω-fach iterierte Erzeugungskombinatorik)
 ```
 
+#### Dreifaches Kontinuum
+Die klassische reelle Gerade ist nur eine Projektion:
+- **ℝ** = Null-Schicht / Standardprojektion (klassische reelle Zahlen)
+- **𝕊_fin** = endliches superiales Kontinuum — reelle Werte mit infinitesimalen Verdickungen
+- **𝕊** = volles geschichtetes Kontinuum — endliche, infinitesimale und aktual unendliche Koordinaten
+
+Leitsatz: *Das reelle Kontinuum ist die Null-Schicht-Projektion eines reicheren superialen Kontinuums.*
+
 #### Bewiesene Vermutungen
-1. **Primzahlprodukt-Vermutung** *(bewiesen)*: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen; jede endliche Primzahl teilt ω genau einmal
-2. **Überrationalitätsvermutung** *(bewiesen)*: Irrationale x-te Wurzeln aus n sind als Bruch aktual unendlicher ganzer Zahlen darstellbar (Nenner und Zähler ∼ n^ω)
-3. **Algebraische-Koeffizienten-Vermutung** *(bewiesen)*: Alle reell algebraischen Zahlen sind sinnvolle Koeffizienten des superialen Stellenwertsystems (𝔸_ℝ ⊆ 𝔸_𝕊)
-4. **Superiale-Transzendenz-Vermutung** *(bewiesen)*: Alle transzendenten Zahlen besitzen superial kleine Summanden; die Trennlinie algebraisch ↔ transzendent entspricht den Fraktalebenen von 𝕊
-5. Neue Einsichten zur **Kontinuumshypothese** (𝕊_ℤ ∈ K_∞) und Verbindungen zur **Riemannschen Vermutung**
+*(In der Theorie als bewiesen präsentiert; formale Peer-Review steht aus.)*
+
+1. **Primzahlprodukt-Vermutung**: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen; jede endliche Primzahl teilt ω genau einmal
+2. **Überrationalitätsvermutung**: Irrationale x-te Wurzeln aus n sind als Bruch aktual unendlicher ganzer Zahlen darstellbar (Nenner und Zähler ∼ n^ω)
+3. **Algebraische-Koeffizienten-Vermutung (AKV)**: Alle reell algebraischen Zahlen sind sinnvolle Koeffizienten des superialen Stellenwertsystems (𝔸_ℝ = 𝔸_𝕊)
+4. **Superiale-Transzendenz-Vermutung (STV)**: Alle transzendenten Zahlen besitzen superial kleine Summanden; die Trennlinie algebraisch ↔ transzendent entspricht den Fraktalebenen von 𝕊
+5. Neue Einsichten zur **Kontinuumshypothese**: Kardinalität ≠ Erzeugungsanzahl — die KH fragt nach Zwischenmächtigkeiten, die Superial-Zahlen nach Schichten und Erzeugungsstrukturen
+6. Verbindungen zur **Riemannschen Vermutung** werden untersucht
 
 #### Kapitelstruktur
 | Kapitel | Thema |
@@ -260,7 +293,7 @@ Beispiele:
 | Sinnvolle Koeffizienten | Welche endlichen Zahlen ergeben im Produkt mit s aktual unendliche ganze Zahlen |
 | Ableitungen und Integrale | Normierte aktuale Unendlichkeit ersetzt Limes/Differential; Fundamentalsatz; Standardisierung (Null-Schicht); s als Standardnormierung der Analysis |
 | Eulersche Zahl e und Exponentialfunktion | Neue Definition über aktual unendliche Zahlen; Transzendenz von e; Quadratur des Kreises |
-| Eigenschaften | Algebraische Koeffizienten; Ordnungseigenschaften; Strukturvergleich mit Ordinalzahlen; Kontinuumshypothese |
+| Eigenschaften | Algebraische Koeffizienten; Ordnungseigenschaften; Strukturvergleich mit Ordinalzahlen; Kontinuumshypothese; Vergleich mit hyperreellen Zahlen; dreifaches Kontinuum (ℝ, 𝕊_fin, 𝕊) |
 | Primzahlprodukt-Vermutung | Beweis: ω = Mengen-Primfakultät aller endlichen Primzahlen |
 | Überrationalitätsvermutung | Beweis: Irrationale Wurzeln als aktual-unendliche Brüche |
 | Algebraische-Koeffizienten-Vermutung | Beweis: Reell algebraische Zahlen als sinnvolle Koeffizienten |

@@ -29,6 +29,7 @@
 │   ├── Spannungsspiel-des-Lebens/   # Neue Biophysik (SpaLeb)
 │   ├── Naturphilosophie-Yoga/       # NaPhil-Yoga (NPYo)
 │   ├── Superial-Zahlen/             # Superial-Zahlen (SupNum)
+│   │   └── _ChatGPT/               # ChatGPT-Arbeitsdokumente (Zusammenfassungen, Prompts)
 │   ├── Biordinalzahlen/             # Biordinalzahlen (BO)
 │   ├── Operialtheorie/              # Operial-Theorie (OT)
 │   ├── Naturphilosophie-der-Zeit/   # Naturphilosophie der Zeit
