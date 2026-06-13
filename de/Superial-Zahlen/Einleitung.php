@@ -13,10 +13,10 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Einpflegen}',
-                    '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
+                    // '\bold{Einpflegen}',
+                    //%! '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
                     '\bold{Der Ansatz mit aktual unendlichen Zahlen ist nicht neu}',
-                    '• Sondern er ist historisch offenbar sogar älter, als der mit dem Limes-Grenzwert, siehe \url{https://de.wikipedia.org/w/index.php?title=Hyperreelle_Zahl&oldid=237554998} und \url{https://de.wikipedia.org/wiki/Differentialrechnung#Geschichte}.',
+                    '• Sondern er ist historisch offenbar sogar älter, als der mit dem Limes-Grenzwert, siehe \url{https://de.wikipedia.org/w/index.php?title=Hyperreelle_Zahl&oldid=237554998} und \url{https://de.wikipedia.org/w/index.php?title=Differentialrechnung&oldid=267675700#Geschichte}.',
                     '• Dieser Ansatz machte Probleme, weil er in sich logisch inkonsistent und nicht klar definiert war.',
                     '– Dies wurde erst durch die hyperreellen Zahlen geändert, die sich über Reihenentwicklung dem unendlich Großen und Kleinen nähern.',
                     '• Die Superial-Zahlen gehen einen anderen Weg, als die hyperreellen Zahlen, und zwar über ein unendlich großes Primzahlprodukt. Dabei lösen sie das Logikproblem zunächst einmal „nur“ für die Radikale der algebraischen Zahlen, das sind rationale Zahlen und irrationale Wurzelausdrücke, die mit den Grundrechenarten verbunden sind. Durch den erheblichen Erkenntnisgewinn, auch in Bezug auf Primzahlen, ist allein dies schon hoch interessant. Und es eröffnet einen Horizont über weitere Erkenntnisse auch diesbezüglich zu den restlichen irrationalen Zahlen, die keine algebraischen Radikale sind, vorzustoßen und die Natur von transzendenten Zahlen zu erkunden.',
@@ -53,59 +53,72 @@
 
                   array( 'text', array( text => array(
                     'Er möchte offenbar damit auch zum Ausdruck bringen, dass wir in der Mathematik an allen Ecken und Enden auf Unendliches stoßen'."\n".
-                    'und versuchen es für Menschen möglichst verständlich, übersichtlich und gut nutzbar zu machen.'."\n".
-                    'Dazu habe ich die Superial-Zahlen entwickelt; um unserem Verständnis und unseren Ausdrucksmöglichkeiten'."\n".
-                    'des Unendlichen weitere nützliche Perspektiven hinzuzufügen.'."\n",
+                    'und versuchen es für Menschen möglichst verständlich, ausdrückbar und gut nutzbar zu machen.'."\n".
+                    'Das waren auch für mich Energie gebende Anliegen und der Impuls, gepaart mit meiner Neugier, die Superial-Zahlen zu entwickelt.'."\n".
+                    'Ich wollte unserem Verständnis und unseren Ausdrucksmöglichkeiten des Unendlichen'."\n".
+                    'weitere faszinierende und nützliche Perspektiven und Werkzeuge hinzuzufügen.'."\n",
                       'Zur weiteren Einstimmung auf das Unendliche und seine Geschichte möchte ich dem Leser ein Video von Edmund Weitz'."\n".
                     'ans Herz legen: \jump[https://www.youtube.com/watch?v=H8ZBjsYU4JE]{}{Die Eroberung der Unendlichkeit (Kurze Geschichte der Mathematik 3)}.'."\n".
                     'Und wer tiefer einsteigen und verstehen möchte – eher mit Vorkenntnissen –, dem lege ich das Buch von David Foster \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, nahe.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
-                    'Formal gesprochen sind sie eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
+                    'Wie wir sehen werden gelingt uns und erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n",
+                      'Es wird uns möglich, unser Zahlensystem, mit vielen seiner uns bekannten Kategorien, Eigenschaften und Untermengen,'."\n".
+                    'über einfache fundamentale Ganzzahligkeits- und Teilbarkeitsargumente normiert ins Aktual-Unendliche und Aktual-Infinitesimale zu erweitern.'."\n".
+                    'Über diese Argumenten kommen wir mit den Superial-Zahlen in die Lage'."\n".
+                    'aktual unendlich kleine Differenzen zu bilden und Integrale mit wohldefinierten aktual unendlich kleinen ganzen Zählschritten'."\n".
+                    'zu beschreiben, ohne den Limes, also ohne Grenzwerte\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}},'."\n".
+                    'zu bilden.'."\n",
+                      'Aufgrund unseres Beweises der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
+                    'und unserer Mengenlehre konformen \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion der Superial-Zahlen} erhalten wir'."\n".
+                    'eine kanonische – natürliche – arithmetische Erweiterung der Ordinalzahlen,'."\n".
+                    'auf deren Grundlage wir unsere neue normierte superiale Basis \lm{ \s } definieren.'."\n".
+                    'Ihre arithmetischen und unendlichen Eigenschaften ermöglichen uns sodann unsere Ganzzahligkeits- und Teilbarkeitsargumente.'."\n".
+                    'In Bezug auf die Differenzialrechnung geben wir damit dem infinitesimalen Epsilon eine unendliche Struktur aus Primzahlen.'."\n",
+                      'Formal gesprochen sind unsere neuen Zahlen eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
-                    'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
-                    'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
-                    'sowie durch auf ihm aufbauende Beweise,'."\n".
-                    'sogar die Mengen der Radikale, Radikalformen und reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
-                    'inklusive aller irrationalen Wurzeln, auf fraktale Weise ins Aktual-Unendliche.'."\n".
-                    'So geben wir der aktualen Unendlichkeit eine facettenreiche arithmetische und fraktale Struktur sowie der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
-                      'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
-                    'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes, also ohne Grenzwerte\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}},'."\n".
-                    'zu benutzen.'."\n",
-                      'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen ganzen Zählschritten beschreiben,'."\n".
-                    'deren Anzahl dann aktual unendlich groß ist und sich so wieder zu endlichen Zahlen aufsummiert.'."\n".
-                    'Dies wird möglich, weil es uns gelingt das unendlich Kleine, das Infinitesimale, und das unendlich Große, das Infinite,'."\n".
-                    'zu normieren.'."\n",
-                      'Nutzen wir zusätzlich die Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Elementanzahlen von Mengen sowie Summen ausrechnen,'."\n".
-                    'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
-                    'Die Summe aller endlichen ganzen Zahlen oder die Summe aller reell algebraischen Zahlen beispielsweise.'."\n",
+                    'Mit ihnen machen wir die algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'im Produkt mit \lm{ \s } zu ganzen Zahlen im Aktual-Unendlichen.'."\n".
+                    'Alle so skalierten rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}} werden im Unendlichen zu ganzen Zahlen.'."\n".
+                    'Durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
+                    'sowie durch auf ihm aufbauende Beweise werden sogar alle Radikale und Radikalformen – Wurzelausdrücke –, wie gesagt schließlich alle reell algebraischen Zahlen,'."\n".
+                    'inklusive aller irrationalen Wurzeln, in dieser Aktual-Unendlichkeit ganzzahlig.'."\n".
+                    'Anschließend können wir diese unendlich große Ganzzahligkeit ins Infinitesimale – unendlich Kleine – skalieren.'."\n".
+                    'So geben wir der aktualen Unendlichkeit sowie der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{Geometrie eine facettenreiche fraktale fundamentale arithmetische Struktur}.'."\n",
+                      'Durch unsere arithmetische Erweiterung der Ordinalzahlen und unsere kardinalzahlähnliche Konstruktion von \lm{ \s } eröffnet sich'."\n".
+                    'eine neue Möglichkeit der Definition einer Anzahlbemaßung der Elemente von Mengen unendlich vieler Zahlen und der Berechnung ihrer Summen.'."\n".
+                    'Diese \italic{Erzeugungsanzahl} führen wir als \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{Erzeugungsanzahl der Menge \lm{ A }}'."\n".
+                    '(\lm{ \overline{\#}_{\mathrm{erz}} A } oder kurz \lm{ \overline{\#} A }) ein.'."\n".
+                    'Sie ergänzt die Mächtigkeit von Mengen, die „nur“ die Abbildungseigenschaften von Mengen bewertet.'."\n".
+                    'Ihre Berechnung erfolgt stets relativ zur vollständigen Induktion \lm{ ω }, auch \jump{OM:SupNum:ZFC-Modellkonstruktion}{bezüglich \lm{ \s = ω^{ω} }}.'."\n".
+                    'Die Erzeugungsanzahl verbindet einen kardinalen und einen ordinalen Aspekt der Zahlen.'."\n".
+                    'Die ausführliche Definition und Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}.'."\n".
+                    'Dazu gehören die Summen aller endlichen ganzen Zahlen oder die Summe aller reell algebraischen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
                     'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ \s }'."\n".
                     'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
                       'Wir erhalten zum Beispiel auch natürliche Superial-Zahlen, ganze Superial-Zahlen und superiale Primzahlen;'."\n".
                     'aktual unendlich kleine Einsen und aktual unendlich große Einsen.'."\n".
                     'Auch können die ganzen Superial-Zahlen gerade oder ungerade sein und so weiter und so fort.'."\n".
-                    'Erstaunlich viele der uns bekannten wichtigen Eigenschaften der endlichen Zahlen erweitern sich ins aktual unendlich'."\n".
-                    'Kleine und Große.'."\n",
-                      'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
+                    'Erstaunlich viele der uns bekannten wichtigen Eigenschaften der endlichen Zahlen lassen'."\n".
+                    'sich dadurch ins aktual unendlich Kleine und Große erweitern.'."\n".
+                    'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
                     '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'zur Basis \lm{ \s },'."\n".
                     'wo die Ziffern alle positiven wie auch negativen reell algebraischen Zahlen sein können.'."\n",
                       'Wir erschaffen so eine Zahlentheorie der Analysis, die auf den uns bekannten endlichen Primzahlen basiert, die im unendlich großen Produkt'."\n".
                     'aller endlichen Primzahlen zur \lm{ ω }-ten Potenz ihre Grundlage findet, der \italic{superialen Basis} \lm{ \s }.'."\n".
                     'Dabei finden wir heraus, dass \lm{ ω } selbst – die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –'."\n".
-                    'einem unendlichen Primzahlprodukt entspricht und somit um eine tiefere Arithmetik erweitert wird.'."\n",
-                      'Die superiale Basis \lm{ \s } ist nicht einfach irgendeine aktual unendliche Zahl.'."\n".
-                    'Sie ist so auf die einfachste Weise symmetrisch strukturiert, dass sie genau zu den Eigenschaften der rationalen und reell algebraischen Zahlen passt,'."\n".
+                    'einem unendlichen Primzahlprodukt entspricht und somit, wie gesagt, um eine tiefere Arithmetik erweitert wird.'."\n",
+                      'Die superiale Basis \lm{ \s } ist nicht einfach irgendeine aktual unendliche Zahl, wie oben schon ausgeführt.'."\n".
+                    'Sie ist auf die einfachste Weise so strukturiert, dass sie genau zu den Eigenschaften der rationalen und reell algebraischen Zahlen passt,'."\n".
                     'sodass diese als ihre Koeffizienten, mit ihr im Produkt, immer aktual unendlich große ganze Zahlen ergeben.'."\n".
                     'Daher spielt die superiale Basis \lm{ \s } eine zwar andere, aber vergleichbare Rolle für das Aktual-Unendliche, wie die imaginäre Einheit \lm{ \i }'."\n".
-                    'für die komplexen Zahlen.'."\n".
-                    'Ich habe mir Ableitungen und Integrale genau angeguckt und versucht zu verstehen, welche Eigenschaften \lm{ \s } hat.'."\n".
-                    'Darüber hab ich letztendlich die Definition von \lm{ \s } als aktual unendliches Primzahlprodukt in Kombination mit vollständiger Induktion gefunden.'."\n",
+                    'für die komplexen Zahlen.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
-                      'Wie sagen wir im Englischen so schön:'."\n".
-                    '\quote{Lets go for it!}'."\n".
+                      'Wie sagen wir so schön:'."\n".
+                    '\quote{Lasst uns anfangen!}'."\n".
+                    'Oder im Englischen: \quote{Lets go for it!}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            

@@ -125,7 +125,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \e  :=  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }'),
+                      array( display => 'off', latex => '{  \e  :=  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }',
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes}', label_incr => true),
                       array( display => 'off', latex => '{  \Rightarrow  \e^{x}  =  *( \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} } *)^{x}  }'),
                       array( display => 'on',  latex => '{  \e^{x}  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{x \cdot n} }  }',
                                     latex_if_visible => '{  \Leftrightarrow  \e^{x}  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{x \cdot n} }  }'),
@@ -173,15 +174,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈x〉}  =  〈1〉․〈1〉^{〈․\,〈x〉〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}^{․\,〈x〉}  =  〈1〉․〈1〉^{x}  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈1〉}  =  〈1〉․〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2〉}  =  〈1〉․〈2〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3〉}  =  〈1〉․〈3〉〈3〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  〈1〉․〈4〉〈6〉〈4〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈5〉}  =  〈1〉․〈5〉〈10〉〈10〉〈5〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈6〉}  =  〈1〉․〈6〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈x〉}  =  〈1〉․〈1〉^{〈․\,〈x〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈x〉}  =  〈1〉․〈1〉^{x}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  〈1〉․〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  〈1〉․〈2〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  〈1〉․〈3〉〈3〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  〈1〉․〈4〉〈6〉〈4〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈5〉}  =  〈1〉․〈5〉〈10〉〈10〉〈5〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6〉}  =  〈1〉․〈6〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
@@ -192,11 +193,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \italic{über}-Operator\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
@@ -204,7 +205,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nachfolgend beleuchten wir die Berechnung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe}{Summen der einzelnen Spalten der Binomialkoeffizienten}'."\n".
@@ -770,8 +771,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{〈․\,〈\i \cdot x〉〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{〈․\,〈\i \cdot x〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -818,24 +819,24 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈\i〉}  =  〈1〉․〈\i〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2 \i〉}  =  〈1〉․〈2 \i〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3 \i〉}  =  〈1〉․〈3 \i〉〈3〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4 \i〉}  =  〈1〉․〈4 \i〉〈6〉〈4〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈5 \i〉}  =  〈1〉․〈5 \i〉〈10〉〈10〉〈5〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈\i〉}  =  〈1〉․〈\i〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2 \i〉}  =  〈1〉․〈2 \i〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3 \i〉}  =  〈1〉․〈3 \i〉〈3〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4 \i〉}  =  〈1〉․〈4 \i〉〈6〉〈4〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈5 \i〉}  =  〈1〉․〈5 \i〉〈10〉〈10〉〈5〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
