@@ -244,7 +244,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen braucht, stellt sich unmittelbar aus ihrer eigenen Konstruktion heraus.'."\n".
-                    'Aus den Erkenntnissen zur Struktur von \lm{ \s } folgt, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
+                    'Aus den Erkenntnissen zur \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }} folgt, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

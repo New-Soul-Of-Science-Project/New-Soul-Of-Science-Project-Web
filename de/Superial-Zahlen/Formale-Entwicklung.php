@@ -858,7 +858,8 @@
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'haben muss – eine ganze Zahl weit jenseits von \lm{ ω }.'."\n".
+                    'haben muss – eine ganze Zahl weit jenseits von \lm{ ω }'."\n".
+                    '(Herleitung: \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }}).'."\n".
                     'Die klassische Mengenlehre hingegen stellt fest: \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ist abzählbar unendlich, also gleichmächtig mit \lm{ \mathbb{N} }.'."\n".
                     'Beide Aussagen sind wahr und widersprechen sich nicht.'."\n".
                     'Sie messen aber verschiedene Dinge:'."\n".
