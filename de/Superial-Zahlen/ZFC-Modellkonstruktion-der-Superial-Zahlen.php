@@ -265,7 +265,7 @@
                     'Genau für diese zweite Frage brauchen wir einen eigenen Begriff – die \italic{Erzeugungsanzahl} \lm{ \overline{\#}_{\mathrm{erz}} }.'."\n".
                     'Sie verbindet einen kardinalen und einen ordinalen Aspekt der Zahlen.'."\n".
                     'Ihre Berechnung erfolgt stets relativ zur vollständigen Induktion \lm{ ω }, auch bei \lm{ \s = ω^{ω} }.'."\n",
-                      'Die ausführliche Definition und Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
+                      'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
                     'der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
