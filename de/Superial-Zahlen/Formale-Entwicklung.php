@@ -885,10 +885,7 @@
                     '\italic{Vielmehr beschreibt} \lm{ \overline{\#}_{\mathrm{erz}}( A ) } die kombinatorische Anzahl'."\n".
                     'der Elemente von \lm{ A } innerhalb der jeweils zugrunde gelegten Erzeugungsstruktur.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                  'Definition', subline =>
-                    '')),
-                      
+
                   array( 'text', array( Shape => 'italic', text => array(
                       'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}}( A ) } eines Objekts, einer Menge oder Struktur \lm{ A }'."\n".
                       'bezeichnet die Anzahl ihrer Elemente beziehungsweise Erzeugungspositionen relativ zur vollständigen Induktion \lm{ ω }.'."\n".
@@ -925,6 +922,66 @@
                     array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
                     ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl:OperativeDefinition', text =>
+                  'Weg 1: Operative Definition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die operative Definition zählt die Elemente einer Menge \lm{ A } innerhalb des biordinalen Zählfensters'."\n".
+                    '\lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } mithilfe der Indikatorfunktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(A*)  :=  \sum_{k \in ]-ω,\, ω[_{\mathbb{Bn}}}  \mathbf{1}_A(k)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{N}) = ω } ist die Grundlage der operativen Definition:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{N}*)  =  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das Zählfenster \lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } ist biordinal-symmetrisch: Die negativen ganzen Zahlen'."\n".
+                    '\lm{ \mathbb{Z}^{-} } entstehen durch Verschiebung der natürlichen Zahlen, unter Erhalt der Zählrichtung'."\n".
+                    '(\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{biordinale Asymmetrie}), und belegen'."\n".
+                    'ebenso \lm{ ω } Positionen im Zählfenster.'."\n".
+                    'Da \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } das Fenster disjunkt aufteilen, folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}*)  =  ω  +  ω  =  2ω  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl:AxiomatischeFundierung', text =>
+                  'Weg 2: Axiomatische Fundierung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Alternativ lässt sich die Erzeugungsanzahl axiomatisch charakterisieren.'."\n".
+                    'Sechs Eigenschaften legen zusammen fest, was die Erzeugungsanzahl leisten soll:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Axiom 1 – Normierung:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{N}) = ω }',
+                        '\bold{Axiom 2 – Leere Menge:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\emptyset) = 0 }',
+                        '\bold{Axiom 3 – Additivität:} \\\\ Für disjunkte \lm{ A, B } gilt \lm{ \overline{\#}_{\mathrm{erz}}(A \cup B) = \overline{\#}_{\mathrm{erz}}(A) + \overline{\#}_{\mathrm{erz}}(B) }.',
+                        '\bold{Axiom 4 – Homogenität:} \\\\ Für alle quadratfreien \lm{ d \in \mathbb{N}^{+} } – also Produkte paarweise verschiedener Primzahlen – gilt \lm{ \overline{\#}_{\mathrm{erz}}(d \mathbb{N}) = \tfrac{ω}{d} }.',
+                        '\bold{Axiom 5 – Translationsinvarianz:} \\\\ Für alle \lm{ k \in \mathbb{Z} } und \lm{ A \subseteq \mathbb{Z} } gilt \lm{ \overline{\#}_{\mathrm{erz}}(A + k) = \overline{\#}_{\mathrm{erz}}(A) }.',
+                        '\bold{Axiom 6 – Biordinale Spiegelung:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{Z}^{-}) = ω }, wobei \lm{ \mathbb{Z}^{-} = \{-1, -2, -3, \ldots\} } die negativen ganzen Zahlen ohne Null bezeichnet.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Axiom 6 trägt der biordinalen Ontologie Rechnung: Jede negative Zahl entsteht aus einer natürlichen Zahl'."\n".
+                    'durch Verschiebung, ohne Umkehr der Zählrichtung, sodass \lm{ \mathbb{Z}^{-} } und \lm{ \mathbb{N} } dieselbe Erzeugungsanzahl \lm{ ω } besitzen.'."\n".
+                    'Hingegen gilt \lm{ \overline{\#}_{\mathrm{erz}}(-\mathbb{N}) = ω + 1 }, weil \lm{ -\mathbb{N} = \{0, -1, -2, \ldots\} } die Null einschließt'."\n".
+                    'und daher ein Element mehr erzeugt als \lm{ \mathbb{Z}^{-} }.'."\n",
+                      'Aus den Axiomen lassen sich die Kernbeispiele direkt ableiten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}*)  =  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{N}*)  +  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}^{-}*)  =  ω + ω  =  2ω  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(2\mathbb{N}*)  =  \frac{ω}{2}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das erste Ergebnis folgt aus Axiom 3 und 6.'."\n".
+                    'Das zweite folgt direkt aus Axiom 4 mit \lm{ d = 2 }.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   'Berechnung der Erzeugungsanzahl', subline =>
                     '')),
