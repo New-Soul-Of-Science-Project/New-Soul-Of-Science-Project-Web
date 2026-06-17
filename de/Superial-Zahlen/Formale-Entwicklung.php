@@ -849,15 +849,35 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'In dieser Arbeit unterscheiden wir zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
-                    'Die Erzeugungsanzahl wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} motiviert und hier formal eingeführt.'."\n",
-                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
-                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
-                    'wenn diese Erzeugung relativ zur vollständigen Induktion \lm{ ω } und den aus ihr abgeleiteten superialen Strukturen betrachtet wird.'."\n",
-                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
+                    'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen braucht, stellt sich unmittelbar aus ihrer eigenen Konstruktion heraus.'."\n".
+                    'In der \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} zeigt sich, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'haben muss – eine ganze Zahl weit jenseits von \lm{ ω }.'."\n".
+                    'Die klassische Mengenlehre hingegen stellt fest: \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ist abzählbar unendlich, also gleichmächtig mit \lm{ \mathbb{N} }.'."\n".
+                    'Beide Aussagen sind wahr und widersprechen sich nicht.'."\n".
+                    'Sie messen aber verschiedene Dinge:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Mächtigkeit} fragt: lässt sich \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } bijektiv auf \lm{ \mathbb{N} } abbilden? – Ja.',
+                        '\bold{Erzeugungsanzahl} fragt: wie viele Erzeugungspositionen belegt \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } relativ zur vollständigen Induktion \lm{ ω }? – \lm{ \frac{ \s }{ 2 ω } }.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Genau für diese zweite Frage brauchen wir einen eigenen Begriff.'."\n".
+                    'In dieser Arbeit unterscheiden wir daher zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
+                    'Die Erzeugungsanzahl wird durch die ZFC-Modellkonstruktion motiviert und hier formal eingeführt.'."\n",
+                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
+                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
+                    'wenn diese Erzeugung relativ zur vollständigen Induktion \lm{ ω } und den aus ihr abgeleiteten Strukturen betrachtet wird.'."\n",
+                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
