@@ -979,8 +979,8 @@
                       array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(2\mathbb{N}*)  =  \frac{ω}{2}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das erste Ergebnis folgt aus Axiom 3 und 6.'."\n".
-                    'Das zweite folgt direkt aus Axiom 4 mit \lm{ d = 2 }.'."\n".
+                    'Das erste Ergebnis folgt aus Axiom 3 und 6, das zweite direkt aus Axiom 4 mit \lm{ d = 2 }.'."\n".
+                    'Die ausführliche Herleitung findet sich in den Beispielen unten.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   'Berechnung der Erzeugungsanzahl', subline =>
@@ -990,13 +990,6 @@
                     'Dabei zählt sie nicht nur Elemente bis auf Bijektion, sondern die durch \lm{ ω } gegebenen Erzeugungspositionen,'."\n".
                     'Erzeugungsrichtungen, Teilbelegungen oder iterierten Kombinationsmöglichkeiten.'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                    'Für die endlichen natürlichen Zahlen gilt im Sinne der vollständigen Induktion:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( \mathbb{N} )  =  ω  \;\; .  }'),
-                    ))),
                   array( 'text', array( text => array(
                     'Die gewöhnliche Mengenlehre erfasst die Größe von \lm{ \mathbb{N} } über dessen Mächtigkeit.'."\n".
                     'Die hier verwendete Erzeugungsanzahl betrachtet jedoch zusätzlich die arithmetische'."\n".
