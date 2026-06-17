@@ -987,25 +987,15 @@
                   'Berechnung der Erzeugungsanzahl', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die Erzeugungsanzahl wird stets relativ zur vollständigen Induktion \lm{ ω } berechnet.'."\n".
-                    'Dabei zählt sie nicht nur Elemente bis auf Bijektion, sondern die durch \lm{ ω } gegebenen Erzeugungspositionen,'."\n".
-                    'Erzeugungsrichtungen, Teilbelegungen oder iterierten Kombinationsmöglichkeiten.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Die gewöhnliche Mengenlehre erfasst die Größe von \lm{ \mathbb{N} } über dessen Mächtigkeit.'."\n".
-                    'Die hier verwendete Erzeugungsanzahl betrachtet jedoch zusätzlich die arithmetische'."\n".
-                    'und kombinatorische Struktur, durch die die betreffenden Objekte erzeugt werden.'."\n",
-                      'Die Erzeugungsanzahl verbindet damit einen kardinalen und einen ordinalen Gesichtspunkt.'."\n".
+                    'Die Erzeugungsanzahl verbindet einen kardinalen und einen ordinalen Gesichtspunkt.'."\n".
                     'Kardinal ist sie, weil sie eine Anzahl ausdrücken soll.'."\n".
-                    'Ordinal ist sie, weil diese Anzahl nicht unabhängig von der Erzeugungsordnung'."\n".
-                    'und der zugrunde gelegten Erzeugungsstruktur betrachtet wird.'."\n".
-                    'Sie fragt also nicht nur, ob zwei Mengen gleichmächtig sind, sondern auch,'."\n".
-                    'auf welche Weise ihre Elemente durch eine bestimmte Ordnung, Operation oder Kombinatorik hervorgebracht werden.'."\n".
-                      'Insbesondere soll die Erzeugungsanzahl später dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
+                    'Ordinal ist sie, weil diese Anzahl stets relativ zur vollständigen Induktion \lm{ ω }'."\n".
+                    'und der zugrunde gelegten Erzeugungsstruktur betrachtet wird –'."\n".
+                    'nicht nur, ob zwei Mengen gleichmächtig sind, sondern wie ihre Elemente durch Ordnung, Operation oder Kombinatorik hervorgebracht werden.'."\n",
+                      'Insbesondere soll die Erzeugungsanzahl dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
                     'und unterschiedlicher Erzeugungskombinatorik zu unterscheiden.'."\n".
                     'So können Mengen gleicher Mächtigkeit im Sinne von ZFC dennoch verschiedene Erzeugungsanzahlen besitzen,'."\n".
-                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion beziehungsweise'."\n".
-                    'aus der superialen Struktur hervorgehen.'."\n".
+                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion hervorgehen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   'Beispiele', subline =>
