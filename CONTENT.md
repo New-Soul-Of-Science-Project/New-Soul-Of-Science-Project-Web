@@ -239,7 +239,7 @@ x = Σ(k>0) aₖ sᵏ  +  a₀  +  Σ(k<0) aₖ sᵏ
 - Eine Dezimalzahl mit *genau* s Dreien ist dagegen nur `1/3 − (1/3)·10⁻ˢ` — sie hat einen **Darstellungsrest** der Größe `(1/3)·10⁻ˢ`
 - s ist die Standard-Schrittanzahl der Analysis — nicht das Ende jeder unendlichen Folge
 
-**Abgrenzung zu hyperreellen Zahlen:** Ähnlichkeit in infinitesimalen und unendlichen Größen; Unterschied durch die ausgezeichnete arithmetische Einheit s, deren Primfaktorinterpretation `vₚ(s) = ω`, die Erzeugungsanzahl und die Verbindung zu algebraischen Koeffizienten.
+**Abgrenzung zu hyperreellen Zahlen und Nicht-Standard-Analysis (NSA):** In der NSA nach Robinson existieren Infinitesimale axiomatisch, aber kein ausgezeichnetes kanonisches Infinitesimales. In den Superial-Zahlen ist s⁻¹ das *normierte* kanonische Infinitesimale — nicht eine beliebige infinitesimale Größe, sondern durch die Primstruktur von s festgelegt. Weitere Unterschiede: ausgezeichnete arithmetische Einheit s, deren Primfaktorinterpretation `vₚ(s) = ω`, die Erzeugungsanzahl und die Verbindung zu algebraischen Koeffizienten.
 
 #### Infinitesimalrechnung ohne Limes
 - Ableitung: f'(x) := (f(x + s⁻¹) − f(x)) · s → exakte Ableitung mit **normierter Schrittweite** s⁻¹, kein Grenzprozess
@@ -276,10 +276,10 @@ Leitsatz: *Das reelle Kontinuum ist die Null-Schicht-Projektion eines reicheren 
 #### Bewiesene Vermutungen
 *(In der Theorie als bewiesen präsentiert; formale Peer-Review steht aus.)*
 
-1. **Primzahlprodukt-Vermutung**: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen; jede endliche Primzahl teilt ω genau einmal
+1. **Primzahlprodukt-Vermutung**: ω ist die vollständige Mengen-Primfakultät aller endlichen Primzahlen; jede endliche Primzahl teilt ω genau einmal. — *Formaler Status: Der Ausschluss der Primzahltürme (p^ω ≫ ω) ist klar gezeigt; der positive Schritt (ω = ∏ alle Primzahlen) setzt eine erweiterte Ordinalarithmetik (𝔑_{∞,v_p}) voraus, die noch nicht vollständig axiomatisch gefasst ist.*
 2. **Überrationalitätsvermutung**: Irrationale x-te Wurzeln aus n sind als Bruch aktual unendlicher ganzer Zahlen darstellbar (Nenner und Zähler ∼ n^ω)
 3. **Algebraische-Koeffizienten-Vermutung (AKV)**: Alle reell algebraischen Zahlen sind sinnvolle Koeffizienten des superialen Stellenwertsystems (𝔸_ℝ = 𝔸_𝕊)
-4. **Superiale-Transzendenz-Vermutung (STV)**: Alle transzendenten Zahlen besitzen superial kleine Summanden; die Trennlinie algebraisch ↔ transzendent entspricht den Fraktalebenen von 𝕊
+4. **Superiale-Transzendenz-Vermutung (STV)**: Alle transzendenten Zahlen besitzen superial kleine Summanden; die Trennlinie algebraisch ↔ transzendent entspricht den Fraktalebenen von 𝕊. — *Folgt per Kontraposition direkt aus AKV: wenn alle reell algebraischen Zahlen vollständige sinnvolle Koeffizienten sind, müssen alle übrigen (= transzendenten) superial kleine Anteile enthalten. Die Stärke der STV hängt daher an der Tiefe des AKV-Beweises.*
 5. Neue Einsichten zur **Kontinuumshypothese**: Kardinalität ≠ Erzeugungsanzahl — die KH fragt nach Zwischenmächtigkeiten, die Superial-Zahlen nach Schichten und Erzeugungsstrukturen
 6. Verbindungen zur **Riemannschen Vermutung** werden untersucht
 
