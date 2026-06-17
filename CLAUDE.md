@@ -29,6 +29,7 @@
 │   ├── Spannungsspiel-des-Lebens/   # Neue Biophysik (SpaLeb)
 │   ├── Naturphilosophie-Yoga/       # NaPhil-Yoga (NPYo)
 │   ├── Superial-Zahlen/             # Superial-Zahlen (SupNum)
+│   │   └── _ChatGPT/               # ChatGPT-Arbeitsdokumente (Zusammenfassungen, Prompts)
 │   ├── Biordinalzahlen/             # Biordinalzahlen (BO)
 │   ├── Operialtheorie/              # Operial-Theorie (OT)
 │   ├── Naturphilosophie-der-Zeit/   # Naturphilosophie der Zeit
@@ -139,16 +140,16 @@ To_f_Site()                // Seitennavigation
 
 ## Thematische Sektionen (Kurzbezeichnungen)
 
-| Kürzel   | Name                                | Thema                                     |
-|----------|-------------------------------------|-------------------------------------------|
+| Kürzel   | Name                                | Thema                                            |
+|----------|-------------------------------------|--------------------------------------------------|
 | FrQFT    | Fraktale Quanten-Fluss-Theorie      | Vereinheitlichte Quanten- und Gravitationsphysik |
-| SpaLeb   | Spannungsspiel des Lebens           | Neue Biophysik, Körper-Seele-Beziehung    |
-| NPYo     | Naturphilosophie-Yoga               | Integriertes Yoga-System                  |
-| SupNum   | Superial-Zahlen                     | Mathematik unendlicher Strukturen         |
-| BO       | Biordinalzahlen                     | Erweiterung der Ordinalzahlen             |
-| OT       | Operialtheorie                      | Neue mathematische Rahmentheorie          |
-| VRT      | Vereinheitlichte Relativitätstheorie| Neues relativistisches Konzept            |
-| NSOSA    | New Soul Of Science Academy         | Bildungsplattform                         |
+| SpaLeb   | Spannungsspiel des Lebens           | Neue Biophysik, Körper-Seele-Beziehung           |
+| NPYo     | Naturphilosophie-Yoga               | Integriertes Yoga-System                         |
+| SupNum   | Superial-Zahlen                     | Aktual-unendliche Zahlentheorie der Analysis     |
+| BO       | Biordinalzahlen                     | Erweiterung der Ordinalzahlen                    |
+| OT       | Operialtheorie                      | Neue mathematische Rahmentheorie                 |
+| VRT      | Vereinheitlichte Relativitätstheorie| Neues relativistisches Konzept                   |
+| NSOSA    | New Soul Of Science Academy         | Bildungsplattform                                |
 
 ## Deployment
 

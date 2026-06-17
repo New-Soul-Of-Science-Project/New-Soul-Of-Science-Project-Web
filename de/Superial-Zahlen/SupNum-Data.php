@@ -102,33 +102,35 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung' => array( headline_text => 'Die Integration als Umkehrung der Ableitung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen' => array( headline_text => 'Beispiele für Ableitungen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.4'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.10'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.11'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert' => array( headline_text => 'SN.AbIn.12'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis' => array( headline_text => 'SN.AbIn.13'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis' => array( headline_text => 'SN.AbIn.14'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert' => array( headline_text => 'SN.AbIn.15'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert' => array( headline_text => 'SN.AbIn.16'),
-          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis' => array( headline_text => 'SN.AbIn.17'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.12'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.13'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert' => array( headline_text => 'SN.AbIn.14'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis' => array( headline_text => 'SN.AbIn.15'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis' => array( headline_text => 'SN.AbIn.16'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert' => array( headline_text => 'SN.AbIn.17'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert' => array( headline_text => 'SN.AbIn.18'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis' => array( headline_text => 'SN.AbIn.19'),
 
         'OM:SupNum:Ableitungen-Integrale:Integration' => array( headline_text => 'Die Integration'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert' => array( headline_text => 'SN.AbIn.IN.1'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-faktorisiert' => array( headline_text => 'SN.AbIn.IN.2'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs' => array( headline_text => 'SN.AbIn.IN.3'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs-Elemente' => array( headline_text => 'SN.AbIn.IN.4'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert' => array( headline_text => 'SN.AbIn.IN.4'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-faktorisiert' => array( headline_text => 'SN.AbIn.IN.5'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs' => array( headline_text => 'SN.AbIn.IN.6'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs-Elemente' => array( headline_text => 'SN.AbIn.IN.7'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ' => array( headline_text => 'SN.AbIn.IN.8'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ' => array( headline_text => 'SN.AbIn.IN.9'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Definition-des-Integrals' => array( headline_text => 'Definition des Integrals'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation' => array( headline_text => 'SN.AbIn.IN.12'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.AbIn.IN.13'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.IN.16'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation' => array( headline_text => 'SN.AbIn.IN.15'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.AbIn.IN.16'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.IN.19'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals' => array( headline_text => 'Beispiel eines konkreten Integrals'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.AbIn.IN.21'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.IN.24'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.AbIn.IN.24'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.IN.27'),
 
         'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis' => array( headline_text => 'Fundamentalsatz der Analysis'/* , headline_text_short => 'X' */),
 
-        'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral' => array( headline_text => 'Standartisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:StandartisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
+        'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral' => array( headline_text => 'Standardisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
 
         'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung' => array( headline_text => 'Diskussion der Infinitesimalrechnung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen' => array( headline_text => 'Wohldefinierte Arithmetik des Unendlichen'/* , headline_text_short => 'X'*/),
@@ -248,6 +250,8 @@
 
           'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich' => array( headline_text => 'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?'/* , headline_text_short => 'X' */),
                    
+        'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele' => array( headline_text => 'Erzeugungsanzahl in Beispielen'/* , headline_text_short => 'X' */),
+
         'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen' => array( headline_text => 'Neue Rechenregeln im Unendlichen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
@@ -307,6 +311,7 @@
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.15'),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes' => array( headline_text => 'SN.EuZa.16'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s' => array( headline_text => 'SN.EuZa.19'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck' => array( headline_text => 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck' , headline_text_short => 'Die e-Funktion und das Pascalsche Dreieck'),
@@ -351,6 +356,10 @@
         'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein geordneter Körper'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:SIstKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein Körper'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }', headline_text_short => 'Die Erzeugungsanzahl'),
+
+        'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste' => array( headline_text => 'Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste'/* , headline_text_short => '' */),
 
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
@@ -411,7 +420,8 @@
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet' => array( headline_text => 'Definition: Die Mengen-Primfakultät'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.121'),
@@ -597,8 +607,10 @@
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.ZFC.3'),
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.ZFC.7'),
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega' => array( headline_text => 'SN.ZFC.8'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.13'),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s' => array( headline_text => 'Tiefere Betrachtung der Potenzen von \lm{ \s }'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),

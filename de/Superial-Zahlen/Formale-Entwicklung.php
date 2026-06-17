@@ -664,7 +664,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
-                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    '• Ich denke, wir können zeigen, dass \lm{ \mathbb{S} } eine \jump[https://de.wikipedia.org/wiki/Topologische_Gruppe]{}{topologische Gruppe} und sogar ein \jump[https://de.wikipedia.org/wiki/Topologischer_Ring]{}{topologischer Körper} ist.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -828,6 +828,401 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'In dieser Arbeit unterscheiden wir zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
+                    'Die Erzeugungsanzahl wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} motiviert und hier formal eingeführt.'."\n",
+                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
+                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
+                    'wenn diese Erzeugung relativ zur vollständigen Induktion \lm{ ω } und den aus ihr abgeleiteten superialen Strukturen betrachtet wird.'."\n",
+                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei ist \lm{ \overline{\#}_{\mathrm{erz}} } \italic{nicht mit der gewöhnlichen Mächtigkeit gleichzusetzen}.'."\n".
+                    '\italic{Vielmehr beschreibt} \lm{ \overline{\#}_{\mathrm{erz}}( A ) } die kombinatorische Anzahl'."\n".
+                    'der Elemente von \lm{ A } innerhalb der jeweils zugrunde gelegten Erzeugungsstruktur.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Definition', subline =>
+                    '')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}}( A ) } eines Objekts, einer Menge oder Struktur \lm{ A }'."\n".
+                      'bezeichnet die Anzahl ihrer Elemente beziehungsweise Erzeugungspositionen relativ zur vollständigen Induktion \lm{ ω }.'."\n".
+                      'Sie unterscheidet sich von der gewöhnlichen Mächtigkeit,'."\n".
+                      'weil sie nicht nur fragt, ob \lm{ A } bijektiv zu einer anderen Menge ist,'."\n".
+                      'sondern wie \lm{ A } innerhalb der durch ω gegebenen Erzeugungsordnung hervorgebracht wird.'."\n".
+                      ''))),
+ 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Schreibweise des Operators', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an'."\n".
+                    'die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
+                    '\lm{ A \overline{\#} } angelehnt, bleibt aber von ihr unterschieden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n",
+                      'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
+                    'schreiben wir auch kurz'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Berechnung der Erzeugungsanzahl', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Erzeugungsanzahl wird stets relativ zur vollständigen Induktion \lm{ ω } berechnet.'."\n".
+                    'Dabei zählt sie nicht nur Elemente bis auf Bijektion, sondern die durch \lm{ ω } gegebenen Erzeugungspositionen,'."\n".
+                    'Erzeugungsrichtungen, Teilbelegungen oder iterierten Kombinationsmöglichkeiten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Für die endlichen natürlichen Zahlen gilt im Sinne der vollständigen Induktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( \mathbb{N} )  =  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die gewöhnliche Mengenlehre erfasst die Größe von \lm{ \mathbb{N} } über dessen Mächtigkeit.'."\n".
+                    'Die hier verwendete Erzeugungsanzahl betrachtet jedoch zusätzlich die arithmetische'."\n".
+                    'und kombinatorische Struktur, durch die die betreffenden Objekte erzeugt werden.'."\n",
+                      'Die Erzeugungsanzahl verbindet damit einen kardinalen und einen ordinalen Gesichtspunkt.'."\n".
+                    'Kardinal ist sie, weil sie eine Anzahl ausdrücken soll.'."\n".
+                    'Ordinal ist sie, weil diese Anzahl nicht unabhängig von der Erzeugungsordnung'."\n".
+                    'und der zugrunde gelegten Erzeugungsstruktur betrachtet wird.'."\n".
+                    'Sie fragt also nicht nur, ob zwei Mengen gleichmächtig sind, sondern auch,'."\n".
+                    'auf welche Weise ihre Elemente durch eine bestimmte Ordnung, Operation oder Kombinatorik hervorgebracht werden.'."\n".
+                      'Insbesondere soll die Erzeugungsanzahl später dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
+                    'und unterschiedlicher Erzeugungskombinatorik zu unterscheiden.'."\n".
+                    'So können Mengen gleicher Mächtigkeit im Sinne von ZFC dennoch verschiedene Erzeugungsanzahlen besitzen,'."\n".
+                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion beziehungsweise'."\n".
+                    'aus der superialen Struktur hervorgehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Beispiele', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein einfaches Beispiel liefert die Menge der geraden natürlichen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 \mathbb{N}  =  *\{ 0, 2, 4, 6, 8, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Klassisch gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| 2 \mathbb{N} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Als geordnete Teilmenge der natürlichen Zahlen wird \lm{ 2 \mathbb{N} } jedoch nicht durch'."\n".
+                    'den Einschritt \lm{ +1 }, sondern durch den Zweierschritt \lm{ +2 } durchlaufen.'."\n".
+                    'So erkennen wir, dass nur jede zweite Zahl vorhanden ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( 2 \mathbb{N} *)  =  \frac{ ω }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \frac{ ω }{ 2 } } ist hier im Sinne der erweiterten arithmetischen Struktur von \lm{ ω }'."\n".
+                    'im Beweis der \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹} zu verstehen.'."\n".
+                    'Die gewöhnliche Mächtigkeit sieht diesen Unterschied nicht;'."\n".
+                    'die Erzeugungsanzahl soll solche Unterschiede der Erzeugungsstruktur erfassbar machen.'."\n",
+                      'Ein wichtiges Beispiel liefert die Menge der ganzen Zahlen \lm{ \mathbb{Z} }.'."\n".
+                    'In der gewöhnlichen Mengenlehre gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \mathbb{Z} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die natürlichen und die ganzen Zahlen besitzen also dieselbe Mächtigkeit.'."\n".
+                    'Ihre Erzeugungsstruktur ist jedoch verschieden.'."\n".
+                    'Die natürlichen Zahlen entstehen von der Null aus einseitig durch fortgesetzte Nachfolgerbildung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die ganzen Zahlen besitzen dagegen in der Ordnungsstruktur der \jump{OM:BiOrd:Home:Inhalt}{Biordinalzahlen}'."\n".
+                    'eine zweiseitige Erzeugung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}  =  *\{ \cdots , -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit zeigt \lm{ \mathbb{Z} }, dass Gleichmächtigkeit nicht bedeutet, dass zwei Mengen dieselbe erzeugende Ordnung besitzen.'."\n".
+                    'Die Erzeugungsanzahl soll genau solche Unterschiede erfassen.'."\n",
+                      'Im Rahmen der Biordinalzahlen wird jede negative Zahl in \lm{ \mathbb{Z} } in ihrer'."\n".
+                    'mengentheoretischen Ontologie unter Berücksichtigung der Zählrichtung aus einer jeweiligen'."\n".
+                    'natürlichen Zahl in \lm{ \mathbb{N} } dargestellt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  \rightarrow  -1  }'),
+                      array( display => 'on',  latex => '{  1  \rightarrow  -2  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  n  \rightarrow  - *( n + 1 *) }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es handelt sich dabei um ein Rückwärtszählen, bei dem die ontologische Zählrichtung der zugrunde'."\n".
+                    'liegenden natürlichen Zahl dennoch in Richtung \lm{ +1 } erhalten bleibt.'."\n",
+                      'In dieser Hinsicht trägt \lm{ \mathbb{Z} } nicht nur die abzählbare Mächtigkeit,'."\n".
+                    'sondern auch eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{zweiseitige Erzeugungsstruktur},'."\n".
+                    'also gilt demnach für ihre Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  =  2 ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch \lm{ 2 ω } ist hier als Erzeugungsanzahl in der erweiterten arithmetischen Struktur von \lm{ ω } zu verstehen.'."\n".
+                    'Die biordinale Darstellung der negativen Zahlen zeigt dabei,'."\n".
+                    'wie negative Zahlen innerhalb einer mengentheoretischen Ontologie dargestellt werden können.'."\n".
+                    'Die Erzeugungsanzahl knüpft an diese Darstellung an, indem sie nicht nur die Anzahl der Elemente,'."\n".
+                    'sondern auch die Richtung und Struktur ihrer Erzeugung berücksichtigt.'."\n",
+                      'Und für die superiale Basis ist die Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \s *)  =  \s  =  ω^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hierbei bleibt die zugrunde liegende Erzeugungseinheit \lm{ ω }.'."\n".
+                    'Die Potenzierung beschreibt nicht eine andere Grund-Erzeugungsstruktur,'."\n".
+                    'sondern eine durch \lm{ ω } iterierte Erzeugungskombinatorik.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Nachkommastellen}',
+                    // '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    // '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen, stolpern wir über viele Fragen.'."\n".
+                    'Eine der Fragen ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Rationale Zahlen wie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ 3 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sind direkt \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
+                    'Auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\overline{3}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist exakt als sinnvoller Koeffizient geeignet, sofern es als periodische Regel beziehungsweise Grenzwertabschluss verstanden wird.'."\n".
+                    'Denn nach der algebraischen Koeffizientenstruktur beziehungsweise \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{AKV}'."\n".
+                    'darf die algebraische Zahl \lm{ ⅓ } als'."\n".
+                    'exakter sinnvoller Koeffizient keine superial kleinen Restanteile besitzen,'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n",
+                      'Aber'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist nicht exakt gleich \lm{ ⅓ }, sondern besitzt den Rest'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Also ist der Wert nur'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit wird klar:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist nicht das Ende jeder unendlichen Darstellung.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Sondern:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist die Standard-Schrittanzahl der Superial-Analysis'."\n".
+                      'und kann als natürliche Standardnormierung der Analysis allgemein verstanden werden.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Als Kontrastbeispiel schauen wir uns die Berechnung der Eulerschen Zahl an:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der klassische Grenzwertabschluss.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die superiale Standardauswertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  〈1〉․〈1〉^{〈1〉_{1}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist dagegen eine \lm{ \s }-Auswertung in der Standardnormierung der Superial-Analysis.'."\n",
+                      'Damit gilt sinngemäß:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \e_{\s} *)  =  \e  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'aber \lm{ \e_{\s} } enthält zusätzlich die superiale Grenzwertspur,'."\n".
+                    'wobei \lm{ \operatorname{std} } hier die Standardisierung beziehungsweise die Null-Schicht-Projektion bezeichnet.'."\n".
+                    ''))),
+                  /*%! array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Es scheint zunächst banal, jedoch eröffnet die folgende Betrachtung interessante Einsichten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten:X', text =>
+                      
+                'Wie weit ins unendlich Kleine reichen die Summanden der periodischen rationalen Koeffizienten der Superial-Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen stolper wir in viele Fragen.'."\n".
+                    'Eine der Fragen, die aufkommt, ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Nehmen wir an, in der endlichen Stelle wollen wir die Zahl \lm{ ⅓ } darstellen und ein \lm{ \s^{-1} } addieren zu \lm{ ⅓ + \s^{-1} } – nur als Beispiel.'."\n",
+                      'Als Bruch ist dies völlig klar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 \frac{ 1 }{ 3 } *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aber als Dezimalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 0,\!33333\overline{3} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} \\\ \qquad\qquad\qquad\qquad\;\;\;\, + 3 \cdot 10^{-3} + 3 \cdot 10^{-4} + \cdots *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'stellt sich die Frage, wieviele Nachkommastellen die Zahl hat.'."\n".
+                    'Denn wir wissen, dass die algebraische Zahl \lm{ ⅓ } am Ende \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{keine superial kleinen Summanden enthalten darf},'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n".
+                    'Denn sie muss ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} sein.'."\n",
+                      'Schauen wir uns also an, welche Entfernung, sprich Differenz, zu \lm{ ⅓ } wir noch haben, wenn wir \lm{ n } Summanden addieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 a_{0} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  a_{0,n}  =  \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  a - a_{0,n}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ *( \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k} *) \cdot 3 }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ \frac{ 3 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 3 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 9 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 \cdot 10^{-n} }{ 3 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 }{ 3 } \cdot 10^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nehmen wir einmal an, wir ziehen – prozessieren – es einmal in Anzahl der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'oder selbst \lm{ \s }-mal komplett durch,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann stellen wir fest, dass wir immer noch nicht \lm{ ⅓ } erreicht haben, denn die Differenz ist zwar bereits unendlich klein,'."\n".
+                    'aber immer noch nicht verschwunden.'."\n",
+                      'Bei \lm{ n = ω } gibt es dabei zwar keine unendlich kleinen Summanden, aber was nützt es, wenn wir \lm{ ⅓ } ja nicht erreichen.'."\n".
+                    'Bei \lm{ n = \s } haben wir dann schon aktual unendlich kleine Summanden und trotzdem \lm{ ⅓ } nicht erreicht.'."\n".
+                    'Wie können wir die Situation nun verstehen?'."\n".
+                    'Ebenfalls ist die Frage, die \lm{ n } welcher Menge machen hier Sinn oder sind überhaupt erlaubt.'."\n",
+                      'Jedenfalls stellen wir fest, dass wir uns \lm{ ⅓ } immer mehr annähern, je mehr Summanden wir addieren.'."\n".
+                    'Das hört offensichtlich nie auf und geht bis ins Aktual-Unendliche immer weiter.'."\n".
+                    'Wir sehen aber auch, dass wir hoffen können, dass die Summe wieder komplett endlich wird, wenn wir sie nie, auch nicht im Aktual-Unendlichen, enden lassen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))), */
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
                     )),
               )
@@ -840,7 +1235,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
