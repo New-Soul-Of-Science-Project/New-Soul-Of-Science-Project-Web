@@ -667,7 +667,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{x}  \stackrel{!}{=}  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  ?=  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir setzen \lm{ k = j \cdot \s^{-1} }, sodass \lm{ j } von \lm{ 0 } bis \lm{ x \cdot \s - 1 } läuft.'."\n".
@@ -684,7 +684,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( r - 1 *)  \cdot  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  \sum_{ j \,=\, 1 }^{ n }  r^{j}  -  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  r^{n}  -  1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Mit \lm{ r = 1 + \s^{-1} }, \lm{ n = x \cdot \s } und \lm{ r - 1 = \s^{-1} }:'."\n".
