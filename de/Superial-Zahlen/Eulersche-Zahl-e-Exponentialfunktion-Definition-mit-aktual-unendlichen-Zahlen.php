@@ -543,6 +543,9 @@
                     'Zahl sein kann.'."\n".
                     'Sie ist nicht einmal eine Superial-Zahl der hier entwickelten 1. Ordnung, also ein Element von \lm{ \mathbb{S} },'."\n".
                     'weil sie Summanden mit aktual unendlich kleiner Potenz von \lm{ \s } in sich trägt.'."\n".
+                    'Sie gehört vielmehr zu Superial-Zahlen höherer Ordnung, in denen auch aktual unendlich kleine Potenzen der'."\n".
+                    'superialen Basis wie \lm{ \s^{-\s} } erlaubt sind — sichtbar in Formel'."\n".
+                    '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}.'."\n".
                     'Es ist schlichtweg unmöglich, sie so zu definieren, dass sie die Ableitungsbedingung erfüllt,'."\n".
                     'und keine unendlich kleinen Summanden enthält.'."\n".
                     'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
@@ -802,11 +805,13 @@
 
                   array( 'notice', array( Display => 'showContent', text => array(
                     '\bold{Wo \lm{ π } noch vorkommt}',
-                    '• \lm{ π } ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
+                    '• \lm{ π } ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot π \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
                     ))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wir haben \lm{ \e_{\s}^{x} } bisher für reelle Exponenten betrachtet. Was ergibt sich für rein imaginäre Exponenten \lm{ \i \cdot x }?'."\n".
+                    'Die Antwort führt uns – ganz wie in der klassischen Analysis – zur Eulerschen Formel und von dort zu den Funktionen'."\n".
+                    '\lm{ \mathrm{cos}_{\s} } und \lm{ \mathrm{sin}_{\s} } sowie zur Kreiszahl \lm{ π }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -815,7 +820,8 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Eulersche Formel ordnet jedem reellen \lm{ x } eine komplexe Zahl auf dem superialen Einheitskreis zu – \lm{ \mathrm{cos}_{\s}(x) } als Realteil, \lm{ \mathrm{sin}_{\s}(x) } als Imaginärteil.'."\n".
+                    'Für einen einzelnen infinitesimalen Rotationsschritt gilt eine besonders einfache Form:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -823,7 +829,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Um den Ausdruck \lm{ *( 1 + \s^{-1} *)^{\i \cdot x} } auszuwerten, wenden wir den verallgemeinerten binomischen Satz an,'."\n".
+                    'der die klassische Binomialentwicklung auf beliebige komplexe Exponenten \lm{ \alpha } ausdehnt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -832,7 +839,7 @@
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wir wenden den Satz an mit \lm{ x = 1 }, \lm{ y = \s^{-1} } und dem imaginären Exponenten \lm{ \alpha = \i \cdot x }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -847,7 +854,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ \forall j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der verallgemeinerte Binomialkoeffizient enthält im Zähler das Produkt \lm{ \prod_{ j = 0 }^{ k-1 } *( \alpha - j *) }.'."\n".
+                    'Für \lm{ \alpha = \i \cdot x } berechnen wir dieses Produkt für die ersten Werte von \lm{ k }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -863,7 +871,8 @@
                       array( display => 'on',  latex => '{  =  \alpha^{5} - 10 \alpha^{4} + 35 \alpha^{3} - 50 \alpha^{2} + 24 \alpha  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Das Pascalsche Dreieck entsteht, wenn wir ganzzahlige Exponenten \lm{ n } einsetzen und die Koeffizienten als Stellenwertzahlen schreiben.'."\n".
+                    'Der erste Stellenwert trägt den Wert \lm{ 1 }, der zweite \lm{ \i \cdot n }, die weiteren die binomischen Koeffizienten \lm{ \binom{n}{k} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -876,7 +885,7 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Dasselbe Muster lässt sich in formaler Binomialkoeffizientennotation ausdrücken — die Koeffizienten \lm{ \binom{n}{k} } stehen nun explizit:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -887,7 +896,8 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die vollständige Darstellung von \lm{ \e_{\s}^{\i \cdot x} } als Stellenwertzahl ergibt sich aus der Anwendung der Binomialentwicklung auf \lm{ *( 1 + \s^{-1} *)^{\i \cdot x \cdot \s} }.'."\n".
+                    'Der erste Stellenwert enthält die klassische Taylorreihe, die weiteren tragen die aktual-infinitesimalen superialen Korrekturen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -899,49 +909,54 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 \cdots *〉*〈 \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots *〉*〈 \cdots *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sum_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
+                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen, die in der klassischen Analysis durch den Limes unsichtbar werden.'."\n".
+                    'Für \lm{ x = π } ergibt sich die Eulersche Identität — und damit der Zusammenhang mit der Kreiszahl:'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
-                      
-                'Zusammenhang mit \lm{ \pi }', subline =>
+
+                'Zusammenhang mit \lm{ π }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die klassische Eulersche Identität \lm{ \e^{\i π} = -1 } überträgt sich direkt auf die superialen Zahlen.'."\n".
+                    'Sie definiert die superiale Kreiszahl \lm{ π_{\s} } als denjenigen reellen Wert,'."\n".
+                    'für den \lm{ \e_{\s}^{\i \cdot π_{\s}} = -1 } gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot \pi_{\s}}  =  -1  =  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot π_{\s}}  =  -1  =〈1〉․〈1〉^{〈\i \cdot π_{\s}〉_{1}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Aus dieser Identität lässt sich \lm{ π_{\s} } algebraisch isolieren. Wir schreiben die Gleichung in Basis-Exponenten-Form um:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  =  -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot π_{\s}〉_{1}}  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Da \lm{ a^{b} = c } äquivalent ist zu \lm{ a = \sqrt[b]{c} }, ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot \pi_{\s}〉_{1} ]{ -1 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot π_{\s}〉_{1} ]{ -1 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Analog gilt \lm{ a = c^{1/b} \Leftrightarrow b = \log_{a} c }, also:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈\i \cdot \pi_{\s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \i \cdot \pi_{\s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot \s^{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ \i \cdot \s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \i^{-1} \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  -\i \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈\i \cdot π_{\s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \i \cdot π_{\s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ \i }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot \s^{-1} }{ \i }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ \i \cdot \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \i^{-1} \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  -\i \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Um \lm{ \log_{〈1〉\,.\,〈1〉}(-1) } weiter auszuwerten, benötigen wir \lm{ \log_{〈1〉\,.\,〈1〉} \e_{\s} }.'."\n".
+                    'Aus der Definition \lm{ \e_{\s}^{x} = 〈1〉\,.\,〈1〉^{x \cdot \s} } lässt sich dieser Wert direkt bestimmen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -952,9 +967,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{\s}  =   \s  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Damit ist \lm{ \log_{〈1〉\,.\,〈1〉} \e_{\s} = \s } und es folgt:'."\n".
+                    '\lm{ π_{\s} = 〈 -\i \cdot \log_{〈1〉\,.\,〈1〉}(-1) 〉_{-1} = -\i \cdot \s^{-1} \cdot \log_{〈1〉\,.\,〈1〉}(-1) }.'."\n".
+                    'Die Kreiszahl \lm{ π } ist in den Superial-Zahlen keine unabhängige Konstante, sondern vollständig durch den superialen Logarithmus zur Basis \lm{ 〈1〉\,.\,〈1〉 } bestimmt.'."\n".
                     ''))),
-                      
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften'),
                     )),
