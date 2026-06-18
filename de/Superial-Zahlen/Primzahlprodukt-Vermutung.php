@@ -153,7 +153,10 @@
                     'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
                     'Außer, dass vielleicht die \lm{ 2 } an \lm{ ω } fehlen könnte, weil sie in \lm{ 2 ω } wieder separat hinzu kommt.'."\n",
                       'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
-                    'Sie liefert einen Grund, dass \lm{ ω } durch \lm{ 2 } teilbar sein sollte.'."\n",
+                    'Sie liefert einen Grund, dass \lm{ ω } durch \lm{ 2 } teilbar sein sollte.'."\n".
+                    'Allgemein ist die Teilbarkeit von \lm{ ω } durch jede endliche Primzahl \lm{ p \in \mathbb{P} } die Voraussetzung'."\n".
+                    'für das Homogenitätsaxiom der \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl}:'."\n".
+                    '\lm{ \overline{\#}_{\mathrm{erz}}(p \mathbb{N}) = \tfrac{ω}{p} } ist nur dann ganzzahlig, wenn \lm{ p \mid ω }.'."\n",
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
                       'Wir können unsere Vermutung plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
                     'als auch das vollständige Produkt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreiben.'."\n",
