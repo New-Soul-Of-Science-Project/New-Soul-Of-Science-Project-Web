@@ -584,13 +584,12 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
+                    'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(k) *〉  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                       array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(k) *〉  }'),
                     ))),
@@ -600,13 +599,13 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
-                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => false),
                       array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
                       array( display => 'on',  latex => '{  f(x)  =  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  \\\ \qquad\qquad\qquad\quad\;\; *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
                     ))),
@@ -652,18 +651,59 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 3 *〉*〈 3 *〉*〈 1 *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auch, wenn dies noch kein Beweis ist, so können wir doch unschwer erkennen, dass die Summe des Integrals genau das Ergebnis'."\n".
-                    'erzeugt, welches wir für die \lm{ \e_{\s} }-Funktion aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
-                    'schon kennen.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Summe des Integrals erzeugt genau das Ergebnis, welches wir für die \lm{ \e_{\s} }-Funktion'."\n".
+                    'aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
+                    'bereits kennen. Den allgemeinen Beweis führen wir im folgenden Abschnitt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral:X', text =>
-                      
+
                 'Allgemeiner Beweis', subline =>
                   '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Zu zeigen ist für beliebiges \lm{ x }, dass \lm{ \e_{\s}^{x} } die Integralbedingung erfüllt.'."\n".
+                      'Wir setzen \lm{ a = 0 } und nutzen die Definition aus Formel'."\n".
+                      '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  \stackrel{!}{=}  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir setzen \lm{ k = j \cdot \s^{-1} }, sodass \lm{ j } von \lm{ 0 } bis \lm{ x \cdot \s - 1 } läuft.'."\n".
+                      'Wegen \lm{ \e_{\s}^{x} = *( 1 + \s^{-1} *)^{x \cdot \s} } gilt'."\n".
+                      '\lm{ \e_{\s}^{j \cdot \s^{-1}} = *( 1 + \s^{-1} *)^{j \cdot \s^{-1} \cdot \s} = *( 1 + \s^{-1} *)^{j} }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \frac{ \e_{\s}^{k} }{ \s }  =  \frac{1}{\s}  \sum_{ j \,=\, 0 }^{ x \cdot \s \,-\, 1 }  *( 1 + \s^{-1} *)^{j}  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die geometrische Reihe werten wir durch Teleskopsumme\footnote{\const{SupNum_g_footnote_text_Teleskopsumme}} aus:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( r - 1 *)  \cdot  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  \sum_{ j \,=\, 1 }^{ n }  r^{j}  -  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  r^{n}  -  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ j \,=\, 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Mit \lm{ r = 1 + \s^{-1} }, \lm{ n = x \cdot \s } und \lm{ r - 1 = \s^{-1} }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{1}{\s}  \cdot  \frac{ *( 1 + \s^{-1} *)^{x \cdot \s}  -  1 }{ \s^{-1} }  =  *( 1 + \frac{1}{\s} *)^{x \cdot \s}  -  1  =  \e_{\s}^{x}  -  1  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Eingesetzt in die Integralbedingung:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  1  +  *( \e_{\s}^{x}  -  1 *)  =  \e_{\s}^{x}  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit ist gezeigt, dass die \lm{ \e_{\s} }-Funktion ihr eigenes Integral ist.'."\n".
+                      '\\\\ '."\n".
+                      ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),

@@ -94,6 +94,7 @@
               'wiki:Taylorreihe:2024',
               'wiki:Teilerfremdheit:2022',
               'wiki:Teilmenge:2023',
+              'wiki:Teleskopsumme:2026',
               'wiki:TranszendenteZahl:2023',
               'wiki:TraumDerSophomores:2024',
               'wiki:Unendlichkeitsaxiom:2021',
