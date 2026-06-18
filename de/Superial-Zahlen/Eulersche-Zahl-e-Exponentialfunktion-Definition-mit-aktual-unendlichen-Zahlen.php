@@ -871,18 +871,19 @@
                       array( display => 'on',  latex => '{  =  \alpha^{5} - 10 \alpha^{4} + 35 \alpha^{3} - 50 \alpha^{2} + 24 \alpha  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das Pascalsche Dreieck entsteht, wenn wir ganzzahlige Exponenten \lm{ n } einsetzen und die Koeffizienten als Stellenwertzahlen schreiben.'."\n".
-                    'Der erste Stellenwert trägt den Wert \lm{ 1 }, der zweite \lm{ \i \cdot n }, die weiteren die binomischen Koeffizienten \lm{ \binom{n}{k} }:'."\n".
+                    'Für imaginäre Exponenten \lm{ n \cdot \i } terminiert die Reihe nicht: Die verallgemeinerten Binomialkoeffizienten \lm{ \binom{n\i}{k} } sind komplex.'."\n".
+                    'Der allgemeine Koeffizient für \lm{ k = 2 } lautet \lm{ \binom{n\i}{2} = \frac{n\i \cdot (n\i-1)}{2} = -\frac{n(n+\i)}{2} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈\i〉}  =  〈1〉․〈\i〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2 \i〉}  =  〈1〉․〈2 \i〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3 \i〉}  =  〈1〉․〈3 \i〉〈3〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4 \i〉}  =  〈1〉․〈4 \i〉〈6〉〈4〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈5 \i〉}  =  〈1〉․〈5 \i〉〈10〉〈10〉〈5〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 \i *〉}  =  *〈 1 *〉․*〈 \i *〉*〈 \frac{-1-\i}{2} *〉*〈 \frac{3+\i}{6} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 2\i *〉}  =  *〈 1 *〉․*〈 2\i *〉*〈 -2-\i *〉*〈 \frac{2(3-\i)}{3} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 3\i *〉}  =  *〈 1 *〉․*〈 3\i *〉*〈 \frac{-9-3\i}{2} *〉*〈 \frac{9-7\i}{2} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 4\i *〉}  =  *〈 1 *〉․*〈 4\i *〉*〈 -8-2\i *〉*〈 \frac{4(6-7\i)}{3} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 5\i *〉}  =  *〈 1 *〉․*〈 5\i *〉*〈 \frac{-25-5\i}{2} *〉*〈 \frac{5(15-23\i)}{6} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 6\i *〉}  =  *〈 1 *〉․*〈 6\i *〉*〈 -18-3\i *〉*〈 18-34\i *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 7\i *〉}  =  *〈 1 *〉․*〈 7\i *〉*〈 \frac{-49-7\i}{2} *〉*〈 \frac{7(21-47\i)}{6} *〉\cdots  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dasselbe Muster lässt sich in formaler Binomialkoeffizientennotation ausdrücken — die Koeffizienten \lm{ \binom{n}{k} } stehen nun explizit:'."\n".
