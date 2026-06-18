@@ -729,7 +729,7 @@
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Transzendenz von \lm{ \e }}',
                     '• Was zur Transzendenz von \lm{ \e } im Text sagen.',
                     '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
