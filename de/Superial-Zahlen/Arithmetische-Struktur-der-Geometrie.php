@@ -1092,7 +1092,7 @@
                   array( 'text', array( text => array(
                     'hat die Lösungen \lm{ z_k = e^{2\pi i k / m} }, also genau die Ecken des \lm{ m }-Ecks. Da dieses Polynom \italic{ganzzahlige Koeffizienten} hat,'."\n".
                     'folgt sofort, dass jede Einheitswurzel \lm{ z_k } eine \italic{algebraische Zahl} ist.'."\n".
-                    'Tatsächlich sind die Einheitswurzeln die Nullstellen des sogenannten \lm{ m }-ten Kreisteilungspolynoms\footnote{(Primärliteratur einfügen!) \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.}:'."\n".
+                    'Tatsächlich sind die Einheitswurzeln die Nullstellen des sogenannten \lm{ m }-ten Kreisteilungspolynoms\footnote{\const{SupNum_g_footnote_text_Kreisteilungspolynom}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

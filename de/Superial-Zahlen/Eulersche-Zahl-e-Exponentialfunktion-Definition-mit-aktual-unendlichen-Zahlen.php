@@ -902,61 +902,39 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
 
-                'Zusammenhang mit \lm{ π }', subline =>
+                'Zusammenhang mit \lm{ π_{\s} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die klassische Eulersche Identität \lm{ \e^{\i π} = -1 } überträgt sich direkt auf die superialen Zahlen.'."\n".
-                    'Sie definiert die superiale Kreiszahl \lm{ π_{\s} } als denjenigen reellen Wert,'."\n".
-                    'für den \lm{ \e_{\s}^{\i \cdot π_{\s}} = -1 } gilt:'."\n".
+                    'Die superiale Kreiszahl \lm{ π_{\s} } ist der halbe Umfang des superialen Einheitskreises — die Bogenlänge vom Punkt \lm{ 1 } zum Punkt \lm{ -1 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Ansatz 1: Bogensumme.}  Der Halbkreis wird in \lm{ \s } gleichlange Schritte unterteilt,'."\n".
+                    'deren Koordinaten aufgrund der Theorie der Kreisteilungspolynome\footnote{\const{SupNum_g_footnote_text_Kreisteilungspolynom}} alle reell algebraische Zahlen sind.'."\n".
+                    'Die Kreispunkte \lm{ \e_{\s}^{\i \cdot k \cdot π_{\s} \cdot \s^{-1}} } (für \lm{ k = 0, 1, \ldots, \s }) liegen auf dem Einheitskreis.'."\n".
+                    'Da \lm{ \left| \e_{\s}^{\i \cdot \varphi} \right| = 1 } für alle reellen \lm{ \varphi }, haben alle Abstände aufeinanderfolgender Punkte dieselbe Länge:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot π_{\s}}  =  -1  =〈1〉․〈1〉^{〈\i \cdot π_{\s}〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \left| \e_{\s}^{ \i \cdot (k+1) \cdot π_{\s} \cdot \s^{-1} } - \e_{\s}^{ \i \cdot k \cdot π_{\s} \cdot \s^{-1} } \right|  =  \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aus dieser Identität lässt sich \lm{ π_{\s} } algebraisch isolieren. Wir schreiben die Gleichung in Basis-Exponenten-Form um:'."\n".
+                    'Die Summe dieser \lm{ \s } Abstände ergibt die Bogenlänge des Halbkreises:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot π_{\s}〉_{1}}  =  -1  }'),
+                      array( display => 'on',  latex => '{  π_{\s}  =  \s \cdot \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  =  π_{\s} \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Da \lm{ a^{b} = c } äquivalent ist zu \lm{ a = \sqrt[b]{c} }, ergibt sich:'."\n".
+                    '\bold{Ansatz 2: Superiale Eulersche Identität.}  Alternativ bestimmt sich \lm{ π_{\s} } als der reelle Wert, für den gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot π_{\s}〉_{1} ]{ -1 }  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{ \i \cdot π_{\s} }  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Analog gilt \lm{ a = c^{1/b} \Leftrightarrow b = \log_{a} c }, also:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈\i \cdot π_{\s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \i \cdot π_{\s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot \s^{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ \i \cdot \s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  \i^{-1} \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  -\i \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  π_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Um \lm{ \log_{〈1〉\,.\,〈1〉}(-1) } weiter auszuwerten, benötigen wir \lm{ \log_{〈1〉\,.\,〈1〉} \e_{\s} }.'."\n".
-                    'Aus der Definition \lm{ \e_{\s}^{x} = 〈1〉\,.\,〈1〉^{x \cdot \s} } lässt sich dieser Wert direkt bestimmen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a^{x}  =  b^{x \cdot \log_{b} a}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  〈1〉․〈1〉^{x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =  〈 x 〉_{1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =   x \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{\s}  =   \s  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Damit ist \lm{ \log_{〈1〉\,.\,〈1〉} \e_{\s} = \s } und es folgt:'."\n".
-                    '\lm{ π_{\s} = 〈 -\i \cdot \log_{〈1〉\,.\,〈1〉}(-1) 〉_{-1} = -\i \cdot \s^{-1} \cdot \log_{〈1〉\,.\,〈1〉}(-1) }.'."\n".
-                    'Die Kreiszahl \lm{ π } ist in den Superial-Zahlen keine unabhängige Konstante, sondern vollständig durch den superialen Logarithmus zur Basis \lm{ 〈1〉\,.\,〈1〉 } bestimmt.'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot π_{\s}} } ist \lm{ e^{\i \cdot π_{\s}} } — er liefert die klassische Näherung \lm{ π_{\s} \approx π }.'."\n".
+                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen und geben \lm{ π_{\s} } seinen genauen superialen Wert.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
