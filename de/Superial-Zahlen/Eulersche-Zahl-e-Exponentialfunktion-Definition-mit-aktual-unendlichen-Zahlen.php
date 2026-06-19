@@ -886,28 +886,14 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 7\i *〉}  =  *〈 1 *〉․*〈 7\i *〉*〈 \frac{-49-7\i}{2} *〉*〈 \frac{7(21-47\i)}{6} *〉\cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dasselbe Muster lässt sich in formaler Binomialkoeffizientennotation ausdrücken — die Koeffizienten \lm{ \binom{n}{k} } stehen nun explizit:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
-                    ))),
-                  array( 'text', array( text => array(
                     'Die vollständige Darstellung von \lm{ \e_{\s}^{\i \cdot x} } als Stellenwertzahl ergibt sich aus der Anwendung der Binomialentwicklung auf \lm{ *( 1 + \s^{-1} *)^{\i \cdot x \cdot \s} }.'."\n".
                     'Der erste Stellenwert enthält die klassische Taylorreihe, die weiteren tragen die aktual-infinitesimalen superialen Korrekturen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i}  =  *〈 1 + \i - \frac{ 1^{2} }{ 2 } - \i \frac{ 1^{3} }{ 6 } + \frac{ 1^{4} }{ 24 } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 \cdots *〉*〈 \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots *〉*〈 \cdots *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  *〈 1 *〉 ․\, *〈 \i x \s *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) }{ 2 } *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) *( \i x \s - 2 *) }{ 6 } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sum_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
