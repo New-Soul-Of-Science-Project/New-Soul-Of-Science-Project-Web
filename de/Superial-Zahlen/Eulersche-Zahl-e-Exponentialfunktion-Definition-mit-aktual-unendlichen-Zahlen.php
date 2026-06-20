@@ -898,14 +898,15 @@
                   array( 'text', array( text => array(
                     'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sum_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
                     'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen, die in der klassischen Analysis durch den Limes unsichtbar werden.'."\n".
-                    'Für \lm{ x = π } ergibt sich die Eulersche Identität — und damit der Zusammenhang mit der Kreiszahl:'."\n".
+                    'Für \lm{ x = π_{\s} } ergibt sich die Eulersche Identität — und damit der Zusammenhang mit der Kreiszahl:'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
 
                 'Zusammenhang mit \lm{ π_{\s} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die superiale Kreiszahl \lm{ π_{\s} } ist der halbe Umfang des superialen Einheitskreises — die Bogenlänge vom Punkt \lm{ 1 } zum Punkt \lm{ -1 }.'."\n".
+                    'Die superiale Kreiszahl \lm{ π_{\s} } ist der halbe Umfang des superialen Einheitskreises –'."\n".
+                    'die Bogenlänge vom Punkt \lm{ 1 } zum Punkt \lm{ -1 }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\bold{Ansatz 1: Bogensumme.}  Der Halbkreis wird in \lm{ \s } gleichlange Schritte unterteilt,'."\n".
@@ -926,15 +927,35 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  =  π_{\s} \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\bold{Ansatz 2: Superiale Eulersche Identität.}  Alternativ bestimmt sich \lm{ π_{\s} } als der reelle Wert, für den gilt:'."\n".
+                    'Beide Seiten enthalten \lm{ π_{\s} } – die Gleichung ist implizit. Eine explizite Berechnung folgt über Ansatz 2.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Variante: Bogensumme mit superialen Einheitsschritten.}'."\n".
+                    'Statt \lm{ \s } gleichlanger Schritte können \lm{ \s \cdot π_{\s} } Schritte'."\n".
+                    'der kleinstmöglichen Schrittweite \lm{ \s^{-1} } im Exponenten gewählt werden –'."\n".
+                    'dieselben Schrittweiten wie im imaginären Pascal-Dreieck:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  π_{\s}  =  \s \cdot π_{\s} \cdot \left| \e_{\s}^{ ․\,*〈 \i *〉 } - 1 \right|  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left| \e_{\s}^{ ․\,*〈 \i *〉 } - 1 \right|  =  \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Jeder superiale Einheitsschritt im imaginären Exponenten entspricht einer Kreissehne der Länge \lm{ \s^{-1} }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Ansatz 2: Superiale Eulersche Identität.}'."\n".
+                    'Alternativ bestimmt sich \lm{ π_{\s} } als der reelle Wert, für den gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{ \i \cdot π_{\s} }  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot π_{\s}} } ist \lm{ e^{\i \cdot π_{\s}} } — er liefert die klassische Näherung \lm{ π_{\s} \approx π }.'."\n".
-                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen und geben \lm{ π_{\s} } seinen genauen superialen Wert.'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot π_{\s}} } ist \lm{ \e^{\i \cdot π} } –'."\n".
+                    'er liefert die klassische Näherung \lm{ π_{\s} \approx π }.'."\n".
+                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen'."\n".
+                    'und geben \lm{ π_{\s} } seinen genauen superialen Wert.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
