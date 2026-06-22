@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Verbesserungen der Seite}',
-                    '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
+                    // '\bold{Verbesserungen der Seite}',
+                    //%! '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     //%! '\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     //%! '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
                     //%! '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \lm{ ω }, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
@@ -28,48 +28,146 @@
                     '• Der \jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
                     '• Mit dem \jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \lm{ \s } in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
                     ))),
-                      
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+
+                'Abstract: Die kanonische Identität des unendlichen Primzahlprodukts \lm{ ω = ω\overline{\#} }', subline =>
+                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Einleitung und Problemstellung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Auf die Primzahlprodukt-Vermutung bin ich durch das Herumspielen mit der'."\n".
-                    '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n".
+                    'In der klassischen mathematischen Analysis führt das unendliche Produkt aller endlichen Primzahlen'."\n".
+                    '\lm{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots } zu einer numerischen Divergenz gegen Unendlich (\lm{ \infty }),'."\n".
+                    'wodurch jede algebraische Feinstruktur und Teilbarkeitsinformation verloren geht.'."\n",
+                      'Diese Arbeit präsentiert eine fundamentale Lösung dieses klassischen Divergenzproblems.'."\n".
+                    'Wir verlagern den Fokus weg von der rein numerischen Größenbetrachtung hin zu einer relationalen'."\n".
+                    'und strukturellen Arithmetik innerhalb der Standard-Mengenlehre (ZFC).'."\n",
+                      'Über die ordinale Mengendarstellung nach von Neumann weisen wir nach,'."\n".
+                    'dass das unendliche Primzahlprodukt kein unbestimmtes Unendliches ist,'."\n".
+                    'sondern als ein präziser algebraischer Struktur-Generator fungiert.'."\n".
+                    'Das zentrale Ergebnis dieser Arbeit ist der strikt deduktive Beweis der transfiniten kanonischen Identität:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots *)_{\forall \mathbb{P}}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Der methodische Ansatz: Die Primturm-Kombinatorik', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Dieser Beweis baut auf dem klassischen Fundamentalsatz der Arithmetik auf.'."\n".
+                    'Das System wird über drei neue, streng mengentheoretische Kernkonzepte formalisiert:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Die Primturmzerlegung \lm{ \pt( n ) }:} \\\\'."\n".
+                          'Eine bijektive Abbildung, die jede natürliche Zahl verlustfrei als reine Menge ihrer maximalen,'."\n".
+                          'atomaren Primzahlpotenzen darstellt.',
+                        '\bold{Das Primturmraster \lm{ \pr( n ) }:} \\\\'."\n".
+                          'Das unendliche multiplikative Erzeugungsspektrum,'."\n".
+                          'das ausschließlich durch die Kombination ganzer Potenzen dieser atomaren Primtürme aufgespannt wird.',
+                        '\bold{Das lückenlose Primturmraster \lm{ \lpr( n ) }:} \\\\'."\n".
+                          'Die ordinale Mächtigkeit des dichten, ununterbrochenen Anfangsabschnitts des Erzeugungsspektrums ab der Null.',
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Die Beweisstrategie: Das generative Primzahl-Induktions-Lemma', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der Kern des Beweises beruht auf einem eleganten, konstruktiven Induktionsschritt.'."\n".
+                    'Für das Produkt aller Primzahlen bis zu einem endlichen Index \lm{ i } wird mit Hilfe'."\n".
+                    'der Mengen-Primfakultät des direkten Nachfolgers dieser Primzahl \lm{ (p_{i} + 1)\overline{\#} } bewiesen,'."\n".
+                    'dass die erste strukturelle Lücke im Erzeugungsspektrum \lm{ \pr*( (p_{i} + 1)\overline{\#} *) }'."\n".
+                    'exakt an der Position der nächsthöheren Primzahl \lm{ p_{i+1} } auftritt.'."\n".
+                    'Es gilt die fundamentale Lückenregel:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( (p_{i} + 1)\overline{\#} *)  =  p_{i + 1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beim transfiniten Grenzübergang \lm{ i → ω } dehnt sich das Produkt über'."\n".
+                    'die Gesamtheit aller existierenden endlichen Primzahlen aus,'."\n".
+                    'während die begrenzende Schranke des lückenlosen Rasters \lm{ p_{i+1} }'."\n".
+                    'über jede noch so große endliche Zahl hinaus gegen unendlich wandert.'."\n",
+                      'Da das unendliche Produkt somit im Grenzwert keine endliche Schranke mehr besitzt,'."\n".
+                    'umfasst sein dichtes Erzeugungsspektrum die vollständige Menge der natürlichen Zahlen \lm{ \mathbb{N} }.'."\n".
+                    'Da in ZFC die absolute Identität \lm{ \mathbb{N} = ω } verankert ist,'."\n".
+                    'fallen das unendliche Produkt und die ordinale Struktur von \lm{ ω } im Limes unweigerlich ineinander.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Konsequenzen und wissenschaftliche Tragweite', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Dieses Theorem schlägt eine vollkommen neue Brücke zwischen der multiplikativen Welt'."\n".
+                    'der Zahlentheorie und der relationalen Welt der Mengenlehre.'."\n".
+                    'Es beweist die Primzahlprodukt-Vermutung als eine notwendige und widerspruchsfreie Konsequenz'."\n".
+                    'innerhalb der Standard-Axiome von ZFC.'."\n",
+                      'Das etablierte System bietet ein mathematisch rigoroses Fundament, um transfinite Arithmetik'."\n".
+                    'und divisatorische Strukturen weit jenseits der Grenze der endlichen Zahlen (wie für \lm{ ω + 1 } oder \lm{ 2ω })'."\n".
+                    'sauber zu definieren, ohne jemals im Widerspruch zur klassischen Arithmetik zu stehen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                'Einleitung und Ursprung der Vermutung', subline =>
+                'Ergänzende Vorbemerkung', subline =>
                   '')),
+                  array( 'text', array( text => array(
+                    'Wichtig zum Verständnis und zur Einordnung des folgenden Beweises im Rahmen der Superial-Zahlen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Es wird \bold{innerhalb der ZFC-Mengenlehre} über kanonische Identität bewiesen,'."\n".
+                      'dass das gewöhnliche von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω } selber schon'."\n".
+                      'dem Produkt aller endlichen Primzahlen entspricht.'."\n".
+                      'Wir zeigen also:'."\n".
+                      '\lm{ ω } besitzt die innere Arithmetik eines aktual unendlichen Produkts endlicher Zahlen.'."\n".
+                      'Damit erkennen wir, dass die Ordinalzahlen eine tiefere Arithmetik haben, als bisher bekannt.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Nun hat sich im Nachhinein die Fundierung der Superial-Zahlen auf Basis dieses Beweises ergeben,'."\n".
+                    'um auch diese \jump{OM:SupNum:ZFC-Modellkonstruktion}{innerhalb der ZFC-Mengenlehre als tiefere Erkenntnis} zu formulieren.'."\n".
+                    'Es handelt sich aber nicht um einen Zirkelschluss,'."\n".
+                    'denn der Beweis ist zwar durch die Struktur der Superial-Zahlen inspiriert,'."\n".
+                    'aber sie spielen im Beweis keine Rolle.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+
+                'Ursprung der Vermutung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Auf die Primzahlprodukt-Vermutung bin ich durch das Untersuchen der'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
                     'Beim Zählen von natürlichen Superial-Zahlen von Null bis ohne \lm{ \s }, in Form von \lm{ a \cdot \s + z }, werden endliche \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
                     '– alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} von Null bis ohne Eins –'."\n".
                     'als Koeffizienten des Aktual-Unendlichen Summanden \lm{ a \cdot \s } mitgezählt,'."\n".
                     'während dabei die endlichen ganzen Zahlen \lm{ z } im endlichen Summand für jedes \lm{ a } immer wieder vollständig durchlaufen.'."\n".
-                    'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Anzahl der endlichen sinnvollen Koeffizienten'."\n".
-                    'und der endlichen ganzen Zahlen, dann scheint intuitiv die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
+                    'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Erzeugungsanzahl der endlichen sinnvollen Koeffizienten'."\n".
+                    'und der endlichen ganzen Zahlen, dann scheint intuitiv die Erzeugungsanzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹},'."\n".
                     'wo wir uns schon mit der Struktur von \lm{ \s } beschäftigt haben.'."\n".
-                    'Dabei fanden wir, dass die Anzahl der sinnvollen Koeffizienten \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} },'."\n".
+                    'Dabei fanden wir, dass die Erzeugungsanzahl der sinnvollen Koeffizienten \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} },'."\n".
                     'von der Null bis ausschließlich der Eins, nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
                     'eine aktual unendliche positive ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wichtig zu beachten ist:'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                      '\lm{ ω } wird ab jetzt nicht nur als gewöhnliches von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} verwendet,'."\n".
-                      'sondern als arithmetisch erweiterte Ordinaleinheit, deren arithmetische Eigenschaften wir nachfolgend aufklären wollen.'."\n".
-                      ''))),
- 
-                  array( 'text', array( text => array(
-                    'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
+                    'Die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} einer Menge berechnet sich aus'."\n".
+                    'den Erzeugungspositionen beziehungsweise der Erzeugungskombinatorik der Menge.'."\n",
+                      'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
                     'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} steht'."\n".
                     '\lm{ \s } für die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
@@ -152,7 +250,7 @@
                     'auch welche endlich oft mehrfach vorkommen.'."\n".
                     'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
                     'Außer, dass vielleicht die \lm{ 2 } an \lm{ ω } fehlen könnte, weil sie in \lm{ 2 ω } wieder separat hinzu kommt.'."\n",
-                      'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
+                      'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, in ihrer Mengendarstellung genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
                     'Sie liefert einen Grund, dass \lm{ ω } durch \lm{ 2 } teilbar sein sollte.'."\n".
                     'Allgemein ist die Teilbarkeit von \lm{ ω } durch jede endliche Primzahl \lm{ p \in \mathbb{P} } die Voraussetzung'."\n".
                     'für das Homogenitätsaxiom der \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl}:'."\n".

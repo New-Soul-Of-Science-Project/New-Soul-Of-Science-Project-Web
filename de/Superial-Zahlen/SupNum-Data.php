@@ -396,8 +396,8 @@
       keywords => '',
       text_titel_h1 => 'Primzahlprodukt-Vermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
-      text_undertitel_h2 => 'Eine Vorstellung der Vermutung und ihr Beweis',
-      text_titel_discr_h3 => 'Das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, ist der Anzahl der natürlichen Zahlen gleich',
+      text_undertitel_h2 => 'Eine Vorstellung der Vermutung und ihr Beweis im Rahmen der ZFC-Mengenlehre',
+      text_titel_discr_h3 => 'Das Produkt aller endlichen Primzahlen ist mit der Anzahl der natürlichen Zahlen \lm{ω} kanonisch Identisch. Dies zeigt, dass die aktuale Unendlichkeit der vollständigen Induktion eine bisher unentdeckte innere Arithmetik enthält',
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
@@ -421,7 +421,7 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet' => array( headline_text => 'Definition: Die Mengen-Primfakultät'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.120'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.66'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.121'),
