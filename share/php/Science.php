@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.05.2026, 20:00h
+  // #: Stand: 22.06.2026, 21:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260622:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longrightarrow  ' -> '\;\;\;\Longrightarrow\;\;\;'
   //           20260517:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subseteq  ' -> '\;\;\;\not\subseteq\;\;\;'
   //           20260503:  +:  "$Sc_g_equation_replace_ary":  Add '  :\subset  ' -> '\;\;\;:\subset\;\;\;', ':\subset' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'
   //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
@@ -679,6 +680,7 @@
                                     // #: Arrange space around symbols and save chars.
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
+                                    array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
