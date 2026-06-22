@@ -132,7 +132,24 @@
                     'um auch diese \jump{OM:SupNum:ZFC-Modellkonstruktion}{innerhalb der ZFC-Mengenlehre als tiefere Erkenntnis} zu formulieren.'."\n".
                     'Es handelt sich aber nicht um einen Zirkelschluss,'."\n".
                     'denn der Beweis ist zwar durch die Struktur der Superial-Zahlen inspiriert,'."\n".
-                    'aber sie spielen im Beweis keine Rolle.'."\n".
+                    'aber sie spielen im Beweis keine Rolle.'."\n",
+                      'Der folgende Beweis ist nicht als Erweiterung der ZFC-Mengenlehre'."\n".
+                    'oder als Veränderung der klassischen Ordinalarithmetik zu verstehen.'."\n".
+                    'Vielmehr wird innerhalb von ZFC eine kanonische Strukturidentität freigelegt:'."\n".
+                    'Die vollständige Induktion \lm{ ω } kann nicht nur als Zählstruktur der natürlichen Zahlen,'."\n".
+                    'sondern zugleich als vollständiges Primfakultätsobjekt der endlichen Primzahlen verstanden werden.'."\n".
+                    'Die Identität'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet daher keine willkürliche neue Rechenregel,'."\n".
+                    'sondern eine kanonische Identifikation zweier in ZFC beschreibbarer Erzeugungsstrukturen:'."\n".
+                    'der additiv-zählenden Struktur der natürlichen Zahlen und der multiplikativ-primfaktoriellen Struktur'."\n".
+                    'aller endlichen Primzahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
