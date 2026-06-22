@@ -131,7 +131,6 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ableitungen-Integrale'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eulersche-Zahl-e-Funktion'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Algebraische-Koeffizienten-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
@@ -141,6 +140,7 @@
                     '<h3 class="tools-class-contentlist-header">ZFC-Modellkonstruktion \\\\ \small{Fundierung auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit Auswahlaxiom (ZFC)}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:ZFC-Modellkonstruktion'),
                     ))),
                       

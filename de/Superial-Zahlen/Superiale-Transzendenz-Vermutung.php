@@ -948,7 +948,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung'),
                     )),
               )
           ); ?>
