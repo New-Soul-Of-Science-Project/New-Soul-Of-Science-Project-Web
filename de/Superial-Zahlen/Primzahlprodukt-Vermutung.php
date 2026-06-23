@@ -2680,8 +2680,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  ω \cdot ω^{ω - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  2^{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots  }'),
@@ -3169,9 +3169,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
-                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                                label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

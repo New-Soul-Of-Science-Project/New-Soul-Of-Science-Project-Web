@@ -708,30 +708,18 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'In diesem Produkt wird erst einmal das Produkt aller endlichen Primzahlen'."\n".
                     '\lm{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } gebildet, um sie alle vorrätig zu haben.'."\n".
-                    'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen natürlichen Zahlen ist,'."\n".
+                    'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen natürlichen Zahlen ist – vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –,'."\n".
                     'um alle Primzahlen auch in einer Potenz vorrätig zu haben, die für alle gleich groß ist, aber so klein wie möglich,'."\n".
                     'dass die Potenz durch keine in rationalen Zahlen mögliche, negative Potenz in einem Produkt mit ihr endlich groß werden kann.'."\n",
-                      'Die hier in der Potenz erzeugte Anzahl wird in der Mengenlehre mit \lm{ ω } bezeichnet und steht so für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
-                    'So können wir über das Symbol \lm{ \# } der Anzahl der Elemente einer Menge,\footnote{Vgl. \cite{wiki:MaechtigkeitMathematik:2023},'."\n".
-                    'Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}} bei endlichen Mengen.} das ich hier auf unendlich große, abzählbare Mengen erweitere, definieren:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
-                                          label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
-                      array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \#\mathbb{N}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setzen wir voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
                     'Den Grund hierfür verdeutlichen wir im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}‹}.'."\n",
                       'Für das Primzahlprodukt von \lm{ \s } ergibt sich also, wie eben beschrieben,'."\n".

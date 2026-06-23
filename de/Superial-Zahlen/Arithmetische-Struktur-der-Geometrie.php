@@ -571,12 +571,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\const{SupNum_g_text_ZFCkonform}'."\n",
