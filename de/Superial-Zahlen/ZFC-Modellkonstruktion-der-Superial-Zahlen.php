@@ -353,28 +353,35 @@
                 'Die Erzeugungsanzahl', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen braucht, stellt sich unmittelbar aus ihrer eigenen Konstruktion heraus.'."\n".
-                    'Aus den Erkenntnissen zur \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }} folgt, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
+                    'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen benötigt,'."\n".
+                    'ergibt sich unmittelbar aus ihrer Natur als transfinites Stellenwertsystem.'."\n".
+                    'Aus den Erkenntnissen zur inneren \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }} als Primzahl-Flächenprodukt folgt,'."\n".
+                    'dass die Anzahl der mathematisch sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                    'nicht mehr bloß über die klassische kardinale Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}} erfasst werden kann.'."\n",
+                      'Für dieses Kontinuum gilt im superialen System der feste Wert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  =  \frac{ 1 }{ 2 }ω^{ω - 1}  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'haben muss – eine ganze Zahl weit jenseits von \lm{ ω }.'."\n".
-                    'Die klassische Mengenlehre hingegen stellt fest: \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ist abzählbar unendlich, also gleichmächtig mit \lm{ \mathbb{N} }.'."\n".
-                    'Beide Aussagen sind wahr und widersprechen sich nicht.'."\n".
-                    'Sie messen aber verschiedene Dinge:'."\n".
+                    'Dies beschreibt eine transfinite Zahl weit jenseits der einfachen Ordinalzahl \lm{ ω }.'."\n".
+                    'Die klassische Mengenlehre stellt im Kontrast dazu fest:'."\n".
+                    '\lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ist abzählbar unendlich, also gleichmächtig zur Menge der natürlichen Zahlen \lm{ \mathbb{N} }.'."\n".
+                    'Beide Aussagen sind wahr und widersprechen sich nicht, da sie fundamental verschiedene Eigenschaften messen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Mächtigkeit} fragt: lässt sich \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } bijektiv auf \lm{ \mathbb{N} } abbilden? – Ja.',
-                        '\bold{Erzeugungsanzahl} fragt: wie viele Erzeugungspositionen belegt \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } relativ zur vollständigen Induktion \lm{ ω }? – \lm{ \frac{ \s }{ 2 ω } }.',
+                        '\bold{Die kardinale Mächtigkeit}  rein strukturell: Lässt sich das Intervall bijektiv auf \lm{ \mathbb{N} } abbilden? – Ja.',
+                        '\bold{Die Erzeugungsanzahl} fragt analytisch: Wie viele diskrete Erzeugungspositionen belegt das Intervall relativ zur Maßeinheit der vollständigen Induktion \lm{ ω }? Die Antwort lautet exakt: \lm{ \frac{ \s }{ 2 ω } = \frac{ 1 }{ 2 }ω^{ω - 1} }.',
                     ))),
                   array( 'text', array( text => array(
-                    'Genau für diese zweite Frage brauchen wir einen eigenen Begriff – die \italic{Erzeugungsanzahl} \lm{ \overline{\#}_{\mathrm{erz}} }.'."\n".
-                    'Sie verbindet einen kardinalen und einen ordinalen Aspekt der Zahlen.'."\n".
-                    'Ihre Berechnung erfolgt stets relativ zur vollständigen Induktion \lm{ ω }, auch bei \lm{ \s = ω^{ω} }.'."\n",
+                    'Genau für diese ordinale Gewichtung der Zahlendichte nutzen wir den Begriff der \italic{Erzeugungsanzahl} \lm{ \overline{\#}_{\mathrm{erz}} }.'."\n".
+                    'Sie verknüpft den kardinalen Verteilungsaspekt mit der ordinalen Feinstruktur der unendlichen Basis.'."\n".
+                    'Da über das Haupttheorem der Primzahlprodukt-Vermutung die Identität \lm{ ω = ω\overline{\#} } bewiesen ist,'."\n".
+                    'steht diese relative Berechnung auf einem felsenfesten algebraischen Fundament:'."\n".
+                    'Selbst bei der zweidimensionalen Dichte des Flächenprodukts \lm{ \s = ω^{ω} }'."\n".
+                    'bleibt das Verhältnis der Erzeugungsschichten präzise bestimmbar und kollabiert nicht.'."\n",
                       'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
                     'der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.'."\n".
                     ''))),
