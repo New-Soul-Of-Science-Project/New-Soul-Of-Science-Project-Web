@@ -262,49 +262,62 @@
                 'Die Superial-Struktur \lm{ \mathfrak{S} } als geordneter bewerteter Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir definieren die Superial-Struktur des geordneten bewerteten Körpers der Superial-Zahlen:'."\n".
+                    'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } bildet unter den kanonischen Operationen'."\n".
+                    'der komponentenweisen Addition und der Faltungsmultiplikation einen algebraischen Körper.'."\n".
+                    'Um diesen Raum als funktionales mathematisches System im ZFC-Rahmen zu verankern,'."\n".
+                    'definieren wir die arithmetische Gesamtstruktur \lm{ \mathfrak{S} } über das folgende geordnete Tupel:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *( \mathbb{S} , + , \cdot , < , \s , \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *)  }'),
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei:'."\n".
+                    'Die mathematische Konsistenz dieses Körpers wird durch die perfekt ineinandergreifenden'."\n".
+                    'Bewertungs- und Ordnungsstrukturen getragen, die direkt aus der Logik des transfiniten Stellenwertsystems hervorgehen:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{1. Die Schichtbewertung \lm{ \operatorname{ord}_{\s} }} \\\\'."\n".
+                    'Die Abbildung \lm{ \operatorname{ord}_{\s}\!\!: \mathbb{S} \setminus *\{ 0 *\} \to \mathbb{Z} } ordnet jeder Superial-Zahl'."\n".
+                    '\lm{ x \neq 0 } den bestimmenden Index (den maximalen Exponenten) ihres mathematischen Supports zu.'."\n".
+                    'In der Praxis misst diese Bewertung die höchste besetzte Dimension der superialen Zahl'."\n".
+                    'und fungiert als exakter Indikator für den Stellenwert:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Ein Wert von \lm{ \operatorname{ord}_{\s}(x) > 0 } kennzeichnet einen aktual unendlichen (infiniten) Anteil.'."\n".
+                          'Für die superiale Basis gilt per Konstruktion: \lm{ \operatorname{ord}_{\s}( \s ) = 1 }.',
+                        'Ein Wert von \lm{ \operatorname{ord}_{\s}(x) < 0 } beschreibt einen rein infinitesimalen Rest im Nachkommabereich.'."\n".
+                          'Für das Basis-Infinitesimal gilt entsprechend: \lm{ \operatorname{ord}_{\s}*( \s^{-1} *) = -1 }.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    '\bold{2. Die totale lexikographische Ordnung \lm{ \leq }} \\\\'."\n".
+                    'Die Relation \lm{ \leq } definiert eine lineare, totale Ordnung auf dem Körper \lm{ \mathfrak{S} }.'."\n".
+                    'Der Vergleich zweier unterschiedlicher superialer Zahlen erfolgt strikt über das Vorzeichen des Koeffizienten'."\n".
+                    'an der jeweils höchsten gemeinsamen Schicht (Stelle).'."\n".
+                    'Für zwei Reihen \lm{ x, y \in \mathbb{S} } gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  x < y  \;\;\;\iff\;\;\;  0 < (y - x)_{\operatorname{ord}_{\s}(y - x)}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'ist der Hahn-Reihen-Körper,'."\n".
+                    'Dieses Ordnungsprinzip entspricht exakt dem klassischen Vergleich in einem Stellenwertsystem.'."\n".
+                    'Es garantiert, dass die reell algebraischen Koeffizienten \lm{ \mathbb{A}_{\R} } die Richtung'."\n".
+                    'des unendlichen Ausdrucks dominieren.'."\n".
+                    'Ein infinitesimaler Abweichungsrest auf einer niedrigeren Stelle kann die fundamentale Ordnung auf einer höheren,'."\n".
+                    'infiniten Schicht zu keinem Zeitpunkt verfälschen.'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  }'),
-                    ))),
                   array( 'text', array( text => array(
-                    'ist das ausgezeichnete unendlich große Monom,'."\n".
+                    '\bold{3. Die Familie der \lm{ p }-adischen Schichtbewertungen \lm{ v_{p} }} \\\\'."\n".
+                    'Das entscheidende Alleinstellungsmerkmal der Superial-Struktur \lm{ \mathfrak{S} } ist'."\n".
+                    'die Familie der verallgemeinerten \lm{ p }-adischen Bewertungen für jede endliche Primzahl \lm{ p \in \mathbb{P} }.'."\n".
+                    'Da über den Beweis der Primzahlprodukt-Vermutung die Identität \lm{ ω = ω\overline{\#} } gilt,'."\n".
+                    'operiert diese Familie auf jeder einzelnen mathematischen Schicht des Modells.'."\n".
+                    'Sie stellt sicher, dass die divisatorische Feinstruktur aller erweiterten Zahlenmengen'."\n".
+                    '(wie die Parität oder unendliche Primfaktorzerlegungen) über das gesamte transfinite Spektrum hinweg'."\n".
+                    'absolut invariant und widerspruchsfrei erhalten bleibt.'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \operatorname{ord}_{\s}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'ist die Schichtbewertung nach dem größten vorkommenden \lm{ \s }-Exponenten, und'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( v_{p} *)_{p \in \mathbb{P}}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'ist die zusätzliche \lm{ p }-adische Bewertungsinterpretation mit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  \;\; .  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
-                    ))),
                   array( 'text', array( text => array(
                     'Die Familie \lm{ *( v_{p} *)_{p \in \mathbb{P}} } bezieht sich zunächst auf die endlichen klassischen Primzahlen'."\n".
                     'und kodiert die Primfaktorwirkung der superialen Basis \lm{ \s }.'."\n".
