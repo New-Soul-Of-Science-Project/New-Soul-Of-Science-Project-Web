@@ -367,24 +367,32 @@
                 'Primfaktorzerlegung von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir stellen fest, dass \lm{ ω } und \lm{ p^{ω} } keine Elemente des Rings der Superial-Zahlen sind.'."\n".
-                    'Dies scheint im Allgemeinen kein Problem zu sein.'."\n",
-                      'So steht nun auch fest, dass \lm{ \s } durch jede endliche Potenz jeder Primzahl'."\n".
+                    'Aus der Definition des Superial-Körpers \lm{ \mathbb{S} } als Hahn-Reihe über der Wertegruppe \lm{ \mathbb{Z} }'."\n".
+                    'folgt unmittelbar, dass transfiniten Ordinalzahlen wie \lm{ ω } oder unendliche Primzahlpotenzen wie \lm{ p^{ω} }'."\n".
+                    'keine direkten Elemente des Trägerraums oder des eingebetteten Superial-Rings sein können.'."\n".
+                    'Diese Objekte existieren kategorial als Indizes innerhalb der übergeordneten Bewertungstheorie des Systems.'."\n",
+                      'Dennoch besitzt die superiale Basis s eine exakt definierte, unendliche Teilbarkeitsstruktur.'."\n".
+                    'Für jede endliche Potenz \lm{ n } einer beliebigen endlichen Primzahl \lm{ p } gilt im System die klassische Teilbarkeit:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  p^{n} \mid \s  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *) *[  p^{n}  \mid  \s  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'teilbar ist, wobei jeder der Exponenten \lm{ n } sowie jede dieser endlichen Potenzen \lm{ p^{n} } ein Element des Superial-Rings sind.'."\n".
-                    'Im Besonderen ist die exakte Teilbarkeit'."\n".
+                    'Da über das Haupttheorem der Primzahlprodukt-Vermutung die Identität \lm{ ω = ω\overline{\#} } verankert ist,'."\n".
+                    'lässt sich diese Teilbarkeit ins Aktual-Unendliche fortsetzen.'."\n".
+                    'Die exakte, aktual unendliche Primfaktorzerlegung der Basis \lm{ \s } wird im ZFC-Modell vollständig'."\n".
+                    'über die Familie der verallgemeinerten \lm{ p }-adischen Bewertungen operationalisiert.'."\n".
+                    'Es gilt die exakte divisionelle Struktur:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  p^{ω} \parallel \s  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  v_{p}(\s)  =  ω  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
+                    'Das bedeutet:'."\n".
+                    'Das Flächenprodukt \lm{ \s } wird von jeder endlichen Primzahl \lm{ p } exakt \lm{ ω }-oft geteilt.'."\n".
+                    'Höhere transfinite Schichten oder unzulässige Reste treten auf dieser fundamentalen Ebene nicht auf.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s', text =>
                       
