@@ -399,27 +399,32 @@
                 'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Jeder einzelne Summand der Hahn-Reihe, sein reell algebraischer Koeffizient einer endlichen ganzen Potenz der superialen Basis \lm{ \s },'."\n".
-                    'hat wohldefinierte \lm{ p }-adische Bewertungen'."\n".
+                    'Jeder einzelne Summand einer wohlgeformten Superial-Zahl im Stellenwertsystem,'."\n".
+                    'bestehend aus seinem reell algebraischen Koeffizienten \lm{ a_{k} }'."\n".
+                    'und einer endlichen ganzen Potenz \lm{ k } der Basis \lm{ \s }, besitzt eine präzise messbare \lm{ p }-adische Gesamtbewertung:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}*( a_{k} \cdot \s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *) *[  v_{p}*( a_{k} \cdot s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'so, dass sich bei Potenzen \lm{ k \ge 1 } nur rein positive Potenzen der Primzahlen ergeben:'."\n".
+                    'Da die transfinite Ordnung \lm{ ω } jeden reell algebraischen Bewertungsteil \lm{ v_{p}*( a_{k} *) } dominant überwiegt,'."\n".
+                    'bleibt die hierarchische Feinstruktur bei allen algebraischen Operationen perfekt separiert.'."\n".
+                    'Für alle Potenzen \lm{ k \geq 1 } ergeben sich im unendlichen Bereich ausnahmslos rein positive Primzahlpotenzen,'."\n".
+                    'da die strukturelle Schranke streng kontrolliert wird:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathrm{supp} f *)  \\\ \qquad\;\; *[  v_{p}*( a_{k} *) \in \mathbb{Q}  \Rightarrow  \\\ \qquad\quad\, *( k - 1 *) \cdot ω  <  k \cdot ω + v_{p}*( a_{k} *)  <  *( k + 1 *) \cdot ω  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall k \in \operatorname{supp}*( f *) *) \\\ \qquad\quad\; *[  v_{p}*( a_{k} *)  \in  \mathbb{Q}  \;\;\;\implies\;\;\;  \\\ \qquad\quad\;\;\; (k - 1) \cdot ω  <  k \cdot ω + v_{p}*( a_{k} *)  <  (k + 1) \cdot ω  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei bezeichnet \lm{ v_{p}*( a_{k} *) } die im Rahmen der Superial-Zahlen verwendete fortgesetzte \lm{ p }-adische Bewertung der reell algebraischen Koeffizienten.'."\n",
-                      'So können wir leicht erkennen, dass alle Hahn-Reihen-Summanden in ihrer Größenordnung immer separiert bleiben,'."\n".
-                    'auch egal ob \lm{ v_{p}*( a_{k} *) } positiv oder negativ ist, weil von \lm{ k \cdot ω } dominiert.'."\n",
-                      'Auch ist auffällig, dass hier Summen oder Differenzen wie \lm{ k \cdot ω \pm \frac{ z }{ n } } als Ausdrücke entstehen, die wir bisher nicht kennen,'."\n".
-                    'aber nun einfach nach den Grundregeln der uns bekannten Algebra nutzen.'."\n".
-                    'Unter Kenntnis der Dominanz von \lm{ k \cdot ω }.'."\n".
+                    'Hierbei repräsentiert \lm{ v_{p}*( a_{k} *) } die fortgesetzte rationale Bewertung des Koeffizienten.'."\n".
+                    'Aus dieser Ungleichung folgt die fundamentale Eigenschaft unseres geordneten Körpers:'."\n".
+                    'Die einzelnen Schichten der Hahn-Reihe können sich niemals gegenseitig verfälschen oder ineinanderfließen.'."\n".
+                    'Die unendliche Dimension \lm{ k \cdot ω } dominiert die Arithmetik der Koeffizienten vollständig.'."\n".
+                    'Ausdrücke der Form \lm{ k \cdot ω \pm \frac{ z }{ n } } bilden im Modell ein stabiles, rechenbares Gefüge,'."\n".
+                    'das sich streng nach den klassischen Gesetzen der Algebra verhält,'."\n".
+                    'ohne die zahlentheoretische Feinstruktur der Primzahltürme im Unendlichen zu gefährden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
