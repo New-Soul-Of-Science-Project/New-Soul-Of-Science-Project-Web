@@ -430,16 +430,16 @@
                       
                 'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
                   '')),
-                      
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{Real-Abgeschlossenheit}',
-                    //%! '• Bei der Primfaktorenzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } werden die Primpolynome (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) als Primzahlen gesehen und müssen mit einbezogen werden!',
-                    // '• Bei der \lm{ p }-adischen Bewertung der Superial-Zahlen \lm{ \mathbb{S} } müssten wohl die superialen Primzahlen mit einbezogen werden!?',
-                    ))),
-                      
                   array( 'text', array( text => array(
-                    'Die natürlichen Superial-Zahlen lassen sich in Faktoren zerlegen, die Primpolynomen ähneln (irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}),'."\n".
-                    'wie im Abschnitt zur \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primfaktorzerlegung natürlicher Superial-Zahlen} gezeigt wird.'."\n".
+                    'Die Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } lässt sich im Modell in eindeutige,'."\n".
+                    'irreduzible Faktoren zerlegen.'."\n".
+                    'Da die algebraische Struktur über die Familie der verallgemeinerten'."\n".
+                    '\lm{ p }-adischen Bewertungen \lm{ (v_{p})_{p \in \mathbb{P}} } kontrolliert wird,'."\n".
+                    'verhält sich diese transfinite Faktorisierung vollkommen analog zur klassischen Zahlentheorie.'."\n".
+                    'Jede natürliche Superial-Zahl besitzt eine eindeutige Darstellung als Produkt aus endlichen Primzahlen'."\n".
+                    'und transfiniten Basis-Monomon, wodurch die algebraische Integrität des Systems über'."\n".
+                    'das gesamte aktual unendliche Spektrum hinweg gewahrt bleibt,'."\n".
+                    'wie im Abschnitt zur \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primfaktorzerlegung natürlicher Superial-Zahlen} explizit gezeigt wird.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
