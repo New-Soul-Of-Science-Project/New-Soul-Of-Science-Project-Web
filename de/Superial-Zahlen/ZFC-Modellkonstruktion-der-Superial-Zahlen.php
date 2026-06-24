@@ -77,16 +77,17 @@
                     'eine messerscharfe arithmetische Trennung:'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    '\bold{1 Reell-algebraische Koeffizienten \lm{ a \in \mathbb{A}_{\R} \setminus \{ 0 \} }:} \\\\'."\n".
-                    'Im Einklang mit der Überrationalitätsvermutung ergeben alle reell algebraischen Zahlen (ohne die Null)'."\n".
-                    'im Produkt mit der superialen Einheit \lm{ \s } glatte, ganzzahlige, aktual unendliche infinite Zahlen.'."\n".
-                    'Sie besitzen im System keine Nachkommastellen, da sie strukturell frei von infinitesimalen Resten sind.'."\n".
+                    '\bold{1 Reell algebraische Koeffizienten \lm{ a \in \mathbb{A}_{\R} \setminus \{ 0 \} }:} \\\\'."\n".
+                    'Im Einklang mit der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
+                    'ergeben alle reell algebraischen Zahlen (ohne die Null)'."\n".
+                    'im Produkt mit der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{superialen Einheit \lm{ \s } glatte, ganzzahlige, aktual unendliche infinite Zahlen}.'."\n".
+                    'Sie besitzen im System \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{nach unserer bewiesenen Algebraische-Koeffizienten-Vermutung (AKV)} keine Nachkommastellen, da sie strukturell frei von infinitesimalen Resten sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\bold{2. Transzendente Koeffizienten (wie \lm{ π_{\s}, \e_{\s}) }:} \\\\'."\n".
                     'Transzendente Zahlen brechen diese Ganzzahligkeit im Unendlichen auf.'."\n".
-                    'Im Produkt mit \lm{ \s } tragen sie immer unendlich feine, infinitesimale Summanden \lm{ s^{-1} } mit sich.'."\n".
-                    'Sie besitzen im superialen Stellenwertsystem echte, unendliche Nachkommastellen.'."\n".
+                    'Im Produkt mit \lm{ \s } tragen sie immer unendlich feine, infinitesimale Summanden \lm{ \s^{-1} } mit sich.'."\n".
+                    'Sie besitzen im superialen Stellenwertsystem echte, unendliche Nachkommastellen \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{(STV)}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -137,48 +138,6 @@
                     'ist die Basis \lm{ \s } keine bedeutungsfreie Variable,'."\n".
                     'sondern ein wohldefiniertes mengentheoretisches Objekt im von Neumannschen Universum.'."\n".
                     ''))),
-                  /*%! array( 'text', array( text => array(
-                    'Wir entwickeln die Superial-Zahlen von ihrer intuitiven Definition weiter, indem wir sie mit einer'."\n".
-                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}} kompatibel ist.'."\n".
-                    'Dabei habe ich mich von einer Konversation mit ChatGPT inspirieren lassen, in der ein Vorschlag entstand,'."\n".
-                    'wie eine sichere Fundierung der Superial-Zahlen aussehen kann.'."\n",
-                      'Eine Unsicherheit besteht in der Definition unserer superialen Basis \lm{ \s } durch das unendlich große Produkt von Primzahlen'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
-                      //                     label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N}', label_incr => true),
-                      // array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
-                      //                          label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
-                      // array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \#\mathbb{N}  }',
-                      //                          label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => true),
-                      // array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
-                      //                     label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
-                      array( display => 'on',  latex => '{  \displaystyle \prod_{\forall p \in \mathbb{P}}  p^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
-                      array( display => 'on',  latex => '{  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot \cdots  :=  \displaystyle \prod_{\forall p \in \mathbb{P}}  p^{ω}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'denn in ZFC dürfen wir zwar mit unendlichen Mengen arbeiten, aber „\lm{ \infty \times \infty }“ als gewöhnliches Ganzzahl-Produkt ist nicht definiert und es gibt weitere Probleme:'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
-                        'Ein direkter Klassen-Term wie \lm{ *( \prod_{\forall p \in \mathbb{P}} p *)^{ω} } wäre eine'."\n".
-                          'echte Klasse\footnote{\const{BiOrd_g_footnote_text_EchteKlasse}}, keine Menge\hidden{ ⇒ kann kein Feld­element sein},'."\n".
-                          'was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
-                        'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring,'."\n".
-                          'erst recht kein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{Körper} – Analysis oder Differentialrechnung wären unmöglich.',
-                        'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
-                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}:'."\n".
-                          'Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen.'."\n".
-                          'Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
-                        'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen'."\n".
-                          '\lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} }, wenn es als echtes Produkt all dieser Faktoren verstanden wird.'."\n".
-                          'Wir müssten die komplette Algebra darauf neu definieren.',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Diese Probleme und Unsicherheiten wollen wir nun lösen.'."\n".
-                    ''))), */
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
                 'Der Beweis der Primzahlprodukt-Vermutung und seine Bedeutung für die Superial-Zahlen', subline =>
