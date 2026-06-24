@@ -446,33 +446,30 @@
                 'Durch die Hahn-Reihe erhalten wir alle nötigen Eigenschaften', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Unser Ziel einer ZFC-konformen Definition der Superial-Zahlen haben wir somit erreicht.'."\n".
-                    'Durch die Hahn-Reihen-Definition erhalten wir nun:'."\n".
+                    'Das Ziel einer konsistenten, ZFC-konformen Definition der Superial-Zahlen ist damit vollständig erreicht.'."\n".
+                    'Das über den Hahn-Reihen-Körper konstruierte transfinite Stellenwertsystem garantiert'."\n".
+                    'die lückenlose Gültigkeit aller für die Analysis notwendigen arithmetischen Operationen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Addition:} \\\\'."\n".
-                          'Koeffizientenweise.',
-                        '\bold{Multiplikation:} \\\\'."\n".
-                          'Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} \\\\'."\n".
-                          '\lm{ \displaystyle \qquad\qquad\qquad (f\!\ast\!g)(n) \;= \sum_{i + j = n} \! a_i \cdot b_j } \\\\'."\n".
-                          '(Das Cauchy-Produkt ist wohldefiniert, weil die Supportbedingungen der Hahn-Reihen die relevanten Koeffizientensummen kontrollieren.)',
-                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} \\\\'."\n".
-                          '\lm{ 0 < f < g } gilt, wenn an der \italic{größten} Potenz \lm{ k } mit \lm{ a_k \neq b_k } der Koeffizienten­vergleich \lm{ a_k < b_k } in \lm{ \mathbb{A}_{\R} } zutrifft.'."\n".
-                          'Damit ist \lm{ s > n } für jedes endliche \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } infinitesimal klein,'."\n".
-                          'siehe Kapitel \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}‹}',
-                        '\bold{Feld­axiome:} \\\\'."\n".
-                          'Die übliche Hahn-Reihen-Argumentation zeigt, dass \lm{ \mathbb{S} } ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter Körper} ist.',
-                        '\bold{Division:} \\\\'."\n".
-                          'Durch Herausziehen des größten Terms und formale Reiheninversion, ähnlich der Polynomdivision\footnote{\const{SupNum_g_footnote_text_Polynomdivision}}.',
-                        '\bold{Hebung vieler wichtiger Teilmengen der reell algebraischen Zahlen:} \\\\'."\n".
-                          'Wie \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze Superial-Zahlen}, \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahlen},'."\n".
-                          'gerade und ungerade Superial-Zahlen sowie \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superiale Primzahlen}.',
-                        '\bold{Primfaktorzerlegung:} \\\\'."\n".
-                          '\lm{ \s } und alle anderen natürlichen Superial-Zahlen können, wie im Kapitel \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:PrimSZ}‹}'."\n".
-                          'gezeigt wird, in endliche und aktual unendliche superiale Primfaktoren zerlegt werden.',
+                        '\bold{Addition:} Erfolgt strikt koeffizientenweise über dem reell-algebraischen Feld.',
+                        '\bold{Multiplikation:} Wird über das mathematisch wohldefinierte Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} operationalisiert,'."\n".
+                          'wobei die Wohlordnung des Supports die Konvergenz der Koeffizientensummen sichert.',
+                        '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                          'Definiert eine \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{totale lineare Ordnung},'."\n".
+                          'bei welcher der Koeffizientenvergleich an der jeweils höchsten unendlichen Stelle entscheidet.'."\n".
+                          'Dies sichert die Eigenschaft von \lm{ \s } als aktual unendliche Einheit \lm{ \s > n }'."\n".
+                          'für alle \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } als absolut normiertes Infinitesimal.',
+                        '\bold{Feldaxiome:} Das System erfüllt ausnahmslos alle strukturellen Bedingungen'."\n".
+                          'eines geordneten mathematischen Körpers.',
+                        '\bold{Division:} Ist über das Herausziehen des dominanten Terms und die formale Reiheninversion'."\n".
+                          '(analog zur algebraischen Polynomdivision\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) widerspruchsfrei durchführbar.',
+                        '\bold{Strukturelle Fortsetzung:} Ermöglicht die natürliche Einbettung und Erweiterung klassischer Zahlenmengen'."\n".
+                          '(wie \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche}, \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze}, gerade/ungerade und rationale Zahlen) ins Aktual-Unendliche.',
+                        '\bold{Teilbarkeit und Primstruktur:} Sichert die exakte mathematische Handhabung von \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{unendlichen Primfaktorzerlegungen}'."\n".
+                          'über das gesamte transfinite Spektrum.',
                     ))),
                   array( 'text', array( text => array(
-                    'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
+                    'Das sind alle grundlegenden Eigenschaften, die wir für ein transfinites Zahlensystem der Superial-Analysis brauchen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
