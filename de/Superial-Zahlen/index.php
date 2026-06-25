@@ -133,10 +133,30 @@
                   array( 'text', array( text => array(
                     'Und so zeigt sich die besondere Bedeutung von \lm{ \s = ω^{ω} }, was sehr bemerkenswert ist, weil sich die neue superiale Basis \lm{ \s }'."\n".
                     'auf diese Weise an exponierter Stelle in die Ordinalzahlen einreiht.'."\n".
-                    'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n",
-                      'Es tauchen immer weitere bedeutende Fragen zu den neuen Zahlen auf.'."\n".
-                    'Und so eröffnet sich eine ganze, neue Welt in der Mathematik, zu deren Erforschung wir hier'."\n".
-                    'anregen wollen.'."\n".
+                    'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
+                  'Ein neuer Ausblick: Die geometrische Brücke zum Langlands-Programm', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Entdeckung, dass die superiale Basis \lm{ \s } als unendliche Primzahlmatrix alle endlichen Primzahltürme'."\n".
+                    'geometrisch in einem einzigen Rechenraum bündelt, öffnet unerwartete Synergien zu einem der bedeutendsten'."\n".
+                    'Forschungsfelder der modernen Mathematik: dem Langlands-Programm.'."\n".
+                    'Dieses monumentale Netzwerk von Vermutungen sucht nach tiefen, verborgenen Symmetrien zwischen'."\n".
+                    'der algebraischen Zahlentheorie und der harmonischen Analysis.'."\n",
+                      'Das hier entwickelte System der Superial-Zahlen liefert für diese Synthese ein vollkommen neuartiges,'."\n".
+                    'elementares Werkzeug.'."\n".
+                    'Während die klassische Mathematik arithmetische und geometrische Eigenschaften oft strikt trennt,'."\n".
+                    'operationalisiert das superiale Stellenwertsystem das unendliche Primorial direkt als kontinuierliche Raumkoordinate.'."\n".
+                    'Die verallgemeinerten \lm{ p }-adischen Schichtbewertungen operieren lückenlos auf jeder mathematischen Dimension der Reihe.'."\n".
+                    'Dadurch werden unendliche Primzahlrelationen nicht mehr bloß als isolierte, diskrete Punkte verstanden,'."\n".
+                    'sondern in die stetige und fraktale Geometrie der transfiniten Analysis eingebettet.'."\n".
+                    'Dies bietet einen faszinierenden, neuen Zugang, um die tiefen Symmetrien automorpher Formen im Sinne'."\n".
+                    'des Langlands-Programms direkt über die arithmetische Feinstruktur des Kontinuums zu entschlüsseln.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Es tauchen somit immer weitere bedeutende Fragen zu den neuen Zahlen auf.'."\n".
+                    'Und so eröffnet sich eine ganze, neue Welt in der Mathematik, zu deren Erforschung wir hier anregen wollen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
                                            
