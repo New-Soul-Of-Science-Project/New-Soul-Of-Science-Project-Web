@@ -286,7 +286,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Für die Anzahl der Vorgänger finden wir dann:'."\n".
+                    'Für die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} der Vorgänger finden wir dann:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -296,12 +296,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \# \mathbb{N} + \# ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \# \mathbb{Z} + \# \mathbb{Z^{-}}  }'),
-                      array( display => 'off', latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z^{-}} }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \# \mathbb{Z} + \# ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \# \mathbb{Z}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \# ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; 2 ω  }'),
+                      array( display => 'on',  latex => '{  \s  =  \overline{\#} \mathbb{N} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \; \overline{\#} \mathbb{Z} + \overline{\#} \mathbb{Z^{-}}  }'),
+                      array( display => 'off', latex => '{  \overline{\#} \mathbb{Z}  =  \overline{\#} \mathbb{N} + \overline{\#} \mathbb{Z^{-}} }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \overline{\#} \mathbb{Z} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; 2 ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was der Anzahl aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
@@ -318,9 +318,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  2 ω \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  \s  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\S}  =  \overline{\#} \mathbb{Z} \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}  =  2 ω \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}  =  \s  \;\; ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -332,12 +332,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => true),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'off', latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
@@ -356,7 +356,7 @@
                     'Und wir können sogar noch weiter gehen als im vorherigen Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
                     'und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
                     'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
-                    'in \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
+                    'in \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
                     'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
@@ -446,11 +446,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  ω  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{N}  =  ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}^{-}  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \, \cdot \; ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \, \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies passt dann eben auch zu Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
@@ -458,13 +458,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \s  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\S}  =  \s  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => false),
-                      array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \# \mathbb{A}_{\S}^{-} \; + \; \# \mathbb{A}_{\S}^{0,+}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\S}  =  \overline{\#} \mathbb{A}_{\S}^{-} \; + \; \overline{\#} \mathbb{A}_{\S}^{0,+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \overline{\#} \mathbb{A}_{\S} \; - \; \overline{\#} \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \overline{\#} \mathbb{A}_{\S}^{-}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Es gibt also eine quasi Spiegelung der Anzahlen von positiven, mit der Null, und negativen ganzen Zahlen.'."\n",
@@ -472,7 +472,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{+}  =  \# \mathbb{A}_{\S}^{-} - 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{+}  =  \overline{\#} \mathbb{A}_{\S}^{-} - 1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'eine weniger, als die der negativen.'."\n".
@@ -489,7 +489,7 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -505,18 +505,18 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z + u  }'),
                       array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
                       array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                       array( display => 'off', latex => '{  x  =  1  }'),
                       array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \# [ 0, 1 [_{\mathbb{A}_{\S}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \# \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \overline{\#} \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
@@ -532,13 +532,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
@@ -552,7 +552,7 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ \forall z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \# \mathbb{A}_{\S} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
@@ -564,16 +564,6 @@
 
                 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung', subline =>
                   '')),
-                      
-                  /* array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Bemerkenswerte Doppelung}',
-                    '• Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s }, dass die Menge aller sinnvollen Koeffizienten der Superial-Zahlen die gleiche Anzahl enthalten muss, wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.',
-                    '– Dabei gibt es in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden trägt.',
-                    '– Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen in der Menge \lm{ \mathbb{A}_{\S} } nicht dichter gepackt werden kann. Beim Versucht, die gleiche Anzahl an Entitäten auf kleineren Raum, also enger, zu packen, wie bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }, müssen dann Anteile aktual unendlich kleiner Summanden herausfallen.',
-                    '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.',
-                    '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} und zur \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} passen.',
-                    ))), */
-                      
                   array( 'text', array( text => array(
                     'Bezüglich der Anzahl von Zahlen in Mengen kommt die superiale Basis \lm{ \s } in zwei sehr ähnlichen und doch ganz unterschiedlichen Zusammenhängen vor,'."\n".
                     'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
@@ -583,9 +573,9 @@
                   'Eine bemerkenswerte Doppelung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
+                    'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \overline{\#} \mathbb{A}_{\S} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
-                    'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} = \s }.'."\n".
+                    'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} = \s }.'."\n".
                     'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
                     'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecken der Länge \lm{ \s^{-1} } führen muss.'."\n",
                       'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
@@ -829,7 +819,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der mittlere Wert \lm{ ½ } wird zu Null.'."\n".
-                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \# \mathbb{Z} } ist \lm{ - ½ }.'."\n",
+                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \overline{\#} \mathbb{Z} } ist \lm{ - ½ }.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Das Problem scheint …'."\n".
                     ''))),
@@ -1191,18 +1181,18 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}^{-}  =  \overline{\#} \mathbb{N}  =  ω  =  \mathbb{N}  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}  =  2 ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ \forall n \in \mathbb{N} } n  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                     ))),
@@ -1212,7 +1202,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \sum_{ \forall z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot \# \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot \; \overline{\#} \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
@@ -1309,7 +1299,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1765,7 +1755,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \aleph_{1}  =  2^{\aleph_{0}}  }'),
-                      array( display => 'on',  latex => '{  \aleph_{0}  =  ω  =  \#\mathbb{N}  =  *| \mathbb{N} |*  }'),
+                      array( display => 'on',  latex => '{  \aleph_{0}  =  ω  =  \overline{\#} \mathbb{N}  =  *| \mathbb{N} |*  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  *| \mathcal{P}(\mathbb{N}) |*  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1857,8 +1847,8 @@
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
                     'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
-                      'Durch die Superial-Zahlen sehen wir nun, dass die Anzahl – wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren – der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \# \mathbb{A}_{\S} = \# \mathbb{A}_{\R} = *| \mathbb{A}_{\R} |* } dem besagten'."\n".
-                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \# \mathbb{Z} = 2 \cdot ω }, also \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
+                      'Durch die Superial-Zahlen sehen wir nun, dass die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} – wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren – der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \overline{\#} \mathbb{A}_{\R} } dem besagten'."\n".
+                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω }, also \lm{ \overline{\#} \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
                     'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
                       'Wenn wir dies alles in einer Gesamtschau betrachten, bekommen wir nun den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
                     ''))),
