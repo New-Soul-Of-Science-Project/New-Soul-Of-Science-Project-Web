@@ -44,7 +44,7 @@
                     'Mit der Etablierung von \lm{ \s } als normierter infiniter Einheit und \lm{ \s^{-1} } als absolut normiertem Infinitesimal'."\n".
                     'wird das Differential \lm{ \mathrm{d} } ersetzt.'."\n".
                     'Ableitungen werden zu exakten Differenzen und Integrale werden zu exakten, aktual unendlichen Summen,'."\n".
-                    'die ihren Grenzwert-Pfad im System vollständig bewahren'."\n".
+                    'die ihren aktual unendlichen Grenzwertpfad im System vollständig bewahren'."\n".
                     'und algebraisch verrechenbar machen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
@@ -105,7 +105,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Auf Grundlage dieses arithmetischen Fundaments wird die Differential- und Integralrechnung'."\n".
-                    'von der klassischen Grenzwertnäherung (Limes) befreit und auf exakte algebraische Operationen zurückgeführt.'."\n".
+                    'von der klassischen Grenzwertnäherung (Limes) befreit und auf exakte algebraische Operationen unter Erhaltung des aktualen Grenzwertpfades zurückgeführt.'."\n".
                     'Das klassische Differential wird durch das absolut normierte Infinitesimal \lm{ \s^{-1} } ersetzt,'."\n".
                     'woraus sich die exakte Ableitung einer Funktion ohne Limes-Prozess ergibt:'."\n".
                     ''))),
@@ -125,8 +125,10 @@
                     ))),
                   array( 'text', array( text => array(
                     'Diese unendlich kleinen Summanden addieren sich über die transfinite Summation präzise zu endlichen Zahlen auf.'."\n".
-                    'Da der infinitesimale Rest nicht im Grenzwert gelöscht wird, bleibt der exakte Grenzwert- und Rechenpfad'."\n".
-                    'im Stellenwertsystem vollständig konserviert und analytisch auswertbar.'."\n".
+                    'Da der infinitesimale Rest nicht im Grenzwert gelöscht wird, bleibt der exakte aktual unendliche Grenzwert- und Rechenpfad'."\n".
+                    'im normierten Stellenwertsystem vollständig konserviert und analytisch auswertbar.'."\n".
+                    'Das unendlich Kleine \lm{ \s^{-1} } verhält sich metrisch streng invers zum unendlich Großen \lm{ \s },'."\n".
+                    'wodurch Ableitungen und Integrale ihre infinitesimale Feinstruktur, Integrale als exakte Summen, bewahren.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Und so zeigt sich die besondere Bedeutung von \lm{ \s = ω^{ω} }, was sehr bemerkenswert ist, weil sich die neue superiale Basis \lm{ \s }'."\n".
@@ -134,7 +136,7 @@
                     'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n",
                       'Es tauchen immer weitere bedeutende Fragen zu den neuen Zahlen auf.'."\n".
                     'Und so eröffnet sich eine ganze, neue Welt in der Mathematik, zu deren Erforschung wir hier'."\n".
-                    'angeregen wollen.'."\n".
+                    'anregen wollen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
                                            
