@@ -40,7 +40,7 @@
                     'Ziel ist die Konstruktion eines normierten, transfiniten Stellenwertsystems für die Analysis,'."\n".
                     'in dem transfinite divisatorische Eigenschaften ohne algebraische Widersprüche operieren.'."\n",
                       'Als Trägerstruktur für diese Fundierung nutzen wir den geordneten Körper'."\n".
-                    'der formalen Hahn-Reihen \lm{ \mathbb{A}_{\R}\!*(*( \s^{\mathbb{G}} *)*) } über den reell algebraischen Zahlen.'."\n".
+                    'der formalen Hahn-Reihen \lm{ \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*) } über den reell algebraischen Zahlen.'."\n".
                     'Im Zentrum dieser Konstruktion steht die Einführung der superialen Basis \lm{ \s },'."\n".
                     'welche als das transfinite Primzahl-Flächenprodukt definiert ist:'."\n".
                     ''))),
