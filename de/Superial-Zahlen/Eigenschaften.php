@@ -120,13 +120,13 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das archimedische Axiom gilt in dieser Form aber nicht für den geordneten Körper der Superial-Zahlen,'."\n".
-                      'weil es die Untermenge ihrer sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }, der reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, gibt,'."\n".
-                      'für deren Elemente \lm{ x \in \mathbb{A}_{\S} = \mathbb{A}_{\R} } es keinen Faktor in \lm{ \mathbb{Z} } gibt,'."\n".
+                      'weil es die Untermenge ihrer sinnvollen Koeffizienten \lm{ \mathbb{A}_{\R} }, der reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, gibt,'."\n".
+                      'für deren Elemente \lm{ x \in \mathbb{A}_{\R} } es keinen Faktor in \lm{ \mathbb{Z} } gibt,'."\n".
                       'um ihr Produkt größer als jede Superial-Zahl \lm{ \mathbb{S} } zu machen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *( \nexists z \in \mathbb{Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\R} *) *( a \cdot \s > x > 0 *) *( \nexists z \in \mathbb{Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
                       array( display => 'on',  latex => '{  a \cdot \s \in \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *( \nexists z \in \mathbb{Z} *) *[  x \cdot z  >  y  *]  }'),
                     ))),
@@ -164,7 +164,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.WO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\S} *) *( a \cdot \s > x > 0 *) *( \exists z \in \mathbb{S}_{\Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, x \in \mathbb{A}_{\R} *) *( a \cdot \s > x > 0 *) *( \exists z \in \mathbb{S}_{\Z} *) *[  x \cdot z  >  a \cdot \s  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und mit'."\n".
@@ -277,7 +277,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\, *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\, *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\; ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -291,17 +291,17 @@
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Seien \lm{ \rbrack a, b \lbrack_{\mathbb{A}_{\S}} } und \lm{ \lbrack a, b \lbrack_{\mathbb{A}_{\S}} } \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \lm{ \mathbb{A}_{\S} },'."\n".
+                      'Seien \lm{ \rbrack a, b \lbrack_{\mathbb{A}_{\R}} } und \lm{ \lbrack a, b \lbrack_{\mathbb{A}_{\R}} } \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \lm{ \mathbb{A}_{\R} },'."\n".
                       'dann ergibt sich \lm{ \s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \overline{\#} \mathbb{N} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \; \overline{\#} \mathbb{Z} + \overline{\#} \mathbb{Z^{-}}  }'),
+                      array( display => 'on',  latex => '{  \s  =  \overline{\#} \mathbb{N} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}} \cdot \; \overline{\#} \mathbb{Z} + \overline{\#} \mathbb{Z^{-}}  }'),
                       array( display => 'off', latex => '{  \overline{\#} \mathbb{Z}  =  \overline{\#} \mathbb{N} + \overline{\#} \mathbb{Z^{-}} }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \overline{\#} \mathbb{Z} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} \cdot \; \overline{\#} \mathbb{Z}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \; \overline{\#} \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; \overline{\#} \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \; \cdot \; 2 ω  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \overline{\#} \mathbb{Z} + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}} \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}} *) \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}} \; \cdot \; \overline{\#} \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}} \; \cdot \; 2 ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was der Anzahl aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
@@ -310,7 +310,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  *[  x = z + u  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  *[  x = z + u  *]  *\}  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -318,13 +318,13 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\S}  =  \overline{\#} \mathbb{Z} \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}  =  2 ω \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}  =  \s  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\R}  =  \overline{\#} \mathbb{Z} \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}  =  2 ω \; \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}  =  \s  \;\; ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'weil es in den sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} } das Interval \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                      'weil es in den sinnvollen Koeffizienten \lm{ \mathbb{A}_{\R} } das Interval \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
                       'für jede ganze Zahl in \lm{ \mathbb{Z} } gibt und sie damit vollständig beschrieben sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -332,12 +332,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.L', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => true),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'off', latex => '{  \Rightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ ω^{ω} }{ 2 ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
@@ -356,7 +356,7 @@
                     'Und wir können sogar noch weiter gehen als im vorherigen Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
                     'und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
                     'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
-                    'in \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
+                    'in \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } }'."\n".
                     'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
@@ -389,7 +389,7 @@
                   array( 'text', array( text => array(
                     'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
                     'Dies bestimmt zum einen, ob sich wirklich plausibel eine ganze Anzahl an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
-                    'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } ergibt, sodass wir keinen logischen Bruch und damit einen Widerspruch erhalten.'."\n".
+                    'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ergibt, sodass wir keinen logischen Bruch und damit einen Widerspruch erhalten.'."\n".
                     'Und damit wird bestimmt, ob wir sagen können, dass \lm{ ω } gemeinsame Teiler mit \lm{ \s } haben muss.'."\n",
                       'Dies ist einer der Gründe, weswegen wir uns mit den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
                     'beschäftigt, diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht haben.'."\n".
@@ -420,12 +420,12 @@
                     'Die negativen Zahlen entstehen also eigentlich nicht durch eine Spiegelung all dieser Sägezähne an der Null, sondern durch deren jeweils einzelne Verschiebung.'."\n".
                     'Bei einer Spiegelung an der Null wäre die Null strukturell gedoppelt – ontologisch redundant –, was keinen Sinn macht,'."\n".
                     'und die Sägezähne drehten sich in ihrer Richtung zum negativen hin um, was ebenfalls unsinnig erscheint, weil es eine Umkehrung der Zählrichtung im Negativen bedeutete, die nicht real ist.'."\n",
-                      'Dieser Zusammenhang soll sich ganz korrekt in der Struktur der ersten Formulierung der Entstehung der negativen Sägezahnintervalle von \lm{ \mathbb{A}_{\S}^{-} } ausdrücken,'."\n".
+                      'Dieser Zusammenhang soll sich ganz korrekt in der Struktur der ersten Formulierung der Entstehung der negativen Sägezahnintervalle von \lm{ \mathbb{A}_{\R}^{-} } ausdrücken,'."\n".
                     'die wir auf Basis der Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 n + 1 *) *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 n + 1 *) *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Intervalle \lm{ u }, die zwischen den ganzen Zahlen liegen, hängen an der vorstehenden linksseitigen ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
@@ -436,9 +436,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 n - 1 *) + u  *]  *\}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Mit Hilfe der Formeln \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
@@ -448,9 +448,9 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \overline{\#} \mathbb{N}  =  ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}} \, \cdot \; ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{A}_{\R}^{-}  =  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}} \, \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies passt dann eben auch zu Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
@@ -458,13 +458,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\S}  =  \s  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\R}  =  \s  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s}', label_incr => false),
-                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\S}  =  \overline{\#} \mathbb{A}_{\S}^{-} \; + \; \overline{\#} \mathbb{A}_{\S}^{0,+}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \overline{\#} \mathbb{A}_{\S} \; - \; \overline{\#} \mathbb{A}_{\S}^{-}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{0,+}  =  \overline{\#} \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{A}_{\R}  =  \overline{\#} \mathbb{A}_{\R}^{-} \; + \; \overline{\#} \mathbb{A}_{\R}^{0,+}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{0,+}  =  \overline{\#} \mathbb{A}_{\R} \; - \; \overline{\#} \mathbb{A}_{\R}^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{0,+}  =  \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{0,+}  =  \overline{\#} \mathbb{A}_{\R}^{-}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Es gibt also eine quasi Spiegelung der Anzahlen von positiven, mit der Null, und negativen ganzen Zahlen.'."\n",
@@ -472,7 +472,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\S}^{+}  =  \overline{\#} \mathbb{A}_{\S}^{-} - 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} \mathbb{A}_{\R}^{+}  =  \overline{\#} \mathbb{A}_{\R}^{-} - 1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'eine weniger, als die der negativen.'."\n".
@@ -503,27 +503,27 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z + u  }'),
-                      array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}} \!\!\!\! u *)  }'),
-                      array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z + u  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                       array( display => 'off', latex => '{  x  =  1  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \overline{\#} \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ \forall z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\S}} a  =  -ω  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \overline{\#} \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ \forall z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  -ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Anteile der positiven und negativen Sägezähne heben sich auf und es bleibt einfach die Summe aller ganzen Zahlen übrig.'."\n".
@@ -532,13 +532,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - \frac{ ω }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ \s }  }'),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - \frac{ ω }{ ω^{ω} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω \cdot ω^{-ω}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω^{-ω + 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ ω^{ω} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω \cdot ω^{-ω}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{-ω + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
@@ -552,7 +552,7 @@
                     array( equ_text_std => 'SN.Ei.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ \forall z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\S}} a }{ \overline{\#} \mathbb{A}_{\S} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
@@ -573,21 +573,21 @@
                   'Eine bemerkenswerte Doppelung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \overline{\#} \mathbb{A}_{\S} = \s },'."\n".
+                    'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \overline{\#} \mathbb{A}_{\R} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
                     'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} = \s }.'."\n".
                     'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
                     'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecken der Länge \lm{ \s^{-1} } führen muss.'."\n",
-                      'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
+                      'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\R} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
                     'die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden beinhaltet.'."\n".
                     'Denn bei der Teilung der Strecke zwischen Null und Eins entsteht dadurch die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } der Punkte zwischen den Teilstrecken,'."\n".
                     'die Adressierbar sind und deren benachbarte Punkte jeweils den Abstand beziehungsweise die Differenz \lm{ \s^{-1} } haben, was nur mit aktual unendlich kleinen Summand dieser Differenz beschreibbar ist.'."\n",
-                      'Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen auf einer endlosen Geraden, die den Zahlen der Menge \lm{ \mathbb{A}_{\S} } entsprechen,'."\n".
+                      'Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen auf einer endlosen Geraden, die den Zahlen der Menge \lm{ \mathbb{A}_{\R} } entsprechen,'."\n".
                     'nicht dichter gepackt werden kann.'."\n".
                     'Bei dem Versucht, die gleiche Anzahl an Entitäten auf kleinerem Raum – also dichter oder enger – zu packen, so, wie dies bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } geschieht,'."\n".
                     'müssen folglich Anteile aktual unendlich kleiner Summanden herausfallen.'."\n".
                     'Diese aktual unendlich kleinen Summanden, sind ganze Zahlen im superial Kleinen.'."\n",
-                      'Die Zahlen der Menge \lm{ \mathbb{A}_{\S} }, können – zumindest im Rahmen der Superial-Zahlen – als die maximal dichten Zahlen unserer endlichen Zahlengeraden'."\n".
+                      'Die Zahlen der Menge \lm{ \mathbb{A}_{\R} }, können – zumindest im Rahmen der Superial-Zahlen – als die maximal dichten Zahlen unserer endlichen Zahlengeraden'."\n".
                     'verstanden werden. also als die Grundlage unserer Geometrie im Endlichen.'."\n",
                       'Die superial kleinen ganzen Zahlen der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } und deren Erweiterung auf den ganzen Zahlenstrahl,'."\n".
                     'spielen dann eine zentrale Rolle in der neuen \jump{OM:SupNum:Ableitungen-Integrale}{Differenzialrechnung} auf Basis von Superial-Zahlen.'."\n".
@@ -619,18 +619,18 @@
                   'Tiefer Zusammenhang zwischen den Primzahlen und den reell algebraischen Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Da die Menge \lm{ \mathbb{A}_{\S} } nach unserem \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis unserer Algebraischen-Koeffizienten-Vermutung} tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } gleich ist,'."\n".
+                    'Da die Menge \lm{ \mathbb{A}_{\R} } nach unserem \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis unserer Algebraischen-Koeffizienten-Vermutung} tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } gleich ist,'."\n".
                     'werden die reell algebraischen Zahlen in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
                     'und diese gibt Anlass zu der Annahme, dass wir sie in Zukunft noch detaillierter formulieren können.'."\n",
                       'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
-                    'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – verwoben ist.'."\n".
-                    'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\S} }, müssen nach Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As} ganze Zahl sein,'."\n".
+                    'der Superial-Zahlen \lm{ \mathbb{A}_{\R} } – und, wenn \lm{ \mathbb{A}_{\R} ?= \mathbb{A}_{\R} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – verwoben ist.'."\n".
+                    'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\R} }, müssen nach Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-exist-As} ganze Zahl sein,'."\n".
                     'siehe \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
                     'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",
                       'Der Beweis der Überrationalitätsvermutung zeigt beispielsweise für'."\n".
                     '\lm{ a = *| \sqrt{2} \,|* = \frac{ *| \sqrt{2} \,|* \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ *| \sqrt{2} \,|* \cdot \s } eine ganze Zahl ist.'."\n".
                     'Und zwar, weil \lm{ *| \sqrt{2} \,|* \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
-                    'Deshalb ist \lm{ *| \sqrt{2} \,|* } ein sinnvoller Koeffizient und es gilt \lm{ *| \sqrt{2} \,|* \in \mathbb{A}_{\S} }.'."\n".
+                    'Deshalb ist \lm{ *| \sqrt{2} \,|* } ein sinnvoller Koeffizient und es gilt \lm{ *| \sqrt{2} \,|* \in \mathbb{A}_{\R} }.'."\n".
                     'Schon hierin liegen einige erstaunliche neue Erkenntnisse, die bisher offenbar unbekannt waren.'."\n".
                     'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
                     'Und wir lernen, auch, wenn das Kürzen eines überrationalen Bruchs möglich ist, kann es dazu führen, dass wir eine gesuchte Lösung nicht finden können, wenn wir es tun.'."\n".
@@ -644,9 +644,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  *[  x = z + u  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  *[  x = z + u  *]  *\}  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => false),
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
@@ -654,7 +654,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
@@ -663,7 +663,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
@@ -671,7 +671,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  *〈 a *〉*〈 z *〉.  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉*〈 z^{-} *〉.  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  *〈 a *〉*〈 z *〉.  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉*〈 z^{-} *〉.  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
 
                     ))),
@@ -715,9 +715,9 @@
                   array( 'text', array( text => array(
                     'Auffällig ist, dass bei der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } zu Beginn und am Ende'."\n".
                     'die ganzen Zahlen \lm{ \mathbb{Z} } in \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } aufgespalten sind und mitten drinne ganz \lm{ \mathbb{Z} }'."\n".
-                    'unendlich oft durchläuft, jedoch \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } nur ein Mal durchlaufen wird.'."\n",
-                      'Während die ganzen Zahlen \lm{ \mathbb{Z} } bei \lm{ \mathbb{A}_{\S} } nur ein Mal komplett durchlaufen werden.'."\n".
-                    'Die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } wird jedoch unendlich oft durchlaufen.'."\n",
+                    'unendlich oft durchläuft, jedoch \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } nur ein Mal durchlaufen wird.'."\n",
+                      'Während die ganzen Zahlen \lm{ \mathbb{Z} } bei \lm{ \mathbb{A}_{\R} } nur ein Mal komplett durchlaufen werden.'."\n".
+                    'Die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } wird jedoch unendlich oft durchlaufen.'."\n",
                       'Wenn nun aber beide Mengen die gleiche Anzahl an Elementen, sprich Zahlen, haben, dann stellt sich die Frage,'."\n".
                     'ob und wie wir die Mengen aufeinander abbilden können.'."\n".
                     ''))),
@@ -725,13 +725,13 @@
                   'Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die Menge \lm{ \mathbb{A}_{\S} } steht im \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
+                    'Die Menge \lm{ \mathbb{A}_{\R} } steht im \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'der Superial-Zahlen für alle sinnvollen Koeffizienten,'."\n".
                     'dann entspricht die Anzahl ihrer Elemente quasi der Anzahl der möglichen Ziffern, nämlich \lm{ \s }.'."\n".
                     'Da macht es natürlich Sinn, dass es genau so viele Ziffern gibt, wie die Basis des Stellenwertsystems, also ebenfalls \lm{ \s }.'."\n".
                     'Dies ist bei anderen Stellenwertsystemen ebenso.'."\n".
                     'Beispielsweise gibt es im Zehnersystem genau zehn Ziffern.'."\n".
-                    'Allerdings sind in der Menge \lm{ \mathbb{A}_{\S} } nicht nur natürliche Zahlen, wie bei den „gewöhnlichen“ Stellenwertsystemen,'."\n".
+                    'Allerdings sind in der Menge \lm{ \mathbb{A}_{\R} } nicht nur natürliche Zahlen, wie bei den „gewöhnlichen“ Stellenwertsystemen,'."\n".
                     'sondern die meisten sind gebrochen und es sind sogar auch die negativen dabei.'."\n",
                       'Gleichzeitig ist die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } in ihrer Normalform'."\n".
                     '\lm{ \lbrack 0, \s \lbrack_{\mathbb{S}_{\N}} } die Grundlage des Zählens von \lm{ \s } vielen, auch aktual unendlichen natürlichen Zahlen von Null bis ohne \lm{ \s }.'."\n".
@@ -765,12 +765,12 @@
                     'Naiv können wir einmal annehmen, da die Werte beider Mengen offenbar nicht nur wohlgeordnet sind, sondern auch'."\n".
                     'alle je in ihrer Menge die gleichen Abstände untereinander haben, dass sie vielleicht rein durch Verschiebung und einen Faktor'."\n".
                     'Element für Element ihrer Reihenfolge nach aufeinander abgebildet werden können.'."\n".
-                    'Weil der Wertebereich von \lm{ \mathbb{A}_{\S} } nun \lm{ 2 ω } mal so groß ist, wie der von \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} },'."\n".
+                    'Weil der Wertebereich von \lm{ \mathbb{A}_{\R} } nun \lm{ 2 ω } mal so groß ist, wie der von \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} },'."\n".
                     'und um die Mitte zentriert, womit wir als Ansatz eine Verschiebung um \lm{ - ½ } annehmen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -787,7 +787,7 @@
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier sehen wir, dass die linksseitige Grenze Null zu \lm{ - ω } wird, was aber kein Element von \lm{ \mathbb{A}_{\S} } ist.'."\n",
+                    'Hier sehen wir, dass die linksseitige Grenze Null zu \lm{ - ω } wird, was aber kein Element von \lm{ \mathbb{A}_{\R} } ist.'."\n",
                       'Die rechtsseitige Grenze \lm{ 1 - \s^{-1} } wird zu:'."\n".
                     ''))),
                   array( 'equations',
@@ -802,8 +802,8 @@
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Die rechtsseitige Grenze \lm{ 1 - \s^{-1} } wird zu \lm{ ω - 2 ω \s^{-1} }, was auch kein Element von \lm{ \mathbb{A}_{\S} } ist.'."\n".
-                    'Beide Grenzen werden zu aktual unendlich großen Werten, aber \lm{ \mathbb{A}_{\S} } enthält nur endliche Werte.'."\n",
+                    'Die rechtsseitige Grenze \lm{ 1 - \s^{-1} } wird zu \lm{ ω - 2 ω \s^{-1} }, was auch kein Element von \lm{ \mathbb{A}_{\R} } ist.'."\n".
+                    'Beide Grenzen werden zu aktual unendlich großen Werten, aber \lm{ \mathbb{A}_{\R} } enthält nur endliche Werte.'."\n",
                       'Was wird aus dem mittleren Wert?'."\n".
                     'Was ist der mittlere Wert?'."\n".
                     'Wir nehmen mal an, es ist \lm{ ½ }:'."\n".
@@ -819,7 +819,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der mittlere Wert \lm{ ½ } wird zu Null.'."\n".
-                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \overline{\#} \mathbb{Z} } ist \lm{ - ½ }.'."\n",
+                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\R} }, denn der Mittelpunkt von \lm{ \overline{\#} \mathbb{Z} } ist \lm{ - ½ }.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Das Problem scheint …'."\n".
                     ''))),
@@ -1190,10 +1190,10 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ \forall n \in \mathbb{N} } n  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω } - 1  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1201,15 +1201,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \sum_{ \forall z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot \; \overline{\#} \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a \cdot ω^{ω} \cdot 2 ω \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a \;\; - \;\; *( \frac{ \s }{ 2 ω } - 1 *) \cdot ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \sum_{ \forall z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot \; \overline{\#} \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \cdot ω^{ω} \cdot 2 ω \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ \s }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Um die noch enthaltene variable Summe zu berechnen, können wir, ohne sie zu verändern, die Null in ihre Basismenge integrieren'."\n".
@@ -1218,10 +1218,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} \cdot ω }{ 2 ω } - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 } - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\!\!\! a  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} \cdot ω }{ 2 ω } - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 } - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ ω^{ω} }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  \frac{ ω^{ω} \cdot 2 ω \cdot ω^{ω} }{ 4 ω } - \frac{ ω^{ω} \cdot 2 ω }{ 2 } - \frac{ ω^{ω} }{ 2 } + ω  }'),
@@ -1299,7 +1299,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1430,7 +1430,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR.WSZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\R}^{+} *) *( \forall y \in \mathbb{N} \ge 2 *) \\\ \qquad\qquad\quad\, *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( a_{s} + b_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s} \s^{y} + b_{s} \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }'),
                     ))),
@@ -1481,7 +1481,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR.PT', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \forall a_{s}, b_{s}, c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a_{s}, b_{s}, c_{s}  \in  \mathbb{A}_{\R}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{2}  =  a_{s}^{2} + b_{s}^{2}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c_{s}  =  *| \sqrt{ a_{s}^{2} + b_{s}^{2} } \,|*  }'),
@@ -1543,7 +1543,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ei.NR.GFS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \forall a_{s} , b_{s} , c_{s}  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a_{s} , b_{s} , c_{s}  \in  \mathbb{A}_{\R}^{+}  }'),
                       array( display => 'on',  latex => '{  \forall \, a_{s} \s \, , \, b_{s} \s \, , \, c_{s} \s  \in  \mathbb{S}_{\N}^{+}  }'),
                       array( display => 'on',  latex => '{  c_{s}^{n}  =  a_{s}^{n} + b_{s}^{n}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c_{s}  =  *| \sqrt[n]{ a_{s}^{n} + b_{s}^{n} } \,|*  }'),
@@ -1848,7 +1848,7 @@
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
                     'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
                       'Durch die Superial-Zahlen sehen wir nun, dass die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} – wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren – der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \overline{\#} \mathbb{A}_{\R} } dem besagten'."\n".
-                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω }, also \lm{ \overline{\#} \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
+                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω }, also \lm{ \overline{\#} \mathbb{A}_{\R} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
                     'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
                       'Wenn wir dies alles in einer Gesamtschau betrachten, bekommen wir nun den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
                     ''))),
