@@ -1,6 +1,6 @@
 <?php
   $SupNum_g_text_ZFCkonform =
-                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
+                    'Die ZFC-konforme Operationalisierung unseres transfiniten Primzahl-Flächenprodukts als stabiles, normiertes Stellenwertsystem der Analysis über eine Familie verallgemeinerter \lm{ p }-adischer Schichtbewertungen findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
 
   
   /* $SupNum_g_paragraphList_Glossar =

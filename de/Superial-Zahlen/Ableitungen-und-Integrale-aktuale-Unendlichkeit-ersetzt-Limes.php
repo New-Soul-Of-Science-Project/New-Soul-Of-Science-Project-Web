@@ -1054,7 +1054,7 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Noch einmal in \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwert-Schreibweise}:'."\n".
+                    'Noch einmal in \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertschreibweise}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
