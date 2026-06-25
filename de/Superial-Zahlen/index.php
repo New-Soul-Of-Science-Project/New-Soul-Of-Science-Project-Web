@@ -136,23 +136,24 @@
                     'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
-                  'Ein neuer Ausblick: Die geometrische Brücke zum Langlands-Programm', subline =>
+                  'Ein zukunftsweisender Ausblick: Die Verbindung von Zahlentheorie und Analysis', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die Entdeckung, dass die superiale Basis \lm{ \s } als unendliche Primzahlmatrix alle endlichen Primzahltürme'."\n".
-                    'geometrisch in einem einzigen Rechenraum bündelt, öffnet unerwartete Synergien zu einem der bedeutendsten'."\n".
-                    'Forschungsfelder der modernen Mathematik: dem Langlands-Programm.'."\n".
-                    'Dieses monumentale Netzwerk von Vermutungen sucht nach tiefen, verborgenen Symmetrien zwischen'."\n".
-                    'der algebraischen Zahlentheorie und der harmonischen Analysis.'."\n",
-                      'Das hier entwickelte System der Superial-Zahlen liefert für diese Synthese ein vollkommen neuartiges,'."\n".
-                    'elementares Werkzeug.'."\n".
-                    'Während die klassische Mathematik arithmetische und geometrische Eigenschaften oft strikt trennt,'."\n".
-                    'operationalisiert das superiale Stellenwertsystem das unendliche Primorial direkt als kontinuierliche Raumkoordinate.'."\n".
-                    'Die verallgemeinerten \lm{ p }-adischen Schichtbewertungen operieren lückenlos auf jeder mathematischen Dimension der Reihe.'."\n".
-                    'Dadurch werden unendliche Primzahlrelationen nicht mehr bloß als isolierte, diskrete Punkte verstanden,'."\n".
-                    'sondern in die stetige und fraktale Geometrie der transfiniten Analysis eingebettet.'."\n".
-                    'Dies bietet einen faszinierenden, neuen Zugang, um die tiefen Symmetrien automorpher Formen im Sinne'."\n".
-                    'des Langlands-Programms direkt über die arithmetische Feinstruktur des Kontinuums zu entschlüsseln.'."\n".
+                    'Die Erkenntnis, dass die superiale Basis \lm{ \s } als unendliches Flächenprodukt alle endlichen Primzahltürme geometrisch'."\n".
+                    'in einem einzigen, geordneten Rechenraum bündelt, berührt eine der tiefsten Leitideen der modernen Mathematik:'."\n".
+                    'die systematische Verknüpfung von diskreter Zahlentheorie und kontinuierlicher Analysis.'."\n".
+                    'In der mathematischen Fachwelt wird dieses monumentale Brückenprojekt'."\n".
+                    'vor allem mit dem visionären Langlands-Programm assoziiert.'."\n",
+                      'Das hier entwickelte System der Superial-Zahlen nähert sich dieser großen Synthese von einer neuen,'."\n".
+                    'elementaren Seite.'."\n".
+                    'Während die klassische Mathematik arithmetische Eigenschaften (wie Teilbarkeiten)'."\n".
+                    'und geometrische Kontinuität oft getrennt behandelt, macht das superiale Stellenwertsystem'."\n".
+                    'das unendliche Primorial direkt als kontinuierliche Raumkoordinate nutzbar.'."\n".
+                    'Die verallgemeinerten \lm{ p }-adischen Schichtbewertungen stellen sicher,'."\n".
+                    'dass die Primzahl-Feinstruktur auf jeder Dimension des Raumes fehlerfrei erhalten bleibt.'."\n".
+                    'Damit bietet die Theorie einen faszinierenden, neuen Denkansatz, um die tiefen Wechselwirkungen'."\n".
+                    'zwischen Primzahlen und der Geometrie des Kontinuums direkt über die arithmetischen Gesetze'."\n".
+                    'einer erweiterten Analysis zu erforschen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Es tauchen somit immer weitere bedeutende Fragen zu den neuen Zahlen auf.'."\n".
