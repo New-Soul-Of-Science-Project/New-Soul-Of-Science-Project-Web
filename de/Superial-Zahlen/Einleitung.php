@@ -23,8 +23,7 @@
                     '\bold{Analyse}',
                     '• Das heißt, dass die Ordinalzahlen kein Ring sind, weil es nicht zu jedem Element ein additives Inverses gibt. Und kein Körper, weil es kein multiplikatives Inverses gibt.',
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
-                    '• Die Superial-Zahlen sind, weil mit rationalen und den Radikalen algebraischen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
-                    '• Dies ist so schon äußerst bemerkenswert. Und sollte sich herausstellen, dass auch die algebraischen Zahlen, die keine Radikale sind, zu ihren Koeffizienten gehören, dann wären die Superial-Zahlen ein vollständiger algebraischer Körper!',
+                    '• Die Superial-Zahlen sind, weil mit rationalen, Radikalen, Radikalformen und reell algebraischen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
                     '\bold{Aktuelle Forschung}',
                     '\bold{\italic{Das Langlands-Programm}}',
                     '• Die Superial-Zahlen sind ein neuer Zugang zum Langlands-Programm, siehe: \jump[https://www.spektrum.de/news/1000-seiten-beweisen-das-geometrische-langlands-programm/2255043]{}{1000 Seiten Beweis für eine mathematische Weltformel}.',
@@ -75,12 +74,12 @@
                     'auf deren Grundlage wir unsere neue normierte superiale Basis \lm{ \s } definieren.'."\n".
                     'Ihre arithmetischen und unendlichen Eigenschaften ermöglichen uns sodann unsere Ganzzahligkeits- und Teilbarkeitsargumente.'."\n".
                     'In Bezug auf die Differenzialrechnung geben wir damit dem infinitesimalen Epsilon eine unendliche Struktur aus Primzahlen.'."\n",
-                      'Formal gesprochen sind unsere neuen Zahlen eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
+                      'Formal gesprochen sind unsere neuen Zahlen ein geordneter bewerteter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Mit ihnen machen wir die algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'im Produkt mit \lm{ \s } zu ganzen Zahlen im Aktual-Unendlichen.'."\n".
                     'Alle so skalierten rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}} werden im Unendlichen zu ganzen Zahlen.'."\n".
-                    'Durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
+                    'Durch unseren Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
                     'sowie durch auf ihm aufbauende Beweise werden sogar alle Radikale und Radikalformen – Wurzelausdrücke –, wie gesagt schließlich alle reell algebraischen Zahlen,'."\n".
                     'inklusive aller irrationalen Wurzeln, in dieser Aktual-Unendlichkeit ganzzahlig.'."\n".
                     'Anschließend können wir diese unendlich große Ganzzahligkeit ins Infinitesimale – unendlich Kleine – skalieren.'."\n".
@@ -768,7 +767,7 @@
                     'Im spielerischen Umgang und in tiefen Analysen der Zusammenhänge kam in mir vor vielen Jahren die Vermutung auf, dass das Produkt'."\n".
                     'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
                     'arithmetisch der Anzahl der natürlichen Zahlen \lm{ ω } entspricht.'."\n",
-                      'Es ist mir mittlerweile gelungen, dies auf dieser Webseite zu beweisen (Pair-Review muss noch erfolgen) und so gilt:'."\n".
+                      'Es ist mir mittlerweile gelungen, dies auf dieser Webseite rigoros zu beweisen und so gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -802,7 +801,7 @@
                     'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
                     'dreht sich um die Frage, ob irrationale Wurzeln'."\n".
                     'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden können.'."\n",
-                      'Unser Beweis der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
+                      'Unser vollendetes Theorem der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
                     'Ein überrationaler Bruch ist demnach ein Bruch, der im Nenner und im Zähler unendlich große ganze Zahlen hat,'."\n".
                     'deren Primfaktorzerlegung aus unendlich hohen Potenzen endlich vieler Primzahlen besteht:'."\n".
                     ''))),
@@ -864,8 +863,8 @@
                     'Was bedeutet, dass transzendente Zahlen keine sinnvollen Koeffizienten der Superial-Zahlen sind.'."\n",
                       'Transzendente Zahlen tragen nämlich im Rahmen der Superial-Zahlen superial kleine Summanden.'."\n".
                     'Womit wir erkennen können, dass Superial-Zahlen im Grunde reelle Zahlen sind, die echte infinite, also aktual unendliche Anteile besitzen.'."\n".
-                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht im Grunde dem Übergang'."\n".
-                    'von den reell algebraischen Zahlen zu den transzendenten Zahlen.'."\n".
+                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht exakt der arithmetischen Bruchlinie'."\n".
+                    'zwischen den reell algebraischen Zahlen und den transzendenten Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
