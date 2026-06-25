@@ -451,7 +451,7 @@
                     'die lückenlose Gültigkeit aller für die Analysis notwendigen arithmetischen Operationen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Addition:} Erfolgt strikt koeffizientenweise über dem reell-algebraischen Feld.',
+                        '\bold{Addition:} Erfolgt strikt koeffizientenweise über dem reell algebraischen Feld.',
                         '\bold{Multiplikation:} Wird über das mathematisch wohldefinierte Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} operationalisiert,'."\n".
                           'wobei die Wohlordnung des Supports die Konvergenz der Koeffizientensummen sichert.',
                         '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
