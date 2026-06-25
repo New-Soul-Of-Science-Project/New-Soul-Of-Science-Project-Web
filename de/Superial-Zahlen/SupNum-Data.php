@@ -172,7 +172,7 @@
       keywords => '',
       text_titel_h1 => 'Algebraische-Koeffizienten-Vermutung (AKV) \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Algebraische-Koeffizienten-Vermutung',
-      text_undertitel_h2 => 'Wir beweisen, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen sind',
+      text_undertitel_h2 => 'Wir beweisen, dass alle reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen sind',
       // text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
