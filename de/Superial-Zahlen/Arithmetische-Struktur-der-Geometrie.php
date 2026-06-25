@@ -673,8 +673,8 @@
                   'Wenn Kontinuum bedeutet, dass wir keine aktual unendlich kleinen Summanden in den Adressen der Zahlengerade haben wollen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die Anzahl der sinnvollen'."\n".
-                    'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
+                    'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Erzeugungsanzahl der sinnvollen Koeffizienten der Superial-Zahlen},'."\n".
+                    'von der Null bis vor die Eins, \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
                     'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
                     'lernen, dann muss es insgesamt \lm{ \overline{\#} \mathbb{A}_{\R} = \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
                       'Es gilt also \lm{ \overline{\#} \mathbb{A}_{\R} = \s }.'."\n".
@@ -691,11 +691,11 @@
                       'Deshalb ist in diesem Sinn mit der Teilung der Zahlengeraden durch \lm{ \s } das'."\n".
                     '\jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'erreicht.'."\n".
-                    'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
+                    'Aber Kontinuum bedeutet dann eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
-                      'Demnach ist das Kontinuum so etwas wie \lm{ \mathfrak{c} ?= \overline{\#} \mathbb{A}_{\R} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
-                    'Das könnte bedeuten \lm{ \mathfrak{c} \ne 2^{ω} }.'."\n",
-                      'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre, weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".
+                      'Demnach wäre das Kontinuum so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
+                    'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre,'."\n".
+                    'weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
