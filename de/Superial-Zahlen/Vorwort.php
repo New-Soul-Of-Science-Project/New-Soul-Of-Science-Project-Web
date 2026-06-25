@@ -74,7 +74,7 @@
                     'Die neue Struktur ist in den Potenzen der Primzahlen und bei Anzahlüberlegungen von Mengenelementen auch mit Ordinalzahlen wie \lm{ ω }'."\n".
                     'verbunden.'."\n",
                       'Der bedeutende Übergang von den reell algebraischen Zahlen zu den transzendenten Zahlen entspricht im Superial-Universum dem zwischen'."\n".
-                    'den einzelnen Schichten des superialen Stellenwertsystems, wie ich vermute und wohl auch zeigen kann.'."\n".
+                    'den einzelnen Schichten des superialen Stellenwertsystems, was sich im ZFC-Modell mathematisch exakt abbilden lässt.'."\n".
                     'Dabei wird eine innere Struktur der transzendenten Zahlen sichtbar.'."\n".
                     'Wenn sich dies bestätigt, erlaubt es uns eine differenzierte Betrachtung und Untersuchung dieses Übergangs und ein besseres Verständnis,'."\n".
                     'worum es bei algebraischen und transzendenten Zahlen geht.'."\n",
@@ -132,7 +132,7 @@
                 'Aktivitäten, Forschung und Ausblick')),
                   array( 'text', array( text => array(
                     'Ich habe in den letzten Monaten und Jahren wieder viel gelernt.'."\n",
-                      'Ganz besonders mein Ansatz zum hoffentlich gelungenen Beweis der Überrationalitätsvermutung,'."\n".
+                      'Ganz besonders mein Ansatz zum fundierten Beweis der Überrationalitätsvermutung,'."\n".
                     'mit dem ich zeige, das Radikale – also Wurzeln natürlicher Zahlen – sinnvolle Koeffizienten der Schichten im superialen Stellenwertsystem sind,'."\n".
                     'hat die Superial-zahlen sehr voran gebracht.'."\n".
                     'In der Folge konnte ich nun auch zeigen, dass alle Radikalformen, also alle durch radikale darstellbaren reell algebraischen Zahlen,'."\n".
@@ -146,7 +146,8 @@
                     'Gemeinsam mit der Algebraischen-Koeffizienten-Vermutung und weiteren Überlegungen begründet dies die \italic{Superiale-Transzendenz-Vermutung}.'."\n",
                       'Die Algebraische-Koeffizienten-Vermutung und die Superiale-Transzendenz-Vermutung ergänzen einander hervorragend und bilden so einen genialen Abschluss der Struktur.'."\n".
                     'So ist auch der Beweis der Superiale-Transzendenz-Vermutung ein wichtiges Anliegen der Arbeit.'."\n",
-                      'Es scheint mir nun gelungen, die Superial-Zahlen über eine ZFC-Modellkonstruktion als Menge zu definieren.'."\n".
+                      'Inzwischen ist es vollständig gelungen, die Superial-Zahlen über den Beweis der Primzahlprodukt-Vermutung'."\n".
+                    'und ihre darauf aufbauende ZFC-Modellkonstruktion als Menge zu definieren.'."\n".
                     'Das erst einmal intuitiv recht klar verständliche, mathematisch jedoch sehr unbestimmte Primzahl-Flächenprodukt \lm{ \s }'."\n".
                     'konnte ich über \lm{ p }-adische Bewertungen und entsprechende Rechenregeln für die aktual unendlichen Potenzen in \lm{ ω }-Größenordnung'."\n".
                     'mathematisch sauber definieren.'."\n".
