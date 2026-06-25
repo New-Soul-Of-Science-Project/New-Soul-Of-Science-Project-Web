@@ -587,7 +587,7 @@
                       array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  *( \forall m \in [0, n_{\s}]_{\mathbb{S}_{\Z}} *)  *[  r_{\s}  =  \s^{-1} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}  =  2 ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 ω \cdot \s  }'),
                       // array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *) *( \forall m \in [0, \s[_{\mathbb{S}_{\Z}} *)  *[  r_{\s,\Z}  =  z + \s^{-1} \cdot m  *]  }'),
@@ -611,21 +611,6 @@
                   'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile', subline =>
                     'Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins')),
                   array( 'text', array( text => array(
-                  /*  ''))),
-
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Muss noch einmal auf Konsistenz bzw. Richtigkeit überprüft werden!}',
-                    '• Es erscheint ein vermeintlicher Widerspruch:',
-                    '– Hier wird festgestellt, dass das feinste Teilungsgewebe einschließlich der Null bis vor die Eins \lm{ \s } Punkte hat.',
-                    '– Andererseits gibt es einschließlich der Null bis vor die Eins auch \lm{ \s } superial kleine ganze Zahlen in \lm{ \mathbb{S}^{-1}_{\Z} }, obwohl hier ja zum einen sowohl alle \lm{ \s^{-1} } einschließlich der Null bis vor die Eins durchlaufen werden, was schon \lm{ \s } an der Zahl sind, und dies noch jeweils in allen Schritten der endlichen ganzen Zahlen \lm{ \mathbb{Z} }, was \lm{ 2 \cdot ω } an der Zahl sind. Dies scheinen dann aber \lm{ 2 \cdot ω \cdot \s } Schritte zu sein.',
-                    '• Wie ist das möglich?',
-                    '– Die Lösung des Rätsels oder vermeintlichen Widerspruchs ist, dass die Koeffizienten \lm{ a_{\s} \in \mathbb{A}_{\S} } nicht alle möglichen Punkte bzw. ganzen Zahlen im Sinne von ganzzahligen Teilprodukten der Primfaktorzerlegung von \lm{ \s } adressieren können:',
-                    '– Ein mögliches Teilprodukt von \lm{ \s } ist zum Beispiel \lm{ 2^{ω} }, dass die Strecke Null bis Eins in \lm{ 2^{ω} } Teile teilt und Stützpunkte des Gewebes an den Teilungsgrenzen definiert. Viele dieser Punkte, wie \lm{ \frac{ k }{ 2^{ω} } } mit \lm{ k \in \mathbb{N} } oder \lm{ 2^{ω} } selber, sind aber keine sinnvollen Superial-Zahlen und sie können auch nicht durch endliche Koeffizienten \lm{ a_{\s} } mit \lm{ a_{\s} \cdot \s } adressiert werden.',
-                    '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } mal weniger Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } adressierbar sind, also eine große Teilmenge nicht adressierbar ist.',
-                    '– Das bedeutet, die Anzahl der Elemente in \lm{ \mathbb{A}_{\S} } ist \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, was wir ja auch schon in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} festgestellt haben und was uns einen wichtigen Hinweis auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} gegeben hat.',
-                    ))),
-
-                  array( 'text', array( text => array( */
                     'Wenn wir die Strecke zwischen Null und Eins in \lm{ \s } Teile teilen, dann ist jedes Teil \lm{ \s^{-1} } groß.'."\n".
                     'Adressieren wir die Punkte, die zwischen den Teilen sind, dann beginnen wir mit Null, dann \lm{ \s^{-1} },'."\n".
                     '\lm{ 2 \s^{-1} }, \lm{ 3 \s^{-1} } und so fort.'."\n".
@@ -636,13 +621,13 @@
                     'Und Zahlen wie \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} - 2 \s^{-1} }, \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} - \s^{-1} } oder'."\n".
                     '\lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} + \s^{-1} }, \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} + 2 \s^{-1} } sollten auch dazu gehören.'."\n".
                     'Also alle Zahlen, die zwischen Null und Eins liegen und aktual unendlich kleine und dort ganze Zahlen sind.'."\n".
-                    'Deshalb müssen alle \lm{ a \cdot \s^{1} \s^{-1} = a \cdot \s^{0} = a } mit \lm{ a \in \mathbb{A}_{\S} }, also vom aktual unendlich Kleinen aus gesehen die \lm{ a \cdot \s^{1} },'."\n".
+                    'Deshalb müssen alle \lm{ a \cdot \s^{1} \s^{-1} = a \cdot \s^{0} = a } mit \lm{ a \in \mathbb{A}_{\R} }, also vom aktual unendlich Kleinen aus gesehen die \lm{ a \cdot \s^{1} },'."\n".
                     'auch aktual unendlich kleine ganze Zahlen sein, die von dort aus halt nur als aktual unendlich Groß erscheinen.'."\n".
                     'Denn die Summe einer dort ganzen Zahl \lm{ z \cdot \s^{-1} } mit \lm{ z \in \mathbb{Z} } ergibt nur mit einer anderen ganzen Zahl \lm{ a }'."\n".
                     'wieder eine aktual unendlich kleine ganze Zahl \lm{ a + z \cdot \s^{-1} }.'."\n",
-                      'Aus diesem Grund müssen alle \lm{ a \in \mathbb{A}_{\S} } im aktual unendlich Kleinen, in der Größenordnung \lm{ \s^{-1} },'."\n".
+                      'Aus diesem Grund müssen alle \lm{ a \in \mathbb{A}_{\R} } im aktual unendlich Kleinen, in der Größenordnung \lm{ \s^{-1} },'."\n".
                     'auch immer ganze Zahlen sein.'."\n".
-                    'Skaliert auf endliche ganze Zahlen müssen dann alle \lm{ a \cdot \s } mit \lm{ a \in \mathbb{A}_{\S} }'."\n".
+                    'Skaliert auf endliche ganze Zahlen müssen dann alle \lm{ a \cdot \s } mit \lm{ a \in \mathbb{A}_{\R} }'."\n".
                     'in der Größenordnung des Endlichen auch immer rein ganze Zahlen sein, wenn auch aktual unendlich groß.'."\n",
                       'Nun bekommen wir eine im ersten Moment vielleicht paradox erscheinende Situation:'."\n",
                       'Wir haben von der Null an bis direkt vor die Eins \lm{ \s } aktual unendlich kleine ganze Zahlen.'."\n".
@@ -650,7 +635,7 @@
                     '\lm{ 2 ω } ganzzahlige Zahlen des Summanden \lm{ z \cdot \s^{-1} } durch.'."\n".
                     'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} }, mit \lm{ n \in \mathbb{N} },'."\n".
                     'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} }, mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
-                    'Damit enthält die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } der Koeffizienten der Superial-Zahlen \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente,'."\n".
+                    'Damit enthält die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } der Koeffizienten der Superial-Zahlen \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } } Elemente,'."\n".
                     'wie wir auch in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} sehen.'."\n",
                       'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}'."\n".
                     'genauer beleuchtet wird, dass eine Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile'."\n".
@@ -659,7 +644,7 @@
                     'Und dies, obwohl die Teilung eigentlich aus einer unendlichen Teilung,'."\n".
                     'und damit aus einem Produkt mit unendlich kleinem Faktor, hervorgeht.'."\n".
                     'Dies kann im ersten Moment sonderbar erscheinen.'."\n",
-                      'Erst die Kombination der aktual unendlich kleinen Summanden und den endlichen Summanden mit Elementen aus \lm{ \mathbb{A}_{\S} }'."\n".
+                      'Erst die Kombination der aktual unendlich kleinen Summanden und den endlichen Summanden mit Elementen aus \lm{ \mathbb{A}_{\R} }'."\n".
                     'macht es wieder rund und gibt uns einen tiefen und außergewöhnlichen Einblick in die Zahlentheorie allgemein und'."\n".
                     'im Besonderen in einen weiteren Zusammenhang zwischen Primzahlen, natürlichen, ganzen, rationalen und algebraischen Zahlen'."\n".
                     'sowie deren Verbindung über die Ordinalzahlen und die Biordinalzahlen, was in meinen Augen sehr besonders ist.'."\n",
@@ -689,10 +674,12 @@
                     '')),
                   array( 'text', array( text => array(
                     'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die Anzahl der sinnvollen'."\n".
-                    'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
+                    'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
                     'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
-                    'lernen, dann muss es insgesamt \lm{ \# \mathbb{A}_{\S} = \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
-                      'Es gilt also \lm{ \# \mathbb{A}_{\S} = \s }.'."\n".
+                    'lernen, dann muss es insgesamt \lm{ \overline{\#} \mathbb{A}_{\R} = \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
+                      'Es gilt also \lm{ \overline{\#} \mathbb{A}_{\R} = \s }.'."\n".
+                    'Diese Identität wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion}{geordnete Struktur des Hahn-Reihen-Körpers \lm{ \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) }} gestützt,'."\n".
+                    'in dem jede mathematische Schicht exakt den Raum für eine vollständige transfinite Induktion bereitstellt.'."\n".
                     'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
                     'in \lm{ \s } Teile teilen.'."\n".
                     'Dies würde ich als erreichen des Kontinuums bezeichnen.'."\n",
@@ -706,9 +693,9 @@
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
-                      'Demnach ist das Kontinuum so etwas wie \lm{ \mathfrak{c} ?= \# \mathbb{A}_{\S} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
+                      'Demnach ist das Kontinuum so etwas wie \lm{ \mathfrak{c} ?= \overline{\#} \mathbb{A}_{\R} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
                     'Das könnte bedeuten \lm{ \mathfrak{c} \ne 2^{ω} }.'."\n",
-                      'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
+                      'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre, weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
@@ -779,7 +766,7 @@
                       'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht.'."\n".
                     'Und genau diese Struktur liefert uns die oben untersuchte arithmetische Struktur der Geometrie'."\n".
                     'über ihre Teilbarkeit durch Primzahlen und der sich daraus ergebenden superialen Basis \lm{ \s }.'."\n".
-                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Struktur \lm{ a \cdot \s^{-1} } mit \lm{ a \in \mathbb{A}_{\S} }.'."\n".
+                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Struktur \lm{ a \cdot \s^{-1} } mit \lm{ a \in \mathbb{A}_{\R} }.'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -790,7 +777,7 @@
                     'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
                     'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
                     'Der Zahlenstrahl um jeden Punkt hat so dann die Ausdehnung \lm{ 2 ω \, \s^{-1} }, weil der Koeffizient \lm{ a } über alle ganzen Zahlen läuft'."\n".
-                    'und die Anzahl der ganzen Zahlen \lm{ \# \mathbb{Z} = 2 ω } ist.'."\n",
+                    'und die Anzahl der ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω } ist.'."\n",
                       'Verbinden wir \lm{ \frac{ \s }{ 2 ω } } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
                     'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
                     'von minus Unendlich \lm{ -ω } bis plus Unendlich \lm{ ω }.'."\n",
@@ -912,8 +899,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x, x_{M}, y_{M}, r \in \mathbb{A}_{\S} *)  *[  *( x - x_{M} *)^{2} + *( y - y_{M} *)^{2}  =  r^{2}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  y  \in  \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  *( \forall x, x_{M}, y_{M}, r \in \mathbb{A}_{\R} *)  *[  *( x - x_{M} *)^{2} + *( y - y_{M} *)^{2}  =  r^{2}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  y  \in  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das bedeutet bei diesen einfachen Geometrie können wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten auskommen.'."\n".
@@ -955,7 +942,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  \mathrm{Re}*( \e^{a \i 2 π} *) \cap \mathbb{T}  ?=  \varnothing  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  \mathrm{Re}*( \e^{a \i 2 π} *) \cap \mathbb{T}  ?=  \varnothing  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und dies so, wie im vorstehenden Beispiel dadurch, dass wir zwar wegen des Faktors \lm{ 2 π } außer die Null nur transzendente Zahlen im Exponenten haben,'."\n".
@@ -1149,7 +1136,7 @@
                     'alle algebraischen Zahlen zwischen minus Eins und plus Eins annehmen, nur nicht in freier Kombination.'."\n".
                     'Wenn \lm{ x } von minus Eins bis plus Eins durchläuft, dann treten, außer an den Scheitelpunkten, immer zwei verschiedene \lm{ y }-Koordinaten auf,'."\n".
                     'und zwar in der Kombination \lm{ \pm y }.'."\n",
-                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \# ( \lbrack -1, 1 \rbrack_{\mathbb{A}_{\R}} ) - 2 } zu tun.'."\n".
+                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \overline{\#} ( \lbrack -1, 1 \rbrack_{\mathbb{A}_{\R}} ) - 2 } zu tun.'."\n".
                     'Dies sind viel mehr Koordinaten, als wir sie durch ein regelmäßiges \lm{ m }-Eck bekommen können, denn dies wären durch vollständige Induktion nur \lm{ ω } viele Koordinaten.'."\n".
                     'Die unterschiedlichen \lm{ m }-Ecke enthalten eben unterschiedliche Koordinaten, je nach der Primfaktorzerlegung von \lm{ m },'."\n".
                     'sodass wir durch alle \lm{ ω } \lm{ m }-Ecke kombiniert eine Anzahl von \lm{ \s } Koordinaten erhalten.'."\n".
@@ -1159,11 +1146,11 @@
                     'nicht \lm{ \s } viele Möglichkeiten bereit.'."\n".
                     'Er läuft nur von \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }, wenn die Koordinaten keine Dopplung haben sollen.'."\n",
                       'Nehmen wir an es gilt unsere Vermutung \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }:'."\n".
-                    'Dann wäre \lm{ \# ( \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} ) ?= \frac{ \s }{ 2 ω } }.'."\n".
+                    'Dann wäre \lm{ \overline{\#} ( \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} ) ?= \frac{ \s }{ 2 ω } }.'."\n".
                     'Dies führt nach meinem Verständnis dazu, dass die superial kleinen Summanden vollständig verschwinden und alle Koordinaten'."\n".
                     'rein reell algebraische werden.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
-                    '\lm{ 2 \cdot \# ( [ -1, 1 ]_{\mathbb{A}_{\R}} ) - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
+                    '\lm{ 2 \cdot \overline{\#} ( [ -1, 1 ]_{\mathbb{A}_{\R}} ) - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
