@@ -1699,7 +1699,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     '• Die Null ist in den Superial-Zahlen viel simpler definiert, als in den hyperreellen Zahlen.',
                     '• In den Superial-Zahlen brauchen wir nicht eine Reihe von unendlich vielen Zahlen, um infinite und infinitesimale Zahlen zu definieren.',
@@ -1707,14 +1707,35 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Klassische Nichtstandard-Modelle wie die Hyperreellen Zahlen\footnote{\const{SupNum_g_footnote_text_HyperreelleZahl}} \lm{ ^{*}\mathbb{R} } von Abraham Robinson'."\n".
+                    'konstruieren das Unendlichgroße rein mengentheoretisch über Ultraprodukte.'."\n".
+                    'Das liefert zwar ein funktionierendes System, bleibt aber arithmetisch „blind“:'."\n".
+                    'Die unendlich großen Zahlen haben keine innere zahlentheoretische Struktur;'."\n".
+                    'sie wissen nichts über Primzahlen.'."\n",
+                      'Die Superial-Zahlen brechen mit diesem Dogma.'."\n".
+                    'Durch die rigorose \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Konstruktion} der superialen Basis \lm{ \s } als zweidimensionale,'."\n".
+                    'transfinite Primzahlmatrix'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'wird das aktual Unendliche zahlentheoretisch codiert und erhält eine so sichtbar werdende Prim-DNA.'."\n".
+                    'Dies gelingt aufgrund des topologischen Fundaments des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ei.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'als Nachweis der Existenz einer erweiterten Arithmetisierung des von Neumannschen Ordinals \lm{ ω }'."\n".
+                    'innerhalb der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}.'."\n",
+                      'Dies ist eine mathematische Pionierleistung:'."\n".
+                    'Die atomaren Bausteine der Arithmetik – die Primzahlen – werden genutzt,'."\n".
+                    'um das Kontinuum der Analysis metrisch zu normieren.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
