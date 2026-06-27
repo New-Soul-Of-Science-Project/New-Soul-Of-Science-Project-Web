@@ -21,9 +21,9 @@
                   array( 'text', array( text => array(
                     'Die Superial-Zahlen sind eine Lupe in die Details der reellen Zahlen, in die reell algebraischen'."\n".
                     'wie auch in die transzendenten Zahlen.'."\n",
-                      'Die reell algebraischen Zahlen sind von ihrer Struktur her recht gut bekannt.'."\n".
+                      'Die reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } sind von ihrer Struktur her recht gut bekannt.'."\n".
                     'So konnten wir bereits zeigen, dass sie alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen}'."\n".
-                    'sind.'."\n".
+                    'bilden.'."\n".
                     'Ganz anders die transzendenten Zahlen.'."\n".
                     'Über sie ist im wesentlichen nur bekannt, dass sie alle Zahlen sind, die nicht zu den algebraischen gehören.'."\n".
                     'Ein zwar klares, aber auch recht allgemeines Kriterium, dass nicht viel über ihre Struktur aussagt.'."\n",
@@ -155,21 +155,22 @@
                   'Stehende Annahmen (SA) und Notation', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
-                    'Mit'."\n".
+                    'Als arithmetisches Fundament gilt das normierte, bewertete Stellenwertsystem aus \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.'."\n".
+                    'Unter dessen Gültigkeit erhalten wir mit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  V_{s} \cap \bigcap_{p} V_{p}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'erhalten wir den Quotientenkörper:'."\n".
+                    'den Quotientenkörper:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Q}  :=  \operatorname{Frac}*( \mathbb{S}_{\Z} *)  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Definiere die \italic{sinnvollen Koeffizienten} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
+                    'Definiere die \italic{\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
