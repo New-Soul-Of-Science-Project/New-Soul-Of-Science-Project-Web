@@ -40,7 +40,8 @@
                     'indem es eine messerscharfe arithmetische Bruchlinie zieht:'."\n".
                     'Während im Produkt mit \lm{ \s } alle reell algebraischen Zahlen glatte unendliche Ganzzahlen ohne Nachkommastellen bilden'."\n".
                     '(Beweis der Überrationalitätsvermutung und der Algebraischen-Koeffizienten-Vermutung),'."\n".
-                    'tragen transzendente Koeffizienten zwingend unendliche, infinitesimale Reste (Beweis der Superialen-Transzendenz-Vermutung).'."\n".
+                    'tragen transzendente Koeffizienten aufgrund ihrer Inkompatibilität zum Ganzheitsraster der Primzahltürme zwingend unendliche,'."\n".
+                    'infinitesimale Reste (Beweis der Superialen-Transzendenz-Vermutung).'."\n".
                     'Mit der Etablierung von \lm{ \s } als normierter infiniter Einheit und \lm{ \s^{-1} } als absolut normiertem Infinitesimal'."\n".
                     'wird das Differential \lm{ \mathrm{d} } ersetzt.'."\n".
                     'Ableitungen werden zu exakten Differenzen und Integrale werden zu exakten, aktual unendlichen Summen,'."\n".
@@ -140,7 +141,8 @@
                     '')),
                   array( 'text', array( text => array(
                     'Die Erkenntnis, dass die superiale Basis \lm{ \s } als unendliches Flächenprodukt alle endlichen Primzahltürme geometrisch'."\n".
-                    'in einem einzigen, geordneten Rechenraum bündelt, berührt eine der tiefsten Leitideen der modernen Mathematik:'."\n".
+                    'in einem einzigen, geordneten Rechenraum bündelt und eine metrische Normierung des transfiniten Raumes etabliert,'."\n".
+                    'berührt eine der tiefsten Leitideen der modernen Mathematik:'."\n".
                     'die systematische Verknüpfung von diskreter Zahlentheorie und kontinuierlicher Analysis.'."\n".
                     'In der mathematischen Fachwelt wird dieses monumentale Brückenprojekt'."\n".
                     'vor allem mit dem visionären Langlands-Programm assoziiert.'."\n",
