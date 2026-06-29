@@ -396,8 +396,8 @@
       keywords => '',
       text_titel_h1 => 'Primzahlprodukt-Vermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
-      text_undertitel_h2 => 'Die kanonische Primfakultätsidentität von \lm{ ω } innerhalb der ZFC-Mengenlehre',
-      text_titel_discr_h3 => 'Das Produkt aller endlichen Primzahlen ist mit der Anzahl der natürlichen Zahlen \lm{ω} kanonisch Identisch. Dies zeigt, dass die aktuale Unendlichkeit der vollständigen Induktion eine bisher unentdeckte innere Arithmetik enthält',
+      text_undertitel_h2 => 'Die Primfakultätsidentität von \lm{ ω } innerhalb der ZFC-Mengenlehre',
+      text_titel_discr_h3 => 'Das Produkt aller endlichen Primzahlen ist mit der Anzahl der natürlichen Zahlen \lm{ω} Identisch. Dies zeigt, dass die aktuale Unendlichkeit der vollständigen Induktion eine bisher unentdeckte innere Arithmetik enthält',
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 

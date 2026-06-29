@@ -31,7 +31,7 @@
 
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Abstract: Die kanonische Identität des unendlichen Primzahlprodukts \lm{ ω = ω\overline{\#} }', subline =>
+                'Abstract: Die Identität des unendlichen Primzahlprodukts \lm{ ω = ω\overline{\#} }', subline =>
                   '')),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Einleitung und Problemstellung', subline =>
@@ -46,7 +46,7 @@
                       'Über die ordinale Mengendarstellung nach von Neumann weisen wir nach,'."\n".
                     'dass das unendliche Primzahlprodukt kein unbestimmtes Unendliches ist,'."\n".
                     'sondern als ein präziser algebraischer Struktur-Generator fungiert.'."\n".
-                    'Das zentrale Ergebnis dieser Arbeit ist der strikt deduktive Beweis der transfiniten kanonischen Identität:'."\n".
+                    'Das zentrale Ergebnis dieser Arbeit ist der strikt deduktive Beweis der transfiniten Identität:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -119,7 +119,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Es wird \bold{innerhalb der ZFC-Mengenlehre} über kanonische Identität bewiesen,'."\n".
+                      'Es wird \bold{innerhalb der ZFC-Mengenlehre} über Identität bewiesen,'."\n".
                       'dass das gewöhnliche von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω } selber schon'."\n".
                       'dem Produkt aller endlichen Primzahlen entspricht.'."\n".
                       'Wir zeigen also:'."\n".
@@ -135,7 +135,7 @@
                     'aber sie spielen im Beweis keine Rolle.'."\n",
                       'Der folgende Beweis ist nicht als Erweiterung der ZFC-Mengenlehre'."\n".
                     'oder als Veränderung der klassischen Ordinalarithmetik zu verstehen.'."\n".
-                    'Vielmehr wird innerhalb von ZFC eine kanonische Strukturidentität freigelegt:'."\n".
+                    'Vielmehr wird innerhalb von ZFC eine Strukturidentität freigelegt:'."\n".
                     'Die vollständige Induktion \lm{ ω } kann nicht nur als Zählstruktur der natürlichen Zahlen,'."\n".
                     'sondern zugleich als vollständiges Primfakultätsobjekt der endlichen Primzahlen verstanden werden.'."\n".
                     'Die Identität'."\n".
@@ -147,7 +147,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'bezeichnet daher keine willkürliche neue Rechenregel,'."\n".
-                    'sondern eine kanonische Identifikation zweier in ZFC beschreibbarer Erzeugungsstrukturen:'."\n".
+                    'sondern eine Identifikation zweier in ZFC beschreibbarer Erzeugungsstrukturen:'."\n".
                     'der additiv-zählenden Struktur der natürlichen Zahlen und der multiplikativ-primfaktoriellen Struktur'."\n".
                     'aller endlichen Primzahlen.'."\n".
                     ''))),
@@ -1387,7 +1387,7 @@
                       'Nachfolgend zeigen wir zunächst, dass das lückenlose Primturm-Potenzraster der Mengen-Primfakultät'."\n".
                     'der vollständigen Induktion tatsächlich den lückenlosen Anfang \lm{ ω } besitzt.'."\n".
                     'Aus diesem Ergebnis leiten wir anschließend die Motivation des Identitätssatzes her,'."\n".
-                    'um verständlich zu machen, warum diese kanonische Identifikation in der erweiterten Ordinalarithmetik naheliegt.'."\n".
+                    'um verständlich zu machen, warum diese Identifikation in der Ordinalarithmetik naheliegt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 1: Grenzübergangsprinzip der Primfakultät', subline =>
@@ -1880,7 +1880,7 @@
                   array( 'text', array( text => array(
                     'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang'."\n".
                     'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte;'."\n".
-                    'hier und nachfolgend noch im Sinne der kanonischen Entsprechung, nicht bereits als bewiesene Gleichheit:'."\n",
+                    'hier und nachfolgend noch im Sinne der Entsprechung, nicht bereits als bewiesene Gleichheit:'."\n",
                       'Als erstes sehen wir eine Entsprechung jeder endlichen natürlichen Zahl und ihrer Primturmzerlegung,'."\n".
                     'die wir sogleich als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -1974,7 +1974,7 @@
                     'Und in diesem Sinne basiert auch die Existenz von \lm{ ω } auf der Primfakultät'."\n".
                     'der in seiner Mengendarstellung enthaltenen endlichen Vorgänger-Primzahlen.'."\n",
                       'Zusammen mit den eben dargelegten Eigenschaften der Primturmzerlegung von \lm{ ω } motiviert dies den Schluss,'."\n".
-                    'die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} } im nächsten Schritt als kanonische Gleichheit'."\n".
+                    'die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} } im nächsten Schritt als Gleichheit'."\n".
                     'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>

@@ -70,7 +70,7 @@
                     'zu bilden.'."\n",
                       'Aufgrund unseres Beweises der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
                     'und unserer Mengenlehre konformen \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion der Superial-Zahlen} erhalten wir'."\n".
-                    'eine kanonische – natürliche – arithmetische Erweiterung der Ordinalzahlen,'."\n".
+                    'eine natürlich erweiterte Arithmetik der Ordinalzahlen innerhalb der ZFC-Mengenlehre,'."\n".
                     'auf deren Grundlage wir unsere neue normierte superiale Basis \lm{ \s } definieren.'."\n".
                     'Ihre arithmetischen und unendlichen Eigenschaften ermöglichen uns sodann unsere Ganzzahligkeits- und Teilbarkeitsargumente.'."\n".
                     'In Bezug auf die Differenzialrechnung geben wir damit dem infinitesimalen Epsilon eine unendliche Struktur aus Primzahlen.'."\n",

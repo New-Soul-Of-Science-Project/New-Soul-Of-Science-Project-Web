@@ -33,10 +33,10 @@
                   '')),
                   array( 'text', array( text => array(
                     'Nachdem über das generative Primzahl-Induktions-Lemma in unserem \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
-                    'der strikt deduktive Nachweis für die kanonische Identität'."\n".
+                    'der strikt deduktive Nachweis für die Identität'."\n".
                     'des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
-                    'mit dem unendlichen Primzahlprodukt aller endlichen Primzahlen \lm{ ω = ω\overline{\#} } erbracht wurde,'."\n".
-                    'widmet sich diese Seite der expliziten mathematischen Modellierung dieses Resultats in Richtung eines höheren Sinns.'."\n".
+                    'mit dem unendlichen Primzahlprodukt aller endlichen Primzahlen \lm{ ω = ω\overline{\#} } innerhalb der ZFC-Mengenlehre erbracht wurde,'."\n".
+                    'widmet sich diese Seite der expliziten mathematischen Modellierung dieses Resultats zu einem vollständig fundierten transfiniten Zahlensystem.'."\n".
                     'Ziel ist die Konstruktion eines normierten, transfiniten Stellenwertsystems für die Analysis,'."\n".
                     'in dem transfinite divisatorische Eigenschaften ohne algebraische Widersprüche operieren.'."\n",
                       'Als Trägerstruktur für diese Fundierung nutzen wir den geordneten Körper'."\n".
