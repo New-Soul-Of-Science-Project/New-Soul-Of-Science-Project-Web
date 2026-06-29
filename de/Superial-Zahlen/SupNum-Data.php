@@ -231,10 +231,10 @@
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
 
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } anhand der Frage der Vorgänger?',/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Ei.S.L.1'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Ei.S.L.8'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s' => array( headline_text => 'SN.Ei.S.L.11'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins' => array( headline_text => 'SN.Ei.S.L.12'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Eig.S.L.1'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Eig.S.L.8'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s' => array( headline_text => 'SN.Eig.S.L.11'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins' => array( headline_text => 'SN.Eig.S.L.12'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen' => array( headline_text => 'Erklärung der Anzahl der reell algebraischen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
@@ -243,10 +243,10 @@
             'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar' => array( headline_text => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar?'/* , headline_text_short => 'X' */),
 
           'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich' => array( headline_text => 'Die natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und die Ordinalzahlen \lm{ \mathbb{On} } im Strukturvergleich'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Ei.S.V.1'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Ei.S.V.3'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Ei.S.V.4'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Eig.S.V.1'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Eig.S.V.3'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Eig.S.V.4'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Eig.S.V.7'),
 
           'OM:SupNum:Eigenschaften:StrukturVonS:bidir-Abbild-SN-auf-On-moeglich' => array( headline_text => 'Ist eine bidirektionale Abbildung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} } und der Ordinalzahlen \lm{ \mathbb{On} } möglich?'/* , headline_text_short => 'X' */),
                    
@@ -257,7 +257,7 @@
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz' => array( headline_text => 'Großer Fermatscher Satz'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Potenzialzahlen'/* , headline_text_short => 'X' */),
-            'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn' => array( headline_text => 'SN.Ei.NR.Exp.23'),
+            'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn' => array( headline_text => 'SN.Eig.NR.Exp.23'),
                    
         'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'X' */),
                    
