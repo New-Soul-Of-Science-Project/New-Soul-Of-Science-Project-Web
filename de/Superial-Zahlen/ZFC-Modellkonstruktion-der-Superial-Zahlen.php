@@ -347,7 +347,7 @@
                     'Da über das Haupttheorem der Primzahlprodukt-Vermutung die Identität \lm{ ω = ω\overline{\#} } bewiesen ist,'."\n".
                     'steht diese relative Berechnung auf einem felsenfesten algebraischen Fundament:'."\n".
                     'Selbst bei der zweidimensionalen Dichte des Flächenprodukts \lm{ \s = ω^{ω} }'."\n".
-                    'bleibt das Verhältnis der Erzeugungsschichten präzise bestimmbar und kollabiert nicht.'."\n",
+                    'bleibt das Verhältnis der Erzeugungsschichten präzise bestimmbar, stabil und mathematisch vollständig wohldefiniert.'."\n",
                       'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
                     'der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.'."\n".
                     ''))),
