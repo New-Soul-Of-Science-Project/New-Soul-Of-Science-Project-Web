@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 22.06.2026, 21:00h
+  // #: Stand: 29.06.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20260629:  +:  "$Sc_g_equation_replace_ary":  Reorder definitions to avoid errors by subsequent replacements.
   //           20260622:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longrightarrow  ' -> '\;\;\;\Longrightarrow\;\;\;'
   //           20260517:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subseteq  ' -> '\;\;\;\not\subseteq\;\;\;'
   //           20260503:  +:  "$Sc_g_equation_replace_ary":  Add '  :\subset  ' -> '\;\;\;:\subset\;\;\;', ':\subset' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'
@@ -700,22 +701,22 @@
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
-                                    array( '  :=  ', '\;\;\;:=\;\;\;'),
-                                    array( '  =:  ', '\;\;\;=:\;\;\;'),
-                                    array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
+                                    array( '  :=  ', '\;\;\;≔\;\;\;'),
+                                    array( '  =:  ', '\;\;\;≕\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq\;\;\;'),
                                     array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
-                                    array( '  ?=  ', '\;\;\;?=\;\;\;'),
+                                    array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
-                                    array( '  :\in  ', '\;\;\;:\in\;\;\;'),
-                                    array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
+                                    array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
-                                    array( '  \subset  ', '\;\;\;\subset\;\;\;'),
-                                    array( '  :\subset  ', '\;\;\;:\subset\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subset}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
-                                    array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
+                                    array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
+                                    array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
@@ -725,9 +726,9 @@
                                     array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
+                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
-                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
