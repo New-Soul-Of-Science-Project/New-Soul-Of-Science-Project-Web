@@ -525,7 +525,7 @@
                       'Wobei diese Bewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Dabei ist \lm{ \le_{\infty,v_{p}} } die kanonische Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
+                      'Dabei ist \lm{ \le_{\infty,v_{p}} } die strukturelle Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
                       'Die zugehörige geordnete bewertete Struktur sei'."\n".
                       ''))),
                   array( 'equations',
@@ -2946,7 +2946,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ p_{i + 3}\# }{ p_{i}\# }  =  p_{i + 1}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Das bedeutet nach Formel X, wenn wir beim Zentrum \lm{ n = p_{i}\# } durchlaufen, dann springt durch das Einsammeln von \lm{ p_{i + 1} = p_{i}\# - 1 }'."\n".
+                      'Das bedeutet nach \color{*Bearb}{Formel X}, wenn wir beim Zentrum \lm{ n = p_{i}\# } durchlaufen, dann springt durch das Einsammeln von \lm{ p_{i + 1} = p_{i}\# - 1 }'."\n".
                       'das Zentrum der Endgrenze der kommenden Lücke auf \lm{ p_{i + 3}\# }.'."\n".
                       'Dass wir dabei noch an \lm{ p_{i + 2} = p_{i}\# + 1 } vorbeikommen, ändert diese Lücke ja nur minimal.'."\n",
                       'In dem Moment wo wir \lm{ n = p_{i}\# } passieren, also direkt vor dem Sprung durch das einsammeln von \lm{ p_{i + 1} = p_{i}\# - 1 },'."\n".
