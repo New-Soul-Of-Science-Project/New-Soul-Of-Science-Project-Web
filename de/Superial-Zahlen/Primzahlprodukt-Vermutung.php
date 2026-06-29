@@ -1978,15 +1978,15 @@
                     'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Satz 2: Identitätssatz – Kanonisches Identitätsprinzip', subline =>
+                  'Satz 2: Theorem der inneren ZFC-Strukturidentität', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Aus der engen strukturellen Verknüpfung zwischen der Mengen-Primfakultät,'."\n".
-                    'dem dichten Anfangsstück des Primturm-Potenzrasters und der vollständigen Induktion'."\n".
-                    'erwächst kein bloßes Postulat, sondern das fundamentale Endresultat des transfiniten Grenzübergangs.'."\n",
+                    'Aus der engen mathematischen Verknüpfung zwischen der Mengen-Primfakultät, dem dichten Anfangsstück des Primturm-Potenzrasters'."\n".
+                    'und der vollständigen Induktion erwächst kein externes Postulat, sondern die notwendige mengentheoretische Konsequenz'."\n".
+                    'des transfiniten Grenzübergangs innerhalb von ZFC.'."\n",
                       'Wenn das dichte, lückenlose Erzeugungsspektrum des aktual unendlichen Primfakultätsobjekts'."\n".
                     '\lm{ ω\overline{\#} } in seiner Gesamtheit und Mächtigkeit exakt mit der Ordinalzahl \lm{ ω } zusammenfällt,'."\n".
-                    'so folgt daraus eine direkte strukturelle Gleichheit innerhalb der erweiterten Ordinalarithmetik.'."\n".
+                    'so folgt daraus eine direkte strukturelle Gleichheit als inhärente Eigenschaft der klassischen Mengenlehre (ZFC).'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2021,6 +2021,15 @@
                       '\bold{Daraus folgt deduktiv für den transfiniten Grenzübergang:}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Dieses Supremum liefert das fundamentale Bindeglied für den lückenlosen Anfang:'."\n".
+                      'Für jede beliebige, aber feste endliche natürliche Zahl \lm{ n \in \mathbb{N} } existiert aufgrund der Divergenz der Primzahlfolge ein Index \lm{ i },'."\n".
+                      'sodass \lm{ n < p_{i + 1} } gilt.'."\n".
+                      'Damit liegt \lm{ n } im lückenlosen Anfangssegment des endlichen Primorials \lm{ (p_{i} + 1)\overline{\#} }.'."\n".
+                      'Da das Raster jedes endlichen Primorials eine strikte Teilmenge des transfiniten Gesamt-Rasters ist,'."\n".
+                      'folgt \lm{ n \in \pr*( ω\overline{\#} *) }.'."\n".
+                      'Da dies für alle endlichen Elemente gilt, ist die Inklusion \lm{ \mathbb{N} \subseteq \lpr*( ω\overline{\#} *) } vollständig deduktiv bewiesen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{1.} \\\\'."\n".
                       'Das aktual unendliche Primfakultätsobjekt \lm{ ω\overline{\#} } sammelt durch'."\n".
                       'den Limes des Durchschnitts über die Menge \lm{ ω } jede existierende endliche Primzahl genau einmal auf:'."\n".
@@ -2033,8 +2042,10 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{2.} \\\\'."\n".
                       'Da die begrenzende Schranke des dichten, lückenlosen Rasters im Grenzwert über jede endliche natürliche Zahl hinauswandert,'."\n".
-                      'kollabiert der lückenlose Anfangsabschnitt im aktual unendlichen Bereich nicht,'."\n".
-                      'sondern dehnt sich über die vollständige Menge \lm{ \mathbb{N} } aus:'."\n".
+                      'und wir vorab \lm{ \mathbb{N} \subseteq \lpr*( ω\overline{\#} *) } gezeigt haben,'."\n".
+                      'umfasst der lückenlose Anfangsabschnitt exakt die vollständige Menge \lm{ \mathbb{N} }.'."\n".
+                      'Da nach \bold{Satz 1} aktual unendliche Elemente zwingend eine Lücke erzeugen,'."\n".
+                      'gilt zugleich \lm{ \lpr*( ω\overline{\#} *) \subseteq \mathbb{N} }, woraus die Gleichheit folgt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2052,7 +2063,9 @@
                       'und seine strukturelle Identität im Limes vollständig ineinander.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Es gilt die endgültige kanonische Identität der erweiterten Ordinalarithmetik:'."\n".
+                      'Da in der Standard-Mengenlehre (ZFC) per Definition \lm{ \mathbb{N} = ω } verankert ist,'."\n".
+                      'folgt aus der bewiesenen Identität \lm{ \lpr*( ω\bar{\#} *) = \mathbb{N} } direkt der formale Abschluss des Theorems'."\n".
+                      'innerhalb des Standard-Modells:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
