@@ -111,9 +111,9 @@
                   array( 'text', array( text => array(
                     'Die mathematische Konsistenz dieses Modells – insbesondere bei Divisionen transfinit gewichteter Ausdrücke'."\n".
                     'durch endliche natürliche Zahlen – wird direkt durch das Haupttheorem der Primzahlprodukt-Vermutung garantiert.'."\n".
-                    'Da bewiesen wurde, dass der dichte Anfangsabschnitt des unendlichen Primturm-Potenzrasters'."\n".
-                    'die Mächtigkeit der Ordinalzahl \lm{ ω } besitzt \lm{ \lpr*( ω\overline{\#} *) = ω },'."\n".
-                    'kollabieren die arithmetischen Operationen im transfiniten Bereich nicht.'."\n",
+                    'Da bewiesen wurde, dass der dichte Anfangsabschnitt des unendlichen Primturm-Potenzrasters exakt'."\n".
+                    'der Ordinalzahl \lm{ ω } entspricht – \lm{ \lpr*( ω\overline{\#} *) = ω } –,'."\n".
+                    'bleiben die arithmetischen Operationen im transfiniten Bereich vollständig wohldefiniert, stabil und widerspruchsfrei.'."\n",
                       'Alle klassischen, endlichen Zahlenmengen – von den natürlichen, ganzen, geraden/ungeraden'."\n".
                     'und rationalen Zahlen bis hin zu den Primzahlen – werden auf natürliche Weise unter Erhalt'."\n".
                     'ihrer tiefen arithmetischen und divisatorischen Feinstrukturen ins Aktual-Unendliche erweitert.'."\n",
