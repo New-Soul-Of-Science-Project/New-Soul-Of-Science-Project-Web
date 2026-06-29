@@ -143,19 +143,8 @@
                 'Der Beweis der Primzahlprodukt-Vermutung und seine Bedeutung für die Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der strikt deduktive Nachweis der Primzahlprodukt-Vermutung'."\n".
-                    'und die Etablierung der kanonischen Identität \lm{ ω = ω\overline{\#} } über'."\n".
-                    'das generative Primzahl-Induktions-Lemma entfalten ihre eigentliche mathematische Tragweite'."\n".
-                    'erst in der hier vorliegenden ZFC-Modellkonstruktion.'."\n".
-                    'Ohne diesen Beweis wäre die Zuweisung einer aktual unendlichen, \lm{ ω }-fachen Teilbarkeit'."\n".
-                    'für ein unendliches Produkt innerhalb der Standard-Mengenlehre ein ungedeckter Wechsel'."\n".
-                    'auf die Axiomatik gewesen.'."\n",
-                      'Durch das Haupttheorem der Primzahlprodukt-Vermutung verändert sich die Rolle des Hahn-Reihen-Körpers'."\n".
-                    'im Modell grundlegend in drei zentralen Dimensionen:'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Der strikt deduktive Nachweis der Primzahlprodukt-Vermutung und die Etablierung'."\n".
-                    'der kanonischen Identität \lm{ ω = ω\overline{\#} } über das generative Primzahl-Induktions-Lemma'."\n".
+                    'Der strikt deduktive Nachweis der Primzahlprodukt-Vermutung und'."\n".
+                    'ihre Etablierung der Identität \lm{ ω = ω\overline{\#} } über das generative Primzahl-Induktions-Lemma'."\n".
                     'bilden das tragende Fundament für die Funktionalität dieser ZFC-Modellkonstruktion.'."\n".
                     'Durch dieses Haupttheorem der Primzahlprodukt-Vermutung wird die mathematische Struktur'."\n".
                     'des Hahn-Reihen-Körpers direkt an die ordinale Kernstruktur der Mengenlehre gekoppelt.'."\n",
