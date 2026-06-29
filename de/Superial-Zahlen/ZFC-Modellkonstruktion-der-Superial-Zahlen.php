@@ -322,13 +322,13 @@
                     'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen benötigt,'."\n".
                     'ergibt sich unmittelbar aus ihrer Natur als transfinites Stellenwertsystem.'."\n".
                     'Aus den Erkenntnissen zur inneren \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }} als Primzahl-Flächenprodukt folgt,'."\n".
-                    'dass die Anzahl der mathematisch sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                    'dass die Erzeugungsanzahl der mathematisch sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
                     'nicht mehr bloß über die klassische kardinale Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}} erfasst werden kann.'."\n",
                       'Für dieses Kontinuum gilt im superialen System der feste Wert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  =  \frac{ 1 }{ 2 }ω^{ω - 1}  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  =  \frac{ 1 }{ 2 }ω^{ω - 1}  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
