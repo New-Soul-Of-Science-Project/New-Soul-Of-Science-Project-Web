@@ -2064,7 +2064,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da in der Standard-Mengenlehre (ZFC) per Definition \lm{ \mathbb{N} = ω } verankert ist,'."\n".
-                      'folgt aus der bewiesenen Identität \lm{ \lpr*( ω\bar{\#} *) = \mathbb{N} } direkt der formale Abschluss des Theorems'."\n".
+                      'folgt aus der bewiesenen Identität \lm{ \lpr*( ω\overline{\#} *) = \mathbb{N} } direkt der formale Abschluss des Theorems'."\n".
                       'innerhalb des Standard-Modells:'."\n".
                       ''))),
                   array( 'equations',
