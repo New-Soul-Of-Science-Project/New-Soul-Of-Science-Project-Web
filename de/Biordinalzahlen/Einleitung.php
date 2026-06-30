@@ -1448,7 +1448,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'wo auch \lm{ - (ω - 1) } oder \lm{ - (ω - 2) } nicht dazu gehören sollten.'."\n",
-                      'Die Biordinalzahlen sind also als Basismenge der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                      'Die Biordinalzahlen sind also als Basismenge der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     'nicht geeignet.'."\n".
                     'Wir benötigen eine Basismenge, die die Ordinalzahlen enthält und zusätzlich auch gleiche, die entsprechend der \jump{OM:BiOrd:Einleitung:IntegrierteMengenlehre}{integrierten Mengenlehre},'."\n".
                     'ins Negative gespiegelt und verschoben sind, enthält:'."\n".
@@ -1471,7 +1471,7 @@
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
-                    'verstanden werden und sie sind sogar ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
+                    'verstanden werden und sie sind sogar ein \jump{OM:SupNum:Algebraische-Grundlagen:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
                     'Dies gilt in einem noch engeren Sinn, weil sich die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
                     'als wahr herausgestellt hat.'."\n",
                       'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen aus leeren Mengen bekannt ist, die der Mengendarstellung der Biordinalzahlen'."\n".
@@ -1484,7 +1484,7 @@
                     'Dies erscheint mir ein Grund dafür, dass wir in bizarre und auch interessante, scheinbar paradoxe Situationen kommen.'."\n",
                       'Mit den Superial-Zahlen kommen wir dann quasi in die höheren Sphären der Fraktalität,'."\n".
                     'was zur Folge hat, dass uns die Dinge wieder harmonischer erscheinen.'."\n".
-                    'Denn in den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} haben wir wieder so viele Vorgänger,'."\n".
+                    'Denn in den \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen} haben wir wieder so viele Vorgänger,'."\n".
                     'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist;'."\n".
                     'diesmal allerdings mit reell algebraischen Koeffizienten und nicht nur mit ganzen Zahlen als Koeffizienten, wie bei den Biordinalzahlen.'."\n",
                       'In den Superial-Zahlen machen wir einen \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{Vergleich der Struktur beider Zahlenklassen}.'."\n".

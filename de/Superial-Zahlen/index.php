@@ -214,7 +214,7 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Arithmetische-Struktur-Geometrie'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Formale-Entwicklung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Algebraische-Grundlagen'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ableitungen-Integrale'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eulersche-Zahl-e-Funktion'),

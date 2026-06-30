@@ -348,8 +348,8 @@
                     'steht diese relative Berechnung auf einem felsenfesten algebraischen Fundament:'."\n".
                     'Selbst bei der zweidimensionalen Dichte des Flächenprodukts \lm{ \s = ω^{ω} }'."\n".
                     'bleibt das Verhältnis der Erzeugungsschichten präzise bestimmbar, stabil und mathematisch vollständig wohldefiniert.'."\n",
-                      'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}'."\n".
-                    'der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.'."\n".
+                      'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}‹}'."\n".
+                    'der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen}‹}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -428,7 +428,7 @@
                     'Jede natürliche Superial-Zahl besitzt eine eindeutige Darstellung als Produkt aus endlichen Primzahlen'."\n".
                     'und transfiniten Basis-Monomon, wodurch die algebraische Integrität des Systems über'."\n".
                     'das gesamte aktual unendliche Spektrum hinweg gewahrt bleibt,'."\n".
-                    'wie im Abschnitt zur \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primfaktorzerlegung natürlicher Superial-Zahlen} explizit gezeigt wird.'."\n".
+                    'wie im Abschnitt zur \jump{OM:SupNum:Algebraische-Grundlagen:PrimSZ}{Primfaktorzerlegung natürlicher Superial-Zahlen} explizit gezeigt wird.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -444,7 +444,7 @@
                         '\bold{Multiplikation:} Wird über das mathematisch wohldefinierte Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} operationalisiert,'."\n".
                           'wobei die Wohlordnung des Supports die Konvergenz der Koeffizientensummen sichert.',
                         '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
-                          'Definiert eine \jump{OM:SupNum:Formale-Entwicklung:SIstGeordneterKoerper}{totale lineare Ordnung},'."\n".
+                          'Definiert eine \jump{OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper}{totale lineare Ordnung},'."\n".
                           'bei welcher der Koeffizientenvergleich an der jeweils höchsten unendlichen Stelle entscheidet.'."\n".
                           'Dies sichert die Eigenschaft von \lm{ \s } als aktual unendliche Einheit \lm{ \s > n }'."\n".
                           'für alle \lm{ n \in \mathbb{N} } und \lm{ \s^{-1} } als absolut normiertes Infinitesimal.',
@@ -453,8 +453,8 @@
                         '\bold{Division:} Ist über das Herausziehen des dominanten Terms und die formale Reiheninversion'."\n".
                           '(analog zur algebraischen Polynomdivision\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) widerspruchsfrei durchführbar.',
                         '\bold{Strukturelle Fortsetzung:} Ermöglicht die natürliche Einbettung und Erweiterung klassischer Zahlenmengen'."\n".
-                          '(wie \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche}, \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganze}, gerade/ungerade und rationale Zahlen) ins Aktual-Unendliche.',
-                        '\bold{Teilbarkeit und Primstruktur:} Sichert die exakte mathematische Handhabung von \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{unendlichen Primfaktorzerlegungen}'."\n".
+                          '(wie \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürliche}, \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganze}, gerade/ungerade und rationale Zahlen) ins Aktual-Unendliche.',
+                        '\bold{Teilbarkeit und Primstruktur:} Sichert die exakte mathematische Handhabung von \jump{OM:SupNum:Algebraische-Grundlagen:PrimSZ}{unendlichen Primfaktorzerlegungen}'."\n".
                           'über das gesamte transfinite Spektrum.',
                     ))),
                   array( 'text', array( text => array(

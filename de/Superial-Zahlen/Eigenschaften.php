@@ -20,12 +20,12 @@
                       
                   array( 'text', array( text => array(
                     'Die Superial-Zahlen, als aktual unendliche algebraische Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}},'."\n".
-                    'deren Basis über ein unendliches \jump{OM:SupNum:Formale-Entwicklung}{Primzahl-Produkt} definiert ist, haben eine ganz besondere Struktur.'."\n".
+                    'deren Basis über ein unendliches \jump{OM:SupNum:Algebraische-Grundlagen}{Primzahl-Produkt} definiert ist, haben eine ganz besondere Struktur.'."\n".
                     'Ihre Struktur verbindet über die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} rationale und algebraische Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'tief mit den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primzahlen}, den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Zahlen},'."\n".
-                    'den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Zahlen} und erweitert all diese ins Aktual-Unendliche.'."\n",
+                    'tief mit den \jump{OM:SupNum:Algebraische-Grundlagen:PrimSZ}{Primzahlen}, den \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Zahlen},'."\n".
+                    'den \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Zahlen} und erweitert all diese ins Aktual-Unendliche.'."\n",
                       'Dieser Zusammenhang eröffnet ganz neue Perspektiven auf die Zahlentheorie und erlaubt es auf diese Weise auch konkret'."\n".
-                    'die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} von Elementen in diesen Mengen und deren Teilmengen mit aktual unendlichen Zahlen zu beschreiben.'."\n".
+                    'die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} von Elementen in diesen Mengen und deren Teilmengen mit aktual unendlichen Zahlen zu beschreiben.'."\n".
                     'Darüber können wir Summen der Elemente von diesen unendlichen Mengen bestimmen und gelangen schließlich zu einer neuen'."\n".
                     '\jump{OM:SupNum:Ableitungen-Integrale}{Definition des Integrals und der Ableitung} über aktual unendliche Zahlen, die ohne den Limes auskommen.'."\n",
                       'Diese Summen können oft nur über die von mir entdeckten, geschöpften und auf diesen Seiten entwickelten \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
@@ -64,8 +64,8 @@
                     'Periodische rationale Koeffizienten wie \lm{ ⅓ } sind als rationale Zahlen exakt und sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
                     'Ihre periodische Dezimaldarstellung darf jedoch nicht mit einer Dezimalzahl verwechselt werden, die nach \lm{ \s } Stellen endet.'."\n".
                     'Eine \lm{ \s }-stellige Dezimalapproximation bleibt von \lm{ ⅓ } um einen infinitesimalen Rest verschieden.'."\n".
-                    'Die genaue \jump{OM:SupNum:Formale-Entwicklung:Grenzwertabschluss-s-Auswertung-Darstellungsreste}{Unterscheidung zwischen Grenzwertabschluss'."\n".
-                    'und \lm{ \s }-Auswertung} wird in der \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹} behandelt.'."\n".
+                    'Die genaue \jump{OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste}{Unterscheidung zwischen Grenzwertabschluss'."\n".
+                    'und \lm{ \s }-Auswertung} wird in der \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen}‹} behandelt.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
@@ -93,7 +93,7 @@
                   array( 'text', array( text => array(
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
                       'Wir können zum Beispiel für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
-                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
+                    'größer als die andere ist, weil sie ein \jump{OM:SupNum:Algebraische-Grundlagen:SIstKoerper}{linear geordneter Körper}\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} sind;'."\n".
                     'nämlich eine lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS:X', text =>
@@ -180,7 +180,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da die Größe einer Superial-Zahl immer durch den Koeffizienten ihrer größten Potenz von \lm{ \s } bestimmt ist,'."\n".
-                      'die per Definition in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} immer existiert,'."\n".
+                      'die per Definition in Formel \jumpname{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom} immer existiert,'."\n".
                       'und, weil die Exponenten von \lm{ \s } nach oben hin im Endlichen unbegrenzt sind,'."\n".
                       'können wir einfach durch die Wahl eines jeweils größeren Exponenten in der ganzen Superial-Zahl \lm{ z }'."\n".
                       'eine solche finden, die das \lm{ \mathbb{S}_{\Z} }-archimedische Axiom dann also mit'."\n".
@@ -286,12 +286,12 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Für die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} der Vorgänger finden wir dann:'."\n".
+                    'Für die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} der Vorgänger finden wir dann:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Seien \lm{ \rbrack a, b \lbrack_{\mathbb{A}_{\R}} } und \lm{ \lbrack a, b \lbrack_{\mathbb{A}_{\R}} } \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \lm{ \mathbb{A}_{\R} },'."\n".
+                      'Seien \lm{ \rbrack a, b \lbrack_{\mathbb{A}_{\R}} } und \lm{ \lbrack a, b \lbrack_{\mathbb{A}_{\R}} } \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Mengen} aus \lm{ \mathbb{A}_{\R} },'."\n".
                       'dann ergibt sich \lm{ \s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',
@@ -1360,7 +1360,7 @@
                   array( 'notice', array( Display => 'showContent', text => array(
                     // '\bold{X}',
                     '• Einführung im Abschnitt \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}‹}.',
-                    '• Definition und Beispiele im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹} der Seite \italic{›\jumpname{OM:SupNum:Formale-Entwicklung}‹}.',
+                    '• Definition und Beispiele im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}‹} der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen}‹}.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1399,7 +1399,7 @@
                     'Im Aktual-Unendlichen gelten bezüglich ganzer Zahlen hier und dort ungewohnte neue Rechenregeln,'."\n".
                     'mit denen wir uns etwas näher befassen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
 
                 '\italic{Inhalt}', subline =>
                   '')),
@@ -1882,7 +1882,7 @@
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
                     'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
-                      'Durch die Superial-Zahlen sehen wir nun, dass die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
+                      'Durch die Superial-Zahlen sehen wir nun, dass die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
                     '– wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren –'."\n".
                     'aller reell algebraischen Zahlen \lm{ \overline{\#} \mathbb{A}_{\R} } dem besagten'."\n".
                     'aktual unendlichen Flächenprodukt von \lm{ \s }, also \lm{ \s = \overline{\#} \mathbb{A}_{\R} }, entspricht.'."\n",

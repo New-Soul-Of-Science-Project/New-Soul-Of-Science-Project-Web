@@ -75,7 +75,7 @@
                     'Ihre arithmetischen und unendlichen Eigenschaften ermöglichen uns sodann unsere Ganzzahligkeits- und Teilbarkeitsargumente.'."\n".
                     'In Bezug auf die Differenzialrechnung geben wir damit dem infinitesimalen Epsilon eine unendliche Struktur aus Primzahlen.'."\n",
                       'Formal gesprochen sind unsere neuen Zahlen ein geordneter bewerteter Körper\footnote{\const{NSOSP_g_footnote_text_GeordneterKoerper}} und'."\n".
-                    'bezüglich der Addition und Multiplikation ein aktual unendlicher \jump{OM:SupNum:Formale-Entwicklung:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
+                    'bezüglich der Addition und Multiplikation ein aktual unendlicher \jump{OM:SupNum:Algebraische-Grundlagen:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Mit ihnen machen wir die algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'im Produkt mit \lm{ \s } zu ganzen Zahlen im Aktual-Unendlichen.'."\n".
                     'Alle so skalierten rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}} werden im Unendlichen zu ganzen Zahlen.'."\n".
@@ -91,7 +91,7 @@
                     'Sie ergänzt die Mächtigkeit von Mengen, die „nur“ die Abbildungseigenschaften von Mengen bewertet.'."\n".
                     'Ihre Berechnung erfolgt stets relativ zur vollständigen Induktion \lm{ ω }, auch \jump{OM:SupNum:ZFC-Modellkonstruktion}{bezüglich \lm{ \s = ω^{ω} }}.'."\n".
                     'Die Erzeugungsanzahl verbindet einen kardinalen und einen ordinalen Aspekt der Zahlen.'."\n".
-                    'Die ausführliche Definition und Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}‹}.'."\n".
+                    'Die ausführliche Definition und Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}‹}.'."\n".
                     'Dazu gehören die Summen aller endlichen ganzen Zahlen oder die Summe aller reell algebraischen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
                     'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ \s }'."\n".
@@ -102,7 +102,7 @@
                     'Erstaunlich viele der uns bekannten wichtigen Eigenschaften der endlichen Zahlen lassen'."\n".
                     'sich dadurch ins aktual unendlich Kleine und Große erweitern.'."\n".
                     'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
-                    '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                     'zur Basis \lm{ \s },'."\n".
                     'wo die Ziffern alle positiven wie auch negativen reell algebraischen Zahlen sein können.'."\n",
                       'Wir erschaffen so eine Zahlentheorie der Analysis, die auf den uns bekannten endlichen Primzahlen basiert, die im unendlich großen Produkt'."\n".
@@ -261,7 +261,7 @@
                       '\\\\'."\n".
                       'Sei \lm{ \mathbb{S}_{\Z} } die Menge der \italic{ganzen Superial-Zahlen}, eine Teilmenge der \italic{Superial-Zahlen} \lm{ \mathbb{S} }.'."\n".
                       'Seien \lm{ \lbrack a, b \lbrack_\mathbb{\mathbb{S}_{\Z}} } die ganzen Superial-Zahlen'."\n".
-                      'in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} von \lm{ a } bis \lm{ b }, ohne \lm{ b }, aus \lm{ \mathbb{S}_{\Z} }:'."\n".
+                      'in der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge} von \lm{ a } bis \lm{ b }, ohne \lm{ b }, aus \lm{ \mathbb{S}_{\Z} }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -308,14 +308,14 @@
                       'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
                       'sollen sie doch eigentlich von Null bis \lm{ x } in \lm{ \s^{-1} } kleinen Schritten laufen.'."\n".
                       'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \lm{ \s^{-1} } multiplizieren'."\n".
-                      'und auf diese Weise auf eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
+                      'und auf diese Weise auf eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
                         'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \lm{ \s^{-1} } multipliziert sind,'."\n".
-                      'wie in \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert:'."\n".
+                      'wie in \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}^{y}_{\Z}  :=  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{y} *]  *\}  }',
-                                          label_text => '\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{\Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => true),
                     ))),
@@ -554,7 +554,7 @@
                   'Eine fraktale Struktur')),
                   array( 'text', array( text => array(
                     'Bei etwas intensiverem Herumspielen fällt einem auf, dass die Superial-Zahlen sich wie ein'."\n".
-                    '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem} verhalten.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem}{Stellenwertsystem} verhalten.'."\n".
                     'Die Ziffern der Stellen können alle rationalen Zahlen sein, sogar negative.'."\n".
                     'Durch diese Erkenntnis finden wir die Möglichkeit, die Darstellung gegebenenfalls zu verkürzen, wie beispielsweise die folgende:'."\n".
                     ''))),
@@ -706,7 +706,7 @@
                     'dass die Potenz durch keine in rationalen Zahlen mögliche, negative Potenz in einem Produkt mit ihr endlich groß werden kann.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setzen wir voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
-                    'Den Grund hierfür verdeutlichen wir im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}‹}.'."\n",
+                    'Den Grund hierfür verdeutlichen wir im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen}‹}.'."\n",
                       'Für das Primzahlprodukt von \lm{ \s } ergibt sich also, wie eben beschrieben,'."\n".
                     'eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".
                     ''))),
@@ -751,7 +751,7 @@
                     'der Superial-Zahlen.'."\n",
                       'Diese Eigenschaft ist generell sehr bemerkenswert und tatsächlich auch durch die'."\n".
                     'Definition von \lm{ \s } über das unendliche Primzahl-Flächenprodukt gewährleistet.'."\n".
-                    'Weiteres zur Dominanz der Potenzen von \lm{ \s } untersuchen wir im Abschnitt \italic{\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}}.'."\n".
+                    'Weiteres zur Dominanz der Potenzen von \lm{ \s } untersuchen wir im Abschnitt \italic{\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen}}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                   'Primzahlen haben eine Verbindung ins Unendliche', subline =>

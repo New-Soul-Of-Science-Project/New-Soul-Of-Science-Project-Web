@@ -943,7 +943,7 @@
     
     // #: SupNum
                             
-    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
+    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem'),
   );
   
   $Glo_g_Redirect_list = array(

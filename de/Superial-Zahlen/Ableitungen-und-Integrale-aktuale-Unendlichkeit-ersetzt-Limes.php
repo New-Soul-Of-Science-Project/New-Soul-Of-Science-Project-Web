@@ -403,7 +403,7 @@
                     'Hieran ist bemerkenswert, dass jede endliche Zahl \lm{ x } im Verhältnis zur unendlich kleinen Einheit \lm{ \s^{-1} }'."\n".
                     'eine ganze Zahl sein muss.'."\n".
                     'Dies drücken wir vorstehend durch die Menge \lm{ \mathbb{S}^{-1}_{\Z} } aus,'."\n".
-                    'wie wir sie in \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert haben.'."\n",
+                    'wie wir sie in \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert haben.'."\n",
                       'Skalieren wir diese Erkenntnis auf die fraktale Ebene der endlichen ganzen Zahlen, indem wir die unendlich kleinen gezählten Einheiten'."\n".
                     'durch Multiplikation mit \lm{ \s } ins Endliche holen, dann erhalten wir für die natürlichen Superial-Zahlen'."\n".
                     'von der Null bis ohne \lm{ x \cdot \s } die Menge:'."\n".
@@ -447,7 +447,7 @@
                   array( 'text', array( text => array(
                     'Wollen wir uns der Integration im Rahmen der Superial-Zahlen nähern, dann stehen bestimmte aktual unendliche Summen'."\n".
                     'und dafür wichtige Eigenschaften der Superial-Zahlen im Mittelpunkt.'."\n".
-                    'Dabei ist es praktisch, die Summen mit Hilfe von \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen}'."\n".
+                    'Dabei ist es praktisch, die Summen mit Hilfe von \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Mengen}'."\n".
                     'zu definieren.'."\n",
                       'Zum einen ist es wichtig zu verstehen, dass ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} } endliche ganze sowie'."\n".
                     'aktual unendlich große ganze Zahlen sind, die alle immer einen Vorgänger und Nachfolger haben.'."\n".
@@ -531,7 +531,7 @@
                     'der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beziehungsweise der superial kleinen ganzen Zahlen'."\n".
                     '\lm{ \mathbb{S}_{\Z}^{-1} } entwickelt haben.'."\n",
                       'Im Falle, dass die Grenzen des Integrals in ihrer Größe vertauscht sind, also, wenn \lm{ x < a } gilt,'."\n".
-                    '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals', text =>
                       
@@ -1438,9 +1438,9 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Zur Beschreibung der Summe wird eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} genutzt,'."\n".
-                    'die auf \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} beruht,'."\n".
-                    'welche eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superiale Potenzebene ins superial kleine skaliert} sind.'."\n",
+                    'Zur Beschreibung der Summe wird eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge} genutzt,'."\n".
+                    'die auf \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} beruht,'."\n".
+                    'welche eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superiale Potenzebene ins superial kleine skaliert} sind.'."\n",
                     'Die direkte Berechnung der beiden rechten Teilsummen aus der linken Summe wollen wir nun angehen.'."\n",
                     ''))),
                   array( 'headline', array( headlineTag => 'h4',  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel', text =>

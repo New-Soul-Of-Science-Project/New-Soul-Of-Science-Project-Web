@@ -160,7 +160,7 @@
                     '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
+                    'Schauen wir uns das Zählen der \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
                     'Beim Zählen von natürlichen Superial-Zahlen von Null bis ohne \lm{ \s }, in Form von \lm{ a \cdot \s + z }, werden endliche \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
                     '– alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} von Null bis ohne Eins –'."\n".
                     'als Koeffizienten des Aktual-Unendlichen Summanden \lm{ a \cdot \s } mitgezählt,'."\n".
@@ -182,7 +182,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl} einer Menge berechnet sich aus'."\n".
+                    'Die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} einer Menge berechnet sich aus'."\n".
                     'den Erzeugungspositionen beziehungsweise der Erzeugungskombinatorik der Menge.'."\n",
                       'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
                     'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
@@ -270,7 +270,7 @@
                       'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, in ihrer Mengendarstellung genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
                     'Sie liefert einen Grund, dass \lm{ ω } durch \lm{ 2 } teilbar sein sollte.'."\n".
                     'Allgemein ist die Teilbarkeit von \lm{ ω } durch jede endliche Primzahl \lm{ p \in \mathbb{P} } die Voraussetzung'."\n".
-                    'für das Homogenitätsaxiom der \jump{OM:SupNum:Formale-Entwicklung:Erzeugungsanzahl}{Erzeugungsanzahl}:'."\n".
+                    'für das Homogenitätsaxiom der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}:'."\n".
                     '\lm{ \overline{\#}_{\mathrm{erz}}(p \mathbb{N}) = \tfrac{ω}{p} } ist nur dann ganzzahlig, wenn \lm{ p \mid ω }.'."\n",
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
                       'Wir können unsere Vermutung plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
@@ -374,7 +374,7 @@
                     'Zum anderen erlaubt sie über ihre doppelte Variation um plus-minus Einen \lm{ p\# \pm 1 } Aussagen über weitere Primzahlen,'."\n".
                     'die noch nicht in ihrem Produkt enthalten sind und fungiert so quasi auch als Konstruktor:'."\n",
                       'Entweder sind \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } selber schon größere Primzahlen als \lm{ p }'."\n".
-                    'oder es gibt zwischen \lm{ p } und \lm{ p\# - 1 }, also in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                    'oder es gibt zwischen \lm{ p } und \lm{ p\# - 1 }, also in der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     '\lm{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} }, mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
                     'die in der Primfaktorzerlegung von \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } stecken.'."\n".
                     ''))),
@@ -825,7 +825,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'die wir erhalten, indem wir alle endlichen und aktual unendlichen natürlichen Zahlen mit existierender \lm{ p }-adischer Bewertung,'."\n".
-                      'von Null bis einschließlich \lm{ x }, in einer \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} zusammenfassen,'."\n".
+                      'von Null bis einschließlich \lm{ x }, in einer \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge} zusammenfassen,'."\n".
                       'die Teilmenge\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilmenge:2023}.}'."\n".
                       'des oder gleich dem Primturm-Potenzrasters sind.'."\n",
                         '\\\\'."\n".
@@ -1567,7 +1567,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-lpr-n}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wobei laut Definition der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                      'wobei laut Definition der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

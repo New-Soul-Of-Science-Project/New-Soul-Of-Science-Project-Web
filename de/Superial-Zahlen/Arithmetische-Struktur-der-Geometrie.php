@@ -104,7 +104,7 @@
                     'weil die Punkte ja die Teilstrecken begrenzen und daher ein zusätzlicher Punkt den Beginn oder den Abschluss'."\n".
                     'bilden muss, jenachdem, wie wir drauf schauen.'."\n",
                       'Zur Berechnung der Koordinaten aller sich ergebenden Punkte \lm{ r } benutzen wir die natürlichen Zahlen von Null'."\n".
-                    'bis zum \lm{ n }-ten Punkt mit Hilfe der entsprechenden \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                    'bis zum \lm{ n }-ten Punkt mit Hilfe der entsprechenden \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     '\lm{ [0, n] } aus \lm{ \mathbb{N} }.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
@@ -245,7 +245,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern,'."\n".
-                    'mit der Basismenge \lm{ \mathbb{On}_{0}^{\pm} } der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge},'."\n".
+                    'mit der Basismenge \lm{ \mathbb{On}_{0}^{\pm} } der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge},'."\n".
                     'wie im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert}} entwickelt,'."\n".
                     ''))),
                   array( 'equations',
@@ -1267,7 +1267,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen'),
                     )),
               )
           ); ?>

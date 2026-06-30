@@ -1600,7 +1600,7 @@
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Erkenntnis können wir dann ebenso auf die \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} erweitern:'."\n".
+                    'Diese Erkenntnis können wir dann ebenso auf die \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} erweitern:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

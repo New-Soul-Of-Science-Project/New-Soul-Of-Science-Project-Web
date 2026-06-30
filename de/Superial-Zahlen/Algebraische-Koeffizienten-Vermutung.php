@@ -104,12 +104,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'zu einer unendlich großen natürlichen Zahl, in der nur die Exponentenschicht \lm{ \s^{1} } belegt ist.'."\n".
-                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n".
+                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n".
                     'Das ist ein echter Paradigmenwechsel des Verständnisses von Wurzeln und der Superial-Zahlen.'."\n",
                       'Genau diese Eigenschaft macht sinnvolle Koeffizienten aus.'."\n".
                     'Denn so lassen sich die natürlichen Zahlen \lm{ \mathbb{N} } und auch die ganzen Zahlen \lm{ \mathbb{Z} }'."\n".
-                    'zu \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }}'."\n".
-                    'und \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }}'."\n".
+                    'zu \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }}'."\n".
+                    'und \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }}'."\n".
                     'erweitern, dass in Summen von superialen Integralen unendlich kleine Flächenelemente ganzer Anzahl gezählt und zu endlichen Flächeninhalten'."\n".
                     'addiert werden können.'."\n",
                       'Alle Radikale können aus der klassischen \lm{ p }‑adischen Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}}'."\n".
@@ -196,7 +196,7 @@
                     '')),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\lm{ \mathbb{S}_{\Z} } ist der Ring der \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} (Eins-Schicht-Ganzheit).',
+                        '\lm{ \mathbb{S}_{\Z} } ist der Ring der \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} (Eins-Schicht-Ganzheit).',
                         '\lm{ \mathbb{S}_{\Q} := \operatorname{Frac}*( \mathbb{S}_{\Z} *) } ist der Quotientenkörper.',
                         '\lm{ \s \in \mathbb{S}_{\Z} } ist so definiert, dass \italic{jede endliche Primzahl} \lm{ p }'."\n".
                           'in einem aktual unendlichen Vorrat der Größe \lm{ ω } im inneren Primzahl-Flächenprodukt'."\n".
@@ -540,8 +540,8 @@
                     'Für \lm{ n \ge 1 } gilt \lm{ \s^{n} \mathbb{A}_{\S} \subset \mathbb{S}_{\Z} }.'."\n",
                     'Für \lm{ n = 0 } gilt \lm{ \s^{0} \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
                     'Denn wegen \lm{ \s^{0} = 1 } und \lm{ \mathbb{A}_{\S} = 1 \cdot \mathbb{A}_{\S} } gilt dann eben im Allgemein \lm{ \mathbb{A}_{\S} \not\subset \mathbb{S}_{\Z} }.'."\n",
-                    '\italic{Begründung:} Koeffizient \lm{ a } heißt „sinnvoll“, wenn er nur die \lm{ n }-te Exponentenschicht verändert, in der er Faktor ist, also \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s^{n} \in \mathbb{S}_{\Z,\{ n \}} }, mit \lm{ n \ge 1 }. (Schreibweise \lm{ \mathbb{S}_{\Z,\{ n \}} } siehe Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.)'."\n".
-                    'Jedoch sind in der nullten Exponentenschicht (\lm{ n = 0 }) der \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} nur ganze Zahlen aus \lm{ \mathbb{Z} } erlaubt, also nicht alle sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }.'."\n".
+                    '\italic{Begründung:} Koeffizient \lm{ a } heißt „sinnvoll“, wenn er nur die \lm{ n }-te Exponentenschicht verändert, in der er Faktor ist, also \lm{ a \in \mathbb{A}_{\S} \Leftrightarrow a \cdot \s^{n} \in \mathbb{S}_{\Z,\{ n \}} }, mit \lm{ n \ge 1 }. (Schreibweise \lm{ \mathbb{S}_{\Z,\{ n \}} } siehe Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.)'."\n".
+                    'Jedoch sind in der nullten Exponentenschicht (\lm{ n = 0 }) der \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} nur ganze Zahlen aus \lm{ \mathbb{Z} } erlaubt, also nicht alle sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} }.'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Integritätsbereich:}'."\n".

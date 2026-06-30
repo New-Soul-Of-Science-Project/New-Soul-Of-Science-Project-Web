@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Formale-Entwicklung'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Algebraische-Grundlagen'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -33,7 +33,7 @@
                     'das Integral sinnvoll funktionieren sollten und damit beide plausibel definierbar sein müssen.'."\n",
                       'Bei näherer Betrachtung stellen wir deshalb fest, dass die nun mit Hilfe aktual unendlicher Summen definierten Integrale'."\n".
                     'aktual unendlich kleine ganze Zahlen benötigen, die wir aus einer entsprechenden Verkleinerung der'."\n".
-                    '\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{Erweiterung ganzer Zahlen ins aktual unendlich Große} gewinnen können.'."\n",
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{Erweiterung ganzer Zahlen ins aktual unendlich Große} gewinnen können.'."\n",
                       'Betrachten wir diese ganzen Superial-Zahlen, dann haben diese in den Summanden mit negativen Potenzen von \lm{ \s }'."\n".
                     'nur Nullen als Koeffizienten.'."\n".
                     'Im endlichen, also der Koeffizient von \lm{ \s^{0} = 1 }, haben wir nur endliche ganze Zahlen.'."\n".
@@ -121,7 +121,7 @@
                     'Da diese Information allerdings nicht überall zu finden ist, gehen wir auf Nummer sicher.'."\n",
                       'Wie können wir denn dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
                     'was sie schon erfüllen, wie oben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
-                    'Dazu können wir die neue \jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{Unendlichkeits-Gaußklammer}'."\n".
+                    'Dazu können wir die neue \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:Berechnung-Stellen}{Unendlichkeits-Gaußklammer}'."\n".
                     'benutzen, die alle aktual unendlich kleinen Summanden aus einer Zahl entfernt.'."\n".
                     ''))),
 
@@ -192,11 +192,11 @@
                       'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
                     'der reell algebraischen Zahlen sind, ist es offensichtlich,'."\n".
                     'dass sie \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
-                    'Wie diese \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
-                    'zeigen wir in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung}.'."\n".
+                    'Wie diese \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
+                    'zeigen wir in der \jump{OM:SupNum:Algebraische-Grundlagen}{formalen Entwicklung}.'."\n".
                     'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
                     '\lm{ q^{+} } ist also eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{aktual unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }};'."\n".
-                    'und dann auch eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
+                    'und dann auch eine \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
                     'wie oben bereits gesagt:'."\n".
                     ''))),
                   array( 'equations',
@@ -213,7 +213,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n",
+                    'Die Schreibweise \lm{ \mathbb{S}_{\{ 1 \}} } begrenzt die Exponentenschichten mit Koeffizienten, die nicht Null sein können, siehe \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}.'."\n",
                       'Bleibt die Frage …'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
@@ -1403,8 +1403,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Diese Schreibweise ist im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}'."\n".
-                      'in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen} definiert.'."\n".
+                      'Diese Schreibweise ist im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}'."\n".
+                      'in Formel \jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen} definiert.'."\n".
                       'Dann müsste ihr Koeffizient ein sinnvoller Koeffizient sein und damit in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
