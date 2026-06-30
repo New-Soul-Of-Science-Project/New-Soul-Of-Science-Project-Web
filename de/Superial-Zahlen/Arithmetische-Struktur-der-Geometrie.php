@@ -659,7 +659,7 @@
                 'Das Kontinuum', subline =>
                   '')),
 
-                  array( 'notice', array( Display => 'ShowContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     // '• Wenn wir beim Kontinuum davon ausgehen, dass wir keine unendlich kleinen Summanden in den Adressen haben wollen, dann geht es hier eher darum nicht die Strecke von der Null bis zur Eins durch \lm{ \s } zu teilen, sondern die Gerade der endlichen Zahlen, siehe Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}, so dass wir alle sinnvollen Koeffizienten der Superial-Zahlen erhalten.',
                     ))),
@@ -693,10 +693,13 @@
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet dann eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
-                      'Demnach wäre das Kontinuum so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
+                      'Demnach wäre das Kontinuum so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = ω^{ω} = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots },'."\n".
+                    'wobei \lm{ \s = ω^{ω} } durch den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} innerhalb von ZFC gesichert ist.'."\n".
                     'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre,'."\n".
                     'weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".
-                    'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
+                    'Die klassische Kardinalität des Kontinuums ist formal als \lm{ 2^{ω} } definiert und isoliert dabei nur den ersten Primzahlturm des Flächenprodukts \lm{ \s } –'."\n".
+                    'die arithmetische Feinstruktur des Kontinuums bleibt damit unvollständig erfasst.'."\n".
+                    'Die tiefergehenden Konsequenzen werden in den \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchungen zur Kontinuumshypothese} auf der Eigenschaftsseite behandelt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                       
