@@ -454,7 +454,7 @@
                   array( 'text', array( text => array(
                     'Hier fällt nun auf, dass der Faktor exakt der gleiche ist, der aus der Wurzel aus Zwei vorstehend'."\n".
                     'eine ganze Zahl macht; sie also auf dem Zählraster landet.'."\n".
-                    'Damit ist bestätigt, dass die Wurzel aus Zwei, also \lm{ 1,\!41421356237309\cdots }, wirklich auf dem aktual unendlichen Zweiteilungsraster liegt.'."\n".
+                    'Damit ist bestätigt, dass die Wurzel aus Zwei, also \lm{ 1{,}41421356237309\cdots }, wirklich auf dem aktual unendlichen Zweiteilungsraster liegt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                   'Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *| \sqrt[k]{2} |*^{m} }', subline =>

@@ -1708,18 +1708,18 @@
                       array( display => 'on',  latex => '{  4^{\frac{ 1 }{ 2 }}  =  2  }'),
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  4^{k + \frac{ 1 }{ 2 }}  =  4^{k} \cdot 2  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  4^{k + \frac{ 1 }{ 2 }}  \in  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  1,41421356237309…  }'),
-                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  2^{k + \frac{ 1 }{ 2 }}  =  2^{k} \cdot 1,41421356237309…  *]  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  1{,}41421356237309…  }'),
+                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  2^{k + \frac{ 1 }{ 2 }}  =  2^{k} \cdot 1{,}41421356237309…  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  2^{k + \frac{ 1 }{ 2 }} \notin \mathbb{N}  \land  2^{k + \frac{ 1 }{ 2 }} \in \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Fall von \lm{ 2^{k} \cdot 1,41421356237309… } kann der Faktor \lm{ 2^{k} } niemals dafür sorgen, dass das'."\n".
+                    'Im Fall von \lm{ 2^{k} \cdot 1{,}41421356237309… } kann der Faktor \lm{ 2^{k} } niemals dafür sorgen, dass das'."\n".
                     'Produkt eine ganze Zahl wird.'."\n",
                       'Für aktual unendliche \lm{ k := g } überspringen wir eben diese Größengrenze:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{g + \frac{ 1 }{ 2 }}  =  2^{g} \cdot 1,41421356237309…  }'),
+                      array( display => 'on',  latex => '{  2^{g + \frac{ 1 }{ 2 }}  =  2^{g} \cdot 1{,}41421356237309…  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  2^{g + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  n^{g + \frac{ 1 }{ 2 }}  =  n^{g} \cdot n^{\frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
