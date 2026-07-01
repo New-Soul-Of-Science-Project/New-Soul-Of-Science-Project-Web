@@ -283,7 +283,7 @@
                 'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.}'."\n".
+                    'Der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.}'."\n".
                     'beweist, dass die Primzahlen in den unendlich vielen natürlichen Zahlen nicht enden, sondern es auch unendlich viele endliche Primzahlen gibt.'."\n",
                       'Wenn wir verstehen, dass der ›Satz des Euklid‹ ebenso beweist,'."\n".
                     'dass die endlichen natürlichen Zahlen nicht enden, dann können wir erkennen,'."\n".
@@ -343,7 +343,7 @@
                   'Beweis, dass es unendlich viele Primzahlen im Endlichen gibt', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
+                    'Definition der Primzahlen im Endlichen:\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 11. Satz, S. 121. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
                       
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Die Primzahlen sind innerhalb der Menge \lm{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
@@ -351,7 +351,7 @@
                       
                   array( 'text', array( text => array(
                     'Nach dieser Definition sind Null und Eins keine Primzahlen.'."\n",
-                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen,\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
+                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen,\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
                     'wenn wir die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} von \lm{ p } mit \lm{ p\# } berechnen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
@@ -660,7 +660,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n".
                         'Die Primturmmenge \lm{ \pt(n) } der Primturmzerlegung einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
-                        'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BijektiveFunktion:2023}.}'."\n".
+                        'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung\footnote{Vgl. \cite{Dedekind:WasSindUndWasSollenDieZahlen:1888}; § 3 Ähnlichkeit einer Abbildung, Unendliche Systeme (heute Mächtigkeit), Erklärung 26, S. 8-10; § 5 Das Endliche und Unendliche, Erklärung 64, S. 17-20. \\\\ Internet: \\\\ Vgl. \cite{wiki:BijektiveFunktion:2023}.}'."\n".
                         'zwischen \lm{ n } und \lm{ \pt(n) }.'."\n".
                         ''))),
 
@@ -826,7 +826,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'die wir erhalten, indem wir alle endlichen und aktual unendlichen natürlichen Zahlen mit existierender \lm{ p }-adischer Bewertung,'."\n".
                       'von Null bis einschließlich \lm{ x }, in einer \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge} zusammenfassen,'."\n".
-                      'die Teilmenge\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilmenge:2023}.}'."\n".
+                      'die Teilmenge\footnote{Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, S. 481-512, hier 481. \\\\ Internet: \\\\ Vgl. \cite{wiki:Teilmenge:2023}.}'."\n".
                       'des oder gleich dem Primturm-Potenzrasters sind.'."\n",
                         '\\\\'."\n".
                       ''))),
