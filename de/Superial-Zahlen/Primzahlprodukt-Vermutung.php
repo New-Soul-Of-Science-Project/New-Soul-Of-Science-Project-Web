@@ -2374,7 +2374,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Parität}',
-                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 6 (gerade Zahl) und Def. 7 (ungerade Zahl). \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
                     '\bold{Logisches}',
                     '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),
@@ -3072,15 +3072,15 @@
                   'Primzahlen im Endlichen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
-                      
+                    'Definition der Primzahlen im Endlichen:\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 11. Satz, S. 121. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
+
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Die Primzahlen sind innerhalb der Menge \lm{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
                         addtext => '\footnote{Internet: \\\\ \cite{wiki:Primzahl:2021}, Eigenschaften von Primzahlen.}')),
-                      
+
                   array( 'text', array( text => array(
                     'Nach dieser Definition ist die Eins keine Primzahl.'."\n",
-                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
+                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Bilde die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \lm{ p\# }',

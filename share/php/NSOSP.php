@@ -181,10 +181,10 @@
 
   $BiOrd_g_footnote_text_EchteKlasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
-  $BiOrd_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
+  $BiOrd_g_footnote_text_Ordinalzahl            = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
   $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
-  $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
-  $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
+  $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
+  $BiOrd_g_footnote_text_VollstaendigeInduktion = 'Vgl. \cite{Dedekind:WasSindUndWasSollenDieZahlen:1888}, § 6. Der Satz der vollständigen Induktion, Satz 80, S. 25–27. \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
   $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
 
   $FrQFT_g_footnote_text_ActioUndReactio        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ActioUndReactio:2018}.';
@@ -362,7 +362,7 @@
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
   $SupNum_g_footnote_text_AlgebraischerZahlkoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.';
-  $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_AlgebraischeZahl      = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, Über die Theorie der ganzen algebraischen Zahlen, S. 434-647, § 160 Zahlenkörper, S. 452-456, § 173 Ganze algebraische Zahlen, S. 524-531. \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
   $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
   $SupNum_g_footnote_text_CauchyProduktformel   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
@@ -371,15 +371,15 @@
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
-  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
+  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts). \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
   $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
   $SupNum_g_footnote_text_HahnSeries            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
   $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
   $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
-  $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
+  $SupNum_g_footnote_text_Primorial             = 'Vgl. \cite{Dubner:FactorialAndPrimorialPrimes:1987}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
-  $SupNum_g_footnote_text_PythagoreischesTripel = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
+  $SupNum_g_footnote_text_PythagoreischesTripel = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Der 47. Satz (Satz des Pythagoras). \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅹ, Der 28. Satz (Erzeugungsformel pythagoreischer Tripel). \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
   $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
   $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
@@ -387,7 +387,7 @@
   $SupNum_g_footnote_text_Kreisteilungspolynom  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
-  $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_Maechtigkeit          = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, S. 481. \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
   $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
   $SupNum_g_footnote_text_Nichtstandardanalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
   $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
