@@ -7,7 +7,8 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20260702:  +:  "$SupNum_g_footnote_text_TranszendenteZahl":  Primärliteratur ergänzt.
+  //           20260702:  +:  "$SupNum_g_footnote_text_DedekindscherSchnitt":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_TranszendenteZahl":  Primärliteratur ergänzt.
   //                      +:  "$BiOrd_g_footnote_text_EchteKlasse":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_Stellenwertsystem":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_Kontinuumshypothese":  Primärliteratur ergänzt.
@@ -378,7 +379,7 @@
   $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
   $SupNum_g_footnote_text_CauchyProduktformel   = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885}. \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
-  $SupNum_g_footnote_text_DedekindscherSchnitt  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
+  $SupNum_g_footnote_text_DedekindscherSchnitt  = 'Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 4 Schöpfung der irrationalen Zahlen, S. 19–24. \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';

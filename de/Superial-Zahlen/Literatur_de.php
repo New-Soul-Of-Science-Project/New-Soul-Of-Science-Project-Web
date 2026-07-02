@@ -20,6 +20,7 @@
               'Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehreII:1897',
               'Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874',
               'Cauchy:AlgebraischeAnalysis:1885',
+              'Dedekind:StetigkeitUndIrrationaleZahlen:1872',
               'Dedekind:WasSindUndWasSollenDieZahlen:1888',
               'Dubner:FactorialAndPrimorialPrimes:1987',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
