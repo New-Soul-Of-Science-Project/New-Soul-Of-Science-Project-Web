@@ -7,7 +7,14 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20260702:  +:  "$SupNum_g_footnote_text_LexikographischeOrdnung":  Primärliteratur ergänzt.
+  //           20260702:  +:  "$SupNum_g_footnote_text_TranszendenteZahl":  Primärliteratur ergänzt.
+  //                      +:  "$BiOrd_g_footnote_text_EchteKlasse":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Stellenwertsystem":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kontinuumshypothese":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kontinuumshypothese_Einfache":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Gaussklammer":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Primpolynom":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_LexikographischeOrdnung":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_CauchyProduktformel":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_HahnSeries":  Primärliteratur ergänzt.
   //                      +:  "$BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre":  Primärliteratur ergänzt.
@@ -184,7 +191,7 @@
   $NSOSP_g_footnote_text_PeanoAxiome            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
   $NSOSP_g_footnote_text_RingAlgebra            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
 
-  $BiOrd_g_footnote_text_EchteKlasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
+  $BiOrd_g_footnote_text_EchteKlasse            = 'Vgl. \cite{Neumann:EineAxiomatisierungDerMengenlehre:1925}. \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
   $BiOrd_g_footnote_text_Ordinalzahl            = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
   $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
@@ -377,7 +384,7 @@
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts), S. 129. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
-  $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
+  $SupNum_g_footnote_text_Gaussklammer          = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}. \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
   $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
   $SupNum_g_footnote_text_HahnSeries            = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
   $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
@@ -387,8 +394,8 @@
   $SupNum_g_footnote_text_PythagoreischesTripel = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Der 47. Satz (Satz des Pythagoras), S. 23-24. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅹ, Der 28. Satz (Erzeugungsformel pythagoreischer Tripel), S. 188. \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
   $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
   $SupNum_g_footnote_text_Kreisteilungspolynom  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehreII:1897}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
@@ -400,15 +407,15 @@
   $SupNum_g_footnote_text_PfaffscheForm         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
   $SupNum_g_footnote_text_Polynomdivision       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Polynomdivision:2025}.';
   $SupNum_g_footnote_text_Primfaktorzerlegung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
-  $SupNum_g_footnote_text_Primpolynom           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
+  $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
-  $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_Teleskopsumme         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
-  $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
+  $SupNum_g_footnote_text_TranszendenteZahl     = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874}, S. 258–262. \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
   $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_Valuationsring        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ValuationRing:2024}.';
 

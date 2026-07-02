@@ -13,6 +13,7 @@
 	
           <?php
             Sc_g_litera_make( array(
+              'Neumann:EineAxiomatisierungDerMengenlehre:1925',
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
               'wiki:Allklasse:2020',
