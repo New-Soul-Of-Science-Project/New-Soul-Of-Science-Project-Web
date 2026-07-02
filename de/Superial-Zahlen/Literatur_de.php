@@ -17,6 +17,7 @@
               'Bischoff:TausendSeitenBeweis:2025',
               'Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024',
               'Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895',
+              'Cauchy:AlgebraischeAnalysis:1885',
               'Dedekind:WasSindUndWasSollenDieZahlen:1888',
               'Dubner:FactorialAndPrimorialPrimes:1987',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',

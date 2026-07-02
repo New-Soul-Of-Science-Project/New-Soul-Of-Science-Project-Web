@@ -7,7 +7,8 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20260702:  +:  "$SupNum_g_footnote_text_HahnSeries":  Primärliteratur ergänzt.
+  //           20260702:  +:  "$SupNum_g_footnote_text_CauchyProduktformel":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_HahnSeries":  Primärliteratur ergänzt.
   //                      +:  "$BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre":  Primärliteratur ergänzt.
 
   //v01.001:  20130515:  +:  History started.
@@ -368,7 +369,7 @@
   $SupNum_g_footnote_text_AlgebraischeZahl      = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, Über die Theorie der ganzen algebraischen Zahlen, S. 434-647, § 160 Zahlenkörper, S. 452-456, § 173 Ganze algebraische Zahlen, S. 524-531. \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
   $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
   $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
-  $SupNum_g_footnote_text_CauchyProduktformel   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
+  $SupNum_g_footnote_text_CauchyProduktformel   = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885}. \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
   $SupNum_g_footnote_text_DedekindscherSchnitt  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';

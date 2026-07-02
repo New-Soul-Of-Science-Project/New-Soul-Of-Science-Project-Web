@@ -7,7 +7,8 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20260702:  *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
+  //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
+  //                      *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
   //           20260701:  +:  "Sc_g_litera_make", 'book':  'editor' is new.
   //           20260629:  +:  "$Sc_g_equation_replace_ary":  Reorder definitions to avoid errors by subsequent replacements.
   //           20260622:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longrightarrow  ' -> '\;\;\;\Longrightarrow\;\;\;'
@@ -1400,6 +1401,7 @@
                 case 'issuesubtitle':
                 case 'chapter':
                 case 'editor':
+                case 'translator':
                 case 'publisher':
                 case 'location':
                 case 'pubstate':
@@ -1671,7 +1673,7 @@
                       
                       //%!$bib_data = ((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').' '.$location_html.((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.';
                       //%!$bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').' '.$location_html.((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
-                      $bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').((array_key_exists( 'editor', $Sc_g_litera_ary[$label_text])) ? ' Hrsg. von '.$Sc_g_litera_ary[$label_text]['editor'].'.' : '').((array_key_exists( 'note', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['note'].'.' : '').(' '.$location_html).((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
+                      $bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').((array_key_exists( 'editor', $Sc_g_litera_ary[$label_text])) ? ' Hrsg. von '.$Sc_g_litera_ary[$label_text]['editor'].'.' : '').((array_key_exists( 'translator', $Sc_g_litera_ary[$label_text])) ? ' Übers. von '.$Sc_g_litera_ary[$label_text]['translator'].'.' : '').((array_key_exists( 'note', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['note'].'.' : '').(' '.$location_html).((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
                     }
                     else     // #err: .
                       echo '----------- PHP error: Item "year" missing in literature label "'.$label_text.'"!';
