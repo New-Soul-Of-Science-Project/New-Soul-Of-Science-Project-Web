@@ -2374,7 +2374,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Parität}',
-                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 6 (gerade Zahl) und Def. 7 (ungerade Zahl). \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 6 (gerade Zahl), S. 112. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 7 (ungerade Zahl), S. 112. \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
                     '\bold{Logisches}',
                     '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),

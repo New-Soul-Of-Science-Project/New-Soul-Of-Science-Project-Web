@@ -13,15 +13,16 @@
 	
           <?php
             Sc_g_litera_make( array(
+              'Bischoff:NeubauDerMathematik:2023',
               'Bischoff:TausendSeitenBeweis:2025',
               'Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024',
-              'Bischoff:NeubauDerMathematik:2023',
               'Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895',
               'Dedekind:WasSindUndWasSollenDieZahlen:1888',
               'Dubner:FactorialAndPrimorialPrimes:1987',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
               'Freistetter:DieFreiheitDerMathematik:2016',
               'Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025',
+              'Hahn:UeberDieNichtarchimedischenGroessensysteme:1907',
               'Haramein:DieEntschluesselungDesUniversums:2011',
               'LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894',
               'Lorenz:EuklidsElemente:1781',
@@ -31,8 +32,8 @@
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
               'wiki:AlgebraicNumber:2025',
-              'wiki:AlgebraischerZahlkoerper:2020',
               'wiki:AlgebraischeKurve:2023',
+              'wiki:AlgebraischerZahlkoerper:2020',
               'wiki:AlgebraischeZahl:2022',
               'wiki:Allklasse:2020',
               'wiki:AnalytischeZahlentheorie:2022',
@@ -58,10 +59,10 @@
               'wiki:HahnSeries:2025',
               'wiki:HyperreelleZahl:2025',
               'wiki:Infinitesimal:2025',
-              'wiki:IntegrallyClosedDomain:2024',
-              'wiki:IntegralityAndValuationRings:2011',
-              'wiki:Integralrechnung:2023',
               'wiki:IntegralElement:2025',
+              'wiki:IntegralityAndValuationRings:2011',
+              'wiki:IntegrallyClosedDomain:2024',
+              'wiki:Integralrechnung:2023',
               'wiki:IntervallMathematik:2023',
               'wiki:IrreduziblesPolynom:2024',
               'wiki:KlasseMengenlehre:2024',
@@ -106,6 +107,7 @@
               'wiki:ValuationRing:2024',
               'wiki:VollstaendigeInduktion:2024',
               'wiki:ZermeloFraenkelMengenlehre:2026',
+              'Zermelo:UntersuchungenUeberDieGrundlagenDerMengenlehre:1908',
             ));
           ?>
 

@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 01.07.2026, 23:00h
+  // #: Stand: 02.07.2026, 11:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
-  
+
+  //           20260702:  *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
   //           20260701:  +:  "Sc_g_litera_make", 'book':  'editor' is new.
   //           20260629:  +:  "$Sc_g_equation_replace_ary":  Reorder definitions to avoid errors by subsequent replacements.
   //           20260622:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longrightarrow  ' -> '\;\;\;\Longrightarrow\;\;\;'
@@ -1425,7 +1426,7 @@
                 case 'pages':
                   // #: Replace the '-' additionaly.
                   // !: Better first replace here using "$Sc_g_LaTeX_replace_ary" and than replace here the normal "-" with the long "–" char and not with the HTML version. Than replace with HTML in "Sc_g_litera_make" by using "$To_g_Text_replace_ary".
-                  $Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', $item_value);
+                  $Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( array( '--', '-'), array( '&mdash;', '&mdash;'), $item_value);
                   //$Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', htmlentities( $item_value, ENT_COMPAT | ENT_SUBSTITUTE | ENT_HTML401, $Sc_g_litera_encoding));
                   //$Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', utf8_encode( $item_value));
                   break;

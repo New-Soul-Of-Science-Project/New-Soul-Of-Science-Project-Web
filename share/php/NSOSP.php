@@ -3,10 +3,13 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 29.12.2022
-  
+  // #: Stand: 02.07.2026, 11:00h
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
-  
+
+  //           20260702:  +:  "$SupNum_g_footnote_text_HahnSeries":  Primärliteratur ergänzt.
+  //                      +:  "$BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre":  Primärliteratur ergänzt.
+
   //v01.001:  20130515:  +:  History started.
   //          20130522:  +:  "$FrQFT_g_footnote_text_Kosmoi":  New.
   //          20130609:  +:  "$FrQFT_g_footnote_text_ARTLgFormel":  New.
@@ -185,7 +188,7 @@
   $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
   $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
   $BiOrd_g_footnote_text_VollstaendigeInduktion = 'Vgl. \cite{Dedekind:WasSindUndWasSollenDieZahlen:1888}, § 6. Der Satz der vollständigen Induktion, Satz 80, S. 25–27. \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
-  $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
+  $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = 'Vgl. \cite{Zermelo:UntersuchungenUeberDieGrundlagenDerMengenlehre:1908}, §1 Grundlegende Definitionen und Axiome, S. 263–267. \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
 
   $FrQFT_g_footnote_text_ActioUndReactio        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ActioUndReactio:2018}.';
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Aequivalenzprinzip2014}.';
@@ -371,15 +374,15 @@
   $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
   $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
-  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts). \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
+  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts), S. 129. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
   $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
-  $SupNum_g_footnote_text_HahnSeries            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
+  $SupNum_g_footnote_text_HahnSeries            = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
   $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
   $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
   $SupNum_g_footnote_text_Primorial             = 'Vgl. \cite{Dubner:FactorialAndPrimorialPrimes:1987}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
-  $SupNum_g_footnote_text_PythagoreischesTripel = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Der 47. Satz (Satz des Pythagoras). \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅹ, Der 28. Satz (Erzeugungsformel pythagoreischer Tripel). \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
+  $SupNum_g_footnote_text_PythagoreischesTripel = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Der 47. Satz (Satz des Pythagoras), S. 23-24. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅹ, Der 28. Satz (Erzeugungsformel pythagoreischer Tripel), S. 188. \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
   $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
   $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
