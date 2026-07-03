@@ -14,6 +14,7 @@
           <?php
             Sc_g_litera_make( array(
               'Abel:UnmoeglichkeitAlgebraischerGleichungen:1826',
+              'Artin:AlgebraischeKonstruktionReellerKoerper:1927',
               'Bischoff:NeubauDerMathematik:2023',
               'Bischoff:TausendSeitenBeweis:2025',
               'Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024',
@@ -41,6 +42,8 @@
               'Minkowski:GeometrieDerZahlen:1896',
               'Neumann:EineAxiomatisierungDerMengenlehre:1925',
               'Plichta:GottesGeheimeFormel:1995',
+              'Riemann:UeberDieAnzahlDerPrimzahlen:1859',
+              'Steinitz:AlgebraischeTheorieDerKoerper:1910',
               'Wallace:DieEntdeckungDesUnendlichen:2010',
               'Weyl:DieStufenDesUnendlichen:1931',
               'wiki:AbelscheGruppe:2022',
