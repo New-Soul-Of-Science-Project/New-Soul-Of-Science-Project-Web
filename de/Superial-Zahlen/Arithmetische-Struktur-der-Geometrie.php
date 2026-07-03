@@ -483,7 +483,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c^{ω} \cdot c^{q} }{ c^{ω} }  =  \frac{ c^{ω + q} }{ c^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier ist zu bemerken, dass die Potenzen der Primzahlen der Primfaktorzerlegung von \lm{ c } ja größer als Eins sein können.'."\n".
+                    'Hier ist zu bemerken, dass die Potenzen der Primzahlen der Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} von \lm{ c } ja größer als Eins sein können.'."\n".
                     'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c^{ω} = 4^{ω} = *( 2^{2} *)^{ω} = 2^{2 ω} }'."\n".
                     'und damit eine aktual unendliche Größenordnung größer als \lm{ 2^{ω} }, wie oben zuvor.'."\n",
                       'Da stellt sich die Frage:'."\n".

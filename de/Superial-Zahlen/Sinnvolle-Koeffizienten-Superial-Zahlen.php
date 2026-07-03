@@ -599,7 +599,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
-                    'eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
+                    'eine Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

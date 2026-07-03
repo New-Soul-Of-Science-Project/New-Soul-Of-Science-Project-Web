@@ -376,7 +376,7 @@
                       'Entweder sind \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } selber schon größere Primzahlen als \lm{ p }'."\n".
                     'oder es gibt zwischen \lm{ p } und \lm{ p\# - 1 }, also in der \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     '\lm{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} }, mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
-                    'die in der Primfaktorzerlegung von \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } stecken.'."\n".
+                    'die in der Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} von \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } stecken.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
@@ -521,7 +521,7 @@
                       array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\, *[ v_{p}( n ) \; \text{existiert und} \; v_{p}( n ) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen existieren.'."\n".
+                      'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} existieren.'."\n".
                       'Wobei diese Bewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(

@@ -304,7 +304,7 @@
                     'Da über den Beweis der Primzahlprodukt-Vermutung die Identität \lm{ ω = ω\overline{\#} } gilt,'."\n".
                     'operiert diese Familie auf jeder einzelnen mathematischen Schicht des Modells.'."\n".
                     'Sie stellt sicher, dass die divisatorische Feinstruktur aller erweiterten Zahlenmengen'."\n".
-                    '(wie die Parität oder unendliche Primfaktorzerlegungen) über das gesamte transfinite Spektrum hinweg'."\n".
+                    '(wie die Parität oder unendliche Primfaktorzerlegungen\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}) über das gesamte transfinite Spektrum hinweg'."\n".
                     'absolut invariant und widerspruchsfrei erhalten bleibt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -470,7 +470,7 @@
                     'Durch die Kopplung der Hahn-Reihen-Definition an'."\n".
                     'das Haupttheorem der Primzahlprodukt-Vermutung \lm{ ω = ω\overline{\#} } wird nachgewiesen,'."\n".
                     'dass unendlich viele Faktoren im Modell mengentheoretisch rigoros über wohlgeordnete Supports'."\n".
-                    'und verallgemeinerte \lm{ p }-adische Bewertungen ausgedrückt werden können.'."\n",
+                    'und verallgemeinerte \lm{ p }-adische Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} ausgedrückt werden können.'."\n",
                       'Da alle beteiligten mathematischen Objekte innerhalb des von Neumannschen Universums'."\n".
                     'echte Mengen bleiben und zu keinem Zeitpunkt unzulässige echte Klassen bilden,'."\n".
                     'ist die vollständige ZFC-Konformität des Systems garantiert.'."\n",

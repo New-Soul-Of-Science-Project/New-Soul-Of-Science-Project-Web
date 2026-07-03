@@ -159,12 +159,13 @@
                   'AKV in Kürze', subline =>
                     'Beweisidee')),
                   array( 'text', array( intent => '0em', text => array(
-                    'Wir zeigen zunächst mit \lm{ p }-Bewertungen \lm{ v _{p} } und den Bewertungsringen'."\n".
+                    'Wir zeigen zunächst mit \lm{ p }-Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeZahl}} \lm{ v _{p} }'."\n".
+                    'und den Bewertungsringen\footnote{\const{SupNum_g_footnote_text_Valuationsring}}'."\n".
                     '\lm{ V_{p} = *\{ x \in \mathbb{S}_{\Q} *|* v_{p}(x) \ge 0 *\} },'."\n".
                     'dass \lm{ \mathbb{S}_{\Z} = \bigcap_{ p } V_{p} }.'."\n".
-                    'Daraus folgt, dass \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist.'."\n",
+                    'Daraus folgt, dass \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist.\footnote{\const{SupNum_g_footnote_text_GanzAbgeschlossen}}'."\n",
                     'Dann gilt:'."\n".
-                    'Für jede algebraische Ganzzahl \lm{ \beta } ist \lm{ Y = \beta \cdot \s } ganz über \lm{ \mathbb{S}_{\Z} },'."\n".
+                    'Für jede algebraische Ganzzahl\footnote{\const{SupNum_g_footnote_text_GanzesElement}} \lm{ \beta } ist \lm{ Y = \beta \cdot \s } ganz über \lm{ \mathbb{S}_{\Z} },'."\n".
                     'also \lm{ Y \in \mathbb{S}_{\Z} }.'."\n",
                     'Für eine beliebige reell algebraische \lm{ \alpha } wähle \lm{ m \in \mathbb{Z} \setminus *\{ 0 *\} } mit'."\n".
                     '\lm{ \beta = m \cdot \alpha } algebraisch ganz; außerdem absorbiert \lm{ \s } jeden endlichen Nenner,'."\n".
@@ -233,7 +234,7 @@
                       array( display => 'on',  latex => '{  V_{p}  :=  *\{ x \in \mathbb{S}_{\Q}  *|*  v_{p}​(x) \ge 0 *\} \cup *\{ 0 *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    '\italic{Bekannt:} Jeder Bewertungsring \lm{ V_{p} } ist ganz abgeschlossen.'."\n".
+                    '\italic{Bekannt:} Jeder Bewertungsring \lm{ V_{p} } ist ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_GanzAbgeschlossen}}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{A.2} \\\\ Schnittdarstellung \lm{ \mathbb{S}_{\Z} = \bigcap_{p} V_{p} }', subline =>
@@ -322,7 +323,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Beweis.} \\\\'."\n".
-                    'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.'."\n".
+                    'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_IntegralityAndValuationRings}}\footnote{\const{SupNum_g_footnote_text_Valuationsring}}'."\n".
                     'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \blacksquare }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
@@ -508,10 +509,10 @@
                     'Weil \lm{ x } in \bold{jedem} \lm{ V_{p} } liegt, ist für alle \lm{ p } die \lm{ p }-Exponentenzahl des Zählers mindestens so groß wie die des Nenners.'."\n".
                     'Da \lm{ Y^{(0)} } nur \bold{endlich viele} Primteiler hat, können wir aus diesen endlich vielen \lm{ p } einen gemeinsamen Divisor \lm{ D } (tatsächlich eine ganze Zahl) bauen,'."\n".
                     'der \lm{ Y^{(0)} } teilt — und wegen der Ungleichungen auch \lm{ X^{(0)} }.'."\n".
-                    'Nach dem Teilen bleibt im Nenner ein Element ohne positive \lm{ p }-Exponenten übrig, also eine Einheit; damit ist \lm{ X^{(0)} / Y^{(0)} \in \mathbb{S}_{\Z} }, folglich auch \lm{ x \in \mathbb{S}_{\Z} }.'."\n".
+                    'Nach dem Teilen bleibt im Nenner ein Element ohne positive \lm{ p }-Exponenten übrig, also eine Einheit\footnote{\const{SupNum_g_footnote_text_GanzesElement}}; damit ist \lm{ X^{(0)} / Y^{(0)} \in \mathbb{S}_{\Z} }, folglich auch \lm{ x \in \mathbb{S}_{\Z} }.'."\n".
                     'So steht die Gleichheit \lm{ \mathbb{S}_{\Z} = \bigcap_{p} V_{p} }.'."\n",
                       'Aus dieser Darstellung folgt sofort:'."\n".
-                    '\lm{ \mathbb{S}_{\Z} } ist der \bold{Schnitt ganz abgeschlossener} Ringe und daher selbst \bold{ganz abgeschlossen}.'."\n".
+                    '\lm{ \mathbb{S}_{\Z} } ist der \bold{Schnitt ganz abgeschlossener} Ringe und daher selbst \bold{ganz abgeschlossen}\footnote{\const{SupNum_g_footnote_text_GanzAbgeschlossen}}.'."\n".
                     'Genau das brauchen wir für den Schritt zu allen reell algebraischen Zahlen:'."\n".
                     'Ist \lm{ \alpha } reell algebraisch (Nullstelle eines monischen Polynoms mit ganzzahligen Koeffizienten), setze \lm{ Y = \alpha \cdot \s } und multipliziere die Gleichung passend mit einer Potenz von \lm{ \s }.'."\n".
                     'Dann erfüllt \lm{ Y } eine monische Gleichung mit Koeffizienten in \lm{ \mathbb{S}_{\Z} }, ist also ganz über \lm{ \mathbb{S}_{\Z} }.'."\n".
@@ -650,7 +651,7 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Bemerkung – Einheitenkriterium:}'."\n".
-                    'Für \lm{ 0 \ne U \in \mathbb{S}_{\Z}​ } gilt: \lm{ U } ist Einheit \lm{ \Leftrightarrow v_{p}(U) = 0 } für alle \lm{ p }.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GanzesElement:2025} \\\\ Vgl. \cite{wiki:IntegralElement:2025}.}'."\n",
+                    'Für \lm{ 0 \ne U \in \mathbb{S}_{\Z}​ } gilt: \lm{ U } ist Einheit \lm{ \Leftrightarrow v_{p}(U) = 0 } für alle \lm{ p }.\footnote{\const{SupNum_g_footnote_text_GanzesElement}}'."\n",
                     '\italic{Begründung:} Hat \lm{ v_{p}(U) \ge 1 } für ein \lm{ p }, dann teilt \lm{ p } das Hauptideal \lm{ U \mathbb{S}_{\Z} }​, also ist \lm{ U } keine Einheit; umgekehrt folgt aus \lm{ v_{p}(U) = 0 } für \lm{ \forall p } per SA Einheitlichkeit.'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
@@ -691,7 +692,7 @@
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Korrelation – Ganz abgeschlossen:}'."\n".
-                    'Als Schnitt ganz abgeschlossener Ringe \lm{ V_{p} } ist \lm{ \mathbb{S}_{\Z} } selbst ganz abgeschlossen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GanzesElement:2025} \\\\ Vgl. \cite{wiki:IntegralElement:2025} \\\\ Vgl. \cite{wiki:IntegrallyClosedDomain:2024} \\\\ Vgl. \cite{wiki:NormalitaetKommutativeAlgebra:2022}.}'."\n".
+                    'Als Schnitt ganz abgeschlossener Ringe \lm{ V_{p} } ist \lm{ \mathbb{S}_{\Z} } selbst ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_GanzAbgeschlossen}}'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>

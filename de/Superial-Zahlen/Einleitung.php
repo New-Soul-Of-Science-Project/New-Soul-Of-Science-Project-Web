@@ -657,7 +657,7 @@
                   'Rationale Zahlen und ihre Primfaktorzerlegung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung hat,'."\n".
+                    'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} hat,'."\n".
                     'so hat im Grunde auch jede rationale Zahl größer Null und ungleich Eins eine'."\n".
                     'Primfaktorzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
                     ''))),

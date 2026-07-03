@@ -415,7 +415,7 @@
                   array( 'text', array( text => array(
                     'Auf die einzelnen Primfaktoren des Radikanden \lm{ n } bezogen bedeutet dies,'."\n".
                     'dass all ihre Potenzen ein natürliches Vielfaches des Radix \lm{ x } sein müssen,'."\n".
-                    'weil \lm{ m } eine natürliche Zahl größer Null ist, die eine Primfaktorzerlegung besitzt:'."\n".
+                    'weil \lm{ m } eine natürliche Zahl größer Null ist, die eine Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} besitzt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
