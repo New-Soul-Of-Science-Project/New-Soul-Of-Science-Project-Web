@@ -20,12 +20,12 @@
                       
                   array( 'text', array( text => array(
                     'Der Ausgangspunkt zur Entdeckung und Erforschung der Superial-Zahlen war, wie in der \jump{OM:SupNum:Einleitung}{Einleitung}'."\n".
-                    'schon beschrieben, mein Bedürfnis, mehr Klarheit davon zu bekommen, was \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.}'."\n".
-                    'und \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Integralrechnung:2023}.} eigentlich sind.'."\n".
+                    'schon beschrieben, mein Bedürfnis, mehr Klarheit davon zu bekommen, was \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen}\footnote{\const{SupNum_g_footnote_text_Differentialrechnung}}'."\n".
+                    'und \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}\footnote{\const{SupNum_g_footnote_text_Integralrechnung}} eigentlich sind.'."\n".
                     'Ich wollte genauer Verstehen und explizit ausdrücken können, was implizit vor sich geht, wenn wir eine Funktion ableiten oder integrieren.'."\n",
                       'So entdeckte ich die Superial-Zahlen und mit ihnen eine Möglichkeit, bei der ihre normierte aktuale Unendlichkeit'."\n".
                     'in der Entwicklung der Definition der Ableitung und der Integration den Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
-                    'oder das Differential\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.} ersetzt.'."\n".
+                    'oder das Differential\footnote{\const{SupNum_g_footnote_text_DifferentialMathematik}} ersetzt.'."\n".
                     'Auf diese Weise können wir, anstatt den Limes-Operator oder den Differential-Operator zu benutzen, einfach wie gewohnt mit Zahlen rechnen.'."\n",
                       'Es geht also um Transparenz und Genauigkeit oder Detail, denen wir an dieser Stelle den Vorzug gegenüber der Kürze und der alten Gewohnheit'."\n".
                     'von (kurzen) Schreibweisen geben werden.'."\n".
@@ -1899,7 +1899,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:TraumDerSophomores:2024}.}'."\n".
+                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\const{SupNum_g_footnote_text_TraumDerSophomores}}'."\n".
                     'Nur die Bereiche der Addition und deren Feinheit sind unterschiedlich.'."\n".
                     'Diese Gleichung gibt es in zwei Varianten:'."\n".
                     ''))),

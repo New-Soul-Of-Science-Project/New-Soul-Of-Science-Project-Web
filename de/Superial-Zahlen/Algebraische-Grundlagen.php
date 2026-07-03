@@ -1401,7 +1401,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Jedoch kann die Anzahl der Elemente in \lm{ \mathbb{N} } nach den Definitionen \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}'."\n".
-                    'mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n".
+                    'mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\const{SupNum_g_footnote_text_OmegaAnzahlNat}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1519,7 +1519,7 @@
                       '\\\\'."\n".
                       'Den neuen Operator möchte ich an das Verfahren anlehnen, mit dem in Stellenwertsystemen endlicher Basis \lm{ b }'."\n".
                       'beliebige einzelne Ziffern \lm{ a_{i} } einer Zahl \lm{ y } an der Position \lm{ i } ausgerechnet werden können.'."\n".
-                      'Diese Berechnung des Ziffernwerts\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Formeln, Berechnung eines Ziffernwertes.}'."\n".
+                      'Diese Berechnung des Ziffernwerts\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
                       'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
                       ''))),
                   array( 'equations',

@@ -469,7 +469,7 @@
                   array( 'text', array( text => array(
                     'Für den Rest der reell algebraischen Zahlen scheint es nicht simpel zu sein zu zeigen, dass sie ebenfalls'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
-                      'Wegen der Ganz-Abgeschlossenheit der algebraischen Zahlen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
+                      'Wegen der Ganz-Abgeschlossenheit der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_GanzAbgeschlossenAlgZahlen}}'."\n".
                     'und der bereits gezeigten \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit der sinnvollen Koeffizienten}'."\n".
                     'sowie der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Erkenntnisse zur transzendenten Zahl \lm{ \e_{\s} }},'."\n".
                     'die offensichtlich superiale aktual unendlich kleine Summanden enthält, sowie meiner Vermutung,'."\n".

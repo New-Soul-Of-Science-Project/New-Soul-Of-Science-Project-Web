@@ -1276,7 +1276,7 @@
                     'Und unser so definierter Skalenfaktor basiert auf der Menge aller endlichen Primzahlen \lm{ \mathbb{P} }, die alle möglichen dieser Teilungen'."\n".
                     'damit normiert vorgibt.'."\n",
                       '\color{*Bearb}{Gleichzeitig sehen wir, dass die Koeffizienten von \lm{ \s } in einer Fraktalebene \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{den Nullstellen von Polynomen entsprechen},'."\n".
-                    'also mit elliptischen Kurven\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.} und abschließend mit algebraischen Kurven\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeKurve:2023}.}'."\n".
+                    'also mit elliptischen Kurven\footnote{\const{SupNum_g_footnote_text_ElliptischeKurve}} und abschließend mit algebraischen Kurven\footnote{\const{SupNum_g_footnote_text_AlgebraischeKurve}}'."\n".
                     'vollständig dargestellt werden können.}'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich:X', text =>
@@ -1519,7 +1519,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die pythagoreischen Tripel lassen sich auf höhere Potenzen als zwei erweitern und wir landen bei den Fermatschen Tripeln'."\n".
-                    'und damit beim Großen Fermatschen Satz\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.}.'."\n".
+                    'und damit beim Großen Fermatschen Satz\footnote{\const{SupNum_g_footnote_text_GrosserFermatscherSatz}}.'."\n".
                     'Dieser besagt, dass es keine einzige Kombination natürlicher Zahlen gibt, die die folgende Gleichung erfüllt.'."\n".
                     ''))),
 
@@ -1881,7 +1881,7 @@
                     'strukturell niemals vollständig abbilden kann.'."\n",
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
-                    'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
+                    'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlUeberabzaehlbar}}'."\n",
                       'Durch die Superial-Zahlen sehen wir nun, dass die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
                     '– wir können im Rahmen der Superial-Zahlen für solche Mengen tatsächlich plausible Anzahlen definieren –'."\n".
                     'aller reell algebraischen Zahlen \lm{ \overline{\#} \mathbb{A}_{\R} } dem besagten'."\n".

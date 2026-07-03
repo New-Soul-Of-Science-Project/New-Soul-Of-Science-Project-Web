@@ -107,7 +107,7 @@
                   array( 'text', array( text => array(
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \lm{ \e }-Funktion'."\n".
                     'oder die Exponentialfunktion zur Basis \lm{ \e }, der Eulerschen Zahl\footnote{\const{SupNum_g_footnote_text_EulerscheZahl}},'."\n".
-                    'ihre eigene Ableitung ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Ableitung. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Bedeutung in der Mathematik.}'."\n",
+                    'ihre eigene Ableitung ist.\footnote{\const{SupNum_g_footnote_text_Exponentialfunktion}}'."\n",
                       'Mit diesem Wissen ist klar, dass wir eine neue Definition der \lm{ \e }-Funktion gefunden'."\n".
                     'haben, die sich aus der neuen Definition der Ableitung unmittelbar ergibt:'."\n".
                     ''))),
@@ -121,7 +121,7 @@
                     'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \lm{ \s } benutzt haben.'."\n".
                     'Würden wir beispielsweise \lm{ \s^2 } benutzen, wie \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
-                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
+                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\footnote{\const{SupNum_g_footnote_text_Exponentialfunktion}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -225,7 +225,7 @@
                     'berechnen.'."\n".
                     'Dazu schauen wir uns an, wie sich die Werte der Binomialkoeffizienten aus der vorherigen Spalte ergeben.'."\n",
                       'Als Ansatz formulieren wir die altbekannte Regel etwas um, wie sich ein Binomialkoeffizient aus'."\n".
-                    'der über ihm gelegenen Zeile als Summe ergibt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
+                    'der über ihm gelegenen Zeile als Summe ergibt:\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -303,7 +303,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
-                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \color{*Bearb}{(X)} Quadratzahlen'."\n".
+                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \lm{ n - 1 } Quadratzahlen'."\n".
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
@@ -316,7 +316,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + (n - 1)^{2}_{n - 1} *) \\\ \qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + (n - 1)_{n - 1} *) *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.}'."\n".
+                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\const{SupNum_g_footnote_text_QuadratischePyramidalzahl}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
