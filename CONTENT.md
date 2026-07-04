@@ -289,7 +289,7 @@ Leitsatz: *Das reelle Kontinuum ist die Null-Schicht-Projektion eines reicheren 
 | Vorwort | Persönliche Motivation |
 | Einleitung | Zahlentheorie der Analysis; Fraktale Struktur des Aktual-Unendlichen entdecken |
 | Arithmetische Struktur der Geometrie | Herleitung von s aus der Geometrie der Primzahlteile; Kontinuum |
-| Formale Entwicklung | Definitionen; Teilmengen (ℕ, ℤ, Primzahlen); Normalform; 𝕊 ist Körper und geordneter Körper; Erzeugungsanzahl; Grenzwertabschluss und s-Auswertung |
+| Algebraische Grundlagen | Definitionen; Teilmengen (ℕ, ℤ, Primzahlen); Normalform; 𝕊 ist Körper und geordneter Körper; Erzeugungsanzahl; Grenzwertabschluss und s-Auswertung |
 | Sinnvolle Koeffizienten | Welche endlichen Zahlen ergeben im Produkt mit s aktual unendliche ganze Zahlen |
 | Ableitungen und Integrale | Normierte aktuale Unendlichkeit ersetzt Limes/Differential; Fundamentalsatz; Standardisierung (Null-Schicht); s als Standardnormierung der Analysis |
 | Eulersche Zahl e und Exponentialfunktion | Neue Definition über aktual unendliche Zahlen; Transzendenz von e; Quadratur des Kreises |
