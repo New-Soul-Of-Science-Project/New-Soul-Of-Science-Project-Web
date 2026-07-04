@@ -3,10 +3,17 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 03.07.2026, 12:00h
+  // #: Stand: 04.07.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Nichtstandardanalysis":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_PfaffscheForm":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Teleskopsumme":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Paritaet":  Primärliteratur ergänzt.
   //           20260703:  +:  "$SupNum_g_footnote_text_GanzAbgeschlossenAlgZahlen":  Neu; Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_KomplexeZahl":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_Taylorreihe":  Primärliteratur ergänzt.
@@ -435,8 +442,8 @@
   $SupNum_g_footnote_text_ElliptischeKurve      = 'Vgl. \cite{Abel:RecherchesSurLesFonctionsElliptiques:1827} (Grundlegung der Theorie der elliptischen Funktionen). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.';
   $SupNum_g_footnote_text_EulerscheZahl         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788}. \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Beweis der Transzendenz von \lm{ \e }). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_Exponentialfunktion    = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Grundlegung der Exponentialfunktion und der Eulerschen Zahl \lm{ \e }; Limes-Definition \lm{ \e = \lim_{n \to \infty} *( 1 + \frac{1}{n} *)^{n} }). \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}.';
-  $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
-  $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (rigorose Grundlegung der Infinitesimalrechnung; formale Grundlage für den Fundamentalsatz der Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (rigorose Grundlegung der Infinitesimalrechnung; formale Grundlage für den Fundamentalsatz der Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts), S. 129. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_GanzAbgeschlossen     = 'Vgl. \cite{Krull:AllgemeineBewertungstheorie:1932}. \\\\ Internet: \\\\ Vgl. \cite{wiki:GanzesElement:2025}. \\\\ Vgl. \cite{wiki:IntegralElement:2025}. \\\\ Vgl. \cite{wiki:IntegrallyClosedDomain:2024}. \\\\ Vgl. \cite{wiki:NormalitaetKommutativeAlgebra:2022}.';
   $SupNum_g_footnote_text_GanzAbgeschlossenAlgZahlen = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 173 Ganze algebraische Zahlen, S. 524–531 (ganze algebraische Zahlen bilden einen ganz-abgeschlossenen Ring). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
@@ -461,14 +468,14 @@
   $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehreII:1897}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, S. 481. \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
-  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
-  $SupNum_g_footnote_text_Nichtstandardanalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
+  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (Mittelwertsatz der Integralrechnung als Teil der rigorosen Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
+  $SupNum_g_footnote_text_Nichtstandardanalysis = 'Vgl. \cite{Robinson:NonStandardAnalysis:1966} (Begründung der Nichtstandard-Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
   $SupNum_g_footnote_text_OmegaAnzahlNat        = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen (ω als Ordnungstyp von \lm{ \mathbb{N} }). \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.';
   $SupNum_g_footnote_text_Orthogonalitaet       = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Def. 10 (rechter Winkel), Def. 11 (Senkrechte). \\\\ Internet: \\\\ Vgl. \cite{wiki:Orthogonalitaet:2025}.';
   $SupNum_g_footnote_text_PadischeBewertung     = 'Vgl. \cite{Hensel:NeueBegruendungDerTheorieDerAlgebraischenZahlen:1897}. \\\\ Vgl. \cite{Kuerschak:LimesbildungUndAllgemeineKoerpertheorie:1913}. \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
   $SupNum_g_footnote_text_PadischeZahl          = 'Vgl. \cite{Hensel:NeueBegruendungDerTheorieDerAlgebraischenZahlen:1897}. \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
-  $SupNum_g_footnote_text_Paritaet              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.';
-  $SupNum_g_footnote_text_PfaffscheForm         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
+  $SupNum_g_footnote_text_Paritaet              = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 6 (gerade Zahl), Def. 7 (ungerade Zahl). \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.';
+  $SupNum_g_footnote_text_PfaffscheForm         = 'Vgl. \cite{Pfaff:MethodusGeneralis:1815} (Grundlegung der Theorie der Pfaffschen Differentialformen). \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
   $SupNum_g_footnote_text_Polynomdivision       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Polynomdivision:2025}.';
   $SupNum_g_footnote_text_Primfaktorzerlegung   = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
   $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
@@ -478,7 +485,7 @@
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
-  $SupNum_g_footnote_text_Teleskopsumme         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
+  $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
   $SupNum_g_footnote_text_TranszendenteZahl     = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874}, S. 258–262. \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
   $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874} (algebraische Zahlen sind abzählbar; Existenz transzendenter Zahlen). \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Transzendenz von \lm{ \e } und \lm{ π }). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_TranszendenteZahlUeberabzaehlbar = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874} (algebraische Zahlen sind abzählbar; da die reellen Zahlen überabzählbar sind, müssen transzendente Zahlen überabzählbar viele sein). \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.';
