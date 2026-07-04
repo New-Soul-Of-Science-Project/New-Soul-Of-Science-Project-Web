@@ -3,10 +3,77 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 29.12.2022
-  
+  // #: Stand: 04.07.2026, 12:00h
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
-  
+
+  //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Nichtstandardanalysis":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_PfaffscheForm":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Teleskopsumme":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Paritaet":  Primärliteratur ergänzt.
+  //           20260703:  +:  "$SupNum_g_footnote_text_GanzAbgeschlossenAlgZahlen":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_KomplexeZahl":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Taylorreihe":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Binomialkoeffizient":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Exponentialfunktion":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_QuadratischePyramidalzahl":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_AbelscheGruppe":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_ArchimedischesAxiom":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_ArchimedischGeordneterKoerper":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_RingAlgebra":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_AlgebraischeKurve":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_ElliptischeKurve":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_GrosserFermatscherSatz":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_HyperreelleZahl":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_TranszendenteZahlUeberabzaehlbar":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_TraumDerSophomores":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_DifferentialMathematik":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Differentialrechnung":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Integralrechnung":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_OmegaAnzahlNat":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kreisteilungspolynom":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_Arithmetik":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_GeordneterKoerper":  Primärliteratur ergänzt.
+  //                      +:  "$NSOSP_g_footnote_text_KoerperAlgebra":  Primärliteratur ergänzt.
+  //                      +:  "$BiOrd_g_footnote_text_GaussscheSummenformel":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_AlgebraischerZahlkoerper":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_AlgebraischeZahlDichtheit":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RationaleZahl":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_TranszendenteZahlEigenschaften":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_AnalytischeZahlentheorie":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Orthogonalitaet":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_GeometrieZahlen":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Paritaet":  Neu.
+  //                      +:  "$SupNum_g_footnote_text_EulerscheZahl":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kongruenz":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_LanglandsProgramm":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Restklasse":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_GanzAbgeschlossen":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_GanzesElement":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Primfaktorzerlegung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_IntegralityAndValuationRings":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Valuationsring":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_PadischeBewertung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_PadischeZahl":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_DurchRadikaleDarAlgZ":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_GrenzwertFunktion":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_DedekindscherSchnitt":  Primärliteratur ergänzt.
+  //           20260702:  +:  "$SupNum_g_footnote_text_TranszendenteZahl":  Primärliteratur ergänzt.
+  //                      +:  "$BiOrd_g_footnote_text_EchteKlasse":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Stellenwertsystem":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kontinuumshypothese":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Kontinuumshypothese_Einfache":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Gaussklammer":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_Primpolynom":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_LexikographischeOrdnung":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_CauchyProduktformel":  Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_HahnSeries":  Primärliteratur ergänzt.
+  //                      +:  "$BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre":  Primärliteratur ergänzt.
+
   //v01.001:  20130515:  +:  History started.
   //          20130522:  +:  "$FrQFT_g_footnote_text_Kosmoi":  New.
   //          20130609:  +:  "$FrQFT_g_footnote_text_ARTLgFormel":  New.
@@ -169,23 +236,23 @@
                         addtext => '\footnote{\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
 
   
-  $NSOSP_g_footnote_text_AbelscheGruppe         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';
-  $NSOSP_g_footnote_text_ArchimedischesAxiom    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
-  $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
-  $NSOSP_g_footnote_text_Arithmetik             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Arithmetik:2015}.';
-  $NSOSP_g_footnote_text_GeordneterKoerper      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}.';
+  $NSOSP_g_footnote_text_AbelscheGruppe         = 'Vgl. \cite{Abel:UnmoeglichkeitAlgebraischerGleichungen:1826} (Wurzeln einer Gleichung bilden eine kommutative Gruppe — Ursprung des Begriffs »abelsche Gruppe«). \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';
+  $NSOSP_g_footnote_text_ArchimedischesAxiom    = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ, Def. 4 (zu je zwei Größen existiert ein Vielfaches der kleineren, das die größere übertrifft). \\\\ Internet: \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
+  $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = 'Vgl. \cite{Artin:AlgebraischeKonstruktionReellerKoerper:1927} (formal reeller Körper mit archimedischer Ordnung). \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ, Def. 4 (archimedisches Axiom). \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
+  $NSOSP_g_footnote_text_Arithmetik             = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ–Ⅸ (Arithmetik). \\\\ Internet: \\\\ Vgl. \cite{wiki:Arithmetik:2015}.';
+  $NSOSP_g_footnote_text_GeordneterKoerper      = 'Vgl. \cite{Artin:AlgebraischeKonstruktionReellerKoerper:1927}. \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}.';
   $NSOSP_g_footnote_text_NullIstTeilVonPositiv  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Definition.';
-  $NSOSP_g_footnote_text_KoerperAlgebra         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KoerperAlgebra:2023}.';
+  $NSOSP_g_footnote_text_KoerperAlgebra         = 'Vgl. \cite{Steinitz:AlgebraischeTheorieDerKoerper:1910}. \\\\ Internet: \\\\ Vgl. \cite{wiki:KoerperAlgebra:2023}.';
   $NSOSP_g_footnote_text_PeanoAxiome            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
-  $NSOSP_g_footnote_text_RingAlgebra            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
+  $NSOSP_g_footnote_text_RingAlgebra            = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ (Über die Theorie der ganzen algebraischen Zahlen) — enthält den Zahlring-Begriff als Grundlage des algebraischen Rings. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
 
-  $BiOrd_g_footnote_text_EchteKlasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
-  $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
-  $BiOrd_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
+  $BiOrd_g_footnote_text_EchteKlasse            = 'Vgl. \cite{Neumann:EineAxiomatisierungDerMengenlehre:1925}. \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.';
+  $BiOrd_g_footnote_text_GaussscheSummenformel  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}. \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
+  $BiOrd_g_footnote_text_Ordinalzahl            = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
   $BiOrd_g_footnote_text_OrdinalzahlEchteKlasse = 'Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_Ordinalzahl}';
-  $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
-  $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
-  $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
+  $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
+  $BiOrd_g_footnote_text_VollstaendigeInduktion = 'Vgl. \cite{Dedekind:WasSindUndWasSollenDieZahlen:1888}, § 6. Der Satz der vollständigen Induktion, Satz 80, S. 25–27. \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
+  $BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre = 'Vgl. \cite{Zermelo:UntersuchungenUeberDieGrundlagenDerMengenlehre:1908}, §1 Grundlegende Definitionen und Axiome, S. 263–267. \\\\ Internet: \\\\ Vgl. \cite{wiki:ZermeloFraenkelMengenlehre:2026}.';
 
   $FrQFT_g_footnote_text_ActioUndReactio        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ActioUndReactio:2018}.';
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Aequivalenzprinzip2014}.';
@@ -361,51 +428,71 @@
   $SpaLeb_g_footnote_text_RueckenBauchmuskeln   = 'Internet: \\\\ Vgl. \cite{Schumann:DieRueckenmuskulatur:2016}.';
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
-  $SupNum_g_footnote_text_AlgebraischerZahlkoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.';
-  $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
-  $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
-  $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
-  $SupNum_g_footnote_text_CauchyProduktformel   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
-  $SupNum_g_footnote_text_DedekindscherSchnitt  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
-  $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
-  $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
-  $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
-  $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
-  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
-  $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
-  $SupNum_g_footnote_text_GrenzwertFunktion     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
-  $SupNum_g_footnote_text_HahnSeries            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
-  $SupNum_g_footnote_text_HyperreelleZahl       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
-  $SupNum_g_footnote_text_IntegralityAndValuationRings = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
-  $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
+  $SupNum_g_footnote_text_AlgebraischeKurve       = 'Vgl. \cite{Dedekind:TheorieDerAlgebraischenFunktionenEinerVeraenderlichen:1882} (algebraische Behandlung von Funktionenkörpern und algebraischen Kurven). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeKurve:2023}.';
+  $SupNum_g_footnote_text_AlgebraischerZahlkoerper = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, Über die Theorie der ganzen algebraischen Zahlen, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.';
+  $SupNum_g_footnote_text_AlgebraischeZahl      = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, Über die Theorie der ganzen algebraischen Zahlen, S. 434-647, § 160 Zahlenkörper, S. 452-456, § 173 Ganze algebraische Zahlen, S. 524-531. \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_AlgebraischeZahlDichtheit = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874} (algebraische Zahlen sind abzählbar; da \lm{ \Q \subset \mathbb{A}_{\R} } und \lm{ \Q } dicht in \lm{ \R } ist, sind die algebraischen Zahlen dicht). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraicNumber:2025}, Properties.';
+  $SupNum_g_footnote_text_AnalytischeZahlentheorie = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859} (Zeta-Funktion und Primzahlverteilung). \\\\ Internet: \\\\ Vgl. \cite{wiki:AnalytischeZahlentheorie:2022}.';
+  $SupNum_g_footnote_text_Binomialkoeffizient   = 'Vgl. \cite{Pascal:TraiteDuTriangleArithmetique:1665} (Pascalsches Dreieck und Rekursionsregel der Binomialkoeffizienten). \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_CauchyProduktformel   = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885}. \\\\ Internet: \\\\ Vgl. \cite{wiki:CauchyProduktformel:2024}.';
+  $SupNum_g_footnote_text_DedekindscherSchnitt  = 'Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 4 Schöpfung der irrationalen Zahlen, S. 19–24. \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
+  $SupNum_g_footnote_text_DifferentialMathematik = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.';
+  $SupNum_g_footnote_text_Differentialrechnung  = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.';
+  $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = 'Vgl. \cite{Abel:UnmoeglichkeitAlgebraischerGleichungen:1826}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
+  $SupNum_g_footnote_text_ElliptischeKurve      = 'Vgl. \cite{Abel:RecherchesSurLesFonctionsElliptiques:1827} (Grundlegung der Theorie der elliptischen Funktionen). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.';
+  $SupNum_g_footnote_text_EulerscheZahl         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788}. \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Beweis der Transzendenz von \lm{ \e }). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
+  $SupNum_g_footnote_text_Exponentialfunktion    = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Grundlegung der Exponentialfunktion und der Eulerschen Zahl \lm{ \e }; Limes-Definition \lm{ \e = \lim_{n \to \infty} *( 1 + \frac{1}{n} *)^{n} }). \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysis = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (rigorose Grundlegung der Infinitesimalrechnung; formale Grundlage für den Fundamentalsatz der Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1 = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (rigorose Grundlegung der Infinitesimalrechnung; formale Grundlage für den Fundamentalsatz der Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:FundamentalsatzDerAnalysis:2025}, Der Satz, Erster Teil; Beweis, Erster Teil.';
+  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Der 30. Satz (Primteiler eines Produkts), S. 129. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
+  $SupNum_g_footnote_text_GanzAbgeschlossen     = 'Vgl. \cite{Krull:AllgemeineBewertungstheorie:1932}. \\\\ Internet: \\\\ Vgl. \cite{wiki:GanzesElement:2025}. \\\\ Vgl. \cite{wiki:IntegralElement:2025}. \\\\ Vgl. \cite{wiki:IntegrallyClosedDomain:2024}. \\\\ Vgl. \cite{wiki:NormalitaetKommutativeAlgebra:2022}.';
+  $SupNum_g_footnote_text_GanzAbgeschlossenAlgZahlen = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 173 Ganze algebraische Zahlen, S. 524–531 (ganze algebraische Zahlen bilden einen ganz-abgeschlossenen Ring). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_GanzesElement         = 'Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 173 Ganze algebraische Zahlen, S. 524–531. \\\\ Internet: \\\\ Vgl. \cite{wiki:GanzesElement:2025}. \\\\ Vgl. \cite{wiki:IntegralElement:2025}.';
+  $SupNum_g_footnote_text_Gaussklammer          = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}. \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
+  $SupNum_g_footnote_text_GrenzwertFunktion     = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885}. \\\\ Internet: \\\\ Vgl. \cite{wiki:GrenzwertFunktion:2024}.';
+  $SupNum_g_footnote_text_GeometrieZahlen       = 'Vgl. \cite{Minkowski:GeometrieDerZahlen:1896}.';
+  $SupNum_g_footnote_text_GrosserFermatscherSatz = 'Vgl. \cite{Wiles:ModularEllipticCurvesAndFermatsLastTheorem:1995} (vollständiger Beweis des Großen Fermatschen Satzes). \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.';
+  $SupNum_g_footnote_text_HahnSeries            = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
+  $SupNum_g_footnote_text_HyperreelleZahl       = 'Vgl. \cite{Robinson:NonStandardAnalysis:1966} (Begründung der Nichtstandard-Analysis mit hyperreellen Zahlen als rigorosem Fundament für Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
+  $SupNum_g_footnote_text_IntegralityAndValuationRings = 'Vgl. \cite{Krull:AllgemeineBewertungstheorie:1932}. \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
+  $SupNum_g_footnote_text_Integralrechnung      = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Integralrechnung:2023}.';
+  $SupNum_g_footnote_text_Primorial             = 'Vgl. \cite{Dubner:FactorialAndPrimorialPrimes:1987}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
-  $SupNum_g_footnote_text_PythagoreischesTripel = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
-  $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
-  $SupNum_g_footnote_text_Kongruenz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
-  $SupNum_g_footnote_text_LanglandsProgramm     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
-  $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
-  $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
-  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
-  $SupNum_g_footnote_text_Nichtstandardanalysis = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
-  $SupNum_g_footnote_text_PadischeBewertung     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
-  $SupNum_g_footnote_text_PadischeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
-  $SupNum_g_footnote_text_PfaffscheForm         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
+  $SupNum_g_footnote_text_PythagoreischesTripel = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Der 47. Satz (Satz des Pythagoras), S. 23-24. \\\\ Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅹ, Der 28. Satz (Erzeugungsformel pythagoreischer Tripel), S. 188. \\\\ Internet: \\\\ Vgl. \cite{wiki:PythagoreischesTripel:2025}.';
+  $SupNum_g_footnote_text_QuadratischePyramidalzahl = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Summation von Potenzen natürlicher Zahlen; enthält die Formel für die Summe der ersten \lm{ n } Quadratzahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.';
+  $SupNum_g_footnote_text_KomplexeZahl          = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung komplexer Zahlen und der eulerschen Formel \lm{ \e^{\i \varphi} = \cos \varphi + \i \sin \varphi }). \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
+  $SupNum_g_footnote_text_Kongruenz             = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 1–4. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
+  $SupNum_g_footnote_text_Kreisteilungspolynom  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt (De aequationibus circuli), S. 397–448 (Kreisteilungspolynome und ihre Irreduzibilität). \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
+  $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
+  $SupNum_g_footnote_text_LexikographischeOrdnung = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehreII:1897}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
+  $SupNum_g_footnote_text_Maechtigkeit          = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, S. 481. \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (Mittelwertsatz der Integralrechnung als Teil der rigorosen Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:MittelwertsatzDerIntegralrechnung:2024}.';
+  $SupNum_g_footnote_text_Nichtstandardanalysis = 'Vgl. \cite{Robinson:NonStandardAnalysis:1966} (Begründung der Nichtstandard-Analysis). \\\\ Internet: \\\\ Vgl. \cite{wiki:Nichtstandardanalysis:2025}.';
+  $SupNum_g_footnote_text_OmegaAnzahlNat        = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 7. Geordnete Mengen und ihre Ordnungstypen (ω als Ordnungstyp von \lm{ \mathbb{N} }). \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.';
+  $SupNum_g_footnote_text_Orthogonalitaet       = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅰ, Def. 10 (rechter Winkel), Def. 11 (Senkrechte). \\\\ Internet: \\\\ Vgl. \cite{wiki:Orthogonalitaet:2025}.';
+  $SupNum_g_footnote_text_PadischeBewertung     = 'Vgl. \cite{Hensel:NeueBegruendungDerTheorieDerAlgebraischenZahlen:1897}. \\\\ Vgl. \cite{Kuerschak:LimesbildungUndAllgemeineKoerpertheorie:1913}. \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.';
+  $SupNum_g_footnote_text_PadischeZahl          = 'Vgl. \cite{Hensel:NeueBegruendungDerTheorieDerAlgebraischenZahlen:1897}. \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.';
+  $SupNum_g_footnote_text_Paritaet              = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅶ, Def. 6 (gerade Zahl), Def. 7 (ungerade Zahl). \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.';
+  $SupNum_g_footnote_text_PfaffscheForm         = 'Vgl. \cite{Pfaff:MethodusGeneralis:1815} (Grundlegung der Theorie der Pfaffschen Differentialformen). \\\\ Internet: \\\\ Vgl. \cite{wiki:PfaffscheForm:2025}.';
   $SupNum_g_footnote_text_Polynomdivision       = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Polynomdivision:2025}.';
-  $SupNum_g_footnote_text_Primfaktorzerlegung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
-  $SupNum_g_footnote_text_Primpolynom           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
-  $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
+  $SupNum_g_footnote_text_Primfaktorzerlegung   = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 14. Satz (eindeutige Primfaktorzerlegung), S. 157. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}.';
+  $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
+  $SupNum_g_footnote_text_RationaleZahl         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ (Verhältnisse und Proportionen). \\\\ Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 1: Eigenschaften der rationalen Zahlen. \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
-  $SupNum_g_footnote_text_Restklasse            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
-  $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
-  $SupNum_g_footnote_text_Taylorreihe           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
-  $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
-  $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_Valuationsring        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ValuationRing:2024}.';
+  $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
+  $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
+  $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
+  $SupNum_g_footnote_text_TranszendenteZahl     = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874}, S. 258–262. \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
+  $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874} (algebraische Zahlen sind abzählbar; Existenz transzendenter Zahlen). \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Transzendenz von \lm{ \e } und \lm{ π }). \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_TranszendenteZahlUeberabzaehlbar = 'Vgl. \cite{Cantor:UeberEineEigenschaftAllerAlgebraischenZahlen:1874} (algebraische Zahlen sind abzählbar; da die reellen Zahlen überabzählbar sind, müssen transzendente Zahlen überabzählbar viele sein). \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.';
+  $SupNum_g_footnote_text_TraumDerSophomores    = 'Vgl. \cite{Bernoulli:PrincipiaCalculiExponentialium:1697} (Kalkül der Exponentialfunktionen x^x — Grundlage der Integral-Reihen-Identität). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:TraumDerSophomores:2024}.';
+  $SupNum_g_footnote_text_Valuationsring        = 'Vgl. \cite{Kuerschak:LimesbildungUndAllgemeineKoerpertheorie:1913}. \\\\ Vgl. \cite{Krull:AllgemeineBewertungstheorie:1932}. \\\\ Internet: \\\\ Vgl. \cite{wiki:ValuationRing:2024}.';
 
-  
+
   const fig_file_name = 'fig_file_name';
   const fig_alt_description = 'fig_alt_description';
   const width = 'width';
@@ -941,7 +1028,7 @@
     
     // #: SupNum
                             
-    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
+    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem'),
   );
   
   $Glo_g_Redirect_list = array(
@@ -3133,7 +3220,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2026-06-17T09:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2026-07-04T19:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3328,7 +3415,7 @@
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.44-d20260617-t0900" target="_blank">v9.44</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.45-d20260704-t1900" target="_blank">v9.45</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3484,7 +3571,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 17. Juni 2026, 09:00 CET.'."\n";
+    echo $offset.'      Stand 04. Juli 2026, 19:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";

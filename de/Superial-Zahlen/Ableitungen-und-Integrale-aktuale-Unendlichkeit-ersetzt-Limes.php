@@ -20,12 +20,12 @@
                       
                   array( 'text', array( text => array(
                     'Der Ausgangspunkt zur Entdeckung und Erforschung der Superial-Zahlen war, wie in der \jump{OM:SupNum:Einleitung}{Einleitung}'."\n".
-                    'schon beschrieben, mein Bedürfnis, mehr Klarheit davon zu bekommen, was \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.}'."\n".
-                    'und \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Integralrechnung:2023}.} eigentlich sind.'."\n".
+                    'schon beschrieben, mein Bedürfnis, mehr Klarheit davon zu bekommen, was \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen}\footnote{\const{SupNum_g_footnote_text_Differentialrechnung}}'."\n".
+                    'und \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}\footnote{\const{SupNum_g_footnote_text_Integralrechnung}} eigentlich sind.'."\n".
                     'Ich wollte genauer Verstehen und explizit ausdrücken können, was implizit vor sich geht, wenn wir eine Funktion ableiten oder integrieren.'."\n",
                       'So entdeckte ich die Superial-Zahlen und mit ihnen eine Möglichkeit, bei der ihre normierte aktuale Unendlichkeit'."\n".
                     'in der Entwicklung der Definition der Ableitung und der Integration den Limes\footnote{\const{SupNum_g_footnote_text_GrenzwertFunktion}}'."\n".
-                    'oder das Differential\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.} ersetzt.'."\n".
+                    'oder das Differential\footnote{\const{SupNum_g_footnote_text_DifferentialMathematik}} ersetzt.'."\n".
                     'Auf diese Weise können wir, anstatt den Limes-Operator oder den Differential-Operator zu benutzen, einfach wie gewohnt mit Zahlen rechnen.'."\n",
                       'Es geht also um Transparenz und Genauigkeit oder Detail, denen wir an dieser Stelle den Vorzug gegenüber der Kürze und der alten Gewohnheit'."\n".
                     'von (kurzen) Schreibweisen geben werden.'."\n".
@@ -403,7 +403,7 @@
                     'Hieran ist bemerkenswert, dass jede endliche Zahl \lm{ x } im Verhältnis zur unendlich kleinen Einheit \lm{ \s^{-1} }'."\n".
                     'eine ganze Zahl sein muss.'."\n".
                     'Dies drücken wir vorstehend durch die Menge \lm{ \mathbb{S}^{-1}_{\Z} } aus,'."\n".
-                    'wie wir sie in \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert haben.'."\n",
+                    'wie wir sie in \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert haben.'."\n",
                       'Skalieren wir diese Erkenntnis auf die fraktale Ebene der endlichen ganzen Zahlen, indem wir die unendlich kleinen gezählten Einheiten'."\n".
                     'durch Multiplikation mit \lm{ \s } ins Endliche holen, dann erhalten wir für die natürlichen Superial-Zahlen'."\n".
                     'von der Null bis ohne \lm{ x \cdot \s } die Menge:'."\n".
@@ -447,7 +447,7 @@
                   array( 'text', array( text => array(
                     'Wollen wir uns der Integration im Rahmen der Superial-Zahlen nähern, dann stehen bestimmte aktual unendliche Summen'."\n".
                     'und dafür wichtige Eigenschaften der Superial-Zahlen im Mittelpunkt.'."\n".
-                    'Dabei ist es praktisch, die Summen mit Hilfe von \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen}'."\n".
+                    'Dabei ist es praktisch, die Summen mit Hilfe von \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Mengen}'."\n".
                     'zu definieren.'."\n",
                       'Zum einen ist es wichtig zu verstehen, dass ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} } endliche ganze sowie'."\n".
                     'aktual unendlich große ganze Zahlen sind, die alle immer einen Vorgänger und Nachfolger haben.'."\n".
@@ -531,7 +531,7 @@
                     'der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beziehungsweise der superial kleinen ganzen Zahlen'."\n".
                     '\lm{ \mathbb{S}_{\Z}^{-1} } entwickelt haben.'."\n",
                       'Im Falle, dass die Grenzen des Integrals in ihrer Größe vertauscht sind, also, wenn \lm{ x < a } gilt,'."\n".
-                    '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals', text =>
                       
@@ -1054,7 +1054,7 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Noch einmal in \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwert-Schreibweise}:'."\n".
+                    'Noch einmal in \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertschreibweise}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1438,9 +1438,9 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Zur Beschreibung der Summe wird eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} genutzt,'."\n".
-                    'die auf \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} beruht,'."\n".
-                    'welche eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superiale Potenzebene ins superial kleine skaliert} sind.'."\n",
+                    'Zur Beschreibung der Summe wird eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge}{Intervall-Menge} genutzt,'."\n".
+                    'die auf \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} beruht,'."\n".
+                    'welche eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superiale Potenzebene ins superial kleine skaliert} sind.'."\n",
                     'Die direkte Berechnung der beiden rechten Teilsummen aus der linken Summe wollen wir nun angehen.'."\n",
                     ''))),
                   array( 'headline', array( headlineTag => 'h4',  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel', text =>
@@ -1899,7 +1899,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:TraumDerSophomores:2024}.}'."\n".
+                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\const{SupNum_g_footnote_text_TraumDerSophomores}}'."\n".
                     'Nur die Bereiche der Addition und deren Feinheit sind unterschiedlich.'."\n".
                     'Diese Gleichung gibt es in zwei Varianten:'."\n".
                     ''))),

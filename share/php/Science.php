@@ -3,10 +3,16 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.05.2026, 20:00h
+  // #: Stand: 03.07.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
-  
+
+  //           20260703:  *:  "Sc_g_litera_make", 'article':  'language' is now rendered (was missing; @book and @online already had it).
+  //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
+  //                      *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
+  //           20260701:  +:  "Sc_g_litera_make", 'book':  'editor' is new.
+  //           20260629:  +:  "$Sc_g_equation_replace_ary":  Reorder definitions to avoid errors by subsequent replacements.
+  //           20260622:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longrightarrow  ' -> '\;\;\;\Longrightarrow\;\;\;'
   //           20260517:  +:  "$Sc_g_equation_replace_ary":  Add '  \not\subseteq  ' -> '\;\;\;\not\subseteq\;\;\;'
   //           20260503:  +:  "$Sc_g_equation_replace_ary":  Add '  :\subset  ' -> '\;\;\;:\subset\;\;\;', ':\subset' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'
   //           20260123:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Leftrightarrow  ' -> '\;\;\;:\Leftrightarrow\;\;\;'
@@ -679,6 +685,7 @@
                                     // #: Arrange space around symbols and save chars.
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
+                                    array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
@@ -698,22 +705,22 @@
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
-                                    array( '  :=  ', '\;\;\;:=\;\;\;'),
-                                    array( '  =:  ', '\;\;\;=:\;\;\;'),
-                                    array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
+                                    array( '  :=  ', '\;\;\;≔\;\;\;'),
+                                    array( '  =:  ', '\;\;\;≕\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq\;\;\;'),
                                     array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
-                                    array( '  ?=  ', '\;\;\;?=\;\;\;'),
+                                    array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
-                                    array( '  :\in  ', '\;\;\;:\in\;\;\;'),
-                                    array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
+                                    array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
-                                    array( '  \subset  ', '\;\;\;\subset\;\;\;'),
-                                    array( '  :\subset  ', '\;\;\;:\subset\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subset}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
-                                    array( '  ?\subseteq  ', '\;\;\;?\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
+                                    array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
+                                    array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
@@ -723,9 +730,9 @@
                                     array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
+                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
-                                    array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
@@ -1395,6 +1402,7 @@
                 case 'issuesubtitle':
                 case 'chapter':
                 case 'editor':
+                case 'translator':
                 case 'publisher':
                 case 'location':
                 case 'pubstate':
@@ -1421,7 +1429,7 @@
                 case 'pages':
                   // #: Replace the '-' additionaly.
                   // !: Better first replace here using "$Sc_g_LaTeX_replace_ary" and than replace here the normal "-" with the long "–" char and not with the HTML version. Than replace with HTML in "Sc_g_litera_make" by using "$To_g_Text_replace_ary".
-                  $Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', $item_value);
+                  $Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( array( '--', '-'), array( '&mdash;', '&mdash;'), $item_value);
                   //$Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', htmlentities( $item_value, ENT_COMPAT | ENT_SUBSTITUTE | ENT_HTML401, $Sc_g_litera_encoding));
                   //$Sc_g_litera_ary[$entry_label_text][$item_name] = str_replace( '-', '&mdash;', utf8_encode( $item_value));
                   break;
@@ -1628,7 +1636,7 @@
 
                       //$bib_data = 'In: <i>'.$Sc_g_litera_ary[$label_text]['journaltitle'].'</i> '.((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['volume'].' ' : '').'('.((array_key_exists( 'issue', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['issue'].' ' : '').((array_key_exists( 'month', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_month_text_ary[intval( $Sc_g_litera_ary[$label_text]['month'])].' ' : '').$Sc_g_litera_ary[$label_text]['year'].'), S. '.$Sc_g_litera_ary[$label_text]['pages'].'.';
                       //$bib_data = 'In: <i>'.$Sc_g_litera_ary[$label_text]['journaltitle'].((array_key_exists( 'journalsubtitle', $Sc_g_litera_ary[$label_text])) ? '. '.$Sc_g_litera_ary[$label_text]['journalsubtitle'] : '').'</i> '.((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['volume'] : '').((array_key_exists( 'number', $Sc_g_litera_ary[$label_text])) ? ((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? '.' : '').$Sc_g_litera_ary[$label_text]['number'].' ' : ' ').'('.((array_key_exists( 'issue', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['issue'].' ' : '').((array_key_exists( 'month', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_month_text_ary[intval( $Sc_g_litera_ary[$label_text]['month'])].' ' : '').$Sc_g_litera_ary[$label_text]['year'].')'.((array_key_exists( 'issuetitle', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['issuetitle'] : '').((array_key_exists( 'pages', $Sc_g_litera_ary[$label_text])) ? ', S. '.$Sc_g_litera_ary[$label_text]['pages'] : '').'.'.((array_key_exists( 'issn', $Sc_g_litera_ary[$label_text])) ? ' ISSN: '.$Sc_g_litera_ary[$label_text]['issn'].'.' : '');
-                      $bib_data = 'In: <i>'.$Sc_g_litera_ary[$label_text]['journaltitle'].((array_key_exists( 'journalsubtitle', $Sc_g_litera_ary[$label_text])) ? '. '.$Sc_g_litera_ary[$label_text]['journalsubtitle'] : '').'</i> '.((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['volume'] : '').((array_key_exists( 'number', $Sc_g_litera_ary[$label_text])) ? ((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? '.' : '').$Sc_g_litera_ary[$label_text]['number'].' ' : ' ').'('.((array_key_exists( 'issue', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['issue'].' ' : '').((array_key_exists( 'day', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['day'].'. ' : '').((array_key_exists( 'month', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_month_text_ary[intval( $Sc_g_litera_ary[$label_text]['month'])].' ' : '').$Sc_g_litera_ary[$label_text]['year'].')'.((array_key_exists( 'issuetitle', $Sc_g_litera_ary[$label_text])) ? ': <i>'.($Sc_g_litera_ary[$label_text]['issuetitle']).'</i>' : '').((array_key_exists( 'editor', $Sc_g_litera_ary[$label_text])) ? ', Hrsg. von '.($Sc_g_litera_ary[$label_text]['editor']) : '').((array_key_exists( 'pages', $Sc_g_litera_ary[$label_text])) ? ', S. '.$Sc_g_litera_ary[$label_text]['pages'] : '').'.'.((array_key_exists( 'issn', $Sc_g_litera_ary[$label_text])) ? ' ISSN: '.$Sc_g_litera_ary[$label_text]['issn'].'.' : '');
+                      $bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'. ' : '').'In: <i>'.$Sc_g_litera_ary[$label_text]['journaltitle'].((array_key_exists( 'journalsubtitle', $Sc_g_litera_ary[$label_text])) ? '. '.$Sc_g_litera_ary[$label_text]['journalsubtitle'] : '').'</i> '.((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['volume'] : '').((array_key_exists( 'number', $Sc_g_litera_ary[$label_text])) ? ((array_key_exists( 'volume', $Sc_g_litera_ary[$label_text])) ? '.' : '').$Sc_g_litera_ary[$label_text]['number'].' ' : ' ').'('.((array_key_exists( 'issue', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['issue'].' ' : '').((array_key_exists( 'day', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_ary[$label_text]['day'].'. ' : '').((array_key_exists( 'month', $Sc_g_litera_ary[$label_text])) ? $Sc_g_litera_month_text_ary[intval( $Sc_g_litera_ary[$label_text]['month'])].' ' : '').$Sc_g_litera_ary[$label_text]['year'].')'.((array_key_exists( 'issuetitle', $Sc_g_litera_ary[$label_text])) ? ': <i>'.($Sc_g_litera_ary[$label_text]['issuetitle']).'</i>' : '').((array_key_exists( 'editor', $Sc_g_litera_ary[$label_text])) ? ', Hrsg. von '.($Sc_g_litera_ary[$label_text]['editor']) : '').((array_key_exists( 'pages', $Sc_g_litera_ary[$label_text])) ? ', S. '.$Sc_g_litera_ary[$label_text]['pages'] : '').'.'.((array_key_exists( 'issn', $Sc_g_litera_ary[$label_text])) ? ' ISSN: '.$Sc_g_litera_ary[$label_text]['issn'].'.' : '');
                     //}
                     //else     // #err: .
                     //  echo '----------- PHP error: Item "pages" missing in literature label "'.$label_text.'"!';
@@ -1666,7 +1674,7 @@
                       
                       //%!$bib_data = ((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').' '.$location_html.((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.';
                       //%!$bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').' '.$location_html.((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
-                      $bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').((array_key_exists( 'note', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['note'].'.' : '').(' '.$location_html).((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
+                      $bib_data = ((array_key_exists( 'language', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['language'].'.' : '').((array_key_exists( 'edition', $Sc_g_litera_ary[$label_text])) ? ' '.(((string)(int)($Sc_g_litera_ary[$label_text]['edition']) == $Sc_g_litera_ary[$label_text]['edition']) ? $Sc_g_litera_ary[$label_text]['edition'].'. Aufl.' : $Sc_g_litera_ary[$label_text]['edition'].'.') : '').((array_key_exists( 'editor', $Sc_g_litera_ary[$label_text])) ? ' Hrsg. von '.$Sc_g_litera_ary[$label_text]['editor'].'.' : '').((array_key_exists( 'translator', $Sc_g_litera_ary[$label_text])) ? ' Übers. von '.$Sc_g_litera_ary[$label_text]['translator'].'.' : '').((array_key_exists( 'note', $Sc_g_litera_ary[$label_text])) ? ' '.$Sc_g_litera_ary[$label_text]['note'].'.' : '').(' '.$location_html).((array_key_exists( 'publisher', $Sc_g_litera_ary[$label_text])) ? ': '.$Sc_g_litera_ary[$label_text]['publisher'] : '').', '.$Sc_g_litera_ary[$label_text]['year'].'.'.((array_key_exists( 'isbn', $Sc_g_litera_ary[$label_text])) ? ' ISBN: '.$Sc_g_litera_ary[$label_text]['isbn'].'.' : '');
                     }
                     else     // #err: .
                       echo '----------- PHP error: Item "year" missing in literature label "'.$label_text.'"!';

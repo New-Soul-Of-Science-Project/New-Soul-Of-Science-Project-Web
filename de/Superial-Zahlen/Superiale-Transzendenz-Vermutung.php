@@ -21,9 +21,9 @@
                   array( 'text', array( text => array(
                     'Die Superial-Zahlen sind eine Lupe in die Details der reellen Zahlen, in die reell algebraischen'."\n".
                     'wie auch in die transzendenten Zahlen.'."\n",
-                      'Die reell algebraischen Zahlen sind von ihrer Struktur her recht gut bekannt.'."\n".
+                      'Die reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } sind von ihrer Struktur her recht gut bekannt.'."\n".
                     'So konnten wir bereits zeigen, dass sie alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen}'."\n".
-                    'sind.'."\n".
+                    'bilden.'."\n".
                     'Ganz anders die transzendenten Zahlen.'."\n".
                     'Über sie ist im wesentlichen nur bekannt, dass sie alle Zahlen sind, die nicht zu den algebraischen gehören.'."\n".
                     'Ein zwar klares, aber auch recht allgemeines Kriterium, dass nicht viel über ihre Struktur aussagt.'."\n",
@@ -127,7 +127,7 @@
                     'Für \lm{ P \in \mathbb{Z}[x] } setze \lm{ \Phi_{P}(\alpha) = P(\alpha)\s^{\operatorname{deg} P} = \sum_{i=0}^{d} c_{i} \cdot \, T^{i} \cdot \s^{d−i} }.'."\n".
                     'Dann gilt für jede endliche Primzahl \lm{ p }: weil \lm{ p | T } und \lm{ p | \s }, hat jeder Summand mindestens \lm{ d p }-Faktoren,'."\n".
                     'also \lm{ v_{p}(\Phi_{P}(\alpha)) \ge d } (uniformer \lm{ p }-adischer Schub).'."\n",
-                    'Mit dem Dirichlet–Siegel-Lemma konstruiert man induktiv monische Polynome \lm{ P_{k} } mit \lm{ \operatorname{deg} P_{k} \ge k },'."\n".
+                    'Mit dem Dirichlet–Siegel-Lemma\footnote{\const{SupNum_g_footnote_text_GeometrieZahlen}} konstruiert man induktiv monische Polynome \lm{ P_{k} } mit \lm{ \operatorname{deg} P_{k} \ge k },'."\n".
                     '\lm{ *| P_{k}(\alpha) |* \le 2^{−k} } und Kongruenz-Kohärenz \lm{ P_{k + 1} \equiv P_{k}(\operatorname{mod} M_{k}) }'."\n".
                     'bei wachsendem \lm{ M_{k+1} \ge 2 M_{k} } (Minimalrepräsentanten).'."\n".
                     'Aus der Kohärenz stabilisieren die Koeffizienten, also konvergiert \lm{ P_{k} } zu einem monischen \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} }.'."\n".
@@ -155,21 +155,22 @@
                   'Stehende Annahmen (SA) und Notation', subline =>
                     '')),
                   array( 'text', array( intent => '0em', text => array(
-                    'Mit'."\n".
+                    'Als arithmetisches Fundament gilt das normierte, bewertete Stellenwertsystem aus \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.'."\n".
+                    'Unter dessen Gültigkeit erhalten wir mit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  V_{s} \cap \bigcap_{p} V_{p}  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'erhalten wir den Quotientenkörper:'."\n".
+                    'den Quotientenkörper:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Q}  :=  \operatorname{Frac}*( \mathbb{S}_{\Z} *)  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Definiere die \italic{sinnvollen Koeffizienten} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
+                    'Definiere die \italic{\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}} als ganze Superial-Zahlen rein mit belegter Eins-Schicht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -550,7 +551,7 @@
                     'Aus \lm{ \alpha \in \mathbb{A}_{\S} } konstruieren wir Polynome \lm{ P_{k} \in \mathbb{Z}[x] } mit \lm{ \mathrm{deg} P_{k} \ge k } und \lm{ *| P_{k}(\alpha) |* \le 2^{−k} }, kohärent modulo wachsender Moduli \lm{ M_{k} }.'."\n".
                     'Der \lm{ p }-adische Teil kommt „gratis“ aus \lm{ \s }:'."\n".
                     '\lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.'."\n".
-                    'Den archimedischen Teil liefert Dirichlet/Siegel (Geometrie der Zahlen\color{*Bearb}{(Verweis)}) mit vorgegebener Restklasse, und eine profinite Diagonalauswahl stabilisiert die Koeffizienten zu einem monischen Grenzpolynom \lm{ P \in \mathbb{Z}[x] } mit \lm{ P(\alpha) = 0 }.'."\n".
+                    'Den archimedischen Teil liefert Dirichlet/Siegel (Geometrie der Zahlen\footnote{\const{SupNum_g_footnote_text_GeometrieZahlen}}) mit vorgegebener Restklasse, und eine profinite Diagonalauswahl stabilisiert die Koeffizienten zu einem monischen Grenzpolynom \lm{ P \in \mathbb{Z}[x] } mit \lm{ P(\alpha) = 0 }.'."\n".
                     'Damit ist \lm{ \alpha } algebraisch, also \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} }.'."\n".
                     'Zusammen mit AKV folgt schließlich die Gleichheit \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} }.'."\n".
                     ''))),
@@ -818,7 +819,7 @@
                       
                   array( 'bulletlist', array( bullet_ary => array(
                         'Nur die 1-Schicht-Definition \lm{ \mathbb{A}_{\S} = *\{ a \in \mathbb{R}_{\text{endlich}} *|* a \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} *\} } sowie „\lm{ \s } trägt alle endlichen Primzahlen“ gingen in \condb{Lemma – Uniforme \lm{ p }-Adik} ein.',
-                        'Der archimedische Teil (\condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität}) ist reine Geometrie der Zahlen plus Restklassen-Fixierung; Monizität lässt sich über \lm{ \overline{c}_{d} \equiv 1 } erzwingen.',
+                        'Der archimedische Teil (\condb{Lemma – Dirichlet–Siegel mit Restklassen und Monizität}) ist reine Geometrie der Zahlen\footnote{\const{SupNum_g_footnote_text_GeometrieZahlen}} plus Restklassen-Fixierung; Monizität lässt sich über \lm{ \overline{c}_{d} \equiv 1 } erzwingen.',
                         'Die Stabilisierung (\condb{Lemma – Kohärente Folge \lm{ \Rightarrow } stationäre Koeffizienten}) nutzt allein \lm{ M_{k + 1} \ge 2 M_{k} } und Minimalrepräsentanten.',
                         'Der \lm{ p }-adische „Schub“ ist \bold{uniform}: \lm{ \mathrm{deg} P_{k} \ge k \Rightarrow v_{p}(\Phi_{P_{k}}(\alpha)) \ge k } simultan für alle \lm{ p }.',
                     ))), */
@@ -894,7 +895,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Parität}',
-                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\const{SupNum_g_footnote_text_Paritaet}}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -948,7 +949,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung'),
                     )),
               )
           ); ?>

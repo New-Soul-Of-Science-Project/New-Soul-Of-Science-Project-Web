@@ -19,7 +19,7 @@
                     '\\bold{Wirkungsquanten-Impulskegel}',
                     '• Untersuchen, wie sich bei steigender Gravitation und damit verringerndem Gang der Spiralbahnen die Wirkungsquanten-Impulskegel der Vakuum-Elapsonen in deren String in ihrer Lage verändern:',
                     '– Verändern sich die Impulskegel in ihrer Geometrie?',
-                    '⋅ Das tun sie, meiner Meinung nach. Die Impulskegel verlassen die Wirkungsquanten auf ihrer Strukturebene zunächst im 45° Winkel mit √2 (1,41-facher) Lichtgeschwindigkeit. Treffen sie auf die umgebende Struktur des Vakuums und seiner unpolarisierten Photonen, dann wird der Impuls auf diese Strukturen übertragen, dabei ständig abgelängt und pflanzt sich auf der Strukturebene der Elementarteilchen effektiv nur mit Lichtgeschwindigkeit fort.',
+                    '⋅ Das tun sie, meiner Meinung nach. Die Impulskegel verlassen die Wirkungsquanten auf ihrer Strukturebene zunächst im 45° Winkel mit \lm{ \sqrt{2} } (\lm{ 1{,}41 }-facher) Lichtgeschwindigkeit. Treffen sie auf die umgebende Struktur des Vakuums und seiner unpolarisierten Photonen, dann wird der Impuls auf diese Strukturen übertragen, dabei ständig abgelängt und pflanzt sich auf der Strukturebene der Elementarteilchen effektiv nur mit Lichtgeschwindigkeit fort.',
                     '– Wie ist dieses Einklappen mit der Detektorwellenlänge der Vakuum-Elapsonen im Vakuum korreliert?',
                     '– Was passiert dabei am Ereignishorizont eines Schwarzen Lochs? Ragen die Kegel in das Schwarze Loch hinein?',
                     '\\bold{Gravitonen}',

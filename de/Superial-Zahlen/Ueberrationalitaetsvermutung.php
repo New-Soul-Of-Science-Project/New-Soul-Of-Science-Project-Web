@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Primzahlprodukt-Vermutung'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Eigenschaften'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -218,7 +218,7 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen in \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}, hier \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s}},'."\n".
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach den bewiesenen Sätzen in \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}, hier \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s}‹},'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -415,7 +415,7 @@
                   array( 'text', array( text => array(
                     'Auf die einzelnen Primfaktoren des Radikanden \lm{ n } bezogen bedeutet dies,'."\n".
                     'dass all ihre Potenzen ein natürliches Vielfaches des Radix \lm{ x } sein müssen,'."\n".
-                    'weil \lm{ m } eine natürliche Zahl größer Null ist, die eine Primfaktorzerlegung besitzt:'."\n".
+                    'weil \lm{ m } eine natürliche Zahl größer Null ist, die eine Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} besitzt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1491,7 +1491,7 @@
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Als Beispiel betrachten wir als erstes das allgemeine elliptische Integral der I. Art in der Jacobi-Form:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeIntegrale:2024}, Vollständige elliptische Integrale, Definition der vollständigen elliptischen Integrale.}'."\n".
+                      'Als Beispiel betrachten wir als erstes das allgemeine elliptische Integral der I. Art in der Jacobi-Form:\footnote{Vgl. \cite{Jacobi:FundamentaNovaFunctionumEllipticarum:1829} (Definition der elliptischen Integrale erster, zweiter und dritter Art in der Jacobi-Form). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeIntegrale:2024}, Vollständige elliptische Integrale, Definition der vollständigen elliptischen Integrale.}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1600,7 +1600,7 @@
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Erkenntnis können wir dann ebenso auf die \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} erweitern:'."\n".
+                    'Diese Erkenntnis können wir dann ebenso auf die \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} erweitern:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1708,18 +1708,18 @@
                       array( display => 'on',  latex => '{  4^{\frac{ 1 }{ 2 }}  =  2  }'),
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  4^{k + \frac{ 1 }{ 2 }}  =  4^{k} \cdot 2  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  4^{k + \frac{ 1 }{ 2 }}  \in  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  1,41421356237309…  }'),
-                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  2^{k + \frac{ 1 }{ 2 }}  =  2^{k} \cdot 1,41421356237309…  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2^{k + \frac{ 1 }{ 2 }} \notin \mathbb{N}  \land  2^{k + \frac{ 1 }{ 2 }} \in \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  1{,}41421356237309…  }'),
+                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  2^{k + \frac{ 1 }{ 2 }}  =  2^{k} \cdot 1{,}41421356237309…  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2^{k + \frac{ 1 }{ 2 }} \notin \mathbb{N}  \land  2^{k + \frac{ 1 }{ 2 }} \in \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Fall von \lm{ 2^{k} \cdot 1,41421356237309… } kann der Faktor \lm{ 2^{k} } niemals dafür sorgen, dass das'."\n".
+                    'Im Fall von \lm{ 2^{k} \cdot 1{,}41421356237309… } kann der Faktor \lm{ 2^{k} } niemals dafür sorgen, dass das'."\n".
                     'Produkt eine ganze Zahl wird.'."\n",
                       'Für aktual unendliche \lm{ k := g } überspringen wir eben diese Größengrenze:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{g + \frac{ 1 }{ 2 }}  =  2^{g} \cdot 1,41421356237309…  }'),
+                      array( display => 'on',  latex => '{  2^{g + \frac{ 1 }{ 2 }}  =  2^{g} \cdot 1{,}41421356237309…  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  2^{g + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  n^{g + \frac{ 1 }{ 2 }}  =  n^{g} \cdot n^{\frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
@@ -1765,7 +1765,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( \forall a \in \;]0, 1[_{\mathbb{A}_{\S}} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\, *[  *( n + a *) \cdot k  =  n \cdot k + a \cdot k  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( \forall a \in \;]0, 1[_{\mathbb{A}_{\R}} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\, *[  *( n + a *) \cdot k  =  n \cdot k + a \cdot k  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Da \lm{ n \cdot k } eh eine ganze Zahl sein muss, kommt es ja nur darauf an, dass \lm{ a \cdot k } auch eine ganze Zahl wird,'."\n".
@@ -1775,7 +1775,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{A}_{\S} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\;\, *[  b \cdot k  =  \lfloor b \rfloor \cdot k + *( b - \lfloor b \rfloor *) \cdot k  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{A}_{\R} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\;\, *[  b \cdot k  =  \lfloor b \rfloor \cdot k + *( b - \lfloor b \rfloor *) \cdot k  *]  }'),
                       array( display => 'on',  latex => '{  n  =  \lfloor b \rfloor  }'),
                       array( display => 'on',  latex => '{  a  =  b - \lfloor b \rfloor  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  b  =  n + a  }'),

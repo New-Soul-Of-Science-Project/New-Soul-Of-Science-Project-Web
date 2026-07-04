@@ -1,0 +1,1749 @@
+<?php   $Glo_PathRel_back = '../';
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
+
+
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Algebraische-Grundlagen'); ?>
+
+
+      <?php FrQFT_f_Div_Header( '      '); ?>
+
+
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Arithmetische-Struktur-Geometrie'); ?>
+
+	
+          <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
+                array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    // '• Ist \lm{ \mathbb{S} } bezüglich der Addition und Multiplikation ein \jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch geordneter Körper}?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Die Definition der Superial-Zahlen kann auf unterschiedliche Weisen erfolgen.'."\n".
+                    'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst viele'."\n".
+                    'Eigenschaften der endlichen natürlichen Zahlen sowie auch der ganzen Zahlen, der Primzahlen und der rationalen Zahlen'."\n".
+                    'ins Aktual-Unendliche fortgesetzt werden.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
+                    'bezüglich der Addition und Multiplikation.'."\n".
+                    'Sie sind sogar ein \jump{OM:SupNum:Algebraische-Grundlagen:SIstKoerper}{geordneter algebraischer Körper}\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
+                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können,'."\n".
+                    'auch die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen'."\n".
+                    'sowie schließlich sogar \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'ins Aktual-Unendliche erweitert.'."\n",
+                      'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
+                    'wie die natürlichen Zahlen \lm{ \mathbb{N} }, die ganzen Zahlen \lm{ \mathbb{Z} } und die Primzahlen \lm{ \mathbb{P} } zu den'."\n".
+                    'den \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
+                    'den \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen} \lm{ \mathbb{S}_{\Z} }'."\n".
+                    'und sogar zu den \jump{OM:SupNum:Algebraische-Grundlagen:PrimSZ}{superialen Primzahlen} \lm{ \mathbb{S}_{\P} }.'."\n",
+                      'So kommen wir zum Beispiel in die Lage \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen} mit Superial-Zahlen, und somit ganz ohne Limes, zu definieren.'."\n".
+                    'Und wir können auch aktual unendlich kleine ganzahlige Schritte zählen, wodurch wir jetzt \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}'."\n".
+                    'als gewohnte Summen konkret angegebener unendlich vieler, unendlich schmaler Flächenstreifen berechnen können.'."\n",
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n".
+                    'Dies ist genauso wie bei den endlichen natürlichen Zahlen und den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Und unsere aktual unendliche superiale Basis \lm{ \s } ist sogar vom Wert her gleich der besonderen Ordinalzahl \lm{ ω^{ω} }.'."\n".
+                    'Denn wir finden über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} heraus, dass \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}{\lm{ \s = ω^{ω} } ist}.'."\n".
+                    'Und auch noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{weitere Eigenschaften verbinden beide Zahlenarten}.'."\n".
+                    'Nur haben die Superial-Zahlen im Gegensatz zu den Ordinalzahlen unter anderem den Vorteil, dass wir in ihnen beliebig vorwärts und rückwärts zählen können,'."\n".
+                    'was wir für die Integration benötigen.'."\n".
+                    'In den Ordinalzahlen ist nur das vorwärts zählen beliebig weit definiert.'."\n".
+                    'Das Rückwärtszählen endet bei ihren Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}}.'."\n",
+                      'Die Sache mit der Anzahl der Vorgänger ist hingegen anders, als bei den von mir erforschten, auch ins Aktual-Unendliche gehenden'."\n".
+                    '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
+                    'Aktual unendliche Biordinalzahlen sind ganze Zahlen, die bizarrer Weise \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} haben, also als sie selber groß sind.'."\n".
+                    'Und auch in mancherlei anderer Beziehung können wir erkennen, dass diese die noch nicht so „perfekten“ Vorläufer der Superial-Zahlen sind.'."\n".
+                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
+                      'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
+                    'Sie bringen uns die Möglichkeit, die reell algebraischen Zahlen mengentheoretisch und arithmetisch klar strukturiert'."\n".
+                    'sowie auch für fachmathematische Laien auf die praktische Anwendung bezogen recht verständlich ins Aktual-Unendliche zu erweitern.'."\n".
+                    'Denn um diese zu verstehen braucht es nicht unbedingt alle gleich folgenden mathematischen Definitionen.'."\n",
+                      'Nichtsdestotrotz müssen wir jetzt unsere fachmathematischen Definitionen erarbeiten, damit die Superial-Zahlen auf einem sicheren Fundament'."\n".
+                    'gegründet sind.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Vortext:X', text =>
+
+                'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
+                  'Definition durch die Hahn-Reihe')),
+                  array( 'text', array( text => array(
+                    'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } alle reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } umfassen und ins Aktual-Unendliche erweitern,'."\n".
+                    'sind die Koeffizienten der ganzzahligen Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten \lm{ \mathbb{A}_{\S} }},'."\n".
+                    'mit \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} }, definiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Vorstehend sehen wir unschwer im Grunde die Definition eines \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems},'."\n".
+                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise, wie \lm{ *〈 a_{1} *〉*〈 a_{0} *〉․*〈 a_{-1} *〉 }'."\n".
+                    'oder konkreter \lm{ *〈 \frac{ 1 }{ 2 } *〉*〈 \sqrt{ 2 } *〉․*〈 1,\!1 *〉 }, würdigen.'."\n",
+                      'Diese Schreibweise erleichtert das Lesen und ist hilfreich, weil die Stellen des neuen Stellenwertsystems nicht nur Ziffern sein können,'."\n".
+                    'wie im Zehnersystem oder ähnlichen einfachen Systemen.'."\n".
+                    'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was zum Beispiel auch Brüche, Wurzeln und negative Zahlen umfasst.'."\n".
+                    'Sogar beliebige passende formelle Terme können wir für die Stellen einsetzen.'."\n",
+                      'Nun nachfolgend die Überprüfungen von formell wichtigen Eigenschaften und Definitionen wichtiger Untermengen der Superial-Zahlen.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:GanzeSZ'),
+                    )),
+                )
+          ); ?>
+          <br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+
+
+		    	<!  • Ganze Superial-Zahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:GanzeSZ',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} aufzeigen,'."\n".
+                    'ist das Verständnis der ganzen Superial-Zahlen tief mit ihren sinnvollen Koeffizienten verbunden.'."\n".
+                    'Weil dort im Detail erklärt, betrachten wir hier diesen Zusammenhang nicht ganz so tief.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:X', text =>
+                      
+                'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wie müssen ganze Superial-Zahlen nun aussehen?'."\n".
+                    'Eine Superial-Zahl ist dann ganz, wenn all ihre Summanden ganz sind, was bedeutet:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten nur Null-Koeffizienten haben, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
+                        'Im endlichen Summanden \lm{ \s^{0} = 1 } sollten demnach nur ganze Koeffizienten enthalten sein.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s } sollten auch nur ganze Zahlen sein. Das bedeutet, die Koeffizienten können wegen der aktual unendlichen Größe der Basis aus \lm{ \mathbb{A}_{\S} } sein.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
+                    'Sie bestehen nur aus endlichen Brüchen von Primfaktoren endlicher Anzahl und Potenz.'."\n",
+                      'Interessanter und für manch einen wohl etwas überraschender Weise erfüllen aber auch ganzzahlige Wurzeln aus positiven natürlichen Zahlen diese Bedingung, wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
+                    'lernen.'."\n".
+                    'Schließlich kommen wir sogar so weit, dass wir dies für \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{alle durch Radikale darstellbaren reell algebraischen Zahlen}'."\n".
+                    'und dann sogar für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen} zeigen können.'."\n",
+                      'Wir bekommen einen Eindruck und ein Gefühl anhand folgender Beispiele für ganze Superial-Zahlen in'."\n".
+                    'der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\S} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 0 *〉․  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \in  \mathbb{S}_{\Z}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-negativ', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-negativ}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-positiv', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-positiv}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5,2 *〉․  \notin  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․*〈 1 *〉  \notin  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \sqrt[3]{7} - \frac{1}{2} *〉*〈 - \frac{ 1 }{ \sqrt{2} } *〉*〈 3 *〉․  \in  \mathbb{S}_{\Z}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das Beispiel \jumpname{OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-negativ} ist übrigens eine negative ganze Superial-Zahl'."\n".
+                    'und das Beispiel \jumpname{OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-positiv} eine positive ganze Superial-Zahl,'."\n".
+                    'weil die höchste Stelle dominant ist.'."\n",
+                      'Nachfolgend nun eine genaue Definition der ganzen Superial-Zahlen:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns einwenig damit beschäftigen, kommen wir schnell dahinter und können gut verstehen, dass dies plausibel ist.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ'),
+                    )),
+              )
+          ); ?>
+          
+
+		    	<!  • Natürliche Superial-Zahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:GanzeSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Die natürlich Superial-Zahl \lm{ \mathbb{S}_{\N} } leiten sich dann von den ganzen Superial-Zahl leicht ab.'."\n".
+                    'Es sind einfach alle Zahlen aus dieser Menge, die positiv sind, einschließlich der Null:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall u \in \mathbb{S}_{\Z} *)  *[ 0 \leq u *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für den Fall, dass \lm{ d = 0 } ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
+                      'Für \lm{ 0 < d }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
+                    'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ a_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ:X', text =>
+                      
+                'Beispiele für natürliche Superial-Zahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Hier nun auch Beispiele in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}'."\n".
+                    'für die natürlichen Superial-Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 0 *〉․  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 -5 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5,2 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․*〈 1 *〉  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \sqrt[3]{7} - \frac{1}{2} *〉*〈 - \frac{ 1 }{ \sqrt{2} } *〉*〈 3 *〉․  \in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hier entscheidet die dominante höchste Stelle der Zahlen darüber, ob sie in der Menge der natürlichen Superial-Zahlen sind oder nicht.'."\n".
+                    ''))),
+                       
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:PrimSZ'),
+                    )),
+              )
+          ); ?>
+          
+
+          <!  • Superiale Primzahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:PrimSZ',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Es lässt sich sogar die Menge \lm{ \mathbb{S}_{\P} } der superialen Primzahlen definieren.'."\n",
+                      'Dies sind alle \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen}, die'."\n".
+                    'nur durch Eins und durch sich selber ganzzahlig teilbar sind, wie auch sonst bei Primzahlen üblich.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Es existiere also die Menge'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!: *( \forall x \in \mathbb{S}_{\N}^{+}\!: *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'aller superialen Primzahlen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wenn \lm{ \mathbb{A}_{\S} } \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
+                    'dann gehören dazu auch alle endlichen Primzahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{P}  \subset  \mathbb{S}_{\P}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und beispielsweise auch diese vorstehenden aktual unendlich großen Superial-Zahlen.'."\n".
+                    'Dies können wir leicht erkennen, wenn wir uns in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                    'das Primzahl-Flächenprodukt anschauen.'."\n",
+                      'Kommen höhere Potenzen der superialen Basis ins Spiel, müssen wir schauen, ob es nicht binomische Formeln gibt, die diese erzeugen können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\S} *)  *[  a_{2} \cdot \s^{2} + a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Was wir sehen können ist, dass der endliche Summand nur \lm{ \pm 1 } sein kann, denn wäre er eine andere ganze Zahl,'."\n".
+                    'dann wäre die natürliche Superial-Zahl, wegen des Primzahl-Flächenprodukts, durch den Betrag dieser ganzen Zahl teilbar.'."\n",
+                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}'."\n".
+                    'zu beantworten:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'In der Algebra, einem Teilgebiet der Mathematik, ist ein irreduzibles Polynom ein Polynom, das sich nicht als Produkt zweier nicht'."\n".
+                        'invertierbarer Polynome schreiben lässt und somit nicht in „einfachere“ Polynome zerfällt.'."\n".
+                        'Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen)'."\n".
+                        'mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.'."\n"),
+                        addtext => '\footnote{\cite{wiki:IrreduziblesPolynom:2024}.}')),
+
+                  array( 'text', array( text => array(
+                    'Also gibt es sogar superiale Primzahlen unter den Superial-Zahlen.'."\n".
+                    'Noch eine echt bemerkenswerte Eigenschaft der Superial-Zahlen.'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:EindeutigkeitNormalform'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Eindeutigkeit der Normalform  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:EindeutigkeitNormalform',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:PrimSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Seien \lm{ u, v \in \mathbb{S} } in Normalform gegeben durch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  u  =  \sum_{ \forall k \in E } a_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v  =  \sum_{ \forall k \in F } b_{k} \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ a_{k} \ne 0 } für \lm{ k \in E } und \lm{ b_{k} \ne 0 } für \lm{ k \in F }. \\\\'."\n".
+                    'Angenommen \lm{ u = v }.'."\n".
+                    'Dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  F  }'),
+                      array( display => 'on',  latex => '{  *( \forall k *) *[  a_{k}  =  b_{k}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Leitterm).} \\\\'."\n".
+                    'Für \lm{ 0 \ne w = \sum_{ \forall k \in W } c_{k} \s^{k} } sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max(W)  }'),
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  :=  c_{k_{max}} \cdot \s^{k_{max}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Beweis.} \\\\'."\n".
+                    'Angenommen, die beiden Darstellungen seien nicht identisch.'."\n".
+                    'Dann existiert ein Exponent \lm{ k } mit \lm{ a_{k} \ne b_{k} } (wobei wir stillschweigend fehlende Koeffizienten als \lm{ 0 } auffassen;'."\n".
+                    'äquivalent kann man über \lm{ E \cup F } summieren).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Setze'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ \forall k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist \lm{ w \ne 0 }.'."\n".
+                    'Sei'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k_{max}  :=  \max *( *\{ e \in E \cup F *|* a_{k} − b_{k} \ne 0 *\} *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann ist der Leitterm von \lm{ w }'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{lt}(w)  =  *( a_{k_{max}} \! - b_{k_{max}} *) \cdot \s^{k_{max}}  \neq  0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ist insbesondere \lm{ w \ne 0 }, also \lm{ u − v \ne 0 }, im Widerspruch zu \lm{ u = v }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \blacksquare }'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper'),
+                    )),
+              )
+          ); ?>
+          
+
+          <!  • S ist ein Körper  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:SIstKoerper',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:EindeutigkeitNormalform', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Eine sehr wichtige Eigenschaft dafür, dass wir die Superial-Zahlen so nutzen können,'."\n".
+                    'wie wir es bei den reell algebraischen Zahlen auch gewohnt sind, zum Beispiel Ableitungen und Integrale berechnen können,'."\n".
+                    'ist ihre Körpereigenschaft.'."\n".
+                    'Wenn wir mit ihnen praktisch umgehen, merken wir recht schnell, dass wir sie für die Grundrechenarten \lm{ ( +, -, \cdot } und bedingt auch \lm{ / , \uparrow ) } sehr frei'."\n".
+                    'und wie gewohnt nutzen können.'."\n".
+                    'Und doch müssen wir selbstverständlich nun explizit zeigen, dass die Menge \lm{ \mathbb{S} } wirklich ein Körper ist.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper:X', text =>
+
+                'Satz: \lm{ \mathbb{S} } ist ein Körper', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir setzen \lm{ K := \mathbb{A}_{\S} = \mathbb{A}_{\R} } und definieren äquivalent zu Formel \jumpname{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom},'."\n".
+                    'aber noch einmal etwas anders ausgedrückt,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Äquivalent zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{ k \in \mathbb{Z} \!: a_{k} \ne 0 *\} \subseteq \;\rbrack \!-\!\infty , n \rbrack_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'für ein \lm{ n }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper:X', text =>
+                  'Addition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für \lm{ a = \sum a_{k} \cdot \s^{k} } und \lm{ b = \sum b_{k} \cdot \s^{k} } definieren wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a + b  :=  \sum_{ k \in \mathbb{Z} } *( a_{k} + b_{k} *) \cdot \s^{k}  }'),
+                      array( display => 'on',  latex => '{  -a  :=  \sum_{ k \in \mathbb{Z} } *( -a_{k} *) \cdot \s^{k} \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 1 (Abschluss unter \lm{ *( + *) }).} \\\\'."\n".
+                    'Sind'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  \subseteq  \;] \!-\!\infty , n ]_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(b)  \subseteq  \;] \!-\!\infty , m ]_{\mathbb{Z}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a + b)  \subseteq  \;] \!-\!\infty , \max\{ n, m \} ]_{\mathbb{Z}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Für \lm{ k > \max⁡\{ n,m \} } sind \lm{ a_{k } = b_{k} = 0 }, also auch \lm{ a_{k} + b_{k} = 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit sind \lm{ 0 := \sum 0 \cdot \s^{k} } und \lm{ a + (−a) = 0 } offensichtlich.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper:X', text =>
+                  'Multiplikation', subline =>
+                    'Wohldefiniertheit und Abschluss')),
+                  array( 'text', array( text => array(
+                    'Wir definieren das Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot b  :=  \sum_{ k \in \mathbb{Z} } c_{k} \cdot \s^{k}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  c_{k}  :=  \sum_{ i + j = k \in \mathbb{Z} } a_{i} \cdot b_{j}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 2 (Wohldefiniertheit der Koeffizienten \lm{ c_{k} }).} \\\\'."\n".
+                    'Für jedes feste \lm{ k \in \mathbb{Z} } ist die Summe \lm{ c_{k} = \sum_{ i + j = k } a_{i} \cdot b_{j} } endlich (also wohldefiniert in \lm{ K }). \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Wähle \lm{ n, m } mit \lm{ a_{i} = 0 } für \lm{ i > n } und \lm{ b_{j} = 0 } für \lm{ j > m }. \\\\'."\n".
+                    'Ein Summand kann nur dann nicht verschwinden, wenn zugleich \lm{ i \le n } und \lm{ j \le m }.'."\n".
+                    'Aus \lm{ i + j = k } folgt dann \lm{ i = k − j \ge k − m}.'."\n".
+                    'Also liegt \lm{ i } in dem endlichen Intervall'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  k - m  \le  i  \le  n  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'also gibt es nur endlich viele mögliche \lm{ i } und damit nur endlich viele nichtverschwindende Summanden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 3 (Abschluss unter \lm{ *( \cdot *) }).} \\\\'."\n".
+                    'Wenn'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  \subseteq  \;] \!-\!\infty , n ]_{\mathbb{Z}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(b)  \subseteq  \;] \!-\!\infty , m ]_{\mathbb{Z}}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a \cdot b)  \subseteq  \;] \!-\!\infty , n + m ]_{\mathbb{Z}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Für \lm{ k > n + m } gilt:'."\n".
+                    'Für jedes \lm{ i + j = k } ist entweder \lm{ i > n} oder \lm{ j > m }.'."\n".
+                    'Dann ist \lm{ a_{i} \cdot b_{j} = 0 }, also \lm{ c_{k} = 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Definiere \lm{ 1 := 1_{K} \cdot \s^{0} }.'."\n".
+                    'Dann ist \lm{ 1 \cdot a = a } und \lm{ 0 \cdot a = 0 } unmittelbar aus den Koeffizientenformeln.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper:X', text =>
+                  'Ringaxiome', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 4 (Assoziativität, Kommutativität, Distributivität).} \\\\'."\n".
+                    '\lm{ ( \mathbb{S} , + , \cdot )} ist ein kommutativer Ring mit Eins. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Für jede feste Potenz \lm{ \s^{k} } entstehen die Koeffizienten bei \lm{ *( + *) } beziehungsweise \lm{ *( \cdot *) } aus endlichen Summen in \lm{ K }.'."\n".
+                    'Daher darf man in jedem Koeffizienten die üblichen Umformungen, wie Vertauschen, Umklammern, Ausmultiplizieren, durchführen,'."\n".
+                    'weil sie in \lm{ K } gelten und nur endlich viele Terme betreffen.'."\n".
+                    'Somit erben \lm{ *( + *) } und \lm{ *( \cdot *) } Assoziativität, Kommutativität sowie Distributivität von \lm{ K }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Bis hierhin haben wir bereits einen kommutativen Ring mit \lm{ 1 }.'."\n".
+                    'Es bleibt zu zeigen: \italic{jedes} \lm{ a \ne 0 } \italic{hat ein multiplikatives Inverses}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper:X', text =>
+                  'Inverse', subline =>
+                    'Körper-Eigenschaft')),
+                  array( 'text', array( text => array(
+                    'Sei \lm{ 0 \ne a = \sum a_{k} \s^{k} }.'."\n".
+                    'Sei \lm{ n := \max⁡(\supp⁡(a)) } und \lm{ a_{n} \ne 0 }.'."\n".
+                    'Ziehen wir den größten Term heraus, in Form von'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  a_{n} \cdot \s^{n} \cdot ( 1 + u )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  u  :=  \sum_{ r < 0 } u_{r} \cdot \s^{r}  }'),
+                      array( display => 'on',  latex => '{  u_{r}  :=  \frac{ a_{n + r} }{ a_{n} }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beachte: \lm{ u } enthält nur negative Exponenten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir definieren formal'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( 1 + u *)  :=  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } (-u)^{m}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und setzen dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a^{−1}  :=  a_{n}^{−1} \cdot \s^{−n} \cdot ( 1 + u )^{−1}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Jetzt müssen wir zwei Dinge zeigen: (i) \lm{ \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (−u)^{m} } ist ein Element von \lm{ \mathbb{S} } (wohldefiniert), und (ii) es ist wirklich das Inverse.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 5 (Wohldefiniertheit der geometrischen Reihe).} \\\\'."\n".
+                    'Die Reihe \lm{ b := \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (-u)^{m} } definiert ein Element \lm{ b \in \mathbb{S} }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Jeder Faktor \lm{ u } hat nur Exponenten \lm{ < 0 }.'."\n".
+                    'Daher hat \lm{ (−u)^{m} } nur Exponenten \lm{ \le −m }.'."\n".
+                    'Fixiere einen Exponenten \lm{ k \in \mathbb{Z} }.'."\n".
+                    'Dann kann \lm{ \s^{k} } nur aus den Summanden mit \lm{ m \le −k } Beiträge bekommen (für \lm{ m > −k } liegen alle Exponenten von \lm{ (−u)^{m} } strikt kleiner als \lm{ k }).'."\n".
+                    'Es tragen also nur \italic{endlich viele} \lm{ m } zum Koeffizienten bei \lm{ \s^{k} } bei.'."\n".
+                    'Damit sind alle Koeffizienten von \lm{ b } wohldefiniert.'."\n".
+                    'Außerdem ist der Support nach oben durch \lm{ 0 } beschränkt, weil alle \lm{ (−u)^{m} } keine positiven Exponenten besitzen.'."\n".
+                    'Also \lm{ b \in \mathbb{S} }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 6 (Inverse von \lm{ 1 + u }).} \\\\'."\n".
+                    '\lm{ b \cdot (1 + u) = 1 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'In \lm{ \mathbb{S} } gilt wegen \condb{Lemma 5} (Koeffizientenweise nur endliche Beiträge):'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b \cdot (1 + u)  =  *( \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} *) \cdot (1 + u)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;+ \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! u \cdot (-u)^{m}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;- \sum_{ \forall m \in [ 1, \infty [_{\mathbb{Z}} } \!\! (-u)^{m}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u) \\\ \qquad\quad  =  *( (-u)^{0} + (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *) \\\ \qquad\qquad\qquad\quad\;\;\; - *( (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  (-u)^{0}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  1  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Umindexierung ist zulässig, weil jeder Koeffizient nur endlich viele Summanden sieht (wie in \condb{Lemma 5}).'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Korollar 7 (Inverse von \lm{ a }).} \\\\'."\n".
+                    'Mit \lm{ a^{−1} := a_{n}^{−1} \cdot \s^{−n} \cdot b } gilt \lm{ a \cdot a^{−1} = 1 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    '\lm{ a \cdot a^{−1} = a_{n} \cdot \s^{n} \cdot (1 + u) \cdot a_{n}^{−1} \cdot \s^{−n} \cdot b = (1 + u) \cdot b = 1 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit besitzt jedes \lm{ a \ne 0 } ein multiplikatives Inverses, also:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Satz.} \lm{ ( \mathbb{S} , + , \cdot ) } ist ein Körper.'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • S ist ein geordneter Körper  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstKoerper', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    '• Ich denke, wir können zeigen, dass \lm{ \mathbb{S} } eine \jump[https://de.wikipedia.org/wiki/Topologische_Gruppe]{}{topologische Gruppe} und sogar ein \jump[https://de.wikipedia.org/wiki/Topologischer_Ring]{}{topologischer Körper} ist.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Bemerkenswerterweise ist unsere Menge der Superial-Zahlen \lm{ \mathbb{S} } nicht nur ein \jump{OM:SupNum:Algebraische-Grundlagen:SIstKoerper}{algebraischer Körper},'."\n".
+                    'sondern sogar ein linear geordneter Körper,'."\n".
+                    'was wir nachfolgend zeigen.'."\n",
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+
+                'Ordnung der Superial-Zahlen – Beweis', subline =>
+                  'Lexikographisch über der größten Stelle')),
+                  array( 'text', array( text => array(
+                    'Wir definieren die Ordnung auf den Superial-Zahlen so, dass sie dem \italic{Stellenwertprinzip} zur (formalen) aktual unendlichen Basis \lm{ \s } entspricht:'."\n".
+                    'Verglichen wird an der größten Stelle, an der sich zwei Zahlen unterscheiden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Normalform und größte Stelle', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Eine (nichttriviale) Superial-Zahl \lm{ a } werde in Normalform geschrieben als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a_{k} \in \mathbb{A}_{\S} *) *[  a  =  \sum_{ k \in \mathbb{Z} } a_{k} \s^{k}  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei der \italic{Support}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{ k \in \mathbb{Z} \!: a_{k} \ne 0 *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'nach oben beschränkt ist, es existiert also \lm{ n \in \mathbb{Z} } mit \lm{ \supp(a) \subseteq \;\rbrack \!-\!\infty , n \rbrack_{\mathbb{Z}} }.'."\n".
+                    'Diese „oben-endlich“-Bedingung ist genau die Formalisierung der Aussage, dass es eine \italic{größte Stelle} gibt.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 1 (Existenz der größten Stelle).} \\\\'."\n".
+                    'Ist \lm{ a \ne 0 }, dann besitzt \lm{ \supp(a) } ein Maximum \lm{ k_{max} \in \mathbb{Z} }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Jede nichtleere, nach oben beschränkte Teilmenge von \lm{ \mathbb{Z} } hat ein Maximum.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir definieren für \lm{ a \ne 0 }:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \operatorname{lt}(a) := k_{max} \;\;\;\;\;\;\;\;\;\;\;\; } (Leitexponent, „größte Stelle“),'."\n",
+                        '\lm{ \operatorname{lc}(a) := a_{k_{max}} \in \mathbb{A}_{\S} \;\;\; } (Leitkoeffizient).'."\n",
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Positive Elemente und Vergleich', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Wir definieren zunächst Positivität:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Positivität).} \\\\'."\n".
+                    'Für \lm{ a \ne 0 } setzen wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a > 0  :\Leftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\S}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und \lm{ a < 0 } entsprechend durch \lm{ \operatorname{lc}(a) < 0 }.'."\n".
+                    'Außerdem gilt \lm{ 0 \ngtr 0 } und \lm{ 0 \nless 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit definieren wir die Ordnung allgemein über Differenzen:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Definition (Ordnung).} \\\\'."\n".
+                    'Für \lm{ a, b \in \mathbb{S} } definieren wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a < b  :\Leftrightarrow  b - a > 0  }'),
+                      array( display => 'on',  latex => '{  a \le b  :\Leftrightarrow  *( a < b  \lor  a = b *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Äquivalent (und oft anschaulicher):'."\n".
+                    'Für \lm{ a \ne b } gilt \lm{ a < b } genau dann, wenn in \lm{ h := b − a } an der \italic{größten Stelle} \lm{ \operatorname{lt}(h) }'."\n".
+                    'der Leitkoeffizient \lm{ \operatorname{lc}(h) } positiv ist.'."\n".
+                    'Das ist die lexikographische Ordnung über der größten Stelle.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Linearität (Totalität)', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 2 (Trichotomie / Totalität).} \\\\'."\n".
+                    'Für alle \lm{ a, b \in \mathbb{S} } gilt genau eines von \lm{ a < b }, \lm{ a = b }, \lm{ b < a }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Ist \lm{ a = b }, sind wir fertig.'."\n".
+                    'Andernfalls ist \lm{ h = g − f \ne 0 } und besitzt nach \condb{Lemma 1} eine größte Stelle;'."\n".
+                    'dort ist \lm{ \operatorname{lc}(h) \ne 0 }.'."\n".
+                    'Da \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } geordnet ist, gilt \lm{ \operatorname{lc}(h) > 0 } oder \lm{ \operatorname{lc}(h) < 0 },'."\n".
+                    'also \lm{ h > 0 } oder \lm{ h < 0 }, mithin \lm{ a < b } oder \lm{ b < a }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Damit ist \lm{ ( \mathbb{S}, \le ) } eine \italic{lineare Ordnung}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Verträglichkeit mit Addition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 3 (Monotonie unter Addition).} \\\\'."\n".
+                    'Aus \lm{ a < b } folgt für alle \lm{ h \in \mathbb{S} }: \lm{ f + h < g + h }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    '\lm{ f < g \Leftrightarrow g − f > 0 }. Dann ist \lm{ ( g + h ) − ( f + h ) = g − f > 0 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Insbesondere ist die Ordnung \italic{translationsinvariant}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Verträglichkeit mit Multiplikation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Um die Multiplikationsverträglichkeit zu formulieren, nutzen wir den Leitkoeffizienten:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 4 (Leitterm bei Produkten).} \\\\'."\n".
+                    'Für \lm{ a, b \ne 0 } gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{lt}(a \cdot b)  =  \operatorname{lt}(a) + \operatorname{lt}(b)  }'),
+                      array( display => 'on',  latex => '{  \operatorname{lc}(a \cdot b)  =  \operatorname{lc}(a) \cdot \operatorname{lc}(b)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\italic{Begründung:}'."\n".
+                    'Der größte Exponent im Produkt entsteht genau durch die Multiplikation der jeweils größten Stellen; alle anderen Summanden liegen echt darunter.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Lemma 5 (Positivität ist multiplikativ).} \\\\'."\n".
+                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ a \cdot b > 0 }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ \operatorname{lc}(a) > 0 } und \lm{ \operatorname{lc}(b) > 0 } in \lm{ \mathbb{A}_{\S} },'."\n".
+                    'also \lm{ \operatorname{lc}(a \cdot b) = \operatorname{lc}(a) \cdot \operatorname{lc}(b) > 0 }.'."\n".
+                    'Daher \lm{ a \cdot b > 0}.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Korollar 6 (Ordnung ist verträglich mit \lm{ *( \cdot *) }).} \\\\'."\n".
+                    'Gilt \lm{ a < b } und \lm{ h > 0 }, dann \lm{ a \cdot h < b \cdot h }. \\\\'."\n".
+                    '\italic{Begründung:}'."\n".
+                    'Aus \lm{ a < b } folgt \lm{ b − a > 0 }. Mit \lm{ h > 0 } folgt \lm{ ( b − a ) \cdot h > 0 }, also \lm{ b \cdot h − a \cdot h > 0 }, mithin \lm{ a \cdot h < b \cdot h }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
+                  'Ergebnis', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Damit ist die definierte Relation \lm{ *( \le *) } eine \italic{lineare Ordnung}, die mit \lm{ *( + *) } und \lm{ *( \cdot *) } verträglich ist. Unter den üblichen Körperaxiomen für \lm{ \mathbb{S} } folgt:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\bold{Satz.} \\\\'."\n".
+                    '\lm{ ( \mathbb{S},+,\cdot,\le ) } ist ein \italic{linear geordneter Körper}, und die Ordnung ist genau diejenige, die durch den Vergleich an der \italic{größten Stelle} (lexikographisch) gegeben ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Was wir zeigen wollten.'."\n",
+                      'Mehr zu den Ordnungseigenschaften von \lm{ \mathbb{S} } und ihren Teilmengen im Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS}‹}.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen braucht, stellt sich unmittelbar aus ihrer eigenen Konstruktion heraus.'."\n".
+                    'In der \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} zeigt sich, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'haben muss – eine ganze Zahl weit jenseits von \lm{ ω }'."\n".
+                    '(Herleitung: \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }}).'."\n".
+                    'Die klassische Mengenlehre hingegen stellt fest: \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } ist abzählbar unendlich, also gleichmächtig mit \lm{ \mathbb{N} }.'."\n".
+                    'Beide Aussagen sind wahr und widersprechen sich nicht.'."\n".
+                    'Sie messen aber verschiedene Dinge:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Mächtigkeit} fragt: lässt sich \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } bijektiv auf \lm{ \mathbb{N} } abbilden? – Ja.',
+                        '\bold{Erzeugungsanzahl} fragt: wie viele Erzeugungspositionen belegt \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } relativ zur vollständigen Induktion \lm{ ω }? – \lm{ \frac{ \s }{ 2 ω } }.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Genau für diese zweite Frage brauchen wir einen eigenen Begriff.'."\n".
+                    'In dieser Arbeit unterscheiden wir daher zwischen der gewöhnlichen Mächtigkeit einer Menge und ihrer \italic{Erzeugungsanzahl}.'."\n".
+                    'Die Erzeugungsanzahl wird durch die ZFC-Modellkonstruktion motiviert und hier formal eingeführt.'."\n",
+                      'Die gewöhnliche Mächtigkeit fragt danach, ob sich zwei Mengen durch eine bijektive Abbildung einander zuordnen lassen.'."\n".
+                    'Die Erzeugungsanzahl beschreibt demgegenüber, wie viele Objekte innerhalb einer gegebenen Erzeugungsstruktur entstehen,'."\n".
+                    'wenn diese Erzeugung relativ zur vollständigen Induktion \lm{ ω } und den aus ihr abgeleiteten Strukturen betrachtet wird.'."\n",
+                      'Wir bezeichnen die Erzeugungsanzahl einer Menge \lm{ A } mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei ist \lm{ \overline{\#}_{\mathrm{erz}} } \italic{nicht mit der gewöhnlichen Mächtigkeit gleichzusetzen}.'."\n".
+                    '\italic{Vielmehr beschreibt} \lm{ \overline{\#}_{\mathrm{erz}}( A ) } die kombinatorische Anzahl'."\n".
+                    'der Elemente von \lm{ A } innerhalb der jeweils zugrunde gelegten Erzeugungsstruktur.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}}( A ) } eines Objekts, einer Menge oder Struktur \lm{ A }'."\n".
+                      'bezeichnet die Anzahl ihrer Elemente beziehungsweise Erzeugungspositionen relativ zur vollständigen Induktion \lm{ ω }.'."\n".
+                      'Sie unterscheidet sich von der gewöhnlichen Mächtigkeit,'."\n".
+                      'weil sie nicht nur fragt, ob \lm{ A } bijektiv zu einer anderen Menge ist,'."\n".
+                      'sondern wie \lm{ A } innerhalb der durch ω gegebenen Erzeugungsordnung hervorgebracht wird.'."\n".
+                      ''))),
+ 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Schreibweise des Operators', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \overline{\#}_{\mathrm{erz}}( A ) } ist an'."\n".
+                    'die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
+                    '\lm{ A \overline{\#} } angelehnt, bleibt aber von ihr unterschieden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  A \overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet die Mengen-Primfakultät von \lm{ A }, also das Produkt der Primzahlen in \lm{ A }, während'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}( A )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die Erzeugungsanzahl von \lm{ A } bezeichnet.'."\n",
+                      'Wenn aus dem Zusammenhang eindeutig hervorgeht, dass von der Erzeugungsanzahl die Rede ist,'."\n".
+                    'schreiben wir auch kurz'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl:OperativeDefinition', text =>
+                  'Weg 1: Operative Definition', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die operative Definition zählt die Elemente einer Menge \lm{ A } innerhalb des biordinalen Zählfensters'."\n".
+                    '\lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } mithilfe der Indikatorfunktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(A*)  :=  \sum_{k \in ]-ω,\, ω[_{\mathbb{Bn}}}  \mathbf{1}_A(k)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{N}) = ω } ist die Grundlage der operativen Definition:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{N}*)  =  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das Zählfenster \lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } ist biordinal-symmetrisch: Die negativen ganzen Zahlen'."\n".
+                    '\lm{ \mathbb{Z}^{-} } entstehen durch Verschiebung der natürlichen Zahlen, unter Erhalt der Zählrichtung'."\n".
+                    '(\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{biordinale Asymmetrie}), und belegen'."\n".
+                    'ebenso \lm{ ω } Positionen im Zählfenster.'."\n".
+                    'Da \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } das Fenster disjunkt aufteilen, folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}*)  =  ω  +  ω  =  2ω  \;\; .  }'),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl:AxiomatischeFundierung', text =>
+                  'Weg 2: Axiomatische Fundierung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Alternativ lässt sich die Erzeugungsanzahl axiomatisch charakterisieren.'."\n".
+                    'Sechs Eigenschaften legen zusammen fest, was die Erzeugungsanzahl leisten soll:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{Axiom 1 – Normierung:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{N}) = ω }',
+                        '\bold{Axiom 2 – Leere Menge:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\emptyset) = 0 }',
+                        '\bold{Axiom 3 – Additivität:} \\\\ Für disjunkte \lm{ A, B } gilt \lm{ \overline{\#}_{\mathrm{erz}}(A \cup B) = \overline{\#}_{\mathrm{erz}}(A) + \overline{\#}_{\mathrm{erz}}(B) }.',
+                        '\bold{Axiom 4 – Homogenität:} \\\\ Für alle quadratfreien \lm{ d \in \mathbb{N}^{+} } – also Produkte paarweise verschiedener Primzahlen – gilt \lm{ \overline{\#}_{\mathrm{erz}}(d \mathbb{N}) = \tfrac{ω}{d} }.',
+                        '\bold{Axiom 5 – Translationsinvarianz:} \\\\ Für alle \lm{ k \in \mathbb{Z} } und \lm{ A \subseteq \mathbb{Z} } gilt \lm{ \overline{\#}_{\mathrm{erz}}(A + k) = \overline{\#}_{\mathrm{erz}}(A) }.',
+                        '\bold{Axiom 6 – Biordinale Spiegelung:} \\\\ \lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{Z}^{-}) = ω }, wobei \lm{ \mathbb{Z}^{-} = \{-1, -2, -3, \ldots\} } die negativen ganzen Zahlen ohne Null bezeichnet.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Axiom 6 trägt der biordinalen Ontologie Rechnung: Jede negative Zahl entsteht aus einer natürlichen Zahl'."\n".
+                    'durch Verschiebung, ohne Umkehr der Zählrichtung, sodass \lm{ \mathbb{Z}^{-} } und \lm{ \mathbb{N} } dieselbe Erzeugungsanzahl \lm{ ω } besitzen.'."\n".
+                    'Hingegen gilt \lm{ \overline{\#}_{\mathrm{erz}}(-\mathbb{N}) = ω + 1 }, weil \lm{ -\mathbb{N} = \{0, -1, -2, \ldots\} } die Null einschließt'."\n".
+                    'und daher ein Element mehr erzeugt als \lm{ \mathbb{Z}^{-} }.'."\n",
+                      'Aus den Axiomen lassen sich die Kernbeispiele direkt ableiten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}*)  =  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{N}*)  +  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}^{-}*)  =  ω + ω  =  2ω  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(2\mathbb{N}*)  =  \frac{ω}{2}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das erste Ergebnis folgt aus Axiom 3 und 6, das zweite direkt aus Axiom 4 mit \lm{ d = 2 }.'."\n".
+                    'Die ausführliche Herleitung findet sich in den Beispielen unten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Berechnung der Erzeugungsanzahl', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Erzeugungsanzahl verbindet einen kardinalen und einen ordinalen Gesichtspunkt.'."\n".
+                    'Kardinal ist sie, weil sie eine Anzahl ausdrücken soll.'."\n".
+                    'Ordinal ist sie, weil diese Anzahl stets relativ zur vollständigen Induktion \lm{ ω }'."\n".
+                    'und der zugrunde gelegten Erzeugungsstruktur betrachtet wird –'."\n".
+                    'nicht nur, ob zwei Mengen gleichmächtig sind, sondern wie ihre Elemente durch Ordnung, Operation oder Kombinatorik hervorgebracht werden.'."\n",
+                      'Insbesondere soll die Erzeugungsanzahl dazu dienen, zwischen bloßer Gleichmächtigkeit'."\n".
+                    'und unterschiedlicher Erzeugungskombinatorik zu unterscheiden.'."\n".
+                    'So können Mengen gleicher Mächtigkeit im Sinne von ZFC dennoch verschiedene Erzeugungsanzahlen besitzen,'."\n".
+                    'wenn ihre Elemente auf unterschiedliche Weise aus der vollständigen Induktion hervorgehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Beispiele', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein einfaches Beispiel liefert die Menge der geraden natürlichen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 \mathbb{N}  =  *\{ 0, 2, 4, 6, 8, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Klassisch gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| 2 \mathbb{N} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Als geordnete Teilmenge der natürlichen Zahlen wird \lm{ 2 \mathbb{N} } jedoch nicht durch'."\n".
+                    'den Einschritt \lm{ +1 }, sondern durch den Zweierschritt \lm{ +2 } durchlaufen.'."\n".
+                    'So erkennen wir, dass nur jede zweite Zahl vorhanden ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( 2 \mathbb{N} *)  =  \frac{ ω }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Schreibweise \lm{ \frac{ ω }{ 2 } } ist hier im Sinne der erweiterten arithmetischen Struktur von \lm{ ω }'."\n".
+                    'im Beweis der \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹} zu verstehen.'."\n".
+                    'Die gewöhnliche Mächtigkeit sieht diesen Unterschied nicht;'."\n".
+                    'die Erzeugungsanzahl soll solche Unterschiede der Erzeugungsstruktur erfassbar machen.'."\n",
+                      'Ein wichtiges Beispiel liefert die Menge der ganzen Zahlen \lm{ \mathbb{Z} }.'."\n".
+                    'In der gewöhnlichen Mengenlehre gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \mathbb{Z} |*  =  *| \mathbb{N} |*  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die natürlichen und die ganzen Zahlen besitzen also dieselbe Mächtigkeit.'."\n".
+                    'Ihre Erzeugungsstruktur ist jedoch verschieden.'."\n".
+                    'Die natürlichen Zahlen entstehen von der Null aus einseitig durch fortgesetzte Nachfolgerbildung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die ganzen Zahlen besitzen dagegen in der Ordnungsstruktur der \jump{OM:BiOrd:Home:Inhalt}{Biordinalzahlen}'."\n".
+                    'eine zweiseitige Erzeugung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}  =  *\{ \cdots , -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit zeigt \lm{ \mathbb{Z} }, dass Gleichmächtigkeit nicht bedeutet, dass zwei Mengen dieselbe erzeugende Ordnung besitzen.'."\n".
+                    'Die Erzeugungsanzahl soll genau solche Unterschiede erfassen.'."\n",
+                      'Im Rahmen der Biordinalzahlen wird jede negative Zahl in \lm{ \mathbb{Z} } in ihrer'."\n".
+                    'mengentheoretischen Ontologie unter Berücksichtigung der Zählrichtung aus einer jeweiligen'."\n".
+                    'natürlichen Zahl in \lm{ \mathbb{N} } dargestellt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  \rightarrow  -1  }'),
+                      array( display => 'on',  latex => '{  1  \rightarrow  -2  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  n  \rightarrow  - *( n + 1 *) }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es handelt sich dabei um ein Rückwärtszählen, bei dem die ontologische Zählrichtung der zugrunde'."\n".
+                    'liegenden natürlichen Zahl dennoch in Richtung \lm{ +1 } erhalten bleibt.'."\n",
+                      'In dieser Hinsicht trägt \lm{ \mathbb{Z} } nicht nur die abzählbare Mächtigkeit,'."\n".
+                    'sondern auch eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{zweiseitige Erzeugungsstruktur},'."\n".
+                    'also gilt demnach für ihre Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  =  2 ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch \lm{ 2 ω } ist hier als Erzeugungsanzahl in der erweiterten arithmetischen Struktur von \lm{ ω } zu verstehen.'."\n".
+                    'Die biordinale Darstellung der negativen Zahlen zeigt dabei,'."\n".
+                    'wie negative Zahlen innerhalb einer mengentheoretischen Ontologie dargestellt werden können.'."\n".
+                    'Die Erzeugungsanzahl knüpft an diese Darstellung an, indem sie nicht nur die Anzahl der Elemente,'."\n".
+                    'sondern auch die Richtung und Struktur ihrer Erzeugung berücksichtigt.'."\n",
+                      'Und für die superiale Basis ist die Erzeugungsanzahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \s *)  =  \s  =  ω^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hierbei bleibt die zugrunde liegende Erzeugungseinheit \lm{ ω }.'."\n".
+                    'Die Potenzierung beschreibt nicht eine andere Grund-Erzeugungsstruktur,'."\n".
+                    'sondern eine durch \lm{ ω } iterierte Erzeugungskombinatorik.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Nachkommastellen}',
+                    // '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    // '– Das ergibt sich aus den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen, stolpern wir über viele Fragen.'."\n".
+                    'Eine der Fragen ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Rationale Zahlen wie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ 3 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sind direkt \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
+                    'Auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\overline{3}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist exakt als sinnvoller Koeffizient geeignet, sofern es als periodische Regel beziehungsweise Grenzwertabschluss verstanden wird.'."\n".
+                    'Denn nach der algebraischen Koeffizientenstruktur beziehungsweise \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{AKV}'."\n".
+                    'darf die algebraische Zahl \lm{ ⅓ } als'."\n".
+                    'exakter sinnvoller Koeffizient keine superial kleinen Restanteile besitzen,'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n",
+                      'Aber'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist nicht exakt gleich \lm{ ⅓ }, sondern besitzt den Rest'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Also ist der Wert nur'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit wird klar:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist nicht das Ende jeder unendlichen Darstellung.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Sondern:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\lm{ \s } ist die Standard-Schrittanzahl der Superial-Analysis'."\n".
+                      'und kann als natürliche Standardnormierung der Analysis allgemein verstanden werden.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Als Kontrastbeispiel schauen wir uns die Berechnung der Eulerschen Zahl an:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e-Def-durch-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der klassische Grenzwertabschluss.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die superiale Standardauswertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  〈1〉․〈1〉^{〈1〉_{1}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist dagegen eine \lm{ \s }-Auswertung in der Standardnormierung der Superial-Analysis.'."\n",
+                      'Damit gilt sinngemäß:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( \e_{\s} *)  =  \e  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'aber \lm{ \e_{\s} } enthält zusätzlich die superiale Grenzwertspur,'."\n".
+                    'wobei \lm{ \operatorname{std} } hier die Standardisierung beziehungsweise die Null-Schicht-Projektion bezeichnet.'."\n".
+                    ''))),
+                  /*%! array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Es scheint zunächst banal, jedoch eröffnet die folgende Betrachtung interessante Einsichten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten:X', text =>
+                      
+                'Wie weit ins unendlich Kleine reichen die Summanden der periodischen rationalen Koeffizienten der Superial-Zahlen?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns mit den Superial-Zahlen und somit mit der Unendlichkeit beschäftigen stolper wir in viele Fragen.'."\n".
+                    'Eine der Fragen, die aufkommt, ist, wie sich die einzelnen Stellen des superialen Stellenwertsystems berechnen.'."\n",
+                      'Nehmen wir an, in der endlichen Stelle wollen wir die Zahl \lm{ ⅓ } darstellen und ein \lm{ \s^{-1} } addieren zu \lm{ ⅓ + \s^{-1} } – nur als Beispiel.'."\n",
+                      'Als Bruch ist dies völlig klar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 \frac{ 1 }{ 3 } *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aber als Dezimalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  *〈 0,\!33333\overline{3} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} \\\ \qquad\qquad\qquad\qquad\;\;\;\, + 3 \cdot 10^{-3} + 3 \cdot 10^{-4} + \cdots *〉.*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'stellt sich die Frage, wieviele Nachkommastellen die Zahl hat.'."\n".
+                    'Denn wir wissen, dass die algebraische Zahl \lm{ ⅓ } am Ende \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{keine superial kleinen Summanden enthalten darf},'."\n".
+                    'die in die Stellen \lm{ \s^{-1} }, \lm{ \s^{-2} } und kleiner hineinwirken.'."\n".
+                    'Denn sie muss ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} sein.'."\n",
+                      'Schauen wir uns also an, welche Entfernung, sprich Differenz, zu \lm{ ⅓ } wir noch haben, wenn wir \lm{ n } Summanden addieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  *〈 a_{0} *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  a_{0,n}  =  \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  a - a_{0,n}  }'),
+                      array( display => 'on',  latex => '{  d_{n}  =  \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ *( \frac{ 1 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 10^{-k} *) \cdot 3 }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ \frac{ 3 }{ 3 } - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 3 \cdot 3 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 - \!\! \sum_{ k \in [ 1 , n [_{\mathbb{N}} } \!\! 9 \cdot 10^{-k} }{ 3 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 \cdot 10^{-n} }{ 3 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  d_{n}  =  \frac{ 1 }{ 3 } \cdot 10^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nehmen wir einmal an, wir ziehen – prozessieren – es einmal in Anzahl der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'oder selbst \lm{ \s }-mal komplett durch,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'dann stellen wir fest, dass wir immer noch nicht \lm{ ⅓ } erreicht haben, denn die Differenz ist zwar bereits unendlich klein,'."\n".
+                    'aber immer noch nicht verschwunden.'."\n",
+                      'Bei \lm{ n = ω } gibt es dabei zwar keine unendlich kleinen Summanden, aber was nützt es, wenn wir \lm{ ⅓ } ja nicht erreichen.'."\n".
+                    'Bei \lm{ n = \s } haben wir dann schon aktual unendlich kleine Summanden und trotzdem \lm{ ⅓ } nicht erreicht.'."\n".
+                    'Wie können wir die Situation nun verstehen?'."\n".
+                    'Ebenfalls ist die Frage, die \lm{ n } welcher Menge machen hier Sinn oder sind überhaupt erlaubt.'."\n",
+                      'Jedenfalls stellen wir fest, dass wir uns \lm{ ⅓ } immer mehr annähern, je mehr Summanden wir addieren.'."\n".
+                    'Das hört offensichtlich nie auf und geht bis ins Aktual-Unendliche immer weiter.'."\n".
+                    'Wir sehen aber auch, dass wir hoffen können, dass die Summe wieder komplett endlich wird, wenn wir sie nie, auch nicht im Aktual-Unendlichen, enden lassen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))), */
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Formalien  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:Formalien',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Nachfolgend wichtige Definitionen zur Schaffung von Werkzeugen, die es ermöglichen, die Superial-Zahlen, ihre Untermengen und'."\n".
+                    'Summen einfach zu definieren, darzustellen und mit ihnen praktisch umgehen zu können.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen'),
+                    )),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
+
+                'Zahlen und Mengen im Unendlichen', subline =>
+                  'Der Übergang von Mengen und Werten endlicher natürlicher Zahlen ins Aktual-Unendliche')),
+                  array( 'text', array( text => array(
+                    'Wir beleuchten einmal tiefer, welche hier wichtigen Eigenschaften von natürlichen Zahlen, deren Werten und Mengen dieser'."\n".
+                    'sich auf welche Weise beim Übergang vom Endlichen ins Aktual-Unendliche wie verhalten sollten oder gar müssen,'."\n".
+                    'um plausibel zu sein und in Bezug auf die Superial-Zahlen Sinn zu ergeben.'."\n",
+                      'Das bedeutet nicht, dass es prinzipiell nicht auch weitere Möglichkeiten mit ihren Perspektiven und deren jeweiligen Vor- und Nachteilen gibt.'."\n".
+                    'Mir erscheint die nachfolgende Perspektive natürlich am besten zum Erkenntnisgewinn geeignet und in diesem Sinne als am besten zu den Superial-Zahlen passend.'."\n"))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+                  'Die Teilmengen vom Beginn der natürlichen Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Betrachten wird die Teilmengen \lm{ \mathbb{T}_{n} }, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \lm{ n }.'."\n",
+                      'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  *\{ 0, 1, 2, 3, 4, …, n - 1 *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Formell korrekter können wir schreiben, wenn wir nachfolgend die Menge aller natürlichen Zahlen \lm{ \mathbb{N} } als stets mit der Null beginnend annehmen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  *\{  x  *|*  *( n \in \mathbb{N} *) *( \forall x \in \mathbb{N} *) *[  x < n  *]  *\}  }'),
+                    ))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die Teilmenge \lm{ \mathbb{T}_{n} } der ersten \lm{ n } Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
+                      'Ich nehme das Element \lm{ n } aus der Menge der natürlichen Zahlen \lm{ \mathbb{N} } und alle \lm{ x }, die kleiner als \lm{ n } sind.'."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \lm{ \mathbb{T}_{n} } größer als alle Elemente dieser Menge ist.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Mein Freund Raimund Welsch machte mich in diesem Zusammenhang ganz zurecht darauf aufmerksam, dass dies eben nur gilt, wenn die natürlichen Zahlen vorstehend einschließlich der Null definiert sind.'."\n",
+                        'Ich antworte darauf, dass dies deutlich macht, wie sinnvoll und plausibel die Definition der natürlichen Zahlen einschließlich der Null ist,'."\n".
+                      'wenn wir uns mit dem Übergang uns Unendliche beschäftigen.'."\n".
+                      ''))),
+                      
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+                  'Das größte Element dieser Mengen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Menge \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
+                    'Wenn das Symbol \lm{ \# } die Anzahl der Elemente einer Menge gibt, dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  \#\mathbb{T}_{n}  =  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \exists \, \mathrm{groesstes}(\mathbb{T}_{n}) *)  *[  \mathrm{groesstes}(\mathbb{T}_{n})  =  n - 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathrm{groesstes}(\mathbb{T}_{n}) + 1  =  n  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall i \in \mathbb{T}_{n} *)  *[  i  <  n  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die letzte Aussage \lm{ \forall i < n } wird sich nachfolgend als wesentlich, weil auch im Aktual-Unendlichen weiter tragfähig, herausstellen.'."\n".
+                    'Die Aussage \lm{ \mathrm{groesstes}(\mathbb{T}_{n}) = n - 1 } gilt offenbar nur im Endlichen und ergibt im Aktual-Unendlichen keinen Sinn mehr.'."\n",
+                      'Wir gehen nun ins Unendliche über und schauen uns das mal näher an.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+                  'Übergang ins Aktual-Unendliche', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Anders als im Endlichen bei der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
+                    'die unendlich viele Elemente endlicher Größe enthält.'."\n".
+                    'Auch sie beginnt mit der Null und den weiteren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
+                    'weil es zu jedem Element einen Nachfolger gibt, denn es ist die Menge der vollständigen Induktion:\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Rightarrow  \nexists \, \mathrm{groesstes}(\mathbb{N})  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Jedoch kann die Anzahl der Elemente in \lm{ \mathbb{N} } nach den Definitionen \jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N} und \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}'."\n".
+                    'mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\const{SupNum_g_footnote_text_OmegaAnzahlNat}}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \#\mathbb{N}  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  -ω  <  a  <  ω  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  0  <  ω^{-1}  <  a^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
+                    'anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
+                    'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\S} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
+                    'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
+                    'Denn unsere Untersuchung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulerschen Zahl \lm{ \e }} – hierin als \lm{ \e_{\s} } bezeichnet –'."\n".
+                    'aufgrund der \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung} mit Hilfe von Superial-Zahlen,'."\n".
+                    'lässt nämlich die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutung} aufkommen,'."\n".
+                    'dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
+                      'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
+                      'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
+                    'sowie zwischen den endlichen Zahlen liegen.'."\n".
+                    'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere Zahl aus \lm{ \mathbb{A}_{\S} },'."\n".
+                    'wie alle rationalen Zahlen oder alle durch Radikale darstellbaren algebraischen Zahlen.'."\n".
+                    'Die Zahl \lm{ \pm ω^{-1} } verhält sich ähnlich, wie der Limes einer Umgebung \lm{ \varepsilon }, der gegen plus oder minus Null geht.'."\n".
+                    'Nur sind diese Umgebungszahlen nicht unscharf, wie ein Limes, sondern konkret und damit scharf.'."\n",
+                      'Das gleiche gilt, wenn wir das \lm{ ω } durch die noch viel größere superiale Basis \lm{ \s = ω^{ω} } ersetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  \s  *]  }',
+                                               label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s}', label_incr => true),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }',
+                                               label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  - \s  <  a  <  \s  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S}^{+} *)  *[  0  <  \s^{-1}  <  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Eigenschaft der Superial-Zahlen, mit ihnen keinen unscharfen, sondern einen konkreten „Limes“ definieren zu können, eröffnet die Möglichkeit'."\n".
+                    'wichtige Eigenschaften der Zahlen näher untersuchen zu können, wie wir später sehen werden.'."\n".
+                    'Sie ermöglicht so unter anderem die Definition einer konkreten aktual unendlichen Differentialrechnung, wie oben schon angedeutet.'."\n".
+                    ''))),
+
+                  // #Ref: *SupNum:Stellenwertsystem-Schreibweise
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem', text =>
+                      
+                'Stellenwertsystem', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine der Eigenschaften der Superial-Zahlen ist, dass es sich um ein Stellenwertsystem handelt.'."\n".
+                    'Es ist ein aktual unendliches Stellenwertsystem, in dem es eine endliche Stelle gibt und deren „Ziffern“'."\n".
+                    'nicht nur ganze Zahlen oder alle rationalen Zahlen sein können, sondern eine große Menge an reell algebraischen Zahlen, wenn nicht gar'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
+                    'Also können sogar negative Zahlen, Brüche, Wurzeln und so fort hier Ziffern sein.'."\n",
+                      '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
+                      'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+                  'Ein besonderes Zahlensystem und seine Kurznotation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Stellenwertsystem auf Basis der superialen Basis \lm{ \s }.'."\n",
+                      'Nachfolgend wird das Symbol \lm{ \concat } für die Aneinanderreihung, die Konkatenation,'."\n".
+                      'der „Ziffer“ nach der Definition \jumpname{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom} der Superial-Zahlen verwendet:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierbei ist an jeder spitzen Klammer ein Index notiert, die wir großteils in der Praxis auch weglassen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Im Allgemeinen notieren wir die nullte Stelle, oft schlicht mit einem Punkt, denn die von dort aufsteigenden oder absteigenden Stellen'."\n".
+                          'verstehen sich durchs Abzählen.',
+                        'Wenn es nur die minus-erste Stelle und niedrigere gibt, dann notieren wir die Null oder den Punkt vor der minus-ersten Stelle.',
+                        'Gibt es keine nullte oder minus-erste Stelle, dann notieren wir an die niedrigste Stelle deren Index.',
+                        'Sollten nach oben hin Sprünge im Index sein, dann notieren wir ihn an der nullten Stelle oder nach der niedrigsten Stelle und dann nach jedem Sprung, damit klar ist, wo es weiter geht.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auf diese Weise ergibt sich eine recht einfache Notation.'."\n".
+                    'An jeder Stelle können dann Terme eingetragen werden.'."\n".
+                    'Am Ende der Rechnung wird angestrebt, dass die Terme rein endliche Ausdrücke ergeben,'."\n".
+                    'die nicht mehr zu Überträgen in andere Stellen führen, wenn dies geht.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+                  'Beispiele für unsere Kurznotation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Nun ein paar Beispiele in der neuen Notation:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\S} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  - \frac{3}{5} \cdot \s^{2} + 25 \cdot \s^{1} + 3,5 \cdot \s^{0} - 7,2 \cdot \s^{-1} \\\ \qquad\qquad\qquad\quad  =  *〈 - \frac{3}{5} *〉〈25〉〈3,5〉․〈-7,2〉 \\\ \qquad\qquad\qquad\quad  =  *〈- \frac{3}{5} *〉〈25〉〈3,5〉_{0}〈-7,2〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
+                    'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:Berechnung-Stellen', text =>
+                  'Berechnung der einzelnen Stellen im superialen Stellenwertsystem', subline =>
+                    'Die neue Unendlichkeits-Gaußklammer')),
+                  array( 'text', array( text => array(
+                    'Die Aufgabe, aus einer beliebigen Superial-Zahl eine „Ziffer“, oder besser eine Stelle, herauszufiltern,'."\n".
+                    'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operator dafür auskommt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Den neuen Operator möchte ich an das Verfahren anlehnen, mit dem in Stellenwertsystemen endlicher Basis \lm{ b }'."\n".
+                      'beliebige einzelne Ziffern \lm{ a_{i} } einer Zahl \lm{ y } an der Position \lm{ i } ausgerechnet werden können.'."\n".
+                      'Diese Berechnung des Ziffernwerts\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
+                      'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir können diese Formel im Grunde auch zur Berechnung der Stellen von Superial-Zahlen benutzen, allerdings geht dies nur, wenn wir die Gaußklammer'."\n".
+                      'etwas anders definieren.'."\n".
+                      'Die neue Unendlichkeits-Gaußklammer \lm{ {\left\lfloor x \right\rfloor}_{\infty} } entfernt einfach sämtliche'."\n".
+                      'aktual unendlich kleinen Summanden aus der Zahl \lm{ x }, egal, welcher Größenordnung unterhalb der endlichen Zahlen sie auch sein mögen.'."\n".
+                      'Es gilt also beispielsweise \lm{ {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty} = *〈 c *〉*〈 b *〉.\; }.'."\n",
+                      'So können wir jetzt äquivalent zu einer endlichen Basis auch für unsere superialen Basis definieren,'."\n".
+                      'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }'),
+                      array( display => 'on',  latex => '{  i  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Was wir erreichen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Den neue Unendlichkeits-Gaußklammer benötigen wir sodann auch dabei, die'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge', text =>
+                      
+                'Intervall-Menge', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine etwas allgemeinere Definition der Intervall-Menge eines Intervalls\footnote{Internet: \\\\ Vgl. \cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x \leq b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'so können wir flexibel Intervall-Mengen definieren.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Aufgrund der Komplexität der Superial-Zahlen ist es sehr hilfreich, wenn wir die Menge \lm{ \mathbb{T} } angeben können,'."\n".
+                    'auf der die Intervall-Menge basieren soll.'."\n",
+                      'Nun haben wir noch die Besonderheit, dass diese Intervall-Mengendefinition, nicht nur, aber im Besonderen auch,'."\n".
+                    'für die Definition von Integralen eingesetzt wird.'."\n".
+                    'In diesem Zusammenhang macht es Sinn, die Definition etwas allgemeiner zu fassen und die Verallgemeinerung auch im Zusammenhang'."\n".
+                    'mit Summen zu definieren.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} } definieren.'."\n".
+                      'Dieses Mal sind \lm{ a } und \lm{ b } allerdings vertauscht, wobei immer noch \lm{ a < b } ist,'."\n".
+                      'das Intervall also von einer größeren Zahl zu einer kleineren läuft, also quasi rückwärts.'."\n".
+                      'Das macht für die Intervall-Menge, aber keinen Unterschied, weil in Mengen die Elemente nicht angeordnet sind,'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ b, a ]_\mathbb{T}  =  [ a, b ]_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  [ b, a [_\mathbb{T}  =  ] a, b ]_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  ] b, a ]_\mathbb{T}  =  [ a, b [_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  ] b, a [_\mathbb{T}  =  ] a, b [_\mathbb{T}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und so muss lediglich berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Etwas anders sieht dies für Summendefinitionen über Intervall-Mengen aus.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Summendefinition-ueber-Intervall-Mengen', text =>
+                  'Summendefinition über Intervall-Mengen', subline =>
+                    'Integrale als Summen')),
+                  array( 'text', array( text => array(
+                    'Denn, wenn der größere Wert zuerst kommt, dann summieren wir quasi Rückwärts – auch, wenn Mengen keine Ordnung haben –'."\n".
+                    'und es negiert sich das Ergebnis.'."\n".
+                    'Dies ist dann im Besonderen für die \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Definitionen von Integralen} von Bedeutung.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} }'."\n".
+                      'definiert, wie vorstehend.'."\n".
+                      'Wieder sind \lm{ a } bis \lm{ b } vertauscht und wieder bleibt \lm{ a < b }.'."\n".
+                      'Das Intervall also von einer größeren Zahl zu einer kleineren läuft, also wieder quasi rückwärts.'."\n".
+                      'Dann macht das bei einer Summe schon einen Unterschied im Wert, denn rückwärts summieren entspricht dem Abziehen, also der Differenz,'."\n".
+                      'anstatt der Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b ]_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b ]_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in ] b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b [_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in ] b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b [_\mathbb{T} } f(i)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und so muss nicht nur berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen,'."\n".
+                      'sondern auch, dass sich bei einer Summe, deren Intervall-Menge mit dem größeren Element zuerst definiert ist,'."\n".
+                      'das Vorzeichen umdreht.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                      
+                'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'An einigen Stellen dieser Arbeit'."\n".
+                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
+                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.SS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{\Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
+                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen', text =>
+                      
+                'Eingrenzung der Schichten der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bei der Eingrenzung der Schichten der Superial-Zahlen geht es darum, zum Beispiel eine Menge \lm{ \mathbb{S}_{X,\mathbb{T}} } von der existierenden Menge \lm{ \mathbb{S}_{X} } abzuleiten,'."\n".
+                    'in der nur bestimmte Schichten mit den Indizes in \lm{ \mathbb{T} } mit Koeffizienten ungleich Null belegt sein können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In der Menge \lm{ \mathbb{S}_{\Z,\{ 1 \}} } beispielsweise, die auf den ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beruht,'."\n".
+                    'können dann nur die Koeffizienten der Schicht Eins ungleich Null sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".
+                    'Die Koeffizienten aller anderen Schichten sind Null.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:X', text =>
+
+                '', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'),
+                    )),
+              )
+          ); ?>
+
+
+			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
+
+	
+<?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>

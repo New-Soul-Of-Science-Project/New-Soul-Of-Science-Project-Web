@@ -107,7 +107,7 @@
                   array( 'text', array( text => array(
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \lm{ \e }-Funktion'."\n".
                     'oder die Exponentialfunktion zur Basis \lm{ \e }, der Eulerschen Zahl\footnote{\const{SupNum_g_footnote_text_EulerscheZahl}},'."\n".
-                    'ihre eigene Ableitung ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Ableitung. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Bedeutung in der Mathematik.}'."\n",
+                    'ihre eigene Ableitung ist.\footnote{\const{SupNum_g_footnote_text_Exponentialfunktion}}'."\n",
                       'Mit diesem Wissen ist klar, dass wir eine neue Definition der \lm{ \e }-Funktion gefunden'."\n".
                     'haben, die sich aus der neuen Definition der Ableitung unmittelbar ergibt:'."\n".
                     ''))),
@@ -121,7 +121,7 @@
                     'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \lm{ \s } benutzt haben.'."\n".
                     'Würden wir beispielsweise \lm{ \s^2 } benutzen, wie \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
-                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
+                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\footnote{\const{SupNum_g_footnote_text_Exponentialfunktion}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -225,7 +225,7 @@
                     'berechnen.'."\n".
                     'Dazu schauen wir uns an, wie sich die Werte der Binomialkoeffizienten aus der vorherigen Spalte ergeben.'."\n",
                       'Als Ansatz formulieren wir die altbekannte Regel etwas um, wie sich ein Binomialkoeffizient aus'."\n".
-                    'der über ihm gelegenen Zeile als Summe ergibt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
+                    'der über ihm gelegenen Zeile als Summe ergibt:\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -303,7 +303,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
-                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \color{*Bearb}{(X)} Quadratzahlen'."\n".
+                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \lm{ n - 1 } Quadratzahlen'."\n".
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
@@ -316,7 +316,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + (n - 1)^{2}_{n - 1} *) \\\ \qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + (n - 1)_{n - 1} *) *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.}'."\n".
+                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\const{SupNum_g_footnote_text_QuadratischePyramidalzahl}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -543,6 +543,9 @@
                     'Zahl sein kann.'."\n".
                     'Sie ist nicht einmal eine Superial-Zahl der hier entwickelten 1. Ordnung, also ein Element von \lm{ \mathbb{S} },'."\n".
                     'weil sie Summanden mit aktual unendlich kleiner Potenz von \lm{ \s } in sich trägt.'."\n".
+                    'Sie gehört vielmehr zu Superial-Zahlen höherer Ordnung, in denen auch aktual unendlich kleine Potenzen der'."\n".
+                    'superialen Basis wie \lm{ \s^{-\s} } erlaubt sind — sichtbar in Formel'."\n".
+                    '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}.'."\n".
                     'Es ist schlichtweg unmöglich, sie so zu definieren, dass sie die Ableitungsbedingung erfüllt,'."\n".
                     'und keine unendlich kleinen Summanden enthält.'."\n".
                     'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
@@ -584,29 +587,29 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
+                    'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(k) *〉  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                       array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(k) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Aus dem \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{vorigen Kapitel} kennen wir \lm{ \e_{\s}^{x} } als diejenige Funktion,'."\n".
+                    'die ihrer eigenen Ableitung gleich ist. Wir setzen sie als Kandidaten \lm{ f(x) = \e_{\s}^{x} } ein:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
-                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => false),
                       array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
                       array( display => 'on',  latex => '{  f(x)  =  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  \\\ \qquad\qquad\qquad\quad\;\; *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
                     ))),
@@ -652,18 +655,66 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 3 *〉*〈 3 *〉*〈 1 *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auch, wenn dies noch kein Beweis ist, so können wir doch unschwer erkennen, dass die Summe des Integrals genau das Ergebnis'."\n".
-                    'erzeugt, welches wir für die \lm{ \e_{\s} }-Funktion aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
-                    'schon kennen.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Summe des Integrals erzeugt genau das Ergebnis, welches wir für die \lm{ \e_{\s} }-Funktion'."\n".
+                    'aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
+                    'bereits kennen. Den allgemeinen Beweis führen wir im folgenden Abschnitt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral:X', text =>
-                      
+
                 'Allgemeiner Beweis', subline =>
                   '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Zu zeigen ist für beliebiges \lm{ x }, dass \lm{ \e_{\s}^{x} } die Integralbedingung erfüllt.'."\n".
+                      'Wir setzen \lm{ a = 0 } und nutzen die Definition aus Formel'."\n".
+                      '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  ?=  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir setzen \lm{ k = j \cdot \s^{-1} }, sodass \lm{ j } von \lm{ 0 } bis \lm{ x \cdot \s - 1 } läuft.'."\n".
+                      'Wegen \lm{ \e_{\s}^{x} = *( 1 + \s^{-1} *)^{x \cdot \s} } gilt'."\n".
+                      '\lm{ \e_{\s}^{j \cdot \s^{-1}} = *( 1 + \s^{-1} *)^{j \cdot \s^{-1} \cdot \s} = *( 1 + \s^{-1} *)^{j} }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \frac{ \e_{\s}^{k} }{ \s }  =  \frac{1}{\s}  \sum_{ j = 0 }^{ x \cdot \s \,-\, 1 }  *( 1 + \s^{-1} *)^{j}  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die geometrische Reihe werten wir durch Teleskopsumme\footnote{\const{SupNum_g_footnote_text_Teleskopsumme}} aus:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r \cdot \sum_{ j = 0 }^{ n-1 }  r^{j}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \sum_{ j = 0 }^{ n-1 }  r^{j+1}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \sum_{ j = 1 }^{ n }  r^{j}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  *( r^{1} + r^{2} + \cdots + r^{n} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad\; -  *( r^{0} + r^{1} + \cdots + r^{n-1} *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  r^{0}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Mit \lm{ r = 1 + \s^{-1} }, \lm{ n = x \cdot \s } und \lm{ r - 1 = \s^{-1} }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{1}{\s}  \cdot  \frac{ *( 1 + \s^{-1} *)^{x \cdot \s}  -  1 }{ \s^{-1} }  =  *( 1 + \frac{1}{\s} *)^{x \cdot \s}  -  1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{1}{\s}  \cdot  \frac{ *( 1 + \s^{-1} *)^{x \cdot \s}  -  1 }{ \s^{-1} }  =  \e_{\s}^{x}  -  1  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Eingesetzt in die Integralbedingung:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  1  +  *( \e_{\s}^{x}  -  1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1  +  \!\!\! \sum_{ \forall k \in [0,\, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  \e_{\s}^{x}  \;\;.  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit ist gezeigt, dass die \lm{ \e_{\s} }-Funktion ihr eigenes Integral ist.'."\n".
+                      '\\\\ '."\n".
+                      ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),
@@ -681,7 +732,7 @@
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Transzendenz von \lm{ \e }}',
                     '• Was zur Transzendenz von \lm{ \e } im Text sagen.',
                     '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
@@ -754,11 +805,13 @@
 
                   array( 'notice', array( Display => 'showContent', text => array(
                     '\bold{Wo \lm{ π } noch vorkommt}',
-                    '• \lm{ π } ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
+                    '• \lm{ π } ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot π \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
                     ))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wir haben \lm{ \e_{\s}^{x} } bisher für reelle Exponenten betrachtet. Was ergibt sich für rein imaginäre Exponenten \lm{ \i \cdot x }?'."\n".
+                    'Die Antwort führt uns – ganz wie in der klassischen Analysis – zur Eulerschen Formel und von dort zu den Funktionen'."\n".
+                    '\lm{ \mathrm{cos}_{\s} } und \lm{ \mathrm{sin}_{\s} } sowie zur Kreiszahl \lm{ π }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -767,7 +820,8 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Eulersche Formel ordnet jedem reellen \lm{ x } eine komplexe Zahl auf dem superialen Einheitskreis zu – \lm{ \mathrm{cos}_{\s}(x) } als Realteil, \lm{ \mathrm{sin}_{\s}(x) } als Imaginärteil.'."\n".
+                    'Für einen einzelnen infinitesimalen Rotationsschritt gilt eine besonders einfache Form:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -775,7 +829,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Um den Ausdruck \lm{ *( 1 + \s^{-1} *)^{\i \cdot x} } auszuwerten, wenden wir den verallgemeinerten binomischen Satz an,'."\n".
+                    'der die klassische Binomialentwicklung auf beliebige komplexe Exponenten \lm{ \alpha } ausdehnt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -784,7 +839,7 @@
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wir wenden den Satz an mit \lm{ x = 1 }, \lm{ y = \s^{-1} } und dem imaginären Exponenten \lm{ \alpha = \i \cdot x }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -799,7 +854,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ \forall j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der verallgemeinerte Binomialkoeffizient enthält im Zähler das Produkt \lm{ \prod_{ j = 0 }^{ k-1 } *( \alpha - j *) }.'."\n".
+                    'Für \lm{ \alpha = \i \cdot x } berechnen wir dieses Produkt für die ersten Werte von \lm{ k }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -815,98 +871,93 @@
                       array( display => 'on',  latex => '{  =  \alpha^{5} - 10 \alpha^{4} + 35 \alpha^{3} - 50 \alpha^{2} + 24 \alpha  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Für imaginäre Exponenten \lm{ n \cdot \i } terminiert die Reihe nicht: Die verallgemeinerten Binomialkoeffizienten \lm{ \binom{n\i}{k} } sind komplex.'."\n".
+                    'Der allgemeine Koeffizient für \lm{ k = 2 } lautet \lm{ \binom{n\i}{2} = \frac{n\i \cdot (n\i-1)}{2} = -\frac{n(n+\i)}{2} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈\i〉}  =  〈1〉․〈\i〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2 \i〉}  =  〈1〉․〈2 \i〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3 \i〉}  =  〈1〉․〈3 \i〉〈3〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4 \i〉}  =  〈1〉․〈4 \i〉〈6〉〈4〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈5 \i〉}  =  〈1〉․〈5 \i〉〈10〉〈10〉〈5〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 \i *〉}  =  *〈 1 *〉․*〈 \i *〉*〈 \frac{-1-\i}{2} *〉*〈 \frac{3+\i}{6} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 2\i *〉}  =  *〈 1 *〉․*〈 2\i *〉*〈 -2-\i *〉*〈 \frac{2(3-\i)}{3} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 3\i *〉}  =  *〈 1 *〉․*〈 3\i *〉*〈 \frac{-9-3\i}{2} *〉*〈 \frac{9-7\i}{2} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 4\i *〉}  =  *〈 1 *〉․*〈 4\i *〉*〈 -8-2\i *〉*〈 \frac{4(6-7\i)}{3} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 5\i *〉}  =  *〈 1 *〉․*〈 5\i *〉*〈 \frac{-25-5\i}{2} *〉*〈 \frac{5(15-23\i)}{6} *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 6\i *〉}  =  *〈 1 *〉․*〈 6\i *〉*〈 -18-3\i *〉*〈 18-34\i *〉\cdots  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․\,*〈 7\i *〉}  =  *〈 1 *〉․*〈 7\i *〉*〈 \frac{-49-7\i}{2} *〉*〈 \frac{7(21-47\i)}{6} *〉\cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die vollständige Darstellung von \lm{ \e_{\s}^{\i \cdot x} } als Stellenwertzahl ergibt sich aus der Anwendung der Binomialentwicklung auf \lm{ *( 1 + \s^{-1} *)^{\i \cdot x \cdot \s} }.'."\n".
+                    'Der erste Stellenwert enthält die klassische Taylorreihe, die weiteren tragen die aktual-infinitesimalen superialen Korrekturen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  *〈 1 *〉 ․\, *〈 \i x \s *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) }{ 2 } *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) *( \i x \s - 2 *) }{ 6 } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i}  =  *〈 1 + \i - \frac{ 1^{2} }{ 2 } - \i \frac{ 1^{3} }{ 6 } + \frac{ 1^{4} }{ 24 } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 \cdots *〉*〈 \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots *〉*〈 \cdots *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉_{-\s}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sum_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
+                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen, die in der klassischen Analysis durch den Limes unsichtbar werden.'."\n".
+                    'Für \lm{ x = π_{\s} } ergibt sich die Eulersche Identität — und damit der Zusammenhang mit der Kreiszahl:'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
-                      
-                'Zusammenhang mit \lm{ \pi }', subline =>
+
+                'Zusammenhang mit \lm{ π_{\s} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die superiale Kreiszahl \lm{ π_{\s} } ist der halbe Umfang des superialen Einheitskreises –'."\n".
+                    'die Bogenlänge vom Punkt \lm{ 1 } zum Punkt \lm{ -1 }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Ansatz 1: Bogensumme.}  Der Halbkreis wird in \lm{ \s } gleichlange Schritte unterteilt,'."\n".
+                    'deren Koordinaten aufgrund der Theorie der Kreisteilungspolynome\footnote{\const{SupNum_g_footnote_text_Kreisteilungspolynom}} alle reell algebraische Zahlen sind.'."\n".
+                    'Die Kreispunkte \lm{ \e_{\s}^{\i \cdot k \cdot π_{\s} \cdot \s^{-1}} } (für \lm{ k = 0, 1, \ldots, \s }) liegen auf dem Einheitskreis.'."\n".
+                    'Da \lm{ \left| \e_{\s}^{\i \cdot \varphi} \right| = 1 } für alle reellen \lm{ \varphi }, haben alle Abstände aufeinanderfolgender Punkte dieselbe Länge:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot \pi_{\s}}  =  -1  =  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \left| \e_{\s}^{ \i \cdot (k+1) \cdot π_{\s} \cdot \s^{-1} } - \e_{\s}^{ \i \cdot k \cdot π_{\s} \cdot \s^{-1} } \right|  =  \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Summe dieser \lm{ \s } Abstände ergibt die Bogenlänge des Halbkreises:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  =  -1  }'),
+                      array( display => 'on',  latex => '{  π_{\s}  =  \s \cdot \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left| \e_{\s}^{ \i \cdot π_{\s} \cdot \s^{-1} } - 1 \right|  =  π_{\s} \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Beide Seiten enthalten \lm{ π_{\s} } – die Gleichung ist implizit. Eine explizite Berechnung folgt über Ansatz 2.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Variante: Bogensumme mit superialen Einheitsschritten.}'."\n".
+                    'Statt \lm{ \s } gleichlanger Schritte können \lm{ \s \cdot π_{\s} } Schritte'."\n".
+                    'der kleinstmöglichen Schrittweite \lm{ \s^{-1} } im Exponenten gewählt werden –'."\n".
+                    'dieselben Schrittweiten wie im imaginären Pascal-Dreieck:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot \pi_{\s}〉_{1} ]{ -1 }  }'),
+                      array( display => 'on',  latex => '{  π_{\s}  =  \s \cdot π_{\s} \cdot \left| \e_{\s}^{ ․\,*〈 \i *〉 } - 1 \right|  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left| \e_{\s}^{ ․\,*〈 \i *〉 } - 1 \right|  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Jeder superiale Einheitsschritt im imaginären Exponenten entspricht einer Kreissehne der Länge \lm{ \s^{-1} }.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\bold{Ansatz 2: Superiale Eulersche Identität.}'."\n".
+                    'Alternativ bestimmt sich \lm{ π_{\s} } als der reelle Wert, für den gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈\i \cdot \pi_{\s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \i \cdot \pi_{\s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot \s^{-1} }{ \i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ \i \cdot \s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \i^{-1} \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  -\i \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{ \i \cdot π_{\s} }  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot π_{\s}} } ist \lm{ \e^{\i \cdot π} } –'."\n".
+                    'er liefert die klassische Näherung \lm{ π_{\s} \approx π }.'."\n".
+                    'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen'."\n".
+                    'und geben \lm{ π_{\s} } seinen genauen superialen Wert.'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a^{x}  =  b^{x \cdot \log_{b} a}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  〈1〉․〈1〉^{x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =  〈 x 〉_{1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =   x \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{\s}  =   \s  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                      
+
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften'),
                     )),
