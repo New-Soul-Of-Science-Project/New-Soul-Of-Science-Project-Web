@@ -100,8 +100,12 @@ de/[Sektion]/
 ### Globale Variablen
 
 - `$Glo_*` — Globale Website-Variablen
+- `$NSOSP_g_*` — Sektionsübergreifende Konstanten (z.B. allgemeine Fußnoten)
 - `$FrQFT_g_*` — FrQFT-Sektion
 - `$SpaLeb_g_*` — Spannungsspiel-Sektion
+- `$NPYo_g_*` — NaPhil-Yoga-Sektion
+- `$SupNum_g_*` — Superial-Zahlen-Sektion
+- `$BiOrd_g_*` — Biordinalzahlen-Sektion
 - `$Sc_g_*` — Science-Verarbeitung
 - `$To_g_*` — Tools/Template-Arrays
 
@@ -158,6 +162,23 @@ To_f_Site()                // Seitennavigation
 - **Release-Muster:** `release-v9.XX` Branches → Merge in `master`
 - **Automatisch:** GitHub-Push → Webhook (Port 9001) → `deploy.sh` → `git pull -ff`
 - **Server:** Alpine Linux, Nginx, PHP-FPM 8.1
+
+## Bibliografie- und Fußnoten-System
+
+### BibTeX-Datei
+
+- **Datei:** `share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib`
+- **Schlüsselformat:** `Author:TitleKeyword:Year` (z.B. `Cauchy:AlgebraischeAnalysis:1885`)
+- **Feldformat:** Feldnamen mit Tabs auf `=  {` ausrichten (wie alle anderen Einträge — nie Leerzeichen)
+- **`urldate`/`sc_urltime`:** Nur setzen wenn die URL persönlich geprüft wurde; wenn keine Prüfung möglich, `url`-Feld ganz weglassen (ein `url` ohne `urldate` erzeugt PHP-Fehler)
+- Neuen Eintrag immer auch in `Literatur_de.php` der zugehörigen Sektion in alphabetischer Reihenfolge eintragen
+
+### Fußnoten-Konstanten
+
+- **Muster:** `$[Section]_g_footnote_text_[Name]` (z.B. `$SupNum_g_footnote_text_Taylorreihe`)
+- **Einbindung:** via `\const{SupNum_g_footnote_text_Name}` in Seiten-PHP-Dateien oder direkt in `\footnote{…}`
+- **`\color{*Bearb}{(Primärliteratur einfügen!)}`** = Platzhalter für fehlende Primärquelle — muss durch `\cite{…}` ersetzt werden
+- In vielen Sektionen (FrQFT, SpaLeb, NPYo, SupNum) gibt es noch offene `*Bearb`-Konstanten
 
 ## Hinweise für Entwicklung
 
