@@ -83,14 +83,16 @@ A new natural philosophical perspective on our existence and the relationship be
 
 ### (DE: Superial-Zahlen)
 
-*On the web: [https://nsosp.org/de/Superial-Zahlen](https://nsosp.org/de/Superial-Zahlen)*
+*On the web: [https://nsosp.org/de/Superial-Zahlen](https://nsosp.org/de/Superial-Zahlen)*  
+*On GitHub: [de/Superial-Zahlen — more information](https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/tree/master/de/Superial-Zahlen)*
 
-With prime numbers to infinity. An actual infinite arranged algebraic body, as an extension of the rational numbers, which gives a fundamental fractal structure to infinity - new ideas of elementary mathematics.
+With prime numbers to infinity. An actual infinite ordered algebraic field 𝕊 := 𝔸_ℝ((s^ℤ)) — a Hahn series extension of the real algebraic numbers with a canonical infinitesimal, defined via p-adic valuations v_p(s) = ω.
 
-- defining actual endless numbers on an endless prime number product
-- defining analysis with actual endless numbers
-- the prime number product conjecture
-- the superrational conjecture
+- prime number product identity ω = ω#̄ proven within ZFC (Theorem 1 & Theorem 2)
+- canonical infinitesimal calculus without limits: f'(x) = (f(x + s⁻¹) − f(x)) / s⁻¹
+- algebraic coefficient equality proven: 𝔸_ℝ = 𝔸_𝕊 (AKV + STV)
+- transcendence of e_s proven via superial structure
+- generation count (#̄_erz): axiomatized alternative to set-theoretic cardinality
 
 ----
 
