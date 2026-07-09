@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.07.2026, 12:00h
+  // #: Stand: 09.07.2026, 10:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260709:  +:  "$Sc_g_equation_replace_ary":  Add '\equiv_{kan}' -> '\equiv_{\mathrm{kan}}', '?\equiv' -> '\overset{?}{\equiv}', '?\equiv_{kan}' -> '\overset{?}{\equiv}_{\mathrm{kan}}', '  ?\equiv  ' -> '\;\;\;\overset{?}{\equiv}\;\;\;', '  ?\equiv_{kan}  ' -> '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;', '  \equiv_{kan}  ' -> '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'
   //           20260703:  *:  "Sc_g_litera_make", 'article':  'language' is now rendered (was missing; @book and @online already had it).
   //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
   //                      *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
@@ -698,6 +699,9 @@
                                     array( '  >  ', '\;\;\;>\;\;\;'),
                                     array( '  \ge  ', '\;\;\;\ge\;\;\;'),
                                     array( '  \geq  ', '\;\;\;\geq\;\;\;'),
+                                    array( '  ?\equiv_{kan}  ', '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;'),
+                                    array( '  ?\equiv  ', '\;\;\;\overset{?}{\equiv}\;\;\;'),
+                                    array( '  \equiv_{kan}  ', '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'),
                                     array( '  \equiv  ', '\;\;\;\equiv\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
@@ -733,6 +737,9 @@
                                     array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
+                                    array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
+                                    array( '?\equiv', '\overset{?}{\equiv}'),
+                                    array( '\equiv_{kan}', '\equiv_{\mathrm{kan}}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
