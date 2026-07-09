@@ -215,10 +215,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
@@ -238,10 +238,10 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  =  \mathbb{N}  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern,'."\n".
@@ -250,8 +250,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In beiden Fällen fällt der Abschlusspunkt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -339,11 +339,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
+                      array( display => 'on',  latex => '{  n  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
                                           label_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{ω}  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i}^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So gibt es nun zwischen Null und Eins keine rationalen Zahlen mehr,'."\n".
@@ -352,8 +352,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  n  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod\nolimits^{\#}_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -573,7 +573,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -743,7 +743,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \prod_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)  }',
+                      array( display => 'on',  latex => '{  \s  =  \prod\nolimits^{\#}_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
