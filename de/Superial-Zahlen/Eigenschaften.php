@@ -365,7 +365,7 @@
                     'Denn schon die Potenz beziehungsweise der Turm des Produkts der kleinsten Primzahl \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p_{i}^{ω} }, mit \lm{ p_{i} \in \mathbb{P} }, können so nicht als Faktoren in \lm{ ω } enthalten sein.'."\n",
                       'Das aktual unendlich große Primzahlprodukt, dass auf den ersten Blick bleibt, um \lm{ ω } darzustellen, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
-                    'dass \lm{ ω ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
+                    'dass \lm{ ω ?\equiv_{kan} (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } ist.'."\n".
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'zu sein, die ja mit \lm{ ω } ausgedrückt wird.'."\n".
                     'Jedoch haben wir bei den \italic{›\jumpname{OM:BiOrd:Home}‹} schon erkannt, dass zwischen den endlichen natürlichen Zahlen'."\n".
@@ -378,7 +378,7 @@
                     // 'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
                     // 'dass unsere Vermutung stimmen könnte.'."\n".
                       'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns nun zu zeigen,'."\n".
-                    'dass wirklich \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } gilt.'."\n".
+                    'dass wirklich \lm{ ω = (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } gilt.'."\n".
                     ''))),
 
 

@@ -158,7 +158,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies ist in meinen Augen etwas sehr besonderes, ganz konkret und hat damit eine andere Qualität als'."\n".
