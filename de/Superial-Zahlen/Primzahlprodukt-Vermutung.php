@@ -760,19 +760,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbf{1}_{\mathbb{P}}  :  \mathbb{P} \to \{ 1 \}  \;\; ,  \quad  \mathbf{1}_{\mathbb{P}}(p) = 1  \quad ( p \in \mathbb{P} )  }'),
+                      array( display => 'on',  latex => '{  \mathbf{1}_{\mathbb{P}} :  \quad  \mathbb{P} \to \{ 1 \}  \;\; ,  \quad  ( p \in \mathbb{P} ) *[ \mathbf{1}_{\mathbb{P}}(p) = 1 *]  }'),
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prodx_{ \forall p \in \mathbb{P} }  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Als ZFC-Menge ist dies \lm{ \omega\overline{\#} = \{ \langle p, 1 \rangle \mid p \in \mathbb{P} \} }.'."\n".
-                      'Damit definieren wir:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prodx_{\forall p \in \mathbb{P}}  p  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Seine Primturmmenge ist \lm{ \pt*( \omega\overline{\#} *) = \{ p^{1} \mid p \in \mathbb{P} \} },'."\n".
-                      'und für jede endliche Primzahl gilt \lm{ v_{p}( \omega\overline{\#} ) = 1 }.'."\n".
+                      'Das Primexponentenprodukt \lm{ ω\overline{\#} } ist durch seine Primturmmenge \lm{ \pt*( ω\overline{\#} *) = \{ p^{1} \mid p \in \mathbb{P} \} } vollständig bestimmt.'."\n".
+                      'So git für jede endliche Primzahl \lm{ v_{p}( \omega\overline{\#} ) = 1 }.'."\n",
                       'Das nackte Symbol \lm{ \prod_{p \in \mathbb{P}} p } darf später nur verwendet werden,'."\n".
                       'wenn ausdrücklich vereinbart wurde, dass es als Primexponentenprodukt gelesen wird.'."\n".
                       'Die Mengen-Primfakultät \lm{ ω\overline{\#} } aller endlichen Primzahlen ist ein solches vollständiges Einheits-Primexponentenprodukt –'."\n".
