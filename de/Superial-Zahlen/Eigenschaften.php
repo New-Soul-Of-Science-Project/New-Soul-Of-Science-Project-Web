@@ -1872,7 +1872,7 @@
                     'eine ganze Zahl ergibt, wie wir auf der Seite \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} zeigen.'."\n".
                     'Dies gelingt unter anderem mit Hilfe unseres \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweises der Überrationalitätsvermutung}.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
-                      'Es ist offensichtlich, dass erst die superiale Basis \lm{ \s } über ihr transfinites Primorial \lm{ \prod\nolimits^{\#} p^{ω} } jede rationale Zahl,'."\n".
+                      'Es ist offensichtlich, dass erst die superiale Basis \lm{ \s } über ihr transfinites Primorial \lm{ \prodx p^{ω} } jede rationale Zahl,'."\n".
                     'und wie sich dann herausstellt sogar jede reell algebraische Zahl, im Unendlichen vollständig ganzzahlig glättet.'."\n".
                     'Da die klassische Kardinalität des Kontinuums jedoch rein formal als \lm{ 2^{ω} } (bzw. \lm{ 2^{\aleph_{0}} }) definiert ist,'."\n".
                     'isoliert sie künstlich den ersten Primzahlturm.'."\n".

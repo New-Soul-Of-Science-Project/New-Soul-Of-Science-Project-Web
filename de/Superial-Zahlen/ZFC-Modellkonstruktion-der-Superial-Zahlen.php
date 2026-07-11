@@ -39,7 +39,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -47,7 +47,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  \;\; ,  }',
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -63,7 +63,7 @@
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
                                           label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p *)_{\#}^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{\forall p \in \mathbb{P}}  p *)_{\#}^{ω}  }',
                                           label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)_{\#}^{ω}  }'),
                     ))),
@@ -232,7 +232,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  \displaystyle *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  \displaystyle *( \prodx_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -496,7 +496,7 @@
                     'echte Mengen bleiben und zu keinem Zeitpunkt unzulässige echte Klassen bilden,'."\n".
                     'ist die vollständige ZFC-Konformität des Systems garantiert.'."\n",
                       'Die Hahn-Reihe bildet somit die fundamentale arithmetische Basis,'."\n".
-                    'welche das anschauliche unendliche Produkt \lm{ *( \prod\nolimits^{\#}_{ \forall p \in \mathbb{P} } p *)^ω }'."\n".
+                    'welche das anschauliche unendliche Produkt \lm{ *( \prodx_{ \forall p \in \mathbb{P} } p *)^ω }'."\n".
                     'mit den exakten algebraischen Werkzeugen der Addition, Subtraktion, Multiplikation und Division ausstattet.'."\n".
                     'Das Modell liefert damit den unwiderlegbaren Beweis, dass der Körper der Superial-Zahlen \lm{ \mathbb{S} } als stabiler,'."\n".
                     'widerspruchsfreier und normierter Rechenraum für die transfinite Analysis operieren kann.'."\n".
