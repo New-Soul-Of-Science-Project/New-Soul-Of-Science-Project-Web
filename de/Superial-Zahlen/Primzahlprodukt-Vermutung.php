@@ -891,7 +891,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  \, \varnothing \, ,  &  n = 0   \\\\ *\{ 0, 1 *\} ,  &  n = 1   \\\\ *\{ 0, 1 *\} \\\ \;\; \cup \; *\{  {\displaystyle  \prod_{ \forall t \in \pt(n) } t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt(n)} \in E_{\infty, \pt(n)}  *\} ,  &  n \ge 2  \end{cases}  }',
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  \, \varnothing \, ,  &  n = 0   \\\\ *\{ 0, 1 *\} ,  &  n = 1   \\\\ *\{ 0, 1 *\} \\\ \;\; \cup \; *\{  {\displaystyle  \sideset{}{^{\#}}{\prod}_{ \forall t \in \pt(n) } t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt(n)} \in E_{\infty, \pt(n)}  *\} ,  &  n \ge 2  \end{cases}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -904,18 +904,18 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{1.}    endliche Support-Belegungen, damit alle endlichen natürlichen Zahlen entstehen,'."\n",
-                      '\bold{2.}    die konstante Eins-Belegung, damit die später interessante, aktual unendliche, vollständige Primfakultät \lm{ P_{ω} = (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } entsteht,'."\n",
-                      '\bold{3.}    kofinite Eins-Belegungen, damit Terme wie \lm{ \frac{ P_{ω} }{ 2 } , \frac{ P_{ω} }{ 3 } , \frac{ P_{ω} }{ 5 } , \frac{ P_{ω} }{ 2 \cdot 3 } , \frac{ P_{ω} }{ 7 } , \cdots } entstehen.'."\n".
+                      '\bold{2.}    die konstante Eins-Belegung, damit das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} = (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } entsteht,'."\n",
+                      '\bold{3.}    kofinite Eins-Belegungen, damit Terme wie \lm{ \frac{ ω\overline{\#} }{ 2 } , \frac{ ω\overline{\#} }{ 3 } , \frac{ ω\overline{\#} }{ 5 } , \frac{ ω\overline{\#} }{ 2 \cdot 3 } , \frac{ ω\overline{\#} }{ 7 } , \cdots } entstehen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies legen wir konkret fest, damit das spätere Lückenargument besser kontrollierbar ist.'."\n",
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Die Menge des Primturm-Potenzrasters \lm{ \pr*( P_{ω} *) } enthält dann'."\n".
+                      'Die Menge des Primturm-Potenzrasters \lm{ \pr*( ω\overline{\#} *) } enthält dann'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \pr*( P_{ω} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{0} \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{0} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{0} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \color{Bittersweet}{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots }, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{ω}, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 2, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 3, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \; *\}_{\#}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \pr*( ω\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{0} \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{0} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{0} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \color{Bittersweet}{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots }, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{ω}, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 2, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 3, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \; *\}_{\#}  \;\; ,  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
