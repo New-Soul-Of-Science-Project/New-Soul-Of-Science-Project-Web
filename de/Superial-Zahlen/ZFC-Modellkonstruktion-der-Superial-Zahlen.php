@@ -33,24 +33,45 @@
                   '')),
                   array( 'text', array( text => array(
                     'Nachdem über das generative Primzahl-Induktions-Lemma in unserem \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
-                    'der strikt deduktive Nachweis für die Identität'."\n".
+                    'der strikt deduktive Nachweis für die Identifikation'."\n".
                     'des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
-                    'mit dem unendlichen Primzahlprodukt aller endlichen Primzahlen \lm{ ω = ω\overline{\#} } innerhalb der ZFC-Mengenlehre erbracht wurde,'."\n".
+                    'mit dem unendlichen Primzahlprodukt aller endlichen Primzahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'innerhalb der ZFC-Mengenlehre erbracht wurde, wobei wir folgende Kurzschreibweise vereinbart haben'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
                     'widmet sich diese Seite der expliziten mathematischen Modellierung dieses Resultats zu einem vollständig fundierten transfiniten Zahlensystem.'."\n".
                     'Ziel ist die Konstruktion eines normierten, transfiniten Stellenwertsystems für die Analysis,'."\n".
-                    'in dem transfinite divisatorische Eigenschaften ohne algebraische Widersprüche operieren.'."\n",
-                      'Als Trägerstruktur für diese Fundierung nutzen wir den geordneten Körper'."\n".
+                    'in dem transfinite divisatorische Eigenschaften ohne algebraische Widersprüche operieren.'."\n".
+                    'Als Trägerstruktur für diese Fundierung nutzen wir den geordneten Körper'."\n".
                     'der formalen Hahn-Reihen \lm{ \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*) } über den reell algebraischen Zahlen.'."\n".
                     'Im Zentrum dieser Konstruktion steht die Einführung der superialen Basis \lm{ \s },'."\n".
                     'welche als das transfinite Primzahl-Flächenprodukt definiert ist:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
                                           label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p *)_{\#}^{ω}  }',
                                           label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)_{\#}^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mit dem von-Neumann-Ordinal \lm{ ω } und der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} \lm{ \overline{\#}\mathbb{N} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
                                                label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
                       array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \overline{\#}\mathbb{N}  }',
@@ -62,7 +83,7 @@
                     'gilt folglich für alle \lm{ p \in \mathbb{P} } per Konstruktion des Modells:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  v_{p}*( \s *)  =  ω  *]  }',
                                           label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => true),
                     ))),

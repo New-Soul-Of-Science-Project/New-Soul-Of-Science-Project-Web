@@ -28,7 +28,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -59,7 +59,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  *( \prod\nolimits^{\#}_{ \forall p \in \mathbb{P} } p *)^{ω}  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  \equiv_{kan}  *( \prod\nolimits^{\#}_{ \forall p \in \mathbb{P} } p *)^{ω}  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )_{\#}^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
