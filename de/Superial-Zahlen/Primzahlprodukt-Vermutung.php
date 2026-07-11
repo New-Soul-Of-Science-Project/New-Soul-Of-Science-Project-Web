@@ -873,12 +873,36 @@
                         '\\\\'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\bold{Notationsvereinbarung – Primfakultätsprodukt:}'."\n".
-                      'Um die vollständige Primexponentenbelegung aller endlichen Primzahlen'."\n".
-                      'von einem gewöhnlichen konvergenten Produkt zu unterscheiden,'."\n".
-                      'führen wir das \italic{Primfakultätsprodukt} \lm{ \prod\nolimits^{\#} } ein.'."\n".
-                      'Es bezeichnet keine konvergente Reihe, kein ordinales und kein kardinales Produkt,'."\n".
-                      'sondern die vollständige Primexponentenbelegung \lm{ \mathbf{1}_{\mathbb{P}} }, also die Funktion'."\n".
+                      '\bold{Notationsvereinbarung – Primexponentenprodukt:}'."\n".
+                      'Um Primprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
+                      'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prod\nolimits^{\#} } ein.'."\n".
+                      'Das Symbol'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \prod\nolimits^{\#}_{\forall p \in A}  p^{e(p)}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'bezeichnet ein \italic{Primexponentenprodukt}. Es ist kein gewöhnliches konvergentes Produkt,'."\n".
+                      'sondern ein Bewertungsobjekt, das vollständig durch seine Primexponenten bestimmt wird.'."\n".
+                      'Für eine Primzahlmenge \lm{ A \subseteq \mathbb{P} } und eine Exponentenbelegung \lm{ e : A \to E_{\infty} } gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p} *( \prod\nolimits^{\#}_{\forall q \in A}  q^{e(q)} *)  =  \begin{cases}  e(p)  &  p \in A  \\\\  0  &  p \notin A  \end{cases}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Fehlende Primzahlen besitzen also den Exponenten \lm{ 0 }.'."\n".
+                      'Der Spezialfall'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'ist das \italic{vollständige Einheits-Primexponentenprodukt} aller endlichen Primzahlen –'."\n".
+                      'in expliziter Schreibweise auch \lm{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots)_{\#} } –,'."\n".
+                      'entsprechend der Einheits-Exponentenbelegung \lm{ \mathbf{1}_{\mathbb{P}} }, die jeder Primzahl den Exponenten \lm{ 1 } zuweist:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -890,12 +914,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  :=  \mathbf{1}_{\mathbb{P}}  }'),
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Damit gilt definitionsgemäß \lm{ ω\overline{\#} = \prod\nolimits^{\#}_{\forall p \in \mathbb{P}} p }.'."\n".
+                      'Seine Primtower-Menge ist \lm{ \pt*( \omega\overline{\#} *) = \{ p^{1} \mid p \in \mathbb{P} \} },'."\n".
+                      'und für jede endliche Primzahl gilt \lm{ v_{p}( \omega\overline{\#} ) = 1 }.'."\n".
                       'Das nackte Symbol \lm{ \prod_{p \in \mathbb{P}} p } darf später nur verwendet werden,'."\n".
-                      'wenn ausdrücklich vereinbart wurde, dass es als Primfakultätsprodukt gelesen wird.'."\n",
+                      'wenn ausdrücklich vereinbart wurde, dass es als Primexponentenprodukt gelesen wird.'."\n".
+                      'Die Mengen-Primfakultät \lm{ ω\overline{\#} } aller endlichen Primzahlen ist ein solches vollständiges Einheits-Primexponentenprodukt –'."\n".
+                      'deshalb wurde die Notation \lm{ \prod\nolimits^{\#} } an dieser Stelle eingeführt.'."\n",
                         '\\\\'."\n".
                       ''))),
 
