@@ -50,7 +50,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}} p  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}} p  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -58,7 +58,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}} p  }',
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}} p  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -574,7 +574,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  D_{\text{fin}}  :=  *\{  \prod_{ \forall p \in F_{\text{fin}} } p  *|*  F_{\text{fin}} \subseteq \mathbb{P}, F_{\text{fin}} \; \text{endlich}  *\}  \;\; .  }',
-                                          label_name => 'OOM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin}', label_incr => true),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann gilt für die Quotienten:'."\n".
@@ -720,7 +720,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prod_{ \forall p \in \mathbb{T} \cap \mathbb{P} }  \! p  }'),
+                      array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prodx_{ \forall p \in \mathbb{T} \cap \mathbb{P} }  \! p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'So erhalten wir eine Definition der Primfakultät, die sich auf die Elemente von Mengen bezieht.'."\n",
@@ -729,12 +729,12 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\bold{Notationsvereinbarung – Primexponentenprodukt:}'."\n".
                       'Um Primprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
-                      'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prod\nolimits^{\#} } ein.'."\n".
+                      'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prodx } ein.'."\n".
                       'Das Symbol'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prod\nolimits^{\#}_{\forall p \in A}  p^{e(p)}  }'),
+                      array( display => 'on',  latex => '{  \prodx_{\forall p \in A}  p^{e(p)}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'bezeichnet ein \italic{Primexponentenprodukt}. Es ist kein gewöhnliches konvergentes Produkt,'."\n".
@@ -743,7 +743,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p} *( \prod\nolimits^{\#}_{\forall q \in A}  q^{e(q)} *)  =  \begin{cases}  e(p)  &  p \in A  \\\\  0  &  p \notin A  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  v_{p} *( \prodx_{\forall q \in A}  q^{e(q)} *)  =  \begin{cases}  e(p)  &  p \in A  \\\\  0  &  p \notin A  \end{cases}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Fehlende Primzahlen besitzen also den Exponenten \lm{ 0 }.'."\n".
@@ -751,7 +751,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }'),
+                      array( display => 'on',  latex => '{  \prodx_{\forall p \in \mathbb{P}}  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'ist das \italic{vollständige Einheits-Primexponentenprodukt} aller endlichen Primzahlen –'."\n".
@@ -768,7 +768,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  }'),
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prodx_{\forall p \in \mathbb{P}}  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Seine Primturmmenge ist \lm{ \pt*( \omega\overline{\#} *) = \{ p^{1} \mid p \in \mathbb{P} \} },'."\n".
@@ -776,7 +776,7 @@
                       'Das nackte Symbol \lm{ \prod_{p \in \mathbb{P}} p } darf später nur verwendet werden,'."\n".
                       'wenn ausdrücklich vereinbart wurde, dass es als Primexponentenprodukt gelesen wird.'."\n".
                       'Die Mengen-Primfakultät \lm{ ω\overline{\#} } aller endlichen Primzahlen ist ein solches vollständiges Einheits-Primexponentenprodukt –'."\n".
-                      'deshalb wurde die Notation \lm{ \prod\nolimits^{\#} } an dieser Stelle eingeführt.'."\n",
+                      'deshalb wurde die Notation \lm{ \prodx } an dieser Stelle eingeführt.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -814,9 +814,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \mathbb{N}\overline{\#}  =  \!\! \prod_{ \forall p \in \mathbb{N} \cap \mathbb{P} }  \! p  }'),
-                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prod\nolimits^{\#}_{ \forall p \in \mathbb{P} }  p  }',
-                                    latex_if_visible => '{  \Leftrightarrow  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prod\nolimits^{\#}_{ \forall p \in \mathbb{P} }  \; p  }'),
+                      array( display => 'off', latex => '{  \mathbb{N}\overline{\#}  =  \!\! \prodx_{ \forall p \in \mathbb{N} \cap \mathbb{P} }  \! p  }'),
+                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prodx_{ \forall p \in \mathbb{P} }  p  }',
+                                    latex_if_visible => '{  \Leftrightarrow  ω\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prodx_{ \forall p \in \mathbb{P} }  \; p  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  ω_{\forall p}  =  ω\overline{\#}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -891,7 +891,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  \, \varnothing \, ,  &  n = 0   \\\\ *\{ 0, 1 *\} ,  &  n = 1   \\\\ *\{ 0, 1 *\} \\\ \;\; \cup \; *\{  {\displaystyle  \sideset{}{^{\#}}{\prod}_{ \forall t \in \pt(n) } t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt(n)} \in E_{\infty, \pt(n)}  *\} ,  &  n \ge 2  \end{cases}  }',
+                      array( display => 'on',  latex => '{  \pr(n)  :=  \begin{cases}  \, \varnothing \, ,  &  n = 0   \\\\ *\{ 0, 1 *\} ,  &  n = 1   \\\\ *\{ 0, 1 *\} \\\ \;\; \cup \; *\{  {\displaystyle  \prodx_{ \forall t \in \pt(n) } t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt(n)} \in E_{\infty, \pt(n)}  *\} ,  &  n \ge 2  \end{cases}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1532,7 +1532,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pr*( P_{ω} *)  =  \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \prod_{ \forall t \in \pt*( P_{ω} *) } \! t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt*( P_{ω} *)} \in E_{\infty, \pt*( P_{ω} *)}  *\}  \\\ \qquad\;  =  \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \; \prod_{ \forall p \in \mathbb{P} } p^{k_{p}}  }  *|*  *( k_{p} *)_{p \in \mathbb{P}} \in E_{\infty, \mathbb{P}}  *\}  }'),
+                      array( display => 'on',  latex => '{  \pr*( P_{ω} *)  =  \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \prodx_{ \forall t \in \pt*( P_{ω} *) } \! t^{k_{t}}  }  *|*  *( k_{t} *)_{t \in \pt*( P_{ω} *)} \in E_{\infty, \pt*( P_{ω} *)}  *\}  \\\ \qquad\;  =  \{ 0, 1 \} \; \cup \; *\{  {\displaystyle  \; \prodx_{ \forall p \in \mathbb{P} } p^{k_{p}}  }  *|*  *( k_{p} *)_{p \in \mathbb{P}} \in E_{\infty, \mathbb{P}}  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr\!*( P_{ω} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{0} \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{0} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{0} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{0} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \color{Bittersweet}{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots }, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \\\ \qquad\qquad\qquad\qquad\quad 2^{ω}, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 2, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{ω} \cdot 3, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \; *\}_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
@@ -1768,7 +1768,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prod_{ \forall p \in \mathbb{P} } p^{k_{p}}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \prodx_{ \forall p \in \mathbb{P} } p^{k_{p}}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Elemente'."\n".
@@ -2129,7 +2129,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  \equiv_{kan}  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  \;\;}  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  \;\;}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2150,7 +2150,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  =  ω\overline{\#}  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p  \;\;}  \;\; .  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  =  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  \;\;}  \;\; .  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -2776,7 +2776,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots)_{\#}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  (2^{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#} } \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots)_{\#}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  *( *( *( *( *( *( 2^{ 2 } *)^{ 3 } *)^{ 5 } *)^{ 7 } *)^{ 11 } *)^{ 13 } *)_{\#}^{ \cdots } \\\ \qquad\qquad\qquad\qquad \cdot ( 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot \cdots )_{\#}  }'),
-                      array( display => 'on',  latex => '{  z  =  \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p^{ *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p^{ *( \prod\nolimits^{\#}_{\forall p \in \mathbb{P}}  p^{ \cdots } *) } *) }  }'),
+                      array( display => 'on',  latex => '{  z  =  \prodx_{\forall p \in \mathbb{P}}  p^{ *( \prodx_{\forall p \in \mathbb{P}}  p^{ *( \prodx_{\forall p \in \mathbb{P}}  p^{ \cdots } *) } *) }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  z  =  ω^{ ω^{ ω^{ \cdots } } }  =  ω^{ *( ω^{ *( ω^{ \cdots } *) } *) }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -3259,7 +3259,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                                label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -3283,9 +3283,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  ?:=  \prod_{ \forall p \in \mathbb{P} }  p^{ \log_{p} ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \forall p \in \mathbb{P} } ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \# \mathbb{P} } ω  }'),
+                      array( display => 'on',  latex => '{  \s  ?:=  \prodx_{ \forall p \in \mathbb{P} }  p^{ \log_{p} ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prodx_{ \forall p \in \mathbb{P} } ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prodx_{ \# \mathbb{P} } ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  ω^{ \# \mathbb{P} }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -3295,7 +3295,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prod_{ \forall p \in \mathbb{P} } ω_{p}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  \prodx_{ \forall p \in \mathbb{P} } ω_{p}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  ?=  ω_{2} \cdot ω_{3} \cdot ω_{5} \cdot ω_{7} \cdot ω_{11} \cdot ω_{13} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s  ?=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 5} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, p \in \mathbb{P}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }'),
