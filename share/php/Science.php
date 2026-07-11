@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 09.07.2026, 10:00h
+  // #: Stand: 11.07.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260711:  +:  "MathJax":  Add Macro "prodx" for Primexponentenprodukt-Symbol '\sideset{}{^{\#}}{\prod}'.
   //           20260709:  +:  "$Sc_g_equation_replace_ary":  Add '\equiv_{kan}' -> '\equiv_{\mathrm{kan}}', '?\equiv' -> '\overset{?}{\equiv}', '?\equiv_{kan}' -> '\overset{?}{\equiv}_{\mathrm{kan}}', '  ?\equiv  ' -> '\;\;\;\overset{?}{\equiv}\;\;\;', '  ?\equiv_{kan}  ' -> '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;', '  \equiv_{kan}  ' -> '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'
   //           20260703:  *:  "Sc_g_litera_make", 'article':  'language' is now rendered (was missing; @book and @online already had it).
   //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
@@ -297,6 +298,7 @@
     echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
+    echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
     echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";
