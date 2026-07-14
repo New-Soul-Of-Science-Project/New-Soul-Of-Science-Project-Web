@@ -727,7 +727,7 @@
                         '\\\\'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\bold{Notationsvereinbarung – Primexponentenprodukt:}'."\n".
+                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{\bold{Notationsvereinbarung – Primexponentenprodukt:}}'."\n".
                       'Um Primprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
                       'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prodx } ein.'."\n".
                       'Das Symbol'."\n".
@@ -1443,7 +1443,7 @@
                     'aller endlichen Primzahlen, wie schon gesagt.'."\n",
                       'Nachfolgend zeigen wir zunächst, dass das lückenlose Primturm-Potenzraster der Mengen-Primfakultät'."\n".
                     'der vollständigen Induktion tatsächlich den lückenlosen Anfang \lm{ ω } besitzt.'."\n".
-                    'Aus diesem Ergebnis leiten wir anschließend die Motivation des Identitätssatzes her,'."\n".
+                    'Aus diesem Ergebnis leiten wir anschließend die Motivation des Identifikationssatzes her,'."\n".
                     'um verständlich zu machen, warum diese Identifikation in der Ordinalarithmetik naheliegt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -2035,7 +2035,7 @@
                     'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Satz 2: Theorem der inneren ZFC-Strukturidentität', subline =>
+                  'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Aus der engen mathematischen Verknüpfung zwischen der Mengen-Primfakultät, dem dichten Anfangsstück des Primturm-Potenzrasters'."\n".
@@ -2117,7 +2117,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da das unendliche Produkt aller endlichen Primzahlen über sein generiertes Gitter somit exakt dieselbe ordinale Rolle,'."\n".
                       'Ordnung und Mächtigkeit ausfüllt wie \lm{ ω } selbst, fallen das mathematische Objekt'."\n".
-                      'und seine strukturelle Identität im Limes vollständig ineinander.'."\n".
+                      'und seine strukturelle kanonische Identifikation im Limes vollständig ineinander.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da in der Standard-Mengenlehre (ZFC) per Definition \lm{ \mathbb{N} = ω } verankert ist,'."\n".
@@ -2126,7 +2126,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  \;\;}  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  \;\;}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2147,7 +2147,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  =  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}}  p  \;\;}  \;\; .  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  ω  =  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  \;\;}  \;\; .  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(

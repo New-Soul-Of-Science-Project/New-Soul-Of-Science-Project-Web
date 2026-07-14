@@ -678,8 +678,8 @@
                     'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
                     'lernen, dann muss es insgesamt \lm{ \overline{\#} \mathbb{A}_{\R} = \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
                       'Es gilt also \lm{ \overline{\#} \mathbb{A}_{\R} = \s }.'."\n".
-                    'Diese Identität wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion}{geordnete Struktur des Hahn-Reihen-Körpers \lm{ \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) }} gestützt,'."\n".
-                    'in dem jede mathematische Schicht exakt den Raum für eine vollständige transfinite Induktion bereitstellt.'."\n".
+                    'Diese kanonische Identifikation spiegelt sich in der \jump{OM:SupNum:ZFC-Modellkonstruktion}{geordneten Struktur des Hahn-Reihen-Körpers \lm{ \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) }},'."\n".
+                    'in dem jede mathematische Schicht exakt den Raum für eine beidseitig vollständige transfinite Induktion bereitstellt.'."\n".
                     'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
                     'in \lm{ \s } Teile teilen.'."\n".
                     'Dies würde ich als erreichen des Kontinuums bezeichnen.'."\n",

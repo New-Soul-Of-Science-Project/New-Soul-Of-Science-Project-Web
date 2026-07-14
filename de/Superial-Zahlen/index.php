@@ -24,7 +24,7 @@
                     'Im Zentrum dieses Systems steht die superiale Basis \lm{ \s := ω^ω },'."\n".
                     'welche über die von Neumannsche Ordinalzahlpotenzierung als transfinite Primzahl-Flächenprodukt'."\n".
                     'formal im Zermelo-Fraenkel-Mengenlehre-System mit Auswahlaxiom (ZFC) verankert ist.'."\n",
-                      'Durch den rigorosen Beweis der Primzahlprodukt-Vermutung und die Etablierung der Identität'."\n".
+                      'Durch den rigorosen Beweis der Primzahlprodukt-Vermutung und die Etablierung der kanonischen Identifikation'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
