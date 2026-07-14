@@ -1,6 +1,8 @@
 <?php
   $SupNum_g_text_ZFCkonform =
-                    'Die ZFC-konforme Operationalisierung unseres transfiniten Primzahl-Flächenprodukts als stabiles, normiertes Stellenwertsystem der Analysis über eine Familie verallgemeinerter \lm{ p }-adischer Schichtbewertungen findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
+                    'Die ZFC-konforme Operationalisierung des transfiniten Primzahl-Flächenprodukts (Primexponentenprodukt) als stabiles,'."\n".
+                    'normiertes Stellenwertsystem der Analysis über eine Familie verallgemeinerter \lm{ p }-adischer Schichtbewertungen'."\n".
+                    'findet sich auf der Seite \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}.';
 
   
   /* $SupNum_g_paragraphList_Glossar =
@@ -608,7 +610,8 @@
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.ZFC.4'),
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.ZFC.6'),
 
-            //%! 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.ZFC.1'),
+          'OM:SupNum:ZFC-Modellkonstruktion:Vortext:KonservativeErweiterung' => array( headline_text => 'Konservative Erweiterung und strukturelle Stabilität'/* , headline_text_short => 'X'*/),
+
             'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.12'),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
