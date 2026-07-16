@@ -782,7 +782,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 } \in \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  \in  \mathbb{S}  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-Def-Ds-Ableitung-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-Def-Ds-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                   'Satz (Ableitungs-Kompatibilität)', subline =>
