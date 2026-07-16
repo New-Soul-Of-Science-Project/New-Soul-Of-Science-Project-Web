@@ -464,8 +464,8 @@
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen', text =>
-                  'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind', subline =>
-                    '')),
+                  'Beweis: Genau die reell algebraischen Zahlen sind sinnvolle Koeffizienten', subline =>
+                    'Alle reellen Nullstellen der Polynome sind sinnvolle Koeffizienten')),
                   array( 'text', array( text => array(
                     'Für den Rest der reell algebraischen Zahlen scheint es nicht simpel zu sein zu zeigen, dass sie ebenfalls'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
@@ -473,16 +473,27 @@
                     'und der bereits gezeigten \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit der sinnvollen Koeffizienten}'."\n".
                     'sowie der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Erkenntnisse zur transzendenten Zahl \lm{ \e_{\s} }},'."\n".
                     'die offensichtlich superiale aktual unendlich kleine Summanden enthält, sowie meiner Vermutung,'."\n".
-                    'dass dies auch für alle anderen transzendenten Zahlen gilt, vermute ich, dass wirklich genau alle'."\n".
+                    'dass dies auch für alle anderen transzendenten Zahlen gilt, vermute ich auch, dass wirklich genau alle'."\n".
                     'reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
                     'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
-                      'Genau das ist unsere \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
-                    'ergänzt durch unsere \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹},'."\n".
-                    'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}'."\n".
-                    'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}'."\n".
-                    'stimmen.'."\n".
-                    'Das wäre schon ziemlich erfreulich und cool.'."\n".
+                      'Dies haben wir nun in unserer \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}'."\n".
+                    'und auf der Gegenseite flankiert von unserer \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} bewiesen.'."\n".
+                    // 'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}'."\n".
+                    // 'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}'."\n".
+                    // 'stimmen.'."\n".
+                    // 'Das wäre schon ziemlich erfreulich und cool.'."\n".
+                    'Damit wissen wir es gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-A-R-ist-gleich-A-S}', label_incr => false),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  \;\;}  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wie vermutet.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

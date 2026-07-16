@@ -476,7 +476,8 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen' => array( headline_text => 'Vermutung, dass die superialen Koeffizienten genau und nur die reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen' => array( headline_text => 'Beweis: Genau die reell algebraischen Zahlen sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen' => array( headline_text => 'SN.SinK.17'),
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten' => array( headline_text => 'Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen' => array( headline_text => 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),
@@ -530,6 +531,7 @@
         'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s' => array( headline_text => 'SN.STV.12'),
+          'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-A-R-ist-gleich-A-S' => array( headline_text => 'SN.STV.24'),
 
         'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
       ),
