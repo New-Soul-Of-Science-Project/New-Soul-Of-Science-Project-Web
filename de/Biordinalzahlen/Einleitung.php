@@ -15,12 +15,18 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Offene Fragestellungen}',
-                    '• Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?',
-                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
-                    '– Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
-                    '– Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
-                    '– Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
-                    '– Siehe \jump[https://de.wikipedia.org/wiki/Ordinalzahl]{Rechenoperationen}{Wikipedia: Ordinalzahl, Rechenoperationen} und \jump[https://de.wikipedia.org/wiki/Transfinite_Arithmetik]{}{Wikipedia: Transfinite Arithmetik}',
+                    '\bold{\italic{Wie kann das Mengenuniversum in ZFC definiert werden?}}',
+                    '• Über das Grothendieck-Universum \lm{ \mathcal{U} }: \url{https://de.wikipedia.org/w/index.php?title=Grothendieck-Universum&oldid=260703140}',
+                    '– Diese führt zur Tarski-Grothendieck-Mengenlehre: \url{https://de.wikipedia.org/w/index.php?title=Tarski-Grothendieck-Mengenlehre&oldid=252915465}',
+                    '– Die Ordinalzahlen werden dann zu einer Menge \lm{ \mathbb{On}_{\mathcal{U}} }, sind also keine echte Klasse mehr.',
+                    '– Das lokale Universum \lm{ \mathcal{U} } als das „Meer der Möglichkeiten“: In der Standard-ZFC-Mengenlehre fügen wir das Axiom der Existenz eines Grothendieck-Universums \lm{ \mathcal{U} } hinzu. Dieses \lm{ \mathcal{U} } ist eine Menge, aber sie ist so gigantisch groß, dass sie alle mathematischen Objekte, die wir jemals für das Rechnen, das Zählen und deine Biordinalzahlen benötigen, bereits enthält.',
+                    '– Dann ist für das System der Biordinalzahlen das System \lm{ \mathcal{U} } das absolute Mengenuniversum. Nur die ZFC-Mengenlehre weiß von „außen“, dass es über \(\mathcal{U}\) hinaus noch ein noch größeres, metamathematisches Universum gibt. Für die ontologische Argumentation und die Struktur der Biordinalzahlen schadet das überhaupt nicht – im Gegenteil: Es sichert sie formal ab.',
+                    '\bold{\italic{Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?}}',
+                    '• Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
+                    '• Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
+                    '• Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
+                    '• Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
+                    '• Siehe \jump[https://de.wikipedia.org/wiki/Ordinalzahl]{Rechenoperationen}{Wikipedia: Ordinalzahl, Rechenoperationen} und \jump[https://de.wikipedia.org/wiki/Transfinite_Arithmetik]{}{Wikipedia: Transfinite Arithmetik}',
                     ))),
                       
                   array( 'text', array( text => array(
