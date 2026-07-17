@@ -69,6 +69,499 @@
                     'ans Herz legen: \jump[https://www.youtube.com/watch?v=H8ZBjsYU4JE]{}{Die Eroberung der Unendlichkeit (Kurze Geschichte der Mathematik 3)}.'."\n".
                     'Und wer tiefer einsteigen und verstehen möchte – eher mit Vorkenntnissen –, dem lege ich das Buch von David Foster \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, nahe.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Motivation', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
+                    'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
+                    'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau vor sich geht.'."\n".
+                    'Auch fand ich den dafür genutzten Limes nicht so intuitiv, obwohl er faszinierendes ermöglichte, und suchte einen einfachen'."\n".
+                    'und einsichtigeren Ansatz das gleiche zu erreichen.'."\n",
+                      'Ich spielte viel mit der Formel zur Definition der Ableitung herum, was schließlich dazu führte, dass ich begriff,'."\n".
+                    'dass der Limes nicht nur dazu führt,'."\n".
+                    'dass ein bestimmtes Glied der sich ergebenen Summe dominant in den Vordergrund tritt und das Ergebnis bestimmt.'."\n".
+                    'Mir wurde auch klar, dass all die anderen Summanden, die unendlich klein und damit scheinbar unbedeutend wurden,'."\n".
+                    'eine Welt darstellten, die so quasi im Nirvana versank.'."\n",
+                      'Genau diese „versunkene“ Welt weckte mein Interesse.'."\n".
+                    'Irgendwie war ja auch klar, dass beim Integrieren, der Umkehrung der Ableitung, diese versunkene Welt schließlich wieder auftauchen musste.'."\n".
+                    'Wie könnte sie da unwiederbringlich „vernichtet“ worden sein?'."\n".
+                    'Durch das Herumspielen begriff ich:'."\n".
+                    'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
+                    'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, wobei sie einfach pragmatisch als vernachlässigbar erklärt und weggeschmissen werden.'."\n".
+                    'Was in der Praxis legitim ist, sollte in der Theorie nicht vernachlässigt sondern erforscht werden, sprach mein Herz.'."\n",
+                      'Nach meiner Entdeckung des superialen Zahlensystems und als ich schließlich'."\n".
+                    'die Funktion und damit die sinnvolle innere Struktur der superialen Basis \lm{ \s } erkannte, wurde mir bald klar:'."\n".
+                    'Die Superial-Zahlen mussten eine Verbindung zur Struktur geometrischer Objekte haben und so auch mit der Kontinuumshypothese in Verbindung stehen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Problemstellung und Zielsetzung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die klassische Analysis berechnet Ableitungen und Integrale über Grenzprozesse.'."\n".
+                    'Eine Ableitung wird nicht als Quotient zweier wirklich vorhandener infinitesimaler Größen verstanden,'."\n".
+                    'sondern als Grenzwert eines Differenzenquotienten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ebenso wird das Integral als Grenzwert immer feinerer Summen aufgefasst.'."\n".
+                    'Diese Limes-Fundierung ist mathematisch äußerst erfolgreich und bildet die Grundlage der modernen Analysis.'."\n".
+                    'Sie hat jedoch einen entscheidenden Preis:'."\n".
+                    'Das infinitesimale Rechenelement selbst verschwindet aus der Theorie.'."\n".
+                    'Es gibt im klassischen reellen Zahlensystem kein von Null verschiedenes \lm{ \Delta x }, das kleiner als jede positive reelle Zahl ist.'."\n".
+                    'Der Limes beschreibt daher ein Grenzverhalten, aber keinen aktual vorhandenen infinitesimalen Rechenschritt.'."\n",
+                      'Historisch war genau dies eines der zentralen Spannungsfelder der Analysis.'."\n".
+                    'Newton, Leibniz, Fermat, Euler und andere rechneten'."\n".
+                    'mit unendlich kleinen Größen, Momenten, Fluxionen, Differentialen oder vernachlässigbaren Restgliedern.'."\n".
+                    'Die Ergebnisse waren oft korrekt und außerordentlich fruchtbar, doch die Grundlagen blieben lange umstritten:'."\n".
+                    'Darf man durch eine Größe teilen, die anschließend verschwindet?'."\n".
+                    'Ist ein Differential \lm{ \mathrm{d} x } gleich Null oder ungleich Null?'."\n".
+                    'Wie kann eine Fläche aus Linien oder eine Bewegung aus ausdehnungslosen Momenten entstehen?'."\n",
+                      'Die moderne Limes-Analysis löst diese Probleme, indem sie die infinitesimalen Größen nicht mehr als Objekte zulässt.'."\n".
+                    'Dadurch wird die Rechnung streng, aber zugleich wird eine mögliche feinere Struktur unsichtbar.'."\n".
+                    'Restglieder, die im Grenzübergang verschwinden, werden nicht als eigenständige Bestandteile des Ergebnisses aufbewahrt.'."\n".
+                    'So liefert die klassische Analysis den Standardwert, nicht aber die vollständige Spur des infinitesimalen Rechenprozesses.'."\n",
+                      'Die Superial-Zahlen setzen an dieser Stelle an.'."\n".
+                    'Ihr Ziel ist nicht, die klassische Analysis zu ersetzen, sondern sie durch eine aktual unendliche und infinitesimale Struktur zu verfeinern.'."\n".
+                    'An die Stelle eines bloß variablen Grenzparameters \lm{ \Delta x \rightarrow +0 } tritt eine ausgezeichnete infinitesimale Schrittweite:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die zugehörige aktual unendliche Basis \lm{ \s } dient als normierendes Rechenelement.'."\n".
+                    'Dadurch können Ableitungen und Integrale nicht nur als Grenzwerte,'."\n".
+                    'sondern als konkrete superiale Werte mit sichtbarer Reststruktur formuliert werden.'."\n".
+                    'Für die Ableitung von \lm{ f(x) = x^{2} }  entsteht zum Beispiel nicht unmittelbar nur der klassische Wert \lm{ 2 x },'."\n".
+                    'sondern zunächst der superiale Wert'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 x + \s^{-1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der klassische Ausdruck \lm{ 2 x } erscheint anschließend als Standardisierung dieses superialen Wertes.'."\n".
+                    'Der infinitesimale Rest \lm{ \s^{−1} } wird nicht vernichtet, sondern bleibt als Grenzwertspur erhalten.'."\n",
+                      'Damit verfolgt diese Theorie drei Ziele.'."\n",
+                      'Erstens soll ein Rechenraum beschrieben werden, in dem infinitesimale'."\n".
+                    'und aktual unendliche Größen nicht bloß heuristische Hilfsmittel sind, sondern algebraisch strukturierte Objekte.'."\n".
+                    'Die Basis \lm{ \s } übernimmt dabei die Rolle eines aktual unendlichen Stellenwertträgers,'."\n".
+                    'während \lm{ \s^{−1} } den kanonischen infinitesimalen Schritt der Analysis bildet.'."\n",
+                      'Zweitens soll gezeigt werden, dass diese Basis nicht willkürlich eingeführt wird.'."\n".
+                    'Über die kanonische Primexponenten-Identifikation wird \lm{ ω } mit dem vollständigen Einheits-Primexponentenprodukt'."\n".
+                    'aller endlichen Primzahlen identifiziert.'."\n".
+                    'Die superiale Basis erhält dadurch die Struktur'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'beziehungsweise präziser'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  \prodx_{ p \in \mathbb{P} }  p^{ω}  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit trägt jede endliche Primzahl im Primexponentenprodukt \lm{ \s } den aktual unendlichen Exponenten \lm{ ω }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  v_{p}*( \s *)  =  ω  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Basis \lm{ \s } ist somit nicht nur ein formales Symbol für „sehr groß“, sondern ein strukturiertes Primexponentenobjekt.'."\n",
+                      'Drittens soll die klassische Analysis als Standardprojektion einer feineren superialen Analysis verstanden werden.'."\n".
+                    'Die gewöhnlichen Ableitungen und Integrale bleiben erhalten, erscheinen aber als standardisierte Schattenwerte einer reicheren Rechnung.'."\n".
+                    'Was der klassische Limes ausblendet, bleibt in der superialen Darstellung als infinitesimale oder aktual unendliche Schicht sichtbar.'."\n",
+                      'Die zentrale Problemstellung lautet daher:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Kann eine Analysis formuliert werden, in der Ableitungen und Integrale nicht nur durch Grenzwerte bestimmt sind,'."\n".
+                      'sondern durch konkrete aktual unendliche und infinitesimale Rechenelemente, ohne die klassische Analysis zu verlieren?'."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Die Zielsetzung dieser Arbeit ist es, einen solchen Rechenrahmen zu entwickeln.'."\n".
+                    'Die Superial-Zahlen sollen einen geordneten, algebraisch stabilen'."\n".
+                    'und in der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}'."\n".
+                    'modellierbaren Zahlenraum bereitstellen,'."\n".
+                    'in dem endliche, aktual unendliche und infinitesimale Anteile gemeinsam auftreten können.'."\n".
+                    'Die klassische Analysis wird dadurch nicht aufgehoben, sondern als Standardebene'."\n".
+                    'innerhalb einer feineren superialen Struktur rekonstruiert.'."\n",
+                      'Kurz gesagt:'."\n".
+                    'Die Superial-Zahlen versuchen, den alten infinitesimalen Gehalt der Analysis wieder sichtbar zu machen'."\n".
+                    '— nicht als unklare Heuristik, sondern als kanonisch normierte, primexponentiell fundierte und algebraisch auswertbare Struktur.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+            
+                'Hauptergebnisse in der Übersicht', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Aus der in der Problemstellung beschriebenen Zielsetzung ergeben sich die folgenden zentralen Ergebnisse der Theorie.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '1. Kanonische Primexponentenidentifikation von \lm{ ω }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zeigt, dass das von-Neumann-Ordinal \lm{ ω }'."\n".
+                    'kanonisch mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen identifiziert werden kann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zugleich wird die Primexponentenprodukt-Notation eingeführt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit gilt in der vereinbarten Kurzschreibweise:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Schreibweise bedeutet keine gewöhnliche extensionale Gleichheit des von-Neumann-Ordinals mit einem klassischen unendlichen Produkt,'."\n".
+                    'sondern die kanonische Identifikation von \lm{ ω } mit seinem vollständigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '2. Die superiale Basis \lm{ \s }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auf Grundlage dieser Identifikation wird die superiale Basis definiert durch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Präziser ist \lm{ \s } das vollständige \lm{ ω }-Primexponentenprodukt aller endlichen Primzahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit trägt jede endliche Primzahl \lm{ p } im Primexponentenprodukt \lm{ \s } den aktual unendlichen Exponenten \lm{ ω }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Basis \lm{ \s } ist damit nicht einfach eine beliebige aktual unendliche Größe, sondern ein arithmetisch normiertes Primexponentenobjekt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '3. Superial-Zahlen als Stellenwertsystem zur Basis \lm{ \s }', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen bilden ein Stellenwertsystem zur Basis \lm{ \s }.'."\n".
+                    'Eine Superial-Zahl besteht aus Schichten der Form'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a_{k} \cdot \s^{k}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Positive Potenzen von \lm{ \s } beschreiben aktual unendliche Anteile, die Potenz \lm{ \s^{0} = 1 } beschreibt die endliche Standardschicht,'."\n".
+                    'und negative Potenzen von \lm{ \s } beschreiben infinitesimale Anteile.'."\n",
+                      'Damit entsteht ein geordneter Zahlenraum, in dem endliche, aktual unendliche und infinitesimale Bestandteile'."\n".
+                    'in einer gemeinsamen algebraischen Struktur auftreten.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '4. Zentrale Normalform der Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Superial-Zahlen werden als endliche Schichtsummen zur Basis \lm{ \s } dargestellt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  \sum_{k \le d}^{m}  a_{k} \cdot \s^{k}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei ist \lm{ m \in \mathbb{Z} }, der größte aller endlichen Indizes der Koeffizienten \lm{ a_{k} } die von Null verschieden sind,'."\n".
+                    'und die Koeffizienten stammen aus dem Bereich der sinnvollen Koeffizienten.'."\n",
+                      'Die Potenz \lm{ \s^{0} = 1 } bildet die endliche Standardschicht. Potenzen \lm{ \s^{k} } mit \lm{ k > 0 }'."\n".
+                    'beschreiben aktual unendliche Schichten, Potenzen \lm{ \s^{k} } mit \lm{ k < 0 } infinitesimale Schichten.'."\n",
+                      'Die größte nichtverschwindende Schicht bestimmt die Größenordnung der Superial-Zahl.'."\n".
+                    'Dadurch werden endliche, aktual unendliche und infinitesimale Bestandteile nicht vermischt,'."\n".
+                    'sondern in einer geordneten Stellenwertstruktur getrennt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '5. ZFC-interne Modellkonstruktion', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen werden als ZFC-interne definitorische \jump{OM:SupNum:ZFC-Modellkonstruktion}{Modellkonstruktion}'."\n".
+                    'formuliert.'."\n".
+                    'Die Axiome der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}'."\n".
+                    'werden nicht verändert; vielmehr wird innerhalb des von Neumannschen Universums'."\n".
+                    'eine zusätzliche strukturierte Rechenumgebung definiert.'."\n",
+                      'Die Modellkonstruktion verwendet insbesondere Hahn-Reihen, lexikographische Ordnung'."\n".
+                    'und verallgemeinerte p-adische Schichtbewertungen.'."\n".
+                    'Dadurch erhält man einen geordneten und bewerteten algebraischen Rechenraum, in dem Addition,'."\n".
+                    'Multiplikation, Ordnung, Division und Schichtstruktur wohldefiniert zusammenwirken.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '6. Algebraische Zahlen als sinnvolle Koeffizienten', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ein zentrales Ergebnis ist die Einbettung der reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten} der Superial-Zahlen.'."\n",
+                      'Eine Zahl \lm{ a } ist ein sinnvoller Koeffizient, wenn sie mit der superialen Basis'."\n".
+                    'zu einer ganzen superialen Zahl skaliert werden kann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei alle in der ersten unendlichen Schicht sein müssen.'."\n",
+                      'Für rationale Zahlen ergibt sich diese Eigenschaft aus endlicher Teilbarkeit.'."\n".
+                    'Durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
+                    'und die darauf aufbauenden Argumente wird diese Ganzzahligkeit auf Radikale,'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikalformen}'."\n".
+                    'und schließlich auf alle reell algebraischen Zahlen erweitert.'."\n",
+                      'Damit werden die reell algebraischen Zahlen im Produkt mit \lm{ \s } zu aktual unendlich ganzen Größen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '7. Reelle Zahlen in der superialen Darstellung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Innerhalb der Superial-Zahlen werden die reellen Zahlen nicht unterschiedslos'."\n".
+                    'als eine einheitliche Koeffizientenklasse behandelt.'."\n".
+                    'Vielmehr trennt die Theorie zwischen reell algebraischen und transzendenten Zahlen.'."\n",
+                      'Die reell algebraischen Zahlen bilden sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
+                    'Transzendente Zahlen wie \lm{ \e } und \lm{ π } nehmen dagegen eine andere Rolle ein.'."\n".
+                    'Sie erscheinen nicht einfach als einzelne algebraische Koeffizienten,'."\n".
+                    'sondern benötigen eine mehrschichtige superiale Darstellung.'."\n",
+                      'In dieser Darstellung besitzt die endliche Standardschicht einen klassischen reellen Wert,'."\n".
+                    'zugleich können aber auch negative, infinitesimale Schichten auftreten.'."\n".
+                    'Damit werden transzendente Zahlen nicht ausgeschlossen, sondern feiner eingeordnet:'."\n".
+                    'Ihre klassische reelle Erscheinung ist die Standardschicht,'."\n".
+                    'während ihre superiale Struktur zusätzliche infinitesimale Anteile enthalten kann.'."\n",
+                      'Diese Unterscheidung bereitet insbesondere die spätere Behandlung von \lm{ \e_{\s} }, \lm{ π_{\s} }'."\n".
+                    'und weiteren transzendenten Konstanten vor.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '8. Ableitungen mit normierter infinitesimaler Schrittweite', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Analysis verwendet die ausgezeichnete infinitesimale Schrittweite:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dadurch wird die Ableitung als konkreter superialer Differenzenquotient formuliert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  =  \frac{ f( x + \s^{-1} ) - f(x) }{ \s^{-1} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-Def-Ds-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für \lm{ f(x) = x^{2} } ergibt sich:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  =  2 x + \s^{-1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der klassische Ableitungswert entsteht durch Standardisierung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{std}*( 2 x + \s^{-1} *)  =  2 x  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit bleibt der infinitesimale Rest in der superialen Rechnung sichtbar,'."\n".
+                    'während die klassische Analysis als Standardebene erhalten bleibt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '9. Integrale als aktual unendliche Summen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch Integrale werden in der Superial-Analysis nicht nur als Grenzwerte verstanden,'."\n".
+                    'sondern als aktual unendliche Summen über ein infinitesimales diskretes Raster,'."\n".
+                    'das die ganzen Superial-Zahlen ermöglichen.'."\n",
+                      'Die Schrittweite ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ein Intervall der Länge \lm{ 1 } enthält entsprechend s normierte infinitesimale Schritte.'."\n".
+                    'Das Integral wird dadurch als Summe über diese Schritte formuliert.'."\n".
+                    'Die klassische Integralrechnung erscheint wiederum als Standardisierung der superialen Summenstruktur.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '10. Erzeugungsanzahl als Ergänzung zur Mächtigkeit', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Neben der klassischen Mächtigkeit führt die Theorie die Erzeugungsanzahl ein.'."\n".
+                    'Sie misst nicht nur, ob zwei Mengen gleichmächtig sind,'."\n".
+                    'sondern wie ihre Elemente relativ zur vollständigen Induktion erzeugt werden.'."\n",
+                      'Die Erzeugungsanzahl einer Menge \lm{ A } wird notiert als:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}*( A *)  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'oder kurz:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#} A   }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Sie ergänzt die Kardinalität um einen erzeugungskombinatorischen und ordinalen Aspekt.'."\n".
+                    'Dadurch können unendliche Mengen feiner unterschieden werden, als es durch bloße Bijektivität möglich ist.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '11. Aktual unendliche Summen als neue Rechenobjekte', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen machen nicht nur infinitesimale Differenzen und Integrale sichtbar,'."\n".
+                    'sondern eröffnen auch eine neue Betrachtung aktual unendlicher Summen,'."\n".
+                    'die in der klassischen Analysis'."\n".
+                    'nur indirekt über Grenzwerte, Reihenentwicklungen, Integralwerte oder gar nicht erscheinen'."\n",
+                      'Eine zentrale Rolle spielt dabei die Erzeugungsstruktur.'."\n".
+                    'Wird über ein erzeugtes Mengenintervall \lm{ I } die konstante Funktion \lm{ 1 } summiert,'."\n".
+                    'so entsteht nicht bloß eine Kardinalitätsaussage, sondern die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
+                    'dieses Intervalls:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ x \in I }  1  =  \overline{\#}_{\mathrm{erz}}*( I *)  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aktual unendliche Summen zählen damit nicht nur Elemente, sondern bilden die Erzeugungslänge'."\n".
+                    'und die Ordnung des zugrunde liegenden Intervalls ab.'."\n",
+                      'Darüber hinaus können auch Summen betrachtet werden, die in der klassischen Analysis nicht unmittelbar'."\n".
+                    'als Grenzwerte zugänglich sind.'."\n".
+                    'Dazu gehören etwa Summen über dicht liegende abzählbare Mengen wie die reell algebraischen Zahlen'."\n".
+                    'in einem Intervall.'."\n".
+                    'Klassisch besitzt eine solche Summe ohne zusätzliche Ordnung oder Summationsvorschrift'."\n".
+                    'im Allgemeinen keinen kanonischen Wert.'."\n".
+                    'In der Superial-Theorie kann sie dagegen als erzeugungsgeordnete aktual unendliche Summe untersucht werden.'."\n",
+                      'So wird zum Beispiel die Frage nach einer Summe aller reell algebraischen Zahlen von \lm{ 0 } bis ohne \lm{ x }'."\n".
+                    'nicht als gewöhnliche Grenzwertreihe verstanden, sondern als Summe entlang einer kanonischen Erzeugungsstruktur:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ \forall a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Solche Summen sind keine gewöhnlichen Reihen über beliebige Aufzählungen,'."\n".
+                    'sondern neue superiale Summenobjekte,'."\n".
+                    'deren Bedeutung aus der Erzeugungsstruktur des jeweiligen Zahlenbereichs stammt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '12. Neue Perspektive auf Kontinuum und Kontinuumshypothese', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen führen neben der klassischen Mächtigkeit zusätzliche Strukturbegriffe ein:'."\n".
+                    'Schichten, infinitesimale Raster, Erzeugungsanzahl und primexponentielle Fundierung.'."\n",
+                      'Dadurch kann die Frage nach dem Kontinuum nicht nur kardinal,'."\n".
+                    'sondern auch erzeugungs- und rasterstrukturell betrachtet werden.'."\n".
+                    'Die Theorie behauptet dabei keinen unmittelbaren Beweis und keine unmittelbare Widerlegung'."\n".
+                    'der Kontinuumshypothese.'."\n".
+                    'Sie eröffnet jedoch eine neue Perspektive darauf, was zwischen abzählbarer Erzeugung,'."\n".
+                    'reeller Dichte, infinitesimaler Struktur und aktual unendlichem Raster unterschieden werden kann.'."\n",
+                      'Auch das Kontinuum als Eigenschaft einer kontinuierlichen, also ununterbrochen'."\n".
+                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{zusammenhängenden Geometrie},'."\n".
+                    'ohne und mit infinitesimalen Anteilen, ist Gegenstand und wird differenziert untersucht.'."\n".
+                    'Die gefundene aktual unendliche Teilungsperspektive auf Basis der endlichen Primzahlen führt direkt'."\n".
+                    'über geometrische Überlegungen zur Definition der superialen Basis \lm{ \s }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '13. Erweiterung klassischer Zahlstrukturen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Aus der superialen Basis ergeben sich natürliche Superial-Zahlen, ganze Superial-Zahlen,'."\n".
+                    'infinitesimale Einheiten, aktual unendliche Einheiten und superiale Primzahlen.'."\n",
+                      'Viele bekannte Eigenschaften endlicher Zahlen lassen sich dadurch in das aktual Unendliche'."\n".
+                    'und das aktual Infinitesimale fortsetzen:'."\n".
+                    'Teilbarkeit, Ganzzahligkeit, Gerade/Ungerade, Primartigkeit, Ordnung'."\n".
+                    'und algebraische Operationen erhalten superiale Entsprechungen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  '14. Klassische Analysis als Standardebene', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die klassische Analysis bleibt innerhalb der Superial-Zahlen erhalten.'."\n".
+                    'Ihre Werte erscheinen als Standardwerte superialer Ausdrücke.'."\n",
+                      'Was im klassischen Limes verschwindet, bleibt in der Superial-Rechnung als infinitesimale'."\n".
+                    'oder aktual unendliche Schicht sichtbar. Dadurch wird die klassische Analysis nicht ersetzt,'."\n".
+                    'sondern in eine feinere Struktur eingebettet.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Zusammenfassung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Hauptergebnisse der Theorie lassen sich in einer Kette zusammenfassen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}} p  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  }',
+                                          label_text => '', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  =  \frac{ f( x + \s^{-1} ) - f(x) }{ \s^{-1} }  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit entsteht ein ZFC-intern modellierbarer, geordneter und bewerteter Zahlenraum, in dem endliche,'."\n".
+                    'aktual unendliche und infinitesimale Schichten gemeinsam algebraisch behandelt werden können.'."\n",
+                      'Die Superial-Zahlen eröffnen darüber hinaus neue Untersuchungsrichtungen:'."\n".
+                    'aktual unendliche Summen können als eigene Rechenobjekte betrachtet werden, und Fragen nach Kontinuum,'."\n".
+                    'Erzeugung und Mächtigkeit können durch Schichtstruktur und Erzeugungsanzahl feiner differenziert werden.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Hauptergebnisse in der Übersicht', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Wie wir sehen werden gelingt uns und erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n",
                       'Es wird uns möglich, unser Zahlensystem, mit vielen seiner uns bekannten Kategorien, Eigenschaften und Untermengen,'."\n".
@@ -99,7 +592,7 @@
                     'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ \s }'."\n".
                     'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
                       'Durch unsere oben erwähnte neue kanonische Identifikation des von-Neumann-Ordinals mit seinem bisher übersehenen'."\n".
-                    'erzeugenden unendlichen Primfakultätsexponentenprodukt (\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt})'."\n".
+                    'erzeugenden unendlichen Primfakultätsprodukt (\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt})'."\n".
                     '\lm{ ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p } und unsere kardinalzahlähnliche Konstruktion von \lm{ \s } eröffnet sich'."\n".
                     'eine neue Möglichkeit der Definition einer Anzahlbemaßung der Elemente von Mengen unendlich vieler Zahlen und der Berechnung ihrer Summen.'."\n".
                     'Diese \italic{Erzeugungsanzahl} führen wir als \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{Erzeugungsanzahl der Menge \lm{ A }}'."\n".
@@ -137,29 +630,6 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
-                'Motivation', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
-                    'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
-                    'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau vor sich geht.'."\n".
-                    'Auch fand ich den dafür genutzten Limes nicht so intuitiv, obwohl er faszinierendes ermöglichte, und suchte einen einfachen'."\n".
-                    'und einsichtigeren Ansatz das gleiche zu erreichen.'."\n",
-                      'Ich spielte viel mit der Formel zur Definition der Ableitung herum, was schließlich dazu führte, dass ich begriff,'."\n".
-                    'dass der Limes nicht nur dazu führt,'."\n".
-                    'dass ein bestimmtes Glied der sich ergebenen Summe dominant in den Vordergrund tritt und das Ergebnis bestimmt.'."\n".
-                    'Mir wurde auch klar, dass all die anderen Summanden, die unendlich klein und damit scheinbar unbedeutend wurden,'."\n".
-                    'eine Welt darstellten, die so quasi im Nirvana versank.'."\n",
-                      'Genau diese „versunkene“ Welt weckte mein Interesse.'."\n".
-                    'Irgendwie war ja auch klar, dass beim Integrieren, der Umkehrung der Ableitung, diese versunkene Welt schließlich wieder auftauchen musste.'."\n".
-                    'Wie könnte sie da unwiederbringlich „vernichtet“ worden sein?'."\n".
-                    'Durch das Herumspielen begriff ich:'."\n".
-                    'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
-                    'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, wobei sie einfach pragmatisch als vernachlässigbar erklärt und weggeschmissen werden.'."\n".
-                    'Was in der Praxis legitim ist, sollte in der Theorie nicht vernachlässigt sondern erforscht werden, sprach mein Herz.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
                 'Formale Anmerkung zu den reellen Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -168,6 +638,53 @@
                     'wohingegen sich die transzendenten Zahlen so auf mehrere Potenzen der superialen Basis \lm{ \s } verteilen, dass die endliche Potenz'."\n".
                     '\lm{ a_{0} \cdot \s^{0} } einen von Null verschiedenen Koeffizienten \lm{ a_{0} } und noch mindestens eine negative Potenz von \lm{ \s },'."\n".
                     'mit \lm{ a_{z^{-}} \cdot \s^{z^{-}} }, ebenfalls einen von Null verschiedenen Koeffizienten \lm{ a_{z^{-}} } besitz.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Zentrale Definition', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Illustrierende Rechenbeispiele', subline =>
+                  'Funktionsweise in der Praxis')),
+                  array( 'text', array( text => array(
+                    'Nachdem die theoretischen Kernresultate der Superial-Zahlen formal skizziert wurden,'."\n",
+                    'soll das folgende konkrete Rechenbeispiel die praktische Funktionsweise verdeutlichen.'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Beweisstrategie', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                                           
+                'Aufbau der Arbeit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'Ausblick: \\\\'."\n".
+                    'fasst die wesentlichen Ergebnisse der Arbeit zusammen und gibt einen Ausblick auf offene Forschungsfragen,'."\n".
+                    'wie etwa die Betrachtung der Kontinuumshypothese durch die Brille der Superial-Zahlen und eine ihre mögliche Bedeutung im Langlands-Programm.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
@@ -180,7 +697,7 @@
                     'die wir im Verlauf genauer ergründen werden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
                       array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  1 \s^{-1}  }',

@@ -132,6 +132,8 @@
 
         'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral' => array( headline_text => 'Standardisierung von Ableitung und Integral'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Integral' => array( headline_text => 'Integral'/* , headline_text_short => 'X'*/),
+
+          'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-Def-Ds-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.Std.1'),
           'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:Equ-std-Ssfab-gleich-standard-integral' => array( headline_text => 'SN.Std.9'),
 
         'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung' => array( headline_text => 'Diskussion der Infinitesimalrechnung'/* , headline_text_short => 'X'*/),

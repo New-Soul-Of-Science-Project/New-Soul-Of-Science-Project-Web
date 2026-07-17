@@ -845,7 +845,8 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
-                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    '• Hier die Erzeugungssumme definieren, „siehe Einleitung“, „10. Aktual unendliche Summen als neue Rechenobjekte“.',
+                    '• Ggf. die Definition des Primexponentenprodukts nach hier, die jetzt auf der Seite „Primzahlprodukt-Vermutung“, „Definition: Die Mengen-Primfakultät“, „Notationsvereinbarung – Primexponentenprodukt“ steht.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -921,7 +922,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}( A )  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \overline{\#} A  \;\; .  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl:OperativeDefinition', text =>
                   'Weg 1: Operative Definition', subline =>
