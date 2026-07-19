@@ -345,7 +345,19 @@
 
           'OM:SupNum:Einleitung:Vortext:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', headline_text_short => 'Die Veränderung der Primfaktorzerlegung von s durch rationale Koeffizienten'),
 
-        // 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'X'*/),
+        'OM:SupNum:Einleitung:Motivation' => array( headline_text => 'Motivation'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:ProblemstellungZielsetzung' => array( headline_text => 'Problemstellung und Zielsetzung'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:HauptergebnisseUebersicht' => array( headline_text => 'Hauptergebnisse in der Übersicht'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen' => array( headline_text => 'Kurzdefinition der Superial-Zahlen'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele' => array( headline_text => 'Illustrierende Rechenbeispiele'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:Beweisstrategie' => array( headline_text => 'Beweisstrategie'/*, headline_text_short => 'X'*/),
+
+        'OM:SupNum:Einleitung:AufbauArbeit' => array( headline_text => 'Aufbau der Arbeit'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Eulersche-Zahl-e-Funktion' => array(
