@@ -1373,11 +1373,11 @@
                     '')),
                   array( 'text', array( text => array(
                     'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Menge \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
-                    'Wenn das Symbol \lm{ \# } die Anzahl der Elemente einer Menge gibt, dann gilt:'."\n".
+                    'Wenn das Symbol \lm{ \overline{\#} } die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} der Elemente einer Menge gibt, dann gilt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  \#\mathbb{T}_{n}  =  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  \overline{\#}\mathbb{T}_{n}  =  n  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \exists \, \mathrm{groesstes}(\mathbb{T}_{n}) *)  *[  \mathrm{groesstes}(\mathbb{T}_{n})  =  n - 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathrm{groesstes}(\mathbb{T}_{n}) + 1  =  n  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall i \in \mathbb{T}_{n} *)  *[  i  <  n  *]  }'),
@@ -1406,7 +1406,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \#\mathbb{N}  }',
+                      array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \overline{\#}\mathbb{N}  }',
                                                label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
