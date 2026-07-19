@@ -71,7 +71,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
                                           label_name => 'OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -124,7 +124,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Summanden mit negativer Potenz von \lm{ \s } sollten nur Null-Koeffizienten haben, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
                         'Im endlichen Summanden \lm{ \s^{0} = 1 } sollten demnach nur ganze Koeffizienten enthalten sein.',
-                        'Die Summanden mit positiven Potenzen von \lm{ \s } sollten auch nur ganze Zahlen sein. Das bedeutet, die Koeffizienten können wegen der aktual unendlichen Größe der Basis aus \lm{ \mathbb{A}_{\S} } sein.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s } sollten auch nur ganze Zahlen sein. Das bedeutet, die Koeffizienten können wegen der aktual unendlichen Größe der Basis aus \lm{ \mathbb{A}_{\R} } sein.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
@@ -138,9 +138,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\S} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\R} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 0 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \in  \mathbb{S}_{\Z}  }',
@@ -159,7 +159,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn wir uns einwenig damit beschäftigen, kommen wir schnell dahinter und können gut verstehen, dass dies plausibel ist.'."\n".
@@ -198,7 +198,7 @@
                     'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für den Fall, dass \lm{ d = 0 } ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
@@ -268,13 +268,13 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wenn \lm{ \mathbb{A}_{\S} } \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
+                    'Wenn \lm{ \mathbb{A}_{\R} } \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
                     'dann gehören dazu auch alle endlichen Primzahlen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{P}  \subset  \mathbb{S}_{\P}  }'),
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und beispielsweise auch diese vorstehenden aktual unendlich großen Superial-Zahlen.'."\n".
@@ -284,8 +284,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\S} *)  *[  a_{2} \cdot \s^{2} + a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\R} *)  *[  a_{2} \cdot \s^{2} + a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Was wir sehen können ist, dass der endliche Summand nur \lm{ \pm 1 } sein kann, denn wäre er eine andere ganze Zahl,'."\n".
@@ -430,12 +430,12 @@
                 'Satz: \lm{ \mathbb{S} } ist ein Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir setzen \lm{ K := \mathbb{A}_{\S} = \mathbb{A}_{\R} } und definieren äquivalent zu Formel \jumpname{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom},'."\n".
+                    'Wir setzen \lm{ K := \mathbb{A}_{\R} = \mathbb{A}_{\R} } und definieren äquivalent zu Formel \jumpname{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom},'."\n".
                     'aber noch einmal etwas anders ausgedrückt,'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Äquivalent zu'."\n".
@@ -689,7 +689,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a_{k} \in \mathbb{A}_{\S} *) *[  a  =  \sum_{ k \in \mathbb{Z} } a_{k} \s^{k}  *]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( a_{k} \in \mathbb{A}_{\R} *) *[  a  =  \sum_{ k \in \mathbb{Z} } a_{k} \s^{k}  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'wobei der \italic{Support}'."\n".
@@ -713,7 +713,7 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\lm{ \operatorname{lt}(a) := k_{max} \;\;\;\;\;\;\;\;\;\;\;\; } (Leitexponent, „größte Stelle“),'."\n",
-                        '\lm{ \operatorname{lc}(a) := a_{k_{max}} \in \mathbb{A}_{\S} \;\;\; } (Leitkoeffizient).'."\n",
+                        '\lm{ \operatorname{lc}(a) := a_{k_{max}} \in \mathbb{A}_{\R} \;\;\; } (Leitkoeffizient).'."\n",
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
                   'Positive Elemente und Vergleich', subline =>
@@ -727,7 +727,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a > 0  :\Leftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\S}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  a > 0  :\Leftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\R}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und \lm{ a < 0 } entsprechend durch \lm{ \operatorname{lc}(a) < 0 }.'."\n".
@@ -802,7 +802,7 @@
                   '\bold{Lemma 5 (Positivität ist multiplikativ).} \\\\'."\n".
                     'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ a \cdot b > 0 }. \\\\'."\n".
                     '\italic{Begründung:}'."\n".
-                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ \operatorname{lc}(a) > 0 } und \lm{ \operatorname{lc}(b) > 0 } in \lm{ \mathbb{A}_{\S} },'."\n".
+                    'Aus \lm{ a > 0 } und \lm{ b > 0 } folgt \lm{ \operatorname{lc}(a) > 0 } und \lm{ \operatorname{lc}(b) > 0 } in \lm{ \mathbb{A}_{\R} },'."\n".
                     'also \lm{ \operatorname{lc}(a \cdot b) = \operatorname{lc}(a) \cdot \operatorname{lc}(b) > 0 }.'."\n".
                     'Daher \lm{ a \cdot b > 0}.'."\n".
                     ''))),
@@ -851,11 +851,11 @@
 
                   array( 'text', array( text => array(
                     'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen braucht, stellt sich unmittelbar aus ihrer eigenen Konstruktion heraus.'."\n".
-                    'In der \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} zeigt sich, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } den Wert'."\n".
+                    'In der \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl}{ZFC-Modellkonstruktion} zeigt sich, dass die Anzahl der sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } den Wert'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1409,15 +1409,15 @@
                       array( display => 'on',  latex => '{  ω   =  \mathbb{N}  =  \overline{\#}\mathbb{N}  }',
                                                label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  -ω  <  a  <  ω  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  0  <  ω^{-1}  <  a^{+}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  -ω  <  a  <  ω  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  0  <  ω^{-1}  <  a^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
+                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\R} } der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
                     'anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
-                    'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\S} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
+                    'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\R} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
                     'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
                     'Denn unsere Untersuchung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulerschen Zahl \lm{ \e }} – hierin als \lm{ \e_{\s} } bezeichnet –'."\n".
                     'aufgrund der \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung} mit Hilfe von Superial-Zahlen,'."\n".
@@ -1426,7 +1426,7 @@
                       'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
                       'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
                     'sowie zwischen den endlichen Zahlen liegen.'."\n".
-                    'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere Zahl aus \lm{ \mathbb{A}_{\S} },'."\n".
+                    'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere Zahl aus \lm{ \mathbb{A}_{\R} },'."\n".
                     'wie alle rationalen Zahlen oder alle durch Radikale darstellbaren algebraischen Zahlen.'."\n".
                     'Die Zahl \lm{ \pm ω^{-1} } verhält sich ähnlich, wie der Limes einer Umgebung \lm{ \varepsilon }, der gegen plus oder minus Null geht.'."\n".
                     'Nur sind diese Umgebungszahlen nicht unscharf, wie ein Limes, sondern konkret und damit scharf.'."\n",
@@ -1436,11 +1436,11 @@
                     array( equ_text_std => 'SN.Fo.F.ZM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  \s  *]  }',
                                                label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }',
                                                label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  - \s  <  a  <  \s  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S}^{+} *)  *[  0  <  \s^{-1}  <  a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  - \s  <  a  <  \s  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R}^{+} *)  *[  0  <  \s^{-1}  <  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\qquad  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Eigenschaft der Superial-Zahlen, mit ihnen keinen unscharfen, sondern einen konkreten „Limes“ definieren zu können, eröffnet die Möglichkeit'."\n".
@@ -1472,7 +1472,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hierbei ist an jeder spitzen Klammer ein Index notiert, die wir großteils in der Praxis auch weglassen:'."\n".
@@ -1498,7 +1498,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\S} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\R} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
@@ -1716,7 +1716,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
                                           label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1725,7 +1725,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".

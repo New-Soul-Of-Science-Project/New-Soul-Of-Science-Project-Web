@@ -620,7 +620,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x \in \mathbb{A}_{\S}  \to  *〈 x *〉․*〈 n *〉 \in \mathbb{S}_{\N}^{-1}  }'),
+                      array( display => 'on',  latex => '{  x \in \mathbb{A}_{\R}  \to  *〈 x *〉․*〈 n *〉 \in \mathbb{S}_{\N}^{-1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n  \in  \mathbb{N}  }'),
                       array( display => 'on',  latex => '{  a = 0  \land  x = 0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 *〈 n *〉_{-1} *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 0 *〉_{1}} + \!\!\! \sum_{ \forall k \in [0, *〈 n *〉_{-1}[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
