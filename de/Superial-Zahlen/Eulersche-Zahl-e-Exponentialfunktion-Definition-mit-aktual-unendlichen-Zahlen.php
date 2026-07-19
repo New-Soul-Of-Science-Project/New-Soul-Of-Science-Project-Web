@@ -569,7 +569,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Die e-Funktion aus dem Integral  >
+          <!--  • Die e-Funktion aus dem Integral  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral',
               'Eine Funktion, die Integriert sich selbst ergibt', 'Sc_f_Paragraph',
@@ -723,7 +723,7 @@
           ); ?>
 
 
-          <!  • Die Transzendenz der eulerschen Zahl e  >
+          <!--  • Die Transzendenz der eulerschen Zahl e  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e',
               '', 'Sc_f_Paragraph',
@@ -794,7 +794,7 @@
           ); ?>
 
 
-          <!  • Die Quadratur des Kreises – von der eulerschen Zahl e zu π  >
+          <!--  • Die Quadratur des Kreises – von der eulerschen Zahl e zu π  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises',
               '', 'Sc_f_Paragraph',

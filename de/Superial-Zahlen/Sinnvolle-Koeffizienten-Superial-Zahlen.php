@@ -505,7 +505,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Radikale sind sinnvolle Koeffizienten  >
+          <!--  • Radikale sind sinnvolle Koeffizienten  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten',
               'Das Ergebnis des Beweises der Überrationalitätsvermutung', 'Sc_f_Paragraph',
@@ -732,7 +732,7 @@
           ); ?>
 
 
-          <!  • Kehrwerte der Radikale sind sinnvolle Koeffizienten  >
+          <!--  • Kehrwerte der Radikale sind sinnvolle Koeffizienten  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten',
               '', 'Sc_f_Paragraph',
@@ -876,7 +876,7 @@
           ); ?>
 
 
-          <!  • Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte  >
+          <!--  • Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte',
               '', 'Sc_f_Paragraph',
@@ -956,7 +956,7 @@
           ); ?>
 
 
-          <!  • Produkte der Radikale und ihrer Kehrwerte  >
+          <!--  • Produkte der Radikale und ihrer Kehrwerte  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte',
               '', 'Sc_f_Paragraph',
@@ -1118,7 +1118,7 @@
           ); ?>
 
 
-          <!  • Summen der Radikale und ihrer Kehrwerte  >
+          <!--  • Summen der Radikale und ihrer Kehrwerte  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte',
               '', 'Sc_f_Paragraph',
@@ -1368,7 +1368,7 @@
           ); ?>
 
 
-          <!  • Geschachtelte Radikale oder ihre Kehrwerte mit Summen  >
+          <!--  • Geschachtelte Radikale oder ihre Kehrwerte mit Summen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen',
               '', 'Sc_f_Paragraph',
@@ -1497,7 +1497,7 @@
           ); ?>
 
 
-		    	<!  • X  >
+		    	<!--  • X  -->
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X',
               '', 'Sc_f_Paragraph',

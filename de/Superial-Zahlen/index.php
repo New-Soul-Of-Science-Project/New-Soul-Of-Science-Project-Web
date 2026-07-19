@@ -194,7 +194,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Inhalt:  >
+		    	<!--  • Inhalt:  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Home:Inhalt',
               '', 'Sc_f_Paragraph',
@@ -248,7 +248,7 @@
           ); ?>
           
           
-		    	<!  • Lexikon:  >
+		    	<!--  • Lexikon:  -->
           <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:SpaLeb:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           

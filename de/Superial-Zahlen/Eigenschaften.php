@@ -45,7 +45,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  >
+          <!--  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten',
               '', 'Sc_f_Paragraph',
@@ -75,7 +75,7 @@
           ); ?>
 
 
-          <!  • Weitere Ordnungseigenschaften von S  >
+          <!--  • Weitere Ordnungseigenschaften von S  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS',
               '', 'Sc_f_Paragraph',
@@ -207,7 +207,7 @@
           ); ?>
 
 
-		    	<!  • Die Struktur von s  >
+		    	<!--  • Die Struktur von s  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:StrukturVonS',
               '', 'Sc_f_Paragraph',
@@ -1348,7 +1348,7 @@
           ); ?>
 
 
-		    	<!  • Erzeugungsanzahl in Beispielen  >
+		    	<!--  • Erzeugungsanzahl in Beispielen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele',
               '', 'Sc_f_Paragraph',
@@ -1381,7 +1381,7 @@
           ); ?>
 
 
-          <!  • Neue Rechenregeln im Unendlichen  >
+          <!--  • Neue Rechenregeln im Unendlichen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen',
               '', 'Sc_f_Paragraph',
@@ -1690,7 +1690,7 @@
           ); ?>
 
 
-		    	<!  • Vergleich mit hyperreellen Zahlen  >
+		    	<!--  • Vergleich mit hyperreellen Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen',
               '', 'Sc_f_Paragraph',
@@ -1745,7 +1745,7 @@
           ); ?>
 
 
-		    	<!  • Untersuchungen zur Kontinuumshypothese  >
+		    	<!--  • Untersuchungen zur Kontinuumshypothese  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese',
               '', 'Sc_f_Paragraph',

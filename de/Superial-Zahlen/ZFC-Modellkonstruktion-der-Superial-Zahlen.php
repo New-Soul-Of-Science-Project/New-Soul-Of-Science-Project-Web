@@ -598,7 +598,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Diskussion  >
+          <!--  • Diskussion  -->
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:ZFC-Modellkonstruktion:Diskussion',
               '', 'Sc_f_Paragraph',

@@ -190,7 +190,7 @@
           ); ?>
 
 
-		    	<!  • X  >
+		    	<!--  • X  -->
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Vorwort:X',
               '', 'Sc_f_Paragraph',

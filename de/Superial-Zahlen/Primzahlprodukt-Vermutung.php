@@ -2209,7 +2209,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Interpretation des Beweises  >
+          <!--  • Interpretation des Beweises  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis',
               'Das Verständnis des Übergangs von jeder Primzahl ins Unendliche zu \lm{ ω } und \lm{ \s }', 'Sc_f_Paragraph',
@@ -2437,7 +2437,7 @@
           ); ?>
 
 
-          <!  • Weitere Diskussion des Beweises  >
+          <!--  • Weitere Diskussion des Beweises  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis',
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
@@ -2787,7 +2787,7 @@
           ); ?>
 
 
-          <!  • Gedanken zu Konsequenzen des Beweises  >
+          <!--  • Gedanken zu Konsequenzen des Beweises  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuKonsequenzenDesBeweises',
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
@@ -2866,7 +2866,7 @@
           ); ?>
 
 
-          <!  • Experimentelle Gedanken zu anderen Beweiswegen  >
+          <!--  • Experimentelle Gedanken zu anderen Beweiswegen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen',
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',

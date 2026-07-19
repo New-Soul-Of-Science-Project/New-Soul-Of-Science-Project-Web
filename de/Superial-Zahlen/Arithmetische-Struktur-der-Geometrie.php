@@ -800,7 +800,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Die Ontologie der Geometrie  >
+          <!--  • Die Ontologie der Geometrie  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie',
               '', 'Sc_f_Paragraph',
@@ -1212,7 +1212,7 @@
           ); ?>
           
 
-          <!  • Resonanz in der Arithmetik der Geometrie  >
+          <!--  • Resonanz in der Arithmetik der Geometrie  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie',
               'Eine grundlegendes Prinzip der Existenz: die Resonanz', 'Sc_f_Paragraph',

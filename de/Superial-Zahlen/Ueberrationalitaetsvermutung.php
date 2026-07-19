@@ -1619,7 +1619,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Diskussion des Beweises  >
+          <!--  • Diskussion des Beweises  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises',
               '', 'Sc_f_Paragraph',
@@ -1793,7 +1793,7 @@
           ); ?>
           
 
-          <!  • Untersuchung der Potenzialzahlen  >
+          <!--  • Untersuchung der Potenzialzahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ueberrationalitaetsvermutung:UntersuchungDerPotenzialzahlen',
               '', 'Sc_f_Paragraph',

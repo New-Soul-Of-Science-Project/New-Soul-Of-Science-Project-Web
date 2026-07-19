@@ -64,7 +64,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Die Ableitungen  >
+          <!--  • Die Ableitungen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:Ableitung',
               '', 'Sc_f_Paragraph',
@@ -289,7 +289,7 @@
           ); ?>
 
 
-          <!  • Die Integration  >
+          <!--  • Die Integration  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:Integration',
               '', 'Sc_f_Paragraph',
@@ -634,7 +634,7 @@
           ); ?>
 
 
-          <!  • Fundamentalsatz der Analysis  >
+          <!--  • Fundamentalsatz der Analysis  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:FundamentalsatzDerAnalysis',
               '', 'Sc_f_Paragraph',
@@ -751,7 +751,7 @@
           ); ?>
 
 
-          <!  • Standardisierung von Ableitung und Integral  >
+          <!--  • Standardisierung von Ableitung und Integral  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral',
               '', 'Sc_f_Paragraph',
@@ -938,7 +938,7 @@
           ); ?>
 
 
-          <!  • Diskussion der Infinitesimalrechnung  >
+          <!--  • Diskussion der Infinitesimalrechnung  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung',
               '', 'Sc_f_Paragraph',
@@ -1384,7 +1384,7 @@
           ); ?>
 
 
-          <!  • Nähere Untersuchung bestimmter Summen  >
+          <!--  • Nähere Untersuchung bestimmter Summen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen',
               '', 'Sc_f_Paragraph',
@@ -1862,7 +1862,7 @@
           ); ?>
 
 
-          <!  • Besondere Ableitungen und Integrale  >
+          <!--  • Besondere Ableitungen und Integrale  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale',
               '', 'Sc_f_Paragraph',

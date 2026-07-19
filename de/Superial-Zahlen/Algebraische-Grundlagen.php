@@ -94,7 +94,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Ganze Superial-Zahlen  >
+		    	<!--  • Ganze Superial-Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:GanzeSZ',
               '', 'Sc_f_Paragraph',
@@ -172,7 +172,7 @@
           ); ?>
           
 
-		    	<!  • Natürliche Superial-Zahlen  >
+		    	<!--  • Natürliche Superial-Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ',
               '', 'Sc_f_Paragraph',
@@ -234,7 +234,7 @@
           ); ?>
           
 
-          <!  • Superiale Primzahlen  >
+          <!--  • Superiale Primzahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:PrimSZ',
               '', 'Sc_f_Paragraph',
@@ -313,7 +313,7 @@
           ); ?>
 
 
-          <!  • Eindeutigkeit der Normalform  >
+          <!--  • Eindeutigkeit der Normalform  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:EindeutigkeitNormalform',
               '', 'Sc_f_Paragraph',
@@ -402,7 +402,7 @@
           ); ?>
           
 
-          <!  • S ist ein Körper  >
+          <!--  • S ist ein Körper  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:SIstKoerper',
               '', 'Sc_f_Paragraph',
@@ -653,7 +653,7 @@
           ); ?>
 
 
-          <!  • S ist ein geordneter Körper  >
+          <!--  • S ist ein geordneter Körper  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper',
               '', 'Sc_f_Paragraph',
@@ -834,7 +834,7 @@
           ); ?>
 
 
-          <!  • Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }  >
+          <!--  • Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl',
               '', 'Sc_f_Paragraph',
@@ -1105,7 +1105,7 @@
           ); ?>
 
 
-          <!  • Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste  >
+          <!--  • Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste',
               '', 'Sc_f_Paragraph',
@@ -1291,7 +1291,7 @@
           ); ?>
 
 
-		    	<!  • Formalien  >
+		    	<!--  • Formalien  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Grundlagen:Formalien',
               '', 'Sc_f_Paragraph',
