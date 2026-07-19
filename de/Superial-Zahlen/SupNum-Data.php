@@ -211,6 +211,7 @@
             'OM:SupNum:Algebraische-Grundlagen:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der Schichten einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
             'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Fo.F.SS.1'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Fo.F.SS.2'),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen' => array( headline_text => 'Eingrenzung der Schichten der Superial-Zahlen'/* , headline_text_short => 'X' */),
             'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen' => array( headline_text => 'SN.Fo.F.ES.1'),
       ),
@@ -329,12 +330,6 @@
       jump_ary => array(
         'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen' => array( headline_text => 'Ableitung genau verstehen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen' => array( headline_text => 'Integral genau verstehen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Ein.3'),
-          'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral' => array( headline_text => 'Konkretes Integral'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Vortext:Kleiner-Ausblick-zwischendurch' => array( headline_text => 'Kleiner Ausblick zwischendurch'/*, headline_text_short => 'X'*/),
-
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
           'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
@@ -354,6 +349,11 @@
         'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen' => array( headline_text => 'Kurzdefinition der Superial-Zahlen'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele' => array( headline_text => 'Illustrierende Rechenbeispiele'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Ableitung-genau-verstehen' => array( headline_text => 'Ableitung genau verstehen'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen' => array( headline_text => 'Integral genau verstehen'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen:Konkretes-Integral' => array( headline_text => 'Konkretes Integral'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispieleErzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
+
 
         'OM:SupNum:Einleitung:Beweisstrategie' => array( headline_text => 'Beweisstrategie'/*, headline_text_short => 'X'*/),
 
