@@ -356,6 +356,10 @@
 
 
         'OM:SupNum:Einleitung:Beweisstrategie' => array( headline_text => 'Beweisstrategie'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung' => array( headline_text => 'Beweis der Primzahlprodukt-Vermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung' => array( headline_text => 'Beweis der Überrationalitätsvermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung' => array( headline_text => 'Beweis der Algebraischen-Koeffizienten-Vermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung' => array( headline_text => 'Beweis der Superialen-Transzendenz-Vermutung'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:AufbauArbeit' => array( headline_text => 'Aufbau der Arbeit'/*, headline_text_short => 'X'*/),
       ),

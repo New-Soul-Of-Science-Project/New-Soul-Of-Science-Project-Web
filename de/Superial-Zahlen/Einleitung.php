@@ -227,112 +227,6 @@
                     'Die neu entdeckten, unendlich großen Primfaktorzerlegungen offenbaren einen tiefen Zusammenhang'."\n".
                     'der endlichen Primzahlen mit dem Unendlichen über die rationalen Zahlen.'."\n",
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'Der Beweis der Primzahlprodukt-Vermutung', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Im spielerischen Umgang und in tiefen Analysen der Zusammenhänge kam in mir vor vielen Jahren die Vermutung auf, dass das Produkt'."\n".
-                    'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
-                    'arithmetisch der Anzahl der natürlichen Zahlen \lm{ ω } entspricht.'."\n",
-                      'Es ist mir mittlerweile gelungen, dies auf dieser Webseite rigoros zu beweisen und so gilt:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} findet im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹}'."\n".
-                    'eine nähere Begründung.'."\n".
-                    'Dort wird aufgrund des unendlich ganzzahligen Zählens innerhalb der Superial-Zahlen unter anderem erkannt,'."\n".
-                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 ω }}'."\n".
-                    'ein ganzzahliger Teiler von \lm{ \s } sein muss.'."\n".
-                    'Es gilt nämlich \lm{ \frac{ \s }{ 2 ω } \in \mathbb{N}_{\infty} }, also, dieser Bruch muss aktual unendlich groß und ganzzahlig sein.'."\n".
-                    'Daher muss \lm{ ω } ein ganzzahliger Teiler von \lm{ \frac{ \s }{ 2 } } sein;'."\n".
-                    'ein ganzzahliges Teilprodukt.'."\n",
-                      'In unserem Beweis zeigen wir schließlich,'."\n".
-                    'dass die Primfaktorzerlegung von \lm{ ω } endliche Primzahlen von Beginn an und'."\n".
-                    'ohne Lücke enthalten muss und eben unendlich viele.'."\n".
-                    'Was zusammengefasst bedeutet, einfach alle endlichen Primzahlen.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Der Beweis der Überrationalitätsvermutung', subline =>
-                  'Welcher uns zur Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
-                  array( 'text', array( text => array(
-                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
-                    'dreht sich um die Frage, ob irrationale Wurzeln'."\n".
-                    'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden können.'."\n",
-                      'Unser vollendetes Theorem der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
-                    'Ein überrationaler Bruch ist demnach ein Bruch, der im Nenner und im Zähler unendlich große ganze Zahlen hat,'."\n".
-                    'deren Primfaktorzerlegung aus unendlich hohen Potenzen endlich vieler Primzahlen besteht:'."\n".
-                    ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Diesen Bruch können wir von der Basis her reduzieren, wenn \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz darstellt:'."\n",
-                    ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Da die beiden folgenden Ausdrücke aktual unendliche ganze Zahlen darstellen'."\n",
-                    ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => false),
-                      array( display => 'on',  latex => '{  \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'ist auch ihr Produkt eine aktual unendlich große ganze Zahl und fällt somit in die natürlichen Superial-Zahlen'."\n",
-                    ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'wie wir sehen.'."\n",
-                      'So ist ein Produkt jedes überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n".
-                    'Also gehören auch die irrationalen Wurzeln zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
-                    'Also auch die Wurzel aus Zwei \lm{ \sqrt{2} },'."\n".
-                    'mit \lm{ \sqrt{2} \cdot \s \in \mathbb{S}_{\N} }.'."\n",
-                      'Dies ist eine bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
-                    'die uns schon so, aber ganz besonders im weiteren Verlauf, neue Informationen über Wurzeln (Radikale) und schließlich über Wurzelausdrücke (Radikalformen) liefert.'."\n".
-                    'Schließlich können wir die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
-                    'der sinnvollen Koeffizienten der Superial-Zahlen zeigen.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Der Beweis der Algebraischen-Koeffizienten-Vermutung', subline =>
-                  'Welcher uns zur Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
-                  array( 'text', array( text => array(
-                    'Im Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} stellen sich alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'als sinnvolle Koeffizienten der Superial-Zahlen heraus.'."\n".
-                    'Damit zeigen wir sogar ihre \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Der Beweis der Superialen-Transzendenz-Vermutung', subline =>
-                  'Welcher uns zur ausschließlichen Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
-                  array( 'text', array( text => array(
-                    'Und im Beweis der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung} zeigen wir noch,'."\n".
-                    'dass nur die reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
-                    'Was bedeutet, dass transzendente Zahlen keine sinnvollen Koeffizienten der Superial-Zahlen sind.'."\n",
-                      'Transzendente Zahlen tragen nämlich im Rahmen der Superial-Zahlen superial kleine Summanden.'."\n".
-                    'Womit wir erkennen können, dass Superial-Zahlen im Grunde reelle Zahlen sind, die echte infinite, also aktual unendliche Anteile besitzen.'."\n".
-                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht exakt der arithmetischen Bruchlinie'."\n".
-                    'zwischen den reell algebraischen Zahlen und den transzendenten Zahlen.'."\n".
-                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die Erweiterung der Arithmetik ins Unendliche', subline =>
@@ -1150,11 +1044,7 @@
                   'Funktionsweise in der Praxis')), */
                   array( 'text', array( text => array(
                     'Nachdem die theoretischen Kernresultate der Superial-Zahlen formal skizziert wurden,'."\n",
-                    'soll das folgende konkrete Rechenbeispiel die praktische Funktionsweise verdeutlichen.'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
+                    'sollen die folgenden konkreten Rechenbeispiele die praktische Funktionsweise verdeutlichen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
 
@@ -1590,23 +1480,132 @@
                       array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele', type => 'back'),
                     )),
                   
-                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Beweisstrategie', subline =>
-                  '')), */
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
+                    'Die neu entdeckten, unendlich großen Primfaktorzerlegungen offenbaren einen tiefen Zusammenhang'."\n".
+                    'der endlichen Primzahlen mit dem Unendlichen über die rationalen Zahlen.'."\n".
+                    'Ihre Verbindungen mit dem Unendlichen beleuchtet wir in den folgenden Beweisen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:X:X', text =>
-                                           
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung'),
+                    )),
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung', text =>
+
+                'Beweis der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Im spielerischen Umgang und in tiefen Analysen der Zusammenhänge kam in mir vor vielen Jahren die Vermutung auf, dass das Produkt'."\n".
+                    'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
+                    'arithmetisch der Anzahl der natürlichen Zahlen \lm{ ω } entspricht.'."\n",
+                      'Es ist mir mittlerweile gelungen, dies auf dieser Webseite rigoros zu beweisen und so gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} findet im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹}'."\n".
+                    'eine nähere Begründung.'."\n".
+                    'Dort wird aufgrund des unendlich ganzzahligen Zählens innerhalb der Superial-Zahlen unter anderem erkannt,'."\n".
+                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 ω }}'."\n".
+                    'ein ganzzahliger Teiler von \lm{ \s } sein muss.'."\n".
+                    'Es gilt nämlich \lm{ \frac{ \s }{ 2 ω } \in \mathbb{N}_{\infty} }, also, dieser Bruch muss aktual unendlich groß und ganzzahlig sein.'."\n".
+                    'Daher muss \lm{ ω } ein ganzzahliger Teiler von \lm{ \frac{ \s }{ 2 } } sein;'."\n".
+                    'ein ganzzahliges Teilprodukt.'."\n",
+                      'In unserem Beweis zeigen wir schließlich,'."\n".
+                    'dass die Primfaktorzerlegung von \lm{ ω } endliche Primzahlen von Beginn an und'."\n".
+                    'ohne Lücke enthalten muss und eben unendlich viele.'."\n".
+                    'Was zusammengefasst bedeutet, einfach alle endlichen Primzahlen.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung', text =>
+                                           
+                'Beweis der Überrationalitätsvermutung', subline =>
+                  'Welcher uns zur Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  array( 'text', array( text => array(
+                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
+                    'dreht sich um die Frage, ob irrationale Wurzeln'."\n".
+                    'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden können.'."\n",
+                      'Unser vollendetes Theorem der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
+                    'Ein überrationaler Bruch ist demnach ein Bruch, der im Nenner und im Zähler unendlich große ganze Zahlen hat,'."\n".
+                    'deren Primfaktorzerlegung aus unendlich hohen Potenzen endlich vieler Primzahlen besteht:'."\n".
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diesen Bruch können wir von der Basis her reduzieren, wenn \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz darstellt:'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da die beiden folgenden Ausdrücke aktual unendliche ganze Zahlen darstellen'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => false),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist auch ihr Produkt eine aktual unendlich große ganze Zahl und fällt somit in die natürlichen Superial-Zahlen'."\n",
+                    ''))),
+                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wie wir sehen.'."\n",
+                      'So ist ein Produkt jedes überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n".
+                    'Also gehören auch die irrationalen Wurzeln zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
+                    'Also auch die Wurzel aus Zwei \lm{ \sqrt{2} },'."\n".
+                    'mit \lm{ \sqrt{2} \cdot \s \in \mathbb{S}_{\N} }.'."\n",
+                      'Dies ist eine bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
+                    'die uns schon so, aber ganz besonders im weiteren Verlauf, neue Informationen über Wurzeln (Radikale) und schließlich über Wurzelausdrücke (Radikalformen) liefert.'."\n".
+                    'Schließlich können wir die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
+                    'der sinnvollen Koeffizienten der Superial-Zahlen zeigen.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung', text =>
+                                           
+                'Beweis der Algebraischen-Koeffizienten-Vermutung', subline =>
+                  'Welcher uns zur Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  array( 'text', array( text => array(
+                    'Im Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} stellen sich alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'als sinnvolle Koeffizienten der Superial-Zahlen heraus.'."\n".
+                    'Damit zeigen wir sogar ihre \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung', text =>
+                                           
+                'Beweis der Superialen-Transzendenz-Vermutung', subline =>
+                  'Welcher uns zur ausschließlichen Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  array( 'text', array( text => array(
+                    'Und im Beweis der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung} zeigen wir noch,'."\n".
+                    'dass nur die reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Was bedeutet, dass transzendente Zahlen keine sinnvollen Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Transzendente Zahlen tragen nämlich im Rahmen der Superial-Zahlen superial kleine Summanden.'."\n".
+                    'Womit wir erkennen können, dass Superial-Zahlen im Grunde reelle Zahlen sind, die echte infinite, also aktual unendliche Anteile besitzen.'."\n".
+                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht exakt der arithmetischen Bruchlinie'."\n".
+                    'zwischen den reell algebraischen Zahlen und den transzendenten Zahlen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
