@@ -1187,21 +1187,6 @@
                       'Diese Summe haben wir auch noch einmal im Einzelnen im Rahmen der Superial-Zahlen aus ihren Teilsummen im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel}‹}'."\n".
                       'hergeleitet, um zu zeigen, und damit ganz sicher zu gehen, dass diese richtig ist.'."\n",
                         'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
-                      /*  '\color{*Bearb}{(In Arbeit …)} Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
-                      'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
-                        'Wir können an dieser Stelle diese noch unbekannte Summe durch Umstellung berechnen,'."\n".
-                      'denn das Ergebnis \lm{ f(x) = x^2 } ist uns ja nun schon durch das erste Ableitungsbeispiel oben bekannt,'."\n".
-                      'und wir setzen es dazu ein:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Int', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  x^{2}  =  0^{2} \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  x^{2} - x \cdot s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \frac{ x^{2} - x \cdot s^{-1} }{ 2 \cdot s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s - x }{ 2 }  }'),
-                                          //%! label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array( */
                       'Dies eingesetzt in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe}'."\n".
                       'ergibt'."\n".
                       ''))),
@@ -1626,7 +1611,8 @@
                 'Aufbau der Arbeit', subline =>
                   '')), */
                   array( 'text', array( text => array(
-                    'XXX'."\n",
+                    'Die Darstellung folgt zunächst einem anschaulich-rechnerischen Weg und führt erst später zur arithmetischen'."\n".
+                    'und mengentheoretischen Fundierung.'."\n",
                     'XXX'."\n",
                     'XXX'."\n",
                     'XXX'."\n",
