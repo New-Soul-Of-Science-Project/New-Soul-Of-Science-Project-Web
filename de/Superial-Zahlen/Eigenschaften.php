@@ -604,7 +604,7 @@
                     'Wobei wir feststellen, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können,'."\n".
                     'weil wir so bereits am Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
                       'So erkennen wir dann auch durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
-                    'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
+                    'dass wir mit dem \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
                     'bei der Teilung durch \lm{ \s } eine Feinheit der Teile erreichen,'."\n".
                     'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
                     'wenn nicht sogar \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}.'."\n",
@@ -1408,6 +1408,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Erweiterung-Arithmetik-Unendliche'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen'),
                     )),
 
@@ -1570,6 +1571,95 @@
                     'im superialen Unendlichen sind dann alle Lösungen ganze Zahlen.'."\n",
                       'Dies hat eine gewisse Ähnlichkeit mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
+                    ''))),
+
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Erweiterung-Arithmetik-Unendliche', text =>
+                                           
+                'Erweiterung der Arithmetik ins Unendliche', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen erweitern die uns bekannte Arithmetik\footnote{\const{NSOSP_g_footnote_text_Arithmetik}}'."\n".
+                    'ins Aktual-Unendliche, wobei sehr viele der ekannten Regeln nicht nur im Endlichen gelten,'."\n".
+                    'sondern auch in der unendlichen Erweiterung:'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Die Untermengen der reellen Zahlen erweitern sich ins Unendliche', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Es werden im Grunde alle wichtigen Untermengen der reellen Zahlen ins Aktual-Unendliche erweitert.'."\n".
+                    'So gibt es zum Beispiel natürliche \lm{ \mathbb{S}_{\N} }, ganze \lm{ \mathbb{S}_{\Z} }, gerade und ungerade, rationale Superial-Zahlen \lm{ \mathbb{S}_{\Q} } und auch superiale Primzahlen.'."\n",
+                      'Reell algebraische Zahlen \lm{ \mathbb{A}_{\R} }, so auch irrationale Wurzeln und Radikalformen, ordnen sich in die neue Struktur ein, indem sie die Rolle der'."\n".
+                    'Koeffizienten des superialen Stellenwertsystems \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } übernehmen.'."\n".
+                    'Transzendente Zahlen sind aus der neuen Perspektive gesehen dann Zahlen, die, sehr allgemein gesprochen, an mehreren Stellen des Stellenwertsystems nicht Null sind;'."\n".
+                    'oder die unendlich klein oder groß sind, je nach Interpretation.'."\n",
+                      'So bekommen wir einen detaillierten Überblick, wie die Untermengen der reellen Zahlen zueinander gehören,'."\n".
+                    'verständlicher, als es bisher der Fall war, meine ich.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Unendliche Primzahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden, wie gesagt, und wir erhalten die Menge \lm{ \mathbb{S}_{\P} } der \italic{superialen Primzahlen}.'."\n".
+                    'Zum Beispiel sind die Zahlen \lm{ s - 1 } und \lm{ s + 1 } unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
+                    'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilt.'."\n".
+                    'Die Zahlen \lm{ s \pm 2 } sind hingegen beide durch \lm{ 2 } teilbar, also keine Primzahlen.'."\n",
+                      'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen'."\n".
+                    'im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verspricht.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Rechnen im Unendlichen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch das beliebige vorwärts und rückwärts Zählen, die Addition, die Multiplikation und deren Umkehrrechenarten,'."\n".
+                    'die Subtraktion und die Division, werden ins Unendliche erweitert.'."\n".
+                    'Ebenso gibt es weiter den Betrag einer Zahl, das Modulo und den Rest einer Teilung.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Neue Einsichten zum Rechnen im Hintergrund', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Zahlen wie \lm{ ω } sind selber keine Superial-Zahlen, spielen in der Arithmetik der Superial-Zahlen im Hintergrund – oder Untergrund –'."\n".
+                    'eine wichtige Rolle.'."\n".
+                    'Zunächst im wesentlichen in den Exponenten der Primzahlen, wenn wir das Primzahl-Flächenprodukt von \lm{ \s } betrachten.'."\n".
+                    'Schließlich dann auch in den Anzahlen oder Summen der Elemente der Teilmengen der Superial-Zahlen,'."\n".
+                    'wie vorstehend im \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen}{Ausblick} angedeutet.'."\n".
+                    'Nun aber zu den Exponenten.'."\n",
+                      'Multiplizieren wir \lm{ \s } mit \lm{ 2 }, so verändert sich die Potenz der Primzahl \lm{ 2 } im Primzahl-Flächenprodukt von \lm{ 2^{ω} } zu \lm{ 2^{ω + 1} },'."\n".
+                    'wie wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten}{oben} schon betrachtet haben.'."\n".
+                    'Im Falle des Produkts \lm{ *| \sqrt{2} |* \s = 2^{\frac{ 1 }{ 2 }} \s } verändert sich die Potenz von \lm{ 2^{ω} } dann zu \lm{ 2^{ω + \frac{ 1 }{ 2 }} }.'."\n",
+                      'Wir wissen nun aus dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}, dass'."\n".
+                    '\lm{ 2^{ω + \frac{ 1 }{ 2 }} } eine ganze Zahl sein muss.'."\n".
+                    'Dies gilt sogar für alle \lm{ n^{\frac{1}{x}} \cdot n^{ω} = n^{ω + \frac{1}{x}} },'."\n".
+                    'denn anders als im Endlichen sind im Unendlichen alle diese Zahlen ganze Zahlen, was sehr bemerkenswert ist und für die Ganzheit'."\n".
+                    'der Superial-Zahlen wichtige Konsequenzen hat.'."\n",
+                      'Und es gibt noch weitere Erkenntnisse.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Eine unerwartete Verbindung der reell algebraischen Zahlen mit dem Zählen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das natürliche Zählen spiegelt sich in den \italic{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} } wider.'."\n".
+                    'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \lm{ \s }.'."\n",
+                      'Nun wissen wir, dass wir reell algebraische Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
+                    'weil sie von ihrer Anordnung her dicht sind.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahlDichtheit}}'."\n".
+                    'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die reell algebraischen Zahlen ihrer Größe nach,'."\n".
+                    'als Koeffizienten der Potenzen von \lm{ \s }, implizit mit.'."\n",
+                      'Denn wir zählen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.NR.Ari', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{3} \cdot s - 2,\; \frac{1}{3} \cdot s - 1,\; \frac{1}{3} \cdot s,\; \frac{1}{3} \cdot s + 1,\; \frac{1}{3} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} \cdot s - 2,\; \frac{1}{2} \cdot s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot s + 1,\; \frac{1}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{3}{2} \cdot s - 2,\; \frac{3}{2} \cdot s - 1,\; \frac{3}{2} \cdot s,\; \frac{3}{2} \cdot s + 1,\; \frac{3}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und so fort.'."\n",
+                      'Dort wo drei vertikale Punkte ›⋮‹ stehen, werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
+                    'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen', text =>
@@ -1842,7 +1932,7 @@
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \\\ \qquad\qquad\quad\;\; (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots)_{\#}  }'),
                     ))),
                   array( 'text', array( text => array(

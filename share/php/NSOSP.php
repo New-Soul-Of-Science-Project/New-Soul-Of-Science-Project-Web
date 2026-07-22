@@ -483,6 +483,7 @@
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
+  $SupNum_g_footnote_text_SatzDesEuklid         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';

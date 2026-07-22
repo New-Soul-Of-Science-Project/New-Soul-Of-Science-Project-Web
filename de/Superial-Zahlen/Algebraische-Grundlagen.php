@@ -278,7 +278,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'und beispielsweise auch diese vorstehenden aktual unendlich großen Superial-Zahlen.'."\n".
-                    'Dies können wir leicht erkennen, wenn wir uns in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                    'Dies können wir leicht erkennen, wenn wir uns in Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
                     'das Primzahl-Flächenprodukt anschauen.'."\n",
                       'Kommen höhere Potenzen der superialen Basis ins Spiel, müssen wir schauen, ob es nicht binomische Formeln gibt, die diese erzeugen können:'."\n".
                     ''))),

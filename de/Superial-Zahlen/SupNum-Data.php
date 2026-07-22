@@ -308,6 +308,7 @@
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen' => array( headline_text => 'Wurzeln aus aktual unendlich großen ganzen Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel' => array( headline_text => 'Pythagoreische Tripel'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz' => array( headline_text => 'Großer Fermatscher Satz'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Erweiterung-Arithmetik-Unendliche' => array( headline_text => 'Erweiterung der Arithmetik ins Unendliche'/* , headline_text_short => '' */),
           'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen' => array( headline_text => 'Aktual-Unendliche Exponenten der Primzahlen in Potenzialzahlen'/* , headline_text_short => 'X' */),
             'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn' => array( headline_text => 'SN.Eig.NR.Exp.23'),
                    
@@ -330,13 +331,6 @@
       jump_ary => array(
         'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
-            'OM:SupNum:Einleitung:Vortext:Definition-von-s' => array( headline_text => 'Die Definition von \lm{ \s }',/* headline_text_short => 'X' */),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.Ein.Def.1'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.Ein.Def.2'),
-            'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.Ein.Def.3'),
-            'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-
         'OM:SupNum:Einleitung:Motivation' => array( headline_text => 'Motivation'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:ProblemstellungZielsetzung' => array( headline_text => 'Problemstellung und Zielsetzung'/*, headline_text_short => 'X'*/),
@@ -344,14 +338,16 @@
         'OM:SupNum:Einleitung:HauptergebnisseUebersicht' => array( headline_text => 'Hauptergebnisse in der Übersicht'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen' => array( headline_text => 'Kurzdefinition der Superial-Zahlen'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
+            'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Definition-von-s' => array( headline_text => 'Die Definition von \lm{ \s }',/* headline_text_short => 'X' */),
+            'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
         'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele' => array( headline_text => 'Illustrierende Rechenbeispiele'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Ableitung-genau-verstehen' => array( headline_text => 'Ableitung genau verstehen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen' => array( headline_text => 'Integral genau verstehen'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen:Konkretes-Integral' => array( headline_text => 'Konkretes Integral'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispieleErzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Die Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten'/* , headline_text_short => '' */),
-          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Erweiterung-Arithmetik-Unendliche' => array( headline_text => 'Erweiterung der Arithmetik ins Unendliche'/* , headline_text_short => '' */),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Rechnen-Unendliches-Stellenwertsystem' => array( headline_text => 'Rechnen mit dem unendlichen Stellenwertsystem'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:Beweisstrategie' => array( headline_text => 'Beweisstrategie'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung' => array( headline_text => 'Beweis der Primzahlprodukt-Vermutung'/*, headline_text_short => 'X'*/),
@@ -494,6 +490,12 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As' => array( headline_text => 'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen' => array( headline_text => 'Beweis: Genau die reell algebraischen Zahlen sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen' => array( headline_text => 'SN.SinK.17'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten' => array( headline_text => 'Rationale Zahlen sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten'/* , headline_text_short => '' */),
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.SinK.RZ.1'),
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.SinK.RZ.2'),
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega' => array( headline_text => 'SN.SinK.RZ.3'),
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten' => array( headline_text => 'Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen' => array( headline_text => 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),

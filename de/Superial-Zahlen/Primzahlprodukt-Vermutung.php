@@ -31,7 +31,7 @@
 
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Abstract: Die kanonische Primfakultätsidentifikation \lm{ ω \equiv_{kan} ω\overline{\#} }', subline =>
+                'Abstract: Die kanonische Primexponentenidentifikation \lm{ ω \equiv_{kan} ω\overline{\#} }', subline =>
                   '')),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Einleitung und Problemstellung', subline =>
@@ -46,11 +46,11 @@
                       'Über die ordinale Mengendarstellung nach von Neumann weisen wir nach,'."\n".
                     'dass das unendliche Primzahlprodukt kein unbestimmtes Unendliches ist,'."\n".
                     'sondern als ein präziser algebraischer Struktur-Generator fungiert.'."\n".
-                    'Das zentrale Ergebnis dieser Arbeit ist die strikt deduktive kanonische Primfakultätsidentifikation:'."\n".
+                    'Das zentrale Ergebnis dieser Arbeit ist die strikt deduktive kanonische Einheits-Primexponentenidentifikation:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{\forall p \in \mathbb{P}} p  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -80,7 +80,7 @@
                           'Die ordinale Mächtigkeit des dichten, ununterbrochenen Anfangsabschnitts des Erzeugungsspektrums ab der Null.',
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beweisstrategie-generative-Primzahl-Induktions-Lemma', text =>
                   'Die Beweisstrategie: Das generative Primzahl-Induktions-Lemma', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -127,7 +127,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Es wird \bold{innerhalb der ZFC-Mengenlehre} die kanonische Primfakultätsidentifikation bewiesen:'."\n".
+                      'Es wird \bold{innerhalb der ZFC-Mengenlehre} die kanonische Primexponentenidentifikation bewiesen:'."\n".
                       'Das Primfakultätsobjekt \lm{ ω\overline{\#} } aller endlichen Primzahlen – definiert als vollständige'."\n".
                       'Primexponentenbelegung \lm{ \mathbf{1}_{\mathbb{P}} } – besitzt kanonisch den lückenlosen Zahlenwert'."\n".
                       'des gewöhnlichen von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω }.'."\n".
@@ -211,13 +211,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Im Folgenden können wir dies klar erkennen.'."\n",
-                      'Denn \lm{ \s } ist in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                      'Denn \lm{ \s } ist in Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
                     'durch folgendes Primzahl-Flächenprodukt definiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\;\; \;\;\;\; \vdots \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\;\; \;\;\;\; \vdots  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\const{SupNum_g_text_ZFCkonform}'."\n",
@@ -293,7 +293,7 @@
                 'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.}'."\n".
+                    'Der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\const{SupNum_g_footnote_text_SatzDesEuklid}}'."\n".
                     'beweist, dass die Primzahlen in den unendlich vielen natürlichen Zahlen nicht enden, sondern es auch unendlich viele endliche Primzahlen gibt.'."\n",
                       'Wenn wir verstehen, dass der ›Satz des Euklid‹ ebenso beweist,'."\n".
                     'dass die endlichen natürlichen Zahlen nicht enden, dann können wir erkennen,'."\n".
@@ -344,7 +344,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis des ›Satz des Euklid‹'."\n".
-                    'beweist, dass die Primzahlen endlicher Größe nicht enden.'."\n",
+                    'zeigt, dass die Primzahlen endlicher Größe nicht enden.'."\n",
                       'Ich gebe diesen Beweis nachfolgend in Kurzform wieder.'."\n".
                     'Dabei werde ich ihn etwas modifizieren, damit er zu den von uns gesuchten Eigenschaften am besten passt und'."\n".
                     'wir ihn gut weiterverwenden können:'."\n".
@@ -710,40 +710,40 @@
                     'und mit ihnen die natürlichen Zahlen erneut zu konstruieren.'."\n".
                     'Dies führt uns schließlich auch zum Beweis unserer Vermutung.'."\n",
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
-                    'und über eine zu diesem Zweck etwas abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
+                    'und über eine zu diesem Zweck abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei der \italic{Mengen-Primorial-Operator} \lm{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} genannt,'."\n".
-                      'der Operator, der alle Primzahlen in der Menge \lm{ \mathbb{T} } in einem Produkt multipliziert:'."\n".
+                      'der Operator, der alle Primzahlen in der Menge \lm{ \mathbb{T} } in einem Einheits-Primexponentenprodukt multipliziert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prodx_{ \forall p \in \mathbb{T} \cap \mathbb{P} }  \! p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'So erhalten wir eine Definition der Primfakultät, die sich auf die Elemente von Mengen bezieht.'."\n",
+                      'So erhalten wir eine neue Definition der Primfakultät (Primexponentenidentifikation), die sich auf die Elemente von Mengen bezieht.'."\n",
                         '\\\\'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{\bold{Notationsvereinbarung – Primexponentenprodukt:}}'."\n".
-                      'Um Primprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
+                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{}\bold{Notationsvereinbarung – Primexponentenprodukt:}'."\n".
+                      'Um Primexponentenprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
                       'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prodx } ein.'."\n".
                       'Das Symbol'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prodx_{\forall p \in A}  p^{e(p)}  }'),
+                      array( display => 'on',  latex => '{  \prodx_{ p \in A }  p^{e(p)}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'bezeichnet ein \italic{Primexponentenprodukt}. Es ist kein gewöhnliches konvergentes Produkt,'."\n".
                       'sondern ein Bewertungsobjekt, das vollständig durch seine Primexponenten bestimmt wird.'."\n".
-                      'Für eine Primzahlmenge \lm{ A \subseteq \mathbb{P} } und eine Exponentenbelegung \lm{ e : A \to E_{\infty} } gilt:'."\n".
+                      'Für eine Menge von endlichen Primzahlen \lm{ A \subseteq \mathbb{P} } und eine Exponentenbelegung \lm{ e : A \to E_{\infty} } gilt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p} *( \prodx_{\forall q \in A}  q^{e(q)} *)  =  \begin{cases}  e(p)  &  p \in A  \\\\  0  &  p \notin A  \end{cases}  }'),
+                      array( display => 'on',  latex => '{  v_{p} *( \prodx_{ q \in A }  q^{e(q)} *)  =  \begin{cases}  e(p)  &  p \in A  \\\\  0  &  p \notin A  \end{cases}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Fehlende Primzahlen besitzen also den Exponenten \lm{ 0 }.'."\n".
@@ -751,7 +751,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \prodx_{\forall p \in \mathbb{P}}  p  }'),
+                      array( display => 'on',  latex => '{  \prodx_{ p \in \mathbb{P} }  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ist das \italic{vollständige Einheits-Primexponentenprodukt} aller endlichen Primzahlen –'."\n".
@@ -761,7 +761,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbf{1}_{\mathbb{P}} :  \quad  \mathbb{P} \to \{ 1 \}  \;\; ,  \quad  ( p \in \mathbb{P} ) *[ \mathbf{1}_{\mathbb{P}}(p) = 1 *]  }'),
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prodx_{ \forall p \in \mathbb{P} }  p  }'),
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  :=  \prodx_{ p \in \mathbb{P} }  p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das Primexponentenprodukt \lm{ ω\overline{\#} } ist durch seine Primturmmenge \lm{ \pt*( ω\overline{\#} *) = \{ p^{1} \mid p \in \mathbb{P} \} } vollständig bestimmt.'."\n".
@@ -2130,7 +2130,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die kanonische Primfakultätsidentifikation bewiesen. \lm{ \blacksquare }'."\n",
+                      'Damit ist die kanonische Einheits-Primexponentenidentifikation bewiesen. \lm{ \blacksquare }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2152,7 +2152,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Diese Gleichheit ist keine extensionale Gleichheit des von-Neumann-Ordinals \lm{ ω } mit einem konvergenten'."\n".
-                    'unendlichen Produkt, sondern die vereinbarte Kurzschreibweise für die kanonische Primfakultätsidentifikation.'."\n".
+                    'unendlichen Produkt, sondern die vereinbarte Kurzschreibweise für die kanonische Einheits-Primexponentenidentifikation.'."\n".
                     'Ausgeschrieben lautet diese Vereinbarung:'."\n".
                     ''))),
                   array( 'equations',
@@ -2167,7 +2167,7 @@
                   '')),
 
                   array( 'text', array( text => array(
-                    'Die kanonische Primfakultätsidentifikation \lm{ ω \equiv_{kan} ω\overline{\#} } markiert einen tiefen Paradigmenwechsel'."\n".
+                    'Die kanonische Einheits-Primexponentenidentifikation \lm{ ω \equiv_{kan} ω\overline{\#} } markiert einen tiefen Paradigmenwechsel'."\n".
                     'in der Betrachtung transfiniter Objekte.'."\n".
                     'Sie zeigt, dass das Primfakultätsobjekt aller endlichen Primzahlen kein unbestimmtes Unendliches darstellt,'."\n".
                     'sondern kanonisch die ordinale Struktur von \lm{ ω } selbst trägt.'."\n",

@@ -40,12 +40,12 @@
                     'Und in den aktual unendlichen Summanden der ganzen Superial-Zahlen, also die positiven Potenzen von \lm{ \s },'."\n".
                     'ergibt sich das Fragezeichen, dass nicht gleich ganz eindeutig beantwortbar ist.'."\n",
                       'Das kommt daher, weil die aktual unendlich Großen Summanden dieser ganzen Superial-Zahlen alle ganze Zahlen sein müssen.'."\n".
-                    'Und zwar deshalb, weil der endliche Summand und die unendlich kleinen Summand in jedem Fall immer ganze Zahlen sind.'."\n".
+                    'Und zwar deshalb, weil der endliche Ganzzahl-Summand und die unendlich kleinen Null-Summanden in jedem Fall immer ganze Zahlen sind.'."\n".
                     'Kommt nun der Summand dazu, der Eins als Potenz hat, also \lm{ \s^{1} = \s }, muss dieser im Produkt mit seinem Koeffizienten'."\n".
                     'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n".
                     'Denn auf eine ganze Zahl müssen wir immer eine ganze Zahl addieren, damit wieder eine ganze Zahl herauskommt.'."\n",
                       'Dazu stellen wir fest, dass schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur'."\n".
-                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
+                    '\jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
                     'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
                     'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}'."\n".
@@ -191,7 +191,7 @@
                     'ganze Zahlen sind.'."\n",
                       'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
                     'der reell algebraischen Zahlen sind, ist es offensichtlich,'."\n".
-                    'dass sie \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
+                    'dass sie \jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
                     'Wie diese \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
                     'zeigen wir in der \jump{OM:SupNum:Algebraische-Grundlagen}{formalen Entwicklung}.'."\n".
                     'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
@@ -497,7 +497,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten'),
                     )),
                 )
           ); ?>
@@ -505,16 +505,126 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
+          <!--  • Rationale Zahlen sind sinnvolle Koeffizienten  -->
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    // '• Hier ggf. auch mit \lm{ n^{ω + \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten', text =>
+
+                'Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Für das Primzahlprodukt von \lm{ \s } ergibt sich also, wie eben beschrieben,'."\n".
+                    'eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \prodx_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Rationale Zahlen und ihre Primfaktorzerlegung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} hat,'."\n".
+                    'so hat im Grunde auch jede rationale Zahl größer Null und ungleich Eins eine'."\n".
+                    'Primfaktorzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ 250 }{ 567 }  =  \frac{ 2 \cdot 5^{3} }{ 3^{4} \cdot 7 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 250 }{ 567 }  =  2 \cdot 3^{-4} \cdot 5^{3} \cdot 7^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies kommt daher, weil bekanntermaßen jede rationale Zahl ein Bruch zweier ganzer Zahlen ist,'."\n".
+                    'ausgeschlossen ist natürlich durch Null zu teilen, und alle negativen Exponenten zusammen den Nenner des Bruchs darstellen.'."\n",
+                      'Welche Eigenschaft muss die Zahl \lm{ \s } nun haben, sodass sie multipliziert mit jeder'."\n".
+                    'rationalen Zahl immer noch eine ganze Zahl ergibt?'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'XXX', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Mit Hilfe der neuen Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} können wir auch Zahlen wie'."\n".
+                    '\lm{ ω - n }, mit \lm{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
+                    'des \italic{unendlichen Primzahl-Flächenprodukts} durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{2}{9} \cdot \s  =  2^{ ω + 1} \cdot 3^{ ω - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier können wir sehen, dass \lm{ \s } durch Multiplikation mit endlich beliebig vielen'."\n".
+                    'rationalen Zahlen immer unendlich groß bleibt, also seine superiale Dimension nicht verändert.'."\n".
+                    'Denn dadurch werden, aufgrund der Primfaktorzerlegung endlicher ganzer Zahlen, immer'."\n".
+                    'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n".
+                    'Da für jede der endlichen ganze Zahlen \lm{ z_{1} } und \lm{ z_{2} } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Ungleichung \lm{ ω + z_{1} < 2 ω + z_{2} } immer'."\n".
+                    'bestehen bleibt}, kann kein rationaler Koeffizient \lm{ q_{m} } einer endlich ganzzahligen Potenz \lm{ m } in'."\n".
+                    '\lm{ \s^{m} } in eine andere Potenzebene bringen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \nexists q_{m} \in \mathbb{Q}^{+} *) *( \forall q_{m - 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{m} \cdot s^{m}  <  q_{m - 1} \cdot s^{m - 1}  *]   }'),
+                      array( display => 'on',  latex => '{  *( \nexists q_{m} \in \mathbb{Q}^{+} *) *( \forall q_{m + 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{m} \cdot s^{m}  >  q_{m + 1} \cdot s^{m + 1}  *]   }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Potenz \lm{ k } in \lm{ \s^{k} } dominiert den Koeffizienten \lm{ q_{k} }'."\n".
+                    'bezüglich der Größe in der Anordnung und ist der Grund für die lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'der Superial-Zahlen.'."\n",
+                      'Diese Eigenschaft ist generell sehr bemerkenswert und tatsächlich auch durch die'."\n".
+                    'Definition von \lm{ \s } über das unendliche Primzahl-Flächenprodukt gewährleistet.'."\n".
+                    'Weiteres zur Dominanz der Potenzen von \lm{ \s } untersuchen wir im Abschnitt \italic{\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen}}.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten'),
+                    )),
+              )
+          ); ?>
+
+
           <!--  • Radikale sind sinnvolle Koeffizienten  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten',
               'Das Ergebnis des Beweises der Überrationalitätsvermutung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     '• Hier ggf. auch mit \lm{ n^{ω + \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
                     ))),

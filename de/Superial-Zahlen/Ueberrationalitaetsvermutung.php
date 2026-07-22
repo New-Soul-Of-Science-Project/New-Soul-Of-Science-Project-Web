@@ -271,7 +271,7 @@
                   array( 'text', array( text => array(
                     'Wir forschen und beweisen unsere Vermutung ja im Rahmen der Superial-Zahlen.'."\n".
                     'So interessiert uns natürlich besonders, welche Bedeutung unsere Erkenntnis hier haben'."\n",
-                      'Unser normierter Faktor \lm{ 2^{ω} } ist Teil des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}.'."\n".
+                      'Unser normierter Faktor \lm{ 2^{ω} } ist Teil des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega}.'."\n".
                     'Daher können wir den Faktor auch wie folgt ersetzen:'."\n".
                     ''))),
                   array( 'equations',

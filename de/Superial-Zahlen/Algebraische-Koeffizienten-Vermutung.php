@@ -56,7 +56,7 @@
                     'Ganzzahlige Brüche')),
                   array( 'text', array( text => array(
                     'Jede rationale Zahl ist im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur ganz offensichtlich'."\n".
-                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine aktual unendlich große ganze Zahl}.'."\n".
+                    '\jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s}{immer eine aktual unendlich große ganze Zahl}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Radikale', subline =>
