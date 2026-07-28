@@ -258,7 +258,7 @@
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
     echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js"],'."\n";
+    echo '          extensions: ["color.js", "cancel.js"],'."\n";
     echo '          Macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit

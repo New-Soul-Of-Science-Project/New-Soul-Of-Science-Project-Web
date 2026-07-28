@@ -93,7 +93,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( (p_{i} + 1)\overline{\#} *)  =  p_{i + 1}  }',
+                      array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr*( (p_{i} + 1)\overline{\#} *)  }',
+                                          // label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -258,7 +259,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
                       
-                'Wir vermuten, \lm{ ω } ist die vollständige Primfakultät aller endlichen Primzahlen', subline =>
+                'Wir vermuten, \lm{ ω } ist das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Eine Möglichkeit, die noch bleibt, ist, dass \lm{ ω } dem unendlichen Produkt aller'."\n".
@@ -311,7 +312,8 @@
                   'Beweis durch die Primfakultät und die Phasenverschiebung um \lm{ \pm 1 }', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Und ein weiteres Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen mittels der Primfakultät und der Phasenverschiebung'."\n".
+                    'Und ein weiteres Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen mittels der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}}'."\n".
+                    'und der Phasenverschiebung'."\n".
                     'um \lm{ \pm 1 } beweisen, auf Basis der Multiplikationsatome der Primzahlen und des Zählatoms Eins, ausgehend von der Eins.'."\n".
                     'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
                     'Denn sein Beweis basiert auf der Primfakultät, also auf dem Primorial\footnote{\const{SupNum_g_footnote_text_Primorial}},'."\n".
@@ -362,7 +364,7 @@
                   array( 'text', array( text => array(
                     'Nach dieser Definition sind Null und Eins keine Primzahlen.'."\n",
                       'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen,\footnote{Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
-                    'wenn wir die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} von \lm{ p } mit \lm{ p\# } berechnen:'."\n".
+                    'wenn wir die Primfakultät von \lm{ p } mit \lm{ p\# } berechnen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Bilde die Primfakultät einer bekannten Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \lm{ p\# }',
@@ -438,7 +440,7 @@
                 'Unser Einstieg über die Primfakultät', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Berechnen wir Beispielhaft das Produkt der endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# },'."\n".
+                    'Berechnen wir Beispielhaft das Produkt der endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät \lm{ p\# },'."\n".
                     'dann wird deutlich, dass es schnell sehr viel größer wird, als die größte in ihm vorkommende Primzahl:\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     ''))),
                   array( 'equations',
@@ -455,7 +457,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Im ersten Moment erscheint es eher undurchsichtig, was die Primfakultät mit der Anzahl von aufeinanderfolgenden'."\n".
-                    'natürlichen Zahlen in einer Menge zu tun hat.'."\n",
+                    'natürlichen Zahlen in einer Menge zu tun hat.'."\n".
+                    'Dies werden wir nun nachfolgend schrittweise erhellen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
@@ -544,8 +547,8 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'welche die gewöhnliche Ordnung auf \lm{ \mathbb{N} } erweitert'."\n".
-                      'und die aktual unendlichen Quotientenbereiche der in \lm{ \mathbb{N}_{\infty,v_{p}} } enthaltenen'."\n".
-                      'vollständigen Primfakultät aller endlichen Primzahlen \lm{ P_{ω} := (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#} } ordnet.'."\n",
+                      'und die aktual unendlichen Quotientenbereiche des in \lm{ \mathbb{N}_{\infty,v_{p}} } enthaltenen'."\n".
+                      'vollständigen Primexponentenprodukts aller endlichen Primzahlen \lm{ P_{ω} := (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#} } ordnet.'."\n",
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die entscheidenden Ordnungseigenschaften sind:'."\n".
@@ -710,12 +713,12 @@
                     'und mit ihnen die natürlichen Zahlen erneut zu konstruieren.'."\n".
                     'Dies führt uns schließlich auch zum Beweis unserer Vermutung.'."\n",
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
-                    'und über eine zu diesem Zweck abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
+                    'und über eine zu diesem Zweck als Primexponentenprodukt der Primzahlen einer Menge abgewandelten Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei der \italic{Mengen-Primorial-Operator} \lm{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} genannt,'."\n".
+                      'Sei der \italic{Mengen-Primorial-Operator} \lm{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} oder \italic{Mengen-Primexponentenprodukt} genannt,'."\n".
                       'der Operator, der alle Primzahlen in der Menge \lm{ \mathbb{T} } in einem Einheits-Primexponentenprodukt multipliziert:'."\n".
                       ''))),
                   array( 'equations',
@@ -723,7 +726,7 @@
                       array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prodx_{ \forall p \in \mathbb{T} \cap \mathbb{P} }  \! p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'So erhalten wir eine neue Definition der Primfakultät (Primexponentenidentifikation), die sich auf die Elemente von Mengen bezieht.'."\n",
+                      'So erhalten wir eine neue Definition der Primfakultät als Einheits-Primexponentenidentifikation, die sich auf die Elemente von Mengen bezieht.'."\n",
                         '\\\\'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -833,7 +836,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  ω\overline{\#}  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega}', label_incr => true),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dar.'."\n",
@@ -845,7 +848,7 @@
                       'Was sind die Bedingungen, unter denen das fragliche Gleichheitszeichen erfüllt ist?'."\n".
                     'Wie können wir sie formulieren?'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster', text =>
 
                 'Definition: Das Primturm-Potenzraster', subline =>
                   'Die Erweiterung der Primturmzerlegung zu einem Potenzrasters oder Potenzspektrum')),
@@ -929,11 +932,11 @@
                   '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n".
-                        'Das Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
-                        'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung'."\n".
-                        'zwischen \lm{ n } und \lm{ \pr(n) }.'."\n".
-                        ''))),
+                      '\\\\'."\n".
+                      'Das Primturm-Potenzraster \lm{ \pr(n) } einer Zahl \lm{ n } entspricht dieser Zahl.'."\n".
+                      'Das bedeutet, es gibt eine eineindeutige bijektive Abbildung'."\n".
+                      'zwischen \lm{ n } und \lm{ \pr(n) }.'."\n".
+                      ''))),
 
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1183,7 +1186,7 @@
                     'dann basiert sein Zahlenspektrum oder Zahlenraster auf allen Primzahlen, die kleiner als \lm{ n } sind.'."\n".
                     'Damit ist es nach ›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1}{Lemma 1: Primfaktorinterval}‹ lückenlos'."\n".
                     'bis zur nächsten Primzahl \lm{ p \ge n }.'."\n".
-                    'Dieses lückenlose Interval \lm{ \lpr\!*( n\overline{\#} *) } enthält also alle Zahlen \lm{ x < p }.'."\n",
+                    'Dieses lückenlose Interval \lm{ \lpr\!*( n\overline{\#} *) } enthält also alle Zahlen \lm{ x } mit \lm{ p > x \in \mathbb{N} }.'."\n",
                       'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
                     'endlichen natürlichen Zahl, die keine Primzahl ist, die nächst größere Primzahl, mittels Algebra und Mengenlehre, berechnen können.'."\n".
                     'Somit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl immer wieder die nächste zu berechnen.'."\n".
@@ -1222,7 +1225,7 @@
                     'Die Mengen-Primfakultät \lm{ p_i\overline{\#} } ist allerdings eine natürliche Zahl, die, wie oben schon gesagt,'."\n".
                     'bei zunehmender Größe von \lm{ p_i } rasant wächst und weit außerhalb der Menge'."\n".
                     'an natürlichen Zahlen liegt, dessen lückenloses Primturm-Potenzraster sie definiert.'."\n".
-                    'Quasi wie ein Puppenspieler, der aus den höheren Gefilden das Spiel in den niederen Ebenen dirigiert.'."\n".
+                    'Quasi wie ein Marionettenspieler im Puppentheater, der aus den höheren Gefilden das Spiel in den niederen Ebenen dirigiert.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1241,7 +1244,7 @@
                       'und definiert diese Zahlenmenge exakt.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Für den Fall, dass \lm{ x = p_{i} + 1 }, also der direkte Nachfolger einer Primzahl ist, folgt:'."\n".
+                      'Für den Fall, dass \lm{ x = p_{i - 1} + 1 }, also der direkte Nachfolger der Primzahl \lm{ p_{i - 1} } ist, folgt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1270,10 +1273,9 @@
                       'Wir beschreiben dies so, dass das Primturm-Potenzraster eine erste Lücke aufwies und die neue Primzahl'."\n".
                     'diese Lücke nun füllt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-
-                'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
+                    '')),
                   array( 'text', array( text => array(
                     'Im Besonderen ist ein jedes derartiges Primturm-Potenzraster \lm{ \pr\!*( n *) }'."\n".
                     'eine Beschreibung der kleinsten fehlenden reinen Primzahl in seinen Primzahltürmen, die'."\n".
@@ -1290,6 +1292,41 @@
                     'Also ergibt sich: \lm{ \lpr\!*( 18 *) = 3 }.'."\n",
                       'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma', text =>
+                      
+                'Lemma 4: Generatives Primzahl-Induktions-Lemma', subline =>
+                  '')),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                      '\\\\'."\n".
+                      'Sei \lm{ *( p_{i} *)_{i \in ω} } die aufsteigende Folge der endlichen Primzahlen.'."\n".
+                      'Dann gilt für jeden endlichen Primzahlschritt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr\!*( *( p_{i} + 1 *)\overline{\#} *)  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Das lückenlose Primturm-Potenzraster der Mengen-Primfakultät des direkten Nachfolgers von \lm{ p_{i} }'."\n".
+                      'endet also genau an der nächsten Primzahl \lm{ p_{i + 1} }.'."\n",
+                      '\\\\'."\n".
+                      ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Denn \lm{ (p_{i} + 1)\overline{\#} } enthält genau die Primzahlen bis einschließlich \lm{ p_{i} }.'."\n".
+                      'Sein Primturm-Potenzraster erzeugt daher alle natürlichen Zahlen, deren Primfaktoren bereits unter diesen Primzahlen liegen.'."\n".
+                      'Die erste Zahl, die nicht mehr erzeugt werden kann, ist genau die nächste Primzahl \lm{ p_{i + 1}​ }.'."\n".
+                      'Also ist das lückenlose Anfangsstück genau bis unmittelbar vor \lm{ p_{i + 1} } vollständig,'."\n".
+                      'und sein lückenloser Wert ist \lm{ p_{i + 1} } \lm{ \blacksquare }.'."\n",
+                        '\\\\'."\n".
+                    ''))),
+
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
@@ -1447,7 +1484,7 @@
                     'um verständlich zu machen, warum diese Identifikation in der Ordinalarithmetik naheliegt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Satz 1: Grenzübergangsprinzip der Primfakultät', subline =>
+                  'Satz 1: Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1937,9 +1974,9 @@
                   array( 'text', array( text => array(
                     'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang'."\n".
                     'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte;'."\n".
-                    'hier und nachfolgend noch im Sinne der Entsprechung, nicht bereits als bewiesene Gleichheit:'."\n",
+                    'hier und nachfolgend noch im Sinne der naiv übergehenden Entsprechung, nicht bereits als bewiesenen Identifikation:'."\n",
                       'Als erstes sehen wir eine Entsprechung jeder endlichen natürlichen Zahl und ihrer Primturmzerlegung,'."\n".
-                    'die wir sogleich als zu \lm{ ω } übergehend notieren:'."\n".
+                    'die wir sogleich als zu \lm{ ω } und seiner Primturm-Darstellung des zu ihm gehörenden Primexponentenobjekts übergehend notieren:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1948,8 +1985,8 @@
                       array( display => 'on',  latex => '{  *( n \rightarrow ω *) *[  ω  \widehat{=}  \pt(ω)  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Primturmzerlegung von \lm{ ω } soll \lm{ ω } entsprechen, was ein Hinweis darauf ist,'."\n".
-                    'dass diese existiert und ebenso aus endlichen Primzahlen bestehen sollte.'."\n",
+                    'Das Primexponentenobjekts von \lm{ ω } soll \lm{ ω } entsprechen, was ein Hinweis darauf ist,'."\n".
+                    'dass dieses existiert und ebenso aus endlichen Primzahlen bestehen sollte.'."\n",
                       'Dann haben wir die Entsprechung einer jeden endlichen natürlichen Zahl und ihrem Primturm-Potenzraster,'."\n".
                     'die wir auch als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -1960,13 +1997,13 @@
                       array( display => 'on',  latex => '{  *( n \rightarrow ω *) *[  ω  \widehat{=}  \pr( ω )  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Demnach müsste \lm{ \pr( ω ) } beziehungsweise seine Primturmzerlegung einzigartig sein,'."\n".
+                    'Demnach müsste \lm{ \pr( ω ) } beziehungsweise das Primturm-Potenzraster seiner Primturm-Darstellung (Primexponentenobjekts) einzigartig sein,'."\n".
                     'also im Besonderen keiner Primturmzerlegung und keinem Raster einer endlichen Zahl entsprechen.'."\n".
-                    'Nach den Voraussetzungen des Beweises muss die Primturmzerlegung \lm{ \pt( ω ) }'."\n".
+                    'Nach den Voraussetzungen des Beweises muss das Primexponentenobjekt \lm{ \pt( ω ) }'."\n".
                     'rein aus endlichen Primzahlen bestehen, auch schon, weil wir gar keine aktual unendlichen Primzahlen zur Verfügung haben.'."\n".
-                    'Beides gemeinsam, und die Aktual-Unendlichkeit von \lm{ ω }, schließt eine endliche Primturmzerlegung aus,'."\n".
+                    'Beides gemeinsam, und die Aktual-Unendlichkeit von \lm{ ω }, schließt ein endliches Primexponentenobjekts aus,'."\n".
                     'auch, da diese eine endliche natürliche Zahl ergeben würde.'."\n".
-                    'Eine unendliche Primturmzerlegung funktioniert folglich nur über unendlich viele unterschiedliche endliche Primzahlen,'."\n".
+                    'Eine unendliche Darstellung als Primexponentenobjekt funktioniert folglich nur über unendlich viele unterschiedliche endliche Primzahlen,'."\n".
                     'weil unendlich große Primzahltürme wie \lm{ 2^{ω} } in jedem Fall größer wären als \lm{ ω },'."\n".
                     'wie wir ganz oben im Abschnitt \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:omega-kann-nicht-einer-der-unendlich-grossen-Primzahltuerme}‹}'."\n".
                     'dargelegt haben.'."\n",
@@ -1988,6 +2025,8 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i - 1}, p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( *( p_{i - 1} + 1 *)\overline{\#} *)  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1}', label_incr => false),
+                      // array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr*( (p_{i} + 1)\overline{\#} *)  }',
+                      //                     label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Die entstehenden Primzahlen \lm{ p_{i} } sammeln in ihrer Mengendarstellung beim Größerwerden von \lm{ i }'."\n".
@@ -2019,20 +2058,24 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \neq  \lpr\!*( n *)  *]  }',
                       //                     label_text => '\jumpname{X}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  n  \neq  \lpr\!*( n\overline{\#} *)  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  \lpr\!*( n\overline{\#} *)  \neq  n  \;\;\;\mathrel{\rlap{\mkern3mu\lower.45ex\hbox{$\left.\vphantom{\widehat{=}}\middle/\right.$}}\widehat{=}}\;\;\;  n\overline{\#}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der letzte gezeigte Übergang, mit seiner Gleichheit und Entsprechung, gilt also ausschließlich von endlichen Primzahlen zu \lm{ ω }.'."\n".
-                    'Wir erkennen, wie eng jede Primzahl sowie auch \lm{ ω } über seine Mengen-Primfakultät'."\n".
+                    'Wir erkennen, wie eng jede Primzahl sowie auch \lm{ ω } über ihre Mengen-Primfakultät'."\n".
                     'mit dem lückenlosen Primturm-Potenzraster verknüpft ist.'."\n",
-                      'Insgesamt erkennen wir auch, wie eng \lm{ ω } mit beidem, der vollständigen Induktion endlicher Primzahlen und der vollständigen Induktion natürlicher Zahlen, verknüpft ist.'."\n".
-                    'Es wird sichtbar, dass die Existenz jeder Primzahl auf der Primfakultät'."\n".
+                      'Insgesamt erkennen wir auch, wie eng \lm{ ω } mit beidem, der vollständigen Induktion endlicher Primzahlen'."\n".
+                    'und der vollständigen Induktion natürlicher Zahlen, verknüpft ist.'."\n".
+                    'Es wird sichtbar, dass die Existenz jeder endlichen Primzahl auf der Mengen-Primfakultät'."\n".
                     'der in seiner Mengendarstellung enthaltenen Vorgänger basiert.'."\n".
-                    'Und in diesem Sinne basiert auch die Existenz von \lm{ ω } auf der Primfakultät'."\n".
+                    'Und in diesem Sinne basiert auch die Existenz von \lm{ ω } auf dem vollständigen Einheits-Primexponentenprodukt der Mengen-Primfakultät'."\n".
                     'der in seiner Mengendarstellung enthaltenen endlichen Vorgänger-Primzahlen.'."\n",
-                      'Zusammen mit den eben dargelegten Eigenschaften der Primturmzerlegung von \lm{ ω } motiviert dies den Schluss,'."\n".
-                    'die Entsprechung von \lm{ ω } und \lm{ ω\overline{\#} } im nächsten Schritt als Gleichheit'."\n".
-                    'der erweiterten Ordinalarithmetik zu formulieren.'."\n".
+                      'Zusammen mit den eben dargelegten Eigenschaften der Primexponentendarstellung von \lm{ ω } motiviert dies den Schluss,'."\n".
+                    'die Entsprechung von \lm{ ω \widehat{=} ω\overline{\#} } im nächsten Schritt als Identifikation'."\n".
+                    '\lm{ ω \equiv_{kan} ω\overline{\#} } zu formulieren.'."\n".
+                    //-- 'Denn wir sehen vorstehend, dass die Entsprechung einer jeden endliche natürlichen Zahl \lm{ n } mit seiner Primturmmenge \lm{ n \widehat{=} \pt( n ) }'."\n".
+                    //-- 'daraus entsteht, dass letztere nach dem Fundamentalsatz der Arithmetik die eineindeutige Primfaktorenzerlegung von \lm{ n } darstellt.'."\n".
+                    //-- 'Diese Feststellung dürfen wir nun im Sinne des Einheits-Primexponentenprodukts auf \lm{ ω \widehat{=} \pt( ω ) \equiv_{kan} \pt*( ω\overline{\#} *) \Leftrightarrow ω \equiv_{kan} ω\overline{\#} } übertragen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', subline =>
@@ -2059,11 +2102,13 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für jedes endliche \lm{ m \in ω } sei das unendliche Primturm-Potenzraster der zugehörigen Mengen-Primfakultät betrachtet.'."\n".
-                      'Nach dem generativen Primzahl-Induktions-Lemma gilt für jeden Nachfolger:'."\n".
+                      'Nach dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beweisstrategie-generative-Primzahl-Induktions-Lemma}{generativen Primzahl-Induktions-Lemma}'."\n".
+                      'gilt für jeden Nachfolger:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( (p_{i} + 1)\overline{\#} *)  =  p_{i + 1}  }'),
+                      array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr*( (p_{i} + 1)\overline{\#} *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da die endlichen Primzahlen in \lm{ ω } unbeschränkt sind,'."\n".
@@ -2093,7 +2138,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pt*( ω\overline{\#} *) = \mathbb{P}  \Longrightarrow  *( \forall p \in \mathbb{P} *) *[ v_p*( ω\overline{\#} *) *] = 1  }',
+                      array( display => 'on',  latex => '{  \pt*( ω\overline{\#} *) = \mathbb{P}  \Longrightarrow  *( \forall p \in \mathbb{P} *) *[ v_{p}\!*( ω\overline{\#} *) = 1 *]  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2130,7 +2175,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die kanonische Einheits-Primexponentenidentifikation bewiesen. \lm{ \blacksquare }'."\n",
+                      'Damit ist die kanonische Einheits-Primexponentenidentifikation, also unsere Primzahlprodukt-Vermutung, bewiesen. \lm{ \blacksquare }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2139,7 +2184,7 @@
                     '')),
 
                   array( 'text', array( text => array(
-                    'Das Primfakultätsobjekt \lm{ ω\overline{\#} } trägt die vollständige Primfakultätsstruktur aller endlichen Primzahlen'."\n".
+                    'Das Primfakultätsobjekt \lm{ ω\overline{\#} } trägt die vollständige Einheits-Primexponentenstruktur aller endlichen Primzahlen'."\n".
                     'und besitzt zugleich den kanonischen lückenlosen Zahlenwert \lm{ ω }.'."\n".
                     'Diese Aussage bedeutet nicht, dass \lm{ ω } als von-Neumann-Ordinal extensional dieselbe Menge ist wie \lm{ ω\overline{\#} }.'."\n".
                     'Vielmehr bedeutet sie: \lm{ ω } ist der kanonische lückenlose Zahlenwert des Primfakultätsobjekts \lm{ ω\overline{\#} }.'."\n",
@@ -2175,7 +2220,7 @@
                     '(vollständige Induktion) anordnet, beweist das hier hergeleitete Grenzübergangsprinzip,'."\n".
                     'dass dieselbe ordinale Struktur im Unendlichen auch rein multiplikativ über'."\n".
                     'den Fundamentalsatz der Arithmetik erzeugt werden kann.'."\n".
-                    'Das dichte Primturm-Potenzraster \lm{ \lpr*( ω\overline{\#} *) } lässt keine Lücken im endlichen Bereich zu'."\n".
+                    'Der lückenlose Beginn des Primturm-Potenzrasters \lm{ \lpr*( ω\overline{\#} *) } lässt keine Lücken im endlichen Bereich zu'."\n".
                     'und füllt die Menge \lm{ \mathbb{N} } vollständig aus.'."\n".
                     ''))),
                   array( 'text', array( text => array(

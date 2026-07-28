@@ -1354,7 +1354,10 @@
                       'Über eine geschickte Kombination der fundamentalen Identität der Werte natürlicher Zahlen und ihrer Mengendarstellung durch die Menge all ihrer Vorgänger'."\n".
                     'von der Null an, und der neuen Definition der Mengen-Primfakultät, die alle Primzahlen der Identitätsmenge einer natürlichen Zahl'."\n".
                     'zu einem Primexponentenobjekt mit \lm{ p }-adischer Bewertungsstruktur aufmultipliziert, finden wir einen Zugang'."\n".
-                    'zur induktive Erzeugung aller endlichen Primzahlen über das ›\jump{XXX}{generative Primzahl-Induktions-Lemma}‹'."\n".
+                    'zur induktive Erzeugung aller endlichen Primzahlen über das'."\n".
+                    '›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktions-Lemma}‹'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n",
