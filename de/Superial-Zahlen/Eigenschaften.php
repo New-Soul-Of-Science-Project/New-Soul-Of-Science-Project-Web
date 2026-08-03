@@ -1818,7 +1818,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots)_{\#}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'als Nachweis der Existenz einer erweiterten Arithmetisierung des von Neumannschen Ordinals \lm{ ω }\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".

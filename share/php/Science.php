@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 13.07.2026, 18:00h
+  // #: Stand: 03.08.2026, 15:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
+  //           20260802:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\widehat{=}  ' -> '\;\;\;\overset{?}{\widehat{=}}\;\;\;', '?\widehat{=}' -> '\overset{?}{\widehat{=}}'.
   //           20260713:  +:  "MathJax":  Add Macro "sumx" for Summe mit #-Annotation '\sideset{}{^{\#}}{\sum}'.
   //           20260711:  +:  "MathJax":  Add Macro "prodx" for Primexponentenprodukt-Symbol '\sideset{}{^{\#}}{\prod}'.
   //           20260709:  +:  "$Sc_g_equation_replace_ary":  Add '\equiv_{kan}' -> '\equiv_{\mathrm{kan}}', '?\equiv' -> '\overset{?}{\equiv}', '?\equiv_{kan}' -> '\overset{?}{\equiv}_{\mathrm{kan}}', '  ?\equiv  ' -> '\;\;\;\overset{?}{\equiv}\;\;\;', '  ?\equiv_{kan}  ' -> '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;', '  \equiv_{kan}  ' -> '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'
@@ -693,6 +695,7 @@
                                     array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
+                                    array( '  \Longleftrightarrow  ', '\;\;\;\Longleftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
@@ -711,6 +714,7 @@
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
+                                    array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
@@ -743,6 +747,7 @@
                                     array( '?\subset', '\overset{?}{\subset}'),
                                     array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
                                     array( '?\equiv', '\overset{?}{\equiv}'),
+                                    array( '?\widehat{=}', '\overset{?}{\widehat{=}}'),
                                     array( '\equiv_{kan}', '\equiv_{\mathrm{kan}}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
