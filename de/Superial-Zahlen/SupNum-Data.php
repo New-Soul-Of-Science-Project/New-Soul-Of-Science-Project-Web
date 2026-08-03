@@ -466,21 +466,21 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster' => array( headline_text => '1. Alle endlichen natürlichen Zahlen liegen im Raster', headline_text_short => 'Alle endlichen natürlichen Zahlen liegen im Raster'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.176'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega' => array( headline_text => 'SN.PP.180'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken' => array( headline_text => '3. Im aktual unendlichen Bereich treten Lücken auf', headline_text_short => 'Im aktual unendlichen Bereich treten Lücken auf'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken' => array( headline_text => '3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf', headline_text_short => 'Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip' => array( headline_text => 'SN.PP.182'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega' => array( headline_text => 'SN.PP.199'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis' => array( headline_text => '4. Ergebnis', headline_text_short => 'Ergebnis'),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.210'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.213'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation' => array( headline_text => 'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', headline_text_short => 'Theorem der inneren kanonischen ZFC-Strukturidentifikation'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.212'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.213'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.215'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.216'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:KanonischeIdentifikation' => array( headline_text => 'Kanonische Identifikation und vereinbarte Kurzschreibweise'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.214'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.215'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.217'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.218'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:InterpretationUndSchlussfolgerungen' => array( headline_text => 'Interpretation und Schlussfolgerungen'/* , headline_text_short => 'X'*/),
 

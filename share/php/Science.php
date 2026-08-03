@@ -3,11 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.08.2026, 15:00h
+  // #: Stand: 03.08.2026, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
   //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
+  //                      +:  "$Sc_g_equation_replace_ary":  Add ' ?\widehat{=} ' -> '\;\overset{?}{\widehat{=}}\;'.
   //           20260802:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\widehat{=}  ' -> '\;\;\;\overset{?}{\widehat{=}}\;\;\;', '?\widehat{=}' -> '\overset{?}{\widehat{=}}'.
   //           20260713:  +:  "MathJax":  Add Macro "sumx" for Summe mit #-Annotation '\sideset{}{^{\#}}{\sum}'.
   //           20260711:  +:  "MathJax":  Add Macro "prodx" for Primexponentenprodukt-Symbol '\sideset{}{^{\#}}{\prod}'.
@@ -716,6 +717,7 @@
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( ' ?\widehat{=} ', '\;\overset{?}{\widehat{=}}\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
