@@ -2136,7 +2136,8 @@
                     'und der vollständigen Induktion ergibt sich innerhalb der eingeführten ZFC-internen Primexponentenstruktur'."\n".
                     'keine bloß zufällige Setzung, sondern eine kanonisch begründete Identifikation.'."\n",
                       'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
-                    '\lm{ ω\overline{\#} } in seiner Gesamtheit und Mächtigkeit exakt mit der Ordinalzahl \lm{ ω } zusammenfällt,'."\n".
+                    '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
+                    'und seiner Mächtigkeit exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
                     'so ist die Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} } innerhalb dieser Struktur'."\n".
                     'der klassischen Mengenlehre (ZFC) nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
                     'des Einheits-Primexponentenprodukts kanonisch begründet.'."\n".
