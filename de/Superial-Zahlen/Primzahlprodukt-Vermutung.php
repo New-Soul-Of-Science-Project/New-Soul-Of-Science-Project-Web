@@ -45,8 +45,8 @@
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'in der klassischen Arithmetik zwar kein gewöhnlich auswertbares endliches Produkt'."\n".
-                    'und kein natürliches Zahlenobjekt ist, aber dennoch eine präzise strukturelle Information enthält:'."\n".
+                    'in der klassischen Arithmetik zwar kein gewöhnlich auswertbares Produkt und kein natürliches Zahlenobjekt ist,'."\n".
+                    'aber dennoch eine präzise strukturelle Information enthält:'."\n".
                     'Er bezeichnet das Einsammeln jeder endlichen Primzahl genau einmal.'."\n",
                       'Diese Information geht verloren, wenn man den Ausdruck lediglich als divergentes Zahlenprodukt verwirft.'."\n".
                     'Sie wird jedoch sichtbar, wenn man das Produkt nicht numerisch, sondern primexponentiell liest.'."\n".
@@ -56,7 +56,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω\overline{\#}  :=  \prodx_{ p \in \mathbb{P} }  p  }',
                                           label_text => '', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  ω\overline{\#}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots *)_{\#}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  ω\overline{\#}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots *)_{\#}  \;\; ,  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -99,11 +99,12 @@
                           'Das unendliche multiplikative Erzeugungsspektrum,'."\n".
                           'das ausschließlich durch die Kombination ganzer Potenzen dieser atomaren Primtürme aufgespannt wird.',
                         '\bold{Das lückenlose Primturm-Potenzraster \lm{ \lpr( n ) }:} \\\\'."\n".
-                          'Die ordinale Mächtigkeit des ununterbrochenen, also lückenlosen, Anfangsabschnitts des Erzeugungsspektrums ab der Null.',
+                          'Der ordinale Zahlenwert des ununterbrochenen, also lückenlosen, Anfangsabschnitts'."\n".
+                          'des Erzeugungsspektrums von der Null aus.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'Diese werden von der Definition der Mengen-Primfakultät \lm{ A\overline{\#} } begleitet,'."\n".
+                    'Diese drei Konzepte werden von der Definition der Mengen-Primfakultät \lm{ A\overline{\#} } begleitet,'."\n".
                     'die das Primexponentenprodukt aller in \lm{ A } enthaltenen Primzahlen bildet.'."\n".
                     'Über die Mengen-Primfakultät erhalten wir so eine Integration der Primturm-Kombinatorik'."\n".
                     'mit der ordinalen Mengendarstellung nach von Neumann.'."\n".
@@ -113,7 +114,7 @@
                     '')),
                   array( 'text', array( text => array(
                     'Der Kern des Beweises beruht auf einem eleganten, konstruktiven Induktionsschritt.'."\n".
-                    'Für das Produkt aller Primzahlen bis zu einem endlichen Index \lm{ i } wird mit Hilfe'."\n".
+                    'Für das Primexponentenprodukt aller Primzahlen bis zu einer endlichen Primzahlstufe \lm{ p_{i} } wird mit Hilfe'."\n".
                     'der Mengen-Primfakultät des direkten Nachfolgers dieser Primzahl \lm{ (p_{i} + 1)\overline{\#} } bewiesen,'."\n".
                     'dass die erste strukturelle Lücke im Erzeugungsspektrum \lm{ \pr*( (p_{i} + 1)\overline{\#} *) }'."\n".
                     'exakt an der Position der nächsthöheren Primzahl \lm{ p_{i+1} } auftritt.'."\n".
@@ -130,9 +131,10 @@
                     'die Gesamtheit aller existierenden endlichen Primzahlen aus,'."\n".
                     'während die begrenzende Schranke des lückenlosen Anfangsrasters \lm{ p_{i+1} }'."\n".
                     'über jede noch so große endliche Zahl hinaus gegen unendlich wandert.'."\n",
-                      'Da das unendliche Produkt somit im Grenzwert keine endliche Schranke mehr besitzt,'."\n".
+                      'Da das vollständige Einheits-Primexponentenprodukt somit keine endliche Primzahlstufe mehr'."\n".
+                    'als abschließende Schranke besitzt,'."\n".
                     'umfasst sein lückenloses Erzeugungsspektrum die vollständige Menge der natürlichen Zahlen \lm{ \mathbb{N} }.'."\n".
-                    'Da in ZFC die absolute Identität \lm{ \mathbb{N} = ω } verankert ist,'."\n".
+                    'Da in der üblichen ZFC-Modellierung \lm{ \mathbb{N} = ω } gilt,'."\n".
                     'gehen das vollständige Einsammeln aller endlichen Primzahlen und die vollständige Induktion \lm{ ω }'."\n".
                     'strukturell in dieselbe Richtung:'."\n".
                     'Beide beschreiben keinen einzelnen endlichen Abschluss, sondern die erschöpfende Aufnahme aller endlichen Stufen.'."\n".
@@ -141,7 +143,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -154,7 +156,7 @@
                     'Dieses Theorem schlägt eine vollkommen neue Brücke zwischen der multiplikativen Welt'."\n".
                     'der Zahlentheorie und der relationalen Welt der Mengenlehre.'."\n".
                     'Es beweist die Primzahlprodukt-Vermutung als eine kanonisch begründete'."\n".
-                    'und widerspruchsfreie Konsequenz innerhalb der eingeführten ZFC-internen Primexponentenstruktur.'."\n",
+                    'und widerspruchsfreie Konsequenz der in ZFC definierbaren Primexponentenstruktur.'."\n",
                       'Das etablierte System bietet ein mathematisch rigoroses Fundament, um transfinite Arithmetik'."\n".
                     'und divisatorische Strukturen weit jenseits der Grenze der endlichen Zahlen (wie für \lm{ ω + 1 }, \lm{ 2ω }, \lm{ ω^{2} } oder \lm{ ω^{ω} })'."\n".
                     'sauber zu definieren, ohne jemals im Widerspruch zur klassischen Arithmetik zu stehen.'."\n".
@@ -173,19 +175,23 @@
                       'Primexponentenbelegung \lm{ \mathbf{1}_{\mathbb{P}} } – besitzt kanonisch den lückenlosen Zahlenwert'."\n".
                       'des gewöhnlichen von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω }.'."\n".
                       'Wir zeigen also:'."\n".
-                      '\lm{ ω } besitzt die innere Arithmetik eines aktual unendlichen vollständigen einpotenzigen Einheits-Primexponentenprodukts.'."\n".
-                      'Damit erkennen wir, dass die Ordinalzahlen eine tiefere Arithmetik haben, als bisher bekannt.'."\n".
+                      '\lm{ ω } besitzt innerhalb der eingeführten Primexponentenstruktur die innere Arithmetik'."\n".
+                      'eines aktual unendlichen vollständigen einpotenzigen Einheits-Primexponentenprodukts.'."\n".
+                      'Damit erkennen wir, dass die vollständige Induktion \lm{ ω } innerhalb der eingeführten'."\n".
+                      'Primexponentenstruktur eine tiefere arithmetische Lesart besitzt,'."\n".
+                      'als in ihrer bloßen von-Neumann-Darstellung sichtbar ist.'."\n".
                       ''))),
  
                   array( 'text', array( text => array(
-                    'Nun hat sich im Nachhinein die Fundierung der Superial-Zahlen auf Basis dieses Beweises ergeben,'."\n".
-                    'um auch diese \jump{OM:SupNum:ZFC-Modellkonstruktion}{innerhalb der ZFC-Mengenlehre als tiefere Erkenntnis} zu formulieren.'."\n".
-                    'Es handelt sich aber nicht um einen Zirkelschluss,'."\n".
-                    'denn der Beweis ist zwar durch die Struktur der Superial-Zahlen inspiriert,'."\n".
-                    'aber sie spielen im Beweis keine Rolle.'."\n",
+                    'Im Nachhinein ergibt sich daraus auch eine \jump{OM:SupNum:ZFC-Modellkonstruktion}{Fundierung der Superial-Zahlen},'."\n".
+                    'die innerhalb einer ZFC-intern definierbaren Struktur formuliert wird.'."\n".
+                    'Es handelt sich dabei nicht um einen Zirkelschluss, denn der Beweis ist zwar'."\n".
+                    'durch die Struktur der Superial-Zahlen inspiriert, setzt die Superial-Zahlen selbst'."\n".
+                    'aber nicht voraus.'."\n",
                       'Der folgende Beweis ist nicht als Erweiterung der ZFC-Mengenlehre'."\n".
                     'oder als Veränderung der klassischen Ordinalarithmetik zu verstehen.'."\n".
-                    'Vielmehr wird innerhalb von ZFC eine kanonische Strukturidentifikation freigelegt:'."\n".
+                    'Vielmehr wird innerhalb einer in ZFC definierbaren Primexponentenstruktur'."\n".
+                    'eine kanonische Strukturidentifikation freigelegt:'."\n".
                     'Die vollständige Induktion \lm{ ω } kann nicht nur als Zählstruktur der natürlichen Zahlen,'."\n".
                     'sondern zugleich als kanonischer Zahlenwert des vollständigen Einheits-Primexponentenprodukts der endlichen Primzahlen verstanden werden.'."\n".
                     'Die kanonische Identifikation'."\n".
@@ -198,7 +204,7 @@
                   array( 'text', array( text => array(
                     'bezeichnet daher keine willkürliche neue Rechenregel,'."\n".
                     'sondern eine Identifikation zweier in ZFC beschreibbarer Erzeugungsstrukturen:'."\n".
-                    'der additiv-zählenden Struktur der natürlichen Zahlen und der multiplikativ-primfaktoriellen Struktur'."\n".
+                    'der additiv-zählenden Struktur der natürlichen Zahlen und der multiplikativ-primexponentiellen Struktur'."\n".
                     'aller endlichen Primzahlen.'."\n".
                     'Nach Vereinbarung schreiben wir dafür abkürzend \lm{ ω = ω\overline{\#} }.'."\n".
                     ''))),
@@ -234,11 +240,22 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} einer Menge berechnet sich aus'."\n".
-                    'den Erzeugungspositionen beziehungsweise der Erzeugungskombinatorik der Menge.'."\n",
-                      'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
+                    'den Erzeugungspositionen beziehungsweise der Erzeugungskombinatorik der Menge.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Dabei bezeichnet \lm{ \overline{\#}I } hier ausdrücklich keine Cantor-Mächtigkeit'."\n".
+                      'und kein Kardinalzahlzeichen.'."\n".
+                      'Gemeint ist die Erzeugungsanzahl innerhalb der superialen Erzeugungsstruktur.'."\n".
+                      'Die klassische Kardinalität reeller Intervalle bleibt davon unberührt.'."\n".
+                      ''))),
+ 
+                  array( 'text', array( text => array(
+                    'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
                     'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} steht'."\n".
-                    '\lm{ \s } für die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
+                    '\lm{ \s } für die Erzeugungsanzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für'."\n".
+                    'die vollständige induktive Erzeugungsanzahl der natürlichen Zahlen.'."\n",
                       'Wir vergleichen hierbei aber nicht die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
                     'der Menge der sinnvollen Koeffizienten und die Mächtigkeit der natürlichen Zahlen,'."\n".
                     'wobei es diesbezüglich darum ginge, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
@@ -325,7 +342,7 @@
                     '\lm{ \overline{\#}_{\mathrm{erz}}(p \mathbb{N}) = \tfrac{ω}{p} } ist nur dann ganzzahlig, wenn \lm{ p \mid ω }.'."\n",
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
                       'Wir können unsere Vermutung plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
-                    'als auch das vollständige Produkt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreiben.'."\n",
+                    'als auch das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreiben.'."\n",
                       'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
@@ -373,8 +390,8 @@
                   'Hohe Plausibilität der Primzahlprodukt-Vermutung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
-                    '\lm{ \s } ist, dass \lm{ ω } gleicht.'."\n".
+                    'Es liegt also sehr nahe, dass das später definierte vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen'."\n".
+                    'das Teilprodukt von \lm{ \s } ist, dass später mit \lm{ ω } identifiziert wird.'."\n".
                     'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
                     'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben, sie aber schon mal'."\n".
                     'sehr plausibel erscheint.'."\n".
@@ -861,8 +878,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  ω_{\forall p}  =  ω\overline{\#}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'denn hier liefert uns \lm{ ω\overline{\#} }'."\n".
-                      'ein Produkt aller Primzahlen in \lm{ \mathbb{N} }, also ein Produkt aller endlichen Primzahlen'."\n".
+                      'denn hier liefert uns \lm{ ω\overline{\#} } das vollständige Einheits-Primexponentenprodukt'."\n".
+                      'aller endlichen Primzahlen in \lm{ \mathbb{N} }, also ein Primexponentenprodukt aller endlichen Primzahlen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1498,7 +1515,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Über die Erzeugung der Menge aller Primzahlen erzeugen wir auch die Menge alle natürlichen Zahlen.'."\n".
+                    'Über die Erzeugung der Menge aller Primzahlen erzeugen wir auch die Menge aller natürlichen Zahlen.'."\n".
                     'Dies kommt unserer Vermutung schon sehr nahe.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -1517,12 +1534,44 @@
                     'für den Beweis nutzen, weil wir auf diese Weise, wie oben erklärt, auch alle natürlichen Zahlen rekonstruieren:'."\n",
                       'Da \lm{ ω } die Menge der natürlichen Zahlen \lm{ \mathbb{N} } repräsentiert,'."\n".
                     'enthält es natürlich auch alle endlichen Primzahlen.'."\n".
-                    'Die Mengen-Primfakultät der vollständigen Induktion \lm{ ω\overline{\#} } ist also das Produkt'."\n".
-                    'aller endlichen Primzahlen, wie schon gesagt.'."\n",
-                      'Nachfolgend zeigen wir zunächst, dass das lückenlose Primturm-Potenzraster der Mengen-Primfakultät'."\n".
-                    'der vollständigen Induktion tatsächlich den lückenlosen Anfang \lm{ ω } besitzt.'."\n".
-                    'Aus diesem Ergebnis leiten wir anschließend die Motivation des Identifikationssatzes her,'."\n".
-                    'um verständlich zu machen, warum diese Identifikation in der Ordinalarithmetik naheliegt.'."\n".
+                    'Das zur vollständigen Induktion gehörende Einheits-Primexponentenobjekt \lm{ ω\overline{\#} } ist also'."\n".
+                    'das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen, wie schon gesagt.'."\n",
+                      'Nachfolgend zeigen wir zunächst, dass das lückenlose Primturm-Potenzraster'."\n".
+                    'dieses Einheits-Primexponentenobjekts tatsächlich den lückenlosen Anfang \lm{ ω } besitzt.'."\n".
+                    'Aus diesem Ergebnis leiten wir anschließend die kanonische Begründung des Identifikationssatzes her.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Abgrenzung zur extensionalen Gleichheit', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der folgende Beweis behauptet nicht, dass das nackte von-Neumann-Ordinal \lm{ ω } in ZFC bereits von sich aus'."\n".
+                    'eine Primfaktorzerlegung oder eine Primturmmenge besitzt.'."\n".
+                    'Definiert wird vielmehr ein ZFC-internes Einheits-Primexponentenobjekt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω\overline{\#}  :=  \prodx_{ p \in \mathbb{P} }  p  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für dieses Objekt wird gezeigt, dass sein lückenloser Zahlenwert genau \lm{ ω } ist:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die spätere Schreibweise'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bezeichnet daher eine kanonische Identifikation innerhalb der eingeführten Primexponentenstruktur,'."\n".
+                    'nicht eine rohe extensionale Gleichheit des von-Neumann-Ordinals mit einem gewöhnlichen unendlichen Produkt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Satz 1: Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
@@ -1752,6 +1801,13 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{Lemma 5: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
                       ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Dieses Lemma ist als Strukturlemma der hier eingeführten Primexponentenordnung zu verstehen.'."\n".
+                      'Es folgt aus der Definition des lückenlosen Anfangssegments, der Ordnung des Primturm-Potenzrasters'."\n".
+                      'und der Unterscheidung zwischen endlichem Anfang und aktual unendlichem Bereich.'."\n".
+                      'Es behauptet nicht, dass die reine von-Neumann-Ordinalordnung'."\n".
+                      'ohne diese zusätzliche Primexponentenstruktur bereits eine solche Rasterordnung enthält.'."\n".
+                      ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
@@ -1812,8 +1868,9 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'In Worten:'."\n".
-                      'Unterhalb jedes aktual unendlichen \lm{ x } liegt ein endlicher Vorgänger eines Quotienten von \lm{ P_{ω} }'."\n".
-                      'durch ein endliches einpotenziges Primzahlprodukt. \lm{ \blacksquare }'."\n",
+                      'Unterhalb jedes aktual unendlichen \lm{ x } liegt ein Vorgänger in endlichem Abstand'."\n".
+                      'zu einem Quotienten aus dem Zähler mit Wert des Einheits-Primexponentenprodukts \lm{ P_{ω} }'."\n".
+                      'geteilt durch einen Nenner eines endlichen einpotenzigen Primzahlprodukts. \lm{ \blacksquare }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2137,9 +2194,9 @@
                     'keine bloß zufällige Setzung, sondern eine kanonisch begründete Identifikation.'."\n",
                       'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
                     '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
-                    'und seiner Mächtigkeit exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
-                    'so ist die Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} } innerhalb dieser Struktur'."\n".
-                    'der klassischen Mengenlehre (ZFC) nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
+                    'und seiner erzeugten Trägermenge exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
+                    'so ist die Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} } innerhalb'."\n".
+                    'dieser in ZFC definierten Struktur nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
                     'des Einheits-Primexponentenprodukts kanonisch begründet.'."\n".
                     ''))),
 
@@ -2224,7 +2281,8 @@
                       'Da die begrenzende Schranke des lückenlosen Anfangsrasters im Grenzwert über jede endliche natürliche Zahl hinauswandert,'."\n".
                       'und wir vorab \lm{ \mathbb{N} \subseteq \lpr*( ω\overline{\#} *) } gezeigt haben,'."\n".
                       'umfasst der lückenlose Anfangsabschnitt exakt die vollständige Menge \lm{ \mathbb{N} }.'."\n".
-                      'Da nach \bold{Satz 1} aktual unendliche Elemente zwingend eine Lücke erzeugen,'."\n".
+                      'Da nach \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken}{Lemma 5},'."\n".
+                      'dem Lückenabstiegsprinzip, aktual unendliche Elemente zwingend absteigende Lücken enthalten,'."\n".
                       'gilt zugleich \lm{ \lpr*( ω\overline{\#} *) \subseteq \mathbb{N} }, woraus die Gleichheit folgt:'."\n".
                       ''))),
                   array( 'equations',
@@ -2233,20 +2291,14 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{3.} \\\\'."\n".
-                      'Nach der standardmäßigen von Neumannschen Definition der Mengenlehre ist'."\n".
-                      'die Menge der natürlichen Zahlen \lm{ \mathbb{N} } absolut identisch mit'."\n".
-                      'der Ordinalzahl \lm{ ω }, also \lm{ \mathbb{N} = ω }.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Da das aktual unendliche Primexponentenprodukt aller endlichen Primzahlen über sein generiertes Gitter'."\n".
-                      'somit exakt dieselbe ordinale Rolle, Ordnung und Mächtigkeit ausfüllt wie \lm{ ω } selbst,'."\n".
-                      'werden das Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
-                      'und sein kanonischer lückenloser Zahlenwert \lm{ ω } innerhalb dieser Struktur kanonisch identifiziert.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Da in der Standard-Mengenlehre (ZFC) per Definition \lm{ \mathbb{N} = ω } verankert ist,'."\n".
-                      'folgt aus der bewiesenen Gleichheit \lm{ \lpr*( ω\overline{\#} *) = \mathbb{N} } und aus \lm{ \mathbb{N} = ω }'."\n".
-                      'der formale Abschluss innerhalb der ZFC-internen Primexponentenstruktur:'."\n".
+                      'Nach der standardmäßigen von Neumannschen Modellierung der natürlichen Zahlen in ZFC'."\n".
+                      'wird die Menge der natürlichen Zahlen \lm{ \mathbb{N} } mit dem Ordinal \lm{ ω } identifiziert,'."\n".
+                      'also \lm{ \mathbb{N} = ω }.'."\n",
+                        'Da das aktual unendliche Primexponentenprodukt aller endlichen Primzahlen'."\n".
+                      'über sein generiertes Gitter somit exakt dieselbe ordinale Rolle, dieselbe Ordnung'."\n".
+                      'und dieselbe erzeugte Trägermenge besitzt wie \lm{ ω } selbst,'."\n".
+                      'werden das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
+                      'und sein kanonischer lückenloser Zahlenwert \lm{ ω } innerhalb dieser Struktur kanonisch identifiziert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2309,7 +2361,7 @@
                   array( 'text', array( text => array(
                     'Die kanonische Einheits-Primexponentenidentifikation \lm{ ω \equiv_{kan} ω\overline{\#} } markiert einen tiefen Paradigmenwechsel'."\n".
                     'in der Betrachtung transfiniter Objekte.'."\n".
-                    'Sie zeigt, dass das einpotenzige Primexponentenobjekt aller endlichen Primzahlen kein unbestimmtes Unendliches darstellt,'."\n".
+                    'Sie zeigt, dass das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen kein unbestimmtes Unendliches darstellt,'."\n".
                     'sondern kanonisch die ordinale Struktur von \lm{ ω } selbst trägt.'."\n",
                       'Während die klassische Mengenlehre (ZFC) mathematische Objekte primär über ihre additive Nachfolger-Beziehung'."\n".
                     '(vollständige Induktion) anordnet, beweist das hier hergeleitete Grenzübergangsprinzip,'."\n".
@@ -2324,20 +2376,22 @@
                   array( 'text', array( text => array(
                     '\bold{1. Kanonische Strukturidentifikation:} \\\\'."\n".
                     'Die kanonische Identifikation \lm{ ω \equiv_{kan} ω\overline{\#} } ist keine willkürliche Setzung,'."\n".
-                    'sondern eine ZFC-interne Konsequenz: Das Primexponentenobjekt \lm{ ω\overline{\#} } erzeugt über sein'."\n".
-                    'lückenloses Primturm-Potenzraster exakt die vollständige Menge \lm{ \mathbb{N} = ω }.'."\n".
+                    'sondern eine Konsequenz der ZFC-intern eingeführten Primexponentenstruktur:'."\n".
+                    'Das Primexponentenobjekt \lm{ ω\overline{\#} } erzeugt über sein lückenloses Primturm-Potenzraster'."\n".
+                    'exakt die vollständige Menge \lm{ \mathbb{N} = ω }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\bold{2. Fundierung der Divisibilität:} \\\\'."\n".
-                    'Da \lm{ ω } nun nachweislich kanonisch die innere Arithmetik des vollständigen Einheits-Primexponentenprodukts trägt,'."\n".
-                    'ist die Teilbarkeit von \lm{ ω } durch jede endliche Primzahl \lm{ p \in \mathbb{P} } keine bloße Definition mehr,'."\n".
+                    'Da \lm{ ω } über die kanonische Identifikation mit \lm{ ω\overline{\#} } die Einheits-Primexponentenstruktur'."\n".
+                    'aller endlichen Primzahlen trägt, ist die Aussage, dass jede endliche Primzahl \lm{ p \in \mathbb{P} } \lm{ ω } teilt,'."\n".
+                    'innerhalb der eingeführten Primexponentenstruktur keine bloße Definition mehr,'."\n".
                     'sondern eine strukturelle Konsequenz der kanonischen Identifikation.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Diese Erkenntnisse sind von entscheidender Bedeutung für die \jump{OM:SupNum:ZFC-Modellkonstruktion}{Fundierung der Theorie der Superial-Zahlen},'."\n".
-                    'die sich dadurch nahtlos in die ZFC-Mengenlehre einfügt.'."\n",
+                    'die dadurch als ZFC-intern definierbare Modellkonstruktion an die klassische Mengenlehre anschließt.'."\n",
                       'Der Beweis liefert uns auch einen neuen und tiefen Einblick in die Struktur der endlichen Primzahlen'."\n".
-                    'und offenbart ebenso tiefere und für mancheinen sicherlich auch überraschende Einblicke in die Mengenlehre.'."\n".
+                    'und offenbart ebenso tiefere und für manchen sicherlich auch überraschende Einblicke in die Mengenlehre.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -2596,8 +2650,8 @@
                   array( 'text', array( text => array(
                     'Wir stellen fest, dass es uns über die Erzeugung jeder endlichen Primzahl gelungen ist,'."\n".
                     'die natürlichen Zahlen durch eine vollständige Induktion zu konstruieren.'."\n".
-                    'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter'."\n".
-                    'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
+                    'Dazu wird per Mengen-Primfakultät ein Einheits-Primexponentenprodukt erzeugt, das sich von Schritt zu Schritt immer weiter'."\n".
+                    'zum Primexponentenprodukt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
@@ -2628,7 +2682,7 @@
                     'Und in der Tat benötigen wir ja auch zur Konstruktion dieser Schritte aller endlichen Primzahlen das Produkt aller kleineren Primzahlen'."\n".
                     'vor der gerade zu berechnenden Primzahl.'."\n".
                     'So können wir es so verstehen, dass dem Ergebnis beim Übergang zu \lm{ ω } dann logischerweise'."\n".
-                    'das Produkt aller endlichen Primzahlen zugrunde liegt.'."\n",
+                    'das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen zugrunde liegt.'."\n",
                       '\lm{ ω } ist nun keine Primzahl mehr, weil ihr alle endlichen Primzahlen zugrunde liegen,'."\n".
                     'die nicht enden.'."\n".
                     ''))),
@@ -2681,7 +2735,7 @@
                       'Die \lm{ 3 = 3^1 } hingegen spannt ein anderes Raster auf und die beiden und alle weiteren Primzahl-Potenzraster überschneiden sich im Inneren nicht'."\n".
                     'und beschreiben kombiniert die natürlichen Zahlen ab der \lm{ 2 }.'."\n".
                     'Die Menge oder Zahl \lm{ ω } beschreibt alle natürlichen Zahlen und damit das Zählraster.'."\n",
-                      'Nur ein Produkt aller endlichen Primzahlen \lm{ ω } beschreibt darum das Zählraster arithmetisch so, dass alle natürlichen Zahlen der Menge \lm{ ω } erfasst werden.'."\n".
+                      'Nur ein vollständiges Einheits-Primexponentenprodukt aller endlichen Primzahlen \lm{ ω } beschreibt darum das Zählraster arithmetisch so, dass alle natürlichen Zahlen der Menge \lm{ ω } erfasst werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Nähere Betrachtung der Spektren oder Raster', subline =>
@@ -3030,7 +3084,7 @@
                 'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Berechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# }, dann wird es sehr schnell'."\n".
+                    'Berechnen wir Schritt für Schritt das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# }, dann wird es sehr schnell'."\n".
                     'viel größer, als die größte in ihm vorkommende Primzahl:\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     ''))),
                   array( 'equations',
@@ -3124,7 +3178,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Ist dies mit unserem oben geführten Beweis, dass \lm{ ω = ω\overline{\#} }, gleichbedeutend?'."\n",
-                      'Die vorstehende Aussage bedeutet ja, die Anzahl an endlichen natürlichen Zahlen ist im Unendlichen dem Produkt aller endlichen Primzahlen gleich.'."\n".
+                      'Die vorstehende Aussage bedeutet ja, die Anzahl an endlichen natürlichen Zahlen wird im Unendlichen mit dem vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen identifiziert.'."\n".
                       'Das können wir mit folgender Aussage annähern:'."\n".
                       ''))),
                   array( 'equations',

@@ -1420,10 +1420,12 @@
                     'und der vollständigen Induktion des Zählens des von-Neumann-Ordinals.'."\n".
                     'Aus dieser engen Verknüpfung erwächst die notwendige mengentheoretische Konsequenz einer Identifikation der transfiniten Grenzübergänge dieser Entsprechungen'."\n".
                     '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:InterpretationUndSchlussfolgerungen}{innerhalb von ZFC}:'."\n",
-                      'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Primfakultätsobjekts'."\n".
-                    '\lm{ ω\overline{\#} } in seiner Gesamtheit und Mächtigkeit exakt mit der Ordinalzahl \lm{ ω } zusammenfällt,'."\n".
-                    'so folgt daraus eine direkte \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation}{strukturelle Gleichheit}'."\n".
-                    'als inhärente Eigenschaft der klassischen Mengenlehre (ZFC):'."\n".
+                      'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
+                    '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
+                    'und seiner erzeugten Trägermenge exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
+                    'so ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation}{Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }}'."\n".
+                    'innerhalb dieser in ZFC definierten Struktur nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
+                    'des Einheits-Primexponentenprodukts kanonisch begründet.'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
