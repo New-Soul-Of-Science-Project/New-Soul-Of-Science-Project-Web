@@ -427,60 +427,59 @@
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung' => array( headline_text => 'Definition: Die Primturmzerlegung', headline_text_short => 'Die Primturmzerlegung'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin' => array( headline_text => 'SN.PP.23'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp' => array( headline_text => 'SN.PP.28'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp' => array( headline_text => 'SN.PP.31'),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n' => array( headline_text => 'SN.PP.43'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n' => array( headline_text => 'SN.PP.46'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet' => array( headline_text => 'Definition: Die Mengen-Primfakultät', headline_text_short => 'Die Mengen-Primfakultät'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p' => array( headline_text => 'SN.PP.49'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.67'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p' => array( headline_text => 'SN.PP.52'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.70'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt' => array( headline_text => 'Notationsvereinbarung – Primexponentenprodukt'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster' => array( headline_text => 'Definition: Das Primturm-Potenzraster' , headline_text_short => 'Das Primturm-Potenzraster'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr' => array( headline_text => 'SN.PP.68'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.69'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.70'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr' => array( headline_text => 'SN.PP.71'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.72'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.73'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster' => array( headline_text => 'Definition: Das lückenlose Primturm-Potenzraster' , headline_text_short => 'Das lückenlose Primturm-Potenzraster'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-lpr-n' => array( headline_text => 'SN.PP.71'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-lpr-n' => array( headline_text => 'SN.PP.74'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl' => array( headline_text => 'Berechnung der nächsten Primzahl'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.126'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1' => array( headline_text => 'SN.PP.128'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.129'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.129'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1' => array( headline_text => 'SN.PP.131'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.132'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster-einer-natuerlichen-Zahl' => array( headline_text => 'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl'/* , headline_text_short => 'X' */),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma' => array( headline_text => 'Lemma 4: Generatives Primzahl-Induktions-Lemma', headline_text_short => 'Generatives Primzahl-Induktions-Lemma'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i' => array( headline_text => 'SN.PP.130'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i' => array( headline_text => 'SN.PP.133'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen' => array( headline_text => 'Das Zählen der natürlichen Zahlen in Primzahlen'/* , headline_text_short => 'X' */),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.131'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.134'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Natuerliche-Zahlen-ueber-Zaehlen-der-Primzahlen-rekonstruieren' => array( headline_text => 'Die natürlichen Zahlen über das Zählen der Primzahlen rekonstruieren'/* , headline_text_short => 'X' */),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.163'),
-
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster' => array( headline_text => '1. Alle endlichen natürlichen Zahlen liegen im Raster', headline_text_short => 'Alle endlichen natürlichen Zahlen liegen im Raster'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.176'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega' => array( headline_text => 'SN.PP.180'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.178'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega' => array( headline_text => 'SN.PP.182'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken' => array( headline_text => '3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf', headline_text_short => 'Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip' => array( headline_text => 'SN.PP.182'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega' => array( headline_text => 'SN.PP.199'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip' => array( headline_text => 'SN.PP.185'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega' => array( headline_text => 'SN.PP.197'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis' => array( headline_text => '4. Ergebnis', headline_text_short => 'Ergebnis'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.204'),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.213'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.216'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation' => array( headline_text => 'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', headline_text_short => 'Theorem der inneren kanonischen ZFC-Strukturidentifikation'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.215'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.216'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.218'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.219'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:KanonischeIdentifikation' => array( headline_text => 'Kanonische Identifikation und vereinbarte Kurzschreibweise'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.217'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.218'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.220'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.221'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:InterpretationUndSchlussfolgerungen' => array( headline_text => 'Interpretation und Schlussfolgerungen'/* , headline_text_short => 'X'*/),
 
