@@ -666,8 +666,9 @@
                       'leben dagegen im umgebenden geordneten Primexponenten-Termraum.'."\n".
                       'Dieser Termraum enthält neben den reinen Rasterelementen auch endliche additive Verschiebungen'."\n".
                       'solcher Rasterelemente.'."\n".
-                      'Daher sind die Terme \lm{ \frac{ P_{ω} }{ d } − n } dort wohldefiniert,'."\n".
-                      'gehören aber im Allgemeinen nicht zum reinen Primturm-Potenzraster.'."\n".
+                      'Daher sind die Terme \lm{ \frac{ P_{ω} }{ d } − n } dort wohldefiniert.'."\n".
+                      'Wie \bold{Unterlemma 5b} zeigen wird, gehören diese endlichen additiven Vorgänger'."\n".
+                      'jedoch nicht zum reinen Primturm-Potenzraster.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann gilt für die Quotienten:'."\n".
@@ -1881,8 +1882,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{Beweis Lemma 5: Lückenabstiegsprinzip}'."\n".
@@ -1963,7 +1964,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  =  1 \cdot \frac{ P_{ω} }{ d } - n \cdot 1  }'),
+                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  =  1 \cdot *( \frac{ P_{ω} }{ d } *) - n \cdot 1  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Damit besitzt dieser Ausdruck eine zweigliedrige Normalform mit'."\n".
@@ -1995,7 +1996,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ x \in \pr*( P_{ω} *) \setminus ω } ein aktual unendliches Rasterelement.'."\n".
-                      'Nach \bold{Unterlemma 5a} wird \lm{ x } im lückenlosen Anfangsbereich durch Quotienten der Form'."\n".
+                      'Nach \bold{Unterlemma 5a} wird \lm{ x } im lückenlosen Anfangsvergleich durch Quotienten der Form'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2032,19 +2033,19 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  \;\; .  }',
+                      array( display => 'on',  latex => '{  \lpr*( P_{ω} *)  \subseteq  ω  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was der Beweis für das gesamte \bold{Lemma 5} und damit für unser Lückenabstiegsprinzip'."\n".
+                      'So gilt dann schließlich auch:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall x \in \mathbb{N}_{\infty,v_{p}} \setminus ω *) *( \exists d \in D_{\text{fin}} *) *( \exists n \in \mathbb{N}_{>0} *) \;\; \\\ \;\; *[  0 \le \frac{ P_{ω} }{ d } - n \le x  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => false),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'ist. \lm{ \blacksquare }'."\n",
+                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen. \lm{ \blacksquare }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2079,7 +2080,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  =  1 \cdot \frac{ P_{ω} }{ d } - n \cdot 1  }'),
+                      array( display => 'on',  latex => '{  \frac{ P_{ω} }{ d } - n  =  1 \cdot *( \frac{ P_{ω} }{ d } *) - n \cdot 1  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sie haben also einen führenden aktual unendlichen Term und einen endlichen Korrekturterm.'."\n".
@@ -2097,7 +2098,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach \bold{Unterlemma 5a} wird jedes aktual unendliche Rasterelement'."\n".
-                      'im lückenlosen Anfangsbereich durch solche Quotienten'."\n".
+                      'im lückenlosen Anfangsvergleich durch solche Quotienten'."\n".
                       'und ihre endlichen additiven Vorgänger erfasst.'."\n".
                       'Daher liegt unterhalb jedes aktual unendlichen Rasterelements ein Lückenzeuge.'."\n".
                       'Folglich kann kein aktual unendliches Rasterelement zum lückenlosen Anfang'."\n".
