@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.08.2026, 23:00h
+  // #: Stand: 08.08.2026, 09:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260808:  +:  "$Sc_g_equation_replace_ary":  Add '  \longrightarrow  ' -> '\;\;\;\longrightarrow\;\;\;'.
   //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
   //                      +:  "$Sc_g_equation_replace_ary":  Add ' ?\widehat{=} ' -> '\;\overset{?}{\widehat{=}}\;'.
   //           20260802:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\widehat{=}  ' -> '\;\;\;\overset{?}{\widehat{=}}\;\;\;', '?\widehat{=}' -> '\overset{?}{\widehat{=}}'.
@@ -694,6 +695,7 @@
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
+                                    array( '  \longrightarrow  ', '\;\;\;\longrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \Longleftrightarrow  ', '\;\;\;\Longleftrightarrow\;\;\;'),

@@ -435,6 +435,7 @@
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet' => array( headline_text => 'Definition: Die Mengen-Primfakultät', headline_text_short => 'Die Mengen-Primfakultät'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p' => array( headline_text => 'SN.PP.52'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-MengenPrimfakultaet-omega-ist-1' => array( headline_text => 'SN.PP.69'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.70'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt' => array( headline_text => 'Notationsvereinbarung – Primexponentenprodukt'/* , headline_text_short => 'X'*/),
 
@@ -471,7 +472,8 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis' => array( headline_text => '4. Ergebnis', headline_text_short => 'Ergebnis'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.204'),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.216'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-N-ist-lueckenlos-von-Mengen-Primfakultaet' => array( headline_text => 'SN.PP.215'),
+            //%! 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.216'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation' => array( headline_text => 'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', headline_text_short => 'Theorem der inneren kanonischen ZFC-Strukturidentifikation'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.218'),
