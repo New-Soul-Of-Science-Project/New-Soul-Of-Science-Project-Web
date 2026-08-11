@@ -157,7 +157,7 @@
                     'Es besitzt keine abschließende endliche Primzahlstufe mehr.'."\n".
                     'Daher könnte zunächst vermutet werden, dass das lückenlose Anfangsraster über jede endliche Grenze hinaus'."\n".
                     'in den aktual unendlichen Bereich hineinwächst.'."\n",
-                      'Der Beweis zeigt jedoch eine präzise strukturelle Diskontinuität:'."\n".
+                      'Der Beweis zeigt jedoch deduktiv eine präzise strukturelle Diskontinuität:'."\n".
                     'Einerseits gehört jede endliche natürliche Zahl zum lückenlosen Anfang,'."\n".
                     ''))),
                   array( 'equations',
@@ -1473,6 +1473,10 @@
                         '\\\\'."\n".
                     ''))),
 
+                  array( 'text', array( text => array(
+                    'Damit ist die Erzeugung der endlichen Primzahlstufen nicht nur anschaulich beschrieben,'."\n".
+                    'sondern deduktiv durch einen Nachfolgerschritt bestimmt.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen', text =>
                       
                 'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
@@ -1661,7 +1665,7 @@
                     'bezeichnet daher eine kanonische Identifikation innerhalb der eingeführten Primexponentenstruktur,'."\n".
                     'nicht eine rohe extensionale Gleichheit des von-Neumann-Ordinals mit einem gewöhnlichen unendlichen Produkt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Grenzuebergangsprinzip-der-Mengen-Primfakultaet', text =>
                   'Satz 1: Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
                     '')),
 
@@ -1922,7 +1926,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } - n  *]  }'),
+                      array( display => 'on',  latex => '{  *( d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } - n  \in  \mathbb{N}_{\infty,v_{p}}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'im umgebenden geordneten Primexponenten-Termraum, während \lm{ \pr*( P_{ω} *) }'."\n".
@@ -2173,7 +2177,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Aus beiden Inklusionen folgt:'."\n".
+                      'Aus beiden deduktiv bewiesenen Inklusionen folgt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2368,7 +2372,9 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{2.} \\\\'."\n".
-                      'Aus dem zuvor bewiesenen Ergebnis folgt unmittelbar:'."\n".
+                      'Aus dem zuvor deduktiv bewiesenen Ergebnis von'."\n".
+                      '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Grenzuebergangsprinzip-der-Mengen-Primfakultaet}{Satz 1}'."\n".
+                      'folgt unmittelbar:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2416,8 +2422,8 @@
                       'und nicht darüber hinaus.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Da das aktual unendliche Primexponentenprodukt aller endlichen Primzahlen'."\n".
-                      'über sein generiertes Gitter somit exakt dieselbe ordinale Rolle, dieselbe Ordnung'."\n".
+                      'Da der lückenlose Anfang des generierten Gitters des aktual unendlichen Primexponentenprodukts'."\n".
+                      'aller endlichen Primzahlen somit exakt dieselbe ordinale Rolle, dieselbe Ordnung'."\n".
                       'und dieselbe erzeugte Trägermenge besitzt wie \lm{ ω } selbst,'."\n".
                       'werden das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
                       'und sein kanonischer lückenloser Zahlenwert \lm{ ω } innerhalb dieser Struktur kanonisch identifiziert:'."\n".

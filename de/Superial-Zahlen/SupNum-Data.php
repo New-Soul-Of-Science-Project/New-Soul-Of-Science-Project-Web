@@ -462,12 +462,13 @@
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Natuerliche-Zahlen-ueber-Zaehlen-der-Primzahlen-rekonstruieren' => array( headline_text => 'Die natürlichen Zahlen über das Zählen der Primzahlen rekonstruieren'/* , headline_text_short => 'X' */),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster' => array( headline_text => '1. Alle endlichen natürlichen Zahlen liegen im Raster', headline_text_short => 'Alle endlichen natürlichen Zahlen liegen im Raster'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.178'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega' => array( headline_text => 'SN.PP.182'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken' => array( headline_text => '3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf', headline_text_short => 'Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega' => array( headline_text => 'SN.PP.196'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip' => array( headline_text => 'SN.PP.197'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Grenzuebergangsprinzip-der-Mengen-Primfakultaet' => array( headline_text => 'Satz 1: Grenzübergangsprinzip der Mengen-Primfakultät' , headline_text_short => 'Grenzübergangsprinzip der Mengen-Primfakultät'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster' => array( headline_text => '1. Alle endlichen natürlichen Zahlen liegen im Raster', headline_text_short => 'Alle endlichen natürlichen Zahlen liegen im Raster'),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-gleich-pr-p-omega' => array( headline_text => 'SN.PP.178'),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega' => array( headline_text => 'SN.PP.182'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken' => array( headline_text => '3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf', headline_text_short => 'Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf'),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega' => array( headline_text => 'SN.PP.196'),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip' => array( headline_text => 'SN.PP.197'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis' => array( headline_text => '4. Ergebnis', headline_text_short => 'Ergebnis'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.204'),
