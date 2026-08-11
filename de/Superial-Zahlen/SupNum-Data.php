@@ -472,16 +472,13 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis' => array( headline_text => '4. Ergebnis', headline_text_short => 'Ergebnis'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.204'),
 
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-N-ist-lueckenlos-von-Mengen-Primfakultaet' => array( headline_text => 'SN.PP.215'),
-            //%! 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-von-omega-ist-Eins' => array( headline_text => 'SN.PP.216'),
-
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation' => array( headline_text => 'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', headline_text_short => 'Theorem der inneren kanonischen ZFC-Strukturidentifikation'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.218'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.219'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.213'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p' => array( headline_text => 'SN.PP.214'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:KanonischeIdentifikation' => array( headline_text => 'Kanonische Identifikation und vereinbarte Kurzschreibweise'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.220'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.221'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.215'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.216'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:InterpretationUndSchlussfolgerungen' => array( headline_text => 'Interpretation und Schlussfolgerungen'/* , headline_text_short => 'X'*/),
 
