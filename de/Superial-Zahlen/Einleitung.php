@@ -320,7 +320,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zeigt, dass das von-Neumann-Ordinal \lm{ ω }'."\n".
-                    'kanonisch mit dem vollständigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt}'."\n".
+                    'kanonisch mit dem vollständigen einpotenzigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt}'."\n".
                     'aller endlichen Primzahlen identifiziert werden kann:'."\n".
                     ''))),
                   array( 'equations',
@@ -333,20 +333,37 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit gilt in der vereinbarten Kurzschreibweise:'."\n".
+                    'Damit gelten die vereinbarten Kurzschreibweisen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Schreibweise bedeutet keine gewöhnliche extensionale Gleichheit des von-Neumann-Ordinals mit einem klassischen unendlichen Produkt,'."\n".
-                    'sondern die kanonische Identifikation von \lm{ ω } mit seinem vollständigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt}.'."\n".
+                    'Diese Schreibweisen bedeuten keine gewöhnliche extensionale Gleichheit des von-Neumann-Ordinals'."\n".
+                    'mit einem klassischen unendlichen Produkt,'."\n".
+                    'sondern die kanonische Identifikation von \lm{ ω } mit seinem vollständigen Einheits-Primexponentenprodukt.'."\n",
+                      'Der Beweiskern liegt dabei in der Bestimmung des lückenlosen Zahlenwertes:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vollständige Einheits-Primexponentenprodukt erzeugt in seinem Primturm-Potenzraster'."\n".
+                    'genau alle endlichen natürlichen Zahlen lückenlos.'."\n".
+                    'Oberhalb der endlichen natürlichen Zahlen, im aktual unendlichen Bereich des Primexponenten-Termraums,'."\n".
+                    'treten notwendig Lücken auf.'."\n".
+                    'Die Identifikation ist daher keine naive Gleichsetzung von \lm{ ω } mit einem gewöhnlichen unendlichen Produkt,'."\n".
+                    'sondern die kanonische Identifikation mit diesem deduktiv bestimmten lückenlosen Zahlenwert.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
 
@@ -775,7 +792,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Def', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prodx_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  \equiv_{kan}  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
@@ -1299,15 +1316,15 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien'),
                     )),
                 )
           ); ?>
 
           
-          <!--  • Beweisstrategie  -->
+          <!--  • Beweisstrategien  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Einleitung:Beweisstrategie',
+            'OM:SupNum:Einleitung:Beweisstrategien',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -1325,69 +1342,99 @@
                   '')),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung'),
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung'),
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung'),
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung'),
                     )),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung', text =>
 
-                'Beweis der Primzahlprodukt-Vermutung', subline =>
+                'Beweisstrategie der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} ist heute die Grundlage der Verankerung'."\n".
                     'der Superial-Zahl-Definition in der ZFC-Mengenlehre.'."\n".
-                    'Das ihr Beweis gelingen würde, war für lange Zeit seit ihrer Aufstellung, spätestens 2007\hidden{siehe: 5. Variante, Superial-Zahlen_v00.tex, 05.07.2007. Davor klafft eine riesige zeitliche Lücke in meinen Dokumenten (Sup-Zahl (52).pdf (Sup-Zahlen Beweise (52)), 11.10.2002), allerdings nicht versionsmäßig. Ich müsste in den handschriftlichen Aufzeichnungen schauen, ob dort was ist.},'."\n".
+                    'Dass ihr Beweis einigermaßen zeitnah erfolgt, war für viele Jahre seit ihrer Aufstellung, spätestens 2007\hidden{siehe: 5. Variante, Superial-Zahlen_v00.tex, 05.07.2007. Davor klafft eine riesige zeitliche Lücke in meinen Dokumenten (Sup-Zahl (52).pdf (Sup-Zahlen Beweise (52)), 11.10.2002), allerdings nicht versionsmäßig. Ich müsste in den handschriftlichen Aufzeichnungen schauen, ob dort was ist.},'."\n".
                     'nicht selbstverständlich, weil die Vermutung recht erstaunlich ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega}/\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Wie können das Zählen, für das das von-Neumann-Ordinal \lm{ ω } steht, und das endlose Produkt immer größer werdender endlicher Primzahlen,'."\n".
-                    'dass augenscheinlich viel schneller wächst als das Zählen, beim Übergang ins Aktual-Unendliche schließlich miteinander identifiziert werden?'."\n",
-                      'Der Beweis gelingt schließlich über den Ansatz, dass der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\const{SupNum_g_footnote_text_SatzDesEuklid}}'."\n".
+                    'Wie können das Zählen, für das das von-Neumann-Ordinal \lm{ ω } steht,'."\n".
+                    'und das Produkt immer größer werdender endlicher Primzahlen,'."\n".
+                    'dass augenscheinlich viel schneller wächst als das Zählen, beim Übergang ins Aktual-Unendliche doch in ihrem Wert miteinander identifiziert werden?'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Ansatz', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Der Beweis gelingt schließlich über den Ansatz, dass der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\const{SupNum_g_footnote_text_SatzDesEuklid}}'."\n".
                     'durch die Anwendung der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} zeigt, dass es bei einer gegebenen'."\n".
                     'endlichen Primzahl immer wieder noch größere Primzahlen geben muss, als eine vermeindlich größte.'."\n".
-                    'Wir nutzen dies in einer glücklichen Kombination mit der fundamentalen von-Neumann-Ordinal-Identität\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Wir nutzen dies in einer glücklichen Kombination mit der von-Neumann-Ordinal-Identität\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
                     'In dieser werden die Werte endlicher und transfiniter natürlicher Zahlen mit ihrer Darstellung durch die Menge all ihrer Vorgänger, von der Null an, identifiziert.'."\n".
                     'Auf diese Mengenstruktur abgestimmt definieren wir die Primfakultät als Mengen-Primfakultät, die alle Primzahlen der Menge einer Ordinalzahl'."\n".
-                    'zu einem Primexponentenobjekt mit \lm{ p }-adischer Bewertungsstruktur aufmultipliziert.'."\n".
-                    'Auf diese Weise finden wir über weitere Einsichten einen Zugang zur induktiven Erzeugung aller endlichen Primzahlen über das'."\n".
-                    '›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktions-Lemma}‹.'."\n",
-                      'Zu diesem Lemma sind wir gekommen, indem wir mehrere innovative Schritte gegangen sind, die auf Einsichten zur Erzeugung'."\n".
+                    'zu einem Primexponentenobjekt mit erweiterter \lm{ p }-adischer Primexponentenbewertungsstruktur aufmultipliziert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Generative Primzahl-Induktion', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auf diese Weise finden wir einen Zugang zur induktiven Erzeugung aller endlichen Primzahlen über das'."\n".
+                    '›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktions-Lemma}‹.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr\!*( *( p_{i} + 1 *)\overline{\#} *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Schritte hin zur generativen Primzahl-Induktion', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Zu diesem Lemma sind wir gekommen, indem wir mehrere innovative Schritte gegangen sind, die auf Einsichten zur Erzeugung'."\n".
                     'der endlichen natürlichen Zahlen aus Primzahlen basieren, welche auf'."\n".
                     'dem ›Fundamentalsatz der Arithmetik‹\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
                     'und der Funktionsweise des Beweises des ›Satz des Euklid‹ beruhen:'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Wir finden über die Erzeugung der Primturmmenge \lm{ \pt(n) } jeder natürlichen Zahl eine Möglichkeit,'."\n".
-                          'ihre entsprechende \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung}{Primturmzerlegung} als Menge darzustellen.'."\n".
+                        'Wir finden über die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung}{Primturmzerlegung} \lm{ \pt(n) }'."\n".
+                          'jeder natürlichen Zahl eine Möglichkeit, ihre Primfaktorzerlegung als ihr entsprechende Primturmmenge darzustellen.'."\n".
                           'In dieser sind ihre Primzahlpotenzen (Primtürme) als Wertelemente enthalten.',
                         'Dann erzeugen wir aus der Primturmmenge einer natürlichen Zahl ein ganzzahliges'."\n".
-                          'und transfinites Exponentenkombinationsraster ihrer Primtürme (\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster}{Primturm-Potenzraster})'."\n".
-                          '\lm{ \pr(n) }:'."\n".
+                          'und transfinites Exponentenkombinationsraster ihrer Primtürme,'."\n".
+                          'ihr \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster}{Primturm-Potenzraster} \lm{ \pr(n) }:'."\n".
                           'also alle Primtürme in \lm{ n } in endlichen und transfiniten natürlichen Exponentenkombinationen.',
-                        'Die Primturm-Potenzraster sind, für endliche natürliche Zahlen, die selber Primfakultäten sind,'."\n".
-                          'an ihrem Beginn maximal lückenlos – \lm{ \lpr(n) } –, weil diese in ihrer Primturmzerlegung die Primzahlen'."\n".
-                          'bis zu einer größten lückenlos enthalten. (\italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster}‹})',
+                        'Dafür nutzen wir ein neues \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
+                          'eine Primexponentenstruktur, die auch die transfiniten Werte dieser Produkte wohldefiniert und ZFC-konform erzeugt,'."\n".
+                          'indem wir ihr Primexponentenprodukt über eine erweiterte \lm{ p }-adische Primexponentenbewertung definierten.',
+                        'Das \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster}{lückenlose Primturm-Potenzraster}'."\n".
+                          '\lm{ \lpr(n) } holt die Struktur des Primturm-Potenzrasters in die ordinale Mengenstruktur zurück,'."\n".
+                          'weil des nur den lückenlosen Anfang des Primturm-Potenzrasters betrachtet.',
+                        'Damit ist das lückenlose Primturm-Potenzraster für endliche natürliche Zahlen dann maximal,'."\n".
+                          'wenn sie Primfakultäten sind.'."\n".
+                          'Das schließen wir aufgrund der Erkenntnis in Bezug auf den Fundamentalsatz der Arithmetik,'."\n".
+                          'dass jede natürliche Zahl größer gleich Zwei nur aus Primfaktoren bestehen kann, die kleiner oder gleich wie sie selber sind.',
+                        'Der lückenlose Anfang des Primturm-Potenzrasters einer endlichen natürlichen Zahl enthält alle natürlichen Zahlen,'."\n".
+                          'einschließlich ihrer selbst, bis zu einer größten Zahl, die direkt vor der nächsten Primzahl liegt.'."\n".
+                          'Die sich ergebende Menge natürlicher Zahlen ist die von Neumann-Darstellung dieser nächsten Primzahl.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'All diese Erkenntnisse verweben wir nun mit der Mengendarstellung der endlichen'."\n".
+                    'All diese Erkenntnisse verweben wir nun weiter mit der von Neumann-Mengendarstellung der endlichen'."\n".
                     'und transfiniten Ordinalzahlen in der ZFC-Mengenlehre:'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
                         'Dazu bilden wir die Primfakultät der Primzahlen die Elemente der Mengendarstellung einer Ordinalzahl sind: ihre \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
                           '\lm{ n\overline{\#} };'."\n".
-                          'ins Transfinite verallgemeinert mittels eines neuen über transfinite \lm{ p }-adische Bewertungen definierten Primexponentenprodukts,'."\n".
-                          'das so ZFC-konform ist.',
-                        'Wir stellen fest, dass uns das'."\n".
+                          'ins Transfinite verallgemeinert mittels des neuen Primexponentenprodukts.',
+                        'Wir stellen fest, wie zuvor gerade erklärt, dass uns das'."\n".
                           '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster-einer-natuerlichen-Zahl}{lückenlose Primturm-Potenzraster der Mengen-Primfakultät einer natürlichen Zahl}'."\n".
                           'zur nächst größeren Primzahl führt, wenn die natürliche Zahl selber noch keine Primzahl ist.'."\n".
                           'So können wir über jede Primzahl plus Eins die nachfolgende erzeugen.',
@@ -1395,37 +1442,71 @@
 
                   array( 'text', array( text => array(
                     'Damit sind wir nun beim generativen Primzahl-Induktions-Lemma angekommen.'."\n".
-                    'Mit Hilfe dieses Lemmas erreichen wir anschließend:'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Mit Hilfe des generativen Primzahl-Induktions-Lemmas erreichen wir anschließend:'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen}{Konstruktion}'."\n".
-                          'der Menge aller endlichen Primzahlen \lm{ \mathbb{P} }.',
+                          'der Menge aller endlichen Primzahlen \lm{ \mathbb{P} } über die vollständige generative Primzahl-Induktion.',
                         'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Natuerliche-Zahlen-ueber-Zaehlen-der-Primzahlen-rekonstruieren}{Rekonstruktion}'."\n".
                           'der Menge aller endlichen natürlichen Zahlen \lm{ \mathbb{N} }'."\n".
                           'über die vollständige generative Primzahl-Induktion.',
-                        'Den Nachweis, dass die Erzeugung der Primzahlen, über ihr lückenloses Primturm-Potenzraster'."\n".
-                          'mittels ihrer Mengen-Primfakultät, beim Übergang ins Unendliche zu \lm{ ω }'."\n".
-                          'mindestens alle endlichen natürlichen Zahlen in \lm{ ω } erzeugt. (\italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster}‹})',
-                        'Den Nachweis, dass das lückenlose Primturm-Potenzraster eben dieser Mengen-Primfakultät von \lm{ ω }'."\n".
-                          'im Aktual-Unendlichen an keiner Stelle lückenlos ist, auch, wenn wir uns den endlichen Zahlen'."\n".
-                          'beliebig nahe annähern. (\italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken}‹})',
-                        'Zusammen den Nachweis, dass das lückenlose Primturm-Potenzraster der Mengen-Primfakultät von \lm{ ω }'."\n".
-                          'ganz genau \lm{ ω } ist; nicht mehr und nicht weniger. (\italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis}‹})',
+                        'So den Nachweis, dass über die vollständige generative Primzahl-Induktion'."\n".
+                          'alle endlichen natürlichen Zahlen vom einpotenzigen Primturm-Potenzraster'."\n".
+                          'der aufsteigenden Mengen-Primfakultäten erfasst werden:',
                     ))),
 
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( ω\overline{\#} *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega}', label_incr => false),
+                    ))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Den Nachweis, dass oberhalb des lückenlosen Anfangs aus allen endlichen natürlichen Zahlen,'."\n".
+                          'also im aktual unendlichen Bereich des umgebenden Primexponenten-Termraums, notwendig Lücken auftreten.'."\n".
+                          'Unterhalb jedes aktual unendlichen Rasterelements liegen additive Normalform-Lückenzeugen,'."\n".
+                          'die nicht zum reinen Primturm-Potenzraster gehören'."\n".
+                          '(\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}):',
+                    ))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  \subseteq  ω  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-P-omega-Teilmenge-omega}', label_incr => false),
+                    ))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Zusammen den Nachweis:',
+                    ))),
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Innere kanonische ZFC-Strukturidentifikation', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Unser Nachweis liefert in einer Gesamtschau mit den Entsprechungen, die wir auf unserem Weg gefunden haben,'."\n".
+                    'Dieser deduktive Nachweis liefert in einer Gesamtschau mit den Entsprechungen, die wir auf unserem Weg gefunden haben,'."\n".
                     'das Ergebnis einer engen mathematischen Verknüpfung zwischen der Mengen-Primfakultät, dem lückenlosen Anfangsstück des Primturm-Potenzrasters'."\n".
                     'und der vollständigen Induktion des Zählens des von-Neumann-Ordinals.'."\n".
-                    'Aus dieser engen Verknüpfung erwächst die notwendige mengentheoretische Konsequenz einer Identifikation der transfiniten Grenzübergänge dieser Entsprechungen'."\n".
-                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:InterpretationUndSchlussfolgerungen}{innerhalb von ZFC}:'."\n",
+                    'Aus dieser engen Verknüpfung ergibt sich innerhalb der in ZFC definierbaren Primexponentenstruktur'."\n".
+                    'eine kanonisch begründete Identifikation, in der das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
+                    'den lückenlosen Zahlenwert \lm{ ω } besitzt:'."\n",
                       'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
                     '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
                     'und seiner erzeugten Trägermenge exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
                     'so ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation}{Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }}'."\n".
                     'innerhalb dieser in ZFC definierten Struktur nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
-                    'des Einheits-Primexponentenprodukts kanonisch begründet.'."\n".
+                    'des Einheits-Primexponentenprodukts kanonisch begründet:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1433,15 +1514,20 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit haben wir unsere Vermutung schließlich bewiesen.'."\n",
-                      'Übertragen auf \lm{ \s } erhalten wir:'."\n".
+                    'Damit haben wir unsere Vermutung schließlich bewiesen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Bedeutung für die Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Übertragen auf \lm{ \s } erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  \equiv_{kan}  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aufgrund der kanonischen Identifikation verwenden wir für diese Basis die vereinfachte Schreibweise:'."\n".
+                    'Aufgrund der kanonischen Identifikation verwenden wir die vereinfachten Schreibweisen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1453,12 +1539,12 @@
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dieser Zusammenhang ist in unser Logo eingeflossen.'."\n".
+                    'Dieser Zusammenhang ist auch in unser Logo eingeflossen.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung', text =>
                                            
-                'Beweis der Überrationalitätsvermutung', subline =>
+                'Beweisstrategie der Überrationalitätsvermutung', subline =>
                   'Welcher uns zur Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
                   array( 'text', array( text => array(
                     'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
@@ -1508,9 +1594,9 @@
                     'der sinnvollen Koeffizienten der Superial-Zahlen zeigen.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung', text =>
                                            
-                'Beweis der Algebraischen-Koeffizienten-Vermutung', subline =>
+                'Beweisstrategie der Algebraischen-Koeffizienten-Vermutung', subline =>
                   'Welcher uns zur Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
                   array( 'text', array( text => array(
                     'Im Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} stellen sich alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
@@ -1518,9 +1604,9 @@
                     'Damit zeigen wir sogar ihre \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}.'."\n".
                     ''))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung', text =>
                                            
-                'Beweis der Superialen-Transzendenz-Vermutung', subline =>
+                'Beweisstrategie der Superialen-Transzendenz-Vermutung', subline =>
                   'Welcher uns zur ausschließlichen Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
                   array( 'text', array( text => array(
                     'Und im Beweis der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung} zeigen wir noch,'."\n".
@@ -1545,7 +1631,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategie', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien', type => 'back'),
                     )),
                   
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>

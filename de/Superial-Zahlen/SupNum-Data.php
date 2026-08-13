@@ -349,11 +349,11 @@
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Rechnen-Unendliches-Stellenwertsystem' => array( headline_text => 'Rechnen mit dem unendlichen Stellenwertsystem'/*, headline_text_short => 'X'*/),
 
-        'OM:SupNum:Einleitung:Beweisstrategie' => array( headline_text => 'Beweisstrategie'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Primzahlprodukt-Vermutung' => array( headline_text => 'Beweis der Primzahlprodukt-Vermutung'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Ueberrationalitaetsvermutung' => array( headline_text => 'Beweis der Überrationalitätsvermutung'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Algebraischen-Koeffizienten-Vermutung' => array( headline_text => 'Beweis der Algebraischen-Koeffizienten-Vermutung'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:Beweisstrategie:Beweis-Superialen-Transzendenz-Vermutung' => array( headline_text => 'Beweis der Superialen-Transzendenz-Vermutung'/*, headline_text_short => 'X'*/),
+        'OM:SupNum:Einleitung:Beweisstrategien' => array( headline_text => 'Beweisstrategien'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung' => array( headline_text => 'Beweisstrategie der Primzahlprodukt-Vermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung' => array( headline_text => 'Beweisstrategie der Überrationalitätsvermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung' => array( headline_text => 'Beweisstrategie der Algebraischen-Koeffizienten-Vermutung'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung' => array( headline_text => 'Beweisstrategie der Superialen-Transzendenz-Vermutung'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:AufbauArbeit' => array( headline_text => 'Aufbau der Arbeit'/*, headline_text_short => 'X'*/),
       ),
