@@ -656,7 +656,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
-                'Das Kontinuum', subline =>
+                'Das analytische Kontinuum', subline =>
                   '')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -693,7 +693,7 @@
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet dann eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
-                      'Demnach wäre das Kontinuum so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = ω^{ω} \equiv_{kan} (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots)_{\#} },'."\n".
+                      'Demnach wäre das neue \italic{analytische Kontinuum} so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = ω^{ω} \equiv_{kan} (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots)_{\#} },'."\n".
                     'wobei \lm{ \s = ω^{ω} } durch den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} innerhalb von ZFC gesichert ist.'."\n".
                     'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre,'."\n".
                     'weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".

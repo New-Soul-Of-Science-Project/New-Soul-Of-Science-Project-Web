@@ -1578,10 +1578,7 @@
                 'Erweiterung der Arithmetik ins Unendliche', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Die Superial-Zahlen erweitern die uns bekannte Arithmetik\footnote{\const{NSOSP_g_footnote_text_Arithmetik}}'."\n".
@@ -1803,29 +1800,34 @@
                     'Die unendlich großen Zahlen haben keine innere zahlentheoretische Struktur;'."\n".
                     'sie wissen nichts über Primzahlen.'."\n",
                       'Die Superial-Zahlen brechen mit diesem Dogma.'."\n".
-                    'Durch die rigorose \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Konstruktion} der superialen Basis \lm{ \s } als zweidimensionale,'."\n".
-                    'transfinite Primzahlmatrix'."\n".
+                    'Durch ihre \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion} aufgrund ihrer superialen Basis \lm{ \s } als zweidimensionale,'."\n".
+                    'transfinite Primzahlmatrix über ein in ZFC definierbares Primexponentenprodukt mit erweiterter \lm{ p }-adische Primexponentenbewertung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  \equiv_{kan}  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)_{\#}^{ω}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  \equiv_{kan}  ω^{ω}  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wird das aktual Unendliche zahlentheoretisch codiert und erhält eine so sichtbar werdende Prim-DNA.'."\n".
-                    'Dies gelingt aufgrund des topologischen Fundaments des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}'."\n".
+                    'wird das Aktual-Unendliche zahlentheoretisch codiert und erhält eine so sichtbar werdende Prim-DNA.'."\n",
+                      'Dies gelingt aufgrund der Primexponentenidentifikation des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots)_{\#}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots)_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'als Nachweis der Existenz einer erweiterten Arithmetisierung des von Neumannschen Ordinals \lm{ ω }\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'des von Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω }'."\n".
+                    'mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen'."\n".
                     'innerhalb der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}.'."\n",
                       'Dies ist eine mathematische Pionierleistung:'."\n".
-                    'Die atomaren Bausteine der Arithmetik – die Primzahlen – werden genutzt,'."\n".
-                    'um das Kontinuum der Analysis metrisch zu normieren.'."\n".
+                    'Die Primzahlen als atomare Bausteine der endlichen Arithmetik werden genutzt,'."\n".
+                    'um das \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{neue Kontinuum der Analysis} metrisch zu normieren.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1989,13 +1991,10 @@
                     'Während Cantor das Kontinuum rein qualitativ in die Überabzählbarkeit drängte,'."\n".
                     'liefert unser Stellenwertsystem eine echte metrische Normierung des transfiniten Raumes.'."\n".
                     'Wir lösen das Kontinuumsproblem nicht durch ein willkürliches Postulieren neuer Kardinalzahlen,'."\n".
-                    'sondern indem wir dem Aktual-Unendlichen eine exakte, in ZFC konsistente Arithmetik mit ausgezeichneten,'."\n".
-                    '\lm{ p }-adisch bewerteten Eigenschaften geben.'."\n",
+                    'sondern indem wir dem Aktual-Unendlichen eine exakte, in ZFC definierbare Primexponentenprodukt-Arithmetik mit erweiterter'."\n".
+                    '\lm{ p }-adischer Primexponentenbewertung geben.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
-                    'also der Erweiterung des Zählens sowie der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
-                    'der Darstellung von irrationalen reell algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen,'."\n".
-                    'die irrationale Wurzeln beschreiben, und mit deren Hilfe auch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{alle Radikalformen}'."\n".
-                    'beschreibbar sind.'."\n",
+                    'also der Erweiterung des Zählens, und der Definition der vollständigen Induktion über das generative Primzahl-Induktions-Lemma.'."\n",
                       'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>

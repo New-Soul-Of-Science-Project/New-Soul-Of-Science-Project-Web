@@ -1385,13 +1385,24 @@
                     '')),
                   array( 'text', array( text => array(
                     'Auf diese Weise finden wir einen Zugang zur induktiven Erzeugung aller endlichen Primzahlen über das'."\n".
-                    '›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktions-Lemma}‹.'."\n".
+                    '›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktions-Lemma}‹:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr\!*( *( p_{i} + 1 *)\overline{\#} *)  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                     ))),
+                  array( 'text', array( text => array(
+                    'Dabei läuft der Index \lm{ i } über alle endlichen Indizes'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  i  <  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Übergang \lm{ i \rightarrow ω } bezeichnet daher keine letzte endliche Primzahlstufe,'."\n".
+                    'sondern die vollständige Gesamtheit aller endlichen Primzahlstufen.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Schritte hin zur generativen Primzahl-Induktion', subline =>
                     '')),
@@ -1444,7 +1455,7 @@
                     'Damit sind wir nun beim generativen Primzahl-Induktions-Lemma angekommen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
-                  'Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
+                  'Grenzübergang und Lückenabstieg der Mengen-Primfakultät', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Mit Hilfe des generativen Primzahl-Induktions-Lemmas erreichen wir anschließend:'."\n".
@@ -1472,7 +1483,7 @@
                           'also im aktual unendlichen Bereich des umgebenden Primexponenten-Termraums, notwendig Lücken auftreten.'."\n".
                           'Unterhalb jedes aktual unendlichen Rasterelements liegen additive Normalform-Lückenzeugen,'."\n".
                           'die nicht zum reinen Primturm-Potenzraster gehören'."\n".
-                          '(\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}):',
+                          '(\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}):',
                     ))),
 
                   array( 'equations',
@@ -1504,7 +1515,7 @@
                       'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
                     '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
                     'und seiner erzeugten Trägermenge exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
-                    'so ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation}{Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }}'."\n".
+                    'so ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }}'."\n".
                     'innerhalb dieser in ZFC definierten Struktur nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
                     'des Einheits-Primexponentenprodukts kanonisch begründet:'."\n".
                     ''))),

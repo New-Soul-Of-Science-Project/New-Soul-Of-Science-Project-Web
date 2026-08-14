@@ -1436,7 +1436,7 @@
                     'Also ergibt sich: \lm{ \lpr\!*( 18 *) = 3 }.'."\n",
                       'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Generatives-Primzahl-Induktions-Lemma', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma', text =>
                       
                 'Lemma 4: Generatives Primzahl-Induktions-Lemma', subline =>
                   '')),
@@ -1663,8 +1663,8 @@
                     'bezeichnet daher eine kanonische Identifikation innerhalb der eingeführten Primexponentenstruktur,'."\n".
                     'nicht eine rohe extensionale Gleichheit des von-Neumann-Ordinals mit einem gewöhnlichen unendlichen Produkt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Grenzuebergangsprinzip-der-Mengen-Primfakultaet', text =>
-                  'Satz 1: Grenzübergangsprinzip der Mengen-Primfakultät', subline =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-1-Grenzuebergangsprinzip-der-Mengen-Primfakultaet', text =>
+                  'Satz 1: Grenzübergang und Lückenabstieg der Mengen-Primfakultät', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1756,7 +1756,7 @@
                       'nachfolgend festgelegt wurde, um das Lückenargument besser kontrollierbar zu machen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster}{}\bold{1. Alle endlichen natürlichen Zahlen liegen im Raster}'."\n".
+                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:1-Endliche-natuerliche-Zahlen-im-Raster}{}\bold{1. Alle endlichen natürlichen Zahlen liegen im Raster}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sei'."\n".
@@ -1883,7 +1883,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Teilmenge-lpr-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Aktual-unendlichen-Bereich-Luecken}{}\bold{3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf}'."\n".
+                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{}\bold{3. Oberhalb des endlichen Anfangs, also im aktual unendlichen Bereich, treten notwendig Lücken auf}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Es bleibt zu zeigen, dass kein aktual unendliches Rasterelement zu \lm{ \lpr*( P_{ω} *) } gehört.'."\n".
@@ -2103,7 +2103,7 @@
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Ergebnis}{}\bold{4. Ergebnis}'."\n".
+                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Ergebnis}{}\bold{4. Ergebnis}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Aus dem bewiesenen Lückenabstiegsprinzip folgt, dass ein aktual unendliches Primexponentenprodukt'."\n".
@@ -2326,7 +2326,7 @@
                     //-- 'daraus entsteht, dass letztere nach dem Fundamentalsatz der Arithmetik die eineindeutige Primfaktorenzerlegung von \lm{ n } darstellt.'."\n".
                     //-- 'Diese Feststellung dürfen wir nun im Sinne des Einheits-Primexponentenprodukts auf \lm{ ω \widehat{=} \pt( ω ) \equiv_{kan} \pt*( ω\overline{\#} *) \Leftrightarrow ω \equiv_{kan} ω\overline{\#} } übertragen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Theorem-innere-kanonische-ZFC-Strukturidentifikation', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation', text =>
                   'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -2371,7 +2371,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{2.} \\\\'."\n".
                       'Aus dem zuvor deduktiv bewiesenen Ergebnis von'."\n".
-                      '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Grenzuebergangsprinzip-der-Mengen-Primfakultaet}{Satz 1}'."\n".
+                      '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-1-Grenzuebergangsprinzip-der-Mengen-Primfakultaet}{Satz 1}'."\n".
                       'folgt unmittelbar:'."\n".
                       ''))),
                   array( 'equations',
@@ -2389,7 +2389,7 @@
                       'Die eine Inklusionsrichtung ergibt sich aus dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beweisstrategie-generative-Primzahl-Induktions-Lemma}{generativen Primzahl-Induktions-Lemma}:'."\n".
                       'Über die vollständige Induktion aller endlichen Primzahlstufen wird jede endliche natürliche Zahl'."\n".
                       'vom einpotenzigen Primturm-Potenzraster der aufsteigenden Mengen-Primfakultäten erfasst.'."\n".
-                      'Daher gehören \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Endliche-natuerliche-Zahlen-im-Raster}{alle endlichen natürlichen Zahlen in \lm{ ω } zum lückenlosen Primturm-Potenzraster}.'."\n".
+                      'Daher gehören \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:1-Endliche-natuerliche-Zahlen-im-Raster}{alle endlichen natürlichen Zahlen in \lm{ ω } zum lückenlosen Primturm-Potenzraster}.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die andere Inklusionsrichtung ergibt sich aus dem Lückenabstiegsprinzip:'."\n".
