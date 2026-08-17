@@ -1753,30 +1753,6 @@
                   'Bedeutung für die Superial-Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Mit dem Beweis der Überrationalitätsvermutung tauchen wir in die tieferen Zusammenhänge der Zahlentheorie ein.'."\n".
-                    'Dabei eröffnen wir eine neue Welt, in der aktual unendliche Zahlen mit den Eigenschaften bekannter Zahlenmengen,'."\n".
-                    'wie rationale Zahlen, Radikale und die Radikalformen – teils irrationale Wurzelausdrücke – sowie algebraische und transzendente Zahlen,'."\n".
-                    'verwoben sind.'."\n",
-                      'Die fundamentalen Ringaxiome, hier im Besonderen die Abgeschlossenheit der Addition'."\n".
-                    'und der Multiplikation bezüglich der Ganzzahligkeit, kommen ins Spiel'."\n".
-                    'und werden in Verbindung mit aktual unendlichen Zahlen anwendbar.'."\n".
-                    'An dieser Stelle liefert uns unser Theorem der Überrationalitätsvermutung einen wichtigen Einstig.'."\n".
-                    'Von hier aus können wir den Ansatz, die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
-                    'über die aktual unendliche Ganzzahligkeit des Produktes \lm{ a \cdot \s } zu bestimmen,'."\n".
-                    'mit Hilfe der Ringaxiome bis hin zur \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
-                    '– alle Radikalformen sind sinnvolle Koeffizienten – fortsetzen.'."\n",
-                      'Mit den nachfolgend vorgestellten Beweisstrategien, werden die Erkenntnisse zu den sinnvollen Koeffizienten der Superial-Zahlen'."\n".
-                    'weiter vertieft.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
                     'Mit dem Beweis der Überrationalitätsvermutung treten die tieferen Zusammenhänge'."\n".
                     'zwischen klassischen Zahlbereichen und aktual unendlichen Primexponentenstrukturen hervor.'."\n".
                     'Irrationale Wurzeln und Radikalformen erscheinen dabei nicht als äußere Fremdkörper,'."\n".
