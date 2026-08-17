@@ -1332,9 +1332,31 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Die neu entdeckten, unendlich großen Primfaktorzerlegungen offenbaren einen tiefen Zusammenhang'."\n".
-                    'der endlichen Primzahlen mit dem Unendlichen über die rationalen Zahlen.'."\n".
-                    'Ihre Verbindungen mit dem Unendlichen beleuchtet wir in den folgenden Beweisen.'."\n".
+                    'Die entdeckten, aktual unendlichen Primfaktorzerlegungen innerhalb der neuen, in der ZFC-Mengenlehre'."\n".
+                    'definierbaren Primexponentenstruktur, offenbaren einen tiefen Zusammenhang'."\n".
+                    'der endlichen Primzahlen mit dem aktual unendlichen von-Neumann-Ordinal \lm{ ω }.'."\n".
+                    'Dieser Zusammenhang mündet in einer'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{kanonischen Identifikation}'."\n".
+                    'des von-Neumann-Ordinals mit dem neuen Einheits-Primexponentenprodukt aller endlichen Primzahlen.'."\n",
+                      'Die auf diesem Fundament definierte Basis \lm{ \s } der Superial-Zahlen'."\n".
+                    'wirft Fragen bezüglich ihres Produkts mit rein endlichen Koeffizienten \lm{ a } auf.'."\n".
+                    'Bei dem Versuch, die Analysis auf Grundlage der ins Aktual-Unendliche reichenden Superial-Zahlen zu rekonstruieren,'."\n".
+                    'stellt sich bezüglich der Integration die Frage:'."\n".
+                    'Welche \lm{ a \cdot \s } sind unendliche Ganzzahlige, mit denen wir sinnvoll die benötigten Summen definieren können,'."\n".
+                    'und insofern sinnvolle Koeffizienten der Superial-Zahlen?'."\n",
+                      'Daraus haben sich weitere Vermutungen und deren Beweise ergeben, die tief in die Zahlentheorie reichen:'."\n".
+                    'Irrationale Wurzeln werden zu aktual unendlichen Ganzzahligen, wenn sie mit \lm{ \s } faktorisiert werden.'."\n".
+                    'Dies begründen wir mit dem Beweis der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n".
+                    'Gleiches gilt schließlich für alle reell algebraischen Koeffizienten von \lm{ \s },'."\n".
+                    'was wir allgemein mit dem Beweis der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung}'."\n".
+                    'zeigen.'."\n".
+                    'Transzendente Zahlen sind keine Zahlen, die nur mit einem Koeffizienten der Superial-Zahlen darstellbar sind.'."\n".
+                    'Sie braucen mehrere Schichten der Superialzahlen, wie wir abschließend mit dem Beweis der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung}'."\n".
+                    'klarstellen.'."\n",
+                      'All diese Zusammenhänge begründen die Superial-Zahlen als Zahlensystems der Analysis.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
 
@@ -1353,7 +1375,7 @@
                 'Beweisstrategie der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} ist heute die Grundlage der Verankerung'."\n".
+                    'Die Primzahlprodukt-Vermutung ist heute die Grundlage der Verankerung'."\n".
                     'der Superial-Zahl-Definition in der ZFC-Mengenlehre.'."\n".
                     'Dass ihr Beweis einigermaßen zeitnah erfolgt, war für viele Jahre seit ihrer Aufstellung, spätestens 2007\hidden{siehe: 5. Variante, Superial-Zahlen_v00.tex, 05.07.2007. Davor klafft eine riesige zeitliche Lücke in meinen Dokumenten (Sup-Zahl (52).pdf (Sup-Zahlen Beweise (52)), 11.10.2002), allerdings nicht versionsmäßig. Ich müsste in den handschriftlichen Aufzeichnungen schauen, ob dort was ist.},'."\n".
                     'nicht selbstverständlich, weil die Vermutung recht erstaunlich ist:'."\n".
@@ -1366,7 +1388,11 @@
                   array( 'text', array( text => array(
                     'Wie können das Zählen, für das das von-Neumann-Ordinal \lm{ ω } steht,'."\n".
                     'und das Produkt immer größer werdender endlicher Primzahlen,'."\n".
-                    'dass augenscheinlich viel schneller wächst als das Zählen, beim Übergang ins Aktual-Unendliche doch in ihrem Wert miteinander identifiziert werden?'."\n",
+                    'das augenscheinlich viel schneller wächst als das Zählen, beim Übergang ins Aktual-Unendliche doch in ihrem Wert miteinander identifiziert werden?'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die folgenden Punkte geben nur die Beweisstrategie wieder;'."\n".
+                    'die formale Durchführung erfolgt auf der Seite der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Ansatz', subline =>
@@ -1374,11 +1400,12 @@
                   array( 'text', array( text => array(
                     'Der Beweis gelingt schließlich über den Ansatz, dass der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\footnote{\const{SupNum_g_footnote_text_SatzDesEuklid}}'."\n".
                     'durch die Anwendung der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} zeigt, dass es bei einer gegebenen'."\n".
-                    'endlichen Primzahl immer wieder noch größere Primzahlen geben muss, als eine vermeindlich größte.'."\n".
+                    'endlichen Primzahl immer wieder noch größere Primzahlen geben muss, als eine vermeintlich größte.'."\n".
                     'Wir nutzen dies in einer glücklichen Kombination mit der von-Neumann-Ordinal-Identität\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
                     'In dieser werden die Werte endlicher und transfiniter natürlicher Zahlen mit ihrer Darstellung durch die Menge all ihrer Vorgänger, von der Null an, identifiziert.'."\n".
-                    'Auf diese Mengenstruktur abgestimmt definieren wir die Primfakultät als Mengen-Primfakultät, die alle Primzahlen der Menge einer Ordinalzahl'."\n".
-                    'zu einem Primexponentenobjekt mit erweiterter \lm{ p }-adischer Primexponentenbewertungsstruktur aufmultipliziert.'."\n".
+                    'Auf diese Mengenstruktur abgestimmt definieren wir die Primfakultät als Mengen-Primfakultät:'."\n".
+                    'Sie bildet aus allen Primzahlen, die in der Mengendarstellung einer Ordinalzahl enthalten sind,'."\n".
+                    'ein Primexponentenobjekt mit erweiterter p-adischer Primexponentenbewertungsstruktur.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Generative Primzahl-Induktion', subline =>
@@ -1422,27 +1449,27 @@
                           'ihr \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster}{Primturm-Potenzraster} \lm{ \pr(n) }:'."\n".
                           'also alle Primtürme in \lm{ n } in endlichen und transfiniten natürlichen Exponentenkombinationen.',
                         'Dafür nutzen wir ein neues \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
-                          'eine Primexponentenstruktur, die auch die transfiniten Werte dieser Produkte wohldefiniert und ZFC-konform erzeugt,'."\n".
-                          'indem wir ihr Primexponentenprodukt über eine erweiterte \lm{ p }-adische Primexponentenbewertung definierten.',
+                          'eine Primexponentenstruktur, in der auch transfinite Werte ZFC-intern beschreibbar werden,'."\n".
+                          'indem wir ihr Primexponentenprodukt über eine erweiterte \lm{ p }-adische Primexponentenbewertung definieren.',
                         'Das \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster}{lückenlose Primturm-Potenzraster}'."\n".
                           '\lm{ \lpr(n) } holt die Struktur des Primturm-Potenzrasters in die ordinale Mengenstruktur zurück,'."\n".
-                          'weil des nur den lückenlosen Anfang des Primturm-Potenzrasters betrachtet.',
+                          'weil es nur den lückenlosen Anfang des Primturm-Potenzrasters betrachtet.',
                         'Damit ist das lückenlose Primturm-Potenzraster für endliche natürliche Zahlen dann maximal,'."\n".
                           'wenn sie Primfakultäten sind.'."\n".
                           'Das schließen wir aufgrund der Erkenntnis in Bezug auf den Fundamentalsatz der Arithmetik,'."\n".
                           'dass jede natürliche Zahl größer gleich Zwei nur aus Primfaktoren bestehen kann, die kleiner oder gleich wie sie selber sind.',
                         'Der lückenlose Anfang des Primturm-Potenzrasters einer endlichen natürlichen Zahl enthält alle natürlichen Zahlen,'."\n".
                           'einschließlich ihrer selbst, bis zu einer größten Zahl, die direkt vor der nächsten Primzahl liegt.'."\n".
-                          'Die sich ergebende Menge natürlicher Zahlen ist die von Neumann-Darstellung dieser nächsten Primzahl.',
+                          'Die sich ergebende Menge natürlicher Zahlen ist die von-Neumann-Darstellung dieser nächsten Primzahl.',
                     ))),
 
                   array( 'text', array( text => array(
-                    'All diese Erkenntnisse verweben wir nun weiter mit der von Neumann-Mengendarstellung der endlichen'."\n".
+                    'All diese Erkenntnisse verweben wir nun weiter mit der von-Neumann-Mengendarstellung der endlichen'."\n".
                     'und transfiniten Ordinalzahlen in der ZFC-Mengenlehre:'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Dazu bilden wir die Primfakultät der Primzahlen die Elemente der Mengendarstellung einer Ordinalzahl sind: ihre \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
+                        'Dazu bilden wir die Primfakultät der Primzahlen, die Elemente der Mengendarstellung einer Ordinalzahl sind: ihre \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
                           '\lm{ n\overline{\#} };'."\n".
                           'ins Transfinite verallgemeinert mittels des neuen Primexponentenprodukts.',
                         'Wir stellen fest, wie zuvor gerade erklärt, dass uns das'."\n".
@@ -1479,11 +1506,10 @@
                     ))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Den Nachweis, dass oberhalb des lückenlosen Anfangs aus allen endlichen natürlichen Zahlen,'."\n".
-                          'also im aktual unendlichen Bereich des umgebenden Primexponenten-Termraums, notwendig Lücken auftreten.'."\n".
-                          'Unterhalb jedes aktual unendlichen Rasterelements liegen additive Normalform-Lückenzeugen,'."\n".
-                          'die nicht zum reinen Primturm-Potenzraster gehören'."\n".
-                          '(\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}):',
+                        'Die zweite Inklusionsrichtung folgt aus dem'."\n".
+                          '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}:'."\n".
+                          'Oberhalb von \lm{ ω } treten im umgebenden Primexponenten-Termraum notwendig Lücken auf,'."\n".
+                          'weil additive Normalform-Lückenzeugen nicht zum reinen Primturm-Potenzraster gehören:',
                     ))),
 
                   array( 'equations',
@@ -1512,12 +1538,18 @@
                     'Aus dieser engen Verknüpfung ergibt sich innerhalb der in ZFC definierbaren Primexponentenstruktur'."\n".
                     'eine kanonisch begründete Identifikation, in der das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
                     'den lückenlosen Zahlenwert \lm{ ω } besitzt:'."\n",
-                      'Wenn das lückenlose Erzeugungsspektrum des aktual unendlichen Einheits-Primexponentenprodukts'."\n".
-                    '\lm{ ω\overline{\#} } in seiner Ordnung, seinem lückenlosen Anfang'."\n".
-                    'und seiner erzeugten Trägermenge exakt dem von-Neumann-Ordinal \lm{ ω } entspricht,'."\n".
-                    'so ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }}'."\n".
-                    'innerhalb dieser in ZFC definierten Struktur nicht willkürlich, sondern durch den lückenlosen Zahlenwert'."\n".
-                    'des Einheits-Primexponentenprodukts kanonisch begründet:'."\n".
+                      'Wenn das Erzeugungsspektrum'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \pr*( ω\overline{\#} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'des aktual unendlichen Einheits-Primexponentenprodukts in seiner Ordnung und seiner erzeugten Trägermenge'."\n".
+                    'dem von-Neumann-Ordinal \lm{ ω } entspricht und zugleich sein lückenloser Anfang exakt'."\n".
+                    'den ordinalen Zahlenwert \lm{ ω } besitzt, dann ist die'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonische Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }} innerhalb dieser Struktur nicht willkürlich,'."\n".
+                    'sondern durch den deduktiv bestimmten lückenlosen Zahlenwert des Einheits-Primexponentenprodukts begründet:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1527,26 +1559,37 @@
                   array( 'text', array( text => array(
                     'Damit haben wir unsere Vermutung schließlich bewiesen.'."\n".
                     ''))),
+                  array( 'text', array( text => array(
+                    'Aufgrund der kanonischen Identifikation verwenden wir die vereinfachten Schreibweisen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                    ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Bedeutung für die Superial-Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Übertragen auf \lm{ \s } erhalten wir:'."\n".
+                    'Die superiale Basis \lm{ \s } ist in ihrer \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion}'."\n".
+                    'darauf aufbauend definiert als:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  ω^{ω}  \equiv_{kan}  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Aufgrund der kanonischen Identifikation verwenden wir die vereinfachten Schreibweisen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  =  *( ω\overline{\#} *)_{\#}^{ω}  }'),
+                      array( display => 'on',  latex => '{  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1556,53 +1599,240 @@
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung', text =>
                                            
                 'Beweisstrategie der Überrationalitätsvermutung', subline =>
-                  'Welcher uns zur Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  '')),
                   array( 'text', array( text => array(
-                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
-                    'dreht sich um die Frage, ob irrationale Wurzeln'."\n".
-                    'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden können.'."\n",
-                      'Unser vollendetes Theorem der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} zeigt, dass und wie dies geht.'."\n".
-                    'Ein überrationaler Bruch ist demnach ein Bruch, der im Nenner und im Zähler unendlich große ganze Zahlen hat,'."\n".
-                    'deren Primfaktorzerlegung aus unendlich hohen Potenzen endlich vieler Primzahlen besteht:'."\n".
+                    'Die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
+                    'geht von einer einfachen Beobachtung aus:'."\n".
+                    'Der klassische Beweis der Irrationalität von Wurzeln zeigt nicht nur,'."\n".
+                    'dass bestimmte Wurzeln keine rationalen Zahlen sind.'."\n".
+                    'Er zeigt zugleich, warum ein endlicher rationaler Bruch scheitert.'."\n",
+                      'Am Beispiel der Wurzel aus Zwei ergibt sich aus der Annahme'."\n".
                     ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  *| \sqrt{ 2 } \,|*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Betrag-Wurze-Zwei-gleich-a-geteilt-b-endlich-rational}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Diesen Bruch können wir von der Basis her reduzieren, wenn \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz darstellt:'."\n",
+                    'mit endlichen ganzen Zahlen \lm{ a }, \lm{ b } die Gleichung'."\n".
                     ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Daraus folgt, dass Zähler und Nenner gleichzeitig immer weiter durch \lm{ 2 } teilbar sein müssten.'."\n".
+                    'Für endliche ganze Zahlen ist das unmöglich, denn ein endlicher Bruch lässt sich nur endlich oft kürzen.'."\n".
+                    'Genau daraus entsteht der klassische Widerspruch.'."\n",
+                      'Die Beweisstrategie der Überrationalitätsvermutung besteht nun darin,'."\n".
+                    'diesen Widerspruch nicht nur negativ zu lesen.'."\n".
+                    'Er zeigt nicht bloß:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  \notin  \mathbb{Q}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Er zeigt vielmehr positiv, welche Eigenschaft ein Bruch besitzen müsste,'."\n".
+                    'um \lm{ 2^{\frac{ 1 }{ 2 }} } dennoch als Quotient ganzer Zahlen darstellen zu können:'."\n".
+                    'Zähler und Nenner müssten eine aktual unendliche Teilbarkeit durch \lm{ 2 } besitzen.'."\n",
+                      'Daher wird die endliche Rationalitätsbedingung ersetzt durch eine überrationale Darstellungsbedingung.'."\n".
+                    'Statt eines endlichen Bruchs'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ a }{ b }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'mit endlichen ganzen Zahlen betrachtet man einen Bruch mit aktual unendlichem ganzem Zähler und Nenner.'."\n".
+                    'Für die Wurzel aus Zwei führt dies zur Struktur'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Nenner'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'trägt die vollständige aktual unendliche Teilbarkeit durch \lm{ 2 }.'."\n".
+                    'Der Zähler'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  =  2^{ω + \frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'trägt dieselbe aktual unendliche Teilbarkeitsstruktur, verschoben um den Wurzelexponenten.'."\n".
+                    'Dadurch wird genau die Bedingung erfüllt, die im endlichen rationalen Fall zum Widerspruch führte.'."\n",
+                      'Der Beweis kehrt den klassischen Irrationalitätsbeweis also um:'."\n".
+                    'Was bei endlichen ganzen Zahlen unmöglich ist, wird im aktual unendlichen Bereich'."\n".
+                    'zur charakteristischen Struktur eines überrationalen Bruchs.'."\n",
+                      'Für allgemeine irrationale Wurzeln'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wird diese Idee über den Primzahlträger von \lm{ n } formuliert.'."\n".
+                    'Die relevanten Primzahlen werden durch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \rad( n )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erfasst.'."\n".
+                    'Die natürliche überrationale Darstellungsform lautet daher:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Da die beiden folgenden Ausdrücke aktual unendliche ganze Zahlen darstellen'."\n",
+                    'Der Nenner enthält jede in n vorkommende Primzahl in aktual unendlicher Potenz.'."\n".
+                    'Der Zähler enthält dieselbe aktual unendliche Primexponentenstruktur,'."\n".
+                    'ergänzt um den Wurzelexponenten von \lm{ n^{\frac{ 1 }{ x }} }.'."\n".
+                    'Damit werden Zähler und Nenner zu aktual unendlichen ganzen Zahlen'."\n".
+                    'in dem hierfür vorgesehenen erweiterten Zahlenraum.'."\n",
+                      'Die Überrationalitätsvermutung behauptet somit nicht, dass irrationale Wurzeln rationale Zahlen sind.'."\n".
+                    'Sie behauptet vielmehr, dass irrationale Wurzeln'."\n".
+                    'als Quotienten aktual unendlich großer ganzer Zahlen darstellbar sind:'."\n".
                     ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => false),
-                      array( display => 'on',  latex => '{  \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ A }{ B }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'ist auch ihr Produkt eine aktual unendlich große ganze Zahl und fällt somit in die natürlichen Superial-Zahlen'."\n",
+                    'mit'."\n".
                     ''))),
-                  array( 'equations', array( equ_text_std => 'SN.Ein.Bew.Über', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} \cdot \frac{ \s }{ \rad(n)^{ω} }  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  A, B  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'wie wir sehen.'."\n",
-                      'So ist ein Produkt jedes überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n".
-                    'Also gehören auch die irrationalen Wurzeln zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
-                    'Also auch die Wurzel aus Zwei \lm{ \sqrt{2} },'."\n".
-                    'mit \lm{ \sqrt{2} \cdot \s \in \mathbb{S}_{\N} }.'."\n",
-                      'Dies ist eine bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
-                    'die uns schon so, aber ganz besonders im weiteren Verlauf, neue Informationen über Wurzeln (Radikale) und schließlich über Wurzelausdrücke (Radikalformen) liefert.'."\n".
-                    'Schließlich können wir die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
-                    'der sinnvollen Koeffizienten der Superial-Zahlen zeigen.'."\n".
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  B  =  \rad(n)^{ω}  \\;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die klassische Irrationalität bleibt erhalten:'."\n".
+                    'Es gibt keinen endlichen rationalen Bruch.'."\n".
+                    'Aber der klassische Widerspruch wird strukturell aufgelöst,'."\n".
+                    'sobald aktual unendlich teilbare Zähler und Nenner zugelassen werden.'."\n",
+                      'Die Beweisstrategie besteht daher aus drei Schritten:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Erstens wird am klassischen Irrationalitätsbeweis sichtbar gemacht,'."\n".
+                          'dass endliche Zähler und Nenner an der geforderten unbegrenzten Teilbarkeit scheitern.',
+                        'Zweitens wird diese unbegrenzte Teilbarkeit durch eine aktual unendliche Primexponentenstruktur normiert,'."\n".
+                          'insbesondere durch den Exponenten \lm{ ω }.',
+                        'Drittens wird gezeigt, dass dadurch eine überrationale Darstellung entsteht,'."\n".
+                          'deren Zähler und Nenner aktual unendliche ganze Zahlen sind,'."\n".
+                          'während ihr Quotient exakt die ursprüngliche irrationale Wurzel ergibt.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Damit wird die Irrationalität nicht aufgehoben, sondern erweitert:'."\n".
+                    'Eine irrationale Wurzel ist nicht rational, aber überrational darstellbar.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  'Bedeutung für die Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Mit dem Beweis der Überrationalitätsvermutung tauchen wir in die tieferen Zusammenhänge der Zahlentheorie ein.'."\n".
+                    'Dabei eröffnen wir eine neue Welt, in der aktual unendliche Zahlen mit den Eigenschaften bekannter Zahlenmengen,'."\n".
+                    'wie rationale Zahlen, Radikale und die Radikalformen – teils irrationale Wurzelausdrücke – sowie algebraische und transzendente Zahlen,'."\n".
+                    'verwoben sind.'."\n",
+                      'Die fundamentalen Ringaxiome, hier im Besonderen die Abgeschlossenheit der Addition'."\n".
+                    'und der Multiplikation bezüglich der Ganzzahligkeit, kommen ins Spiel'."\n".
+                    'und werden in Verbindung mit aktual unendlichen Zahlen anwendbar.'."\n".
+                    'An dieser Stelle liefert uns unser Theorem der Überrationalitätsvermutung einen wichtigen Einstig.'."\n".
+                    'Von hier aus können wir den Ansatz, die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
+                    'über die aktual unendliche Ganzzahligkeit des Produktes \lm{ a \cdot \s } zu bestimmen,'."\n".
+                    'mit Hilfe der Ringaxiome bis hin zur \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}'."\n".
+                    '– alle Radikalformen sind sinnvolle Koeffizienten – fortsetzen.'."\n",
+                      'Mit den nachfolgend vorgestellten Beweisstrategien, werden die Erkenntnisse zu den sinnvollen Koeffizienten der Superial-Zahlen'."\n".
+                    'weiter vertieft.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Mit dem Beweis der Überrationalitätsvermutung treten die tieferen Zusammenhänge'."\n".
+                    'zwischen klassischen Zahlbereichen und aktual unendlichen Primexponentenstrukturen hervor.'."\n".
+                    'Irrationale Wurzeln und Radikalformen erscheinen dabei nicht als äußere Fremdkörper,'."\n".
+                    'sondern als Zahlen, deren fehlende endliche Rationalität durch'."\n".
+                    'aktual unendliche Teilbarkeitsstrukturen aufgenommen werden kann.'."\n",
+                      'In der klassischen Arithmetik scheitert eine Darstellung wie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'an der endlichen Teilbarkeit von Zähler und Nenner.'."\n".
+                    'Im superialen Zusammenhang steht jedoch mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'eine aktual unendliche Teilbarkeitsstruktur zur Verfügung.'."\n".
+                    'Dadurch kann die Wurzel aus Zwei überrational als Quotient'."\n".
+                    'aktual unendlich großer ganzer Zahlen dargestellt werden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die Superial-Zahlen ist dies grundlegend, weil die'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
+                    'über die aktual unendliche Ganzzahligkeit des Produkts'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bestimmt werden.'."\n".
+                    'Die Überrationalitätsvermutung liefert hier den ersten wichtigen Einstieg:'."\n".
+                    'Sie zeigt, wie irrationale Wurzeln durch die aktual unendliche Primexponentenstruktur'."\n".
+                    'der superialen Basis aufgenommen werden können.'."\n",
+                      'Damit kommen auch die fundamentalen Ringaxiome ins Spiel, insbesondere die Abgeschlossenheit'."\n".
+                    'von Addition und Multiplikation bezüglich der Ganzzahligkeit.'."\n".
+                    'Von der überrationalen Darstellung einzelner Wurzeln führt'."\n".
+                    'der Weg dadurch weiter zur \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikal-Abgeschlossenheit}:'."\n".
+                    'Radikale und Radikalformen können als sinnvolle Koeffizienten der Superial-Zahlen'."\n".
+                    'verstanden werden.'."\n",
+                      'Die klassische Irrationalität wird dabei nicht aufgehoben.'."\n".
+                    'Eine irrationale Wurzel bleibt irrational.'."\n".
+                    'Sie wird jedoch im superialen Zahlenraum überrational darstellbar'."\n".
+                    'und dadurch als Koeffizient verwendbar.'."\n".
+                    'Damit bereitet das Theorem der Überrationalitätsvermutung die späteren Beweisstrategien'."\n".
+                    'zu den sinnvollen Koeffizienten der Superial-Zahlen vor,'."\n".
+                    'insbesondere den Übergang zur Aussage, dass Radikalformen und schließlich'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{reell algebraische Zahlen sinnvolle Koeffizienten} sind.'."\n",
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung', text =>
