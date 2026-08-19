@@ -138,7 +138,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-a-mal-s-in-Sz-erste-Schicht', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-a-mal-s-in-Sz-erste-Schicht}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Sie verhalten sich Exponentenschicht neutral und ergeben im aktual unendlich Großen ganze Zahlen.'."\n",
@@ -247,7 +248,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\R}  ?\subseteq  \mathbb{A}_{\S}  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}', label_incr => true),
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Ar-FrageTeilmengeGleich-As', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Ar-FrageTeilmengeGleich-As}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superialen Koeffizienten alle reell algebraische Zahlen sind}, untersucht und bewiesen.'."\n",
@@ -480,7 +481,7 @@
                       'Dies haben wir nun in unserer \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}'."\n".
                     'und auf der Gegenseite flankiert von unserer \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} bewiesen.'."\n".
                     // 'also, dass Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-verm-in-ganzen-SupZahlen}'."\n".
-                    // 'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-A-R-TeilmentGleich-A-S}'."\n".
+                    // 'und damit auch Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-Ar-FrageTeilmengeGleich-As}'."\n".
                     // 'stimmen.'."\n".
                     // 'Das wäre schon ziemlich erfreulich und cool.'."\n".
                     'Damit wissen wir es gilt'."\n".

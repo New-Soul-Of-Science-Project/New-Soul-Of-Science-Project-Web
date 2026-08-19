@@ -1332,31 +1332,40 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Die entdeckten, aktual unendlichen Primfaktorzerlegungen innerhalb der neuen, in der ZFC-Mengenlehre'."\n".
-                    'definierbaren Primexponentenstruktur, offenbaren einen tiefen Zusammenhang'."\n".
+                    'Die entdeckten aktual unendlichen Primfaktorzerlegungen innerhalb der neuen, in der ZFC-Mengenlehre'."\n".
+                    'definierbaren Primexponentenstruktur offenbaren einen tiefen Zusammenhang'."\n".
                     'der endlichen Primzahlen mit dem aktual unendlichen von-Neumann-Ordinal \lm{ ω }.'."\n".
                     'Dieser Zusammenhang mündet in einer'."\n".
                     '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{kanonischen Identifikation}'."\n".
-                    'des von-Neumann-Ordinals mit dem neuen Einheits-Primexponentenprodukt aller endlichen Primzahlen.'."\n",
-                      'Die auf diesem Fundament definierte Basis \lm{ \s } der Superial-Zahlen'."\n".
-                    'wirft Fragen bezüglich ihres Produkts mit rein endlichen Koeffizienten \lm{ a } auf.'."\n".
-                    'Bei dem Versuch, die Analysis auf Grundlage der ins Aktual-Unendliche reichenden Superial-Zahlen zu rekonstruieren,'."\n".
-                    'stellt sich bezüglich der Integration die Frage:'."\n".
-                    'Welche \lm{ a \cdot \s } sind unendliche Ganzzahlige, mit denen wir sinnvoll die benötigten Summen definieren können,'."\n".
-                    'und insofern sinnvolle Koeffizienten der Superial-Zahlen?'."\n",
-                      'Daraus haben sich weitere Vermutungen und deren Beweise ergeben, die tief in die Zahlentheorie reichen:'."\n".
-                    'Irrationale Wurzeln werden zu aktual unendlichen Ganzzahligen, wenn sie mit \lm{ \s } faktorisiert werden.'."\n".
-                    'Dies begründen wir mit dem Beweis der'."\n".
-                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n".
-                    'Gleiches gilt schließlich für alle reell algebraischen Koeffizienten von \lm{ \s },'."\n".
-                    'was wir allgemein mit dem Beweis der'."\n".
-                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung}'."\n".
-                    'zeigen.'."\n".
-                    'Transzendente Zahlen sind keine Zahlen, die nur mit einem Koeffizienten der Superial-Zahlen darstellbar sind.'."\n".
-                    'Sie braucen mehrere Schichten der Superialzahlen, wie wir abschließend mit dem Beweis der'."\n".
-                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung}'."\n".
-                    'klarstellen.'."\n",
-                      'All diese Zusammenhänge begründen die Superial-Zahlen als Zahlensystems der Analysis.'."\n".
+                    'des von-Neumann-Ordinals mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen.'."\n",
+                      'Aus der Rekonstruktion der Analysis, im Besonderen der Integrale als'."\n".
+                    'aktual unendlich schrittige Summen, ergibt sich die zentrale Frage,'."\n".
+                    'welche rein endlichen Koeffizienten \lm{ a } im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    'eine aktual unendliche ganze Zahl ergeben.'."\n".
+                    'Denn nur dann können die entsprechenden Integralsummen als aktual unendliche Summen'."\n".
+                    'mit ganzzahlig bestimmter Schrittzahl verstanden werden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-a-mal-s-in-Sz-erste-Schicht}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Bedingung führt zur Definition der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                      'Daraus ergeben sich weitere Vermutungen und Beweise, die tief in die Zahlentheorie reichen.'."\n".
+                    'Irrationale Wurzeln werden zu aktual unendlichen ganzen Zahlen, wenn sie mit'."\n".
+                    'der passenden Primexponentenstruktur von \lm{ \s } faktorisiert werden.'."\n".
+                    'Dies begründet der Beweis der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n",
+                      'Entsprechend zeigt die'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraische-Koeffizienten-Vermutung},'."\n".
+                    'dass schließlich alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Die \jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}'."\n".
+                    'klärt abschließend die Grenze dieser Koeffizientenstruktur:'."\n".
+                    'Transzendente Zahlen sind keine sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
+                    'Sie benötigen mehrere Schichten der Superial-Zahlen'."\n".
+                    'und sind daher nicht allein als Koeffizienten der Hauptschicht darstellbar.'."\n",
+                      'All diese Zusammenhänge begründen die Superial-Zahlen als Zahlensystem der Analysis.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
 
@@ -1749,7 +1758,7 @@
                     'Damit wird die Irrationalität nicht aufgehoben, sondern erweitert:'."\n".
                     'Eine irrationale Wurzel ist nicht rational, aber überrational darstellbar.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung:X', text =>
                   'Bedeutung für die Superial-Zahlen', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -1805,7 +1814,7 @@
                     'Eine irrationale Wurzel bleibt irrational.'."\n".
                     'Sie wird jedoch im superialen Zahlenraum überrational darstellbar'."\n".
                     'und dadurch als Koeffizient verwendbar.'."\n".
-                    'Damit bereitet das Theorem der Überrationalitätsvermutung die späteren Beweisstrategien'."\n".
+                    'Damit bereitet der Beweis der Überrationalitätsvermutung die späteren Beweisstrategien'."\n".
                     'zu den sinnvollen Koeffizienten der Superial-Zahlen vor,'."\n".
                     'insbesondere den Übergang zur Aussage, dass Radikalformen und schließlich'."\n".
                     '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{reell algebraische Zahlen sinnvolle Koeffizienten} sind.'."\n",
@@ -1814,11 +1823,188 @@
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung', text =>
                                            
                 'Beweisstrategie der Algebraischen-Koeffizienten-Vermutung', subline =>
-                  'Welcher uns zur Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  '')),
                   array( 'text', array( text => array(
-                    'Im Beweis der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung} stellen sich alle reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'als sinnvolle Koeffizienten der Superial-Zahlen heraus.'."\n".
-                    'Damit zeigen wir sogar ihre \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}.'."\n".
+                    'Die \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraische-Koeffizienten-Vermutung}'."\n".
+                    'erweitert die bisherigen Erkenntnisse über rationale Zahlen,'."\n".
+                    'Wurzeln und Radikalformen auf alle reell algebraischen Zahlen. Ziel ist zu zeigen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das bedeutet:'."\n".
+                    'Jede reell algebraische Zahl \lm{ \alpha } ist ein sinnvoller Koeffizient der Superial-Zahlen.'."\n".
+                    'In der Sprache der Superial-Zahlen heißt dies:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha \cdot \s  \in  \mathbb{S}_{\mathbb{Z},\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Beweis nutzt nicht mehr nur einzelne Radikaldarstellungen,'."\n".
+                    'sondern die allgemeine algebraische Struktur reell algebraischer Zahlen.'."\n".
+                    'Der zentrale Gedanke ist, die Ganzzahligkeit in den Superial-Zahlen'."\n".
+                    'über Bewertungen zu kontrollieren.'."\n",
+                      'Zunächst wird der Ring der ganzen Superial-Zahlen durch eine Schnittdarstellung beschrieben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\mathbb{Z}}  =  \bigcap_{ p \in \mathbb{P} }  V_{p}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei sind die \lm{ V_{p} } Bewertungsringe zu den endlichen Primzahlen \lm{ p }.'."\n".
+                    'Ein Element ist also genau dann superial ganz, wenn es bezüglich jeder endlichen Primzahl'."\n".
+                    'keine negativen Primexponenten besitzt.'."\n".
+                    'Aus dieser Darstellung folgt, dass \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist,'."\n".
+                    'denn Bewertungsringe sind ganz abgeschlossen und Schnitte'."\n".
+                    'ganz abgeschlossener Teilringe bleiben ganz abgeschlossen.'."\n",
+                      'Anschließend wird diese Ganz-Abgeschlossenheit auf algebraische Ganzzahlen angewendet.'."\n".
+                    'Ist \lm{ \beta } eine reell algebraische Ganzzahl, so erfüllt \lm{ \beta }'."\n".
+                    'eine monische Polynomgleichung mit ganzzahligen Koeffizienten.'."\n".
+                    'Setzt man'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  Y  :=  \beta \cdot \s  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'so zeigt die Multiplikation der Polynomgleichung mit einer passenden Potenz von \lm{ \s },'."\n".
+                    'dass \lm{ Y } ganz über \lm{ \mathbb{S}_{\Z} } ist.'."\n".
+                    'Wegen der Ganz-Abgeschlossenheit von \lm{ \mathbb{S}_{\Z} } folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \beta \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind zunächst alle algebraische ganze Zahlen, also algebraische Integer, sinnvolle Koeffizienten.'."\n",
+                      'Für eine beliebige reell algebraische Zahl \lm{ \alpha } wird anschließend'."\n".
+                    'ein klassischer Standardfakt aus der Algebra verwendet:'."\n".
+                    'Es gibt ein endliches \lm{ m \in \mathbb{Z} \setminus \{ 0 \} }, sodass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \beta  :=  m \cdot \alpha  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'eine algebraische Ganzzahl ist.'."\n",
+                      'Nun folgt der entscheidende Nenner-Absorptionsschritt.'."\n".
+                    'Da die vorstehende Formel äquivalent ist mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \beta }{ m }  =  \alpha  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erhalten wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha \cdot \s  =  \frac{ \beta }{ m } \cdot \s  =  \beta \cdot \frac{ \s }{ m }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der endliche Nenner \lm{ m } wird von der superialen Basis \lm{ \s } absorbiert,'."\n".
+                    'denn \lm{ \s } enthält jede endliche Primzahl in aktual unendlicher Potenz.'."\n".
+                    'Daher gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s }{ m }  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ \beta } eine algebraische ganze Zahl ist,'."\n".
+                    'greift die zuvor bewiesene Ganzheitsaussage für algebraische ganze Koeffizienten.'."\n".
+                    'Somit liegt auch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \beta \cdot \frac{ \s }{ m }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'im Bereich der ganzen Superial-Zahlen der ersten Schicht.'."\n".
+                    'Also folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ist gezeigt, dass auch eine beliebige reell algebraische Zahl \lm{ \alpha }'."\n".
+                    'ein sinnvoller Koeffizient der Superial-Zahlen ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die Beweisstrategie besteht somit aus vier Schritten:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Zuerst wird Ganzzahligkeit über die \lm{ p }-adischen Bewertungsringe charakterisiert.',
+                        'Danach wird daraus die'."\n".
+                          '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganz-Abgeschlossenheit-von-As}{Ganz-Abgeschlossenheit}'."\n".
+                          'der ganzen Superial-Zahlen gewonnen.',
+                        'Anschließend werden algebraische Ganzzahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                          'durch Multiplikation mit \lm{ \s } in ganze Superial-Zahlen überführt.',
+                        'Schließlich wird jede reell algebraische Zahl durch Multiplikation mit einem endlichen Nenner'."\n".
+                          'zu einer algebraischen Ganzzahl gemacht, während \lm{ \s } diesen endlichen Nenner wieder absorbiert.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Damit zeigt die Algebraische-Koeffizienten-Vermutung, dass nicht nur rationale Zahlen,'."\n".
+                    'Wurzeln und Radikalformen, sondern alle reell algebraischen Zahlen'."\n".
+                    'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung:X', text =>
+                  'Bedeutung für die Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Algebraische-Koeffizienten-Vermutung ist für die Superial-Zahlen von zentraler Bedeutung,'."\n".
+                    'weil sie den Kreis der sinnvollen Koeffizienten weit über rationale Zahlen,'."\n".
+                    'Wurzeln und einzelne Radikalformen hinaus erweitert.'."\n".
+                    'Sie zeigt, dass jede reell algebraische Zahl als Koeffizient der Superial-Zahlen verwendet werden kann.'."\n",
+                      'Der Ausgangspunkt ist die Bedingung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Eine endliche Zahl \lm{ a } ist genau dann ein sinnvoller Koeffizient der Superial-Zahlen,'."\n".
+                    'wenn ihr Produkt mit der superialen Basis \lm{ \s } eine ganze Superial-Zahl ergibt.'."\n".
+                    'Die Algebraische-Koeffizienten-Vermutung zeigt, dass diese Bedingung'."\n".
+                    'für alle reell algebraischen Zahlen erfüllt ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit wird die superiale Basis \lm{ \s } als arithmetischer Träger sichtbar:'."\n".
+                    'Sie enthält jede endliche Primzahl in aktual unendlicher Potenz'."\n".
+                    'und kann dadurch endliche Nenner, algebraische Teilbarkeitsstrukturen'."\n".
+                    'und die in algebraischen Zahlen enthaltenen Primexponenten aufnehmen.'."\n".
+                    'Dieser Mechanismus verallgemeinert die bekannten Rechenprozesse der Zahlentheorie:'."\n".
+                    'Was bei rationalen Zahlen durch Kürzen und Erweitern geschieht und bei Wurzeln durch'."\n".
+                    'überrationale Brüche sichtbar wird, gilt nicht mehr nur für einzelne Zahlentypen,'."\n".
+                    'sondern für alle reell algebraischen Zahlen insgesamt.'."\n",
+                      'Für die Superial-Zahlen bedeutet dies, dass ihre Koeffizientenstruktur nicht willkürlich gewählt ist.'."\n".
+                    'Sie ist algebraisch stabil:'."\n".
+                    'Rationale Zahlen, Radikale, Radikalformen und schließlich alle reell algebraischen Zahlen'."\n".
+                    'können als sinnvolle Koeffizienten auftreten, weil ihre Multiplikation mit \lm{ s }'."\n".
+                    'in den Bereich der ganzen Superial-Zahlen führt.'."\n",
+                      'Damit liefert die Algebraische-Koeffizienten-Vermutung einen entscheidenden Schritt'."\n".
+                    'zur algebraischen Fundierung der Superial-Zahlen.'."\n".
+                    'Sie zeigt, dass die Superial-Zahlen nicht nur ein Stellenwertsystem'."\n".
+                    'mit aktual unendlicher Basis sind, sondern ein Rechenraum,'."\n".
+                    'dessen Hauptschicht die reell algebraischen Zahlen als natürliche Koeffizienten tragen kann.'."\n",
+                      'Zugleich bereitet dieses Ergebnis die Abgrenzung zur Superialen-Transzendenz-Vermutung vor.'."\n".
+                    'Während reell algebraische Zahlen sinnvolle Koeffizienten der Hauptschicht sind,'."\n".
+                    'benötigen transzendente Zahlen nach dieser späteren Vermutung zusätzliche superiale Schichten.'."\n".
+                    'Die Algebraische-Koeffizienten-Vermutung markiert damit'."\n".
+                    'die positive algebraische Seite der Koeffizientenstruktur:'."\n".
+                    'Alle reell algebraischen Zahlen gehören zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung', text =>

@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 08.08.2026, 09:00h
+  // #: Stand: 17.08.2026, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260817:  *:  "$Sc_g_equation_replace_ary":  Fix '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subset}\;\;\;'  to  '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subseteq}\;\;\;'.
   //           20260808:  +:  "$Sc_g_equation_replace_ary":  Add '  \longrightarrow  ' -> '\;\;\;\longrightarrow\;\;\;'.
   //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
   //                      +:  "$Sc_g_equation_replace_ary":  Add ' ?\widehat{=} ' -> '\;\overset{?}{\widehat{=}}\;'.
@@ -732,7 +733,7 @@
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
-                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subset}\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subseteq}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
                                     array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
