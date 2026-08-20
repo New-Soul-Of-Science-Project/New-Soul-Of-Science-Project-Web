@@ -2010,15 +2010,229 @@
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung', text =>
                                            
                 'Beweisstrategie der Superialen-Transzendenz-Vermutung', subline =>
-                  'Welcher uns zur ausschließlichen Ganz-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen führt')),
+                  '')),
                   array( 'text', array( text => array(
-                    'Und im Beweis der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung} zeigen wir noch,'."\n".
-                    'dass nur die reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
-                    'Was bedeutet, dass transzendente Zahlen keine sinnvollen Koeffizienten der Superial-Zahlen sind.'."\n",
-                      'Transzendente Zahlen tragen nämlich im Rahmen der Superial-Zahlen superial kleine Summanden.'."\n".
-                    'Womit wir erkennen können, dass Superial-Zahlen im Grunde reelle Zahlen sind, die echte infinite, also aktual unendliche Anteile besitzen.'."\n".
-                    'Denn der Übergang zwischen den Exponentenschichten der Superial-Zahlen entspricht exakt der arithmetischen Bruchlinie'."\n".
-                    'zwischen den reell algebraischen Zahlen und den transzendenten Zahlen.'."\n".
+                    'Die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}'."\n".
+                    'bildet die Gegenrichtung zur Algebraischen-Koeffizienten-Vermutung.'."\n".
+                    'Während die'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraische-Koeffizienten-Vermutung}'."\n".
+                    'zeigt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'soll nun gezeigt werden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  \subseteq  \mathbb{A}_{\R}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zusammen ergibt sich dann die vollständige Bestimmung'."\n".
+                    'der sinnvollen reellen Koeffizienten der Superial-Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Beweisstrategie beginnt mit einem beliebigen sinnvollen Koeffizienten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\S}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nach Definition bedeutet dies:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  T  :=  \alpha \cdot \s  \in  \mathbb{S}_{\Z, *\{ 1 *\}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Zahl \lm{ \alpha } wird also dadurch sinnvoll,'."\n".
+                    'dass ihr Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    'eine ganze Superial-Zahl der Eins-Schicht ergibt.'."\n",
+                      'Nun betrachten wir zu einem ganzzahligen Polynom'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P(x)  =  \sum_{i = 0}^{d} c_{i} \cdot x^{i}  \in  \mathbb{Z}[x]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'den superial normierten Ausdruck'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{P}(\alpha)  :=  P(\alpha) \cdot \s^{d}  =  \sum_{ i = 0 }^{ d }  c_{i} \cdot T^{i} \cdot \s^{d - i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da sowohl \lm{ T = \alpha \cdot \s } als auch \lm{ \s } ganze Superial-Zahlen sind,'."\n".
+                    'enthält jeder Summand eine gleichmäßige aktual unendliche Teilbarkeitsstruktur.'."\n".
+                    'Daraus folgt der uniforme \lm{ p }-adische Schub:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}*( \Phi_{P}( \alpha ) *)  \ge  d  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'für jede endliche Primzahl \lm{ p }.'."\n".
+                    'Die Multiplikation mit \lm{ \s^{d} } hebt also jeden Polynomwert \lm{ P( \alpha ) }'."\n".
+                    'in eine stark teilbare superiale Ganzheitsstruktur.'."\n",
+                      'Der nächste Schritt besteht darin, Polynome zu konstruieren,'."\n".
+                    'die bei \lm{ \alpha } archimedisch sehr kleine Werte annehmen'."\n".
+                    'und zugleich vorgegebene Kongruenzbedingungen erfüllen.'."\n".
+                    'Dies geschieht über ein Dirichlet–Siegel-Argument mit Restklassen.'."\n".
+                    'Dadurch erhält man eine Folge monischer Polynome'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P_{k}  \in  \mathbb{Z}[x]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| P_{k}( \alpha ) |*  \le  2^{-k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und gleichzeitig kohärenten Koeffizienten modulo wachsender Moduln'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P_{k+1}  \equiv  P_{k} \pmod{M_{k}}.  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die \lm{ p }-adische Seite wird durch den uniformen Schub aus \lm{ \s } kontrolliert,'."\n".
+                    'während die archimedische Seite durch die Abschätzung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| P_{k}( \alpha ) |*  \le  2^{-k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegen Null gedrückt wird.'."\n",
+                      'Die Kongruenz-Kohärenz der Polynome erlaubt anschließend einen profiniten Diagonalschritt:'."\n".
+                    'Die Koeffizienten stabilisieren.'."\n".
+                    'Dadurch entsteht ein nichttriviales ganzzahliges Polynom'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P  \in  \mathbb{Z}[x]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'das als Grenzpolynom der \lm{ P_{k} } verstanden werden kann.'."\n",
+                      'Da die Werte \lm{ P_{k}( \alpha ) } zugleich archimedisch gegen Null gehen, folgt im Grenzübergang:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  P( \alpha )  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit erfüllt \lm{ \alpha } eine nichttriviale Polynomgleichung mit ganzzahligen Koeffizienten.'."\n".
+                    'Also ist \lm{ \alpha } reell algebraisch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \alpha  \in  \mathbb{A}_{\R}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ \alpha \in \mathbb{A}_{\S} } beliebig war, folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  \subseteq  \mathbb{A}_{\R}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zusammen mit der bereits bewiesenen Algebraischen-Koeffizienten-Vermutung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ergibt sich:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind die sinnvollen reellen Koeffizienten der Superial-Zahlen vollständig bestimmt:'."\n".
+                    'Sie sind genau die reell algebraischen Zahlen.'."\n",
+                      'Transzendente Zahlen gehören daher nicht zu den sinnvollen reellen Koeffizienten'."\n".
+                    'einer einzelnen superialen Schicht.'."\n".
+                    'Sie können im superialen Zahlenraum zwar auftreten, jedoch nicht als isolierte Koeffizienten'."\n".
+                    'einer einzelnen Potenzschicht \lm{ \s^{k} }.'."\n".
+                    'Vielmehr benötigen sie mehrschichtige superiale Darstellungen, etwa durch infinitesimale Grenzwertspuren'."\n".
+                    'oder weiterführende Schichtkorrekturen.'."\n".
+                    'Während reell algebraische Zahlen als sinnvolle Koeffizienten einzelner Schichten auftreten können,'."\n".
+                    'markieren transzendente Zahlen die Grenze dieser schichtweisen Koeffizientenstruktur.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung:X', text =>
+                  'Bedeutung für die Superial-Zahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die Superiale-Transzendenz-Vermutung ist für die Superial-Zahlen von besonderer Bedeutung,'."\n".
+                    'weil sie die Grenze der sinnvollen reellen Koeffizienten bestimmt.'."\n".
+                    'Nachdem die Algebraische-Koeffizienten-Vermutung zeigt,'."\n".
+                    'dass alle reell algebraischen Zahlen sinnvolle Koeffizienten sind,'."\n".
+                    'klärt die Superiale-Transzendenz-Vermutung die Gegenrichtung:'."\n".
+                    'Transzendente Zahlen gehören in keiner einzelnen superialen Schicht'."\n".
+                    'zu den sinnvollen isolierten reellen Koeffizienten.'."\n",
+                      'Damit ergibt sich die vollständige Abgrenzung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die sinnvollen reellen Koeffizienten der Superial-Zahlen'."\n".
+                    'sind also genau die reell algebraischen Zahlen.'."\n",
+                      'Für die Superial-Zahlen bedeutet dies, dass ihre schichtweise Koeffizientenstruktur'."\n".
+                    'algebraisch vollständig bestimmt ist.'."\n".
+                    'Im gesamten superialen Zahlenraum \lm{ \mathbb{S} } sind die sinnvollen reellen Koeffizienten'."\n".
+                    'jeder einzelnen Schicht genau die reell algebraischen Zahlen.'."\n".
+                    'Formal gesprochen gilt für jede einzelne Potenzschicht \lm{ \s^{k} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot \s^{k} \in \mathbb{S}_{\{ k \}}  \Longleftrightarrow  a \in \mathbb{A}_{\R}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Transzendente Zahlen überschreiten diese schichtweise Koeffizientenebene.'."\n".
+                    'Sie lassen sich nicht als isolierte Koeffizienten einer einzelnen Potenzschicht \lm{ \s^{k} } auffassen,'."\n".
+                    'sondern benötigen mehrschichtige superiale Darstellungen.'."\n",
+                      'Damit wird die Trennlinie zwischen reell algebraischen und transzendenten Zahlen'."\n".
+                    'im superialen Zahlenraum sichtbar:'."\n".
+                    'Reell algebraische Zahlen gehören zu den sinnvollen Koeffizienten einzelner Schichten,'."\n".
+                    'transzendente Zahlen benötigen zusätzliche superiale Schichten.'."\n".
+                    'Sie treten nicht als einfache Koeffizienten auf, sondern mit infinitesimalen Grenzwertspuren'."\n".
+                    'oder weiterführenden Schichtkorrekturen.'."\n",
+                      'Gerade dadurch erhalten transzendente Zahlen eine neue Interpretation.'."\n".
+                    'Sie sind nicht bloß „nicht algebraisch“, sondern erscheinen im Blick der Superial-Zahlen als Zahlen,'."\n".
+                    'deren vollständige Darstellung über die algebraisch bestimmte Koeffizientenebene'."\n".
+                    'einzelner Schichten hinausgeht.'."\n".
+                    'Die Superial-Zahlen machen damit sichtbar, dass die Grenze zwischen algebraischen'."\n".
+                    'und transzendenten Zahlen zugleich eine Grenze zwischen einschichtigen'."\n".
+                    'und mehrschichtigen Darstellungen ist.'."\n",
+                      'Für den Unterring der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } gelten zusätzlich'."\n".
+                    'die besonderen Ganzheitsbedingungen:'."\n".
+                    'Die Null-Schicht enthält nur ganze Zahlen, negative Schichten enthalten nur den Nullanteil.'."\n".
+                    'Diese zusätzlichen Ganzheitsbedingungen ändern jedoch nicht die allgemeine Koeffizientenaussage'."\n".
+                    'im gesamten superialen Zahlenraum \lm{ \mathbb{S} }:'."\n".
+                    'Als isolierte reelle Koeffizienten einzelner Schichten sind genau'."\n".
+                    'die reell algebraischen Zahlen zulässig.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

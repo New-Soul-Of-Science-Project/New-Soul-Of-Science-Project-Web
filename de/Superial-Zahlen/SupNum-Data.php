@@ -578,7 +578,8 @@
         'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s' => array( headline_text => 'SN.STV.12'),
-          'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-A-R-ist-gleich-A-S' => array( headline_text => 'SN.STV.24'),
+          'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar' => array( headline_text => 'SN.STV.23'),
+          'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As' => array( headline_text => 'SN.STV.24'),
 
         'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
       ),
