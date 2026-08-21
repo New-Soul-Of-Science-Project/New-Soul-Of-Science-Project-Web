@@ -205,7 +205,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot \s^{-k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nachfolgend beleuchten wir die Berechnung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe}{Summen der einzelnen Spalten der Binomialkoeffizienten}'."\n".
@@ -383,8 +383,8 @@
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2',
-                Title => 'Beispielrechnung zur Ableitung mit \lm{ s^2 } …',
-                TitleVis => 'Beispielrechnung zur Ableitung mit \lm{ s^2 }:', ParagraphList => array(
+                Title => 'Beispielrechnung zur Ableitung mit \lm{ \s^2 } …',
+                TitleVis => 'Beispielrechnung zur Ableitung mit \lm{ \s^2 }:', ParagraphList => array(
 
                   array( 'text', array( text => array(
                     'Exemplarisch möchte ich einmal die \lm{ \e }-Funktion anhand einer etwas variierten Ableitung'."\n".
@@ -395,7 +395,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
-                      'und ändern die dortige Differenz von \lm{ s } auf \lm{ s^2 }:'."\n".
+                      'und ändern die dortige Differenz von \lm{ \s } auf \lm{ \s^2 }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

@@ -458,7 +458,7 @@
                     'folgt unmittelbar, dass transfiniten Ordinalzahlen wie \lm{ ω } oder unendliche Primzahlpotenzen wie \lm{ p^{ω} }'."\n".
                     'keine direkten Elemente des Trägerraums oder des eingebetteten Superial-Rings sein können.'."\n".
                     'Diese Objekte existieren kategorial als Indizes innerhalb der übergeordneten Bewertungstheorie des Systems.'."\n",
-                      'Dennoch besitzt die superiale Basis s eine exakt definierte, unendliche Teilbarkeitsstruktur.'."\n".
+                      'Dennoch besitzt die superiale Basis \lm{ \s } eine exakt definierte, unendliche Teilbarkeitsstruktur.'."\n".
                     'Für jede endliche Potenz \lm{ n } einer beliebigen endlichen Primzahl \lm{ p } gilt im System die klassische Teilbarkeit:'."\n".
                     ''))),
                   array( 'equations',
@@ -502,7 +502,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *) *[  v_{p}*( a_{k} \cdot s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *) *[  v_{p}*( a_{k} \cdot \s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Da die transfinite Ordnung \lm{ ω } jeden reell algebraischen Bewertungsteil \lm{ v_{p}*( a_{k} *) } dominant überwiegt,'."\n".
