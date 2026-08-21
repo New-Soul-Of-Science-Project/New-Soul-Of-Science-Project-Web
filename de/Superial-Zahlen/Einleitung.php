@@ -553,7 +553,7 @@
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Ein Intervall der Länge \lm{ 1 } enthält entsprechend s normierte infinitesimale ganzzahlige Schritte.'."\n".
+                    'Ein Intervall der Länge \lm{ 1 } enthält entsprechend \lm{ \s } normierte infinitesimale ganzzahlige Schritte.'."\n".
                     'Das Integral wird dadurch als Summe über diese Schritte formuliert.'."\n".
                     'Die klassische Integralrechnung erscheint wiederum als Standardisierung der superialen Summenstruktur.'."\n".
                     ''))),
@@ -714,11 +714,55 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
+                    'Die Superial-Zahlen bilden ein transfinites Stellenwertsystem zur aktual unendlichen Basis \lm{ \s }.'."\n".
+                    'Diese Basis ist nicht eine beliebig gewählte unendlich große Zahl,'."\n".
+                    'sondern wird aus der kanonischen Primexponentenstruktur aller endlichen Primzahlen gewonnen.'."\n",
+                      'Aus der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
+                    'ergibt sich die kanonische Identifikation'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  \prodx_{p \in \mathbb{P}}  p  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei bezeichnet \lm{ \xprod } kein gewöhnliches endliches Produkt, sondern ein Primexponentenprodukt:'."\n".
+                    'Jede endliche Primzahl \lm{ p } kommt darin genau einmal vor.'."\n".
+                    'Auf dieser Grundlage wird die superiale Basis definiert durch'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit gilt für jede endliche Primzahl \lm{ p }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Basis \lm{ \s } enthält also jede endliche Primzahl in aktual unendlicher Exponentenlänge.'."\n".
+                    'Genau dadurch kann \lm{ \s } endliche Nenner, Wurzeln'."\n".
+                    'und allgemeiner algebraische Primexponentenstrukturen aufnehmen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s', text =>
                                            
@@ -856,7 +900,7 @@
                                             
                   array( 'text', array( text => array(
                     'Die Stellenwertsystem-Darstellung verdeutlicht, dass die Superial-Zahlen eine fraktale Struktur besitzen,'."\n".
-                    'die sich in jeder Zahlenstelle beziehungsweise Potenzebene von \lm{ s } wiederholt'."\n".
+                    'die sich in jeder Zahlenstelle beziehungsweise Potenzebene von \lm{ \s } wiederholt'."\n".
                     '(siehe \jumpname{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Fig-GeradeSuperialZahlen}).'."\n",
                       'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen rationalen Zahlen'."\n".
                     'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
@@ -973,7 +1017,7 @@
                     array( equ_text_std => 'SN.Ein.Illu.Abl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{3} - x^{3} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + s^{-3} *) - x^{3} }{ \s^{-1} }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} *) - x^{3} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert}', label_incr => false),
@@ -1992,7 +2036,7 @@
                       'Für die Superial-Zahlen bedeutet dies, dass ihre Koeffizientenstruktur nicht willkürlich gewählt ist.'."\n".
                     'Sie ist algebraisch stabil:'."\n".
                     'Rationale Zahlen, Radikale, Radikalformen und schließlich alle reell algebraischen Zahlen'."\n".
-                    'können als sinnvolle Koeffizienten auftreten, weil ihre Multiplikation mit \lm{ s }'."\n".
+                    'können als sinnvolle Koeffizienten auftreten, weil ihre Multiplikation mit \lm{ \s }'."\n".
                     'in den Bereich der ganzen Superial-Zahlen führt.'."\n",
                       'Damit liefert die Algebraische-Koeffizienten-Vermutung einen entscheidenden Schritt'."\n".
                     'zur algebraischen Fundierung der Superial-Zahlen.'."\n".
