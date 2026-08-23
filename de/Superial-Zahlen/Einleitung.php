@@ -71,46 +71,47 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
-                'Weitreichender Erkenntnisgewinn')),
+                'Die Zahlentheorie der Analysis')),
                   array( 'text', array( text => array(
-                    'Die Erkenntnisse, die wir mit den Superial-Zahlen und ihren systematischen Vorgängern, den Biordinalzahlen,'."\n".
-                    'jetzt schon erhalten, sind also weitreichend.'."\n".
-                    'Und wir dürfen erwarten, dass noch ein ganzes Reich an interessanten und erstaunlichen Erkenntnissen'."\n".
-                    'zu erforschen und zu schöpfen ist.'."\n".
+                    'Die klassische Analysis beschreibt Veränderung, Grenzwerte, Ableitungen, Integrale,'."\n".
+                    'Reihen und stetige Strukturen.'."\n".
+                    'Ihre Grundoperationen werden dabei gewöhnlich über Grenzprozesse formuliert:'."\n".
+                    'Differenzen werden beliebig klein, Summen werden beliebig fein, Folgen nähern sich Grenzwerten an.'."\n",
+                      'Die Theorie der Superial-Zahlen verfolgt einen anderen Zugang.'."\n".
+                    'Sie fragt, ob diese Grenzprozesse eine verborgene aktual unendliche arithmetische Struktur besitzen.'."\n".
+                    'Ableitungen werden dann nicht nur als Grenzwerte von Differenzenquotienten verstanden,'."\n".
+                    'sondern als Rechnungen mit einer normierten infinitesimalen Schrittweite'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'Zahlentheorie der Analysis', subline =>
-                    'Eine direkte Verbindung von Analysis und Zahlentheorie')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1}  \;\; .  }',
+                                          label_text => '', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
-                    'Über die Definition der \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Ableitung-genau-verstehen}{Ableitung} und'."\n".
-                    'der \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen}{Integration} durch die aktual unendlichen Superial-Zahlen'."\n".
-                    'wird die Analysis nun ganz direkt mit der Zahlentheorie verbunden.'."\n".
-                    'Denn hierdurch werden nicht „nur“ die Primzahlen mit analytischen Methoden untersucht,'."\n".
-                    'sondern die analytischen Methoden werden auf Basis eines unendlichen Produkts von Primzahlen definiert.'."\n",
-                      'So spielen jetzt die Primzahlen auf beiden Seiten eine Rolle:'."\n".
-                    'Zur Analyse, als neue \italic{Zahlentheorie der Analysis}, wie auch als Objekte der Analyse in der bekannten analytischen Zahlentheorie\footnote{\const{SupNum_g_footnote_text_AnalytischeZahlentheorie}}.'."\n".
-                    'Dies hat weitreichende Konsequenzen, die beispielsweise zum Beweis der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}}'."\n".
-                    'einen Beitrag leisten könnten.'."\n",
-                      'Darüber hinaus wird eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".
+                    'Integrale werden nicht nur als Grenzwerte endlicher Summen verstanden,'."\n".
+                    'sondern als aktual unendliche Summen mit einer durch \lm{ \s } bestimmten Anzahl von Summanden.'."\n",
+                      'Damit tritt eine zahlentheoretische Frage in das Zentrum der Analysis:'."\n".
+                    'Welche Zahlen können in solchen aktual unendlichen Summen und Produkten'."\n".
+                    'als Koeffizienten sinnvoll auftreten?'."\n".
+                    'Diese Frage führt zu den sinnvollen Koeffizienten der Superial-Zahlen'."\n".
+                    'und damit zu einem tiefen Zusammenhang zwischen Analysis und Zahlentheorie.'."\n",
+                      'Die superiale Basis'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'Feine Differenzierung des Aktual-Unendlichen', subline =>
-                    '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  \prodx_{ p \in \mathbb{P} }  p^{ω}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
-                    'Durch die Definition der superialen Einheit \lm{ \s }, als unendliches Primzahlprodukt, erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
-                    'der Arithmetik behandeln und differenzieren lässt.'."\n".
-                    'Wichtige Elemente der Arithmetik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
-                    'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
-                    'Denn so ergeben sich unter anderem neue Möglichkeiten die Verteilung der Primzahlen unter den großen endlichen natürlichen Zahlen besser zu verstehen.'."\n".
-                    'Auch die Primfaktorzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'Die Frage der Kontinuumshypothese', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Die vorstehenden Fragen und weitere Einsichten, die sich durch die Superial-Zahlen ergeben,'."\n".
-                    'führen uns zu einer neuen \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n",
-                      'Dieser Frage nähern wir uns jetzt sehr philosophisch und dann konzeptionell recht pragmatisch auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.'."\n".
+                    'enthält jede endliche Primzahl in aktual unendlicher Exponentenlänge in ihrem Primexponentenprodukt.'."\n".
+                    'Dadurch werden Teilbarkeit,'."\n".
+                    'Primexponenten, Nennerabsorption, Wurzeln und algebraische Koeffizienten'."\n".
+                    'zu arithmetischen Grundlagen der superialen Analysis.'."\n".
+                    'Die Analysis erhält damit eine zahlentheoretische Tiefenstruktur.'."\n",
+                      'In diesem Sinn bezeichnet der Ausdruck \italic{›Zahlentheorie der Analysis‹} nicht eine Ersetzung'."\n".
+                    'der klassischen Analysis, sondern ihre arithmetische Verfeinerung:'."\n".
+                    'Grenzwerte, Ableitungen und Integrale werden in einem erweiterten Zahlenraum betrachtet,'."\n".
+                    'in dem ihre aktual unendlichen Schritt-, Summen- und Koeffizientenstrukturen explizit sichtbar werden.'."\n".
                     ''))),
                     
                   array( 'jumplist',
