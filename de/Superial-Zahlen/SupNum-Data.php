@@ -253,7 +253,7 @@
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum' => array( headline_text => 'Das analytische Kontinuum',/* headline_text_short => 'X' */),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten' => array( headline_text => 'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten'/* , headline_text_short => 'X' */),
@@ -663,10 +663,13 @@
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:KonservativeErweiterung' => array( headline_text => 'Konservative Erweiterung und strukturelle Stabilität'/* , headline_text_short => 'X'*/),
 
-            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.12'),
-
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.13'),
+
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel' => array( headline_text => 'SN.ZFC.15'),
+
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl'/* , headline_text_short => 'X'*/),
+
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s' => array( headline_text => 'Tiefere Betrachtung der Potenzen von \lm{ \s }'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),

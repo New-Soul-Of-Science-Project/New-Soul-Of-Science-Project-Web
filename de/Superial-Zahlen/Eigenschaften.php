@@ -1827,7 +1827,7 @@
                     'innerhalb der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}.'."\n",
                       'Dies ist eine mathematische Pionierleistung:'."\n".
                     'Die Primzahlen als atomare Bausteine der endlichen Arithmetik werden genutzt,'."\n".
-                    'um das \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{neue Kontinuum der Analysis} metrisch zu normieren.'."\n".
+                    'um das \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{neue Kontinuum der Analysis} metrisch zu normieren.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1915,7 +1915,7 @@
                     'in der ZFC-Mengenlehre bemerkenswert, weil es einen Schatten auf die Sinnhaftigkeit der Hypothese innerhalb dieser Theorie wirft.'."\n",
                       'In Bezug auf die Bedeutung der Bezeichnung Kontinuum als ein lückenloser, ununterbrochener Zusammenhang sehen wir:'."\n".
                     'Im Lichte der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
-                    'aus Sicht der Superial-Zahlen, tiefer beleuchtet im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}‹},'."\n".
+                    'aus Sicht der Superial-Zahlen, tiefer beleuchtet im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}‹},'."\n".
                     'sieht ein Kontinuum etwas anders aus.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>

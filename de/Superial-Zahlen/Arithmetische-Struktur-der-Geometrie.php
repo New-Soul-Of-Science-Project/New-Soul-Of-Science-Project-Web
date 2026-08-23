@@ -326,7 +326,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Kontinuumshypothese}',
-                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
@@ -654,7 +654,7 @@
                     'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
                     'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum', text =>
                       
                 'Das analytische Kontinuum', subline =>
                   '')),
@@ -766,10 +766,11 @@
                     'sind sie unteilbar, dann können wir sie nicht so miteinander verbinden, dass sie gemeinsam mehr sind'."\n".
                     'als ihre Einzelteile.'."\n".
                     'Es können also keine wirklich unteilbaren Atome sein, wenn wir sie stapeln möchten.'."\n",
-                      'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht.'."\n".
+                      'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht,'."\n".
+                    'wollen wir daraus eine Linie, Fläche oder ein Volumen konstruieren.'."\n".
                     'Und genau diese Struktur liefert uns die oben untersuchte arithmetische Struktur der Geometrie'."\n".
                     'über ihre Teilbarkeit durch Primzahlen und der sich daraus ergebenden superialen Basis \lm{ \s }.'."\n".
-                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Struktur \lm{ a \cdot \s^{-1} } mit \lm{ a \in \mathbb{A}_{\R} }.'."\n".
+                    'Durch die Superial-Zahlen bekommt ein Punkt \lm{ a_{0} } im endlichen eine Umgebung der Struktur \lm{ a_{0} + a_{-1} \cdot \s^{-1} } mit \lm{ a_{0}, a_{-1} \in \mathbb{A}_{\R} }.'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -780,10 +781,20 @@
                     'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
                     'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
                     'Der Zahlenstrahl um jeden Punkt hat so dann die Ausdehnung \lm{ 2 ω \, \s^{-1} }, weil der Koeffizient \lm{ a } über alle ganzen Zahlen läuft'."\n".
-                    'und die Anzahl der ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω } ist.'."\n",
+                    'und die Erzeugungsanzahl der ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω } ist.'."\n",
                       'Verbinden wir \lm{ \frac{ \s }{ 2 ω } } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
                     'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
                     'von minus Unendlich \lm{ -ω } bis plus Unendlich \lm{ ω }.'."\n",
+                      'Diese Struktur ist fraktal, besitzt also Selbstähnlichkeit, und bezieht sich darauf,'."\n".
+                    'dass die Gerade der endlichen reell algebraischen Zahlen'."\n".
+                    'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
+                    'den endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen besitzt.'."\n".
+                    'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\footnote{\const{SupNum_g_footnote_text_Orthogonalitaet}},'."\n".
+                    'die senkrecht zueinander stehen, sondern auch aktual unendlich kleine und große, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
+                    'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
+                    'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
+                    'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
+                    'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n",
                       'Eine fraktale Struktur der geometrischen Elemente löst das Problem mit Punkten eine Linie, mit Linien eine Fläche'."\n".
                     'und mit Flächen ein Volumen zu beschreiben.'."\n".
                     'Und genau dies ist ja ganz eng mit dem Thema der Integration oder allgemeiner mit der Differenzialrechnung verbunden.'."\n".

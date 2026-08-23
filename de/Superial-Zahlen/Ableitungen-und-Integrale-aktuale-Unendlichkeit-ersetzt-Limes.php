@@ -88,7 +88,9 @@
                     'Da sowohl Zähler als auch Nenner in der gleichen Größenordnung gegen Null streben,'."\n".
                     'sorgt der Bruch dafür, dass unser Ergebnis im Endlichen verbleibt.'."\n",
                       'Mit Hilfe der aktual unendlichen Superial-Zahlen kommen wir in die Lage, das gegen Null strebende \lm{ \Delta x }'."\n".
-                    'durch eine normierte unendlich kleine Zahl \lm{ 1 \s^{-1} = \; ․〈1〉 } ersetzen zu können:'."\n".
+                    'durch eine normierte unendlich kleine Zahl \lm{ 1 \s^{-1} = \; ․〈1〉 } ersetzen zu können'."\n".
+                    'und so die klassische Ableitung durch'."\n".
+                    'eine aktual unendlich infinitesimale Einheit zu rekonstruieren:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -100,7 +102,7 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die letzte Formel ist in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise} der Superial-Zahlen ausgedrückt.'."\n",
+                    'Die letzte Formel ist in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise} der Superial-Zahlen notiert.'."\n",
                       'Durch das Einsetzen einer normierten Unendlichkeit erkennen wir jetzt, dass das \lm{ \Delta x }'."\n".
                     'gar nicht vom Wert von \lm{ x } abhängt, wie es schien,'."\n".
                     'sondern das \lm{ x } in \lm{ \Delta x } kennzeichnet „nur“, dass nach \lm{ x }'."\n".
@@ -299,19 +301,28 @@
                     )),
 
                   array( 'text', array( text => array(
-                    'Die Integration spielt für die tiefere mathematische Erkenntnis durch die Superial-Zahlen, für das Verständnis,'."\n".
+                    'Die Integration spielt für die tiefere mathematische Erkenntnis bezüglich der Superial-Zahlen, für das Verständnis,'."\n".
                     'welche Eigenschaften die superiale Basis \lm{ \s } haben muss – wie sie strukturiert ist –, eine wichtige Rolle.'."\n",
-                      'Der Grund dafür liegt darin, dass die Integration eine Summe über unendlich viele Summanden darstellt.'."\n".
+                      'Der Grund dafür liegt darin, dass die Integration eine Summe über unendlich viele Summanden erfordert,'."\n".
+                    'um die ursprüngliche Funktion zu errechnen.'."\n".
                     'Im Rahmen der Superial-Zahlen ist die \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung}'."\n".
                     'mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
-                    'durch unsere aktual unendliche superiale Basis \lm{ \s } in Form von \lm{ \s^{-1} } wohldefiniert.'."\n".
+                    'durch unsere aktual unendliche superiale Basis \lm{ \s } in Form von \lm{ \s^{-1} } rekonstruiert worden.'."\n".
                     'Da die Integration die Ableitung per Definition umkehrt, müssen dadurch auch die aktual unendlich kleinen Schritte ihrer'."\n".
-                    'Summe darauf basierend wohldefiniert, also auf eine Weise ganzzahlig zählbar sein.'."\n",
-                      'Da \lm{ \s^{-1} } als eine aktual unendlich kleine Einheit, als normiertes Infinitesimal, verstanden wird,'."\n".
+                    'Summe darauf basierend wohldefiniert rekonstruiert werden, also auf eine Weise ganzzahlig zählbar sein.'."\n",
+                      'Bei der Rekonstruktion der Integrieren mit Superial-Zahlen kommen wir so in die Verlegenheit,'."\n".
+                    'in aktual unendlich vielen ganzen Schritten all die infinitesimalen Differenzen'."\n".
+                    'der Ableitung wieder aufsummieren zu müssen, deren Anzahl im Endlichen durch gebrochene Zahlen gegeben ist.'."\n".
+                    'Dies kommt, weil die Integrationsgrenzen und Intervalle ja möglichst frei aus den reellen Zahlen wählbar sein müssen.'."\n".
+                    'Wir brauchen also aktual unendlich kleine ganze Zahlen, die sich beim Übergang ins Endliche,'."\n".
+                    'also, wenn ihre Anzahl ins Aktual-Unendlich große übergeht, als möglichst feine unendlich viel größere ganze Zahlen darstellen.'."\n".
+                    'In dieser Herausforderung und diesem Erkenntnisraum liegt ein besonderer Wert, wenn wir dies meistern.'."\n",
+                      'Da \lm{ \s^{-1} } als unsere infinitesimale Einheit verstanden wird,'."\n".
                     'findet die Summation in diesen normierten einheitlich winzigen Schritten statt.'."\n".
-                    'Die Schritte der Summe werden also in normierten Infinitesimalen gezählt, was uns zum Zählen und'."\n".
-                    'so zu einem Verständnis von ganzen Zahlen innerhalb der Superial-Zahlen führt.'."\n".
-                    'Durch das Zählen von der Null an dann selbstverständlich auch zu natürlichen Zahlen innerhalb der Superial-Zahlen.'."\n".
+                    'Die Schritte der Summe werden also in einer normierten infinitesimalen Schrittweite in infiniter Anzahl gezählt,'."\n".
+                    'was uns zum Zählen und so zu einem Verständnis von ganzen Zahlen innerhalb der Superial-Zahlen führt.'."\n".
+                    'Durch das Zählen von der Null an dann selbstverständlich auch zu'."\n".
+                    'natürlichen beziehungsweise ganzen Zahlen innerhalb der Superial-Zahlen, also Zahlen der Menge \lm{ \mathbb{S}_{\Z} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -325,9 +336,11 @@
                     'Denn die Zählschritte vollziehen sich in ganzen Zahlen, die ins Infinitesimale skaliert sind.'."\n".
                     'So ergibt sich die Standardnormierung der Superial-Analysis, und ich denke der Analysis im Allgemeinen,'."\n".
                     'als die Anzahl von \lm{ x \cdot \s } ganzen Schritten der Größe \lm{ \s^{-1} },'."\n".
-                    'wobei \lm{ x } für jede reell algebraische Zahl ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient von \lm{ \s }}'."\n".
-                    'sein kann, so dass sich immer ganze aktual unendliche Zahlen durch ihr Produkt ergeben.'."\n",
-                      'Darum ist \lm{ \s } oder \lm{ \s^{-1} } unsere Standardnormierung, die erst die Integration in Form einer sinnvollen Summe als Umkehr der Ableitung ermöglicht.'."\n".
+                    'wobei \lm{ x } genau für jede reell algebraische Zahl aus \lm{ \mathbb{A}_{\R} }'."\n".
+                    'ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient von \lm{ \s }} ist,'."\n".
+                    'so, dass sich immer ganze aktual unendliche Zahlen durch das Produkt \lm{ x \cdot \s } ergeben.'."\n",
+                      'Darum sind \lm{ \s } und \lm{ \s^{-1} } unsere Standardnormierungen,'."\n".
+                    'die erst die Integration in Form einer sinnvollen Summe als Umkehr der Ableitung ermöglichen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       

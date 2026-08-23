@@ -132,32 +132,75 @@
                       array(  jump_name => 'OM:SupNum:Einleitung', type => 'back'),
                     )),
                   
-                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Motivation', subline =>
-                  '')), */
                   array( 'text', array( text => array(
                     'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
                     'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau vor sich geht.'."\n".
                     'Auch fand ich den dafür genutzten Limes nicht so intuitiv, obwohl er faszinierendes ermöglichte, und suchte einen einfachen'."\n".
-                    'und einsichtigeren Ansatz das gleiche zu erreichen.'."\n",
-                      'Ich spielte viel mit der Formel zur Definition der Ableitung herum, was schließlich dazu führte, dass ich begriff,'."\n".
+                    'und einsichtigeren Ansatz das gleiche zu erreichen.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Motivation:X', text =>
+                                           
+                'Eine versunkene Welt', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich spielte viel mit der Formel zur Definition der Ableitung herum, was schließlich dazu führte, dass ich begriff,'."\n".
                     'dass der Limes nicht nur dazu führt,'."\n".
                     'dass ein bestimmtes Glied der sich ergebenen Summe dominant in den Vordergrund tritt und das Ergebnis bestimmt.'."\n".
                     'Mir wurde auch klar, dass all die anderen Summanden, die unendlich klein und damit scheinbar unbedeutend wurden,'."\n".
-                    'eine Welt darstellten, die so quasi im Nirvana versank.'."\n",
-                      'Genau diese „versunkene“ Welt weckte mein Interesse.'."\n".
+                    'eine Welt darstellten, die so quasi im Nirvana versank.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Motivation:X', text =>
+                                           
+                'Schätze aus der versunkenen Welt heben', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Genau diese „versunkene“ Welt weckte mein Interesse.'."\n".
                     'Irgendwie war ja auch klar, dass beim Integrieren, der Umkehrung der Ableitung, diese versunkene Welt schließlich wieder auftauchen musste.'."\n".
                     'Wie könnte sie da unwiederbringlich „vernichtet“ worden sein?'."\n".
                     'Durch das Herumspielen begriff ich:'."\n".
                     'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, wobei sie einfach pragmatisch als vernachlässigbar erklärt und weggeschmissen werden.'."\n".
                     'Was in der Praxis legitim ist, sollte in der Theorie nicht vernachlässigt sondern erforscht werden, sprach mein Herz.'."\n",
-                      'Nach meiner Entdeckung des superialen Zahlensystems und als ich schließlich'."\n".
+                      'Meine ersten gefundenen Erkenntnisse teilte ich bald mit einem Professor der Hamburger Uni.'."\n".
+                    'Er empfahl in unserem Schriftwechsel, die superiale Basis \lm{ \s } nicht nur durch Relationen,'."\n".
+                    'sondern konkret zu definieren.'."\n".
+                    'Dadurch angeregt wurde mir klar, dass \lm{ \s } ein Primexponentenprodukt aller endlicher Primzahlen in'."\n".
+                    'aktual unendlicher ordinaler Potenz \lm{ ω } sein musste.'."\n",
+                      'Diese Einsicht ermöglichte einen konkreten Zugang in eine faszinierende neue Welt'."\n".
+                    'auf Grundlage der so bedeutenden, wie zunächst auch recht einfach verständlichen Primzahlen.'."\n".
+                    'Die Struktur von \lm{ \s } fand ich, weil durch den Versuch die Summen der Integrale mit ihr'."\n".
+                    'zu beschreiben schnell klar wurde, dass alle rationalen Zahlen \lm{ q } im Produkt \lm{ q \cdot \s }'."\n".
+                    'ganze aktual unendlich große Zahlen sein mussten,'."\n".
+                    'damit eine ganze wenn auch unendliche Anzahl an Summanden in der Summe ist.'."\n".
+                    'Soweit recht simpel, aber mit großer Tragweite.'."\n",
+                      'Die Fragen und Vermutungen jedoch, die sich daraus schließlich ergaben'."\n".
+                    '– die Superial-Zahlen sollten natürlich möglichst viel Sinn machen – hatten es in sich:'."\n".
+                    'Sind auch irrationale Wurzeln in einem solchen Produkt, wie \lm{ \sqrt{2} \cdot \s }, ganzzahlig?'."\n".
+                    'Sind schließlich'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Ueberrationalitaetsvermutung}{alle \lm{ \sqrt[x]{n} \cdot \s } ganzzahlig}?'."\n".
+                    'Wie kann ich so etwas beweisen?'."\n".
+                    'Mein herumspielen mit den Superial-Zahlen ergab auch den Eindruck und die Abschätzung,'."\n".
+                    'dass es aus dieser neuen Perspektive Sinn machte, das von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'mit einer \jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{multiplikativen Struktur kanonisch zu identifiziert}.'."\n".
+                    'Immer mal wieder ergaben die Formeln den Hinweis, dass'."\n".
+                    '\lm{ ω \equiv_{kan} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 3 \cdot \cdots  *)_{\#} }'."\n".
+                    'sein sollte.'."\n".
+                    'Kann das bewiesen werden?'."\n",
+                      'All dies stärkte meine Neugier, mein Interesse und motivierte zu tieferer Erforschung.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Motivation:X', text =>
+                                           
+                'Meine Ahnung der Bedeutung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Nach meiner Entdeckung des superialen Zahlensystems und als ich schließlich'."\n".
                     'die Funktion und damit die sinnvolle innere Struktur der superialen Basis \lm{ \s } erkannte, wurde mir bald klar:'."\n".
-                    'Die Superial-Zahlen mussten eine Verbindung zur Struktur geometrischer Objekte haben und so auch mit der Kontinuumshypothese in Verbindung stehen.'."\n",
-                      'Wie sagen wir so schön:'."\n".
+                    'Die Superial-Zahlen mussten eine Verbindung zur Struktur geometrischer Objekte haben'."\n".
+                    'und so auch mit der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} in Verbindung stehen.'."\n".
+                    ''))),
+                   array( 'text', array( text => array(
+                    'Wie sagen wir so schön:'."\n".
                     '\quote{Lasst uns anfangen!}'."\n".
                     'Oder im Englischen: \quote{Lets go for it!}'."\n".
                     ''))),
@@ -727,12 +770,12 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei bezeichnet \lm{ \xprod } kein gewöhnliches endliches Produkt, sondern ein Primexponentenprodukt:'."\n".
+                    'Dabei bezeichnet \lm{ \prodx } kein gewöhnliches endliches Produkt, sondern ein Primexponentenprodukt:'."\n".
                     'Jede endliche Primzahl \lm{ p } kommt darin genau einmal vor.'."\n".
                     'Auf dieser Grundlage wird die superiale Basis definiert durch'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
@@ -740,184 +783,150 @@
                     'Damit gilt für jede endliche Primzahl \lm{ p }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Die Basis \lm{ \s } enthält also jede endliche Primzahl in aktual unendlicher Exponentenlänge.'."\n".
                     'Genau dadurch kann \lm{ \s } endliche Nenner, Wurzeln'."\n".
-                    'und allgemeiner algebraische Primexponentenstrukturen aufnehmen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s', text =>
-                                           
-                'Mit Primzahlen ins Unendliche', subline =>
-                  'Was ist unsere neue superiale Basis \lm{ \s }?')),
-                  array( 'text', array( text => array(
-                    'Wir haben nun eine gute Idee, was wir mit der superialen Basis \lm{ \s } anfangen können.'."\n".
-                    'So stellt sich schließlich die Frage:'."\n",
-                      'Können wir sagen, was \lm{ \s } genau ist?'."\n".
-                    'Wie definieren wir unsere superiale Basis und stiften damit noch mehr Sinn; gewinnen noch mehr Erkenntnis?'."\n",
-                      'Mit dieser wichtigen Frage konfrontierte mich einst ein Hamburger Universitätsprofessor,'."\n".
-                    'den ich mit einer von ihm unverlangten E-Mail an ihn und einer darauf folgenden'."\n".
-                    'E-Mail-Korrespondenz offenbar ziemlich nervte, weil ich ihm, mangels meiner Kenntnis, die Formeln nicht in den üblichen Formalien schrieb,'."\n".
-                    'was für ihn vermutlich recht anstrengend war.'."\n".
-                    'Unsere Korrespondenz wurde im Grunde mit dieser Frage und mit einem Hinweis und Ratschlag an mich beendet,'."\n".
-                    'den ich nun nicht weiter vertiefen möchte.'."\n",
-                      'Wie dem auch sei, für seine kluge Frage bin ich dem Herrn außerordentlich dankbar!'."\n".
-                    'Denn sie hat in mir einen tief gehenden Denkprozess ausgelöst und schließlich zu'."\n".
-                    'einer Erkenntnis geführt, deren Tragweite in meinen Augen nicht zu unterschätzen ist.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'Primzahlen sind die Grundlage der Antwort', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Mit diesen Fragen kommen wir weiter, wenn wir uns mit den stillschweigenden Annahmen beschäftigen,'."\n".
-                    'die wir treffen, wenn wir oben mit Hilfe von \lm{ \s } \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Ableitung-genau-verstehen}{Ableitungen}'."\n".
-                    'und \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen}{Integrale} definieren.'."\n",
-                      'Wir konnten bei der Herleitung des Integrals aus der Ableitung oben schon feststellen,'."\n".
-                    'dass wir bezüglich der Ableitung schon stillschweigend oder unbewusst davon ausgegangen sind,'."\n".
-                    'es würde unendlich viele unendlich kleine ganze Zahlen geben.'."\n".
-                    'Beim Integrieren kommen wir nämlich in die Verlegenheit, in ganzen Schritten all die Differenzen'."\n".
-                    'der Ableitung wieder aufsummieren zu müssen.'."\n".
-                    'Dabei stellt sich die Frage:'."\n".
-                    'Wie groß sind diese Schritte und wieviele Schritte sind notwendig, um die ursprüngliche'."\n".
-                    'Funktion \lm{ f(x) } aus der abgeleiteten \lm{ f\'(x) } wieder herzustellen.'."\n",
-                      'Als wir uns damit beschäftigten, kam die Erkenntnis, wir müssten \lm{ x \cdot \s }'."\n".
-                    'Schritte in den Funktionswerten von \lm{ f\'(x) } der Größe \lm{ \s^{-1} }'."\n".
-                    'von Null bis ausschließlich \lm{ x } addieren.'."\n",
-                      'Diese Schritte konnten wir durch Skalierung von ganzen Zahlen von Null bis ausschließlich'."\n".
-                    '\lm{ x \cdot \s } erzeugen,'."\n".
-                    'was zum einen die Existenz dieser unendlich großen ganzen Zahlen voraussetzt'."\n".
-                    'und zum anderen voraussetzt, dass sich diese Zahlen nach ihrer Größe ordnen lassen, also linear angeordnet sind.'."\n",
-                      'Um recht simpel zu beginnen:'."\n".
-                    'Welche Eigenschaften muss \lm{ \s } demnach haben, damit ein Produkt von \lm{ \s }'."\n".
-                    'mit jeder rationalen Zahl eine ganze Zahl ergibt, auch wenn diese dann unendlich groß ist?'."\n".
-                    'Diese Antwort geben wir nachfolgend.'."\n",
-                      'Diese Frage setzt sich dann allgemeiner in der nach den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} fort.'."\n".
-                    'Durch unseren Beweis der \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹} und deren neuen Erkenntnisse kommen wir dann später in die Lage,'."\n".
-                    'die Frage und Antwort von den rationalen Zahlen auf die Radikalformen (Wurzelausdrücke, durch Radikale darstellbar\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}) zu erweitern.'."\n".
-                    'Schließlich führen wir den Beweis der \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
-                    'die uns sogar die Erweiterung auf alle reell algebraischen Zahlen erlaubt.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Definition-von-s', text =>
-                  'Die Definition von \lm{ \s }', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Nach meinem Verständnis muss \lm{ \s } eine Primfaktorzerlegung haben,'."\n".
-                    'die eine unendlich große Potenz aller endlichen Primzahlen ist.'."\n".
-                    'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \lm{ \s }'."\n".
-                    'negativ und dadurch das Produkt eine gebrochene Zahl wird.'."\n".
-                    'Und nur dadurch ist gewährleistet, dass wir ein solches Produkt beliebig endlich oft machen können,'."\n".
-                    'ohne, dass das Ergebnis endlich werden kann, sondern unendlich groß bleibt.'."\n",
-                      'In \lm{ \s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
-                    'beliebig endlich oft enthalten sein.'."\n".
-                    'Eine Definition von \lm{ \s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
-                    '\italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}'."\n".
-                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}‹}.'."\n",
-                      'Folgendes Primzahlprodukt ist das einfachste kleinste Produkt aus unendlich vielen Primfaktoren,'."\n".
-                    'dass diese Bedingung erfüllt.'."\n".
-                    'Dabei ist \lm{ \mathbb{P} } die Menge aller endlichen Primzahlen:'."\n".
+                    'und allgemeiner algebraische Primexponentenstrukturen aufnehmen.'."\n",
+                      'Die \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion} macht diese Idee formal präzise.'."\n".
+                    'Das aktual unendliche Primexponentenprodukt wird dort nicht als'."\n".
+                    'gewöhnliches unendliches Produkt behandelt, sondern über einen Hahn-Reihen-Körper'."\n".
+                    'mit einer Familie verallgemeinerter \lm{ p }-adischer Bewertungen operationalisiert.'."\n".
+                    'Der Körper der Superial-Zahlen wird definiert als'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Def', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \equiv_{kan}  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*)  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In diesem Produkt wird erst einmal das Primexponentenprodukt aller endlichen Primzahlen'."\n".
-                    '\lm{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#} } gebildet, um sie alle vorrätig zu haben.'."\n".
-                    'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen natürlichen Zahlen ist – vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –,'."\n".
-                    'um alle Primzahlen auch in einer Potenz vorrätig zu haben, die für alle gleich groß ist, aber so klein wie möglich,'."\n".
-                    'dass die Potenz durch keine in rationalen Zahlen mögliche, negative Potenz in einem Produkt mit ihr endlich groß werden kann.'."\n",
-                      '\const{SupNum_g_text_ZFCkonform}'."\n",
-                      'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setzen wir voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
-                    'Den Grund hierfür verdeutlichen wir im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen}‹}.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Ein Stellenwertsystem', subline =>
-                  'Eine fraktale Struktur')),
-                  array( 'text', array( text => array(
-                    'Bei etwas intensiverem Herumspielen fällt einem auf, dass die Superial-Zahlen sich wie ein'."\n".
-                    '\jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem}{Stellenwertsystem} verhalten.'."\n".
-                    'Die Ziffern der Stellen können alle rationalen Zahlen sein, sogar negative.'."\n".
-                    'Durch diese Erkenntnis finden wir die Möglichkeit, die Darstellung gegebenenfalls zu verkürzen, wie beispielsweise die folgende:'."\n".
+                    'Dabei bezeichnet \lm{ \mathbb{A}_{\R} } den Körper der reell algebraischen Zahlen'."\n".
+                    'und \lm{ \mathbb{Z} } die geordnete Wertegruppe der superialen Schichten.'."\n".
+                    'Eine Superial-Zahl ist also eine formale Reihe der Gestalt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Def', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  - \frac{3}{5} \cdot \s^{2} + 25 \cdot \s^{1} + 3,5 \cdot \s^{0} - 7,2 \cdot \s^{-1} \\\ \qquad\qquad\qquad\quad  =  *〈 - \frac{3}{5} *〉*〈 25 *〉*〈 3,5 *〉․*〈 -7,2 *〉  }'),
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  \sum_{ k \in \mathbb{Z} }  a_{k} \cdot s^{k}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Zur Kennzeichnung der endlichen, nullten Stelle haben wir zwischen ihr und der minus ersten Stelle'."\n".
-                    'einen Punkt gesetzt, wie das im Angelsächsischen hinter der nullten Stelle einer Dezimalzahl üblich ist.'."\n",
-                      'Diese Darstellung verdeutlicht auch, dass es sich bei \lm{ \s } im Grunde um'."\n".
-                    'eine unendlich große Eins oder genauer um eine superial große Eins handelt;'."\n".
-                    'und bei \lm{ \s^{-1} } um eine unendlich kleine Eins oder genauer um eine superial kleine Eins:'."\n".
+                    'mit Koeffizienten'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Def', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \s^{1}  =  *〈 1 *〉*〈 0 *〉.  =  *〈 1 *〉_{1}  }'),
-                      array( display => 'on',  latex => '{  1  =  \s^{0}  =  *〈 1 *〉.  =  *〈 1 *〉_{0}  }'),
-                      array( display => 'on',  latex => '{  \s^{-1}  =  .*〈 1 *〉  =  *〈 1 *〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \s + \s^{-1}  =  *〈 1 *〉*〈 0 *〉.*〈 1 *〉  =  *〈 1 *〉_{1}*〈 1 *〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \s + 1 + \s^{-1}  =  *〈 1 *〉*〈 1 *〉.*〈 1 *〉  }'),
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a_{k}  \in  \mathbb{A}_{\R}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Anstatt eines Punktes kann auch die Potenz der vorstehenden Klammer durch einen Index gekennzeichnet werden.'."\n",
-                      'Ich habe diese unter Umständen etwas kürzere und elegantere Darstellung eingangs nicht benutzt,'."\n".
-                    'um die Formeln einfach und verständlich zu halten und damit eine gute Transparenz zu gewährleisten,'."\n".
-                    'also um nicht durch zu viel Neues zu verwirren.'."\n".
-                    'Nachfolgend werde ich sie jetzt häufiger nutzen.'."\n".
+                    'Der Träger'."\n".
                     ''))),
-                      
-                  array( 'figure',
-                    array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Fig-GeradeSuperialZahlen'))),
-                                            
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \supp( x )  :=  *\{  k \in \mathbb{Z}  *|*  a_{k} \neq 0  *\}  }'),
+                    ))),
                   array( 'text', array( text => array(
-                    'Die Stellenwertsystem-Darstellung verdeutlicht, dass die Superial-Zahlen eine fraktale Struktur besitzen,'."\n".
-                    'die sich in jeder Zahlenstelle beziehungsweise Potenzebene von \lm{ \s } wiederholt'."\n".
-                    '(siehe \jumpname{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Fig-GeradeSuperialZahlen}).'."\n",
-                      'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen rationalen Zahlen'."\n".
-                    'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
-                    'den endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen hat.'."\n".
-                    'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\footnote{\const{SupNum_g_footnote_text_Orthogonalitaet}},'."\n".
-                    'die senkrecht zueinander stehen, sondern auch unendlich kleine, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
-                    'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
-                    'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
-                    'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
-                    'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n".
+                    'ist nach oben beschränkt.'."\n".
+                    'Es gibt also eine höchste besetzte Schicht.'."\n".
+                    'Nach unten kann eine Superial-Zahl dagegen infinitesimale Fortsetzungen besitzen.'."\n".
+                    'Anschaulich kann man eine Superial-Zahl daher schreiben als'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:X:X', text =>
-                                           
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  a_{n} \s^{n} + a_{n - 1} \s^{n - 1} + \cdots \\\ \qquad\qquad \cdots + a_{1} \s + a_{0} + a_{-1} \s^{-1} + a_{-2} \s^{-2} + \cdots  \;\; .  }'),
+                    ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die Potenzen von \lm{ \s } bilden die Schichten des superialen Stellenwertsystems.'."\n".
+                    'Positive Potenzen beschreiben aktual unendliche Größen,'."\n".
+                    'die Null-Schicht beschreibt den endlichen Hauptwert,'."\n".
+                    'und negative Potenzen beschreiben infinitesimale Anteile:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{1}  =  \s  }'),
+                      array( display => 'on',  latex => '{  \s^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \s^{-1}  =  \frac{ 1 }{ \s }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Zahl \lm{ s^{-1} } ist das normierte superiale Infinitesimal.'."\n".
+                    'Sie bildet die Schrittweite, die in der superialen Analysis an die Stelle'."\n".
+                    'des klassischen Grenzübergangs treten kann.'."\n",
+                      'Zur besseren Lesbarkeit kann eine Superial-Zahl später auch in'."\n".
+                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertschreibweise}'."\n".
+                    'mit spitzen Klammern notiert werden.'."\n".
+                    'Die vorstehende formale Reihe kann dann schematisch geschrieben werden als'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  *〈 a_{n} *〉_{n}*〈 a_{n - 1} *〉_{n - 1}\cdots*〈 a_{1} *〉*〈 a_{0} *〉.*〈 a_{-1} *〉*〈 a_{-2} *〉\cdots  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Punkt markiert die Stelle unmittelbar hinter der Null-Schicht,'."\n".
+                    'also den Übergang zu den infinitesimalen Schichten.'."\n".
+                    'Ein Index nach einer spitzen Klammer gibt ihre Schicht explizit an, falls diese nicht erkennbar ist, also:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 a_{k} *〉_{k}  =  a_{k} \cdot \s^{k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Ordnung der Superial-Zahlen ist die lexikographische Ordnung des Stellenwertsystems.'."\n".
+                    'Entscheidend ist immer die höchste Schicht, in der sich zwei Zahlen unterscheiden.'."\n".
+                    'Für eine von Null verschiedene Superial-Zahl wird diese höchste besetzte Schicht durch die Schichtbewertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \operatorname{ord}_{\s}( x )  :=  \max( \supp( x ) )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bestimmt.'."\n".
+                    'Ist der führende Koeffizient positiv, so ist die Zahl positiv;'."\n".
+                    'ist er negativ, so ist die Zahl negativ.'."\n".
+                    'Infinitesimale Anteile können daher niemals den Wert einer höheren Schicht umkehren.'."\n",
+                      'Formal wird die Superial-Struktur in der ZFC-Modellkonstruktion als geordneter bewerteter Körper beschrieben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s}, *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Addition erfolgt schichtweise, die Multiplikation wie in einem Stellenwertsystem durch Faltung der Schichten.'."\n".
+                    'Da die Konstruktion als Hahn-Reihen-Körper über einem Körper von Koeffizienten erfolgt,'."\n".
+                    'besitzt \lm{ \mathbb{S} } die Struktur eines geordneten Körpers.'."\n",
+                      'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } bilden innerhalb von \lm{ \mathbb{S} } den Bereich derjenigen Superial-Zahlen,'."\n".
+                    'die keine nichtverschwindenden infinitesimalen Anteile besitzen'."\n".
+                    'und deren Null-Schicht klassisch ganzzahlig ist.'."\n".
+                    'Nach der Bestimmung der sinnvollen Koeffizienten durch die'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraische-Koeffizienten-Vermutung}'."\n".
+                    'und die'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}'."\n".
+                    'ergibt sich für die ganzen Superial-Zahlen die Form'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  *\{ z + \sum_{ k = 1 }^{ m } a_{k} \s^{k}  *|*  z \in \mathbb{Z} ,\; m \in \mathbb{N} ,\; a_{k} \in \mathbb{A}_{\R} *\}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Null-Schicht der ganzen Superial-Zahlen enthält also nur klassische ganze Zahlen.'."\n".
+                    'Positive Schichten dürfen reell algebraische Koeffizienten tragen.'."\n".
+                    'Negative Schichten müssen bei ganzen Superial-Zahlen verschwinden.'."\n",
+                      'Damit lassen sich die Superial-Zahlen knapp zusammenfassen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*)  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  v_{p}*( \s *)  =  ω  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'für alle endlichen Primzahlen \lm{ p }.'."\n",
+                      'Die Superial-Zahlen sind somit ein ZFC-intern definierbarer,'."\n".
+                    'geordneter Hahn-Reihen-Körper mit aktual unendlicher Primexponentenbasis \lm{ \s }.'."\n".
+                    'Sie erweitern die endlichen reell algebraischen Zahlen um aktual unendliche'."\n".
+                    'und infinitesimale Schichten und stellen dadurch einen normierten Rechenraum'."\n".
+                    'für eine transfinite Analysis bereit.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1378,7 +1387,8 @@
                   array( 'text', array( text => array(
                     'Die entdeckten aktual unendlichen Primfaktorzerlegungen innerhalb der neuen, in der ZFC-Mengenlehre'."\n".
                     'definierbaren Primexponentenstruktur offenbaren einen tiefen Zusammenhang'."\n".
-                    'der endlichen Primzahlen mit dem aktual unendlichen von-Neumann-Ordinal \lm{ ω }.'."\n".
+                    'der endlichen Primzahlen mit dem aktual unendlichen von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    '\lm{ ω }.'."\n".
                     'Dieser Zusammenhang mündet in einer'."\n".
                     '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{kanonischen Identifikation}'."\n".
                     'des von-Neumann-Ordinals mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen.'."\n",

@@ -333,7 +333,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*)  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*)  }',
+                                               label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'wobei \lm{ \mathbb{A}_{\R} } das reell algebraische Koeffizientenfeld repräsentiert und \lm{ \mathbb{Z} }'."\n".
@@ -356,7 +357,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *〉  }'),
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
+                                               label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Die mathematische Konsistenz dieses Körpers wird durch die perfekt ineinandergreifenden'."\n".
