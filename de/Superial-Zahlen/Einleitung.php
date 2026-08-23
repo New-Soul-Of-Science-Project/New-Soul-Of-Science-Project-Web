@@ -231,7 +231,7 @@
                     'sondern als Grenzwert eines Differenzenquotienten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
                     ))),
@@ -258,7 +258,7 @@
                     'An die Stelle eines bloß variablen Grenzparameters \lm{ \Delta x \rightarrow +0 } tritt eine ausgezeichnete infinitesimale Schrittweite:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s^{-1}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -270,7 +270,7 @@
                     'sondern zunächst der superiale Wert'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2 x + \s^{-1}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -288,7 +288,7 @@
                     'Die superiale Basis erhält dadurch die Struktur'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
@@ -296,7 +296,7 @@
                     'beziehungsweise präziser'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  \prodx_{ p \in \mathbb{P} }  p^{ω}  \;\; .  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
@@ -304,7 +304,7 @@
                     'Damit trägt jede endliche Primzahl im Primexponentenprodukt \lm{ \s } den aktual unendlichen Exponenten \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Pobl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Probl', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  v_{p}*( \s *)  =  ω  *]  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-p-Bewertung-von-s-gleich-omega}', label_incr => false),
                     ))),
