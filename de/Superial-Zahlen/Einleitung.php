@@ -49,7 +49,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Welche immense Bedeutung das Unendliche in der Mathematik, und auch in der Physik, inne hat,'."\n".
+                    'Welche immense Bedeutung das Unendliche in der Mathematik und auch in der Physik innehat,'."\n".
                     'gibt ein Zitat von Hermann Weyl wieder:'."\n".
                     ''))),
 
@@ -60,11 +60,11 @@
                         addtext => '\footnote{\cite{Weyl:DieStufenDesUnendlichen:1931}.}')),
 
                   array( 'text', array( text => array(
-                    'Er möchte offenbar damit auch zum Ausdruck bringen, dass wir in der Mathematik an allen Ecken und Enden auf Unendliches stoßen'."\n".
-                    'und versuchen es für Menschen möglichst verständlich, ausdrückbar und gut nutzbar zu machen.'."\n".
-                    'Das waren auch für mich Energie gebende Anliegen und der Impuls, gepaart mit meiner Neugier, die Superial-Zahlen zu entwickelt.'."\n".
-                    'Ich wollte unserem Verständnis und unseren Ausdrucksmöglichkeiten des Unendlichen'."\n".
-                    'weitere faszinierende und nützliche Perspektiven und Werkzeuge hinzuzufügen.'."\n",
+                    'Er bringt damit auch zum Ausdruck, dass wir in der Mathematik an vielen Stellen auf Unendliches stoßen'."\n".
+                    'und versuchen, es für Menschen möglichst verständlich, ausdrückbar und gut nutzbar zu machen.'."\n".
+                    'Das waren auch für mich kraftgebende Anliegen und der Impuls, gepaart mit meiner Neugier, die Superial-Zahlen zu entwickelt.'."\n".
+                    'Ich wollte unserem Verständnis des Unendlichen und unseren Ausdrucksmöglichkeiten'."\n".
+                    'für das Unendliche weitere faszinierende und nützliche Perspektiven und Werkzeuge hinzufügen.'."\n",
                       'Zur weiteren Einstimmung auf das Unendliche und seine Geschichte möchte ich dem Leser ein Video von Edmund Weitz'."\n".
                     'ans Herz legen: \jump[https://www.youtube.com/watch?v=H8ZBjsYU4JE]{}{Die Eroberung der Unendlichkeit (Kurze Geschichte der Mathematik 3)}.'."\n".
                     'Und wer tiefer einsteigen und verstehen möchte – eher mit Vorkenntnissen –, dem lege ich das Buch von David Foster \cite{Wallace:DieEntdeckungDesUnendlichen:2010}, nahe.'."\n".
@@ -103,7 +103,8 @@
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'enthält jede endliche Primzahl in aktual unendlicher Exponentenlänge in ihrem Primexponentenprodukt.'."\n".
+                    'ist als Primexponentenprodukt zu verstehen, nicht als gewöhnliches unendliches Produkt im analytischen Sinn.'."\n".
+                    'Sie enthält jede endliche Primzahl \lm{ p } in aktual unendlicher Exponentenlänge.'."\n".
                     'Dadurch werden Teilbarkeit,'."\n".
                     'Primexponenten, Nennerabsorption, Wurzeln und algebraische Koeffizienten'."\n".
                     'zu arithmetischen Grundlagen der superialen Analysis.'."\n".
@@ -767,10 +768,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  \prodx_{p \in \mathbb{P}}  p  \;\; .  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}/\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei bezeichnet \lm{ \prodx } kein gewöhnliches Produkt im klassischen Sinn'."\n".
@@ -865,6 +864,8 @@
                       array( display => 'on',  latex => '{  x  =  *〈 a_{n} *〉_{n}*〈 a_{n - 1} *〉_{n - 1}\cdots*〈 a_{1} *〉*〈 a_{0} *〉.*〈 a_{-1} *〉*〈 a_{-2} *〉\cdots  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'Bei fortlaufender Stellenwertschreibweise können die Indizes entfallen;'."\n".
+                    'sie werden nur gesetzt, wenn die Schicht ausdrücklich kenntlich gemacht werden soll.'."\n".
                     'Der Punkt markiert die Stelle unmittelbar hinter der Null-Schicht,'."\n".
                     'also den Übergang zu den infinitesimalen Schichten.'."\n".
                     'Ein Index nach einer spitzen Klammer gibt ihre Schicht explizit an, falls diese nicht erkennbar ist, also:'."\n".
