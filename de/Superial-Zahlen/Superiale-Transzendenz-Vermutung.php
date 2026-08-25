@@ -416,7 +416,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  \;\; .  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  \;\; .  }',
                                           label_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As', label_text => '\name{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => true),
                     ))),
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>

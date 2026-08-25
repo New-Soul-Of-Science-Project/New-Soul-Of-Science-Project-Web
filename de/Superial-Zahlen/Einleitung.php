@@ -62,7 +62,8 @@
                   array( 'text', array( text => array(
                     'Er bringt damit auch zum Ausdruck, dass wir in der Mathematik an vielen Stellen auf Unendliches stoßen'."\n".
                     'und versuchen, es für Menschen möglichst verständlich, ausdrückbar und gut nutzbar zu machen.'."\n".
-                    'Das waren auch für mich kraftgebende Anliegen und der Impuls, gepaart mit meiner Neugier, die Superial-Zahlen zu entwickelt.'."\n".
+                    'Das waren auch für mich energiegebende Anliegen und, gepaart mit meiner Neugier, der Impuls,'."\n".
+                    'die Superial-Zahlen zu entwickeln.'."\n".
                     'Ich wollte unserem Verständnis des Unendlichen und unseren Ausdrucksmöglichkeiten'."\n".
                     'für das Unendliche weitere faszinierende und nützliche Perspektiven und Werkzeuge hinzufügen.'."\n",
                       'Zur weiteren Einstimmung auf das Unendliche und seine Geschichte möchte ich dem Leser ein Video von Edmund Weitz'."\n".
@@ -2096,7 +2097,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  }',
                                           label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2222,7 +2223,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  }',
                                           label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2252,7 +2253,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  }',
                                           label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2310,26 +2311,95 @@
                       array(  jump_name => 'OM:SupNum:Einleitung:Beweisstrategien', type => 'back'),
                     )),
                   
-                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                                           
-                'Aufbau der Arbeit', subline =>
-                  '')), */
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Weitere Seiten}',
+                    '• Ausblick: fasst die wesentlichen Ergebnisse der Arbeit zusammen und gibt einen Ausblick auf offene Forschungsfragen, wie etwa die Betrachtung der Kontinuumshypothese durch die Brille der Superial-Zahlen und eine ihre mögliche Bedeutung im Langlands-Programm.',
+                    ))),
+                      
                   array( 'text', array( text => array(
-                    'Die Darstellung folgt zunächst einem anschaulich-rechnerischen Weg und führt erst später zur arithmetischen'."\n".
-                    'und mengentheoretischen Fundierung.'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'XXX'."\n",
-                    'Ausblick: \\\\'."\n".
-                    'fasst die wesentlichen Ergebnisse der Arbeit zusammen und gibt einen Ausblick auf offene Forschungsfragen,'."\n".
-                    'wie etwa die Betrachtung der Kontinuumshypothese durch die Brille der Superial-Zahlen und eine ihre mögliche Bedeutung im Langlands-Programm.'."\n".
+                    'Die Darstellung der Superial-Zahlen ist so aufgebaut,'."\n",
+                    'dass zunächst die Grundidee und die arithmetische Motivation entwickelt werden,'."\n",
+                    'bevor die formale Struktur, die Rechenregeln und die Beweise der zentralen Vermutungen folgen.'."\n",
+                      'Die \italic{›\jumpname{OM:SupNum:Einleitung}‹} führt in die leitende Idee ein:'."\n".
+                    'Die Superial-Zahlen sollen eine zahlentheoretische Tiefenstruktur der Analysis sichtbar machen.'."\n".
+                    'Grenzprozesse, Ableitungen und Integrale werden dabei'."\n".
+                    'nicht nur als klassische Grenzwertbildungen betrachtet, sondern als Strukturen,'."\n".
+                    'die durch aktual unendliche Schrittweiten, Summen und Primexponenten beschrieben werden können.'."\n",
+                      'Auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}'."\n".
+                    'wird die geometrische Motivation entfaltet.'."\n".
+                    'Dort wird gezeigt, wie Längen, Flächen, Volumina und analytische Größen'."\n".
+                    'mit arithmetischen Strukturen zusammenhängen'."\n".
+                    'und warum ein aktual unendliches Stellenwertsystem für die Analysis naheliegt.'."\n",
+                      'Die \jump{OM:SupNum:Algebraische-Grundlagen}{algebraischen Grundlagen} entwickeln anschließend'."\n".
+                    'die eigentliche Struktur der Superial-Zahlen.'."\n".
+                    'Dort werden die superiale Basis \lm{ \s }, die Schichten \lm{ \s^{k} }, die Stellenwertschreibweise,'."\n".
+                    'die Ordnung, die Rechenregeln und die wichtigsten algebraischen Normalformen eingeführt.'."\n",
+                      'Die Seite \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} untersucht die Frage,'."\n".
+                    'welche reellen Zahlen als Koeffizienten einzelner superialer Schichten auftreten dürfen.'."\n".
+                    'Diese Frage führt zu den reell algebraischen Zahlen als natürlicher Koeffizientenebene der Superial-Zahlen.'."\n",
+                      'Die Seiten \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale}‹}'."\n".
+                    'sowie \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}‹} zeigen,'."\n".
+                    'wie sich klassische analytische Begriffe im superialen Zahlenraum darstellen lassen.'."\n".
+                    'Die normierte infinitesimale Schrittweite \lm{ \s^{-1} } tritt'."\n".
+                    'dabei an die Stelle eines bloß gedachten Grenzübergangs.'."\n".
+                    'Ableitungen, Integrale und klassische Konstanten erhalten dadurch eine Darstellung'."\n".
+                    'mit expliziter aktual unendlicher Struktur.'."\n",
+                      'Die Seite \italic{›\jumpname{OM:SupNum:Eigenschaften}‹}'."\n".
+                    'sammelt die zentralen strukturellen Merkmale der Superial-Zahlen.'."\n".
+                    'Dazu gehören ihre Ordnung, ihre infinitesimalen und aktual unendlichen Schichten,'."\n".
+                    'ihre algebraischen Koeffizienten, ihre Ganzheitsbedingungen'."\n".
+                    'und ihre Rolle als Erweiterung der klassischen reell algebraischen Zahlen.'."\n",
+                      'Die anschließenden Beweisseiten begründen die zentralen Vermutungen.'."\n".
+                    'Die \italic{›\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}‹}'."\n".
+                    'zeigt, wie irrationale Wurzeln über aktual unendliche Primexponentenstrukturen'."\n".
+                    'als Quotienten aktual unendlicher ganzer Zahlen darstellbar werden.'."\n".
+                    'Die \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}'."\n".
+                    'erweitert dies auf alle reell algebraischen Zahlen.'."\n".
+                    'Die \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹}'."\n".
+                    'zeigt die Gegenrichtung und bestimmt damit die'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen reellen Koeffizienten}'."\n".
+                    'vollständig:'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:X:X', text =>
-                                           
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Auf', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  }',
+                                          label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹}'."\n".
+                    'begründet die kanonische Identifikation des von-Neumann-Ordinals \lm{ ω } mit'."\n".
+                    'dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Auf', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}/\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Sie bildet damit die arithmetische Grundlage der superialen Basis'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Auf', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Abschließend zeigt die \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion},'."\n".
+                    'dass die Superial-Zahlen nicht nur heuristisch motiviert sind,'."\n".
+                    'sondern in einer ZFC-intern definierbaren Struktur modelliert werden können.'."\n".
+                    'Dort werden die Superial-Zahlen als geordneter Hahn-Reihen-Körper'."\n".
+                    'mit verallgemeinerten \lm{ p }-adischen Bewertungen beschrieben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Auf', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}\!*(*( \s^{\mathbb{Z}} *)*)  }',
+                                               label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit gliedert sich die Arbeit in drei Ebenen:'."\n".
+                    'Zunächst wird die Idee der Zahlentheorie der Analysis motiviert,'."\n".
+                    'dann wird der superiale Zahlenraum algebraisch und analytisch entwickelt,'."\n".
+                    'und schließlich werden die tragenden Vermutungen sowie die ZFC-Modellkonstruktion formal begründet.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

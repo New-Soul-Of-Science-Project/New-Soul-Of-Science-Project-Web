@@ -488,7 +488,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  }',
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  }',
                                           label_text => '\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => false),
                       array( display => 'on',  latex => '{  \boxed{\;\;  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  \;\;}  \;\; ,  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen}', label_incr => true),
