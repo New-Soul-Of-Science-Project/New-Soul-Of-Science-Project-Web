@@ -90,7 +90,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Integrale werden nicht nur als Grenzwerte endlicher Summen verstanden,'."\n".
-                    'sondern als aktual unendliche Summen mit einer durch \lm{ \s } bestimmten Anzahl von Summanden.'."\n",
+                    'sondern als aktual unendliche Summen mit einer durch \lm{ \s } bestimmten Anzahl beziehungsweise Erzeugungsanzahl von Summanden.'."\n",
                       'Damit tritt eine zahlentheoretische Frage in das Zentrum der Analysis:'."\n".
                     'Welche Zahlen können in solchen aktual unendlichen Summen und Produkten'."\n".
                     'als Koeffizienten sinnvoll auftreten?'."\n".
@@ -956,8 +956,8 @@
                 'Illustrierende Rechenbeispiele', subline =>
                   'Funktionsweise in der Praxis')), */
                   array( 'text', array( text => array(
-                    'Nachdem die theoretischen Kernresultate der Superial-Zahlen formal skizziert wurden,'."\n",
-                    'sollen die folgenden konkreten Rechenbeispiele die praktische Funktionsweise verdeutlichen.'."\n".
+                    'Nachdem die theoretischen Kernresultate der Superial-Zahlen formal skizziert wurden,'."\n".
+                    'sollen die folgenden konkreten Rechenbeispiele die praktische Funktionsweise und Anwendung verdeutlichen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
 
@@ -1072,7 +1072,7 @@
                     'Ihre Streifenbreite ist \lm{ \Delta x = \s^{-1} }, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
                     'Dabei ist \lm{ \s^{-1} } eine unendlich kleine, in ihrer \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}{Definition normierte Einheit}.'."\n".
                     'Eine \italic{aktual unendlich kleine Eins}: \lm{ 1 \s^{-1} }.'."\n",
-                      'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl der Streifen summieren.'."\n".
+                      'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl (Erzeugungsanzahl) der Streifen summieren.'."\n".
                     'Es müssen genau \lm{ f\'(x) \cdot \s } Streifen sein, wenn wir bei \lm{ x = 0 } beginnen, damit sich die \lm{ \s^{-1} } breiten Streifen zu einer endlich großen'."\n".
                     'Zahl \lm{ f(x) - f(0) } aufsummieren und wir die Integralfunktion mit Startwert Null erhalten.'."\n".
                     'Damit ist klar, dass \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}{\lm{ \s } eine unendlich große, ganze und positive Zahl} ist, eine \italic{aktual unendlich große Eins} – \lm{ 1 \s }.'."\n".
@@ -1129,7 +1129,7 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs-Elemente}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
+                      'Jetzt haben wir zwar die richtige Anzahl oder Erzeugungsanzahl an Schritten, aber sie sind nicht fein genug,'."\n".
                       'sollen sie doch eigentlich von Null bis \lm{ x } in \lm{ \s^{-1} } kleinen Schritten laufen.'."\n".
                       'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \lm{ \s^{-1} } multiplizieren'."\n".
                       'und auf diese Weise auf eine \jump{OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
@@ -1310,9 +1310,9 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht das Symbol \lm{ ω } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
+                    'Dabei steht das Symbol \lm{ ω } für die Anzahl oder besser Erzeugungsanzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
                     'also für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
-                    'Und das Symbol \lm{ \overline{\#} } gibt die Anzahl der Elemente der nachfolgenden Menge an.'."\n",
+                    'Und das Symbol \lm{ \overline{\#} } gibt die Erzeugungsanzahl der Elemente der nachfolgenden Menge an.'."\n",
                       'Gleiches gilt auch für den zweiten Summanden:'."\n".
                     ''))),
                   array( 'equations',
@@ -1341,7 +1341,7 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Anzahlen.'."\n",
+                    'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Erzeugungsanzahlen.'."\n",
                       'Ebenso für die Summe aller reell algebraischen Koeffizienten \lm{ \mathbb{A}_{\R} } der Superial-Zahlen von Null bis ausschließlich – oder einschließlich –'."\n".
                     '\lm{ x } können wir ein Ergebnis finden:'."\n".
                     ''))),
@@ -1355,7 +1355,7 @@
                   array( 'text', array( text => array(
                     'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n",
                       'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
-                    'Auch die Anzahl aller reell algebraischen Zahlen, insgesamt und in einem Intervall, konnte nach meinem Wissen zuvor'."\n".
+                    'Auch die Erzeugungsanzahl aller reell algebraischen Zahlen, insgesamt und in einem Intervall, konnte nach meinem Wissen zuvor'."\n".
                     'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
                     'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -ω } entspricht,'."\n".
                     'war mir nicht bekannt.'."\n",
