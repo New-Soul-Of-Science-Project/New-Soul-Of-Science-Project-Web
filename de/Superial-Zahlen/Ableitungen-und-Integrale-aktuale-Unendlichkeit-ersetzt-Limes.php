@@ -96,9 +96,23 @@
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  1 \s^{-1}  =  ․〈1〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => true),
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unter Vereinbarung der Strichnotation für die superiale Ableitung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f_{\s}\'( x )  :=  (\mathcal{D}_{\s} f)( x )  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Notation-superiale-Ableitung', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Notation-superiale-Ableitung}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erhalten wir die Rekonstruktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -154,7 +168,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  \widehat{=}  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;,  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  \widehat{=}  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'dann sehen wir, dass einiges an struktureller Information verborgen bleibt, wenn wir nicht genau schauen,'."\n".
@@ -176,8 +190,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  *( f(x + \s^{-1}) - f(x) *) \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f_{\s}\'(x)  =  *( f(x + \s^{-1}) - f(x) *) \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
@@ -197,34 +211,34 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  f_{\s}\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  2 x + \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 2 x } heraus.'."\n".
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f_{\s}\'(x) = 2 x } heraus.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für \lm{ f(x) = x^{3} } ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{3} - x^{3} }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  f_{\s}\'(x)  =  \frac{ *( x + \s^{-1} *)^{3} - x^{3} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} *) - x^{3} }{ \s^{-1} }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} *) - x^{3} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} }{ \s^{-1} }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} }{ \s^{-1} }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot \s^{-1} + \s^{-2}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  3 x^{2} + 3 x \cdot \s^{-1} + \s^{-2}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 3 x^{2} } heraus.'."\n",
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f_{\s}\'(x) = 3 x^{2} } heraus.'."\n",
                         '\\\\ '."\n".
                       ''))),
 
@@ -507,18 +521,18 @@
                     'Bei der Integration summieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \lm{ \s^{-1} } der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen zu einer größeren Fläche auf.'."\n".
                     'Diese Streifen müssen wir dann auf prozesshafte Weise geordnet durchzählen und dabei jeweils addieren.'."\n",
-                      'Die Größe der Streifen entspricht den aktual unendlich kleinen Differenzen der Steigungsdreiecke der Ableitung \lm{ f\'(x) \cdot \s^{-1} } oder \lm{ .〈f\'(x)〉 } einer'."\n".
+                      'Die Größe der Streifen entspricht den aktual unendlich kleinen Differenzen der Steigungsdreiecke der Ableitung \lm{ f_{\s}\'(x) \cdot \s^{-1} } oder \lm{ .〈f_{\s}\'(x)〉 } einer'."\n".
                     'Funktion \lm{ f(x) } und hier noch einmal mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} in Stellenwertnotation gezeigt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) *〉_{1} - *〈 f(x) *〉_{1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  f\'(x) + *〈 f(x) *〉_{1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  *〈 f(x) *〉*〈 f\'(x) *〉.  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(〈x〉․〈1〉)  =  *〈 f(x) *〉.*〈 f\'(x) *〉  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  *〈 f(〈x〉․〈1〉) *〉_{1} - *〈 f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  f_{\s}\'(x) + *〈 f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  *〈 f(x) *〉*〈 f_{\s}\'(x) *〉.  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(〈x〉․〈1〉)  =  *〈 f(x) *〉.*〈 f_{\s}\'(x) *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -530,11 +544,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) \cdot \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
-                      array( display => 'on',  latex => '{  *( a, x \in \mathbb{A}_{\R} *)  *[  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) \cdot \s^{-1}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für das superiale Integral ergibt sich so:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a, x \in \mathbb{A}_{\R} *)  *[  f(x)  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -551,15 +571,15 @@
                 'Beispiel eines konkreten Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Jetzt ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht.'."\n".
-                    'Dieses finden wir in der expliziten Schreibweise mit \lm{ \s } auch im Abschnitt \italic{›\jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Integral-genau-verstehen:Konkretes-Integral}‹},'."\n".
+                    'Jetzt ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht'."\n".
+                    'Dieses finden wir ähnlich in der expliziten Schreibweise mit \lm{ \s } auch im Abschnitt \italic{›\jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral}‹},'."\n".
                     'hier nun allerdings vollständig in der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Wir nehmen das erste obige \jump{OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
-                      'dem Ableitungsergebnis \lm{ f\'(x) = *〈 2 x *〉.*〈 1 *〉 } und setzen dies in unsere Integralformel ein:'."\n".
+                      'dem Ableitungsergebnis \lm{ f_{\s}\'(x) = *〈 2 x *〉.*〈 1 *〉 } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -678,14 +698,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\!\!\!\!\!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\!\!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f\'(n) *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) *) } + \displaystyle{ *( \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\; - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f\'(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, x]_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f\'(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  f\'(x)  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\!\!\!\!\!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n) *) } + \displaystyle{ *( \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\; - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\!\! f_{\s}\'(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sum_{ \forall n \in [x, x]_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f_{\s}\'(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  f_{\s}\'(x)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen also, dass die Ableitung eines Integrals einer allgemeinen stetigen Funktion deren Integration umkehrt, also generell'."\n".
@@ -722,9 +742,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! *〈 f(n) *〉.*〈 f\'(n) *〉\; - \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! f(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f(n) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\; - \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉\; - \!\!\!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\!\! f(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f(n) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\; - \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! f(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(x)  }'),
                     ))),
                       
@@ -739,8 +759,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *〈 f(n) *〉.*〈 f\'(n) *〉 - f(n) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉 - f(n) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(x)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -815,14 +835,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f( x + \delta ) = f( x ) + f\'( x ) \cdot \delta + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta^{2}  }'),
+                      array( display => 'on',  latex => '{  f( x + \delta )  =  f( x ) + f\'(x ) \cdot \delta + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta^{2}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Subtrahieren und durch \lm{ \delta } teilen ergibt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x) = f\'( x ) + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta  }'),
+                      array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  =  f\'(x ) + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
@@ -863,7 +883,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) \\\ *( \mathbb{N} = (b − a) \cdot \s \in \mathbb{S}_{\Z} *) *[  \mathcal{S}_{\s}( f; a, b )  :=  \sum_{k = 0}^{N - 1} ․〈 f(〈a〉․〈k〉) 〉  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) \\\ *( N = (b − a) \cdot \s \in \mathbb{S}_{\Z} *) *[  \mathcal{S}_{\s}( f; a, b )  :=  \sum_{k = 0}^{N - 1} ․〈 f(〈a〉․〈k〉) 〉  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben gesagt, ist hier \lm{ \mathcal{S}_{\s}( ⋅ ) } \bold{nur ein Symbolname} für diese Summe, also keine Menge der Superial-Zahlen.'."\n".
@@ -1058,13 +1078,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  2 x + \s^{-1}  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1072,10 +1092,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  \frac{ *〈 x *〉.*〈 1 *〉^{2} - x^{2} }{ .*〈 1 *〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *〈  x^{2} *〉.*〈  2 x *〉*〈  1 *〉 - x^{2} }{ .*〈 1 *〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ .*〈  2 x *〉*〈  1 *〉 }{ .*〈 1 *〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  *〈  2 x *〉.*〈  1 *〉  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  =  \frac{ *〈 x *〉.*〈 1 *〉^{2} - x^{2} }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ *〈  x^{2} *〉.*〈  2 x *〉*〈  1 *〉 - x^{2} }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  \frac{ .*〈  2 x *〉*〈  1 *〉 }{ .*〈 1 *〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  *〈  2 x *〉.*〈  1 *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier wird die mathematische Genauigkeit erhalten und daher der infinitesimale Summand nicht weggelassen.'."\n".
@@ -1435,7 +1455,7 @@
                     'Wir kennen nun schon das Ergebnis der Summe \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
                     'aller superial kleinen ganzen Superial-Zahlen'."\n".
                     // '\hidden{\lm{ \mathbb{S}^{-1}_Z }'."\n".
-                    'von Null bis ausschließlich \lm{ x }, die bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Integration von} \lm{ f\'(x) =〈 2 x 〉․〈 1 〉} \jump{*SupNum:Stellenwertsystem-Schreibweise}{(Stellenwertsystem-Schreibweise)} auftritt.'."\n".
+                    'von Null bis ausschließlich \lm{ x }, die bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Integration von} \lm{ f_{\s}\'(x) =〈 2 x 〉․〈 1 〉} \jump{*SupNum:Stellenwertsystem-Schreibweise}{(Stellenwertsystem-Schreibweise)} auftritt.'."\n".
                     'Allerdings wissen wir nicht genau, wie sich diese Summe durch direkte Berechnung der Teilsummen, also ohne das Benutzen der'."\n".
                     'angepassten Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}, berechnet,'."\n".
                     'die wir aus der Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen}, wie im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen}‹} nach Formel'."\n".

@@ -36,7 +36,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -44,7 +44,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈1〉}  =  f(〈x〉․〈1〉) - f(x)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈1〉} + f(x)  =  f(〈x〉․〈1〉)  }'),
@@ -399,14 +399,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  f_{\s^{2}}\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  f_{\s^{2}}\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉}  =  f(〈x〉․〈0〉〈1〉) - f(x)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉} + f(x)  =  f(〈x〉․〈0〉〈1〉)  }'),
@@ -591,9 +591,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(k) *〉  }',
+                      array( display => 'on',  latex => '{  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f_{\s}\'(k) *〉  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
-                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(k) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
