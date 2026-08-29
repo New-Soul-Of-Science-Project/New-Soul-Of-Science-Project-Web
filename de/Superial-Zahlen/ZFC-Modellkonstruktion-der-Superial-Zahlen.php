@@ -585,7 +585,7 @@
                     'echte Mengen bleiben und zu keinem Zeitpunkt unzulässige echte Klassen bilden,'."\n".
                     'ist die vollständige ZFC-Konformität des Systems garantiert.'."\n",
                       'Die Hahn-Reihe bildet somit die fundamentale arithmetische Basis,'."\n".
-                    'welche das anschauliche unendliche Produkt \lm{ *( \prodx_{ \forall p \in \mathbb{P} } p *)_{\#}^ω }'."\n".
+                    'welche das anschauliche unendliche Produkt \lm{ *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^ω }'."\n".
                     'mit den exakten algebraischen Werkzeugen der Addition, Subtraktion, Multiplikation und Division ausstattet.'."\n".
                     'Das Modell liefert damit den klaren Nachweis, dass der Körper der Superial-Zahlen \lm{ \mathbb{S} } als stabiler,'."\n".
                     'widerspruchsfreier und normierter Rechenraum für die transfinite Analysis operieren kann.'."\n".
