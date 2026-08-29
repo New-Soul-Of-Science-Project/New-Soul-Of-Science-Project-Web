@@ -154,7 +154,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \prodx_{\forall p \in \mathbb{P}}  p  }',
+                      array( display => 'on',  latex => '{  ω  =  \prodx_{ p \in \mathbb{P} }  p  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
