@@ -1529,7 +1529,8 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Erzeugungsanzahlen.'."\n",
+                    'Dies ist ein bemerkenswertes Beispiel dafür, dass aktual unendliche Erzeugungssummen'."\n".
+                    'in den Superial-Zahlen explizit als Zahlenwerte auftreten können.'."\n",
                       'Ebenso für die Summe aller reell algebraischen Koeffizienten \lm{ \mathbb{A}_{\R} } der Superial-Zahlen von Null bis ausschließlich – oder einschließlich –'."\n".
                     '\lm{ x } können wir ein Ergebnis finden:'."\n".
                     ''))),
@@ -1547,8 +1548,8 @@
                     'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
                     'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -ω } entspricht,'."\n".
                     'war mir nicht bekannt.'."\n",
-                      'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
-                    'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
+                      'Diese Beispiele sollen einen ersten Eindruck davon geben, welche zusätzlichen Strukturen'."\n".
+                    'durch aktual unendliche Summen und Erzeugungsanzahlen sichtbar werden.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele', text =>
@@ -1562,7 +1563,7 @@
                     'Die Basis'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Zusa', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
@@ -1570,7 +1571,7 @@
                     'trägt die aktual unendliche Primexponentenstruktur, während'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Zusa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1579,7 +1580,27 @@
                     'verstanden werden können:'."\n".
                     'Ableitungen und Integrale erscheinen nicht nur als Grenzprozesse,'."\n".
                     'sondern als arithmetisch strukturierte Rechnungen mit aktual unendlichen Summen,'."\n".
-                    'infinitesimalen Schrittweiten und klar bestimmten Koeffizienten.'."\n".
+                    'infinitesimalen Schrittweiten und klar bestimmten Koeffizienten.'."\n",
+                      'Die Beispiele zu den Erzeugungssummen zeigen darüber hinaus,'."\n".
+                    'dass aktual unendliche Summen selbst zu neuen Rechenobjekten werden.'."\n".
+                    'Wird über ein erzeugtes Intervall summiert, so beschreibt die Summe'."\n".
+                    'nicht nur eine klassische Kardinalität, sondern eine Erzeugungsanzahl.'."\n".
+                    'In dieser Form kann die Erzeugungsstruktur einer Menge arithmetisch sichtbar gemacht werden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Zusa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{x\in I}  1  =  \overline{\#}_{\mathrm{erz}}( I )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ergänzt die Erzeugungsanzahl die klassische Mächtigkeit um eine feinere strukturelle Information:'."\n".
+                    'Sie fragt nicht nur, ob zwei Mengen gleichmächtig sind,'."\n".
+                    'sondern wie ihre Elemente innerhalb der superialen Struktur erzeugt und summiert werden.'."\n",
+                      'Gerade dadurch entstehen neue Perspektiven auf aktual unendliche Summen,'."\n".
+                    'auf Intervalle reell algebraischer Zahlen und auf den Zusammenhang von Analysis,'."\n".
+                    'Ordnung und Erzeugung.'."\n".
+                    'Die Rechenbeispiele sollen daher nicht nur einzelne Operationen vorführen,'."\n".
+                    'sondern auch zeigen, dass die Superial-Zahlen einen erweiterten arithmetischen Blick'."\n".
+                    'auf unendliche Summen, infinitesimale Raster und erzeugte Mengenintervalle eröffnen.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
