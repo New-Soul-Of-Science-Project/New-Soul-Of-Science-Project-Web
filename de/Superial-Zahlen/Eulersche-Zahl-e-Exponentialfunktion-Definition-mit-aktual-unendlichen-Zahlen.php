@@ -851,7 +851,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ k \in XX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ *( \alpha - 0 *) *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - *( k - 1 *) *) }{ k! }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ \forall j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der verallgemeinerte Binomialkoeffizient enthält im Zähler das Produkt \lm{ \prod_{ j = 0 }^{ k-1 } *( \alpha - j *) }.'."\n".
