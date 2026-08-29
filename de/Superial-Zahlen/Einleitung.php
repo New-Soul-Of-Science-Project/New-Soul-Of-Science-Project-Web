@@ -667,7 +667,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ \forall a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}} }  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
