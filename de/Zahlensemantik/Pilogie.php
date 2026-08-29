@@ -75,14 +75,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'ZS.PiLog.PiVe', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  (\forall s \in \mathbb{C}) *[  \zeta(s)  :=  \sum_{\forall n \in \mathbb{N}}  \frac{ 1 }{ n^{s} } \\\ \qquad\qquad\quad\;\;\;  =  \prod_{\forall p \in \mathbb{P}}  \frac{ p^{s} }{ p^{s} - 1 }   *]  }'),
+                      array( display => 'on',  latex => '{  (\forall s \in \mathbb{C}) *[  \zeta(s)  :=  \sum_{ n \in \mathbb{N} }  \frac{ 1 }{ n^{s} } \\\ \qquad\qquad\quad\;\;\;  =  \prod_{\forall p \in \mathbb{P}}  \frac{ p^{s} }{ p^{s} - 1 }   *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für den Spezialfall \term{s = 2} ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'ZS.PiLog.PiVe', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \zeta(2)  =  \sum_{\forall n \in \mathbb{N}}  \frac{ 1 }{ n^{2} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \zeta(2)  =  \sum_{ n \in \mathbb{N} }  \frac{ 1 }{ n^{2} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \zeta(2)  =  \frac{ 1 }{ 1 } + \frac{ 1 }{ 4 } + \frac{ 1 }{ 9 } + \frac{ 1 }{ 16 } + \frac{ 1 }{ 25 } + \cdots \\\ \qquad\qquad\;  =  \frac{ \pi^{2} }{ 6 }  }'),
                     ))),
                   array( 'text', array( text => array(
