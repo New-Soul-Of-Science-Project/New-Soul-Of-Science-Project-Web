@@ -350,6 +350,7 @@
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:GanzeUndNichtganzeSuperialZahlen' => array( headline_text => 'Ganze und nichtganze Superial-Zahlen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:SinnvolleKoeffizienten' => array( headline_text => 'Sinnvolle Koeffizienten'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral' => array( headline_text => 'Beispiel einer superialen Ableitung und ihres Integrals'/*, headline_text_short => 'X'*/),
+            'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme' => array( headline_text => 'Berechnung der skalierten und verschobenen Gaußsumme'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele' => array( headline_text => 'Zusammenfassung der Beispiele'/*, headline_text_short => 'X'*/),
 

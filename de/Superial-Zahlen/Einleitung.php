@@ -813,7 +813,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  =  \sum_{ k \in \mathbb{Z} }  a_{k} \cdot s^{k}  }'),
+                      array( display => 'on',  latex => '{  x  =  \sum_{ k \in \mathbb{Z} }  a_{k} \cdot \s^{k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'mit Koeffizienten'."\n".
@@ -852,7 +852,7 @@
                       array( display => 'on',  latex => '{  \s^{-1}  =  \frac{ 1 }{ \s }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Zahl \lm{ s^{-1} } ist das normierte superiale Infinitesimal.'."\n".
+                    'Die Zahl \lm{ \s^{-1} } ist das normierte superiale Infinitesimal.'."\n".
                     'Sie bildet die Schrittweite, die in der superialen Analysis an die Stelle'."\n".
                     'des klassischen Grenzübergangs treten kann.'."\n",
                       'Zur besseren Lesbarkeit kann eine Superial-Zahl später auch in'."\n".
@@ -1022,7 +1022,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sch', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2 \, s^{2}  }'),
+                      array( display => 'on',  latex => '{  2 \, \s^{2}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'gehört zur \lm{ \s^{2} }-Schicht, der Term'."\n".
@@ -1107,7 +1107,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ 1 }{ \s }  =  s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Aber auch'."\n".
@@ -1203,14 +1203,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'( x )  :=  (\mathcal{D}_{\s} f)( x )  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'( x )  :=  (\mathcal{D}_{\s} f)( x )  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Notation-superiale-Ableitung}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'gilt daher:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'( x )  =  \frac{ f( x + \s^{-1} ) - f( x ) }{ \s^{-1} }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'( x )  :=  \frac{ f( x + \s^{-1} ) - f( x ) }{ \s^{-1} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1239,14 +1240,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ 2 x \, \s^{-1} + \s^{-2} }{ s^{-1} }  =  2 x + \s^{-1}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \frac{ 2 x \, \s^{-1} + \s^{-2} }{ \s^{-1} }  =  2 x + \s^{-1}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der klassische Ableitungswert'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'( x )  =  2 x  }'),
+                      array( display => 'on',  latex => '{  f\'( x )  =  \operatorname{std}*( f_{\s}\'( x ) *)  =  2 x  }'),
                     ))),
                   array( 'text', array( text => array(
                     'erscheint also als endlicher Hauptanteil.'."\n".
@@ -1293,10 +1294,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ( b - a ) \cdot \s  }'),
+                      array( display => 'on',  latex => '{  N  =  ( b - a ) \cdot \s  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'infinitesimale Schritte.'."\n",
+                    'infinitesimale Schritte beziehungsweise Stützstellen.'."\n",
                       'Das superiale Integral der superialen Ableitung lautet daher:'."\n".
                     ''))),
                   array( 'equations',
@@ -1318,8 +1319,70 @@
                       array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  =  ( b - a ) \cdot \s  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die Summe der Stützstellen gilt dann die skalierte Gaußsumme:'."\n".
+                    'Für die Summe der Stützstellen gilt dann die skalierte und verschobene \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme}{Gaußsumme}:'."\n".
                     ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme',
+                Title => '\small{Berechnung der skalierten und verschobenen Gaußsumme …}',
+                TitleVis => 'Berechnung der skalierten und verschobenen Gaußsumme:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Die gewöhnliche Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}} ist definiert als:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ k = 1 }^{ n }  k  =  \frac{ n \cdot (n + 1) }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unserer skalierte aber nicht verschobene Gaußsumme beginnt hingegen bei der Null – nicht bei der Eins –'."\n".
+                    'und läuft bis zum Schritt oder Stützpunkt der direkt einen vor dem Intervalende liegt.'."\n".
+                    'Also läuft sie bis Eins weniger als die Schrittanzahl, folglich bis \lm{ N - 1 }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n \cdot \s^{-1}  =  \s^{-1} \cdot \sum_{ k = 0 }^{ N - 1 }  k  =  \s^{-1} \cdot \frac{ (N - 1) \cdot N }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unsere verschobene Summe beginnt nun nicht bei Null, sondern beim endlichen Wert \lm{ a }.'."\n".
+                    'Wir bekommen also eine Fläche unterhalb unserer Summe dazu, die \lm{ a } hoch'."\n".
+                    'und \lm{ N } Schritte breit ist, also \lm{ a \cdot N }.'."\n",
+                      'Da'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  N  =  ( b - a ) \cdot \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'folgt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \s^{-1} \cdot \frac{ (N - 1) \cdot N }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \s^{-1} \cdot \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und für die Verschiebung der korrigierende Summand'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot N  =  a \cdot ( b - a ) \cdot \s  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sodass wir insgesamt für unsere gesuchte skalierte und verschobene Gaußsumme'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot N \;\; + \;\; \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s \;\; + \;\; \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'erhalten.'."\n",
+                    ''))),
+
+                    ))),
+
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s + \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
@@ -1336,7 +1399,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a^{2} ) \\\ \qquad\qquad\qquad\quad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }'),
+                      array( display => 'off', latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} \cdot ( b - a )^{2} \cdot \s - 2 \, \s^{-1} ( b - a ) }{ 2 } \\\ \qquad\qquad\qquad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} ( b - a )^{2} \cdot \s - 2 \, \s^{-1} \cdot ( b - a ) }{ 2 } \\\ \qquad\qquad\qquad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \s^{-1} \cdot ( b - a )^{2} \cdot \s - \s^{-1} \cdot ( b - a ) \\\ \qquad\qquad\qquad + \;\; ( b - a ) \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\quad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\qquad\qquad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die beiden infinitesimalen Korrekturterme heben sich exakt auf:'."\n".
@@ -1350,14 +1417,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a^{2} )  }'),
+                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + (b − a)^{2}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und damit:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  b^{2} − a^{2}  }'),
+                      array( display => 'off', latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a b − 2 a^{2} + (a^{2} − 2 a b + b^{2})  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  − a^{2} + b^{2}  }'),
+                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  b^{2} − a^{2}  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  b^{2} − a^{2}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Da'."\n".
@@ -2050,7 +2120,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\mathbb{Z}}  =  \bigcap_{ p \in \mathbb{P} }  V_{p}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  \bigcap_{ p \in \mathbb{P} }  V_{p}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei sind die \lm{ V_{p} } Bewertungsringe zu den endlichen Primzahlen \lm{ p }.'."\n".
