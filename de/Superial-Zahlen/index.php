@@ -121,7 +121,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

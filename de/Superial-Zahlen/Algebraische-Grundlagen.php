@@ -332,14 +332,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  u  =  \sum_{ \forall k \in E } a_{k} \s^{k}  }'),
+                      array( display => 'on',  latex => '{  u  =  \sum_{ k \in E } a_{k} \s^{k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v  =  \sum_{ \forall k \in F } b_{k} \s^{k}  }'),
+                      array( display => 'on',  latex => '{  v  =  \sum_{ k \in F } b_{k} \s^{k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'wobei \lm{ a_{k} \ne 0 } für \lm{ k \in E } und \lm{ b_{k} \ne 0 } für \lm{ k \in F }. \\\\'."\n".
@@ -353,7 +353,7 @@
                     ))),
                   array( 'text', array( text => array(
                   '\bold{Definition (Leitterm).} \\\\'."\n".
-                    'Für \lm{ 0 \ne w = \sum_{ \forall k \in W } c_{k} \s^{k} } sei'."\n".
+                    'Für \lm{ 0 \ne w = \sum_{ k \in W } c_{k} \s^{k} } sei'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -371,7 +371,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.EN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ \forall k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  w  :=  u - v  =  \sum_{ k \in E \cup F } *( a_{k} - b_{k} *) \s^{k}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann ist \lm{ w \ne 0 }.'."\n".
@@ -590,7 +590,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( 1 + u *)  :=  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } (-u)^{m}  }'),
+                      array( display => 'on',  latex => '{  *( 1 + u *)  :=  \sum_{ m \in [ 0, \infty [_{\mathbb{Z}} } (-u)^{m}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und setzen dann'."\n".
@@ -600,11 +600,11 @@
                       array( display => 'on',  latex => '{  a^{−1}  :=  a_{n}^{−1} \cdot \s^{−n} \cdot ( 1 + u )^{−1}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Jetzt müssen wir zwei Dinge zeigen: (i) \lm{ \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (−u)^{m} } ist ein Element von \lm{ \mathbb{S} } (wohldefiniert), und (ii) es ist wirklich das Inverse.'."\n".
+                    'Jetzt müssen wir zwei Dinge zeigen: (i) \lm{ \sum_{ m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (−u)^{m} } ist ein Element von \lm{ \mathbb{S} } (wohldefiniert), und (ii) es ist wirklich das Inverse.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\bold{Lemma 5 (Wohldefiniertheit der geometrischen Reihe).} \\\\'."\n".
-                    'Die Reihe \lm{ b := \sum_{ \forall m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (-u)^{m} } definiert ein Element \lm{ b \in \mathbb{S} }. \\\\'."\n".
+                    'Die Reihe \lm{ b := \sum_{ m \in \lbrack 0, \infty \lbrack_{\mathbb{Z}} } (-u)^{m} } definiert ein Element \lm{ b \in \mathbb{S} }. \\\\'."\n".
                     '\italic{Begründung:}'."\n".
                     'Jeder Faktor \lm{ u } hat nur Exponenten \lm{ < 0 }.'."\n".
                     'Daher hat \lm{ (−u)^{m} } nur Exponenten \lm{ \le −m }.'."\n".
@@ -623,9 +623,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  b \cdot (1 + u)  =  *( \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} *) \cdot (1 + u)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;+ \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! u \cdot (-u)^{m}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ \forall m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;- \sum_{ \forall m \in [ 1, \infty [_{\mathbb{Z}} } \!\! (-u)^{m}  }'),
+                      array( display => 'on',  latex => '{  b \cdot (1 + u)  =  *( \sum_{ m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} *) \cdot (1 + u)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;+ \sum_{ m \in [ 0, \infty [_{\mathbb{Z}} } \!\! u \cdot (-u)^{m}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  \sum_{ m \in [ 0, \infty [_{\mathbb{Z}} } \!\! (-u)^{m} \;- \sum_{ m \in [ 1, \infty [_{\mathbb{Z}} } \!\! (-u)^{m}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u) \\\ \qquad\quad  =  *( (-u)^{0} + (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *) \\\ \qquad\qquad\qquad\quad\;\;\; - *( (-u)^{1} + (-u)^{2} + (-u)^{3} + (-u)^{4} + \cdots *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  (-u)^{0}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  b \cdot (1 + u)  =  1  \;\; .  }'),
@@ -1716,7 +1716,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
                                           label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1725,7 +1725,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\R} *)  *[  u  =  \! \sum_{ i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".
