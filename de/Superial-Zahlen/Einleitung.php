@@ -1340,7 +1340,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n \cdot \s^{-1}  =  \s^{-1} \cdot \sum_{ k = 0 }^{ N - 1 }  k  =  \s^{-1} \cdot \frac{ (N - 1) \cdot N }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \sum_{ k = 0 }^{ N - 1 }  k \cdot \s^{-1}  =  \frac{ (N - 1) \cdot N }{ 2 } \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Unsere verschobene Summe beginnt nun nicht bei Null, sondern beim endlichen Wert \lm{ a }.'."\n".
@@ -1357,10 +1357,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \s^{-1} \cdot \frac{ (N - 1) \cdot N }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \s^{-1} \cdot \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) \cdot \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) \cdot \s }{ 2 } \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }',
+                                          label_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme', label_text => '\name{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'und für die Verschiebung der korrigierende Summand'."\n".
