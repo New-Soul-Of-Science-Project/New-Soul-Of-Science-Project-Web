@@ -1624,8 +1624,7 @@
                     'Zahlen wie \lm{ ω } sind selber keine Superial-Zahlen, spielen in der Arithmetik der Superial-Zahlen im Hintergrund – oder Untergrund –'."\n".
                     'eine wichtige Rolle.'."\n".
                     'Zunächst im wesentlichen in den Exponenten der Primzahlen, wenn wir das Primzahl-Flächenprodukt von \lm{ \s } betrachten.'."\n".
-                    'Schließlich dann auch in den Anzahlen oder Summen der Elemente der Teilmengen der Superial-Zahlen,'."\n".
-                    'wie vorstehend im \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen}{Ausblick} angedeutet.'."\n".
+                    'Schließlich dann auch in den \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahlen oder Erzeugungssummen} der Elemente der Teilmengen der Superial-Zahlen.'."\n".
                     'Nun aber zu den Exponenten.'."\n",
                       'Multiplizieren wir \lm{ \s } mit \lm{ 2 }, so verändert sich die Potenz der Primzahl \lm{ 2 } im Primzahl-Flächenprodukt von \lm{ 2^{ω} } zu \lm{ 2^{ω + 1} },'."\n".
                     'wie wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten}{oben} schon betrachtet haben.'."\n".

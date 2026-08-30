@@ -928,30 +928,33 @@
                   'Weg 1: Operative Definition', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die operative Definition zählt die Elemente einer Menge \lm{ A } innerhalb des biordinalen Zählfensters'."\n".
-                    '\lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } mithilfe der Indikatorfunktion:'."\n".
+                    'Die operative Definition zählt die Elemente einer Menge \lm{ A } mithilfe'."\n".
+                    'der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme}{Erzeugungssumme} und der Indikatorfunktion:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(A*)  :=  \sum_{k \in ]-ω,\, ω[_{\mathbb{Bn}}}  \mathbf{1}_A(k)  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( A *)  :=  \sumx_{ k \in A }  \mathbf{1}_{A}( k )  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\lm{ \overline{\#}_{\mathrm{erz}}(\mathbb{N}) = ω } ist die Grundlage der operativen Definition:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{N}*)  =  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  =  \sumx_{ k \in \mathbb{N} }  \mathbf{1}_{\mathbb{N}}( k )  =  ω  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das Zählfenster \lm{ \rbrack -ω, ω \lbrack_{\mathbb{Bn}} } ist biordinal-symmetrisch: Die negativen ganzen Zahlen'."\n".
+                    'Die negativen ganzen Zahlen'."\n".
                     '\lm{ \mathbb{Z}^{-} } entstehen durch Verschiebung der natürlichen Zahlen, unter Erhalt der Zählrichtung'."\n".
-                    '(\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{biordinale Asymmetrie}), und belegen'."\n".
-                    'ebenso \lm{ ω } Positionen im Zählfenster.'."\n".
+                    'im Zählfenster \lm{ \rbrack \!-\!ω, ω \lbrack_{\mathbb{On}_{0}^{\pm}} }'."\n".
+                    '\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{biordinal-struktursymmetrisch mit Wertsymmetrie}, und belegen'."\n".
+                    'ebenso \lm{ ω } Positionen.'."\n".
                     'Da \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } das Fenster disjunkt aufteilen, folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*(\mathbb{Z}*)  =  ω  +  ω  =  2ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  :=  \sumx_{ k \in \mathbb{Z} }  \mathbf{1}_\mathbb{Z}( k )  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  :=  \sumx_{ k \in ]-ω,\, ω[_{\mathbb{On}_{0}^{\pm}} }  \mathbf{1}_\mathbb{Z}( k )  }'),
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  =  ω  +  ω  =  2ω  \;\; .  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl:AxiomatischeFundierung', text =>
                   'Weg 2: Axiomatische Fundierung', subline =>
@@ -1009,7 +1012,7 @@
                       array( display => 'on',  latex => '{  2 \mathbb{N}  =  *\{ 0, 2, 4, 6, 8, \cdots *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Klassisch gilt'."\n".
+                    'Klassisch gilt für die Mächtigkeit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1025,11 +1028,20 @@
                       array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( 2 \mathbb{N} *)  =  \frac{ ω }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Schreibweise \lm{ \frac{ ω }{ 2 } } ist hier im Sinne der erweiterten arithmetischen Struktur von \lm{ ω }'."\n".
-                    'im Beweis der \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹} zu verstehen.'."\n".
+                    'Die Schreibweise \lm{ \frac{ ω }{ 2 } } ist hier im Sinne'."\n".
+                    'der kanonisch erweiterten arithmetischen Primexponentenstruktur von \lm{ ω }'."\n".
+                    'im Rahmen des Beweises der \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}‹} zu verstehen.'."\n".
                     'Die gewöhnliche Mächtigkeit sieht diesen Unterschied nicht;'."\n".
-                    'die Erzeugungsanzahl soll solche Unterschiede der Erzeugungsstruktur erfassbar machen.'."\n",
-                      'Ein wichtiges Beispiel liefert die Menge der ganzen Zahlen \lm{ \mathbb{Z} }.'."\n".
+                    'die Erzeugungsanzahl soll solche Unterschiede der Erzeugungsstruktur erfassbar machen.'."\n".
+                    'Und so sind die Erzeugungsanzahlen von \lm{ 2 \mathbb{N} } und \lm{ \mathbb{N} } ungleich:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( 2 \mathbb{N} *)  \neq  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ ω }{ 2 }  \neq  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ein wichtiges Beispiel liefert die Menge der ganzen Zahlen \lm{ \mathbb{Z} }.'."\n".
                     'In der gewöhnlichen Mengenlehre gilt'."\n".
                     ''))),
                   array( 'equations',
@@ -1081,12 +1093,22 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Auch \lm{ 2 ω } ist hier als Erzeugungsanzahl in der erweiterten arithmetischen Struktur von \lm{ ω } zu verstehen.'."\n".
+                    'Auch \lm{ 2 ω } ist hier als Erzeugungsanzahl in'."\n".
+                    'der oben angesprochenen, kanonisch erweiterten arithmetischen Primexponentenstruktur von \lm{ ω } zu verstehen.'."\n".
                     'Die biordinale Darstellung der negativen Zahlen zeigt dabei,'."\n".
                     'wie negative Zahlen innerhalb einer mengentheoretischen Ontologie dargestellt werden können.'."\n".
                     'Die Erzeugungsanzahl knüpft an diese Darstellung an, indem sie nicht nur die Anzahl der Elemente,'."\n".
                     'sondern auch die Richtung und Struktur ihrer Erzeugung berücksichtigt.'."\n",
-                      'Und für die superiale Basis ist die Erzeugungsanzahl:'."\n".
+                      'So ist auch hier die Erzeugungsanzahl differenzierter als die Mächtigkeit und sieht '."\n",
+                    'unterschiede, wo die Mächtigkeit aus gutem Grund gröber sieht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  \neq  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 ω  \neq  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und für die superiale Basis ist die Erzeugungsanzahl:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
