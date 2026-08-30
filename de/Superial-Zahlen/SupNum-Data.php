@@ -182,11 +182,11 @@
       jump_ary => array(
         'OM:SupNum:Algebraische-Grundlagen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
-          'OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Fo.1'),
+          'OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Gru.1'),
                         
         'OM:SupNum:Algebraische-Grundlagen:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Fo.Z.6'),
-          'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Fo.Z.7'),
+          'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Gru.Z.6'),
+          'OM:SupNum:Algebraische-Grundlagen:GanzeSZ:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Gru.Z.7'),
 
         'OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'X' */),
 
@@ -204,17 +204,17 @@
 
         'OM:SupNum:Algebraische-Grundlagen:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
-            'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Fo.F.ZM.13'),
-            'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Fo.F.ZM.14'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Gru.F.ZM.13'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Gru.F.ZM.14'),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem' => array( headline_text => 'Stellenwertsystem'/* , headline_text_short => 'X' */),
             'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:Berechnung-Stellen' => array( headline_text => 'Berechnung der einzelnen Stellen im superialen Stellenwertsystem'/* , headline_text_short => 'X' */),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Intervall-Menge' => array( headline_text => 'Intervall-Menge'/* , headline_text_short => 'X' */),
             'OM:SupNum:Algebraische-Grundlagen:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der Schichten einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
-            'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Fo.F.SS.1'),
-            'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Fo.F.SS.2'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Gru.F.SS.1'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superial-kleine-ganze-Zahlen' => array( headline_text => 'SN.Gru.F.SS.2'),
           'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen' => array( headline_text => 'Eingrenzung der Schichten der Superial-Zahlen'/* , headline_text_short => 'X' */),
-            'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen' => array( headline_text => 'SN.Fo.F.ES.1'),
+            'OM:SupNum:Algebraische-Grundlagen:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen' => array( headline_text => 'SN.Gru.F.ES.1'),
       ),
     ),
     'OM:SupNum:Algebraische-Koeffizienten-Vermutung' => array(

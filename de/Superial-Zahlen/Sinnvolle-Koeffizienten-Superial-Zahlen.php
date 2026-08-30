@@ -1365,7 +1365,7 @@
                     ''))),
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ \s^{n} + \s^{m} }{ \s^{n} }   =  \frac{ \s^{n} }{ \s^{m} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s^{n} }{ \s^{n} + \s^{m} }   =  \frac{ \s^{m} }{ \s^{n} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s^{2 n} }{ \s^{n} + \s^{m} }   =  \s^{m}  }'),
@@ -1383,7 +1383,7 @@
                     'Unter Ansatz der \lm{ p }-\lm{ q }-Formel erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  x^{2} + p x + q  =  0  }'),
                       array( display => 'on',  latex => '{  p  =  a  }'),
                       array( display => 'on',  latex => '{  q  =  -a^{2}  }'),
@@ -1406,14 +1406,14 @@
                     'Wenn wir annehmen, dass'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  m_{i}  =  n - k_{i}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'dann erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Fo.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n - k_{1} = \log_{\s} \phi + n  \land  n - k_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *) + n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  -k_{1} = \log_{\s} \phi  \land  -k_{2} = \log_{\s} *( - \frac{ 1 }{ \phi } *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s^{-k_{1}} = \phi  \land  \s^{-k_{2}} = - \frac{ 1 }{ \phi }  }'),
