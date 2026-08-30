@@ -906,7 +906,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{-}  =  ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}^{-}  =  ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
@@ -920,16 +920,16 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
-                      'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen'."\n".
+                      'Sei \lm{ \overline{\#} } das Symbol für den Operator, der die Erzeugungsanzahl der Elemente einer Menge liefert,'."\n".
+                      'so gilt, auch wegen der oben definierten Gleichsetzung von Erzeugungsanzahl und deren entsprechenden Mengen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}^{-}  =  \overline{\#} \mathbb{N}  =  ω  =  \mathbb{N}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 ω  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}  =  \overline{\#} \mathbb{N} + \overline{\#} \mathbb{Z}^{-}  =  2 ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{+}  =  \# *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}^{+}  =  \overline{\#} *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was damit gezeigt werden sollte.'."\n",
@@ -979,8 +979,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                      array( display => 'on', latex => '{  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
