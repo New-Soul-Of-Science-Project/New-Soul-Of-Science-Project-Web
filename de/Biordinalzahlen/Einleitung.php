@@ -949,10 +949,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{Z}} z  =  \sum_{ n \in \mathbb{N}} n \; + \sum_{ n \in \mathbb{N}} - *( n + 1 *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ z \in \mathbb{Z}} z  =  \sum_{ n \in \mathbb{N}} n \; - \sum_{ n \in \mathbb{N}} n \; - \sum_{ n \in \mathbb{N}} 1  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ z \in \mathbb{Z}} z  =  - \sum_{ n \in \mathbb{N}} 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ z \in \mathbb{Z}} z  =  - ω  }',
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ n \in \mathbb{N}} n \; + \sumx_{ n \in \mathbb{N}} - *( n + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ n \in \mathbb{N}} n \; - \sumx_{ n \in \mathbb{N}} n \; - \sumx_{ n \in \mathbb{N}} 1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  - \sumx_{ n \in \mathbb{N}} 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  - ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -979,8 +979,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                      array( display => 'on', latex => '{  \frac{ \sumx_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sumx_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(

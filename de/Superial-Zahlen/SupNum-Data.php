@@ -200,6 +200,9 @@
 
         'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }', headline_text_short => 'Die Erzeugungsanzahl'),
 
+        'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme' => array( headline_text => 'Die Erzeugungssumme \lm{ \sumx }', headline_text_short => 'Die Erzeugungssumme'),
+          'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+
         'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste' => array( headline_text => 'Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste'/* , headline_text_short => '' */),
 
         'OM:SupNum:Algebraische-Grundlagen:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),

@@ -1121,6 +1121,309 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme'),
+                    )),
+              )
+          ); ?>
+
+
+          <!--  • Die Erzeugungssumme \lm{ \sumx }  -->
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Irreduzible Polynome}',
+                    '• Hier die Erzeugungssumme definieren, „siehe Einleitung“, „10. Aktual unendliche Summen als neue Rechenobjekte“.',
+                    '• Ggf. die Definition des Primexponentenprodukts nach hier, die jetzt auf der Seite „Primzahlprodukt-Vermutung“, „Definition: Die Mengen-Primfakultät“, „Notationsvereinbarung – Primexponentenprodukt“ steht.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Die Erzeugungssumme \lm{ \sumx } spielt in der superialen integration eine wesentliche Rolle.'."\n".
+                    'So ist sie auch eng mit der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
+                    'sowie auch mit'."\n".
+                    'dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}'."\n".
+                    '\lm{ \prodx } verwoben.'."\n",
+                      'In vielen Fällen fällt die Erzeugungssumme mit einer normalen aktual unendlichen Summe zusammen.'."\n".
+                    'Dies gilt beispielsweise für die simpelste aktual unendliche Summe über alle endlichen natürlichen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in \mathbb{N} }  1  =  \sum_{ n \in \mathbb{N} }  1  =  ω  =  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das kommt offensichtlich daher, weil die Reihenfolge in dieser Summe keine Rolle spielt,'."\n".
+                    'um klar zu erkennen, was das Ergebnis ist.'."\n".
+                    'Hier die bekannte vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n",
+                      'In anderen Fällen ist dies nicht unbedingt klar.'."\n".
+                    'Denn wollen wir die in den Superial-Zahlen wichtige Summe aller endlichen ganzen Zahlen bestimmen,'."\n".
+                    'dann kommen Fragen auf.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
+
+                'Erzeugungssumme der ganzen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich vermute, viele Menschen würden sagen, diese Summe muss Null sein.'."\n".
+                    'Denn schließlich gibt es zu jeder positiven Zahl eine negative, das weiß man ja.'."\n".
+                    'Diese heben sich paarweise also auf, sind alle zusammen folglich Null,'."\n".
+                    'und die überbleibende Null ändert daran ja auch nichts mehr.'."\n",
+                      'Doch dies ist in den Superial-Zahlen und in den verwandten'."\n".
+                    '\jump{OM:BiOrd:Einleitung:NeueEinsichten}{Biordinalzahlen} nicht der Fall.'."\n".
+                    'Welches Ergebnis hat diese Summe und wie kommt es dazu?'."\n",
+                      'Dies kommt, weil Erzeugungssummen werden generell entlang ihrer Erzeugungshierarchie berechnet.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
+
+                'Definition: Erzeugungssumme der ganzen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die ›Erzeugungssumme der ganzen Zahlen‹ ist eine erzeugungshierarchische Paarungssumme.'."\n".
+                    'Sie ist keine gewöhnliche unendliche Reihe,'."\n".
+                    'sondern eine Summe entlang der Erzeugung von \lm{ \mathbb{Z} } aus \lm{ \mathbb{N} }.'."\n",
+                      'Die natürlichen Zahlen entstehen zuerst aus dem Zählen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ihre Erzeugungsanzahl ist'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  =  ω  \;\; .  }'),
+                    ))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Aus \lm{ \mathbb{N} } wird anschließend die Menge der negativen ganzen Zahlen erzeugt durch die Abbildung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ν:  \;\;  \mathbb{N} \rightarrow \mathbb{Z}^{−} ,  \;\;\;\;  ν( n ) = −( n + 1 )  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'siehe \jumpname{OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Fig-OntologieGanzeZahlen}.'."\n".
+                    'Damit gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}^{−}  =  *\{  ν( n )  *|*  n \in \mathbb{N}  *\} \\\ \quad\;  =  *\{ −1, −2, −3, -4, -5, \cdots *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die ganzen Zahlen entstehen erzeugungshierarchisch als disjunkte Vereinigung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}  =  \mathbb{Z}^{−} \cup \mathbb{N}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die erzeugungshierarchische Summe über \lm{ \mathbb{Z} } wird nun nicht durch'."\n".
+                    'eine beliebige Aufzählung von \lm{ \mathbb{Z} } definiert,'."\n".
+                    'sondern durch die kanonische Paarung jedes erzeugenden Elements \lm{ n \in \mathbb{N} }'."\n".
+                    'mit dem aus ihm erzeugten negativen Element \lm{ ν( n ) }.'."\n".
+                    'Daher definieren wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  :=  \sumx_{ n \in \mathbb{N} }  *( n + ν( n ) *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ν( n )  =  -( n + 1 )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n + ν( n )  =  n − ( n + 1 )  =  −1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Also gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  \sumx_{ n \in \mathbb{N} }  *( -1 *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da die Summe über genau \lm{ ω } erzeugte natürliche Stufen läuft, erhalten wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in \mathbb{N} }  -1  =  - \overline{\#}_{\mathrm{erz}}\!*( \mathbb{N} *)  =  -ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ist die erzeugungshierarchische Summe der ganzen Zahlen definiert durch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Definition hängt wesentlich an der Erzeugungshierarchie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  \longrightarrow  \mathbb{Z}^{-}  \longrightarrow  \mathbb{Z}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Sie ist daher keine gewöhnliche unendliche Reihe und keine beliebige Umordnung der ganzen Zahlen,'."\n".
+                    'sondern eine kanonische Paarungssumme entlang der Erzeugung von \lm{ \mathbb{Z} } aus \lm{ \mathbb{N} }.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
+
+                'Berechnung der ›Erzeugungssumme der ganzen Zahlen‹ über die Gaußsche Summenformel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir erhalten übrigens auch das gleiche Ergebnis, wenn wir die beiden Einzelsummen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  :=  \sumx_{ n \in \mathbb{N} }  *( n + ν( n ) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  \sumx_{ n \in \mathbb{N} }  n  \;\; + \;\;  \sumx_{ n \in \mathbb{N} }  ν( n )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'über die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                    ''."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ k = 1 }^{ N }  k  =  \frac{ N \cdot (N + 1) }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'berechnen, wenn wir berücksichtigen, dass wir bei Null beginnen und \lm{ ω } nicht der letzte Summand ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ k = 0 }^{ N - 1 }  k  =  \frac{ (N - 1) \cdot N }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für den ersten Summanden ergibt sich dann die Summe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in \mathbb{N} }  n  =  \frac{ (ω - 1) \cdot ω }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Summe das zweiten Summanden beginnt bei \lm{ -1 } und läuft bis \lm{ -N }, also bis \lm{ -ω }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ k = -1 }^{ -N }  k  =  - \frac{ N \cdot (N + 1) }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \sumx_{ n \in \mathbb{N} }  ν( n )  =  \sumx_{ n \in \mathbb{N} }  *( -( n + 1 ) *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  \sumx_{ n \in \mathbb{N} }  ( -n )  \;\; + \;\;  \sumx_{ n \in \mathbb{N} }  -1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \sumx_{ n \in \mathbb{N} }  n  \;\; - \;\;  \sumx_{ n \in \mathbb{N} }  1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ (ω - 1) \cdot ω }{ 2 } - ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ((ω - 1) \cdot ω) + 2 ω }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ((ω - 1 + 2) \cdot ω) }{ 2 }  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ((ω + 1) \cdot ω) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ω \cdot (ω + 1) }{ 2 }  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ω \cdot (ω + 1) }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So ergibt sich aud beiden Summanden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  \frac{ (ω - 1) \cdot ω }{ 2 }  \;\; + \;\;  *( - \frac{ ω \cdot (ω + 1) }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  \frac{ (ω - 1) \cdot ω - ω \cdot (ω + 1) }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  \frac{ ω \cdot ( (ω - 1) - (ω + 1) ) }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  \frac{ ω \cdot ( -2 ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
+
+                'Kohärenzargument zur ›Erzeugungssumme der ganzen Zahlen‹', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ergänzend zur ontologischen Begründung der Biordinalzahlen'."\n".
+                    'und der Erzeugungssummendefinition können wir auch'."\n".
+                    'an der superialen Integration erkennen, dass unsere Summe korrekt ist.'."\n".
+                    'Das Ergebnis ist also keine isolierte biordinale Kuriosität'."\n".
+                    'oder eine Kuriosität der Erzeugungsidee.'."\n".
+                    'Diese Summe liefert genau den Korrekturterm, den die superiale Integration braucht,'."\n".
+                    'damit die Integration der superialen Ableitung von \lm{ f( x ) = x^{2} },'."\n".
+                    'mit dem Ergebnis \lm{ f_{\s}\'( x ) = 2 x + \s^{-1} }, wieder die Ursprungsfunktion ergibt.'."\n",
+                      'Für die Integration über \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}_{\Z}^{-1}} }'."\n".
+                    'ist die zentrale Stützstellensumme:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                                          label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Genau der zweite Summand'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist der Korrekturterm, der die korrekte Rückrechnung ermöglicht.'."\n".
+                    'Dieser Korrekturterm wird mit Hilfe der superial kleinen ganzen Zahlen über die Summe aller ganzen Zahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'hergeleitet.'."\n".
+                    'Skalieren wir diese Summe mit \lm{ \s^{-1} }, entsteht'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  - \frac{ ω }{ \s }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mit der Anzahl der Koeffizienten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( [0,x[_{\mathbb{A}_{\R}} *)  =  \frac{ x \cdot \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ergibt sich dann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ x \cdot \s }{ 2 ω } \cdot *( - \frac{ ω }{ \s } *)  =  - \frac{ x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Genau diese Rechnung erscheint in der'."\n".
+                    '\jump{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}{Untersuchung der Integralsummen}.'."\n",
+                      'Das bedeutet: Die Formel'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist nicht beliebig.'."\n".
+                    'Sie ist der erzeugungstheoretische Wert, der die infinitesimale Korrektur'."\n".
+                    'der linken Stützstellensumme liefert.'."\n",
+                      'Ohne den Korrekturterm würde diese Aufhebung nicht funktionieren.'."\n".
+                    'Dann ergäbe die Integration der superialen Ableitung von \lm{ x^{2} } nicht exakt \lm{ x^{2} },'."\n".
+                    'sondern einen infinitesimal verschobenen Wert.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste'),
                     )),
               )
@@ -1133,7 +1436,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

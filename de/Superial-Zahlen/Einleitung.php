@@ -643,7 +643,7 @@
                     'nur indirekt über Grenzwerte, Reihenentwicklungen, Integralwerte oder gar nicht erscheinen'."\n",
                       'Eine zentrale Rolle spielt dabei die Erzeugungsstruktur.'."\n".
                     'Wird über ein erzeugtes Mengenintervall \lm{ I } die konstante Funktion \lm{ 1 } mit der'."\n".
-                    '\jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungssumme} summiert,'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme}{Erzeugungssumme} summiert,'."\n".
                     'so entsteht nicht bloß eine Kardinalitätsaussage, sondern die Erzeugungsanzahl'."\n".
                     'dieses Intervalls:'."\n".
                     ''))),
