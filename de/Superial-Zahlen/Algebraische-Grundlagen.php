@@ -845,7 +845,6 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
-                    '• Hier die Erzeugungssumme definieren, „siehe Einleitung“, „10. Aktual unendliche Summen als neue Rechenobjekte“.',
                     '• Ggf. die Definition des Primexponentenprodukts nach hier, die jetzt auf der Seite „Primzahlprodukt-Vermutung“, „Definition: Die Mengen-Primfakultät“, „Notationsvereinbarung – Primexponentenprodukt“ steht.',
                     ))),
 
@@ -1136,9 +1135,8 @@
                       array(  jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Irreduzible Polynome}',
-                    '• Hier die Erzeugungssumme definieren, „siehe Einleitung“, „10. Aktual unendliche Summen als neue Rechenobjekte“.',
                     '• Ggf. die Definition des Primexponentenprodukts nach hier, die jetzt auf der Seite „Primzahlprodukt-Vermutung“, „Definition: Die Mengen-Primfakultät“, „Notationsvereinbarung – Primexponentenprodukt“ steht.',
                     ))),
 
