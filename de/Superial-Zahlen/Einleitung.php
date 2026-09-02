@@ -1543,10 +1543,10 @@
                     'Aus dieser Zerlegung erkennt man die drei verschiedenen Arten von Beiträgen zur Summe:'."\n".
                     ''))),
 
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '1. die untere Randfaser bei \lm{ 0 },',
-                        '2. die inneren ganzzahligen Erzeugungsfasern über den reell algebraischen Zwischenwerten \lm{ a },',
-                        '3. die obere Randfaser unmittelbar unterhalb von \lm{ x }.',
+                  array( 'bulletlist', array( ListStyle => 'number', bullet_ary => array(
+                        'die untere Randfaser bei \lm{ 0 },',
+                        'die inneren ganzzahligen Erzeugungsfasern über den reell algebraischen Zwischenwerten \lm{ a },',
+                        'die obere Randfaser unmittelbar unterhalb von \lm{ x }.',
                     ))),
 
                   array( 'text', array( text => array(
