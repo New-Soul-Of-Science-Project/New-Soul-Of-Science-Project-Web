@@ -1141,7 +1141,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Die Erzeugungssumme \lm{ \sumx } spielt in der superialen integration eine wesentliche Rolle.'."\n".
+                    'Die \italic{Erzeugungssumme} \lm{ \sumx } spielt in der superialen integration eine wesentliche Rolle.'."\n".
                     'So ist sie auch eng mit der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
                     'sowie auch mit'."\n".
                     'dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}'."\n".
@@ -1168,19 +1168,22 @@
                   array( 'text', array( text => array(
                     'Ich vermute, viele Menschen würden sagen, diese Summe muss Null sein.'."\n".
                     'Denn schließlich gibt es zu jeder positiven Zahl eine negative, das weiß man ja.'."\n".
-                    'Diese heben sich paarweise also auf, sind alle zusammen folglich Null,'."\n".
-                    'und die überbleibende Null ändert daran ja auch nichts mehr.'."\n",
+                    'Diese heben sich also paarweise auf, sind alle zusammen folglich Null,'."\n".
+                    'und die überbleibende Null ändert daran ja auch nichts mehr.'."\n".
+                    'Mit anderen Worten, positive und negative Zahlen sind Spiegelbilder.'."\n",
                       'Doch dies ist in den Superial-Zahlen und in den verwandten'."\n".
-                    '\jump{OM:BiOrd:Einleitung:NeueEinsichten}{Biordinalzahlen} nicht der Fall.'."\n".
+                    '\jump{OM:BiOrd:Einleitung:NeueEinsichten}{Biordinalzahlen} strukturell – ontologisch – nicht der Fall.'."\n".
+                    'Denn wir haben es mit einer wertbezogenen Asymmetrie zwischen positiven und negativen ganzen Zahlen zutun,'."\n".
+                    'wie wir gleich sehen.'."\n".
                     'Welches Ergebnis hat diese Summe und wie kommt es dazu?'."\n",
-                      'Dies kommt, weil Erzeugungssummen werden generell entlang ihrer Erzeugungshierarchie berechnet.'."\n".
+                      'Es kommt daher, weil Erzeugungssummen generell entlang ihrer \italic{Erzeugungshierarchie} berechnet werden.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Erzeugungssumme-der-ganzen-Zahlen', text =>
 
                 'Definition: Erzeugungssumme der ganzen Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die ›Erzeugungssumme der ganzen Zahlen‹ ist eine erzeugungshierarchische Paarungssumme.'."\n".
+                    'Die \italic{Erzeugungssumme der ganzen Zahlen} ist eine \italic{erzeugungshierarchische Paarungssumme}.'."\n".
                     'Sie ist keine gewöhnliche unendliche Reihe,'."\n".
                     'sondern eine Summe entlang der Erzeugung von \lm{ \mathbb{Z} } aus \lm{ \mathbb{N} }.'."\n",
                       'Die natürlichen Zahlen entstehen zuerst aus dem Zählen:'."\n".
@@ -1315,7 +1318,7 @@
                       array( display => 'on',  latex => '{  \sumx_{ n \in \mathbb{N} }  n  =  \frac{ (ω - 1) \cdot ω }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Summe das zweiten Summanden beginnt bei \lm{ -1 } und läuft bis \lm{ -N }, also bis \lm{ -ω }:'."\n".
+                    'Die Summe das zweiten Summanden beginnt bei \lm{ -1 } und läuft bis \lm{ -N }, also bis zum Wert \lm{ -ω }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1331,7 +1334,7 @@
                                     latex_if_visible => '{  \Leftrightarrow  \sumx_{ n \in \mathbb{N} }  ν( n )  =  - \frac{ ω \cdot (ω + 1) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'So ergibt sich aud beiden Summanden:'."\n".
+                    'So ergibt sich aus beiden Summanden:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1342,6 +1345,13 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
                     ))),
+                  array( 'text', array( text => array(
+                    'Wir erkennen also, dieser Zusammenhang steckt im Grunde schon in der Gaußschen Summenformel,'."\n".
+                    'wenn wir berücksichtigen, dass Teilsummen für die natürlichen Zahlen und die negativen Zahlen'."\n".
+                    'separiert behandelt werden müssen und nicht zu vermischen sind;'."\n".
+                    'sowie es ebenso viele negative Zahlen wie natürliche Zahlen gibt, weil jede einzelne negative'."\n".
+                    'aus einer natürlichen entsteht.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:X', text =>
 
                 'Kohärenzargument zur ›Erzeugungssumme der ganzen Zahlen‹', subline =>
@@ -1361,7 +1371,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
-                                          label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Genau der zweite Summand'."\n".

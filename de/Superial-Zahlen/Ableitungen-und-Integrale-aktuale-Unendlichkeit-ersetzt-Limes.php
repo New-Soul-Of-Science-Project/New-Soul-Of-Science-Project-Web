@@ -1494,11 +1494,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  x + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{\Z}  *]  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-ganze-SuperialZahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-ganze-SuperialZahlen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Für die genaue Menge können wir, angelehnt an die später gefundene Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s},'."\n".
-                    'folgende Beschreibung geben – wie immer mit \lm{ x \in \mathbb{A}_{\R} }:'."\n".
+                    'folgende Beschreibung geben – auch mit \lm{ x \in \mathbb{A}_{\R} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1765,12 +1766,12 @@
                     'Den neuen Ausdruck für den ersten Summanden des uns bekannten Ergebnisses der superial kleinen ganzen Zahlen,'."\n".
                     'von Null bis ausschließlich \lm{ x }, können wir so interpretieren:'."\n",
                       'Die erste Summe in der Klammer steht für alle superial kleinen ganzen Zahlen,'."\n".
-                    'deren ganzer Zahlenanteil Null oder positiv sind.'."\n".
+                    'deren ganzer Zahlenanteil Null oder positiv ist.'."\n".
                     'Die zweite Summe in der Klammer steht für alle superial kleinen ganzen Zahlen,'."\n".
-                    'deren ganzer Zahlenanteil rein negativ sind.'."\n".
+                    'deren ganzer Zahlenanteil rein negativ ist.'."\n".
                     'Jede dieser beiden Summen von reell algebraischen Zahlen gibt es daher \lm{ ω } mal,'."\n".
                     'da es sowohl alle Null oder positiven ganzen Zahlen in der Anzahl \lm{ ω } gibt,'."\n".
-                    'als dies auch für alle rein negativen der Fall ist.'."\n",
+                    'wie dies auch für alle rein negativen der Fall ist.'."\n",
                       'Unsere bekannte Gesamtsumme wird dann zu:'."\n".
                     ''))),
                   array( 'equations',
@@ -1793,7 +1794,7 @@
                 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Interessant ist auch die Berechnung der Summe der endlichen Koeffizienten der Superial-Zahlen'."\n".
+                    'Interessant ist auch die Berechnung der Summe der sinnvollen Koeffizienten der Superial-Zahlen'."\n".
                     'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
                     ''))),
 
@@ -1818,11 +1819,12 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle reell algebraischen Zahlen handeln sollte,'."\n".
-                    'wie \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{wir vermuten},'."\n".
-                    'dann habe ich einen Ausdruck für deren Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
+                    'Es handelt sich also um die Summe aller reell algebraischen Zahlen, von der Null bis ohne \lm{ x },'."\n".
+                    'da es sich bei den sinnvollen Koeffizienten der Superial-Zahlen ja um alle reell algebraischen Zahlen handelt,'."\n".
+                    'wie \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{wir vermutet und bewiesen} haben.'."\n".
+                    'Einen Ausdruck für deren Summe habe ich bisher noch nicht gesehen und ich konnte bis heute auch nichts vergleichbares finden.'."\n",
                       'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
-                    'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
+                    'weil sie uns in die Lage versetzen, eine Idee davon zu entwickeln, wie wir solche Summen'."\n".
                     'ausdrücken können.'."\n",
                       'Erstaunlich, wie ähnlich diese Summe der Summe aller superial kleinen Zahlen von Null'."\n".
                     'bis ausschließlich \lm{ x } ist:'."\n".

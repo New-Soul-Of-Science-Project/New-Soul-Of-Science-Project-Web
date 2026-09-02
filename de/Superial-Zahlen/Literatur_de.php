@@ -133,6 +133,7 @@
               'wiki:ValuationRing:2024',
               'wiki:VollstaendigeInduktion:2024',
               'wiki:ZermeloFraenkelMengenlehre:2026',
+              'Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022',
               'Zermelo:UntersuchungenUeberDieGrundlagenDerMengenlehre:1908',
             ));
           ?>

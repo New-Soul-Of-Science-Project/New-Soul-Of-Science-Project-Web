@@ -150,6 +150,7 @@
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'Summen zur Integration von 〈2x〉․〈1〉' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt' => array( headline_text => 'SN.AbIn.NU.1'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel' => array( headline_text => 'Direkte Herleitung der angepassten Gaußschen Summenformel'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-ganze-SuperialZahlen' => array( headline_text => 'SN.AbIn.NU.2'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.3'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen' => array( headline_text => 'SN.AbIn.NU.4'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.5'),
@@ -201,6 +202,7 @@
         'OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl \lm{ \overline{\#}_{\mathrm{erz}} }', headline_text_short => 'Die Erzeugungsanzahl'),
 
         'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme' => array( headline_text => 'Die Erzeugungssumme \lm{ \sumx }', headline_text_short => 'Die Erzeugungssumme'),
+          'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Erzeugungssumme-der-ganzen-Zahlen' => array( headline_text => 'Definition: Erzeugungssumme der ganzen Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
         'OM:SupNum:Algebraische-Grundlagen:Grenzwertabschluss-s-Auswertung-Darstellungsreste' => array( headline_text => 'Grenzwertabschluss, \lm{ \s }-Auswertung und Darstellungsreste'/* , headline_text_short => '' */),
@@ -354,7 +356,10 @@
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:SinnvolleKoeffizienten' => array( headline_text => 'Sinnvolle Koeffizienten'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral' => array( headline_text => 'Beispiel einer superialen Ableitung und ihres Integrals'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme' => array( headline_text => 'Berechnung der skalierten und verschobenen Gaußsumme'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen' => array( headline_text => 'Beispiele für Erzeugungssummen'/*, headline_text_short => 'X'*/),
+              'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme' => array( headline_text => 'SN.Ein.Illu.Diff.22'),
+          'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen' => array( headline_text => 'Beispiele für Erzeugungssummen und Erzeugungsanzahlen'/*, headline_text_short => 'X'*/),
+            'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt' => array( headline_text => 'SN.Ein.Illu.Sum.4'),
+            'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.Ein.Illu.Sum.15'),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele' => array( headline_text => 'Zusammenfassung der Beispiele'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:Beweisstrategien' => array( headline_text => 'Beweisstrategien'/*, headline_text_short => 'X'*/),

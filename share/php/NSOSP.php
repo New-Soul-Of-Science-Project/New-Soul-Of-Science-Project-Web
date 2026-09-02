@@ -107,6 +107,7 @@
   $nSOSp_g_addOn_Text_replace_ary = array(
     // #: hyphenations with "&shy;":
     //      – is necessary if a word is followed by a footnote as examples: "Quan­ten­feld­the­o­rie19" or "Re­la­ti­vi­täts­the­o­rie20"
+    array( 'Paarungssumme', 'Paar&shy;ungs&shy;summe'),
     array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
     array( '-Relativitätstheorie-', 'Re&shy;la&shy;ti&shy;vi&shy;täts&shy;the&shy;o&shy;rie'),
   );
@@ -462,7 +463,7 @@
   $SupNum_g_footnote_text_QuadratischePyramidalzahl = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Summation von Potenzen natürlicher Zahlen; enthält die Formel für die Summe der ersten \lm{ n } Quadratzahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.';
   $SupNum_g_footnote_text_KomplexeZahl          = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung komplexer Zahlen und der eulerschen Formel \lm{ \e^{\i \varphi} = \cos \varphi + \i \sin \varphi }). \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 1–4. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
   $SupNum_g_footnote_text_Kreisteilungspolynom  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt (De aequationibus circuli), S. 397–448 (Kreisteilungspolynome und ihre Irreduzibilität). \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';

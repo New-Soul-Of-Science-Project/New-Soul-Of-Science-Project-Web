@@ -1006,7 +1006,7 @@
                   '')),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\color{*Bearb}{\bold{Bezüge zur Riemannschen Zeta-Funktion} \\\\'."\n".
-                        '– Teilerfremdheit: Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: Vgl. \cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}',
+                          '– Teilerfremdheit: Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: Vgl. \cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}',
                     ))),
                       
                   array( 'text', array( text => array(

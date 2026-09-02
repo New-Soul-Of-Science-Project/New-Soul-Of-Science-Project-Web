@@ -969,7 +969,7 @@
                       array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:GanzeUndNichtganzeSuperialZahlen'),
                       array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:SinnvolleKoeffizienten'),
                       array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral'),
-                      array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen'),
                       array(  jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele'),
                     )),
 
@@ -1302,21 +1302,24 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \sum_{ n \in [ a, b [_{\mathbb{S}_{\Z}^{-1}} } *( 2 n + \s^{-1} *) \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \sumx_{ n \in [ a, b [_{\mathbb{S}_{\Z}^{-1}} } \!\!\!  *( 2 n + \s^{-1} *) \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ausmultipliziert ergibt sich so:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 \, \s^{-1} \cdot \!\!\! \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  \;\; + \;\;  \s^{-2} \cdot \!\!\! \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  }'),
+                      array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 \, \s^{-1} \cdot \!\!\! \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  \;\; + \;\;  \s^{-2} \cdot \!\!\! \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Anzahl der Summanden ist ja, wie oben gezeigt, und so erhalten wir:'."\n".
+                    'Die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
+                    'der Summanden ist ja \lm{ N }, die Anzahl der Stützstellen, wie oben gezeigt,'."\n".
+                    'und so erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  =  ( b - a ) \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  =  N  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! 1  =  ( b - a ) \cdot \s  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die Summe der Stützstellen gilt dann die skalierte und verschobene \jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme}{Gaußsumme}:'."\n".
@@ -1331,16 +1334,16 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ k = 1 }^{ n }  k  =  \frac{ n \cdot (n + 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ k = 1 }^{ n }  k  =  \frac{ n \cdot (n + 1) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Unserer skalierte aber nicht verschobene Gaußsumme beginnt hingegen bei der Null – nicht bei der Eins –'."\n".
+                    'Unsere skalierte aber nicht verschobene Gaußsumme beginnt hingegen bei der Null – nicht bei der Eins –'."\n".
                     'und läuft bis zum Schritt oder Stützpunkt der direkt einen vor dem Intervalende liegt.'."\n".
                     'Also läuft sie bis Eins weniger als die Schrittanzahl, folglich bis \lm{ N - 1 }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \sum_{ k = 0 }^{ N - 1 }  k \cdot \s^{-1}  =  \frac{ (N - 1) \cdot N }{ 2 } \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \sumx_{ k = 0 }^{ N - 1 }  k \cdot \s^{-1}  =  \frac{ (N - 1) \cdot N }{ 2 } \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Unsere verschobene Summe beginnt nun nicht bei Null, sondern beim endlichen Wert \lm{ a }.'."\n".
@@ -1357,9 +1360,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) \cdot \s }{ 2 } \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) \cdot \s }{ 2 } \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ((( b - a ) \cdot \s) - 1) \cdot ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }',
                                           label_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme', label_text => '\name{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1374,8 +1377,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot N \;\; + \;\; \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s \;\; + \;\; \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot N \;\; + \;\; \s^{-1} \cdot \!\!\! \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s \;\; + \;\; \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'erhalten.'."\n",
@@ -1385,7 +1388,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s + \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  a \cdot ( b - a ) \cdot \s + \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Damit folgt:'."\n".
@@ -1469,79 +1472,273 @@
                       array( display => 'on',  latex => '{  [ a, b [_{\mathbb{S}_{\Z}^{-1}}  \;\; .  }'),
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen', text =>
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen', text =>
  
-                'Beispiele für Erzeugungssummen')),
+                'Beispiele für Erzeugungssummen und Erzeugungsanzahlen')),
                   array( 'text', array( text => array(
-                    'Wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n".
+                    'In unserem vorstehend gezeigten Beispiel zur'."\n".
+                    '\jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral}{Berechnung eines Integrals}'."\n".
+                    'wird in einer Nebenrechnung die'."\n".
+                    '\jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme}{skalierte und verschobene Gaußsumme}'."\n".
+                    'hergeleitet.'."\n".
+                    'Diese Summe und ihre Aspekte sind verbunden mit der'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
+                    'sowie der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme}{Erzeugungssumme}'."\n".
+                    'und sollen nachfolgen näher beleuchtet werden.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:X', text =>
                   'Vom Aufsummieren superial infinitesimaler ganzer Zahlen zur Intervalsumme der reell algebraischen Zahlen')),
                   array( 'text', array( text => array(
-                    'Nur zum Appetit machen können wir hier schon mal kurz zeigen, dass die zuletzt errechnete Summe \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
-                    'sich auch folgendermaßen beschreiben lässt, wenn wir ihren Bruch in zwei Teile zerlegen:'."\n".
+                    'Zum Appetit machen können wir hier beispielhaft zeigen, dass die im vorhergehend Abschnitt errechnete'."\n".
+                    'Gaußsumme (Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}),'."\n".
+                    'in Bezug auf die Superial-Zahlen, tiefer beleuchtet bei der Herleitung'."\n".
+                    'der Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt},'."\n".
+                    'die bei der Berechnung des Integralbeispiels'."\n".
+                    'in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x} genutzt wird,'."\n".
+                    'sich auch folgendermaßen beschreiben lässt, wenn wir aus dem vorstehenden Beispiel die Differenz \lm{ b - a } gleich \lm{ x } setzen und ihren Bruch in zwei Teile zerlegen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Der erste Summand kann später im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}‹} aus der Struktur der ganzen Superial-Zahlen'."\n".
-                    'und unseren Erkenntnissen in der Theorie der Biordinalzahlen berechnet werden zu:'."\n".
+                    'Diese Summe haben wir, wie gesagt, oben aus einfachen Überlegungen zur Gaußsumme in einer Nebenrechnung entwickelt.'."\n",
+                      'Dabei haben die Zahlen der Menge \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}^{-1}_{\Z}} }'."\n".
+                    'über die summiert wird, ihre Indizes, selber die Summenstruktur:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ x^{2} \cdot \s }{ 2 }  =  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot \s }{ 2 }  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \; \cdot \; x \cdot ω  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  x + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{\Z}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht das Symbol \lm{ ω } für die Anzahl oder besser Erzeugungsanzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
-                    'also für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
-                    'Und das Symbol \lm{ \overline{\#} } gibt die Erzeugungsanzahl der Elemente der nachfolgenden Menge an.'."\n",
-                      'Gleiches gilt auch für den zweiten Summanden:'."\n".
+                    'Wir kommen zum gleichen Ergebnis, wenn wir die Gesamtsumme aus den Details dieser Struktur berechnen,'."\n".
+                    'wie wir es im Abschnitt'."\n".
+                    '\italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}‹}'."\n".
+                    'in allen Einzelheiten tun.'."\n",
+                      'In Kurzform gezeigt, können wir die gesuchte Gesamtsumme über die Detailsumme der Indizes umformulieren,'."\n".
+                    'wenn wir die Mengen-Intervall-Grenzen genau beachten.'."\n".
+                    'Diese Grenzen erkennen wir, wenn wir uns die Indexmenge im Einzelnen auflisten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  =  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sum_{ z \in \mathbb{Q} }  z \cdot \s^{-1}  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ -ω }{ \s }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  - \; \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ ω }{ \s }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
+                      array( display => 'on',  latex => '{  [0, x[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \quad\,  0 \s^{-1}, 1 \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 \s^{-1},\; \frac{1}{2} x - \s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + \s^{-1},\; \frac{1}{2} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 \s^{-1},\; \frac{2}{3} x - \s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + \s^{-1},\; \frac{2}{3} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 \s^{-1}, x - 2 \s^{-1}, x - \s^{-1}   \quad *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Hierbei ist es vermutlich für den ein oder anderen erstaunlich, dass ganz unabhängig von den hier entwickelten Superial-Zahlen'."\n".
-                    'in der Theorie der Biordinalzahlen deutlich wird, dass genauso viele endliche rein negative ganze Zahlen existieren,'."\n".
-                    'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
-                    'Demnach finden wir, bei genauer Untersuchung, eine \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}{fundamentale Asymmetrie}'."\n".
-                    'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \lm{ -ω } (siehe Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
-                      'Addieren wir nun beide Summanden, so erhalten wir:'."\n".
+                    'Summieren wir alle Elemente können wir die Summe wie folgt aufsplitten und berechnen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \; \cdot \; x \cdot ω \; - \; \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ ω }{ \s }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \; \cdot \; ω \cdot *( x - \frac{ 1 }{ \s } *)  }',
-                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => false),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  *( 0 + n \cdot \s^{-1} *) \\\ \qquad\qquad\quad\;\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  *( a + z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\quad\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! *( x + z \cdot \s^{-1} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1} \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  *( \sumx_{ z \in \mathbb{Z} }  a  \, +  \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x  \, +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1}  +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \s^{-1} \cdot \! \sumx_{ z \in \mathbb{Z} }  \! z  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }',
+                                          label_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt', label_text => '\name{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies ist ein bemerkenswertes Beispiel dafür, dass aktual unendliche Erzeugungssummen'."\n".
-                    'in den Superial-Zahlen explizit als Zahlenwerte auftreten können.'."\n",
-                      'Ebenso für die Summe aller reell algebraischen Koeffizienten \lm{ \mathbb{A}_{\R} } der Superial-Zahlen von Null bis ausschließlich – oder einschließlich –'."\n".
-                    '\lm{ x } können wir ein Ergebnis finden:'."\n".
+                    'Aus dieser Zerlegung erkennt man die drei verschiedenen Arten von Beiträgen zur Summe:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '1. die untere Randfaser bei \lm{ 0 },',
+                        '2. die inneren ganzzahligen Erzeugungsfasern über den reell algebraischen Zwischenwerten \lm{ a },',
+                        '3. die obere Randfaser unmittelbar unterhalb von \lm{ x }.',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Die untere Randfaser (kleine Werte) und die negativen infinitesimalen Anteile der oberen Randfaser (große Werte)'."\n".
+                    'verbinden sich zur'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungssumme:Erzeugungssumme-der-ganzen-Zahlen}{erzeugungshierarchischen Paarungssumme}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Daher gilt für den ersten Summanden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s^{-1} \cdot \! \sumx_{ z \in \mathbb{Z} }  z  =  -ω \cdot \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die obere Randfaser gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z}^{-} *)  =  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da dort in jedem Summanden der feste Wert \lm{ x } auftritt, erhalten wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z}^{-} }  x  =  x \cdot ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für eine innere ganzzahlige Erzeugungsfaser über einem reell algebraischen Wert \lm{ a } gilt einerseits'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( \mathbb{Z} *)  =  2 ω  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'also'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  a  =  2 a \cdot ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Andererseits gilt für die infinitesimalen Verschiebungen innerhalb derselben Faser'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \s^{-1} \cdot \! \sumx_{ z \in \mathbb{Z} }  z  =  -ω \cdot \s^{-1}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit wird die Formel \jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt}'."\n".
+                    'zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  \;\; - \;\;  ω \cdot \s^{-1} \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun berechnen wir die Erzeugungsanzahl des offenen inneren Intervalls'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#}_{\mathrm{erz}}\!*( ]0, x[_{\mathbb{A}_{\R}} *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir kennen die Erzeugungsanzahl des halboffenen Intervalls und wissen, dass das offnen Interval ein Element weniger hat:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ a \in [0, x[_{\mathbb{A}_{\R}} }  \!\! 1  =  \overline{\#}_{\mathrm{erz}}\!*( [0,x[_{\mathbb{A}_{\R}} *)  =  \frac{ x \cdot \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  =  \overline{\#}_{\mathrm{erz}}\!*( ]0, x[_{\mathbb{A}_{\R}} *)  =  \frac{ x \cdot \s }{ 2 ω } - 1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Summe der inneren reell algebraischen Stützwerte ergibt sich durch die Symmetrie des Intervalls.'."\n".
+                    'Jeder innere Wert \lm{ a } kann mit dem Wert \lm{ x - a } gepaart werden;'."\n".
+                    'jedes solche Paar hat die Summe \lm{  x  }.'."\n".
+                    'Daher besitzt das innere Intervall den mittleren Wert \lm{ x/2 }.'."\n".
+                    'Also gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  =  \frac{ x }{ 2 } \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit erhalten wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  \;\; .  }',
+                                          label_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x', label_text => '\name{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun setzen wir beide Werte ein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die beiden letzten Terme vereinfachen sich zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *)  =  \frac{ x^{2} \cdot \s }{ 2 } - x \cdot ω  }'),
+                      array( display => 'on',  latex => '{  -ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  =  - \frac{ x }{ 2 } + ω \cdot \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit ergibt sich insgesamt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  \frac{ x^{2} \cdot \s }{ 2 }  \;\; - \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; - \;\;  \frac{ x }{ 2 }  \;\; + \;\;  ω \cdot \s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun heben sich die erzeugungshierarchischen Randkorrekturen exakt auf:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  -ω \cdot \s^{-1}  \;\; + \;\;  ω \cdot \s^{-1}  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x \cdot ω  \;\; - \;\;  x \cdot ω  =  0  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Übrig bleibt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit erhalten wir genau die zuvor aus der skalierten Gaußsumme gewonnene Formel:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s - x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Rechnung zeigt, dass die Formel nicht nur eine umgeschriebene Gaußsumme ist.'."\n".
+                    'Sie entsteht zugleich aus der Erzeugungsstruktur des superial fein unterteilten Intervalls:'."\n".
+                    'Die Erzeugungsanzahl \lm{ 2 ω } beschreibt die Größe jeder inneren ganzzahligen Erzeugungsfaser,'."\n".
+                    'während die erzeugungshierarchische Paarungssumme'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z} }  z  =  -ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'den signierten infinitesimalen Versatz dieser Faser liefert.'."\n".
+                    'Genau dieser Versatz erzeugt den Korrekturterm'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'der später beim Integral durch die infinitesimale Spur der superialen Ableitung exakt ausgeglichen wird.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:X', text =>
+                  'Intervalsumme der reell algebraischen Zahlen')),
+                  array( 'text', array( text => array(
+                    'Quasi nebenbei haben wir die Summe aller reell algebraischen Zahlen von der Null bis ohne \lm{ x } berechnet'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 } + x  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } + \frac{ x }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } + x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } + \frac{ x }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'aus der wir vorstehend auch die Summe aller reell algebraischen Zahlen von der Null bis einschließlich \lm{ x }'."\n".
+                    'herleiten konnten.'."\n".
+                    'Die Summe \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}'."\n".
+                    'wird in der Arbeit auch im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x}‹}'."\n".
+                    'berechnet.'."\n",
+                      'Dies ist ein bemerkenswertes Beispiel dafür, dass aktual unendliche Erzeugungssummen'."\n".
+                    'im Rahmen der Superial-Zahlen explizit als Zahlenwerte auftreten können, obwohl diese selber nicht unbedingt'."\n".
+                    'zur Menge der Superial-Zahlen gehören, wie in diesem Beispiel.'."\n".
                     'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n",
                       'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
                     'Auch die Erzeugungsanzahl aller reell algebraischen Zahlen, insgesamt und in einem Intervall, konnte nach meinem Wissen zuvor'."\n".
@@ -1549,7 +1746,7 @@
                     'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -ω } entspricht,'."\n".
                     'war mir nicht bekannt.'."\n",
                       'Diese Beispiele sollen einen ersten Eindruck davon geben, welche zusätzlichen Strukturen'."\n".
-                    'durch aktual unendliche Summen und Erzeugungsanzahlen sichtbar werden.'."\n".
+                    'durch aktual unendliche Erzeugungssummen und Erzeugungsanzahlen sichtbar werden.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele', text =>
