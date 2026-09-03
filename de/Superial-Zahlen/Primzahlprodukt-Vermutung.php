@@ -97,7 +97,7 @@
                           'atomaren Primzahlpotenzen darstellt.',
                         '\bold{Das Primturm-Potenzraster \lm{ \pr( n ) }:} \\\\'."\n".
                           'Das unendliche multiplikative Erzeugungsspektrum,'."\n".
-                          'das ausschließlich durch die Kombination ganzer Potenzen dieser atomaren Primtürme aufgespannt wird.',
+                          'das ausschließlich durch die Kombination ganzer Potenzen dieser atomaren Primzahltürme aufgespannt wird.',
                         '\bold{Das lückenlose Primturm-Potenzraster \lm{ \lpr( n ) }:} \\\\'."\n".
                           'Der ordinale Zahlenwert des ununterbrochenen, also lückenlosen, Anfangsabschnitts'."\n".
                           'des Erzeugungsspektrums von der Null aus.',
@@ -1808,7 +1808,7 @@
                       array( display => 'on',  latex => '{  \pt*( P_{ω} *)  =  \mathbb{P}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'gilt, kommen alle Primzahlen \lm{ p_{i} } als Primtürme im Raster von \lm{ P_{ω} } vor.'."\n".
+                      'gilt, kommen alle Primzahlen \lm{ p_{i} } als Primzahltürme im Raster von \lm{ P_{ω} } vor.'."\n".
                       'Da außerdem alle endlichen Exponenten in \lm{ E_{\infty,\pt( P_{ω} )} } enthalten sind, kann \lm{ n } als Element von \lm{ \pr*( P_{ω} *) } erzeugt werden.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(

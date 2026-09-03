@@ -1982,11 +1982,11 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Wir finden über die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung}{Primturmzerlegung} \lm{ \pt(n) }'."\n".
                           'jeder natürlichen Zahl eine Möglichkeit, ihre Primfaktorzerlegung als ihr entsprechende Primturmmenge darzustellen.'."\n".
-                          'In dieser sind ihre Primzahlpotenzen (Primtürme) als Wertelemente enthalten.',
+                          'In dieser sind ihre Primzahlpotenzen (Primzahltürme) als Wertelemente enthalten.',
                         'Dann erzeugen wir aus der Primturmmenge einer natürlichen Zahl ein ganzzahliges'."\n".
-                          'und transfinites Exponentenkombinationsraster ihrer Primtürme,'."\n".
+                          'und transfinites Exponentenkombinationsraster ihrer Primzahltürme,'."\n".
                           'ihr \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster}{Primturm-Potenzraster} \lm{ \pr(n) }:'."\n".
-                          'also alle Primtürme in \lm{ n } in endlichen und transfiniten natürlichen Exponentenkombinationen.',
+                          'also alle Primzahltürme in \lm{ n } in endlichen und transfiniten natürlichen Exponentenkombinationen.',
                         'Dafür nutzen wir ein neues \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
                           'eine Primexponentenstruktur, in der auch transfinite Werte ZFC-intern beschreibbar werden,'."\n".
                           'indem wir ihr Primexponentenprodukt über eine erweiterte \lm{ p }-adische Primexponentenbewertung definieren.',
