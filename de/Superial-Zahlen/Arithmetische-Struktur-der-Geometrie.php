@@ -215,10 +215,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}} *) + 1  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}} }  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
@@ -238,10 +238,10 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  =  \mathbb{N}  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}} }  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern,'."\n".
@@ -250,8 +250,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In beiden Fällen fällt der Abschlusspunkt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -326,7 +326,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Kontinuumshypothese}',
-                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
@@ -339,11 +339,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
+                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prodx_{ p_{i} \in \mathbb{P} }  p_{i} } *)^{ω}  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω}  }',
                                           label_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{ω}  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So gibt es nun zwischen Null und Eins keine rationalen Zahlen mehr,'."\n".
@@ -352,8 +352,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{ω} \cdot 2 ω  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -573,7 +573,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -654,9 +654,9 @@
                     'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
                     'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum', text =>
                       
-                'Das Kontinuum', subline =>
+                'Das analytische Kontinuum', subline =>
                   '')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -678,8 +678,8 @@
                     'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-reell-algebr-Zahlen}‹}'."\n".
                     'lernen, dann muss es insgesamt \lm{ \overline{\#} \mathbb{A}_{\R} = \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
                       'Es gilt also \lm{ \overline{\#} \mathbb{A}_{\R} = \s }.'."\n".
-                    'Diese Identität wird durch die \jump{OM:SupNum:ZFC-Modellkonstruktion}{geordnete Struktur des Hahn-Reihen-Körpers \lm{ \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) }} gestützt,'."\n".
-                    'in dem jede mathematische Schicht exakt den Raum für eine vollständige transfinite Induktion bereitstellt.'."\n".
+                    'Diese kanonische Identifikation spiegelt sich in der \jump{OM:SupNum:ZFC-Modellkonstruktion}{geordneten Struktur des Hahn-Reihen-Körpers \lm{ \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) }},'."\n".
+                    'in dem jede mathematische Schicht exakt den Raum für eine beidseitig vollständige transfinite Induktion bereitstellt.'."\n".
                     'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
                     'in \lm{ \s } Teile teilen.'."\n".
                     'Dies würde ich als erreichen des Kontinuums bezeichnen.'."\n",
@@ -693,7 +693,7 @@
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet dann eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
-                      'Demnach wäre das Kontinuum so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = ω^{ω} = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots },'."\n".
+                      'Demnach wäre das neue \italic{analytische Kontinuum} so etwas wie \lm{ \overline{\#} \mathbb{A}_{\R} = \s = ω^{ω} \equiv_{kan} (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots)_{\#} },'."\n".
                     'wobei \lm{ \s = ω^{ω} } durch den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} innerhalb von ZFC gesichert ist.'."\n".
                     'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\R} |* = ω } wäre,'."\n".
                     'weil \lm{ \mathbb{A}_{\R}} abzählbar viele Elemente besitzt.'."\n".
@@ -707,7 +707,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
-                    'über das unendliche Primzahlprodukt aus der \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n",
+                    'über ihr \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{aktual unendliches Primexponentenprodukt} äquivalent sind:'."\n",
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
                     ''))),
@@ -743,12 +743,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  \prod_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  \;\;,  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  \prodx_{ n \in \mathbb{N} } *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  \;\;,  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'wie wir sie oben schon definiert haben.'."\n".
@@ -766,10 +766,11 @@
                     'sind sie unteilbar, dann können wir sie nicht so miteinander verbinden, dass sie gemeinsam mehr sind'."\n".
                     'als ihre Einzelteile.'."\n".
                     'Es können also keine wirklich unteilbaren Atome sein, wenn wir sie stapeln möchten.'."\n",
-                      'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht.'."\n".
+                      'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht,'."\n".
+                    'wollen wir daraus eine Linie, Fläche oder ein Volumen konstruieren.'."\n".
                     'Und genau diese Struktur liefert uns die oben untersuchte arithmetische Struktur der Geometrie'."\n".
                     'über ihre Teilbarkeit durch Primzahlen und der sich daraus ergebenden superialen Basis \lm{ \s }.'."\n".
-                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Struktur \lm{ a \cdot \s^{-1} } mit \lm{ a \in \mathbb{A}_{\R} }.'."\n".
+                    'Durch die Superial-Zahlen bekommt ein Punkt \lm{ a_{0} } im endlichen eine Umgebung der Struktur \lm{ a_{0} + a_{-1} \cdot \s^{-1} } mit \lm{ a_{0}, a_{-1} \in \mathbb{A}_{\R} }.'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -780,10 +781,20 @@
                     'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
                     'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
                     'Der Zahlenstrahl um jeden Punkt hat so dann die Ausdehnung \lm{ 2 ω \, \s^{-1} }, weil der Koeffizient \lm{ a } über alle ganzen Zahlen läuft'."\n".
-                    'und die Anzahl der ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω } ist.'."\n",
+                    'und die Erzeugungsanzahl der ganzen Zahlen \lm{ \overline{\#} \mathbb{Z} = 2 ω } ist.'."\n",
                       'Verbinden wir \lm{ \frac{ \s }{ 2 ω } } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
                     'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
                     'von minus Unendlich \lm{ -ω } bis plus Unendlich \lm{ ω }.'."\n",
+                      'Diese Struktur ist fraktal, besitzt also Selbstähnlichkeit, und bezieht sich darauf,'."\n".
+                    'dass die Gerade der endlichen reell algebraischen Zahlen'."\n".
+                    'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
+                    'den endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen besitzt.'."\n".
+                    'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\footnote{\const{SupNum_g_footnote_text_Orthogonalitaet}},'."\n".
+                    'die senkrecht zueinander stehen, sondern auch aktual unendlich kleine und große, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
+                    'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
+                    'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
+                    'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
+                    'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n",
                       'Eine fraktale Struktur der geometrischen Elemente löst das Problem mit Punkten eine Linie, mit Linien eine Fläche'."\n".
                     'und mit Flächen ein Volumen zu beschreiben.'."\n".
                     'Und genau dies ist ja ganz eng mit dem Thema der Integration oder allgemeiner mit der Differenzialrechnung verbunden.'."\n".
@@ -800,7 +811,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Die Ontologie der Geometrie  >
+          <!--  • Die Ontologie der Geometrie  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie',
               '', 'Sc_f_Paragraph',
@@ -1212,7 +1223,7 @@
           ); ?>
           
 
-          <!  • Resonanz in der Arithmetik der Geometrie  >
+          <!--  • Resonanz in der Arithmetik der Geometrie  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie',
               'Eine grundlegendes Prinzip der Existenz: die Resonanz', 'Sc_f_Paragraph',

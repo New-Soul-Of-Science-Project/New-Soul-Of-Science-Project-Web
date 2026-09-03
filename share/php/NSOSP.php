@@ -3,10 +3,12 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 04.07.2026, 12:00h
+  // #: Stand: 03.09.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
   //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
@@ -107,6 +109,7 @@
   $nSOSp_g_addOn_Text_replace_ary = array(
     // #: hyphenations with "&shy;":
     //      – is necessary if a word is followed by a footnote as examples: "Quan­ten­feld­the­o­rie19" or "Re­la­ti­vi­täts­the­o­rie20"
+    array( 'Paarungssumme', 'Paar&shy;ungs&shy;summe'),
     array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
     array( '-Relativitätstheorie-', 'Re&shy;la&shy;ti&shy;vi&shy;täts&shy;the&shy;o&shy;rie'),
   );
@@ -462,7 +465,7 @@
   $SupNum_g_footnote_text_QuadratischePyramidalzahl = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Summation von Potenzen natürlicher Zahlen; enthält die Formel für die Summe der ersten \lm{ n } Quadratzahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.';
   $SupNum_g_footnote_text_KomplexeZahl          = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung komplexer Zahlen und der eulerschen Formel \lm{ \e^{\i \varphi} = \cos \varphi + \i \sin \varphi }). \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 1–4. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
   $SupNum_g_footnote_text_Kreisteilungspolynom  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt (De aequationibus circuli), S. 397–448 (Kreisteilungspolynome und ihre Irreduzibilität). \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
@@ -481,8 +484,10 @@
   $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ (Verhältnisse und Proportionen). \\\\ Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 1: Eigenschaften der rationalen Zahlen. \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_RiemannschesIntegral  = 'Vgl. \cite{Riemann:UeberDieDarstellbarkeitEinerFunction:1867}, § 4 Ueber den Begriff eines bestimmten Integrals und den Umfang seiner Gültigkeit. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannschesIntegral:2026}.';
+  $SupNum_g_footnote_text_RiemannscheVermutung  = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
+  $SupNum_g_footnote_text_SatzDesEuklid         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';

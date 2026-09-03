@@ -45,7 +45,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-          <!  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  >
+          <!--  • Was lernen wir über die algebraischen Koeffizienten der Superial-Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Koeffizienten',
               '', 'Sc_f_Paragraph',
@@ -75,7 +75,7 @@
           ); ?>
 
 
-          <!  • Weitere Ordnungseigenschaften von S  >
+          <!--  • Weitere Ordnungseigenschaften von S  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:WeitereOrdnungseigenschaftenS',
               '', 'Sc_f_Paragraph',
@@ -207,7 +207,7 @@
           ); ?>
 
 
-		    	<!  • Die Struktur von s  >
+		    	<!--  • Die Struktur von s  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:StrukturVonS',
               '', 'Sc_f_Paragraph',
@@ -365,7 +365,7 @@
                     'Denn schon die Potenz beziehungsweise der Turm des Produkts der kleinsten Primzahl \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p_{i}^{ω} }, mit \lm{ p_{i} \in \mathbb{P} }, können so nicht als Faktoren in \lm{ ω } enthalten sein.'."\n",
                       'Das aktual unendlich große Primzahlprodukt, dass auf den ersten Blick bleibt, um \lm{ ω } darzustellen, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
-                    'dass \lm{ ω ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
+                    'dass \lm{ ω ?\equiv_{kan} (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } ist.'."\n".
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'zu sein, die ja mit \lm{ ω } ausgedrückt wird.'."\n".
                     'Jedoch haben wir bei den \italic{›\jumpname{OM:BiOrd:Home}‹} schon erkannt, dass zwischen den endlichen natürlichen Zahlen'."\n".
@@ -378,7 +378,7 @@
                     // 'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
                     // 'dass unsere Vermutung stimmen könnte.'."\n".
                       'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns nun zu zeigen,'."\n".
-                    'dass wirklich \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } gilt.'."\n".
+                    'dass wirklich \lm{ ω \equiv_{kan} (2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots)_{\#} } gilt.'."\n".
                     ''))),
 
 
@@ -487,9 +487,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{Z}} z  =  - ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                      array( display => 'on', latex => '{  \frac{ \sum_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -503,27 +503,27 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z + u  }'),
-                      array( display => 'off', latex => '{  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} \; *( \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \;\; + \!  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
-                      array( display => 'off', latex => '{  \sum_{ \forall u \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} \; \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z + u  }'),
+                      array( display => 'off', latex => '{  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} \; *( \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! z  \;\; + \!  \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \;\; + \!  \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}} \!\!\!\! u *)  }'),
+                      array( display => 'off', latex => '{  \sum_{ u \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                       array( display => 'off', latex => '{  x  =  1  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ 1^{2} \cdot \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ u \in [ 0, 1 [_{\mathbb{A}_{\R}}}  \!\! u  =  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} *( z \cdot \; \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
                       array( display => 'off', latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ \forall z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \overline{\#} \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \sum_{ \forall z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ \forall z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in \mathbb{A}_{\R}} a  =  -ω  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} *( z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \sum_{ z \in \mathbb{Z}} *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \overline{\#} \mathbb{Z} \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ 2 ω \cdot \s }{ 4 ω }  \; - \;  \frac{ 2 ω }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \sum_{ z \in \mathbb{Z}} z \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  \frac{ \s }{ 2 ω } \; \cdot \sum_{ z \in \mathbb{Z}} z  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  - ω \cdot \frac{ \s }{ 2 ω }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  - \frac{ \s }{ 2 }  \; + \;  \frac{ \s }{ 2 }  \; - \;  ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ a \in \mathbb{A}_{\R}} a  =  -ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Anteile der positiven und negativen Sägezähne heben sich auf und es bleibt einfach die Summe aller ganzen Zahlen übrig.'."\n".
@@ -532,13 +532,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ \s }  }'),
                       array( display => 'off', latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ ω^{ω} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω \cdot ω^{-ω}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{-ω + 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - \frac{ ω }{ ω^{ω} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω \cdot ω^{-ω}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{-ω + 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  - ω^{- *( ω - 1 *)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was auch verständlich ist, denn der quasi letzte positive Sägezahn steht ja im Positiven über die quasi letzte ganze Zahl hinaus,'."\n".
@@ -550,9 +550,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ \forall z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ \forall a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
@@ -604,7 +604,7 @@
                     'Wobei wir feststellen, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können,'."\n".
                     'weil wir so bereits am Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
                       'So erkennen wir dann auch durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
-                    'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
+                    'dass wir mit dem \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
                     'bei der Teilung durch \lm{ \s } eine Feinheit der Teile erreichen,'."\n".
                     'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
                     'wenn nicht sogar \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}.'."\n",
@@ -754,7 +754,7 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\color{*Entwick}{Können wir noch besser verstehen, warum das so ist oder sein muss?}',
-                        '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}}?}',
+                        '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannscheVermutung}}?}',
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung:Mengen-aufeinander-linear-abbildbar',
@@ -1088,7 +1088,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
+                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1096,7 +1096,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1105,8 +1105,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ \s^{2} - \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ \s^{2} - \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Richtigkeit der Summe aller natürlichen Superial-Zahlen bis ohne \lm{ \s } besteht schon wegen Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g}'."\n".
@@ -1122,7 +1122,7 @@
                       'Desweiteren sehen wir diese Richtigkeit noch an zwei Dingen zusammen.'."\n".
                     'Zum einen an dem allgemeinen Beweis,'."\n".
                     'dass das \jump{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}{Ableitung die Umkehrung des Integrals} ist.'."\n".
-                    'Und zum anderen an dem \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Beispiel der Integration der Ableitung von \lm{ f(x) = x^{2} }}, also von \lm{ f\'(x) = *〈 2 x *〉. *〈 1 *〉},'."\n".
+                    'Und zum anderen an dem \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Beispiel der Integration der Ableitung von \lm{ f(x) = x^{2} }}, also von \lm{ f_{\s}\'(x) = *〈 2 x *〉. *〈 1 *〉},'."\n".
                     'in dem genau die angepasste Gaußsche Summenformel zur korrekten Lösung angewandt wird und der einzige fragliche Term ist.'."\n",
                       'Die Richtigkeit der Summe aller Ordinalzahlen bis ohne \lm{ ω^{ω} } ist bereits aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g}'."\n".
                     'bekannt und ergibt sich ganz einfach aus der Definition der'."\n".
@@ -1134,7 +1134,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \sum_{ i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und dies, obwohl die Mengen, deren Elemente hier summiert werden, ja recht unterschiedlich sind.'."\n".
@@ -1173,7 +1173,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ i \in \mathbb{N} } i  =  \sum_{ i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1185,15 +1185,15 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}  =  2 ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{Z}} z  =  - ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ \forall n \in \mathbb{N} } n  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ z \in \mathbb{Z}} z  =  \sum_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ n \in \mathbb{N} } n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
                       array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω } - 1  }'),
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1201,15 +1201,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \sum_{ \forall z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot \; \overline{\#} \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \cdot ω^{ω} \cdot 2 ω \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ \s }{ 2 ω } - 1 *) \cdot ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \sum_{ z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot \; \overline{\#} \mathbb{Z} + \! \sum_{ z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \cdot ω^{ω} \cdot 2 ω \;\; - \!\! \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \!\! \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ \s }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in ] 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Um die noch enthaltene variable Summe zu berechnen, können wir, ohne sie zu verändern, die Null in ihre Basismenge integrieren'."\n".
@@ -1218,10 +1218,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} \cdot ω }{ 2 ω } - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 } - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} \cdot ω }{ 2 ω } - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 } - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ a \in [ 0, 1 [_{\mathbb{A}_{\R}} } \!\!\!\! a  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ ω^{ω} }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y  =  \frac{ ω^{ω} \cdot 2 ω \cdot ω^{ω} }{ 4 ω } - \frac{ ω^{ω} \cdot 2 ω }{ 2 } - \frac{ ω^{ω} }{ 2 } + ω  }'),
@@ -1234,18 +1234,18 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } ω^{ω} \; + \! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω \; + \! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω + *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  \sum_{ z^{-} \in \mathbb{Z}^{-} } ω^{ω} \; + \! \sum_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sum_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω \; + \! \sum_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω + *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wenn wir alle drei Summen nun addieren'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ ω^{2} - ω }{ 2 } \\\ \qquad\qquad\quad\;\; + \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - *( ω^{ω} \cdot ω - ω *) \\\ \qquad\qquad\quad\;\; + ω^{ω} \cdot ω + \! *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - ω^{ω} \cdot ω + ω \\\ \qquad\qquad\qquad\qquad\;\; + ω^{ω} \cdot ω - ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ ω^{2} - ω }{ 2 } \\\ \qquad\qquad\quad\;\; + \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - *( ω^{ω} \cdot ω - ω *) \\\ \qquad\qquad\quad\;\; + ω^{ω} \cdot ω + \! *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sum_{ i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - ω^{ω} \cdot ω + ω \\\ \qquad\qquad\qquad\qquad\;\; + ω^{ω} \cdot ω - ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ i \in [ 0, \s [_{\mathbb{S}_{\N}} } \!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ergibt sich auch tatsächlich das erwartete Ergebnis.'."\n",
@@ -1307,7 +1307,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  \;\; ,  }',
+                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1348,7 +1348,7 @@
           ); ?>
 
 
-		    	<!  • Erzeugungsanzahl in Beispielen  >
+		    	<!--  • Erzeugungsanzahl in Beispielen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:ErzeugungsanzahlBeispiele',
               '', 'Sc_f_Paragraph',
@@ -1381,7 +1381,7 @@
           ); ?>
 
 
-          <!  • Neue Rechenregeln im Unendlichen  >
+          <!--  • Neue Rechenregeln im Unendlichen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen',
               '', 'Sc_f_Paragraph',
@@ -1408,6 +1408,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Wurzeln-aus-aktual-unendlich-grossen-ganzen-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Pythagoreische-Tripel'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Grosser-Fermatscher-Satz'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Erweiterung-Arithmetik-Unendliche'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen'),
                     )),
 
@@ -1572,6 +1573,91 @@
                     'bei dem ganzzahlige Brüche zur Darstellung von irrationalen Wurzeln gesucht werden.'."\n".
                     ''))),
 
+                  array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Erweiterung-Arithmetik-Unendliche', text =>
+                                           
+                'Erweiterung der Arithmetik ins Unendliche', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen erweitern die uns bekannte Arithmetik\footnote{\const{NSOSP_g_footnote_text_Arithmetik}}'."\n".
+                    'ins Aktual-Unendliche, wobei sehr viele der ekannten Regeln nicht nur im Endlichen gelten,'."\n".
+                    'sondern auch in der unendlichen Erweiterung:'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Die Untermengen der reellen Zahlen erweitern sich ins Unendliche', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Es werden im Grunde alle wichtigen Untermengen der reellen Zahlen ins Aktual-Unendliche erweitert.'."\n".
+                    'So gibt es zum Beispiel natürliche \lm{ \mathbb{S}_{\N} }, ganze \lm{ \mathbb{S}_{\Z} }, gerade und ungerade, rationale Superial-Zahlen \lm{ \mathbb{S}_{\Q} } und auch superiale Primzahlen.'."\n",
+                      'Reell algebraische Zahlen \lm{ \mathbb{A}_{\R} }, so auch irrationale Wurzeln und Radikalformen, ordnen sich in die neue Struktur ein, indem sie die Rolle der'."\n".
+                    'Koeffizienten des superialen Stellenwertsystems \lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } übernehmen.'."\n".
+                    'Transzendente Zahlen sind aus der neuen Perspektive gesehen dann Zahlen, die, sehr allgemein gesprochen, an mehreren Stellen des Stellenwertsystems nicht Null sind;'."\n".
+                    'oder die unendlich klein oder groß sind, je nach Interpretation.'."\n",
+                      'So bekommen wir einen detaillierten Überblick, wie die Untermengen der reellen Zahlen zueinander gehören,'."\n".
+                    'verständlicher, als es bisher der Fall war, meine ich.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Unendliche Primzahlen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden, wie gesagt, und wir erhalten die Menge \lm{ \mathbb{S}_{\P} } der \italic{superialen Primzahlen}.'."\n".
+                    'Zum Beispiel sind die Zahlen \lm{ \s - 1 } und \lm{ \s + 1 } unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
+                    'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilt.'."\n".
+                    'Die Zahlen \lm{ \s \pm 2 } sind hingegen beide durch \lm{ 2 } teilbar, also keine Primzahlen.'."\n",
+                      'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen'."\n".
+                    'im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verspricht.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Rechnen im Unendlichen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Auch das beliebige vorwärts und rückwärts Zählen, die Addition, die Multiplikation und deren Umkehrrechenarten,'."\n".
+                    'die Subtraktion und die Division, werden ins Unendliche erweitert.'."\n".
+                    'Ebenso gibt es weiter den Betrag einer Zahl, das Modulo und den Rest einer Teilung.'."\n",
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Neue Einsichten zum Rechnen im Hintergrund', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Zahlen wie \lm{ ω } sind selber keine Superial-Zahlen, spielen in der Arithmetik der Superial-Zahlen im Hintergrund – oder Untergrund –'."\n".
+                    'eine wichtige Rolle.'."\n".
+                    'Zunächst im wesentlichen in den Exponenten der Primzahlen, wenn wir das Primzahl-Flächenprodukt von \lm{ \s } betrachten.'."\n".
+                    'Schließlich dann auch in den \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahlen oder Erzeugungssummen} der Elemente der Teilmengen der Superial-Zahlen.'."\n".
+                    'Nun aber zu den Exponenten.'."\n",
+                      'Multiplizieren wir \lm{ \s } mit \lm{ 2 }, so verändert sich die Potenz der Primzahl \lm{ 2 } im Primzahl-Flächenprodukt von \lm{ 2^{ω} } zu \lm{ 2^{ω + 1} },'."\n".
+                    'wie wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten}{oben} schon betrachtet haben.'."\n".
+                    'Im Falle des Produkts \lm{ *| \sqrt{2} |* \s = 2^{\frac{ 1 }{ 2 }} \s } verändert sich die Potenz von \lm{ 2^{ω} } dann zu \lm{ 2^{ω + \frac{ 1 }{ 2 }} }.'."\n",
+                      'Wir wissen nun aus dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}, dass'."\n".
+                    '\lm{ 2^{ω + \frac{ 1 }{ 2 }} } eine ganze Zahl sein muss.'."\n".
+                    'Dies gilt sogar für alle \lm{ n^{\frac{1}{x}} \cdot n^{ω} = n^{ω + \frac{1}{x}} },'."\n".
+                    'denn anders als im Endlichen sind im Unendlichen alle diese Zahlen ganze Zahlen, was sehr bemerkenswert ist und für die Ganzheit'."\n".
+                    'der Superial-Zahlen wichtige Konsequenzen hat.'."\n",
+                      'Und es gibt noch weitere Erkenntnisse.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Eine unerwartete Verbindung der reell algebraischen Zahlen mit dem Zählen', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Das natürliche Zählen spiegelt sich in den \italic{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} } wider.'."\n".
+                    'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \lm{ \s }.'."\n",
+                      'Nun wissen wir, dass wir reell algebraische Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
+                    'weil sie von ihrer Anordnung her dicht sind.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahlDichtheit}}'."\n".
+                    'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die reell algebraischen Zahlen ihrer Größe nach,'."\n".
+                    'als Koeffizienten der Potenzen von \lm{ \s }, implizit mit.'."\n",
+                      'Denn wir zählen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.NR.Ari', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{3} \cdot \s - 2,\; \frac{1}{3} \cdot \s - 1,\; \frac{1}{3} \cdot s,\; \frac{1}{3} \cdot \s + 1,\; \frac{1}{3} \cdot \s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} \cdot \s - 2,\; \frac{1}{2} \cdot \s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot \s + 1,\; \frac{1}{2} \cdot \s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{3}{2} \cdot \s - 2,\; \frac{3}{2} \cdot \s - 1,\; \frac{3}{2} \cdot s,\; \frac{3}{2} \cdot \s + 1,\; \frac{3}{2} \cdot \s + 2, \cdots \\\ \quad\quad\; \vdots  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und so fort.'."\n",
+                      'Dort wo drei vertikale Punkte ›⋮‹ stehen, werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
+                    'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
+                    ''))),
+
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen', text =>
                       
                 'Aktual-Unendliche Exponenten der Primzahlen in Potenzialzahlen', subline =>
@@ -1690,7 +1776,7 @@
           ); ?>
 
 
-		    	<!  • Vergleich mit hyperreellen Zahlen  >
+		    	<!--  • Vergleich mit hyperreellen Zahlen  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen',
               '', 'Sc_f_Paragraph',
@@ -1713,29 +1799,34 @@
                     'Die unendlich großen Zahlen haben keine innere zahlentheoretische Struktur;'."\n".
                     'sie wissen nichts über Primzahlen.'."\n",
                       'Die Superial-Zahlen brechen mit diesem Dogma.'."\n".
-                    'Durch die rigorose \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Konstruktion} der superialen Basis \lm{ \s } als zweidimensionale,'."\n".
-                    'transfinite Primzahlmatrix'."\n".
+                    'Durch ihre \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion} aufgrund ihrer superialen Basis \lm{ \s } als zweidimensionale,'."\n".
+                    'transfinite Primzahlmatrix über ein in ZFC definierbares Primexponentenprodukt mit erweiterter \lm{ p }-adische Primexponentenbewertung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  \equiv_{kan}  ω^{ω}  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wird das aktual Unendliche zahlentheoretisch codiert und erhält eine so sichtbar werdende Prim-DNA.'."\n".
-                    'Dies gelingt aufgrund des topologischen Fundaments des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}'."\n".
+                    'wird das Aktual-Unendliche zahlentheoretisch codiert und erhält eine so sichtbar werdende Prim-DNA.'."\n",
+                      'Dies gelingt aufgrund der Primexponentenidentifikation des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.HR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots)_{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'als Nachweis der Existenz einer erweiterten Arithmetisierung des von Neumannschen Ordinals \lm{ ω }\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω }'."\n".
+                    'mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen'."\n".
                     'innerhalb der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}.'."\n",
                       'Dies ist eine mathematische Pionierleistung:'."\n".
-                    'Die atomaren Bausteine der Arithmetik – die Primzahlen – werden genutzt,'."\n".
-                    'um das Kontinuum der Analysis metrisch zu normieren.'."\n".
+                    'Die Primzahlen als atomare Bausteine der endlichen Arithmetik werden genutzt,'."\n".
+                    'um das \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{neue Kontinuum der Analysis} metrisch zu normieren.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1745,7 +1836,7 @@
           ); ?>
 
 
-		    	<!  • Untersuchungen zur Kontinuumshypothese  >
+		    	<!--  • Untersuchungen zur Kontinuumshypothese  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese',
               '', 'Sc_f_Paragraph',
@@ -1823,7 +1914,7 @@
                     'in der ZFC-Mengenlehre bemerkenswert, weil es einen Schatten auf die Sinnhaftigkeit der Hypothese innerhalb dieser Theorie wirft.'."\n",
                       'In Bezug auf die Bedeutung der Bezeichnung Kontinuum als ein lückenloser, ununterbrochener Zusammenhang sehen wir:'."\n".
                     'Im Lichte der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
-                    'aus Sicht der Superial-Zahlen, tiefer beleuchtet im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum}‹},'."\n".
+                    'aus Sicht der Superial-Zahlen, tiefer beleuchtet im Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}‹},'."\n".
                     'sieht ein Kontinuum etwas anders aus.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
@@ -1837,13 +1928,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                      array( display => 'on',  latex => '{  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \\\ \qquad\qquad\quad\;\; (2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots)_{\#}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch im Exponenten der Primzahlen kommt die Anzahl aller endlichen natürlichen Zahlen \lm{ ω } vor.'."\n".
@@ -1854,8 +1945,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  2^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \aleph_{1}  =  *( *( *( *( *( *( 2^{ 2 } *)^{ 3 } *)^{ 5 } *)^{ 7 } *)^{ 11 } *)^{ 13 } *)^{ \cdots }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  \equiv_{kan}  2^{(2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \aleph_{1}  \equiv_{kan}  *( *( *( *( *( *( 2^{ 2 } *)^{ 3 } *)^{ 5 } *)^{ 7 } *)^{ 11 } *)^{ 13 } *)_{\#}^{ \cdots }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies sind Formulierungen, die neu sind, soweit mir bekannt.'."\n".
@@ -1872,7 +1963,7 @@
                     'eine ganze Zahl ergibt, wie wir auf der Seite \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} zeigen.'."\n".
                     'Dies gelingt unter anderem mit Hilfe unseres \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweises der Überrationalitätsvermutung}.'."\n",
                       '\const{SupNum_g_text_ZFCkonform}'."\n",
-                      'Es ist offensichtlich, dass erst die superiale Basis \lm{ \s } über ihr transfinites Primorial \lm{ \prod p^{ω} } jede rationale Zahl,'."\n".
+                      'Es ist offensichtlich, dass erst die superiale Basis \lm{ \s } über ihr transfinites Primorial \lm{ \prodx p^{ω} } jede rationale Zahl,'."\n".
                     'und wie sich dann herausstellt sogar jede reell algebraische Zahl, im Unendlichen vollständig ganzzahlig glättet.'."\n".
                     'Da die klassische Kardinalität des Kontinuums jedoch rein formal als \lm{ 2^{ω} } (bzw. \lm{ 2^{\aleph_{0}} }) definiert ist,'."\n".
                     'isoliert sie künstlich den ersten Primzahlturm.'."\n".
@@ -1899,13 +1990,10 @@
                     'Während Cantor das Kontinuum rein qualitativ in die Überabzählbarkeit drängte,'."\n".
                     'liefert unser Stellenwertsystem eine echte metrische Normierung des transfiniten Raumes.'."\n".
                     'Wir lösen das Kontinuumsproblem nicht durch ein willkürliches Postulieren neuer Kardinalzahlen,'."\n".
-                    'sondern indem wir dem Aktual-Unendlichen eine exakte, in ZFC konsistente Arithmetik mit ausgezeichneten,'."\n".
-                    '\lm{ p }-adisch bewerteten Eigenschaften geben.'."\n",
+                    'sondern indem wir dem Aktual-Unendlichen eine exakte, in ZFC definierbare Primexponentenprodukt-Arithmetik mit erweiterter'."\n".
+                    '\lm{ p }-adischer Primexponentenbewertung geben.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
-                    'also der Erweiterung des Zählens sowie der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
-                    'der Darstellung von irrationalen reell algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen,'."\n".
-                    'die irrationale Wurzeln beschreiben, und mit deren Hilfe auch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{alle Radikalformen}'."\n".
-                    'beschreibbar sind.'."\n",
+                    'also der Erweiterung des Zählens, und der Definition der vollständigen Induktion über das generative Primzahl-Induktions-Lemma.'."\n",
                       'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>

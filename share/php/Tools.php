@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 24.04.2026, 14:00h
+  // #: Stand: 02.09.2026, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
 
+  //           20260902:  +:  "To_f_Paragraph" type "bulletlist":  Add 'ListStyle' parameter ('bullet' default, 'number' for enumerated list), plus optional 'numberStart' (default 1).
   //           20260424:  >:  "To_f_replace_callback__latexcommand__jump":  Default 'target="_blank"' if URL parameter is set and no explicit target given.
   //                      >:  "To_f_Paragraph", 'notice':  Annotation '(Beginn …)' moved from 'Title' (collapsed) to 'TitleVis' (expanded only).
   //           20260423:  *:  "To_f_Paragraph" figure/youtube/iframe:  Change outer table from fixed 'width="660px"' to 'width: 100%; max-width: 660px' to prevent horizontal overflow on Windows.
@@ -1941,14 +1942,17 @@
         break;*/
       
       case 'bulletlist':
-        
+        $list_style = ((gettype( $text) == 'array') && array_key_exists( ListStyle, $text)) ? $text[ListStyle] : 'bullet';
+        $list_num   = ((gettype( $text) == 'array') && array_key_exists( numberStart, $text)) ? $text[numberStart] : 1;
+
         foreach ($text[bullet_ary] as $value)
         {
-          echo $offset.'  <tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px;">&bull;</p> </td>'."\n";
+          $list_marker = ($list_style == 'number') ? ($list_num++).'.' : '&bull;';
+          echo $offset.'  <tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px;'.(($list_style == 'number') ? ' text-align: right; white-space: nowrap;' : '').'">'.$list_marker.'</p> </td>'."\n";
           echo $offset.'    <td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px;">'."\n";
           echo $offset.'      '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value)).'</p> </td> </tr>'."\n";
         }
-        
+
         break;
 
       case 'jumplist':
