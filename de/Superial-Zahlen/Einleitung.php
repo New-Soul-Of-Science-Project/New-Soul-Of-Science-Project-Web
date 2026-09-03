@@ -1092,28 +1092,28 @@
                     'Daher gilt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  z  \in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dagegen ist'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  y  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5 + \frac{ 1 }{ \s }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'keine ganze Superial-Zahl, weil sie einen nichtverschwindenden infinitesimalen Anteil besitzt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Aber auch'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  y  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5{,}4  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1123,14 +1123,14 @@
                     'Die Beispiele zeigen den Unterschied zwischen dem gesamten superialen Zahlenraum'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und dem Unterring der ganzen Superial-Zahlen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1687,7 +1687,7 @@
                       array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die beiden letzten Terme vereinfachen sich zu:'."\n".
+                    'Die beiden noch auszuwertenden Terme vereinfachen sich zu:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1773,8 +1773,8 @@
                     'wird in der Arbeit auch im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x}‹}'."\n".
                     'berechnet.'."\n",
                       'Diese Beispiele zeigen, dass aktual unendliche Erzeugungssummen im Rahmen der Superial-Zahlen'."\n".
-                    'explizit als Zahlenwerte auftreten können, obwohl sie selber nicht unbedingt'."\n".
-                    'zur Menge der Superial-Zahlen gehören.'."\n".
+                    'explizit als Zahlenwerte auftreten können, obwohl diese Erzeugungswerte nicht in jedem Fall'."\n".
+                    'selbst Elemente des superialen Zahlenkörpers \lm{ \mathbb{S} } sein müssen.'."\n".
                     'Insbesondere werden sowohl Erzeugungsanzahlen von Intervallen reell algebraischer Zahlen'."\n".
                     'als auch erzeugungshierarchische Summenwerte wie'."\n".
                     ''))),
