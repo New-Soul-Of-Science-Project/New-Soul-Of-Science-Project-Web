@@ -359,7 +359,7 @@
               'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme' => array( headline_text => 'SN.Ein.Illu.Diff.22'),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen' => array( headline_text => 'Beispiele für Erzeugungssummen und Erzeugungsanzahlen'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt' => array( headline_text => 'SN.Ein.Illu.Sum.4'),
-            'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.Ein.Illu.Sum.15'),
+            'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.Ein.Illu.Sum.16'),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:ZusammenfassungBeispiele' => array( headline_text => 'Zusammenfassung der Beispiele'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:Beweisstrategien' => array( headline_text => 'Beweisstrategien'/*, headline_text_short => 'X'*/),
