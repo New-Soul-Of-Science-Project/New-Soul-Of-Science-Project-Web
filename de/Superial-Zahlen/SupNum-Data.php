@@ -344,9 +344,6 @@
         'OM:SupNum:Einleitung:HauptergebnisseUebersicht' => array( headline_text => 'Hauptergebnisse in der Übersicht'/*, headline_text_short => 'X'*/),
 
         'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen' => array( headline_text => 'Kurzdefinition der Superial-Zahlen'/*, headline_text_short => 'X'*/),
-          'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \lm{ \s }?',/* headline_text_short => 'X' */),
-            'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Definition-von-s' => array( headline_text => 'Die Definition von \lm{ \s }',/* headline_text_short => 'X' */),
-            'OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
         'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele' => array( headline_text => 'Illustrierende Rechenbeispiele'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:SuperialeBasisInfinitesimal' => array( headline_text => 'Die superiale Basis und ihr Infinitesimal'/*, headline_text_short => 'X'*/),
@@ -535,7 +532,7 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen' => array( headline_text => 'SN.SinK.17'),
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten' => array( headline_text => 'Rationale Zahlen sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten'/* , headline_text_short => '' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten' => array( headline_text => 'Veränderung des Primexponentenprodukts von \lm{ \s } durch rationale Koeffizienten'/* , headline_text_short => '' */),
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod' => array( headline_text => 'SN.SinK.RZ.1'),
             'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod' => array( headline_text => 'SN.SinK.RZ.2'),
 

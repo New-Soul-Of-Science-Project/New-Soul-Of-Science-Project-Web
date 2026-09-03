@@ -152,7 +152,7 @@
                     'Dies ist die Grundlage der Integration und der Ableitung – der Differenzialrechnung.'."\n".
                     'Weil \lm{ \s } genau die normierte Größe ist, die uns das erlaubt, ist sie die exakt passende Standardnormierung'."\n".
                     'der Analysis.'."\n",
-                      'Wäre \lm{ \s } nicht genau so über das \jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Definition-von-s}{Primzahl-Flächenprodukt} definiert,'."\n".
+                      'Wäre \lm{ \s } nicht genau so über das \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{Primzahl-Flächenprodukt} definiert,'."\n".
                     'dann wären nicht alle reell algebraischen Zahlen'."\n".
                     'im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Produkt mit ihr ganzzahlig}.'."\n".
                     'Würden wir statt \lm{ \s } eine feinere Normierung wie \lm{ \s^{2} } als Standard-Schrittanzahl verwenden,'."\n".
@@ -1102,7 +1102,7 @@
                   array( 'text', array( text => array(
                     'Hier wird die mathematische Genauigkeit erhalten und daher der infinitesimale Summand nicht weggelassen.'."\n".
                     'Wo er beim Übergang in die reale Praxis ja eh jederzeit entfernt werden kann.'."\n",
-                      'Die infinitesimale Einheit ist durch ihre \jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Definition-von-s}{Definition über das Primzahl-Flächenprodukt}'."\n".
+                      'Die infinitesimale Einheit ist durch ihre \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{Definition über das Primzahl-Flächenprodukt}'."\n".
                     'wohldefiniert und genormt.'."\n".
                     'Und es ist völlig klar, welches Vorzeichen die Infinitesimale haben.'."\n",
                       'Auch das Spannungsfeld zwischen dem Weglassen des Summanden und der vermeintlichen Division durch Null in der Standardanalysis'."\n".

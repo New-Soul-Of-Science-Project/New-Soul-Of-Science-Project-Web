@@ -45,7 +45,7 @@
                     'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n".
                     'Denn auf eine ganze Zahl müssen wir immer eine ganze Zahl addieren, damit wieder eine ganze Zahl herauskommt.'."\n",
                       'Dazu stellen wir fest, dass schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur'."\n".
-                    '\jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten}{immer eine ganze Zahl ergibt}.'."\n".
                     'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
                     'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}'."\n".
@@ -192,7 +192,7 @@
                     'ganze Zahlen sind.'."\n",
                       'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
                     'der reell algebraischen Zahlen sind, ist es offensichtlich,'."\n".
-                    'dass sie \jump{OM:SupNum:Einleitung:KurzdefinitionSuperialZahlen:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
+                    'dass sie \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
                     'Wie diese \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
                     'zeigen wir in der \jump{OM:SupNum:Algebraische-Grundlagen}{formalen Entwicklung}.'."\n".
                     'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
@@ -521,41 +521,33 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Das rationale Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind,'."\n".
+                    'ist recht offensichtlich.'."\n".
+                    'Über rationale Zahlen als Koeffizienten von \lm{ \s }, die im Zusammenhang mit der Rekonstruktion'."\n".
+                    'der Integration über Superial-Zahlen alle ganzzahlige aktual unendliche Zahlen sein müssen,'."\n".
+                    'konnte ich schließlich die notwendige Struktur von \lm{ \s } als Primzahl-Flächenprodukt erraten.'."\n",
+                      'Diese \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{Definition von \lm{ \s }}'."\n".
+                    'hat sich dann schließlich als so glücklich erwiesen, dass wir auf dieser Seite über entscheidende Beweise'."\n".
+                    'zeigen können, dass genau alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten', text =>
 
-                'Veränderung der Primfaktorzerlegung von \lm{ \s } durch rationale Koeffizienten', subline =>
+                'Veränderung des Primexponentenprodukts von \lm{ \s } durch rationale Koeffizienten', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Für das Primzahlprodukt von \lm{ \s } ergibt sich also, wie eben beschrieben,'."\n".
-                    'eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".
+                    'Das Primexponentenprodukt beziehungsweise Primzahl-Flächenprodukt von \lm{ \s }'."\n".
+                    'enthält alle endlichen Primzahlen jeweils in einer Potenz aktual unendlicher Länge \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \prodx_{ n \in \mathbb{N} } *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
                     ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:X', text =>
                   'Rationale Zahlen und ihre Primfaktorzerlegung', subline =>
                     '')),
                   array( 'text', array( text => array(
@@ -574,13 +566,13 @@
                       'Welche Eigenschaft muss die Zahl \lm{ \s } nun haben, sodass sie multipliziert mit jeder'."\n".
                     'rationalen Zahl immer noch eine ganze Zahl ergibt?'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
-                  'XXX', subline =>
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
+                  'Beispiel eines Produkts einer rationalen Zahl mit \lm{ \s }', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Mit Hilfe der neuen Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} können wir auch Zahlen wie'."\n".
-                    '\lm{ ω - n }, mit \lm{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
-                    'des \italic{unendlichen Primzahl-Flächenprodukts} durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
+                    '\lm{ ω - n } mit \lm{ n \in \mathbb{N} } darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
+                    'des unendlichen Primzahl-Flächenprodukts durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -590,19 +582,20 @@
                     'Hier können wir sehen, dass \lm{ \s } durch Multiplikation mit endlich beliebig vielen'."\n".
                     'rationalen Zahlen immer unendlich groß bleibt, also seine superiale Dimension nicht verändert.'."\n".
                     'Denn dadurch werden, aufgrund der Primfaktorzerlegung endlicher ganzer Zahlen, immer'."\n".
-                    'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n".
-                    'Da für jede der endlichen ganze Zahlen \lm{ z_{1} } und \lm{ z_{2} } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Ungleichung \lm{ ω + z_{1} < 2 ω + z_{2} } immer'."\n".
-                    'bestehen bleibt}, kann kein rationaler Koeffizient \lm{ q_{m} } einer endlich ganzzahligen Potenz \lm{ m } in'."\n".
-                    '\lm{ \s^{m} } in eine andere Potenzebene bringen:'."\n".
+                    'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n",
+                      'Da für jede der endlichen ganze Zahlen \lm{ z_{1} } und \lm{ z_{2} } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Ungleichung \lm{ ω + z_{1} < 2 ω + z_{2} } immer'."\n".
+                    'bestehen bleibt}, kann kein rationaler Koeffizient \lm{ q_{k} } einer endlich ganzzahligen Potenz \lm{ k } in'."\n".
+                    '\lm{ \s^{k} } in eine andere Potenzebene bringen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists q_{m} \in \mathbb{Q}^{+} *) *( \forall q_{m - 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{m} \cdot \s^{m}  <  q_{m - 1} \cdot \s^{m - 1}  *]   }'),
-                      array( display => 'on',  latex => '{  *( \nexists q_{m} \in \mathbb{Q}^{+} *) *( \forall q_{m + 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{m} \cdot \s^{m}  >  q_{m + 1} \cdot \s^{m + 1}  *]   }'),
+                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k - 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{k} \cdot \s^{m}  <  q_{k - 1} \cdot \s^{k - 1}  *]   }'),
+                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k + 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{k} \cdot \s^{m}  >  q_{k + 1} \cdot \s^{k + 1}  *]   }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Potenz \lm{ k } in \lm{ \s^{k} } dominiert den Koeffizienten \lm{ q_{k} }'."\n".
-                    'bezüglich der Größe in der Anordnung und ist der Grund für die lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'bezüglich der Größe in der Anordnung und ist der Grund für'."\n".
+                    'die \jump{OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper}{lexikografische Ordnung}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
                     'der Superial-Zahlen.'."\n",
                       'Diese Eigenschaft ist generell sehr bemerkenswert und tatsächlich auch durch die'."\n".
                     'Definition von \lm{ \s } über das unendliche Primzahl-Flächenprodukt gewährleistet.'."\n".
