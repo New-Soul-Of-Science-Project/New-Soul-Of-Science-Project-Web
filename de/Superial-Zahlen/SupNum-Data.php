@@ -356,7 +356,7 @@
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:SinnvolleKoeffizienten' => array( headline_text => 'Sinnvolle Koeffizienten'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral' => array( headline_text => 'Beispiel einer superialen Ableitung und ihres Integrals'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme' => array( headline_text => 'Berechnung der skalierten und verschobenen Gaußsumme'/*, headline_text_short => 'X'*/),
-              'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme' => array( headline_text => 'SN.Ein.Illu.Diff.22'),
+              'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme' => array( headline_text => 'SN.Ein.Illu.Diff.23'),
           'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen' => array( headline_text => 'Beispiele für Erzeugungssummen und Erzeugungsanzahlen'/*, headline_text_short => 'X'*/),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt' => array( headline_text => 'SN.Ein.Illu.Sum.4'),
             'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.Ein.Illu.Sum.16'),

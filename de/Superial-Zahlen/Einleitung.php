@@ -1399,7 +1399,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot N  \;\; + \;\;  \s^{-1} \cdot \!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot N  \;\; + \;\;  \!\!\!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot ( b - a ) \cdot \s \\\ \qquad\qquad\qquad\qquad\quad  \;\; + \;\;  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1663,6 +1663,8 @@
                     'Jeder innere Wert \lm{ a } kann mit dem Wert \lm{ x - a } gepaart werden;'."\n".
                     'jedes solche Paar hat die Summe \lm{  x  }.'."\n".
                     'Daher besitzt das innere Intervall den mittleren Wert \lm{ x/2 }.'."\n".
+                    'Der mögliche Fixpunkt \lm{ a = x/2 } stört diese Symmetrie nicht,'."\n".
+                    'weil er selbst bereits den Mittelwert \lm{ x/2 } besitzt.'."\n".
                     'Also gilt:'."\n".
                     ''))),
                   array( 'equations',
@@ -1752,7 +1754,8 @@
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:X', text =>
                   'Intervallsumme der reell algebraischen Zahlen')),
                   array( 'text', array( text => array(
-                    'Quasi nebenbei haben wir die Summe aller reell algebraischen Zahlen von der Null bis ohne \lm{ x } berechnet'."\n".
+                    'Als Nebenresultat erhalten wir zugleich die Summe aller reell algebraischen Zahlen'."\n".
+                    'von der Null bis ausschließlich \lm{ x }'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
