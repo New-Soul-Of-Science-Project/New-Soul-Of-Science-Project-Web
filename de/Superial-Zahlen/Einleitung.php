@@ -630,8 +630,8 @@
                   array( 'text', array( text => array(
                     'Sie ergänzt die Kardinalität um einen erzeugungskombinatorischen und ordinalen Aspekt.'."\n".
                     'Dadurch können unendliche Mengen feiner unterschieden werden, als es durch bloße Bijektivität möglich ist.'."\n",
-                      'Die Erzeugungsanzahl steht dabei direkt mit der Erzeugungssumme'."\n".
-                    'in Verbindung.'."\n".
+                      'Die Erzeugungsanzahl steht dabei direkt mit der Erzeugungssumme in Verbindung, wie wir noch'."\n".
+                    '\jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen}{Beispielhaft} zeigen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
 
@@ -664,7 +664,8 @@
                     'ohne zusätzliche Ordnung oder Summationsvorschrift im Allgemeinen keinen kanonischen Wert.'."\n".
                     'In der Superial-Theorie kann sie dagegen als erzeugungsgeordnete aktual unendliche Summe untersucht werden.'."\n",
                       'So wird zum Beispiel die Frage nach einer Summe aller reell algebraischen Zahlen von \lm{ 0 } bis ohne \lm{ x }'."\n".
-                    'nicht als gewöhnliche Grenzwertreihe verstanden, sondern als Summe entlang einer kanonischen Erzeugungsstruktur:'."\n".
+                    'nicht als gewöhnliche Grenzwertreihe verstanden, sondern als'."\n".
+                    '\jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen}{Summe entlang einer kanonischen Erzeugungsstruktur}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -705,14 +706,15 @@
                       'Viele bekannte Eigenschaften endlicher Zahlen lassen sich dadurch in das aktual Unendliche'."\n".
                     'und das aktual Infinitesimale fortsetzen:'."\n".
                     'Teilbarkeit, Ganzzahligkeit, Gerade/Ungerade, Primartigkeit, Ordnung'."\n".
-                    'und algebraische Operationen erhalten superiale Entsprechungen.'."\n".
+                    'und algebraische Operationen erhalten \jump{OM:SupNum:Algebraische-Grundlagen}{superiale Entsprechungen}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
 
                 '14. Klassische Analysis als Standardebene', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die klassische Analysis bleibt innerhalb der Superial-Zahlen erhalten.'."\n".
+                    'Die \jump{OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral}{klassische Analysis bleibt innerhalb}'."\n".
+                    'der Superial-Zahlen erhalten.'."\n".
                     'Ihre Werte erscheinen als Standardwerte superialer Ausdrücke.'."\n",
                       'Was im klassischen Limes verschwindet, bleibt in der Superial-Rechnung als infinitesimale'."\n".
                     'oder aktual unendliche Schicht sichtbar. Dadurch wird die klassische Analysis nicht ersetzt,'."\n".
@@ -1184,7 +1186,8 @@
                 'Beispiel einer superialen Ableitung und ihres Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Grundidee der superialen Analysis lässt sich bereits an der Funktion'."\n".
+                    'Die Grundidee der \jump{OM:SupNum:Ableitungen-Integrale}{superialen Analysis}'."\n".
+                    'lässt sich bereits an der Funktion'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -1361,7 +1364,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Unsere skalierte aber nicht verschobene Gaußsumme beginnt hingegen bei der Null – nicht bei der Eins –'."\n".
-                    'und läuft bis zum Schritt oder Stützpunkt der direkt einen vor dem Intervalende liegt.'."\n".
+                    'und läuft bis zum Schritt oder Stützpunkt der direkt einen vor dem Intervallende liegt.'."\n".
                     'Also läuft sie bis Eins weniger als die Schrittanzahl, folglich bis \lm{ N - 1 }:'."\n".
                     ''))),
                   array( 'equations',
