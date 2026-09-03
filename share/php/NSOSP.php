@@ -3,10 +3,12 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 04.07.2026, 12:00h
+  // #: Stand: 03.09.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
   //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
@@ -482,7 +484,8 @@
   $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ (Verhältnisse und Proportionen). \\\\ Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 1: Eigenschaften der rationalen Zahlen. \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_RiemannschesIntegral  = 'Vgl. \cite{Riemann:UeberDieDarstellbarkeitEinerFunction:1867}, § 4 Ueber den Begriff eines bestimmten Integrals und den Umfang seiner Gültigkeit. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannschesIntegral:2026}.';
+  $SupNum_g_footnote_text_RiemannscheVermutung  = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
   $SupNum_g_footnote_text_SatzDesEuklid         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';

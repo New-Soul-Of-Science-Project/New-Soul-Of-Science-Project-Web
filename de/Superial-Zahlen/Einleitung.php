@@ -17,18 +17,18 @@
                     //%! '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
                     '\bold{Änderungsvorschläge}',
                     '• Moriz sagt zu dieser Seite:',
-                    '– zu lang und zu detailliert',
-                    '– Ihm war nicht bekannt, welche Menge \lm{ \mathbb{A}_{\R} } ist:',
-                    '⋅ Es sind alle algebraischen Zahlen in den reellen Zahlen \lm{ \mathbb{R} }, also die reellen Zahlen ohne die transzendenten Zahlen, wie \lm{ \e, π } – \lm{ \mathbb{R} \setminus \mathbb{T} }.',
-                    '⋅ Es sind alle rein reellen Lösungen der Nullstellen von Polynomen; keine mit komplexen Anteilen, wie in \lm{ \mathbb{A} }, also \lm{ \mathbb{A} \cap \mathbb{R} }.',
-                    '– Bei der Ableitung und beim Integral sollte es klar sein, dass es um Funktionen geht, die differenzierbar sind und für die das Riemannintegral definiert ist',
+                    '–? zu lang und zu detailliert',
+                    '–o Ihm war nicht bekannt, welche Menge \lm{ \mathbb{A}_{\R} } ist:',
+                    '⋅o Es sind alle algebraischen Zahlen in den reellen Zahlen \lm{ \mathbb{R} }, also die reellen Zahlen ohne die transzendenten Zahlen, wie \lm{ \e, π } – \lm{ \mathbb{R} \setminus \mathbb{T} }.',
+                    '⋅o Es sind alle rein reellen Lösungen der Nullstellen von Polynomen; keine mit komplexen Anteilen, wie in \lm{ \mathbb{A} }, also \lm{ \mathbb{A} \cap \mathbb{R} }.',
+                    '–o Bei der Ableitung und beim Integral sollte es klar sein, dass es um Funktionen geht, die differenzierbar sind und für die das Riemannintegral definiert ist',
                     '• \italic{\bold{Generelle Änderungen}}',
-                    '– Die Formelnummern sind unlesbar und nicht gut zu kommunizieren.',
+                    '– Die Formelnummern sind unlesbar und nicht gut zu kommunizieren. (sagt Moriz)',
                     '\bold{Der Ansatz mit aktual unendlichen Zahlen ist nicht neu}',
                     '• Sondern er ist historisch offenbar sogar älter, als der mit dem Limes-Grenzwert, siehe \url{https://de.wikipedia.org/w/index.php?title=Hyperreelle_Zahl&oldid=237554998} und \url{https://de.wikipedia.org/w/index.php?title=Differentialrechnung&oldid=267675700#Geschichte}.',
                     '• Dieser Ansatz machte Probleme, weil er in sich logisch inkonsistent und nicht klar definiert war.',
                     '– Dies wurde erst durch die hyperreellen Zahlen geändert, die sich über Reihenentwicklung dem unendlich Großen und Kleinen nähern.',
-                    '• Die Superial-Zahlen gehen einen anderen Weg, als die hyperreellen Zahlen, und zwar über ein unendlich großes Primzahlprodukt. Dabei lösen sie das Logikproblem zunächst einmal „nur“ für die Radikale der algebraischen Zahlen, das sind rationale Zahlen und irrationale Wurzelausdrücke, die mit den Grundrechenarten verbunden sind. Durch den erheblichen Erkenntnisgewinn, auch in Bezug auf Primzahlen, ist allein dies schon hoch interessant. Und es eröffnet einen Horizont über weitere Erkenntnisse auch diesbezüglich zu den restlichen irrationalen Zahlen, die keine algebraischen Radikale sind, vorzustoßen und die Natur von transzendenten Zahlen zu erkunden.',
+                    '• Die Superial-Zahlen gehen einen anderen Weg, als die hyperreellen Zahlen, und zwar über ein unendlich großes Primzahlprodukt. Dabei lösen sie das Logikproblem zunächst einmal für die Radikalformen der reell algebraischen Zahlen. Das sind rationale Zahlen und irrationale Wurzelausdrücke, die mit den Grundrechenarten verbunden sind. Durch den erheblichen Erkenntnisgewinn, auch in Bezug auf Primzahlen, ist allein dies schon hoch interessant. Schließlich wird bewiesen, dass alle reell algebraische Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind. Darüber hinaus können wir dann weiter vorzustoßen und die Natur von transzendenten Zahlen erkunden.',
                     '\bold{Analyse}',
                     '• Das heißt, dass die Ordinalzahlen kein Ring sind, weil es nicht zu jedem Element ein additives Inverses gibt. Und kein Körper, weil es kein multiplikatives Inverses gibt.',
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
@@ -505,7 +505,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Ein zentrales Ergebnis ist die Einbettung der reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    'als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten} der Superial-Zahlen.'."\n",
+                    '\lm{ \mathbb{A}_{\R} } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten} der Superial-Zahlen;'."\n".
+                    'also alle reellen Lösungen der Nullstellen von Polynomen; alle reellen Zahlen ohne transzendente Zahlen.'."\n",
                       'Eine Zahl \lm{ a } ist ein sinnvoller Koeffizient, wenn sie mit der superialen Basis'."\n".
                     'zu einer ganzen superialen Zahl skaliert werden kann'."\n".
                     ''))),

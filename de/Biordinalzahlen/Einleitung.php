@@ -57,7 +57,7 @@
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
-                    'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
+                    'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannscheVermutung}} beizutragen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
                       

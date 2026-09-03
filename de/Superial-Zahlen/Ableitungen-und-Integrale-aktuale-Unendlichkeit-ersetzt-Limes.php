@@ -29,7 +29,9 @@
                     'Auf diese Weise können wir, anstatt den Limes-Operator oder den Differential-Operator zu benutzen, einfach wie gewohnt mit Zahlen rechnen.'."\n",
                       'Es geht also um Transparenz und Genauigkeit oder Detail, denen wir an dieser Stelle den Vorzug gegenüber der Kürze und der alten Gewohnheit'."\n".
                     'von (kurzen) Schreibweisen geben werden.'."\n".
-                    'Wir wollen zunächst entdecken, ergründen und verstehen und eben nicht gleich verkürzen.'."\n".
+                    'Wir wollen zunächst entdecken, ergründen und verstehen und eben nicht gleich verkürzen.'."\n",
+                      'Im Folgenden geht es zunächst ausschließlich um Funktionen,'."\n".
+                    'die differenzierbar sind und für die das Riemannsche Integral\footnote{\const{SupNum_g_footnote_text_RiemannschesIntegral}} definiert ist.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
                       
