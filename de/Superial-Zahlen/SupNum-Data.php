@@ -260,6 +260,7 @@
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum' => array( headline_text => 'Das analytische Kontinuum',/* headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Zwei-Konstruktionen-von-s' => array( headline_text => 'Die zwei Konstruktionen von \lm{ \s }',/* headline_text_short => 'X' */),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten' => array( headline_text => 'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten'/* , headline_text_short => 'X' */),

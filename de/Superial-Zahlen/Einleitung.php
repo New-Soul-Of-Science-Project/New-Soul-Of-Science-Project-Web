@@ -471,12 +471,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  =  \sum_{ m \ge k \in \mathbb{Z} }^{m}  a_{k} \cdot \s^{k}  }',
+                      array( display => 'on',  latex => '{  x  =  \sum_{ \substack{k \in \mathbb{Z} \\\ k \le m} }  a_{k} \cdot \s^{k}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei ist \lm{ m \in \mathbb{Z} }, der größte aller endlichen Indizes der Koeffizienten \lm{ a_{k} } die von Null verschieden sind,'."\n".
-                    'und die Koeffizienten stammen aus dem Bereich der sinnvollen Koeffizienten, zu denen wir noch kommen'."\n",
+                    'und die Koeffizienten stammen aus dem Bereich der sinnvollen Koeffizienten, zu denen wir noch kommen.'."\n",
                       'Die Potenz \lm{ \s^{0} = 1 } bildet die endliche Standardschicht. Potenzen \lm{ \s^{k} } mit \lm{ k > 0 }'."\n".
                     'beschreiben aktual unendliche Schichten, Potenzen \lm{ \s^{k} } mit \lm{ k < 0 } infinitesimale Schichten.'."\n",
                       'Die größte nichtverschwindende Schicht bestimmt die Größenordnung der Superial-Zahl.'."\n".
@@ -494,8 +494,9 @@
                     'werden \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:KonservativeErweiterung}{nicht verändert};'."\n".
                     'vielmehr wird innerhalb des von Neumannschen Universums'."\n".
                     'eine zusätzliche strukturierte Rechenumgebung definiert.'."\n",
-                      'Die Modellkonstruktion verwendet insbesondere Hahn-Reihen, lexikographische Ordnung'."\n".
-                    'und verallgemeinerte p-adische Schichtbewertungen.'."\n".
+                      'Die Modellkonstruktion verwendet insbesondere Hahn-Reihen\footnote{\const{SupNum_g_footnote_text_HahnSeries}},'."\n".
+                    'lexikographische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'und verallgemeinerte \lm{ p }-adische Schichtbewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}}.'."\n".
                     'Dadurch erhält man einen geordneten und bewerteten algebraischen Rechenraum, in dem Addition,'."\n".
                     'Multiplikation, Ordnung, Division und Schichtstruktur wohldefiniert zusammenwirken.'."\n".
                     ''))),
@@ -517,12 +518,15 @@
                     ))),
                   array( 'text', array( text => array(
                     'wobei nur der Koeffizient der ersten unendlichen Schicht ungleich Null sein darf.'."\n",
-                      'Für rationale Zahlen ergibt sich diese Eigenschaft aus endlicher Teilbarkeit.'."\n".
+                      'Für rationale Zahlen ergibt sich diese Eigenschaft aus'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten}{endlicher Teilbarkeit}.'."\n".
                     'Durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
                     'und die darauf aufbauenden Argumente wird diese Ganzzahligkeit auf Radikale,'."\n".
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Radikalformen}'."\n".
-                    'und schließlich auf alle reell algebraischen Zahlen erweitert.'."\n",
-                      'Damit werden die reell algebraischen Zahlen im Produkt mit \lm{ \s } zu aktual unendlich ganzen Größen.'."\n".
+                    'und schließlich auf'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-genau-nur-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}'."\n".
+                    'erweitert.'."\n",
+                      'Damit werden die reell algebraischen Zahlen im Produkt mit \lm{ \s } zu aktual unendlichen ganzen Größen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
 
@@ -532,10 +536,11 @@
                     'Innerhalb der Superial-Zahlen werden die reellen Zahlen nicht unterschiedslos'."\n".
                     'als eine einheitliche Koeffizientenklasse behandelt.'."\n".
                     'Vielmehr trennt sie die Theorie in reell algebraische und transzendente Zahlen.'."\n",
-                      'Die reell algebraischen Zahlen bilden sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
-                    'Transzendente Zahlen wie \lm{ \e } und \lm{ π } nehmen dagegen eine andere Rolle ein.'."\n".
+                      'Die reell algebraischen Zahlen bilden'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
+                    '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Transzendente Zahlen wie \lm{ \e } und \lm{ π }} nehmen dagegen eine andere Rolle ein.'."\n".
                     'Sie erscheinen nicht einfach als einzelne algebraische Koeffizienten,'."\n".
-                    'sondern benötigen eine mehrschichtige superiale Darstellung.'."\n",
+                    'sondern \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{benötigen eine mehrschichtige superiale Darstellung}.'."\n",
                       'In dieser Darstellung besitzt die endliche Standardschicht einen reell algebraischen Wert,'."\n".
                     'zugleich können aber auch negative, infinitesimale Schichten auftreten.'."\n".
                     'Damit werden transzendente Zahlen nicht ausgeschlossen, sondern feiner innerlich strukturiert:'."\n".
@@ -663,7 +668,8 @@
                     'Klassisch besitzt eine \jump{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen}{solche Summe}'."\n".
                     'ohne zusätzliche Ordnung oder Summationsvorschrift im Allgemeinen keinen kanonischen Wert.'."\n".
                     'In der Superial-Theorie kann sie dagegen als erzeugungsgeordnete aktual unendliche Summe untersucht werden.'."\n",
-                      'So wird zum Beispiel die Frage nach einer Summe aller reell algebraischen Zahlen von \lm{ 0 } bis ohne \lm{ x }'."\n".
+                      'So wird zum Beispiel die Frage nach einer Summe aller reell algebraischen Zahlen'."\n".
+                    'von \lm{ 0 } bis ausschließlich \lm{ x }'."\n".
                     'nicht als gewöhnliche Grenzwertreihe verstanden, sondern als'."\n".
                     '\jump{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen}{Summe entlang einer kanonischen Erzeugungsstruktur}:'."\n".
                     ''))),
@@ -693,8 +699,10 @@
                       'Auch das Kontinuum als Eigenschaft einer kontinuierlichen, also ununterbrochen'."\n".
                     '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{zusammenhängenden Geometrie},'."\n".
                     'ohne und mit infinitesimalen Anteilen, ist Gegenstand und wird differenziert untersucht.'."\n".
-                    'Die gefundene aktual unendliche Teilungsperspektive auf Basis der endlichen Primzahlen führt direkt'."\n".
-                    'über geometrische Überlegungen zur Definition der superialen Basis \lm{ \s }.'."\n".
+                    'Die gefundene aktual unendliche Teilungsperspektive auf Basis der endlichen Primzahlen'."\n".
+                    '(siehe Abschnitt \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}‹})'."\n".
+                    'führt direkt über geometrische Überlegungen zur'."\n".
+                    '\jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Zwei-Konstruktionen-von-s}{Definition der superialen Basis \lm{ \s }}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
 
@@ -777,7 +785,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dabei bezeichnet \lm{ \prodx } kein gewöhnliches Produkt im klassischen Sinn'."\n".
-                    'und insbesondere kein analytisches unendliches Produkt, sondern ein Primexponentenprodukt:'."\n".
+                    'und insbesondere kein analytisches unendliches Produkt,'."\n".
+                    'sondern ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
                     'Jede endliche Primzahl \lm{ p } kommt darin genau einmal vor.'."\n".
                     'Auf dieser Grundlage wird die superiale Basis definiert durch'."\n".
                     ''))),
@@ -800,8 +809,9 @@
                     'und allgemeiner algebraische Primexponentenstrukturen aufnehmen.'."\n",
                       'Die \jump{OM:SupNum:ZFC-Modellkonstruktion}{ZFC-Modellkonstruktion} macht diese Idee formal präzise.'."\n".
                     'Das aktual unendliche Primexponentenprodukt wird dort nicht als'."\n".
-                    'gewöhnliches unendliches Produkt behandelt, sondern über einen Hahn-Reihen-Körper'."\n".
-                    'mit einer Familie verallgemeinerter \lm{ p }-adischer Bewertungen operationalisiert.'."\n".
+                    'gewöhnliches unendliches Produkt behandelt, sondern über einen Hahn-Reihen-Körper\footnote{\const{SupNum_g_footnote_text_HahnSeries}}'."\n".
+                    'mit einer Familie verallgemeinerter'."\n".
+                    '\lm{ p }-adischer Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} operationalisiert.'."\n".
                     'Der Körper der Superial-Zahlen wird definiert als'."\n".
                     ''))),
                   array( 'equations',
@@ -879,7 +889,9 @@
                       array( display => 'on',  latex => '{  *〈 a_{k} *〉_{k}  =  a_{k} \cdot \s^{k}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Ordnung der Superial-Zahlen ist die lexikographische Ordnung des Stellenwertsystems.'."\n".
+                    'Die Ordnung der Superial-Zahlen ist die'."\n".
+                    'lexikographische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'des Stellenwertsystems.'."\n".
                     'Entscheidend ist immer die höchste Schicht, in der sich zwei Zahlen unterscheiden.'."\n".
                     'Für eine von Null verschiedene Superial-Zahl wird diese höchste besetzte Schicht durch die Schichtbewertung'."\n".
                     ''))),
@@ -1052,7 +1064,7 @@
                     'zur ersten infinitesimalen Schicht.'."\n",
                       'Die höchste besetzte Schicht bestimmt die Größenordnung der Superial-Zahl.'."\n".
                     'In diesem Beispiel ist das die Schicht \lm{ \s^{2} }.'."\n".
-                    'Infinitesimale Anteile können den Wert einer höheren Schicht nicht umkehren.'."\n".
+                    'Der Koeffizient einer Schicht kann den Wert der Koeffizienten höherer Schichten nicht verändern oder gar umkehren.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', horizontalLineBefore => true, jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:StellenwertschreibweiseSpitzenKlammern', text =>
@@ -1428,9 +1440,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} \cdot ( b - a )^{2} \cdot \s - 2 \, \s^{-1} ( b - a ) }{ 2 } \\\ \qquad\qquad\qquad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} ( b - a )^{2} \cdot \s - 2 \, \s^{-1} \cdot ( b - a ) }{ 2 } \\\ \qquad\qquad\qquad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad\quad 2 a \cdot ( b - a ) + \s^{-1} \cdot ( b - a )^{2} \cdot \s - \s^{-1} \cdot ( b - a ) \\\ \qquad\qquad\qquad + \;\; ( b - a ) \cdot \s^{-1}  }'),
+                      array( display => 'off', latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} \cdot ( b - a )^{2} \cdot \s - 2 \, \s^{-1} \cdot ( b - a ) }{ 2 } \\\ \qquad\qquad\quad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad 2 a \cdot ( b - a ) + \s^{-1} \cdot ( b - a )^{2} \cdot \s - \s^{-1} \cdot ( b - a ) \\\ \qquad\qquad\quad + \;\; ( b - a ) \cdot \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\quad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }',
                                     latex_if_visible => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\qquad\qquad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }'),
                     ))),
@@ -1881,7 +1892,7 @@
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-a-mal-s-in-Sz-erste-Schicht}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Bedingung führt zur Definition der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                    'Diese Bedingung führt zur Definition der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.'."\n",
                       'Daraus ergeben sich weitere Vermutungen und Beweise, die tief in die Zahlentheorie reichen.'."\n".
                     'Irrationale Wurzeln werden zu aktual unendlichen ganzen Zahlen, wenn sie mit'."\n".
                     'der passenden Primexponentenstruktur von \lm{ \s } faktorisiert werden.'."\n".
@@ -1894,7 +1905,7 @@
                     'klärt abschließend die Grenze dieser Koeffizientenstruktur:'."\n".
                     'Transzendente Zahlen sind keine sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
                     'Sie benötigen mehrere Schichten der Superial-Zahlen'."\n".
-                    'und sind daher nicht allein als Koeffizienten der Hauptschicht darstellbar.'."\n",
+                    'und sind daher nicht allein als Koeffizienten einer einzigen Schicht darstellbar.'."\n",
                       'All diese Zusammenhänge begründen die Superial-Zahlen als Zahlensystem der Analysis.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:X', text =>
@@ -1944,7 +1955,8 @@
                     'In dieser werden die Werte endlicher und transfiniter natürlicher Zahlen mit ihrer Darstellung durch die Menge all ihrer Vorgänger, von der Null an, identifiziert.'."\n".
                     'Auf diese Mengenstruktur abgestimmt definieren wir die Primfakultät als Mengen-Primfakultät:'."\n".
                     'Sie bildet aus allen Primzahlen, die in der Mengendarstellung einer Ordinalzahl enthalten sind,'."\n".
-                    'ein Primexponentenobjekt mit erweiterter p-adischer Primexponentenbewertungsstruktur.'."\n".
+                    'ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenobjekt}'."\n".
+                    'mit erweiterter \lm{ p }-adischer Primexponentenbewertungsstruktur\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Generative Primzahl-Induktion', subline =>
@@ -2239,7 +2251,7 @@
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Der Nenner enthält jede in n vorkommende Primzahl in aktual unendlicher Potenz.'."\n".
+                    'Der Nenner enthält jede in \lm{ n } vorkommende Primzahl in aktual unendlicher Potenz.'."\n".
                     'Der Zähler enthält dieselbe aktual unendliche Primexponentenstruktur,'."\n".
                     'ergänzt um den Wurzelexponenten von \lm{ n^{\frac{ 1 }{ x }} }.'."\n".
                     'Damit werden Zähler und Nenner zu aktual unendlichen ganzen Zahlen'."\n".
@@ -2293,7 +2305,9 @@
                     '')),
                   array( 'text', array( text => array(
                     'Mit dem Beweis der Überrationalitätsvermutung treten die tieferen Zusammenhänge'."\n".
-                    'zwischen klassischen Zahlbereichen und aktual unendlichen Primexponentenstrukturen hervor.'."\n".
+                    'zwischen klassischen Zahlbereichen und aktual unendlichen'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenstrukturen}'."\n".
+                    'hervor.'."\n".
                     'Irrationale Wurzeln und Radikalformen erscheinen dabei nicht als äußere Fremdkörper,'."\n".
                     'sondern als Zahlen, deren fehlende endliche Rationalität durch'."\n".
                     'aktual unendliche Teilbarkeitsstrukturen aufgenommen werden kann.'."\n",
@@ -2366,7 +2380,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Das bedeutet:'."\n".
-                    'Jede reell algebraische Zahl \lm{ \alpha } ist ein sinnvoller Koeffizient der Superial-Zahlen.'."\n".
+                    'Jede reell algebraische Zahl \lm{ \alpha \in \mathbb{A}_{\R} } ist ein sinnvoller Koeffizient der Superial-Zahlen.'."\n".
                     'In der Sprache der Superial-Zahlen heißt dies:'."\n".
                     ''))),
                   array( 'equations',
@@ -2377,7 +2391,7 @@
                     'Der Beweis nutzt nicht mehr nur einzelne Radikaldarstellungen,'."\n".
                     'sondern die allgemeine algebraische Struktur reell algebraischer Zahlen.'."\n".
                     'Der zentrale Gedanke ist, die Ganzzahligkeit in den Superial-Zahlen'."\n".
-                    'über Bewertungen zu kontrollieren.'."\n",
+                    'über Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} zu kontrollieren.'."\n",
                       'Zunächst wird der Ring der ganzen Superial-Zahlen durch eine Schnittdarstellung beschrieben:'."\n".
                     ''))),
                   array( 'equations',
@@ -2390,7 +2404,7 @@
                     'keine negativen Primexponenten besitzt.'."\n".
                     'Aus dieser Darstellung folgt, dass \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist,'."\n".
                     'denn Bewertungsringe sind ganz abgeschlossen und Schnitte'."\n".
-                    'ganz abgeschlossener Teilringe bleiben ganz abgeschlossen.'."\n",
+                    'ganz abgeschlossener Teilringe bleiben ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_IntegralityAndValuationRings}}\footnote{\const{SupNum_g_footnote_text_Valuationsring}}'."\n",
                       'Anschließend wird diese Ganz-Abgeschlossenheit auf algebraische Ganzzahlen angewendet.'."\n".
                     'Ist \lm{ \beta } eine reell algebraische Ganzzahl, so erfüllt \lm{ \beta }'."\n".
                     'eine monische Polynomgleichung mit ganzzahligen Koeffizienten.'."\n".
@@ -2528,10 +2542,12 @@
                     'zur algebraischen Fundierung der Superial-Zahlen.'."\n".
                     'Sie zeigt, dass die Superial-Zahlen nicht nur ein Stellenwertsystem'."\n".
                     'mit aktual unendlicher Basis sind, sondern ein Rechenraum,'."\n".
-                    'dessen Hauptschicht die reell algebraischen Zahlen als natürliche Koeffizienten tragen kann.'."\n",
-                      'Zugleich bereitet dieses Ergebnis die Abgrenzung zur Superialen-Transzendenz-Vermutung vor.'."\n".
-                    'Während reell algebraische Zahlen sinnvolle Koeffizienten der Hauptschicht sind,'."\n".
-                    'benötigen transzendente Zahlen nach dieser späteren Vermutung zusätzliche superiale Schichten.'."\n".
+                    'dessen einzelne Exponentenschichten die reell algebraischen Zahlen als natürliche Koeffizienten tragen können.'."\n",
+                      'Zugleich bereitet dieses Ergebnis die Abgrenzung zur'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Superialen-Transzendenz-Vermutung}{Superialen-Transzendenz-Vermutung}'."\n".
+                    'vor.'."\n".
+                    'Während reell algebraische Zahlen sinnvolle Koeffizienten jeder einzelnen Schicht sind,'."\n".
+                    'benötigen transzendente Zahlen nach dieser späteren Vermutung zusätzliche superiale Schichten negativer Potenz von \lm{ \s }.'."\n".
                     'Die Algebraische-Koeffizienten-Vermutung markiert damit'."\n".
                     'die positive algebraische Seite der Koeffizientenstruktur:'."\n".
                     'Alle reell algebraischen Zahlen gehören zu den sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
@@ -2543,10 +2559,9 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}'."\n".
-                    'bildet die Gegenrichtung zur Algebraischen-Koeffizienten-Vermutung.'."\n".
-                    'Während die'."\n".
-                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraische-Koeffizienten-Vermutung}'."\n".
-                    'zeigt'."\n".
+                    'bildet die Gegenrichtung zur'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Algebraischen-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung}.'."\n".
+                    'Während die Algebraische-Koeffizienten-Vermutung zeigt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.STV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -2787,8 +2802,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Darstellung der Superial-Zahlen ist so aufgebaut,'."\n",
-                    'dass zunächst die Grundidee und die arithmetische Motivation entwickelt werden,'."\n",
+                    'Die Darstellung der Superial-Zahlen ist so aufgebaut,'."\n".
+                    'dass zunächst die Grundidee und die arithmetische Motivation entwickelt werden,'."\n".
                     'bevor die formale Struktur, die Rechenregeln und die Beweise der zentralen Vermutungen folgen.'."\n",
                       'Die \italic{›\jumpname{OM:SupNum:Einleitung}‹} führt in die leitende Idee ein:'."\n".
                     'Die Superial-Zahlen sollen eine zahlentheoretische Tiefenstruktur der Analysis sichtbar machen.'."\n".

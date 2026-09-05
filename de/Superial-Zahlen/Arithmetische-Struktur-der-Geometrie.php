@@ -701,7 +701,7 @@
                     'die arithmetische Feinstruktur des Kontinuums bleibt damit unvollständig erfasst.'."\n".
                     'Die tiefergehenden Konsequenzen werden in den \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchungen zur Kontinuumshypothese} auf der Eigenschaftsseite behandelt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Zwei-Konstruktionen-von-s', text =>
                       
                 'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
