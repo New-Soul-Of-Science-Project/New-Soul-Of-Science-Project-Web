@@ -1543,17 +1543,17 @@
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:BeispielSuperialenAbleitungIntegral:Gausssumme:Equ-skalierte-Gausssumme}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Summe haben wir, wie gesagt, oben aus einfachen Überlegungen zur Gaußsumme in einer Nebenrechnung entwickelt.'."\n",
-                      'Dabei besitzen die Zahlen der Menge \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}^{-1}_{\Z}} }'."\n".
+                      'Dabei besitzen die Zahlen der Menge \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}_{\Z}^{-1}} }'."\n".
                     'über die summiert wird selber die innere Summenstruktur:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  x + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{\Z}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  x + z \cdot \s^{-1}  \in  \mathbb{S}_{\Z}^{-1}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1567,7 +1567,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, x[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \quad\,  0 \s^{-1}, 1 \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 \s^{-1},\; \frac{1}{2} x - \s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + \s^{-1},\; \frac{1}{2} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 \s^{-1},\; \frac{2}{3} x - \s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + \s^{-1},\; \frac{2}{3} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 \s^{-1}, x - 2 \s^{-1}, x - \s^{-1}   \quad *\}  }',
+                      array( display => 'on',  latex => '{  [0, x[_{\mathbb{S}_{\Z}^{-1}}  =  \\\  \quad *\{  \quad\,  0 \s^{-1}, 1 \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 \s^{-1},\; \frac{1}{2} x - \s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + \s^{-1},\; \frac{1}{2} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 \s^{-1},\; \frac{2}{3} x - \s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + \s^{-1},\; \frac{2}{3} x + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 \s^{-1}, x - 2 \s^{-1}, x - \s^{-1}   \quad *\}  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1575,10 +1575,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  *( 0 + n \cdot \s^{-1} *) \\\ \qquad\qquad\quad\;\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  *( a + z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\quad\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! *( x + z \cdot \s^{-1} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1} \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  *( \sumx_{ z \in \mathbb{Z} }  a  \, +  \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x  \, +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1}  +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  \s^{-1} \cdot \! \sumx_{ z \in \mathbb{Z} }  \! z  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  *( 0 + n \cdot \s^{-1} *) \\\ \qquad\qquad\quad\;\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  *( a + z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\quad\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! *( x + z \cdot \s^{-1} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1} \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  *( \sumx_{ z \in \mathbb{Z} }  a  \, +  \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x  \, +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \sumx_{ n \in \mathbb{N} }  \! n \cdot \s^{-1}  +  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! z \cdot \s^{-1}  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \s^{-1} \cdot \! \sumx_{ z \in \mathbb{Z} }  \! z  \;\; + \;\;  \! \sumx_{ z \in \mathbb{Z}^{-} }  \! x \\\ \qquad\qquad\qquad\qquad\;  \;\; + \;\;  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! a  \, +  \!\!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \sumx_{ z \in \mathbb{Z} }  \! z \cdot \s^{-1}  }',
                                           label_name => 'OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt', label_text => '\name{OM:SupNum:Einleitung:IllustrierendeRechenbeispiele:Beispiele-Erzeugungssummen-Erzeugungsanzahlen:Equ-Summe-superial-kleine-ganze-Zahle-von-Null-bis-x-zerlegt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1660,7 +1660,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  \;\; - \;\;  ω \cdot \s^{-1} \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  \;\; - \;\;  ω \cdot \s^{-1} \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun berechnen wir die Erzeugungsanzahl des offenen inneren Intervalls'."\n".
@@ -1704,7 +1704,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die beiden noch auszuwertenden Terme vereinfachen sich zu:'."\n".
@@ -1719,7 +1719,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  \frac{ x^{2} \cdot \s }{ 2 }  \;\; - \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; - \;\;  \frac{ x }{ 2 }  \;\; + \;\;  ω \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  \frac{ x^{2} \cdot \s }{ 2 }  \;\; - \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; - \;\;  \frac{ x }{ 2 }  \;\; + \;\;  ω \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun heben sich die erzeugungshierarchischen Randkorrekturen exakt auf:'."\n".
@@ -1740,14 +1740,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Damit erhalten wir genau die zuvor aus der skalierten Gaußsumme gewonnene Formel:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s - x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  \frac{ x^{2} \cdot \s - x }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Rechnung zeigt, dass die Formel nicht nur eine umgeschriebene Gaußsumme ist.'."\n".
