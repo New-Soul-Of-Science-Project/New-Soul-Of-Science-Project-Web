@@ -467,7 +467,7 @@
                 '4. Zentrale Normalform der Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Superial-Zahlen werden als endliche Schichtsummen zur Basis \lm{ \s } dargestellt:'."\n".
+                    'Superial-Zahlen werden als nach oben beschränkte Schichtreihen zur Basis \lm{ \s } dargestellt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -475,8 +475,10 @@
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei ist \lm{ m \in \mathbb{Z} }, der größte aller endlichen Indizes der Koeffizienten \lm{ a_{k} } die von Null verschieden sind,'."\n".
-                    'und die Koeffizienten stammen aus dem Bereich der sinnvollen Koeffizienten, zu denen wir noch kommen.'."\n",
+                    'Dabei ist \lm{ m \in \mathbb{Z} } die höchste besetzte Schicht,'."\n".
+                    'also der größte Index mit \lm{ a_{m} \neq 0 }.'."\n".
+                    'Die Koeffizienten stammen aus dem Bereich der sinnvollen Koeffizienten,'."\n".
+                    'der später als Körper der reell algebraischen Zahlen bestimmt wird.'."\n",
                       'Die Potenz \lm{ \s^{0} = 1 } bildet die endliche Standardschicht. Potenzen \lm{ \s^{k} } mit \lm{ k > 0 }'."\n".
                     'beschreiben aktual unendliche Schichten, Potenzen \lm{ \s^{k} } mit \lm{ k < 0 } infinitesimale Schichten.'."\n",
                       'Die größte nichtverschwindende Schicht bestimmt die Größenordnung der Superial-Zahl.'."\n".
@@ -505,9 +507,12 @@
                 '6. Algebraische Zahlen als sinnvolle Koeffizienten', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ein zentrales Ergebnis ist die Einbettung der reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    '\lm{ \mathbb{A}_{\R} } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten} der Superial-Zahlen;'."\n".
-                    'also alle reellen Lösungen der Nullstellen von Polynomen; alle reellen Zahlen ohne transzendente Zahlen.'."\n",
+                    'Ein zentrales Ergebnis ist die Einbettung der'."\n".
+                    'reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    '\lm{ \mathbb{A}_{\R} } als \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten} der Superial-Zahlen.'."\n".
+                    '\lm{ \mathbb{A}_{\R} } bezeichnet den Körper der reell algebraischen Zahlen,'."\n".
+                    'also die reellen Nullstellen nichttrivialer Polynome mit ganzzahligen Koeffizienten.'."\n".
+                    'Äquivalent sind dies die reellen Zahlen ohne die transzendenten Zahlen.'."\n",
                       'Eine Zahl \lm{ a } ist ein sinnvoller Koeffizient, wenn sie mit der superialen Basis'."\n".
                     'zu einer ganzen superialen Zahl skaliert werden kann'."\n".
                     ''))),
@@ -1098,7 +1103,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  z  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5  \;\; .  }'),
+                      array( display => 'on',  latex => '{  z_{\s}  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Zahl besitzt keine negativen Schichten.'."\n".
@@ -1108,14 +1113,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  z  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  z_{\s}  \in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dagegen ist'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  y  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5 + \frac{ 1 }{ \s }  }'),
+                      array( display => 'on',  latex => '{  x  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5 + \frac{ 1 }{ \s }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'keine ganze Superial-Zahl, weil sie einen nichtverschwindenden infinitesimalen Anteil besitzt:'."\n".
@@ -1129,7 +1134,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Ganz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  y  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5{,}4  }'),
+                      array( display => 'on',  latex => '{  x  =  \sqrt{2} \, \s^{2} + 3 \, \s + 5{,}4  }'),
                     ))),
                   array( 'text', array( text => array(
                     'ist keine ganze Superial-Zahl, weil sie im Endlichen gebrochen ist.'."\n".
@@ -1543,8 +1548,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Diese Summe haben wir, wie gesagt, oben aus einfachen Überlegungen zur Gaußsumme in einer Nebenrechnung entwickelt.'."\n",
-                      'Dabei haben die Zahlen der Menge \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}^{-1}_{\Z}} }'."\n".
-                    'über die summiert wird, ihre Indizes, selber die Summenstruktur:'."\n".
+                      'Dabei besitzen die Zahlen der Menge \lm{ \left\lbrack 0, x \right\lbrack_{\mathbb{S}^{-1}_{\Z}} }'."\n".
+                    'über die summiert wird selber die innere Summenstruktur:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1566,7 +1571,7 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Summieren wir alle Elemente können wir die Summe wie folgt aufsplitten und berechnen:'."\n".
+                    'Summieren wir alle Elemente, können wir die Summe wie folgt aufsplitten und berechnen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1873,11 +1878,11 @@
                   
                   array( 'text', array( text => array(
                     'Die entdeckten aktual unendlichen Primfaktorzerlegungen innerhalb der neuen, in der ZFC-Mengenlehre'."\n".
-                    'definierbaren Primexponentenstruktur offenbaren einen tiefen Zusammenhang'."\n".
-                    'der endlichen Primzahlen mit dem aktual unendlichen von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'definierbaren Primexponentenstruktur offenbaren einen tiefen Zusammenhang zwischen'."\n".
+                    'den endlichen Primzahlen und dem aktual unendlichen von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
                     '\lm{ ω }.'."\n".
-                    'Dieser Zusammenhang mündet in einer'."\n".
-                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{kanonischen Identifikation}'."\n".
+                    'Dieser Zusammenhang mündet in eine'."\n".
+                    '\jump{OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung}{kanonische Identifikation}'."\n".
                     'des von-Neumann-Ordinals mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen.'."\n",
                       'Aus der Rekonstruktion der Analysis, im Besonderen der Integrale als'."\n".
                     'aktual unendlich schrittige Summen, ergibt sich die zentrale Frage,'."\n".
