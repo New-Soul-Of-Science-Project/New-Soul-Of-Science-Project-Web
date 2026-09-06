@@ -550,7 +550,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{S}^{-1}_{Z,\{ 0 \}}} \!\!\! z  =  \sum_{ z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{S}_{\Z,\{ 0 \}}^{-1} } \!\!\! z  =  \sum_{ z \in \s^{-1} \mathbb{Z}}  z  =  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sum_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
                     ))),

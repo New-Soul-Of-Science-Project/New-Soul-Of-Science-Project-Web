@@ -1456,7 +1456,6 @@
                   array( 'text', array( text => array(
                     'Wir kennen nun schon das Ergebnis der Summe \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
                     'aller superial kleinen ganzen Superial-Zahlen'."\n".
-                    // '\hidden{\lm{ \mathbb{S}^{-1}_Z }'."\n".
                     'von Null bis ausschließlich \lm{ x }, die bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Integration von} \lm{ f_{\s}\'(x) =〈 2 x 〉․〈 1 〉} \jump{*SupNum:Stellenwertsystem-Schreibweise}{(Stellenwertsystem-Schreibweise)} auftritt.'."\n".
                     'Allerdings wissen wir nicht genau, wie sich diese Summe durch direkte Berechnung der Teilsummen, also ohne das Benutzen der'."\n".
                     'angepassten Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}, berechnet,'."\n".
