@@ -1310,7 +1310,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}^{-1}  =  *\{  z \cdot \s^{-1}  *|*  z \in \mathbb{S}_{\Z}  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}^{-1}  =  *\{  z_{\s} \cdot \s^{-1}  *|*  z_{\s} \in \mathbb{S}_{\Z}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'die um eine Schicht ins Infinitesimale skalierte Menge der ganzen Superial-Zahlen.'."\n",

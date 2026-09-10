@@ -15,13 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Verbesserungen der Seite}',
-                    //%! '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
-                    //%! '\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
-                    //%! '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
-                    //%! '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \lm{ ω }, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
-                    //%! '– Meine Analyse sagt: Eine Anzahl von \lm{ ω } Zahlen sind vom Typ \lm{ ω - n } in den Biordinalzahlen.',
-                    //%! '– Da die Primzahlprodukt-Vermutung stimmt, liegen dann auch alle \lm{ p^{-1} \cdot ω \pm n}, mit \lm{ p } ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen dort.',
-                    //%! '⋅ Nach meiner Meinung gibt es keine Einschränkung für die Größe von \lm{ n }. Dann sind es jeweils \lm{ 2 ω } pro jedem \lm{ p^{-1} } Zahlen.',
+                    // '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     '\bold{Primzahlzwillingsvermutung}',
                     '• Können wir über den Beweis der Primzahlprodukt-Vermutung die Primzahlzwillingsvermutung beweisen?',
                     '\bold{Interessante Erkenntnisse zu Primzahlen}',
@@ -91,7 +85,7 @@
                     'Das System wird über drei neue, streng mengentheoretische Kernkonzepte formalisiert:'."\n".
                     ''))),
 
-                  array( 'bulletlist', array( bullet_ary => array(
+                  array( 'bulletlist', array( ListStyle => 'number', bullet_ary => array(
                         '\bold{Die Primturmzerlegung \lm{ \pt( n ) }:} \\\\'."\n".
                           'Eine bijektive Abbildung, die jede natürliche Zahl verlustfrei als reine Menge ihrer maximalen,'."\n".
                           'atomaren Primzahlpotenzen darstellt.',
@@ -262,31 +256,78 @@
                   array( 'text', array( text => array(
                     'Auf die Primzahlprodukt-Vermutung bin ich durch das Untersuchen der'."\n".
                     '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n".
+                    'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹},'."\n".
+                    'wo wir uns schon mit der Struktur von \lm{ \s } beschäftigt haben.'."\n".
+                    'Zum Verständnis legen wir ihn noch einmal dar.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Schauen wir uns das Zählen der \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
-                    'Beim Zählen von natürlichen Superial-Zahlen von Null bis ohne \lm{ \s }, in Form von \lm{ a \cdot \s + z }, werden endliche \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
-                    '– alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} von Null bis ohne Eins –'."\n".
-                    'als Koeffizienten des Aktual-Unendlichen Summanden \lm{ a \cdot \s } mitgezählt,'."\n".
-                    'während dabei die endlichen ganzen Zahlen \lm{ z } im endlichen Summand für jedes \lm{ a } immer wieder vollständig durchlaufen.'."\n".
-                    'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Erzeugungsanzahl der endlichen sinnvollen Koeffizienten'."\n".
-                    'und der endlichen ganzen Zahlen, dann scheint intuitiv die Erzeugungsanzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
-                    'aller endlichen Primzahlen gleich zu sein.'."\n",
-                      'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹},'."\n".
-                    'wo wir uns schon mit der Struktur von \lm{ \s } beschäftigt haben.'."\n".
-                    'Dabei fanden wir, dass die Erzeugungsanzahl der sinnvollen Koeffizienten \lm{ \overline{\#} \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} },'."\n".
-                    'von der Null bis ausschließlich der Eins, nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
-                    'eine aktual unendliche positive ganze Zahl sein muss.'."\n".
-                    'Das können wir mit Hilfe der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
+                    'Schauen wir uns das Zählen der'."\n".
+                    '\jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
+                    'Beim Zählen der natürlichen Superial-Zahlen von Null bis ausschließlich \lm{ \s }'."\n".
+                    'innerhalb der ganzen Superial-Zahlen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
-                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  a \cdot \s + z  \in  [ 0, \s [_{\mathbb{S}_{\Z}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} einer Menge berechnet sich aus'."\n".
+                    'werden endliche'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}'."\n".
+                    '– alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'von Null bis einschließlich Eins –'."\n".
+                    'als Koeffizienten des Aktual-Unendlichen Summanden \lm{ a \cdot \s } mitgezählt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\ \quad *\{  r  ~\middle|~  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  r  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die sich ergebende Menge ist entsprechend in'."\n".
+                    'Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen-normiert}'."\n".
+                    'aufgezählt, wenn wir dort \lm{ x = 1 } setzen.'."\n",
+                      'Dabei laufen die endlichen ganzen Zahlen im endlichen Summanden \lm{ z } für jedes \lm{ a } mit \lm{ 0 < a < 1 }'."\n".
+                    'immer wieder vollständig durch.'."\n".
+                    'Für \lm{ a = 0 } laufen die endlichen ganzen Zahlen durch alle \lm{ n \in \mathbb{N} }.'."\n".
+                    'Für \lm{ a = 1 } laufen die endlichen ganzen Zahlen durch alle negativen \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n",
+                      'Wir wollen nun die \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl} '."\n".
+                    'aller reell algebraischen Zahlen von Null bis ausschließlich Eins berechnen.'."\n".
+                    'Wir wissen nach Definition der natürlichen Superial-Zahlen: die Erzeugungsanzahl'."\n".
+                    'des Intervalls von Null bis ausschließlich \lm{ \s } entspricht der Anzahl der Vorgänger von \lm{ \s }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, \s [_{\mathbb{S}_{\Z}}  =  \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Zahl ist gleich der Anzahl der Zählschritte einschließlich der Null,'."\n".
+                    'also alle endlichen Zählschritte zusammengefasst.'."\n".
+                    'Wenn wir die rein negativen Zählschritte direkt vor erreichen von \lm{ \s } vor die Null verlegen,'."\n".
+                    'dann haben wir für \lm{ a = 0 } genauso \lm{ 2 ω } Zählschritte, wie für alle \lm{ 0 < a < 1 }.'."\n".
+                    'Die Zählschritte für \lm{ a = 1 } fallen so komplett weg.'."\n".
+                    'Demnach haben wir für alle reell algebraischen Koeffizienten im aktual unendlichen Produkt \lm{ a \cdot \s }'."\n".
+                    'mit \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } jeweils \lm{ 2 ω } Zählschritte.'."\n".
+                    'Also müssen die Zählschritte rein in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} },'."\n".
+                    'ohne Berücksichtigung der endlichen Schritte, der Erzeugungsanzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \overline{\#} [ 0, \s [_{\mathbb{S}_{\Z}} }{ \overline{\#} \mathbb{Z} }  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gleich sein;'."\n".
+                    'dem Verhältnis der Erzeugungsanzahl der Zählschritte der natürlichen Superial-Zahlen von Null bis ausschließlich \lm{ \s }'."\n".
+                    'zur Erzeugungsanzahl der Zählschritte der endlichen ganzen Zahlen.'."\n",
+                      'Diese Erzeugungsanzahl muss eine aktual unendliche positive ganze Zahl sein.'."\n".
+                    'Das können wir mit Hilfe der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }}'."\n".
+                    'zum Ausdruck bringen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Erzeugungsanzahl einer Menge berechnet sich aus'."\n".
                     'den Erzeugungspositionen beziehungsweise der Erzeugungskombinatorik der Menge.'."\n".
                     ''))),
                       
@@ -298,7 +339,8 @@
                       ''))),
  
                   array( 'text', array( text => array(
-                    'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
+                    'Die vorgenannte Ganzzahligkeit bedingt, dass alle Primzahlen des Primexponentenprodukts'."\n".
+                    'von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen, wenn sie existieren.'."\n".
                     'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} steht'."\n".
                     '\lm{ \s } für die Erzeugungsanzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für'."\n".
@@ -315,18 +357,19 @@
                       array( display => 'on',  latex => '{  \s  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Folgenden können wir dies klar erkennen.'."\n",
-                      'Denn \lm{ \s } ist in Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
-                    'durch folgendes Primzahl-Flächenprodukt definiert:'."\n".
+                    'Im Folgenden können wir dies klar erkennen,'."\n".
+                    'denn \lm{ \s } ist durch folgendes Primexponentenprodukt beziehungsweise Primzahl-Flächenprodukt definiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  \displaystyle *( \prodx_{p \in \mathbb{P}}  p *)_{\#}^{ω}  =  \displaystyle \prodx_{p \in \mathbb{P}}  p^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \s  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\;\; \;\;\;\; \vdots \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\;\; \;\;\;\; \vdots  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\const{SupNum_g_text_ZFCkonform}'."\n",
-                      'Da, wie oben geschildert, alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen,'."\n".
+                      'Da, wie oben geschildert, alle Primzahlen des Primexponentenprodukts von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen,'."\n".
                     'muss \lm{ 2 ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
@@ -359,27 +402,27 @@
 
                   array( 'text', array( text => array(
                     'Somit kommt keine Primzahl der Potenz \lm{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
-                    'als unendlich großer Primfaktoranteil von \lm{ \s }, der \lm{ ω } gleicht, in Frage.'."\n".
+                    'als unendlich großer Primexponentenanteil von \lm{ \s }, der \lm{ ω } gleichen kann, in Frage.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
                       
                 'Wir vermuten, \lm{ ω } ist das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Eine Möglichkeit, die noch bleibt, ist, dass \lm{ ω } dem unendlichen Produkt aller'."\n".
-                    'endlichen Primzahlen gleich ist, also eine Zeile des Primzahl-Flächenprodukts:'."\n".
+                    'Eine Möglichkeit, die noch bleibt, ist, dass \lm{ ω } dem aktual unendlichen Primexponentenprodukt aller'."\n".
+                    'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  ω_{\forall p}  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  \\\ \qquad\quad\,  =  *( ω_{\forall p} *)^{ω}  ?\equiv_{kan}  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  :=  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  \\\ \qquad\quad\,  =  *( ω_{\forall p} *)^{ω}  ?\equiv_{kan}  ω^{ω}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Stimmt unsere Vermutung, dann ist \lm{ \s } das Gleiche wie \lm{ ω } hoch \lm{ ω }.'."\n",
-                      'An dieser Stelle sind wird nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \lm{ ω } stecken oder'."\n".
-                    'auch welche endlich oft mehrfach vorkommen.'."\n".
+                      'An dieser Stelle sind wir nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \lm{ ω } stecken oder'."\n".
+                    'auch, welche endlich oft mehrfach vorkommen.'."\n".
                     'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
                     'Außer, dass vielleicht die \lm{ 2 } an \lm{ ω } fehlen könnte, weil sie in \lm{ 2 ω } wieder separat hinzu kommt.'."\n",
                       'Die Eigenschaft von \lm{ ω } allerdings, mit gutem Recht, soweit wir wissen, in ihrer Mengendarstellung genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
@@ -390,7 +433,9 @@
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
                       'Wir können unsere Vermutung plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
                     'als auch das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreiben.'."\n",
-                      'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -409,7 +454,9 @@
                   'Beweis durch Zählen', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Einmal können wir die Unendlichkeit der endlichen natürlichen Zahlen durch das Zählen beweisen, mittels der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
+                    'Einmal können wir die Unendlichkeit der endlichen natürlichen Zahlen durch das Zählen beweisen.'."\n".
+                    'Dieser Beweis gelingt mittels der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
+                    'die durch das von-Neumann-Ordinal\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} \lm{ ω } symbolisiert wird,'."\n".
                     'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -417,16 +464,16 @@
                     '')),
                   array( 'text', array( text => array(
                     'Und ein weiteres Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen mittels der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}}'."\n".
-                    'und der Phasenverschiebung'."\n".
-                    'um \lm{ \pm 1 } beweisen, auf Basis der Multiplikationsatome der Primzahlen und des Zählatoms Eins, ausgehend von der Eins.'."\n".
-                    'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
+                    'und der Phasenverschiebung um \lm{ \pm 1 } beweisen.'."\n".
+                    'Dieser Beweis gelingt auf Basis der Multiplikationsatome der Primzahlen und des Zählatoms Eins, ausgehend von der Eins,'."\n".
+                    'wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
                     'Denn sein Beweis basiert auf der Primfakultät, also auf dem Primorial\footnote{\const{SupNum_g_footnote_text_Primorial}},'."\n".
                     'welche immer weiter potenziell ins Unendliche vorangetrieben wird und sich damit immer weiter'."\n".
                     'dem Produkt aller Primzahlen aus Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
                     'nähert.'."\n",
-                      'In der Primfakultät \lm{ p\# } sind alle endlichen Primzahlen, von der Zwei bis zu einer größten \lm{ p }, enthalten.'."\n".
+                      'Im Produkt der Primfakultät \lm{ p\# } sind alle endlichen Primzahlen, von der Zwei bis zu einer größten \lm{ p }, enthalten.'."\n".
                     'Die größte wird dann im Beweis immer größer, bis ins Unendliche.'."\n".
-                    'Ausschließlich mit diesem Produkt funktioniert der Beweis und nicht, wenn irgendeine Primzahl'."\n".
+                    'Ausschließlich mit diesem vollständigen Produkt funktioniert der Beweis und nicht, wenn irgendeine Primzahl'."\n".
                     'im Produkt fehlt.'."\n",
                       'Da aufgrund des ›Fundamentalsatzes der Arithmetik‹\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
                     'alle natürlichen Zahlen größer als Eins entweder selber Primzahlen sind oder sich in Primfaktoren zerlegen lassen,'."\n".
@@ -437,12 +484,14 @@
                   'Hohe Plausibilität der Primzahlprodukt-Vermutung', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Es liegt also sehr nahe, dass das später definierte vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen'."\n".
-                    'das Teilprodukt von \lm{ \s } ist, dass später mit \lm{ ω } identifiziert wird.'."\n".
-                    'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
-                    'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben, sie aber schon mal'."\n".
-                    'sehr plausibel erscheint.'."\n".
-                    'Genau dies zeigen wir nachfolgend und nutzen dazu die vorstehende Einsicht für den Beweis.'."\n".
+                    'Es liegt demnach nahe, dass das später definierte vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen'."\n".
+                    'das Teilprodukt von \lm{ \s } ist, dass später mit \lm{ ω } kanonisch identifiziert werden kann.'."\n".
+                    'Es gibt so gesehen keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommt'."\n".
+                    'und wenn eine fehlt, funktioniert der Zusammenhang offenbar nicht mehr.'."\n".
+                    'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben,'."\n".
+                    'sie aber eine starke Plausibilität erhält.'."\n",
+                      'Genau diesen prinzipiellen Zusammenhang zeigen wir nachfolgend'."\n".
+                    'und nutzen dazu die vorstehende Einsicht in modifizierter Form für den Beweis.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
@@ -511,9 +560,9 @@
                         'die kleiner als \lm{ p } sind.'."\n".
                         ''))),
 
-                  array( 'text', array( text => array(
-                    'Oder andersherum gesagt:'."\n".
-                    ''))),
+                  array( 'text', array( Shape => 'derivation', intent => '0em', text => array(
+                        'Oder andersherum gesagt:'."\n".
+                        ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
                         'Lässt sich eine natürliche Zahl \lm{ n \ge 2 } nicht aus einem Produkt von Primzahlen bilden, die kleiner sind als sie selber, dann ist es eine neue Primzahl.'."\n",
