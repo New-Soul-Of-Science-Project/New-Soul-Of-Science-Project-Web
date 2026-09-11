@@ -5,9 +5,27 @@
     <title>Dark-Photon-3D – FrQFT</title>
     <style>
       body { margin: 0; }
+      #controls {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-family: sans-serif;
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 6px 10px;
+        border-radius: 4px;
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
+
+    <div id="controls">
+      <label>
+        <input type="checkbox" id="ringToggle">
+        Mikro-Wirkungsquant als Ring anzeigen
+      </label>
+    </div>
 
     <!-- *** Imports *** -->
 
@@ -126,6 +144,8 @@
 
       let wqCount = 8
       let wqGroups = []
+      let wqRings = []
+      let wqRingSpheres = []
                                                  
       function setWq() {
         const wqGroup = new THREE.Group();
@@ -163,6 +183,18 @@
           // torus.position.set( 0, -coneCutOff, 0 )
           torus.rotation.set( pi2 * 0.25, 0, 0 )
           torusGroup.add( torus );
+
+          // Alternative Darstellung des Mikro-Wirkungsquants als rote Kugel (gleiche Farbe wie der Ring),
+          // per Control umschaltbar; im Anfangszustand sichtbar, der Ring ausgeblendet
+          const ringSphereGeo = new THREE.SphereGeometry( torusRadius * coneScale, 32, 32 )
+          const ringSphereMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
+          const ringSphere = new THREE.Mesh( ringSphereGeo, ringSphereMat )
+          wqGroup.add( ringSphere )
+
+          torus.visible = false
+          ringSphere.visible = true
+          wqRings.push( torus )
+          wqRingSpheres.push( ringSphere )
         }
 
         let coneGeo = null
@@ -191,6 +223,12 @@
       for ( let i = 0; i < wqCount; i++ ) {
         setWq()
       }
+
+      const ringToggle = document.getElementById( 'ringToggle' )
+      ringToggle.addEventListener( 'change', () => {
+        wqRings.forEach( ring => ring.visible = ringToggle.checked )
+        wqRingSpheres.forEach( ringSphere => ringSphere.visible = !ringToggle.checked )
+      })
 
       // #: wqTrails
       // Nachgezogene Spur jeder wq-Kugel (Kreisbahn + Vorwärtsdrift von dphGroup ergibt die Spiralkurve)
