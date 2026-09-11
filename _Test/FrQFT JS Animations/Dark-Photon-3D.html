@@ -51,6 +51,7 @@
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
+
       const render = new Render( eleWidth, eleHeight )
 
       // controls.update() must be called after any manual changes to the camera's transform
@@ -200,8 +201,24 @@
         setWq()
       }
 
-                                                 
+      // #: wqTrails
+      // Nachgezogene Spur jeder wq-Kugel (Kreisbahn + Vorwärtsdrift von dphGroup ergibt die Spiralkurve)
+      // als echte Röhrengeometrie (TubeGeometry), da LineMaterial/Line2 (fat lines) auf manchen
+      // GPUs nur die Endpunkt-Caps rendert statt der ganzen Linie
+      const maxTrailPoints = 2000
+      const trailWorldPos = new THREE.Vector3()
+      const trailTubeRadius = 0.0015
+      const trailTubeRadialSegments = 12 // höher = runderer Querschnitt, weniger eckig
+      const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x404040 } )
+      const wqTrails = wqGroups.map(() => {
+        const mesh = new THREE.Mesh( new THREE.BufferGeometry(), trailMaterial )
+        movingSpaceGroup.add( mesh ) // eigenes Koordinatensystem, das sich nicht pro Frame verschiebt
+        return { mesh, points: [] }
+      })
+
+
       var time = 0;
+      var prevTime = 0;
       var movingTime = 0;
       var radius = 2;
 
@@ -209,8 +226,11 @@
         time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4.5;
         movingTime = -time - 2;
 
+        const wrapped = time > prevTime
+        prevTime = time
+
         dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
-        
+
         dphPathCylinder.geometry.dispose()
         dphPathCylinder.geometry = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, time * pi2 * 0.05, 32, 25 )
         // dphPathCylinder.position.set( (time * pi2 * 0.05) * 0.5, 0, 0 )
@@ -226,6 +246,21 @@
           // let euler = new THREE.Euler( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
           let euler = new THREE.Euler( pi2 * 0.0, 0, -movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
           wqGroup.rotation.copy( euler )
+
+          const trail = wqTrails[ ndx ]
+          if ( wrapped ) {
+            trail.points = []
+          }
+          if ( trail.points.length < maxTrailPoints ) {
+            wqGroup.getWorldPosition( trailWorldPos )
+            movingSpaceGroup.worldToLocal( trailWorldPos )
+            trail.points.push( trailWorldPos.clone() )
+            if ( trail.points.length >= 2 ) {
+              const curve = new THREE.CatmullRomCurve3( trail.points )
+              trail.mesh.geometry.dispose()
+              trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, trailTubeRadius, trailTubeRadialSegments, false )
+            }
+          }
         })
 
         render.renderer.render( render.scene, render.camera )
