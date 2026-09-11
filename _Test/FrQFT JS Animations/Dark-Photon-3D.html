@@ -110,15 +110,6 @@
       // dphGroup.scale.set( 0.5, 0.5, 0.5 )
       dphGroup.scale.set( generalScale, generalScale, generalScale )
                    
-      // #: dphPathCylinder
-      const dphPathCylGeo = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, 0, 32, 25 )
-      const dphPathCylMat = new THREE.MeshLambertMaterial( {color: 0x00ff00} );
-      const dphPathCylinder = new THREE.Mesh( dphPathCylGeo, dphPathCylMat );
-      dphGroup.add( dphPathCylinder );
-      // dphPathCylinder.position.set( 0.5, 0, 0 )
-      dphPathCylinder.rotation.set( pi2 * 0.25, 0, 0 )
-      // dphPathCylinder.scale.set( 0, 0, 0 )
-
       const dphCenterSphereGeo = new THREE.SphereGeometry( centerSphereRadius, 50, 50, 0, pi2, 0, pi2 );
       const dphCenterSphereMat = new THREE.MeshLambertMaterial({
         // color: 0xff3000,
@@ -216,14 +207,35 @@
         return { mesh, points: [] }
       })
 
+      // Spur des zentralen Rotationspunkts (dphCenterSphere), statt eines synthetisch wachsenden Zylinders
+      const centerTrailMaterial = new THREE.MeshBasicMaterial( { color: 0x009000 } )
+      const centerTrail = { mesh: new THREE.Mesh( new THREE.BufferGeometry(), centerTrailMaterial ), points: [] }
+      movingSpaceGroup.add( centerTrail.mesh )
+
+      function updateTrail( trail, worldObject ) {
+        if ( trail.points.length >= maxTrailPoints ) return
+        worldObject.getWorldPosition( trailWorldPos )
+        movingSpaceGroup.worldToLocal( trailWorldPos )
+        trail.points.push( trailWorldPos.clone() )
+        if ( trail.points.length >= 2 ) {
+          const curve = new THREE.CatmullRomCurve3( trail.points )
+          trail.mesh.geometry.dispose()
+          trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, trailTubeRadius, trailTubeRadialSegments, false )
+        }
+      }
+
 
       var time = 0;
       var prevTime = 0;
       var movingTime = 0;
       var radius = 2;
+      var simulatedElapsedTime = 0;
+      var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
 
       render.renderer.setAnimationLoop(() => {
-        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4.5;
+        const delta = Math.min( render.clock.getDelta(), maxDelta )
+        simulatedElapsedTime += delta
+        time = -( simulatedElapsedTime * pi2 * 0.05 ) % 4.5;
         movingTime = -time - 2;
 
         const wrapped = time > prevTime
@@ -231,9 +243,10 @@
 
         dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
 
-        dphPathCylinder.geometry.dispose()
-        dphPathCylinder.geometry = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, time * pi2 * 0.05, 32, 25 )
-        // dphPathCylinder.position.set( (time * pi2 * 0.05) * 0.5, 0, 0 )
+        if ( wrapped ) {
+          centerTrail.points = []
+        }
+        updateTrail( centerTrail, dphCenterSphere )
 
         wqGroups.forEach((wqGroup, ndx) => {
           wqGroup.position.set(
@@ -251,16 +264,7 @@
           if ( wrapped ) {
             trail.points = []
           }
-          if ( trail.points.length < maxTrailPoints ) {
-            wqGroup.getWorldPosition( trailWorldPos )
-            movingSpaceGroup.worldToLocal( trailWorldPos )
-            trail.points.push( trailWorldPos.clone() )
-            if ( trail.points.length >= 2 ) {
-              const curve = new THREE.CatmullRomCurve3( trail.points )
-              trail.mesh.geometry.dispose()
-              trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, trailTubeRadius, trailTubeRadialSegments, false )
-            }
-          }
+          updateTrail( trail, wqGroup )
         })
 
         render.renderer.render( render.scene, render.camera )
