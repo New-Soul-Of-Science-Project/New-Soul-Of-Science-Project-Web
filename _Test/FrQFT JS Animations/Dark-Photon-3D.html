@@ -5,27 +5,9 @@
     <title>Dark-Photon-3D – FrQFT</title>
     <style>
       body { margin: 0; }
-      #controls {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        font-family: sans-serif;
-        font-size: 14px;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 6px 10px;
-        border-radius: 4px;
-        z-index: 1;
-      }
     </style>
   </head>
   <body>
-
-    <div id="controls">
-      <label>
-        <input type="checkbox" id="ringToggle">
-        Mikro-Wirkungsquant als Ring anzeigen
-      </label>
-    </div>
 
     <!-- *** Imports *** -->
 
@@ -59,6 +41,8 @@
     <script type="module">
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
+
+      import { GUI } from 'https://unpkg.com/three@0.140.2/examples/jsm/libs/lil-gui.module.min.js'
 
       import {
         pi2,
@@ -146,6 +130,7 @@
       let wqGroups = []
       let wqRings = []
       let wqRingSpheres = []
+      let showRingAsTorus = false
                                                  
       function setWq() {
         const wqGroup = new THREE.Group();
@@ -224,11 +209,30 @@
         setWq()
       }
 
-      const ringToggle = document.getElementById( 'ringToggle' )
-      ringToggle.addEventListener( 'change', () => {
-        wqRings.forEach( ring => ring.visible = ringToggle.checked )
-        wqRingSpheres.forEach( ringSphere => ringSphere.visible = !ringToggle.checked )
-      })
+      function createPanel() {
+        const showRingName = 'Mikro-Wirkungsquant als Ring anzeigen'
+        const panelWidth = 260
+        const panel = new GUI({ width: panelWidth })
+        panel.close() // eingeklappt starten
+        // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
+        // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
+        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts an der Szene selbst verankern.
+        panel.domElement.style.position = 'absolute'
+        panel.domElement.style.left = ( eleWidth - panelWidth ) + 'px'
+        panel.domElement.style.top = ( eleHeight - panel.domElement.offsetHeight ) + 'px'
+        const settings = {
+          [showRingName]: showRingAsTorus,
+        }
+        panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
+      }
+
+      function toggleShowRingAsTorus( checked ) {
+        showRingAsTorus = checked
+        wqRings.forEach( ring => ring.visible = showRingAsTorus )
+        wqRingSpheres.forEach( ringSphere => ringSphere.visible = !showRingAsTorus )
+      }
+
+      createPanel()
 
       // #: wqTrails
       // Nachgezogene Spur jeder wq-Kugel (Kreisbahn + Vorwärtsdrift von dphGroup ergibt die Spiralkurve)
