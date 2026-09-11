@@ -206,7 +206,7 @@
       var radius = 2;
 
       render.renderer.setAnimationLoop(() => {
-        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4,5;
+        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4.5;
         movingTime = -time - 2;
 
         dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
