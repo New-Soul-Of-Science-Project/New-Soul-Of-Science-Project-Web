@@ -169,7 +169,7 @@
         const coneMat = new THREE.MeshLambertMaterial({
           color: 0xe0e0e0,
           // shininess: 100,
-          opacity: 0.9,
+          opacity: 0.6,
           transparent: true,
           side: THREE.DoubleSide,
           // clippingPlanes: [ localPlane ],
@@ -198,6 +198,8 @@
       // GPUs nur die Endpunkt-Caps rendert statt der ganzen Linie
       const maxTrailPoints = 2000
       const trailWorldPos = new THREE.Vector3()
+      const coneUpAxis = new THREE.Vector3( 0, 1, 0 ) // Kegelspitze zeigt lokal in +Y
+      const wqVelocity = new THREE.Vector3()
       const trailTubeRadius = 0.0015
       const trailTubeRadialSegments = 12 // höher = runderer Querschnitt, weniger eckig
       const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x404040 } )
@@ -249,16 +251,25 @@
         updateTrail( centerTrail, dphCenterSphere )
 
         wqGroups.forEach((wqGroup, ndx) => {
+          const angle = -movingTime + pi2 / wqCount * ndx
           wqGroup.position.set(
-            Math.cos(-movingTime + pi2 / wqCount * ndx) * radius,
-            Math.sin(-movingTime + pi2 / wqCount * ndx) * radius,
+            Math.cos( angle ) * radius,
+            Math.sin( angle ) * radius,
             0
           )
-          // wqGroup.rotation.set( 0, 0, movingTime + pi2 / wqCount * ndx )
-          // wqGroup.rotation.set( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx )
-          // let euler = new THREE.Euler( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
-          let euler = new THREE.Euler( pi2 * 0.0, 0, -movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
-          wqGroup.rotation.copy( euler )
+
+          // Bewegungsrichtung = Ableitung der Position nach der Zeit:
+          // Kreisbewegung (Tangente, proportional zu radius) + gleichförmige Z-Drift der ganzen dphGroup.
+          // dphGroup.position.z liegt im unskalierten Raum von movingSpaceGroup, während radius/angle im
+          // lokalen, mit generalScale skalierten Raum von dphGroup liegen - daher muss der Z-Anteil hier
+          // durch generalScale geteilt werden, um im selben (lokalen) Maßstab wie x/y zu liegen.
+          const angularSpeed = pi2 * 0.05 // = d(movingTime)/dt, siehe dphGroup.position.z weiter oben
+          wqVelocity.set(
+            radius * angularSpeed * Math.sin( angle ),
+            -radius * angularSpeed * Math.cos( angle ),
+            ( angularSpeed * angularSpeed ) / generalScale
+          ).normalize()
+          wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
 
           const trail = wqTrails[ ndx ]
           if ( wrapped ) {
