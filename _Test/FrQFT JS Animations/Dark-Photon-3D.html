@@ -71,6 +71,10 @@
       const torusRadius = 0.125;
       const coneSize = 1
       const coneScale = 0.75 // 1.5
+      // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
+      // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis wie
+      // bisher, der Spitzenradius (coneCutOff) bleibt unverändert fix.
+      const coneMantleLengthFactor = 2
       const coneSegments = 100
       const coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
       const generalScale = 0.15
@@ -192,13 +196,15 @@
           // clippingPlanes: [ localPlane ],
         });
         if (fractalWithTorus) {
-          coneGeo = new THREE.CylinderGeometry( coneCutOff, coneSize, coneSize, coneSegments, 1, true );
+          const coneHeight = coneSize * coneMantleLengthFactor
+          const coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+          coneGeo = new THREE.CylinderGeometry( coneCutOff, coneBottomRadius, coneHeight, coneSegments, 1, true );
         } else {
           coneGeo = new THREE.ConeGeometry( coneSize, coneSize, coneSegments, 1, true );
         }
         let cone = new THREE.Mesh( coneGeo, coneMat );
         cone.scale.set( coneScale, coneScale, coneScale )
-        cone.position.set( 0, -0.5 * coneScale, 0 )
+        cone.position.set( 0, -0.5 * coneSize * coneMantleLengthFactor * coneScale, 0 )
         wqGroup.add( cone );
 
         dphGroup.add( wqGroup );
