@@ -578,7 +578,7 @@
                       'Nach dem ›Fundamentalsatz der Arithmetik‹ ist jede natürliche Zahl \lm{ n \ge 2 } entweder selber eine Primzahl oder'."\n".
                       'besteht aus einem Produkt von Primzahlen, die allesamt kleiner sein müssen als sie selber.'."\n",
                         'Damit müssen alle natürlichen Zahlen \lm{ n \ge 2 }, die kleiner als eine bestimmte Primzahl \lm{ p } sind,'."\n".
-                      'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind. \lm{ \blacksquare }'."\n",
+                      'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -609,18 +609,20 @@
                       array( display => 'on',  latex => '{  23\#  =  223092870  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im ersten Moment erscheint es eher undurchsichtig, was die Primfakultät mit der Anzahl von aufeinanderfolgenden'."\n".
+                    'Im Angesicht dieser Wertzuordnung erscheint es eher undurchsichtig,'."\n".
+                    'was die Primfakultät mit der Anzahl von aufeinanderfolgenden'."\n".
                     'natürlichen Zahlen in einer Menge zu tun hat.'."\n".
-                    'Dies werden wir nun nachfolgend schrittweise erhellen.'."\n".
+                    'Dies werden wir nachfolgend schrittweise erhellen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
                 'Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}, und in erweiterter Form die \jump{OM:BiOrd:Home}{Biordinalzahlen},'."\n".
-                    'definieren die Anzahl der aufeinanderfolgenden natürlichen Zahlen in endlichen und unendlichen Mengen,'."\n".
-                    'und symbolisieren diese mit den Mengen selbst.'."\n",
+                    'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    'definieren die Anzahl der aufeinanderfolgenden natürlichen Zahlen in endlichen und unendlichen Mengen.'."\n".
+                    'Sie identifizieren und symbolisieren dabei den Wert der Anzahl der Elemente bestimmter Mengen,'."\n".
+                    'deren Struktur dafür fest definiert ist, mit den Mengen selbst.'."\n",
                       'Nach Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins} finden wir dort für die Anzahl \lm{ n } der Elemente in einer endlichen Menge aufeinanderfolgender natürlicher Zahlen:'."\n".
                     ''))),
                   array( 'equations',
@@ -629,12 +631,12 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Jede natürliche Zahl \lm{ n } steht also für eine lückenlose Menge, von der Null an.'."\n",
+                    'Jede natürliche Zahl \lm{ n } steht demnach für eine lückenlose Menge ihrer Vorgängerzahlen von der Null an.'."\n",
                       'Die Anzahl der Elemente einer Menge scheint hier mit dem nächst größeren Element \lm{ n } als das größte Element der Menge \lm{ n - 1 } gleichgesetzt.'."\n".
                     'Bei näherer Betrachtung müssen wir aber feststellen, dass diese Perspektive nicht weit trägt.'."\n".
                     'Denn schon bei der Null, der leeren Menge, funktioniert sie nicht, weil es kein größtes Element in der leeren Menge gibt.'."\n",
                       'Die aktual unendliche Anzahl aller Elemente der Menge \lm{ \mathbb{N} } der endlichen natürlichen Zahlen wird als die'."\n".
-                    'Anzahl der Schritte einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} verstand'."\n".
+                    'Anzahl der Schritte der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} verstand'."\n".
                     'und wie folgt als \lm{ ω } definiert:'."\n".
                     ''))),
                   array( 'equations',
@@ -646,21 +648,32 @@
                     'In der Menge \lm{ \mathbb{N} } ist nun keine größte Zahl mehr definiert und \lm{ ω }'."\n".
                     'ist somit auch nicht die größte Zahl in \lm{ \mathbb{N} } plus Eins.'."\n".
                     'Sogar finden wir in den Biordinalzahlen im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹},'."\n".
-                    'dass sich noch ganze Zahlen zwischen jeder natürlichen Zahl in \lm{ \mathbb{N} } und \lm{ ω } definieren lassen.'."\n",
+                    'dass sich noch ganze Zahlen zwischen den natürlichen Zahlen in \lm{ \mathbb{N} } und \lm{ ω } definieren lassen.'."\n",
                       'Wie können wir dies Interpretieren und aus welcher Perspektive passend betrachten?'."\n",
-                      'Ich denke, es sollte noch eine weitere Art und Weise geben, Werte, die eine Anzahl natürlicher Zahlen'."\n".
-                    'von der Null an angeben, mit einer Menge zu beschreiben.'."\n".
-                    'Und zwar mit einer Menge von Zahlen, die auf seiner Primfaktorzerlegung basieren und das Primfaktor-Spektrum oder Primfaktor-Raster des Werts widerspiegeln.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Ich denke, es sollte noch eine weitere, für uns passende Art und Weise geben, Werte, die eine Anzahl natürlicher Zahlen'."\n".
+                    'von der Null an beschreiben, mit einer Menge darzustellen;'."\n".
+                    'mit einer Menge von Zahlen, die auf ihrer Primfaktorzerlegung,'."\n".
+                    'oder allgemeiner auf ihrem Primexponentenprodukt, basieren: die Primturmmenge der Primturmzerlegung.'."\n",
+                      'Diese Darstellung lässt sich daraufhin auf entsprechende Primturm-Spektren beziehungsweise Primturm-Raster des Ursprungswerts erweitern,'."\n".
+                    'die sich für unseren Zweck als sehr hilfreich erweisen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung', text =>
 
                 'Definition: Die Primturmzerlegung', subline =>
                   'Eine auf Primzahlen basierende eineindeutige faktorielle Mengendarstellung der natürlichen Zahlen')),
                   array( 'text', array( text => array(
-                    'Wie können wir die Primfaktorzerlegung jeder natürlichen Zahl eindeutig in einer Menge darstellen?'."\n",
-                      'Das ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich, die wir \italic{Primturmzerlegung} nennen.'."\n".
-                    'Denn eine Menge der reinen Primfaktoren wäre nicht eindeutig, weil dies nicht die'."\n".
-                    'Potenzen der Primzahlen berücksichtigt.'."\n".
+                    'Wie können wir die Primfaktorzerlegung jeder natürlichen Zahl eineindeutig in einer Menge darstellen?'."\n",
+                      'Diese eineindeutige Darstellung ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich,'."\n".
+                    'der \italic{Primturmmenge},'."\n".
+                    'deren Berechnung wir \italic{Primturmzerlegung} nennen.'."\n".
+                    'Denn eine Menge der reinen Primfaktoren des Primexponentenprodukts wäre nicht eindeutig, weil sie nicht die'."\n".
+                    'Potenzen der Primzahlen berücksichtigte.'."\n",
+                      'Nachfolgend definieren wir zunächst die Menge der Primzahlpotenzen des Primexponentenprodukts,'."\n".
+                    'das wir für die Berechnung des Wertes beziehungsweise des Primexponentenobjekts der Primturmmenge'."\n".
+                    'und der Elemente der Menge des späteren Primturm-Potenzrasters nutzen wollen.'."\n".
+                    'Denn die Exponenten des Primexponentenprodukts gehen später bis ins Aktual-Unendliche.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -677,9 +690,16 @@
                       'und damit ist \lm{ E_{\infty} } auch die Menge der existierenden \lm{ p }-adischen Primexponentenbewertungen \lm{ v_{p}( n ) }.'."\n",
                         'Hier bezeichnet \lm{ v_{p}( n ) } die Erweiterung der \lm{ p }-adischen Primexponentenbewertung.'."\n".
                       'Ihr Wertebereich ist nicht mehr nur \lm{ \mathbb{Z} }, sondern eine ordinal-arithmetisch erweiterte Wertstruktur,'."\n".
-                      'in der \lm{ ω } als arithmetisierte Einheit der vollständigen Induktion auftritt.'."\n".
+                      'in der \lm{ ω } als arithmetisierte Einheit der vollständigen Induktion auftritt.'."\n",
+                        '\\\\'."\n".
                       ''))),
+
+                  array( 'text', array( text => array(
+                    'Auch definieren wir den Wertebereich der Primexponentenprodukte, die wir untersuchen wollen.'."\n".
+                    ''))),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
                       'Sei \lm{ \mathbb{N}_{\infty,v_{p}} } die Teilmenge aus der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge der endlichen und aktual unendlichen natürlichen Zahlen \lm{ \mathbb{N}_\infty }}'."\n".
                       ''))),
                   array( 'equations',
@@ -687,8 +707,10 @@
                       array( display => 'on',  latex => '{  \mathbb{N}_{\infty,v_{p}}  :=  *\{  n \in \mathbb{N}_{\infty}  *|*  *( \forall p \in \mathbb{P} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\, *[ v_{p}( n ) \; \text{existiert und} \; v_{p}( n ) \in E_{\infty} *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'für die endliche oder aktual unendliche natürliche \lm{ p }-adische Primexponentenbewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} existieren.'."\n".
-                      'Wobei diese erweiterten Primexponentenbewertungen \lm{ v_{p}(n) } liefern, in welcher Potenz die Primzahl \lm{ p } im Produkt \lm{ n } vorhanden ist.'."\n".
+                      'für die endliche oder aktual unendliche natürliche \lm{ p }-adische'."\n".
+                      'Primexponentenbewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} existieren.'."\n".
+                      'Wobei diese erweiterten Primexponentenbewertungen \lm{ v_{p}(n) } liefern,'."\n".
+                      'in welcher Potenz die Primzahl \lm{ p } im Primexponentenprodukt \lm{ n } vorhanden ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dabei ist \lm{ \le_{\infty,v_{p}} } die strukturelle Ordnung auf \lm{ \mathbb{N}_{\infty,v_{p}} }.'."\n".
@@ -810,9 +832,19 @@
                       '\italic{Notationsvereinbarung:}'."\n".
                       'Auf \lm{ \mathbb{N}_{\infty,v_{p}} } bezeichnet \lm{ ≤ } im Folgenden stets'."\n".
                       'die Ordnung \lm{ \le_{\infty,v_{p}} } der Struktur \lm{ \mathfrak{N}_{\infty,v_{p}} }.'."\n".
-                      'Ebenso ist jede Intervall-Menge \lm{ [a,b]_{\mathbb{N}_{\infty,v_{p}}} } bezüglich dieser Ordnung zu verstehen.'."\n".
+                      'Ebenso ist jede Intervall-Menge \lm{ [a,b]_{\mathbb{N}_{\infty,v_{p}}} } bezüglich dieser Ordnung zu verstehen.'."\n",
+                        '\\\\'."\n".
                       ''))),
+
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung:X', text =>
+                  'Primturmzerlegung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Darauf aufbauend definieren wir die Primturmzerlegung.'."\n".
+                    ''))),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
                       'Sei \lm{ \pt(n) } die Menge der Primzahltürme der \lm{ n \in \mathbb{N}_{\infty,v_{p}} }'."\n".
                       ''))),
                   array( 'equations',
@@ -856,10 +888,9 @@
                   array( 'text', array( text => array(
                     'Was uns ein Gefühl für die Eineindeutigkeit beziehungsweise Bijektivität der Funktion gibt, die wir nun zeigen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
-
-                'Lemma 2: Primturmzerlegungs-Entsprechung', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
+                  'Lemma 2: Primturmzerlegungs-Entsprechung', subline =>
+                    '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n".
@@ -873,23 +904,29 @@
                       array( display => 'on',  latex => '{  n  \widehat{=}  \pt(n)  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n}', label_incr => true),
                     ))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Beweis', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Nach dem ›Fundamentalsatz der Arithmetik‹ lässt sich jede endliche natürliche Zahl, die größer oder gleich Zwei ist, eineindeutig in Primfaktoren zerlegen.'."\n".
+                      'Nach dem ›Fundamentalsatz der Arithmetik‹ lässt sich jede endliche natürliche Zahl,'."\n".
+                      'die größer oder gleich Zwei ist, eineindeutig in Primfaktoren zerlegen.'."\n".
                       'Diese Zerlegung entspricht eineindeutig der Primturmmenge jeder Zahl größer oder gleich Zwei.'."\n".
+                      'Für aktual unendliche Parameter \lm{ n \in \mathbb{N}_{\infty,v_{p}} \setminus ω },'."\n".
+                      'die Primexponentenprodukte sind, ist diese Darstellungsform per Definition gleich dem Primexponentenobjekt.'."\n".
                       'Die noch fehlenden Zahlen Null und Eins entsprechen eineindeutig noch nicht belegten, naheliegenden Mengen.'."\n".
-                      'Die Null wird als Sonderfall durch \lm{ \{ 0 \} } repräsentiert. Die Eins entspricht dem leeren Primturmprodukt und daher der leeren Primturmmenge \lm{ \varnothing }.'."\n",
-                        'Damit ist die Funktion \lm{ \pt(n) } komplett bijektiv, also eineindeutig, und so eine Entsprechung. \lm{ \blacksquare }'."\n",
+                      'Die Null wird als Sonderfall durch \lm{ \{ 0 \} } repräsentiert.'."\n".
+                      'Die Eins entspricht dem leeren Primexponentenprodukt und daher der leeren Primturmmenge \lm{ \varnothing }.'."\n",
+                        'Damit ist die Funktion \lm{ \pt(n) } komplett bijektiv, also eineindeutig, und so eine Entsprechung. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Diese Primturmmenge können wir nun nutzen, um daraus das Primfaktor-Spektrum oder Primfaktor-Raster'."\n".
-                    'der natürlichen Zahl zu bestimmen.'."\n".
+                    'Die Primturmmenge nutzen wir, um sie zum Primturm-Spektrum beziehungsweise Primturm-Raster'."\n".
+                    'der endlichen und aktual unendlichen natürlichen Zahlen zu erweitern.'."\n",
+                      'Dafür macht es jedoch Sinn, zuvor eine abgewandelte Primfakultät zu definieren,'."\n".
+                    'die uns ein Primexponentenprodukt der endlichen Primzahlen einer Menge berechnet.'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet', text =>
@@ -897,24 +934,25 @@
                 'Definition: Die Mengen-Primfakultät', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das Primturm-Potenzraster ist vom Ansatz des Beweises des ›Satz des Euklid‹ inspiriert und'."\n".
-                    'bietet nun, mit Hilfe der jetzt zu entwickelnden, abgewandelten Primfakultät,'."\n".
-                    'eine weitere Möglichkeit, die natürlichen Zahlen zu beschreiben, wie oben schon dargelegt.'."\n".
-                    'So gelingt es uns anschließend, die endlichen Primzahlen zu erzeugen'."\n".
-                    'und mit ihnen die natürlichen Zahlen erneut zu konstruieren.'."\n".
-                    'Dies führt uns schließlich auch zum Beweis unserer Vermutung.'."\n",
+                    'Das später zu definierende Primturm-Potenzraster ist vom Ansatz des Beweises des ›Satz des Euklid‹'."\n".
+                    'und vom ›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1}{Lemma 1: Primfaktorinterval}‹ inspiriert.'."\n".
+                    'Es bietet uns dann, mit Hilfe der jetzt zu entwickelnden, abgewandelten Primfakultät,'."\n".
+                    'eine neue Möglichkeit, die endlichen Primzahlen zu beschreiben.'."\n".
+                    'Und mit dieser neuen Primzahlbeschreibung ergibt sich schließlich eine weitere Möglichkeit'."\n".
+                    'die Menge der natürlichen Zahlen zu rekonstruieren, wie vorstehend angesprochen.'."\n".
+                    'Das führt uns schließlich auch zum Beweis unserer Vermutung.'."\n",
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
                     'und über eine zu diesem Zweck als Primexponentenprodukt der Primzahlen einer Menge abgewandelten Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei der \italic{Mengen-Primorial-Operator} \lm{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} oder \italic{Mengen-Primexponentenprodukt} genannt,'."\n".
-                      'der Operator, der alle Primzahlen in der Menge \lm{ \mathbb{T} } in einem einpotenzigen Primexponentenprodukt multipliziert:'."\n".
+                      'Sei der \italic{Mengen-Primorial-Operator} \lm{ T\overline{\#} }, auch \italic{Mengen-Primfakultät} oder \italic{Mengen-Primexponentenprodukt} genannt,'."\n".
+                      'der Operator, der alle Primzahlen in der Menge \lm{ T } in einem einpotenzigen Primexponentenprodukt multipliziert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prodx_{ p \in \mathbb{T} \cap \mathbb{P} }  \! p  }'),
+                      array( display => 'on',  latex => '{  T\overline{\#}  :=  \!\! \prodx_{ p \in T \cap \mathbb{P} }  \! p  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'So erhalten wir eine neue Definition der Primfakultät als Einheits-Primexponentenidentifikation, die sich auf die Elemente von Mengen bezieht.'."\n",
@@ -978,9 +1016,15 @@
                         '\\\\'."\n".
                       ''))),
 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet:X', text =>
+                  'Mengen-Primfakultät', subline =>
+                    '')),
                   array( 'text', array( text => array(
                     'Wie in der Theorie der Ordinalzahlen gezeigt, können endliche und unendliche Zahlen mit einer Repräsentation durch Mengen identifiziert werden.'."\n".
                     'In dieser Theorie wird diese Entsprechung als Gleichheit verstanden, wie oben beispielhaft gezeigt.'."\n".
+                    'Jede Ordinalzahlen wird also als Menge verstanden, zu der wir die Mengen-Primfakultät berechnen können;'."\n".
+                    'so auch alle endlichen natürlichen Zahlen, deren Mengendarstellung all ihre endlichen natürlichen Vorgänger enthalten,'."\n".
+                    'deren Mengen-Primfakultät also ein Produkt der in ihrer Menge enthaltenen Primzahlen ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1005,10 +1049,10 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die vorm Operator stehende Zahl ist niemals Teil des Produkts, da die Menge,'."\n".
-                      'die eine Ordinalzahl repräsentiert, nicht selber in ihrer Menge enthalten ist.'."\n".
+                      'die eine Ordinalzahl repräsentiert, ja nicht selber in ihrer Menge enthalten ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Setzen wir diese Reihe für alle natürlichen Zahlen bis ins Unendliche zu \lm{ ω } fort, so ergibt sich:'."\n".
+                      'Setzen wir diese Reihe für alle natürlichen Zahlen bis ins Aktual-Unendliche zu \lm{ ω } fort, so ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1043,25 +1087,26 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Doch was bedeutet das Produkt aller Primzahlen in Mengen natürlicher Zahlen generell?'."\n",
-                      'Was sind die Bedingungen, unter denen das fragliche Gleichheitszeichen erfüllt ist?'."\n".
+                    'Doch was bedeutet das Primexponentenprodukt aller Primzahlen in Mengen,'."\n".
+                    'die mit natürlichen Zahlen identifiziert werden, generell?'."\n",
+                      'Was sind die Bedingungen, unter denen die fragliche kanonische Identifikation erfüllt ist?'."\n".
                     'Wie können wir sie formulieren?'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster', text =>
 
                 'Definition: Das Primturm-Potenzraster', subline =>
-                  'Die Erweiterung der Primturmzerlegung zu einem Potenzrasters oder Potenzspektrum')),
+                  'Die Erweiterung der Primturmzerlegung zu einem Primturm-Potenzraster beziehungsweise Primturm-Potenzspektrum')),
                   array( 'text', array( text => array(
                     'Im Rahmen der Mengendarstellung der Ordinalzahlen wird jede endliche natürliche Zahl  \lm{ n }, von der Null an,'."\n".
-                    'durch eine Menge repräsentiert, die all ihre Vorgänger enthält.'."\n".
+                    'durch eine Menge repräsentiert, die all ihre Vorgänger enthält, wie gesagt.'."\n".
                     'Dies stellt den Zählaspekt dieser Zahlen dar, also auch die Anzahl an Zahlen in dieser Menge, die ihrem Wert entspricht.'."\n",
                       'Deren Primturmzerlegung \lm{ \pt(n) } ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
                     'darstellt.'."\n".
                     'Sie bezieht sich aber nicht direkt auf die Erzeugung einer Menge – ein Spektrum oder Raster – natürlicher Zahlen, die mit ihrer'."\n".
                     'Primturmzerlegung in Verbindung stehen, also die durch die in ihr enthaltenen Primzahltürme erzeugt werden.'."\n",
                       'Diese Menge möchte ich nun vorstellen und nenne sie das \italic{Primturm-Potenzraster}.'."\n",
-                      'Beim Primturm-Potenzraster geht es darum zu analysieren, welche anderen natürliche Zahlen sich, mit'."\n".
-                    'den in einer natürlichen Zahl vorhandenen Primzahltürme, durch Variation ihrer Potenzen darstellen lassen.'."\n".
+                      'Beim Primturm-Potenzraster geht es darum zu analysieren, welche anderen natürlichen Zahlen sich mit'."\n".
+                    'den in unserer natürlichen Zahl \lm{ n } vorhandenen Primzahltürmen durch Variation ihrer Potenzen darstellen lassen.'."\n".
                     'Denn es geht im Besonderen in einem zweiten Schritt darum, mit einer natürlichen Zahl ein Raster zu beschreiben, das zeigt,'."\n".
                     'wie vollständig sich die natürlichen Zahlen, von der Null an, mit der Variation der Potenzen ihrer Primzahltürme'."\n".
                     'beschreiben lassen.'."\n",
@@ -1125,10 +1170,9 @@
                   array( 'text', array( text => array(
                     'Das Primturm-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl, wie wir nun zeigen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
-
-                'Lemma 3: Primturm-Potenzraster-Entsprechung', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1', text =>
+                  'Lemma 3: Primturm-Potenzraster-Entsprechung', subline =>
+                    '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
                       '\\\\'."\n".
@@ -1143,7 +1187,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n}', label_incr => true),
                     ))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Beweis', subline =>
                     '')),
 
@@ -1160,7 +1204,7 @@
                       'Diese Einzigartigkeit bleibt auch dann erhalten, wenn bei \lm{ n \ge 2 } generell die Elemente \lm{ \{ 0, 1 \} } hinzugefügt werden.'."\n",
                         'Und für den Sonderfall \lm{ n = 0 } wird dann die Menge \lm{ \pr*( 0 *) = \varnothing } und für den Sonderfall \lm{ n = 1 } wird \lm{ \pr*( 1 *) = \{ 0, 1 \} } gesetzt,'."\n".
                       'die beide in den Fällen \lm{ n \ge 2 } nicht auftreten und so auch einzigartig sind.'."\n",
-                        'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \blacksquare }'."\n",
+                        'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1522,7 +1566,7 @@
                       'Sein Primturm-Potenzraster erzeugt daher alle natürlichen Zahlen, deren Primfaktoren bereits unter diesen Primzahlen liegen.'."\n".
                       'Die erste Zahl, die nicht mehr erzeugt werden kann, ist genau die nächste Primzahl \lm{ p_{i + 1}​ }.'."\n".
                       'Also ist das lückenlose Anfangsstück genau bis unmittelbar vor \lm{ p_{i + 1} } vollständig,'."\n".
-                      'und sein lückenloser Wert ist \lm{ p_{i + 1} } \lm{ \blacksquare }.'."\n",
+                      'und sein lückenloser Wert ist \lm{ p_{i + 1} } \lm{ \qqed }.'."\n",
                         '\\\\'."\n".
                     ''))),
 
@@ -2028,7 +2072,7 @@
                       'In Worten:'."\n".
                       'Unterhalb jedes aktual unendlichen Rasterelements \lm{ x } liegt ein Vorgänger in endlichem Abstand'."\n".
                       'zu einem Quotienten aus dem Zähler mit Wert des Einheits-Primexponentenprodukts \lm{ P_{ω} }'."\n".
-                      'geteilt durch einen Nenner eines endlichen einpotenzigen Primzahlprodukts. \lm{ \blacksquare }'."\n",
+                      'geteilt durch einen Nenner eines endlichen einpotenzigen Primzahlprodukts. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2090,7 +2134,7 @@
                       array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall d \in D_{\text{fin}} *) *( \forall n \in \mathbb{N}_{>0} *) \;\; \\\\ \;\; *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist gezeigt, dass jeder endliche additive Vorgänger eines solchen Quotienten eine Lücke des Primturm-Potenzrasters bildet. \lm{ \blacksquare }'."\n",
+                      'Damit ist gezeigt, dass jeder endliche additive Vorgänger eines solchen Quotienten eine Lücke des Primturm-Potenzrasters bildet. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2153,7 +2197,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen. \lm{ \blacksquare }'."\n",
+                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2258,7 +2302,7 @@
                       'Daher ist der kanonische lückenlose Zahlenwert von \lm{ ω\overline{\#} } genau \lm{ ω }.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was wir zeigen wollten. \lm{ \blacksquare }'."\n",
+                      'Was wir zeigen wollten. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2495,7 +2539,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die kanonische Einheits-Primexponentenidentifikation, also unsere Primzahlprodukt-Vermutung, bewiesen. \lm{ \blacksquare }'."\n",
+                      'Damit ist die kanonische Einheits-Primexponentenidentifikation, also unsere Primzahlprodukt-Vermutung, bewiesen. \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
