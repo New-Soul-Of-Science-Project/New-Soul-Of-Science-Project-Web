@@ -47,12 +47,13 @@
       import {
         pi2,
         blackColor,
-        eleWidth,
-        eleHeight,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
+      // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
+      const eleWidth = 560
+      const eleHeight = 315
 
       const render = new Render( eleWidth, eleHeight )
 
