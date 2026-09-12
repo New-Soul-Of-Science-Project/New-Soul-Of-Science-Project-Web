@@ -17,14 +17,14 @@
     <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
     <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
 
-    <!-- versions see: https://unpkg.com/browse/three@0.140.2/ -->
+    <!-- versions see: https://unpkg.com/browse/three@0.186.0/ -->
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
+          "three": "https://unpkg.com/three@0.186.0/build/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render.js"
+          "render": "./js/render-v0.186.0.js"
         }
       }
     </script>
@@ -33,7 +33,7 @@
     <!-- <script type="importmap">
       {
         "imports": {
-          "three": "./js/three.js/r140-0.140.2/three.module.js"
+          "three": "./js/three.js/r140-0.186.0/three.module.js"
         }
       }
     </script> -->
@@ -42,11 +42,12 @@
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
 
-      import { GUI } from 'https://unpkg.com/three@0.140.2/examples/jsm/libs/lil-gui.module.min.js'
+      import { GUI } from 'https://unpkg.com/three@0.186.0/examples/jsm/libs/lil-gui.module.min.js'
 
       import {
         pi2,
         blackColor,
+        intensityLightScaling,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
@@ -56,6 +57,12 @@
       const eleHeight = 315
 
       const render = new Render( eleWidth, eleHeight )
+
+      // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
+      // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
+      // zusätzlicher Ausgleichsfaktor, nur für diese Datei.
+      const localLightBoost = 5
+      render.spotLight.intensity *= localLightBoost
 
       // heller Hintergrund, aber nicht ganz weiß - nur lokal für diese Animation (nicht in der
       // geteilten const.js/render.js)
@@ -92,7 +99,7 @@
       // Light, additional
       const spotLightSecondParamsObj = {
         color: 0xffffff,
-        intensity: 0.5,
+        intensity: 0.5 * Math.PI * intensityLightScaling * localLightBoost,
         // distance: Float,
         // angle: Radians,
         // penumbra: Float,
@@ -107,7 +114,10 @@
 
       // Gleichmäßige Grundhelligkeit: dämpft den Kontrast zwischen unbeleuchteten und plötzlich
       // vom Spotlight erfassten Kegel-Flächen beim Rotieren (nur lokal, nicht in render.js)
-      const ambientLight = new THREE.AmbientLight( 0xffffff, 0.5 )
+      // AmbientLight hat keinen physikalischen Abstandsbezug, daher hier nur der reine
+      // Migrationsfaktor Math.PI (r155), ohne den zusätzlichen intensityLightScaling-Faktor,
+      // der bei den SpotLights die Szenengrößen-Diskrepanz zum photometrischen Modell ausgleicht.
+      const ambientLight = new THREE.AmbientLight( 0xffffff, 0.5 * Math.PI )
       render.scene.add( ambientLight )
       render.scene.add( spotLightSecond )
       spotLightSecond.position.set( -4, -2, 0 )
