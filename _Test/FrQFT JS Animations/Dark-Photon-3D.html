@@ -135,6 +135,7 @@
       let wqRings = []
       let wqRingSpheres = []
       let showRingAsTorus = false
+      let paused = false
                                                  
       function setWq() {
         const wqGroup = new THREE.Group();
@@ -192,6 +193,7 @@
           // shininess: 100,
           opacity: 0.6,
           transparent: true,
+          depthWrite: false, // sonst blockieren transparente Kegel dahinterliegende Flächen im Tiefentest
           side: THREE.DoubleSide,
           // clippingPlanes: [ localPlane ],
         });
@@ -226,9 +228,12 @@
         panel.domElement.style.position = 'absolute'
         panel.domElement.style.left = ( eleWidth - panelWidth ) + 'px'
         panel.domElement.style.top = ( eleHeight - panel.domElement.offsetHeight ) + 'px'
+        const pausedName = 'Animation anhalten'
         const settings = {
           [showRingName]: showRingAsTorus,
+          [pausedName]: paused,
         }
+        panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
       }
 
@@ -236,6 +241,10 @@
         showRingAsTorus = checked
         wqRings.forEach( ring => ring.visible = showRingAsTorus )
         wqRingSpheres.forEach( ringSphere => ringSphere.visible = !showRingAsTorus )
+      }
+
+      function togglePaused( checked ) {
+        paused = checked
       }
 
       createPanel()
@@ -283,48 +292,54 @@
       var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
 
       render.renderer.setAnimationLoop(() => {
-        const delta = Math.min( render.clock.getDelta(), maxDelta )
-        simulatedElapsedTime += delta
-        time = -( simulatedElapsedTime * pi2 * 0.05 ) % 4.5;
-        movingTime = -time - 2;
+        // clock.getDelta() muss immer aufgerufen werden, sonst gäbe es beim Fortsetzen
+        // nach der Pause einen großen nachgeholten Zeitsprung (siehe maxDelta oben)
+        const rawDelta = render.clock.getDelta()
 
-        const wrapped = time > prevTime
-        prevTime = time
+        if ( !paused ) {
+          const delta = Math.min( rawDelta, maxDelta )
+          simulatedElapsedTime += delta
+          time = -( simulatedElapsedTime * pi2 * 0.05 ) % 4.5;
+          movingTime = -time - 2;
 
-        dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
+          const wrapped = time > prevTime
+          prevTime = time
 
-        if ( wrapped ) {
-          centerTrail.points = []
-        }
-        updateTrail( centerTrail, dphCenterSphere )
+          dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
 
-        wqGroups.forEach((wqGroup, ndx) => {
-          const angle = -movingTime + pi2 / wqCount * ndx
-          wqGroup.position.set(
-            Math.cos( angle ) * radius,
-            Math.sin( angle ) * radius,
-            0
-          )
-
-          // Bewegungsrichtung = Ableitung der Position nach der Zeit:
-          // Kreisbewegung (Tangente, proportional zu radius) + gleichförmige Z-Drift der ganzen dphGroup.
-          // dphGroup.position.z liegt im unskalierten Raum von movingSpaceGroup, während radius/angle im
-          // lokalen, mit generalScale skalierten Raum von dphGroup liegen - daher muss der Z-Anteil hier
-          // durch generalScale geteilt werden, um im selben (lokalen) Maßstab wie x/y zu liegen.
-          const angularSpeed = pi2 * 0.05 // = d(movingTime)/dt, siehe dphGroup.position.z weiter oben
-          wqVelocity.set(
-            radius * angularSpeed * Math.sin( angle ),
-            -radius * angularSpeed * Math.cos( angle ),
-            ( angularSpeed * angularSpeed ) / generalScale
-          ).normalize()
-          wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
-
-          const trail = wqTrails[ ndx ]
           if ( wrapped ) {
-            trail.points = []
+            centerTrail.points = []
           }
-          updateTrail( trail, wqGroup )
-        })
+          updateTrail( centerTrail, dphCenterSphere )
+
+          wqGroups.forEach((wqGroup, ndx) => {
+            const angle = -movingTime + pi2 / wqCount * ndx
+            wqGroup.position.set(
+              Math.cos( angle ) * radius,
+              Math.sin( angle ) * radius,
+              0
+            )
+
+            // Bewegungsrichtung = Ableitung der Position nach der Zeit:
+            // Kreisbewegung (Tangente, proportional zu radius) + gleichförmige Z-Drift der ganzen dphGroup.
+            // dphGroup.position.z liegt im unskalierten Raum von movingSpaceGroup, während radius/angle im
+            // lokalen, mit generalScale skalierten Raum von dphGroup liegen - daher muss der Z-Anteil hier
+            // durch generalScale geteilt werden, um im selben (lokalen) Maßstab wie x/y zu liegen.
+            const angularSpeed = pi2 * 0.05 // = d(movingTime)/dt, siehe dphGroup.position.z weiter oben
+            wqVelocity.set(
+              radius * angularSpeed * Math.sin( angle ),
+              -radius * angularSpeed * Math.cos( angle ),
+              ( angularSpeed * angularSpeed ) / generalScale
+            ).normalize()
+            wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
+
+            const trail = wqTrails[ ndx ]
+            if ( wrapped ) {
+              trail.points = []
+            }
+            updateTrail( trail, wqGroup )
+          })
+        }
 
         render.renderer.render( render.scene, render.camera )
       });
