@@ -57,10 +57,15 @@
 
       const render = new Render( eleWidth, eleHeight )
 
+      // weichere Schatten, nur lokal für diese Animation (nicht in der geteilten render.js)
+      render.renderer.shadowMap.type = THREE.PCFSoftShadowMap
+      render.spotLight.shadow.mapSize.set( 1024, 1024 )
+      render.spotLight.shadow.radius = 8
+
       // controls.update() must be called after any manual changes to the camera's transform
       render.camera.position.z = 7
       render.controls.update()
-                                                 
+
       render.spotLight.position.set( -4, 6, 10 )
                                                  
       const centerSphereRadius = 0.075;
@@ -95,6 +100,11 @@
       --------------------*/
       const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
       spotLightSecond.castShadow = true
+
+      // Gleichmäßige Grundhelligkeit: dämpft den Kontrast zwischen unbeleuchteten und plötzlich
+      // vom Spotlight erfassten Kegel-Flächen beim Rotieren (nur lokal, nicht in render.js)
+      const ambientLight = new THREE.AmbientLight( 0xffffff, 0.5 )
+      render.scene.add( ambientLight )
       render.scene.add( spotLightSecond )
       spotLightSecond.position.set( -4, -2, 0 )
       // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
@@ -195,6 +205,11 @@
           opacity: 0.6,
           transparent: true,
           depthWrite: false, // sonst blockieren transparente Kegel dahinterliegende Flächen im Tiefentest
+          // Bei mehreren überlappenden transparenten Flächen entlang eines Blickstrahls gibt es mit
+          // einfachem Echtzeit-Alpha-Blending kein wirklich stabiles Ergebnis (Order-Independent
+          // Transparency wäre die vollständige Lösung, s. Diskussion). FrontSide reduziert das
+          // Artefakt zwar, macht aber beim manuellen Rotieren Teile der Kegel unsichtbar (nur
+          // Rückseite fehlt) - DoubleSide bleibt daher trotz des Artefakts die bessere Wahl.
           side: THREE.DoubleSide,
           // clippingPlanes: [ localPlane ],
         });
