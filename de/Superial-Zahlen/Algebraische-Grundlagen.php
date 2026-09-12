@@ -392,7 +392,7 @@
                     'Damit ist insbesondere \lm{ w \ne 0 }, also \lm{ u − v \ne 0 }, im Widerspruch zu \lm{ u = v }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \blacksquare }'."\n".
+                    'Folglich muss \lm{ a_{k} = b_{k} } für alle \lm{ k } gelten; damit stimmen auch die Trägermengen \lm{ E } und \lm{ F } überein. \lm{ \qqed }'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

@@ -196,7 +196,7 @@
                     'nicht, sondern definiert innerhalb des von Neumannschen Universums eine zusätzliche strukturierte Rechenumgebung.'."\n".
                     'In diesem Sinn ist die Konstruktion konservativ:'."\n".
                     'Sie führt keine neuen mengentheoretischen Axiome ein, sondern arbeitet mit in ZFC definierbaren Objekten,'."\n".
-                    'Funktionen, Bewertungsfamilien und Hahn-Reihen. \lm{ \blacksquare }'."\n".
+                    'Funktionen, Bewertungsfamilien und Hahn-Reihen. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       

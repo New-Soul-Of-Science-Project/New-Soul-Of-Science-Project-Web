@@ -848,7 +848,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
-                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \blacksquare }'."\n".
+                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".
@@ -914,7 +914,7 @@
                       array( display => 'on',  latex => '{  \operatorname{std}*( \mathcal{S}_{\s}( f; a, b ) *)  =  \int_{a}^{b} f(t) \operatorname{d}\!t  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\lm{ \blacksquare }'."\n".
+                    '\lm{ \qed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:StandardisierungAbleitungIntegral:X', text =>
                       
@@ -958,7 +958,7 @@
                       array( display => 'on',  latex => '{  \operatorname{std}*( F_{\s}(x) - F_{\s}(a) *)  =  \operatorname{std}*( \mathcal{S}_{\s}( f; a, x ) *)  =  \int_{a}^{x} f(t) \operatorname{d}\!t  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\lm{ \blacksquare }'."\n".
+                    '\lm{ \qed }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".

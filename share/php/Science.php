@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.08.2026, 23:00h
+  // #: Stand: 12.09.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260912:  +:  "MathJax":  Add Macro "qed" for "quod erat demonstrandum" '\blacksquare'.
+  //                      +:  "MathJax":  Add Macro "qqed" for "quod erat demonstrandum" with space in front '\;\;\blacksquare'.
   //           20260817:  *:  "$Sc_g_equation_replace_ary":  Fix '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subset}\;\;\;'  to  '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subseteq}\;\;\;'.
   //           20260808:  +:  "$Sc_g_equation_replace_ary":  Add '  \longrightarrow  ' -> '\;\;\;\longrightarrow\;\;\;'.
   //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
@@ -306,6 +308,8 @@
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
     echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
     echo '            sumx: "\\\\sideset{}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
+    echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
+    echo '            qqed: "\\\\;\\\\;\\\\blacksquare",'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";

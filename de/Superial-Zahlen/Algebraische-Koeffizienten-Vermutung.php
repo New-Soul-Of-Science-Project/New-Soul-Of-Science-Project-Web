@@ -309,7 +309,7 @@
                       array( display => 'on',  latex => '{  X^{(0)}  =  Y^{(0)} \cdot Z  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Folglich \lm{ \frac{ X^{(0)} }{ Y^{(0)} } = Z \in \mathbb{S}_{\Z} }, damit \lm{ x \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Folglich \lm{ \frac{ X^{(0)} }{ Y^{(0)} } = Z \in \mathbb{S}_{\Z} }, damit \lm{ x \in \mathbb{S}_{\Z} }. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{A.3} \\\\ Korollar: \lm{ \mathbb{S}_{\Z} } ist ganz abgeschlossen', subline =>
@@ -324,7 +324,7 @@
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Beweis.} \\\\'."\n".
                     'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_IntegralityAndValuationRings}}\footnote{\const{SupNum_g_footnote_text_Valuationsring}}'."\n".
-                    'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \blacksquare }'."\n".
+                    'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
@@ -357,7 +357,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'für alle \lm{ p }.'."\n".
                     'Also \lm{ \frac{ \s }{ m } \in V_{p} } für alle \lm{ p }.'."\n".
-                    'Mit Lemma \bold{A1} folgt \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Mit Lemma \bold{A1} folgt \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{B.2} \\\\ Lemma: Algebraische Ganzzahlen liefern \lm{ \alpha \cdot \s \in \mathbb{S}_{\Z} }', subline =>
@@ -398,7 +398,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'Damit ist \lm{ Y } ganz über \lm{ \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist (\bold{Korollar A2}), folgt \lm{ Y \in \mathbb{S}_{\Z} }.'."\n".
-                    'Also \lm{ \beta \cdot \s \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Also \lm{ \beta \cdot \s \in \mathbb{S}_{\Z} }. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{B.3} \\\\ Lemma: Jede algebraische Zahl wird nach Multiplikation ganz', subline =>
@@ -460,7 +460,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Als Produkt zweier Elemente aus \lm{ \mathbb{S}_{\Z} } liegt \lm{ \alpha \cdot \s } wieder in \lm{ \mathbb{S}_{\Z} },'."\n".
-                    'also ist \lm{ \alpha } ein sinnvoller Koeffizient. \lm{ \blacksquare }'."\n".
+                    'also ist \lm{ \alpha } ein sinnvoller Koeffizient. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
@@ -689,7 +689,7 @@
                       array( display => 'on',  latex => '{  \frac{ X^{(0)} }{ Y^{(0)} }  =  \frac{ X′ }{ Y′ } \in \mathbb{S}_{\Z}​  \;\; ,  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }. \lm{ \blacksquare }'."\n".
+                    'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }. \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Korrelation – Ganz abgeschlossen:}'."\n".
@@ -731,7 +731,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m \in \mathbb{N} }.'."\n".
                     'Also ist \lm{ Y } \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
-                    'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \blacksquare }'."\n".
+                    'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Fazit:}'."\n".
