@@ -287,9 +287,10 @@
       const trailWorldPos = new THREE.Vector3()
       const coneUpAxis = new THREE.Vector3( 0, 1, 0 ) // Kegelspitze zeigt lokal in +Y
       const wqVelocity = new THREE.Vector3()
-      const trailTubeRadius = 0.0015
+      const trailTubeRadius = 0.00075
+      const centerTrailTubeRadius = 0.0015 // eigene, unabhängige Dicke für die grüne Mittelspur
       const trailTubeRadialSegments = 12 // höher = runderer Querschnitt, weniger eckig
-      const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x404040 } )
+      const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x5533cc } )
       const wqTrails = wqGroups.map(() => {
         const mesh = new THREE.Mesh( new THREE.BufferGeometry(), trailMaterial )
         movingSpaceGroup.add( mesh ) // eigenes Koordinatensystem, das sich nicht pro Frame verschiebt
@@ -297,11 +298,11 @@
       })
 
       // Spur des zentralen Rotationspunkts (dphCenterSphere), statt eines synthetisch wachsenden Zylinders
-      const centerTrailMaterial = new THREE.MeshBasicMaterial( { color: 0x009000 } )
+      const centerTrailMaterial = new THREE.MeshBasicMaterial( { color: 0x00ae22, side: THREE.DoubleSide } )
       const centerTrail = { mesh: new THREE.Mesh( new THREE.BufferGeometry(), centerTrailMaterial ), points: [] }
       movingSpaceGroup.add( centerTrail.mesh )
 
-      function updateTrail( trail, worldObject ) {
+      function updateTrail( trail, worldObject, tubeRadius = trailTubeRadius ) {
         if ( trail.points.length >= maxTrailPoints ) return
         worldObject.getWorldPosition( trailWorldPos )
         movingSpaceGroup.worldToLocal( trailWorldPos )
@@ -309,7 +310,7 @@
         if ( trail.points.length >= 2 ) {
           const curve = new THREE.CatmullRomCurve3( trail.points )
           trail.mesh.geometry.dispose()
-          trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, trailTubeRadius, trailTubeRadialSegments, false )
+          trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, tubeRadius, trailTubeRadialSegments, false )
         }
       }
 
@@ -340,7 +341,7 @@
           if ( wrapped ) {
             centerTrail.points = []
           }
-          updateTrail( centerTrail, dphCenterSphere )
+          updateTrail( centerTrail, dphCenterSphere, centerTrailTubeRadius )
 
           wqGroups.forEach((wqGroup, ndx) => {
             const angle = -movingTime + pi2 / wqCount * ndx
