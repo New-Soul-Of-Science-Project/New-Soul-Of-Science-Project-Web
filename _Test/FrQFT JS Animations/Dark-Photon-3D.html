@@ -57,6 +57,10 @@
 
       const render = new Render( eleWidth, eleHeight )
 
+      // heller Hintergrund, aber nicht ganz weiß - nur lokal für diese Animation (nicht in der
+      // geteilten const.js/render.js)
+      render.scene.background = new THREE.Color( 0xf8f8f8 )
+
       // weichere Schatten, nur lokal für diese Animation (nicht in der geteilten render.js)
       render.renderer.shadowMap.type = THREE.PCFSoftShadowMap
       render.spotLight.shadow.mapSize.set( 1024, 1024 )
@@ -200,7 +204,7 @@
 
         let coneGeo = null
         const coneMat = new THREE.MeshLambertMaterial({
-          color: 0xe0e0e0,
+          color: 0x777777,
           // shininess: 100,
           opacity: 0.6,
           transparent: true,
