@@ -448,7 +448,7 @@
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p' => array( headline_text => 'SN.PP.55'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-Bewertung-MengenPrimfakultaet-omega-ist-1' => array( headline_text => 'SN.PP.72'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.73'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt' => array( headline_text => 'Notationsvereinbarung – Primexponentenprodukt'/* , headline_text_short => 'X'*/),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung' => array( headline_text => 'Primexponentenprodukt – Notationsvereinbarung'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster' => array( headline_text => 'Definition: Das Primturm-Potenzraster'/* , headline_text_short => 'X' */),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr' => array( headline_text => 'SN.PP.74'),

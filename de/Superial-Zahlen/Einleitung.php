@@ -366,7 +366,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zeigt, dass das von-Neumann-Ordinal \lm{ ω }'."\n".
-                    'kanonisch mit dem vollständigen einpotenzigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Einheits-Primexponentenprodukt}'."\n".
+                    'kanonisch mit dem vollständigen einpotenzigen \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Einheits-Primexponentenprodukt}'."\n".
                     'aller endlichen Primzahlen identifiziert werden kann:'."\n".
                     ''))),
                   array( 'equations',
@@ -791,7 +791,7 @@
                   array( 'text', array( text => array(
                     'Dabei bezeichnet \lm{ \prodx } kein gewöhnliches Produkt im klassischen Sinn'."\n".
                     'und insbesondere kein analytisches unendliches Produkt,'."\n".
-                    'sondern ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
+                    'sondern ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Primexponentenprodukt}:'."\n".
                     'Jede endliche Primzahl \lm{ p } kommt darin genau einmal vor.'."\n".
                     'Auf dieser Grundlage wird die superiale Basis definiert durch'."\n".
                     ''))),
@@ -1960,7 +1960,7 @@
                     'In dieser werden die Werte endlicher und transfiniter natürlicher Zahlen mit ihrer Darstellung durch die Menge all ihrer Vorgänger, von der Null an, identifiziert.'."\n".
                     'Auf diese Mengenstruktur abgestimmt definieren wir die Primfakultät als Mengen-Primfakultät:'."\n".
                     'Sie bildet aus allen Primzahlen, die in der Mengendarstellung einer Ordinalzahl enthalten sind,'."\n".
-                    'ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenobjekt}'."\n".
+                    'ein \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Primexponentenobjekt}'."\n".
                     'mit erweiterter \lm{ p }-adischer Primexponentenbewertungsstruktur\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
@@ -2004,7 +2004,7 @@
                           'und transfinites Exponentenkombinationsraster ihrer Primzahltürme,'."\n".
                           'ihr \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster}{Primturm-Potenzraster} \lm{ \pr(n) }:'."\n".
                           'also alle Primzahltürme in \lm{ n } in endlichen und transfiniten natürlichen Exponentenkombinationen.',
-                        'Dafür nutzen wir ein neues \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}:'."\n".
+                        'Dafür nutzen wir ein neues \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Primexponentenprodukt}:'."\n".
                           'eine Primexponentenstruktur, in der auch transfinite Werte ZFC-intern beschreibbar werden,'."\n".
                           'indem wir ihr Primexponentenprodukt über eine erweiterte \lm{ p }-adische Primexponentenbewertung definieren.',
                         'Das \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster}{lückenlose Primturm-Potenzraster}'."\n".
@@ -2311,7 +2311,7 @@
                   array( 'text', array( text => array(
                     'Mit dem Beweis der Überrationalitätsvermutung treten die tieferen Zusammenhänge'."\n".
                     'zwischen klassischen Zahlbereichen und aktual unendlichen'."\n".
-                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenstrukturen}'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Primexponentenstrukturen}'."\n".
                     'hervor.'."\n".
                     'Irrationale Wurzeln und Radikalformen erscheinen dabei nicht als äußere Fremdkörper,'."\n".
                     'sondern als Zahlen, deren fehlende endliche Rationalität durch'."\n".

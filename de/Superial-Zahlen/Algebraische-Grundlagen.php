@@ -1144,7 +1144,7 @@
                     'Die \italic{Erzeugungssumme} \lm{ \sumx } spielt in der superialen integration eine wesentliche Rolle.'."\n".
                     'So ist sie auch eng mit der \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahl}'."\n".
                     'sowie auch mit'."\n".
-                    'dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{Primexponentenprodukt}'."\n".
+                    'dem \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{Primexponentenprodukt}'."\n".
                     '\lm{ \prodx } verwoben.'."\n",
                       'In vielen Fällen fällt die Erzeugungssumme mit einer normalen aktual unendlichen Summe zusammen.'."\n".
                     'Dies gilt beispielsweise für die simpelste aktual unendliche Summe über alle endlichen natürlichen Zahlen:'."\n".

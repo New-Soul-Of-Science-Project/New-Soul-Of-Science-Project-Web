@@ -920,10 +920,16 @@
                       'So erhalten wir eine neue Definition der Primfakultät als Einheits-Primexponentenidentifikation, die sich auf die Elemente von Mengen bezieht.'."\n",
                         '\\\\'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{}\bold{Notationsvereinbarung – Primexponentenprodukt:}'."\n".
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung', text =>
+                  'Primexponentenprodukt – Notationsvereinbarung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
                       'Um Primexponentenprodukte mit endlichen oder aktual unendlichen Exponenten von gewöhnlichen konvergenten Produkten,'."\n".
                       'ordinalen Produkten und kardinalen Produkten zu unterscheiden, führen wir das Symbol \lm{ \prodx } ein.'."\n".
+                      ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
                       'Das Symbol'."\n".
                       ''))),
                   array( 'equations',

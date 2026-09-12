@@ -40,7 +40,7 @@
                     'auf der superialen Basis \lm{ \s }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Auf dieser Seite wird \lm{ \prodx } ausschließlich im Sinne des auf der Seite \italic{›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:NotationsvereinbarungPrimexponentenprodukt}{\name{OM:SupNum:Primzahlprodukt-Vermutung}}‹}'."\n".
+                    'Auf dieser Seite wird \lm{ \prodx } ausschließlich im Sinne des auf der Seite \italic{›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{\name{OM:SupNum:Primzahlprodukt-Vermutung}}‹}'."\n".
                     'eingeführten Primexponentenprodukts verwendet, also nicht als gewöhnliches unendliches Produkt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
