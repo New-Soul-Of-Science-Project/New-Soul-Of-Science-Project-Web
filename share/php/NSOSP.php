@@ -708,6 +708,13 @@
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
+  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Dark-Photon-3D.html', width => '560px', height => '315px', name => 'set local',
+                                                         text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
+                                                                  'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}'."\n",
+                                                         // XXX print_image => $Glo_PathRel_back.'../share/images/FrQFT/Sterntetraeder-3D-print.png',
+                                                         print_image_alt => 'Vakuum-Elapson, interaktive 3D-Animation');
+
   
   
   // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
@@ -1642,12 +1649,13 @@
            // text_titel_discr_h3 => 'Die Gravitation der Allgemeinen Relativitätstheorie ergibt sich als emergentes Phänomen der Beugung lichtähnlicher rotierender Strukturen in den gravitativ angezogenen Elementarteilchen-Strings',
            text_titel_discr_h3 => 'Rotierende Impulskegel der neuen Feinstruktur der gravitativ wirkenden Elementarteilchen-Strings einer Zentralmasse verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld und führen so zur Quantengravitation',
            jump_ary => array(
-                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                     // #!: Wiederholt in "Mechanismus der Gravitation"! Dort mit fester Nummer !!!!
                     'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                    'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Graviradiation' => array( headline_text => 'Graviradiation – eine neue Wechselwirkung', headline_text_short => 'Graviradiation'),
                              
                   'OM:FrQFT:Quantengravitation:VereinfModellQGravitation' => array( headline_text => 'Vereinfachtes Modell der Quantengravitation', headline_text_short => 'Vereinfachtes Modell der Quantengravitation'),

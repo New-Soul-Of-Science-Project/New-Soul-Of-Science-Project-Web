@@ -92,13 +92,17 @@
                       'Diese wellenförmige Störung der Lichtbahnen, und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse,'."\n".
                     'bringt allerdings unterschiedliche Energiedichten des Vakuums hervor, die als Raumzeitkrümmung erscheinen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse},'."\n".
                     'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als Gradient der De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} oder De-Broglie-Wellenlänge).'."\n"))),
-                      
+
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
                                                          text => '\\const{FrQFT_g_text_VakuumElapson}'))),
-                      
+
+                  array( 'iframe',
+                    array_merge( $FrQFT_g_iframe_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson',
+                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+
                   array( 'text', array( text => array(
                   '\\condb{Die wellenförmige Störung der Lichtbahn hat ihre Ursache in den rotierenden Impulskegeln der Feinstruktur der Elementarteilchen der gravitativen Masse} \\\\'."\n".
                     'Die gravitativ anziehende Masse besteht aus Elementarteilchen.'."\n".
