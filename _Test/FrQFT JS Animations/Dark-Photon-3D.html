@@ -113,6 +113,9 @@
       // unsichtbar werden kann.
       const cameraRollAngle = pi2 * 0.005
       render.camera.up.set( Math.sin( cameraRollAngle ), Math.cos( cameraRollAngle ), 0 )
+      // Zielpunkt etwas nach oben verschoben, damit die Spirale selbst im Bild nach unten rutscht und
+      // sich von der Überschrift löst.
+      render.controls.target.set( 0, 0.08, 0 )
       render.controls.update()
 
       render.spotLight.position.set( -4, 6, 10 )
