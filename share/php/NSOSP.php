@@ -712,7 +712,7 @@
                                                          text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
                                                                   'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
                                                                   '\const{FrQFT_g_text_WQSWQMenge}'."\n",
-                                                         // XXX print_image => $Glo_PathRel_back.'../share/images/FrQFT/Sterntetraeder-3D-print.png',
+                                                         print_image => $Glo_PathRel_back.'../share/images/FrQFT/Dark-Photon-3D-print.png',
                                                          print_image_alt => 'Vakuum-Elapson, interaktive 3D-Animation');
 
   
