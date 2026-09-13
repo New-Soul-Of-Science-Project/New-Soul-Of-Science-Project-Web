@@ -122,8 +122,11 @@
       const totalSpeed = Math.SQRT2 * c // Bahngeschwindigkeit, die feste Erhaltungsgröße
       let translationSpeedFactor = 1 // Regler-Wert in Vielfachen von c; 1 = kein Gravitationseinfluss
       // Frequenz (Umdrehungen/Sekunde) ist jetzt die unabhängige Regler-Größe; der Bahnradius ergibt
-      // sich daraus (radius = tangentialSpeed / rotationSpeed, s.u.), statt umgekehrt.
-      let frequency = 0.05
+      // sich daraus (radius = tangentialSpeed / rotationSpeed, s.u.), statt umgekehrt. Der Regler zeigt
+      // ein Vielfaches der Grundfrequenz (Wert 1 = bisheriges Standardtempo), analog zum LG-Faktor.
+      const baseFrequency = 0.05
+      let frequencyFactor = 1
+      let frequency // = frequencyFactor * baseFrequency, in recomputePhysics() gesetzt
       let translationSpeedLocal // = translationSpeedFactor * c, dphGroup-lokale Einheit
       let translationSpeedWorld // = translationSpeedLocal * generalScale, für dphGroup.position.z
       let rotationSpeed // = Betrag von d(angle)/dt = frequency * pi2
@@ -140,11 +143,19 @@
       let coneHeight
       let coneBottomRadius
 
+      // Feste Ziel-Wegstrecke (Weltkoordinaten), die pro Zyklus zurückgelegt wird - unabhängig vom
+      // LG-Regler (s.u.), berechnet aus den ursprünglichen Standardwerten (c, generalScale, 20s).
+      const targetZDistance = c * generalScale * 20
+
       function recomputePhysics() {
         translationSpeedLocal = translationSpeedFactor * c
         translationSpeedWorld = translationSpeedLocal * generalScale
+        // Zyklusdauer an die aktuelle Translationsgeschwindigkeit anpassen, damit die zurückgelegte
+        // Wegstrecke im Bild (targetZDistance) sich durch den LG-Regler nicht verlängert/verkürzt.
+        cycleDuration = translationSpeedWorld > 1e-6 ? targetZDistance / translationSpeedWorld : 20
         // Rotationsanteil aus der Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed²
         const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        frequency = frequencyFactor * baseFrequency
         rotationSpeed = frequency * pi2
         radius = tangentialSpeed / rotationSpeed
         coneSize = radius * 0.5
@@ -153,7 +164,7 @@
         coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
       }
       recomputePhysics()
-                                                 
+
       // Light, additional
       const spotLightSecondParamsObj = {
         color: 0xffffff,
@@ -400,7 +411,7 @@
 
       function createPanel() {
         const showRingName = 'Micro-Wirkungsquanten als Ringe anzeigen'
-        const panelWidth = 320 // an den längeren Text von showRingName angepasst
+        const panelWidth = eleWidth / 2
         const panel = new GUI({ width: panelWidth })
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
@@ -419,12 +430,13 @@
         const settings = {
           [showRingName]: showRingAsTorus,
           [pausedName]: paused,
-          [frequencyName]: frequency,
+          [frequencyName]: frequencyFactor,
           [translationSpeedName]: translationSpeedFactor,
         }
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
-        panel.add( settings, frequencyName, 0.02, 0.15, 0.005 ).onChange( updateFrequency )
+        // Vielfaches der Grundfrequenz, 1 = bisheriges Standardtempo (s. baseFrequency)
+        panel.add( settings, frequencyName, 0.4, 3, 0.05 ).onChange( updateFrequencyFactor )
         // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
         panel.add( settings, translationSpeedName, 0, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
       }
@@ -441,8 +453,8 @@
 
       // Nach jeder Änderung von Frequenz oder Translationsgeschwindigkeit: abgeleitete Größen neu
       // berechnen (radius eingeschlossen, s. recomputePhysics), gekrümmte Kegel-Geometrie neu aufbauen
-      // (geteilt von allen 8 Kegeln) und die Spuren zurücksetzen (sonst Sprung in der Kurve, da alte
-      // Punkte nicht mehr zur neuen Bahn passen).
+      // (geteilt von allen 8 Kegeln), die Spuren zurücksetzen (sonst Sprung in der Kurve, da alte
+      // Punkte nicht mehr zur neuen Bahn passen) und die Animation von vorne beginnen lassen.
       function rebuildAfterSpeedChange() {
         recomputePhysics()
 
@@ -453,10 +465,13 @@
 
         wqTrails.forEach( trail => { trail.points = [] } )
         centerTrail.points = []
+
+        simulatedElapsedTime = 0
+        prevWrappedTime = 0
       }
 
-      function updateFrequency( newFrequency ) {
-        frequency = newFrequency
+      function updateFrequencyFactor( newFactor ) {
+        frequencyFactor = newFactor
         rebuildAfterSpeedChange()
       }
 
@@ -506,7 +521,7 @@
       var simulatedElapsedTime = 0;
       var prevWrappedTime = 0;
       var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
-      var cycleDuration = 20; // Sekunden, bis Position/Spuren periodisch zurückgesetzt werden
+      var cycleDuration; // wird in recomputePhysics() gesetzt (an targetZDistance/translationSpeedWorld gekoppelt)
 
       render.renderer.setAnimationLoop(() => {
         // clock.getDelta() muss immer aufgerufen werden, sonst gäbe es beim Fortsetzen
