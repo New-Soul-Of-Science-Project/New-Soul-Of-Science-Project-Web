@@ -66,7 +66,7 @@
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
       // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
-      const eleWidth = 560
+      const eleWidth = 660
       const eleHeight = 450
 
       const render = new Render( eleWidth, eleHeight )
@@ -86,7 +86,7 @@
       info.style.width = render.dimensions.width + 'px'
 
       const headline = document.getElementById( 'headline' )
-      headline.innerHTML = 'Wirkungsquanten-String eines<br>unpolarisierten Photons des Vakuums'
+      headline.innerHTML = 'Wirkungsquanten-String eines unpolarisierten Photons des Vakuums'
 
       // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
       // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
