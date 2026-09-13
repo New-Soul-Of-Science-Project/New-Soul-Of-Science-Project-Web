@@ -708,7 +708,7 @@
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
-  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Dark-Photon-3D.html', width => '560px', height => '315px', name => 'set local',
+  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Dark-Photon-3D.html', width => '560px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
                                                                   'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
                                                                   '\const{FrQFT_g_text_WQSWQMenge}'."\n",
