@@ -140,6 +140,12 @@
       const torusRadius = 0.125;
       const generalScale = 0.15
 
+      // wq-Anzahl bei Grundfrequenz (tatsächliche Frequenz = baseFrequency) - wächst proportional
+      // zur tatsächlichen Frequenz, siehe rebuildWqCountIfNeeded(). Muss vor dem Kegel-Mantellängen-
+      // Faktor unten deklariert sein, der von der aktuellen wqCount abhängt.
+      const baseWqCount = 8
+      let wqCount = baseWqCount
+
       // Physik-Modell (siehe Konzept-Diskussion): Die Bahngeschwindigkeit entlang der tatsächlichen
       // Helixbahn ist die absolute Erhaltungsgröße √2·c und setzt sich aus Rotations- und
       // Translationsgeschwindigkeit zusammen: Bahngeschwindigkeit² = Rotationsgeschw.² + Translationsgeschw.².
@@ -167,9 +173,13 @@
       let coneSize // an radius gekoppelt statt fest, s.u.
       const coneScale = 0.75 // 1.5
       // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
-      // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis wie
-      // bisher, der Spitzenradius (coneCutOff) bleibt unverändert fix.
-      const coneMantleLengthFactor = 2
+      // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis, der
+      // Spitzenradius (coneCutOff) bleibt unverändert fix. Kalibriert bei baseWqCount (Faktor 2, wie
+      // bisher); bei weniger wq-Einheiten wird der Winkelabstand zur benachbarten Einheit größer, also
+      // muss der Kegelschweif proportional länger werden, damit er sie weiterhin optisch berührt -
+      // bei mehr Einheiten entsprechend kürzer, s. recomputeConeShape().
+      const baseConeMantleLengthFactor = 2
+      let coneMantleLengthFactor = baseConeMantleLengthFactor
       const coneSegments = 100
       let coneCutOff
       let coneHeight
@@ -195,13 +205,20 @@
         const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
         rotationSpeed = tangentialSpeed / radius
         frequency = rotationSpeed / pi2
+      }
 
+      // Getrennt von recomputePhysics(), da coneMantleLengthFactor von der aktuellen wqCount abhängt -
+      // die sich ihrerseits erst aus der von recomputePhysics() berechneten frequency ergibt (s.
+      // rebuildWqCountIfNeeded). Muss also nach beiden aufgerufen werden, s. rebuildAfterSpeedChange().
+      function recomputeConeShape() {
+        coneMantleLengthFactor = baseConeMantleLengthFactor * baseWqCount / wqCount
         coneSize = radius * 0.5
         coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
         coneHeight = coneSize * coneMantleLengthFactor
         coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
       }
       recomputePhysics()
+      recomputeConeShape()
 
       // Light, additional
       const spotLightSecondParamsObj = {
@@ -262,10 +279,6 @@
       // const coneGroupAxesHelper = new THREE.AxesHelper( 2 );
       // dphGroup.add( coneGroupAxesHelper );
 
-      // wq-Anzahl bei Grundfrequenz (tatsächliche Frequenz = baseFrequency) - wächst proportional
-      // zur tatsächlichen Frequenz, siehe rebuildWqCountIfNeeded().
-      const baseWqCount = 8
-      let wqCount = baseWqCount
       let wqGroups = []
       let wqConeGroups = []
       let wqCones = []
@@ -558,6 +571,9 @@
         // berechnete) tatsächliche Frequenz anpassen, bevor die Kegel-Geometrie unten neu gebaut und
         // auf ALLE (auch neu hinzugekommene) Kegel angewendet wird.
         rebuildWqCountIfNeeded()
+        // Kegelform hängt (über coneMantleLengthFactor) von der ggf. gerade geänderten wqCount ab -
+        // muss daher nach rebuildWqCountIfNeeded() neu berechnet werden.
+        recomputeConeShape()
 
         const oldGeometry = curvedConeGeometry
         curvedConeGeometry = buildCurvedConeGeometry()
