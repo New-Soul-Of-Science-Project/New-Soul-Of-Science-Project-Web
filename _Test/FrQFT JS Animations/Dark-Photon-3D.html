@@ -111,10 +111,6 @@
       const sphereRadius = fractalWithTorus ? sphereRadiusWithTorus : sphereRadiusWithoutTorus;
       const torusRadius = 0.125;
       const generalScale = 0.15
-      // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - gemeinsame Basis-
-      // Variable, an die die Kegelgröße gekoppelt ist (s.u.), damit beide zueinander proportional
-      // bleiben. Per Regler im Control-Panel veränderbar (siehe updateRadius), daher "let" statt "const".
-      let radius = 1.5
 
       // Physik-Modell (siehe Konzept-Diskussion): Die Bahngeschwindigkeit entlang der tatsächlichen
       // Helixbahn ist die absolute Erhaltungsgröße √2·c und setzt sich aus Rotations- und
@@ -122,32 +118,41 @@
       // Ohne Gravitation teilt sich das gleichmäßig auf (beide = c), was automatisch den 45°-Steigungswinkel
       // ergibt. Später simuliert Gravitation eine Verschiebung der Translationsgeschwindigkeit weg von c,
       // wobei die Rotationsgeschwindigkeit sich dann so anpasst, dass die Bahngeschwindigkeit konstant bleibt.
-      const c = 0.5 // Basis-Konstante (dphGroup-lokale Einheit)
+      const c = 0.65 // Basis-Konstante (dphGroup-lokale Einheit) - Grundgeschwindigkeit des Modells
       const totalSpeed = Math.SQRT2 * c // Bahngeschwindigkeit, die feste Erhaltungsgröße
       let translationSpeedFactor = 1 // Regler-Wert in Vielfachen von c; 1 = kein Gravitationseinfluss
+      // Frequenz (Umdrehungen/Sekunde) ist jetzt die unabhängige Regler-Größe; der Bahnradius ergibt
+      // sich daraus (radius = tangentialSpeed / rotationSpeed, s.u.), statt umgekehrt.
+      let frequency = 0.05
       let translationSpeedLocal // = translationSpeedFactor * c, dphGroup-lokale Einheit
       let translationSpeedWorld // = translationSpeedLocal * generalScale, für dphGroup.position.z
-      let rotationSpeed // = Betrag von d(angle)/dt, aus der Erhaltungsgröße abgeleitet (s.u.)
-
-      function recomputeSpeeds() {
-        translationSpeedLocal = translationSpeedFactor * c
-        translationSpeedWorld = translationSpeedLocal * generalScale
-        // Rotationsanteil aus der Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed²
-        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
-        rotationSpeed = tangentialSpeed / radius
-      }
-      recomputeSpeeds()
-
-      let coneSize = radius * 0.5 // an radius gekoppelt statt fest, s.o.
+      let rotationSpeed // = Betrag von d(angle)/dt = frequency * pi2
+      let radius // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - aus Frequenz und
+                 // Erhaltungsgröße abgeleitet, gemeinsame Basis für die Kegelgröße (s.u.)
+      let coneSize // an radius gekoppelt statt fest, s.u.
       const coneScale = 0.75 // 1.5
       // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
       // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis wie
       // bisher, der Spitzenradius (coneCutOff) bleibt unverändert fix.
       const coneMantleLengthFactor = 2
       const coneSegments = 100
-      let coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
-      let coneHeight = coneSize * coneMantleLengthFactor
-      let coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+      let coneCutOff
+      let coneHeight
+      let coneBottomRadius
+
+      function recomputePhysics() {
+        translationSpeedLocal = translationSpeedFactor * c
+        translationSpeedWorld = translationSpeedLocal * generalScale
+        // Rotationsanteil aus der Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed²
+        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        rotationSpeed = frequency * pi2
+        radius = tangentialSpeed / rotationSpeed
+        coneSize = radius * 0.5
+        coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
+        coneHeight = coneSize * coneMantleLengthFactor
+        coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+      }
+      recomputePhysics()
                                                  
       // Light, additional
       const spotLightSecondParamsObj = {
@@ -394,8 +399,8 @@
       }
 
       function createPanel() {
-        const showRingName = 'Mikro-Wirkungsquant als Ring anzeigen'
-        const panelWidth = 260
+        const showRingName = 'Micro-Wirkungsquanten als Ringe anzeigen'
+        const panelWidth = 320 // an den längeren Text von showRingName angepasst
         const panel = new GUI({ width: panelWidth })
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
@@ -409,17 +414,17 @@
         panel.domElement.style.top = 'auto' // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
         sceneContainer.appendChild( panel.domElement )
         const pausedName = 'Animation anhalten'
-        const radiusName = 'Spiralradius'
-        const translationSpeedName = 'Translationsgeschwindigkeit (× c)'
+        const frequencyName = 'Frequenz'
+        const translationSpeedName = 'Variable LG in 3D / Gravitation'
         const settings = {
           [showRingName]: showRingAsTorus,
           [pausedName]: paused,
-          [radiusName]: radius,
+          [frequencyName]: frequency,
           [translationSpeedName]: translationSpeedFactor,
         }
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
-        panel.add( settings, radiusName, 0.5, 3, 0.05 ).onChange( updateRadius )
+        panel.add( settings, frequencyName, 0.02, 0.15, 0.005 ).onChange( updateFrequency )
         // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
         panel.add( settings, translationSpeedName, 0, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
       }
@@ -434,11 +439,12 @@
         paused = checked
       }
 
-      // Nach jeder Änderung von radius oder Translationsgeschwindigkeit: abgeleitete Größen neu
-      // berechnen, gekrümmte Kegel-Geometrie neu aufbauen (geteilt von allen 8 Kegeln) und die
-      // Spuren zurücksetzen (sonst Sprung in der Kurve, da alte Punkte nicht mehr zur neuen Bahn passen).
+      // Nach jeder Änderung von Frequenz oder Translationsgeschwindigkeit: abgeleitete Größen neu
+      // berechnen (radius eingeschlossen, s. recomputePhysics), gekrümmte Kegel-Geometrie neu aufbauen
+      // (geteilt von allen 8 Kegeln) und die Spuren zurücksetzen (sonst Sprung in der Kurve, da alte
+      // Punkte nicht mehr zur neuen Bahn passen).
       function rebuildAfterSpeedChange() {
-        recomputeSpeeds()
+        recomputePhysics()
 
         const oldGeometry = curvedConeGeometry
         curvedConeGeometry = buildCurvedConeGeometry()
@@ -449,13 +455,8 @@
         centerTrail.points = []
       }
 
-      function updateRadius( newRadius ) {
-        radius = newRadius
-        // coneSize und alle davon abgeleiteten Maße neu berechnen (gemeinsame Variable, s.o.)
-        coneSize = radius * 0.5
-        coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
-        coneHeight = coneSize * coneMantleLengthFactor
-        coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+      function updateFrequency( newFrequency ) {
+        frequency = newFrequency
         rebuildAfterSpeedChange()
       }
 
@@ -505,7 +506,7 @@
       var simulatedElapsedTime = 0;
       var prevWrappedTime = 0;
       var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
-      var cycleDuration = 15; // Sekunden, bis Position/Spuren periodisch zurückgesetzt werden
+      var cycleDuration = 20; // Sekunden, bis Position/Spuren periodisch zurückgesetzt werden
 
       render.renderer.setAnimationLoop(() => {
         // clock.getDelta() muss immer aufgerufen werden, sonst gäbe es beim Fortsetzen
@@ -539,7 +540,7 @@
 
             // Bewegungsrichtung = Ableitung der Position nach der Zeit: Kreisbewegung (Tangente,
             // proportional zu radius*rotationSpeed) + Translation entlang Z (translationSpeedLocal) -
-            // beide bereits im selben dphGroup-lokalen Maßstab (siehe recomputeSpeeds/Physik-Konzept).
+            // beide bereits im selben dphGroup-lokalen Maßstab (siehe recomputePhysics/Physik-Konzept).
             wqVelocity.set(
               radius * rotationSpeed * Math.sin( angle ),
               -radius * rotationSpeed * Math.cos( angle ),
