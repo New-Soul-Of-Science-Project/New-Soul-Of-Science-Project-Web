@@ -107,6 +107,12 @@
       // Etwas seitlicher als eine reine Frontalansicht, damit der Zusammenhang zwischen den wq-Kugeln
       // und den Kegelflächen der jeweils vorlaufenden Einheit von Anfang an besser erkennbar ist.
       render.camera.position.set( 3, 0, 6 )
+      // Kamera-Roll: kippt die gesamte Ansicht, damit der (an sich horizontale) Flug des dunklen
+      // Photons diagonal (oben rechts nach unten links) wirkt. Robuster als eine Szenen-Rotation, die
+      // bei der 8-fachen Symmetrie der wq-Einheiten in die Nähe von 45° geraten und dadurch praktisch
+      // unsichtbar werden kann.
+      const cameraRollAngle = pi2 * 0.005
+      render.camera.up.set( Math.sin( cameraRollAngle ), Math.cos( cameraRollAngle ), 0 )
       render.controls.update()
 
       render.spotLight.position.set( -4, 6, 10 )
