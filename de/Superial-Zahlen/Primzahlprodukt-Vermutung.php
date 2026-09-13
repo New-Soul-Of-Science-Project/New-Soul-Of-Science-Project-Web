@@ -1213,13 +1213,14 @@
                 'Definition: Das lückenlose Primturm-Potenzraster', subline =>
                   'Der Lückenlose Beginn des Primturm-Potenzrasters')),
                   array( 'text', array( text => array(
-                    'Das Primturm-Potenzraster nutzen wir nun, um seinen lückenlosen Anteil an seinem Beginn'."\n".
+                    'Das Primturm-Potenzraster nutzen wir nun, um den lückenlosen Abschnitt an seinem Beginn'."\n".
                     'zu berechnen.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \lpr(n) } die maximale lückenlose Menge natürlicher Zahlen, von der Null an,'."\n".
+                      'Sei \lm{ \lpr(n) } die maximale lückenlose Menge endlicher'."\n".
+                      'und aktual unendlicher natürlicher Zahlen von der Null an'."\n".
                       'im Primturm-Potenzraster \lm{ \pr(n) }'."\n".
                       ''))),
                   array( 'equations',
@@ -1272,7 +1273,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \pt( 2 )  =  *\{ 2 *\}  }'),
-                      array( display => 'on',  latex => '{  \pr( 2 )  =  \pr( 0^{0} \cdot 1^{0} \cdot 2^{1} )  }'),
+                      array( display => 'on',  latex => '{  \pr( 2 )  =  \pr( 2 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 2 )  =  *\{ 0, 1, 2, 2^{2}, 2^{3}, 2^{4}, 2^{5}, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pr( 2 )  =  *\{ 0, 1, 2, 4, 8, 16, 32, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
@@ -1373,8 +1374,8 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Wenn die Primzahlprodukt-Vermutung stimmt, dann gilt:'."\n",
-                        'Für die Zahl \lm{ ω ?\equiv_{kan} ω\overline{\#} } haben wir:'."\n".
+                      'Wenn die Primzahlprodukt-Vermutung stimmt, dann gilt \lm{ ω ?\equiv_{kan} ω\overline{\#} }.'."\n",
+                        'Für die Zahl \lm{ ω\overline{\#} } (Einheits-Primexponentenprodukt) haben wir:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1396,7 +1397,7 @@
                 'Analyse des ›Satzes des Euklid‹ in Bezug auf die Mengen-Primfakultät', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'In den obigen endlichen Beispielen zur Mengen-Primfakultät handelt es sich ja um Mengen \lm{ \mathbb{T} = n \in \mathbb{N} },'."\n".
+                    'In den obigen endlichen Beispielen zur Mengen-Primfakultät handelt es sich ja um Mengen \lm{ T = n \in \mathbb{N} },'."\n".
                     'deren Elemente endliche natürliche Zahlen sind, von der Null bis zu einer endlichen größten \lm{ n - 1 }.'."\n",
                       'Aus einer neuen Perspektive auf den ›Satz des Euklid‹ stellen wir fest, dass die Mengen-Primfakultät \lm{ n\overline{\#} } uns ein Produkt'."\n".
                     'aller Primzahlen liefert, das die Primfaktoren der Primfaktorzerlegungen aller Elemente \lm{ x } der Menge \lm{ n } enthält.'."\n".
@@ -1423,18 +1424,18 @@
                 'Für das Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Da das Primturm-Potenzraster ein Zahlenspektrum aufgrund der Primzahltürme seines Parameters liefert,'."\n".
-                    'ergibt die Mengen-Primfakultät einer Zahl \lm{ n } als sein Parameter, also  \lm{ \pr\!*( n\overline{\#} *) }, ein besonderes Spektrum oder Raster:'."\n",
-                      'Wenn wir die Mengen-Primfakultät einer natürlichen Zahl \lm{ n } als Parameter des Primturm-Potenzrasters benutzen, also  \lm{ \pr\!*( n\overline{\#} *) },'."\n".
-                    'dann basiert sein Zahlenspektrum oder Zahlenraster auf allen Primzahlen, die kleiner als \lm{ n } sind.'."\n".
+                    'Da das Primturm-Potenzraster ein Zahlenraster aufgrund der Primzahltürme seines Parameters liefert,'."\n".
+                    'ergibt die Mengen-Primfakultät einer Zahl \lm{ n } als sein Parameter, also  \lm{ \pr\!*( n\overline{\#} *) }, ein besonderes Raster.'."\n".
+                    'Denn sein Zahlenraster basiert dann auf allen Primzahlen (Primzahltürmen der Potenz Eins), die kleiner als \lm{ n } sind.'."\n".
                     'Damit ist es nach ›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1}{Lemma 1: Primfaktorinterval}‹ lückenlos'."\n".
                     'bis zur nächsten Primzahl \lm{ p \ge n }.'."\n".
-                    'Dieses lückenlose Interval \lm{ \lpr\!*( n\overline{\#} *) } enthält also alle Zahlen \lm{ x } mit \lm{ p > x \in \mathbb{N} }.'."\n",
+                    'Sein lückenloses Interval \lm{ \lpr\!*( n\overline{\#} *) } enthält also alle Zahlen \lm{ x } mit \lm{ p > x \in \mathbb{N} }.'."\n",
                       'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
-                    'endlichen natürlichen Zahl, die keine Primzahl ist, die nächst größere Primzahl, mittels Algebra und Mengenlehre, berechnen können.'."\n".
-                    'Somit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl immer wieder die nächste zu berechnen.'."\n".
-                    'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \lm{ \pr\!*( p_i\overline{\#} *) }'."\n".
-                    'kombiniert schließlich alle Primturm-Potenzraster der in ihm enthaltenen Primzahlen.'."\n",
+                    'endlichen natürlichen Zahl, die keine Primzahl ist,'."\n".
+                    'die nächst größere Primzahl mittels Algebra und Mengenlehre berechnen können.'."\n".
+                    'Somit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl \lm{ p_{i} }'."\n".
+                    'über \lm{ \pr\!*( p_{i}\overline{\#} *) } beziehungsweise \lm{ \lpr\!*( p_{i}\overline{\#} *) }'."\n".
+                    'immer wieder die nächste zu berechnen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
                       
@@ -1442,12 +1443,19 @@
                   'Per Algebra und Mengenlehre von einer Primzahl zur nächsten')),
                   array( 'text', array( text => array(
                     'Wie wir an den obigen endlichen Beispielen erkennen können und wie gerade erklärt,'."\n".
-                    'enthält das lückenlose Primturm-Potenzraster der Mengen-Primfakultät einer Primzahl als größte Zahl die letzte natürliche Zahl,'."\n".
-                    'bevor in Bezug auf das Zählen diese Primzahl als  neue Zahl zur Menge, und damit zu diesem Produkt, hinzukommt.'."\n".
-                    'Das lückenlose Primturm-Potenzraster  \lm{ \lpr*( p_i\overline{\#} *) } der Mengen-Primfakultät \lm{ p_i\overline{\#} } der Menge einer Primzahl \lm{ p_i }'."\n".
-                    'ist also die größte Menge mit natürlichen Zahlen \lm{ 0 \leq x < p_i },'."\n".
-                    'die durch ihr Primturm-Potenzraster aller kleineren Primzahlen \lm{ p_{< i} < p_{i} } in dieser Menge lückenlos dargestellt wird.'."\n".
-                    'Dieses spezielle \italic{lückenlose Primturm-Potenzraster einer Primzahl} entspricht also auch eben dieser Mengen-Primfakultät.'."\n".
+                    'enthält das lückenlose Primturm-Potenzraster der Mengen-Primfakultät einer Primzahl'."\n".
+                    'als größte Zahl die letzte natürliche Zahl,'."\n".
+                    'bevor in Bezug auf das Zählen diese Primzahl als neue Zahl zur Menge,'."\n".
+                    'und damit zu diesem Produkt, hinzukommt.'."\n",
+                      'Das lückenlose Primturm-Potenzraster \lm{ \lpr*( p_{i}\overline{\#} *) }'."\n".
+                    'der Mengen-Primfakultät \lm{ p_{i}\overline{\#} } der Mengendarstellung'."\n".
+                    'einer bestimmten Primzahl \lm{ p_{i} }'."\n".
+                    'ist also die größte Menge mit natürlichen Zahlen \lm{ 0 \leq x < p_{i} },'."\n".
+                    'die durch das Primturm-Potenzraster aller kleineren Primzahlen \lm{ p_{< i} < p_{i} }'."\n".
+                    'in dieser Menge lückenlos dargestellt wird.'."\n".
+                    'Dieses spezielle lückenlose Primturm-Potenzraster,'."\n".
+                    'das die Mengendarstellung einer Primzahl liefert,'."\n".
+                    'entspricht folglich auch eben der Mengen-Primfakultät aus der es entsteht.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1456,7 +1464,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  *]  \;\; ,  }',
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  *]  \;\; ,  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1479,7 +1487,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N} *) *( p_{i - 1}, p_{i} \in \mathbb{P} *) *( p_{i - 1} < x \leq p_{i} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  p_{i}  =  \lpr\!*( x\overline{\#} *)  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N} *) *( p_{i - 1}, p_{i} \in \mathbb{P} *) *( p_{i - 1} < x \leq p_{i} *) \\\ \qquad\qquad\qquad\qquad\;\; *[  p_{i}  =  \lpr\!*( x\overline{\#} *)  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Denn die erste Lücke befindet sich gleich bei \lm{ p_{i} } selber, der natürlichen Zahl, die die nächst größere als die größte in der Menge ist.'."\n".
@@ -1491,41 +1499,43 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i - 1}, p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( *( p_{i - 1} + 1 *)\overline{\#} *)  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall p_{i - 1}, p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( *( p_{i - 1} + 1 *)\overline{\#} *)  *]  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für den Fall, dass \lm{ x } schon die nächste Primzahl'."\n".
-                      'oder gleich der vorhergehenden ist, folgt:'."\n".
+                      'oder gleich der vorhergehenden ist, folgt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( p_{i}\overline{\#} *)  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( p_{i}\overline{\#} *)  *]  \;\; ,  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wie wir oben schon gesehen haben.'."\n",
+                      'wie wir oben schon gesehen haben.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wir können jetzt eine neue Primzahl aus den uns bekannten vorangegangenen Primzahlen erzeugen.'."\n".
+                    'Wir können jetzt jede neue Primzahl aus den uns bekannten vorangegangenen Primzahlen erzeugen,'."\n".
+                    'ausgehend von der \lm{ 2 }; oder sogar von der \lm{ 1 } aus, wenn gewollt.'."\n".
                     'Also erzeugen wir die auf eine bekannte Primzahl folgende Primzahl durch'."\n".
                     'Hochzählen um Einen, um unsere Primzahl dadurch mit in die Mengen-Primfakultät'."\n".
                     'zu bekommen.'."\n",
-                      'Wir beschreiben dies so, dass das Primturm-Potenzraster eine erste Lücke aufwies und die neue Primzahl'."\n".
-                    'diese Lücke nun füllt.'."\n".
+                      'Wir beschreiben das so, dass das Primturm-Potenzraster einer natürlichen Zahl eine erste Lücke aufweist'."\n".
+                    'und diese Lücke wird durch die neue Primzahl dann gefüllt.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster-einer-natuerlichen-Zahl', text =>
                   'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
                     '')),
                   array( 'text', array( text => array(
                     'Im Besonderen ist ein jedes derartiges Primturm-Potenzraster \lm{ \pr\!*( n *) }'."\n".
-                    'eine Beschreibung der kleinsten fehlenden reinen Primzahl in seinen Primzahltürmen, die'."\n".
-                    'auf seiner ersten Rasterlücke sitzt.'."\n".
-                    'Diese Primzahl erhalten wir dann durch \lm{ \lpr\!*( n *) }.'."\n",
-                      'Haben wir eine Potenz einer Primzahl \lm{ p_i } größer als Eins, wie \lm{ p_i^k }, mit \lm{ k > 1 },'."\n".
-                    'dann ist das Primturm-Potenzraster niemals lückenlos für die kleineren Potenzen von \lm{ p_i }.'."\n",
+                    'eine Beschreibung der kleinsten fehlenden einpotenzigen Primzahl in den Primzahltürmen von \lm{ n },'."\n".
+                    'die auf der ersten Rasterlücke sitzt.'."\n".
+                    'Diese Primzahl berechnen wir dann durch \lm{ \lpr\!*( n *) } in Form ihrer Mengendarstellung.'."\n",
+                      'Haben wir eine Potenz einer bestimmten Primzahl \lm{ p_{i} }, Null oder größer als Eins,'."\n".
+                    'wie \lm{ p_{i}^k } mit \lm{ k = 0 } oder \lm{ k > 1 },'."\n".
+                    'dann ist das Primturm-Potenzraster niemals lückenlos an der Position der reinen Primzahl \lm{ p_{i} }.'."\n",
                       'Sehen können wir das an den Beispielen für \lm{ \pr\!*( 4 *) }, \lm{ \pr\!*( 9 *) } und \lm{ \pr\!*( 18 *) }'."\n".
                     'unter \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses}‹}.'."\n",
                       'Denn die Menge \lm{ \pr\!*( 4 *) } hat die erste Lücke bei der \lm{ 2 }, also ergibt sich: \lm{ \lpr\!*( 4 *) = 2 }.'."\n",
@@ -1535,10 +1545,9 @@
                     'Also ergibt sich: \lm{ \lpr\!*( 18 *) = 3 }.'."\n",
                       'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma', text =>
-                      
-                'Lemma 4: Generatives Primzahl-Induktions-Lemma', subline =>
-                  '')),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma', text =>
+                  'Lemma 4: Generatives Primzahl-Induktions-Lemma', subline =>
+                    '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
                       '\\\\'."\n".
@@ -1556,7 +1565,7 @@
                       '\\\\'."\n".
                       ''))),
 
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                   'Beweis', subline =>
                     '')),
 
