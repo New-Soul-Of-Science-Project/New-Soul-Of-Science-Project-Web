@@ -118,20 +118,24 @@
       // Ohne Gravitation teilt sich das gleichmäßig auf (beide = c), was automatisch den 45°-Steigungswinkel
       // ergibt. Später simuliert Gravitation eine Verschiebung der Translationsgeschwindigkeit weg von c,
       // wobei die Rotationsgeschwindigkeit sich dann so anpasst, dass die Bahngeschwindigkeit konstant bleibt.
-      const c = 0.65 // Basis-Konstante (dphGroup-lokale Einheit) - Grundgeschwindigkeit des Modells
+      const c = 0.8 // Basis-Konstante (dphGroup-lokale Einheit) - Grundgeschwindigkeit des Modells
       const totalSpeed = Math.SQRT2 * c // Bahngeschwindigkeit, die feste Erhaltungsgröße
       let translationSpeedFactor = 1 // Regler-Wert in Vielfachen von c; 1 = kein Gravitationseinfluss
-      // Frequenz (Umdrehungen/Sekunde) ist jetzt die unabhängige Regler-Größe; der Bahnradius ergibt
-      // sich daraus (radius = tangentialSpeed / rotationSpeed, s.u.), statt umgekehrt. Der Regler zeigt
-      // ein Vielfaches der Grundfrequenz (Wert 1 = bisheriges Standardtempo), analog zum LG-Faktor.
-      const baseFrequency = 0.05
+      // Frequenz-Regler: setzt direkt die tatsächliche Rotationsfrequenz und damit (über die aktuelle
+      // Erhaltungsgröße-Aufteilung) den Bahnradius (siehe updateFrequencyFactor). Der Radius bleibt
+      // danach eine feste Struktureigenschaft - ändert sich stattdessen LG, bleibt radius unverändert
+      // und die tatsächliche Frequenz/Rotationsgeschwindigkeit verschiebt sich entsprechend der
+      // Erhaltungsgröße (nicht umgekehrt). Der Regler zeigt dabei immer die echte, aktuelle Frequenz im
+      // Verhältnis zur Grundfrequenz an, auch wenn sie sich durch eine LG-Änderung mitverschiebt.
+      const baseFrequency = 0.0878 // ≈ 0.0975 * 0.9
       let frequencyFactor = 1
-      let frequency // = frequencyFactor * baseFrequency, in recomputePhysics() gesetzt
+      let frequency // = aktuelle (durch LG ggf. verschobene) Rotationsfrequenz, in recomputePhysics() gesetzt
       let translationSpeedLocal // = translationSpeedFactor * c, dphGroup-lokale Einheit
       let translationSpeedWorld // = translationSpeedLocal * generalScale, für dphGroup.position.z
       let rotationSpeed // = Betrag von d(angle)/dt = frequency * pi2
-      let radius // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - aus Frequenz und
-                 // Erhaltungsgröße abgeleitet, gemeinsame Basis für die Kegelgröße (s.u.)
+      // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - feste Struktureigenschaft,
+      // initial bei LG=1 (translationSpeedFactor=1, tangentialSpeed=c) aus der Grundfrequenz berechnet.
+      let radius = c / ( frequencyFactor * baseFrequency * pi2 )
       let coneSize // an radius gekoppelt statt fest, s.u.
       const coneScale = 0.75 // 1.5
       // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
@@ -144,20 +148,26 @@
       let coneBottomRadius
 
       // Feste Ziel-Wegstrecke (Weltkoordinaten), die pro Zyklus zurückgelegt wird - unabhängig vom
-      // LG-Regler (s.u.), berechnet aus den ursprünglichen Standardwerten (c, generalScale, 20s).
-      const targetZDistance = c * generalScale * 20
+      // LG-Regler (s.u.).
+      const targetZDistance = 1.4
 
       function recomputePhysics() {
+        // radius wird NICHT hier neu berechnet - er ist eine feste Struktureigenschaft, die nur beim
+        // gezielten Verstellen des Frequenz-Reglers verändert wird (siehe updateFrequencyFactor).
+        // Ändert sich stattdessen LG (translationSpeedFactor), bleibt radius fest und die tatsächliche
+        // Frequenz/Rotationsgeschwindigkeit verschiebt sich entsprechend der Erhaltungsgröße (s.u.).
         translationSpeedLocal = translationSpeedFactor * c
         translationSpeedWorld = translationSpeedLocal * generalScale
         // Zyklusdauer an die aktuelle Translationsgeschwindigkeit anpassen, damit die zurückgelegte
         // Wegstrecke im Bild (targetZDistance) sich durch den LG-Regler nicht verlängert/verkürzt.
         cycleDuration = translationSpeedWorld > 1e-6 ? targetZDistance / translationSpeedWorld : 20
-        // Rotationsanteil aus der Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed²
+        // Bei festem radius ergibt sich die tatsächliche Rotationsgeschwindigkeit/Frequenz aus der
+        // Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed². Ändert sich LG
+        // (translationSpeedFactor), ändert sich hierüber also auch die Frequenz.
         const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
-        frequency = frequencyFactor * baseFrequency
-        rotationSpeed = frequency * pi2
-        radius = tangentialSpeed / rotationSpeed
+        rotationSpeed = tangentialSpeed / radius
+        frequency = rotationSpeed / pi2
+
         coneSize = radius * 0.5
         coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
         coneHeight = coneSize * coneMantleLengthFactor
@@ -409,6 +419,8 @@
         setWq()
       }
 
+      let frequencyController // damit der Frequenz-Regler bei LG-Änderungen die echte Frequenz anzeigen kann (s.u.)
+
       function createPanel() {
         const showRingName = 'Micro-Wirkungsquanten als Ringe anzeigen'
         const panelWidth = eleWidth / 2
@@ -436,9 +448,9 @@
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
         // Vielfaches der Grundfrequenz, 1 = bisheriges Standardtempo (s. baseFrequency)
-        panel.add( settings, frequencyName, 0.4, 3, 0.05 ).onChange( updateFrequencyFactor )
+        frequencyController = panel.add( settings, frequencyName, 0.4, 3, 0.05 ).onChange( updateFrequencyFactor )
         // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
-        panel.add( settings, translationSpeedName, 0, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
+        panel.add( settings, translationSpeedName, 0.05, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
       }
 
       function toggleShowRingAsTorus( checked ) {
@@ -471,13 +483,25 @@
       }
 
       function updateFrequencyFactor( newFactor ) {
+        // Regler setzt die tatsächliche, aktuelle Frequenz direkt (bei der jeweils aktuellen LG) -
+        // radius entsprechend anpassen, damit sich bei der aktuellen Erhaltungsgröße-Aufteilung genau
+        // diese Frequenz ergibt.
         frequencyFactor = newFactor
+        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        radius = tangentialSpeed / ( newFactor * baseFrequency * pi2 )
         rebuildAfterSpeedChange()
       }
 
       function updateTranslationSpeedFactor( newFactor ) {
         translationSpeedFactor = newFactor
         rebuildAfterSpeedChange()
+
+        // radius bleibt fest, aber die tatsächliche Frequenz hat sich mit LG verschoben (s. recomputePhysics) -
+        // Regler-Anzeige auf den echten, aktuellen Wert aktualisieren, ohne dabei erneut updateFrequencyFactor
+        // auszulösen (daher .updateDisplay() statt .setValue()).
+        frequencyFactor = frequency / baseFrequency
+        frequencyController.object[ frequencyController.property ] = frequencyFactor
+        frequencyController.updateDisplay()
       }
 
       createPanel()
