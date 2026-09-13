@@ -85,6 +85,10 @@
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
       container.style.height = render.dimensions.height + 'px'
+      // zusätzlich "position:relative", damit das Control-Panel unten per reinem CSS "bottom:0" an
+      // dieser Ecke verankert werden kann, statt eines in JS berechneten "top" - wächst beim Aufklappen
+      // dadurch automatisch synchron mit lil-guis eigener Animation nach oben (wie Dark-Photon-3D.html).
+      container.style.position = 'relative'
       container.appendChild( render.renderer.domElement )
 
       const info = document.getElementById( 'info' )
@@ -852,7 +856,25 @@
 
       function createPanel() {
         const buttonShowSecondTetrahedronName = 'Zeige beide Tetraeder'
-        const panel = new GUI({ width: 200 })
+        const panelWidth = eleWidth / 2
+        const panel = new GUI({ width: panelWidth })
+        panel.close() // eingeklappt starten (wie Dark-Photon-3D.html)
+        // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
+        // aber nur eleWidth x eleHeight groß. Daher stattdessen unten links im #container verankern
+        // (wie Dark-Photon-3D.html, dort unten rechts), per "bottom" statt einem in JS berechneten
+        // "top" - wächst beim Aufklappen dadurch rein per CSS (synchron mit lil-guis eigener
+        // Animation) nach oben, ganz ohne Nachrechnen. Das funktioniert unabhängig davon, ob die
+        // Seite eingebettet oder die HTML-Datei direkt im Browser geöffnet wird, da relativ zum
+        // eigenen #container (nicht zum Browserfenster) positioniert wird.
+        // .setProperty(..., 'important') statt .style.xyz, da main.css eine @media(max-width:640px)-Regel
+        // für .lil-gui.root mitbringt (left:0/right:auto/bottom:0), die sonst je nach Fenstergröße
+        // Vorrang bekommen könnte.
+        panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
+        panel.domElement.style.setProperty( 'left', '0px', 'important' )
+        panel.domElement.style.setProperty( 'right', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
+        panel.domElement.style.setProperty( 'top', 'auto', 'important' ) // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
+        container.appendChild( panel.domElement )
         const settings = {
           [buttonShowSecondTetrahedronName]: showSecondTetrahedron,
         }
