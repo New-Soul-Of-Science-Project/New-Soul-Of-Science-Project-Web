@@ -78,7 +78,18 @@
       render.controls.update()
 
       render.spotLight.position.set( -4, 6, 10 )
-                                                 
+
+      // Zusätzliches Licht aus Blickrichtung des Betrachters ("Kamera-Scheinwerfer") - folgt der
+      // Kamera automatisch mit, auch beim manuellen Orbiten per OrbitControls. Die Kamera muss dafür
+      // selbst im Szenengraphen hängen, sonst werden an ihr befestigte Objekte nicht mitgerendert.
+      render.scene.add( render.camera )
+      const cameraLight = new THREE.SpotLight( 0xffffff, 0.5 * Math.PI * intensityLightScaling * localLightBoost )
+      cameraLight.angle = Math.PI / 3
+      cameraLight.penumbra = 0.5
+      render.camera.add( cameraLight )
+      render.camera.add( cameraLight.target )
+      cameraLight.target.position.set( 0, 0, -1 )
+
       const centerSphereRadius = 0.075;
       const fractalWithTorus = true
       // const fractalWithWqWqs = true
