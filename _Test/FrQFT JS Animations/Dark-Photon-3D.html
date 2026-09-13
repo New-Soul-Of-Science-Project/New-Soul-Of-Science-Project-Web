@@ -66,7 +66,7 @@
 
       // heller Hintergrund, aber nicht ganz weiß - nur lokal für diese Animation (nicht in der
       // geteilten const.js/render.js)
-      render.scene.background = new THREE.Color( 0xf8f8f8 )
+      render.scene.background = new THREE.Color( 0xf0f0f0 )
 
       // weichere Schatten, nur lokal für diese Animation (nicht in der geteilten render.js)
       render.renderer.shadowMap.type = THREE.PCFSoftShadowMap
@@ -83,7 +83,7 @@
       // Kamera automatisch mit, auch beim manuellen Orbiten per OrbitControls. Die Kamera muss dafür
       // selbst im Szenengraphen hängen, sonst werden an ihr befestigte Objekte nicht mitgerendert.
       render.scene.add( render.camera )
-      const cameraLight = new THREE.SpotLight( 0xffffff, 0.5 * Math.PI * intensityLightScaling * localLightBoost )
+      const cameraLight = new THREE.SpotLight( 0xffffff, 0.15 * Math.PI * intensityLightScaling * localLightBoost )
       cameraLight.angle = Math.PI / 3
       cameraLight.penumbra = 0.5
       render.camera.add( cameraLight )
@@ -132,7 +132,7 @@
       // AmbientLight hat keinen physikalischen Abstandsbezug, daher hier nur der reine
       // Migrationsfaktor Math.PI (r155), ohne den zusätzlichen intensityLightScaling-Faktor,
       // der bei den SpotLights die Szenengrößen-Diskrepanz zum photometrischen Modell ausgleicht.
-      const ambientLight = new THREE.AmbientLight( 0xffffff, 0.5 * Math.PI )
+      const ambientLight = new THREE.AmbientLight( 0xffffff, 1.5 * Math.PI )
       render.scene.add( ambientLight )
       render.scene.add( spotLightSecond )
       spotLightSecond.position.set( -4, -2, 0 )
@@ -314,10 +314,11 @@
         }
 
         let coneGeo = null
-        const coneMat = new THREE.MeshLambertMaterial({
+        const coneMat = new THREE.MeshPhongMaterial({
           color: 0x777777,
-          // shininess: 100,
-          opacity: 0.6,
+          shininess: 40, // leichte Glanzlichter, um die gekrümmte Form hervorzuheben
+          specular: 0x555555, // gedämpft, kein grelles Plastik-Glänzen
+          opacity: 0.4,
           transparent: true,
           depthWrite: false, // sonst blockieren transparente Kegel dahinterliegende Flächen im Tiefentest
           // Bei mehreren überlappenden transparenten Flächen entlang eines Blickstrahls gibt es mit
