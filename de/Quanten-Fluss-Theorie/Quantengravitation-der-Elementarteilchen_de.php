@@ -95,9 +95,9 @@
 
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
-                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+                  // array( 'figure',
+                  //   array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
+                  //                                        text => '\\const{FrQFT_g_text_VakuumElapson}'))),
 
                   array( 'iframe',
                     array_merge( $FrQFT_g_iframe_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson',
