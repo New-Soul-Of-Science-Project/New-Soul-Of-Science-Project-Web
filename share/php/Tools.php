@@ -2154,7 +2154,10 @@
                   echo '              <td class="tools-class-text tools-class-text-figure" style="color: #'.(To_f_Color('*FigDescr', true)).';'.(($Glo_g_TextAlign == 'block') ? ' text-align: justify;' : '').'">'."\n";
                   if (0 < strlen($value_ary[titel]))
                   {
-                    echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
+                    if ($type == 'iframe')
+                      echo '                <i><a target="_blank" href="'.($value_ary[source]).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                    else
+                      echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
                   echo '                <i>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[text])).'</i>'."\n";
                   echo '              </td>'."\n";
