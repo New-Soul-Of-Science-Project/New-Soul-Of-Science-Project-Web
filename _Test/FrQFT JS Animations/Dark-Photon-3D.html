@@ -3,11 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Dark-Photon-3D – FrQFT</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="animation.css">
     <style>
       body { margin: 0; }
+      /* etwas mehr Zeilenabstand als die geteilte animation.css (dort 100%), nur lokal für diese Datei.
+         Eigene margin statt der Standard-Browser-Abstände, damit der Abstand speziell zwischen Titel
+         und Untertitel trotz des größeren Zeilenabstands moderat (~120%) bleibt. */
+      #info h1 { line-height: 1.4; margin: 10px 0 5px 0; }
+      #info h2 { line-height: 1.4; margin: 0 0 10px 0; }
     </style>
   </head>
   <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1>Dunkles Photon</h1>
+      <h2 id="headline"></h2>
+    </div>
 
     <!-- *** Imports *** -->
 
@@ -58,16 +71,22 @@
 
       const render = new Render( eleWidth, eleHeight )
 
-      // Eigener, exakt eleWidth x eleHeight großer Container: Canvas und Control-Panel hineingehängt,
-      // damit das Panel per reinem CSS "bottom:0" (statt berechnetem top per JS) an dieser Ecke
-      // verankert werden kann - wächst beim Aufklappen dann automatisch synchron mit lil-guis eigener
-      // Animation nach oben, ganz ohne eigenes Nachrechnen/Timing.
-      const sceneContainer = document.createElement( 'div' )
-      sceneContainer.style.position = 'relative'
-      sceneContainer.style.width = eleWidth + 'px'
-      sceneContainer.style.height = eleHeight + 'px'
-      document.body.appendChild( sceneContainer )
-      sceneContainer.appendChild( render.renderer.domElement )
+      // Wie bei Sterntetraeder-3D.html: #container hält die Canvas, #info Titel/Untertitel darüber.
+      // calc dynamic size, see: https://stackoverflow.com/questions/29884485/threejs-canvas-size-based-on-container
+      const container = document.getElementById( 'container' )
+      container.style.width = render.dimensions.width + 'px'
+      container.style.height = render.dimensions.height + 'px'
+      // zusätzlich "position:relative", damit das Control-Panel unten per reinem CSS "bottom:0" an
+      // dieser Ecke verankert werden kann, statt eines in JS berechneten "top" - wächst beim Aufklappen
+      // dadurch automatisch synchron mit lil-guis eigener Animation nach oben.
+      container.style.position = 'relative'
+      container.appendChild( render.renderer.domElement )
+
+      const info = document.getElementById( 'info' )
+      info.style.width = render.dimensions.width + 'px'
+
+      const headline = document.getElementById( 'headline' )
+      headline.innerHTML = 'Wirkungsquanten-String eines<br>unpolarisierten Photons des Vakuums'
 
       // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
       // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
@@ -428,14 +447,18 @@
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
         // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
-        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts im sceneContainer
-        // verankern, per "bottom" statt einem in JS berechneten "top" - wächst beim Aufklappen dadurch
-        // rein per CSS (synchron mit lil-guis eigener Animation) nach oben, ganz ohne Nachrechnen.
-        panel.domElement.style.position = 'absolute'
-        panel.domElement.style.right = '0px'
-        panel.domElement.style.bottom = '0px'
-        panel.domElement.style.top = 'auto' // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
-        sceneContainer.appendChild( panel.domElement )
+        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts im #container verankern,
+        // per "bottom" statt einem in JS berechneten "top" - wächst beim Aufklappen dadurch rein per
+        // CSS (synchron mit lil-guis eigener Animation) nach oben, ganz ohne Nachrechnen.
+        // .setProperty(..., 'important') statt .style.xyz, da main.css eine @media(max-width:640px)-Regel
+        // für .lil-gui.root mitbringt (left:0/right:auto/bottom:0), die sonst je nach Fenstergröße
+        // Vorrang bekommen könnte.
+        panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
+        panel.domElement.style.setProperty( 'right', '0px', 'important' )
+        panel.domElement.style.setProperty( 'left', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
+        panel.domElement.style.setProperty( 'top', 'auto', 'important' ) // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
+        container.appendChild( panel.domElement )
         const pausedName = 'Animation anhalten'
         const frequencyName = 'Frequenz'
         const translationSpeedName = 'Variable LG in 3D / Gravitation'
