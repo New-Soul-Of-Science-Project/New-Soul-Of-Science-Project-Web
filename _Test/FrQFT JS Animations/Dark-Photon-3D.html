@@ -58,6 +58,17 @@
 
       const render = new Render( eleWidth, eleHeight )
 
+      // Eigener, exakt eleWidth x eleHeight großer Container: Canvas und Control-Panel hineingehängt,
+      // damit das Panel per reinem CSS "bottom:0" (statt berechnetem top per JS) an dieser Ecke
+      // verankert werden kann - wächst beim Aufklappen dann automatisch synchron mit lil-guis eigener
+      // Animation nach oben, ganz ohne eigenes Nachrechnen/Timing.
+      const sceneContainer = document.createElement( 'div' )
+      sceneContainer.style.position = 'relative'
+      sceneContainer.style.width = eleWidth + 'px'
+      sceneContainer.style.height = eleHeight + 'px'
+      document.body.appendChild( sceneContainer )
+      sceneContainer.appendChild( render.renderer.domElement )
+
       // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
       // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
       // zusätzlicher Ausgleichsfaktor, nur für diese Datei.
@@ -99,19 +110,44 @@
       const sphereRadiusWithoutTorus = 0.02 // 0.2
       const sphereRadius = fractalWithTorus ? sphereRadiusWithTorus : sphereRadiusWithoutTorus;
       const torusRadius = 0.125;
-      const coneSize = 1
+      const generalScale = 0.15
+      // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - gemeinsame Basis-
+      // Variable, an die die Kegelgröße gekoppelt ist (s.u.), damit beide zueinander proportional
+      // bleiben. Per Regler im Control-Panel veränderbar (siehe updateRadius), daher "let" statt "const".
+      let radius = 1.5
+
+      // Physik-Modell (siehe Konzept-Diskussion): Die Bahngeschwindigkeit entlang der tatsächlichen
+      // Helixbahn ist die absolute Erhaltungsgröße √2·c und setzt sich aus Rotations- und
+      // Translationsgeschwindigkeit zusammen: Bahngeschwindigkeit² = Rotationsgeschw.² + Translationsgeschw.².
+      // Ohne Gravitation teilt sich das gleichmäßig auf (beide = c), was automatisch den 45°-Steigungswinkel
+      // ergibt. Später simuliert Gravitation eine Verschiebung der Translationsgeschwindigkeit weg von c,
+      // wobei die Rotationsgeschwindigkeit sich dann so anpasst, dass die Bahngeschwindigkeit konstant bleibt.
+      const c = 0.5 // Basis-Konstante (dphGroup-lokale Einheit)
+      const totalSpeed = Math.SQRT2 * c // Bahngeschwindigkeit, die feste Erhaltungsgröße
+      let translationSpeedFactor = 1 // Regler-Wert in Vielfachen von c; 1 = kein Gravitationseinfluss
+      let translationSpeedLocal // = translationSpeedFactor * c, dphGroup-lokale Einheit
+      let translationSpeedWorld // = translationSpeedLocal * generalScale, für dphGroup.position.z
+      let rotationSpeed // = Betrag von d(angle)/dt, aus der Erhaltungsgröße abgeleitet (s.u.)
+
+      function recomputeSpeeds() {
+        translationSpeedLocal = translationSpeedFactor * c
+        translationSpeedWorld = translationSpeedLocal * generalScale
+        // Rotationsanteil aus der Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed²
+        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        rotationSpeed = tangentialSpeed / radius
+      }
+      recomputeSpeeds()
+
+      let coneSize = radius * 0.5 // an radius gekoppelt statt fest, s.o.
       const coneScale = 0.75 // 1.5
       // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
       // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis wie
       // bisher, der Spitzenradius (coneCutOff) bleibt unverändert fix.
       const coneMantleLengthFactor = 2
       const coneSegments = 100
-      const coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
-      const coneHeight = coneSize * coneMantleLengthFactor
-      const coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
-      const generalScale = 0.15
-      const radius = 2 // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit)
-      const angularSpeed = pi2 * 0.05 // = Betrag von d(angle)/dt, siehe dphGroup.position.z weiter unten
+      let coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
+      let coneHeight = coneSize * coneMantleLengthFactor
+      let coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
                                                  
       // Light, additional
       const spotLightSecondParamsObj = {
@@ -175,6 +211,7 @@
       let wqCount = 8
       let wqGroups = []
       let wqConeGroups = []
+      let wqCones = []
       let wqRings = []
       let wqRingSpheres = []
       let showRingAsTorus = false
@@ -186,16 +223,16 @@
       // zur aktuellen Position/Ausrichtung der Kugel zeitunabhängig - einmalig gebaut und von allen
       // 8 wq-Einheiten geteilt (siehe Konzept-Diskussion).
       function buildCurvedConeGeometry() {
-        const vZ = ( angularSpeed * angularSpeed ) / generalScale // Z-Drift-Rate, dphGroup-lokal
-        const tangentialSpeed = radius * angularSpeed
-        const speed = Math.sqrt( tangentialSpeed * tangentialSpeed + vZ * vZ )
-        const historyDuration = coneHeight / speed // Zeitspanne, die der Kegel "in die Vergangenheit" reicht
+        const vZ = translationSpeedLocal // Z-Drift-Rate, dphGroup-lokal
+        // tangentialSpeed²+vZ² = totalSpeed² gilt jetzt immer per Konstruktion (Erhaltungsgröße) -
+        // die Bahngeschwindigkeit direkt verwenden statt sie erneut zusammenzusetzen
+        const historyDuration = coneHeight / totalSpeed // Zeitspanne, die der Kegel "in die Vergangenheit" reicht
         const lengthSegments = 24
         const radialSegments = 48
 
         function relPos( tau ) {
           // Position vor tau Zeiteinheiten, relativ zur aktuellen Position/Ausrichtung (τ=0 → Ursprung)
-          const a = angularSpeed * tau
+          const a = rotationSpeed * tau
           return new THREE.Vector3(
             radius * ( Math.cos( a ) - 1 ),
             radius * Math.sin( a ),
@@ -203,10 +240,10 @@
           )
         }
         function tangent( tau ) {
-          const a = angularSpeed * tau
+          const a = rotationSpeed * tau
           return new THREE.Vector3(
-            -radius * angularSpeed * Math.sin( a ),
-            radius * angularSpeed * Math.cos( a ),
+            -radius * rotationSpeed * Math.sin( a ),
+            radius * rotationSpeed * Math.cos( a ),
             -vZ
           ).normalize()
         }
@@ -263,7 +300,7 @@
         return geometry
       }
 
-      const curvedConeGeometry = buildCurvedConeGeometry()
+      let curvedConeGeometry = buildCurvedConeGeometry()
 
       function setWq() {
         const wqGroup = new THREE.Group();
@@ -346,6 +383,7 @@
         coneGroup.add( cone );
         dphGroup.add( coneGroup );
         wqConeGroups.push( coneGroup )
+        wqCones.push( cone )
 
         dphGroup.add( wqGroup );
         wqGroups.push( wqGroup );
@@ -362,17 +400,28 @@
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
         // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
-        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts an der Szene selbst verankern.
+        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts im sceneContainer
+        // verankern, per "bottom" statt einem in JS berechneten "top" - wächst beim Aufklappen dadurch
+        // rein per CSS (synchron mit lil-guis eigener Animation) nach oben, ganz ohne Nachrechnen.
         panel.domElement.style.position = 'absolute'
-        panel.domElement.style.left = ( eleWidth - panelWidth ) + 'px'
-        panel.domElement.style.top = ( eleHeight - panel.domElement.offsetHeight ) + 'px'
+        panel.domElement.style.right = '0px'
+        panel.domElement.style.bottom = '0px'
+        panel.domElement.style.top = 'auto' // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
+        sceneContainer.appendChild( panel.domElement )
         const pausedName = 'Animation anhalten'
+        const radiusName = 'Spiralradius'
+        const translationSpeedName = 'Translationsgeschwindigkeit (× c)'
         const settings = {
           [showRingName]: showRingAsTorus,
           [pausedName]: paused,
+          [radiusName]: radius,
+          [translationSpeedName]: translationSpeedFactor,
         }
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
+        panel.add( settings, radiusName, 0.5, 3, 0.05 ).onChange( updateRadius )
+        // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
+        panel.add( settings, translationSpeedName, 0, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
       }
 
       function toggleShowRingAsTorus( checked ) {
@@ -383,6 +432,36 @@
 
       function togglePaused( checked ) {
         paused = checked
+      }
+
+      // Nach jeder Änderung von radius oder Translationsgeschwindigkeit: abgeleitete Größen neu
+      // berechnen, gekrümmte Kegel-Geometrie neu aufbauen (geteilt von allen 8 Kegeln) und die
+      // Spuren zurücksetzen (sonst Sprung in der Kurve, da alte Punkte nicht mehr zur neuen Bahn passen).
+      function rebuildAfterSpeedChange() {
+        recomputeSpeeds()
+
+        const oldGeometry = curvedConeGeometry
+        curvedConeGeometry = buildCurvedConeGeometry()
+        wqCones.forEach( cone => { cone.geometry = curvedConeGeometry } )
+        oldGeometry.dispose()
+
+        wqTrails.forEach( trail => { trail.points = [] } )
+        centerTrail.points = []
+      }
+
+      function updateRadius( newRadius ) {
+        radius = newRadius
+        // coneSize und alle davon abgeleiteten Maße neu berechnen (gemeinsame Variable, s.o.)
+        coneSize = radius * 0.5
+        coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
+        coneHeight = coneSize * coneMantleLengthFactor
+        coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+        rebuildAfterSpeedChange()
+      }
+
+      function updateTranslationSpeedFactor( newFactor ) {
+        translationSpeedFactor = newFactor
+        rebuildAfterSpeedChange()
       }
 
       createPanel()
@@ -423,11 +502,10 @@
       }
 
 
-      var time = 0;
-      var prevTime = 0;
-      var movingTime = 0;
       var simulatedElapsedTime = 0;
+      var prevWrappedTime = 0;
       var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
+      var cycleDuration = 15; // Sekunden, bis Position/Spuren periodisch zurückgesetzt werden
 
       render.renderer.setAnimationLoop(() => {
         // clock.getDelta() muss immer aufgerufen werden, sonst gäbe es beim Fortsetzen
@@ -437,13 +515,14 @@
         if ( !paused ) {
           const delta = Math.min( rawDelta, maxDelta )
           simulatedElapsedTime += delta
-          time = -( simulatedElapsedTime * pi2 * 0.05 ) % 4.5;
-          movingTime = -time - 2;
+          const wrappedTime = simulatedElapsedTime % cycleDuration
 
-          const wrapped = time > prevTime
-          prevTime = time
+          const wrapped = wrappedTime < prevWrappedTime
+          prevWrappedTime = wrappedTime
 
-          dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
+          // Um cycleDuration/2 verschoben, damit die Mitte des Zeit-Zyklus (nicht der Zyklusanfang)
+          // bei z=0 liegt - also im Bild zentriert ist.
+          dphGroup.position.set( 0, 0, translationSpeedWorld * ( wrappedTime - cycleDuration / 2 ) )
 
           if ( wrapped ) {
             centerTrail.points = []
@@ -451,22 +530,20 @@
           updateTrail( centerTrail, dphCenterSphere, centerTrailTubeRadius )
 
           wqGroups.forEach((wqGroup, ndx) => {
-            const angle = -movingTime + pi2 / wqCount * ndx
+            const angle = -rotationSpeed * wrappedTime + pi2 / wqCount * ndx
             wqGroup.position.set(
               Math.cos( angle ) * radius,
               Math.sin( angle ) * radius,
               0
             )
 
-            // Bewegungsrichtung = Ableitung der Position nach der Zeit:
-            // Kreisbewegung (Tangente, proportional zu radius) + gleichförmige Z-Drift der ganzen dphGroup.
-            // dphGroup.position.z liegt im unskalierten Raum von movingSpaceGroup, während radius/angle im
-            // lokalen, mit generalScale skalierten Raum von dphGroup liegen - daher muss der Z-Anteil hier
-            // durch generalScale geteilt werden, um im selben (lokalen) Maßstab wie x/y zu liegen.
+            // Bewegungsrichtung = Ableitung der Position nach der Zeit: Kreisbewegung (Tangente,
+            // proportional zu radius*rotationSpeed) + Translation entlang Z (translationSpeedLocal) -
+            // beide bereits im selben dphGroup-lokalen Maßstab (siehe recomputeSpeeds/Physik-Konzept).
             wqVelocity.set(
-              radius * angularSpeed * Math.sin( angle ),
-              -radius * angularSpeed * Math.cos( angle ),
-              ( angularSpeed * angularSpeed ) / generalScale
+              radius * rotationSpeed * Math.sin( angle ),
+              -radius * rotationSpeed * Math.cos( angle ),
+              translationSpeedLocal
             ).normalize()
             wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
 
