@@ -262,7 +262,10 @@
       // const coneGroupAxesHelper = new THREE.AxesHelper( 2 );
       // dphGroup.add( coneGroupAxesHelper );
 
-      let wqCount = 8
+      // wq-Anzahl bei Grundfrequenz (tatsächliche Frequenz = baseFrequency) - wächst proportional
+      // zur tatsächlichen Frequenz, siehe rebuildWqCountIfNeeded().
+      const baseWqCount = 8
+      let wqCount = baseWqCount
       let wqGroups = []
       let wqConeGroups = []
       let wqCones = []
@@ -400,8 +403,11 @@
           const ringSphere = new THREE.Mesh( ringSphereGeo, ringSphereMat )
           wqGroup.add( ringSphere )
 
-          torus.visible = false
-          ringSphere.visible = true
+          // Sichtbarkeit an den aktuellen Umschalt-Zustand anpassen (nicht fest auf den
+          // Anfangszustand), da setWq() auch beim WQ-Anzahl-Rebuild (s. rebuildWqCountIfNeeded)
+          // erneut aufgerufen wird.
+          torus.visible = showRingAsTorus
+          ringSphere.visible = !showRingAsTorus
           wqRings.push( torus )
           wqRingSpheres.push( ringSphere )
         }
@@ -445,6 +451,52 @@
                                                  
       for ( let i = 0; i < wqCount; i++ ) {
         setWq()
+      }
+
+      // Löst Geometrien/Materialien eines wq- oder Kegel-Objekts (inkl. Kindern) auf, ohne dabei die
+      // geteilte curvedConeGeometry zu zerstören (die wird separat verwaltet, s. rebuildAfterSpeedChange).
+      function disposeWqObject3D( object3d ) {
+        object3d.traverse( child => {
+          if ( child.isMesh ) {
+            if ( child.geometry && child.geometry !== curvedConeGeometry ) child.geometry.dispose()
+            if ( child.material ) child.material.dispose()
+          }
+        })
+      }
+
+      function buildWqTrails() {
+        return wqGroups.map(() => {
+          const mesh = new THREE.Mesh( new THREE.BufferGeometry(), trailMaterial )
+          movingSpaceGroup.add( mesh ) // eigenes Koordinatensystem, das sich nicht pro Frame verschiebt
+          return { mesh, points: [] }
+        })
+      }
+
+      // Physikalisch realistischer: Die Anzahl der wq-Einheiten wächst proportional zur tatsächlichen
+      // Frequenz (nicht nur zum Regler-Faktor, da sich die echte Frequenz auch über die LG ändert,
+      // siehe recomputePhysics). Aufgerufen nach jeder Frequenz-Änderung (s. rebuildAfterSpeedChange).
+      // Obergrenze als reine Sicherheitsbremse gegen ein durch Regler-Zusammenspiel theoretisch sehr
+      // hohes Ergebnis (Performance), nicht als physikalische Aussage.
+      const maxWqCount = 48
+      function rebuildWqCountIfNeeded() {
+        const newCount = Math.min( maxWqCount, Math.max( 1, Math.round( baseWqCount * ( frequency / baseFrequency ) ) ) )
+        if ( newCount === wqCount ) return
+
+        wqConeGroups.forEach( group => { disposeWqObject3D( group ); dphGroup.remove( group ) } )
+        wqGroups.forEach( group => { disposeWqObject3D( group ); dphGroup.remove( group ) } )
+        wqTrails.forEach( trail => { trail.mesh.geometry.dispose(); movingSpaceGroup.remove( trail.mesh ) } )
+
+        wqCount = newCount
+        wqGroups = []
+        wqConeGroups = []
+        wqCones = []
+        wqRings = []
+        wqRingSpheres = []
+
+        for ( let i = 0; i < wqCount; i++ ) {
+          setWq()
+        }
+        wqTrails = buildWqTrails()
       }
 
       let frequencyController // damit der Frequenz-Regler bei LG-Änderungen die echte Frequenz anzeigen kann (s.u.)
@@ -502,6 +554,11 @@
       function rebuildAfterSpeedChange() {
         recomputePhysics()
 
+        // Physikalisch realistischer: WQ-Anzahl an die (ggf. durch Frequenz- oder LG-Regler neu
+        // berechnete) tatsächliche Frequenz anpassen, bevor die Kegel-Geometrie unten neu gebaut und
+        // auf ALLE (auch neu hinzugekommene) Kegel angewendet wird.
+        rebuildWqCountIfNeeded()
+
         const oldGeometry = curvedConeGeometry
         curvedConeGeometry = buildCurvedConeGeometry()
         wqCones.forEach( cone => { cone.geometry = curvedConeGeometry } )
@@ -550,11 +607,7 @@
       const centerTrailTubeRadius = 0.0015 // eigene, unabhängige Dicke für die grüne Mittelspur
       const trailTubeRadialSegments = 12 // höher = runderer Querschnitt, weniger eckig
       const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x5533cc } )
-      const wqTrails = wqGroups.map(() => {
-        const mesh = new THREE.Mesh( new THREE.BufferGeometry(), trailMaterial )
-        movingSpaceGroup.add( mesh ) // eigenes Koordinatensystem, das sich nicht pro Frame verschiebt
-        return { mesh, points: [] }
-      })
+      let wqTrails = buildWqTrails()
 
       // Spur des zentralen Rotationspunkts (dphCenterSphere), statt eines synthetisch wachsenden Zylinders
       const centerTrailMaterial = new THREE.MeshBasicMaterial( { color: 0x00ae22, side: THREE.DoubleSide } )
