@@ -229,7 +229,7 @@
                     'Aus Formel \jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s} folgt:'."\n".
                     'Jeder Summand \lm{ c_{i} \cdot T^{i} \cdot \s^{d - i} } hat wegen \lm{ p | \s } und \lm{ p | T } mindestens'."\n".
                     '\lm{p}-Bewertung \lm{ i + (d − i) = d }.'."\n".
-                    'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }. \lm{ \qqed }'."\n".
+                    'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Konsequenz', subline =>
@@ -314,7 +314,7 @@
                     '\lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} \cdot M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
                     'Wegen \lm{ *| \, c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| \, c_{i}^{(k + 1)} |* + *| \, c_{i}^{(k)} |* \le M_{k} } ist \lm{ t_{k} \in \{ −1, 0, 1 \} }.'."\n".
                     'Mit \lm{ *| \, c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} }'."\n".
-                    'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }. \lm{ \qqed }'."\n".
+                    'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Hauptbeweis: \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} }', subline =>
@@ -606,7 +606,7 @@
                     '\italic{Beweis:}'."\n".
                     'Schreibe \lm{ \Phi_{P}(\alpha) = \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i} } mit \lm{ T = \alpha \cdot \s \in \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ p \mid \s } und \lm{ p \mid T } für \bold{alle} endlichen Primzahlen \lm{ p }, hat \bold{jeder} Summand \lm{ p }-Bewertung \lm{ \ge i \cdot 1 + ( d − i ) \cdot 1 = d }.'."\n".
-                    'Die Summe erbt \lm{ v_{p} \ge d }. \lm{ \qqed }'."\n".
+                    'Die Summe erbt \lm{ v_{p} \ge d }.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -700,7 +700,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Wähle \lm{ H \ge *( C(d, \alpha ) M / \epsilon *)^{1 / d} }.'."\n".
-                    'Damit \lm{ *| P(\alpha) |* \le \epsilon } und die Höhenabschätzung folgt aus der Definition von \lm{ c_{i} }. \lm{ \qqed }'."\n".
+                    'Damit \lm{ *| P(\alpha) |* \le \epsilon } und die Höhenabschätzung folgt aus der Definition von \lm{ c_{i} }.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -736,7 +736,7 @@
                     'Fixiere \lm{ i }.'."\n".
                     'Aus \lm{ P_{k + 1} ​\equiv P_{k} \; (\mathrm{mod} \, M_{k}) } folgt \lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
                     'Wegen \lm{ *| c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| c_{i}^{(k + 1)} |* + *| c_{i}^{(k)} |* \le M_{k + 1} / 2 + M_{k} / 2 \le M_{k + 1} − M_{k} } und \lm{ M_{k + 1} \ge 2 M_{k} } erzwingt dies \lm{ t_{k} \in \{ −1, 0, 1 \} }, ja sogar für große \lm{ k \cdot t_{k} = 0 }.'."\n".
-                    'Also stationär. \lm{ \qqed }'."\n".
+                    'Also stationär.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
@@ -801,7 +801,7 @@
                   '\bold{Grenzübergang:} \\\\'."\n".
                     'Aus \bold{(B)} folgt \lm{ P(\alpha) = \mathrm{lim}⁡_{k} P_{k}(\alpha) = 0 }.'."\n".
                     'Damit existiert ein monisches \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} } mit \lm{ P(\alpha) = 0 }.'."\n".
-                    'Also \lm{ \alpha } algebraisch. \lm{ \qqed }'."\n".
+                    'Also \lm{ \alpha } algebraisch.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Schluss:} \\\\'."\n".

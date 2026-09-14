@@ -578,7 +578,7 @@
                       'Nach dem ›Fundamentalsatz der Arithmetik‹ ist jede natürliche Zahl \lm{ n \ge 2 } entweder selber eine Primzahl oder'."\n".
                       'besteht aus einem Produkt von Primzahlen, die allesamt kleiner sein müssen als sie selber.'."\n",
                         'Damit müssen alle natürlichen Zahlen \lm{ n \ge 2 }, die kleiner als eine bestimmte Primzahl \lm{ p } sind,'."\n".
-                      'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind. \lm{ \qqed }'."\n",
+                      'entweder selber eine Primzahl kleiner \lm{ p } sein oder aus Primfaktoren bestehen, die kleiner als \lm{ p } sind.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -918,7 +918,7 @@
                       'Die noch fehlenden Zahlen Null und Eins entsprechen eineindeutig noch nicht belegten, naheliegenden Mengen.'."\n".
                       'Die Null wird als Sonderfall durch \lm{ \{ 0 \} } repräsentiert.'."\n".
                       'Die Eins entspricht dem leeren Primexponentenprodukt und daher der leeren Primturmmenge \lm{ \varnothing }.'."\n",
-                        'Damit ist die Funktion \lm{ \pt(n) } komplett bijektiv, also eineindeutig, und so eine Entsprechung. \lm{ \qqed }'."\n",
+                        'Damit ist die Funktion \lm{ \pt(n) } komplett bijektiv, also eineindeutig, und so eine Entsprechung.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1204,7 +1204,7 @@
                       'Diese Einzigartigkeit bleibt auch dann erhalten, wenn bei \lm{ n \ge 2 } generell die Elemente \lm{ \{ 0, 1 \} } hinzugefügt werden.'."\n",
                         'Und für den Sonderfall \lm{ n = 0 } wird dann die Menge \lm{ \pr*( 0 *) = \varnothing } und für den Sonderfall \lm{ n = 1 } wird \lm{ \pr*( 1 *) = \{ 0, 1 \} } gesetzt,'."\n".
                       'die beide in den Fällen \lm{ n \ge 2 } nicht auftreten und so auch einzigartig sind.'."\n",
-                        'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt. \lm{ \qqed }'."\n",
+                        'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1575,7 +1575,7 @@
                       'Sein Primturm-Potenzraster erzeugt daher alle natürlichen Zahlen, deren Primfaktoren bereits unter diesen Primzahlen liegen.'."\n".
                       'Die erste Zahl, die nicht mehr erzeugt werden kann, ist genau die nächste Primzahl \lm{ p_{i + 1}​ }.'."\n".
                       'Also ist das lückenlose Anfangsstück genau bis unmittelbar vor \lm{ p_{i + 1} } vollständig,'."\n".
-                      'und sein lückenloser Wert ist \lm{ p_{i + 1} } \lm{ \qqed }.'."\n",
+                      'und sein lückenloser Wert ist \lm{ p_{i + 1} }.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                     ''))),
 
@@ -2081,7 +2081,7 @@
                       'In Worten:'."\n".
                       'Unterhalb jedes aktual unendlichen Rasterelements \lm{ x } liegt ein Vorgänger in endlichem Abstand'."\n".
                       'zu einem Quotienten aus dem Zähler mit Wert des Einheits-Primexponentenprodukts \lm{ P_{ω} }'."\n".
-                      'geteilt durch einen Nenner eines endlichen einpotenzigen Primzahlprodukts. \lm{ \qqed }'."\n",
+                      'geteilt durch einen Nenner eines endlichen einpotenzigen Primzahlprodukts.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2143,7 +2143,7 @@
                       array( display => 'on',  latex => '{  \boxed{\;\;  \; *( \forall d \in D_{\text{fin}} *) *( \forall n \in \mathbb{N}_{>0} *) \;\; \\\\ \;\; *[  \frac{ P_{ω} }{ d } \in \pr*( P_{ω} *)  \land  \frac{ P_{ω} }{ d } - n \notin \pr*( P_{ω} *)  *]  \;\;}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist gezeigt, dass jeder endliche additive Vorgänger eines solchen Quotienten eine Lücke des Primturm-Potenzrasters bildet. \lm{ \qqed }'."\n",
+                      'Damit ist gezeigt, dass jeder endliche additive Vorgänger eines solchen Quotienten eine Lücke des Primturm-Potenzrasters bildet.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2206,7 +2206,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen. \lm{ \qqed }'."\n",
+                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2311,7 +2311,7 @@
                       'Daher ist der kanonische lückenlose Zahlenwert von \lm{ ω\overline{\#} } genau \lm{ ω }.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was wir zeigen wollten. \lm{ \qqed }'."\n",
+                      'Was wir zeigen wollten.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2548,7 +2548,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-Produkt-alle-p}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die kanonische Einheits-Primexponentenidentifikation, also unsere Primzahlprodukt-Vermutung, bewiesen. \lm{ \qqed }'."\n",
+                      'Damit ist die kanonische Einheits-Primexponentenidentifikation, also unsere Primzahlprodukt-Vermutung, bewiesen.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 

@@ -848,7 +848,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
-                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }. \lm{ \qqed }'."\n".
+                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".
