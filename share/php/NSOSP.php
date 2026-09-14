@@ -708,7 +708,7 @@
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
-  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Dark-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
+  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../share/animations/Dark-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
                                                                   'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
                                                                   '\const{FrQFT_g_text_WQSWQMenge}'."\n",
@@ -915,7 +915,7 @@
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
-  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
+  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../share/animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
                                                          text => '\color{*Bearb}{(In Arbeit …)}'."\n",
                                                          print_image => $Glo_PathRel_back.'../share/images/Spannungsspiel-des-Lebens/Sterntetraeder-3D-print.png',
                                                          print_image_alt => 'Sterntetraeder (Merkaba) — 3D-Animation');
