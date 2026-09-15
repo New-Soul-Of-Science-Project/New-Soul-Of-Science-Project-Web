@@ -22,14 +22,14 @@
     <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
     <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
 
-    <!-- versions see: https://unpkg.com/browse/three@0.160.0/ -->
+    <!-- versions see: https://unpkg.com/browse/three@0.186.0/ -->
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three": "https://unpkg.com/three@0.186.0/build/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render-v0.160.0.js",
+          "render": "./js/render-v0.186.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -39,10 +39,10 @@
     <!-- <script type="importmap">
       {
         "imports": {
-          "three": "./js/three.js/r140-0.160.0/three.module.js",
+          "three": "./js/three.js/r140-0.186.0/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render-v0.160.0.js",
+          "render": "./js/render-v0.186.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -52,7 +52,7 @@
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
 
-      import { GUI } from 'https://unpkg.com/three@0.160.0/examples/jsm/libs/lil-gui.module.min.js'
+      import { GUI } from 'https://unpkg.com/three@0.186.0/examples/jsm/libs/lil-gui.module.min.js'
 
       import {
         pi2,
@@ -61,7 +61,7 @@
         intensityLightScaling,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
-      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render-0.160.0.js' gives an error: TypeError: Module name, './js/render-0.160.0.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render-0.186.0.js' gives an error: TypeError: Module name, './js/render-0.186.0.js' does not resolve to a valid URL.
 
       // !!! does not work in a way that it makes all more easy and have lesser lines !!!
       // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.
@@ -85,6 +85,10 @@
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
       container.style.height = render.dimensions.height + 'px'
+      // zusätzlich "position:relative", damit das Control-Panel unten per reinem CSS "bottom:0" an
+      // dieser Ecke verankert werden kann, statt eines in JS berechneten "top" - wächst beim Aufklappen
+      // dadurch automatisch synchron mit lil-guis eigener Animation nach oben (wie Dark-Photon-3D.html).
+      container.style.position = 'relative'
       container.appendChild( render.renderer.domElement )
 
       const info = document.getElementById( 'info' )
@@ -852,7 +856,25 @@
 
       function createPanel() {
         const buttonShowSecondTetrahedronName = 'Zeige beide Tetraeder'
-        const panel = new GUI({ width: 200 })
+        const panelWidth = eleWidth / 2
+        const panel = new GUI({ width: panelWidth })
+        panel.close() // eingeklappt starten (wie Dark-Photon-3D.html)
+        // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
+        // aber nur eleWidth x eleHeight groß. Daher stattdessen unten links im #container verankern
+        // (wie Dark-Photon-3D.html, dort unten rechts), per "bottom" statt einem in JS berechneten
+        // "top" - wächst beim Aufklappen dadurch rein per CSS (synchron mit lil-guis eigener
+        // Animation) nach oben, ganz ohne Nachrechnen. Das funktioniert unabhängig davon, ob die
+        // Seite eingebettet oder die HTML-Datei direkt im Browser geöffnet wird, da relativ zum
+        // eigenen #container (nicht zum Browserfenster) positioniert wird.
+        // .setProperty(..., 'important') statt .style.xyz, da main.css eine @media(max-width:640px)-Regel
+        // für .lil-gui.root mitbringt (left:0/right:auto/bottom:0), die sonst je nach Fenstergröße
+        // Vorrang bekommen könnte.
+        panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
+        panel.domElement.style.setProperty( 'left', '0px', 'important' )
+        panel.domElement.style.setProperty( 'right', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
+        panel.domElement.style.setProperty( 'top', 'auto', 'important' ) // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
+        container.appendChild( panel.domElement )
         const settings = {
           [buttonShowSecondTetrahedronName]: showSecondTetrahedron,
         }
