@@ -607,6 +607,8 @@
                       array( display => 'on',  latex => '{  17\#  =  510510  }'),
                       array( display => 'on',  latex => '{  19\#  =  9699690  }'),
                       array( display => 'on',  latex => '{  23\#  =  223092870  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Im Angesicht dieser Wertzuordnung erscheint es eher undurchsichtig,'."\n".
@@ -786,7 +788,7 @@
                       'Dieser Termraum enthält neben den reinen Rasterelementen auch endliche additive Verschiebungen'."\n".
                       'solcher Rasterelemente.'."\n".
                       'Daher sind die Terme \lm{ \frac{ P_{ω} }{ d } − n } dort wohldefiniert.'."\n".
-                      'Wie \bold{Unterlemma 5b} zeigen wird, gehören diese endlichen additiven Vorgänger'."\n".
+                      'Wie \bold{UnterLemma 6b} zeigen wird, gehören diese endlichen additiven Vorgänger'."\n".
                       'jedoch nicht zum reinen Primturm-Potenzraster.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -879,6 +881,8 @@
                       array( display => 'on',  latex => '{  \pt( 10 )  =  *\{ 2, 5 *\}  }'),
                       array( display => 'on',  latex => '{  \pt( 11 )  =  *\{ 11 *\}  }'),
                       array( display => 'on',  latex => '{  \pt( 12 )  =  *\{ 4, 3 *\}  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so fort.'."\n",
@@ -1046,6 +1050,8 @@
                       array( display => 'on',  latex => '{  10\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7  =  210  }'),
                       array( display => 'on',  latex => '{  11\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7  =  210  }'),
                       array( display => 'on',  latex => '{  12\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11  =  2310  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die vorm Operator stehende Zahl ist niemals Teil des Produkts, da die Menge,'."\n".
@@ -1392,6 +1398,37 @@
 
                     ))),
 
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster-einer-natuerlichen-Zahl', text =>
+
+                'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Im Besonderen ist ein jedes derartiges Primturm-Potenzraster \lm{ \pr\!*( n *) }'."\n".
+                    'eine Beschreibung der kleinsten fehlenden einpotenzigen Primzahl'."\n".
+                    'in der Primturmmenge \lm{ \pt( n ) }.'."\n".
+                    'Diese fehlende Primzahl berechnen wir dann durch \lm{ \lpr\!*( n *) } in Form ihrer Mengendarstellung.'."\n",
+                      'Haben wir eine Potenz Null oder größer als Eins einer bestimmten Primzahl \lm{ p_{i} },'."\n".
+                    'wie \lm{ p_{i}^{k} } mit \lm{ k = 0 } oder \lm{ k > 1 },'."\n".
+                    'dann ist das Primturm-Potenzraster niemals lückenlos an der Position der einpotenzigen Primzahl \lm{ p_{i} }.'."\n",
+                      'Sehen können wir das an den Beispielen für \lm{ \pr\!*( 4 *) }, \lm{ \pr\!*( 9 *) } und \lm{ \pr\!*( 18 *) }'."\n".
+                    'unter \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses}‹}:'."\n".
+                    ''))),
+
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Denn die Menge \lm{ \pr\!*( 4 *) = \pr\!*( 2^{2} *) } hat die erste Lücke bei der \lm{ 2 }, also ergibt sich: \lm{ \lpr\!*( 4 *) = 2 }.',
+                        'Die Menge \lm{ \pr\!*( 9 *) = \pr\!*( 3^{2} *) } hat auch die erste Lücke bei der \lm{ 2 }, also ergibt sich: \lm{ \lpr\!*( 9 *) = 2 }.',
+                        'Hingegen hat die Menge \lm{ \pr\!*( 18 *) = \pr\!*( 2 \cdot 9 *) = \pr\!*( 2 \cdot 3^{2} *) } die erste Lücke erst bei der \lm{ 3 },'."\n".
+                          'weil die \lm{ 2 } im Produkt steckt, aber nicht die \lm{ 3 } als Primzahlturm,'."\n".
+                          'sondern der einzige Primzahlturm mit \lm{ 3^{k} } ist \lm{ 3^{2} = 9 }.'."\n".
+                          'Also ergibt sich: \lm{ \lpr\!*( 18 *) = 3 }.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt,'."\n".
+                    'die als Ergebnis kommt.'."\n".
+                    'Wir sehen daran, dass die Primzahlen erster Potenz bezüglich der multiplikativen Erzeugung'."\n".
+                    'der natürlichen Zahlen eine besondere Rolle einnehmen.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
                 'Analyse des ›Satzes des Euklid‹ in Bezug auf die Mengen-Primfakultät', subline =>
@@ -1421,7 +1458,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
 
-                'Für das Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung', subline =>
+                'Für das lückenlose Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Da das Primturm-Potenzraster ein Zahlenraster aufgrund der Primzahltürme seines Parameters liefert,'."\n".
@@ -1430,17 +1467,21 @@
                     'Damit ist es nach ›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma1}{Lemma 1: Primfaktorinterval}‹ lückenlos'."\n".
                     'bis zur nächsten Primzahl \lm{ p \ge n }.'."\n".
                     'Sein lückenloses Interval \lm{ \lpr\!*( n\overline{\#} *) } enthält also alle Zahlen \lm{ x } mit \lm{ p > x \in \mathbb{N} }.'."\n",
-                      'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
-                    'endlichen natürlichen Zahl, die keine Primzahl ist,'."\n".
+                      'Wir beschreiben das so, dass das Primturm-Potenzraster der Mengen-Primfakultät'."\n".
+                    'einer natürlichen Zahl immer eine erste Lücke aufweist,'."\n".
+                    'und diese Lücke wird dann durch die neue Primzahl gefüllt,'."\n".
+                    'indem die lückenlosen natürlichen Zahlen vor dieser erszen Lücke die Elemente der Mengendarstellung der neuen Primzahl sind.'."\n",
+                      'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen,'."\n".
+                    'wie wir aus jeder endlichen natürlichen Zahl'."\n".
                     'die nächst größere Primzahl mittels Algebra und Mengenlehre berechnen können.'."\n".
-                    'Somit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl \lm{ p_{i} }'."\n".
-                    'über \lm{ \pr\!*( p_{i}\overline{\#} *) } beziehungsweise \lm{ \lpr\!*( p_{i}\overline{\#} *) }'."\n".
-                    'immer wieder die nächste zu berechnen.'."\n".
+                    'Somit erhalten wir nachfolgend noch eine Anleitung, aus einer gegebenen Primzahl \lm{ p_{i} }'."\n".
+                    'über \lm{ \pr\!*( *( p_{i} + 1 *)\overline{\#} *) } beziehungsweise \lm{ \lpr\!*( *( p_{i} + 1 *)\overline{\#} *) }'."\n".
+                    'immer wieder die nächste Primzahl \lm{ p_{i + 1} } zu berechnen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                'Definition: Berechnung der nächsten Primzahl', subline =>
-                  'Per Algebra und Mengenlehre von einer Primzahl zur nächsten')),
+                'Eine Primzahl gleicht ihrem lückenlosen Primturm-Potenzraster und entspricht ihrer Mengen-Primfakultät', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Wie wir an den obigen endlichen Beispielen erkennen können und wie gerade erklärt,'."\n".
                     'enthält das lückenlose Primturm-Potenzraster der Mengen-Primfakultät einer Primzahl'."\n".
@@ -1451,32 +1492,207 @@
                     'der Mengen-Primfakultät \lm{ p_{i}\overline{\#} } der Mengendarstellung'."\n".
                     'einer bestimmten Primzahl \lm{ p_{i} }'."\n".
                     'ist also die größte Menge mit natürlichen Zahlen \lm{ 0 \leq x < p_{i} },'."\n".
-                    'die durch das Primturm-Potenzraster aller kleineren Primzahlen \lm{ p_{< i} < p_{i} }'."\n".
+                    'die durch das Primturm-Potenzraster bestehend aus allen kleineren Primzahlen \lm{ p_{< i} < p_{i} }'."\n".
                     'in dieser Menge lückenlos dargestellt wird.'."\n".
                     'Dieses spezielle lückenlose Primturm-Potenzraster,'."\n".
                     'das die Mengendarstellung einer Primzahl liefert,'."\n".
                     'entspricht folglich auch eben der Mengen-Primfakultät aus der es entsteht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Lemma 4: Primzahl–Mengen-Primfakultäts-Entsprechung', subline =>
+                    '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      '\lm{ p_i\overline{\#} } ist also eine eineindeutige und vollständige Entsprechung der Menge \lm{ p_{i} }:'."\n".
+                      'Sei \lm{ p_{i} \in \mathbb{P} } eine endliche Primzahl und'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  *]  \;\; ,  }',
+                      array( display => 'on',  latex => '{  p_{i}\overline{\#}  =  \prodx_{ \substack{q \in \mathbb{P} \\\ q < p_{i}} }  ​q  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ihre Mengen-Primfakultät.'."\n".
+                      'Dann ist \lm{ p_{i} } genau die erste natürliche Zahl, die nicht im Primturm-Potenzraster'."\n".
+                      'von \lm{ p_{i}\overline{\#} } enthalten ist.'."\n".
+                      'Daher gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das Zeichen \lm{ \widehat{=} } bezeichnet dabei die eineindeutige strukturelle Entsprechung'."\n".
+                      'zwischen der Mengendarstellung \lm{ p_{i} }'."\n".
+                      'und ihrer Mengen-Primfakultät \lm{ p_{i}\overline{\#} },'."\n".
+                      'nicht ihre arithmetische Gleichheit.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Beweis', subline =>
+                    '')),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Zunächst zeigen wir, dass jede natürliche Zahl unterhalb von \lm{ p_{i} }'."\n".
+                      'im Primturm-Potenzraster von \lm{ p_{i}\overline{\#} } enthalten ist.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sei dazu'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x \in \mathbb{N} *) *[  0 \le x < p_{i}  *]  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Für \lm{ x = 0 } und \lm{ x = 1 } folgt die Zugehörigkeit'."\n".
+                      'unmittelbar aus der Definition des Primturm-Potenzrasters.'."\n".
+                      'Für \lm{ x \ge 2 } besitzt \lm{ x } nach dem Fundamentalsatz der Arithmetik'."\n".
+                      'eine eindeutige Primfaktorzerlegung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  \prodx_{ j = 1 }^{ r }  ​q_{j}^{e_{j}}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da jeder Primfaktor \lm{ q_{j} } von \lm{ x } höchstens \lm{ x } sein kann, gilt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  q_{j}  \le  x  <  p_{i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Somit gehört jeder Primfaktor von \lm{ x } zu den in'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}\overline{\#}  =  \prodx_{ \substack{q \in \mathbb{P} \\\ q < p_{i}} }  ​q  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'enthaltenen Primzahlen.'."\n".
+                      'Das Primturm-Potenzraster erlaubt alle endlichen nichtnegativen Potenzen'."\n".
+                      'dieser Primzahlen und damit auch genau die Primfaktorzerlegung von \lm{ x }.'."\n".
+                      'Folglich gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  \in  \pr*( p_{i}\overline{\#} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit ist gezeigt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, p_{i} - 1]_{\mathbb{N}}  \subseteq  \pr*( p_{i}\overline{\#} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Nun betrachten wir \lm{ p_{i} } selbst.'."\n".
+                      'Da \lm{ p_{i} } prim ist, lautet seine einzige Primfaktorzerlegung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}  =  p_{i}^{1}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die Primzahl \lm{ p_{i} } ist jedoch nicht in \lm{ p_{i}\overline{\#} } enthalten,'."\n".
+                      'denn dessen Primexponentenprodukt enthält definitionsgemäß nur die Primzahlen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  q_{i}  <  p_{i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Daher kann \lm{ p_{i} } nicht durch eine Kombination der im Primturm-Potenzraster'."\n".
+                      'vorhandenen Primzahltürme erzeugt werden:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}  \notin  \pr*( p_{i}\overline{\#} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Somit ist \lm{ p_{i} } genau die erste Lücke des Primturm-Potenzrasters.'."\n".
+                      'Nach Definition des lückenlosen Primturm-Potenzrasters folgt daher:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *)  =  [0, p_{i} - 1]_{\mathbb{N}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In der von-Neumann-Mengendarstellung gilt für endliche natürliche Zahlen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}  =  [0, p_{i} - 1]_{\mathbb{N}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Also erhalten wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit ist zugleich die Eineindeutigkeit der Entsprechung gezeigt.'."\n".
+                      'Denn würden zwei Primzahlen \lm{ p_{i}, p_{j} } dieselbe Mengen-Primfakultät besitzen, also'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit ist zugleich die Eineindeutigkeit der Entsprechung gezeigt.'."\n".
+                      'Denn würden zwei Primzahlen \lm{ p_{i}, p_{j} } dieselbe Mengen-Primfakultät besitzen,'."\n".
+                      'also'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}\overline{\#}  =  p_{j}\overline{\#}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'dann ergäbe die Anwendung von \lm{ \lpr }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}\overline{\#}  =  \lpr*( p_{i}\overline{\#} *)  =  \lpr*( p_{j}\overline{\#} *)  =  p_{j}\overline{\#}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die Zuordnung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}\overline{\#}  \longrightarrow  p_{i}\overline{\#}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ist daher eineindeutig, und \lm{ \lpr } liefert auf diesen Mengen-Primfakultäten'."\n".
+                      'die eindeutige Rückzuordnung zur entsprechenden Primzahl.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Damit gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  *]  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wie zuvor erläutert.'."\n",
+                      'Was zu beweisen war.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Die Mengen-Primfakultät \lm{ p_i\overline{\#} } ist allerdings eine natürliche Zahl, die, wie oben schon gesagt,'."\n".
-                    'bei zunehmender Größe von \lm{ p_i } rasant wächst und weit außerhalb der Menge'."\n".
+                    'Die Mengen-Primfakultät \lm{ p_i\overline{\#} } ist allerdings eine natürliche Zahl,'."\n".
+                    'die, wie oben schon gesagt,'."\n".
+                    'bei zunehmender Größe von \lm{ p_{i} } rasant wächst und weit außerhalb der Menge'."\n".
                     'an natürlichen Zahlen liegt, dessen lückenloses Primturm-Potenzraster sie definiert.'."\n".
-                    'Quasi wie ein Marionettenspieler im Puppentheater, der aus den höheren Gefilden das Spiel in den niederen Ebenen dirigiert.'."\n".
+                    'Quasi wie ein Marionettenspieler im Puppentheater, der aus den höheren Gefilden'."\n".
+                    'das Spiel in den niederen Ebenen auf der Bühne dirigiert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
+                      
+                'Definition: Berechnung der nächsten Primzahl', subline =>
+                  'Per Algebra und Mengenlehre von einer Primzahl zur nächsten')),
+                  array( 'text', array( text => array(
+                    'Nun sehen wir, wie wir aus jeder gegebenen Primzahl die nachfolgende berechnen können.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1519,34 +1735,11 @@
                   array( 'text', array( text => array(
                     'Wir können jetzt jede neue Primzahl aus den uns bekannten vorangegangenen Primzahlen erzeugen,'."\n".
                     'ausgehend von der \lm{ 2 }; oder sogar von der \lm{ 1 } aus, wenn gewollt.'."\n".
-                    'Also erzeugen wir die auf eine bekannte Primzahl folgende Primzahl durch'."\n".
-                    'Hochzählen um Einen, um unsere Primzahl dadurch mit in die Mengen-Primfakultät'."\n".
-                    'zu bekommen.'."\n",
-                      'Wir beschreiben das so, dass das Primturm-Potenzraster einer natürlichen Zahl eine erste Lücke aufweist'."\n".
-                    'und diese Lücke wird durch die neue Primzahl dann gefüllt.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster-einer-natuerlichen-Zahl', text =>
-                  'Das lückenlose Primturm-Potenzraster einer beliebigen natürlichen Zahl', subline =>
-                    '')),
-                  array( 'text', array( text => array(
-                    'Im Besonderen ist ein jedes derartiges Primturm-Potenzraster \lm{ \pr\!*( n *) }'."\n".
-                    'eine Beschreibung der kleinsten fehlenden einpotenzigen Primzahl in den Primzahltürmen von \lm{ n },'."\n".
-                    'die auf der ersten Rasterlücke sitzt.'."\n".
-                    'Diese Primzahl berechnen wir dann durch \lm{ \lpr\!*( n *) } in Form ihrer Mengendarstellung.'."\n",
-                      'Haben wir eine Potenz einer bestimmten Primzahl \lm{ p_{i} }, Null oder größer als Eins,'."\n".
-                    'wie \lm{ p_{i}^k } mit \lm{ k = 0 } oder \lm{ k > 1 },'."\n".
-                    'dann ist das Primturm-Potenzraster niemals lückenlos an der Position der reinen Primzahl \lm{ p_{i} }.'."\n",
-                      'Sehen können wir das an den Beispielen für \lm{ \pr\!*( 4 *) }, \lm{ \pr\!*( 9 *) } und \lm{ \pr\!*( 18 *) }'."\n".
-                    'unter \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses}‹}.'."\n",
-                      'Denn die Menge \lm{ \pr\!*( 4 *) } hat die erste Lücke bei der \lm{ 2 }, also ergibt sich: \lm{ \lpr\!*( 4 *) = 2 }.'."\n",
-                      'Die Menge \lm{ \pr\!*( 9 *) } hat auch die erste Lücke bei der \lm{ 2 }, also ergibt sich: \lm{ \lpr\!*( 9 *) = 2 }.'."\n",
-                      'Hingegen hat die Menge \lm{ \pr\!*( 18 *) } die erste Lücke erst bei der \lm{ 3 },'."\n".
-                    'weil die \lm{ 2 } im Produkt steckt, aber nicht die \lm{ 3 } als Primzahlturm, sondern der Primzahlturm ist \lm{ 9 }.'."\n".
-                    'Also ergibt sich: \lm{ \lpr\!*( 18 *) = 3 }.'."\n",
-                      'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
+                    'Also erzeugen wir die auf eine bekannte Primzahl folgende Primzahl durch Hochzählen um Einen,'."\n".
+                    'so, dass wir unsere bekannte Primzahl dadurch mit in die Mengen-Primfakultät bekommen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma', text =>
-                  'Lemma 4: Generatives Primzahl-Induktions-Lemma', subline =>
+                  'Lemma 5: Generatives Primzahl-Induktions-Lemma', subline =>
                     '')),
 
                   array( 'text', array( Shape => 'italic', text => array(
@@ -1583,6 +1776,63 @@
                     'Damit ist die Erzeugung der endlichen Primzahlstufen nicht nur anschaulich beschrieben,'."\n".
                     'sondern deduktiv durch einen Nachfolgerschritt bestimmt.'."\n".
                     ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma:X',
+                Title => 'Beispiele zum Generatives Primzahl-Induktions-Lemma …',
+                TitleVis => 'Beispiele zum Generatives Primzahl-Induktions-Lemma:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Mit der folgenden Auflistung möchte ich den Zusammenhang zwischen den Parametern'."\n".
+                    'und deren Ergebniswerten veranschaulichen.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Hier die Liste des generativen Primzahl-Induktions-Lemmas:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr\!*( (0 + 1)\overline{\#} *)  =  1  =  p_{0}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (1 + 1)\overline{\#} *)  =  2  =  p_{1}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (2 + 1)\overline{\#} *)  =  3  =  p_{2}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (3 + 1)\overline{\#} *)  =  5  =  p_{3}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (5 + 1)\overline{\#} *)  =  7  =  p_{4}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (7 + 1)\overline{\#} *)  =  11  =  p_{5}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (11 + 1)\overline{\#} *)  =  13  =  p_{6}  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In Bezug auf die natürlichen Zahlen ergibt sich eine Treppenfunktion,'."\n".
+                      'die der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannscheVermutung}}'."\n".
+                      'mehr als nur ähnelt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr\!*( (0 + 1)\overline{\#} *)  =  1  =  p_{0}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (1 + 1)\overline{\#} *)  =  2  =  p_{1}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (2 + 1)\overline{\#} *)  =  3  =  p_{2}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (3 + 1)\overline{\#} *)  =  5  =  p_{3}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (4 + 1)\overline{\#} *)  =  5  =  p_{3}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (5 + 1)\overline{\#} *)  =  7  =  p_{4}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (6 + 1)\overline{\#} *)  =  7  =  p_{4}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (7 + 1)\overline{\#} *)  =  11  =  p_{5}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (8 + 1)\overline{\#} *)  =  11  =  p_{5}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (9 + 1)\overline{\#} *)  =  11  =  p_{5}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (10 + 1)\overline{\#} *)  =  11  =  p_{5}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (11 + 1)\overline{\#} *)  =  13  =  p_{6}  }'),
+                      array( display => 'on',  latex => '{  \lpr\!*( (12 + 1)\overline{\#} *)  =  13  =  p_{6}  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Sie zählt allerdings die Primzahlen schon beim auftauchen einer neuen Primzahl'."\n".
+                      'gleich zur nächsten weiter.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                    ))),
+
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen', text =>
                       
                 'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
@@ -1997,7 +2247,7 @@
                       'Es bleibt zu zeigen, dass kein aktual unendliches Rasterelement zu \lm{ \lpr*( P_{ω} *) } gehört.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\bold{Lemma 5: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
+                      '\bold{Lemma 6: Lückenabstiegsprinzip – Lückenabstieg im aktual unendlichen Bereich​}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dieses Lemma ist als Strukturlemma der hier eingeführten Primexponentenordnung zu verstehen.'."\n".
@@ -2047,18 +2297,18 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\bold{Beweis Lemma 5: Lückenabstiegsprinzip}'."\n".
+                      '\bold{Beweis Lemma 6: Lückenabstiegsprinzip}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Der Beweis des Lückenabstiegsprinzips basiert auf zwei Schritten:'."\n".
                       'Zuerst nutzen wir die ordinale Struktur des Raumes, um jedes aktual unendliche Rasterelement'."\n".
-                      'über Quotienten einzugrenzen (\bold{Unterlemma 5a}).'."\n".
+                      'über Quotienten einzugrenzen (\bold{UnterLemma 6a}).'."\n".
                       'Danach zeigen wir normalformtheoretisch im Primexponenten-Termraum,'."\n".
                       'dass jede endliche additive Verschiebung eines solchen Quotienten zwingend'."\n".
-                      'aus dem erzeugten Raster fällt (\bold{Unterlemma 5b}).'."\n".
+                      'aus dem erzeugten Raster fällt (\bold{UnterLemma 6b}).'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{Unterlemma 5a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
+                      '\italic{\bold{UnterLemma 6a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach der Definition der Ordnung \lm{ ≤_{\infty,v_{p}} } ist die Menge'."\n".
@@ -2086,7 +2336,7 @@
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{Unterlemma 5b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
+                      '\italic{\bold{UnterLemma 6b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2099,7 +2349,7 @@
                     ))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{Begründung Unterlemma 5b}}'."\n".
+                      '\italic{\bold{Begründung UnterLemma 6b}}'."\n".
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2152,12 +2402,12 @@
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wir führen nun Unterlemma 5a und Unterlemma 5b zusammen.'."\n".
+                      'Wir führen nun UnterLemma 6a und UnterLemma 6b zusammen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ x \in \pr*( P_{ω} *) \setminus ω } ein aktual unendliches Rasterelement.'."\n".
-                      'Nach \bold{Unterlemma 5a} wird \lm{ x } im lückenlosen Anfangsvergleich durch Quotienten der Form'."\n".
+                      'Nach \bold{UnterLemma 6a} wird \lm{ x } im lückenlosen Anfangsvergleich durch Quotienten der Form'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2173,7 +2423,7 @@
                       array( display => 'on',  latex => '{  *( d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } - n  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Nach \bold{Unterlemma 5b} gehört dieser Term nicht zum reinen Primturm-Potenzraster:'."\n".
+                      'Nach \bold{UnterLemma 6b} gehört dieser Term nicht zum reinen Primturm-Potenzraster:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2206,7 +2456,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Lueckenabstiegsprinzip}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist das gesamte \bold{Lemma 5} und damit das Lückenabstiegsprinzip bewiesen.  \lm{ \qqed }'."\n",
+                      'Damit ist das gesamte \bold{Lemma 6} und damit das Lückenabstiegsprinzip bewiesen.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2236,7 +2486,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'leben dagegen im umgebenden geordneten Primexponenten-Termraum.'."\n".
-                      'Nach \bold{Unterlemma 5b} besitzen sie keine reine Primexponentenproduktform,'."\n".
+                      'Nach \bold{UnterLemma 6b} besitzen sie keine reine Primexponentenproduktform,'."\n".
                       'sondern eine zweigliedrige Normalform:'."\n".
                       ''))),
                   array( 'equations',
@@ -2258,7 +2508,7 @@
                       'Diese Terme bilden Lückenzeugen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Nach \bold{Unterlemma 5a} wird jedes aktual unendliche Rasterelement'."\n".
+                      'Nach \bold{UnterLemma 6a} wird jedes aktual unendliche Rasterelement'."\n".
                       'im lückenlosen Anfangsvergleich durch solche Quotienten'."\n".
                       'und ihre endlichen additiven Vorgänger erfasst.'."\n".
                       'Daher liegt unterhalb jedes aktual unendlichen Rasterelements ein Lückenzeuge.'."\n".
