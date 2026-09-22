@@ -439,8 +439,8 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Primturmzerlegung' => array( headline_text => 'Definition: Die Primturmzerlegung', headline_text_short => 'Die Primturmzerlegung'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-D-fin' => array( headline_text => 'SN.PP.26'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pt-mit-vp' => array( headline_text => 'SN.PP.34'),
-
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n' => array( headline_text => 'SN.PP.49'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma2' => array( headline_text => 'Lemma 2: Primturmzerlegungs-Entsprechung'/* , headline_text_short => 'X'*/),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pt-n' => array( headline_text => 'SN.PP.49'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'X'*/),
 
@@ -453,7 +453,8 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Definition-Primturm-Potenzraster' => array( headline_text => 'Definition: Das Primturm-Potenzraster'/* , headline_text_short => 'X' */),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-pr' => array( headline_text => 'SN.PP.74'),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.75'),
-            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.76'),
+            'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lemma3' => array( headline_text => 'Lemma 3: Primturm-Potenzraster-Entsprechung'/* , headline_text_short => 'X'*/),
+              'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.76'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Lueckenloses-Primturm-Potenzraster' => array( headline_text => 'Definition: Das lückenlose Primturm-Potenzraster'/* , headline_text_short => 'X' */),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-def-lpr-n' => array( headline_text => 'SN.PP.77'),
@@ -467,7 +468,7 @@
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma' => array( headline_text => 'Lemma 5: Generatives Primzahl-Induktions-Lemma'/* , headline_text_short => 'X' */),
               'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i' => array( headline_text => 'SN.PP.153'),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen' => array( headline_text => 'Das Zählen der natürlichen Zahlen in Primzahlen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlende-Konstruktion-Primzahlen' => array( headline_text => 'Die zählende Konstruktion der Primzahlen'/* , headline_text_short => 'X' */),
             'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.174'),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Natuerliche-Zahlen-ueber-Zaehlen-der-Primzahlen-rekonstruieren' => array( headline_text => 'Die natürlichen Zahlen über das Zählen der Primzahlen rekonstruieren'/* , headline_text_short => 'X' */),

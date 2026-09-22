@@ -2045,7 +2045,7 @@
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlen-natuerliche-Zahlen-in-Primzahlen}{Konstruktion}'."\n".
+                        'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Zaehlende-Konstruktion-Primzahlen}{Konstruktion}'."\n".
                           'der Menge aller endlichen Primzahlen \lm{ \mathbb{P} } über die vollständige generative Primzahl-Induktion.',
                         'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Natuerliche-Zahlen-ueber-Zaehlen-der-Primzahlen-rekonstruieren}{Rekonstruktion}'."\n".
                           'der Menge aller endlichen natürlichen Zahlen \lm{ \mathbb{N} }'."\n".
