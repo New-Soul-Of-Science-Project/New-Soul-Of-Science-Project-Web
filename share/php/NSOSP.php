@@ -3,10 +3,12 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 04.07.2026, 12:00h
+  // #: Stand: 03.09.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
   //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
@@ -107,6 +109,7 @@
   $nSOSp_g_addOn_Text_replace_ary = array(
     // #: hyphenations with "&shy;":
     //      – is necessary if a word is followed by a footnote as examples: "Quan­ten­feld­the­o­rie19" or "Re­la­ti­vi­täts­the­o­rie20"
+    array( 'Paarungssumme', 'Paar&shy;ungs&shy;summe'),
     array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
     array( '-Relativitätstheorie-', 'Re&shy;la&shy;ti&shy;vi&shy;täts&shy;the&shy;o&shy;rie'),
   );
@@ -462,7 +465,7 @@
   $SupNum_g_footnote_text_QuadratischePyramidalzahl = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Summation von Potenzen natürlicher Zahlen; enthält die Formel für die Summe der ersten \lm{ n } Quadratzahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.';
   $SupNum_g_footnote_text_KomplexeZahl          = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung komplexer Zahlen und der eulerschen Formel \lm{ \e^{\i \varphi} = \cos \varphi + \i \sin \varphi }). \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 1–4. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
   $SupNum_g_footnote_text_Kreisteilungspolynom  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt (De aequationibus circuli), S. 397–448 (Kreisteilungspolynome und ihre Irreduzibilität). \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
@@ -481,8 +484,10 @@
   $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ (Verhältnisse und Proportionen). \\\\ Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 1: Eigenschaften der rationalen Zahlen. \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_RiemannschesIntegral  = 'Vgl. \cite{Riemann:UeberDieDarstellbarkeitEinerFunction:1867}, § 4 Ueber den Begriff eines bestimmten Integrals und den Umfang seiner Gültigkeit. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannschesIntegral:2026}.';
+  $SupNum_g_footnote_text_RiemannscheVermutung  = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
+  $SupNum_g_footnote_text_SatzDesEuklid         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
@@ -703,6 +708,13 @@
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
+  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../share/animations/Dark-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
+                                                                  'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}'."\n",
+                                                         print_image => $Glo_PathRel_back.'../share/images/FrQFT/Dark-Photon-3D-print.png',
+                                                         print_image_alt => 'Vakuum-Elapson, interaktive 3D-Animation');
+
   
   
   // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
@@ -903,7 +915,7 @@
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
-  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
+  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../share/animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
                                                          text => '\color{*Bearb}{(In Arbeit …)}'."\n",
                                                          print_image => $Glo_PathRel_back.'../share/images/Spannungsspiel-des-Lebens/Sterntetraeder-3D-print.png',
                                                          print_image_alt => 'Sterntetraeder (Merkaba) — 3D-Animation');
@@ -1637,12 +1649,13 @@
            // text_titel_discr_h3 => 'Die Gravitation der Allgemeinen Relativitätstheorie ergibt sich als emergentes Phänomen der Beugung lichtähnlicher rotierender Strukturen in den gravitativ angezogenen Elementarteilchen-Strings',
            text_titel_discr_h3 => 'Rotierende Impulskegel der neuen Feinstruktur der gravitativ wirkenden Elementarteilchen-Strings einer Zentralmasse verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld und führen so zur Quantengravitation',
            jump_ary => array(
-                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                     // #!: Wiederholt in "Mechanismus der Gravitation"! Dort mit fester Nummer !!!!
                     'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                    'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Graviradiation' => array( headline_text => 'Graviradiation – eine neue Wechselwirkung', headline_text_short => 'Graviradiation'),
                              
                   'OM:FrQFT:Quantengravitation:VereinfModellQGravitation' => array( headline_text => 'Vereinfachtes Modell der Quantengravitation', headline_text_short => 'Vereinfachtes Modell der Quantengravitation'),

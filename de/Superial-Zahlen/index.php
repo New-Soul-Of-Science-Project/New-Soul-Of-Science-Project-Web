@@ -24,11 +24,11 @@
                     'Im Zentrum dieses Systems steht die superiale Basis \lm{ \s := ω^ω },'."\n".
                     'welche über die von Neumannsche Ordinalzahlpotenzierung als transfinite Primzahl-Flächenprodukt'."\n".
                     'formal im Zermelo-Fraenkel-Mengenlehre-System mit Auswahlaxiom (ZFC) verankert ist.'."\n",
-                      'Durch den rigorosen Beweis der Primzahlprodukt-Vermutung und die Etablierung der Identität'."\n".
+                      'Durch den rigorosen Beweis der Primzahlprodukt-Vermutung und die Etablierung der kanonischen Identifikation'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  ω\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots  }',
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -59,7 +59,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  =  *( \prod_{ \forall p \in \mathbb{P} } p *)^{ω}  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  *( \prodx_{ p \in \mathbb{P} }  p *)^{ω} \\\ \qquad\qquad\quad\;\;\,  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -112,7 +112,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -121,7 +121,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f\'(n) \cdot \s^{-1}  =  \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -194,7 +194,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Inhalt:  >
+		    	<!--  • Inhalt:  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Home:Inhalt',
               '', 'Sc_f_Paragraph',
@@ -248,7 +248,7 @@
           ); ?>
           
           
-		    	<!  • Lexikon:  >
+		    	<!--  • Lexikon:  -->
           <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:SpaLeb:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           

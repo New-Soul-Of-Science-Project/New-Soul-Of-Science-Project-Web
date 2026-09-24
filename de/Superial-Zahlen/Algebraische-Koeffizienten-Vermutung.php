@@ -56,7 +56,7 @@
                     'Ganzzahlige Brüche')),
                   array( 'text', array( text => array(
                     'Jede rationale Zahl ist im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur ganz offensichtlich'."\n".
-                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine aktual unendlich große ganze Zahl}.'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten}{immer eine aktual unendlich große ganze Zahl}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   'Radikale', subline =>
@@ -309,7 +309,7 @@
                       array( display => 'on',  latex => '{  X^{(0)}  =  Y^{(0)} \cdot Z  \;\; .  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'Folglich \lm{ \frac{ X^{(0)} }{ Y^{(0)} } = Z \in \mathbb{S}_{\Z} }, damit \lm{ x \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Folglich \lm{ \frac{ X^{(0)} }{ Y^{(0)} } = Z \in \mathbb{S}_{\Z} }, damit \lm{ x \in \mathbb{S}_{\Z} }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{A.3} \\\\ Korollar: \lm{ \mathbb{S}_{\Z} } ist ganz abgeschlossen', subline =>
@@ -324,7 +324,7 @@
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Beweis.} \\\\'."\n".
                     'Jeder \lm{ V_{p} } ist ganz abgeschlossen, und der Schnitt ganz abgeschlossener Teilringe eines Körpers ist wieder ganz abgeschlossen.\footnote{\const{SupNum_g_footnote_text_IntegralityAndValuationRings}}\footnote{\const{SupNum_g_footnote_text_Valuationsring}}'."\n".
-                    'Mit Lemma \bold{A1} folgt die Aussage. \lm{ \blacksquare }'."\n".
+                    'Mit Lemma \bold{A1} folgt die Aussage.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
@@ -357,7 +357,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'für alle \lm{ p }.'."\n".
                     'Also \lm{ \frac{ \s }{ m } \in V_{p} } für alle \lm{ p }.'."\n".
-                    'Mit Lemma \bold{A1} folgt \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Mit Lemma \bold{A1} folgt \lm{ \frac{ \s }{ m } \in \mathbb{S}_{\Z} }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{B.2} \\\\ Lemma: Algebraische Ganzzahlen liefern \lm{ \alpha \cdot \s \in \mathbb{S}_{\Z} }', subline =>
@@ -398,7 +398,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'Damit ist \lm{ Y } ganz über \lm{ \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist (\bold{Korollar A2}), folgt \lm{ Y \in \mathbb{S}_{\Z} }.'."\n".
-                    'Also \lm{ \beta \cdot \s \in \mathbb{S}_{\Z} }. \lm{ \blacksquare }'."\n".
+                    'Also \lm{ \beta \cdot \s \in \mathbb{S}_{\Z} }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                   '\small{B.3} \\\\ Lemma: Jede algebraische Zahl wird nach Multiplikation ganz', subline =>
@@ -460,7 +460,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Als Produkt zweier Elemente aus \lm{ \mathbb{S}_{\Z} } liegt \lm{ \alpha \cdot \s } wieder in \lm{ \mathbb{S}_{\Z} },'."\n".
-                    'also ist \lm{ \alpha } ein sinnvoller Koeffizient. \lm{ \blacksquare }'."\n".
+                    'also ist \lm{ \alpha } ein sinnvoller Koeffizient.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
@@ -471,7 +471,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  }',
+                                          label_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As', label_text => '\name{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => true),
                     ))),
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
@@ -688,7 +689,7 @@
                       array( display => 'on',  latex => '{  \frac{ X^{(0)} }{ Y^{(0)} }  =  \frac{ X′ }{ Y′ } \in \mathbb{S}_{\Z}​  \;\; ,  }'),
                     ))),
                   array( 'text', array( intent => '0em', text => array(
-                    'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }. \lm{ \blacksquare }'."\n".
+                    'und folglich \lm{ x \in \mathbb{S}_{\Z}​ }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Korrelation – Ganz abgeschlossen:}'."\n".
@@ -730,7 +731,7 @@
                   array( 'text', array( intent => '0em', text => array(
                     'Hier liegen \bold{alle Koeffizienten in} \lm{ \mathbb{S}_{\Z} }, denn \lm{ \mathbb{Z}​ \subset \mathbb{S}_{\Z} } und \lm{ \s^{m} \in \mathbb{S}_{\Z} } für \lm{ \forall m \in \mathbb{N} }.'."\n".
                     'Also ist \lm{ Y } \bold{ganz über} \lm{ \mathbb{S}_{\Z} }.'."\n".
-                    'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }). \lm{ \blacksquare }'."\n".
+                    'Da \lm{ \mathbb{S}_{\Z} } ganz abgeschlossen ist, folgt \lm{ Y \in \mathbb{S}_{\Z} }; folglich \lm{ \alpha = Y / \s \in \mathbb{A}_{\S} } (per Definition von \lm{ \mathbb{A}_{\S} }).  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Fazit:}'."\n".
@@ -1002,31 +1003,31 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{A}_{\R} *) *( 0 < k < 1 *) \\\ \qquad\quad\;\;\;\,  *[  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall k \in \mathbb{A}_{\R} *) *( 0 < k < 1 *) \\\ \qquad\quad\;\;\;\,  *[  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nehmen wir an, dass dieses Integral im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉*) \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  *( \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉*) \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { \s }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } \cdot \frac{ 1 }{ \s } }} *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) \cdot \frac{ 1 }{ \s^{2} } } }} *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 \sqrt[-2]{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈  *( *( 1 - k^{2} x^{2} *) - x^{2} *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈  *( *( 1 - k^{2} x^{2} *) - *( x^{2} - k^{2} x^{4} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( 1 - k^{2} x^{2} - x^{2} + k^{2} x^{4} *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( 1 - *( k^{2} - 1 *) x^{2} + k^{2} x^{4} *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *) \cdot \frac{ 1 }{ \s^{2} } *)^{\frac{ 1 }{ -2 }} *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 {\frac { \s }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } \cdot \frac{ 1 }{ \s } }} *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) \cdot \frac{ 1 }{ \s^{2} } } }} *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 \sqrt[-2]{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈  *( *( 1 - k^{2} x^{2} *) - x^{2} *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈  *( *( 1 - k^{2} x^{2} *) - *( x^{2} - k^{2} x^{4} *) *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( 1 - k^{2} x^{2} - x^{2} + k^{2} x^{4} *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( 1 - *( k^{2} - 1 *) x^{2} + k^{2} x^{4} *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *) \cdot \frac{ 1 }{ \s^{2} } *)^{\frac{ 1 }{ -2 }} *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei diese Summe sich insofern plausibel in die Fundierung der Superial-Zahlen einfügt, als dass ihre'."\n".
@@ -1044,7 +1045,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ x \in [0, 1[_{\mathbb{S}_{\Z}^{-1}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  f(x) = x^{5}  \Rightarrow  f\'(x) =  *〈 5 x^{4} *〉.*〈 10 x^{3} *〉*〈 10 x^{2} *〉*〈 5 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  f(x) = x^{3}  \Rightarrow  f\'(x) =  *〈 3 x^{2} *〉.*〈 3 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  f(x) = x  \Rightarrow  f\'(x) =  1  }'),
@@ -1087,7 +1088,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • X  >
+          <!--  • X  -->
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Algebraische-Koeffizienten-Vermutung:X',
               '', 'Sc_f_Paragraph',

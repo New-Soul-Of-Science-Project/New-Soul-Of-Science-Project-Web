@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dark-Photon-3D – FrQFT</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="animation.css">
+    <style>
+      body { margin: 0; }
+      /* etwas mehr Zeilenabstand als die geteilte animation.css (dort 100%), nur lokal für diese Datei.
+         Eigene margin statt der Standard-Browser-Abstände, damit der Abstand speziell zwischen Titel
+         und Untertitel trotz des größeren Zeilenabstands moderat (~120%) bleibt. */
+      #info h1 { line-height: 1.4; margin: 10px 0 5px 0; }
+      #info h2 { line-height: 1.4; margin: 0 0 10px 0; }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1>Dunkles Photon</h1>
+      <h2 id="headline"></h2>
+    </div>
+
+    <!-- *** Imports *** -->
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <!-- old version <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+    <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
+    <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+
+    <!-- versions see: https://unpkg.com/browse/three@0.186.0/ -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.186.0/build/three.module.js",
+          "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
+          "render": "./js/render-v0.186.0.js"
+        }
+      }
+    </script>
+    <!-- as local module file, like I would prefer -->
+    <!-- !!! SyntaxError: Importing binding name 'TOUCH' is not found. -->
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "three": "./js/three.js/r140-0.186.0/three.module.js"
+        }
+      }
+    </script> -->
+
+    <script type="module">
+
+      import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
+
+      import { GUI } from 'https://unpkg.com/three@0.186.0/examples/jsm/libs/lil-gui.module.min.js'
+
+      import {
+        pi2,
+        blackColor,
+        intensityLightScaling,
+      } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
+      import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
+
+      // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
+      const eleWidth = 660
+      const eleHeight = 450
+
+      const render = new Render( eleWidth, eleHeight )
+
+      // Wie bei Sterntetraeder-3D.html: #container hält die Canvas, #info Titel/Untertitel darüber.
+      // calc dynamic size, see: https://stackoverflow.com/questions/29884485/threejs-canvas-size-based-on-container
+      const container = document.getElementById( 'container' )
+      container.style.width = render.dimensions.width + 'px'
+      container.style.height = render.dimensions.height + 'px'
+      // zusätzlich "position:relative", damit das Control-Panel unten per reinem CSS "bottom:0" an
+      // dieser Ecke verankert werden kann, statt eines in JS berechneten "top" - wächst beim Aufklappen
+      // dadurch automatisch synchron mit lil-guis eigener Animation nach oben.
+      container.style.position = 'relative'
+      container.appendChild( render.renderer.domElement )
+
+      const info = document.getElementById( 'info' )
+      info.style.width = render.dimensions.width + 'px'
+
+      const headline = document.getElementById( 'headline' )
+      headline.innerHTML = 'Wirkungsquanten-String eines unpolarisierten Photons des Vakuums'
+
+      // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
+      // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
+      // zusätzlicher Ausgleichsfaktor, nur für diese Datei.
+      const localLightBoost = 5
+      render.spotLight.intensity *= localLightBoost
+
+      // heller Hintergrund, aber nicht ganz weiß - nur lokal für diese Animation (nicht in der
+      // geteilten const.js/render.js)
+      render.scene.background = new THREE.Color( 0xf8f8f8 )
+
+      // weichere Schatten, nur lokal für diese Animation (nicht in der geteilten render.js)
+      render.renderer.shadowMap.type = THREE.PCFSoftShadowMap
+      render.spotLight.shadow.mapSize.set( 1024, 1024 )
+      render.spotLight.shadow.radius = 8
+
+      // controls.update() must be called after any manual changes to the camera's transform
+      // Etwas seitlicher als eine reine Frontalansicht, damit der Zusammenhang zwischen den wq-Kugeln
+      // und den Kegelflächen der jeweils vorlaufenden Einheit von Anfang an besser erkennbar ist.
+      render.camera.position.set( 3.45, 0, 6.3 ) // etwas weiter weg (gleiches Verhältnis/gleicher Blickwinkel wie zuvor), damit die Szene kleiner wirkt
+      // Kamera-Roll: kippt die gesamte Ansicht, damit der (an sich horizontale) Flug des dunklen
+      // Photons diagonal (oben rechts nach unten links) wirkt. Robuster als eine Szenen-Rotation, die
+      // bei der 8-fachen Symmetrie der wq-Einheiten in die Nähe von 45° geraten und dadurch praktisch
+      // unsichtbar werden kann.
+      const cameraRollAngle = pi2 * 0.005
+      render.camera.up.set( Math.sin( cameraRollAngle ), Math.cos( cameraRollAngle ), 0 )
+      // Zielpunkt etwas nach oben verschoben, damit die Spirale selbst im Bild nach unten rutscht und
+      // sich von der Überschrift löst.
+      render.controls.target.set( 0, 0.08, 0 )
+      render.controls.update()
+
+      render.spotLight.position.set( -4, 6, 10 )
+
+      // Zusätzliches Licht aus Blickrichtung des Betrachters ("Kamera-Scheinwerfer") - folgt der
+      // Kamera automatisch mit, auch beim manuellen Orbiten per OrbitControls. Die Kamera muss dafür
+      // selbst im Szenengraphen hängen, sonst werden an ihr befestigte Objekte nicht mitgerendert.
+      render.scene.add( render.camera )
+      const cameraLight = new THREE.SpotLight( 0xffffff, 0.15 * Math.PI * intensityLightScaling * localLightBoost )
+      cameraLight.angle = Math.PI / 3
+      cameraLight.penumbra = 0.5
+      render.camera.add( cameraLight )
+      render.camera.add( cameraLight.target )
+      cameraLight.target.position.set( 0, 0, -1 )
+
+      const centerSphereRadius = 0.075;
+      const fractalWithTorus = true
+      // const fractalWithWqWqs = true
+      const sphereRadiusWithTorus = 0.015
+      const sphereRadiusWithoutTorus = 0.02 // 0.2
+      const sphereRadius = fractalWithTorus ? sphereRadiusWithTorus : sphereRadiusWithoutTorus;
+      const torusRadius = 0.125;
+      const generalScale = 0.15
+
+      // wq-Anzahl bei Grundfrequenz (tatsächliche Frequenz = baseFrequency) - wächst proportional
+      // zur tatsächlichen Frequenz, siehe rebuildWqCountIfNeeded(). Muss vor dem Kegel-Mantellängen-
+      // Faktor unten deklariert sein, der von der aktuellen wqCount abhängt.
+      const baseWqCount = 8
+      let wqCount = baseWqCount
+
+      // Physik-Modell (siehe Konzept-Diskussion): Die Bahngeschwindigkeit entlang der tatsächlichen
+      // Helixbahn ist die absolute Erhaltungsgröße √2·c und setzt sich aus Rotations- und
+      // Translationsgeschwindigkeit zusammen: Bahngeschwindigkeit² = Rotationsgeschw.² + Translationsgeschw.².
+      // Ohne Gravitation teilt sich das gleichmäßig auf (beide = c), was automatisch den 45°-Steigungswinkel
+      // ergibt. Später simuliert Gravitation eine Verschiebung der Translationsgeschwindigkeit weg von c,
+      // wobei die Rotationsgeschwindigkeit sich dann so anpasst, dass die Bahngeschwindigkeit konstant bleibt.
+      const c = 0.8 // Basis-Konstante (dphGroup-lokale Einheit) - Grundgeschwindigkeit des Modells
+      const totalSpeed = Math.SQRT2 * c // Bahngeschwindigkeit, die feste Erhaltungsgröße
+      let translationSpeedFactor = 1 // Regler-Wert in Vielfachen von c; 1 = kein Gravitationseinfluss
+      // Frequenz-Regler: setzt direkt die tatsächliche Rotationsfrequenz und damit (über die aktuelle
+      // Erhaltungsgröße-Aufteilung) den Bahnradius (siehe updateFrequencyFactor). Der Radius bleibt
+      // danach eine feste Struktureigenschaft - ändert sich stattdessen LG, bleibt radius unverändert
+      // und die tatsächliche Frequenz/Rotationsgeschwindigkeit verschiebt sich entsprechend der
+      // Erhaltungsgröße (nicht umgekehrt). Der Regler zeigt dabei immer die echte, aktuelle Frequenz im
+      // Verhältnis zur Grundfrequenz an, auch wenn sie sich durch eine LG-Änderung mitverschiebt.
+      const baseFrequency = 0.0878 // ≈ 0.0975 * 0.9
+      let frequencyFactor = 1
+      let frequency // = aktuelle (durch LG ggf. verschobene) Rotationsfrequenz, in recomputePhysics() gesetzt
+      let translationSpeedLocal // = translationSpeedFactor * c, dphGroup-lokale Einheit
+      let translationSpeedWorld // = translationSpeedLocal * generalScale, für dphGroup.position.z
+      let rotationSpeed // = Betrag von d(angle)/dt = frequency * pi2
+      // Bahnradius der wq-Kreisbewegung (dphGroup-lokale, unskalierte Einheit) - feste Struktureigenschaft,
+      // initial bei LG=1 (translationSpeedFactor=1, tangentialSpeed=c) aus der Grundfrequenz berechnet.
+      let radius = c / ( frequencyFactor * baseFrequency * pi2 )
+      let coneSize // an radius gekoppelt statt fest, s.u.
+      const coneScale = 0.75 // 1.5
+      // Den Kegelmantel verlängern, ohne den Öffnungswinkel (Spitze passt zum Innenloch des roten
+      // Rings) zu verändern: Bodenradius und Höhe wachsen gemeinsam im gleichen Verhältnis, der
+      // Spitzenradius (coneCutOff) bleibt unverändert fix. Kalibriert bei baseWqCount (Faktor 2, wie
+      // bisher); bei weniger wq-Einheiten wird der Winkelabstand zur benachbarten Einheit größer, also
+      // muss der Kegelschweif proportional länger werden, damit er sie weiterhin optisch berührt -
+      // bei mehr Einheiten entsprechend kürzer, s. recomputeConeShape().
+      const baseConeMantleLengthFactor = 2
+      let coneMantleLengthFactor = baseConeMantleLengthFactor
+      const coneSegments = 100
+      let coneCutOff
+      let coneHeight
+      let coneBottomRadius
+
+      // Feste Ziel-Wegstrecke (Weltkoordinaten), die pro Zyklus zurückgelegt wird - unabhängig vom
+      // LG-Regler (s.u.).
+      const targetZDistance = 1.4
+
+      function recomputePhysics() {
+        // radius wird NICHT hier neu berechnet - er ist eine feste Struktureigenschaft, die nur beim
+        // gezielten Verstellen des Frequenz-Reglers verändert wird (siehe updateFrequencyFactor).
+        // Ändert sich stattdessen LG (translationSpeedFactor), bleibt radius fest und die tatsächliche
+        // Frequenz/Rotationsgeschwindigkeit verschiebt sich entsprechend der Erhaltungsgröße (s.u.).
+        translationSpeedLocal = translationSpeedFactor * c
+        translationSpeedWorld = translationSpeedLocal * generalScale
+        // Zyklusdauer an die aktuelle Translationsgeschwindigkeit anpassen, damit die zurückgelegte
+        // Wegstrecke im Bild (targetZDistance) sich durch den LG-Regler nicht verlängert/verkürzt.
+        cycleDuration = translationSpeedWorld > 1e-6 ? targetZDistance / translationSpeedWorld : 20
+        // Bei festem radius ergibt sich die tatsächliche Rotationsgeschwindigkeit/Frequenz aus der
+        // Erhaltungsgröße: tangentialSpeed² + translationSpeedLocal² = totalSpeed². Ändert sich LG
+        // (translationSpeedFactor), ändert sich hierüber also auch die Frequenz.
+        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        rotationSpeed = tangentialSpeed / radius
+        frequency = rotationSpeed / pi2
+      }
+
+      // Getrennt von recomputePhysics(), da coneMantleLengthFactor von der aktuellen wqCount abhängt -
+      // die sich ihrerseits erst aus der von recomputePhysics() berechneten frequency ergibt (s.
+      // rebuildWqCountIfNeeded). Muss also nach beiden aufgerufen werden, s. rebuildAfterSpeedChange().
+      function recomputeConeShape() {
+        coneMantleLengthFactor = baseConeMantleLengthFactor * baseWqCount / wqCount
+        coneSize = radius * 0.5
+        coneCutOff = torusRadius * coneSize * coneScale * ( fractalWithTorus ? 1 : 0 )
+        coneHeight = coneSize * coneMantleLengthFactor
+        coneBottomRadius = coneCutOff + ( coneSize - coneCutOff ) * coneMantleLengthFactor
+      }
+      recomputePhysics()
+      recomputeConeShape()
+
+      // Light, additional
+      const spotLightSecondParamsObj = {
+        color: 0xffffff,
+        intensity: 0.5 * Math.PI * intensityLightScaling * localLightBoost,
+        // distance: Float,
+        // angle: Radians,
+        // penumbra: Float,
+        // decay: Float,
+      }
+      const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
+      /*--------------------
+      Light, additional
+      --------------------*/
+      const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
+      spotLightSecond.castShadow = true
+
+      // Gleichmäßige Grundhelligkeit: dämpft den Kontrast zwischen unbeleuchteten und plötzlich
+      // vom Spotlight erfassten Kegel-Flächen beim Rotieren (nur lokal, nicht in render.js)
+      // AmbientLight hat keinen physikalischen Abstandsbezug, daher hier nur der reine
+      // Migrationsfaktor Math.PI (r155), ohne den zusätzlichen intensityLightScaling-Faktor,
+      // der bei den SpotLights die Szenengrößen-Diskrepanz zum photometrischen Modell ausgleicht.
+      const ambientLight = new THREE.AmbientLight( 0xffffff, 1.5 * Math.PI )
+      render.scene.add( ambientLight )
+      render.scene.add( spotLightSecond )
+      spotLightSecond.position.set( -4, -2, 0 )
+      // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
+      // render.scene.add( spotLightSecondHelper )
+      // const spotLightHelper = new THREE.SpotLightHelper( render.spotLight )
+      // render.scene.add( spotLightHelper )
+
+      const movingSpaceGroup = new THREE.Group();
+      render.spotLight.target = movingSpaceGroup; // set spotLight target for spotLight
+      render.scene.add( movingSpaceGroup );
+      // const dphPathCylinderAxesHelper = new THREE.AxesHelper( 2 );
+      // movingSpaceGroup.add( dphPathCylinderAxesHelper );
+      // movingSpaceGroup.rotation.set( 0.1, -0.8, 0 )
+      movingSpaceGroup.rotation.set( 0, pi2 * -0.15, 0 )
+                                                 
+      const dphGroup = new THREE.Group();
+      movingSpaceGroup.add( dphGroup );
+      dphGroup.position.set( 0, 0, 0 )
+      // dphGroup.rotation.set( 0, -1, 0 )
+      // dphGroup.scale.set( 0.5, 0.5, 0.5 )
+      dphGroup.scale.set( generalScale, generalScale, generalScale )
+                   
+      const dphCenterSphereGeo = new THREE.SphereGeometry( centerSphereRadius, 50, 50, 0, pi2, 0, pi2 );
+      const dphCenterSphereMat = new THREE.MeshLambertMaterial({
+        // color: 0xff3000,
+        color: blackColor,
+        // opacity: 0.5,
+        // transparent: true,
+      });
+      const dphCenterSphere = new THREE.Mesh( dphCenterSphereGeo, dphCenterSphereMat );
+      // sphere.receiveShadow = true;
+      // sphere.castShadow = true;
+      dphGroup.add( dphCenterSphere );
+      // const coneGroupAxesHelper = new THREE.AxesHelper( 2 );
+      // dphGroup.add( coneGroupAxesHelper );
+
+      let wqGroups = []
+      let wqConeGroups = []
+      let wqCones = []
+      let wqRings = []
+      let wqRingSpheres = []
+      let showRingAsTorus = false
+      let paused = false
+
+      // Gekrümmter Kegel: statt eines geraden Kegels, der nur mitgedreht wird, wird die Form direkt
+      // aus der Bahnkurve (Helix) abgeleitet - die Hüllfläche der Ringe, die die wq-Kugel entlang
+      // ihrer Bahn "ausgesendet" hat. Dank der Schrauben-Symmetrie der Helix ist diese Form relativ
+      // zur aktuellen Position/Ausrichtung der Kugel zeitunabhängig - einmalig gebaut und von allen
+      // 8 wq-Einheiten geteilt (siehe Konzept-Diskussion).
+      function buildCurvedConeGeometry() {
+        const vZ = translationSpeedLocal // Z-Drift-Rate, dphGroup-lokal
+        // tangentialSpeed²+vZ² = totalSpeed² gilt jetzt immer per Konstruktion (Erhaltungsgröße) -
+        // die Bahngeschwindigkeit direkt verwenden statt sie erneut zusammenzusetzen
+        const historyDuration = coneHeight / totalSpeed // Zeitspanne, die der Kegel "in die Vergangenheit" reicht
+        const lengthSegments = 24
+        const radialSegments = 48
+
+        function relPos( tau ) {
+          // Position vor tau Zeiteinheiten, relativ zur aktuellen Position/Ausrichtung (τ=0 → Ursprung)
+          const a = rotationSpeed * tau
+          return new THREE.Vector3(
+            radius * ( Math.cos( a ) - 1 ),
+            radius * Math.sin( a ),
+            -vZ * tau
+          )
+        }
+        function tangent( tau ) {
+          const a = rotationSpeed * tau
+          return new THREE.Vector3(
+            -radius * rotationSpeed * Math.sin( a ),
+            radius * rotationSpeed * Math.cos( a ),
+            -vZ
+          ).normalize()
+        }
+
+        // Ringe entlang der Bahnkurve, Radius wächst von coneCutOff (Spitze) auf coneBottomRadius (Basis);
+        // Ring-Ausrichtung per fortlaufender Gram-Schmidt-Orthogonalisierung (kein sichtbarer Twist,
+        // da die Kurve glatt und nur schwach gekrümmt ist)
+        const rings = []
+        let prevNormal = new THREE.Vector3( 1, 0, 0 )
+        for ( let i = 0; i <= lengthSegments; i++ ) {
+          const tau = ( i / lengthSegments ) * historyDuration
+          const center = relPos( tau )
+          const tan = tangent( tau )
+          let normal = prevNormal.clone().sub( tan.clone().multiplyScalar( prevNormal.dot( tan ) ) )
+          if ( normal.lengthSq() < 1e-8 ) {
+            normal = new THREE.Vector3( 0, 0, 1 ).sub( tan.clone().multiplyScalar( tan.z ) )
+          }
+          normal.normalize()
+          const binormal = new THREE.Vector3().crossVectors( tan, normal ).normalize()
+          prevNormal = normal
+          const ringRadius = coneCutOff + ( coneBottomRadius - coneCutOff ) * ( tau / historyDuration )
+          rings.push( { center, normal, binormal, ringRadius } )
+        }
+
+        const positions = []
+        rings.forEach( ring => {
+          for ( let j = 0; j <= radialSegments; j++ ) {
+            const phi = ( j / radialSegments ) * pi2
+            const offset = ring.normal.clone().multiplyScalar( Math.cos( phi ) * ring.ringRadius )
+              .add( ring.binormal.clone().multiplyScalar( Math.sin( phi ) * ring.ringRadius ) )
+            const vertex = ring.center.clone().add( offset )
+            positions.push( vertex.x, vertex.y, vertex.z )
+          }
+        })
+
+        const indices = []
+        const vertsPerRing = radialSegments + 1
+        for ( let i = 0; i < lengthSegments; i++ ) {
+          for ( let j = 0; j < radialSegments; j++ ) {
+            const a = i * vertsPerRing + j
+            const b = a + vertsPerRing
+            const c = a + 1
+            const d = b + 1
+            indices.push( a, b, c, b, d, c )
+          }
+        }
+
+        const geometry = new THREE.BufferGeometry()
+        geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( positions, 3 ) )
+        geometry.setIndex( indices )
+        // statt rein radialer Normalen (ignoriert die Schräge des Kegelmantels und machte die
+        // Fläche zu dunkel) die Normalen korrekt aus der tatsächlichen Dreiecksgeometrie berechnen
+        geometry.computeVertexNormals()
+        return geometry
+      }
+
+      let curvedConeGeometry = buildCurvedConeGeometry()
+
+      function setWq() {
+        const wqGroup = new THREE.Group();
+        // wqGroup.rotation.set( pi2 * 0.125, 0, 0 )
+
+        // const wqGroupAxesHelper = new THREE.AxesHelper( 2 );
+        // wqGroup.add( wqGroupAxesHelper );
+        
+        // const sphereGeometry = new THREE.SphereGeometry( sphereRadius, 50, 50, 0, pi2, 0, pi2 );
+        const sphereGeometry = new THREE.SphereGeometry( sphereRadius, 50, 50, 0, pi2, 0, pi2 );
+        const sphereMaterial = new THREE.MeshLambertMaterial({
+          color: fractalWithTorus ? 0x000000 : 0xff3000,
+          // opacity: 0.5,
+          // transparent: true,
+        });
+        const sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
+        // sphere.receiveShadow = true;
+        // sphere.castShadow = true;
+        wqGroup.add( sphere );
+
+        if (fractalWithTorus) {
+          const torusGroup = new THREE.Group();
+          wqGroup.add( torusGroup );
+
+          const torusGeo = new THREE.TorusGeometry( torusRadius * coneScale, torusRadius * coneScale * 0.25, 16, 100 );
+          const torusMat = new THREE.MeshLambertMaterial({
+            color: 0xcc0000,
+            // shininess: 100,
+            // opacity: 0.5,
+            // transparent: true,
+            side: THREE.DoubleSide,
+          });
+          const torus = new THREE.Mesh( torusGeo, torusMat );
+          // torus.scale.set( 0.5, 0.5, 0.5 )
+          // torus.position.set( 0, -coneCutOff, 0 )
+          torus.rotation.set( pi2 * 0.25, 0, 0 )
+          torusGroup.add( torus );
+
+          // Alternative Darstellung des Mikro-Wirkungsquants als rote Kugel (gleiche Farbe wie der Ring),
+          // per Control umschaltbar; im Anfangszustand sichtbar, der Ring ausgeblendet
+          const ringSphereGeo = new THREE.SphereGeometry( torusRadius * coneScale, 32, 32 )
+          const ringSphereMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
+          const ringSphere = new THREE.Mesh( ringSphereGeo, ringSphereMat )
+          wqGroup.add( ringSphere )
+
+          // Sichtbarkeit an den aktuellen Umschalt-Zustand anpassen (nicht fest auf den
+          // Anfangszustand), da setWq() auch beim WQ-Anzahl-Rebuild (s. rebuildWqCountIfNeeded)
+          // erneut aufgerufen wird.
+          torus.visible = showRingAsTorus
+          ringSphere.visible = !showRingAsTorus
+          wqRings.push( torus )
+          wqRingSpheres.push( ringSphere )
+        }
+
+        let coneGeo = null
+        const coneMat = new THREE.MeshPhongMaterial({
+          color: 0x777777,
+          shininess: 40, // leichte Glanzlichter, um die gekrümmte Form hervorzuheben
+          specular: 0x555555, // gedämpft, kein grelles Plastik-Glänzen
+          opacity: 0.4,
+          transparent: true,
+          depthWrite: false, // sonst blockieren transparente Kegel dahinterliegende Flächen im Tiefentest
+          // Bei mehreren überlappenden transparenten Flächen entlang eines Blickstrahls gibt es mit
+          // einfachem Echtzeit-Alpha-Blending kein wirklich stabiles Ergebnis (Order-Independent
+          // Transparency wäre die vollständige Lösung, s. Diskussion). FrontSide reduziert das
+          // Artefakt zwar, macht aber beim manuellen Rotieren Teile der Kegel unsichtbar (nur
+          // Rückseite fehlt) - DoubleSide bleibt daher trotz des Artefakts die bessere Wahl.
+          side: THREE.DoubleSide,
+          // clippingPlanes: [ localPlane ],
+        });
+        if (fractalWithTorus) {
+          coneGeo = curvedConeGeometry // geteilt, einmalig vorgebaut (siehe buildCurvedConeGeometry)
+        } else {
+          coneGeo = new THREE.ConeGeometry( coneSize, coneSize, coneSegments, 1, true );
+        }
+        let cone = new THREE.Mesh( coneGeo, coneMat );
+        cone.scale.set( coneScale, coneScale, coneScale )
+        // Der gekrümmte Kegel sitzt in einer eigenen Gruppe (nicht in wqGroup), da er pro Frame nur
+        // eine einfache Z-Rotation um den Bahnwinkel braucht statt der vollen Geschwindigkeits-
+        // Quaternion-Ausrichtung von wqGroup (siehe Konzept-Diskussion) - die Krümmung steckt schon
+        // in der Geometrie, die Kegelspitze sitzt bereits im Ursprung.
+        const coneGroup = new THREE.Group();
+        coneGroup.add( cone );
+        dphGroup.add( coneGroup );
+        wqConeGroups.push( coneGroup )
+        wqCones.push( cone )
+
+        dphGroup.add( wqGroup );
+        wqGroups.push( wqGroup );
+      }
+                                                 
+      for ( let i = 0; i < wqCount; i++ ) {
+        setWq()
+      }
+
+      // Löst Geometrien/Materialien eines wq- oder Kegel-Objekts (inkl. Kindern) auf, ohne dabei die
+      // geteilte curvedConeGeometry zu zerstören (die wird separat verwaltet, s. rebuildAfterSpeedChange).
+      function disposeWqObject3D( object3d ) {
+        object3d.traverse( child => {
+          if ( child.isMesh ) {
+            if ( child.geometry && child.geometry !== curvedConeGeometry ) child.geometry.dispose()
+            if ( child.material ) child.material.dispose()
+          }
+        })
+      }
+
+      function buildWqTrails() {
+        return wqGroups.map(() => {
+          const mesh = new THREE.Mesh( new THREE.BufferGeometry(), trailMaterial )
+          movingSpaceGroup.add( mesh ) // eigenes Koordinatensystem, das sich nicht pro Frame verschiebt
+          return { mesh, points: [] }
+        })
+      }
+
+      // Physikalisch realistischer: Die Anzahl der wq-Einheiten wächst proportional zur tatsächlichen
+      // Frequenz (nicht nur zum Regler-Faktor, da sich die echte Frequenz auch über die LG ändert,
+      // siehe recomputePhysics). Aufgerufen nach jeder Frequenz-Änderung (s. rebuildAfterSpeedChange).
+      // Obergrenze als reine Sicherheitsbremse gegen ein durch Regler-Zusammenspiel theoretisch sehr
+      // hohes Ergebnis (Performance), nicht als physikalische Aussage.
+      const maxWqCount = 48
+      function rebuildWqCountIfNeeded() {
+        const newCount = Math.min( maxWqCount, Math.max( 1, Math.round( baseWqCount * ( frequency / baseFrequency ) ) ) )
+        if ( newCount === wqCount ) return
+
+        wqConeGroups.forEach( group => { disposeWqObject3D( group ); dphGroup.remove( group ) } )
+        wqGroups.forEach( group => { disposeWqObject3D( group ); dphGroup.remove( group ) } )
+        wqTrails.forEach( trail => { trail.mesh.geometry.dispose(); movingSpaceGroup.remove( trail.mesh ) } )
+
+        wqCount = newCount
+        wqGroups = []
+        wqConeGroups = []
+        wqCones = []
+        wqRings = []
+        wqRingSpheres = []
+
+        for ( let i = 0; i < wqCount; i++ ) {
+          setWq()
+        }
+        wqTrails = buildWqTrails()
+      }
+
+      let frequencyController // damit der Frequenz-Regler bei LG-Änderungen die echte Frequenz anzeigen kann (s.u.)
+
+      function createPanel() {
+        const showRingName = 'Micro-Wirkungsquanten als Ringe anzeigen'
+        const panelWidth = eleWidth / 2
+        const panel = new GUI({ width: panelWidth })
+        panel.close() // eingeklappt starten
+        // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
+        // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
+        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts im #container verankern,
+        // per "bottom" statt einem in JS berechneten "top" - wächst beim Aufklappen dadurch rein per
+        // CSS (synchron mit lil-guis eigener Animation) nach oben, ganz ohne Nachrechnen.
+        // .setProperty(..., 'important') statt .style.xyz, da main.css eine @media(max-width:640px)-Regel
+        // für .lil-gui.root mitbringt (left:0/right:auto/bottom:0), die sonst je nach Fenstergröße
+        // Vorrang bekommen könnte.
+        panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
+        panel.domElement.style.setProperty( 'right', '0px', 'important' )
+        panel.domElement.style.setProperty( 'left', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
+        panel.domElement.style.setProperty( 'top', 'auto', 'important' ) // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
+        container.appendChild( panel.domElement )
+        const pausedName = 'Animation anhalten'
+        const frequencyName = 'Frequenz'
+        const translationSpeedName = 'Variable LG in 3D / Gravitation'
+        const settings = {
+          [showRingName]: showRingAsTorus,
+          [pausedName]: paused,
+          [frequencyName]: frequencyFactor,
+          [translationSpeedName]: translationSpeedFactor,
+        }
+        panel.add( settings, pausedName ).onChange( togglePaused )
+        panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
+        // Vielfaches der Grundfrequenz, 1 = bisheriges Standardtempo (s. baseFrequency)
+        frequencyController = panel.add( settings, frequencyName, 0.4, 3, 0.05 ).onChange( updateFrequencyFactor )
+        // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
+        panel.add( settings, translationSpeedName, 0.05, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
+      }
+
+      function toggleShowRingAsTorus( checked ) {
+        showRingAsTorus = checked
+        wqRings.forEach( ring => ring.visible = showRingAsTorus )
+        wqRingSpheres.forEach( ringSphere => ringSphere.visible = !showRingAsTorus )
+      }
+
+      function togglePaused( checked ) {
+        paused = checked
+      }
+
+      // Nach jeder Änderung von Frequenz oder Translationsgeschwindigkeit: abgeleitete Größen neu
+      // berechnen (radius eingeschlossen, s. recomputePhysics), gekrümmte Kegel-Geometrie neu aufbauen
+      // (geteilt von allen 8 Kegeln), die Spuren zurücksetzen (sonst Sprung in der Kurve, da alte
+      // Punkte nicht mehr zur neuen Bahn passen) und die Animation von vorne beginnen lassen.
+      function rebuildAfterSpeedChange() {
+        recomputePhysics()
+
+        // Physikalisch realistischer: WQ-Anzahl an die (ggf. durch Frequenz- oder LG-Regler neu
+        // berechnete) tatsächliche Frequenz anpassen, bevor die Kegel-Geometrie unten neu gebaut und
+        // auf ALLE (auch neu hinzugekommene) Kegel angewendet wird.
+        rebuildWqCountIfNeeded()
+        // Kegelform hängt (über coneMantleLengthFactor) von der ggf. gerade geänderten wqCount ab -
+        // muss daher nach rebuildWqCountIfNeeded() neu berechnet werden.
+        recomputeConeShape()
+
+        const oldGeometry = curvedConeGeometry
+        curvedConeGeometry = buildCurvedConeGeometry()
+        wqCones.forEach( cone => { cone.geometry = curvedConeGeometry } )
+        oldGeometry.dispose()
+
+        wqTrails.forEach( trail => { trail.points = [] } )
+        centerTrail.points = []
+
+        simulatedElapsedTime = 0
+        prevWrappedTime = 0
+      }
+
+      function updateFrequencyFactor( newFactor ) {
+        // Regler setzt die tatsächliche, aktuelle Frequenz direkt (bei der jeweils aktuellen LG) -
+        // radius entsprechend anpassen, damit sich bei der aktuellen Erhaltungsgröße-Aufteilung genau
+        // diese Frequenz ergibt.
+        frequencyFactor = newFactor
+        const tangentialSpeed = Math.sqrt( Math.max( 0, totalSpeed * totalSpeed - translationSpeedLocal * translationSpeedLocal ) )
+        radius = tangentialSpeed / ( newFactor * baseFrequency * pi2 )
+        rebuildAfterSpeedChange()
+      }
+
+      function updateTranslationSpeedFactor( newFactor ) {
+        translationSpeedFactor = newFactor
+        rebuildAfterSpeedChange()
+
+        // radius bleibt fest, aber die tatsächliche Frequenz hat sich mit LG verschoben (s. recomputePhysics) -
+        // Regler-Anzeige auf den echten, aktuellen Wert aktualisieren, ohne dabei erneut updateFrequencyFactor
+        // auszulösen (daher .updateDisplay() statt .setValue()).
+        frequencyFactor = frequency / baseFrequency
+        frequencyController.object[ frequencyController.property ] = frequencyFactor
+        frequencyController.updateDisplay()
+      }
+
+      createPanel()
+
+      // #: wqTrails
+      // Nachgezogene Spur jeder wq-Kugel (Kreisbahn + Vorwärtsdrift von dphGroup ergibt die Spiralkurve)
+      // als echte Röhrengeometrie (TubeGeometry), da LineMaterial/Line2 (fat lines) auf manchen
+      // GPUs nur die Endpunkt-Caps rendert statt der ganzen Linie
+      const maxTrailPoints = 2000
+      const trailWorldPos = new THREE.Vector3()
+      const coneUpAxis = new THREE.Vector3( 0, 1, 0 ) // Kegelspitze zeigt lokal in +Y
+      const wqVelocity = new THREE.Vector3()
+      const trailTubeRadius = 0.00075
+      const centerTrailTubeRadius = 0.0015 // eigene, unabhängige Dicke für die grüne Mittelspur
+      const trailTubeRadialSegments = 12 // höher = runderer Querschnitt, weniger eckig
+      const trailMaterial = new THREE.MeshBasicMaterial( { color: 0x5533cc } )
+      let wqTrails = buildWqTrails()
+
+      // Spur des zentralen Rotationspunkts (dphCenterSphere), statt eines synthetisch wachsenden Zylinders
+      const centerTrailMaterial = new THREE.MeshBasicMaterial( { color: 0x00ae22, side: THREE.DoubleSide } )
+      const centerTrail = { mesh: new THREE.Mesh( new THREE.BufferGeometry(), centerTrailMaterial ), points: [] }
+      movingSpaceGroup.add( centerTrail.mesh )
+
+      function updateTrail( trail, worldObject, tubeRadius = trailTubeRadius ) {
+        if ( trail.points.length >= maxTrailPoints ) return
+        worldObject.getWorldPosition( trailWorldPos )
+        movingSpaceGroup.worldToLocal( trailWorldPos )
+        trail.points.push( trailWorldPos.clone() )
+        if ( trail.points.length >= 2 ) {
+          const curve = new THREE.CatmullRomCurve3( trail.points )
+          trail.mesh.geometry.dispose()
+          trail.mesh.geometry = new THREE.TubeGeometry( curve, trail.points.length, tubeRadius, trailTubeRadialSegments, false )
+        }
+      }
+
+
+      var simulatedElapsedTime = 0;
+      var prevWrappedTime = 0;
+      var maxDelta = 1 / 30; // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war (rAF pausiert dann)
+      var cycleDuration; // wird in recomputePhysics() gesetzt (an targetZDistance/translationSpeedWorld gekoppelt)
+
+      render.renderer.setAnimationLoop(() => {
+        // clock.getDelta() muss immer aufgerufen werden, sonst gäbe es beim Fortsetzen
+        // nach der Pause einen großen nachgeholten Zeitsprung (siehe maxDelta oben)
+        const rawDelta = render.clock.getDelta()
+
+        if ( !paused ) {
+          const delta = Math.min( rawDelta, maxDelta )
+          simulatedElapsedTime += delta
+          const wrappedTime = simulatedElapsedTime % cycleDuration
+
+          const wrapped = wrappedTime < prevWrappedTime
+          prevWrappedTime = wrappedTime
+
+          // Um cycleDuration/2 verschoben, damit die Mitte des Zeit-Zyklus (nicht der Zyklusanfang)
+          // bei z=0 liegt - also im Bild zentriert ist.
+          dphGroup.position.set( 0, 0, translationSpeedWorld * ( wrappedTime - cycleDuration / 2 ) )
+
+          if ( wrapped ) {
+            centerTrail.points = []
+          }
+          updateTrail( centerTrail, dphCenterSphere, centerTrailTubeRadius )
+
+          wqGroups.forEach((wqGroup, ndx) => {
+            const angle = -rotationSpeed * wrappedTime + pi2 / wqCount * ndx
+            wqGroup.position.set(
+              Math.cos( angle ) * radius,
+              Math.sin( angle ) * radius,
+              0
+            )
+
+            // Bewegungsrichtung = Ableitung der Position nach der Zeit: Kreisbewegung (Tangente,
+            // proportional zu radius*rotationSpeed) + Translation entlang Z (translationSpeedLocal) -
+            // beide bereits im selben dphGroup-lokalen Maßstab (siehe recomputePhysics/Physik-Konzept).
+            wqVelocity.set(
+              radius * rotationSpeed * Math.sin( angle ),
+              -radius * rotationSpeed * Math.cos( angle ),
+              translationSpeedLocal
+            ).normalize()
+            wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
+
+            // Der gekrümmte Kegel (siehe buildCurvedConeGeometry) ist relativ zur aktuellen Position/
+            // Ausrichtung bereits vorgebaut - er muss pro Frame nur noch an dieselbe Position gesetzt
+            // und um die Z-Achse um den aktuellen Bahnwinkel gedreht werden, keine Neuberechnung nötig.
+            const coneGroup = wqConeGroups[ ndx ]
+            coneGroup.position.copy( wqGroup.position )
+            coneGroup.rotation.set( 0, 0, angle )
+
+            const trail = wqTrails[ ndx ]
+            if ( wrapped ) {
+              trail.points = []
+            }
+            updateTrail( trail, wqGroup )
+          })
+        }
+
+        render.renderer.render( render.scene, render.camera )
+      });
+
+    </script>
+  </body>
+</html>
