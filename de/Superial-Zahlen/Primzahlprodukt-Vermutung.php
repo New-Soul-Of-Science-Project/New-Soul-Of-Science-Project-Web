@@ -2680,8 +2680,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *) = p_{i}  \longrightarrow  \lpr*( ω\overline{\#} *) = ω  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *) = p_{i}  \longrightarrow  \lpr*( ω\overline{\#} *) = ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Denn vor dem Übergang gilt:'."\n".
@@ -2705,48 +2704,42 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}  =  *\{ 0, 1, \cdots , p_{i} ​− 1 *\}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  p_{i}  =  *\{ 0, 1, \cdots , p_{i} ​− 1 *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Für eine endliche Zahl'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'lässt sich diese Menge zwar nach Restklassen modulo \lm{ m } zerlegen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}( p_{i} )  \;\; ,  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  p_{i}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}( p_{i} )  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  R_{r}^{(m)}( p_{i} )  :=  *\{  n < p_{i}  *|*  n \equiv r \;\; (\operatorname{mod} m)  *\}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}( p_{i} )  :=  *\{  n < p_{i}  *|*  n \equiv r \;\; (\operatorname{mod} m)  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach dem Divisionsalgorithmus existieren eindeutig bestimmte Zahlen \lm{ q, t \in \mathbb{N} } mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( 0 \le t < m *) *[  p_{i}  =  q m + t  *]  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  *( 0 \le t < m *) *[  p_{i}  =  q m + t  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da \lm{ p_{i} } prim und'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ist, kann \lm{ m } kein Teiler von \lm{ p_{i} } sein.'."\n".
@@ -2754,8 +2747,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  0  <  t  <  m  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  0  <  t  <  m  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Restklassen werden somit durch den endlichen Rand \lm{ p_{i} }'."\n".
@@ -2766,8 +2758,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wird bei der endlichen Mengendarstellung von \lm{ p_{i} } also je nach Restklasse'."\n".
@@ -2776,8 +2767,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine Zerlegung der endlichen Primzahl \lm{ p_{i} } in \lm{ m }'."\n".
@@ -2798,32 +2788,29 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m \in \mathbb{N},  \;\; m \ge 2,  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  m \in \mathbb{N},  \;\; m \ge 2,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'besitzt das von-Neumann-Ordinal'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on', latex => '{  ω  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine kanonische Restklassenzerlegung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; ,  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Alle \lm{ m } Restklassen besitzen untereinander dieselbe Erzeugungsstruktur:'."\n".
@@ -2831,16 +2818,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, \cdots , m - 1 *\}  \;\; ,  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, \cdots , m - 1 *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'werden danach aber ohne endlichen Abbruch durch dasselbe Erzeugungsgesetz'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  \longrightarrow  x + m  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  x  \longrightarrow  x + m  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'fortgesetzt.'."\n",
@@ -2859,40 +2844,35 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  \in  \mathbb{N}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  n  \in  \mathbb{N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eindeutig bestimmte Zahlen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  q  \in  \mathbb{N}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  q  \in  \mathbb{N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  m q + r  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  n  =  m q + r  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Jede natürliche Zahl gehört daher genau einer Restklasse'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  m \mathbb{N} + r  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  m \mathbb{N} + r  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'an.'."\n".
@@ -2900,40 +2880,35 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Jede Restklasse besitzt die Form'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Seien nun'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  r, s  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  r, s  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ordnet die Abbildung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \varphi_{r,s} : \; R_{r}^{(m)}  \longrightarrow  R_{s}^{(m)}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \varphi_{r,s} : \; R_{r}^{(m)}  \longrightarrow  R_{s}^{(m)}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( k \in \mathbb{N} *) *[  \varphi_{r,s}( r + k m )  =  s + k m  *]  \;\; ,  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  *( k \in \mathbb{N} *) *[  \varphi_{r,s}( r + k m )  =  s + k m  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'dem \lm{ k }-ten erzeugten Element von \lm{ R_{r}^{(m)} }'."\n".
@@ -2943,16 +2918,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  (r + (k + 1) m) − (r + k m)  =  m  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  (r + (k + 1) m) − (r + k m)  =  m  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und ebenso'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  (s + (k + 1) m) − (s + k m)  =  m  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  (s + (k + 1) m) − (s + k m)  =  m  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die Restklassen unterscheiden sich somit nur durch ihren Anfangswert,'."\n".
@@ -2967,8 +2940,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'ist für jedes endliche \lm{ m \ge 2 } eine'."\n".
@@ -2985,8 +2957,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}  \longrightarrow  ω  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  p_{i}  \longrightarrow  ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'eine neue strukturelle Qualität.'."\n",
@@ -2994,8 +2965,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'zwar nach demselben arithmetischen Schema begonnen werden, sie werden jedoch'."\n".
@@ -3006,8 +2976,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m  \ge  2  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  m  \ge  2  }'),
                     ))),
                   array( 'text', array( text => array(
                     'entstehen genau \lm{ m } paarweise disjunkte Restklassen,'."\n".
@@ -3018,8 +2987,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Mit „gleichartig“ ist hier zunächst ausschließlich gemeint,'."\n".
@@ -3029,8 +2997,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das von-Neumann-Ordinal \lm{ ω } besitzt somit gleichzeitig'."\n".
@@ -3072,8 +3039,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  \;\; .  }',
-                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Damit besitzt \lm{ ω } eine Teilungsstruktur,'."\n".
