@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 22.09.2026, 08:00h
+  // #: Stand: 23.09.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
   //           20260922:  +:  "$Sc_g_equation_replace_ary":  Add '  \cong  ' -> '\;\;\;\cong\;\;\;'.
   //           20260912:  +:  "MathJax":  Add Macro "qed" for "quod erat demonstrandum" '\blacksquare'.
   //                      +:  "MathJax":  Add Macro "qqed" for "quod erat demonstrandum" with space in front '\;\;\blacksquare'.
@@ -702,6 +703,7 @@
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
                                     array( '  \longrightarrow  ', '\;\;\;\longrightarrow\;\;\;'),
+                                    array( '  \longleftrightarrow  ', '\;\;\;\longleftrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \Longleftrightarrow  ', '\;\;\;\Longleftrightarrow\;\;\;'),

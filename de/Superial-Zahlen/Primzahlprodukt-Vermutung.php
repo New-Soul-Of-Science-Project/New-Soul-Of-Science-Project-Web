@@ -2603,17 +2603,6 @@
                       array( display => 'on',  latex => '{  *( n \rightarrow ω *) *[  ω  ?\widehat{=}  \pr( ω )  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    // 'XXX Demnach müsste \lm{ \pr( ω ) } beziehungsweise das Primturm-Potenzraster seiner Primturm-Darstellung (Primexponentenobjekt) einzigartig sein,'."\n".
-                    // 'also im Besonderen keiner Primturmzerlegung und keinem Raster einer endlichen Zahl entsprechen.'."\n".
-                    // 'Nach den Voraussetzungen des Beweises muss das Primexponentenobjekt \lm{ \pt( ω ) }'."\n".
-                    // 'rein aus endlichen Primzahlen bestehen, auch schon, weil innerhalb der bisherigen Konstruktion'."\n".
-                    // 'keine aktual unendlichen Primzahlen eingeführt wurden.'."\n".
-                    // 'Beides gemeinsam, und die Aktual-Unendlichkeit von \lm{ ω }, schließt ein endliches Primexponentenobjekt aus,'."\n".
-                    // 'auch, da diese eine endliche natürliche Zahl ergeben würde.'."\n".
-                    // 'Eine unendliche Darstellung als Primexponentenobjekt funktioniert folglich nur über unendlich viele unterschiedliche endliche Primzahlen,'."\n".
-                    // 'weil unendlich große Primzahltürme wie \lm{ 2^{ω} } in jedem Fall größer wären als \lm{ ω },'."\n".
-                    // 'wie wir ganz oben im Abschnitt \italic{›\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:omega-kann-nicht-einer-der-unendlich-grossen-Primzahltuerme}‹}'."\n".
-                    // 'dargelegt haben.'."\n",
                     'Zusätzlich haben wir die Gleichheit einer jeden endlichen Primzahl mit ihrem lückenlosen Primturm-Potenzraster,'."\n".
                     'die wir nun ebenso als zu \lm{ ω } übergehend notieren:'."\n".
                     ''))),
@@ -2632,8 +2621,6 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i - 1}, p_{i} \in \mathbb{P} *) *[  p_{i}  =  \lpr\!*( *( p_{i - 1} + 1 *)\overline{\#} *)  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-aus-Vorgaenger-p-i-minus-1}', label_incr => false),
-                      // array( display => 'on',  latex => '{  p_{i + 1}  =  \lpr*( (p_{i} + 1)\overline{\#} *)  }',
-                      //                     label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Die entstehenden Primzahlen \lm{ p_{i} } enthalten in ihrer von-Neumann-Mengendarstellung'."\n".
@@ -2664,21 +2651,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \neq  \lpr\!*( n *)  *]  }',
-                      //                     label_text => '\jumpname{X}', label_incr => false),
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  \lpr\!*( n\overline{\#} *)  \neq  n  \;\;\;\mathrel{\rlap{\mkern3mu\lower.45ex\hbox{$\left.\vphantom{\widehat{=}}\middle/\right.$}}\widehat{=}}\;\;\;  n\overline{\#}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der letzte gezeigte Übergang, mit seiner Gleichheit und Entsprechung, gilt also ausschließlich von endlichen Primzahlen zu \lm{ ω }.'."\n".
                     'Wir erkennen, wie eng jede Primzahl sowie auch \lm{ ω } über ihre Mengen-Primfakultät'."\n".
                     'mit dem lückenlosen Primturm-Potenzraster verknüpft ist.'."\n",
-                    //   'XXX Insgesamt erkennen wir auch, wie eng \lm{ ω } mit beidem, der vollständigen Induktion endlicher Primzahlen'."\n".
-                    // 'und der vollständigen Induktion natürlicher Zahlen, verknüpft ist.'."\n".
-                    // 'Es wird sichtbar, dass die Erzeugung jeder endlichen Primzahl auf der Mengen-Primfakultät'."\n".
-                    // 'der in ihrer Mengendarstellung enthaltenen Vorgänger-Primzahlen basiert.'."\n".
-                    // 'In diesem Sinne basiert auch die primexponentielle Darstellung von \lm{ ω } auf der Mengen-Primfakultät'."\n".
-                    // 'seiner endlichen Vorgänger-Primzahlen, also auf dem vollständigen Einheits-Primexponentenprodukt'."\n".
-                    // 'aller endlichen Primzahlen.'."\n",
                       'Insgesamt erkennen wir auch, wie eng \lm{ ω } mit beidem, der vollständigen Induktion endlicher Primzahlen'."\n".
                     'und der vollständigen Induktion natürlicher Zahlen, verknüpft ist.'."\n".
                     'Es wird sichtbar, dass die Erzeugung jeder endlichen Primzahl auf der Mengen-Primfakultät'."\n".
@@ -2691,42 +2669,6 @@
                     'in einfacher Potenz beinhaltet.'."\n".
                     'Auch nur eine fehlende Primzahl oder nur eine Primzahl in höherer Potenz als der ersten würden dazu führen,'."\n".
                     'dass ihr lückenloses Primturm-Potenzraster im Endlichen eine Lücke bekäme.'."\n",
-                    /*  'XXX Im Unterschied zu den endlichen Primexponentenprodukten, die die endlichen Primzahlen erzeugen,'."\n".
-                    'gibt es bei der Erzeugung von \lm{ ω } keine endliche Restdifferenz der letzen Primzahl zum erzeugten Zahlenwert \lm{ ω }.'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall p_{j} \in \mathbb{P} \cap p_{i} *) *( \exists n \in p_{i} *) *[  \frac{ p_{i} - p_{j} }{ n }  \in  p_{i}  *]  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall p_{j} \in \mathbb{P} *) *( \nexists n \in ω *) *[  \frac{ ω - p_{j} }{ n }  \in  ω  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Daher stellen wir fest, dass innerhalb der von uns definierten Primexponentenstruktur \lm{ ω }'."\n".
-                    'exakt die Teilbarkeit aufweisen muss, die ihrer Erzeugungsstruktur zugrunde liegt.'."\n",
-                      'Bei den endlichen Primexponentenprodukten, die die endlichen Primzahlen erzeugen,'."\n".
-                    'fällt der erzeugte Wert auf einen Rasterpunkt, der nicht durch ein kombiniertes Produkt'."\n".
-                    'der kleineren Primzahlen belegt werden kann.'."\n".
-                    'Im Unterschied dazu fällt der durch das Einheits-Primexponentenprodukt aller endlichen Primzahlen erzeugte Wert \lm{ ω }'."\n".
-                    'auf einen Rasterpunkt, der durch all die ihn erzeugenden endlichen Primzahlen genau einmal teilbar sein muss,'."\n".
-                    'weil dieser Rasterpunkt nur durch das Primexponentenprodukt aller endlichen Primzahlen erreichbar ist,'."\n".
-                    'sonst wäre er nicht aktual unendlich.'."\n",
-                      'All seine Primzahlen haben die gleiche erzeugende Bedeutung für ihn, während im Endlichen für die Erzeugung'."\n".
-                    'einer bestimmten endlichen Primzahl die in ihrer Mengendarstellung enthaltenen Primzahlen,'."\n".
-                    'die kleiner sind als sie selber,'."\n".
-                    'eine andere Bedeutung haben, als all die Primzahlen, die größer sind als sie selbst.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall p_{j} \in \mathbb{P} \cap p_{i} *) *[  \frac{ p_{i} }{ p_{j} }  \notin  \mathbb{N}  *]  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall p_{j} \in \mathbb{P} *) *[  \frac{ ω }{ p_{j} }  \in  \mathbb{N}_{\infty, v_{p}}  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array( */
                       'Bezüglich des vorstehenden Übergangs könnten wir auf die Idee kommen,'."\n".
                     'dass nicht nur alle \lm{ p_{i} } Primzahlen sind, sondern auch \lm{ ω } eine Primzahl wäre,'."\n".
                     'wenn dann auch eine aktual unendlich große.'."\n",
@@ -2753,13 +2695,13 @@
                     '')),
                   array( 'text', array( text => array(
                     'Beim Übergang von den Mengendarstellungen der endlichen Primzahlen'."\n".
-                    'zum von-Neumann-Ordinal \lm{ ω } tritt darüber hinaus eine weitere strukturelle Eigenschaft auf,'."\n".
-                    'die im Endlichen nicht vorhanden ist.'."\n".
+                    'zum von-Neumann-Ordinal \lm{ ω } tritt eine weitere strukturelle Eigenschaft auf,'."\n".
+                    'die bei keiner endlichen Primzahl für eine echte Restklassenteilung vorhanden ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei zunächst \lm{ p_{i} } eine endliche Primzahl in ihrer von-Neumann-Mengendarstellung'."\n".
+                      'Sei zunächst \lm{ p_{i} \in \mathbb{P} } eine endliche Primzahl in ihrer von-Neumann-Mengendarstellung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2767,7 +2709,15 @@
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Für ein endliches \lm{ m \ge 2 } lässt sich diese Menge zwar nach Restklassen modulo \lm{ m } zerlegen:'."\n".
+                      'Für eine endliche Zahl'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'lässt sich diese Menge zwar nach Restklassen modulo \lm{ m } zerlegen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2783,22 +2733,63 @@
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Keine dieser Restklassen ist jedoch wieder eine vollständige,'."\n".
-                      'gleichartig aus \lm{ p_{i} } erzeugte Kopie der ursprünglichen Menge \lm{ p_{i} }.'."\n".
-                      'Jede nichtleere Restklasse ist eine echte endliche Teilmenge von \lm{ p_{i} }'."\n".
-                      'und besitzt daher weniger Elemente als \lm{ p_{i} }.'."\n",
-                        'Insbesondere gibt es für kein endliches \lm{ p_{i} }'."\n".
-                      'und kein \lm{ m \ge 2 } eine Zerlegung in \lm{ m } Restklassen,'."\n".
-                      'von denen jede wiederum dieselbe Erzeugungsstruktur'."\n".
-                      'und denselben Ordnungstyp wie \lm{ p_{i} } besitzt.'."\n",
+                      'Nach dem Divisionsalgorithmus existieren eindeutig bestimmte Zahlen \lm{ q, t \in \mathbb{N} } mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( 0 \le t < m *) *[  p_{i}  =  q m + t  *]  \;\; .  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Da \lm{ p_{i} } prim und'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ist, kann \lm{ m } kein Teiler von \lm{ p_{i} } sein.'."\n".
+                      'Daher gilt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  <  t  <  m  \;\; .  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die Restklassen werden somit durch den endlichen Rand \lm{ p_{i} }'."\n".
+                      'nicht gleichmäßig abgeschlossen:'."\n".
+                      'Genau \lm{ t } Restklassen enthalten \lm{ q + 1 } Elemente, während die übrigen'."\n".
+                      '\lm{ m - t } Restklassen \lm{ q } Elemente enthalten.'."\n",
+                        'Die zunächst gleichartige Erzeugung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wird bei der endlichen Mengendarstellung von \lm{ p_{i} } also je nach Restklasse'."\n".
+                      'an unterschiedlichen Stellen abgebrochen.'."\n".
+                      'Damit entsteht für kein'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine Zerlegung der endlichen Primzahl \lm{ p_{i} } in \lm{ m }'."\n".
+                      'untereinander gleichartig vollständig erzeugte Restklassen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Beim Übergang zu \lm{ ω } ändert sich dies grundlegend.'."\n".
+                    'Beim Übergang zum aktual unendlichen von-Neumann-Ordinal \lm{ ω } entfällt dieser endliche Rand.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
-                  'Lemma 7: Erzeugungshomogene Restklassen-Selbstähnlichkeit von \lm{ ω }', subline =>
+                  'Lemma 7: Erzeugungshomogene Restklassenzerlegung von \lm{ ω }', subline =>
                     '')),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2823,39 +2814,38 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​*( m \mathbb{N} + r *)  \;\; .  }',
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; ,  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Jede einzelne Restklasse'."\n".
+                      'wobei'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m \mathbb{N} + r  }',
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wird dabei durch die Abbildung'."\n".
+                      'Alle \lm{ m } Restklassen besitzen untereinander dieselbe Erzeugungsstruktur:'."\n".
+                      'Sie beginnen bei unterschiedlichen Restwerten'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \varphi_{r} :  \;\; \mathbb{N} \longrightarrow m \mathbb{N} + r ,  \;\; \varphi_{r}( n ) = m n + r  }',
+                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, \cdots , m - 1 *\}  \;\; ,  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'eineindeutig und ordnungstreu aus \lm{ \mathbb{N} } erzeugt.'."\n",
-                        'Damit besitzt jede Restklasse wiederum den Ordnungstyp'."\n".
+                      'werden danach aber ohne endlichen Abbruch durch dasselbe Erzeugungsgesetz'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \;\; .  }',
+                      array( display => 'on',  latex => '{  x  \longrightarrow  x + m  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Das von-Neumann-Ordinal \lm{ ω } zerfällt also für jedes endliche \lm{ m \ge 2 }'."\n".
-                      'in \lm{ m } paarweise disjunkte Restklassen,'."\n".
-                      'von denen jede wiederum gleichartig durch den vollständigen Zählprozess'."\n".
-                      'der natürlichen Zahlen erzeugt wird.'."\n",
+                      'fortgesetzt.'."\n",
+                      'Damit zerfällt \lm{ ω } für jedes endliche \lm{ m \ge 2 } in \lm{ m }'."\n".
+                      'paarweise disjunkte und untereinander erzeugungshomogene Restklassen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2885,7 +2875,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, \cdots , m − 1 *\}  }',
+                      array( display => 'on',  latex => '{  r  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2897,142 +2887,243 @@
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Daher gehört jede natürliche Zahl zu genau einer der Mengen'."\n".
+                      'Jede natürliche Zahl gehört daher genau einer Restklasse'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m \mathbb{N} + r  \;\; .  }',
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  m \mathbb{N} + r  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Somit gilt'."\n".
+                      'an.'."\n".
+                      'Somit gilt die disjunkte Zerlegung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​*( m \mathbb{N} + r *)  \;\; .  }',
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  \;\; .  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Für ein festes \lm{ r } ist'."\n".
+                      'Jede Restklasse besitzt die Form'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \varphi_{r}( n )  =  m n + r  }',
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}  =  *\{ r, \; r + m, \; r + 2 m, \; r + 3 m, \; \cdots *\}  \;\; .  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'injektiv, denn aus'."\n".
+                      'Seien nun'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m n_{1} + r  =  m n_{2} + r  }',
+                      array( display => 'on',  latex => '{  r, s  \in  *\{ 0, 1, 2, 3, 4, \cdots , m − 1 *\}  \;\; .  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'folgt'."\n".
+                      'Dann ordnet die Abbildung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n_{1}  =  n_{2}  \;\; .  }',
+                      array( display => 'on',  latex => '{  \varphi_{r,s} : \; R_{r}^{(m)}  \longrightarrow  R_{s}^{(m)}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Die Abbildung ist zugleich surjektiv auf \lm{ m \mathbb{N} + r },'."\n".
-                      'da jedes Element dieser Restklasse definitionsgemäß die Form'."\n".
+                      'mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m n + r  }',
+                      array( display => 'on',  latex => '{  *( k \in \mathbb{N} *) *[  \varphi_{r,s}( r + k m )  =  s + k m  *]  \;\; ,  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'für ein \lm{ n \in \mathbb{N} } besitzt.'."\n",
-                      'Außerdem gilt für \lm{ n_{1} < n_{2} }:'."\n".
+                      'dem \lm{ k }-ten erzeugten Element von \lm{ R_{r}^{(m)} }'."\n".
+                      'genau das \lm{ k }-te erzeugte Element von \lm{ R_{s}^{(m)} } zu.'."\n",
+                      'Die Abbildung ist eineindeutig und ordnungserhaltend.'."\n".
+                      'Zugleich erhält sie das Erzeugungsgesetz, denn für jede Erzeugungsstufe \lm{ k } gilt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m n_{1} + r  <  m n_{2} + r  }',
+                      array( display => 'on',  latex => '{  (r + (k + 1) m) − (r + k m)  =  m  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist \lm{ \varphi_{r} } eine ordnungserhaltende Bijektion.'."\n".
-                      'Folglich besitzt jede Restklasse denselben Ordnungstyp wie \lm{ \mathbb{N} }:'."\n".
+                      'und ebenso'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  m \mathbb{N} + r  \cong  ω  }',
+                      array( display => 'on',  latex => '{  (s + (k + 1) m) − (s + k m)  =  m  \;\; .  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Damit ist die erzeugungshomogene Restklassen-Selbstähnlichkeit von \lm{ ω } bewiesen.  \lm{ \qqed }'."\n",
+                      'Die Restklassen unterscheiden sich somit nur durch ihren Anfangswert,'."\n".
+                      'nicht durch die Struktur ihrer fortlaufenden Erzeugung.'."\n",
+                      'Im Gegensatz zum endlichen Fall existiert kein oberer Rand,'."\n".
+                      'der eine Restklasse früher abbrechen ließe als eine andere.'."\n".
+                      'Alle \lm{ m } Restklassen werden nach demselben Erzeugungsgesetz'."\n".
+                      'vollständig fortgesetzt.'."\n",
+                      'Damit besitzen die Restklassen von \lm{ ω }'."\n".
+                      'untereinander dieselbe Erzeugungsstruktur,'."\n".
+                      'und'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'ist für jedes endliche \lm{ m \ge 2 } eine'."\n".
+                      'erzeugungshomogene Restklassenzerlegung von \lm{ ω }.'."\n",
+                      'Was zu beweisen war.  \lm{ \qqed }'."\n",
                         '\\\\'."\n".
                       ''))),
 
-                  /* array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall p_{j} \in \mathbb{P} \cap p_{i} *) *( \exists n \in p_{i} *) *[  \frac{ p_{i} - p_{j} }{ n }  \in  p_{i}  *]  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall p_{j} \in \mathbb{P} *) *( \nexists n \in ω *) *[  \frac{ ω - p_{j} }{ n }  \in  ω  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Bedeutung der erzeugungshomogenen Restklassenzerlegung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Wir wissen, dass \lm{ ω } genauso viele gerade Zahlen enthält, wie ungerade Zahlen.'."\n".
-                    'Dies ist direkt mit dem Zählen, einer inhärenten Struktur von \lm{ ω }, als auch direkt'."\n".
-                    'mit einem grundlegenden und unzweifelhaften Eins-zu-Eins-Verhältnis der Zahlentheorie verknüpft.'."\n".
-                    'Damit dürfen wir davon ausgehen, dass die Primexponentenstruktur von \lm{ ω }'."\n".
-                    'mindestens eine Teilbarkeit durch \lm{ 2 } aufweisen muss.'."\n",
-                      'Diese Einsicht führt unmittelbar dazu, dass auch alle anderen endlichen Primzahlen'."\n".
-                    'zur Teilungsstruktur von \lm{ ω } gehören müssen, denn anders ist über zugelassene Werte'."\n".
-                    'aus \lm{ \mathbb{N}_{\infty, v_{p}} } das Aktual-Unendliche nicht erreichbar.'."\n".
+                    'Damit zeigt sich beim Übergang'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *[  \frac{ ω }{ p_{i} }  \in  \mathbb{N}_{\infty, v_{p}}  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))), */
-                  array( 'text', array( text => array(
-                    'Diese Eigenschaft besitzt keine Mengendarstellung einer endlichen Primzahl.'."\n".
-                    'Während sich eine endliche Primzahl zwar in Restklassen zerlegen lässt,'."\n".
-                    'werden diese Restklassen bei jeder nichttrivialen Zerlegung echt kleiner als die Ausgangsmenge.'."\n".
-                    'Erst bei \lm{ ω } treten für jedes endliche \lm{ m \ge 2 } vollständige, gleichartig erzeugte Kopien'."\n".
-                    'des ursprünglichen Ordnungstyps innerhalb seiner eigenen Restklassenstruktur auf.'."\n",
-                      'Insbesondere gilt dies für jede endliche Primzahl \lm{ p }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  }',
+                      array( display => 'on',  latex => '{  p_{i}  \longrightarrow  ω  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit besitzt \lm{ ω } gleichzeitig für jede endliche Primzahl'."\n".
-                    'eine kanonische \lm{ p }-fache erzeugungshomogene Restklassenzerlegung.'."\n".
-                    'Dies unterscheidet \lm{ ω } strukturell von jeder einzelnen endlichen Primzahl'."\n".
-                    'und liefert einen weiteren Hinweis darauf, dass der Übergang \lm{ p_{i} \rightarrow ω }'."\n".
-                    'nicht zu einer aktual unendlichen Primzahl führt,'."\n".
-                    'sondern zu einem Objekt, dessen Struktur mit allen endlichen Primzahlen zugleich verknüpft ist.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Zusammen mit den eben dargelegten Eigenschaften der Primexponentendarstellung von \lm{ ω } motiviert dies den Schluss,'."\n".
-                    'die zunächst fragliche Entsprechung von'."\n".
+                    'eine neue strukturelle Qualität.'."\n",
+                      'Bei einer endlichen Primzahl \lm{ p_{i} } können die Restklassen einer echten Zerlegung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  ?\widehat{=}  ω\overline{\#}  }',
+                      array( display => 'on',  latex => '{  2  \le  m  <  p_{i}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'im nächsten Schritt als Identifikation'."\n".
+                    'zwar nach demselben arithmetischen Schema begonnen werden, sie werden jedoch'."\n".
+                    'durch den endlichen Rand von \lm{ p_{i} } unterschiedlich abgeschnitten.'."\n".
+                    'Eine Zerlegung in vollständig gleichartig erzeugte Teile ist daher nicht möglich.'."\n",
+                      'Bei \lm{ ω } entfällt dieser endliche Rand.'."\n".
+                    'Für jedes endliche'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  m  \ge  2  }',
+                                          label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'zu formulieren.'."\n".
+                    'entstehen genau \lm{ m } paarweise disjunkte Restklassen,'."\n".
+                    'die untereinander nach demselben Erzeugungsgesetz'."\n".
+                    'und ohne unterschiedlichen Abbruch fortgesetzt werden.'."\n",
+                      'In diesem strukturellen Sinn zerfällt \lm{ ω } für jedes endliche \lm{ m \ge 2 }'."\n".
+                    'in \lm{ m } gleichartig erzeugte Teile:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ m − 1 }  ​R_{r}^{(m)}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mit „gleichartig“ ist hier zunächst ausschließlich gemeint,'."\n".
+                    'dass die Restklassen untereinander dieselbe Erzeugungsstruktur besitzen.'."\n".
+                    'Eine quantitative Bewertung der dadurch entstehenden Teile wird erst später eingeführt.'."\n",
+                      'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } gilt insbesondere:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das von-Neumann-Ordinal \lm{ ω } besitzt somit gleichzeitig'."\n".
+                    'für jede endliche Primzahl \lm{ p } eine kanonische \lm{ p }-fache'."\n".
+                    'erzeugungshomogene Restklassenzerlegung.'."\n",
+                      'Diese Aussage ist an dieser Stelle noch keine Primexponentenbewertung von \lm{ ω }.'."\n".
+                    'Sie zeigt zunächst ausschließlich eine Eigenschaft seiner von-Neumann-Mengendarstellung:'."\n".
+                    'Anders als jede endliche Primzahl lässt sich \lm{ ω }'."\n".
+                    'für jede endliche Primzahl in untereinander gleichartig erzeugte Restklassen zerlegen.'."\n",
+                      'Damit tritt beim Übergang zum Aktual-Unendlichen erstmals'."\n".
+                    'eine erzeugungshomogene Zerlegungsstruktur auf,'."\n".
+                    'die gleichzeitig mit allen endlichen Primzahlen verknüpft ist'."\n".
+                    'und strukturell eine entsprechende Teilbarkeit nahelegt.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  'Übergang zur aktual unendlichen Entsprechung', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Für jede endliche Primzahl \lm{ p_{i} } wurde bereits gezeigt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( p_{i}\overline{\#} *)  =  p_{i}  \widehat{=}  p_{i}\overline{\#}  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Mengen-Primfakultät \lm{ p_{i}\overline{\#} } bestimmt also'."\n".
+                    'über den lückenlosen Anfang ihres Primturm-Potenzrasters eindeutig die zugehörige endliche Primzahl \lm{ p_{i} }.'."\n",
+                      'Beim Übergang'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}  \rightarrow  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'tritt nun zusätzlich die eben bewiesene neue Restklassenstruktur auf:'."\n".
+                    'Das von-Neumann-Ordinal \lm{ ω } lässt sich für jede endliche Primzahl \(p\)'."\n".
+                    'in \(p\) untereinander erzeugungshomogene Restklassen zerlegen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  \;\; .  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit besitzt \lm{ ω } eine Teilungsstruktur,'."\n".
+                    'die nicht mehr an eine einzelne endliche Primzahl gebunden ist,'."\n".
+                    'sondern gleichzeitig mit allen endlichen Primzahlen verknüpft ist.'."\n",
+                      'Dies legt nahe, die endliche Entsprechung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}  \widehat{=}  p_{i}\overline{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'im Übergang zum Aktual-Unendlichen auf das vollständige Einheits-Primexponentenprodukt'."\n".
+                    'aller endlichen Primzahlen zu erweitern:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die entscheidende Frage lautet damit:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  ?\widehat{=}  ω\overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Oder, als Grenzübergang der endlichen Entsprechungen geschrieben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i} \rightarrow ω *) *[  \lpr*( ω\overline{\#} *)  =  ω  ?\widehat{=}  ω\overline{\#}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die erzeugungshomogene Restklassenzerlegung von \lm{ ω } beweist'."\n".
+                    'diese Identifikation für sich genommen noch nicht.'."\n".
+                    'Sie zeigt jedoch unabhängig von der Primexponentenstruktur,'."\n".
+                    'dass \lm{ ω } eine mit allen endlichen Primzahlen zugleich verknüpfte Teilungsstruktur besitzt.'."\n".
+                    'Zusammen mit der endlichen \lm{ \lpr }-Entsprechung liefert dies die strukturelle Motivation'."\n".
+                    'für die folgende Beweisfrage:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( \prodx_{ p \in \mathbb{P} }  p *)  =  ω  ?\equiv_{kan}  ω\overline{\#}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Frag-equiv-kan-MengenPrimfakultaet-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Genau diese Gleichung wird im Folgenden bewiesen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation', text =>
                   'Satz 2: Theorem der inneren kanonischen ZFC-Strukturidentifikation', subline =>
