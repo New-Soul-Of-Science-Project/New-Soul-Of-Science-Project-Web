@@ -2569,9 +2569,14 @@
                   'Herleitung und Motivation der Identifikation von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Wir haben nun folgendes Szenario ermittelt, das ich dabei in Bezug auf den Übergang'."\n".
-                    'ins Aktual-Unendliche, hin zu \lm{ ω }, betrachte;'."\n".
-                    'hier und nachfolgend noch im Sinne der naiv übergehenden Entsprechung, nicht bereits als bewiesene Identifikation.'."\n".
+                    'Wir betrachten nun die zuvor ermittelten endlichen Entsprechungen im Hinblick auf'."\n".
+                    'ihren Übergang zum aktual unendlichen von-Neumann-Ordinal \lm{ ω }.'."\n".
+                    'Soweit die folgenden Übergänge noch mit einer fraglichen Entsprechung notiert werden,'."\n".
+                    'sind sie zunächst als motivierende strukturelle Fortsetzungen zu verstehen'."\n".
+                    'und noch nicht als bewiesene kanonische Identifikation.'."\n".
+                    'Im weiteren Verlauf tritt mit der erzeugungshomogenen Restklassenzerlegung von \lm{ ω }'."\n".
+                    'zudem eine neue strukturelle Eigenschaft hinzu,'."\n".
+                    'die diesen Übergang unabhängig von der Primexponentendarstellung zusätzlich beleuchtet.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Für jede endliche natürliche Zahl \lm{ n } ist ihre Primturmstruktur durch ihre eindeutige Primfaktorzerlegung bestimmt.'."\n".
@@ -2725,7 +2730,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  R_{r}^{(m)}( p_{i} )  :=  *\{  n < p_{i}  *|*  n \equiv r \;\; (\operatorname{mod} m)  *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  R_{r}^{(m)}( p_{i} )  :=  *\{  n < p_{i}  *|*  n  \equiv  r \;\; (\operatorname{mod} m)  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach dem Divisionsalgorithmus existieren eindeutig bestimmte Zahlen \lm{ q, t \in \mathbb{N} } mit'."\n".
@@ -3114,7 +3119,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#}  }',
+                      array( display => 'on',  latex => '{  ω\overline{\#}  :=  \prodx_{ p \in \mathbb{P} }  p  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots)_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -3180,10 +3185,51 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\bold{3.} \\\\'."\n".
-                      'Damit besitzt \lm{ ω\overline{\#} } zwei entscheidende Eigenschaften:'."\n".
-                      'Einerseits trägt es die vollständige Einheits-Primexponentenstruktur aller endlichen Primzahlen.'."\n".
-                      'Andererseits erzeugt sein Primturm-Potenzraster genau den endlichen Anfang \lm{ ω } lückenlos'."\n".
-                      'und nicht darüber hinaus.'."\n".
+                      'Unabhängig von der Primexponentendarstellung wurde zuvor'."\n".
+                      'eine weitere strukturelle Eigenschaft des von-Neumann-Ordinals \lm{ ω } bewiesen.'."\n".
+                      'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } besitzt \lm{ ω = \mathbb{N} }'."\n".
+                      'die kanonische erzeugungshomogene Restklassenzerlegung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die dabei entstehenden \lm{ p } Restklassen besitzen untereinander'."\n".
+                      'dieselbe Erzeugungsstruktur:'."\n".
+                      'Sie werden jeweils ohne endlichen Abbruch mit derselben Schrittweite \lm{ p } fortgesetzt.'."\n",
+                      'Eine entsprechende echte erzeugungshomogene Restklassenzerlegung besitzt keine endliche Primzahl.'."\n".
+                      'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } und jede natürliche Zahl \lm{ m } mit'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2  \le  m  <  p  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'werden deren Restklassen durch den endlichen Rand ungleichmäßig abgeschlossen.'."\n",
+                      'Die erzeugungshomogene Restklassenzerlegung beweist für sich genommen'."\n".
+                      'noch keine Primexponentenbewertung von \lm{ ω }.'."\n".
+                      'Sie zeigt jedoch unabhängig vom Primexponentenprodukt,'."\n".
+                      'dass beim Übergang zu \lm{ ω } eine Zerlegungsstruktur auftritt,'."\n".
+                      'die gleichzeitig mit jeder endlichen Primzahl verknüpft ist.'."\n",
+                      'Diese Eigenschaft steht damit strukturell in Übereinstimmung'."\n".
+                      'mit dem Ergebnis der vorhergehenden Punkte:'."\n".
+                      'Das vollständige Einheits-Primexponentenprodukt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{ p \in \mathbb{P} }  p  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-Mengen-Primfakultaet-Def-Produkt-alle-p}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'trägt ebenfalls jede endliche Primzahl genau einmal.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\bold{4.} \\\\'."\n".
+                      'Damit treffen nun drei strukturelle Eigenschaften zusammen:'."\n",
+                      'Erstens trägt \lm{ ω\overline{\#} } die vollständige Einheits-Primexponentenstruktur aller endlichen Primzahlen.'."\n",
+                      'Zweitens besitzt sein Primturm-Potenzraster den kanonischen lückenlosen Zahlenwert \lm{ ω }.'."\n",
+                      'Drittens besitzt \lm{ ω } unabhängig davon für jede endliche Primzahl eine erzeugungshomogene Restklassenzerlegung.'."\n",
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da der lückenlose Anfang des generierten Gitters des aktual unendlichen Primexponentenprodukts'."\n".
