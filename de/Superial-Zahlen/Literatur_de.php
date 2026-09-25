@@ -72,6 +72,8 @@
               'wiki:DedekindscherSchnitt:2025',
               'wiki:DifferentialMathematik:2024',
               'wiki:Differentialrechnung:2024',
+              'wiki:Disjunkt:2025',
+              'wiki:DisjunkteVereinigung:2025',
               'wiki:ElliptischeIntegrale:2024',
               'wiki:ElliptischeKurve:2024',
               'wiki:EulerscheZahl:2023',

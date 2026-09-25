@@ -947,7 +947,8 @@
                     'im Zählfenster \lm{ \rbrack \!-\!ω, ω \lbrack_{\mathbb{On}_{0}^{\pm}} }'."\n".
                     '\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{biordinal-struktursymmetrisch mit Wertsymmetrie}, und belegen'."\n".
                     'ebenso \lm{ ω } Positionen.'."\n".
-                    'Da \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } das Fenster disjunkt aufteilen, folgt:'."\n".
+                    'Da \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } das Fenster disjunkt\footnote{\const{SupNum_g_footnote_text_Disjunkt}}'."\n".
+                    'aufteilen, folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Erz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1219,7 +1220,7 @@
                       array( display => 'on',  latex => '{  \mathbb{Z}^{−}  =  *\{  ν( n )  *|*  n \in \mathbb{N}  *\} \\\ \quad\;  =  *\{ −1, −2, −3, -4, -5, \cdots *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die ganzen Zahlen entstehen erzeugungshierarchisch als disjunkte Vereinigung'."\n".
+                    'Die ganzen Zahlen entstehen erzeugungshierarchisch als disjunkte Vereinigung\footnote{\const{SupNum_g_footnote_text_Disjunkt}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.ErzSum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

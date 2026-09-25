@@ -2830,7 +2830,8 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'fortgesetzt.'."\n",
                       'Damit zerfällt \lm{ ω } für jedes endliche \lm{ m \ge 2 } in \lm{ m }'."\n".
-                      'paarweise disjunkte und untereinander erzeugungshomogene Restklassen.'."\n",
+                      'paarweise disjunkte\footnote{\const{SupNum_g_footnote_text_Disjunkt}}'."\n".
+                      'und untereinander erzeugungshomogene Restklassen.'."\n",
                         '\\\\'."\n".
                       ''))),
 

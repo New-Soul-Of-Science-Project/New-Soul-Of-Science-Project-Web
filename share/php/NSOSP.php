@@ -3,10 +3,11 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 03.09.2026, 17:00h
+  // #: Stand: 25.09.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260925:  +:  "$SupNum_g_footnote_text_Disjunkt":  Primärliteratur ergänzt.
   //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
   //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
@@ -441,6 +442,7 @@
   $SupNum_g_footnote_text_DedekindscherSchnitt  = 'Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 4 Schöpfung der irrationalen Zahlen, S. 19–24. \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
   $SupNum_g_footnote_text_DifferentialMathematik = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.';
   $SupNum_g_footnote_text_Differentialrechnung  = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.';
+  $SupNum_g_footnote_text_Disjunkt              = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, Gl. (2) (Vereinigungsmenge zweier Mengen \lm{ M } und \lm{ N }, die kein gemeinsames Element haben). \\\\ Internet: \\\\ Vgl. \cite{wiki:Disjunkt:2025}. \\\\ Vgl. \cite{wiki:DisjunkteVereinigung:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = 'Vgl. \cite{Abel:UnmoeglichkeitAlgebraischerGleichungen:1826}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_ElliptischeKurve      = 'Vgl. \cite{Abel:RecherchesSurLesFonctionsElliptiques:1827} (Grundlegung der Theorie der elliptischen Funktionen). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.';
   $SupNum_g_footnote_text_EulerscheZahl         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788}. \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Beweis der Transzendenz von \lm{ \e }). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
