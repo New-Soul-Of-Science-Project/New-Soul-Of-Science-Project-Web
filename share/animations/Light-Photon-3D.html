@@ -380,7 +380,7 @@
         const curve = new THREE.EllipseCurve( 0, 0, ellipseA, ellipseB, 0, pi2, false, 0 )
         const points = curve.getPoints( 128 ).map( p => new THREE.Vector3( p.x, p.y, 0 ) )
         const geometry = new THREE.BufferGeometry().setFromPoints( points )
-        const material = new THREE.LineBasicMaterial( { color: 0xd0d0d0 } )
+        const material = new THREE.LineBasicMaterial( { color: 0x707070 } )
         const line = new THREE.LineLoop( geometry, material )
         line.rotation.z = orientation
         line.visible = showEllipsePaths
