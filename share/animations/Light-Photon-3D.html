@@ -18,7 +18,7 @@
   <body>
     <div id="container"></div>
     <div id="info">
-      <h1>Photon</h1>
+      <h1 id="title">Photon</h1>
       <h2 id="headline"></h2>
     </div>
 
@@ -85,8 +85,21 @@
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
 
+      const titleElement = document.getElementById( 'title' )
       const headline = document.getElementById( 'headline' )
-      headline.innerHTML = 'Wirkungsquanten-String eines Photons des Vakuums'
+      // Bei Polarisation 0 (Kreisbahn) Titel/Untertitel auf die Bezeichnung des dunklen Photons
+      // umschalten (s. Dark-Photon-3D.html), sonst die Bezeichnung des (zirkular polarisierten) hellen
+      // Photons - aufgerufen einmalig unten (sobald "polarization" existiert) und danach in
+      // updatePolarization() bei jeder Regler-Änderung.
+      function updateTitleForPolarization() {
+        if ( polarization > 0 ) {
+          titleElement.innerHTML = 'Photon'
+          headline.innerHTML = 'Wirkungsquanten-String eines zirkular polarisierten Photons'
+        } else {
+          titleElement.innerHTML = 'Dunkles Photon'
+          headline.innerHTML = 'Wirkungsquanten-String eines unpolarisierten Photons des Vakuums'
+        }
+      }
 
       // Der Migrationsfaktor intensityLightScaling wurde für eine andere Animation/Szenengröße
       // getuned; hier (kleinere generalScale, andere Licht-Abstände) wirkt er zu dunkel - lokaler
@@ -199,6 +212,7 @@
       // daraus, dass dieselbe Uhr durch 8 unterschiedlich fest gedrehte (nicht kreisförmige) Ellipsen
       // "betrachtet" wird - keine zusätzliche Präzession nötig.
       let polarization = 1 // Standardmäßig hell/polarisiert, nicht dunkel
+      updateTitleForPolarization()
       const maxEllipseStretch = 0.5 // bei polarization=1: a = radius*1.5, b = radius*0.5; bei 2: a=2·radius, b→0
       let ellipseA, ellipseB // aktuelle Halbachsen (a: in ursprünglicher +X-Richtung der eigenen Ellipse)
       let ellipseArcTable // bogenlängen-Lookup, s. buildEllipseArcTable()
@@ -806,6 +820,7 @@
         polarization = newValue
         rebuildAfterSpeedChange() // recomputeEllipseShape() ist Teil davon, plus Spuren-Reset
         updateFieldArrowsVisibility()
+        updateTitleForPolarization()
       }
 
       // Nach jeder Änderung von Frequenz oder Translationsgeschwindigkeit: abgeleitete Größen neu
