@@ -457,17 +457,23 @@
         return geometry
       }
 
-      let curvedConeGeometry = buildCurvedConeGeometry( 0 ) // Start bei Bogenlänge 0, wird pro Frame neu gebaut (s. Renderloop)
+      let curvedConeGeometry = buildCurvedConeGeometry( 0 ) // Platzhalter für den Start, s.u.
 
-      // Baut die geteilte Kegel-Geometrie für die aktuelle Bogenlänge neu und weist sie allen Kegeln
-      // zu - wird sowohl bei Regler-Änderungen (einmalig, für sofortige Wirkung auch im pausierten
-      // Zustand) als auch pro Frame im Renderloop aufgerufen (da sich die Form bei einer Ellipse mit
-      // fortschreitender Bogenlänge ändert, s. buildCurvedConeGeometry).
+      // Baut für jedes WQ seine EIGENE Kegel-Geometrie an dessen aktueller Bogenlängen-Position neu
+      // (jedes WQ sitzt an einer anderen Stelle der Ellipse, s. Konzept-Diskussion - die Form ist
+      // daher nicht mehr teilbar). Wird sowohl bei Regler-Änderungen (einmalig, für sofortige Wirkung
+      // auch im pausierten Zustand) als auch pro Frame im Renderloop aufgerufen.
       function updateCurvedConeGeometry( currentArc ) {
-        const oldGeometry = curvedConeGeometry
-        curvedConeGeometry = buildCurvedConeGeometry( currentArc )
-        wqCones.forEach( cone => { cone.geometry = curvedConeGeometry } )
-        oldGeometry.dispose()
+        wqCones.forEach( ( cone, ndx ) => {
+          // 1/(2*wqCount) statt 1/wqCount, s. Konzept-Diskussion: eine Ellipse hat zwei gleichwertige
+          // "äußerste" Punkte (Enden der großen Halbachse), daher addieren sich Verdrehung und
+          // Bogenlängen-Versatz bei Kreisform (Exzentrizität 0) exakt zur ursprünglichen 1/wqCount-
+          // Verteilung, ohne dass sich Paare exakt überlappen.
+          const arcStartOffset = ( ndx / ( 2 * wqCount ) ) * ellipseArcTable.total
+          const oldGeometry = cone.geometry
+          cone.geometry = buildCurvedConeGeometry( currentArc + arcStartOffset )
+          if ( oldGeometry !== curvedConeGeometry ) oldGeometry.dispose()
+        })
       }
 
       function setWq() {
@@ -778,21 +784,24 @@
           }
           updateTrail( centerTrail, dphCenterSphere, centerTrailTubeRadius )
 
-          // Gemeinsame, bogenlängen-basierte "Uhr" für alle wq-Einheiten (ersetzt den bisherigen
-          // reinen Winkel bei Exzentrizität > 0) - liefert Position/Tangente auf der EIGENEN,
-          // unrotierten Ellipse. Negatives Vorzeichen wie bisher bei "angle", für dieselbe Drehrichtung.
+          // Gemeinsame, bogenlängen-basierte "Uhr" für alle wq-Einheiten.
           const sharedArc = -tangentialSpeed * wrappedTime
-          const localEllipse = ellipsePositionByArcLength( sharedArc )
-          // Pro Frame neu bauen, da sich die Kegel-Schweif-Form mit der Bogenlänge ändert (bei
-          // Exzentrizität 0 wäre das nicht nötig, aus Einfachheit aber einheitlich für beide Fälle).
+          // Jedes WQ sitzt an einer eigenen Bogenlängen-Position auf der Ellipse (s.u.) - die Kegel-
+          // Form ist daher pro WQ verschieden und wird hier für alle 8 neu gebaut.
           updateCurvedConeGeometry( sharedArc )
 
           wqGroups.forEach((wqGroup, ndx) => {
-            // Phasenversatz ist jetzt die FESTE Ausrichtung der eigenen Ellipse dieser wq-Einheit
-            // (nicht mehr ein Zeit-Versatz auf einer gemeinsamen Kreisbahn) - bei Exzentrizität 0
-            // (Kreis) reduziert sich die Drehung exakt auf den bisherigen Phasenversatz.
-            const phaseOffset = pi2 / wqCount * ndx
-            const cosP = Math.cos( phaseOffset ), sinP = Math.sin( phaseOffset )
+            // Jedes WQ hat seine EIGENE, fest um "orientation" gedrehte Ellipse UND startet an einem
+            // eigenen Bogenlängen-Anteil vom äußersten Punkt SEINER eigenen Ellipse aus (Konzept-
+            // Diskussion: 8 um je 1/16·360° verdrehte Ellipsen, deren Startpunkte zusätzlich je
+            // 1/16 Bahnlänge weiter versetzt sind - 1/16 statt 1/8, da eine Ellipse zwei gleichwertige
+            // "äußerste" Punkte hat; beide 1/16-Versätze addieren sich bei Kreisform exakt zur
+            // ursprünglichen 1/8-Verteilung, s. updateCurvedConeGeometry).
+            const orientation = pi2 / ( 2 * wqCount ) * ndx
+            const arcStartOffset = ( ndx / ( 2 * wqCount ) ) * ellipseArcTable.total
+            const localEllipse = ellipsePositionByArcLength( sharedArc + arcStartOffset )
+
+            const cosP = Math.cos( orientation ), sinP = Math.sin( orientation )
             const posX = localEllipse.x * cosP - localEllipse.y * sinP
             const posY = localEllipse.x * sinP + localEllipse.y * cosP
             wqGroup.position.set( posX, posY, 0 )
@@ -809,13 +818,11 @@
             ).normalize()
             wqGroup.quaternion.setFromUnitVectors( coneUpAxis, wqVelocity )
 
-            // Der gekrümmte Kegel (siehe buildCurvedConeGeometry) ist relativ zur aktuellen Position/
-            // Ausrichtung bereits vorgebaut - er muss pro Frame nur noch an dieselbe Position gesetzt
-            // und um die Z-Achse um den (jetzt festen) Phasenversatz gedreht werden, keine
-            // Neuberechnung der Rotation nötig (die Zeit-Abhängigkeit steckt in der Geometrie selbst).
+            // Kegel-Geometrie wurde oben schon pro WQ neu gebaut (updateCurvedConeGeometry) - hier nur
+            // noch Position/Ausrichtung setzen.
             const coneGroup = wqConeGroups[ ndx ]
             coneGroup.position.copy( wqGroup.position )
-            coneGroup.rotation.set( 0, 0, phaseOffset )
+            coneGroup.rotation.set( 0, 0, orientation )
 
             const trail = wqTrails[ ndx ]
             if ( wrapped ) {
