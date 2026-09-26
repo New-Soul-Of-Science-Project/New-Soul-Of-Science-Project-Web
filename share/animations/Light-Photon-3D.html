@@ -368,6 +368,108 @@
       let showRingAsTorus = false
       let paused = false
 
+      // Sichtbare (hellgraue) Ellipsenbahnen pro WQ und ±E/±B-Feldpfeile, per Control ein-/ausblendbar.
+      let showEllipsePaths = false
+      let showFieldArrows = true
+      let wqPathLines = []
+
+      // Baut für ein WQ mit fester Ausrichtung "orientation" die sichtbare (hellgraue) Ellipsenbahn -
+      // rein optisch, hat keinen Einfluss auf die Physik. Wird bei jeder Formänderung (Radius/
+      // Exzentrizität) und bei WQ-Anzahl-Änderungen neu gebaut, s. rebuildEllipsePathLines().
+      function buildEllipsePathLine( orientation ) {
+        const curve = new THREE.EllipseCurve( 0, 0, ellipseA, ellipseB, 0, pi2, false, 0 )
+        const points = curve.getPoints( 128 ).map( p => new THREE.Vector3( p.x, p.y, 0 ) )
+        const geometry = new THREE.BufferGeometry().setFromPoints( points )
+        const material = new THREE.LineBasicMaterial( { color: 0xd0d0d0 } )
+        const line = new THREE.LineLoop( geometry, material )
+        line.rotation.z = orientation
+        line.visible = showEllipsePaths
+        dphGroup.add( line )
+        return line
+      }
+
+      // Löst alle aktuellen Ellipsenbahn-Linien auf und baut sie für die aktuelle wqCount/Ellipsenform
+      // neu - einfacher als sie einzeln an WQ-Anzahl- oder Formänderungen anzupassen, da sie (anders
+      // als Kegel/Kugeln) keinen Animationszustand tragen.
+      function rebuildEllipsePathLines() {
+        wqPathLines.forEach( line => {
+          line.geometry.dispose()
+          line.material.dispose()
+          dphGroup.remove( line )
+        })
+        wqPathLines = []
+        for ( let ndx = 0; ndx < wqCount; ndx++ ) {
+          const orientation = pi2 / ( 2 * wqCount ) * ndx // s. Konzept-Diskussion in der Renderloop
+          wqPathLines.push( buildEllipsePathLine( orientation ) )
+        }
+      }
+
+      // ±E/±B-Feldpfeile (siehe Referenzabbildung "Photon_zirkular_pol_v21.jpg"): ±E zeigt immer zur
+      // Richtung der geringsten WQ-Dichte, ±B senkrecht dazu, s. Renderloop. Rein optisch, ohne
+      // Einfluss auf die Physik. Als echte Zylinder+Kegel-Meshes statt dünner "Line"-Objekte gebaut
+      // (wie bei den Spuren), da dünne Linien auf manchen GPUs nicht zuverlässig dick dargestellt
+      // werden (s. frühere Erfahrung mit LineMaterial/Line2 bei den Spuren).
+      const fieldArrowColorE = 0xcc2200
+      const fieldArrowColorB = 0x2266cc
+      const fieldArrowShaftRadius = radius * 0.012
+      const fieldArrowHeadRadius = radius * 0.035
+      const fieldArrowHeadLength = radius * 0.1
+      const fieldArrowYAxis = new THREE.Vector3( 0, 1, 0 )
+      function buildThickArrow( color ) {
+        const group = new THREE.Group()
+        const material = new THREE.MeshLambertMaterial( { color } )
+        const shaftGeo = new THREE.CylinderGeometry( fieldArrowShaftRadius, fieldArrowShaftRadius, 1, 16 )
+        const shaft = new THREE.Mesh( shaftGeo, material )
+        group.add( shaft )
+        const headGeo = new THREE.ConeGeometry( fieldArrowHeadRadius, 1, 24 )
+        const head = new THREE.Mesh( headGeo, material )
+        group.add( head )
+        group.userData.shaft = shaft
+        group.userData.head = head
+        group.visible = showFieldArrows
+        dphGroup.add( group )
+        return group
+      }
+      // Setzt Richtung (Einheitsvektor) und Gesamtlänge eines mit buildThickArrow() erzeugten Pfeils.
+      function updateThickArrow( arrow, direction, length ) {
+        arrow.quaternion.setFromUnitVectors( fieldArrowYAxis, direction )
+        const shaftLength = Math.max( 0, length - fieldArrowHeadLength )
+        const { shaft, head } = arrow.userData
+        shaft.scale.y = shaftLength
+        shaft.position.y = shaftLength / 2
+        head.scale.y = fieldArrowHeadLength
+        head.position.y = shaftLength + fieldArrowHeadLength / 2
+      }
+      const fieldArrowEPos = buildThickArrow( fieldArrowColorE )
+      const fieldArrowENeg = buildThickArrow( fieldArrowColorE )
+      const fieldArrowBPos = buildThickArrow( fieldArrowColorB )
+      const fieldArrowBNeg = buildThickArrow( fieldArrowColorB )
+
+      // "±E"/"±B"-Beschriftung an der Spitze von fieldArrowEPos/BPos, als immer zur Kamera gedrehtes
+      // Sprite (Canvas-Textur) - einfacher und zuverlässiger als 3D-Textgeometrie mit Font-Ladung.
+      function buildFieldArrowLabel( text, color ) {
+        const canvas = document.createElement( 'canvas' )
+        canvas.width = 256
+        canvas.height = 128
+        const ctx = canvas.getContext( '2d' )
+        ctx.font = 'bold 72px sans-serif'
+        ctx.fillStyle = color
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        ctx.fillText( text, canvas.width / 2, canvas.height / 2 )
+        const texture = new THREE.CanvasTexture( canvas )
+        const material = new THREE.SpriteMaterial( { map: texture, depthTest: false, transparent: true } )
+        const sprite = new THREE.Sprite( material )
+        sprite.scale.set( radius * 1.2, radius * 0.6, 1 )
+        sprite.visible = showFieldArrows
+        dphGroup.add( sprite )
+        return sprite
+      }
+      const fieldArrowLabelE = buildFieldArrowLabel( '±E', '#cc2200' )
+      const fieldArrowLabelB = buildFieldArrowLabel( '±B', '#2266cc' )
+      updateFieldArrowsVisibility() // Anfangszustand: an, aber nur sichtbar falls Polarisation > 0
+      rebuildEllipsePathLines()
+
       // Gekrümmter Kegel: statt eines geraden Kegels, der nur mitgedreht wird, wird die Form direkt
       // aus der Bahnkurve (Helix) abgeleitet - die Hüllfläche der Ringe, die die wq-Kugel entlang
       // ihrer Bahn "ausgesendet" hat. Bei einer Kreisbahn ist diese Form dank der Schrauben-Symmetrie
@@ -644,12 +746,16 @@
         const frequencyName = 'Frequenz'
         const translationSpeedName = 'Variable LG in 3D / Gravitation'
         const polarizationName = 'Polarisation (dunkel/hell)'
+        const showFieldArrowsName = 'Pfeile ±E / ±B anzeigen'
+        const showEllipsePathsName = 'Ellipsenbahnen anzeigen'
         const settings = {
           [showRingName]: showRingAsTorus,
           [pausedName]: paused,
           [frequencyName]: frequencyFactor,
           [translationSpeedName]: translationSpeedFactor,
           [polarizationName]: polarization,
+          [showFieldArrowsName]: showFieldArrows,
+          [showEllipsePathsName]: showEllipsePaths,
         }
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
@@ -659,6 +765,8 @@
         panel.add( settings, translationSpeedName, 0.05, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
         // 0 = dunkel (Kreisbahn), 1 = hell/maximal polarisiert (Ellipsenbahn), s. Konzept-Diskussion
         panel.add( settings, polarizationName, 0, 1.5, 0.05 ).onChange( updatePolarization )
+        panel.add( settings, showFieldArrowsName ).onChange( toggleFieldArrows )
+        panel.add( settings, showEllipsePathsName ).onChange( toggleEllipsePaths )
       }
 
       function toggleShowRingAsTorus( checked ) {
@@ -671,9 +779,33 @@
         paused = checked
       }
 
+      // Tatsächlich sichtbar nur, wenn per Control aktiviert UND Polarisation > 0 - bei Kreisbahn
+      // (Polarisation 0) gibt es keine Richtung geringster Dichte, die Pfeile blenden sich dann
+      // automatisch aus (unabhängig vom Control-Zustand, der dabei erhalten bleibt).
+      function updateFieldArrowsVisibility() {
+        const visible = showFieldArrows && polarization > 0
+        fieldArrowEPos.visible = visible
+        fieldArrowENeg.visible = visible
+        fieldArrowBPos.visible = visible
+        fieldArrowBNeg.visible = visible
+        fieldArrowLabelE.visible = visible
+        fieldArrowLabelB.visible = visible
+      }
+
+      function toggleFieldArrows( checked ) {
+        showFieldArrows = checked
+        updateFieldArrowsVisibility()
+      }
+
+      function toggleEllipsePaths( checked ) {
+        showEllipsePaths = checked
+        wqPathLines.forEach( line => line.visible = checked )
+      }
+
       function updatePolarization( newValue ) {
         polarization = newValue
         rebuildAfterSpeedChange() // recomputeEllipseShape() ist Teil davon, plus Spuren-Reset
+        updateFieldArrowsVisibility()
       }
 
       // Nach jeder Änderung von Frequenz oder Translationsgeschwindigkeit: abgeleitete Größen neu
@@ -691,6 +823,7 @@
         // muss daher nach rebuildWqCountIfNeeded() neu berechnet werden.
         recomputeConeShape()
         recomputeEllipseShape()
+        rebuildEllipsePathLines() // Form/Anzahl können sich geändert haben, s.o.
 
         // Bogenlänge 0, passend zum "simulatedElapsedTime = 0"-Reset unten - sofortige Wirkung auch
         // im pausierten Zustand (der Renderloop baut die Geometrie sonst nur bei laufender Animation
@@ -836,6 +969,29 @@
             }
             updateTrail( trail, wqGroup )
           })
+
+          if ( showFieldArrows && polarization > 0 ) {
+            // ±E zeigt zur Richtung der geringsten WQ-Dichte. Statt der größten Winkel-Lücke (die beim
+            // Vorbeiziehen zweier ähnlich großer Lücken abrupt umspringen kann) wird der Schwerpunkt-
+            // Vektor aller 8 Richtungen gebildet - er zeigt zur höchsten Dichte, ±E also entgegengesetzt.
+            // Das ändert sich stetig mit der Bewegung der wq-Einheiten, kein Springen mehr.
+            let sumX = 0, sumY = 0
+            wqGroups.forEach( wqGroup => {
+              const len = Math.hypot( wqGroup.position.x, wqGroup.position.y ) || 1
+              sumX += wqGroup.position.x / len
+              sumY += wqGroup.position.y / len
+            })
+            const eAngle = Math.atan2( -sumY, -sumX )
+            const eDir = new THREE.Vector3( Math.cos( eAngle ), Math.sin( eAngle ), 0 )
+            const bDir = new THREE.Vector3( -Math.sin( eAngle ), Math.cos( eAngle ), 0 )
+            const arrowLength = ellipseA * 1.3
+            updateThickArrow( fieldArrowEPos, eDir, arrowLength )
+            updateThickArrow( fieldArrowENeg, eDir.clone().negate(), arrowLength )
+            updateThickArrow( fieldArrowBPos, bDir, arrowLength )
+            updateThickArrow( fieldArrowBNeg, bDir.clone().negate(), arrowLength )
+            fieldArrowLabelE.position.copy( eDir ).multiplyScalar( arrowLength * 1.15 )
+            fieldArrowLabelB.position.copy( bDir ).multiplyScalar( arrowLength * 1.15 )
+          }
         }
 
         render.renderer.render( render.scene, render.camera )
