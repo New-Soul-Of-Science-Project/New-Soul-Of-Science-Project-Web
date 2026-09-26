@@ -1410,6 +1410,7 @@
                     array_merge( $FrQFT_g_figure_ary_Matrioschkas, array( name => 'OM:FrQFT:NeuePhysik:Fig-Matrioschkas'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_RelatDichte, array( name => 'OM:FrQFT:NeuePhysik:Fig-RelatDichte'))),
+
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos', text =>
                                            
                 'Verschachtelte Schwarze Löcher und Kosmoi')),
@@ -1567,6 +1568,9 @@
                       
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_PhotonWQ, array( name => 'OM:FrQFT:NeuePhysik:Fig-Photon'))),
+                  array( 'iframe',
+                    array_merge( $FrQFT_g_iframe_ary_PhotonWQ, array( name => 'OM:FrQFT:NeuePhysik:LiveAni-Photon'))),
+
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen', text =>
                                            
                 'Photonen')),

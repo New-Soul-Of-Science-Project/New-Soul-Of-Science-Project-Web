@@ -717,8 +717,13 @@
                                                          print_image => $Glo_PathRel_back.'../share/images/FrQFT/Dark-Photon-3D-print.png',
                                                          print_image_alt => 'Vakuum-Elapson, interaktive 3D-Animation');
 
-  
-  
+  $FrQFT_g_iframe_ary_PhotonWQ                  = array( source => $Glo_PathRel_back.'../share/animations/Light-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt, wie jedes Wirkungsquant auf einer eigenen, fest orientierten elliptischen Bahn um das Zentrum kreist.'."\n".
+                                                                  'Da die Ellipsen der einzelnen Wirkungsquanten gegeneinander verdreht sind, ergibt ihre gemeinsame Bewegung die zirkulare Polarisation des Photons.'."\n".
+                                                                  'Der Regler "Polarisation" erlaubt den stufenlosen Übergang zwischen einem unpolarisierten (kreisförmigen) und einem zirkular polarisierten (elliptischen) Wirkungsquanten-String.');
+
+
+
   // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_Lepton_highRes" in Verwendung.
@@ -1473,7 +1478,7 @@
            text_undertitel_h2 => 'Das ›Problem der Zeit‹ – Problembeschreibung, Lösungshypothese und Entwicklung eines allgemeinen Prinzips der Physik',
            //text_titel_discr_h3 => 'Das Higgs-Feld des Vakuums und die Elementarteilchen bestehen aus fraktalen Wirkungsquanten-Strings, die eine Struktur aus Zeit-Ebenen bilden.',
            jump_ary => array(
-                  'OM:FrQFT:NeuePhysik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:FrQFT:NeuePhysik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                              
                   'OM:FrQFT:NeuePhysik:Ein-Prinzip-fuer-Alles' => array( headline_text => 'Ein Prinzip für Alles', headline_text_short => 'Ein Prinzip für Alles'),
@@ -1540,6 +1545,7 @@
                              
                   'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation' => array( headline_text => 'Elektromagnetische Polarisation', headline_text_short => 'Elektromagnetische Polarisation'),
                     'OM:FrQFT:NeuePhysik:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                    'OM:FrQFT:NeuePhysik:LiveAni-Photon' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
                     'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen' => array( headline_text => 'Photonen', headline_text_short => 'Photonen'),
                     'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:SymEMWW' => array( headline_text => 'Symmetriebruch zur elektromagnetischen Wechselwirkung', headline_text_short => 'Symmetriebruch zur elektromagnetischen Wechselwirkung'),
                              
