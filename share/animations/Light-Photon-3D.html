@@ -633,9 +633,16 @@
           torusGroup.add( torus );
 
           // Alternative Darstellung des Mikro-Wirkungsquants als rote Kugel (gleiche Farbe wie der Ring),
-          // per Control umschaltbar; im Anfangszustand sichtbar, der Ring ausgeblendet
+          // per Control umschaltbar; im Anfangszustand sichtbar, der Ring ausgeblendet.
+          // MeshPhongMaterial statt MeshLambertMaterial, da die reine diffuse Lambert-Schattierung
+          // ohne Glanzlicht bei dieser Größe zu wenig räumliche Tiefe zeigte (wirkte flach) - ein
+          // dezentes Glanzlicht (wie beim Kegel-Material) macht die Kugelform deutlicher erkennbar.
           const ringSphereGeo = new THREE.SphereGeometry( torusRadius * coneScale, 32, 32 )
-          const ringSphereMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
+          const ringSphereMat = new THREE.MeshPhongMaterial({
+            color: 0xcc0000,
+            shininess: 8, // gering, damit die 3 Lichtquellen der Szene nicht als scharfe Glanzpunkte erscheinen
+            specular: 0x1a1a1a, // dezent statt hell, für einen eher matten statt glänzenden Eindruck
+          })
           const ringSphere = new THREE.Mesh( ringSphereGeo, ringSphereMat )
           wqGroup.add( ringSphere )
 
