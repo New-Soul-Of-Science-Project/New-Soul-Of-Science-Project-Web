@@ -857,7 +857,7 @@
       function createPanel() {
         const buttonShowSecondTetrahedronName = 'Zeige beide Tetraeder'
         const panelWidth = eleWidth / 2
-        const panel = new GUI({ width: panelWidth })
+        const panel = new GUI({ width: panelWidth, title: 'Einstellungen' })
         panel.close() // eingeklappt starten (wie Dark-Photon-3D.html)
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
         // aber nur eleWidth x eleHeight groß. Daher stattdessen unten links im #container verankern

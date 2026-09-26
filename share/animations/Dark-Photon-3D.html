@@ -517,7 +517,7 @@
       function createPanel() {
         const showRingName = 'Micro-Wirkungsquanten als Ringe anzeigen'
         const panelWidth = eleWidth / 2
-        const panel = new GUI({ width: panelWidth })
+        const panel = new GUI({ width: panelWidth, title: 'Einstellungen' })
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
         // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
