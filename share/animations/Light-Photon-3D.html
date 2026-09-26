@@ -460,7 +460,7 @@
         const texture = new THREE.CanvasTexture( canvas )
         const material = new THREE.SpriteMaterial( { map: texture, depthTest: false, transparent: true } )
         const sprite = new THREE.Sprite( material )
-        sprite.scale.set( radius * 1.2, radius * 0.6, 1 )
+        sprite.scale.set( radius * 0.85, radius * 0.425, 1 )
         sprite.visible = showFieldArrows
         dphGroup.add( sprite )
         return sprite
@@ -759,14 +759,14 @@
         }
         panel.add( settings, pausedName ).onChange( togglePaused )
         panel.add( settings, showRingName ).onChange( toggleShowRingAsTorus )
+        panel.add( settings, showEllipsePathsName ).onChange( toggleEllipsePaths )
         // Vielfaches der Grundfrequenz, 1 = bisheriges Standardtempo (s. baseFrequency)
         frequencyController = panel.add( settings, frequencyName, 0.4, 3, 0.05 ).onChange( updateFrequencyFactor )
         // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
         panel.add( settings, translationSpeedName, 0.05, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
+        panel.add( settings, showFieldArrowsName ).onChange( toggleFieldArrows )
         // 0 = dunkel (Kreisbahn), 1 = hell/maximal polarisiert (Ellipsenbahn), s. Konzept-Diskussion
         panel.add( settings, polarizationName, 0, 1.5, 0.05 ).onChange( updatePolarization )
-        panel.add( settings, showFieldArrowsName ).onChange( toggleFieldArrows )
-        panel.add( settings, showEllipsePathsName ).onChange( toggleEllipsePaths )
       }
 
       function toggleShowRingAsTorus( checked ) {
@@ -989,7 +989,7 @@
             updateThickArrow( fieldArrowENeg, eDir.clone().negate(), arrowLength )
             updateThickArrow( fieldArrowBPos, bDir, arrowLength )
             updateThickArrow( fieldArrowBNeg, bDir.clone().negate(), arrowLength )
-            fieldArrowLabelE.position.copy( eDir ).multiplyScalar( arrowLength * 1.15 )
+            fieldArrowLabelE.position.copy( eDir ).multiplyScalar( -arrowLength * 1.15 )
             fieldArrowLabelB.position.copy( bDir ).multiplyScalar( arrowLength * 1.15 )
           }
         }
