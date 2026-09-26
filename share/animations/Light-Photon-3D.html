@@ -198,8 +198,8 @@
       // Alle wq-Einheiten teilen dieselbe Uhr; die scheinbare Rotation der Gesamtfigur entsteht rein
       // daraus, dass dieselbe Uhr durch 8 unterschiedlich fest gedrehte (nicht kreisförmige) Ellipsen
       // "betrachtet" wird - keine zusätzliche Präzession nötig.
-      let polarization = 0
-      const maxEllipseStretch = 0.5 // bei polarization=1: a = radius*1.5, b = radius*0.5
+      let polarization = 1 // Standardmäßig hell/polarisiert, nicht dunkel
+      const maxEllipseStretch = 0.5 // bei polarization=1: a = radius*1.5, b = radius*0.5; bei 2: a=2·radius, b→0
       let ellipseA, ellipseB // aktuelle Halbachsen (a: in ursprünglicher +X-Richtung der eigenen Ellipse)
       let ellipseArcTable // bogenlängen-Lookup, s. buildEllipseArcTable()
 
@@ -260,7 +260,10 @@
       }
 
       function recomputeEllipseShape() {
-        const stretch = polarization * maxEllipseStretch
+        // Auf 0.98 begrenzt, damit ellipseB bei polarization=2 nicht exakt 0 wird - eine vollständig
+        // entartete (auf eine Linie zusammengefallene) Ellipse hätte an ihren Enden eine Tangente der
+        // Länge 0 (Kehrtwende), was beim Normalisieren zu NaN führen würde.
+        const stretch = Math.min( 0.98, polarization * maxEllipseStretch )
         ellipseA = radius * ( 1 + stretch )
         ellipseB = radius * ( 1 - stretch )
         ellipseArcTable = buildEllipseArcTable( ellipseA, ellipseB )
@@ -655,7 +658,7 @@
         // 0 bis √2: die volle Bahngeschwindigkeit geht dann komplett in Translation, keine Rotation mehr
         panel.add( settings, translationSpeedName, 0.05, Math.SQRT2, 0.05 ).onChange( updateTranslationSpeedFactor )
         // 0 = dunkel (Kreisbahn), 1 = hell/maximal polarisiert (Ellipsenbahn), s. Konzept-Diskussion
-        panel.add( settings, polarizationName, 0, 1, 0.05 ).onChange( updatePolarization )
+        panel.add( settings, polarizationName, 0, 1.5, 0.05 ).onChange( updatePolarization )
       }
 
       function toggleShowRingAsTorus( checked ) {
@@ -809,8 +812,11 @@
             // Bewegungsrichtung = Ableitung der Position nach der Zeit: Bahnbewegung in der
             // Querschnittsebene (konstante Bahngeschwindigkeit tangentialSpeed, s.o.) + Translation
             // entlang Z (translationSpeedLocal) - beide bereits im selben dphGroup-lokalen Maßstab.
-            const tanX = localEllipse.tx * cosP - localEllipse.ty * sinP
-            const tanY = localEllipse.tx * sinP + localEllipse.ty * cosP
+            // "tx,ty" zeigen in Richtung wachsender Bogenlänge s, aber s nimmt mit der Zeit AB
+            // (sharedArc = -tangentialSpeed*wrappedTime) - die tatsächliche Bewegungsrichtung ist
+            // daher das Negative davon (sonst zeigt z.B. der Ring/Torus in die falsche Richtung).
+            const tanX = -( localEllipse.tx * cosP - localEllipse.ty * sinP )
+            const tanY = -( localEllipse.tx * sinP + localEllipse.ty * cosP )
             wqVelocity.set(
               tanX * tangentialSpeed,
               tanY * tangentialSpeed,
