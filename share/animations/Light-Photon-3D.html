@@ -744,15 +744,15 @@
         panel.close() // eingeklappt starten
         // lil-gui positioniert sich standardmäßig fix oben rechts am Browserfenster; die Szene ist
         // aber nur eleWidth x eleHeight groß - bei einem breiten Fenster wäre das Panel sonst weit
-        // von der sichtbaren Szene entfernt. Daher stattdessen unten rechts im #container verankern,
+        // von der sichtbaren Szene entfernt. Daher stattdessen unten links im #container verankern,
         // per "bottom" statt einem in JS berechneten "top" - wächst beim Aufklappen dadurch rein per
         // CSS (synchron mit lil-guis eigener Animation) nach oben, ganz ohne Nachrechnen.
         // .setProperty(..., 'important') statt .style.xyz, da main.css eine @media(max-width:640px)-Regel
         // für .lil-gui.root mitbringt (left:0/right:auto/bottom:0), die sonst je nach Fenstergröße
         // Vorrang bekommen könnte.
         panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
-        panel.domElement.style.setProperty( 'right', '0px', 'important' )
-        panel.domElement.style.setProperty( 'left', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'left', '0px', 'important' )
+        panel.domElement.style.setProperty( 'right', 'auto', 'important' )
         panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
         panel.domElement.style.setProperty( 'top', 'auto', 'important' ) // sonst bleibt lil-guis eigenes "top:0" aktiv und spannt das Panel über die volle Höhe auf
         container.appendChild( panel.domElement )
