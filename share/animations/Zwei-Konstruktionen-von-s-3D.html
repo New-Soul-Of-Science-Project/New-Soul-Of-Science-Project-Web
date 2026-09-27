@@ -223,6 +223,42 @@
         groundPoints.set( key, { p, q, mesh } )
       }
 
+      /*--------------------
+      Historie: bevor die nächste Zahl fällt, wird eine "eingefrorene" Kopie der aktuellen
+      Bodenlinie (Linie + ihre roten Punkte, im jeweils aktuellen "currentWidth") angelegt und auf
+      der virtuellen Ebene ein Stück weiter nach hinten (kleineres Z) gesetzt - so sammeln sich die
+      Kopien nacheinander in die Tiefe. Wird beim Neustart des Zyklus komplett geleert.
+      --------------------*/
+      const historyRowSpacing = 0.35
+      let lineHistory = [] // [{ z, line, points: [{p,q,mesh}] }]
+      let historyDepth = 0
+
+      function snapshotGroundLine() {
+        historyDepth += historyRowSpacing
+        const z = groundZ - historyDepth
+        const line = buildThickLine()
+        line.position.z = z
+        setThickLineLength( line, currentWidth )
+        render.scene.add( line )
+        const points = []
+        groundPoints.forEach( ( { p, q } ) => {
+          const mesh = new THREE.Mesh( pointGeo, groundPointMat )
+          mesh.position.set( ( p / q ) * currentWidth, 0, z )
+          render.scene.add( mesh )
+          points.push( { p, q, mesh } )
+        })
+        lineHistory.push( { z, line, points } )
+      }
+
+      function clearLineHistory() {
+        lineHistory.forEach( ( { line, points } ) => {
+          render.scene.remove( line )
+          points.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
+        })
+        lineHistory = []
+        historyDepth = 0
+      }
+
       function clearGroundPoints() {
         groundPoints.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
         groundPoints.clear()
@@ -396,8 +432,12 @@
           clearGroundPoints()
           clearMissingPoints()
           clearGroundLabel()
+          clearLineHistory()
           currentL = 1
           currentK = 1
+        } else {
+          // Bevor die nächste Zahl fällt: eine eingefrorene Kopie der jetzigen Bodenlinie anlegen
+          snapshotGroundLine()
         }
 
         waitingToSpawn = true
@@ -418,6 +458,11 @@
           mesh.position.x = ( p / q ) * currentWidth
         })
         updateMissingTargetScale() // Dichte (Abstand pro Punkt) hängt von currentWidth ab
+
+        lineHistory.forEach( ( { line, points } ) => {
+          setThickLineLength( line, currentWidth )
+          points.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * currentWidth } )
+        })
 
         if ( groundLabel ) {
           groundLabel.position.x = currentWidth + labelRightMargin
