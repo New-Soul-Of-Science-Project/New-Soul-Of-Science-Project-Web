@@ -706,7 +706,7 @@
                 'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
+                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \lm{ \s }}'."\n".
                     'über ihr \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{aktual unendliches Primexponentenprodukt} äquivalent sind:'."\n",
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
