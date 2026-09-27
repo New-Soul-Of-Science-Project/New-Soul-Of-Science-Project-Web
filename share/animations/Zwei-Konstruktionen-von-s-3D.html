@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zwei-Konstruktionen-von-s-3D – Superial-Zahlen</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="animation.css">
+    <style>
+      body { margin: 0; }
+      #info h1 { line-height: 1.4; margin: 10px 0 5px 0; }
+      #info h2 { line-height: 1.4; margin: 0 0 10px 0; }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1>Die zwei Konstruktionen von s</h1>
+      <h2 id="headline">Jede Zeile natürlicher Rhythmen fällt auf die entstehende Zahlengerade und verschmilzt mit ihr</h2>
+    </div>
+
+    <!-- *** Imports *** -->
+    <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.186.0/build/three.module.js",
+          "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
+          "render": "./js/render-v0.186.0.js"
+        }
+      }
+    </script>
+
+    <script type="module">
+
+      import * as THREE from 'three'
+
+      import { GUI } from 'https://unpkg.com/three@0.186.0/examples/jsm/libs/lil-gui.module.min.js'
+
+      import {
+        pi2,
+        blackColor,
+        intensityLightScaling,
+      } from 'const'
+      import { Render } from 'render'
+
+      // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
+      const eleWidth = 660
+      const eleHeight = 450
+
+      const render = new Render( eleWidth, eleHeight )
+
+      const container = document.getElementById( 'container' )
+      container.style.width = render.dimensions.width + 'px'
+      container.style.height = render.dimensions.height + 'px'
+      container.style.position = 'relative'
+      container.appendChild( render.renderer.domElement )
+
+      const info = document.getElementById( 'info' )
+      info.style.width = render.dimensions.width + 'px'
+
+      // heller Hintergrund, wie bei den Photon-Animationen
+      render.scene.background = new THREE.Color( 0xf8f8f8 )
+      render.renderer.shadowMap.enabled = false
+
+      // Zusätzliches, weiches Umgebungslicht - die Szene besteht nur aus einfachen, matten
+      // Kugeln/Linien/einer Bodenfläche und braucht keine dramatische Ausleuchtung wie die
+      // Photon-Animationen.
+      const ambientLight = new THREE.AmbientLight( 0xffffff, 2.2 * Math.PI )
+      render.scene.add( ambientLight )
+      render.spotLight.position.set( 2, 4, 3 )
+      render.spotLight.intensity *= 3
+
+      /*--------------------
+      Mathematik: Zeile k unterteilt die Strecke [0,1] in k gleiche Teile, also Punkte bei den
+      Brüchen i/k (i=0..k). Die "kombinierte" Zahlengerade ist die Vereinigung aller Punkte aller
+      bisher gefallenen Zeilen 1..k - das ist exakt die Farey-Folge der Ordnung k. Brüche werden
+      für den Vereinigungs-Vergleich per ggT gekürzt (exakte rationale Gleichheit, keine
+      Gleitkomma-Toleranz nötig), damit z.B. 2/4 als bereits vorhandenes 1/2 erkannt wird.
+      --------------------*/
+      function gcd( a, b ) { return b === 0 ? a : gcd( b, a % b ) }
+      function reduceFraction( i, k ) {
+        if ( i === 0 ) return { p: 0, q: 1 }
+        const g = gcd( i, k )
+        return { p: i / g, q: k / g }
+      }
+
+      /*--------------------
+      Darstellung (siehe Konzept-Diskussion "Zwei-Konstruktionen-von-s, Fallanimation"): die
+      kombinierte Zahlengerade ruht fest unten (y=0) auf einer virtuellen Bodenebene vor dem
+      Betrachter. Von oben fällt Zeile für Zeile (k=1,2,3,...) calm herunter; beim Aufsetzen
+      verschwindet die gefallene Zeile (Linie + eigene schwarze Punkte), ihre NEUEN Brüche
+      bleiben als rote Punkte auf der Bodenlinie liegen. "constructionMix" (0..1) skaliert dabei
+      die Breite der gesamten Darstellung zwischen der Teilung (kompakt) und der Wiederholung
+      (weit) - dieselbe Punktmenge, nur unterschiedlich groß dargestellt.
+      --------------------*/
+      const compactWidth = 1.0    // Breite bei constructionMix = 0 (Teilung/klein)
+      const extendedWidth = 2.6   // Breite bei constructionMix = 1 (Wiederholung/groß)
+      const fallStartHeight = 1.5 // Starthöhe einer fallenden Zeile über der Bodenlinie
+      const groundZ = 0.5         // Tiefen-Position von Bodenlinie und fallenden Zeilen
+      const pointRadius = 0.022
+
+      let constructionMix = 0.35
+      let currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
+      let maxRhythms = 6
+      let speedFactor = 1
+      let paused = false
+
+      const pointMat = new THREE.MeshLambertMaterial( { color: 0x000000 } )
+      const groundPointMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
+      const lineMat = new THREE.LineBasicMaterial( { color: 0x000000 } )
+      const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
+
+      // Beschriftung ("k=…") als immer zur Kamera gedrehtes Sprite (Canvas-Textur), wie bei den
+      // ±E/±B-Beschriftungen der Photon-Animationen.
+      function buildLabel( text, color = '#000000' ) {
+        const canvas = document.createElement( 'canvas' )
+        canvas.width = 256
+        canvas.height = 96
+        const ctx = canvas.getContext( '2d' )
+        ctx.font = 'bold 52px sans-serif'
+        ctx.fillStyle = color
+        ctx.textAlign = 'left'
+        ctx.textBaseline = 'middle'
+        ctx.fillText( text, 4, canvas.height / 2 )
+        const texture = new THREE.CanvasTexture( canvas )
+        const material = new THREE.SpriteMaterial( { map: texture, depthTest: false, transparent: true } )
+        const sprite = new THREE.Sprite( material )
+        sprite.scale.set( 0.3, 0.11, 1 )
+        return sprite
+      }
+
+      /*--------------------
+      Virtuelle Bodenebene, nur als dezente, helle Fläche - macht sichtbar, dass die Bodenlinie
+      "auf" etwas ruht, statt frei im Raum zu schweben.
+      --------------------*/
+      const floorMat = new THREE.MeshLambertMaterial( { color: 0xeeeeee } )
+      const floorGeo = new THREE.PlaneGeometry( 1, 1 )
+      const floor = new THREE.Mesh( floorGeo, floorMat )
+      floor.rotation.x = -pi2 / 4 // von der XY- in die XZ-Ebene drehen (horizontal, wie ein Boden)
+      render.scene.add( floor )
+
+      /*--------------------
+      Bodenlinie (bleibt immer bestehen) + die darauf liegenden roten Punkte (wachsen über die Zeit).
+      --------------------*/
+      const groundLineGeo = new THREE.BufferGeometry().setFromPoints([
+        new THREE.Vector3( 0, 0, groundZ ),
+        new THREE.Vector3( currentWidth, 0, groundZ ),
+      ])
+      const groundLine = new THREE.Line( groundLineGeo, lineMat )
+      render.scene.add( groundLine )
+
+      let groundPoints = new Map() // key "p/q" -> { p, q, mesh }
+
+      function addGroundPoint( p, q ) {
+        const key = p + '/' + q
+        if ( groundPoints.has( key ) ) return
+        const mesh = new THREE.Mesh( pointGeo, groundPointMat )
+        mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
+        render.scene.add( mesh )
+        groundPoints.set( key, { p, q, mesh } )
+      }
+
+      function clearGroundPoints() {
+        groundPoints.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
+        groundPoints.clear()
+      }
+
+      /*--------------------
+      Kamera: fest (kein autoRotate mehr) - Blick fast frontal, leicht erhöht, auf die Bodenlinie
+      unten im Bild; Zielpunkt/Position folgen "currentWidth", damit der Konstruktions-Regler die
+      Ansicht nicht verschiebt.
+      --------------------*/
+      const cameraDir = new THREE.Vector3( 0, 0.32, 0.95 ).normalize()
+      const cameraDistance = 19
+      function updateCameraFraming() {
+        // target-y bewusst deutlich unter der Mitte von "fallStartHeight", damit über der
+        // startenden Zeile genug Rand bleibt (sonst überlappt sie beim Spawnen mit der
+        // Titel-Überlagerung von "#info" oben im Bild, s. main.css #info { position: absolute }).
+        const target = new THREE.Vector3( currentWidth / 2, fallStartHeight * 0.65, groundZ )
+        render.camera.position.copy( target ).addScaledVector( cameraDir, cameraDistance )
+        render.controls.target.copy( target )
+        render.controls.update()
+      }
+      updateCameraFraming()
+
+      /*--------------------
+      Fallende Zeile: eigene Linie + eigene (ungekürzte) schwarze Punkte i/k, i=0..k - entspricht
+      genau einer Zeile der Referenzabbildungen. Fällt in Ruhe (ease-out, wie ein sanftes Aufsetzen)
+      von "fallStartHeight" auf 0 herab.
+      --------------------*/
+      let fallingRow = null // { group, k, line, spheres: [{sphere,i,k}], label }
+      let currentK = 1
+      let fallElapsed = 0
+      let pauseElapsed = 0
+      let waitingToSpawn = true // Startzustand: erste Zeile erscheint nach kurzer Pause
+      const baseFallDuration = 4.0  // Sekunden bei speedFactor=1 - "ganz in Ruhe"
+      const basePauseDuration = 0.9 // Pause zwischen Aufsetzen und nächstem Start
+
+      function spawnRow( k ) {
+        const group = new THREE.Group()
+
+        const lineGeo = new THREE.BufferGeometry().setFromPoints([
+          new THREE.Vector3( 0, 0, 0 ),
+          new THREE.Vector3( currentWidth, 0, 0 ),
+        ])
+        const line = new THREE.Line( lineGeo, lineMat )
+        group.add( line )
+
+        const spheres = []
+        for ( let i = 0; i <= k; i++ ) {
+          const sphere = new THREE.Mesh( pointGeo, pointMat )
+          sphere.position.set( ( i / k ) * currentWidth, 0, 0 )
+          group.add( sphere )
+          spheres.push( { sphere, i, k } )
+        }
+
+        const label = buildLabel( 'k=' + k )
+        label.position.set( -0.16, 0.08, 0 )
+        group.add( label )
+
+        group.position.set( 0, fallStartHeight, groundZ )
+        render.scene.add( group )
+
+        fallingRow = { group, k, line, spheres, label }
+      }
+
+      function disposeFallingRow() {
+        if ( !fallingRow ) return
+        fallingRow.line.geometry.dispose()
+        fallingRow.spheres.forEach( ( { sphere } ) => sphere.geometry === pointGeo || sphere.geometry.dispose() )
+        fallingRow.label.material.map.dispose()
+        fallingRow.label.material.dispose()
+        render.scene.remove( fallingRow.group )
+        fallingRow = null
+      }
+
+      // Landung: neue (noch nicht vorhandene) Brüche der Zeile bleiben als rote Punkte auf der
+      // Bodenlinie liegen, die gefallene Zeile selbst verschwindet vollständig.
+      function landRow() {
+        const k = fallingRow.k
+        for ( let i = 0; i <= k; i++ ) {
+          const { p, q } = reduceFraction( i, k )
+          addGroundPoint( p, q )
+        }
+        disposeFallingRow()
+
+        currentK++
+        if ( currentK > maxRhythms ) {
+          clearGroundPoints()
+          currentK = 1
+        }
+
+        waitingToSpawn = true
+        pauseElapsed = 0
+      }
+
+      // Repositioniert alles, was von "currentWidth" abhängt (Bodenlinie, rote Punkte, Bodenfläche,
+      // die evtl. gerade fallende Zeile, Kamera-Rahmung) - aufgerufen bei jeder Änderung des
+      // Konstruktions-Reglers, ohne die laufende Fallanimation zu unterbrechen.
+      function rebuildForWidthChange() {
+        groundLine.geometry.dispose()
+        groundLine.geometry = new THREE.BufferGeometry().setFromPoints([
+          new THREE.Vector3( 0, 0, groundZ ),
+          new THREE.Vector3( currentWidth, 0, groundZ ),
+        ])
+
+        groundPoints.forEach( ( { p, q, mesh } ) => {
+          mesh.position.x = ( p / q ) * currentWidth
+        })
+
+        const floorMarginX = 0.4
+        const floorDepth = 1.3
+        floor.geometry.dispose()
+        floor.geometry = new THREE.PlaneGeometry( currentWidth + floorMarginX * 2, floorDepth )
+        floor.position.set( currentWidth / 2, 0, groundZ + floorDepth * 0.15 )
+
+        if ( fallingRow ) {
+          fallingRow.line.geometry.dispose()
+          fallingRow.line.geometry = new THREE.BufferGeometry().setFromPoints([
+            new THREE.Vector3( 0, 0, 0 ),
+            new THREE.Vector3( currentWidth, 0, 0 ),
+          ])
+          fallingRow.spheres.forEach( ( { sphere, i, k } ) => {
+            sphere.position.x = ( i / k ) * currentWidth
+          })
+        }
+
+        updateCameraFraming()
+      }
+      rebuildForWidthChange() // Bodenfläche/Kamera einmalig auf den Startwert von currentWidth bringen
+
+      /*--------------------
+      Control-Panel
+      --------------------*/
+      function createPanel() {
+        const panelWidth = eleWidth / 2
+        const panel = new GUI( { width: panelWidth, title: 'Einstellungen' } )
+        panel.close()
+        panel.domElement.style.setProperty( 'position', 'absolute', 'important' )
+        panel.domElement.style.setProperty( 'left', '0px', 'important' )
+        panel.domElement.style.setProperty( 'right', 'auto', 'important' )
+        panel.domElement.style.setProperty( 'bottom', '0px', 'important' )
+        panel.domElement.style.setProperty( 'top', 'auto', 'important' )
+        container.appendChild( panel.domElement )
+
+        const pausedName = 'Animation anhalten'
+        const constructionMixName = 'Konstruktion: Teilung ⟷ Wiederholung'
+        const maxRhythmsName = 'Rhythmen bis zum Neustart (n)'
+        const speedName = 'Fallgeschwindigkeit'
+        const settings = {
+          [pausedName]: paused,
+          [constructionMixName]: constructionMix,
+          [maxRhythmsName]: maxRhythms,
+          [speedName]: speedFactor,
+        }
+        panel.add( settings, pausedName ).onChange( v => { paused = v } )
+        panel.add( settings, constructionMixName, 0, 1, 0.01 ).onChange( v => {
+          constructionMix = v
+          currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
+          rebuildForWidthChange()
+        })
+        panel.add( settings, maxRhythmsName, 3, 8, 1 ).onChange( v => { maxRhythms = v } )
+        panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
+      }
+      createPanel()
+
+      const maxDelta = 1 / 30 // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war
+
+      render.renderer.setAnimationLoop(() => {
+        const rawDelta = render.clock.getDelta()
+        render.controls.update() // nötig für manuelles Orbiten per Maus/Touch
+
+        if ( !paused ) {
+          const delta = Math.min( rawDelta, maxDelta ) * speedFactor
+
+          if ( waitingToSpawn ) {
+            pauseElapsed += delta
+            if ( pauseElapsed >= basePauseDuration ) {
+              waitingToSpawn = false
+              fallElapsed = 0
+              spawnRow( currentK )
+            }
+          } else if ( fallingRow ) {
+            fallElapsed += delta
+            const t = Math.min( 1, fallElapsed / baseFallDuration )
+            // ease-in-out (statt linear/ease-out): sowohl der Start als auch das Aufsetzen sind
+            // sanft, kein abruptes Losschnellen direkt nach dem Erscheinen - passend zu "ganz in
+            // Ruhe fallen".
+            const eased = 0.5 - 0.5 * Math.cos( Math.PI * t )
+            fallingRow.group.position.y = fallStartHeight * ( 1 - eased )
+            if ( t >= 1 ) landRow()
+          }
+        }
+
+        render.renderer.render( render.scene, render.camera )
+      });
+
+    </script>
+  </body>
+</html>
