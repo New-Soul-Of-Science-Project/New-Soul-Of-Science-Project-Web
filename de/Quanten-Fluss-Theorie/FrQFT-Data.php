@@ -159,7 +159,7 @@
 
         'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten' => array( headline_text => 'Strings aus Wirkungsquanten', headline_text_short => 'Strings aus Wirkungsquanten'),
           'OM:FrQFT:NeuePhysik:Fig-Wq-String-Unmoeg-Konstella' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-          'OM:FrQFT:NeuePhysik:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+          'OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
           'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW' => array( headline_text => 'Zusammenhalt der Wirkungsquanten', headline_text_short => 'Zusammenhalt der Wirkungsquanten'),
           'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE' => array( headline_text => 'Wirkungsquanten-Strings und Vakuum-Elapsonen', headline_text_short => 'Wirkungsquanten-Strings und Vakuum-Elapsonen'),
 
@@ -180,7 +180,7 @@
 
         'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation' => array( headline_text => 'Elektromagnetische Polarisation', headline_text_short => 'Elektromagnetische Polarisation'),
           'OM:FrQFT:NeuePhysik:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-          'OM:FrQFT:NeuePhysik:LiveAni-Photon' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
+          'OM:FrQFT:NeuePhysik:LiveAni-Photon' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
           'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen' => array( headline_text => 'Photonen', headline_text_short => 'Photonen'),
           'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:SymEMWW' => array( headline_text => 'Symmetriebruch zur elektromagnetischen Wechselwirkung', headline_text_short => 'Symmetriebruch zur elektromagnetischen Wechselwirkung'),
 
