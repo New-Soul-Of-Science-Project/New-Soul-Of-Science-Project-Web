@@ -404,10 +404,13 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Das vollständige Einheits-Primexponentenprodukt erzeugt in seinem Primturm-Potenzraster'."\n".
-                    'genau alle endlichen natürlichen Zahlen lückenlos.'."\n".
-                    'Oberhalb der endlichen natürlichen Zahlen, im aktual unendlichen Bereich des Primexponenten-Termraums,'."\n".
-                    'treten notwendig Lücken auf.'."\n".
+                    'Der lückenlose Anfang des Primturm-Potenzrasters'."\n".
+                    'des vollständigen Einheits-Primexponentenprodukts umfasst'."\n".
+                    'genau alle endlichen natürlichen Zahlen.'."\n".
+                    'Die zweite Inklusionsrichtung wird über das Lückenabstiegsprinzip begründet:'."\n".
+                    'Oberhalb der endlichen natürlichen Zahlen werden'."\n".
+                    'im umgebenden Primexponenten-Termraum Lückenzeugen konstruiert,'."\n".
+                    'die nicht zum reinen Primturm-Potenzraster gehören.'."\n".
                     'Die Identifikation ist daher keine naive Gleichsetzung von \lm{ ω } mit einem gewöhnlichen unendlichen Produkt,'."\n".
                     'sondern die kanonische Identifikation mit diesem deduktiv bestimmten lückenlosen Zahlenwert.'."\n".
                     ''))),
@@ -2063,9 +2066,8 @@
 
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die zweite Inklusionsrichtung folgt aus dem'."\n".
-                          '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}:'."\n".
-                          'Oberhalb von \lm{ ω } treten im umgebenden Primexponenten-Termraum notwendig Lücken auf,'."\n".
-                          'weil additive Normalform-Lückenzeugen nicht zum reinen Primturm-Potenzraster gehören:',
+                          '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip},'."\n".
+                          'durch das nichtendliche Elemente des Primturm-Potenzrasters vom lückenlosen Anfang ausgeschlossen werden:',
                     ))),
 
                   array( 'equations',
@@ -2084,28 +2086,30 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
 
+                  array( 'text', array( text => array(
+                    'Unabhängig von diesem \lm{ \lpr }-Nachweis zeigt die von-Neumann-Mengendarstellung'."\n".
+                    'von \lm{ ω } eine weitere strukturelle Besonderheit:'."\n".
+                    'Für jede endliche Primzahl \lm{ p } zerfällt \lm{ ω = \mathbb{N} }'."\n".
+                    'kanonisch in \lm{ p } untereinander erzeugungshomogene Restklassen.'."\n".
+                    'Diese Restklassenstruktur beweist die Primexponentenidentifikation nicht selbst,'."\n".
+                    'bildet aber eine von der Primexponentendarstellung unabhängige strukturelle Kohärenz mit ihr.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Beweisstrategien:Beweisstrategie-Primzahlprodukt-Vermutung:X', text =>
                   'Innere kanonische ZFC-Strukturidentifikation', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Dieser deduktive Nachweis liefert in einer Gesamtschau mit den Entsprechungen, die wir auf unserem Weg gefunden haben,'."\n".
-                    'das Ergebnis einer engen mathematischen Verknüpfung zwischen der Mengen-Primfakultät, dem lückenlosen Anfangsstück des Primturm-Potenzrasters'."\n".
-                    'und der vollständigen Induktion des Zählens des von-Neumann-Ordinals.'."\n".
-                    'Aus dieser engen Verknüpfung ergibt sich innerhalb der in ZFC definierbaren Primexponentenstruktur'."\n".
-                    'eine kanonisch begründete Identifikation, in der das vollständige Einheits-Primexponentenprodukt \lm{ ω\overline{\#} }'."\n".
-                    'den lückenlosen Zahlenwert \lm{ ω } besitzt:'."\n",
-                      'Wenn das Erzeugungsspektrum'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \pr*( ω\overline{\#} *)  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'des aktual unendlichen Einheits-Primexponentenprodukts in seiner Ordnung und seiner erzeugten Trägermenge'."\n".
-                    'dem von-Neumann-Ordinal \lm{ ω } entspricht und zugleich sein lückenloser Anfang exakt'."\n".
-                    'den ordinalen Zahlenwert \lm{ ω } besitzt, dann ist die'."\n".
-                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonische Identifikation von \lm{ ω } mit \lm{ ω\overline{\#} }} innerhalb dieser Struktur nicht willkürlich,'."\n".
-                    'sondern durch den deduktiv bestimmten lückenlosen Zahlenwert des Einheits-Primexponentenprodukts begründet:'."\n".
+                    'Dieser deduktive Nachweis liefert die Grundlage der kanonischen Identifikation.'."\n".
+                    'Die zuvor gefundenen strukturellen Entsprechungen zeigen dazu'."\n".
+                    'eine zusätzliche mathematische Kohärenz zwischen der Mengen-Primfakultät,'."\n".
+                    'dem lückenlosen Anfang des Primturm-Potenzrasters'."\n".
+                    'und der vollständigen Induktion des Zählens des von-Neumann-Ordinals.'."\n",
+                      'Da der lückenlose Anfang des generierten Primturm-Potenzrasters'."\n".
+                    'des vollständigen Einheits-Primexponentenprodukts nach dem \lm{ \lpr }-Nachweis'."\n".
+                    'exakt den ordinalen Zahlenwert \lm{ ω } besitzt,'."\n".
+                    'ist die'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonische Identifikation innerhalb dieser Struktur}'."\n".
+                    'nicht willkürlich,'."\n".
+                    'sondern durch diesen deduktiv bestimmten lückenlosen Zahlenwert begründet:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
