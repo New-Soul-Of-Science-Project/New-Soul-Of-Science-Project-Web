@@ -61,8 +61,9 @@
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
 
-      // heller Hintergrund, wie bei den Photon-Animationen
-      render.scene.background = new THREE.Color( 0xf8f8f8 )
+      // Himmelblauer statt heller Hintergrund (anders als bei den Photon-Animationen), passend hell
+      // gehalten, damit die königsblauen Punkte weiterhin gut zu unterscheiden bleiben.
+      render.scene.background = new THREE.Color( 0xbde3f7 )
       render.renderer.shadowMap.enabled = false
 
       // Zusätzliches, weiches Umgebungslicht - die Szene besteht nur aus einfachen, matten
@@ -116,9 +117,9 @@
       die Breite der gesamten Darstellung zwischen der Teilung (kompakt) und der Wiederholung
       (weit) - dieselbe Punktmenge, nur unterschiedlich groß dargestellt.
       --------------------*/
-      const compactWidth = 1.0    // Breite bei constructionMix = 0 (Teilung/klein)
-      const extendedWidth = 2.6   // Breite bei constructionMix = 1 (Wiederholung/groß)
-      const fallStartHeight = 1.5 // Starthöhe einer fallenden Zeile über der Bodenlinie
+      const compactWidth = 2.0    // Breite bei constructionMix = 0 (Teilung/klein)
+      const extendedWidth = 5.6   // Breite bei constructionMix = 1 (Wiederholung/groß)
+      const fallStartHeight = 1.9 // Starthöhe einer fallenden Zeile über der Bodenlinie
       const groundZ = 0.5         // Tiefen-Position von Bodenlinie und fallenden Zeilen
       const pointRadius = 0.022
 
@@ -130,41 +131,85 @@
 
       const pointMat = new THREE.MeshLambertMaterial( { color: 0x000000 } )
       const groundPointMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
-      const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x26619c } ) // Lapisblau
-      const lineMat = new THREE.LineBasicMaterial( { color: 0x000000 } )
+      const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x142a63 } ) // Königsblau, etwas dunkler
       const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
       const missingFadeInDuration = 0.6 // Sekunden, für das sanfte "Einblenden" der blauen Punkte
 
+      // Deutlich dickere Linien als schlichtes "THREE.Line" (1px, auf manchen GPUs nicht
+      // zuverlässig dicker darstellbar - dieselbe Erfahrung wie bei den Spuren/Feldpfeilen der
+      // Photon-Animationen): echte Zylinder-Meshes, per Y-Skalierung auf die jeweilige Länge
+      // gestreckt (Radius bleibt dabei unverändert, da nur die lokale Höhen-Achse skaliert wird).
+      // Deutlich größerer Radius als in den letzten Versuchen (die waren am Ende so dünn, dass die
+      // Röhrenform/Rundung praktisch nicht mehr zu erkennen war) + MeshPhongMaterial statt Lambert,
+      // damit ein dezentes Glanzlicht die Rundung sichtbar macht (wie bei den Kugeln der Photon-
+      // Animationen) - sonst sieht eine dünne, matte Röhre schnell wie ein flacher Strich aus.
+      const lineRadius = 0.016
+      const lineMat = new THREE.MeshPhongMaterial( {
+        color: 0x666666,
+        shininess: 25,
+        specular: 0x999999,
+        transparent: true,
+        opacity: 0.6,
+      } )
+      const lineGeo = new THREE.CylinderGeometry( lineRadius, lineRadius, 1, 16 )
+      function buildThickLine() {
+        const mesh = new THREE.Mesh( lineGeo, lineMat )
+        mesh.rotation.z = -pi2 / 4 // lokale Höhen-Achse (Y) auf die Welt-X-Achse drehen
+        return mesh
+      }
+      function setThickLineLength( mesh, length ) {
+        mesh.scale.y = length
+        mesh.position.x = length / 2
+      }
+
       // Beschriftung (z.B. "6 = 2 · 3") als immer zur Kamera gedrehtes Sprite (Canvas-Textur), wie
-      // bei den ±E/±B-Beschriftungen der Photon-Animationen. Breiter als vorher, da die
-      // Primfaktorzerlegung länger ist als ein einfaches "k=…".
-      const labelCanvasWidth = 360
-      const labelCanvasHeight = 96
+      // bei den ±E/±B-Beschriftungen der Photon-Animationen. Canvas-Breite richtet sich nach der
+      // tatsächlichen Textlänge (per measureText), damit weder kurze ("2 = 2") noch lange
+      // ("420 = 2² · 3 · 5 · 7") Beschriftungen abgeschnitten werden oder unnötig leeren Rand haben.
+      const labelFont = 'bold 96px sans-serif' // doppelt so groß wie zuvor (48px)
+      const labelCanvasHeight = 192            // Canvas-Auflösung mitverdoppelt, sonst unscharf
+      const labelWorldHeight = 0.22            // Welt-Höhe ebenfalls verdoppelt (war 0.11)
+      const labelMeasureCtx = document.createElement( 'canvas' ).getContext( '2d' )
+      labelMeasureCtx.font = labelFont
       function buildLabel( text, color = '#000000' ) {
+        const paddingX = 12
+        const canvasWidth = Math.ceil( labelMeasureCtx.measureText( text ).width ) + paddingX * 2
         const canvas = document.createElement( 'canvas' )
-        canvas.width = labelCanvasWidth
+        canvas.width = canvasWidth
         canvas.height = labelCanvasHeight
         const ctx = canvas.getContext( '2d' )
-        ctx.font = 'bold 48px sans-serif'
+        ctx.font = labelFont
         ctx.fillStyle = color
         ctx.textAlign = 'left'
         ctx.textBaseline = 'middle'
-        ctx.fillText( text, 4, canvas.height / 2 )
+        ctx.fillText( text, paddingX, canvas.height / 2 )
         const texture = new THREE.CanvasTexture( canvas )
         const material = new THREE.SpriteMaterial( { map: texture, depthTest: false, transparent: true } )
         const sprite = new THREE.Sprite( material )
-        sprite.scale.set( 0.11 * ( labelCanvasWidth / labelCanvasHeight ), 0.11, 1 )
+        sprite.center.set( 0, 0.5 ) // links-, statt mittig verankert - "position" bleibt so immer der linke Rand
+        sprite.scale.set( labelWorldHeight * ( canvasWidth / labelCanvasHeight ), labelWorldHeight, 1 )
+        sprite.userData.naturalScale = { x: sprite.scale.x, y: sprite.scale.y } // s. clampLabelWidth()
         return sprite
+      }
+
+      // Verkleinert eine rechts neben der Linie stehende Beschriftung, falls sie bei der aktuellen
+      // "currentWidth" über den sichtbaren Bereich hinausragen würde (kann bei sehr langen
+      // Primfaktorzerlegungen UND gleichzeitig großer Linienbreite passieren) - proportional
+      // (Breite und Höhe gemeinsam), ausgehend von der ursprünglichen (nie mutierten) Größe.
+      function clampLabelWidth( label ) {
+        const { x: naturalX, y: naturalY } = label.userData.naturalScale
+        const halfWidthWorld = cameraDistance * cameraHalfWidthPerDistance
+        const maxWidth = halfWidthWorld - currentWidth / 2 - labelRightMargin
+        const factor = ( maxWidth > 0 && naturalX > maxWidth ) ? maxWidth / naturalX : 1
+        label.scale.set( naturalX * factor, naturalY * factor, 1 )
       }
 
       /*--------------------
       Bodenlinie (bleibt immer bestehen) + die darauf liegenden roten Punkte (wachsen über die Zeit).
       --------------------*/
-      const groundLineGeo = new THREE.BufferGeometry().setFromPoints([
-        new THREE.Vector3( 0, 0, groundZ ),
-        new THREE.Vector3( currentWidth, 0, groundZ ),
-      ])
-      const groundLine = new THREE.Line( groundLineGeo, lineMat )
+      const groundLine = buildThickLine()
+      groundLine.position.z = groundZ
+      setThickLineLength( groundLine, currentWidth )
       render.scene.add( groundLine )
 
       let groundPoints = new Map() // key "p/q" -> { p, q, mesh }
@@ -183,14 +228,19 @@
         groundPoints.clear()
       }
 
-      // Label neben der Bodenlinie, das immer die zuletzt vereinigte Zahl mit ihrer
-      // Primfaktorzerlegung zeigt (siehe Vorlagenbild) - bleibt stehen, bis die nächste Zeile landet.
+      // Label neben der Bodenlinie: zeigt die Anzahl der Teilungen, die durch die bisher
+      // vereinigten Zeilen entstanden sind - also "currentL" (kgV(1..k), s.u.) mit seiner eigenen
+      // Primfaktorzerlegung, nicht die Nummer der zuletzt gefallenen Zeile selbst. Ändert sich
+      // folglich nur, wenn eine Zeile tatsächlich eine neue Primzahl/-potenz einbringt (z.B. bei
+      // k=6=2·3 nicht, da 2 und 3 schon enthalten sind) - bleibt stehen, bis sich currentL ändert.
       let groundLabel = null
+      const labelRightMargin = 0.1 // Abstand der Beschriftung rechts vom Linienende
 
-      function updateGroundLabel( k ) {
+      function updateGroundLabel( divisionCount ) {
         clearGroundLabel()
-        groundLabel = buildLabel( formatFactorization( k ) )
-        groundLabel.position.set( -0.16, 0.08, groundZ )
+        groundLabel = buildLabel( formatFactorization( divisionCount ) )
+        groundLabel.position.set( currentWidth + labelRightMargin, 0, groundZ ) // y=0: auf Linienhöhe
+        clampLabelWidth( groundLabel )
         render.scene.add( groundLabel )
       }
 
@@ -259,7 +309,15 @@
       Ansicht nicht verschiebt.
       --------------------*/
       const cameraDir = new THREE.Vector3( 0, 0.32, 0.95 ).normalize()
-      const cameraDistance = 19
+      // Rein nach der Linienlänge bemessen (mit ca. 10% Rand bei constructionMix=1), NICHT mehr
+      // nach der längsten möglichen Beschriftung - sonst frisst jede weitere Verlängerung der Linie
+      // sofort wieder eine größere Kameradistanz und damit die gewünschte optische Länge auf (genau
+      // das ist in den letzten beiden Anläufen passiert). Beschriftungen, die dadurch zu weit rechts
+      // reichen würden, werden stattdessen automatisch verkleinert, s. clampLabelWidth().
+      const cameraDistance = 24
+      // Horizontaler Sichtbereich pro Distanz-Einheit (aus Kamera-FOV und Seitenverhältnis) - für
+      // clampLabelWidth() unten.
+      const cameraHalfWidthPerDistance = Math.tan( THREE.MathUtils.degToRad( render.camera.fov / 2 ) ) * render.camera.aspect
       function updateCameraFraming() {
         // target-y bewusst deutlich unter der Mitte von "fallStartHeight", damit über der
         // startenden Zeile genug Rand bleibt (sonst überlappt sie beim Spawnen mit der
@@ -287,11 +345,8 @@
       function spawnRow( k ) {
         const group = new THREE.Group()
 
-        const lineGeo = new THREE.BufferGeometry().setFromPoints([
-          new THREE.Vector3( 0, 0, 0 ),
-          new THREE.Vector3( currentWidth, 0, 0 ),
-        ])
-        const line = new THREE.Line( lineGeo, lineMat )
+        const line = buildThickLine()
+        setThickLineLength( line, currentWidth )
         group.add( line )
 
         const spheres = []
@@ -303,7 +358,8 @@
         }
 
         const label = buildLabel( formatFactorization( k ) )
-        label.position.set( -0.16, 0.08, 0 )
+        label.position.set( currentWidth + labelRightMargin, 0, 0 ) // y=0: auf Linienhöhe
+        clampLabelWidth( label )
         group.add( label )
 
         group.position.set( 0, fallStartHeight, groundZ )
@@ -314,7 +370,7 @@
 
       function disposeFallingRow() {
         if ( !fallingRow ) return
-        fallingRow.line.geometry.dispose()
+        // "line" nutzt die geteilte "lineGeo" (wie alle Linien) - nicht einzeln disposen
         fallingRow.spheres.forEach( ( { sphere } ) => sphere.geometry === pointGeo || sphere.geometry.dispose() )
         fallingRow.label.material.map.dispose()
         fallingRow.label.material.dispose()
@@ -333,7 +389,7 @@
         disposeFallingRow()
         currentL = lcm( currentL, k )
         updateMissingPoints() // nach jeder Vereinigung: zeigt alle aktuell fehlenden Punkte
-        updateGroundLabel( k )
+        updateGroundLabel( currentL )
 
         currentK++
         if ( currentK > maxRhythms ) {
@@ -352,11 +408,7 @@
       // die evtl. gerade fallende Zeile, Kamera-Rahmung) - aufgerufen bei jeder Änderung des
       // Konstruktions-Reglers, ohne die laufende Fallanimation zu unterbrechen.
       function rebuildForWidthChange() {
-        groundLine.geometry.dispose()
-        groundLine.geometry = new THREE.BufferGeometry().setFromPoints([
-          new THREE.Vector3( 0, 0, groundZ ),
-          new THREE.Vector3( currentWidth, 0, groundZ ),
-        ])
+        setThickLineLength( groundLine, currentWidth )
 
         groundPoints.forEach( ( { p, q, mesh } ) => {
           mesh.position.x = ( p / q ) * currentWidth
@@ -367,15 +419,18 @@
         })
         updateMissingTargetScale() // Dichte (Abstand pro Punkt) hängt von currentWidth ab
 
+        if ( groundLabel ) {
+          groundLabel.position.x = currentWidth + labelRightMargin
+          clampLabelWidth( groundLabel )
+        }
+
         if ( fallingRow ) {
-          fallingRow.line.geometry.dispose()
-          fallingRow.line.geometry = new THREE.BufferGeometry().setFromPoints([
-            new THREE.Vector3( 0, 0, 0 ),
-            new THREE.Vector3( currentWidth, 0, 0 ),
-          ])
+          setThickLineLength( fallingRow.line, currentWidth )
           fallingRow.spheres.forEach( ( { sphere, i, k } ) => {
             sphere.position.x = ( i / k ) * currentWidth
           })
+          fallingRow.label.position.x = currentWidth + labelRightMargin
+          clampLabelWidth( fallingRow.label )
         }
 
         updateCameraFraming()
