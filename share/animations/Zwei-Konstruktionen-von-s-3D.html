@@ -225,38 +225,72 @@
 
       /*--------------------
       Historie: bevor die nächste Zahl fällt, wird eine "eingefrorene" Kopie der aktuellen
-      Bodenlinie (Linie + ihre roten Punkte, im jeweils aktuellen "currentWidth") angelegt und auf
-      der virtuellen Ebene ein Stück weiter nach hinten (kleineres Z) gesetzt - so sammeln sich die
-      Kopien nacheinander in die Tiefe. Wird beim Neustart des Zyklus komplett geleert.
+      Bodenlinie angelegt (Linie, ihre roten Punkte, die aktuellen blauen Punkte und die
+      Formel-Beschriftung, alles im jeweils aktuellen "currentWidth"). Dabei rücken ALLE
+      bestehenden Kopien einen Schritt weiter nach hinten (kleineres Z), und die neue Kopie nimmt
+      den dadurch freien Platz direkt neben der Bodenlinie ein - die jeweils letzte/neueste Kopie
+      liegt also immer direkt neben der Bodenlinie, ältere Kopien sammeln sich dahinter in die
+      Tiefe. Der Rückzug wird sanft animiert (alle betroffenen Kopien gemeinsam). Wird beim
+      Neustart des Zyklus komplett geleert.
       --------------------*/
       const historyRowSpacing = 0.35
-      let lineHistory = [] // [{ z, line, points: [{p,q,mesh}] }]
-      let historyDepth = 0
+      const historySlideDuration = 1.0 // Sekunden bei speedFactor=1, für das gemeinsame Zurückgleiten
+      let lineHistory = [] // [{ z, fromZ, toZ, line, points, missingPoints, label }]
+      let historySlideElapsed = Infinity // >= historySlideDuration: keine aktive Animation
 
       function snapshotGroundLine() {
-        historyDepth += historyRowSpacing
-        const z = groundZ - historyDepth
+        // Alle bestehenden Kopien einen Schritt zurückschieben (Zielwert; die tatsächliche
+        // Bewegung passiert animiert im Renderloop, s.u.)
+        lineHistory.forEach( entry => {
+          entry.fromZ = entry.z
+          entry.toZ = entry.z - historyRowSpacing
+        })
+
+        // Neue Kopie: startet an der Position der Bodenlinie und gleitet in den nächsten Platz
+        // direkt dahinter - macht sichtbar, dass sie "gerade eben" noch die Bodenlinie war.
+        const toZ = groundZ - historyRowSpacing
         const line = buildThickLine()
-        line.position.z = z
+        line.position.z = groundZ
         setThickLineLength( line, currentWidth )
         render.scene.add( line )
+
         const points = []
         groundPoints.forEach( ( { p, q } ) => {
           const mesh = new THREE.Mesh( pointGeo, groundPointMat )
-          mesh.position.set( ( p / q ) * currentWidth, 0, z )
+          mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
           render.scene.add( mesh )
           points.push( { p, q, mesh } )
         })
-        lineHistory.push( { z, line, points } )
+
+        const missingCopies = []
+        missingPoints.forEach( ( { p, q } ) => {
+          const mesh = new THREE.Mesh( pointGeo, missingPointMat )
+          mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
+          mesh.scale.setScalar( missingTargetScale )
+          render.scene.add( mesh )
+          missingCopies.push( { p, q, mesh } )
+        })
+
+        const label = buildLabel( formatFactorization( currentL ) )
+        label.position.set( currentWidth + labelRightMargin, 0, groundZ )
+        clampLabelWidth( label )
+        render.scene.add( label )
+
+        lineHistory.push( { z: groundZ, fromZ: groundZ, toZ, line, points, missingPoints: missingCopies, label } )
+        historySlideElapsed = 0 // startet die gemeinsame Rückzugs-Animation für alle Kopien
       }
 
       function clearLineHistory() {
-        lineHistory.forEach( ( { line, points } ) => {
+        lineHistory.forEach( ( { line, points, missingPoints: missingCopies, label } ) => {
           render.scene.remove( line )
           points.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
+          missingCopies.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
+          label.material.map.dispose()
+          label.material.dispose()
+          render.scene.remove( label )
         })
         lineHistory = []
-        historyDepth = 0
+        historySlideElapsed = Infinity
       }
 
       function clearGroundPoints() {
@@ -459,9 +493,12 @@
         })
         updateMissingTargetScale() // Dichte (Abstand pro Punkt) hängt von currentWidth ab
 
-        lineHistory.forEach( ( { line, points } ) => {
+        lineHistory.forEach( ( { line, points, missingPoints: missingCopies, label } ) => {
           setThickLineLength( line, currentWidth )
           points.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * currentWidth } )
+          missingCopies.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * currentWidth } )
+          label.position.x = currentWidth + labelRightMargin
+          clampLabelWidth( label )
         })
 
         if ( groundLabel ) {
@@ -532,6 +569,22 @@
             const progress = Math.min( 1, entry.fadeElapsed / missingFadeInDuration )
             entry.mesh.scale.setScalar( progress * missingTargetScale )
           })
+
+          // Gemeinsames, sanftes Zurückgleiten aller History-Kopien nach einer neuen Landung
+          // (s. snapshotGroundLine) - alle betroffenen Kopien bewegen sich synchron.
+          if ( historySlideElapsed < historySlideDuration ) {
+            historySlideElapsed += delta
+            const t = Math.min( 1, historySlideElapsed / historySlideDuration )
+            const eased = 0.5 - 0.5 * Math.cos( Math.PI * t )
+            lineHistory.forEach( entry => {
+              const z = entry.fromZ + ( entry.toZ - entry.fromZ ) * eased
+              entry.z = z
+              entry.line.position.z = z
+              entry.points.forEach( ( { mesh } ) => { mesh.position.z = z } )
+              entry.missingPoints.forEach( ( { mesh } ) => { mesh.position.z = z } )
+              entry.label.position.z = z
+            })
+          }
 
           if ( waitingToSpawn ) {
             pauseElapsed += delta
