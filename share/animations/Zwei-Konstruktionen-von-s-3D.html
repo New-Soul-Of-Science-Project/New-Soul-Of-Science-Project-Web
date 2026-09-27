@@ -66,8 +66,7 @@
       render.renderer.shadowMap.enabled = false
 
       // Zusätzliches, weiches Umgebungslicht - die Szene besteht nur aus einfachen, matten
-      // Kugeln/Linien/einer Bodenfläche und braucht keine dramatische Ausleuchtung wie die
-      // Photon-Animationen.
+      // Kugeln/Linien und braucht keine dramatische Ausleuchtung wie die Photon-Animationen.
       const ambientLight = new THREE.AmbientLight( 0xffffff, 2.2 * Math.PI )
       render.scene.add( ambientLight )
       render.spotLight.position.set( 2, 4, 3 )
@@ -81,10 +80,31 @@
       Gleitkomma-Toleranz nötig), damit z.B. 2/4 als bereits vorhandenes 1/2 erkannt wird.
       --------------------*/
       function gcd( a, b ) { return b === 0 ? a : gcd( b, a % b ) }
+      function lcm( a, b ) { return a * b / gcd( a, b ) }
       function reduceFraction( i, k ) {
         if ( i === 0 ) return { p: 0, q: 1 }
         const g = gcd( i, k )
         return { p: i / g, q: k / g }
+      }
+
+      // Primfaktorzerlegung von k, formatiert als "k = 2 · 3" bzw. "k = 2³" (Unicode-Hochstellung,
+      // reicht für die hier vorkommenden kleinen Exponenten). Macht sichtbar, welche neue Primzahl
+      // bzw. Primzahlpotenz jede Zeile in das (weiter unten berechnete) kgV einbringt - genau die
+      // Größe, die bestimmt, wie fein die "gleichmäßige" Vergleichs-Verteilung wird.
+      const superscriptDigits = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' }
+      function toSuperscript( n ) { return String( n ).split( '' ).map( d => superscriptDigits[ d ] ).join( '' ) }
+      function formatFactorization( k ) {
+        if ( k === 1 ) return '1 = 1'
+        const parts = []
+        let n = k
+        for ( let p = 2; p * p <= n; p++ ) {
+          if ( n % p !== 0 ) continue
+          let exp = 0
+          while ( n % p === 0 ) { n /= p; exp++ }
+          parts.push( exp === 1 ? String( p ) : p + toSuperscript( exp ) )
+        }
+        if ( n > 1 ) parts.push( String( n ) )
+        return k + ' = ' + parts.join( ' · ' )
       }
 
       /*--------------------
@@ -110,17 +130,22 @@
 
       const pointMat = new THREE.MeshLambertMaterial( { color: 0x000000 } )
       const groundPointMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
+      const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x26619c } ) // Lapisblau
       const lineMat = new THREE.LineBasicMaterial( { color: 0x000000 } )
       const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
+      const missingFadeInDuration = 0.6 // Sekunden, für das sanfte "Einblenden" der blauen Punkte
 
-      // Beschriftung ("k=…") als immer zur Kamera gedrehtes Sprite (Canvas-Textur), wie bei den
-      // ±E/±B-Beschriftungen der Photon-Animationen.
+      // Beschriftung (z.B. "6 = 2 · 3") als immer zur Kamera gedrehtes Sprite (Canvas-Textur), wie
+      // bei den ±E/±B-Beschriftungen der Photon-Animationen. Breiter als vorher, da die
+      // Primfaktorzerlegung länger ist als ein einfaches "k=…".
+      const labelCanvasWidth = 360
+      const labelCanvasHeight = 96
       function buildLabel( text, color = '#000000' ) {
         const canvas = document.createElement( 'canvas' )
-        canvas.width = 256
-        canvas.height = 96
+        canvas.width = labelCanvasWidth
+        canvas.height = labelCanvasHeight
         const ctx = canvas.getContext( '2d' )
-        ctx.font = 'bold 52px sans-serif'
+        ctx.font = 'bold 48px sans-serif'
         ctx.fillStyle = color
         ctx.textAlign = 'left'
         ctx.textBaseline = 'middle'
@@ -128,19 +153,9 @@
         const texture = new THREE.CanvasTexture( canvas )
         const material = new THREE.SpriteMaterial( { map: texture, depthTest: false, transparent: true } )
         const sprite = new THREE.Sprite( material )
-        sprite.scale.set( 0.3, 0.11, 1 )
+        sprite.scale.set( 0.11 * ( labelCanvasWidth / labelCanvasHeight ), 0.11, 1 )
         return sprite
       }
-
-      /*--------------------
-      Virtuelle Bodenebene, nur als dezente, helle Fläche - macht sichtbar, dass die Bodenlinie
-      "auf" etwas ruht, statt frei im Raum zu schweben.
-      --------------------*/
-      const floorMat = new THREE.MeshLambertMaterial( { color: 0xeeeeee } )
-      const floorGeo = new THREE.PlaneGeometry( 1, 1 )
-      const floor = new THREE.Mesh( floorGeo, floorMat )
-      floor.rotation.x = -pi2 / 4 // von der XY- in die XZ-Ebene drehen (horizontal, wie ein Boden)
-      render.scene.add( floor )
 
       /*--------------------
       Bodenlinie (bleibt immer bestehen) + die darauf liegenden roten Punkte (wachsen über die Zeit).
@@ -166,6 +181,76 @@
       function clearGroundPoints() {
         groundPoints.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
         groundPoints.clear()
+      }
+
+      // Label neben der Bodenlinie, das immer die zuletzt vereinigte Zahl mit ihrer
+      // Primfaktorzerlegung zeigt (siehe Vorlagenbild) - bleibt stehen, bis die nächste Zeile landet.
+      let groundLabel = null
+
+      function updateGroundLabel( k ) {
+        clearGroundLabel()
+        groundLabel = buildLabel( formatFactorization( k ) )
+        groundLabel.position.set( -0.16, 0.08, groundZ )
+        render.scene.add( groundLabel )
+      }
+
+      function clearGroundLabel() {
+        if ( !groundLabel ) return
+        groundLabel.material.map.dispose()
+        groundLabel.material.dispose()
+        render.scene.remove( groundLabel )
+        groundLabel = null
+      }
+
+      /*--------------------
+      Blaue "fehlende Zwischenpunkte": Ein wirklich GLEICHMÄSSIGER Rhythmus, der alle bisher
+      gefallenen Zeilen 1..k mit umfasst, bräuchte kgV(1..k) gleiche Intervalle (jede Zeile muss
+      ja ganzzahlig hineinpassen) - genau das L aus der Kopfnotiz oben. Nach jeder Vereinigung
+      werden ALLE Punkte i/L (i=0..L) markiert, die noch nicht unter den tatsächlichen (roten)
+      Brüchen sind - additiv (einmal blau gewordene Punkte bleiben blau, bis eine spätere Zeile
+      tatsächlich genau dort landet), da L nur wachsen kann und jedes ältere L ein Teiler des
+      neuen L ist (alte Gitterpunkte bleiben also gültige Teilmenge des neuen, feineren Gitters).
+      --------------------*/
+      let currentL = 1
+      let missingPoints = new Map() // key "p/q" -> { p, q, mesh, fadeElapsed }
+      let missingTargetScale = 1 // schrumpft bei hoher Punktdichte, damit sich Kugeln nicht überlappen
+
+      function clearMissingPoints() {
+        missingPoints.forEach( ( { mesh } ) => render.scene.remove( mesh ) )
+        missingPoints.clear()
+      }
+
+      // Bei großem L (z.B. kgV(1..7)=420) lägen mehr Punkte auf der Linie, als bei fester
+      // pointRadius nebeneinander Platz hätten - die blauen Punkte schrumpfen daher mit
+      // wachsender Dichte (untere Grenze 15%, sonst würden sie bei sehr großem L unsichtbar).
+      function updateMissingTargetScale() {
+        const spacing = currentWidth / currentL
+        missingTargetScale = Math.max( 0.15, Math.min( 1, ( spacing * 0.4 ) / pointRadius ) )
+        missingPoints.forEach( entry => {
+          if ( entry.fadeElapsed >= missingFadeInDuration ) entry.mesh.scale.setScalar( missingTargetScale )
+        })
+      }
+
+      // Additiv: entfernt blaue Punkte, die durch die soeben gelandete Zeile jetzt tatsächlich
+      // (rot) besetzt sind, und ergänzt alle neuen Gitterpunkte, die das (ggf. gewachsene) L
+      // zusätzlich zulässt.
+      function updateMissingPoints() {
+        missingPoints.forEach( ( { mesh }, key ) => {
+          if ( !groundPoints.has( key ) ) return
+          render.scene.remove( mesh )
+          missingPoints.delete( key )
+        })
+        updateMissingTargetScale()
+        for ( let i = 0; i <= currentL; i++ ) {
+          const { p, q } = reduceFraction( i, currentL )
+          const key = p + '/' + q
+          if ( groundPoints.has( key ) || missingPoints.has( key ) ) continue
+          const mesh = new THREE.Mesh( pointGeo, missingPointMat )
+          mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
+          mesh.scale.setScalar( 0 ) // startet unsichtbar-klein, wächst im Renderloop sanft ein
+          render.scene.add( mesh )
+          missingPoints.set( key, { p, q, mesh, fadeElapsed: 0 } )
+        }
       }
 
       /*--------------------
@@ -217,7 +302,7 @@
           spheres.push( { sphere, i, k } )
         }
 
-        const label = buildLabel( 'k=' + k )
+        const label = buildLabel( formatFactorization( k ) )
         label.position.set( -0.16, 0.08, 0 )
         group.add( label )
 
@@ -246,10 +331,16 @@
           addGroundPoint( p, q )
         }
         disposeFallingRow()
+        currentL = lcm( currentL, k )
+        updateMissingPoints() // nach jeder Vereinigung: zeigt alle aktuell fehlenden Punkte
+        updateGroundLabel( k )
 
         currentK++
         if ( currentK > maxRhythms ) {
           clearGroundPoints()
+          clearMissingPoints()
+          clearGroundLabel()
+          currentL = 1
           currentK = 1
         }
 
@@ -257,7 +348,7 @@
         pauseElapsed = 0
       }
 
-      // Repositioniert alles, was von "currentWidth" abhängt (Bodenlinie, rote Punkte, Bodenfläche,
+      // Repositioniert alles, was von "currentWidth" abhängt (Bodenlinie, rote und blaue Punkte,
       // die evtl. gerade fallende Zeile, Kamera-Rahmung) - aufgerufen bei jeder Änderung des
       // Konstruktions-Reglers, ohne die laufende Fallanimation zu unterbrechen.
       function rebuildForWidthChange() {
@@ -271,11 +362,10 @@
           mesh.position.x = ( p / q ) * currentWidth
         })
 
-        const floorMarginX = 0.4
-        const floorDepth = 1.3
-        floor.geometry.dispose()
-        floor.geometry = new THREE.PlaneGeometry( currentWidth + floorMarginX * 2, floorDepth )
-        floor.position.set( currentWidth / 2, 0, groundZ + floorDepth * 0.15 )
+        missingPoints.forEach( ( { p, q, mesh } ) => {
+          mesh.position.x = ( p / q ) * currentWidth
+        })
+        updateMissingTargetScale() // Dichte (Abstand pro Punkt) hängt von currentWidth ab
 
         if ( fallingRow ) {
           fallingRow.line.geometry.dispose()
@@ -290,7 +380,7 @@
 
         updateCameraFraming()
       }
-      rebuildForWidthChange() // Bodenfläche/Kamera einmalig auf den Startwert von currentWidth bringen
+      rebuildForWidthChange() // Kamera-Rahmung einmalig auf den Startwert von currentWidth bringen
 
       /*--------------------
       Control-Panel
@@ -335,6 +425,13 @@
 
         if ( !paused ) {
           const delta = Math.min( rawDelta, maxDelta ) * speedFactor
+
+          missingPoints.forEach( entry => {
+            if ( entry.fadeElapsed >= missingFadeInDuration ) return
+            entry.fadeElapsed += delta
+            const progress = Math.min( 1, entry.fadeElapsed / missingFadeInDuration )
+            entry.mesh.scale.setScalar( progress * missingTargetScale )
+          })
 
           if ( waitingToSpawn ) {
             pauseElapsed += delta
