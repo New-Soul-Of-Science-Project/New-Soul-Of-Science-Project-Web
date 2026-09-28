@@ -612,6 +612,12 @@
           clearGroundPoints()
           clearMissingPoints() // wird unten komplett neu aufgebaut, s. Kommentar bei updateMissingPoints()
           groundShrinkFactor = 1 // die gelandete Zeile erscheint stets in voller Breite
+          // Die Bodenlinie selbst muss hier sofort synchron mit den frisch gesetzten Punkten auf volle
+          // Breite gebracht werden, statt auf die Renderloop-Schrumpfroutine zu warten - bei der
+          // LETZTEN Zeile eines Zyklus greift diese nämlich nie mehr (s. "pendingReset" unten), sodass
+          // die Linie sonst dauerhaft auf ihrer alten, geschrumpften Länge stehen bliebe, während die
+          // Punkte schon auf voller Breite sitzen (sichtbar z.B. beim "0"/"1" der neuen Bodenlinie).
+          setThickLineLength( groundLine, groundDisplayWidth() )
           for ( let i = 0; i <= k; i++ ) {
             const { p, q } = reduceFraction( i, k )
             addGroundPoint( p, q )
@@ -677,6 +683,7 @@
         groundShrinkFactor = 1
         groundShrinkFromFactor = 1
         groundShrinkToFactor = 1
+        setThickLineLength( groundLine, groundDisplayWidth() ) // s. Kommentar bei landRow() - Linie muss sofort synchron mit den frisch gesäten Punkten sein
         updateGroundLabel( currentL ) // "1 = 1" statt komplett zu leeren, s. Konzept oben
         setRightEndpointLabel( '1' )
         clearLineHistory()
