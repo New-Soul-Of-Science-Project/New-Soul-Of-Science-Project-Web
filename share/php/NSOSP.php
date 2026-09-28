@@ -720,7 +720,9 @@
   $FrQFT_g_iframe_ary_PhotonWQ                  = array( source => $Glo_PathRel_back.'../share/animations/Light-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt, wie jedes Wirkungsquant auf einer eigenen, fest orientierten elliptischen Bahn um das Zentrum kreist.'."\n".
                                                                   'Da die Ellipsen der einzelnen Wirkungsquanten gegeneinander verdreht sind, ergibt ihre gemeinsame Bewegung die zirkulare Polarisation des Photons.'."\n".
-                                                                  'Der Regler "Polarisation" erlaubt den stufenlosen Übergang zwischen einem unpolarisierten (kreisförmigen) und einem zirkular polarisierten (elliptischen) Wirkungsquanten-String.');
+                                                                  'Der Regler "Polarisation" erlaubt den stufenlosen Übergang zwischen einem unpolarisierten (kreisförmigen) und einem zirkular polarisierten (elliptischen) Wirkungsquanten-String.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/FrQFT/Light-Photon-3D-print.png',
+                                                         print_image_alt => 'Helles Photon, interaktive 3D-Animation');
 
 
 
