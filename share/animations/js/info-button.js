@@ -28,9 +28,9 @@ export function createInfoButton( container ) {
   const popup = document.createElement( 'div' )
   popup.innerHTML =
     '<div style="font-weight:bold;margin-bottom:6px;">Ansicht steuern</div>' +
-    '<div>Ziehen (linke Maustaste bzw. ein Finger): Drehen</div>' +
-    '<div>Scrollen (Mausrad bzw. zwei Finger zusammen-/auseinanderziehen): Zoomen</div>' +
-    '<div>Ziehen (rechte Maustaste bzw. zwei Finger): Verschieben</div>'
+    '<div>Drehen: Ziehen (linke Maustaste bzw. ein Finger)</div>' +
+    '<div>Zoomen: Scrollen (Mausrad bzw. zwei Finger zusammen-/auseinanderziehen)</div>' +
+    '<div>Verschieben: Ziehen (rechte Maustaste bzw. zwei Finger)</div>'
   Object.assign( popup.style, {
     position: 'absolute',
     right: '8px',
