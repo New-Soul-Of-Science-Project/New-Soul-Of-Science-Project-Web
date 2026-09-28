@@ -241,6 +241,19 @@
       }
       seedGroundEndpoints()
 
+      // Feste, dauerhafte Beschriftung "0" und "1" unter den beiden äußeren Punkten der Bodenlinie -
+      // anders als die Formel-Beschriftung rechts bleiben diese immer sichtbar (auch über einen
+      // Zyklus-Neustart hinweg) und werden nie neu erzeugt, nur bei Breitenänderung repositioniert.
+      const zeroLabel = buildLabel( '0' )
+      zeroLabel.center.set( 0.5, 0.5 ) // mittig statt linksbündig verankert, damit sie unter dem Punkt zentriert steht
+      zeroLabel.position.set( 0, -0.13, groundZ )
+      render.scene.add( zeroLabel )
+
+      const oneLabel = buildLabel( '1' )
+      oneLabel.center.set( 0.5, 0.5 )
+      oneLabel.position.set( currentWidth, -0.13, groundZ )
+      render.scene.add( oneLabel )
+
       /*--------------------
       Historie: bevor die nächste Zahl fällt, wird eine "eingefrorene" Kopie der aktuellen
       Bodenlinie angelegt (Linie, ihre roten Punkte, die aktuellen blauen Punkte und die
@@ -528,6 +541,7 @@
         groundPoints.forEach( ( { p, q, mesh } ) => {
           mesh.position.x = ( p / q ) * currentWidth
         })
+        oneLabel.position.x = currentWidth // "zeroLabel" bleibt immer bei x=0, unabhängig von currentWidth
 
         missingPoints.forEach( ( { p, q, mesh } ) => {
           mesh.position.x = ( p / q ) * currentWidth
