@@ -81,7 +81,6 @@
       container.style.height = render.dimensions.height + 'px'
       container.style.position = 'relative'
       container.appendChild( render.renderer.domElement )
-      createInfoButton( container )
 
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
@@ -612,6 +611,7 @@
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
       }
       createPanel()
+      createInfoButton( container, container.querySelector( '.lil-gui .title' ) )
 
       const maxDelta = 1 / 30 // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war
 

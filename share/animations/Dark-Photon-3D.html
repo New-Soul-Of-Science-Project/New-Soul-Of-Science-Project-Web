@@ -83,7 +83,6 @@
       // dadurch automatisch synchron mit lil-guis eigener Animation nach oben.
       container.style.position = 'relative'
       container.appendChild( render.renderer.domElement )
-      createInfoButton( container )
 
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
@@ -620,6 +619,7 @@
       }
 
       createPanel()
+      createInfoButton( container, container.querySelector( '.lil-gui .title' ) )
 
       // #: wqTrails
       // Nachgezogene Spur jeder wq-Kugel (Kreisbahn + Vorwärtsdrift von dphGroup ergibt die Spiralkurve)
