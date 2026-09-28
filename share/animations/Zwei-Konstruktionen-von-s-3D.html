@@ -432,13 +432,18 @@
       }
       updateCameraFraming()
 
+      // Passend zu seedGroundEndpoints(): "1 = 1" steht von Anfang an da (k=1 trägt nur die schon
+      // vorhandenen Endpunkte 0/1 bei) - k=1 muss deshalb nicht mehr extra herunterfallen, s.u.
+      // "currentK = 2".
+      updateGroundLabel( 1 )
+
       /*--------------------
       Fallende Zeile: eigene Linie + eigene (ungekürzte) schwarze Punkte i/k, i=0..k - entspricht
       genau einer Zeile der Referenzabbildungen. Fällt in Ruhe (ease-out, wie ein sanftes Aufsetzen)
       von "fallStartHeight" auf 0 herab.
       --------------------*/
       let fallingRow = null // { group, k, line, spheres: [{sphere,i,k}], label }
-      let currentK = 1
+      let currentK = 2 // k=1 fällt nicht mehr - seine Punkte (0/1) stehen schon per seedGroundEndpoints()
       let fallElapsed = 0
       let pauseElapsed = 0
       let waitingToSpawn = true // Startzustand: erste Zeile erscheint nach kurzer Pause
@@ -629,10 +634,10 @@
                 clearGroundPoints()
                 seedGroundEndpoints()
                 clearMissingPoints()
-                clearGroundLabel()
-                clearLineHistory()
                 currentL = 1
-                currentK = 1
+                updateGroundLabel( currentL ) // "1 = 1" statt komplett zu leeren, s. Konzept oben
+                clearLineHistory()
+                currentK = 2
                 pendingReset = false
               }
               waitingToSpawn = false
