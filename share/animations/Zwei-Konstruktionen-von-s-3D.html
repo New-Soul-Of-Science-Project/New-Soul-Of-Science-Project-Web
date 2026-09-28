@@ -52,6 +52,26 @@
 
       const render = new Render( eleWidth, eleHeight )
 
+      // Debug-Zugriff für die Konsole: manuell (per Maus) die gewünschte Kameraperspektive
+      // einstellen, dann in der Browser-Konsole "copy(getCameraInfo())" ausführen - liefert Position,
+      // Blickziel, daraus abgeleitete Distanz/Richtung und FOV zum Zurückmelden.
+      window.__camera = render.camera
+      window.__controls = render.controls
+      window.getCameraInfo = () => {
+        const pos = render.camera.position
+        const tgt = render.controls.target
+        const dir = pos.clone().sub( tgt )
+        const distance = dir.length()
+        dir.normalize()
+        return JSON.stringify( {
+          cameraPosition: { x: pos.x, y: pos.y, z: pos.z },
+          target: { x: tgt.x, y: tgt.y, z: tgt.z },
+          cameraDir: { x: dir.x, y: dir.y, z: dir.z },
+          distance,
+          fov: render.camera.fov,
+        }, null, 2 )
+      }
+
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
       container.style.height = render.dimensions.height + 'px'
@@ -119,7 +139,7 @@
       --------------------*/
       const compactWidth = 2.0    // Breite bei constructionMix = 0 (Teilung/klein)
       const extendedWidth = 5.6   // Breite bei constructionMix = 1 (Wiederholung/groß)
-      const fallStartHeight = 1.9 // Starthöhe einer fallenden Zeile über der Bodenlinie
+      const fallStartHeight = 1.0 // Starthöhe einer fallenden Zeile über der Bodenlinie
       const groundZ = 0.5         // Tiefen-Position von Bodenlinie und fallenden Zeilen
       const pointRadius = 0.022
 
@@ -379,23 +399,25 @@
       unten im Bild; Zielpunkt/Position folgen "currentWidth", damit der Konstruktions-Regler die
       Ansicht nicht verschiebt.
       --------------------*/
-      const cameraDir = new THREE.Vector3( 0, 0.32, 0.95 ).normalize()
-      // Rein nach der Linienlänge bemessen (mit ca. 10% Rand bei constructionMix=1), NICHT mehr
-      // nach der längsten möglichen Beschriftung - sonst frisst jede weitere Verlängerung der Linie
-      // sofort wieder eine größere Kameradistanz und damit die gewünschte optische Länge auf (genau
-      // das ist in den letzten beiden Anläufen passiert). Beschriftungen, die dadurch zu weit rechts
-      // reichen würden, werden stattdessen automatisch verkleinert, s. clampLabelWidth().
-      const cameraDistance = 24
+      // Die geteilte cameraFov (10°, s. const.js) ist ein Tele-Objektiv - bei der jetzt gewünschten,
+      // dramatisch-nahen Perspektive (Fluchtpunkt-Effekt wie ein Weitwinkel) reicht das nicht: aus 3
+      // Einheiten Entfernung sähe man bei 10° nur einen winzigen Ausschnitt. Nur für diese Animation
+      // lokal auf ein normales Weitwinkel-FOV vergrößert.
+      render.camera.fov = 55
+      render.camera.updateProjectionMatrix()
+
+      // Per Hand im Browser eingestellt und über "getCameraInfo()" (s. Debug-Helfer oben) ausgelesen -
+      // feste, absolute Werte statt aus "currentWidth" hergeleitet, damit exakt diese Perspektive
+      // erhalten bleibt (auch wenn der Konstruktions-Regler bewegt wird).
+      const cameraDir = new THREE.Vector3( 0.32453117656140096, 0.10379021932626868, 0.9401633399637948 )
+      const cameraDistance = 3.261349982002199
+      const cameraTarget = new THREE.Vector3( 2.212884878758113, 0.6102394020766208, -0.2502022224716054 )
       // Horizontaler Sichtbereich pro Distanz-Einheit (aus Kamera-FOV und Seitenverhältnis) - für
       // clampLabelWidth() unten.
       const cameraHalfWidthPerDistance = Math.tan( THREE.MathUtils.degToRad( render.camera.fov / 2 ) ) * render.camera.aspect
       function updateCameraFraming() {
-        // target-y bewusst deutlich unter der Mitte von "fallStartHeight", damit über der
-        // startenden Zeile genug Rand bleibt (sonst überlappt sie beim Spawnen mit der
-        // Titel-Überlagerung von "#info" oben im Bild, s. main.css #info { position: absolute }).
-        const target = new THREE.Vector3( currentWidth / 2, fallStartHeight * 0.65, groundZ )
-        render.camera.position.copy( target ).addScaledVector( cameraDir, cameraDistance )
-        render.controls.target.copy( target )
+        render.camera.position.copy( cameraTarget ).addScaledVector( cameraDir, cameraDistance )
+        render.controls.target.copy( cameraTarget )
         render.controls.update()
       }
       updateCameraFraming()
