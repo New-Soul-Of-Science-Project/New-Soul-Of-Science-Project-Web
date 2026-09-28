@@ -117,21 +117,26 @@
 
       /*--------------------
       Darstellung (siehe Konzept-Diskussion "Zwei-Konstruktionen-von-s, Fallanimation"): die
-      kombinierte Zahlengerade ruht fest unten (y=0) auf einer virtuellen Bodenebene vor dem
-      Betrachter. Von oben fällt Zeile für Zeile (k=1,2,3,...) calm herunter; beim Aufsetzen
-      verschwindet die gefallene Zeile (Linie + eigene schwarze Punkte), ihre NEUEN Brüche
-      bleiben als rote Punkte auf der Bodenlinie liegen. "constructionMix" (0..1) skaliert dabei
-      die Breite der gesamten Darstellung zwischen der Teilung (kompakt) und der Wiederholung
-      (weit) - dieselbe Punktmenge, nur unterschiedlich groß dargestellt.
+      Zahlengerade ruht fest unten (y=0) auf einer virtuellen Bodenebene vor dem Betrachter. Von
+      oben fällt Zeile für Zeile (k=1,2,3,...) calm herunter; beim Aufsetzen verschwindet die
+      gefallene Zeile (Linie + eigene Punkte). Zwei wählbare Konstruktionsarten ("constructionMode",
+      Panel unten):
+      - "Teilung": die gelandeten Brüche bleiben als rote Punkte liegen und vereinigen sich mit
+        den schon vorhandenen (Farey-Folge); die noch fehlenden Punkte des gemeinsamen kgV-Gitters
+        werden zusätzlich blau markiert (s. "Blaue fehlende Zwischenpunkte" weiter unten).
+      - "Wiederholung": die gelandete Zeile ERSETZT die Bodenlinie komplett (keine Vereinigung,
+        keine blauen Punkte) - zeigt immer nur die eigene, gleichmäßige k-Teilung. Bevor die
+        nächste Zeile fällt, schrumpft die aktuelle Bodenlinie auf genau die Größe, die sie
+        innerhalb der kommenden, feineren Gesamtzahl (kgV aus alter und neuer Zahl) einnehmen wird
+        (Faktor "alte Zahl / neue Zahl") - macht sichtbar, wie sich die alte Zeile als Bruchteil
+        der neuen wiederfindet, bevor die neue Zeile an ihre Stelle tritt.
       --------------------*/
-      const compactWidth = 2.0    // Breite bei constructionMix = 0 (Teilung/klein)
-      const extendedWidth = 5.6   // Breite bei constructionMix = 1 (Wiederholung/groß)
+      const currentWidth = 3.4    // feste Breite der Darstellung, unabhängig vom Konstruktionsmodus
       const fallStartHeight = 1.0 // Starthöhe einer fallenden Zeile über der Bodenlinie
       const groundZ = 0.5         // Tiefen-Position von Bodenlinie und fallenden Zeilen
       const pointRadius = 0.022
 
-      let constructionMix = 0.35
-      let currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
+      let constructionMode = 'teilung' // 'teilung' oder 'wiederholung', s. Panel weiter unten
       let maxRhythms = 11
       let speedFactor = 2
       let paused = false
@@ -215,10 +220,17 @@
 
       /*--------------------
       Bodenlinie (bleibt immer bestehen) + die darauf liegenden roten Punkte (wachsen über die Zeit).
+      "groundShrinkFactor" ist nur im Wiederholung-Modus < 1 (kurz vor dem nächsten Fall, s. dort) -
+      im Teilung-Modus bleibt er immer 1, "groundDisplayWidth()" entspricht dann "currentWidth".
       --------------------*/
+      let groundShrinkFactor = 1
+      let groundShrinkFromFactor = 1
+      let groundShrinkToFactor = 1
+      function groundDisplayWidth() { return currentWidth * groundShrinkFactor }
+
       const groundLine = buildThickLine()
       groundLine.position.z = groundZ
-      setThickLineLength( groundLine, currentWidth )
+      setThickLineLength( groundLine, groundDisplayWidth() )
       render.scene.add( groundLine )
 
       let groundPoints = new Map() // key "p/q" -> { p, q, mesh }
@@ -227,9 +239,19 @@
         const key = p + '/' + q
         if ( groundPoints.has( key ) ) return
         const mesh = new THREE.Mesh( pointGeo, groundPointMat )
-        mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
+        mesh.position.set( ( p / q ) * groundDisplayWidth(), 0, groundZ )
         render.scene.add( mesh )
         groundPoints.set( key, { p, q, mesh } )
+      }
+
+      // Aktualisiert die X-Position aller bestehenden Boden- UND grünen Punkte, während
+      // "groundShrinkFactor" sich animiert ändert (s. Renderloop) - die Punkte selbst werden dabei
+      // nicht neu erzeugt.
+      function updateGroundPointPositions() {
+        const w = groundDisplayWidth()
+        groundPoints.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
+        missingPoints.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
+        updateMissingTargetScale()
       }
 
       // Die Endpunkte 0 und 1 gehören zu JEDER möglichen Zeile (i=0 bzw. i=k ergibt immer 0/1 bzw.
@@ -241,18 +263,30 @@
       }
       seedGroundEndpoints()
 
-      // Feste, dauerhafte Beschriftung "0" und "1" unter den beiden äußeren Punkten der Bodenlinie -
-      // anders als die Formel-Beschriftung rechts bleiben diese immer sichtbar (auch über einen
-      // Zyklus-Neustart hinweg) und werden nie neu erzeugt, nur bei Breitenänderung repositioniert.
+      // Feste, dauerhafte Beschriftung unter den beiden äußeren Punkten der Bodenlinie - anders als
+      // die Formel-Beschriftung rechts bleiben diese immer an derselben X-Position (auch über einen
+      // Zyklus-Neustart hinweg). "0" links ändert sich nie. Rechts steht im Teilung-Modus immer "1"
+      // (unverändert); im Wiederholung-Modus zeigt sie stattdessen die zuletzt gelandete Zahl (s.
+      // landRow()) und wird während der Schrumpf-Transition vor dem nächsten Fall kurz ausgeblendet,
+      // da der Bodenlinien-Endpunkt sich in dieser Zeit von x=currentWidth wegbewegt.
       const zeroLabel = buildLabel( '0' )
       zeroLabel.center.set( 0.5, 0.5 ) // mittig statt linksbündig verankert, damit sie unter dem Punkt zentriert steht
       zeroLabel.position.set( 0, -0.13, groundZ )
       render.scene.add( zeroLabel )
 
-      const oneLabel = buildLabel( '1' )
-      oneLabel.center.set( 0.5, 0.5 )
-      oneLabel.position.set( currentWidth, -0.13, groundZ )
-      render.scene.add( oneLabel )
+      let rightEndpointLabel = null
+      function setRightEndpointLabel( text ) {
+        if ( rightEndpointLabel ) {
+          rightEndpointLabel.material.map.dispose()
+          rightEndpointLabel.material.dispose()
+          render.scene.remove( rightEndpointLabel )
+        }
+        rightEndpointLabel = buildLabel( text )
+        rightEndpointLabel.center.set( 0.5, 0.5 )
+        rightEndpointLabel.position.set( currentWidth, -0.13, groundZ )
+        render.scene.add( rightEndpointLabel )
+      }
+      setRightEndpointLabel( '1' )
 
       /*--------------------
       Historie: bevor die nächste Zahl fällt, wird eine "eingefrorene" Kopie der aktuellen
@@ -357,13 +391,15 @@
       }
 
       /*--------------------
-      Blaue "fehlende Zwischenpunkte": Ein wirklich GLEICHMÄSSIGER Rhythmus, der alle bisher
+      Grüne "fehlende Zwischenpunkte": Ein wirklich GLEICHMÄSSIGER Rhythmus, der alle bisher
       gefallenen Zeilen 1..k mit umfasst, bräuchte kgV(1..k) gleiche Intervalle (jede Zeile muss
-      ja ganzzahlig hineinpassen) - genau das L aus der Kopfnotiz oben. Nach jeder Vereinigung
-      werden ALLE Punkte i/L (i=0..L) markiert, die noch nicht unter den tatsächlichen (roten)
-      Brüchen sind - additiv (einmal blau gewordene Punkte bleiben blau, bis eine spätere Zeile
-      tatsächlich genau dort landet), da L nur wachsen kann und jedes ältere L ein Teiler des
+      ja ganzzahlig hineinpassen) - genau das L aus der Kopfnotiz oben. Nach jeder Landung werden
+      ALLE Punkte i/L (i=0..L) markiert, die noch nicht unter den tatsächlichen (roten) Brüchen
+      sind. Im Teilung-Modus additiv (einmal grün gewordene Punkte bleiben grün, bis eine spätere
+      Zeile tatsächlich genau dort landet), da L nur wachsen kann und jedes ältere L ein Teiler des
       neuen L ist (alte Gitterpunkte bleiben also gültige Teilmenge des neuen, feineren Gitters).
+      Im Wiederholung-Modus wird die Menge bei jeder Landung komplett neu aufgebaut (s. landRow()),
+      da dort auch die roten Punkte selbst bei jeder Landung ersetzt statt vereinigt werden.
       --------------------*/
       let currentL = 1
       let missingPoints = new Map() // key "p/q" -> { p, q, mesh, fadeElapsed }
@@ -379,16 +415,17 @@
       // (würde sie bei hoher Dichte fast unsichtbar machen), wird nur ihre Breite ENTLANG der Linie
       // (lokale X-Achse) schmaler - sie werden dadurch zu stehenden Ellipsen statt zu schrumpfen.
       function updateMissingTargetScale() {
-        const spacing = currentWidth / currentL
+        const spacing = groundDisplayWidth() / currentL
         missingTargetScale = Math.max( 0.15, Math.min( 1, ( spacing * 0.4 ) / pointRadius ) )
         missingPoints.forEach( entry => {
           if ( entry.fadeElapsed >= missingFadeInDuration ) entry.mesh.scale.set( missingTargetScale, 1, 1 )
         })
       }
 
-      // Additiv: entfernt blaue Punkte, die durch die soeben gelandete Zeile jetzt tatsächlich
-      // (rot) besetzt sind, und ergänzt alle neuen Gitterpunkte, die das (ggf. gewachsene) L
-      // zusätzlich zulässt.
+      // Ergänzt alle Gitterpunkte i/L (i=0..currentL), die noch nicht unter den tatsächlichen
+      // (roten) Brüchen sind. Im Teilung-Modus additiv aufgerufen (entfernt zusätzlich Punkte, die
+      // durch die soeben gelandete Zeile jetzt rot besetzt sind); im Wiederholung-Modus ruft
+      // landRow() vorher clearMissingPoints() auf, sodass hier komplett neu aufgebaut wird.
       function updateMissingPoints() {
         missingPoints.forEach( ( { mesh }, key ) => {
           if ( !groundPoints.has( key ) ) return
@@ -401,7 +438,7 @@
           const key = p + '/' + q
           if ( groundPoints.has( key ) || missingPoints.has( key ) ) continue
           const mesh = new THREE.Mesh( pointGeo, missingPointMat )
-          mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
+          mesh.position.set( ( p / q ) * groundDisplayWidth(), 0, groundZ )
           mesh.scale.setScalar( 0 ) // startet unsichtbar-klein, wächst im Renderloop sanft ein
           render.scene.add( mesh )
           missingPoints.set( key, { p, q, mesh, fadeElapsed: 0 } )
@@ -410,8 +447,7 @@
 
       /*--------------------
       Kamera: fest (kein autoRotate mehr) - Blick fast frontal, leicht erhöht, auf die Bodenlinie
-      unten im Bild; Zielpunkt/Position folgen "currentWidth", damit der Konstruktions-Regler die
-      Ansicht nicht verschiebt.
+      unten im Bild.
       --------------------*/
       // Die geteilte cameraFov (10°, s. const.js) ist ein Tele-Objektiv - bei der jetzt gewünschten,
       // dramatisch-nahen Perspektive (Fluchtpunkt-Effekt wie ein Weitwinkel) reicht das nicht: aus 3
@@ -505,74 +541,95 @@
         fallingRow = null
       }
 
-      // Landung: neue (noch nicht vorhandene) Brüche der Zeile bleiben als rote Punkte auf der
-      // Bodenlinie liegen, die gefallene Zeile selbst verschwindet vollständig.
+      // Landung: im Teilung-Modus bleiben neue (noch nicht vorhandene) Brüche der Zeile als rote
+      // Punkte auf der Bodenlinie liegen (Vereinigung, wie bisher). Im Wiederholung-Modus ERSETZT
+      // die gelandete Zeile die Bodenlinie komplett - s. Konzept-Kommentar oben.
       function landRow() {
         const k = fallingRow.k
-        for ( let i = 0; i <= k; i++ ) {
-          const { p, q } = reduceFraction( i, k )
-          addGroundPoint( p, q )
-        }
         disposeFallingRow()
-        currentL = lcm( currentL, k )
-        updateMissingPoints() // nach jeder Vereinigung: zeigt alle aktuell fehlenden Punkte
+
+        if ( constructionMode === 'teilung' ) {
+          for ( let i = 0; i <= k; i++ ) {
+            const { p, q } = reduceFraction( i, k )
+            addGroundPoint( p, q )
+          }
+          currentL = lcm( currentL, k )
+          updateMissingPoints() // nach jeder Vereinigung: zeigt alle aktuell fehlenden Punkte
+        } else {
+          clearGroundPoints()
+          clearMissingPoints() // wird unten komplett neu aufgebaut, s. Kommentar bei updateMissingPoints()
+          groundShrinkFactor = 1 // die gelandete Zeile erscheint stets in voller Breite
+          for ( let i = 0; i <= k; i++ ) {
+            const { p, q } = reduceFraction( i, k )
+            addGroundPoint( p, q )
+          }
+          currentL = lcm( currentL, k )
+          updateMissingPoints() // markiert die noch fehlenden Punkte zum neuen (gewachsenen) kgV
+        }
         updateGroundLabel( currentL )
+        // Beschriftung unter dem letzten (rechten) Punkt: Gesamtzahl der roten Punkte ohne den immer
+        // vorhandenen Nullpunkt - am Anfang (nur 0 und 1 gesetzt) also "1", danach wächst sie mit
+        // jeder Landung mit (in beiden Modi; im Wiederholung-Modus ist das zugleich immer "k", da die
+        // Zeile dort stets aus genau k+1 Punkten besteht).
+        setRightEndpointLabel( String( groundPoints.size - 1 ) )
 
         currentK++
         if ( currentK > maxRhythms ) {
-          // Noch nicht sofort leeren: die soeben erzeugten blauen Punkte sollen erst einblenden und
-          // das fertige Bild eine Weile stehen bleiben (s. finalPauseDuration im Renderloop).
+          // Noch nicht sofort leeren: das fertige Bild soll erst eine Weile stehen bleiben (s.
+          // finalPauseDuration im Renderloop; im Teilung-Modus blenden dabei zusätzlich die
+          // soeben erzeugten blauen Punkte ein).
           pendingReset = true
         } else {
           // Bevor die nächste Zahl fällt: eine eingefrorene Kopie der jetzigen Bodenlinie anlegen
           snapshotGroundLine()
+          if ( constructionMode === 'wiederholung' ) setupGroundShrink()
         }
 
         waitingToSpawn = true
         pauseElapsed = 0
       }
 
-      // Repositioniert alles, was von "currentWidth" abhängt (Bodenlinie, rote und blaue Punkte,
-      // die evtl. gerade fallende Zeile, Kamera-Rahmung) - aufgerufen bei jeder Änderung des
-      // Konstruktions-Reglers, ohne die laufende Fallanimation zu unterbrechen.
-      function rebuildForWidthChange() {
-        setThickLineLength( groundLine, currentWidth )
-
-        groundPoints.forEach( ( { p, q, mesh } ) => {
-          mesh.position.x = ( p / q ) * currentWidth
-        })
-        oneLabel.position.x = currentWidth // "zeroLabel" bleibt immer bei x=0, unabhängig von currentWidth
-
-        missingPoints.forEach( ( { p, q, mesh } ) => {
-          mesh.position.x = ( p / q ) * currentWidth
-        })
-        updateMissingTargetScale() // Dichte (Abstand pro Punkt) hängt von currentWidth ab
-
-        lineHistory.forEach( ( { line, points, missingPoints: missingCopies, label } ) => {
-          setThickLineLength( line, currentWidth )
-          points.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * currentWidth } )
-          missingCopies.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * currentWidth } )
-          label.position.x = currentWidth + labelRightMargin
-          clampLabelWidth( label )
-        })
-
-        if ( groundLabel ) {
-          groundLabel.position.x = currentWidth + labelRightMargin
-          clampLabelWidth( groundLabel )
-        }
-
-        if ( fallingRow ) {
-          setThickLineLength( fallingRow.line, currentWidth )
-          fallingRow.spheres.forEach( ( { sphere, i, k } ) => {
-            sphere.position.x = ( i / k ) * currentWidth
-          })
-          fallingRow.label.position.x = currentWidth + labelRightMargin
-          clampLabelWidth( fallingRow.label )
-        }
-
-        updateCameraFraming()
+      // Wiederholung-Modus: berechnet, auf welchen Bruchteil ihrer jetzigen (vollen) Breite die
+      // Bodenlinie schrumpfen soll, bevor die nächste Zahl ("currentK", schon inkrementiert) fällt -
+      // nämlich genau auf den Anteil, den die jetzige Gesamtzahl ("currentL") an der neuen,
+      // feineren Gesamtzahl (kgV aus currentL und currentK) ausmacht. Die eigentliche Animation
+      // läuft während der folgenden Pause im Renderloop.
+      function setupGroundShrink() {
+        const upcomingL = lcm( currentL, currentK )
+        groundShrinkFromFactor = 1
+        groundShrinkToFactor = currentL / upcomingL
+        if ( rightEndpointLabel ) rightEndpointLabel.visible = false
       }
-      rebuildForWidthChange() // Kamera-Rahmung einmalig auf den Startwert von currentWidth bringen
+
+      // Setzt einen kompletten Zyklus zurück (nach der letzten Zeile ODER bei Moduswechsel) - auf
+      // exakt den gleichen Anfangszustand wie beim ersten Laden der Seite.
+      function performCycleReset() {
+        clearGroundPoints()
+        seedGroundEndpoints()
+        clearMissingPoints()
+        currentL = 1
+        groundShrinkFactor = 1
+        groundShrinkFromFactor = 1
+        groundShrinkToFactor = 1
+        updateGroundLabel( currentL ) // "1 = 1" statt komplett zu leeren, s. Konzept oben
+        setRightEndpointLabel( '1' )
+        clearLineHistory()
+        currentK = 2
+        pendingReset = false
+        // Im Wiederholung-Modus schrumpft schon die anfängliche "1"-Bodenlinie, bevor die erste
+        // Zahl (currentK=2) fällt - genau wie bei jedem weiteren Übergang innerhalb des Zyklus.
+        if ( constructionMode === 'wiederholung' ) setupGroundShrink()
+      }
+
+      // Bricht eine evtl. laufende Fallanimation ab und startet sofort einen neuen Zyklus - wird
+      // beim Umschalten zwischen Teilung und Wiederholung im Panel aufgerufen.
+      function resetForModeSwitch() {
+        if ( fallingRow ) disposeFallingRow()
+        performCycleReset()
+        waitingToSpawn = true
+        pauseElapsed = 0
+        fallElapsed = 0
+      }
 
       /*--------------------
       Control-Panel
@@ -589,20 +646,20 @@
         container.appendChild( panel.domElement )
 
         const pausedName = 'Animation anhalten'
-        const constructionMixName = 'Konstruktion: Teilung ⟷ Wiederholung'
+        const constructionModeName = 'Konstruktion'
+        const constructionModeOptions = { 'Teilung': 'teilung', 'Wiederholung': 'wiederholung' }
         const maxRhythmsName = 'Rhythmen bis zum Neustart (n)'
         const speedName = 'Fallgeschwindigkeit'
         const settings = {
           [pausedName]: paused,
-          [constructionMixName]: constructionMix,
+          [constructionModeName]: constructionMode,
           [maxRhythmsName]: maxRhythms,
           [speedName]: speedFactor,
         }
         panel.add( settings, pausedName ).onChange( v => { paused = v } )
-        panel.add( settings, constructionMixName, 0, 1, 0.01 ).onChange( v => {
-          constructionMix = v
-          currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
-          rebuildForWidthChange()
+        panel.add( settings, constructionModeName, constructionModeOptions ).onChange( v => {
+          constructionMode = v
+          resetForModeSwitch()
         })
         panel.add( settings, maxRhythmsName, 3, 12, 1 ).onChange( v => { maxRhythms = v } )
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
@@ -651,18 +708,19 @@
 
           if ( waitingToSpawn ) {
             pauseElapsed += delta
+
+            // Wiederholung-Modus: während der Pause schrumpft die Bodenlinie sanft auf ihren
+            // Zielanteil (s. setupGroundShrink()) - abgeschlossen, sobald die nächste Zahl fällt.
+            if ( constructionMode === 'wiederholung' && !pendingReset ) {
+              const shrinkT = Math.min( 1, pauseElapsed / basePauseDuration )
+              groundShrinkFactor = groundShrinkFromFactor + ( groundShrinkToFactor - groundShrinkFromFactor ) * shrinkT
+              setThickLineLength( groundLine, groundDisplayWidth() )
+              updateGroundPointPositions()
+            }
+
             const requiredPause = pendingReset ? finalPauseDuration : basePauseDuration
             if ( pauseElapsed >= requiredPause ) {
-              if ( pendingReset ) {
-                clearGroundPoints()
-                seedGroundEndpoints()
-                clearMissingPoints()
-                currentL = 1
-                updateGroundLabel( currentL ) // "1 = 1" statt komplett zu leeren, s. Konzept oben
-                clearLineHistory()
-                currentK = 2
-                pendingReset = false
-              }
+              if ( pendingReset ) performCycleReset()
               waitingToSpawn = false
               fallElapsed = 0
               spawnRow( currentK )
