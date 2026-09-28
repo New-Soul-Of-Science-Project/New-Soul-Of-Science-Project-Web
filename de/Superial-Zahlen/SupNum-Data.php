@@ -249,7 +249,7 @@
       text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Arithmetische-Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
@@ -261,6 +261,8 @@
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum' => array( headline_text => 'Das analytische Kontinuum',/* headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Zwei-Konstruktionen-von-s' => array( headline_text => 'Die zwei Konstruktionen von \lm{ \s }',/* headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Entstehung-von-s-als-3D-Animation' => array( headline_text => 'Entstehung von \lm{ \s } als 3D-Animation',/* headline_text_short => 'X' */),
+            'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten' => array( headline_text => 'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten'/* , headline_text_short => 'X' */),

@@ -955,8 +955,15 @@
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
                                                                  'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
-                                                                 
-                                                                 
+
+  $SupNum_g_iframe_ary_sGeomKonstrukt3D         = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation vereint beide Konstruktionen in einem einzigen, sich Schritt für Schritt aufbauenden Vorgang:'."\n".
+                                                                 'jede natürliche Zahl fällt der Reihe nach in Königsblau auf die Zahlengerade zwischen Null und Eins und hinterlässt dort in Rot die Punkte, die zum bisherigen Rhythmus neu hinzukommen.'."\n".
+                                                                 'Die jadegrün markierten Zwischenpunkte zeigen jeweils, welche weiteren Punkte für eine wirklich gleichmäßige Teilung an dieser Stelle noch fehlen würden.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-print.png',
+                                                         print_image_alt => 'Die zwei Konstruktionen von s, interaktive 3D-Animation');
+
+
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".

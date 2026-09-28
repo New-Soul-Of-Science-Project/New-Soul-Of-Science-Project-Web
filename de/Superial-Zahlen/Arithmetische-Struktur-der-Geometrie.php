@@ -735,6 +735,21 @@
                     'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins herniedergeht.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Entstehung-von-s-als-3D-Animation', text =>
+                  'Entstehung von \lm{ \s } als 3D-Animation', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Die beiden vorangegangenen, statischen Konstruktionen lassen sich auch als ein einziger, dynamischer Vorgang begreifen:'."\n".
+                    'Rhythmus für Rhythmus kommt eine weitere natürliche Zahl hinzu und verfeinert gemeinsam mit den schon vorhandenen Rhythmen die Teilung der Strecke zwischen Null und Eins.'."\n".
+                    ''))),
+
+                  array( 'iframe',
+                    array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen'))),
+
+                  array( 'text', array( text => array(
+                    'So wird sichtbar, wie mit jeder neu hinzukommenden Primzahl in einem der Rhythmen die Teilung der Strecke tatsächlich um genau diese Primzahl feiner wird –'."\n".
+                    'ganz so, wie es das folgende Primzahl-Flächenprodukt von \lm{ \s } arithmetisch beschreibt.'."\n".
+                    ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
                   'Explizites Primzahl-Flächenprodukt von \lm{ \s }', subline =>
                     '')),
