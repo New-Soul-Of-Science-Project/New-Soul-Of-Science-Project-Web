@@ -9,14 +9,16 @@
     <style>
       body { margin: 0; }
       #info h1 { line-height: 1.4; margin: 10px 0 5px 0; }
-      #info h2 { line-height: 1.4; margin: 0 0 10px 0; }
+      /* zusätzlicher seitlicher Rand, damit der (recht lange) Untertitel nicht bis dicht an den
+         Bildrand läuft - main.css gibt #info nur 10px Padding, das reicht hier nicht */
+      #info h2 { line-height: 1.4; margin: 0 0 10px 0; padding: 0 15px; }
     </style>
   </head>
   <body>
     <div id="container"></div>
     <div id="info">
       <h1>Die zwei Konstruktionen von s</h1>
-      <h2 id="headline">Jede Zeile natürlicher Rhythmen fällt auf die entstehende Zahlengerade und verschmilzt mit ihr</h2>
+      <h2 id="headline">Jeder natürliche Rhythmus fällt auf die Strecke zwischen Null und Eins und verfeinert durch die hinzukommenden Primzahlen ihre Teilung</h2>
     </div>
 
     <!-- *** Imports *** -->
