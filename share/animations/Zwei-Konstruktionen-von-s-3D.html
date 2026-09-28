@@ -17,7 +17,7 @@
   <body>
     <div id="container"></div>
     <div id="info">
-      <h1>Die zwei Konstruktionen von s</h1>
+      <h1 id="title">Die zwei Konstruktionen von s</h1>
       <h2 id="headline">Jeder natürliche Rhythmus fällt auf die Strecke zwischen Null und Eins und verfeinert durch die hinzukommenden Primzahlen ihre Teilung</h2>
     </div>
 
@@ -67,6 +67,8 @@
 
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
+      const titleEl = document.getElementById( 'title' )
+      const headlineEl = document.getElementById( 'headline' )
 
       // Himmelblauer statt heller Hintergrund (anders als bei den Photon-Animationen), passend hell
       // gehalten, damit die königsblauen Punkte weiterhin gut zu unterscheiden bleiben.
@@ -141,6 +143,29 @@
       // das Panel bleibt trotzdem bedienbar, falls jemand doch wechseln möchte.
       const urlParams = new URLSearchParams( window.location.search )
       let constructionMode = urlParams.get( 'konstruktion' ) === 'wiederholung' ? 'wiederholung' : 'teilung'
+
+      // Titel/Untertitel hängen vom Modus ab: die Wiederholung konstruiert s, die Teilung dessen
+      // Kehrwert s⁻¹ (s. Definitions-Abschnitte auf der einbettenden Seite). Für den Exponenten
+      // echtes <sup> statt reinem Unicode-Hochstellungszeichen, da das hochgestellte Unicode-Minus
+      // (U+207B) kaum sichtbar ist - stattdessen ein normal breiter Halbgeviertstrich (–), nur per
+      // <sup> angehoben.
+      const headlineTexts = {
+        wiederholung: {
+          title: 'Die Konstruktion von s',
+          subtitle: 'Jeder natürliche Rhythmus fällt herab und wird durch die hinzukommenden Primzahlen zum neuen, längeren Zahlenstrahl',
+        },
+        teilung: {
+          title: 'Die Konstruktion von s<sup>–1</sup>',
+          subtitle: 'Jeder natürliche Rhythmus fällt auf die Strecke zwischen Null und Eins und verfeinert durch die hinzukommenden Primzahlen ihre Teilung',
+        },
+      }
+      function updateHeadlineTexts() {
+        const texts = headlineTexts[ constructionMode ]
+        titleEl.innerHTML = texts.title
+        headlineEl.textContent = texts.subtitle
+      }
+      updateHeadlineTexts()
+
       let maxRhythms = 11
       let speedFactor = 2
       let paused = false
@@ -635,6 +660,7 @@
       // Bricht eine evtl. laufende Fallanimation ab und startet sofort einen neuen Zyklus - wird
       // beim Umschalten zwischen Teilung und Wiederholung im Panel aufgerufen.
       function resetForModeSwitch() {
+        updateHeadlineTexts()
         if ( fallingRow ) disposeFallingRow()
         performCycleReset()
         waitingToSpawn = true
