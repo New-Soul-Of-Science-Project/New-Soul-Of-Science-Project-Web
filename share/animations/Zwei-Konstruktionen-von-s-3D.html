@@ -244,14 +244,16 @@
         groundPoints.set( key, { p, q, mesh } )
       }
 
-      // Aktualisiert die X-Position aller bestehenden Boden- UND grünen Punkte, während
-      // "groundShrinkFactor" sich animiert ändert (s. Renderloop) - die Punkte selbst werden dabei
-      // nicht neu erzeugt.
+      // Aktualisiert die X-Position aller bestehenden Boden- UND grünen Punkte sowie der rechten
+      // Endpunkt-Beschriftung, während "groundShrinkFactor" sich animiert ändert (s. Renderloop) -
+      // die Punkte selbst werden dabei nicht neu erzeugt, die Beschriftung rutscht einfach mit dem
+      // schrumpfenden Endpunkt mit (statt zu verschwinden).
       function updateGroundPointPositions() {
         const w = groundDisplayWidth()
         groundPoints.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
         missingPoints.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
         updateMissingTargetScale()
+        if ( rightEndpointLabel ) rightEndpointLabel.position.x = w
       }
 
       // Die Endpunkte 0 und 1 gehören zu JEDER möglichen Zeile (i=0 bzw. i=k ergibt immer 0/1 bzw.
@@ -565,13 +567,13 @@
           }
           currentL = lcm( currentL, k )
           updateMissingPoints() // markiert die noch fehlenden Punkte zum neuen (gewachsenen) kgV
+          // Beschriftung unter dem letzten (rechten) Punkt: Gesamtanzahl der Teilungen ("currentL") -
+          // im Teilung-Modus bleibt der rechte Punkt stets der feste Wert "1" (Grenze des Intervalls,
+          // s. setRightEndpointLabel('1') bei Reset/Start), nur hier im Wiederholung-Modus ändert sich
+          // seine Bedeutung mit jeder Landung.
+          setRightEndpointLabel( String( currentL ) )
         }
         updateGroundLabel( currentL )
-        // Beschriftung unter dem letzten (rechten) Punkt: Gesamtzahl der roten Punkte ohne den immer
-        // vorhandenen Nullpunkt - am Anfang (nur 0 und 1 gesetzt) also "1", danach wächst sie mit
-        // jeder Landung mit (in beiden Modi; im Wiederholung-Modus ist das zugleich immer "k", da die
-        // Zeile dort stets aus genau k+1 Punkten besteht).
-        setRightEndpointLabel( String( groundPoints.size - 1 ) )
 
         currentK++
         if ( currentK > maxRhythms ) {
@@ -593,12 +595,12 @@
       // Bodenlinie schrumpfen soll, bevor die nächste Zahl ("currentK", schon inkrementiert) fällt -
       // nämlich genau auf den Anteil, den die jetzige Gesamtzahl ("currentL") an der neuen,
       // feineren Gesamtzahl (kgV aus currentL und currentK) ausmacht. Die eigentliche Animation
-      // läuft während der folgenden Pause im Renderloop.
+      // läuft während der folgenden Pause im Renderloop (s. updateGroundPointPositions(), rutscht
+      // dabei auch die rechte Endpunkt-Beschriftung mit dem Endpunkt mit).
       function setupGroundShrink() {
         const upcomingL = lcm( currentL, currentK )
         groundShrinkFromFactor = 1
         groundShrinkToFactor = currentL / upcomingL
-        if ( rightEndpointLabel ) rightEndpointLabel.visible = false
       }
 
       // Setzt einen kompletten Zyklus zurück (nach der letzten Zeile ODER bei Moduswechsel) - auf
