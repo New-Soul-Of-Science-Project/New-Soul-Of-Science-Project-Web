@@ -125,7 +125,7 @@
 
       let constructionMix = 0.35
       let currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
-      let maxRhythms = 6
+      let maxRhythms = 8
       let speedFactor = 1
       let paused = false
 
@@ -149,7 +149,7 @@
         shininess: 25,
         specular: 0x999999,
         transparent: true,
-        opacity: 0.6,
+        opacity: 0.3,
       } )
       const lineGeo = new THREE.CylinderGeometry( lineRadius, lineRadius, 1, 16 )
       function buildThickLine() {
@@ -409,8 +409,13 @@
       let fallElapsed = 0
       let pauseElapsed = 0
       let waitingToSpawn = true // Startzustand: erste Zeile erscheint nach kurzer Pause
-      const baseFallDuration = 4.0  // Sekunden bei speedFactor=1 - "ganz in Ruhe"
-      const basePauseDuration = 0.9 // Pause zwischen Aufsetzen und nächstem Start
+      let pendingReset = false // true nach der letzten Zeile: Neustart erst nach der langen Pause
+      const baseFallDuration = 4.0   // Sekunden bei speedFactor=1 - "ganz in Ruhe"
+      const basePauseDuration = 0.9  // Pause zwischen Aufsetzen und nächstem Start
+      const finalPauseDuration = 3.0 // Pause nach der letzten Zeile, bevor der Zyklus neu startet -
+                                      // länger als basePauseDuration, damit die neuen blauen Punkte
+                                      // erst noch einblenden (s. missingFadeInDuration) und das fertige
+                                      // Bild eine Weile stehen bleibt, bevor alles geleert wird
 
       function spawnRow( k ) {
         const group = new THREE.Group()
@@ -463,12 +468,9 @@
 
         currentK++
         if ( currentK > maxRhythms ) {
-          clearGroundPoints()
-          clearMissingPoints()
-          clearGroundLabel()
-          clearLineHistory()
-          currentL = 1
-          currentK = 1
+          // Noch nicht sofort leeren: die soeben erzeugten blauen Punkte sollen erst einblenden und
+          // das fertige Bild eine Weile stehen bleiben (s. finalPauseDuration im Renderloop).
+          pendingReset = true
         } else {
           // Bevor die nächste Zahl fällt: eine eingefrorene Kopie der jetzigen Bodenlinie anlegen
           snapshotGroundLine()
@@ -549,7 +551,7 @@
           currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
           rebuildForWidthChange()
         })
-        panel.add( settings, maxRhythmsName, 3, 8, 1 ).onChange( v => { maxRhythms = v } )
+        panel.add( settings, maxRhythmsName, 3, 10, 1 ).onChange( v => { maxRhythms = v } )
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
       }
       createPanel()
@@ -588,7 +590,17 @@
 
           if ( waitingToSpawn ) {
             pauseElapsed += delta
-            if ( pauseElapsed >= basePauseDuration ) {
+            const requiredPause = pendingReset ? finalPauseDuration : basePauseDuration
+            if ( pauseElapsed >= requiredPause ) {
+              if ( pendingReset ) {
+                clearGroundPoints()
+                clearMissingPoints()
+                clearGroundLabel()
+                clearLineHistory()
+                currentL = 1
+                currentK = 1
+                pendingReset = false
+              }
               waitingToSpawn = false
               fallElapsed = 0
               spawnRow( currentK )
