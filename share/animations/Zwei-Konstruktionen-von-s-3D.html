@@ -31,7 +31,8 @@
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
           "render": "./js/render-v0.186.0.js",
-          "info-button": "./js/info-button.js"
+          "info-button": "./js/info-button.js",
+          "camera-debug": "./js/camera-debug.js"
         }
       }
     </script>
@@ -49,32 +50,14 @@
       } from 'const'
       import { Render } from 'render'
       import { createInfoButton } from 'info-button'
+      import { exposeCameraDebug } from 'camera-debug'
 
       // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
       const eleWidth = 660
       const eleHeight = 450
 
       const render = new Render( eleWidth, eleHeight )
-
-      // Debug-Zugriff für die Konsole: manuell (per Maus) die gewünschte Kameraperspektive
-      // einstellen, dann in der Browser-Konsole "copy(getCameraInfo())" ausführen - liefert Position,
-      // Blickziel, daraus abgeleitete Distanz/Richtung und FOV zum Zurückmelden.
-      window.__camera = render.camera
-      window.__controls = render.controls
-      window.getCameraInfo = () => {
-        const pos = render.camera.position
-        const tgt = render.controls.target
-        const dir = pos.clone().sub( tgt )
-        const distance = dir.length()
-        dir.normalize()
-        return JSON.stringify( {
-          cameraPosition: { x: pos.x, y: pos.y, z: pos.z },
-          target: { x: tgt.x, y: tgt.y, z: tgt.z },
-          cameraDir: { x: dir.x, y: dir.y, z: dir.z },
-          distance,
-          fov: render.camera.fov,
-        }, null, 2 )
-      }
+      exposeCameraDebug( render )
 
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'

@@ -38,7 +38,8 @@
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
           "render": "./js/render-v0.186.0.js",
-          "info-button": "./js/info-button.js"
+          "info-button": "./js/info-button.js",
+          "camera-debug": "./js/camera-debug.js"
         }
       }
     </script>
@@ -66,12 +67,14 @@
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
       import { createInfoButton } from 'info-button'
+      import { exposeCameraDebug } from 'camera-debug'
 
       // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
       const eleWidth = 660
       const eleHeight = 450
 
       const render = new Render( eleWidth, eleHeight )
+      exposeCameraDebug( render )
 
       // Wie bei Sterntetraeder-3D.html: #container hält die Canvas, #info Titel/Untertitel darüber.
       // calc dynamic size, see: https://stackoverflow.com/questions/29884485/threejs-canvas-size-based-on-container

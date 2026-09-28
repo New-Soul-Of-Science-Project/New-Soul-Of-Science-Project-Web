@@ -31,7 +31,8 @@
           "utilities": "./js/utilities.js",
           "render": "./js/render.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js",
-          "info-button": "./js/info-button.js"
+          "info-button": "./js/info-button.js",
+          "camera-debug": "./js/camera-debug.js"
         }
       }
     </script>
@@ -63,6 +64,7 @@
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
       import { createInfoButton } from 'info-button'
+      import { exposeCameraDebug } from 'camera-debug'
 
       // !!! does not work in a way that it makes all more easy and have lesser lines !!!
       // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.
@@ -81,6 +83,7 @@
       Controls
       --------------------*/
       const render = new Render(eleWidth, eleHeight)
+      exposeCameraDebug( render )
 
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
