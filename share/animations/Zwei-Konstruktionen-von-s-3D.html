@@ -129,9 +129,9 @@
       let speedFactor = 1
       let paused = false
 
-      const pointMat = new THREE.MeshLambertMaterial( { color: 0x000000 } )
+      const pointMat = new THREE.MeshLambertMaterial( { color: 0x142a63 } ) // fallende Kugeln: Königsblau
       const groundPointMat = new THREE.MeshLambertMaterial( { color: 0xcc0000 } )
-      const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x142a63 } ) // Königsblau, etwas dunkler
+      const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x0e4d36 } ) // Zwischenkugeln: dunkle Jade
       const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
       const missingFadeInDuration = 0.6 // Sekunden, für das sanfte "Einblenden" der blauen Punkte
 
