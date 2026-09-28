@@ -53,6 +53,17 @@ export function createInfoButton( container ) {
   })
   document.addEventListener( 'click', () => { popup.style.display = 'none' } )
   popup.addEventListener( 'click', ( event ) => event.stopPropagation() )
+  // Diese Animationen laufen meist eingebettet in einem iframe auf der eigentlichen Seite - ein
+  // Klick AUSSERHALB des iframes (auf der umgebenden Seite) würde vom obigen "document"-Listener
+  // nicht erfasst, da er nur auf das eigene Dokument hört. Bei Gleicher-Origin-Einbettung (hier immer
+  // der Fall) lässt sich zusätzlich auch auf Klicks im Elterndokument hören.
+  if ( window.parent && window.parent !== window ) {
+    try {
+      window.parent.document.addEventListener( 'click', () => { popup.style.display = 'none' } )
+    } catch ( error ) {
+      // unerreichbares/fremdes Elterndokument - der eigene Listener oben reicht dann weiterhin aus
+    }
+  }
 
   container.appendChild( button )
   container.appendChild( popup )
