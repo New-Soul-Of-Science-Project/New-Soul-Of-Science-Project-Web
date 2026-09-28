@@ -144,6 +144,17 @@
       const urlParams = new URLSearchParams( window.location.search )
       let constructionMode = urlParams.get( 'konstruktion' ) === 'wiederholung' ? 'wiederholung' : 'teilung'
 
+      // Nur im Wiederholung-Modus relevant (s. Panel weiter unten, dort auch versteckt/gezeigt je nach
+      // Modus): steuert, wie die History-Kopien (die zurückliegenden, im Raum nach hinten rückenden
+      // Bodenlinien) im Verhältnis zueinander dargestellt werden.
+      // - true (Standard, "neue Variante"): alle Linien (History + Bodenlinie) teilen sich einen
+      //   gemeinsamen Maßstab - jede Kopie wird mit fortschreitendem kgV ("currentL") im Vergleich zur
+      //   jeweils aktuellen, feinsten Bodenlinie proportional kürzer dargestellt (Breite = currentWidth
+      //   * eigenes-L / currentL).
+      // - false ("wie bisher"): jede Kopie behält unabhängig von ihrem eigenen L immer die volle
+      //   "currentWidth" (normiert gleich lang), wie es die Animation schon vor dieser Option tat.
+      let shrinkAllLines = true
+
       // Titel/Untertitel hängen vom Modus ab: die Wiederholung konstruiert s, die Teilung dessen
       // Kehrwert s⁻¹ (s. Definitions-Abschnitte auf der einbettenden Seite). Für den Exponenten
       // echtes <sup> statt reinem Unicode-Hochstellungszeichen, da das hochgestellte Unicode-Minus
@@ -336,7 +347,9 @@
 
       function snapshotGroundLine() {
         // Alle bestehenden Kopien einen Schritt zurückschieben (Zielwert; die tatsächliche
-        // Bewegung passiert animiert im Renderloop, s.u.)
+        // Bewegung passiert animiert im Renderloop, s.u.) - die Schrumpf-Ziele für die Breite werden
+        // NICHT hier gesetzt, sondern (bei Bedarf) direkt danach von setupGroundShrink() - dort
+        // bekommen ALLE Kopien gemeinsam ihr vorausschauendes Ziel für die kommende Zahl, s. dort.
         lineHistory.forEach( entry => {
           entry.fromZ = entry.z
           entry.toZ = entry.z - historyRowSpacing
@@ -372,7 +385,11 @@
         clampLabelWidth( label )
         render.scene.add( label )
 
-        lineHistory.push( { z: groundZ, fromZ: groundZ, toZ, line, points, missingPoints: missingCopies, label } )
+        // Die neue Kopie repräsentiert "currentL" (bereits aktualisiert) und startet daher immer bei
+        // Verhältnis 1 (volle "currentWidth") - genau wie sie als Bodenlinie zuletzt aussah; erst bei
+        // einer SPÄTEREN Landung schrumpft sie ggf. (s. oben, entry.toWidthRatio).
+        lineHistory.push( { z: groundZ, fromZ: groundZ, toZ, line, points, missingPoints: missingCopies, label,
+                             L: currentL, widthRatio: 1, fromWidthRatio: 1, toWidthRatio: 1 } )
         historySlideElapsed = 0 // startet die gemeinsame Rückzugs-Animation für alle Kopien
       }
 
@@ -635,6 +652,19 @@
         const upcomingL = lcm( currentL, currentK )
         groundShrinkFromFactor = 1
         groundShrinkToFactor = currentL / upcomingL
+
+        // ALLE History-Kopien schrumpfen während dieser Pause gemeinsam mit der Bodenlinie
+        // vorausschauend auf ihren jeweiligen Anteil am kommenden, feineren "upcomingL" - nicht erst
+        // bei der übernächsten Landung (das war der eigentliche Fehler: bisher haben nur die zur
+        // Bodenlinie passenden Kopien während der Pause mitgeschrumpft, alle anderen, älteren Kopien
+        // blieben bis zur nächsten Landung auf ihrem alten, gegenüber dem jetzigen "currentL"
+        // korrekten, aber gegenüber dem gleich erreichten "upcomingL" noch zu großen Anteil stehen -
+        // dadurch wirkten sie während der Pause zwischenzeitlich sichtbar "zu wenig geschrumpft" im
+        // Vergleich zur schon vorausschauenden Bodenlinie/neuesten Kopie).
+        lineHistory.forEach( entry => {
+          entry.fromWidthRatio = entry.widthRatio
+          entry.toWidthRatio = entry.L / upcomingL
+        })
       }
 
       // Setzt einen kompletten Zyklus zurück (nach der letzten Zeile ODER bei Moduswechsel) - auf
@@ -685,19 +715,26 @@
         const pausedName = 'Animation anhalten'
         const constructionModeName = 'Konstruktion'
         const constructionModeOptions = { 'Teilung': 'teilung', 'Wiederholung': 'wiederholung' }
+        const shrinkAllLinesName = 'Alle Zahlenlinien verkürzen'
         const maxRhythmsName = 'Rhythmen bis zum Neustart (n)'
         const speedName = 'Fallgeschwindigkeit'
         const settings = {
           [pausedName]: paused,
           [constructionModeName]: constructionMode,
+          [shrinkAllLinesName]: shrinkAllLines,
           [maxRhythmsName]: maxRhythms,
           [speedName]: speedFactor,
         }
         panel.add( settings, pausedName ).onChange( v => { paused = v } )
         panel.add( settings, constructionModeName, constructionModeOptions ).onChange( v => {
           constructionMode = v
+          shrinkAllLinesController.show( constructionMode === 'wiederholung' )
           resetForModeSwitch()
         })
+        // Nur im Wiederholung-Modus sinnvoll (s. Kommentar bei "let shrinkAllLines" oben) - im
+        // Teilung-Modus von Anfang an versteckt.
+        const shrinkAllLinesController = panel.add( settings, shrinkAllLinesName ).onChange( v => { shrinkAllLines = v } )
+        shrinkAllLinesController.show( constructionMode === 'wiederholung' )
         panel.add( settings, maxRhythmsName, 3, 12, 1 ).onChange( v => { maxRhythms = v } )
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
       }
@@ -728,7 +765,12 @@
           }
 
           // Gemeinsames, sanftes Zurückgleiten aller History-Kopien nach einer neuen Landung
-          // (s. snapshotGroundLine) - alle betroffenen Kopien bewegen sich synchron.
+          // (s. snapshotGroundLine) - alle betroffenen Kopien bewegen sich synchron. Nur die
+          // Tiefen-Position (Z) - die Breite (nur im Wiederholung-Modus relevant) wird bewusst NICHT
+          // hier, sondern weiter unten im "waitingToSpawn"-Block behandelt: dort läuft für ALLE
+          // Linien (Bodenlinie + sämtliche History-Kopien) derselbe Zeitgeber ("pauseElapsed"), damit
+          // wirklich alle gleichzeitig und im exakt gleichen Tempo schrumpfen - mit der eigenen
+          // (anderen) Dauer dieser Rückgleit-Animation liefen sie sonst leicht versetzt zueinander.
           if ( historySlideElapsed < historySlideDuration ) {
             historySlideElapsed += delta
             const t = Math.min( 1, historySlideElapsed / historySlideDuration )
@@ -747,12 +789,27 @@
             pauseElapsed += delta
 
             // Wiederholung-Modus: während der Pause schrumpft die Bodenlinie sanft auf ihren
-            // Zielanteil (s. setupGroundShrink()) - abgeschlossen, sobald die nächste Zahl fällt.
+            // Zielanteil (s. setupGroundShrink()) - abgeschlossen, sobald die nächste Zahl fällt. Bei
+            // aktivem "shrinkAllLines" schrumpfen ALLE History-Kopien mit genau demselben Zeitgeber
+            // ("shrinkT") gleichzeitig mit - jede auf ihr eigenes, bei der letzten Landung berechnetes
+            // Ziel (entry.toWidthRatio, s. snapshotGroundLine()) -, statt nur die Bodenlinie allein.
             if ( constructionMode === 'wiederholung' && !pendingReset ) {
               const shrinkT = Math.min( 1, pauseElapsed / basePauseDuration )
               groundShrinkFactor = groundShrinkFromFactor + ( groundShrinkToFactor - groundShrinkFromFactor ) * shrinkT
               setThickLineLength( groundLine, groundDisplayWidth() )
               updateGroundPointPositions()
+
+              if ( shrinkAllLines ) {
+                lineHistory.forEach( entry => {
+                  entry.widthRatio = entry.fromWidthRatio + ( entry.toWidthRatio - entry.fromWidthRatio ) * shrinkT
+                  const w = currentWidth * entry.widthRatio
+                  setThickLineLength( entry.line, w )
+                  entry.points.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
+                  entry.missingPoints.forEach( ( { p, q, mesh } ) => { mesh.position.x = ( p / q ) * w } )
+                  entry.label.position.x = w + labelRightMargin
+                  clampLabelWidth( entry.label )
+                })
+              }
             }
 
             const requiredPause = pendingReset ? finalPauseDuration : basePauseDuration
