@@ -145,8 +145,8 @@
 
       let constructionMix = 0.35
       let currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
-      let maxRhythms = 8
-      let speedFactor = 1
+      let maxRhythms = 11
+      let speedFactor = 2
       let paused = false
 
       const pointMat = new THREE.MeshLambertMaterial( { color: 0x142a63 } ) // fallende Kugeln: Königsblau
@@ -574,7 +574,7 @@
           currentWidth = compactWidth + ( extendedWidth - compactWidth ) * constructionMix
           rebuildForWidthChange()
         })
-        panel.add( settings, maxRhythmsName, 3, 10, 1 ).onChange( v => { maxRhythms = v } )
+        panel.add( settings, maxRhythmsName, 3, 12, 1 ).onChange( v => { maxRhythms = v } )
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
       }
       createPanel()
