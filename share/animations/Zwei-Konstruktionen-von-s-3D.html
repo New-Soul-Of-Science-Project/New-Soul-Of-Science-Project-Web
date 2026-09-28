@@ -154,7 +154,8 @@
       const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x0e4d36 } ) // Zwischenkugeln: dunkle Jade
       const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
       const missingFadeInDuration = 0.6 // Sekunden, für das sanfte "Einblenden" der blauen Punkte
-      const groundLabelFadeOutDuration = 0.6 // Sekunden, für das sanfte Ausblenden kurz vor der Landung
+      const groundLabelFadeDuration = 0.6 // Sekunden - sowohl für das Einblenden der neuen als auch
+                                           // das Ausblenden der alten Formel/fallenden Zeile
 
       // Deutlich dickere Linien als schlichtes "THREE.Line" (1px, auf manchen GPUs nicht
       // zuverlässig dicker darstellbar - dieselbe Erfahrung wie bei den Spuren/Feldpfeilen der
@@ -334,11 +335,14 @@
       // folglich nur, wenn eine Zeile tatsächlich eine neue Primzahl/-potenz einbringt (z.B. bei
       // k=6=2·3 nicht, da 2 und 3 schon enthalten sind) - bleibt stehen, bis sich currentL ändert.
       let groundLabel = null
+      let groundLabelFadeElapsed = Infinity // >= groundLabelFadeDuration: kein aktives Einblenden mehr
       const labelRightMargin = 0.1 // Abstand der Beschriftung rechts vom Linienende
 
       function updateGroundLabel( divisionCount ) {
         clearGroundLabel()
         groundLabel = buildLabel( formatFactorization( divisionCount ) )
+        groundLabel.material.opacity = 0 // startet unsichtbar, blendet im Renderloop sanft ein
+        groundLabelFadeElapsed = 0
         groundLabel.position.set( currentWidth + labelRightMargin, 0, groundZ ) // y=0: auf Linienhöhe
         clampLabelWidth( groundLabel )
         render.scene.add( groundLabel )
@@ -458,13 +462,21 @@
       function spawnRow( k ) {
         const group = new THREE.Group()
 
+        // Eigene (geklonte) Materialien statt der geteilten "lineMat"/"pointMat" - nur so lässt sich
+        // diese eine fallende Zeile später unabhängig von der Bodenlinie/den History-Kopien ausblenden
+        // (s. Renderloop), ohne über die geteilten Materialien auch andere Linien/Punkte zu dimmen.
+        const lineMaterial = lineMat.clone()
+        const pointMaterial = pointMat.clone()
+        pointMaterial.transparent = true // für das Ausblenden per Opacity nötig (Standard war deckend)
+
         const line = buildThickLine()
+        line.material = lineMaterial
         setThickLineLength( line, currentWidth )
         group.add( line )
 
         const spheres = []
         for ( let i = 0; i <= k; i++ ) {
-          const sphere = new THREE.Mesh( pointGeo, pointMat )
+          const sphere = new THREE.Mesh( pointGeo, pointMaterial )
           sphere.position.set( ( i / k ) * currentWidth, 0, 0 )
           group.add( sphere )
           spheres.push( { sphere, i, k } )
@@ -478,13 +490,15 @@
         group.position.set( 0, fallStartHeight, groundZ )
         render.scene.add( group )
 
-        fallingRow = { group, k, line, spheres, label }
+        fallingRow = { group, k, line, lineMaterial, spheres, pointMaterial, label }
       }
 
       function disposeFallingRow() {
         if ( !fallingRow ) return
         // "line" nutzt die geteilte "lineGeo" (wie alle Linien) - nicht einzeln disposen
+        fallingRow.lineMaterial.dispose()
         fallingRow.spheres.forEach( ( { sphere } ) => sphere.geometry === pointGeo || sphere.geometry.dispose() )
+        fallingRow.pointMaterial.dispose()
         fallingRow.label.material.map.dispose()
         fallingRow.label.material.dispose()
         render.scene.remove( fallingRow.group )
@@ -610,6 +624,13 @@
             entry.mesh.scale.set( progress * missingTargetScale, progress, progress )
           })
 
+          // Neue Formel nach einer Landung: sanft einblenden statt plötzlich zu erscheinen (s.
+          // updateGroundLabel, die "groundLabelFadeElapsed" jeweils auf 0 zurücksetzt).
+          if ( groundLabel && groundLabelFadeElapsed < groundLabelFadeDuration ) {
+            groundLabelFadeElapsed += delta
+            groundLabel.material.opacity = Math.min( 1, groundLabelFadeElapsed / groundLabelFadeDuration )
+          }
+
           // Gemeinsames, sanftes Zurückgleiten aller History-Kopien nach einer neuen Landung
           // (s. snapshotGroundLine) - alle betroffenen Kopien bewegen sich synchron.
           if ( historySlideElapsed < historySlideDuration ) {
@@ -653,14 +674,17 @@
             const eased = 0.5 - 0.5 * Math.cos( Math.PI * t )
             fallingRow.group.position.y = fallStartHeight * ( 1 - eased )
 
-            // Kurz vor dem Aufsetzen: die Beschriftung der (jetzt noch aktuellen) Bodenlinie schon
-            // ausblenden, bevor sie durch die neue Landung gleich überschrieben wird - vermeidet
-            // einen abrupten Sprung von der alten zur neuen Zahl.
-            if ( groundLabel ) {
-              const remaining = baseFallDuration - fallElapsed
-              groundLabel.material.opacity = remaining <= groundLabelFadeOutDuration
-                ? Math.max( 0, remaining / groundLabelFadeOutDuration )
-                : 1
+            // Kurz vor dem Aufsetzen: die Beschriftung der (jetzt noch aktuellen) Bodenlinie UND die
+            // fallende Zeile selbst (Linie, Punkte, eigene Beschriftung) im gleichen Tempo ausblenden,
+            // bevor sie durch die Landung gleich verschwindet/überschrieben wird - vermeidet einen
+            // abrupten Sprung/ein plötzliches Verschwinden.
+            const remaining = baseFallDuration - fallElapsed
+            if ( remaining <= groundLabelFadeDuration ) {
+              const fadeFactor = Math.max( 0, remaining / groundLabelFadeDuration )
+              if ( groundLabel ) groundLabel.material.opacity = fadeFactor
+              fallingRow.lineMaterial.opacity = lineMat.opacity * fadeFactor
+              fallingRow.pointMaterial.opacity = fadeFactor
+              fallingRow.label.material.opacity = fadeFactor
             }
 
             if ( t >= 1 ) landRow()
