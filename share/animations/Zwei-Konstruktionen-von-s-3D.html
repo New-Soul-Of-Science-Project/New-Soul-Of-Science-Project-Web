@@ -154,6 +154,7 @@
       const missingPointMat = new THREE.MeshLambertMaterial( { color: 0x0e4d36 } ) // Zwischenkugeln: dunkle Jade
       const pointGeo = new THREE.SphereGeometry( pointRadius, 20, 20 )
       const missingFadeInDuration = 0.6 // Sekunden, für das sanfte "Einblenden" der blauen Punkte
+      const groundLabelFadeOutDuration = 0.6 // Sekunden, für das sanfte Ausblenden kurz vor der Landung
 
       // Deutlich dickere Linien als schlichtes "THREE.Line" (1px, auf manchen GPUs nicht
       // zuverlässig dicker darstellbar - dieselbe Erfahrung wie bei den Spuren/Feldpfeilen der
@@ -242,6 +243,15 @@
         render.scene.add( mesh )
         groundPoints.set( key, { p, q, mesh } )
       }
+
+      // Die Endpunkte 0 und 1 gehören zu JEDER möglichen Zeile (i=0 bzw. i=k ergibt immer 0/1 bzw.
+      // k/k=1/1) - werden daher nicht erst nach der ersten Landung sichtbar, sondern schon vorher
+      // (Start und nach jedem Zyklus-Neustart) gesetzt, damit die Bodenlinie nie ganz leer wirkt.
+      function seedGroundEndpoints() {
+        addGroundPoint( 0, 1 )
+        addGroundPoint( 1, 1 )
+      }
+      seedGroundEndpoints()
 
       /*--------------------
       Historie: bevor die nächste Zahl fällt, wird eine "eingefrorene" Kopie der aktuellen
@@ -617,6 +627,7 @@
             if ( pauseElapsed >= requiredPause ) {
               if ( pendingReset ) {
                 clearGroundPoints()
+                seedGroundEndpoints()
                 clearMissingPoints()
                 clearGroundLabel()
                 clearLineHistory()
@@ -636,6 +647,17 @@
             // Ruhe fallen".
             const eased = 0.5 - 0.5 * Math.cos( Math.PI * t )
             fallingRow.group.position.y = fallStartHeight * ( 1 - eased )
+
+            // Kurz vor dem Aufsetzen: die Beschriftung der (jetzt noch aktuellen) Bodenlinie schon
+            // ausblenden, bevor sie durch die neue Landung gleich überschrieben wird - vermeidet
+            // einen abrupten Sprung von der alten zur neuen Zahl.
+            if ( groundLabel ) {
+              const remaining = baseFallDuration - fallElapsed
+              groundLabel.material.opacity = remaining <= groundLabelFadeOutDuration
+                ? Math.max( 0, remaining / groundLabelFadeOutDuration )
+                : 1
+            }
+
             if ( t >= 1 ) landRow()
           }
         }
