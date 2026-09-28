@@ -958,12 +958,19 @@
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
                                                                  'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
 
-  $SupNum_g_iframe_ary_sGeomKonstrukt3D         = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html', width => '660px', height => '450px', name => 'set local',
-                                                         text => 'Die Animation vereint beide Konstruktionen in einem einzigen, sich Schritt für Schritt aufbauenden Vorgang:'."\n".
+  $SupNum_g_iframe_ary_sGeomKonstrukt3D_Wiederholung = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html?konstruktion=wiederholung', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Konstruktion der rhythmischen Wiederholung:'."\n".
+                                                                 'jede natürliche Zahl fällt der Reihe nach in Königsblau herab und wird zur neuen Bodenlinie, deren Länge sich zuvor auf den Anteil verkürzt, den die bisherige Gesamtzahl an der neuen, feineren Gesamtzahl ausmacht.'."\n".
+                                                                 'Die roten Punkte zeigen die jeweils aktuelle gleichmäßige Teilung, die jadegrün markierten Zwischenpunkte die noch fehlenden Punkte zu einer wirklich gleichmäßigen Verteilung.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-Wiederholung-print.png',
+                                                         print_image_alt => 'Die Konstruktion der Wiederholung von s, interaktive 3D-Animation');
+
+  $SupNum_g_iframe_ary_sGeomKonstrukt3D_Teilung  = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html?konstruktion=teilung', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Konstruktion der rhythmischen Zerlegung:'."\n".
                                                                  'jede natürliche Zahl fällt der Reihe nach in Königsblau auf die Zahlengerade zwischen Null und Eins und hinterlässt dort in Rot die Punkte, die zum bisherigen Rhythmus neu hinzukommen.'."\n".
                                                                  'Die jadegrün markierten Zwischenpunkte zeigen jeweils, welche weiteren Punkte für eine wirklich gleichmäßige Teilung an dieser Stelle noch fehlen würden.',
                                                          print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-print.png',
-                                                         print_image_alt => 'Die zwei Konstruktionen von s, interaktive 3D-Animation');
+                                                         print_image_alt => 'Die Konstruktion der Teilung von s, interaktive 3D-Animation');
 
 
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',

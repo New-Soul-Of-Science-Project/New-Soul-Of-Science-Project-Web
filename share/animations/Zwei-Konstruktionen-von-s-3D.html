@@ -136,7 +136,11 @@
       const groundZ = 0.5         // Tiefen-Position von Bodenlinie und fallenden Zeilen
       const pointRadius = 0.022
 
-      let constructionMode = 'teilung' // 'teilung' oder 'wiederholung', s. Panel weiter unten
+      // Steuerung von außen (z.B. per iframe-URL "...?konstruktion=wiederholung"), damit sich dieselbe
+      // Animation mehrfach auf einer Seite einbinden lässt, jede fest auf einen Modus eingestellt -
+      // das Panel bleibt trotzdem bedienbar, falls jemand doch wechseln möchte.
+      const urlParams = new URLSearchParams( window.location.search )
+      let constructionMode = urlParams.get( 'konstruktion' ) === 'wiederholung' ? 'wiederholung' : 'teilung'
       let maxRhythms = 11
       let speedFactor = 2
       let paused = false
@@ -496,6 +500,11 @@
                                       // länger als basePauseDuration, damit die neuen blauen Punkte
                                       // erst noch einblenden (s. missingFadeInDuration) und das fertige
                                       // Bild eine Weile stehen bleibt, bevor alles geleert wird
+
+      // Falls die Animation direkt im Wiederholung-Modus startet (z.B. per URL-Parameter): schon die
+      // anfängliche "1"-Bodenlinie muss vor dem ersten Fall (currentK=2) schrumpfen, genau wie bei
+      // jedem weiteren Übergang - s. performCycleReset() für den gleichen Fall bei einem Neustart.
+      if ( constructionMode === 'wiederholung' ) setupGroundShrink()
 
       function spawnRow( k ) {
         const group = new THREE.Group()

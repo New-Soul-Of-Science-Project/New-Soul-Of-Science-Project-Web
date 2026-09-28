@@ -739,12 +739,15 @@
                   'Entstehung von \lm{ \s } als 3D-Animation', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die beiden vorangegangenen, statischen Konstruktionen lassen sich auch als ein einziger, dynamischer Vorgang begreifen:'."\n".
-                    'Rhythmus für Rhythmus kommt eine weitere natürliche Zahl hinzu und verfeinert gemeinsam mit den schon vorhandenen Rhythmen die Teilung der Strecke zwischen Null und Eins.'."\n".
+                    'Die beiden vorangegangenen, statischen Konstruktionen lassen sich auch als zwei dynamische Vorgänge begreifen:'."\n".
+                    'Rhythmus für Rhythmus kommt eine weitere natürliche Zahl hinzu und verfeinert die Teilung der Strecke zwischen Null und Eins - einmal in der Wiederholung, einmal in der Zerlegung.'."\n".
                     ''))),
 
                   array( 'iframe',
-                    array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen'))),
+                    array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D_Wiederholung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen'))),
+
+                  array( 'iframe',
+                    array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D_Teilung, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen-Teilung'))),
 
                   array( 'text', array( text => array(
                     'So wird sichtbar, wie mit jeder neu hinzukommenden Primzahl in einem der Rhythmen die Teilung der Strecke tatsächlich um genau diese Primzahl feiner wird –'."\n".

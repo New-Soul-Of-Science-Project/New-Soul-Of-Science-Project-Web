@@ -263,6 +263,7 @@
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Zwei-Konstruktionen-von-s' => array( headline_text => 'Die zwei Konstruktionen von \lm{ \s }',/* headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Entstehung-von-s-als-3D-Animation' => array( headline_text => 'Entstehung von \lm{ \s } als 3D-Animation',/* headline_text_short => 'X' */),
             'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
+            'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-ZweiKonstruktionen-Teilung' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
 
         'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie:Ontologische-Unterschied-zwischen-Abstand-und-Anzahl-von-Punkten' => array( headline_text => 'Der ontologische Unterschied zwischen dem Abstand von und der Anzahl an Punkten'/* , headline_text_short => 'X' */),
