@@ -30,7 +30,8 @@
           "three": "https://unpkg.com/three@0.186.0/build/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render-v0.186.0.js"
+          "render": "./js/render-v0.186.0.js",
+          "info-button": "./js/info-button.js"
         }
       }
     </script>
@@ -47,6 +48,7 @@
         intensityLightScaling,
       } from 'const'
       import { Render } from 'render'
+      import { createInfoButton } from 'info-button'
 
       // lokal überschrieben (statt der geteilten const.js), nur für diese Animation:
       const eleWidth = 660
@@ -79,6 +81,7 @@
       container.style.height = render.dimensions.height + 'px'
       container.style.position = 'relative'
       container.appendChild( render.renderer.domElement )
+      createInfoButton( container )
 
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'

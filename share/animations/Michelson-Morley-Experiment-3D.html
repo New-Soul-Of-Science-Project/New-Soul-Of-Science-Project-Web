@@ -30,7 +30,8 @@
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
           "render": "./js/render.js",
-          "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
+          "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js",
+          "info-button": "./js/info-button.js"
         }
       }
     </script>
@@ -61,6 +62,7 @@
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
+      import { createInfoButton } from 'info-button'
 
       // !!! does not work in a way that it makes all more easy and have lesser lines !!!
       // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.
@@ -83,7 +85,9 @@
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
       container.style.height = render.dimensions.height + 'px'
+      container.style.position = 'relative' // Anker für den "i"-Info-Knopf, s. createInfoButton()
       container.appendChild( render.renderer.domElement )
+      createInfoButton( container )
 
       const info = document.getElementById( 'info' )
       info.style.width = render.dimensions.width + 'px'
