@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 26.09.2026, 00:00h
+  // #: Stand: 01.10.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261001:  +:  "MathJax":  Add Macro "deg" for "degree of" '\operatorname{deg}'.
   //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
   //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
   //           20260922:  +:  "$Sc_g_equation_replace_ary":  Add '  \cong  ' -> '\;\;\;\cong\;\;\;'.
@@ -280,6 +281,7 @@
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
+    echo '            deg: "\\\\operatorname{deg}",'."\n"; // for degree of
     echo '            lpr: "\\\\operatorname{lpr}",'."\n"; // for gapless prime tower power grid set of
     echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
     echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
