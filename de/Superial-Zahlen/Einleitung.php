@@ -905,7 +905,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \operatorname{ord}_{\s}( x )  :=  \max( \supp( x ) )  }'),
+                      array( display => 'on',  latex => '{  \ord_{\s}( x )  :=  \max( \supp( x ) )  }'),
                     ))),
                   array( 'text', array( text => array(
                     'bestimmt.'."\n".
@@ -917,7 +917,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s}, *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \ord_{\s}, *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

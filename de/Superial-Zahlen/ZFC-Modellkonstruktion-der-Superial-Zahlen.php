@@ -427,7 +427,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \operatorname{ord}_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
+                      array( display => 'on',  latex => '{  \mathfrak{S}  :=  *〈 \mathbb{S}, +, \cdot, 0, 1, \leq, \ord_{\s} , *( v_{p} *)_{p \in \mathbb{P}} *〉  }',
                                                label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -436,20 +436,20 @@
                     'mit seiner superialen Stellenwert- und Primexponentenstruktur aus:'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                  '1. Die Schichtbewertung \lm{ \operatorname{ord}_{\s} }', subline =>
+                  '1. Die Schichtbewertung \lm{ \ord_{\s} }', subline =>
                     '')),
                   array( 'text', array( text => array(
-                    'Die Abbildung \lm{ \operatorname{ord}_{\s}\!\!: \mathbb{S} \setminus *\{ 0 *\} \to \mathbb{Z} } ordnet jeder Superial-Zahl'."\n".
+                    'Die Abbildung \lm{ \ord_{\s}\!\!: \mathbb{S} \setminus *\{ 0 *\} \to \mathbb{Z} } ordnet jeder Superial-Zahl'."\n".
                     '\lm{ x \neq 0 } den bestimmenden Index (den maximalen Exponenten) ihres mathematischen Supports zu.'."\n".
                     'In der Praxis misst diese Bewertung die höchste besetzte Dimension der superialen Zahl'."\n".
                     'und fungiert als exakter Indikator für den Stellenwert:'."\n".
                     ''))),
 
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Ein Wert von \lm{ \operatorname{ord}_{\s}(x) > 0 } kennzeichnet einen aktual unendlichen (infiniten) Anteil.'."\n".
-                          'Für die superiale Basis gilt per Konstruktion: \lm{ \operatorname{ord}_{\s}( \s ) = 1 }.',
-                        'Ein Wert von \lm{ \operatorname{ord}_{\s}(x) < 0 } beschreibt einen rein infinitesimalen Rest im Nachkommabereich.'."\n".
-                          'Für das Basis-Infinitesimal gilt entsprechend: \lm{ \operatorname{ord}_{\s}*( \s^{-1} *) = -1 }.',
+                        'Ein Wert von \lm{ \ord_{\s}(x) > 0 } kennzeichnet einen aktual unendlichen (infiniten) Anteil.'."\n".
+                          'Für die superiale Basis gilt per Konstruktion: \lm{ \ord_{\s}( \s ) = 1 }.',
+                        'Ein Wert von \lm{ \ord_{\s}(x) < 0 } beschreibt einen rein infinitesimalen Rest im Nachkommabereich.'."\n".
+                          'Für das Basis-Infinitesimal gilt entsprechend: \lm{ \ord_{\s}*( \s^{-1} *) = -1 }.',
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
@@ -463,7 +463,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x < y  \;\;\;\iff\;\;\;  0 < (y - x)_{\operatorname{ord}_{\s}(y - x)}  }'),
+                      array( display => 'on',  latex => '{  x < y  \;\;\;\iff\;\;\;  0 < (y - x)_{\ord_{\s}(y - x)}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dieses Ordnungsprinzip entspricht exakt dem klassischen Vergleich in einem Stellenwertsystem.'."\n".

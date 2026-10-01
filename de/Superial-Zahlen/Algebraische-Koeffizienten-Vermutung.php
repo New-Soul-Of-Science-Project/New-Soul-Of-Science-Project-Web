@@ -203,9 +203,9 @@
                           'in einem aktual unendlichen Vorrat der Größe \lm{ ω } im inneren Primzahl-Flächenprodukt'."\n".
                           'von \lm{ \s } enthalten ist (im Sinn der \lm{ p }-adischen Bewertungen,'."\n".
                           'siehe normiertes, bewertetes Stellenwertsystem in \italic{›\jumpname{OM:SupNum:ZFC-Modellkonstruktion}‹}).',
-                        'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } gibt es die \lm{ \s }-Ordnung \lm{ \operatorname{ord}_{\s}(X) }'."\n".
+                        'Für \lm{ 0 \ne X \in \mathbb{S}_{\Z} } gibt es die \lm{ \s }-Ordnung \lm{ \ord_{\s}(X) }'."\n".
                           'und die Zerlegung \\\\'."\n".
-                            '\lm{ \qquad\qquad  X  =  \s^{\operatorname{ord}_{\s}(X)} \cdot X^{(0)} \;\; , } \\\\'."\n".
+                            '\lm{ \qquad\qquad  X  =  \s^{\ord_{\s}(X)} \cdot X^{(0)} \;\; , } \\\\'."\n".
                           'wobei \lm{ X^{(0)} } \lm{ \s }-primitiv ist.',
                         '\bold{Endliche Primunterstützung relativ zum \lm{ \s }-Vorrat:} \\\\'."\n".
                           'Nach dem Herausziehen des \lm{ \s }-Vorrats hat \lm{ X^{(0)} } nur \italic{endlich viele} endliche Primteiler.',
