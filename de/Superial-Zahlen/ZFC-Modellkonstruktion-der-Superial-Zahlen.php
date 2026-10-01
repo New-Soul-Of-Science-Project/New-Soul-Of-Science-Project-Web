@@ -45,8 +45,9 @@
                     ''))),
                   array( 'text', array( text => array(
                     'Nachdem im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
-                    'über das generative Primzahl-Induktions-Lemma strikt deduktiv bewiesen wurde,'."\n".
-                    'dass der lückenlose Anfangsabschnitt des unendlichen Primturm-Potenzrasters exakt der Mengendarstellung der Ordinalzahl \lm{ ω } entspricht'."\n".
+                    'über die generative Primzahl-Induktion und das Lückenabstiegsprinzip gezeigt wurde,'."\n".
+                    'dass der lückenlose Anfang des unendlichen Primturm-Potenzrasters'."\n".
+                    'exakt der Mengendarstellung der Ordinalzahl \lm{ ω } entspricht'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -54,8 +55,9 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-lueckenlose-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wurde ebenda der Nachweis für die kanonische Identifikation des Wertes des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
-                    '\lm{ ω } mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen erbracht'."\n".
+                    'wurde ebenda auf dieser Grundlage die kanonische Identifikation des Wertes'."\n".
+                    'des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
+                    '\lm{ ω } mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen begründet'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -150,15 +152,19 @@
                     'Durch die Kopplung der Hahn-Reihe an die algebraische Struktur der reellen Zahlen entsteht'."\n".
                     'eine messerscharfe arithmetische Trennung:'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '1. Reell algebraische Koeffizienten \lm{ a \in \mathbb{A}_{\R} \setminus \{ 0 \} }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{1. Reell algebraische Koeffizienten \lm{ a \in \mathbb{A}_{\R} \setminus \{ 0 \} }:} \\\\'."\n".
                     'Im Einklang mit der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
                     'ergeben alle reell algebraischen Zahlen (ohne die Null)'."\n".
                     'im Produkt mit der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{superialen Einheit \lm{ \s } glatte, ganzzahlige, aktual unendliche infinite Zahlen}.'."\n".
                     'Sie besitzen im System \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{nach unserer bewiesenen Algebraische-Koeffizienten-Vermutung (AKV)} keine Nachkommastellen, da sie strukturell frei von infinitesimalen Resten sind.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '2. Transzendente Zahlen (wie \lm{ π_{\s}, \e_{\s}) }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{2. Transzendente Koeffizienten (wie \lm{ π_{\s}, \e_{\s}) }:} \\\\'."\n".
                     'Transzendente Zahlen brechen diese Ganzzahligkeit im Unendlichen auf.'."\n".
                     'Im Produkt mit \lm{ \s } tragen sie immer unendlich feine, infinitesimale Summanden \lm{ \s^{_{\le}-1} } mit sich.'."\n".
                     'Sie besitzen im superialen Stellenwertsystem echte, unendliche Nachkommastellen \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{(STV)}.'."\n".
@@ -183,16 +189,31 @@
                 'Konservative Erweiterung und strukturelle Stabilität', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die mathematische Konsistenz dieses Modells – insbesondere bei Divisionen transfinit gewichteter Ausdrücke'."\n".
-                    'durch endliche natürliche Zahlen – wird direkt durch das Haupttheorem der Primzahlprodukt-Vermutung garantiert.'."\n".
-                    'Da bewiesen wurde, dass der lückenlose Anfangsabschnitt des unendlichen Primturm-Potenzrasters exakt'."\n".
-                    'der Ordinalzahl \lm{ ω } entspricht – \lm{ \lpr*( ω\overline{\#} *) = ω } –,'."\n".
-                    'bleiben die arithmetischen Operationen im transfiniten Bereich vollständig wohldefiniert, stabil und widerspruchsfrei.'."\n",
+                    'Die algebraische Wohldefiniertheit und strukturelle Stabilität des Modells'."\n".
+                    '– insbesondere bei Divisionen transfinit gewichteter Ausdrücke durch endliche natürliche Zahlen'."\n".
+                    'und anderen arithmetischen Operationen im transfiniten Bereich –'."\n".
+                    'werden durch die Hahn-Reihen-Konstruktion getragen,'."\n".
+                    'während das Haupttheorem der Primzahlprodukt-Vermutung mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die primexponentielle Basisstruktur kanonisch an den Zahlenwert \lm{ ω } bindet:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}} p  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die so erhaltene Modellkonstruktion ist ZFC-intern definiert;'."\n".
+                    'ihre mathematische Konsistenz ist relativ zur Konsistenz von ZFC zu verstehen.'."\n",
                       'Alle klassischen, endlichen Zahlenmengen – von den natürlichen, ganzen, geraden/ungeraden'."\n".
                     'und rationalen Zahlen bis hin zu den Primzahlen – werden auf natürliche Weise unter Erhalt'."\n".
                     'ihrer tiefen arithmetischen und divisatorischen Feinstrukturen ins Aktual-Unendliche erweitert.'."\n",
                       'Das Modell ist eine ZFC-interne definitorische Modellkonstruktion.'."\n".
-                    'Es verändert die Standard-Axiome der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}}'."\n".
+                    'Es verändert die Standard-Axiome der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom\footnote{\const{BiOrd_g_footnote_text_ZermeloFraenkelMengenlehre}} (ZFC)'."\n".
                     'nicht, sondern definiert innerhalb des von Neumannschen Universums eine zusätzliche strukturierte Rechenumgebung.'."\n".
                     'In diesem Sinn ist die Konstruktion konservativ:'."\n".
                     'Sie führt keine neuen mengentheoretischen Axiome ein, sondern arbeitet mit in ZFC definierbaren Objekten,'."\n".
@@ -207,71 +228,120 @@
                     '– insbesondere die exakte Erhaltung von infinitesimalen Pfaden bei Ableitungen und Integralen'."\n".
                     'sowie die Ganzzahligkeit reell algebraischer Ausdrücke – mathematisch streng zu operationalisieren,'."\n".
                     'nutzen wir das Fundament des Hahn-Reihen-Körpers.'."\n".
-                    'Die historische formale Unsicherheit, ob ein unendliches Primzahlprodukt innerhalb von ZFC'."\n".
-                    'eine unzulässige echte Klasse bildet, wird durch das Haupttheorem der Primzahlprodukt-Vermutung'."\n".
-                    'vollständig aufgelöst.'."\n",
-                      'Da das lückenlose Primturm-Potenzraster des Einheits-Primexponentenprodukts aller endlichen Primzahlen exakt mit der Menge'."\n".
-                    'der natürlichen Zahlen zusammenfällt'."\n".
+                    'Die mengentheoretische Wohldefiniertheit des Primexponentenobjekts'."\n".
+                    'wird durch seine ZFC-interne Konstruktion als mengenwertige Struktur sichergestellt.'."\n",
+                      'Da der lückenlose Anfang des Primturm-Potenzrasters'."\n".
+                    'des vollständigen Einheits-Primexponentenprodukts durch das Haupttheorem der Primzahlprodukt-Vermutung'."\n".
+                    'exakt die Menge der natürlichen Zahlen bildet'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  =  \mathbb{ N }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'und sein Erzeugungs-Primexponentenprodukt auch mit dem Zahlenwert von \lm{ ω } identifiziert wird,'."\n".
+                    'und sein Einheits-Primexponentenprodukt auch mit'."\n".
+                    'dem Zahlenwert von \lm{ ω } kanonisch identifiziert wird'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  =  ω\overline{\#}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  \equiv_{kan}  ω\overline{\#}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'ist die Basis'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  =  *( ω\overline{\#} *)_{\#}^{ω}  =  ω^{ω}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \s  =  *( ω\overline{\#} *)_{\#}^{ω}  =  ω^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'keine bedeutungsfreie Konstante, sondern ein wohldefiniert strukturiertes Bewertungsobjekt innerhalb der Modellkonstruktion'."\n".
                     'und ein wohldefiniertes mengentheoretisches Objekt im von Neumannschen Universum.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                      
+
                 'Der Beweis der Primzahlprodukt-Vermutung und seine Bedeutung für die Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der strikt deduktive Nachweis der Primzahlprodukt-Vermutung und'."\n".
-                    'ihre Etablierung der kanonischen Identifikation \lm{ ω \equiv_{kan} ω\overline{\#} }'."\n".
-                    'über das generative Primzahl-Induktions-Lemma, zusammen mit der definitorischen Notation \lm{ ω\overline{\#} = \prodx_{p \in \mathbb{P}} p },'."\n".
-                    'bilden das tragende Fundament für die Funktionalität dieser ZFC-Modellkonstruktion.'."\n".
+                    'Der Nachweis'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'über die generative Primzahl-Induktion und das Lückenabstiegsprinzip'."\n".
+                    'sowie die darauf begründete kanonische Identifikation'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}} p  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bilden das primexponentielle Fundament dieser ZFC-Modellkonstruktion.'."\n".
                     'Durch dieses Haupttheorem der Primzahlprodukt-Vermutung wird die mathematische Struktur'."\n".
                     'des Hahn-Reihen-Körpers direkt an die ordinale Kernstruktur der Mengenlehre gekoppelt.'."\n",
                       'Das bewiesene Theorem entfaltet seine theoretische und praktische Wirkung im Modell'."\n".
                     'über drei fundamentale Säulen:'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '1. Rigorose Ableitung aus den ZFC-Standardaxiomen', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{1. Rigorose Ableitung aus den ZFC-Standardaxiomen} \\\\'."\n".
                     'Da bewiesen ist, dass der lückenlose Anfangsabschnitt des unendlichen Primturm-Potenzrasters'."\n".
-                    'exakt gleich der Menge der Ordinalzahl \lm{ ω = \mathbb{N} = \lpr*( ω\overline{\#} *) } ist,'."\n".
-                    'entspringt die gesamte arithmetische Struktur des Modells direkt und widerspruchsfrei aus den Standard-Axiomen von ZFC.'."\n".
+                    'exakt gleich der Menge der Ordinalzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \lpr*( ω\overline{\#} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ist und über die daraus resultierende kanonische Identifikation'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'entspringt die gesamte arithmetische Struktur des Modells direkt aus den Standard-Axiomen von ZFC.'."\n".
                     'Das Modell bildet eine bewiesene, tief in der von Neumannschen Mengenlehre verankerte Realität ab,'."\n".
                     'in der das unendliche Primexponentenprodukt aller Primzahlen \lm{ ω\overline{\#} } dieselbe ordinale Rolle einnimmt'."\n".
                     'wie die Menge der natürlichen Zahlen selbst.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '2. Algebraische Absicherung der transfiniten \lm{ p }-adischen Bewertung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{2. Algebraische Absicherung der transfiniten p-adischen Bewertung} \\\\'."\n".
-                    'Für das unendliche Flächenprodukt \lm{ \s = ω^{ω} } gilt im Modell für jede endliche Primzahl'."\n".
-                    'die exakte transfinite Bewertung \lm{ v_{p}( \s ) = ω }.'."\n".
-                    'Dass diese unendlich tiefen Primzahltürme bei Divisionen durch endliche natürliche Zahlen'."\n".
-                    'algebraisch stabil bleiben, wird durch das Haupttheorem mathematisch garantiert.'."\n".
-                    'Weil das lückenlose Erzeugungsspektrum des Primorials ununterbrochen mit der ordinalen Nachfolger-Struktur'."\n".
-                    'von \lm{ ω } übereinstimmt, steht für jede divisionelle Operation im Modell ein lückenloser,'."\n".
-                    'wohldefinierter Rechenraum bereit.'."\n".
+                    'Für das unendliche Flächenprodukt'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }'),
+                    ))),
                   array( 'text', array( text => array(
-                    '\bold{3. Fundierung des superialen Stellenwertsystems} \\\\'."\n".
-                    'Erst die kanonische Identifikation \lm{ ω = ω\overline{\#} } begründet die exakten metrischen Eigenschaften'."\n".
-                    'der Basis \lm{ \s } als normierte finite Einheit und \lm{ \s^{-1} } als absolutes Infinitesimal für'."\n".
+                    'gilt im Modell für jede endliche Primzahl'."\n".
+                    'die exakte transfinite Bewertung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}( \s )  =  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dass diese unendlich tiefen Primzahltürme bei Divisionen durch endliche natürliche Zahlen'."\n".
+                    'algebraisch stabil bleiben, wird durch die Definition der Basis \lm{ \s } mathematisch garantiert.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '3. Fundierung des superialen Stellenwertsystems', subline =>
+                    '')),
+                  array( 'text', array( text => array(
+                    'Erst die kanonische Identifikation'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'begründet die exakten metrischen Eigenschaften'."\n".
+                    'der Basis \lm{ \s } als normierte infinite Einheit und \lm{ \s^{-1} } als absolutes Infinitesimal für'."\n".
                     'die transfinite Analysis.'."\n".
                     'Sie liefert die mathematische Erklärung dafür, dass reell algebraische Koeffizienten'."\n".
                     'im Produkt mit \lm{ \s } strukturell glatte, unendliche Ganzzahlen ohne Nachkommastellen bilden,'."\n".
@@ -347,7 +417,7 @@
                     ))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
-                'Die Superial-Struktur \lm{ \mathfrak{S} } als geordneter bewerteter Körper', subline =>
+                'Die Superial-Struktur \lm{ \mathfrak{S} } als geordneter Körper mit Schicht- und Primexponentenbewertung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } bildet unter den kanonischen Operationen'."\n".
@@ -361,11 +431,14 @@
                                                label_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel', label_text => '\name{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die mathematische Konsistenz dieses Körpers wird durch die perfekt ineinandergreifenden'."\n".
-                    'Bewertungs- und Ordnungsstrukturen getragen, die direkt aus der Logik des transfiniten Stellenwertsystems hervorgehen:'."\n".
+                    'Die algebraische Körperstruktur wird durch die Hahn-Reihen-Konstruktion getragen.'."\n".
+                    'Ergänzend statten die folgenden Bewertungs- und Ordnungsstrukturen das Modell'."\n".
+                    'mit seiner superialen Stellenwert- und Primexponentenstruktur aus:'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '1. Die Schichtbewertung \lm{ \operatorname{ord}_{\s} }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{1. Die Schichtbewertung \lm{ \operatorname{ord}_{\s} }} \\\\'."\n".
                     'Die Abbildung \lm{ \operatorname{ord}_{\s}\!\!: \mathbb{S} \setminus *\{ 0 *\} \to \mathbb{Z} } ordnet jeder Superial-Zahl'."\n".
                     '\lm{ x \neq 0 } den bestimmenden Index (den maximalen Exponenten) ihres mathematischen Supports zu.'."\n".
                     'In der Praxis misst diese Bewertung die höchste besetzte Dimension der superialen Zahl'."\n".
@@ -379,8 +452,10 @@
                           'Für das Basis-Infinitesimal gilt entsprechend: \lm{ \operatorname{ord}_{\s}*( \s^{-1} *) = -1 }.',
                     ))),
 
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '2. Die totale lexikographische Ordnung \lm{ \leq }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{2. Die totale lexikographische Ordnung \lm{ \leq }} \\\\'."\n".
                     'Die Relation \lm{ \leq } definiert eine lineare, totale Ordnung auf dem Körper \lm{ \mathfrak{S} }.'."\n".
                     'Der Vergleich zweier unterschiedlicher superialer Zahlen erfolgt strikt über das Vorzeichen des Koeffizienten'."\n".
                     'an der jeweils höchsten gemeinsamen Schicht (Stelle).'."\n".
@@ -397,8 +472,10 @@
                     'Ein infinitesimaler Abweichungsrest auf einer niedrigeren Stelle kann die fundamentale Ordnung auf einer höheren,'."\n".
                     'infiniten Schicht zu keinem Zeitpunkt verfälschen.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  '3. Die Familie der \lm{ p }-adischen Schichtbewertungen \lm{ v_{p} }', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    '\bold{3. Die Familie der \lm{ p }-adischen Schichtbewertungen \lm{ v_{p} }} \\\\'."\n".
                     'Das entscheidende Alleinstellungsmerkmal der Superial-Struktur \lm{ \mathfrak{S} } ist'."\n".
                     'die Familie der verallgemeinerten \lm{ p }-adischen Bewertungen für jede endliche Primzahl \lm{ p \in \mathbb{P} }.'."\n".
                     'Da über den Beweis der Primzahlprodukt-Vermutung die kanonische Identifikation \lm{ ω = ω\overline{\#} } gilt,'."\n".
@@ -407,12 +484,21 @@
                     '(wie die Parität oder unendliche Primfaktorzerlegungen\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}) über das gesamte transfinite Spektrum hinweg'."\n".
                     'absolut invariant und widerspruchsfrei erhalten bleibt.'."\n".
                     ''))),
+                  array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                  'Derzeitige Einschränkung', subline =>
+                    '')),
                   array( 'text', array( text => array(
-                    'Die Familie \lm{ *( v_{p} *)_{p \in \mathbb{P}} } bezieht sich zunächst auf die endlichen klassischen Primzahlen'."\n".
-                    'und kodiert die Primfaktorwirkung der superialen Basis \lm{ \s }.'."\n".
-                    'Für die spätere Theorie der superialen Primzahlen kann diese Bewertungsfamilie zu einer Familie'."\n".
-                    '\lm{ *( v_{\mathfrak{p}} *)_{\mathfrak{p} \in \mathbb{S}_{\P}} } entlang der superialen Primzahlen'."\n".
-                    'erweitert beziehungsweise ergänzt werden.'."\n".
+                    'Die Familie \lm{ *( v_{p} *)_{p \in \mathbb{P}} } ist in der vorliegenden Modellkonstruktion'."\n".
+                    'noch nicht als vollständige \lm{ p }-adische Bewertungsfamilie'."\n".
+                    'auf dem gesamten Superial-Körper \lm{ \mathbb{S} } definiert.'."\n".
+                    'Sie kodiert zunächst ausschließlich die primexponentielle Struktur der superialen Basis \lm{ \s }'."\n".
+                    'bezüglich der endlichen klassischen Primzahlen \lm{ p \in \mathbb{P} }.'."\n".
+                    'Insbesondere wird durch \lm{ v_{p}( \s ) = ω } ausgedrückt,'."\n".
+                    'dass \lm{ \s } für jede endliche Primzahl \lm{ p } sämtliche endlichen Primzahlpotenzen \lm{ p^{n} },'."\n".
+                    '\lm{ n \in \mathbb{N} }, als Teiler umfasst.'."\n",
+                      'Eine Erweiterung dieser Bewertungsstruktur'."\n".
+                    'auf weitere Klassen von Superial-Zahlen'."\n".
+                    'und später auf superiale Primzahlen bleibt der weiterführenden Theorie vorbehalten.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl', text =>
                       
@@ -493,10 +579,17 @@
                   array( 'text', array( text => array(
                     'als die transfinite Primfaktorzerlegung von \lm{ \s } zu verstehen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s', text =>
+                  /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Tiefere-Betrachtung-Potenzen-s', text =>
                       
                 'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\bold{Realisierung von \lm{ -n \cdot ω = k \cdot ω }}',
+                    '• Um dies mit Mengenlehre umzusetzen hatte ich die Biordinalzahlen mal entwickelt, für die ggf. ein einfaches Grothendieck-Universum in oder zusätzlich zu ZFC notwendig sein.',
+                    '• Hier würde aber auch eine Grothendieck-Gruppenvervollständigung ausreichen, siehe Datei "Arbeitsnotiz_ZFC-transfinite_Wertegruppe_Superial-Zahlen_KaTeX.md".',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Jeder einzelne Summand einer wohlgeformten Superial-Zahl im Stellenwertsystem,'."\n".
                     'bestehend aus seinem reell algebraischen Koeffizienten \lm{ a_{k} }'."\n".
@@ -524,7 +617,7 @@
                     'Ausdrücke der Form \lm{ k \cdot ω \pm \frac{ z }{ n } } bilden im Modell ein stabiles, rechenbares Gefüge,'."\n".
                     'das sich streng nach den klassischen Gesetzen der Algebra verhält,'."\n".
                     'ohne die zahlentheoretische Feinstruktur der Primzahltürme im Unendlichen zu gefährden.'."\n".
-                    ''))),
+                    ''))), */
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
                 'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
@@ -551,8 +644,7 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\bold{Addition:} Erfolgt strikt koeffizientenweise über dem reell algebraischen Feld.',
-                        '\bold{Multiplikation:} Wird über das mathematisch wohldefinierte Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} operationalisiert,'."\n".
-                          'wobei die Wohlordnung des Supports die Konvergenz der Koeffizientensummen sichert.',
+                        '\bold{Multiplikation:} Wird über das mathematisch wohldefinierte Cauchy-Produkt\footnote{\const{SupNum_g_footnote_text_CauchyProduktformel}} operationalisiert.',
                         '\bold{Lexikographische Ordnung:}\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
                           'Definiert eine \jump{OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper}{totale lineare Ordnung},'."\n".
                           'bei welcher der Koeffizientenvergleich an der jeweils höchsten unendlichen Stelle entscheidet.'."\n".
@@ -576,7 +668,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die ZFC-Modellkonstruktion führt das transfinite Primzahl-Flächenprodukt aus der Ebene'."\n".
-                    'der bloßen mathematischen Intuition in den Rang einer streng bewiesenen, formalen Theorie über.'."\n".
+                    'der bloßen mathematischen Intuition in den Rang einer bewiesenen, formalen Theorie über.'."\n".
+                    'Dabei ist die Konstruktion ZFC-intern definiert; ihre Konsistenz ist relativ zur Konsistenz von ZFC zu verstehen.'."\n".
                     'Durch die Kopplung der Hahn-Reihen-Definition an'."\n".
                     'das Haupttheorem der Primzahlprodukt-Vermutung \lm{ ω = ω\overline{\#} } wird nachgewiesen,'."\n".
                     'dass unendlich viele Faktoren im Modell mengentheoretisch rigoros über wohlgeordnete Supports'."\n".
@@ -585,10 +678,10 @@
                     'echte Mengen bleiben und zu keinem Zeitpunkt unzulässige echte Klassen bilden,'."\n".
                     'ist die vollständige ZFC-Konformität des Systems garantiert.'."\n",
                       'Die Hahn-Reihe bildet somit die fundamentale arithmetische Basis,'."\n".
-                    'welche das anschauliche unendliche Produkt \lm{ *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^ω }'."\n".
+                    'welche das anschauliche unendliche Produkt \lm{ \s = *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^ω }'."\n".
                     'mit den exakten algebraischen Werkzeugen der Addition, Subtraktion, Multiplikation und Division ausstattet.'."\n".
                     'Das Modell liefert damit den klaren Nachweis, dass der Körper der Superial-Zahlen \lm{ \mathbb{S} } als stabiler,'."\n".
-                    'widerspruchsfreier und normierter Rechenraum für die transfinite Analysis operieren kann.'."\n".
+                    'relativ zu ZFC widerspruchsfreier und normierter Rechenraum für die transfinite Analysis operieren kann.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

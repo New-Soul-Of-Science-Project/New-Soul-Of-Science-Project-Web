@@ -912,7 +912,8 @@
                     'Ist der führende Koeffizient positiv, so ist die Zahl positiv;'."\n".
                     'ist er negativ, so ist die Zahl negativ.'."\n".
                     'Infinitesimale Anteile können daher niemals den Wert einer höheren Schicht umkehren.'."\n",
-                      'Formal wird die Superial-Struktur in der ZFC-Modellkonstruktion als geordneter bewerteter Körper beschrieben:'."\n".
+                      'Formal wird die Superial-Struktur in der ZFC-Modellkonstruktion als'."\n".
+                    'geordneter Körper mit Schicht- und Primexponentenbewertung beschrieben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
