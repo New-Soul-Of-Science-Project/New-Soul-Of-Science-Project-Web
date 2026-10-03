@@ -40,7 +40,7 @@
                     'auf der superialen Basis \lm{ \s }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Auf dieser Seite wird \lm{ \prodx } ausschließlich im Sinne des auf der Seite \italic{›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{\name{OM:SupNum:Primzahlprodukt-Vermutung}}‹}'."\n".
+                    'Auf dieser Seite wird das Primexponentenprodukt \lm{ \prodx } ausschließlich im Sinne des auf der Seite \italic{›\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:PrimexponentenproduktNotationsvereinbarung}{\name{OM:SupNum:Primzahlprodukt-Vermutung}}‹}'."\n".
                     'eingeführten Primexponentenprodukts verwendet, also nicht als gewöhnliches unendliches Produkt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -57,7 +57,8 @@
                   array( 'text', array( text => array(
                     'wurde ebenda auf dieser Grundlage die kanonische Identifikation des Wertes'."\n".
                     'des von-Neumann-Ordinals\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}'."\n".
-                    '\lm{ ω } mit dem vollständigen Einheits-Primexponentenprodukt aller endlichen Primzahlen begründet'."\n".
+                    '\lm{ ω } mit dem vollständigen Einheits-Primexponentenprodukt'."\n".
+                    'aller endlichen Primzahlen \lm{ ω\overline{\#} } (Mengen-Primfakultät von \lm{ ω }) begründet'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -191,7 +192,7 @@
                   array( 'text', array( text => array(
                     'Die algebraische Wohldefiniertheit und strukturelle Stabilität des Modells'."\n".
                     '– insbesondere bei Divisionen transfinit gewichteter Ausdrücke durch endliche natürliche Zahlen'."\n".
-                    'und anderen arithmetischen Operationen im transfiniten Bereich –'."\n".
+                    'und andere arithmetische Operationen im transfiniten Bereich –'."\n".
                     'werden durch die Hahn-Reihen-Konstruktion getragen,'."\n".
                     'während das Haupttheorem der Primzahlprodukt-Vermutung mit'."\n".
                     ''))),
@@ -269,8 +270,10 @@
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'über die generative Primzahl-Induktion und das Lückenabstiegsprinzip'."\n".
-                    'sowie die darauf begründete kanonische Identifikation'."\n".
+                    'über die \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:4-Lemma-Generatives-Primzahl-Induktions-Lemma}{generative Primzahl-Induktion}'."\n".
+                    'und das \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:3-Aktual-unendlichen-Bereich-Luecken}{Lückenabstiegsprinzip}'."\n".
+                    'sowie die darauf begründete'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonische Identifikation}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -304,8 +307,10 @@
                   array( 'text', array( text => array(
                     'entspringt die gesamte arithmetische Struktur des Modells direkt aus den Standard-Axiomen von ZFC.'."\n".
                     'Das Modell bildet eine bewiesene, tief in der von Neumannschen Mengenlehre verankerte Realität ab,'."\n".
-                    'in der das unendliche Primexponentenprodukt aller Primzahlen \lm{ ω\overline{\#} } dieselbe ordinale Rolle einnimmt'."\n".
-                    'wie die Menge der natürlichen Zahlen selbst.'."\n".
+                    'in der das unendliche Primexponentenprodukt aller Primzahlen'."\n".
+                    '\lm{ ω\overline{\#} } (\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:MengenPrimfakultaet}{Mengen-Primfakultät}'."\n".
+                    'von \lm{ ω })'."\n".
+                    'dieselbe ordinale Rolle einnimmt wie die Menge der natürlichen Zahlen selbst.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   '2. Algebraische Absicherung der transfiniten \lm{ p }-adischen Bewertung', subline =>
@@ -508,9 +513,12 @@
                     'Die Frage, welchen Anzahl-Begriff die Theorie der Superial-Zahlen benötigt,'."\n".
                     'ergibt sich unmittelbar aus ihrer Natur als transfinites Stellenwertsystem.'."\n".
                     'Aus den Erkenntnissen zur inneren \jump{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}{Struktur von \lm{ \s }} als Primzahl-Flächenprodukt folgt,'."\n".
-                    'dass die Erzeugungsanzahl der mathematisch sinnvollen Koeffizienten im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
+                    'dass die Erzeugungsanzahl'."\n".
+                    'der mathematisch \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
+                    'im Intervall \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
                     'nicht mehr bloß über die klassische kardinale Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}} erfasst werden kann.'."\n",
-                      'Für dieses Kontinuum gilt im superialen System der feste Wert:'."\n".
+                      'Für dieses \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{analytische Kontinuum}'."\n".
+                    'gilt im superialen System der feste Wert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -524,7 +532,7 @@
                     'Beide Aussagen sind wahr und widersprechen sich nicht, da sie fundamental verschiedene Eigenschaften messen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{Die kardinale Mächtigkeit} rein strukturell: Lässt sich das Intervall bijektiv auf \lm{ \mathbb{N} } abbilden? – Ja.',
+                        '\bold{Die kardinale Mächtigkeit} rein strukturell: Lässt sich das Intervall bijektiv auf \lm{ \mathbb{N} } abbilden? — Ja.',
                         '\bold{Die Erzeugungsanzahl} fragt analytisch: Wie viele diskrete Erzeugungspositionen belegt das Intervall relativ zur Maßeinheit der vollständigen Induktion \lm{ ω }? Die Antwort lautet exakt: \lm{ \frac{ \s }{ 2 ω } = \frac{ 1 }{ 2 }ω^{ω - 1} }.',
                     ))),
                   array( 'text', array( text => array(
@@ -532,7 +540,8 @@
                     'Sie verknüpft den kardinalen Verteilungsaspekt mit der ordinalen Feinstruktur der unendlichen Basis.'."\n".
                     'Da über das Haupttheorem der Primzahlprodukt-Vermutung die kanonische Identifikation \lm{ ω = ω\overline{\#} } bewiesen ist,'."\n".
                     'steht diese relative Berechnung auf einem felsenfesten algebraischen Fundament:'."\n".
-                    'Selbst bei der zweidimensionalen Dichte des Flächenprodukts \lm{ \s = ω^{ω} }'."\n".
+                    'Selbst bei der bemerkenswerten Größe des Flächenprodukts \lm{ \s = ω^{ω} },'."\n".
+                    'welches die Erzeugungsanzahl aller reell algebraischen Zahlen auf der gesamten Zahlengeraden endlicher Zahlen beschreibt,'."\n".
                     'bleibt das Verhältnis der Erzeugungsschichten präzise bestimmbar, stabil und mathematisch vollständig wohldefiniert.'."\n",
                       'Die formale Definition – operativ und axiomatisch – sowie Beispiele finden sich im Abschnitt \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}‹}'."\n".
                     'der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Grundlagen}‹}.'."\n".
@@ -655,7 +664,9 @@
                         '\bold{Division:} Ist über das Herausziehen des dominanten Terms und die formale Reiheninversion'."\n".
                           '(analog zur algebraischen Polynomdivision\footnote{\const{SupNum_g_footnote_text_Primpolynom}}) widerspruchsfrei durchführbar.',
                         '\bold{Strukturelle Fortsetzung:} Ermöglicht die natürliche Einbettung und Erweiterung klassischer Zahlenmengen'."\n".
-                          '(wie \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürliche}, \jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganze}, gerade/ungerade und rationale Zahlen) ins Aktual-Unendliche.',
+                          '(wie \jump{OM:SupNum:Algebraische-Grundlagen:NatuerlicheSZ}{natürliche},'."\n".
+                          '\jump{OM:SupNum:Algebraische-Grundlagen:GanzeSZ}{ganze},'."\n".
+                          'gerade/ungerade, rationale und algebraische Zahlen) ins Aktual-Unendliche.',
                         '\bold{Teilbarkeit und Primstruktur:} Sichert die exakte mathematische Handhabung von \jump{OM:SupNum:Algebraische-Grundlagen:PrimSZ}{unendlichen Primfaktorzerlegungen}'."\n".
                           'über das gesamte transfinite Spektrum.',
                     ))),
