@@ -3,10 +3,24 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.07.2026, 12:00h
+  // #: Stand: 01.10.2026, 18:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
+  //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
+  //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
+  //           20260922:  +:  "$Sc_g_equation_replace_ary":  Add '  \cong  ' -> '\;\;\;\cong\;\;\;'.
+  //           20260912:  +:  "MathJax":  Add Macro "qed" for "quod erat demonstrandum" '\blacksquare'.
+  //                      +:  "MathJax":  Add Macro "qqed" for "quod erat demonstrandum" with space in front '\;\;\blacksquare'.
+  //           20260817:  *:  "$Sc_g_equation_replace_ary":  Fix '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subset}\;\;\;'  to  '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subseteq}\;\;\;'.
+  //           20260808:  +:  "$Sc_g_equation_replace_ary":  Add '  \longrightarrow  ' -> '\;\;\;\longrightarrow\;\;\;'.
+  //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
+  //                      +:  "$Sc_g_equation_replace_ary":  Add ' ?\widehat{=} ' -> '\;\overset{?}{\widehat{=}}\;'.
+  //           20260802:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\widehat{=}  ' -> '\;\;\;\overset{?}{\widehat{=}}\;\;\;', '?\widehat{=}' -> '\overset{?}{\widehat{=}}'.
+  //           20260713:  +:  "MathJax":  Add Macro "sumx" for Summe mit #-Annotation '\sideset{}{^{\#}}{\sum}'.
+  //           20260711:  +:  "MathJax":  Add Macro "prodx" for Primexponentenprodukt-Symbol '\sideset{}{^{\#}}{\prod}'.
+  //           20260709:  +:  "$Sc_g_equation_replace_ary":  Add '\equiv_{kan}' -> '\equiv_{\mathrm{kan}}', '?\equiv' -> '\overset{?}{\equiv}', '?\equiv_{kan}' -> '\overset{?}{\equiv}_{\mathrm{kan}}', '  ?\equiv  ' -> '\;\;\;\overset{?}{\equiv}\;\;\;', '  ?\equiv_{kan}  ' -> '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;', '  \equiv_{kan}  ' -> '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'
   //           20260703:  *:  "Sc_g_litera_make", 'article':  'language' is now rendered (was missing; @book and @online already had it).
   //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
   //                      *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
@@ -255,7 +269,7 @@
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
     echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js"],'."\n";
+    echo '          extensions: ["color.js", "cancel.js"],'."\n";
     echo '          Macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
@@ -268,6 +282,7 @@
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
     echo '            lpr: "\\\\operatorname{lpr}",'."\n"; // for gapless prime tower power grid set of
+    echo '            ord: "\\\\operatorname{ord}",'."\n"; // for the layer valuation (Schichtbewertung) of
     echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
     echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
     echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
@@ -296,6 +311,10 @@
     echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
+    echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
+    echo '            sumx: "\\\\sideset{}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
+    echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
+    echo '            qqed: "\\\\;\\\\;\\\\blacksquare",'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";
@@ -686,8 +705,11 @@
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
+                                    array( '  \longrightarrow  ', '\;\;\;\longrightarrow\;\;\;'),
+                                    array( '  \longleftrightarrow  ', '\;\;\;\longleftrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
+                                    array( '  \Longleftrightarrow  ', '\;\;\;\Longleftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
@@ -698,12 +720,18 @@
                                     array( '  >  ', '\;\;\;>\;\;\;'),
                                     array( '  \ge  ', '\;\;\;\ge\;\;\;'),
                                     array( '  \geq  ', '\;\;\;\geq\;\;\;'),
+                                    array( '  ?\equiv_{kan}  ', '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;'),
+                                    array( '  ?\equiv  ', '\;\;\;\overset{?}{\equiv}\;\;\;'),
+                                    array( '  \equiv_{kan}  ', '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'),
                                     array( '  \equiv  ', '\;\;\;\equiv\;\;\;'),
+                                    array( '  \cong  ', '\;\;\;\cong\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
+                                    array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( ' ?\widehat{=} ', '\;\overset{?}{\widehat{=}}\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
@@ -715,8 +743,9 @@
                                     array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
+                                    array( '  \nmid  ', '\;\;\;\nmid\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
-                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subset}\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subseteq}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
                                     array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
@@ -733,6 +762,10 @@
                                     array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
+                                    array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
+                                    array( '?\equiv', '\overset{?}{\equiv}'),
+                                    array( '?\widehat{=}', '\overset{?}{\widehat{=}}'),
+                                    array( '\equiv_{kan}', '\equiv_{\mathrm{kan}}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),

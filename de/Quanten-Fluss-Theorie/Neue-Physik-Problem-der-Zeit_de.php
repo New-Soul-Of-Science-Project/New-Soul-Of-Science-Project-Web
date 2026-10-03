@@ -1307,6 +1307,7 @@
                       
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_WqSUnmoeg, array( name => 'OM:FrQFT:NeuePhysik:Fig-Wq-String-Unmoeg-Konstella'))),
+
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW', text =>
                                            
                 'Zusammenhalt der Wirkungsquanten')),
@@ -1337,16 +1338,16 @@
                     'Es würde dann kein Gesamtsystem der verbundenen Wirkungsquanten existieren, was dem Grundgedanken des Existenzprinzips widerspräche.'."\n"))),
                       
                   // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:NeuePhysik:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:NeuePhysik:Ani-VakuumElapson'))),
+                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson'))),
+                  array( 'iframe',
+                    array_merge( $FrQFT_g_iframe_ary_VakuumElapson, array( name => 'OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson'))),
                             
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE', text =>
                                            
                 'Wirkungsquanten-Strings und Vakuum-Elapsonen')),
                   // #: *Elapsonen-Vakuum-Herlei
                   array( 'text', array( text => array(
-                    'Eine Möglichkeit, wie Wirkungsquanten trotzdem einen Ring bilden können, ist, wenn sie sich auf einer helixförmigen Spiralbahn leicht versetzt hintereinander her bewegen (siehe \\jumpname{OM:FrQFT:NeuePhysik:Ani-VakuumElapson}).'."\n".
+                    'Eine Möglichkeit, wie Wirkungsquanten trotzdem einen Ring bilden können, ist, wenn sie sich auf einer helixförmigen Spiralbahn leicht versetzt hintereinander her bewegen (siehe \\jumpname{OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson}).'."\n".
                     'Wenn sie sich dabei nahe genug sind, dann läuft jedes Wirkungsquant in der Oberfläche des Impulskegels des vorherlaufenden.'."\n".
                     'Die vorrangegangenen Überlegungen zur Interpretation der \\jump{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}{Heisenbergschen Unschärferelation} legen nahe, dass die Wirkungsquanten sehr viel kleiner als unsere Elementarteilchen sind.'."\n".
                     'Demnach müssen die Ringe unserer Elementarteilchen aus sehr vielen Wirkungsquanten bestehen, die alle leicht versetzt hintereinander aufgereiht durch den Raum laufen.'."\n".
@@ -1354,7 +1355,7 @@
                     'Diese Ringe ähneln grob den geschlossenen Strings der Stringtheorie\\footnote{\\const{FrQFT_g_footnote_text_ST}} und ich nenne sie daher \\italic{Wirkungsquanten-Strings}.'."\n".
                     'Allerdings sind die hier beschriebenen Strings sehr viel größer als die der Stringtheorie und existieren nur in den uns bekannten drei Raumdimensionen und der oben besprochenen, grundlegenden und konstant ablaufenden Zeitdimension.\\footnote[*Entwick]{Es gibt Gründe für den immer wieder entstehenden Eindruck einer höheren Raumdimensionalität in der Physik. Diese werden nach der vollständigen Entwicklung der fraktalen Quanten-Fluss-Theorie sichtbar. Sowohl die fraktale Struktur des entwickelten Bilds vom Universums und deren Zusammenhang mit der Struktur der Materie sind hierfür verantwortlich, als auch die Wahrnehmung jedes Beobachters in Bezug auf die zeitlichen Phänomene der Relativität. \\color{*Entwick}{Diese Gründe müssen noch genau untersucht werden. Als Hinweis ist hier zu nennen, dass die Bewegungsgeschwindigkeiten der Teilchen und damit die Zeiten der Fraktalebenen über den Pythagoras miteinander verbunden sind. Wird dieser Zusammenhang über mehrere Fraktalebenen betrachtet, so ergibt sich der Pythagoras für höherdimensionale Räume.}}'."\n".
                     '\\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:ST}{Ihre genaueren Eigenschaften} werden später noch zusammengefasst.'."\n",
-                      'Die einfachste Form, die ein Wirkungsquanten-String annehmen kann, ist die im \\jumpname{OM:FrQFT:NeuePhysik:Ani-VakuumElapson}.'."\n".
+                      'Die einfachste Form, die ein Wirkungsquanten-String annehmen kann, ist die im \\jumpname{OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson}.'."\n".
                     'Ein einfacher Kreis, auf dem alle Wirkungsquanten gleichmäßig verteilt sind.'."\n".
                     'Ich nenne dieses neue Elementarteilchen \\italic{Vakuum-Elapson}\\hidden{Ref: *Elapsonen-Vakuum-Herlei}, weil ein idealisiertes \\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:V-HM}{Vakuum} der Quanten-Fluss-Theorie nur aus diesen kreisrunden Vakuum-Elapsonen besteht.'."\n".
                     'Sie sind als elektromagnetisch unpolarisierte \\jump{*Photonen-Herlei}{Photonen} zu verstehen.'."\n".
@@ -1410,6 +1411,7 @@
                     array_merge( $FrQFT_g_figure_ary_Matrioschkas, array( name => 'OM:FrQFT:NeuePhysik:Fig-Matrioschkas'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_RelatDichte, array( name => 'OM:FrQFT:NeuePhysik:Fig-RelatDichte'))),
+
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos', text =>
                                            
                 'Verschachtelte Schwarze Löcher und Kosmoi')),
@@ -1509,12 +1511,14 @@
                     'Ein wesentliches Prinzip der Quantenfeldtheorie ist Bestandteil der hier beschriebenen Quanten-Fluss-Theorie.'."\n".
                     'Es sind sogenannte spontane Symmetriebrechungen\\footnote{\\const{FrQFT_g_footnote_text_SpontSymBrech}}:'."\n".
                     'Generell zeigt sich im Verlauf der Entwicklung der Quanten-Fluss-Theorie, dass jede ihrer Symmetrien durch einen oder mehrere Mechanismen gebrochen werden.'."\n".
-                    'Zu jedem dieser Machnismen, und dem darausfolgenden Bruch einer Symmetrie, gehört eine Wechselwirkung, die aus ihm resultiert und den Bruch in einer neuen Symmetrie ausbalanciert.'."\n"))),
+                    'Zu jedem dieser Machanismen, und dem daraus folgenden Bruch einer Symmetrie, gehört eine Wechselwirkung, die aus ihm resultiert und den Bruch in einer neuen Symmetrie ausbalanciert.'."\n"))),
+
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_WqUngebroch, array( name => 'OM:FrQFT:NeuePhysik:Fig-Wirkungsquant-ungebrochen'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation',
                                                           text => '\\const{FrQFT_g_text_SymmetrieBruchFarbpol}'))),
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Das Sombrero-Potential der Farbpolarisation einführen. Es scheint ein anderes als das des Higgs-Felds. Oder es sind dort dieses und das der schwachen WW kombiniert.',
                     '• Das Bild vom Elapson mit Spur für Symmetriebrechung mit Sombrero-Potential korrigieren und hier einfügen.',
@@ -1565,11 +1569,10 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Symmetriebrechung', type => 'back'),
                     )),
                       
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_PhotonWQ, array( name => 'OM:FrQFT:NeuePhysik:Fig-Photon'))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen', text =>
                                            
                 'Photonen')),
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die Ausrichtung des Spins von Photonen in und gegen die Flugrichtung wird beobachtet. Vgl. \\cite{wiki:Photon:2015}, Spin. Hier wird auch der Drehimpuls einer zirkular polarisierten elektromagnetischen Welle angegeben. Etwas detaillierter noch auf der Seite vom 10.03.2018.',
                     '• \\quote{Anders als der halbzahlige Spin der Leptonen ergibt sich der ganzzahlige Spin des Photons (Lichtquant) schon aus der lange bekannten Existenz elektromagnetischer Wellen mit zirkulärer Polarisation. Ein direkter experimenteller Nachweis gelang 1936 anhand der Drehbewegung eines makroskopischen Objekts nach der Wechselwirkung mit Photonen.[…]} Vgl. \\cite{wiki:Spin:2022}, letzter Absatz im einleitenden Text.',
@@ -1579,13 +1582,31 @@
                     '• Was bedeutet dies nun dafür, wie sich das elektrische (elektromagnetische) Feld eines zirkular polarisierten Photons aus der Wirkungsquanten-Dichte seines Strings ergibt?',
                     '– Wir sehen in der \\jumpname{OM:FrQFT:NeuePhysik:Fig-Photon} die sich gegenüber liegenden Maxima und Minima der Wirkungsquanten-Dichte des Photonen-Strings. XXX',
                     ))),
+
                   // #: *Photonen-Herlei
                   array( 'text', array( text => array(
-                    'Die elektromagnetische Polarisation eines zirkular polarisierten \\jump{OM:FrQFT:Elementarteilchen:Photonen}{Photons} kommt zustande, wenn auf einer Seite des Elapson-Strings die \\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten} dichter gepackt sind,'."\n".
-                    'als auf der gegenüber liegenden Seite (siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Photon}).'."\n".
-                    'Deutlich wird dies besonders im Kontrast zum elektromagnetisch unpolarisierten \\jump{*Elapsonen-Vakuum-Herlei}{Vakuum-Elapson}, bei dem die Wirkungsquanten ganz gleichmäßig verteilt sind (siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation}). '."\n".
-                    'Es handelt sich bei der elektromagnetischen Polarisation also um eine rotierende Verschiebungspolarisation der Wirkungsquanten-Dichte auf einem String.'."\n".
-                    'Der String eines Photons ist deshalb eine rotierende Ellipse.'."\n"))),
+                    'Die elektromagnetische Polarisation eines zirkular polarisierten \\jump{OM:FrQFT:Elementarteilchen:Photonen}{Photons}'."\n".
+                    'kommt zustande, wenn auf einer Seite des Photon-Strings (Elapson-Strings) die \\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten}'."\n".
+                    'dichter gepackt sind, als auf der gegenüber liegenden'."\n".
+                    'Seite (siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Photon} und \\jumpname{OM:FrQFT:NeuePhysik:LiveAni-Photon}).'."\n".
+                    ''))),
+
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_PhotonWQ, array( name => 'OM:FrQFT:NeuePhysik:Fig-Photon'))),
+                  array( 'iframe',
+                    array_merge( $FrQFT_g_iframe_ary_PhotonWQ, array( name => 'OM:FrQFT:NeuePhysik:LiveAni-Photon'))),
+
+                  array( 'text', array( text => array(
+                    'Deutlich wird dies besonders im Kontrast zum elektromagnetisch unpolarisierten, dunklen Photon'."\n".
+                    '(\\jump{*Elapsonen-Vakuum-Herlei}{Vakuum-Elapson}),'."\n".
+                    'bei dem die Wirkungsquanten ganz gleichmäßig verteilt sind'."\n".
+                    '(siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation}'."\n".
+                    'und \\jumpname{OM:FrQFT:NeuePhysik:LiveAni-VakuumElapson},'."\n".
+                    'letzteres ist auch über die Einstellungen in der \\jumpname{OM:FrQFT:NeuePhysik:LiveAni-Photon} zu erreichen). '."\n".
+                    'Es handelt sich bei der elektromagnetischen Polarisation also'."\n".
+                    'um eine rotierende Verschiebungspolarisation der Wirkungsquanten-Dichte auf einem String.'."\n".
+                    'Der String eines Photons ist deshalb eine rotierende Ellipse.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:SymEMWW', text =>
                                            
                 'Symmetriebruch zur elektromagnetischen Wechselwirkung')),

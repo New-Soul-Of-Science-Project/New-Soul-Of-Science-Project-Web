@@ -3,10 +3,13 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 04.07.2026, 12:00h
+  // #: Stand: 25.09.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20260925:  +:  "$SupNum_g_footnote_text_Disjunkt":  Primärliteratur ergänzt.
+  //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
+  //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
   //           20260704:  +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysis":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_FundamentalsatzDerAnalysisT1":  Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_MittelwertsatzDerIntegralrechnung":  Primärliteratur ergänzt.
@@ -107,6 +110,7 @@
   $nSOSp_g_addOn_Text_replace_ary = array(
     // #: hyphenations with "&shy;":
     //      – is necessary if a word is followed by a footnote as examples: "Quan­ten­feld­the­o­rie19" or "Re­la­ti­vi­täts­the­o­rie20"
+    array( 'Paarungssumme', 'Paar&shy;ungs&shy;summe'),
     array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
     array( '-Relativitätstheorie-', 'Re&shy;la&shy;ti&shy;vi&shy;täts&shy;the&shy;o&shy;rie'),
   );
@@ -438,6 +442,7 @@
   $SupNum_g_footnote_text_DedekindscherSchnitt  = 'Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 4 Schöpfung der irrationalen Zahlen, S. 19–24. \\\\ Internet: \\\\ Vgl. \cite{wiki:DedekindscherSchnitt:2025}.';
   $SupNum_g_footnote_text_DifferentialMathematik = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:DifferentialMathematik:2024}.';
   $SupNum_g_footnote_text_Differentialrechnung  = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.';
+  $SupNum_g_footnote_text_Disjunkt              = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, Gl. (2) (Vereinigungsmenge zweier Mengen \lm{ M } und \lm{ N }, die kein gemeinsames Element haben). \\\\ Internet: \\\\ Vgl. \cite{wiki:Disjunkt:2025}. \\\\ Vgl. \cite{wiki:DisjunkteVereinigung:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = 'Vgl. \cite{Abel:UnmoeglichkeitAlgebraischerGleichungen:1826}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_ElliptischeKurve      = 'Vgl. \cite{Abel:RecherchesSurLesFonctionsElliptiques:1827} (Grundlegung der Theorie der elliptischen Funktionen). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.';
   $SupNum_g_footnote_text_EulerscheZahl         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788}. \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Beweis der Transzendenz von \lm{ \e }). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
@@ -462,7 +467,7 @@
   $SupNum_g_footnote_text_QuadratischePyramidalzahl = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Summation von Potenzen natürlicher Zahlen; enthält die Formel für die Summe der ersten \lm{ n } Quadratzahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.';
   $SupNum_g_footnote_text_KomplexeZahl          = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung komplexer Zahlen und der eulerschen Formel \lm{ \e^{\i \varphi} = \cos \varphi + \i \sin \varphi }). \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kongruenz             = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 1–4. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}.';
-  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
   $SupNum_g_footnote_text_Kreisteilungspolynom  = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt (De aequationibus circuli), S. 397–448 (Kreisteilungspolynome und ihre Irreduzibilität). \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.';
   $SupNum_g_footnote_text_LanglandsProgramm     = 'Vgl. \cite{Langlands:ProblemsInAutomorphicForms:1970}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:TausendSeitenBeweis:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LanglandsProgramm:2024}.';
@@ -481,8 +486,10 @@
   $SupNum_g_footnote_text_Primpolynom           = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Siebenter Abschnitt, S. 397–448. \\\\ Vgl. \cite{LejeuneDirichlet:VorlesungenUeberZahlentheorie:1894}, Supplement Ⅺ, § 160 Zahlenkörper, S. 452–456. \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.';
   $SupNum_g_footnote_text_RationaleZahl         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅴ (Verhältnisse und Proportionen). \\\\ Vgl. \cite{Dedekind:StetigkeitUndIrrationaleZahlen:1872}, § 1: Eigenschaften der rationalen Zahlen. \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_RiemannschesIntegral  = 'Vgl. \cite{Riemann:UeberDieDarstellbarkeitEinerFunction:1867}, § 4 Ueber den Begriff eines bestimmten Integrals und den Umfang seiner Gültigkeit. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannschesIntegral:2026}.';
+  $SupNum_g_footnote_text_RiemannscheVermutung  = 'Vgl. \cite{Riemann:UeberDieAnzahlDerPrimzahlen:1859}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Restklasse            = 'Vgl. \cite{Gauss:UntersuchungenUeberHoehereArithmetik:1889}, Erster Abschnitt (Von der Kongruenz der Zahlen überhaupt), Art. 2. \\\\ Internet: \\\\ Vgl. \cite{wiki:KongruenzZahlentheorie:2025}, Restklassen.';
+  $SupNum_g_footnote_text_SatzDesEuklid         = 'Vgl. \cite{Lorenz:EuklidsElemente:1781}, Buch Ⅸ, Der 20. Satz, S. 160. \\\\ Internet: \\\\ Vgl. \cite{wiki:SatzDesEuklid:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}, S. 601–655. \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_Taylorreihe           = 'Vgl. \cite{Taylor:MethodusIncrementorum:1715} (Grundlegung der nach Taylor benannten Reihenentwicklung von Funktionen als Potenzreihe). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (erste rigorose Konvergenztheorie der Taylorreihe). \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.';
   $SupNum_g_footnote_text_Teleskopsumme         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (systematische Verwendung von Teleskopsummen zur Auswertung von Reihen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Teleskopsumme:2026}.';
@@ -703,8 +710,22 @@
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
-  
-  
+  $FrQFT_g_iframe_ary_VakuumElapson             = array( source => $Glo_PathRel_back.'../share/animations/Dark-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
+                                                                  'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}'."\n",
+                                                         print_image => $Glo_PathRel_back.'../share/images/FrQFT/Dark-Photon-3D-print.png',
+                                                         print_image_alt => 'Vakuum-Elapson, interaktive 3D-Animation');
+
+  $FrQFT_g_iframe_ary_PhotonWQ                  = array( source => $Glo_PathRel_back.'../share/animations/Light-Photon-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt, wie jedes Wirkungsquant auf einer eigenen, fest orientierten elliptischen Bahn um das Zentrum kreist.'."\n".
+                                                                  'Da die Ellipsen der einzelnen Wirkungsquanten gegeneinander verdreht sind, ergibt ihre gemeinsame Bewegung die zirkulare Polarisation des Photons.'."\n".
+                                                                  'Der Regler "Polarisation" erlaubt den stufenlosen Übergang zwischen einem unpolarisierten (kreisförmigen) und einem zirkular polarisierten (elliptischen) Wirkungsquanten-String.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/FrQFT/Light-Photon-3D-print.png',
+                                                         print_image_alt => 'Helles Photon, interaktive 3D-Animation');
+
+
+
   // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_Lepton_highRes" in Verwendung.
@@ -903,7 +924,7 @@
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
-  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
+  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../share/animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
                                                          text => '\color{*Bearb}{(In Arbeit …)}'."\n",
                                                          print_image => $Glo_PathRel_back.'../share/images/Spannungsspiel-des-Lebens/Sterntetraeder-3D-print.png',
                                                          print_image_alt => 'Sterntetraeder (Merkaba) — 3D-Animation');
@@ -936,8 +957,22 @@
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
                                                                  'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
-                                                                 
-                                                                 
+
+  $SupNum_g_iframe_ary_sGeomKonstrukt3D_Wiederholung = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html?konstruktion=wiederholung', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Konstruktion der rhythmischen Wiederholung:'."\n".
+                                                                 'jede natürliche Zahl fällt der Reihe nach in Königsblau herab und wird zur neuen Bodenlinie, deren Länge sich zuvor auf den Anteil verkürzt, den die bisherige Gesamtzahl an der neuen, feineren Gesamtzahl ausmacht.'."\n".
+                                                                 'Die roten Punkte zeigen die jeweils aktuelle gleichmäßige Teilung, die jadegrün markierten Zwischenpunkte die noch fehlenden Punkte zu einer wirklich gleichmäßigen Verteilung.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-Wiederholung-print.png',
+                                                         print_image_alt => 'Die Konstruktion der Wiederholung von s, interaktive 3D-Animation');
+
+  $SupNum_g_iframe_ary_sGeomKonstrukt3D_Teilung  = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html?konstruktion=teilung', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Konstruktion der rhythmischen Zerlegung:'."\n".
+                                                                 'jede natürliche Zahl fällt der Reihe nach in Königsblau auf die Zahlengerade zwischen Null und Eins und hinterlässt dort in Rot die Punkte, die zum bisherigen Rhythmus neu hinzukommen.'."\n".
+                                                                 'Die jadegrün markierten Zwischenpunkte zeigen jeweils, welche weiteren Punkte für eine wirklich gleichmäßige Teilung an dieser Stelle noch fehlen würden.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-print.png',
+                                                         print_image_alt => 'Die Konstruktion der Teilung von s, interaktive 3D-Animation');
+
+
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
@@ -1448,116 +1483,6 @@
            jump_ary => array(
                 ),
          ),
-  'OM:FrQFT:NeuePhysik' =>
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Neue-Physik-Problem-der-Zeit_de.php',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Neue-Physik-Problem-der-Zeit_de.php',
-           titel => 'Neue Physik - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'Das ›Problem der Zeit‹ – Problembeschreibung, Lösungshypothese und Entwicklung eines allgemeinen Prinzips der Physik.',
-           keywords => '',
-           text_titel_h1 => 'Neue Physik',
-           text_titel_short => 'Neue Physik',
-           text_undertitel_h2 => 'Das ›Problem der Zeit‹ – Problembeschreibung, Lösungshypothese und Entwicklung eines allgemeinen Prinzips der Physik',
-           //text_titel_discr_h3 => 'Das Higgs-Feld des Vakuums und die Elementarteilchen bestehen aus fraktalen Wirkungsquanten-Strings, die eine Struktur aus Zeit-Ebenen bilden.',
-           jump_ary => array(
-                  'OM:FrQFT:NeuePhysik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                             
-                  'OM:FrQFT:NeuePhysik:Ein-Prinzip-fuer-Alles' => array( headline_text => 'Ein Prinzip für Alles', headline_text_short => 'Ein Prinzip für Alles'),
-                             
-                  'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr' => array( headline_text => 'Philosophie der Lichtuhr', headline_text_short => 'Philosophie der Lichtuhr'),
-                    'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:PrinzLichtuhr' => array( headline_text => 'Prinzip der Lichtuhr', headline_text_short => 'Prinzip der Lichtuhr'),
-                    'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:TeilModRelatPrinzip' => array( headline_text => 'Teilchenmodell im Relativitätsprinzip', headline_text_short => 'Teilchenmodell im Relativitätsprinzip'),
-                             
-                  'OM:FrQFT:NeuePhysik:Problem-der-Zeit' => array( headline_text => 'Problem der Zeit', headline_text_short => 'Problem der Zeit'),
-                    'OM:FrQFT:NeuePhysik:Problem-der-Zeit:VermWidersp' => array( headline_text => 'Erweiterte Lichtuhr mit vermeintlichem Widerspruch', headline_text_short => 'Erweiterte Lichtuhr mit vermeintlichem Widerspruch'),
-                    'OM:FrQFT:NeuePhysik:Problem-der-Zeit:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => '\name{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}'),
-                             
-                  'OM:FrQFT:NeuePhysik:Loesungsansatz' => array( headline_text => 'Lösungsansatz', headline_text_short => 'Lösungsansatz'),
-                    'OM:FrQFT:NeuePhysik:Loesungsansatz:SchwAusserLG' => array( headline_text => 'Schwingung außerhalb der Lichtbewegung', headline_text_short => 'Schwingung außerhalb der Lichtbewegung'),
-                    'OM:FrQFT:NeuePhysik:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-PoundRebkaSnider' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-Gekruemmter-Licht-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-Wellenlaenge' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Loesungsansatz:HelixfSpiralb' => array( headline_text => 'Helixförmige Spiralbahn der Feinstruktur der Photonen', headline_text_short => 'Helixförmige Spiralbahn der Feinstruktur der Photonen'),
-                    'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling' => array( headline_text => 'Lichtgeschwindigkeitsdrilling', headline_text_short => 'Lichtgeschwindigkeitsdrilling'),
-                    'OM:FrQFT:NeuePhysik:Loesungsansatz:ErsterAnsatz' => array( headline_text => 'Ein erster Ansatz', headline_text_short => 'Ein erster Ansatz'),
-                             
-                  'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen' => array( headline_text => 'Beobachtungen und naturphilosophische Überlegungen', headline_text_short => 'Beobachtungen und Überlegungen'),
-                    'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch' => array( headline_text => 'Wechselwirkungen entstehen aus Symmetriebrüchen und umgekehrt', headline_text_short => 'Wechselwirkungen entstehen aus Symmetriebrüchen'),
-                    'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:MatEleModErwLU' => array( headline_text => 'Materie-Elementarteilchenmodell der erweiterten Lichtuhr', headline_text_short => 'Materie-Elementarteilchenmodell der erweiterten Lichtuhr'),
-                             
-                  'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip' => array( headline_text => 'Raum, Zeit und Existenzprinzip', headline_text_short => 'Raum, Zeit und Existenzprinzip'),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:StrukBew' => array( headline_text => 'Struktur und Bewegung machen Raum und Zeit', headline_text_short => 'Struktur und Bewegung machen Raum und Zeit'),
-                    'OM:FrQFT:NeuePhysik:Fig-ExistOhneZerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-ExistOhneStarr' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-Wirkungsquant-ungebrochen-Existenzprinzip' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-Elapson-Existenzprinzip' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:DjetNeheh' => array( headline_text => 'Djet- und Neheh-Zeit', headline_text_short => 'Djet- und Neheh-Zeit'),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist' => array( headline_text => 'Existenzprinzip der Elementarteilchen', headline_text_short => 'Existenzprinzip der Elementarteilchen'),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:PrinzLichtuhr' => array( headline_text => 'Prinzip der Lichtuhr in Materie-Elementarteilchen', headline_text_short => 'Prinzip der Lichtuhr in Materie-Elementarteilchen'),
-                    'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Ausblick' => array( headline_text => 'Ausblick', headline_text_short => 'Ausblick'),
-                             
-                  'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation' => array( headline_text => 'Heisenbergsche Unschärferelation', headline_text_short => 'Heisenbergsche Unschärferelation'),
-                    'OM:FrQFT:NeuePhysik:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:WQ' => array( headline_text => 'Wirkungsquanten', headline_text_short => 'Wirkungsquanten'),
-                    'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE' => array( headline_text => 'Energie-, Impuls- und Masseneinheiten', headline_text_short => 'Energie-, Impuls- und Masseneinheiten'),
-                             
-                  'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten' => array( headline_text => 'Strings aus Wirkungsquanten', headline_text_short => 'Strings aus Wirkungsquanten'),
-                    'OM:FrQFT:NeuePhysik:Fig-Wq-String-Unmoeg-Konstella' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW' => array( headline_text => 'Zusammenhalt der Wirkungsquanten', headline_text_short => 'Zusammenhalt der Wirkungsquanten'),
-                    'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE' => array( headline_text => 'Wirkungsquanten-Strings und Vakuum-Elapsonen', headline_text_short => 'Wirkungsquanten-Strings und Vakuum-Elapsonen'),
-                             
-                  'OM:FrQFT:NeuePhysik:Fraktales-Universum' => array( headline_text => 'Fraktales Universum', headline_text_short => 'Fraktales Universum'),
-                    'OM:FrQFT:NeuePhysik:Fraktales-Universum:KosmoPrinzKosmiZeit' => array( headline_text => 'Kosmologisches Prinzip und kosmische Zeit', headline_text_short => 'Kosmologisches Prinzip und kosmische Zeit'),
-                    'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr' => array( headline_text => 'Fraktales Existenzprinzip und fraktale Strings', headline_text_short => 'Fraktales Existenzprinzip und fraktale Strings'),
-                    'OM:FrQFT:NeuePhysik:Fig-Matrioschkas' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos' => array( headline_text => 'Verschachtelte Schwarze Löcher und Kosmoi', headline_text_short => 'Verschachtelte Schwarze Löcher und Kosmoi'),
-                    'OM:FrQFT:NeuePhysik:Fig-RelatDichte' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fraktales-Universum:BewegRaum' => array( headline_text => 'Bewegungsraum', headline_text_short => 'Bewegungsraum'),
-                             
-                  'OM:FrQFT:NeuePhysik:Symmetriebrechung' => array( headline_text => 'Symmetriebruch und Farbpolarisation', headline_text_short => 'Symmetriebruch und Farbpolarisation'),
-                    'OM:FrQFT:NeuePhysik:Symmetriebrechung:SymBruchBalance' => array( headline_text => 'Symmetriebruch und dessen Balance in neuer Symmetrie im Allgemeinen', headline_text_short => 'Symmetriebruch und Balance im Allgemeinen'),
-                    'OM:FrQFT:NeuePhysik:Fig-Wirkungsquant-ungebrochen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Symmetriebrechung:SymBruExistPrin' => array( headline_text => 'Symmetriebruch des Existenzprinzips', headline_text_short => 'Symmetriebruch des Existenzprinzips'),
-                    'OM:FrQFT:NeuePhysik:Symmetriebrechung:FarbPol' => array( headline_text => 'Farbpolarisation des Existenzprinzips', headline_text_short => 'Farbpolarisation des Existenzprinzips'),
-                             
-                  'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation' => array( headline_text => 'Elektromagnetische Polarisation', headline_text_short => 'Elektromagnetische Polarisation'),
-                    'OM:FrQFT:NeuePhysik:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen' => array( headline_text => 'Photonen', headline_text_short => 'Photonen'),
-                    'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:SymEMWW' => array( headline_text => 'Symmetriebruch zur elektromagnetischen Wechselwirkung', headline_text_short => 'Symmetriebruch zur elektromagnetischen Wechselwirkung'),
-                             
-                  'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie' => array( headline_text => 'Elementarteilchen der Materie', headline_text_short => 'Elementarteilchen der Materie'),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:FrQFT:NeuePhysik:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Elektrisch-neutrales-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:EDK' => array( headline_text => 'Urknall, Erhaltungssätze und Symmetriebruch', headline_text_short => 'Urknall, Erhaltungssätze und Symmetriebruch'),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:SymESWW' => array( headline_text => 'Symmetriebrechung der schwachen Wechselwirkung', headline_text_short => 'Symmetriebrechung der schwachen Wechselwirkung'),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:SymSWW' => array( headline_text => 'Symmetriebrechung der starken Wechselwirkung', headline_text_short => 'Symmetriebrechung der starken Wechselwirkung'),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:NQG' => array( headline_text => 'Neue Quantengravitation', headline_text_short => 'Neue Quantengravitation'),
-                    'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:UTGA' => array( headline_text => 'Überschuss von Teilchen gegenüber Antiteilchen', headline_text_short => 'Überschuss von Teilchen gegenüber Antiteilchen'),
-                             
-                  'OM:FrQFT:NeuePhysik:Relativitaet' => array( headline_text => 'Relativität, Machsches Prinzip und Kosmologisches Prinzip', headline_text_short => 'Relativität, Machsches Prinzip und Kosmologisches Prinzip'),
-                    'OM:FrQFT:NeuePhysik:Relativitaet:RP' => array( headline_text => 'Relativitätsprinzip', headline_text_short => 'Relativitätsprinzip'),
-                    'OM:FrQFT:NeuePhysik:Relativitaet:SRT' => array( headline_text => 'Spezielle Relativitätstheorie', headline_text_short => 'Spezielle Relativitätstheorie'),
-                    'OM:FrQFT:NeuePhysik:Relativitaet:ART-MP' => array( headline_text => 'Allgemeine Relativitätstheorie, Machsches Prinzip und Kosmologisches Prinzip', headline_text_short => 'Allgemeine Relativitätstheorie, Machsches Prinzip und Kosmologisches Prinzip'),
-                             
-                  'OM:FrQFT:NeuePhysik:Quantengravitation' => array( headline_text => 'Quantengravitation und Higgs-Mechanismus', headline_text_short => 'Quantengravitation und Higgs-Mechanismus'),
-                    'OM:FrQFT:NeuePhysik:Quantengravitation:QG' => array( headline_text => 'Quantengravitation', headline_text_short => 'Quantengravitation'),
-                    'OM:FrQFT:NeuePhysik:Quantengravitation:HM-AEP' => array( headline_text => 'Higgs-Mechanismus und Äquivalenzprinzip', headline_text_short => 'Higgs-Mechanismus und Äquivalenzprinzip'),
-                    'OM:FrQFT:NeuePhysik:Quantengravitation:PDM' => array( headline_text => 'Phänomen der Dunklen Materie', headline_text_short => 'Phänomen der Dunklen Materie'),
-                             
-                  'OM:FrQFT:NeuePhysik:Quantenfeldtheorie' => array( headline_text => 'Relativistische Quantenfeldtheorien und Co', headline_text_short => 'Relativistische Quantenfeldtheorien und Co'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:QM' => array( headline_text => 'Quantenmechanik und Quantenfeldtheorien in der Quanten-Fluss-Theorie', headline_text_short => 'Quantenmechanik und Quantenfeldtheorien in der Quanten-Fluss-Theorie'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:ESW' => array( headline_text => 'Elektroschwache Wechselwirkung in der Quanten-Fluss-Theorie', headline_text_short => 'Elektroschwache Wechselwirkung in der Quanten-Fluss-Theorie'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:QCD' => array( headline_text => 'Quantenchromodynamik in der Quanten-Fluss-Theorie', headline_text_short => 'Quantenchromodynamik in der Quanten-Fluss-Theorie'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:TZ' => array( headline_text => 'Teilchenzoo', headline_text_short => 'Teilchenzoo'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:V-HM' => array( headline_text => 'Vakuum und Higgs-Mechanismus', headline_text_short => 'Vakuum und Higgs-Mechanismus'),
-                    'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:ST' => array( headline_text => 'Stringtheorie', headline_text_short => 'Stringtheorie'),
-                ),
-         ),
   'OM:FrQFT:NotwenVereinheit' =>
     array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Notwendige-Vereinheitlichung-Physik-Dilemma_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Notwendige-Vereinheitlichung-Physik-Dilemma_de.php',
@@ -1637,12 +1562,13 @@
            // text_titel_discr_h3 => 'Die Gravitation der Allgemeinen Relativitätstheorie ergibt sich als emergentes Phänomen der Beugung lichtähnlicher rotierender Strukturen in den gravitativ angezogenen Elementarteilchen-Strings',
            text_titel_discr_h3 => 'Rotierende Impulskegel der neuen Feinstruktur der gravitativ wirkenden Elementarteilchen-Strings einer Zentralmasse verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld und führen so zur Quantengravitation',
            jump_ary => array(
-                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                     // #!: Wiederholt in "Mechanismus der Gravitation"! Dort mit fester Nummer !!!!
                     'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                    'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
                     'OM:FrQFT:Quantengravitation:Vortext:Graviradiation' => array( headline_text => 'Graviradiation – eine neue Wechselwirkung', headline_text_short => 'Graviradiation'),
                              
                   'OM:FrQFT:Quantengravitation:VereinfModellQGravitation' => array( headline_text => 'Vereinfachtes Modell der Quantengravitation', headline_text_short => 'Vereinfachtes Modell der Quantengravitation'),
