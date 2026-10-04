@@ -3,10 +3,16 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 18:00h
+  // #: Stand: 04.10.2026, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261004:  >:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-stix2" to
+  //                      "mathjax-tex": alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex, stix2,
+  //                      termes, modern, pagella, schola, asana, bonum, fira, dejavu) live anhand
+  //                      derselben Formeln verglichen (Wolfgang wollte eine Schrift, die besser zur
+  //                      Textschrift "Open Sans" passt als STIX2) - kein Paket entspricht der unter
+  //                      MathJax 2 genutzten "STIXGeneral", "tex" war am Ende die bevorzugte Wahl.
   //           20261004:  *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the
   //                          MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global
   //                          "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom
@@ -365,15 +371,14 @@
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
-    // #: "STIX2" statt der seit MathJax 4 neuen Standardschrift "New Computer Modern" (letztere hatte
-    // sichtbar andere Metriken als die bisherige MathJax-2-Darstellung) UND statt der klassischen
-    // "mathjax-tex"-Schrift (sah zwar korrekt aus, passt aber laut Wolfgang stilistisch schlechter zur
-    // Textschrift "Open Sans") - MathJax 2 nutzte hier ohnehin bereits "STIXGeneral" als Mathe-Schrift,
-    // "mathjax-stix2" ist deren MathJax-4-Nachfolgepaket. "tex-mml-chtml-mathjax-stix2.js" ist ein
-    // vorgefertigtes Bundle aus dem Schriftpaket "@mathjax/mathjax-stix2-font", das Engine, TeX-Input
-    // und CHTML-Output bereits mit dieser Schrift kombiniert mitbringt.
+    // #: "mathjax-tex" (die klassische MathJax-Schrift) statt der neuen MathJax-4-Standardschrift
+    // "New Computer Modern" gewählt. Vor dieser Entscheidung wurden alle 11 verfügbaren
+    // MathJax-4-Schriftpakete live gegeneinander verglichen (newcm, tex, stix2, termes, modern,
+    // pagella, schola, asana, bonum, fira, dejavu) - keine davon passt zur Textschrift "Open Sans" wie
+    // "STIXGeneral" es unter MathJax 2 tat (dafür gibt es unter MathJax 4 kein Äquivalent), "tex" war
+    // am Ende die von Wolfgang bevorzugte Variante.
     echo '    <script id="MathJax-script"'."\n";
-    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-stix2-font/tex-mml-chtml-mathjax-stix2.js">'."\n";
+    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-tex-font/tex-mml-chtml-mathjax-tex.js">'."\n";
     echo '    </script>'."\n";
     // #: "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch
     // MathJax 4s neue Custom Elements (mjx-container, mjx-over, mjx-ext, usw.), die selbst keine
