@@ -8,42 +8,42 @@
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
   //           20261004:  *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the
-  //                      MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global
-  //                      "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom
-  //                      Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene
-  //                      "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen
-  //                      (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per
-  //                      DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert
-  //                      nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so
-  //                      zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung
-  //                      "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in
-  //                      Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }"
-  //                      (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar
-  //                      noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über
-  //                      padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu
-  //                      "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen
-  //                      Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut
-  //                      als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die
-  //                      Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der
-  //                      Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-,
-  //                      Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
+  //                          MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global
+  //                          "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom
+  //                          Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene
+  //                          "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen
+  //                          (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per
+  //                          DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert
+  //                          nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so
+  //                          zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung
+  //                          "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in
+  //                          Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }"
+  //                          (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar
+  //                          noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über
+  //                          padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu
+  //                          "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen
+  //                          Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut
+  //                          als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die
+  //                          Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der
+  //                          Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-,
+  //                          Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
   //           20261004:  !:  "Sc_f_HeaderElements":  Upgrade MathJax from 2.7.9 (CDN, jsdelivr) to self-hosted
-  //                      4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back
-  //                      eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den
-  //                      nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt,
-  //                      Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu
-  //                      geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach
-  //                      "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach
-  //                      "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits
-  //                      eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel"
-  //                      sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein
-  //                      aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per
-  //                      "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben
-  //                      \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner
-  //                      Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER
-  //                      Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere
-  //                      Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx,
-  //                      \ord, \lpr) - keine Rendering-Fehler.
+  //                          4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back
+  //                          eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den
+  //                          nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt,
+  //                          Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu
+  //                          geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach
+  //                          "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach
+  //                          "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits
+  //                          eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel"
+  //                          sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein
+  //                          aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per
+  //                          "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben
+  //                          \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner
+  //                          Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER
+  //                          Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere
+  //                          Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx,
+  //                          \ord, \lpr) - keine Rendering-Fehler.
   //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
   //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
