@@ -18,35 +18,82 @@
                 'Abstract', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Theorie der Superial-Zahlen etabliert einen aktual unendlichen,'."\n".
-                    'total geordneten Zahlkörper \lm{ \mathbb{S} = \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*) } als das fundamentale,'."\n".
-                    'normierte Stellenwertsystem der Analysis.'."\n".
-                    'Im Zentrum dieses Systems steht die superiale Basis \lm{ \s := ω^ω },'."\n".
-                    'welche über die von Neumannsche Ordinalzahlpotenzierung als transfinite Primzahl-Flächenprodukt'."\n".
-                    'formal im Zermelo-Fraenkel-Mengenlehre-System mit Auswahlaxiom (ZFC) verankert ist.'."\n",
-                      'Durch den rigorosen Beweis der Primzahlprodukt-Vermutung und die Etablierung der kanonischen Identifikation'."\n".
+                    'Die Theorie der Superial-Zahlen etabliert einen aktual unendlichen, total geordneten Körper'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*)  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'wird nachgewiesen, dass der dichte (lückenlose) Anfangsabschnitt'."\n".
-                    'des unendlichen Primturm-Potenzrasters exakt die Mächtigkeit der Ordinalzahl \lm{ ω } ausfüllt.'."\n".
-                    'Auf diesem unerschütterlichen Fundament operiert eine Familie verallgemeinerter \lm{ p }-adischer Schichtbewertungen,'."\n".
-                    'die jeder endlichen Primzahl die exakte Dimension \lm{ v_{p}( \s ) = ω } zuweist.'."\n",
-                      'Das System löst die methodischen Limitationen der klassischen Nichtstandard-Analysis und der Limesrechnung auf,'."\n".
-                    'indem es eine messerscharfe arithmetische Bruchlinie zieht:'."\n".
-                    'Während im Produkt mit \lm{ \s } alle reell algebraischen Zahlen glatte unendliche Ganzzahlen ohne Nachkommastellen bilden'."\n".
-                    '(Beweis der Überrationalitätsvermutung und der Algebraischen-Koeffizienten-Vermutung),'."\n".
-                    'tragen transzendente Koeffizienten aufgrund ihrer Inkompatibilität zum Ganzheitsraster der Primzahltürme zwingend unendliche,'."\n".
-                    'infinitesimale Reste (Beweis der Superialen-Transzendenz-Vermutung).'."\n".
-                    'Mit der Etablierung von \lm{ \s } als normierter infiniter Einheit und \lm{ \s^{-1} } als absolut normiertem Infinitesimal'."\n".
-                    'wird das Differential \lm{ \mathrm{d} } ersetzt.'."\n".
-                    'Ableitungen werden zu exakten Differenzen und Integrale werden zu exakten, aktual unendlichen Summen,'."\n".
-                    'die ihren aktual unendlichen Grenzwertpfad im System vollständig bewahren'."\n".
-                    'und algebraisch verrechenbar machen.'."\n".
+                    'als Hahn-Reihenkörper und normiertes transfinites Stellenwertsystem.'."\n".
+                    'Im Zentrum dieses Systems steht die superiale Basis \lm{ \s },'."\n".
+                    'deren primexponentielle Struktur durch'."\n".
+                    'das \lm{ ω }-fache Einheits-Primexponentenprodukt aller endlichen Primzahlen bestimmt wird:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Schreibweise beruht auf der kanonischen Identifikation'."\n".
+                    'des von-Neumann-Ordinals \lm{ ω } mit seiner Mengen-Primfakultät'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  \;\; ,  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'die innerhalb der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)'."\n".
+                    'formal über das Primexponentenprodukt \lm{ \prodx } verankert wird. '."\n",
+                      'Das diese Identifikation begründende Haupttheorem der Primzahlprodukt-Vermutung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'zeigt dabei, dass der lückenlose Anfangsabschnitt des Primturm-Potenzrasters'."\n".
+                    'der Mengen-Primfakultät von \lm{ ω } unter der Abbildung \lm{ \lpr }'."\n".
+                    'kanonisch mit dem von-Neumann-Ordinal \lm{ ω } selbst übereinstimmt.'."\n",
+                      'Die primexponentielle Struktur der superialen Basis'."\n".
+                    'wird zusätzlich durch eine gegenwärtig auf \lm{ \s }'."\n".
+                    'beschränkte verallgemeinerte \lm{ p }-adische Bewertung erfasst.'."\n".
+                    'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}( \s )  =  ω  \;\; .  }',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Davon unabhängig trägt die Hahn-Reihen-Konstruktion die algebraische Körperstruktur'."\n".
+                    'und liefert mit den ganzzahligen Potenzen von \lm{ \s }'."\n".
+                    'die transfiniten Stellenwertschichten des Systems.'."\n",
+                      'Auf dieser Grundlage zeigt die Theorie eine arithmetische Trennlinie'."\n".
+                    'zwischen reell algebraischen und transzendenten Strukturen auf.'."\n".
+                    'Reell algebraische Zahlen \lm{ a \in \mathbb{A}_{\R} } bilden demnach die mathematisch sinnvollen Koeffizienten'."\n".
+                    'des grundlegenden Hahn-Reihenkörpers.'."\n".
+                    'Sie zeigen im Produkt mit der superialen Basis \lm{ a \cdot \s }'."\n".
+                    'eine für die aus dem System entwickelte alternative erweiterte Analysis wichtige Ganzheitsstruktur.'."\n".
+                    'Die transzendenten Zahlen zeigen, auf der anderen Seite der Trennlinie,'."\n".
+                    'eine von den reell algebraischen Zahlen abweichende infinitesimale Feinstruktur'."\n".
+                    'in diesem Stellenwertsystem.'."\n".
+                    'Diese Zusammenhänge werden durch die Beweise der Überrationalitätsvermutung,'."\n".
+                    'der Algebraischen-Koeffizienten-Vermutung'."\n".
+                    'und der weiterführenden Superialen-Transzendenz-Vermutung formalisiert.'."\n",
+                      'Mit \lm{ \s } als normierter infiniter Basis'."\n".
+                    'und \lm{ \s^{-1} } als ausgezeichnetem Basis-Infinitesimal'."\n".
+                    'entwickelt die Theorie eine alternative erweiterte Analysis'."\n".
+                    'auf Grundlage einer so ermöglichten transfiniten Differenzen- und Summenrechnung.'."\n".
+                    'Ableitungs- und Integralstrukturen werden dabei'."\n".
+                    'durch algebraisch definierte Operationen mit aktual unendlichen'."\n".
+                    'und infinitesimalen Größen ergänzt, deren transfinite Rechenpfade'."\n".
+                    'innerhalb des Stellenwertsystems explizit erhalten'."\n".
+                    'und algebraisch verrechenbar gemacht werden.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
                   'Das transfinite Stellenwertsystem und die superiale Basis', subline =>
@@ -54,7 +101,7 @@
                   array( 'text', array( text => array(
                     'Der Weg vom Endlichen ins Aktual-Unendliche wird über eine mathematisch präzise Erweiterung'."\n".
                     'der klassischen Stellenwertschreibweise operationalisiert.'."\n".
-                    'Die superiale Basis \lm{ \s } speichert das Produkt aller endlichen Primzahlen in einer exakten,'."\n".
+                    'Die superiale Basis \lm{ \s } speichert das Primexponentenprodukt aller endlichen Primzahlen in einer exakten,'."\n".
                     'unendlichen Potenzordnung der vollständigen Induktion \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
@@ -80,19 +127,19 @@
                     'Während rationale Brüche endlicher Quotienten an der Darstellung irrationaler Wurzeln scheitern,'."\n".
                     'liefert das superiale System eine exakte ganzzahlige Repräsentation im Unendlichen.'."\n",
                       'Der Beweis der Überrationalitätsvermutung zeigt, dass jede \lm{ x }-te Wurzel'."\n".
-                    'aus einer endlichen natürlichen Zahl \lm{ n } durch das Produkt mit der unendlichen \lm{ ω }-Potenz ihres Radikands'."\n".
+                    'aus einer endlichen natürlichen Zahl \lm{ n } durch das Primexponentenprodukt mit der unendlichen \lm{ ω }-Potenz ihres Radikands'."\n".
                     'in eine aktual unendlich große, glatte Ganzzahl überführt wird.'."\n".
                     'Jede irrationale Wurzel lässt sich somit als exakter Bruch aktual unendlich großer, ganzzahliger Quotienten darstellen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot *( \, \rad(n) \, *)_{\#}^{ω} }{ *( \, \rad(n) \, *)_{\#}^{ω} }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Diese unendliche Ganzheit gilt über die Algebraische-Koeffizienten-Vermutung für alle reell algebraischen Zahlen.'."\n".
-                    'Im scharfen Kontrast dazu steht die Superiale-Transzendenz-Vermutung:'."\n".
-                    'Transzendente Zahlen (wie \lm{ π_{\s} } oder \lm{ e_{\s} }) lassen sich nicht glatt in diese Stufen integrieren;'."\n".
+                    'Im scharfen Kontrast dazu zeigt der Beweis der Superialen-Transzendenz-Vermutung:'."\n".
+                    'Transzendente Zahlen (wie \lm{ e_{\s} } oder \lm{ π_{\s} }) lassen sich nicht glatt in diese Stufen integrieren;'."\n".
                     'sie tragen im System unendlich feine, infinitesimale Nachkommastellen'."\n".
                     'und verweisen auf eine tieferliegende fraktale Struktur des Kontinuums.'."\n".
                     ''))),
@@ -108,7 +155,7 @@
                     'Auf Grundlage dieses arithmetischen Fundaments wird die Differential- und Integralrechnung'."\n".
                     'von der klassischen Grenzwertnäherung (Limes) befreit und auf exakte algebraische Operationen unter Erhaltung des aktualen Grenzwertpfades zurückgeführt.'."\n".
                     'Das klassische Differential wird durch das absolut normierte Infinitesimal \lm{ \s^{-1} } ersetzt,'."\n".
-                    'woraus sich die exakte Ableitung einer Funktion ohne Limes-Prozess ergibt:'."\n".
+                    'woraus sich die superiale Ableitung einer Funktion ohne Limes-Prozess ergibt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -132,15 +179,20 @@
                     'wodurch Ableitungen und Integrale ihre infinitesimale Feinstruktur, Integrale als exakte Summen, bewahren.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Und so zeigt sich die besondere Bedeutung von \lm{ \s = ω^{ω} }, was sehr bemerkenswert ist, weil sich die neue superiale Basis \lm{ \s }'."\n".
-                    'auf diese Weise an exponierter Stelle in die Ordinalzahlen einreiht.'."\n".
-                    'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n".
+                    'Und so zeigt sich die besondere Bedeutung von \lm{ \s = ω^{ω} },'."\n".
+                    'was sehr bemerkenswert ist, weil die superiale Basis \lm{ \s }'."\n".
+                    'auf diese Weise durch \lm{ \s \equiv_{kan} ω^{ω} } kanonisch mit'."\n".
+                    'der von-Neumannschen Ordinalstruktur von \lm{ ω^ω } verknüpft wird.'."\n".
+                    'Daher fand diese Formel in ihrer Kurzschreibweise \lm{ \s = ω^{ω} }'."\n".
+                    'auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
-                  'Ein zukunftsweisender Ausblick: Die Verbindung von Zahlentheorie und Analysis', subline =>
-                    '')),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
+
+                'Ein zukunftsweisender Ausblick: Die Verbindung von Zahlentheorie und Analysis', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Die Erkenntnis, dass die superiale Basis \lm{ \s } als unendliches Flächenprodukt alle endlichen Primzahltürme geometrisch'."\n".
+                    'Die Erkenntnis, dass die superiale Basis \lm{ \s } als unendliches primexponentielles Flächenprodukt'."\n".
+                    'die Primzahltürme aller endlichen Primzahlen in normiert unendlicher Potenz geometrisch'."\n".
                     'in einem einzigen, geordneten Rechenraum bündelt und eine metrische Normierung des transfiniten Raumes etabliert,'."\n".
                     'berührt eine der tiefsten Leitideen der modernen Mathematik:'."\n".
                     'die systematische Verknüpfung von diskreter Zahlentheorie und kontinuierlicher Analysis.'."\n".
@@ -150,16 +202,18 @@
                     'elementaren Seite.'."\n".
                     'Während die klassische Mathematik arithmetische Eigenschaften (wie Teilbarkeiten)'."\n".
                     'und geometrische Kontinuität oft getrennt behandelt, macht das superiale Stellenwertsystem'."\n".
-                    'das unendliche Primorial direkt als kontinuierliche Raumkoordinate nutzbar.'."\n".
-                    'Die verallgemeinerten \lm{ p }-adischen Schichtbewertungen stellen sicher,'."\n".
-                    'dass die Primzahl-Feinstruktur auf jeder Dimension des Raumes fehlerfrei erhalten bleibt.'."\n".
+                    'das aktual unendliche primexponentielle Primorial in ebendieser Potenz'."\n".
+                    'direkt als kontinuierliche Raumkoordinate nutzbar.'."\n".
+                    'Die eingeschränkten verallgemeinerten \lm{ p }-adischen Bewertungen erfassen'."\n".
+                    'die Primexponentenstruktur der superialen Basis \lm{ \s },'."\n".
+                    'auf der die transfiniten Stellenwertschichten des Systems aufbauen.'."\n".
                     'Damit bietet die Theorie einen faszinierenden, neuen Denkansatz, um die tiefen Wechselwirkungen'."\n".
-                    'zwischen Primzahlen und der Geometrie des Kontinuums direkt über die arithmetischen Gesetze'."\n".
-                    'einer erweiterten Analysis zu erforschen.'."\n".
+                    'zwischen Primzahlen und der Geometrie des so gesehen neuen analytischen Kontinuums'."\n".
+                    'direkt über die arithmetischen Gesetze einer erweiterten Analysis zu erforschen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Es tauchen somit immer weitere bedeutende Fragen zu den neuen Zahlen auf.'."\n".
-                    'Und so eröffnet sich eine ganze, neue Welt in der Mathematik, zu deren Erforschung wir hier anregen wollen.'."\n".
+                    'Und so eröffnet sich eine ganz neue Welt in der Mathematik, zu deren Erforschung wir hier auf dieser Basis anregen wollen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Home:Vortext:X', text =>
                                            

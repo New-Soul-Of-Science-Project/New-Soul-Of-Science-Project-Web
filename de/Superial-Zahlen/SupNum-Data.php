@@ -75,7 +75,7 @@
       text_titel_h1 => 'Superial-Zahlen \color{*TitleAdd}{\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche',
-      text_titel_discr_h3 => 'Ein aktual unendlicher geordneter algebraischer Körper, als Erweiterung der reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt; auch die Struktur der transzendenten Zahlen weiter aufklärt – neue Ideen elementarer Mathematik',
+      text_titel_discr_h3 => 'Ein aktual unendlicher, total geordneter Hahn-Reihenkörper, als Erweiterung der reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt; auch die Struktur der transzendenten Zahlen weiter aufklärt – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -586,7 +586,7 @@
       keywords => '',
       text_titel_h1 => 'Superiale-Transzendenz-Vermutung (STV) \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Superiale-Transzendenz-Vermutung',
-      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
+      text_undertitel_h2 => 'Wir beweisen, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
       text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
       jump_ary => array(
         'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
@@ -665,7 +665,7 @@
       text_titel_h1 => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
       text_titel_short => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
       text_undertitel_h2 => 'Das Stellenwertsystem der transfiniten Analysis',
-      text_titel_discr_h3 => 'Der Beweis der Primzahlprodukt-Vermutung als Fundierung der Superial-Zahlen auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit Auswahlaxiom (ZFC)',
+      text_titel_discr_h3 => 'Die Hahn-Reihen-Konstruktion als algebraische Grundlage der Superial-Zahlen und das Primzahlprodukt-Theorem als kanonische primexponentielle Anbindung an \lm{ ω } innerhalb der ZFC-Mengenlehre',
       jump_ary => array(
         'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 

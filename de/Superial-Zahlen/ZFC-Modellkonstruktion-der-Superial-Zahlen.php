@@ -160,7 +160,9 @@
                     'Im Einklang mit der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
                     'ergeben alle reell algebraischen Zahlen (ohne die Null)'."\n".
                     'im Produkt mit der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{superialen Einheit \lm{ \s } glatte, ganzzahlige, aktual unendliche infinite Zahlen}.'."\n".
-                    'Sie besitzen im System \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{nach unserer bewiesenen Algebraische-Koeffizienten-Vermutung (AKV)} keine Nachkommastellen, da sie strukturell frei von infinitesimalen Resten sind.'."\n".
+                    'Sie besitzen im System nach unserer bewiesenen'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Algebraischen-Koeffizienten-Vermutung (AKV)}'."\n".
+                    'keine Nachkommastellen, da sie strukturell frei von infinitesimalen Resten sind.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                   '2. Transzendente Zahlen (wie \lm{ π_{\s}, \e_{\s}) }', subline =>
