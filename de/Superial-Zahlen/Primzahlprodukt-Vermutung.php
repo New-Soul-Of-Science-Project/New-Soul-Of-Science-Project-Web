@@ -34,7 +34,7 @@
                     'Die Primzahlprodukt-Vermutung geht von der Beobachtung aus, dass der Ausdruck'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -47,7 +47,7 @@
                     'In dieser Lesart entsteht das vollständige Einheits-Primexponentenprodukt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω\overline{\#}  :=  \prodx_{ p \in \mathbb{P} }  p  }',
                                           label_text => '', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω\overline{\#}  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots *)_{\#}  \;\; ,  }',
@@ -64,7 +64,7 @@
                     'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } gilt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  =  \mathbb{N}  =  \dot{\bigcup}_{​ r = 0 }^{ p − 1 }  *( p \mathbb{N} + r *)  \;\; ,  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -78,7 +78,7 @@
                       'Die für die kanonische Identifikation entscheidende Gleichheit lautet:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -86,7 +86,7 @@
                     'Der Beweis dieser Gleichheit liefert die deduktive Grundlage der kanonischen Identifikation'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  \;\; ,  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -131,7 +131,7 @@
                     'Ihr lückenloses Primturm-Potenzraster reicht exakt bis zur nächsthöheren Primzahl:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( (p_{i} + 1)\overline{\#} *)  =  p_{i + 1}  }',
                                           // label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-plus-Eins-aus-Vorgaenger-p-i}', label_incr => false),
                                           label_text => '', label_incr => false),
@@ -141,7 +141,7 @@
                     'Durch vollständige Induktion über alle endlichen Indizes'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  i  <  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -150,7 +150,7 @@
                     'Der Index \lm{ i } läuft dabei durch die gesamte Menge der endlichen natürlichen Zahlen; im Übergang'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  i  \longrightarrow  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -159,7 +159,7 @@
                       'Das vollständige Einheits-Primexponentenprodukt aller endlichen Primzahlen ist'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω\overline{\#}  =  \prodx_{p \in \mathbb{P}}  p  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots *)_{\#}  \;\; .  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -171,7 +171,7 @@
                     'Einerseits gehört jede endliche natürliche Zahl zum lückenlosen Anfang,'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \subseteq  \lpr*( ω\overline{\#} *)  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -182,7 +182,7 @@
                     'Daher gehört kein aktual unendliches Rasterelement zum lückenlosen Anfang:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  \subseteq  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -190,7 +190,7 @@
                     'Somit ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -198,7 +198,7 @@
                     'Die kanonische Identifikation'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -256,7 +256,7 @@
                     'Die kanonische Identifikation'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.PP' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  }',
                                           label_text => '', label_incr => false),
                     ))),

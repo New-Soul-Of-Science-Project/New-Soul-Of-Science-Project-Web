@@ -21,7 +21,7 @@
                     'Die Theorie der Superial-Zahlen etabliert einen aktual unendlichen, total geordneten Körper'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  =  \mathbb{A}_{\R}\!*(*( \s^\mathbb{Z} *)*)  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -32,7 +32,7 @@
                     'das \lm{ ω }-fache Einheits-Primexponentenprodukt aller endlichen Primzahlen bestimmt wird:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -41,7 +41,7 @@
                     'des von-Neumann-Ordinals \lm{ ω } mit seiner Mengen-Primfakultät'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  \equiv_{kan}  ω\overline{\#}  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots)_{\#}  \;\; ,  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -51,7 +51,7 @@
                       'Das diese Identifikation begründende Haupttheorem der Primzahlprodukt-Vermutung'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lpr*( ω\overline{\#} *)  =  ω  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -65,7 +65,7 @@
                     'Für jede endliche Primzahl \lm{ p \in \mathbb{P} } gilt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  v_{p}( \s )  =  ω  \;\; .  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -105,7 +105,7 @@
                     'unendlichen Potenzordnung der vollständigen Induktion \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  *( \prodx_{ p \in \mathbb{P} }  p *)^{ω} \\\ \qquad\qquad\quad\;\;\,  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -115,7 +115,7 @@
                     'exakt abbildet:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2} \s^{2} - \frac{ 37}{10} \s - 7 + 5 \s^{-1}  = *〈 \sqrt{2} *〉*〈 - \frac{ 37}{10} *〉*〈 -7 *〉․*〈 5 *〉  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -132,7 +132,7 @@
                     'Jede irrationale Wurzel lässt sich somit als exakter Bruch aktual unendlich großer, ganzzahliger Quotienten darstellen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot *( \, \rad(n) \, *)_{\#}^{ω} }{ *( \, \rad(n) \, *)_{\#}^{ω} }  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -144,7 +144,7 @@
                     'und verweisen auf eine tieferliegende fraktale Struktur des Kontinuums.'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  =  〈1〉․〈1〉^{〈1〉_{1}}  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -158,7 +158,7 @@
                     'woraus sich die superiale Ableitung einer Funktion ohne Limes-Prozess ergibt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 }  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -167,7 +167,7 @@
                     'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten definiert:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
                                           label_text => '', label_incr => false),
                     ))),

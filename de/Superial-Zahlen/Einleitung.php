@@ -84,7 +84,7 @@
                     'sondern als Rechnungen mit einer normierten infinitesimalen Schrittweite'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Ein' */, equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s^{-1}  \;\; .  }',
                                           label_text => '', label_incr => false),
                     ))),
@@ -99,7 +99,7 @@
                       'Die superiale Basis'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => ''/* 'SN.Ein' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  \prodx_{ p \in \mathbb{P} }  p^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
