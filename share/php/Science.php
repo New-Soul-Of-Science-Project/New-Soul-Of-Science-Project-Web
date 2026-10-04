@@ -3,11 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 13:00h
+  // #: Stand: 04.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, so the equation centers over the full table width.
+  //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
+  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
   //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
   //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
@@ -1038,11 +1039,21 @@
     // volle Breite zentriert steht, statt durch die blind reservierte Spalte nach links verschoben
     // zu wirken.
     $show_equ_number_col = ($equ_text_std !== null && $equ_text_std !== '');
-    $equ_table_colgroup = $show_equ_number_col ? ' <col width="500"> <col width="100"> ' : ' <col width="600"> ';
+    // #: Die globale Regel ".content-horizontal-scrollable { display: block; margin-left: 30px;
+    // margin-right: 40px; }" (main.css) nimmt der Tabelle ihren echten Tabellen-Kontext - der
+    // Browser baut dann für die "verwaisten" <colgroup>/<tr>/<td>-Boxen eine anonyme, am Inhalt statt
+    // am "width"/"col width" orientierte Ersatz-Tabelle, wodurch sowohl die Breitenangabe als auch
+    // "align=center" wirkungslos bleiben. Für den Fall ohne Nummern-Spalte wird der echte Tabellen-
+    // Kontext hier daher per Inline-Style wiederhergestellt ("display: table") und die Breite
+    // passend zu den beiden Rändern (30px + 40px, wie bei normalem Fließtext) auf "calc(100% - 70px)"
+    // statt auf die volle Containerbreite gesetzt - sonst bliebe die Tabelle, wie beobachtet, breiter
+    // als die umgebende Textspalte und die Formel liefe nicht zentriert, sondern linksbündig.
+    $equ_table_colgroup = $show_equ_number_col ? ' <col width="500"> <col width="100"> ' : ' <col width="100%"> ';
     $equ_table_colspan = $show_equ_number_col ? 2 : 1;
+    $equ_table_width_style = $show_equ_number_col ? '' : ' display: table; width: calc(100% - 70px);';
 
     // #: No offset, because it is before the PHP command.
-    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup>'.$equ_table_colgroup.'</colgroup>'."\n";
+    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';'.$equ_table_width_style.'"> <colgroup>'.$equ_table_colgroup.'</colgroup>'."\n";
     echo "\n";
 
     // #: Go through all equations.
