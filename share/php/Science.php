@@ -7,86 +7,14 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261004:  !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG"
-  //                      und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen
-  //                      "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige
-  //                      Darstellungsfehler - (1) "font.yui.css"s globales
-  //                      "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements
-  //                      durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg,
-  //                      "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge
-  //                      dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die
-  //                      Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in
-  //                      CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten
-  //                      Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger
-  //                      Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer
-  //                      Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN
-  //                      Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen
-  //                      "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern
-  //                      reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6
-  //                      Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine
-  //                      Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss:
-  //                      Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so
-  //                      nativ wie bei CHTML.
-  //           20261004:  *:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-tex" back
-  //                      to "mathjax-stix2": zwar hatte Wolfgang "tex" nach einem Live-Vergleich aller
-  //                      11 Schriftpakete stilistisch bevorzugt (siehe Eintrag unten), aber "tex" hat
-  //                      wie 7 der anderen 8 nicht-stix2-Pakete (newcm, termes, modern, pagella,
-  //                      schola, asana, bonum - alle außer "fira", nicht separat erneut gegengetestet)
-  //                      einen echten MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine
-  //                      mehrzeilige "\begin{cases}"-Umgebung wird systematisch auf nur ca. 54% der
-  //                      tatsächlich benötigten Höhe berechnet (bestätigt per DOM-Messung, auch OHNE
-  //                      das unten stehende Line-Height-CSS - also unabhängig davon, ein reiner
-  //                      MathJax-Bug), wodurch die unterste Zeile der Fallunterscheidung sichtbar
-  //                      außerhalb der Klammer landet (SN.AbIn.IN, Gleichung "[0,x·s[..." mit
-  //                      "\middle|" und dreizeiligem "cases"). Nur "stix2" berechnet hier
-  //                      durchgehend die korrekte Höhe. Da das ein inhaltlicher Darstellungsfehler
-  //                      ist (nicht nur eine Stiloption), hat das Vorrang vor der optischen
-  //                      Präferenz - zurück zu "stix2".
-  //           20261004:  >:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-stix2" to
-  //                      "mathjax-tex": alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex, stix2,
-  //                      termes, modern, pagella, schola, asana, bonum, fira, dejavu) live anhand
-  //                      derselben Formeln verglichen (Wolfgang wollte eine Schrift, die besser zur
-  //                      Textschrift "Open Sans" passt als STIX2) - kein Paket entspricht der unter
-  //                      MathJax 2 genutzten "STIXGeneral", "tex" war am Ende die bevorzugte Wahl.
-  //           20261004:  *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the
-  //                          MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global
-  //                          "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom
-  //                          Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene
-  //                          "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen
-  //                          (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per
-  //                          DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert
-  //                          nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so
-  //                          zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung
-  //                          "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in
-  //                          Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }"
-  //                          (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar
-  //                          noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über
-  //                          padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu
-  //                          "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen
-  //                          Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut
-  //                          als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die
-  //                          Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der
-  //                          Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-,
-  //                          Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
-  //           20261004:  !:  "Sc_f_HeaderElements":  Upgrade MathJax from 2.7.9 (CDN, jsdelivr) to self-hosted
-  //                          4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back
-  //                          eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den
-  //                          nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt,
-  //                          Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu
-  //                          geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach
-  //                          "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach
-  //                          "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits
-  //                          eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel"
-  //                          sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein
-  //                          aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per
-  //                          "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben
-  //                          \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner
-  //                          Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER
-  //                          Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere
-  //                          Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx,
-  //                          \ord, \lpr) - keine Rendering-Fehler.
-  //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
-  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
+  //           20261004:  >:  "$Sc_g_equation_replace_ary":  Change the colon-prefix spacing/glyph for '  :\neq  ', '  :\in  ', '  :\subset  ' (with surrounding padding spaces) and for ':\neq', ':\in', ':\subset' (without padding) from '\raise{-.14ex/-.15ex}{᠄}\mspace{-4.5mu}' to '\raise{-.6ex}{︓}\mspace{-7.5mu}' - uses the vertical colon glyph '︓' (U+FE13) instead of the Mongolian colon '᠄' (U+1804), raised further down with wider negative spacing before the following relation symbol.
+  //                      !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG" und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige Darstellungsfehler - (1) "font.yui.css"s globales "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg, "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6 Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss: Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so nativ wie bei CHTML.
+  //                      *:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-tex" back to "mathjax-stix2": zwar hatte Wolfgang "tex" nach einem Live-Vergleich aller 11 Schriftpakete stilistisch bevorzugt (siehe Eintrag unten), aber "tex" hat wie 7 der anderen 8 nicht-stix2-Pakete (newcm, termes, modern, pagella, schola, asana, bonum - alle außer "fira", nicht separat erneut gegengetestet) einen echten MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}"-Umgebung wird systematisch auf nur ca. 54% der tatsächlich benötigten Höhe berechnet (bestätigt per DOM-Messung, auch OHNE das unten stehende Line-Height-CSS - also unabhängig davon, ein reiner MathJax-Bug), wodurch die unterste Zeile der Fallunterscheidung sichtbar außerhalb der Klammer landet (SN.AbIn.IN, Gleichung "[0,x·s[..." mit "\middle|" und dreizeiligem "cases"). Nur "stix2" berechnet hier durchgehend die korrekte Höhe. Da das ein inhaltlicher Darstellungsfehler ist (nicht nur eine Stiloption), hat das Vorrang vor der optischen Präferenz - zurück zu "stix2".
+  //                      >:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-stix2" to "mathjax-tex": alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex, stix2, termes, modern, pagella, schola, asana, bonum, fira, dejavu) live anhand derselben Formeln verglichen (Wolfgang wollte eine Schrift, die besser zur Textschrift "Open Sans" passt als STIX2) - kein Paket entspricht der unter MathJax 2 genutzten "STIXGeneral", "tex" war am Ende die bevorzugte Wahl.
+  //                      *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }" (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-, Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
+  //                      !:  "Sc_f_HeaderElements":  Upgrade MathJax from 2.7.9 (CDN, jsdelivr) to self-hosted 4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt, Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel" sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx, \ord, \lpr) - keine Rendering-Fehler.
+  //                      *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
+  //                      >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
   //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
   //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
@@ -777,12 +705,12 @@
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
-                                    array( '  :\neq  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\neq\;\;\;'),
                                     array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
                                     array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
-                                    array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \nmid  ', '\;\;\;\nmid\;\;\;'),
@@ -790,19 +718,19 @@
                                     array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subseteq}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
-                                    array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
+                                    array( '  :\subset  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\subset\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( ':=', '≔'),
                                     array( '=:', '≕'),
-                                    array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
-                                    array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
+                                    array( ':\neq', '\raise{-.6ex}{︓}\mspace{-7.5mu}\neq'),
+                                    array( ':\in', '\raise{-.6ex}{︓}\mspace{-7.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
                                     array( '?\subseteq', '\overset{?}{\subseteq}'),
-                                    array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
+                                    array( ':\subset', '\raise{-.6ex}{︓}\mspace{-7.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
                                     array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
                                     array( '?\equiv', '\overset{?}{\equiv}'),
