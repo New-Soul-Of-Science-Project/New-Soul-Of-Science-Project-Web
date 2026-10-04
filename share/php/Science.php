@@ -357,7 +357,7 @@
     // \cancel dadurch stumm wirkungslos (werden klanglos als reiner Text durchgereicht, kein Fehler).
     // "paths.mathjax" verweist auf das separat vendorte Hauptpaket (s. "share/js/mathjax/"), damit der
     // Loader "input/tex/extensions/color.js" bzw. "cancel.js" dort findet - das unten geladene
-    // Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-tex-font/"), kennt den Pfad
+    // Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-stix2-font/"), kennt den Pfad
     // zum Hauptpaket also nicht von sich aus.
     echo '        loader: {'."\n";
     echo '          paths: { mathjax: "'.$Glo_PathRel_back.'../share/js/mathjax" },'."\n";
@@ -365,14 +365,15 @@
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
-    // #: Die klassische MathJax-TeX-Schrift (statt der seit MathJax 4 neuen Standardschrift "New
-    // Computer Modern") - letztere hatte bei dieser Seite an mehreren Stellen sichtbar andere
-    // Metriken (Overline-Position, Abstand der Grenzen unter Operatoren wie "\prod", Wurzelzeichen,
-    // Exponenten-Höhe) als die bisherige MathJax-2-Darstellung. "tex-mml-chtml-mathjax-tex.js" ist ein
-    // vorgefertigtes Bundle aus dem Schriftpaket "@mathjax/mathjax-tex-font", das Engine, TeX-Input
+    // #: "STIX2" statt der seit MathJax 4 neuen Standardschrift "New Computer Modern" (letztere hatte
+    // sichtbar andere Metriken als die bisherige MathJax-2-Darstellung) UND statt der klassischen
+    // "mathjax-tex"-Schrift (sah zwar korrekt aus, passt aber laut Wolfgang stilistisch schlechter zur
+    // Textschrift "Open Sans") - MathJax 2 nutzte hier ohnehin bereits "STIXGeneral" als Mathe-Schrift,
+    // "mathjax-stix2" ist deren MathJax-4-Nachfolgepaket. "tex-mml-chtml-mathjax-stix2.js" ist ein
+    // vorgefertigtes Bundle aus dem Schriftpaket "@mathjax/mathjax-stix2-font", das Engine, TeX-Input
     // und CHTML-Output bereits mit dieser Schrift kombiniert mitbringt.
     echo '    <script id="MathJax-script"'."\n";
-    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-tex-font/tex-mml-chtml-mathjax-tex.js">'."\n";
+    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-stix2-font/tex-mml-chtml-mathjax-stix2.js">'."\n";
     echo '    </script>'."\n";
     // #: "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch
     // MathJax 4s neue Custom Elements (mjx-container, mjx-over, mjx-ext, usw.), die selbst keine
