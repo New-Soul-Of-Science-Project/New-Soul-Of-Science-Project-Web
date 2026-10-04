@@ -3,10 +3,45 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 20:00h
+  // #: Stand: 04.10.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261004:  !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG"
+  //                      und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen
+  //                      "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige
+  //                      Darstellungsfehler - (1) "font.yui.css"s globales
+  //                      "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements
+  //                      durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg,
+  //                      "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge
+  //                      dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die
+  //                      Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in
+  //                      CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten
+  //                      Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger
+  //                      Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer
+  //                      Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN
+  //                      Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen
+  //                      "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern
+  //                      reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6
+  //                      Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine
+  //                      Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss:
+  //                      Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so
+  //                      nativ wie bei CHTML.
+  //           20261004:  *:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-tex" back
+  //                      to "mathjax-stix2": zwar hatte Wolfgang "tex" nach einem Live-Vergleich aller
+  //                      11 Schriftpakete stilistisch bevorzugt (siehe Eintrag unten), aber "tex" hat
+  //                      wie 7 der anderen 8 nicht-stix2-Pakete (newcm, termes, modern, pagella,
+  //                      schola, asana, bonum - alle außer "fira", nicht separat erneut gegengetestet)
+  //                      einen echten MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine
+  //                      mehrzeilige "\begin{cases}"-Umgebung wird systematisch auf nur ca. 54% der
+  //                      tatsächlich benötigten Höhe berechnet (bestätigt per DOM-Messung, auch OHNE
+  //                      das unten stehende Line-Height-CSS - also unabhängig davon, ein reiner
+  //                      MathJax-Bug), wodurch die unterste Zeile der Fallunterscheidung sichtbar
+  //                      außerhalb der Klammer landet (SN.AbIn.IN, Gleichung "[0,x·s[..." mit
+  //                      "\middle|" und dreizeiligem "cases"). Nur "stix2" berechnet hier
+  //                      durchgehend die korrekte Höhe. Da das ein inhaltlicher Darstellungsfehler
+  //                      ist (nicht nur eine Stiloption), hat das Vorrang vor der optischen
+  //                      Präferenz - zurück zu "stix2".
   //           20261004:  >:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-stix2" to
   //                      "mathjax-tex": alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex, stix2,
   //                      termes, modern, pagella, schola, asana, bonum, fira, dejavu) live anhand
@@ -371,23 +406,31 @@
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
-    // #: "mathjax-tex" (die klassische MathJax-Schrift) statt der neuen MathJax-4-Standardschrift
-    // "New Computer Modern" gewählt. Vor dieser Entscheidung wurden alle 11 verfügbaren
-    // MathJax-4-Schriftpakete live gegeneinander verglichen (newcm, tex, stix2, termes, modern,
-    // pagella, schola, asana, bonum, fira, dejavu) - keine davon passt zur Textschrift "Open Sans" wie
-    // "STIXGeneral" es unter MathJax 2 tat (dafür gibt es unter MathJax 4 kein Äquivalent), "tex" war
-    // am Ende die von Wolfgang bevorzugte Variante.
+    // #: "mathjax-stix2" statt der neuen MathJax-4-Standardschrift "New Computer Modern" oder der
+    // klassischen "mathjax-tex"-Schrift. Alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex,
+    // stix2, termes, modern, pagella, schola, asana, bonum, fira, dejavu) wurden live verglichen -
+    // keines passt stilistisch exakt zur Textschrift "Open Sans" wie "STIXGeneral" es unter
+    // MathJax 2 tat (dafür gibt es unter MathJax 4 kein Äquivalent).
+    //
+    // #: AUSGABEFORMAT: "SVG" statt "CHTML" (tex-mml-SVG-... statt tex-mml-CHTML-...). Grund: ein
+    // echter MathJax-4.1.3-Darstellungsfehler, unabhängig von der Schriftwahl - bei CHTML-Ausgabe
+    // berechnet MathJax die Höhe einer stretchy-"["-Klammer um eine mehrzeilige
+    // "\begin{cases}"-Umgebung systematisch zu niedrig (bei 8 von 9 getesteten Schriften nur ca.
+    // 54-73% der benötigten Höhe, auch bei "stix2" noch spürbar zu kurz), wodurch Zeilen der
+    // Fallunterscheidung sichtbar außerhalb der Klammer landen. Zusätzlich setzt "font.yui.css"
+    // global "body * { line-height: 1.22em; }", was MathJax 4s CHTML-Custom-Elements (die das
+    // HTML-Box-Modell nutzen) an vielen Stellen durcheinanderbringt (Overline zu hoch, Grenzen
+    // unter \prod/\sum zu weit weg, "\middle|" zerstückelt) - dafür gab es hier zuvor einen
+    // mehrstufigen, über mehrere Elementtypen verteilten "line-height"-CSS-Patch (siehe Git-Historie
+    // dieser Datei). SVG-Ausgabe ist von BEIDEN Problemen unabhängig: sie reicht die
+    // Klammer-/Stretchy-Höhe korrekt durch (kein 54%-Bug) und ist komplett immun gegen
+    // "font.yui.css", da SVG-Elemente nicht auf dem CSS-Zeilenhöhen-Modell basieren, sondern reine
+    // Vektorkoordinaten verwenden - der gesamte Line-Height-Patch ist dadurch überflüssig geworden.
+    // Kompromiss: Formeltext lässt sich bei SVG nicht ganz so nativ per Maus markieren/kopieren wie
+    // bei CHTML (reine Vektorgrafik statt echter HTML-Textknoten).
     echo '    <script id="MathJax-script"'."\n";
-    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-tex-font/tex-mml-chtml-mathjax-tex.js">'."\n";
+    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js">'."\n";
     echo '    </script>'."\n";
-    // #: "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch
-    // MathJax 4s neue Custom Elements (mjx-container, mjx-over, mjx-ext, usw.), die selbst keine
-    // eigene "line-height" definieren. Das blähte die Boxen der stretchy-horizontal-Konstruktionen
-    // (Overline, Grenzen unter \prod/\sum) sichtbar auf - exakt die von Wolfgang gemeldeten
-    // Regressionen. "line-height: 0" (statt "normal", was durch die großzügigen Mathe-Font-Metriken
-    // noch größer wird als "1.22em") setzt die Boxen wieder auf die von MathJax selbst vorgesehene,
-    // rein über padding/clip-path bestimmte Höhe zurück.
-    echo '    <style>body mjx-container, body mjx-container * { line-height: 0; }</style>'."\n";
   }
   
   
