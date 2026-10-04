@@ -105,6 +105,120 @@
                     'Ihre \\jump{OM:FrQFT:ElektroschwacheWW:Schwache-WW}{schwache Ladung} kommt durch deren asymmetrische Verteilung und Dynamik der Pole zustande.'."\n"),
                   array( 'normal',
                     'Aufgrund einer etwas anderen Struktur besitzen die \\jump{OM:FrQFT:ElektroschwacheWW:Neutrinos}{Neutrinos} im Schnitt keine elektrische Ladung, sehrwohl aber eine schwache Ladung.'."\n"),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW:XXX', text =>
+                                           
+                'Stationäre Betrachtung des elektrischen Feldes bei maximaler Ausdehnung (Entfaltung)', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'In Zusammenarbeit mir Raimund Welsch'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Verteilung zwischen \\term{ρ_{min}} und \\term{ρ_{max}} sei linear.'."\n",
+                      'Verifikation: Die Masse des Tau \\term{m_{t}} ist größer als die Masse des Myons \\term{m_{my}} und diese ist abermals größer als die des Elektrons \\term{m_{e}}.'."\n",
+                      '\\term{m_{t} > m_{my} > m_{e}}'."\n",
+                      'Die Ladung ist aber gleich.'."\n",
+                      'Wenn man beispielsweise eine doppelte Masse hat – die Frequenz ist mit \\term{E = h ⋅ f} –, dann verdoppelt sich auch die Frequenz.'."\n".
+                    'Wegen einer Halbierung aller Radien – blau, grün etc., Wirkungsquanten-Rotationsradius um die grüne Bahn – verdoppelt sich die Frequenz bei konstanter Wirkungsquanten-Geschwindigkeit.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \rho_{wq}  \sim  \rho_{el}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Lokal auf dem Wirkungsquanten-String \\term{s_{wq}} gilt für die Wirkungsquanten-Dichte \\term{ρ_{wq}}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{e^{-}}\rho_{wq}  =  \frac{ _{e^{-}}n_{wq} }{ _{e^{-}}s_{wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die \\term{k}-fache Anzahl der Wirkungsquanten \\term{_{e^{-}}n_{wq}} auf einem String \\term{_{μ^{-}}s_{wq}} gilt dann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{\mu^{-}}\rho_{wq}  =  \frac{ _{\mu^{-}}k \cdot {_{e^{-}}n_{wq}} }{ _{\mu^{-}}s_{wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wobei sich die Länge \\term{_{μ^{-}}s_{wq}} des Strings wegen der Erhöhung der Frequenz um deren k-Faches um den Faktor \\term{1 / k} reduziert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{\mu^{-}}s_{wq}  =  \frac{ _{e^{-}}s_{wq} }{ _{\mu^{-}}k }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Demnach ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{\mu^{-}}\rho_{wq}  =  \frac{ _{\mu^{-}}k \cdot {_{e^{-}}n_{wq}} }{ \frac{ _{e^{-}}s_{wq} }{ _{\mu^{-}}k } }  }'),
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  _{\mu^{-}}\rho_{wq}  =  \frac{ _{\mu^{-}}k^{2} \cdot {_{e^{-}}n_{wq}} }{ _{e^{-}}s_{wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '(Die Struktur besteht aus drei gekoppelten Schwingungen: \\\\'."\n".
+                    'Eine Schwingung um das Zentrum mit der Frequenz: \\term{f_{zentrum} = f_{spin}} \\\\'."\n".
+                    'Eine Schwingung um die blaue Bahn mit der Frequenz: \\term{f_{blau} = f_{innen}} \\\\'."\n".
+                    'Eine Schwingung um die grüne Bahn mit der Frequenz: \\term{f_{grün} = f_{ele} = f_{wq}})'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n".
+                    'Für die Energie \\term{E_{ele}} eines Elementarteilchens gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \rho_{max}  =  XXX  }'),
+                      array( display => 'on',  latex => '{  \rho_{min}  =  XXX  }'),
+                      array( display => 'on',  latex => '{  r_{blau}  =  XXX  }'),
+                      array( display => 'on',  latex => '{  r_{min,blau}  =  r_{max,blau}  }'),
+                      array( display => 'on',  latex => '{  d_{min,max,blau}  =  2 \cdot r_{min,blau}  }'),
+                      array( display => 'on',  latex => '{  | \vec{\rho}_{min,max} |  =  \rho_{max} - \rho_{min}  }'),
+                      array( display => 'on',  latex => '{  | \vec{E}_{min,max} |  =  \frac{ \rho_{max} - \rho_{min} }{ \epsilon_{0} \cdot d_{min,max,blau} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'QFT.ESW.EW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  *[ \frac{ Volt }{ m } *]  }'),
+                      array( display => 'on',  latex => '{  \epsilon  =  *[ \frac{ A \cdot s }{ Volt \cdot m } *]  }'),
+                      array( display => 'on',  latex => '{  \rho_{el}  =  *[ \frac{ A \cdot s }{ m } *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+
                   array( 'jumplist',
                     array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Elektrische-Ladung'),
