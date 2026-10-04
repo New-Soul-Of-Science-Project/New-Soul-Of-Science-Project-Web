@@ -678,9 +678,9 @@
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:KonservativeErweiterung' => array( headline_text => 'Konservative Erweiterung und strukturelle Stabilität'/* , headline_text_short => 'X'*/),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Hahn-Reihe-Ausweg' => array( headline_text => 'Die Hahn-Reihe als Ausweg'/* , headline_text_short => 'X'*/),
-            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.13'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-ist-Hahnreihe-mit-Wertgruppe-Z' => array( headline_text => 'SN.ZFC.22'),
 
-            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel' => array( headline_text => 'SN.ZFC.15'),
+            'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-S-geordnetes-Tupel' => array( headline_text => 'SN.ZFC.24'),
 
           'OM:SupNum:ZFC-Modellkonstruktion:Vortext:Erzeugungsanzahl' => array( headline_text => 'Die Erzeugungsanzahl'/* , headline_text_short => 'X'*/),
 
