@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 01.10.2026, 18:00h
+  // #: Stand: 04.10.2026, 13:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, so the equation centers over the full table width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
   //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
   //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
@@ -678,8 +679,9 @@
           $latex_tech = $text[latex_tech];
         else
           $latex_tech = 'Google';
-        
-        Sc_f_equation_list( $text[equ_text_std], '  '.$offset, $text[equ_list], $latex_tech);
+
+        // #: "equ_text_std" darf fehlen (dann keine Nummern-Spalte, s. "Sc_f_equation_list").
+        Sc_f_equation_list( (array_key_exists( equ_text_std, $text) ? $text[equ_text_std] : ''), '  '.$offset, $text[equ_list], $latex_tech);
         break;
       
       default:
@@ -1027,12 +1029,20 @@
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
     $start_display = 'showContent';
-    
+
     $display_is = true;
     $local_elements_hides_ele_num = 1;
-    
+
+    // #: Ohne "equ_text_std" gibt es keine automatische Nummerierung - dann wird die rechte
+    // Nummern-Spalte komplett weggelassen (nicht nur leer gelassen), damit die Formel über die
+    // volle Breite zentriert steht, statt durch die blind reservierte Spalte nach links verschoben
+    // zu wirken.
+    $show_equ_number_col = ($equ_text_std !== null && $equ_text_std !== '');
+    $equ_table_colgroup = $show_equ_number_col ? ' <col width="500"> <col width="100"> ' : ' <col width="600"> ';
+    $equ_table_colspan = $show_equ_number_col ? 2 : 1;
+
     // #: No offset, because it is before the PHP command.
-    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
+    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup>'.$equ_table_colgroup.'</colgroup>'."\n";
     echo "\n";
 
     // #: Go through all equations.
@@ -1085,14 +1095,14 @@
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr><td height="10"></td></tr>'."\n";
           echo "\n";
         }
-        
+
         echo $offset.'  <tr>'."\n";
         // #: If the equation before was 'on' too and "$value" has "latex_if_visible" defined?
         if ($display_is || !array_key_exists( latex_if_visible, $value))
@@ -1114,22 +1124,30 @@
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
+        if ($show_equ_number_col)
         {
-          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
-            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
-          if (array_key_exists( footnote, $value))
+          echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
           {
-            if (array_key_exists( footnote_num_color, $value))
-            {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
-            else
-              $footnote_num_color = '';
-            echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+              echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+            if (array_key_exists( footnote, $value))
+            {
+              if (array_key_exists( footnote_num_color, $value))
+              {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
+              else
+                $footnote_num_color = '';
+              echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            }
+            echo $offset.'  </span> </td> </tr>'."\n";
           }
-          echo $offset.'  </span> </td> </tr>'."\n";
+        } else
+        {
+          // #: Ohne Nummern-Spalte reicht hier das Schließen der Zeile - eine Fußnote ohne Nummern-
+          // Spalte ist in dieser Konstellation nicht vorgesehen (die Spalte existiert ja gar nicht).
+          echo $offset.'  </tr>'."\n";
         }
         echo "\n";
-        
+
         // #?: Is there still an element comming in the list?
         if (array_key_exists( $key + 1, $list))
         {
@@ -1155,13 +1173,13 @@
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
@@ -1181,20 +1199,26 @@
         echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
+        if ($show_equ_number_col)
         {
-          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
-            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
-          if (array_key_exists( footnote, $value))
+          echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
           {
-            if (array_key_exists( footnote_num_color, $value))
-            {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
-            else
-              $footnote_num_color = '';
-            //%!echo Sc_f_footnote_add( $value[footnote]);
-            echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+              echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+            if (array_key_exists( footnote, $value))
+            {
+              if (array_key_exists( footnote_num_color, $value))
+              {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
+              else
+                $footnote_num_color = '';
+              //%!echo Sc_f_footnote_add( $value[footnote]);
+              echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            }
+            echo '</span> </td> </tr>'."\n";
           }
-          echo '</span> </td> </tr>'."\n";
+        } else
+        {
+          echo $offset.'  </tr>'."\n";
         }
         echo "\n";
         
