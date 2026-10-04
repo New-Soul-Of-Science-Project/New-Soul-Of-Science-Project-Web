@@ -3,10 +3,47 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 14:00h
+  // #: Stand: 04.10.2026, 18:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261004:  *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the
+  //                      MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global
+  //                      "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom
+  //                      Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene
+  //                      "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen
+  //                      (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per
+  //                      DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert
+  //                      nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so
+  //                      zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung
+  //                      "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in
+  //                      Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }"
+  //                      (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar
+  //                      noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über
+  //                      padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu
+  //                      "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen
+  //                      Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut
+  //                      als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die
+  //                      Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der
+  //                      Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-,
+  //                      Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
+  //           20261004:  !:  "Sc_f_HeaderElements":  Upgrade MathJax from 2.7.9 (CDN, jsdelivr) to self-hosted
+  //                      4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back
+  //                      eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den
+  //                      nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt,
+  //                      Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu
+  //                      geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach
+  //                      "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach
+  //                      "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits
+  //                      eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel"
+  //                      sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein
+  //                      aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per
+  //                      "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben
+  //                      \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner
+  //                      Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER
+  //                      Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere
+  //                      Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx,
+  //                      \ord, \lpr) - keine Rendering-Fehler.
   //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
   //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
@@ -244,35 +281,21 @@
     
     echo ''."\n";
     // #: MathJax
-    echo '    <!-- MathJax 2 -->'."\n";
-    echo '    <script type="text/x-mathjax-config">'."\n";
-    // #: See: http://docs.mathjax.org/en/latest/tex.html and http://docs.mathjax.org/en/latest/configuration.html
-    // #: MathJax 2.5
-    // #!: Does not work for scaling!
-    //echo '      MathJax.Hub.Config({ TeX: {'."\n";
-    //echo '        extensions: ["color.js"],'."\n";
-    //echo '        "HTML-CSS": { scale: 200}, preferredFont: "TeX", minScaleAdjust: 200'."\n";
-    //echo '      }});'."\n";
-    // #!: Does not work for scaling!
-    //echo '      MathJax.Hub.Config({ TeX: {'."\n";
-    //echo '        extensions: ["color.js"],'."\n";
-    //echo '        "HTML-CSS": { scale: 200}, preferredFont: "TeX", minScaleAdjust: 200'."\n";
-    //echo '      }}, {NativeMML: {scale: 200}});'."\n";
-    //echo '      MathJax.Hub.Config({ TeX: { extensions: ["color.js", "TeX/AMSmath.js", "tex2jax.js"] }, tex2jax: {inlineMath: [["$","$"], ["\\\\(","\\\\)"]], processEscapes: true, preview: ["[MathJax]"]}});'."\n";
-    // #: MathJax 2.7.1
-    //%! Test because of an error that is connected by change from 2.5 to 2.7.1:  echo '      MathJax.Hub.Config({ TeX: { extensions: ["color.js", "AMSmath.js"] }});'."\n";
-    echo '      MathJax.Hub.Config({'."\n";
-    //echo '        jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        jax: ["input/TeX", "output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        extensions: ["tex2jax.js","MathZoom.js"],'."\n";
-    echo '        tex2jax: {'."\n";
-    echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
-    echo '            processEscapes: true,'."\n";
-    echo '            preview: ["[MathJax]"]'."\n";
-    echo '          },'."\n";
-    echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js", "cancel.js"],'."\n";
-    echo '          Macros: {'."\n";
+    // #: Selbst gehostet (s. share/js/mathjax/, Version per package.json dort) statt CDN - "fully
+    // integrated into the code" statt externer Abhängigkeit. Ersetzt die alte MathJax-2.7.9-CDN-
+    // Einbindung und den nie fertiggestellten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros
+    // übersetzt, siehe Git-Historie) komplett durch eine vollständige MathJax-4-Konfiguration.
+    echo '    <!-- MathJax 4 -->'."\n";
+    echo '    <script>'."\n";
+    echo '      window.MathJax = {'."\n";
+    echo '        tex: {'."\n";
+    // #: Entspricht "tex2jax" aus MathJax 2 - "processEscapes" ist in MathJax 3/4 schon Standard.
+    echo '          inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
+    // #: Entspricht den TeX-"extensions" aus MathJax 2 ("color.js", "cancel.js") - in MathJax 4 sind
+    // das ladbare "packages" statt Extensions. Das moderne "color"-Paket kennt weiterhin denselben
+    // dvips-Namensraum (u.a. "Bittersweet"), den die Inhalte hier verwenden.
+    echo '          packages: {"[+]": ["color", "cancel"]},'."\n";
+    echo '          macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
@@ -316,82 +339,49 @@
     echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
     echo '            sumx: "\\\\sideset{}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
     echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
-    echo '            qqed: "\\\\;\\\\;\\\\blacksquare",'."\n"; // "quod erat demonstrandum" with space in front for line end
+    echo '            qqed: "\\\\;\\\\;\\\\blacksquare"'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
-    echo '        },'."\n";
-    echo '        menuSettings: {'."\n";
-    //-- echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
-    echo '          zoom: "Double-Click",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
-    echo '          zscale: "200%"'."\n";  // !!!: This works on Safari and FireFox.
-    echo '        },'."\n";
-    echo '        MathEvents: {'."\n";
-    //-- echo '          hover: 1000'."\n";
-    echo '        }'."\n";
-    echo '      });'."\n";
-    echo '    </script>'."\n";
-    echo '    <script type="text/javascript"'."\n";
-    // #: See: http://docs.mathjax.org/en/latest/config-files.html
-    // #: MathJax 2.7.9
-    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML">'."\n";  // #: Different CDN network.
-    echo '    </script>'."\n";
-    // #!: Does not work for scaling!
-    //echo '    <style>'."\n";
-    //echo '      .MathJax {'."\n";
-    //echo '        font-size: 200%;'."\n";
-    //echo '      }'."\n";
-    //echo '    </style>'."\n";
-    
-    /*
-    echo ''."\n";
-    // #: MathJax
-    //
-    echo '    <!-- MathJax 3 -->'."\n";
-    // #: Parameter converted from v2 to v3 on page https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
-    // !!!!!!!!!!!  CommonHTML dosen't work properly  –  looks not nice and patly destroyed  !!!!!!!!!!
-    // couldn't figure out why
-    // SVG works, but looks not as nice as v2
-    echo '    <script>'."\n";
-    echo '      window.MathJax = {'."\n";
-    echo '        tex: {'."\n";
-    echo '          autoload: {'."\n";
-    echo '            color: [],          // don\'t autoload the color extension'."\n";
-    echo '            colorv2: ["color"], // do autoload the colorv2 extension'."\n";
-    echo '          },'."\n";
-    echo '          inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
-    // echo '          processEscapes: true,'."\n";  // default in v3
-    echo '          macros: {'."\n";
-    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
-    echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
-    echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
-    echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
-    echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
-    echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
-    echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}"'."\n";
-    echo '          },'."\n";
-    echo '          packages: {"[+]": ["noerrors", "color"]}'."\n";
     echo '        },'."\n";
     echo '        options: {'."\n";
     echo '          menuOptions: {'."\n";
     echo '            settings: {'."\n";
+    // !!!: In MathJax 2 war "zoom: Hover" auf Safari defekt, auf Firefox nicht - "Double-Click"
+    // funktioniert auf beiden. Noch nicht erneut mit MathJax 4 auf Safari gegengetestet.
     echo '              zoom: "Double-Click",'."\n";
     echo '              zscale: "200%"'."\n";
     echo '            }'."\n";
-    echo '          },'."\n";
-    echo '          ignoreHtmlClass: "tex2jax_ignore",'."\n";
-    echo '          processHtmlClass: "tex2jax_process"'."\n";
+    echo '          }'."\n";
     echo '        },'."\n";
+    // #: "color" und "cancel" sind in MathJax 4 nicht im Standard-Bundle enthalten - "tex.packages"
+    // aktiviert sie nur, lädt sie aber nicht tatsächlich nach; ohne "loader.load" bleiben \color und
+    // \cancel dadurch stumm wirkungslos (werden klanglos als reiner Text durchgereicht, kein Fehler).
+    // "paths.mathjax" verweist auf das separat vendorte Hauptpaket (s. "share/js/mathjax/"), damit der
+    // Loader "input/tex/extensions/color.js" bzw. "cancel.js" dort findet - das unten geladene
+    // Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-tex-font/"), kennt den Pfad
+    // zum Hauptpaket also nicht von sich aus.
     echo '        loader: {'."\n";
-    echo '          load: ["[tex]/noerrors", "[tex]/color"]'."\n";
+    echo '          paths: { mathjax: "'.$Glo_PathRel_back.'../share/js/mathjax" },'."\n";
+    echo '          load: ["[tex]/color", "[tex]/cancel"]'."\n";
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
-    echo '    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>'."\n";
-    echo '    <script id="MathJax-script" async'."\n";
-    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js">'."\n";
-    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-chtml.js">'."\n";
-    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-svg.js">'."\n";  // #: SVG
+    // #: Die klassische MathJax-TeX-Schrift (statt der seit MathJax 4 neuen Standardschrift "New
+    // Computer Modern") - letztere hatte bei dieser Seite an mehreren Stellen sichtbar andere
+    // Metriken (Overline-Position, Abstand der Grenzen unter Operatoren wie "\prod", Wurzelzeichen,
+    // Exponenten-Höhe) als die bisherige MathJax-2-Darstellung. "tex-mml-chtml-mathjax-tex.js" ist ein
+    // vorgefertigtes Bundle aus dem Schriftpaket "@mathjax/mathjax-tex-font", das Engine, TeX-Input
+    // und CHTML-Output bereits mit dieser Schrift kombiniert mitbringt.
+    echo '    <script id="MathJax-script"'."\n";
+    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-tex-font/tex-mml-chtml-mathjax-tex.js">'."\n";
     echo '    </script>'."\n";
-    */
+    // #: "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch
+    // MathJax 4s neue Custom Elements (mjx-container, mjx-over, mjx-ext, usw.), die selbst keine
+    // eigene "line-height" definieren. Das blähte die Boxen der stretchy-horizontal-Konstruktionen
+    // (Overline, Grenzen unter \prod/\sum) sichtbar auf - exakt die von Wolfgang gemeldeten
+    // Regressionen. "line-height: 0" (statt "normal", was durch die großzügigen Mathe-Font-Metriken
+    // noch größer wird als "1.22em") setzt die Boxen wieder auf die von MathJax selbst vorgesehene,
+    // rein über padding/clip-path bestimmte Höhe zurück.
+    echo '    <style>body mjx-container, body mjx-container * { line-height: 0; }</style>'."\n";
   }
   
   
