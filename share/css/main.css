@@ -14,6 +14,44 @@ html, body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+
+/* #: Scrollbars hidden by default, shown while scrolling via .is-scrolling (toggled by JS) */
+html,
+.content,
+.content-horizontal-scrollable {
+  scrollbar-width: none;
+}
+html.is-scrolling,
+.content.is-scrolling,
+.content-horizontal-scrollable.is-scrolling {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+}
+html::-webkit-scrollbar,
+.content::-webkit-scrollbar,
+.content-horizontal-scrollable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.content::-webkit-scrollbar-track,
+.content-horizontal-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content::-webkit-scrollbar-thumb,
+.content-horizontal-scrollable::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+html.is-scrolling::-webkit-scrollbar,
+.content.is-scrolling::-webkit-scrollbar,
+.content-horizontal-scrollable.is-scrolling::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.content.is-scrolling::-webkit-scrollbar-thumb,
+.content-horizontal-scrollable.is-scrolling::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+}
 body, div, h1, h2, h3, h4, h5, h6, p, table, td, tr, ul {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -225,7 +263,13 @@ a:hover {
 
   .content-horizontal-scrollable {
     display: block;
-    overflow-x: auto;
+    /* #: "overflow-x: auto;" clippt bei fest breiten Kindern (z.B. iframes mit festem
+       width-Attribut) auch deren box-shadow, sobald sie sichtbar überlaufen - unabhängig davon,
+       ob wirklich etwas gescrollt werden kann. Solange bei "#container" (siehe grid.af-33.css)
+       noch die feste 730px-Breite gilt (ab 730px Fensterbreite), passt der 660px-Inhalt ohnehin
+       hinein, daher hier "visible". Erst darunter (siehe @media unten) wird echtes horizontales
+       Scrollen nötig, dafür wird dort bewusst wieder "auto" gesetzt. */
+    overflow: visible;
     margin-left: 30px;
     margin-right: 40px;
 /*    white-space: nowrap;*/
@@ -423,7 +467,7 @@ a[href="https://translate.google.com"] {
 .main-function-buttons-div {
   position: absolute;
   top: 10px;
-  right: 9px;
+  right: 5px;
 }
 
 .main-function-button {
@@ -628,6 +672,17 @@ td.tools-class-text-figure {
   -o-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Opera */
   -ms-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Internet Explorer */
   box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Standard */
+}
+
+/* #: Ab hier verliert "#container" (siehe grid.af-33.css) seine feste 730px-Breite, wodurch
+   fest breite Einbettungen (z.B. iframes) tatsächlich enger werden können als ihr Inhalt -
+   deshalb hier wieder "auto" statt "visible" auf ".content-horizontal-scrollable". */
+@media only screen and (max-width: 729px) {
+
+  .content-horizontal-scrollable {
+    overflow-x: auto;
+  }
+
 }
 
 @media only screen and (max-width: 599px) {

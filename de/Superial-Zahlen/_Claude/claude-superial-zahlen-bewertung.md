@@ -44,7 +44,7 @@ Das Ziel: zu zeigen, dass ω = ∏ (alle endlichen Primzahlen).
 Der Beweis arbeitet mit drei mengentheoretischen Kernkonzepten:
 
 - **Die Primturmzerlegung pt(n):** bijektive Darstellung einer natürlichen Zahl als Menge ihrer maximalen atomaren Primzahlpotenzen.
-- **Das Primturm-Potenzraster pr(n):** das multiplikative Erzeugungsspektrum durch Kombination ganzer Potenzen der Primtürme.
+- **Das Primturm-Potenzraster pr(n):** das multiplikative Erzeugungsspektrum durch Kombination ganzer Potenzen der Primzahltürme.
 - **Das lückenlose Primturm-Potenzraster lpr(n):** der dichte, ununterbrochene Anfangsabschnitt dieses Spektrums.
 
 Der Beweis gliedert sich in zwei Sätze:

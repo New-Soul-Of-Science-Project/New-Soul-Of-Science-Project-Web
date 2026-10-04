@@ -27,6 +27,9 @@
                     '• Die Wirkungsquanten tragen den Spin 2, wie die Gravitonen, wenn ich es richtig sehe.',
                     '• Weitere Gedanken zu den Gravitonen finden sich in der Einleitung unter \\jumpname{OM:FrQFT:Einleitung:Fundierung:Vakuum}.',
                     '\\bold{Aktuelle Fachdiskussion}',
+                    '• Gravitation emergiert, wenn man den Energiefluss durch Entropie der Thermodynamik unter Einbezug der Quantenmechanik analysiert. Dieser Energiefluss verformt die Raumzeit. Aber die Frage bleibt: Die Entropie von was?',
+                    '– Siehe Sabine Hossenfelder: \\jump[https://www.youtube.com/watch?v=IxmTqIkToTg]{}{Physicists Say They Know the Origin of Gravity}',
+                    '– Hier kann die FrQFT wohl antworten geben.',
                     '• Die Quantenmechanik ist emergent: Tim Palmer bringt in seinem Beitrag die Unentscheidbarkeit, die Unberechenbarkeit und die Vereinheltichung der Physik zusammen. Er führt darüber die Quantenphysik, die Relativitätstheorie und die Chaos-Theorie näher aneinander heran. \\jump[http://backreaction.blogspot.com/2020/02/guest-post-undecidability.html]{}{Guest Post: “Undecidability, Uncomputability and the Unity of Physics. Part 1.” by Tim Palmer}',
                     '• Wie können wir feststellen, ob die Gravitation quantisiert ist? Und wofür ist das wichtig? Siehe: Ein Stück Schwerkraft. In: Spektrum der Wissenschaft 08/2018. 18-22.',
                     ))),
@@ -89,13 +92,17 @@
                       'Diese wellenförmige Störung der Lichtbahnen, und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse,'."\n".
                     'bringt allerdings unterschiedliche Energiedichten des Vakuums hervor, die als Raumzeitkrümmung erscheinen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse},'."\n".
                     'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als Gradient der De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} oder De-Broglie-Wellenlänge).'."\n"))),
-                      
+
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
+                  // array( 'figure',
+                  //   array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
+                  //                                        text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+
+                  array( 'iframe',
+                    array_merge( $FrQFT_g_iframe_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:LiveAni-VakuumElapson',
                                                          text => '\\const{FrQFT_g_text_VakuumElapson}'))),
-                      
+
                   array( 'text', array( text => array(
                   '\\condb{Die wellenförmige Störung der Lichtbahn hat ihre Ursache in den rotierenden Impulskegeln der Feinstruktur der Elementarteilchen der gravitativen Masse} \\\\'."\n".
                     'Die gravitativ anziehende Masse besteht aus Elementarteilchen.'."\n".

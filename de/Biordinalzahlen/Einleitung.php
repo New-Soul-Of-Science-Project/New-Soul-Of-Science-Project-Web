@@ -15,12 +15,18 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Offene Fragestellungen}',
-                    '• Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?',
-                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
-                    '– Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
-                    '– Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
-                    '– Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
-                    '– Siehe \jump[https://de.wikipedia.org/wiki/Ordinalzahl]{Rechenoperationen}{Wikipedia: Ordinalzahl, Rechenoperationen} und \jump[https://de.wikipedia.org/wiki/Transfinite_Arithmetik]{}{Wikipedia: Transfinite Arithmetik}',
+                    '\bold{\italic{Wie kann das Mengenuniversum in ZFC definiert werden?}}',
+                    '• Über das Grothendieck-Universum \lm{ \mathcal{U} }: \url{https://de.wikipedia.org/w/index.php?title=Grothendieck-Universum&oldid=260703140}',
+                    '– Diese führt zur Tarski-Grothendieck-Mengenlehre: \url{https://de.wikipedia.org/w/index.php?title=Tarski-Grothendieck-Mengenlehre&oldid=252915465}',
+                    '– Die Ordinalzahlen werden dann zu einer Menge \lm{ \mathbb{On}_{\mathcal{U}} }, sind also keine echte Klasse mehr.',
+                    '– Das lokale Universum \lm{ \mathcal{U} } als das „Meer der Möglichkeiten“: In der Standard-ZFC-Mengenlehre fügen wir das Axiom der Existenz eines Grothendieck-Universums \lm{ \mathcal{U} } hinzu. Dieses \lm{ \mathcal{U} } ist eine Menge, aber sie ist so gigantisch groß, dass sie alle mathematischen Objekte, die wir jemals für das Rechnen, das Zählen und deine Biordinalzahlen benötigen, bereits enthält.',
+                    '– Dann ist für das System der Biordinalzahlen das System \lm{ \mathcal{U} } das absolute Mengenuniversum. Nur die ZFC-Mengenlehre weiß von „außen“, dass es über \(\mathcal{U}\) hinaus noch ein noch größeres, metamathematisches Universum gibt. Für die ontologische Argumentation und die Struktur der Biordinalzahlen schadet das überhaupt nicht – im Gegenteil: Es sichert sie formal ab.',
+                    '\bold{\italic{Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?}}',
+                    '• Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
+                    '• Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
+                    '• Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
+                    '• Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
+                    '• Siehe \jump[https://de.wikipedia.org/wiki/Ordinalzahl]{Rechenoperationen}{Wikipedia: Ordinalzahl, Rechenoperationen} und \jump[https://de.wikipedia.org/wiki/Transfinite_Arithmetik]{}{Wikipedia: Transfinite Arithmetik}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -51,7 +57,7 @@
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
-                    'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
+                    'entscheidendes zur Klärung der Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannscheVermutung}} beizutragen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
                       
@@ -900,7 +906,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{-}  =  ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}^{-}  =  ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
@@ -914,16 +920,16 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
-                      'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen'."\n".
+                      'Sei \lm{ \overline{\#} } das Symbol für den Operator, der die Erzeugungsanzahl der Elemente einer Menge liefert,'."\n".
+                      'so gilt, auch wegen der oben definierten Gleichsetzung von Erzeugungsanzahl und deren entsprechenden Mengen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
+                      array( display => 'on',  latex => '{  \overline{\#} \mathbb{Z}^{-}  =  \overline{\#} \mathbb{N}  =  ω  =  \mathbb{N}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 ω  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}  =  \overline{\#} \mathbb{N} + \overline{\#} \mathbb{Z}^{-}  =  2 ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{+}  =  \# *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} \mathbb{Z}^{+}  =  \overline{\#} *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was damit gezeigt werden sollte.'."\n",
@@ -943,10 +949,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n \; + \sum_{ \forall n \in \mathbb{N}} - *( n + 1 *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n \; - \sum_{ \forall n \in \mathbb{N}} n \; - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ n \in \mathbb{N}} n \; + \sumx_{ n \in \mathbb{N}} - *( n + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ n \in \mathbb{N}} n \; - \sumx_{ n \in \mathbb{N}} n \; - \sumx_{ n \in \mathbb{N}} 1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  - \sumx_{ n \in \mathbb{N}} 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  - ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -973,8 +979,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ \# \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
+                      array( display => 'on', latex => '{  \frac{ \sumx_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  \frac{ - ω }{ 2 ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sumx_{ z \in \mathbb{Z}} z }{ \overline{\#} \mathbb{Z} }  =  - \frac{ 1 }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Mittelwert-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1000,7 +1006,7 @@
                   '')),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\color{*Bearb}{\bold{Bezüge zur Riemannschen Zeta-Funktion} \\\\'."\n".
-                        '– Teilerfremdheit: Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: Vgl. \cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}',
+                          '– Teilerfremdheit: Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: Vgl. \cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1080,8 +1086,8 @@
                       array( display => 'on',  latex => '{  \eta(0)  ?=  \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1}  ?=  \frac{ 1 }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ 1 - 1 + 1 - 1 + 1 + \cdots }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(0)  :=  \overline{ \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( -1 *)^{n - 1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(0)  :=  \frac{ \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } *( -1 *)^{n - 1} }{ \# *( \mathbb{N} \setminus *\{ 0 *\} *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(0)  :=  \overline{ \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( -1 *)^{n - 1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(0)  :=  \frac{ \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } *( -1 *)^{n - 1} }{ \# *( \mathbb{N} \setminus *\{ 0 *\} *) }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier erkennen wir, dass das Ergebnis ganz entscheidend von der Anzahl der Elemente in \lm{ \mathbb{N} \setminus *\{ 0 *\} } abhängt.'."\n".
@@ -1092,9 +1098,9 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(-1)  :=  1 - 2 + 3 - 4 + 5 + \cdots  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n \; - \; *( ω - 1 *) \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad 2 \cdot \!\!\!\! \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n \; - \; *( ω - 1 *) \; - \; 2 \cdot \!\!\!\! \sum_{ n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad - \; *( ω - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1103,8 +1109,8 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
-                      array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
+                      array( display => 'on', latex => '{  \sum_{ i \in \mathbb{N} } i  =  \sum_{ i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -1140,7 +1146,7 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                     ))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
@@ -1301,12 +1307,12 @@
                     array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
-                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
-                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} + n }{ 2 } - n  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} + n - 2 n }{ 2 }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
+                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
+                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n } i  =  \frac{ n^{2} + n }{ 2 } - n  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n } i  =  \frac{ n^{2} + n - 2 n }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1357,9 +1363,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }',
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1383,9 +1389,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ ω^{2} - ω }{ 2 }  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ i \in \mathbb{N} } i  =  \frac{ ω^{2} - ω }{ 2 }  \;\;  ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(

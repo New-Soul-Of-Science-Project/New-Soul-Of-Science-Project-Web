@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 05.09.2023, 12:00h
+// #: Stand: 17.07.2026, 18:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20260717:  +:  "To_f_scroll_init":  New — toggles class "is-scrolling" on ".content" and ".content-horizontal-scrollable" while scrolling.
 //          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
 //          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
 //          20230820:  +:  "To_f_showMenu" for mobile mode.
@@ -742,6 +743,27 @@ function To_f_showMenuHideOnOutsideOrItemClick( event) {
 
 
 
+function To_f_scroll_init()
+{
+  var pageTimer = null;
+  window.addEventListener('scroll', function() {
+    document.documentElement.classList.add('is-scrolling');
+    clearTimeout(pageTimer);
+    pageTimer = setTimeout(function() { document.documentElement.classList.remove('is-scrolling'); }, 800);
+  }, { passive: true });
+
+  document.querySelectorAll('.content, .content-horizontal-scrollable').forEach(function(el) {
+    var timer = null;
+    el.addEventListener('scroll', function() {
+      el.classList.add('is-scrolling');
+      clearTimeout(timer);
+      timer = setTimeout(function() { el.classList.remove('is-scrolling'); }, 800);
+    }, { passive: true });
+  });
+}
+
+
+
 function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
 {
   // #: Open hidden areas for the hash of first site call.
@@ -763,6 +785,8 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
   window.window.onafterprint = To_f_manage_afterPrint;
   
   To_f_showMenuCloneMenu();
-  
+
   To_f_setExpandIcons();
+
+  To_f_scroll_init();
 }

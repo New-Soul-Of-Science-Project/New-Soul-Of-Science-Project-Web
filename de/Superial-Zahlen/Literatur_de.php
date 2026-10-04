@@ -49,6 +49,7 @@
               'Pfaff:MethodusGeneralis:1815',
               'Plichta:GottesGeheimeFormel:1995',
               'Riemann:UeberDieAnzahlDerPrimzahlen:1859',
+              'Riemann:UeberDieDarstellbarkeitEinerFunction:1867',
               'Robinson:NonStandardAnalysis:1966',
               'Steinitz:AlgebraischeTheorieDerKoerper:1910',
               'Taylor:MethodusIncrementorum:1715',
@@ -71,6 +72,8 @@
               'wiki:DedekindscherSchnitt:2025',
               'wiki:DifferentialMathematik:2024',
               'wiki:Differentialrechnung:2024',
+              'wiki:Disjunkt:2025',
+              'wiki:DisjunkteVereinigung:2025',
               'wiki:ElliptischeIntegrale:2024',
               'wiki:ElliptischeKurve:2024',
               'wiki:EulerscheZahl:2023',
@@ -118,6 +121,7 @@
               'wiki:QuadratischePyramidalzahl:2021',
               'wiki:RadikalMathematik:2022',
               'wiki:RationaleZahl:2022',
+              'wiki:RiemannschesIntegral:2026',
               'wiki:RiemannscheVermutung:2023',
               'wiki:RiemannscheZetaFunktion:2022',
               'wiki:Ring-Algebra:2023',
@@ -133,6 +137,7 @@
               'wiki:ValuationRing:2024',
               'wiki:VollstaendigeInduktion:2024',
               'wiki:ZermeloFraenkelMengenlehre:2026',
+              'Wolchover:WieGrossIstDieUnendlichkeitDerReellenZahlen:2022',
               'Zermelo:UntersuchungenUeberDieGrundlagenDerMengenlehre:1908',
             ));
           ?>

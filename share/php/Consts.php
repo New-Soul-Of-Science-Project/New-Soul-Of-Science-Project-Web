@@ -36,12 +36,14 @@
   const jumpName = 'jumpName';
   const jumpurl = 'jumpurl';
   const keywords = 'keywords';
+  const ListStyle = 'ListStyle';
   const litera_bibtex_url_rel = 'litera_bibtex_url_rel';
   const litera_url_rel = 'litera_url_rel';
   const LiveAni_init = 'LiveAni_init';
   const margin = 'margin';
   const name_short = 'name_short';
   const NoIntentInFirstLine = 'NoIntentInFirstLine';
+  const numberStart = 'numberStart';
   const ParagraphList = 'ParagraphList';
   const pdfArchiveFolder = 'pdfArchiveFolder';
   const print_image = 'print_image';

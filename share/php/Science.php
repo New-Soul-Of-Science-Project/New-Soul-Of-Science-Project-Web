@@ -3,10 +3,26 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.07.2026, 12:00h
+  // #: Stand: 04.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
+  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
+  //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
+  //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
+  //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
+  //           20260922:  +:  "$Sc_g_equation_replace_ary":  Add '  \cong  ' -> '\;\;\;\cong\;\;\;'.
+  //           20260912:  +:  "MathJax":  Add Macro "qed" for "quod erat demonstrandum" '\blacksquare'.
+  //                      +:  "MathJax":  Add Macro "qqed" for "quod erat demonstrandum" with space in front '\;\;\blacksquare'.
+  //           20260817:  *:  "$Sc_g_equation_replace_ary":  Fix '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subset}\;\;\;'  to  '  ?\subseteq  ' -> '\;\;\;\overset{?}{\subseteq}\;\;\;'.
+  //           20260808:  +:  "$Sc_g_equation_replace_ary":  Add '  \longrightarrow  ' -> '\;\;\;\longrightarrow\;\;\;'.
+  //           20260803:  +:  "$Sc_g_equation_replace_ary":  Add '  \Longleftrightarrow  ' -> '\;\;\;\Longleftrightarrow\;\;\;'.
+  //                      +:  "$Sc_g_equation_replace_ary":  Add ' ?\widehat{=} ' -> '\;\overset{?}{\widehat{=}}\;'.
+  //           20260802:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\widehat{=}  ' -> '\;\;\;\overset{?}{\widehat{=}}\;\;\;', '?\widehat{=}' -> '\overset{?}{\widehat{=}}'.
+  //           20260713:  +:  "MathJax":  Add Macro "sumx" for Summe mit #-Annotation '\sideset{}{^{\#}}{\sum}'.
+  //           20260711:  +:  "MathJax":  Add Macro "prodx" for Primexponentenprodukt-Symbol '\sideset{}{^{\#}}{\prod}'.
+  //           20260709:  +:  "$Sc_g_equation_replace_ary":  Add '\equiv_{kan}' -> '\equiv_{\mathrm{kan}}', '?\equiv' -> '\overset{?}{\equiv}', '?\equiv_{kan}' -> '\overset{?}{\equiv}_{\mathrm{kan}}', '  ?\equiv  ' -> '\;\;\;\overset{?}{\equiv}\;\;\;', '  ?\equiv_{kan}  ' -> '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;', '  \equiv_{kan}  ' -> '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'
   //           20260703:  *:  "Sc_g_litera_make", 'article':  'language' is now rendered (was missing; @book and @online already had it).
   //           20260702:  +:  "Sc_f_litera_bibtex", 'translator':  New field for @book — parsed and rendered as 'Übers. von …'.
   //                      *:  "Sc_f_litera_bibtex", 'pages':  '--' (LaTeX double-hyphen) now also replaced by '&mdash;'.
@@ -255,7 +271,7 @@
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
     echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js"],'."\n";
+    echo '          extensions: ["color.js", "cancel.js"],'."\n";
     echo '          Macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
@@ -268,6 +284,7 @@
     echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
     echo '            lpr: "\\\\operatorname{lpr}",'."\n"; // for gapless prime tower power grid set of
+    echo '            ord: "\\\\operatorname{ord}",'."\n"; // for the layer valuation (Schichtbewertung) of
     echo '            pr: "\\\\operatorname{pr}",'."\n"; // for prime tower power grid set of
     echo '            pt: "\\\\operatorname{pt}",'."\n"; // for power tower set of
     echo '            rad: "\\\\operatorname{rad}",'."\n"; // for radikal of
@@ -296,6 +313,10 @@
     echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
+    echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
+    echo '            sumx: "\\\\sideset{}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
+    echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
+    echo '            qqed: "\\\\;\\\\;\\\\blacksquare",'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";
@@ -659,8 +680,9 @@
           $latex_tech = $text[latex_tech];
         else
           $latex_tech = 'Google';
-        
-        Sc_f_equation_list( $text[equ_text_std], '  '.$offset, $text[equ_list], $latex_tech);
+
+        // #: "equ_text_std" darf fehlen (dann keine Nummern-Spalte, s. "Sc_f_equation_list").
+        Sc_f_equation_list( (array_key_exists( equ_text_std, $text) ? $text[equ_text_std] : ''), '  '.$offset, $text[equ_list], $latex_tech);
         break;
       
       default:
@@ -686,8 +708,11 @@
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Longrightarrow  ', '\;\;\;\Longrightarrow\;\;\;'),
+                                    array( '  \longrightarrow  ', '\;\;\;\longrightarrow\;\;\;'),
+                                    array( '  \longleftrightarrow  ', '\;\;\;\longleftrightarrow\;\;\;'),
                                     array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
+                                    array( '  \Longleftrightarrow  ', '\;\;\;\Longleftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
@@ -698,12 +723,18 @@
                                     array( '  >  ', '\;\;\;>\;\;\;'),
                                     array( '  \ge  ', '\;\;\;\ge\;\;\;'),
                                     array( '  \geq  ', '\;\;\;\geq\;\;\;'),
+                                    array( '  ?\equiv_{kan}  ', '\;\;\;\overset{?}{\equiv}_{\mathrm{kan}}\;\;\;'),
+                                    array( '  ?\equiv  ', '\;\;\;\overset{?}{\equiv}\;\;\;'),
+                                    array( '  \equiv_{kan}  ', '\;\;\;\equiv_{\mathrm{kan}}\;\;\;'),
                                     array( '  \equiv  ', '\;\;\;\equiv\;\;\;'),
+                                    array( '  \cong  ', '\;\;\;\cong\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
+                                    array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( ' ?\widehat{=} ', '\;\overset{?}{\widehat{=}}\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
@@ -715,8 +746,9 @@
                                     array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
+                                    array( '  \nmid  ', '\;\;\;\nmid\;\;\;'),
                                     array( '  \not\subset  ', '\;\;\;\not\subset\;\;\;'),
-                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subset}\;\;\;'),
+                                    array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subseteq}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
                                     array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
@@ -733,6 +765,10 @@
                                     array( '?\subseteq', '\overset{?}{\subseteq}'),
                                     array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
+                                    array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
+                                    array( '?\equiv', '\overset{?}{\equiv}'),
+                                    array( '?\widehat{=}', '\overset{?}{\widehat{=}}'),
+                                    array( '\equiv_{kan}', '\equiv_{\mathrm{kan}}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
@@ -994,12 +1030,30 @@
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
     $start_display = 'showContent';
-    
+
     $display_is = true;
     $local_elements_hides_ele_num = 1;
-    
+
+    // #: Ohne "equ_text_std" gibt es keine automatische Nummerierung - dann wird die rechte
+    // Nummern-Spalte komplett weggelassen (nicht nur leer gelassen), damit die Formel über die
+    // volle Breite zentriert steht, statt durch die blind reservierte Spalte nach links verschoben
+    // zu wirken.
+    $show_equ_number_col = ($equ_text_std !== null && $equ_text_std !== '');
+    // #: Die globale Regel ".content-horizontal-scrollable { display: block; margin-left: 30px;
+    // margin-right: 40px; }" (main.css) nimmt der Tabelle ihren echten Tabellen-Kontext - der
+    // Browser baut dann für die "verwaisten" <colgroup>/<tr>/<td>-Boxen eine anonyme, am Inhalt statt
+    // am "width"/"col width" orientierte Ersatz-Tabelle, wodurch sowohl die Breitenangabe als auch
+    // "align=center" wirkungslos bleiben. Für den Fall ohne Nummern-Spalte wird der echte Tabellen-
+    // Kontext hier daher per Inline-Style wiederhergestellt ("display: table") und die Breite
+    // passend zu den beiden Rändern (30px + 40px, wie bei normalem Fließtext) auf "calc(100% - 70px)"
+    // statt auf die volle Containerbreite gesetzt - sonst bliebe die Tabelle, wie beobachtet, breiter
+    // als die umgebende Textspalte und die Formel liefe nicht zentriert, sondern linksbündig.
+    $equ_table_colgroup = $show_equ_number_col ? ' <col width="500"> <col width="100"> ' : ' <col width="100%"> ';
+    $equ_table_colspan = $show_equ_number_col ? 2 : 1;
+    $equ_table_width_style = $show_equ_number_col ? '' : ' display: table; width: calc(100% - 70px);';
+
     // #: No offset, because it is before the PHP command.
-    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
+    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';'.$equ_table_width_style.'"> <colgroup>'.$equ_table_colgroup.'</colgroup>'."\n";
     echo "\n";
 
     // #: Go through all equations.
@@ -1052,14 +1106,14 @@
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr><td height="10"></td></tr>'."\n";
           echo "\n";
         }
-        
+
         echo $offset.'  <tr>'."\n";
         // #: If the equation before was 'on' too and "$value" has "latex_if_visible" defined?
         if ($display_is || !array_key_exists( latex_if_visible, $value))
@@ -1081,22 +1135,30 @@
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
+        if ($show_equ_number_col)
         {
-          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
-            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
-          if (array_key_exists( footnote, $value))
+          echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
           {
-            if (array_key_exists( footnote_num_color, $value))
-            {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
-            else
-              $footnote_num_color = '';
-            echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+              echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+            if (array_key_exists( footnote, $value))
+            {
+              if (array_key_exists( footnote_num_color, $value))
+              {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
+              else
+                $footnote_num_color = '';
+              echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            }
+            echo $offset.'  </span> </td> </tr>'."\n";
           }
-          echo $offset.'  </span> </td> </tr>'."\n";
+        } else
+        {
+          // #: Ohne Nummern-Spalte reicht hier das Schließen der Zeile - eine Fußnote ohne Nummern-
+          // Spalte ist in dieser Konstellation nicht vorgesehen (die Spalte existiert ja gar nicht).
+          echo $offset.'  </tr>'."\n";
         }
         echo "\n";
-        
+
         // #?: Is there still an element comming in the list?
         if (array_key_exists( $key + 1, $list))
         {
@@ -1122,13 +1184,13 @@
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
-          echo $offset.'    <td colspan="2" align="left">'."\n";
+          echo $offset.'    <td colspan="'.$equ_table_colspan.'" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
           echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: '.(To_f_Color('*EquationHideSeparatorLine', false)).';">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
@@ -1148,20 +1210,26 @@
         echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
+        if ($show_equ_number_col)
         {
-          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
-            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
-          if (array_key_exists( footnote, $value))
+          echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
           {
-            if (array_key_exists( footnote_num_color, $value))
-            {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
-            else
-              $footnote_num_color = '';
-            //%!echo Sc_f_footnote_add( $value[footnote]);
-            echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+              echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+            if (array_key_exists( footnote, $value))
+            {
+              if (array_key_exists( footnote_num_color, $value))
+              {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
+              else
+                $footnote_num_color = '';
+              //%!echo Sc_f_footnote_add( $value[footnote]);
+              echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
+            }
+            echo '</span> </td> </tr>'."\n";
           }
-          echo '</span> </td> </tr>'."\n";
+        } else
+        {
+          echo $offset.'  </tr>'."\n";
         }
         echo "\n";
         

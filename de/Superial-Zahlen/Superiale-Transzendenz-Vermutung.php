@@ -61,7 +61,7 @@
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -70,7 +70,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e  =  \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! }  =  \sum_{ \forall k \in \mathbb{N} } \frac{ 1 }{ k! }  }',
+                      array( display => 'on',  latex => '{  \e  =  \sum_{ k \in \mathbb{N} } \frac{ 1^{k} }{ k! }  =  \sum_{ k \in \mathbb{N} } \frac{ 1 }{ k! }  }',
                                                footnote => '\\const{SupNum_g_footnote_text_EulerscheZahl}'),
                     ))),
                   array( 'text', array( text => array(
@@ -108,7 +108,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  }',
-                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Equ-Ar-Teilmengegleich-As}', label_incr => false),
                       array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?\subseteq  \mathbb{A}_{\R}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
@@ -229,7 +229,7 @@
                     'Aus Formel \jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Phi-von-alpha-def-sum-c-T-s} folgt:'."\n".
                     'Jeder Summand \lm{ c_{i} \cdot T^{i} \cdot \s^{d - i} } hat wegen \lm{ p | \s } und \lm{ p | T } mindestens'."\n".
                     '\lm{p}-Bewertung \lm{ i + (d − i) = d }.'."\n".
-                    'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }. \lm{ \blacksquare }'."\n".
+                    'Also hat die Summe ebenfalls \lm{ v_{p} \ge d }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h5', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Konsequenz', subline =>
@@ -314,7 +314,7 @@
                     '\lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} \cdot M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
                     'Wegen \lm{ *| \, c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| \, c_{i}^{(k + 1)} |* + *| \, c_{i}^{(k)} |* \le M_{k} } ist \lm{ t_{k} \in \{ −1, 0, 1 \} }.'."\n".
                     'Mit \lm{ *| \, c_{i}^{(k + 1)} |* \le M_{k + 1} / 2 } und \lm{ M_{k + 1} \ge 2 M_{k} }'."\n".
-                    'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }. \lm{ \blacksquare }'."\n".
+                    'folgt schließlich \lm{ t_{k} = 0 } für alle großen \lm{ k }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Hauptbeweis: \lm{ \mathbb{A}_{\S} \subseteq \mathbb{A}_{\R} }', subline =>
@@ -405,7 +405,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  \subseteq  \mathbb{A}_{\S}  \;\;}  \;\; . \;\; \blacksquare  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  \subseteq  \mathbb{A}_{\R}  \;\;}  \;\; . \;\; \blacksquare  }',
+                                          label_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar', label_text => '\name{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-As-Teilmengegleich-Ar}', label_incr => true),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                   'Schluss (STV + AKV \lm{ \Rightarrow } Vollständigkeit)', subline =>
@@ -415,7 +416,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.STV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\R}  =  \mathbb{A}_{\S}  \;\;}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  \;\; .  }',
+                                          label_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As', label_text => '\name{OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:Equ-Ar-ist-gleich-As}', label_incr => true),
                     ))),
                   /* array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
 
@@ -604,7 +606,7 @@
                     '\italic{Beweis:}'."\n".
                     'Schreibe \lm{ \Phi_{P}(\alpha) = \sum_{i = 0}^{d} c_{i} T^{i} \; \s^{d - i} } mit \lm{ T = \alpha \cdot \s \in \mathbb{S}_{\Z} }.'."\n".
                     'Da \lm{ p \mid \s } und \lm{ p \mid T } für \bold{alle} endlichen Primzahlen \lm{ p }, hat \bold{jeder} Summand \lm{ p }-Bewertung \lm{ \ge i \cdot 1 + ( d − i ) \cdot 1 = d }.'."\n".
-                    'Die Summe erbt \lm{ v_{p} \ge d }. \lm{ \blacksquare }'."\n".
+                    'Die Summe erbt \lm{ v_{p} \ge d }.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -698,7 +700,7 @@
                     ))),
                   array( 'text', array( intent => '0em', text => array(
                     'Wähle \lm{ H \ge *( C(d, \alpha ) M / \epsilon *)^{1 / d} }.'."\n".
-                    'Damit \lm{ *| P(\alpha) |* \le \epsilon } und die Höhenabschätzung folgt aus der Definition von \lm{ c_{i} }. \lm{ \blacksquare }'."\n".
+                    'Damit \lm{ *| P(\alpha) |* \le \epsilon } und die Höhenabschätzung folgt aus der Definition von \lm{ c_{i} }.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -734,7 +736,7 @@
                     'Fixiere \lm{ i }.'."\n".
                     'Aus \lm{ P_{k + 1} ​\equiv P_{k} \; (\mathrm{mod} \, M_{k}) } folgt \lm{ c_{i}^{(k + 1)} − c_{i}^{(k)} = t_{k} M_{k} } mit \lm{ t_{k} \in \mathbb{Z} }.'."\n".
                     'Wegen \lm{ *| c_{i}^{(k + 1)} − c_{i}^{(k)} |* \le *| c_{i}^{(k + 1)} |* + *| c_{i}^{(k)} |* \le M_{k + 1} / 2 + M_{k} / 2 \le M_{k + 1} − M_{k} } und \lm{ M_{k + 1} \ge 2 M_{k} } erzwingt dies \lm{ t_{k} \in \{ −1, 0, 1 \} }, ja sogar für große \lm{ k \cdot t_{k} = 0 }.'."\n".
-                    'Also stationär. \lm{ \blacksquare }'."\n".
+                    'Also stationär.  \lm{ \qqed }'."\n".
                     ''))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
@@ -799,7 +801,7 @@
                   '\bold{Grenzübergang:} \\\\'."\n".
                     'Aus \bold{(B)} folgt \lm{ P(\alpha) = \mathrm{lim}⁡_{k} P_{k}(\alpha) = 0 }.'."\n".
                     'Damit existiert ein monisches \lm{ P \in \mathbb{Z}[x] \setminus \{ 0 \} } mit \lm{ P(\alpha) = 0 }.'."\n".
-                    'Also \lm{ \alpha } algebraisch. \lm{ \blacksquare }'."\n".
+                    'Also \lm{ \alpha } algebraisch.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( intent => '0em', text => array(
                   '\bold{Schluss:} \\\\'."\n".
@@ -884,7 +886,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Diskussion des Beweises  >
+          <!--  • Diskussion des Beweises  -->
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Superiale-Transzendenz-Vermutung:Diskussion-des-Beweises',
               '', 'Sc_f_Paragraph',
