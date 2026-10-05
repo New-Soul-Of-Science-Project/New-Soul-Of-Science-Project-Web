@@ -2674,7 +2674,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  \lpr\!*( n\overline{\#} *)  \neq  n  \;\;\;\mathrel{\rlap{\mkern3mu\lower.45ex\hbox{$\left.\vphantom{\widehat{=}}\middle/\right.$}}\widehat{=}}\;\;\;  n\overline{\#}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\ge 2} \setminus \mathbb{P} *) *[  \lpr\!*( n\overline{\#} *)  \neq  n  \;\;\;\mathrel{\rlap{\mkern-1mu\lower-.3ex\hbox{$\left.\vphantom{\widehat{=}}\middle/\right.$}}\widehat{=}}\;\;\;  n\overline{\#}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der letzte gezeigte Übergang, mit seiner Gleichheit und Entsprechung, gilt also ausschließlich von endlichen Primzahlen zu \lm{ ω }.'."\n".
