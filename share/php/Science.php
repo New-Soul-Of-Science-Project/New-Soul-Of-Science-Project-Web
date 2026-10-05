@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 22:00h
+  // #: Stand: 05.10.2026, 18:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261005:  *:  "$Sc_g_equation_replace_ary":  Add 'ω' -> '\upomega', 'π' -> '\uppi' - MathJax 4 (unlike MathJax 2) renders a directly typed Unicode "ω"/"π" italic by default, same as the "\omega"/"\pi" commands; forces these two back to upright to match the old behavior and the existing "\s" convention (superiale Basis), without affecting "\omega"/"\pi" themselves, which stay italic as intended. The first attempt, '\mathrm{\omega}', did NOT work (confirmed visually: still italic) - STIX2 apparently has no upright glyph reachable via "mathvariant=normal" for lowercase Greek; switched to the "upgreek" package's "\upomega"/"\uppi" instead, which is the LaTeX-standard, semantically correct way to get upright lowercase Greek letters and works reliably here - required adding "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" (see "Sc_f_HeaderElements" below). NOTE: other Greek letters are also typed directly in the content (φ, ν, λ, ρ, γ, ζ) - not touched here, since only "ω" and "π" were reported as regressed; may need the same fix if they turn out to have the same problem.
+  //                      >:  "Sc_f_HeaderElements":  Add "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" - needed for "\upomega"/"\uppi" used by the "$Sc_g_equation_replace_ary" fix above.
   //           20261004:  >:  "$Sc_g_equation_replace_ary":  Change the colon-prefix spacing/glyph for '  :\neq  ', '  :\in  ', '  :\subset  ' (with surrounding padding spaces) and for ':\neq', ':\in', ':\subset' (without padding) from '\raise{-.14ex/-.15ex}{᠄}\mspace{-4.5mu}' to '\raise{-.6ex}{︓}\mspace{-7.5mu}' - uses the vertical colon glyph '︓' (U+FE13) instead of the Mongolian colon '᠄' (U+1804), raised further down with wider negative spacing before the following relation symbol.
   //                      !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG" und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige Darstellungsfehler - (1) "font.yui.css"s globales "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg, "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6 Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss: Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so nativ wie bei CHTML.
   //                      *:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-tex" back to "mathjax-stix2": zwar hatte Wolfgang "tex" nach einem Live-Vergleich aller 11 Schriftpakete stilistisch bevorzugt (siehe Eintrag unten), aber "tex" hat wie 7 der anderen 8 nicht-stix2-Pakete (newcm, termes, modern, pagella, schola, asana, bonum - alle außer "fira", nicht separat erneut gegengetestet) einen echten MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}"-Umgebung wird systematisch auf nur ca. 54% der tatsächlich benötigten Höhe berechnet (bestätigt per DOM-Messung, auch OHNE das unten stehende Line-Height-CSS - also unabhängig davon, ein reiner MathJax-Bug), wodurch die unterste Zeile der Fallunterscheidung sichtbar außerhalb der Klammer landet (SN.AbIn.IN, Gleichung "[0,x·s[..." mit "\middle|" und dreizeiligem "cases"). Nur "stix2" berechnet hier durchgehend die korrekte Höhe. Da das ein inhaltlicher Darstellungsfehler ist (nicht nur eine Stiloption), hat das Vorrang vor der optischen Präferenz - zurück zu "stix2".
@@ -263,7 +265,7 @@
     // #: Entspricht den TeX-"extensions" aus MathJax 2 ("color.js", "cancel.js") - in MathJax 4 sind
     // das ladbare "packages" statt Extensions. Das moderne "color"-Paket kennt weiterhin denselben
     // dvips-Namensraum (u.a. "Bittersweet"), den die Inhalte hier verwenden.
-    echo '          packages: {"[+]": ["color", "cancel"]},'."\n";
+    echo '          packages: {"[+]": ["color", "cancel", "upgreek"]},'."\n";
     echo '          macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
@@ -321,16 +323,21 @@
     echo '            }'."\n";
     echo '          }'."\n";
     echo '        },'."\n";
-    // #: "color" und "cancel" sind in MathJax 4 nicht im Standard-Bundle enthalten - "tex.packages"
-    // aktiviert sie nur, lädt sie aber nicht tatsächlich nach; ohne "loader.load" bleiben \color und
-    // \cancel dadurch stumm wirkungslos (werden klanglos als reiner Text durchgereicht, kein Fehler).
-    // "paths.mathjax" verweist auf das separat vendorte Hauptpaket (s. "share/js/mathjax/"), damit der
-    // Loader "input/tex/extensions/color.js" bzw. "cancel.js" dort findet - das unten geladene
-    // Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-stix2-font/"), kennt den Pfad
-    // zum Hauptpaket also nicht von sich aus.
+    // #: "color", "cancel" und "upgreek" sind in MathJax 4 nicht im Standard-Bundle enthalten -
+    // "tex.packages" aktiviert sie nur, lädt sie aber nicht tatsächlich nach; ohne "loader.load"
+    // bleiben sie stumm wirkungslos (werden klanglos als reiner Text durchgereicht, kein Fehler).
+    // "upgreek" liefert "\upomega"/"\uppi" etc. für AUFRECHTE Kleinbuchstaben-Griechen - nötig, weil
+    // "\mathrm{\omega}" (naheliegender erster Versuch) in diesem Font/Setup KEIN aufrechtes Omega
+    // liefert (STIX2 hat offenbar keine über "mathvariant=normal" erreichbare aufrechte Glyphe für
+    // griechische Kleinbuchstaben) - "\upomega"/"\uppi" sind der dafür vorgesehene,
+    // semantisch korrekte LaTeX-Weg und funktionieren zuverlässig. "paths.mathjax" verweist auf das
+    // separat vendorte Hauptpaket (s. "share/js/mathjax/"), damit der Loader
+    // "input/tex/extensions/color.js" bzw. "cancel.js" bzw. "upgreek.js" dort findet - das unten
+    // geladene Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-stix2-font/"), kennt
+    // den Pfad zum Hauptpaket also nicht von sich aus.
     echo '        loader: {'."\n";
     echo '          paths: { mathjax: "'.$Glo_PathRel_back.'../share/js/mathjax" },'."\n";
-    echo '          load: ["[tex]/color", "[tex]/cancel"]'."\n";
+    echo '          load: ["[tex]/color", "[tex]/cancel", "[tex]/upgreek"]'."\n";
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
@@ -780,6 +787,8 @@
                                     array( '  \right|', ' \;\right|'),
                                     array( '  ~\middle|~  ', '\;~\middle|~\;'),
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
+                                    array( 'ω', '\upomega'),  // #: MathJax 4 renders a directly typed Unicode "ω" italic (MathJax 2 did not) - force upright via the "upgreek" package's "\upomega" (NOT "\mathrm{\omega}", which does not produce an upright glyph in this font/setup), matching old behavior; "\omega" (the command) is unaffected and stays italic as intended
+                                    array( 'π', '\uppi'),  // #: Same MathJax-4 regression as "ω" above, for directly typed "π" - uses "\uppi" from "upgreek"
                                  );
 
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
