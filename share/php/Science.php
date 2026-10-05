@@ -3,11 +3,13 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 05.10.2026, 18:00h
+  // #: Stand: 05.10.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261005:  *:  "$Sc_g_equation_replace_ary":  Add 'ω' -> '\upomega', 'π' -> '\uppi' - MathJax 4 (unlike MathJax 2) renders a directly typed Unicode "ω"/"π" italic by default, same as the "\omega"/"\pi" commands; forces these two back to upright to match the old behavior and the existing "\s" convention (superiale Basis), without affecting "\omega"/"\pi" themselves, which stay italic as intended. The first attempt, '\mathrm{\omega}', did NOT work (confirmed visually: still italic) - STIX2 apparently has no upright glyph reachable via "mathvariant=normal" for lowercase Greek; switched to the "upgreek" package's "\upomega"/"\uppi" instead, which is the LaTeX-standard, semantically correct way to get upright lowercase Greek letters and works reliably here - required adding "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" (see "Sc_f_HeaderElements" below). NOTE: other Greek letters are also typed directly in the content (φ, ν, λ, ρ, γ, ζ) - not touched here, since only "ω" and "π" were reported as regressed; may need the same fix if they turn out to have the same problem.
+  //           20261005:  *:  "Sc_f_HeaderElements":  Add "svg: { displayAlign: \"left\" }" to the MathJax config - MathJax 4 is the first version to actually implement MathML3-style line-break layout (per the official "What's new in v4.0" docs): every line produced by a bare "\\" linebreak (i.e. NOT inside "array"/"aligned"/"cases") now gets an "indentalign" that resolves to "displayAlign", which defaults to "center" - so multi-line equations that used to stack LEFT-aligned relative to each other (MathJax 2/3 never implemented this MathML3 behavior, so they "accidentally" stayed left-aligned via older layout code) now centered each line instead, breaking Wolfgang's existing "\qquad"-indentation formatting on dozens of equations across the site (e.g. "SN.SinK.RZ.2", "SN.PP.75"). Root-caused via direct MathJax-src source inspection ("Wrapper.ts", "processIndent()") - confirmed there is no way to fix just the inter-line alignment via a macro ("\\" is wired directly to the TeX-parser's stack-manipulating "CrLaTeX" method, not redefinable via "macros: {...}"; "\breakAlign{...}" explicitly throws outside an array/alignment environment). First attempt placed "displayAlign" under the generic "options" block (the menu/accessibility-extension namespace) - silently ignored, no error, confirmed still broken on "SN.PP.75" (varying-width lines revealed the centering that "SN.SinK.RZ.2" alone could not, since all its broken lines happen to have near-equal width). Checked the vendored bundle directly ("displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." all appear together as one options object) - "displayAlign" is a default option of the OUTPUT JAX itself (shared by "chtml"/"svg"), so it belongs in the output-specific config block, here "svg" (this site's active output format) - moved there, which fixed the relative-line alignment (verified live on "SN.SinK.RZ.2" and "SN.PP.75": lines with equal "\qquad" now share one left edge regardless of content width) and the existing 9-page regression suite stayed at 0 "merror". NOTE: this alone also pushed EVERY display equation on the site flush-left in its table cell, single-line ones included (see the following entry's fix) - "displayAlign" is not limited to inter-line alignment, it is also how MathJax positions the whole equation box.
+  //                      *:  "Sc_f_HeaderElements":  Add a "<style>mjx-container[display=\"true\"] { width: fit-content; margin-left: auto; margin-right: auto; }</style>" rule, right after the MathJax script tags - the "svg.displayAlign: left" fix above (needed for correct inter-line alignment, see entry above) sets "text-align/justify-content: left" on MathJax's own "mjx-container" element, which by default spans the FULL width of its surrounding table cell - so instead of just straightening out the relative line alignment, it silently pushed literally every equation on the site (single-line ones too, e.g. "SN.PP.1") flush against the left edge of its cell, discarding the page-level centering that used to come for free when "displayAlign" was "center". Wolfgang caught this by eye ("die SVGs sind nicht in der Tabelle zentriert") after the previous entry's fix had seemingly "basically worked". Fix: shrink "mjx-container" down to the width of its actual SVG content ("width: fit-content") and center that now-tightly-fit box with "margin: 0 auto" - inside a box with no leftover width, "text-align: left" has nothing left to act on, so the desired inter-line left-alignment from the entry above is completely unaffected, while the equation block as a whole is centered in its cell again exactly as before MathJax 4. Verified live: "SN.PP.1" (single-line) and "SN.PP.75"/"SN.SinK.RZ.2" (multi-line) all re-centered (SVG center matches table-cell center to within half a pixel), 9-page regression suite still 0 "merror".
+  //                      *:  "$Sc_g_equation_replace_ary":  Add 'ω' -> '\upomega', 'π' -> '\uppi' - MathJax 4 (unlike MathJax 2) renders a directly typed Unicode "ω"/"π" italic by default, same as the "\omega"/"\pi" commands; forces these two back to upright to match the old behavior and the existing "\s" convention (superiale Basis), without affecting "\omega"/"\pi" themselves, which stay italic as intended. The first attempt, '\mathrm{\omega}', did NOT work (confirmed visually: still italic) - STIX2 apparently has no upright glyph reachable via "mathvariant=normal" for lowercase Greek; switched to the "upgreek" package's "\upomega"/"\uppi" instead, which is the LaTeX-standard, semantically correct way to get upright lowercase Greek letters and works reliably here - required adding "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" (see "Sc_f_HeaderElements" below). NOTE: other Greek letters are also typed directly in the content (φ, ν, λ, ρ, γ, ζ) - not touched here, since only "ω" and "π" were reported as regressed; may need the same fix if they turn out to have the same problem.
   //                      >:  "Sc_f_HeaderElements":  Add "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" - needed for "\upomega"/"\uppi" used by the "$Sc_g_equation_replace_ary" fix above.
   //           20261004:  >:  "$Sc_g_equation_replace_ary":  Change the colon-prefix spacing/glyph for '  :\neq  ', '  :\in  ', '  :\subset  ' (with surrounding padding spaces) and for ':\neq', ':\in', ':\subset' (without padding) from '\raise{-.14ex/-.15ex}{᠄}\mspace{-4.5mu}' to '\raise{-.6ex}{︓}\mspace{-7.5mu}' - uses the vertical colon glyph '︓' (U+FE13) instead of the Mongolian colon '᠄' (U+1804), raised further down with wider negative spacing before the following relation symbol.
   //                      !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG" und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige Darstellungsfehler - (1) "font.yui.css"s globales "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg, "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6 Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss: Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so nativ wie bei CHTML.
@@ -335,6 +337,24 @@
     // "input/tex/extensions/color.js" bzw. "cancel.js" bzw. "upgreek.js" dort findet - das unten
     // geladene Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-stix2-font/"), kennt
     // den Pfad zum Hauptpaket also nicht von sich aus.
+    // #: MathJax 4 implementiert erstmals echtes MathML3-Zeilenumbruch-Layout (vgl. "What's new in
+    // v4.0" in der MathJax-Doku) - dadurch werden einzelne, per nacktem "\\" (ohne umgebendes
+    // "array"/"aligned") umgebrochene Formelzeilen nun standardmäßig ZENTRIERT zueinander gesetzt
+    // ("indentalign: auto" löst zu "displayAlign" auf), nicht mehr linksbündig wie in MathJax 2/3 (dort
+    // war dieses MathML3-Verhalten schlicht nicht implementiert). WICHTIG: "displayAlign" ist KEINE
+    // generische "options"-Einstellung (das ist der Namensraum der Menü-/Zugänglichkeits-Erweiterung),
+    // sondern eine Default-Option des jeweiligen OUTPUT-JAX selbst (bestätigt im vendorten Bundle:
+    // "displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." - alles
+    // Felder EINES "CommonOutputJax"-Options-Objekts) - muss daher im ausgabespezifischen "svg"-Block
+    // stehen (diese Seite nutzt SVG-Ausgabe), NICHT im obigen "options"-Block (ein erster Versuch dort
+    // wurde von MathJax stillschweigend ignoriert - kein Fehler, nur wirkungslos). "displayAlign: left"
+    // setzt die Zeilen wieder linksbündig zueinander - wie vor MathJax 4. Die ÄUSSERE Zentrierung ganzer
+    // Formelblöcke (ein- wie mehrzeilig) auf der Seite bleibt davon unberührt, da sie unabhängig über die
+    // eigene HTML-Tabelle ("content-horizontal-scrollable", "td align=center"/"display: table") erfolgt,
+    // nicht über diese MathJax-Option.
+    echo '        svg: {'."\n";
+    echo '          displayAlign: "left"'."\n";
+    echo '        },'."\n";
     echo '        loader: {'."\n";
     echo '          paths: { mathjax: "'.$Glo_PathRel_back.'../share/js/mathjax" },'."\n";
     echo '          load: ["[tex]/color", "[tex]/cancel", "[tex]/upgreek"]'."\n";
@@ -366,6 +386,19 @@
     echo '    <script id="MathJax-script"'."\n";
     echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js">'."\n";
     echo '    </script>'."\n";
+    // #: "svg.displayAlign: left" (s.o.) setzt MathJax dazu, "mjx-container" per CSS auf
+    // "text-align/justify-content: left" UND "width: 100%" (volle Breite der umgebenden Tabellenzelle)
+    // zu stellen - trifft NICHT nur mehrzeilige, sondern JEDE einzelne Formel auf der Seite, auch
+    // einzeilige: ohne diesen Patch rutscht buchstäblich jede Formel an den linken Zellenrand statt wie
+    // zuvor zentriert zu stehen (per DOM-Messung bestätigt, z.B. "SN.PP.1"). Fix: die Box von
+    // "mjx-container" selbst auf ihre tatsächliche Inhaltsbreite schrumpfen ("width: fit-content") und
+    // per "margin: 0 auto" zentrieren - innerhalb dieser schrumpfenden Box bleibt "text-align: left"
+    // wirkungslos (kein Restplatz mehr vorhanden), wodurch die gewünschte linksbündige Ausrichtung
+    // mehrzeiliger Formeln zueinander erhalten bleibt, während der gesamte Formelblock wieder wie vor
+    // MathJax 4 mittig in seiner Tabellenzelle steht.
+    echo '    <style>'."\n";
+    echo '      mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }'."\n";
+    echo '    </style>'."\n";
   }
   
   
