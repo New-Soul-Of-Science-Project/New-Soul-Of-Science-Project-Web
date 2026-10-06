@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 05.10.2026, 19:00h
+  // #: Stand: 06.10.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261006:  +:  "Sc_f_equation_latex_str_html":  Wrap every formula's raw LaTeX source in '<span class="mjx-pending">...</span>' before MathJax processes it, and add matching ".mjx-pending"/".mjx-pending mjx-container" CSS rules in "Sc_f_HeaderElements" - without this, the raw, unprocessed text (all the "\definecolor{...} \color{...} \left\{ ... \\\ \qquad..." commands) is briefly visible in the page exactly as typed, until MathJax's JS finishes replacing it with the actual rendered "<mjx-container>" (classic MathJax FOUC/"flash of unrendered content"); happens per-formula as each one is typeset, not only once for the whole page, so heavier pages (some have >1000 formulas) don't need a page-wide "hide body until fully done" delay. "visibility: hidden" on ".mjx-pending" hides the raw text; the override rule makes only the later-inserted "mjx-container" visible again (CSS "visibility" is inherited but can be overridden by a descendant, unlike e.g. "display"). FOLLOW-UP FIX (same day, Wolfgang caught this): "visibility: hidden" alone still reserves the full layout space of the hidden text, and since the raw LaTeX source is, as plain text, far wider/taller than the eventual compact rendered formula, this left a large empty gap in running body text (and could transiently widen auto-sized table cells) that suddenly collapsed once the formula appeared - fixed by additionally setting "font-size: 0.01em" on ".mjx-pending" (collapses the hidden text's box to near-zero, since glyph width scales with font-size) and the exact inverse "font-size: 100em" on the override rule (0.01 * 100 = 1), which mathematically restores the original, context-correct font size (body text vs. headline vs. "derivation" paragraphs, etc.) instead of flattening every formula to one fixed absolute size the way a plain px/rem value would.
   //           20261005:  *:  "Sc_f_HeaderElements":  Add "svg: { displayAlign: \"left\" }" to the MathJax config - MathJax 4 is the first version to actually implement MathML3-style line-break layout (per the official "What's new in v4.0" docs): every line produced by a bare "\\" linebreak (i.e. NOT inside "array"/"aligned"/"cases") now gets an "indentalign" that resolves to "displayAlign", which defaults to "center" - so multi-line equations that used to stack LEFT-aligned relative to each other (MathJax 2/3 never implemented this MathML3 behavior, so they "accidentally" stayed left-aligned via older layout code) now centered each line instead, breaking Wolfgang's existing "\qquad"-indentation formatting on dozens of equations across the site (e.g. "SN.SinK.RZ.2", "SN.PP.75"). Root-caused via direct MathJax-src source inspection ("Wrapper.ts", "processIndent()") - confirmed there is no way to fix just the inter-line alignment via a macro ("\\" is wired directly to the TeX-parser's stack-manipulating "CrLaTeX" method, not redefinable via "macros: {...}"; "\breakAlign{...}" explicitly throws outside an array/alignment environment). First attempt placed "displayAlign" under the generic "options" block (the menu/accessibility-extension namespace) - silently ignored, no error, confirmed still broken on "SN.PP.75" (varying-width lines revealed the centering that "SN.SinK.RZ.2" alone could not, since all its broken lines happen to have near-equal width). Checked the vendored bundle directly ("displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." all appear together as one options object) - "displayAlign" is a default option of the OUTPUT JAX itself (shared by "chtml"/"svg"), so it belongs in the output-specific config block, here "svg" (this site's active output format) - moved there, which fixed the relative-line alignment (verified live on "SN.SinK.RZ.2" and "SN.PP.75": lines with equal "\qquad" now share one left edge regardless of content width) and the existing 9-page regression suite stayed at 0 "merror". NOTE: this alone also pushed EVERY display equation on the site flush-left in its table cell, single-line ones included (see the following entry's fix) - "displayAlign" is not limited to inter-line alignment, it is also how MathJax positions the whole equation box.
   //                      *:  "Sc_f_HeaderElements":  Add a "<style>mjx-container[display=\"true\"] { width: fit-content; margin-left: auto; margin-right: auto; }</style>" rule, right after the MathJax script tags - the "svg.displayAlign: left" fix above (needed for correct inter-line alignment, see entry above) sets "text-align/justify-content: left" on MathJax's own "mjx-container" element, which by default spans the FULL width of its surrounding table cell - so instead of just straightening out the relative line alignment, it silently pushed literally every equation on the site (single-line ones too, e.g. "SN.PP.1") flush against the left edge of its cell, discarding the page-level centering that used to come for free when "displayAlign" was "center". Wolfgang caught this by eye ("die SVGs sind nicht in der Tabelle zentriert") after the previous entry's fix had seemingly "basically worked". Fix: shrink "mjx-container" down to the width of its actual SVG content ("width: fit-content") and center that now-tightly-fit box with "margin: 0 auto" - inside a box with no leftover width, "text-align: left" has nothing left to act on, so the desired inter-line left-alignment from the entry above is completely unaffected, while the equation block as a whole is centered in its cell again exactly as before MathJax 4. Verified live: "SN.PP.1" (single-line) and "SN.PP.75"/"SN.SinK.RZ.2" (multi-line) all re-centered (SVG center matches table-cell center to within half a pixel), 9-page regression suite still 0 "merror".
   //                      *:  "$Sc_g_equation_replace_ary":  Add 'ω' -> '\upomega', 'π' -> '\uppi' - MathJax 4 (unlike MathJax 2) renders a directly typed Unicode "ω"/"π" italic by default, same as the "\omega"/"\pi" commands; forces these two back to upright to match the old behavior and the existing "\s" convention (superiale Basis), without affecting "\omega"/"\pi" themselves, which stay italic as intended. The first attempt, '\mathrm{\omega}', did NOT work (confirmed visually: still italic) - STIX2 apparently has no upright glyph reachable via "mathvariant=normal" for lowercase Greek; switched to the "upgreek" package's "\upomega"/"\uppi" instead, which is the LaTeX-standard, semantically correct way to get upright lowercase Greek letters and works reliably here - required adding "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" (see "Sc_f_HeaderElements" below). NOTE: other Greek letters are also typed directly in the content (φ, ν, λ, ρ, γ, ζ) - not touched here, since only "ω" and "π" were reported as regressed; may need the same fix if they turn out to have the same problem.
@@ -396,8 +397,29 @@
     // wirkungslos (kein Restplatz mehr vorhanden), wodurch die gewünschte linksbündige Ausrichtung
     // mehrzeiliger Formeln zueinander erhalten bleibt, während der gesamte Formelblock wieder wie vor
     // MathJax 4 mittig in seiner Tabellenzelle steht.
+    // #: "mjx-pending" (s. "Sc_f_equation_latex_str_html") umhüllt jede Formel-Quelle, solange sie noch
+    // roher, unverarbeiteter LaTeX-Text ist - "visibility: hidden" blendet diesen Text beim Seitenaufbau
+    // aus, bevor MathJax ihn verarbeitet hat (verhindert das kurze Aufblitzen der rohen "\color{...}
+    // \definecolor{...} ..."-Befehle). Die zweite Regel macht NUR das von MathJax eingesetzte
+    // "<mjx-container>" sofort wieder sichtbar, sobald es im DOM erscheint (CSS-"visibility" wird von
+    // Nachfahren überschrieben, auch wenn ein Vorfahre sie auf "hidden" gesetzt hat) - pro Formel
+    // einzeln und unmittelbar, ohne auf das Typesetting der kompletten Seite warten zu müssen (einige
+    // Seiten enthalten >1000 Formeln). WICHTIG: "visibility: hidden" blendet zwar aus, reserviert aber
+    // weiterhin den vollen Platz des verstecken Inhalts - der rohe LaTeX-Quelltext (mit allen Befehlen
+    // wie "\definecolor{...} \color{...} ...") ist als reiner Text bei normaler Schriftgröße deutlich
+    // breiter/länger als die später gesetzte, kompakte Formel, wodurch im Fließtext bzw. in der Tabelle
+    // eine auffällig große Leerstelle entsteht, die beim Erscheinen der Formel plötzlich zusammenschrumpft
+    // (von Wolfgang bemerkt: "Im Fließtext werden recht große Leerlücken gelassen"). Fix: zusätzlich
+    // "font-size: 0.01em" auf "mjx-pending" setzen, wodurch die Breite/Höhe des rohen Textes auf fast
+    // null kollabiert (Buchstabenbreite skaliert mit der Schriftgröße) - und auf "mjx-container" exakt
+    // gegenläufig "font-size: 100em" setzen (0.01 * 100 = 1), was die ursprüngliche, zum jeweiligen
+    // Kontext passende Schriftgröße (Fließtext, Überschrift, "derivation"-Absatz, etc.) rechnerisch exakt
+    // wiederherstellt, statt sie - wie ein fixer Px/Rem-Wert es täte - überall auf dieselbe Größe zu
+    // vereinheitlichen.
     echo '    <style>'."\n";
     echo '      mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }'."\n";
+    echo '      .mjx-pending { visibility: hidden; font-size: 0.01em; }'."\n";
+    echo '      .mjx-pending mjx-container { visibility: visible; font-size: 100em; }'."\n";
     echo '    </style>'."\n";
   }
   
@@ -939,7 +961,14 @@
         //$html_ret = '<span style="color: #'.$latex_color.'">\\['.$latex_str.'\\]</span>';  // #!: Does not work for the color!
         //$html_ret = '\\[ \\definecolor{formcolor}{HTML}{'.$latex_color.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: MathJax does not support HTML colors!
         //$html_ret = '<div style="font-size: 200%;"> \\[ \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\] </div>'."\n";  // #!: Font-size like that does not work. It is corrected afterwards by MathJax to normal.
-        $html_ret = (($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]'."\n");
+        // #: "mjx-pending" wird per CSS standardmäßig unsichtbar gesetzt, bis MathJax den enthaltenen
+        // rohen LaTeX-Quelltext durch "<mjx-container>" ersetzt hat - dafür macht eine Gegenregel genau
+        // dieses eingefügte Element sofort wieder sichtbar (CSS-"visibility"-Vererbung wird von
+        // Nachfahren überschrieben). Verhindert das kurze Aufblitzen der rohen "\definecolor{...}
+        // \color{...} ..."-Befehle beim Seitenaufbau, bevor MathJax fertig ist - pro Formel einzeln,
+        // ohne auf das Typesetting der kompletten (teils >1000 Formeln umfassenden) Seite warten zu
+        // müssen (siehe "mjx-pending"-CSS-Regel in "Sc_f_HeaderElements").
+        $html_ret = '<span class="mjx-pending">'.(($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]').'</span>'.(($style == 'inline') ? '' : "\n");
         //$html_ret = '\\[ \\large \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: It is a bit to big.
         break;
 
