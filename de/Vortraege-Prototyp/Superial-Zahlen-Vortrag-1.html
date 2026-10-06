@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Motivation und Grundidee der Superial-Zahlen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="../../share/js/reveal/dist/reset.css">
+<link rel="stylesheet" href="../../share/js/reveal/dist/reveal.css">
+<style>
+  :root {
+    --mw-bg: #d4d7c2;
+    --mw-header: #6e6e6e;
+    --mw-accent: #4a7a3a;
+  }
+  /* #: Proportionen (Kopfzeilenhöhe, Schriftgrößen-Verhältnisse, Abstands-Rhythmus) aus Wolfgangs
+     Keynote-Export (1920x1080, assets/*.json "accessibility"-Koordinaten) abgelesen und auf die
+     Reveal-Canvas-Größe 1920x1080 übertragen - bewusst als Richtwerte für ein stimmiges
+     Größenverhältnis, nicht als exakte Pixel-für-Pixel-Nachbildung (Inhalt bleibt normal fließender
+     Text/Listen, keine starren Textboxen wie im Keynote-Original). */
+  body { background: var(--mw-bg); }
+  .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 38px; }
+  .reveal .slides { text-align: left; }
+  .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
+  .reveal h1, .reveal h2, .reveal h3 { color: #000; text-transform: none; text-align: left; }
+  .reveal h2 { font-size: 1.5em; margin-bottom: 0.9em; }
+  .reveal ul { display: block; margin-left: 36px; }
+  .reveal ul ul { margin-top: 0.5em; margin-bottom: 0.5em; }
+  .reveal li { margin-bottom: 0.8em; line-height: 1.3; }
+  .reveal p { margin-bottom: 0.8em; line-height: 1.3; }
+  .reveal small { font-size: 0.65em; opacity: 0.85; }
+  mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }
+
+  /* Kopfleiste: graue Bar oben mit Logo + Brotkrumen (Keynote: Bar ~150px, Logo ~122px, Text ab x=286) */
+  .mw-header {
+    position: absolute; top: 0; left: 0; right: 0; height: 150px;
+    background: var(--mw-header); color: #fff;
+    display: flex; align-items: center; padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .mw-header .mw-logo, .mw-cover-header .mw-logo {
+    width: 110px; height: 110px; border-radius: 50%;
+    margin-right: 40px; flex-shrink: 0;
+  }
+  .mw-header .mw-logo img, .mw-cover-header .mw-logo img { width: 100%; height: 100%; border-radius: 50%; display: block; }
+  .mw-header .mw-titles h3 { color: #fff; margin: 0; font-size: 0.95em; }
+  .mw-header .mw-titles .mw-sub { font-size: 0.6em; opacity: 0.9; margin-top: 0.2em; }
+
+  .reveal .slides section.cover {
+    padding: 190px 100px 0 100px !important; box-sizing: border-box;
+  }
+  .reveal .slides section.cover .mw-cover-header {
+    position: absolute; top: 0; left: 0; right: 0; height: 150px;
+    background: var(--mw-header);
+  }
+  .reveal .slides section.cover .mw-cover-header .mw-logo {
+    position: absolute; left: 50px; top: 20px;
+  }
+  /* Folie 1: riesiger Haupttitel "Akademie" (Keynote: ~4x Fließtextgröße), darüber klein "Menschlich
+     Wirtschaften e.G.", darunter "Mathematik" und der Vortragsreihen-Block in Fließtextgröße. */
+  .mw-cover-sub { font-size: 0.85em; margin: 0 0 0.2em 0; }
+  .mw-cover-maintitle { font-size: 4em; margin: 0 0 0.5em 0; line-height: 1; }
+  .mw-cover-eyebrow { font-size: 1em; opacity: 0.8; margin: 0.6em 0 0 0; }
+  .mw-cover-talk { font-size: 1em; margin-top: 0.5em; line-height: 1.4; }
+  /* Folie 2+: Vortragstitel-Folie - Titel deutlich größer als normale Folienüberschriften (Keynote:
+     ~1.3x), darunter Vortragsreihen-Info in etwas größerer, dann normaler Fließtextgröße. */
+  .reveal .slides section.cover h1 { font-size: 2em; margin: 0 0 0.5em 0; line-height: 1.2; }
+  .reveal .slides section.cover .mw-talk-title p { font-size: 1.2em; line-height: 1.4; }
+  .reveal .slides section.cover .mw-talk-title { margin-top: 0.8em; }
+
+  .mw-about-photo {
+    position: absolute; right: 100px; top: 230px; width: 280px; height: 280px;
+    border-radius: 8px; object-fit: cover;
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Folie 1: Titelblatt -->
+    <section class="cover">
+      <div class="mw-cover-header">
+        <div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div>
+      </div>
+      <div class="mw-cover-sub">Menschlich Wirtschaften e.G.</div>
+      <h1 class="mw-cover-maintitle">Akademie</h1>
+      <div class="mw-cover-eyebrow">Mathematik</div>
+      <div class="mw-cover-talk">
+        <p><em>Vortragsreihe</em><br>
+        <strong>Superial-Zahlen (SN)</strong><br>
+        Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche</p>
+      </div>
+    </section>
+
+    <!-- Folie 2: Vortragstitel -->
+    <section class="cover">
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Mathematik</div></div></div>
+      <h1>Motivation und Grundidee der Superial-Zahlen</h1>
+      <div class="mw-talk-title">
+        <p><em>Vortragsreihe</em><br>
+        <strong>Superial-Zahlen (SN)</strong><br>
+        Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche – <em>Teil 1</em></p>
+      </div>
+      <p style="margin-top: 2em;">Vortrag und Dialog – <em>Wolfgang Huß, X 2026</em></p>
+    </section>
+
+    <!-- Folie 3: Über mich -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Über mich</h2>
+      <ul>
+        <li>Ich:
+          <ul>
+            <li>heiße Wolfgang Huß, komme aus Hamburg und bin 1968 geboren</li>
+            <li>bin Programmierer in einem Programmierer-Kollektiv</li>
+            <li>bin Philosoph sowie Forscher und mache Internetseiten über meine Ideen und Arbeiten</li>
+          </ul>
+        </li>
+      </ul>
+      <img class="mw-about-photo" src="images/wolfgang-huss-foto.jpg" alt="Wolfgang Hu&szlig;">
+    </section>
+
+    <!-- Folie 4 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Motivation und Grundidee der Superial-Zahlen (SN)</h2>
+      <ul>
+        <li>Skalen, infinitesimale Schritte und eine neue Rechensprache</li>
+        <li><em>Heute:</em> Motivation, Arbeitsintuition, erste Rechenbeispiele</li>
+        <li><em>Später:</em>
+          <ul>
+            <li>vollständige Definition der neuen superialen Basis \( \s \) und volle Axiomatik</li>
+            <li>Analysis, Ableitung und Integral</li>
+            <li>zahlentheoretische Bedeutung</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Folie 5 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Warum Mathematik Zahlbereiche erweitert</h2>
+      <p>Neue Zahlen entstehen aus mathematischem Bedarf.<br>
+      Zahlerweiterungen sind in der Mathematik normal, wenn neue Rechen- oder Strukturprobleme auftreten:</p>
+      <p style="text-align: center; margin: 1em 0;">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \]</p>
+      <ul>
+        <li>\( \mathbb{N} \): Zählen ermöglichen</li>
+        <li>\( \mathbb{Z} \): Subtrahieren ermöglichen</li>
+        <li>\( \mathbb{Q} \): Division ermöglichen</li>
+        <li>\( \mathbb{R} \): Grenzwerte / Kontinuität / Vollständigkeit</li>
+        <li>\( \mathbb{C} \): Gleichungen lösen wie \( x^2 + 1 = 0 \)</li>
+      </ul>
+    </section>
+
+    <!-- Folie 6 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Die Analysis spricht schon in Skalen</h2>
+      <p>Unsere Intuition arbeitet ständig mit „klein" und „sehr klein" oder auch „sehr groß":</p>
+      <ul>
+        <li>kleine Änderungen</li>
+        <li>lokales Verhalten &nbsp;&nbsp; \( \Delta f \approx f'(x)\, \Delta x \)</li>
+        <li>vernachlässigbare Terme &nbsp;&nbsp; \( \text{Fläche} \approx \sum f(x_k)\, \Delta x \)</li>
+        <li>erster / zweiter Ordnung</li>
+        <li>Summation über viele kleine Schritte</li>
+      </ul>
+      <p>Kann man dafür eine präzise, skalenorientierte Rechensprache aufbauen?</p>
+    </section>
+
+    <!-- Folie 7 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Kein Gegenmodell, sondern neue Formalsprache</h2>
+      <p>Superial-Zahlen ergänzen die klassische Analysis — ersetzen sie nicht:</p>
+      <ul>
+        <li>Klassische Analysis:
+          <ul><li>rigoros</li><li>bewährt</li><li>universell</li></ul>
+        </li>
+        <li>Superial-Zahlen-Perspektive:
+          <ul><li>skalenorientiertes Rechnen</li><li>direkte Schritt-Notation</li><li>neue Struktur- und Denkwege</li></ul>
+        </li>
+      </ul>
+      <p>Es geht nicht um „besser oder schlechter", sondern um eine andere formale Sicht auf ähnliche mathematische Phänomene.</p>
+    </section>
+
+    <!-- Folie 8 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Leitfrage der Superial-Zahlen</h2>
+      <p>Was sollen die Superial-Zahlen leisten?</p>
+      <p style="text-align: center; font-style: italic;">Wie kann man über alle Skalen hinweg formal rechnen?</p>
+      <ul>
+        <li>im <em>Unendlichkleinen</em></li>
+        <li>im <em>Endlichen</em></li>
+        <li>im <em>Unendlichgroßen</em></li>
+        <li>mit konsistenter Skalierung</li>
+        <li>mit Bezug zu Differentialen und Integralen</li>
+      </ul>
+    </section>
+
+    <!-- Folie 9 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Arbeitsintuition der Superial-Zahlen</h2>
+      <p>Was sollen die Superial-Zahlen ermöglichen?</p>
+      <ul>
+        <li><em>Vorwärts und rückwärts zählen bis ins Unendliche</em></li>
+        <li><em>Auch in unendlich kleinen Schritten</em> (wichtige Intuition für Integrale)</li>
+        <li>Reell bekannte Zahlenmengen werden erweitert:
+          <ul><li>ins <em>Unendlichgroße</em></li><li>ins <em>Unendlichkleine</em></li></ul>
+        </li>
+        <li><em>Absolut und unendlich skalierbar</em> (im Sinne einer durchgehenden Skalenhierarchie)</li>
+      </ul>
+      <p style="text-align: center;">\[ \cdots \ll \s^{-2} \ll \s^{-1} \ll \s^{0} = 1 \ll \s^{1} = \s \ll \s^{2} \ll \cdots \]</p>
+      <p><small>Heute erst einmal als Arbeitsintuition — die präzise Definition und die innere Struktur der SN folgen später.</small></p>
+    </section>
+
+    <!-- Folie 10 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Arbeitsnotation für den Einstieg</h2>
+      <p>Skalierung:</p>
+      <ul>
+        <li>\( \s^{-3} \): sehr viel kleiner als \( \s^{-1} \)</li>
+        <li>\( \s^{-2} \): viel kleiner als \( \s^{-1} \)</li>
+        <li>\( \s^{-1} \): infinitesimaler Schritt</li>
+        <li>\( \s^{0} = 1 \): endliche / gewöhnliche Skala</li>
+        <li>\( \s^{1} = \s \): unendlich große Skalen</li>
+      </ul>
+      <p>Heute sehen wir \( \s \) als ein Rechensymbol.<br>
+      Spätere Herleitung über: Integral → infinitesimales Zählen → Zahlentheorie von \( \s \)</p>
+    </section>
+
+    <!-- Folie 11 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Brücke zur bekannten Notation</h2>
+      <ul>
+        <li>Wer die \( \varepsilon \)-Notation kennt, kann \( \s^{-1} \) zunächst wie einen infinitesimalen Schritt lesen.</li>
+        <li>Wir bleiben aber bewusst bei \( \s^{-1} \), weil die SN-Notation die Skalenstruktur sichtbar macht.</li>
+      </ul>
+    </section>
+
+    <!-- Folie 12 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Erste Rechenintuition mit \( \s^{-1} \)</h2>
+      <p>Rechnen mit einem infinitesimalen Schritt:</p>
+      \[ \left( x + \s^{-1} \right)^{2} \;\;=\;\; x^{2} + 2x\,\s^{-1} + \s^{-2} \]
+      <p>Skalenlesbarkeit der Terme:</p>
+      <ul>
+        <li>\( x^2 \): endliche Hauptskala</li>
+        <li>\( 2x\,\s^{-1} \): infinitesimaler Korrekturterm 1. Ordnung</li>
+        <li>\( \s^{-2} \): noch kleinerer Term 2. Ordnung</li>
+      </ul>
+      <p>Die Potenzen von \( \s \) sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
+    </section>
+
+    <!-- Folie 13 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Ableitungsvorschau über Skalen</h2>
+      <p>Von der Änderung zum linearen Anteil (Abbildung)</p>
+      <p>Für \( f(x) = x^2 \):</p>
+      \[
+        \begin{array}{l}
+        f'(x) \;=\; \dfrac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; \dfrac{ (x + \s^{-1})^{2} - x^{2} }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; \dfrac{ (x^{2} + 2x\,\s^{-1} + \s^{-2}) - x^{2} }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; \dfrac{ 2x\,\s^{-1} + \s^{-2} }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; 2x + \s^{-1} \\[0.8em]
+        \phantom{f'(x)} \;\approx\; 2x \quad \text{(klassische Ableitung)}
+        \end{array}
+      \]
+      <p>Der lineare Anteil trägt die Ableitungsidee.</p>
+    </section>
+
+    <!-- Folie 14 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Vom Ableiten zum Integrieren (Vorgeschmack)</h2>
+      <p>Dieselbe Schrittidee führt später zum Integral:</p>
+      <ul>
+        <li>Ableitung: Änderung bei einem infinitesimalen Schritt</li>
+        <li>Integral: Summation über sehr viele (infinite) sehr kleine (infinitesimale) Schritte</li>
+        <li>Daraus entsteht die Idee des infinitesimalen Zählens:</li>
+      </ul>
+      \[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \qquad\qquad \Delta x \sim \s^{-1} \;\;\Rightarrow\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]
+      <p><small>Der genaue Zusammenhang wird später entwickelt.<br>
+      Heute genügt die Leitidee: <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></small></p>
+    </section>
+
+    <!-- Folie 15 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Warum \( \s \) heute schon verwendet wird</h2>
+      <p>Arbeitssymbol jetzt — tiefere Begründung später:</p>
+      <p style="text-align: center; font-style: italic;">(heute) Rechenidee zeigen &nbsp;⇒&nbsp; (später) Struktur begründen</p>
+      <ul>
+        <li>\( \s \) wird heute als regelgeleitetes Arbeitssymbol verwendet</li>
+        <li>Die innere Konstruktion von \( \s \) wird heute noch nicht vorausgesetzt</li>
+        <li>Spätere Herleitung: <em>Integral → infinitesimales Zählen → zahlentheoretische Anforderungen</em></li>
+      </ul>
+      <p><small><em>Didaktische Analogie:</em> Wie bei \( i \) in den komplexen Zahlen kann ein neues Symbol zunächst über Regeln eingeführt werden — seine Tragweite zeigt sich in seinen Rechenregeln, ebenso wie bei \( \s \).</small></p>
+    </section>
+
+    <!-- Folie 16 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Von der Intuition zur Theorie</h2>
+      <p>Welche Fragen die Theorie der Superial-Zahlen beantworten muss:</p>
+      <ol>
+        <li>Was sind die Objekte der SN genau?</li>
+        <li>Welche Rechenregeln gelten für \( \s \) und seine Potenzen?</li>
+        <li>Wie werden Skalen formal verglichen?</li>
+        <li>Wie entstehen Ableitungen und Integrale rigoros?</li>
+        <li>Warum hat \( \s \) seine spezifische innere Struktur?</li>
+      </ol>
+      <p><em>Ziel der Reihe:</em> Schrittweise von Arbeitsintuition zu präziser Theorie.</p>
+    </section>
+
+    <!-- Folie 17 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Fahrplan der Vortragsreihe</h2>
+      <p>Wie es weitergeht:</p>
+      <ul>
+        <li><em>Vortrag 1:</em> Motivation und Grundidee der Superial-Zahlen ✓</li>
+        <li><em>Vortrag 2:</em> Skalenstruktur und Rechnen (Grundlagen)</li>
+        <li><em>Vortrag 3:</em> Von Ableitung zum Integral — Integral und infinitesimales Zählen</li>
+        <li><em>Vortrag 4:</em> Zahlentheoretische Anforderungen und Struktur von \( \s \)</li>
+        <li><em>Vortrag 5+:</em> Differentialrechnung / Integrale / Vertiefungen / zentrale Sätze</li>
+      </ul>
+    </section>
+
+    <!-- Folie 18 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Zusammenfassung</h2>
+      <p>Was wir heute mitnehmen:</p>
+      <ul>
+        <li>Die Superial-Zahlen motivieren eine skalenorientierte Rechensprache</li>
+        <li>Wir verwenden \( \s \) und \( \s^{-1} \) bereits als Arbeitsnotation</li>
+        <li>Erste Rechenbeispiele zeigen eine Skalen- bzw. Ordnungshierarchie</li>
+        <li>Ableitung und Integral sind zwei Richtungen derselben Schrittidee</li>
+        <li>Die tiefe Struktur von \( \s \) wird später hergeleitet</li>
+      </ul>
+    </section>
+
+    <!-- Folie 19 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Diskussion und Fragen</h2>
+      <p>Diskussion:</p>
+      <ul>
+        <li>Welche Eigenschaften müsste eine gute Skalenarithmetik mindestens haben?</li>
+        <li>Was ist als Einstieg wichtiger: Rechenbeispiele oder Axiome?</li>
+        <li>Ist „infinitesimales Zählen" eine hilfreiche Perspektive auf Integrale?</li>
+      </ul>
+      <p><em>Abschlussfrage:</em> Welche Erwartungen hättest du an eine Theorie, die vom Unendlichkleinen bis ins Unendlichgroße rechnen will?</p>
+    </section>
+
+    <!-- Folie 20 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Zu meiner Forschung</h2>
+      <ul style="font-size: 0.75em;">
+        <li>Superial-Zahlen: <a href="https://nsosp.org/de/Superial-Zahlen" target="_blank">nsosp.org/de/Superial-Zahlen</a></li>
+        <li>Fraktale Quanten-Fluss-Theorie: <a href="https://nsosp.org/de/Quanten-Fluss-Theorie" target="_blank">nsosp.org/de/Quanten-Fluss-Theorie</a></li>
+        <li>›Spannungsspiel des Lebens‹: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens" target="_blank">nsosp.org/de/Spannungsspiel-des-Lebens</a>
+          <ul>
+            <li>Der Care-Prozess: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php" target="_blank">Link</a></li>
+            <li>Die Psychosomatik: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+        <li>Naturphilosophie-Yoga: <a href="https://nsosp.org/de/Naturphilosophie-Yoga" target="_blank">nsosp.org/de/Naturphilosophie-Yoga</a>
+          <ul>
+            <li>Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-RaHorus-Sonne-Mond.php" target="_blank">Link</a></li>
+            <li>Phönix aus der Asche: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Folie 21 -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Zur Genossenschaft</h2>
+      <p>Website: <a href="https://menschlichwirtschaften.de" target="_blank">menschlichwirtschaften.de</a><br>
+      Akademie: <a href="https://menschlichwirtschaften.de/akademie" target="_blank">menschlichwirtschaften.de/akademie</a><br>
+      Vortragsreihe: <a href="https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen" target="_blank">Hermes Trismegistos – Weisheit in die Gegenwart bringen</a><br>
+      YouTube-Kanal: <a href="https://youtube.com/@MenschlichWirtschaften" target="_blank">@MenschlichWirtschaften</a></p>
+      <p>Wir freuen uns über Spenden:</p>
+      <p style="margin-left: 2em;">Menschlich Wirtschaften e.G.<br>
+      IBAN: DE43 1505 0500 0102 1079 04<br>
+      BIC: NOLADE21GRW<br>
+      Sparkasse Vorpommern</p>
+    </section>
+
+  </div>
+</div>
+
+<script src="../../share/js/reveal/dist/reveal.js"></script>
+<script src="../../share/js/reveal/dist/plugin/math.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+      packages: {"[+]": ["color", "cancel", "upgreek"]},
+      macros: { s: "\\mathrm{s}" }
+    },
+    svg: { displayAlign: "center" },
+    loader: {
+      paths: { mathjax: "../../share/js/mathjax" },
+      load: ["[tex]/color", "[tex]/cancel", "[tex]/upgreek"]
+    }
+  };
+
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    transition: 'slide',
+    width: 1920,
+    height: 1080,
+    mathjax4: {
+      mathjax: '../../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js',
+      tex: window.MathJax.tex,
+      svg: window.MathJax.svg,
+      loader: window.MathJax.loader
+    },
+    plugins: [ RevealMath.MathJax4 ]
+  });
+</script>
+</body>
+</html>
