@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 06.10.2026, 14:00h
+  // #: Stand: 06.10.2026, 21:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261006:  >:  "Sc_f_HeaderElements", "Sc_f_equation_latex_str_html":  Replace the blur-to-sharp ".mjx-pending" effect (see entry below) with "Fade + Scale" ("Pop-in": starts transparent and slightly shrunk, grows to normal opacity/size) - again on Wolfgang's request, testing yet another transition style. Several follow-up fixes needed to get this working correctly everywhere: (1) a first attempt set "display: inline-block" on ".mjx-pending" itself so "transform: scale(...)" would apply (plain "inline" elements ignore "transform") - this collided with "text-indent: 32px" on "tools-class-text" paragraphs: Chrome incorrectly counts a first-line-indent as part of an inline-block's own width when it's the first element on that line, leaving a 32px gap to the right of inline formulas at a paragraph's start (Wolfgang: "Bei Text-Inlines bleibt links ein großer weißer Rand") - fixed by moving "transform" to a selector targeting "mjx-container" directly (MathJax's own element, not artificially forced to "inline-block") instead, leaving ".mjx-pending" as plain "inline". (2) The MutationObserver's class-toggle callback ran synchronously in the same tick as the "<mjx-container>" insertion, so the browser never painted the initial "scale(0.92)" state before jumping straight to "scale(1)" - no visible "pop" ever actually played; fixed first via double-nested "requestAnimationFrame", which worked in Chrome/Firefox. (3) Wolfgang found Safari-specific breakage beyond that: block/display formulas ("\[...\]") showed the scale-pop but NO opacity fade at all, and inline formulas sometimes flickered (fade in, vanish, fade in again) - root-caused to (a) ".mjx-pending" being a plain "<span>" (inline) wrapping a block-rendered "<mjx-container>" for display equations (needed for the "width: fit-content; margin: auto" centering further up) - this inline-wrapping-block nesting is invalid/unusual HTML that Chrome/Firefox silently paper over but Safari composites differently, breaking the opacity transition - fixed with a new "mjx-pending-display" class (set only for "\[...\]", not inline "$...$") forcing "display: block" on the wrapper in that case; (b) Safari's well-known compositing-layer teardown glitch at the end of opacity/transform transitions on elements with SVG content, causing a brief flicker - fixed with "will-change: opacity"/"will-change: transform" so Safari keeps the layer stable throughout; (c) the double-"requestAnimationFrame" trick from (2) still weren't reliably committing a paint between state changes for MANY formulas inserted in quick succession in Safari (some formulas popped in "ad hoc" with no visible transition while others animated fine) - replaced with a combination of "setTimeout(..., 0)" (forces a real jump to the next browser task, guaranteeing a repaint opportunity between every single formula) plus a synchronous forced reflow ("void node.offsetWidth") inside it. (4) Finally, Wolfgang pointed out inline formulas (unlike display ones, which stay "super" as-is - already isolated in their own table row, so the size jump from raw text to compact formula barely registers there) reserved noticeably more horizontal space while pending than their final rendered size, since the pending phase shows the full LaTeX source as normal, unscaled text that only disrupts the surrounding reading flow for inline - brought back the "font-size: 0.01em" / "font-size: 100em" exact-inverse scaling trick from the entry below, now scoped to only ":not(.mjx-pending-display)" (i.e. inline only) via "mjx-pending:not(.mjx-pending-display)" selectors, so the invisible pending text collapses to near-zero footprint there while display formulas keep their already-working, untouched behavior. Verified live by Wolfgang in both Chrome and Safari after each fix; 9-page regression suite stayed at 0 "merror" throughout, and display-equation centering (from the "svg.displayAlign"/"width: fit-content" fixes above) remained unaffected by the new "display: block" rule.
   //           20261006:  >:  "Sc_f_HeaderElements":  Replace the "visibility: hidden" + "font-size: 0.01em/100em" scale trick for ".mjx-pending" (see entry below) with a visible, blurred placeholder that sharpens into the rendered formula - on Wolfgang's request, to test whether this looks nicer than just having formulas silently appear: ".mjx-pending" now keeps the raw LaTeX source visible at normal size but with "filter: blur(1.15px)" and "opacity: 0.5" (value tuned live together with Wolfgang: 3px -> 1.5px -> 0.8px -> 1.15px as a middle ground), so the large-gap problem from the entry below is back by design (accepted trade-off, raw text at normal size is wider/taller than the final formula) in exchange for a softer "defocus -> focus" look instead of the previous instant pop-in. IMPORTANT DISCOVERY: "filter" and "opacity" are compositing properties (unlike "visibility"), applied by the browser to an element's entire rendered subtree as a unit - a descendant (e.g. the "<mjx-container>" MathJax inserts) cannot "undo" an ancestor's "filter"/"opacity" via its own CSS rule the way it can override an inherited "visibility" value; a first attempt using exactly that pattern (".mjx-pending mjx-container { filter: none; opacity: 1; }") left formulas permanently blurred in running text (confirmed by Wolfgang: "Im Fließtext bleibt die Unschärfe"). Fixed by changing strategy entirely: a small "MutationObserver" (new inline "<script>" in "Sc_f_HeaderElements") watches for "<mjx-container>" elements being inserted anywhere in the page and, for each one, adds a "mjx-ready" class to its closest ".mjx-pending" ancestor - since this toggles the blur/opacity off on the SAME element they were set on (not asking a child to override them), it actually resolves, and the accompanying CSS "transition" on ".mjx-pending" animates the change smoothly. Works per-formula as each is typeset, same as the previous approach.
   //           20261006:  +:  "Sc_f_equation_latex_str_html":  Wrap every formula's raw LaTeX source in '<span class="mjx-pending">...</span>' before MathJax processes it, and add matching ".mjx-pending"/".mjx-pending mjx-container" CSS rules in "Sc_f_HeaderElements" - without this, the raw, unprocessed text (all the "\definecolor{...} \color{...} \left\{ ... \\\ \qquad..." commands) is briefly visible in the page exactly as typed, until MathJax's JS finishes replacing it with the actual rendered "<mjx-container>" (classic MathJax FOUC/"flash of unrendered content"); happens per-formula as each one is typeset, not only once for the whole page, so heavier pages (some have >1000 formulas) don't need a page-wide "hide body until fully done" delay. "visibility: hidden" on ".mjx-pending" hides the raw text; the override rule makes only the later-inserted "mjx-container" visible again (CSS "visibility" is inherited but can be overridden by a descendant, unlike e.g. "display"). FOLLOW-UP FIX (same day, Wolfgang caught this): "visibility: hidden" alone still reserves the full layout space of the hidden text, and since the raw LaTeX source is, as plain text, far wider/taller than the eventual compact rendered formula, this left a large empty gap in running body text (and could transiently widen auto-sized table cells) that suddenly collapsed once the formula appeared - fixed by additionally setting "font-size: 0.01em" on ".mjx-pending" (collapses the hidden text's box to near-zero, since glyph width scales with font-size) and the exact inverse "font-size: 100em" on the override rule (0.01 * 100 = 1), which mathematically restores the original, context-correct font size (body text vs. headline vs. "derivation" paragraphs, etc.) instead of flattening every formula to one fixed absolute size the way a plain px/rem value would.
   //           20261005:  *:  "Sc_f_HeaderElements":  Add "svg: { displayAlign: \"left\" }" to the MathJax config - MathJax 4 is the first version to actually implement MathML3-style line-break layout (per the official "What's new in v4.0" docs): every line produced by a bare "\\" linebreak (i.e. NOT inside "array"/"aligned"/"cases") now gets an "indentalign" that resolves to "displayAlign", which defaults to "center" - so multi-line equations that used to stack LEFT-aligned relative to each other (MathJax 2/3 never implemented this MathML3 behavior, so they "accidentally" stayed left-aligned via older layout code) now centered each line instead, breaking Wolfgang's existing "\qquad"-indentation formatting on dozens of equations across the site (e.g. "SN.SinK.RZ.2", "SN.PP.75"). Root-caused via direct MathJax-src source inspection ("Wrapper.ts", "processIndent()") - confirmed there is no way to fix just the inter-line alignment via a macro ("\\" is wired directly to the TeX-parser's stack-manipulating "CrLaTeX" method, not redefinable via "macros: {...}"; "\breakAlign{...}" explicitly throws outside an array/alignment environment). First attempt placed "displayAlign" under the generic "options" block (the menu/accessibility-extension namespace) - silently ignored, no error, confirmed still broken on "SN.PP.75" (varying-width lines revealed the centering that "SN.SinK.RZ.2" alone could not, since all its broken lines happen to have near-equal width). Checked the vendored bundle directly ("displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." all appear together as one options object) - "displayAlign" is a default option of the OUTPUT JAX itself (shared by "chtml"/"svg"), so it belongs in the output-specific config block, here "svg" (this site's active output format) - moved there, which fixed the relative-line alignment (verified live on "SN.SinK.RZ.2" and "SN.PP.75": lines with equal "\qquad" now share one left edge regardless of content width) and the existing 9-page regression suite stayed at 0 "merror". NOTE: this alone also pushed EVERY display equation on the site flush-left in its table cell, single-line ones included (see the following entry's fix) - "displayAlign" is not limited to inter-line alignment, it is also how MathJax positions the whole equation box.
@@ -399,24 +400,61 @@
     // mehrzeiliger Formeln zueinander erhalten bleibt, während der gesamte Formelblock wieder wie vor
     // MathJax 4 mittig in seiner Tabellenzelle steht.
     // #: "mjx-pending" (s. "Sc_f_equation_latex_str_html") umhüllt jede Formel-Quelle, solange sie noch
-    // roher, unverarbeiteter LaTeX-Text ist. EXPERIMENT (auf Wolfgangs Wunsch, zum Antesten): statt den
-    // Text komplett unsichtbar zu schalten, bleibt er in normaler Größe sichtbar, aber verschwommen/
-    // blass ("filter: blur(...)" + reduzierte "opacity"), bis MathJax fertig ist. ACHTUNG: dadurch kommt
-    // das zuvor gelöste Platzproblem zurück - der unscharfe Rohtext nimmt in normaler Schriftgröße nach
-    // wie vor deutlich mehr Platz ein als die spätere kompakte Formel (siehe Eintrag oben); das wurde
-    // hier bewusst in Kauf genommen, um den Unscharf-zu-scharf-Effekt zu testen. WICHTIG: "filter" und
-    // "opacity" sind - anders als "visibility" - Compositing-Eigenschaften: der Browser wendet sie auf
-    // das GESAMTE gerenderte Teilbaum-Ergebnis des Elements an, nicht Element für Element vererbt: ein
-    // Kind-Element kann sie NICHT per eigener Gegenregel "zurücksetzen" (bestätigt, nachdem die Formel
-    // im Fließtext dauerhaft unscharf blieb). Fix: statt einer reinen CSS-Gegenregel auf
-    // "mjx-container" entfernt ein kleiner "MutationObserver" (s.u.) die Klasse "mjx-pending" vom
-    // Wrapper SELBST, sobald MathJax darin ein "<mjx-container>" einsetzt - das löst den Blur/Opacity
-    // tatsächlich auf (da jetzt die Eigenschaften auf demselben Element geändert werden, nicht von einem
-    // Kind "überschrieben" werden müssen) und die "transition"-Regel sorgt für das weiche Einblenden.
+    // roher, unverarbeiteter LaTeX-Text ist. Wolfgang testet gerade mehrere Einblend-Effekte nacheinander
+    // live auf den echten Seiten (statt auf einer isolierten Testseite) - aktuell aktiv: Variante
+    // "Fade + Scale" ("Pop-in"): die Formel startet transparent und leicht verkleinert und wächst auf
+    // normale Deckkraft/Größe, sobald MathJax fertig ist. WICHTIG: "filter"/"opacity"/"transform" sind -
+    // anders als "visibility" - Compositing-Eigenschaften, die der Browser auf das GESAMTE gerenderte
+    // Teilbaum-Ergebnis des Elements anwendet, nicht Element für Element vererbt: ein Kind-Element kann
+    // sie NICHT per eigener Gegenregel "zurücksetzen" (bestätigt bei einem früheren Blur-Experiment, das
+    // dadurch dauerhaft unscharf blieb). Daher entfernt ein kleiner "MutationObserver" (s.u.) die
+    // Zustands-Klasse vom Wrapper SELBST, sobald MathJax darin ein "<mjx-container>" einsetzt - das löst
+    // "opacity" auf dem Wrapper tatsächlich auf (da es auf demselben Element geändert wird, nicht von
+    // einem Kind überschrieben werden muss). "transform: scale(...)" sitzt dagegen bewusst NICHT auf
+    // "mjx-pending" selbst, sondern direkt auf dem künftigen "mjx-container" (per Nachfahren-Selektor,
+    // kein Vererbungsproblem, da es hier eine ganz normale, am Kind-Element selbst deklarierte Regel
+    // ist): ein erster Versuch setzte "display: inline-block" auf "mjx-pending", damit "transform"
+    // überhaupt greift (reine "inline"-Elemente ignorieren "transform" sonst komplett) - das kollidierte
+    // aber mit "text-indent: 32px" auf den "tools-class-text"-Absätzen: steht ein "inline-block" als
+    // ERSTES Element in einer so eingerückten Zeile, rechnet Chrome den Erstzeilen-Einzug fälschlich in
+    // die eigene Box-Breite des Elements hinein statt ihn nur zu positionieren, wodurch rechts von der
+    // fertigen Formel ein 32px breiter Leerraum übrig blieb (von Wolfgang bemerkt: "Bei Text-Inlines
+    // bleibt links ein großer weißer Rand" - die Formel selbst stand also 32px zu weit rechts in ihrer
+    // eigenen, zu breiten Box). Da "mjx-container" nicht künstlich auf "inline-block" gesetzt werden
+    // muss (MathJax bringt dafür bereits eigenes, dafür getestetes CSS mit), tritt der Bug dort nicht
+    // auf - "mjx-pending" bleibt normales "inline" und ist vom Problem nicht mehr betroffen.
+    // SAFARI-SPEZIFISCHE NACHBESSERUNGEN (Firefox und Chrome zeigten den Effekt von Anfang an korrekt,
+    // bestätigt von Wolfgang): (1) Bei Block-Formeln ("\[...\]") fehlte in Safari das Opacity-Fade
+    // komplett, nur der Scale-Pop war sichtbar - vermutlich weil "mjx-pending" (als "<span>" von Haus
+    // aus "inline") dort ein von MathJax selbst block-artig gerendertes "<mjx-container>" umschließt
+    // (nötig für die "width: fit-content; margin: auto"-Zentrierung weiter oben) - ein "inline"-Element
+    // mit block-artigem Kindelement ist ungültige/unübliche Verschachtelung, die Chrome/Firefox
+    // stillschweigend "reparieren", Safari aber offenbar beim Compositing der Opacity anders behandelt.
+    // Fix: eine zusätzliche Klasse "mjx-pending-display" (nur bei "\[...\]" gesetzt, s.
+    // "Sc_f_equation_latex_str_html") macht den Wrapper in diesem Fall explizit "display: block" - passt
+    // ohnehin zur umgebenden Tabellenzelle. (2) Inline-Formeln flackerten in Safari manchmal kurz am Ende
+    // des Übergangs - eine bekannte WebKit-Eigenheit beim Abbau der Compositing-Ebene nach Abschluss
+    // einer Opacity-/Transform-Transition auf Elementen mit SVG-Inhalt. Fix: "will-change" auf die
+    // jeweils animierte Eigenschaft, damit Safari die Ebene über die gesamte Dauer stabil hält statt sie
+    // am Ende neu aufzubauen.
     echo '    <style>'."\n";
     echo '      mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }'."\n";
-    echo '      .mjx-pending { filter: blur(1.15px); opacity: 0.5; transition: filter 0.3s ease, opacity 0.3s ease; }'."\n";
-    echo '      .mjx-pending.mjx-ready { filter: none; opacity: 1; }'."\n";
+    echo '      .mjx-pending { opacity: 0; transition: opacity 2s ease; will-change: opacity; }'."\n";
+    echo '      .mjx-pending.mjx-ready { opacity: 1; }'."\n";
+    echo '      .mjx-pending mjx-container { transform: scale(0.92); transition: transform 2s ease; will-change: transform; }'."\n";
+    echo '      .mjx-pending.mjx-ready mjx-container { transform: scale(1); }'."\n";
+    echo '      .mjx-pending-display { display: block; }'."\n";
+    // #: Für Block-Formeln ("mjx-pending-display") wurde der Platzbedarf des rohen Rohtexts bewusst in
+    // Kauf genommen (eigener Tabellen-/Zeilenkontext, der Größensprung fällt dort kaum auf). Bei
+    // Inline-Formeln dagegen verschiebt der breitere Rohtext den umgebenden Fließtext sichtbar störender
+    // (mehr/weniger Zeilenumbrüche je nach Zustand) - dafür hier derselbe Skalierungstrick wie beim
+    // allerersten (rein unsichtbaren) Ansatz: "font-size" auf einen winzigen Wert schrumpfen (kollabiert
+    // die Breite des unsichtbaren - "opacity: 0" bleibt unverändert bestehen - Rohtexts auf nahezu null)
+    // und auf "mjx-container" exakt gegenläufig wieder hochskalieren (0.01 * 100 = 1), was unabhängig vom
+    // Fade-Zustand IMMER gilt, sobald "mjx-container" existiert - die Box hat dadurch schon beim
+    // Erscheinen ihre finale Größe, nur die Opacity/der Scale-Pop blenden innerhalb dieser Box noch ein.
+    echo '      .mjx-pending:not(.mjx-pending-display) { font-size: 0.01em; }'."\n";
+    echo '      .mjx-pending:not(.mjx-pending-display) mjx-container { font-size: 100em; }'."\n";
     echo '    </style>'."\n";
     echo '    <script>'."\n";
     echo '      new MutationObserver(function(mutations) {'."\n";
@@ -424,7 +462,23 @@
     echo '          mutation.addedNodes.forEach(function(node) {'."\n";
     echo '            if (node.nodeType === 1 && node.tagName === "MJX-CONTAINER") {'."\n";
     echo '              var pending = node.closest(".mjx-pending");'."\n";
-    echo '              if (pending) pending.classList.add("mjx-ready");'."\n";
+    // #!!!: Browser müssen die "scale(0.92)"-Startposition des neu eingefügten "<mjx-container>" erst
+    // TATSÄCHLICH gerendert haben, bevor die Klassenänderung zu "scale(1)" einen sichtbaren Übergang
+    // erzeugen kann - ein doppelt verschachteltes "requestAnimationFrame" (vorherige Version) reichte
+    // dafür in Safari nicht zuverlässig aus (bestätigt von Wolfgang: in Firefox/Chrome lief der Effekt
+    // sauber, in Safari fehlte teils das Fade bei Block-Formeln komplett, bei Inline-Formeln flackerte
+    // es sogar (ein-/aus-/wieder einblenden) - beides deutet auf abweichendes Rendering-/Timing-Verhalten
+    // von Safaris SVG-Handling bei dynamisch eingefügten Knoten hin, siehe bereits dokumentierte
+    // MathJax/Safari-Eigenheiten in dieser Datei). Ein rein synchroner erzwungener Reflow ("void
+    // node.offsetWidth") behob das Flackern, reichte aber bei SCHNELL AUFEINANDERFOLGENDEN Formeln immer
+    // noch nicht durchgehend aus (von Wolfgang bestätigt: manche Formeln blendeten weiterhin sauber ein,
+    // andere erschienen "ad hoc" ohne sichtbaren Übergang) - Safari scheint mehrere, dicht
+    // hintereinander erzwungene Reflows ohne dazwischenliegenden Repaint zu bündeln/wegzuoptimieren.
+    // Fix: zusätzlich in "setTimeout(..., 0)" verpackt - das erzwingt einen echten Sprung in die nächste
+    // Browser-Task-Queue (statt nur eines synchronen Reflows innerhalb desselben Tasks), wodurch der
+    // Browser zwischen JEDER einzelnen Formel Gelegenheit zum tatsächlichen Neuzeichnen bekommt, auch
+    // wenn MathJax viele Formeln kurz hintereinander einfügt.
+    echo '              if (pending) { var p = pending; setTimeout(function() { void node.offsetWidth; p.classList.add("mjx-ready"); }, 0); }'."\n";
     echo '            }'."\n";
     echo '          });'."\n";
     echo '        });'."\n";
@@ -976,8 +1030,10 @@
         // Nachfahren überschrieben). Verhindert das kurze Aufblitzen der rohen "\definecolor{...}
         // \color{...} ..."-Befehle beim Seitenaufbau, bevor MathJax fertig ist - pro Formel einzeln,
         // ohne auf das Typesetting der kompletten (teils >1000 Formeln umfassenden) Seite warten zu
-        // müssen (siehe "mjx-pending"-CSS-Regel in "Sc_f_HeaderElements").
-        $html_ret = '<span class="mjx-pending">'.(($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]').'</span>'.(($style == 'inline') ? '' : "\n");
+        // müssen (siehe "mjx-pending"-CSS-Regel in "Sc_f_HeaderElements"). Zusätzliche Klasse
+        // "mjx-pending-display" (nur für "\[...\]", nicht für inline "$...$") - s. "Sc_f_HeaderElements"
+        // für den Grund (Safari-Fade-Bug bei Block-Formeln).
+        $html_ret = '<span class="mjx-pending'.(($style == 'inline') ? '' : ' mjx-pending-display').'">'.(($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]').'</span>'.(($style == 'inline') ? '' : "\n");
         //$html_ret = '\\[ \\large \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: It is a bit to big.
         break;
 
