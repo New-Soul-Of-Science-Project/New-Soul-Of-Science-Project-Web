@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 06.10.2026, 12:00h
+  // #: Stand: 06.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261006:  >:  "Sc_f_HeaderElements":  Replace the "visibility: hidden" + "font-size: 0.01em/100em" scale trick for ".mjx-pending" (see entry below) with a visible, blurred placeholder that sharpens into the rendered formula - on Wolfgang's request, to test whether this looks nicer than just having formulas silently appear: ".mjx-pending" now keeps the raw LaTeX source visible at normal size but with "filter: blur(1.15px)" and "opacity: 0.5" (value tuned live together with Wolfgang: 3px -> 1.5px -> 0.8px -> 1.15px as a middle ground), so the large-gap problem from the entry below is back by design (accepted trade-off, raw text at normal size is wider/taller than the final formula) in exchange for a softer "defocus -> focus" look instead of the previous instant pop-in. IMPORTANT DISCOVERY: "filter" and "opacity" are compositing properties (unlike "visibility"), applied by the browser to an element's entire rendered subtree as a unit - a descendant (e.g. the "<mjx-container>" MathJax inserts) cannot "undo" an ancestor's "filter"/"opacity" via its own CSS rule the way it can override an inherited "visibility" value; a first attempt using exactly that pattern (".mjx-pending mjx-container { filter: none; opacity: 1; }") left formulas permanently blurred in running text (confirmed by Wolfgang: "Im Fließtext bleibt die Unschärfe"). Fixed by changing strategy entirely: a small "MutationObserver" (new inline "<script>" in "Sc_f_HeaderElements") watches for "<mjx-container>" elements being inserted anywhere in the page and, for each one, adds a "mjx-ready" class to its closest ".mjx-pending" ancestor - since this toggles the blur/opacity off on the SAME element they were set on (not asking a child to override them), it actually resolves, and the accompanying CSS "transition" on ".mjx-pending" animates the change smoothly. Works per-formula as each is typeset, same as the previous approach.
   //           20261006:  +:  "Sc_f_equation_latex_str_html":  Wrap every formula's raw LaTeX source in '<span class="mjx-pending">...</span>' before MathJax processes it, and add matching ".mjx-pending"/".mjx-pending mjx-container" CSS rules in "Sc_f_HeaderElements" - without this, the raw, unprocessed text (all the "\definecolor{...} \color{...} \left\{ ... \\\ \qquad..." commands) is briefly visible in the page exactly as typed, until MathJax's JS finishes replacing it with the actual rendered "<mjx-container>" (classic MathJax FOUC/"flash of unrendered content"); happens per-formula as each one is typeset, not only once for the whole page, so heavier pages (some have >1000 formulas) don't need a page-wide "hide body until fully done" delay. "visibility: hidden" on ".mjx-pending" hides the raw text; the override rule makes only the later-inserted "mjx-container" visible again (CSS "visibility" is inherited but can be overridden by a descendant, unlike e.g. "display"). FOLLOW-UP FIX (same day, Wolfgang caught this): "visibility: hidden" alone still reserves the full layout space of the hidden text, and since the raw LaTeX source is, as plain text, far wider/taller than the eventual compact rendered formula, this left a large empty gap in running body text (and could transiently widen auto-sized table cells) that suddenly collapsed once the formula appeared - fixed by additionally setting "font-size: 0.01em" on ".mjx-pending" (collapses the hidden text's box to near-zero, since glyph width scales with font-size) and the exact inverse "font-size: 100em" on the override rule (0.01 * 100 = 1), which mathematically restores the original, context-correct font size (body text vs. headline vs. "derivation" paragraphs, etc.) instead of flattening every formula to one fixed absolute size the way a plain px/rem value would.
   //           20261005:  *:  "Sc_f_HeaderElements":  Add "svg: { displayAlign: \"left\" }" to the MathJax config - MathJax 4 is the first version to actually implement MathML3-style line-break layout (per the official "What's new in v4.0" docs): every line produced by a bare "\\" linebreak (i.e. NOT inside "array"/"aligned"/"cases") now gets an "indentalign" that resolves to "displayAlign", which defaults to "center" - so multi-line equations that used to stack LEFT-aligned relative to each other (MathJax 2/3 never implemented this MathML3 behavior, so they "accidentally" stayed left-aligned via older layout code) now centered each line instead, breaking Wolfgang's existing "\qquad"-indentation formatting on dozens of equations across the site (e.g. "SN.SinK.RZ.2", "SN.PP.75"). Root-caused via direct MathJax-src source inspection ("Wrapper.ts", "processIndent()") - confirmed there is no way to fix just the inter-line alignment via a macro ("\\" is wired directly to the TeX-parser's stack-manipulating "CrLaTeX" method, not redefinable via "macros: {...}"; "\breakAlign{...}" explicitly throws outside an array/alignment environment). First attempt placed "displayAlign" under the generic "options" block (the menu/accessibility-extension namespace) - silently ignored, no error, confirmed still broken on "SN.PP.75" (varying-width lines revealed the centering that "SN.SinK.RZ.2" alone could not, since all its broken lines happen to have near-equal width). Checked the vendored bundle directly ("displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." all appear together as one options object) - "displayAlign" is a default option of the OUTPUT JAX itself (shared by "chtml"/"svg"), so it belongs in the output-specific config block, here "svg" (this site's active output format) - moved there, which fixed the relative-line alignment (verified live on "SN.SinK.RZ.2" and "SN.PP.75": lines with equal "\qquad" now share one left edge regardless of content width) and the existing 9-page regression suite stayed at 0 "merror". NOTE: this alone also pushed EVERY display equation on the site flush-left in its table cell, single-line ones included (see the following entry's fix) - "displayAlign" is not limited to inter-line alignment, it is also how MathJax positions the whole equation box.
   //                      *:  "Sc_f_HeaderElements":  Add a "<style>mjx-container[display=\"true\"] { width: fit-content; margin-left: auto; margin-right: auto; }</style>" rule, right after the MathJax script tags - the "svg.displayAlign: left" fix above (needed for correct inter-line alignment, see entry above) sets "text-align/justify-content: left" on MathJax's own "mjx-container" element, which by default spans the FULL width of its surrounding table cell - so instead of just straightening out the relative line alignment, it silently pushed literally every equation on the site (single-line ones too, e.g. "SN.PP.1") flush against the left edge of its cell, discarding the page-level centering that used to come for free when "displayAlign" was "center". Wolfgang caught this by eye ("die SVGs sind nicht in der Tabelle zentriert") after the previous entry's fix had seemingly "basically worked". Fix: shrink "mjx-container" down to the width of its actual SVG content ("width: fit-content") and center that now-tightly-fit box with "margin: 0 auto" - inside a box with no leftover width, "text-align: left" has nothing left to act on, so the desired inter-line left-alignment from the entry above is completely unaffected, while the equation block as a whole is centered in its cell again exactly as before MathJax 4. Verified live: "SN.PP.1" (single-line) and "SN.PP.75"/"SN.SinK.RZ.2" (multi-line) all re-centered (SVG center matches table-cell center to within half a pixel), 9-page regression suite still 0 "merror".
@@ -398,29 +399,37 @@
     // mehrzeiliger Formeln zueinander erhalten bleibt, während der gesamte Formelblock wieder wie vor
     // MathJax 4 mittig in seiner Tabellenzelle steht.
     // #: "mjx-pending" (s. "Sc_f_equation_latex_str_html") umhüllt jede Formel-Quelle, solange sie noch
-    // roher, unverarbeiteter LaTeX-Text ist - "visibility: hidden" blendet diesen Text beim Seitenaufbau
-    // aus, bevor MathJax ihn verarbeitet hat (verhindert das kurze Aufblitzen der rohen "\color{...}
-    // \definecolor{...} ..."-Befehle). Die zweite Regel macht NUR das von MathJax eingesetzte
-    // "<mjx-container>" sofort wieder sichtbar, sobald es im DOM erscheint (CSS-"visibility" wird von
-    // Nachfahren überschrieben, auch wenn ein Vorfahre sie auf "hidden" gesetzt hat) - pro Formel
-    // einzeln und unmittelbar, ohne auf das Typesetting der kompletten Seite warten zu müssen (einige
-    // Seiten enthalten >1000 Formeln). WICHTIG: "visibility: hidden" blendet zwar aus, reserviert aber
-    // weiterhin den vollen Platz des verstecken Inhalts - der rohe LaTeX-Quelltext (mit allen Befehlen
-    // wie "\definecolor{...} \color{...} ...") ist als reiner Text bei normaler Schriftgröße deutlich
-    // breiter/länger als die später gesetzte, kompakte Formel, wodurch im Fließtext bzw. in der Tabelle
-    // eine auffällig große Leerstelle entsteht, die beim Erscheinen der Formel plötzlich zusammenschrumpft
-    // (von Wolfgang bemerkt: "Im Fließtext werden recht große Leerlücken gelassen"). Fix: zusätzlich
-    // "font-size: 0.01em" auf "mjx-pending" setzen, wodurch die Breite/Höhe des rohen Textes auf fast
-    // null kollabiert (Buchstabenbreite skaliert mit der Schriftgröße) - und auf "mjx-container" exakt
-    // gegenläufig "font-size: 100em" setzen (0.01 * 100 = 1), was die ursprüngliche, zum jeweiligen
-    // Kontext passende Schriftgröße (Fließtext, Überschrift, "derivation"-Absatz, etc.) rechnerisch exakt
-    // wiederherstellt, statt sie - wie ein fixer Px/Rem-Wert es täte - überall auf dieselbe Größe zu
-    // vereinheitlichen.
+    // roher, unverarbeiteter LaTeX-Text ist. EXPERIMENT (auf Wolfgangs Wunsch, zum Antesten): statt den
+    // Text komplett unsichtbar zu schalten, bleibt er in normaler Größe sichtbar, aber verschwommen/
+    // blass ("filter: blur(...)" + reduzierte "opacity"), bis MathJax fertig ist. ACHTUNG: dadurch kommt
+    // das zuvor gelöste Platzproblem zurück - der unscharfe Rohtext nimmt in normaler Schriftgröße nach
+    // wie vor deutlich mehr Platz ein als die spätere kompakte Formel (siehe Eintrag oben); das wurde
+    // hier bewusst in Kauf genommen, um den Unscharf-zu-scharf-Effekt zu testen. WICHTIG: "filter" und
+    // "opacity" sind - anders als "visibility" - Compositing-Eigenschaften: der Browser wendet sie auf
+    // das GESAMTE gerenderte Teilbaum-Ergebnis des Elements an, nicht Element für Element vererbt: ein
+    // Kind-Element kann sie NICHT per eigener Gegenregel "zurücksetzen" (bestätigt, nachdem die Formel
+    // im Fließtext dauerhaft unscharf blieb). Fix: statt einer reinen CSS-Gegenregel auf
+    // "mjx-container" entfernt ein kleiner "MutationObserver" (s.u.) die Klasse "mjx-pending" vom
+    // Wrapper SELBST, sobald MathJax darin ein "<mjx-container>" einsetzt - das löst den Blur/Opacity
+    // tatsächlich auf (da jetzt die Eigenschaften auf demselben Element geändert werden, nicht von einem
+    // Kind "überschrieben" werden müssen) und die "transition"-Regel sorgt für das weiche Einblenden.
     echo '    <style>'."\n";
     echo '      mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }'."\n";
-    echo '      .mjx-pending { visibility: hidden; font-size: 0.01em; }'."\n";
-    echo '      .mjx-pending mjx-container { visibility: visible; font-size: 100em; }'."\n";
+    echo '      .mjx-pending { filter: blur(1.15px); opacity: 0.5; transition: filter 0.3s ease, opacity 0.3s ease; }'."\n";
+    echo '      .mjx-pending.mjx-ready { filter: none; opacity: 1; }'."\n";
     echo '    </style>'."\n";
+    echo '    <script>'."\n";
+    echo '      new MutationObserver(function(mutations) {'."\n";
+    echo '        mutations.forEach(function(mutation) {'."\n";
+    echo '          mutation.addedNodes.forEach(function(node) {'."\n";
+    echo '            if (node.nodeType === 1 && node.tagName === "MJX-CONTAINER") {'."\n";
+    echo '              var pending = node.closest(".mjx-pending");'."\n";
+    echo '              if (pending) pending.classList.add("mjx-ready");'."\n";
+    echo '            }'."\n";
+    echo '          });'."\n";
+    echo '        });'."\n";
+    echo '      }).observe(document.documentElement, { childList: true, subtree: true });'."\n";
+    echo '    </script>'."\n";
   }
   
   
