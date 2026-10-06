@@ -6,10 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="../../share/js/reveal/dist/reset.css">
 <link rel="stylesheet" href="../../share/js/reveal/dist/reveal.css">
+<!-- #: Gleiche Google-Fonts-Einbindung wie die Hauptseite (share/php/NSOSP.php) - ohne das fehlten
+     die kursiven/fetten Schriftschnitte von Open Sans komplett, der Browser fiel auf eine
+     System-Schrift ohne echtes Kursiv zurück. -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <style>
   :root {
-    --mw-bg: #d4d7c2;
-    --mw-header: #6e6e6e;
+    --mw-bg: #d2d7c0;
+    --mw-header: #6d6d6d;
     --mw-accent: #4a7a3a;
   }
   /* #: Proportionen (Kopfzeilenhöhe, Schriftgrößen-Verhältnisse, Abstands-Rhythmus) aus Wolfgangs
@@ -17,24 +21,57 @@
      Reveal-Canvas-Größe 1920x1080 übertragen - bewusst als Richtwerte für ein stimmiges
      Größenverhältnis, nicht als exakte Pixel-für-Pixel-Nachbildung (Inhalt bleibt normal fließender
      Text/Listen, keine starren Textboxen wie im Keynote-Original). */
-  body { background: var(--mw-bg); }
-  .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 38px; }
+  /* #: Alle Werte unten sind direkt aus Wolfgangs Keynote-PDF-Export gemessen (PyMuPDF,
+     "get_text('dict')" liefert exakte Schriftgröße + Position jedes Textlaufs, nicht nur
+     grobe Bounding-Boxen) - Basis-Schriftgröße 40px entspricht exakt der im Original gemessenen
+     Aufzählungstext-Größe. Das Original nutzt für Aufzählungen "AvenirNext-Regular" statt der
+     Titel-/Kopfzeilenschrift "OpenSans" - AvenirNext ist eine Apple-Systemschrift, nicht frei
+     fürs Web lizenzierbar, daher hier einheitlich bei "Open Sans" (Projekt-Standardschrift)
+     geblieben. */
+  /* #: Fläche außerhalb der eigentlichen 16:9-Folie (Letterboxing, wenn das Browserfenster nicht
+     exakt im Folienformat ist) - dunkelgrau wie bei PDF-Betrachtern (z.B. Vorschau.app) üblich,
+     nicht dasselbe Salbeigrün wie der Folieninhalt selbst. */
+  body { background: #1e1e1e; }
+  /* #: reveal.js legt selbst ein ".reveal-viewport"-Element mit "background-color: #fff" über den
+     ganzen Viewport, das die obige "body"-Hintergrundfarbe vollständig verdeckt - muss hier gezielt
+     überschrieben werden. */
+  .reveal-viewport { background-color: #1e1e1e !important; }
+  /* #: Die Navigationspfeile von reveal.js hängen standardmäßig an der Viewport-Ecke, nicht an der
+     Folie - bei "margin: 0" liegen sie zwar meist schon auf der grünen Fläche, aber zur Sicherheit
+     hier zusätzlich etwas nach innen gerückt, damit sie auch bei leichtem Letterboxing sichtbar auf
+     dem Folienhintergrund bleiben statt im dunkelgrauen Rand zu verschwinden. */
+  .controls { right: 60px !important; bottom: 60px !important; }
+  /* #: Leichter weißer Schein um die Pfeile, damit sie sowohl auf der grünen Folie als auch im
+     dunkelgrauen Rand (bei schmalem/kurzem Fenster mit mehr Letterboxing) gut sichtbar bleiben,
+     statt auf eine exakte Position zu setzen, die nicht bei jeder Fenstergröße passt. */
+  /* #: Zwei vorherige Versuche hatten je eigene Probleme: dreifach gestapeltes
+     "filter: drop-shadow(...)" auf ".controls-arrow" war in Safari unsichtbar; "box-shadow" direkt auf
+     den beiden balkenförmigen Pseudo-Elementen (die den Pfeil bilden) erzeugte eine sichtbare Naht, wo
+     sich die beiden Balken an der Pfeilspitze berühren (jeder wirft seinen eigenen Schatten auf den
+     anderen). Jetzt: EIN EINZELNES (nicht gestapeltes) "filter: drop-shadow(...)" auf ".controls-arrow"
+     selbst - wirkt auf die kombinierte Pfeilform als Ganzes (keine Naht) und ist als einzelne
+     Filterfunktion deutlich breiter unterstützt als mehrfach verkettete. */
+  .controls-arrow { filter: drop-shadow(0 0 4px #fff); }
+  .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 40px; }
   .reveal .slides { text-align: left; }
   .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
   .reveal h1, .reveal h2, .reveal h3 { color: #000; text-transform: none; text-align: left; }
-  .reveal h2 { font-size: 1.5em; margin-bottom: 0.9em; }
+  .reveal h2 { font-size: 1.32em; margin-bottom: 1.34em; }
   .reveal ul { display: block; margin-left: 36px; }
   .reveal ul ul { margin-top: 0.5em; margin-bottom: 0.5em; }
-  .reveal li { margin-bottom: 0.8em; line-height: 1.3; }
-  .reveal p { margin-bottom: 0.8em; line-height: 1.3; }
+  .reveal li { margin-bottom: 1.18em; line-height: 1.3; }
+  .reveal p { margin-bottom: 1.18em; line-height: 1.3; }
   .reveal small { font-size: 0.65em; opacity: 0.85; }
   mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }
+  /* #: "<em>" wird an sehr vielen Stellen im Deck für Kursivierung genutzt (nicht nur auf den
+     Titelfolien) - robuster, globaler Fix statt einzelner Patches pro Stelle. */
+  .reveal em { font-style: italic !important; }
 
-  /* Kopfleiste: graue Bar oben mit Logo + Brotkrumen (Keynote: Bar ~150px, Logo ~122px, Text ab x=286) */
+  /* Kopfleiste: "Menschlich Wirtschaften eG" 65px, Breadcrumb 32.5px (beide exakt gemessen) */
   .mw-header {
     position: absolute; top: 0; left: 0; right: 0; height: 150px;
     background: var(--mw-header); color: #fff;
-    display: flex; align-items: center; padding: 0 50px;
+    display: flex; align-items: center; padding: 0 100px;
     box-sizing: border-box;
   }
   .mw-header .mw-logo, .mw-cover-header .mw-logo {
@@ -42,8 +79,8 @@
     margin-right: 40px; flex-shrink: 0;
   }
   .mw-header .mw-logo img, .mw-cover-header .mw-logo img { width: 100%; height: 100%; border-radius: 50%; display: block; }
-  .mw-header .mw-titles h3 { color: #fff; margin: 0; font-size: 0.95em; }
-  .mw-header .mw-titles .mw-sub { font-size: 0.6em; opacity: 0.9; margin-top: 0.2em; }
+  .mw-header .mw-titles h3 { color: #fff; margin: 0; font-size: 1.625em; }
+  .mw-header .mw-titles .mw-sub { font-size: 0.81em; opacity: 0.9; margin-top: 0.2em; }
 
   .reveal .slides section.cover {
     padding: 190px 100px 0 100px !important; box-sizing: border-box;
@@ -53,19 +90,32 @@
     background: var(--mw-header);
   }
   .reveal .slides section.cover .mw-cover-header .mw-logo {
-    position: absolute; left: 50px; top: 20px;
+    position: absolute; left: 100px; top: 20px;
   }
-  /* Folie 1: riesiger Haupttitel "Akademie" (Keynote: ~4x Fließtextgröße), darüber klein "Menschlich
-     Wirtschaften e.G.", darunter "Mathematik" und der Vortragsreihen-Block in Fließtextgröße. */
-  .mw-cover-sub { font-size: 0.85em; margin: 0 0 0.2em 0; }
-  .mw-cover-maintitle { font-size: 4em; margin: 0 0 0.5em 0; line-height: 1; }
-  .mw-cover-eyebrow { font-size: 1em; opacity: 0.8; margin: 0.6em 0 0 0; }
-  .mw-cover-talk { font-size: 1em; margin-top: 0.5em; line-height: 1.4; }
-  /* Folie 2+: Vortragstitel-Folie - Titel deutlich größer als normale Folienüberschriften (Keynote:
-     ~1.3x), darunter Vortragsreihen-Info in etwas größerer, dann normaler Fließtextgröße. */
-  .reveal .slides section.cover h1 { font-size: 2em; margin: 0 0 0.5em 0; line-height: 1.2; }
-  .reveal .slides section.cover .mw-talk-title p { font-size: 1.2em; line-height: 1.4; }
-  .reveal .slides section.cover .mw-talk-title { margin-top: 0.8em; }
+  /* Folie 1 (exakt aus PDF gemessen): "Menschlich Wirtschaften e.G." 51.5px, "Akademie" 150px,
+     "Mathematik" 31.5px, "Vortragsreihe" 31.5px kursiv, "Superial-Zahlen (SN)" 44.1px (NICHT fett,
+     nur größer), "Die Zahlentheorie..." 34.7px. Abstände: Akademie→Mathematik 25px,
+     Mathematik→Vortragsreihe-Block 39px, die drei Zeilen des Blocks selbst praktisch ohne
+     Zusatzabstand (normaler Zeilenfluss). */
+  .mw-cover-sub { font-size: 1.29em; margin: 0; }
+  .mw-cover-maintitle { font-size: 3.75em; margin: 0 0 25px 0; line-height: 1; }
+  .mw-cover-eyebrow { font-size: 0.79em; margin: 0 0 39px 0; }
+  .mw-cover-talk { margin: 0; }
+  .mw-cover-talk p { margin: 0; }
+  .mw-cover-kicker { font-size: 0.79em; font-style: italic !important; }
+  .mw-cover-series { font-size: 1.1em; }
+  .mw-cover-desc { font-size: 0.87em; }
+  /* Folie 2+ (exakt aus PDF gemessen): Titel 80px, "Vortragsreihe" 38.5px kursiv, "Superial-Zahlen
+     (SN)" 53.9px, "Die Zahlentheorie...–Teil 1" 42.3px (Teil 1 kursiv), "Vortrag und Dialog..." 33px
+     (Name kursiv). Titel→Vortragsreihe 27px, Vortragsreihe→Superial-Zahlen ~4px (quasi Zeilenfluss),
+     Superial-Zahlen→Beschreibung 12px, Beschreibung→Byline 175px (großer Abstand). */
+  .reveal .slides section.cover h1 { font-size: 2em; margin: 0 0 0.68em 0; line-height: 1.2; }
+  .reveal .slides section.cover .mw-talk-title p { margin: 0 0 0.1em 0; }
+  .reveal .slides section.cover .mw-talk-kicker { font-size: 0.9625em; font-style: italic !important; }
+  .reveal .slides section.cover .mw-talk-series { font-size: 1.3475em; }
+  .reveal .slides section.cover .mw-talk-desc { font-size: 1.0575em; margin-bottom: 0 !important; }
+  .reveal .slides section.cover .mw-talk-title { margin-top: 0.68em; }
+  .reveal .slides section.cover .mw-byline { font-size: 0.825em; margin-top: 4.4em; }
 
   .mw-about-photo {
     position: absolute; right: 100px; top: 230px; width: 280px; height: 280px;
@@ -82,13 +132,13 @@
       <div class="mw-cover-header">
         <div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div>
       </div>
-      <div class="mw-cover-sub">Menschlich Wirtschaften e.G.</div>
+      <div class="mw-cover-sub">Menschlich Wirtschaften eG</div>
       <h1 class="mw-cover-maintitle">Akademie</h1>
       <div class="mw-cover-eyebrow">Mathematik</div>
       <div class="mw-cover-talk">
-        <p><em>Vortragsreihe</em><br>
-        <strong>Superial-Zahlen (SN)</strong><br>
-        Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche</p>
+        <p class="mw-cover-kicker"><em>Vortragsreihe</em></p>
+        <p class="mw-cover-series">Superial-Zahlen (SN)</p>
+        <p class="mw-cover-desc">Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche</p>
       </div>
     </section>
 
@@ -97,11 +147,11 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Mathematik</div></div></div>
       <h1>Motivation und Grundidee der Superial-Zahlen</h1>
       <div class="mw-talk-title">
-        <p><em>Vortragsreihe</em><br>
-        <strong>Superial-Zahlen (SN)</strong><br>
-        Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche – <em>Teil 1</em></p>
+        <p class="mw-talk-kicker"><em>Vortragsreihe</em></p>
+        <p class="mw-talk-series">Superial-Zahlen (SN)</p>
+        <p class="mw-talk-desc">Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche – <em>Teil 1</em></p>
       </div>
-      <p style="margin-top: 2em;">Vortrag und Dialog – <em>Wolfgang Huß, X 2026</em></p>
+      <p class="mw-byline">Vortrag und Dialog – <em>Wolfgang Huß, X 2026</em></p>
     </section>
 
     <!-- Folie 3: Über mich -->
@@ -423,6 +473,7 @@
     transition: 'slide',
     width: 1920,
     height: 1080,
+    margin: 0,
     mathjax4: {
       mathjax: '../../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js',
       tex: window.MathJax.tex,
