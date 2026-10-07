@@ -70,9 +70,9 @@
   /* #: Für Folien "Leitfrage der Superial-Zahlen" und "Arbeitsnotation für den Einstieg" - etwas
      weniger Zeilenabstand zwischen den Listenpunkten als der Standard (1.18em). */
   .compact-list li { margin-bottom: 0.85em; }
-  /* #: Nur für Folie "Erste Rechenintuition mit s^-1" - etwas weniger Zeilenabstand als der
-     ".compact-list"-Standard, ohne die Folien "Leitfrage..."/"Arbeitsnotation...", die dieselbe
-     Basisklasse nutzen, zu verändern. */
+  /* #: Für Folien "Erste Rechenintuition mit s^-1" und "Vom Ableiten zum Integrieren" - etwas
+     weniger Zeilenabstand als der ".compact-list"-Standard, ohne die Folien "Leitfrage..."/
+     "Arbeitsnotation...", die dieselbe Basisklasse nutzen, zu verändern. */
   .compact-list.compact-list-tighter li { margin-bottom: 0.65em; }
   /* #: Nur für Folie "Warum Mathematik Zahlbereiche erweitert" - die Liste lief mit dem normalen
      Zeilenabstand (1.18em) über den unteren Folienrand hinaus (Titel + Einleitung + Formel + 5
@@ -350,11 +350,11 @@
         <li><span class="mjx-pending">\( \s^{-3} \)</span>: sehr viel kleiner als <span class="mjx-pending">\( \s^{-1} \)</span></li>
         <li><span class="mjx-pending">\( \s^{-2} \)</span>: viel kleiner als <span class="mjx-pending">\( \s^{-1} \)</span></li>
         <li><span class="mjx-pending">\( \s^{-1} \)</span>: infinitesimaler Schritt</li>
-        <li><span class="mjx-pending">\( \s^{0} = 1 \)</span>: endliche / gewöhnliche Skala</li>
-        <li><span class="mjx-pending">\( \s^{1} = \s \)</span>: unendlich große Skalen</li>
+        <li><span class="mjx-pending">\( \s^{0} \;=\; 1 \)</span>: endliche / gewöhnliche Skala</li>
+        <li><span class="mjx-pending">\( \s^{1} \;=\; \s \)</span>: unendlich große Skalen</li>
       </ul>
-      <p>Heute sehen wir <span class="mjx-pending">\( \s \)</span> als ein Rechensymbol.<br>
-      Spätere Herleitung über: Integral → infinitesimales Zählen → Zahlentheorie von <span class="mjx-pending">\( \s \)</span></p>
+      <p>Heute sehen wir <span class="mjx-pending">\( \s \)</span> als ein Rechensymbol. Spätere Herleitung über:<br>
+      Integral &nbsp;&nbsp;→&nbsp;&nbsp; infinitesimales Zählen &nbsp;&nbsp;→&nbsp;&nbsp; Zahlentheorie von <span class="mjx-pending">\( \s \)</span></p>
     </section>
 
     <!-- Folie 11 -->
@@ -379,7 +379,7 @@
         <li><span class="mjx-pending">\( 2x\,\s^{-1} \)</span>: infinitesimaler Korrekturterm 1. Ordnung</li>
         <li><span class="mjx-pending">\( \s^{-2} \)</span>: noch kleinerer Term 2. Ordnung</li>
       </ul>
-      <p style="margin-top: 0.9em; font-size: 0.92em;">Die Potenzen von <span class="mjx-pending">\( \s \)</span> sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
+      <p style="margin-top: 0.9em; font-size: 0.92em;">Die Potenzen von <span class="mjx-pending">\( \s \)</span> sind nicht nur Schreibweise – sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
     </section>
 
     <!-- Folie 13 -->
@@ -402,29 +402,31 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Vom Ableiten zum Integrieren (Vorgeschmack)</h2>
-      <p>Dieselbe Schrittidee führt später zum Integral:</p>
-      <ul>
+      <p style="font-size: 0.88em;">Dieselbe Schrittidee führt später zum Integral:</p>
+      <ul class="compact-list" style="font-size: 0.88em;">
         <li>Ableitung: Änderung bei einem infinitesimalen Schritt</li>
         <li>Integral: Summation über sehr viele (infinite) sehr kleine (infinitesimale) Schritte</li>
         <li>Daraus entsteht die Idee des infinitesimalen Zählens:</li>
       </ul>
-      <span class="mjx-pending mjx-pending-display">\[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \qquad\qquad \Delta x \sim \s^{-1} \;\;\Rightarrow\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]</span>
-      <p>Der genaue Zusammenhang wird später entwickelt.<br>
-      Heute genügt die Leitidee: <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></p>
+      <p style="text-align: center; font-size: 0.88em;"><span class="mjx-pending mjx-pending-display">\[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \;\; , \qquad\quad \Delta x \;\sim\; \s^{-1} \;\;\;\Rightarrow\;\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]</span></p>
+      <p style="font-size: 0.88em; line-height: 1.5;">Der genaue Zusammenhang wird später entwickelt. Heute genügt die Leitidee.<br>
+      <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></p>
     </section>
 
     <!-- Folie 15 -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Warum <span class="mjx-pending">\( \s \)</span> heute schon verwendet wird</h2>
-      <p>Arbeitssymbol jetzt — tiefere Begründung später:</p>
-      <p style="text-align: center; font-weight: 300; font-size: 1.1125em;"><em>(heute)</em> Rechenidee zeigen &nbsp;⇒&nbsp; <em>(später)</em> Struktur begründen</p>
-      <ul>
+      <p style="font-size: 0.88em;">Arbeitssymbol jetzt – tiefere Begründung später:</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em;"><em>(heute)</em> Rechenidee zeigen &nbsp;&nbsp;⇒&nbsp;&nbsp; <em>(später)</em> Struktur begründen</p>
+      <ul class="compact-list" style="font-size: 0.88em;">
         <li><span class="mjx-pending">\( \s \)</span> wird heute als regelgeleitetes Arbeitssymbol verwendet</li>
         <li>Die innere Konstruktion von <span class="mjx-pending">\( \s \)</span> wird heute noch nicht vorausgesetzt</li>
-        <li>Spätere Herleitung: <em>Integral → infinitesimales Zählen → zahlentheoretische Anforderungen</em></li>
+        <li><em>Spätere Herleitung:</em>
+          <div style="text-align: center; font-weight: 300; font-size: 1.1125em; margin: 0.6em 0;">Integral &nbsp;&nbsp;→&nbsp;&nbsp; infinitesimales Zählen &nbsp;&nbsp;→&nbsp;&nbsp; zahlentheoretische Anforderungen</div>
+        </li>
       </ul>
-      <p><small><em>Didaktische Analogie:</em> Wie bei <span class="mjx-pending">\( i \)</span> in den komplexen Zahlen kann ein neues Symbol zunächst über Regeln eingeführt werden — seine Tragweite zeigt sich in seinen Rechenregeln, ebenso wie bei <span class="mjx-pending">\( \s \)</span>.</small></p>
+      <p style="font-size: 0.88em; margin-top: 1.6em;"><em>Didaktische Analogie:</em> Wie bei „<span class="mjx-pending">\( \i \)</span>“ in den komplexen Zahlen kann ein neues Symbol zunächst über Regeln eingeführt werden – seine Tragweite zeigt sich in seinen Rechenregeln, ebenso wie bei „<span class="mjx-pending">\( \s \)</span>“.</p>
     </section>
 
     <!-- Folie 16 -->
