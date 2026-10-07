@@ -70,8 +70,12 @@
   /* #: Nur für Folie "Warum Mathematik Zahlbereiche erweitert" - die Liste lief mit dem normalen
      Zeilenabstand (1.18em) über den unteren Folienrand hinaus (Titel + Einleitung + Formel + 5
      Listenpunkte sind zusammen zu viel Inhalt für den Standard-Abstand). */
-  .tight-list li { margin-bottom: 0.5em; }
-  .tight-list ul { margin-top: 0.5em; margin-bottom: 0.5em; }
+  .tight-list { font-size: 0.85em; margin-top: 0.65em; margin-bottom: 0.65em; }
+  .tight-list li { margin-bottom: 0.45em; line-height: 1.3; }
+  /* #: "!important" nötig - ".reveal ul ul" (allgemeine Regel) ist durch die zwei Element-Selektoren
+     spezifischer als ".tight-list ul" und gewann sonst, obwohl diese Regel später im Quelltext steht
+     (Spezifität schlägt Quelltext-Reihenfolge). */
+  .tight-list ul { margin-top: 0.35em !important; margin-bottom: 0.35em !important; }
   .reveal p { margin-bottom: 1.18em; line-height: 1.3; }
   .reveal small { font-size: 0.65em; opacity: 0.85; }
   mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }
@@ -242,9 +246,9 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Warum Mathematik Zahlbereiche erweitert</h2>
-      <p>Neue Zahlen entstehen aus mathematischem Bedarf.<br>
+      <p style="font-size: 0.85em; line-height: 1.35;">Neue Zahlen entstehen aus mathematischem Bedarf.<br>
       Zahlerweiterungen sind in der Mathematik normal, wenn neue Rechen- oder Strukturprobleme auftreten:</p>
-      <p style="text-align: center; margin: 1em 0;"><span class="mjx-pending mjx-pending-display">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \]</span></p>
+      <p style="text-align: center; margin: 1em 0 0.65em 0; font-size: 0.85em;"><span class="mjx-pending mjx-pending-display">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \]</span></p>
       <ul class="tight-list">
         <li><span class="mjx-pending">\( \mathbb{N} \)</span>: Zählen ermöglichen</li>
         <li><span class="mjx-pending">\( \mathbb{Z} \)</span>: Subtrahieren ermöglichen</li>
@@ -273,7 +277,7 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Kein Gegenmodell, sondern neue Formalsprache</h2>
-      <p>Superial-Zahlen ergänzen die klassische Analysis — ersetzen sie nicht:</p>
+      <p style="margin-bottom: 0.65em; font-size: 0.85em;">Superial-Zahlen ergänzen die klassische Analysis — ersetzen sie nicht:</p>
       <ul class="tight-list">
         <li>Klassische Analysis:
           <ul><li>rigoros</li><li>bewährt</li><li>universell</li></ul>
@@ -282,7 +286,7 @@
           <ul><li>skalenorientiertes Rechnen</li><li>direkte Schritt-Notation</li><li>neue Struktur- und Denkwege</li></ul>
         </li>
       </ul>
-      <p>Es geht nicht um „besser oder schlechter", sondern um eine andere formale Sicht auf ähnliche mathematische Phänomene.</p>
+      <p style="margin-top: 0.65em; font-size: 0.85em; line-height: 1.35;">Es geht nicht um „besser oder schlechter", sondern um eine andere formale Sicht auf ähnliche mathematische Phänomene.</p>
     </section>
 
     <!-- Folie 8 -->
@@ -290,7 +294,7 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Leitfrage der Superial-Zahlen</h2>
       <p>Was sollen die Superial-Zahlen leisten?</p>
-      <p style="text-align: center; font-style: italic;">Wie kann man über alle Skalen hinweg formal rechnen?</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.25em;">Wie kann man über alle Skalen hinweg formal rechnen?</p>
       <ul>
         <li>im <em>Unendlichkleinen</em></li>
         <li>im <em>Endlichen</em></li>
@@ -397,7 +401,7 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Warum <span class="mjx-pending">\( \s \)</span> heute schon verwendet wird</h2>
       <p>Arbeitssymbol jetzt — tiefere Begründung später:</p>
-      <p style="text-align: center; font-style: italic;">(heute) Rechenidee zeigen &nbsp;⇒&nbsp; (später) Struktur begründen</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em;"><em>(heute)</em> Rechenidee zeigen &nbsp;⇒&nbsp; <em>(später)</em> Struktur begründen</p>
       <ul>
         <li><span class="mjx-pending">\( \s \)</span> wird heute als regelgeleitetes Arbeitssymbol verwendet</li>
         <li>Die innere Konstruktion von <span class="mjx-pending">\( \s \)</span> wird heute noch nicht vorausgesetzt</li>
