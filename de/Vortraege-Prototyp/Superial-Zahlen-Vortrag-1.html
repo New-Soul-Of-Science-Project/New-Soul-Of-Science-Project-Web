@@ -70,6 +70,10 @@
   /* #: Für Folien "Leitfrage der Superial-Zahlen" und "Arbeitsnotation für den Einstieg" - etwas
      weniger Zeilenabstand zwischen den Listenpunkten als der Standard (1.18em). */
   .compact-list li { margin-bottom: 0.85em; }
+  /* #: Nur für Folie "Erste Rechenintuition mit s^-1" - etwas weniger Zeilenabstand als der
+     ".compact-list"-Standard, ohne die Folien "Leitfrage..."/"Arbeitsnotation...", die dieselbe
+     Basisklasse nutzen, zu verändern. */
+  .compact-list.compact-list-tighter li { margin-bottom: 0.65em; }
   /* #: Nur für Folie "Warum Mathematik Zahlbereiche erweitert" - die Liste lief mit dem normalen
      Zeilenabstand (1.18em) über den unteren Folienrand hinaus (Titel + Einleitung + Formel + 5
      Listenpunkte sind zusammen zu viel Inhalt für den Standard-Abstand). */
@@ -367,34 +371,31 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Erste Rechenintuition mit <span class="mjx-pending">\( \s^{-1} \)</span></h2>
-      <p>Rechnen mit einem infinitesimalen Schritt:</p>
-      <span class="mjx-pending mjx-pending-display">\[ \left( x + \s^{-1} \right)^{2} \;\;=\;\; x^{2} + 2x\,\s^{-1} + \s^{-2} \]</span>
-      <p>Skalenlesbarkeit der Terme:</p>
-      <ul>
+      <p style="margin-bottom: 0.9em; font-size: 0.92em;">Rechnen mit einem infinitesimalen Schritt:</p>
+      <p style="text-align: center; margin: 0.9em 0; font-size: 0.92em;"><span class="mjx-pending mjx-pending-display">\[ \left( x + \s^{-1} \right)^{2} \;\;=\;\; x^{2} + 2x\,\s^{-1} + \s^{-2} \]</span></p>
+      <p style="margin-bottom: 0.9em; font-size: 0.92em;">Skalenlesbarkeit der Terme:</p>
+      <ul class="compact-list compact-list-tighter" style="font-size: 0.92em;">
         <li><span class="mjx-pending">\( x^2 \)</span>: endliche Hauptskala</li>
         <li><span class="mjx-pending">\( 2x\,\s^{-1} \)</span>: infinitesimaler Korrekturterm 1. Ordnung</li>
         <li><span class="mjx-pending">\( \s^{-2} \)</span>: noch kleinerer Term 2. Ordnung</li>
       </ul>
-      <p>Die Potenzen von <span class="mjx-pending">\( \s \)</span> sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
+      <p style="margin-top: 0.9em; font-size: 0.92em;">Die Potenzen von <span class="mjx-pending">\( \s \)</span> sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
     </section>
 
     <!-- Folie 13 -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Ableitungsvorschau über Skalen</h2>
-      <p>Von der Änderung zum linearen Anteil (Abbildung)</p>
-      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:</p>
-      <span class="mjx-pending mjx-pending-display">\[
+      <p style="margin-bottom: 0.5em; font-size: 0.92em;">Von der Änderung zum linearen Anteil (Abbildung)</p>
+      <p style="margin-bottom: 0.3em; font-size: 0.92em;">Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:</p>
+      <p style="text-align: center; margin: 1.6em 0; font-size: 0.92em;"><span class="mjx-pending mjx-pending-display">\[
         \begin{array}{l}
-        f'(x) \;=\; \dfrac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} } \\[0.8em]
-        \phantom{f'(x)} \;=\; \dfrac{ (x + \s^{-1})^{2} - x^{2} }{ \s^{-1} } \\[0.8em]
-        \phantom{f'(x)} \;=\; \dfrac{ (x^{2} + 2x\,\s^{-1} + \s^{-2}) - x^{2} }{ \s^{-1} } \\[0.8em]
-        \phantom{f'(x)} \;=\; \dfrac{ 2x\,\s^{-1} + \s^{-2} }{ \s^{-1} } \\[0.8em]
-        \phantom{f'(x)} \;=\; 2x + \s^{-1} \\[0.8em]
-        \phantom{f'(x)} \;\approx\; 2x \quad \text{(klassische Ableitung)}
+        f'(x) \;=\; \dfrac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} } \;=\; \dfrac{ (x + \s^{-1})^{2} - x^{2} }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; \dfrac{ (x^{2} + 2x\,\s^{-1} + \s^{-2}) - x^{2} }{ \s^{-1} } \;=\; \dfrac{ 2x\,\s^{-1} + \s^{-2} }{ \s^{-1} } \\[0.8em]
+        \phantom{f'(x)} \;=\; 2x + \s^{-1} \;\approx\; 2x \quad \text{(klassische Ableitung)}
         \end{array}
-      \]</span>
-      <p>Der lineare Anteil trägt die Ableitungsidee.</p>
+      \]</span></p>
+      <p style="margin-top: 0.3em; font-size: 0.92em;">Der lineare Anteil trägt die Ableitungsidee.</p>
     </section>
 
     <!-- Folie 14 -->
@@ -408,8 +409,8 @@
         <li>Daraus entsteht die Idee des infinitesimalen Zählens:</li>
       </ul>
       <span class="mjx-pending mjx-pending-display">\[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \qquad\qquad \Delta x \sim \s^{-1} \;\;\Rightarrow\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]</span>
-      <p><small>Der genaue Zusammenhang wird später entwickelt.<br>
-      Heute genügt die Leitidee: <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></small></p>
+      <p>Der genaue Zusammenhang wird später entwickelt.<br>
+      Heute genügt die Leitidee: <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></p>
     </section>
 
     <!-- Folie 15 -->
