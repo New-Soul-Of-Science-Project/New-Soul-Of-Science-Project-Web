@@ -64,15 +64,35 @@
      aktuellen Schriftart statt über eine feste Form, und "Open Sans" könnte dafür einen hohlen Glyph
      mitbringen). */
   .reveal ul, .reveal ul ul { display: block; margin-left: 36px; list-style-type: disc; }
+  /* #: Fehlte komplett - nur ".reveal ul" hatte eine Regel, "<ol>" (Folie "Von der Intuition zur
+     Theorie") blieb ohne eigene Regel. Eigener Marker per CSS-Counter statt nativer Nummerierung:
+     native "outside"/"inside"-Positionierung erzeugte je nach Browser Überhang nach links bzw.
+     uneinheitliche Texteinrückung je Ziffernbreite (siehe Git-Historie dieser Zeile).
+     "padding-left: 0" nötig - Safaris User-Agent-Stylesheet setzt "padding-inline-start: 40px"
+     auf "<ol>" (per Safari-Webinspektor bestätigt). "margin-left" bewusst NICHT gesetzt (anders als
+     bei ".reveal ul") - "share/js/reveal/dist/reveal.css" erzwingt ohnehin per
+     "html:not(.print-pdf) .reveal ol { margin: 0; ... }" (höhere Spezifität) 0px in Firefox/Safari;
+     Wolfgang hat per Lineal bestätigt, dass 0px hier tatsächlich das korrekte, bündige Ergebnis ist.
+     "display: flex" auf "li" (erster Versuch) hat dafür den Fließtext der kompletten Zeile
+     zerstört: Leerzeichen direkt an Flex-Item-Grenzen werden von Browsern abgeschnitten, das fraß
+     die Leerzeichen vor/nach eingebetteten Inline-Formeln ("\( \s \)") innerhalb von
+     Listenpunkten (Wolfgang bemerkte "fürsund" statt "für s und"). Fix: "li" bleibt normales
+     Element (kein Flex-Container), Marker stattdessen per "inline-block" + negativem
+     "margin-left" in die reservierte Randspalte gezogen - normaler Inline-Textfluss (und damit
+     Leerzeichen-Behandlung) für den Rest der Zeile bleibt dadurch unangetastet. */
+  .reveal ol { display: block; padding-left: 0; list-style: none; counter-reset: ol-counter; }
+  .reveal ol li { padding-left: 1.6em; }
+  .reveal ol li::before { content: counter(ol-counter) "."; counter-increment: ol-counter; display: inline-block; width: 1.3em; margin-left: -1.6em; margin-right: 0.3em; text-align: right; }
   .reveal li { margin-bottom: 1.18em; line-height: 1.3; }
   .reveal li::marker { font-family: Arial, Helvetica, sans-serif; }
   .reveal ul ul { margin-top: 1.1em; margin-bottom: 1.1em; }
   /* #: Für Folien "Leitfrage der Superial-Zahlen" und "Arbeitsnotation für den Einstieg" - etwas
      weniger Zeilenabstand zwischen den Listenpunkten als der Standard (1.18em). */
   .compact-list li { margin-bottom: 0.85em; }
-  /* #: Für Folien "Erste Rechenintuition mit s^-1" und "Vom Ableiten zum Integrieren" - etwas
-     weniger Zeilenabstand als der ".compact-list"-Standard, ohne die Folien "Leitfrage..."/
-     "Arbeitsnotation...", die dieselbe Basisklasse nutzen, zu verändern. */
+  /* #: Für Folien "Erste Rechenintuition mit s^-1", "Vom Ableiten zum Integrieren" und "Von der
+     Intuition zur Theorie" - etwas weniger Zeilenabstand als der ".compact-list"-Standard, ohne
+     die Folien "Leitfrage..."/"Arbeitsnotation...", die dieselbe Basisklasse nutzen, zu
+     verändern. */
   .compact-list.compact-list-tighter li { margin-bottom: 0.65em; }
   /* #: Nur für Folie "Warum Mathematik Zahlbereiche erweitert" - die Liste lief mit dem normalen
      Zeilenabstand (1.18em) über den unteren Folienrand hinaus (Titel + Einleitung + Formel + 5
@@ -434,14 +454,14 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Von der Intuition zur Theorie</h2>
       <p>Welche Fragen die Theorie der Superial-Zahlen beantworten muss:</p>
-      <ol>
-        <li>Was sind die Objekte der SN genau?</li>
+      <ol class="compact-list compact-list-tighter">
+        <li>Was sind die Objekte der Superial-Zahlen genau?</li>
         <li>Welche Rechenregeln gelten für <span class="mjx-pending">\( \s \)</span> und seine Potenzen?</li>
         <li>Wie werden Skalen formal verglichen?</li>
         <li>Wie entstehen Ableitungen und Integrale rigoros?</li>
         <li>Warum hat <span class="mjx-pending">\( \s \)</span> seine spezifische innere Struktur?</li>
       </ol>
-      <p><em>Ziel der Reihe:</em> Schrittweise von Arbeitsintuition zu präziser Theorie.</p>
+      <p style="margin-top: 1.18em;"><em>Ziel der Reihe:</em> Schrittweise von Arbeitsintuition zur präzisen Theorie.</p>
     </section>
 
     <!-- Folie 17 -->
@@ -452,7 +472,7 @@
       <ul>
         <li><em>Vortrag 1:</em> Motivation und Grundidee der Superial-Zahlen ✓</li>
         <li><em>Vortrag 2:</em> Skalenstruktur und Rechnen (Grundlagen)</li>
-        <li><em>Vortrag 3:</em> Von Ableitung zum Integral — Integral und infinitesimales Zählen</li>
+        <li><em>Vortrag 3:</em> Von Ableitung zum Integral – Integral und infinitesimales Zählen</li>
         <li><em>Vortrag 4:</em> Zahlentheoretische Anforderungen und Struktur von <span class="mjx-pending">\( \s \)</span></li>
         <li><em>Vortrag 5+:</em> Differentialrechnung / Integrale / Vertiefungen / zentrale Sätze</li>
       </ul>
@@ -513,10 +533,10 @@
       <h2>Zur Genossenschaft</h2>
       <p>Website: <a href="https://menschlichwirtschaften.de" target="_blank">menschlichwirtschaften.de</a><br>
       Akademie: <a href="https://menschlichwirtschaften.de/akademie" target="_blank">menschlichwirtschaften.de/akademie</a><br>
-      Vortragsreihe: <a href="https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen" target="_blank">Hermes Trismegistos – Weisheit in die Gegenwart bringen</a><br>
+      Vortragsreihe: <a href="https://menschlichwirtschaften.de/initiativen/XXX" target="_blank">XXX</a><br>
       YouTube-Kanal: <a href="https://youtube.com/@MenschlichWirtschaften" target="_blank">@MenschlichWirtschaften</a></p>
       <p>Wir freuen uns über Spenden:</p>
-      <p style="margin-left: 2em;">Menschlich Wirtschaften e.G.<br>
+      <p style="margin-left: 2em;">Menschlich Wirtschaften eG<br>
       IBAN: DE43 1505 0500 0102 1079 04<br>
       BIC: NOLADE21GRW<br>
       Sparkasse Vorpommern</p>
