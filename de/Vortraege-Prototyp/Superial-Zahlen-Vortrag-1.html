@@ -57,12 +57,38 @@
   .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
   .reveal h1, .reveal h2, .reveal h3 { color: #000; text-transform: none; text-align: left; }
   .reveal h2 { font-size: 1.32em; margin-bottom: 1.34em; }
-  .reveal ul { display: block; margin-left: 36px; }
-  .reveal ul ul { margin-top: 0.5em; margin-bottom: 0.5em; }
+  /* #: Zurück zu nativen Markern. Richtiggestellt per PDF-Messdaten: die Vorlage verwendet auf BEIDEN
+     Ebenen exakt dasselbe Zeichen "•" (gefüllt) - keine Disc/Circle-Unterscheidung nach Ebene, wie
+     fälschlich als Standard-Konvention angenommen. Zusätzlich Marker-Schriftart explizit auf eine
+     Systemschrift gesetzt (Theorie: manche Browser zeichnen den Marker über den Bullet-Glyph der
+     aktuellen Schriftart statt über eine feste Form, und "Open Sans" könnte dafür einen hohlen Glyph
+     mitbringen). */
+  .reveal ul, .reveal ul ul { display: block; margin-left: 36px; list-style-type: disc; }
   .reveal li { margin-bottom: 1.18em; line-height: 1.3; }
+  .reveal li::marker { font-family: Arial, Helvetica, sans-serif; }
+  .reveal ul ul { margin-top: 1.1em; margin-bottom: 1.1em; }
+  /* #: Nur für Folie "Warum Mathematik Zahlbereiche erweitert" - die Liste lief mit dem normalen
+     Zeilenabstand (1.18em) über den unteren Folienrand hinaus (Titel + Einleitung + Formel + 5
+     Listenpunkte sind zusammen zu viel Inhalt für den Standard-Abstand). */
+  .tight-list li { margin-bottom: 0.5em; }
+  .tight-list ul { margin-top: 0.5em; margin-bottom: 0.5em; }
   .reveal p { margin-bottom: 1.18em; line-height: 1.3; }
   .reveal small { font-size: 0.65em; opacity: 0.85; }
   mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }
+  /* #: Gleiches FOUC-Vermeidungs-/Einblendsystem wie auf den Hauptseiten (share/php/Science.php,
+     "Sc_f_HeaderElements") - versteckt den rohen LaTeX-Quelltext, bis MathJax ihn durch
+     "<mjx-container>" ersetzt hat, und blendet die fertige Formel dann per "Fade + Scale" ein, statt
+     sie abrupt/mit sichtbaren Befehlen erscheinen zu lassen. Inklusive aller dort gefundenen
+     Safari-Fixes (eigene "display:block"-Klasse für Block-Formeln, "will-change", "setTimeout" +
+     erzwungener Reflow) und des Größen-Schrumpftricks für Inline-Formeln gegen die sonst reservierte
+     Roh-Text-Lücke. */
+  .mjx-pending { opacity: 0; transition: opacity 2s ease; will-change: opacity; }
+  .mjx-pending.mjx-ready { opacity: 1; }
+  .mjx-pending mjx-container { transform: scale(0.92); transition: transform 2s ease; will-change: transform; }
+  .mjx-pending.mjx-ready mjx-container { transform: scale(1); }
+  .mjx-pending-display { display: block; }
+  .mjx-pending:not(.mjx-pending-display) { font-size: 0.01em; }
+  .mjx-pending:not(.mjx-pending-display) mjx-container { font-size: 100em; }
   /* #: "<em>" wird an sehr vielen Stellen im Deck für Kursivierung genutzt (nicht nur auf den
      Titelfolien) - robuster, globaler Fix statt einzelner Patches pro Stelle. */
   .reveal em { font-style: italic !important; }
@@ -85,6 +111,12 @@
   .reveal .slides section.cover {
     padding: 190px 100px 0 100px !important; box-sizing: border-box;
   }
+  /* #: Eigener, per Messvergleich kalibrierter Innenabstand nur für die Titelfolie (Folie 1) - per
+     Messung lag der Textanfang bisher bei y=190 statt dem Ziel y=308. */
+  .reveal .slides section.cover-title { padding-top: 308px !important; }
+  /* #: Gleiches Prinzip für Folie 2 ("Vortragstitel") - per Messung lag der Haupttitel bisher bei
+     y=190 statt dem Ziel y=459.5. */
+  .reveal .slides section.cover-talk { padding-top: 459px !important; }
   .reveal .slides section.cover .mw-cover-header {
     position: absolute; top: 0; left: 0; right: 0; height: 150px;
     background: var(--mw-header);
@@ -97,28 +129,47 @@
      nur größer), "Die Zahlentheorie..." 34.7px. Abstände: Akademie→Mathematik 25px,
      Mathematik→Vortragsreihe-Block 39px, die drei Zeilen des Blocks selbst praktisch ohne
      Zusatzabstand (normaler Zeilenfluss). */
-  .mw-cover-sub { font-size: 1.29em; margin: 0; }
-  .mw-cover-maintitle { font-size: 3.75em; margin: 0 0 25px 0; line-height: 1; }
-  .mw-cover-eyebrow { font-size: 0.79em; margin: 0 0 39px 0; }
+  /* #: Margins unten per Soll-Ist-Messvergleich kalibriert (getBoundingClientRect gegen PDF-Werte),
+     nicht mehr aus den rohen PDF-Koordinaten-Differenzen hergeleitet - die PDF-Boxhöhen enthalten
+     zusätzlichen Font-Leading/Descender-Platz, den die hier verwendeten CSS-Boxen (line-height:1)
+     nicht haben, wodurch reine Koordinaten-Differenzen die falschen Margins ergaben. */
+  .mw-cover-sub { font-size: 1.29em; margin: 0 0 4px 0; }
+  .mw-cover-maintitle { font-size: 3.75em; margin: 0 0 80px 0; line-height: 1; }
+  .mw-cover-eyebrow { font-size: 0.79em; margin: 0 0 50px 0; }
   .mw-cover-talk { margin: 0; }
   .mw-cover-talk p { margin: 0; }
-  .mw-cover-kicker { font-size: 0.79em; font-style: italic !important; }
-  .mw-cover-series { font-size: 1.1em; }
+  .mw-cover-kicker { font-size: 0.79em; font-style: italic !important; margin-bottom: 5px !important; }
+  .mw-cover-series { font-size: 1.1em; margin-bottom: 3px !important; }
   .mw-cover-desc { font-size: 0.87em; }
   /* Folie 2+ (exakt aus PDF gemessen): Titel 80px, "Vortragsreihe" 38.5px kursiv, "Superial-Zahlen
      (SN)" 53.9px, "Die Zahlentheorie...–Teil 1" 42.3px (Teil 1 kursiv), "Vortrag und Dialog..." 33px
      (Name kursiv). Titel→Vortragsreihe 27px, Vortragsreihe→Superial-Zahlen ~4px (quasi Zeilenfluss),
      Superial-Zahlen→Beschreibung 12px, Beschreibung→Byline 175px (großer Abstand). */
-  .reveal .slides section.cover h1 { font-size: 2em; margin: 0 0 0.68em 0; line-height: 1.2; }
+  /* #: ":not(.mw-cover-maintitle)" - ohne das gewinnt diese Regel per Spezifität gegen die
+     eigentlich gedachte ".mw-cover-maintitle"-Regel für "Akademie" auf Folie 1 (3 Selektor-Teile statt
+     1), was "Akademie" fälschlich auf 2em statt 3.75em schrumpfte - per Messvergleich gefunden. */
+  /* #: "letter-spacing: -0.4px" - der Titeltext ist bei 80px (exakt wie in der Vorlage gemessen) im
+     Open-Sans-Webfont um ca. 16px breiter als der verfügbare Platz (gemessen: 1736px Text in 1720px
+     Platz) und bricht dadurch auf 2 Zeilen um, wo die Vorlage 1 Zeile zeigt - minimale
+     Zeichenabstand-Korrektur statt die (exakt gemessene) Schriftgröße zu verkleinern. */
+  .reveal .slides section.cover h1:not(.mw-cover-maintitle) { font-size: 2em; margin: 0; line-height: 1.2; letter-spacing: -0.4px; }
   .reveal .slides section.cover .mw-talk-title p { margin: 0 0 0.1em 0; }
-  .reveal .slides section.cover .mw-talk-kicker { font-size: 0.9625em; font-style: italic !important; }
-  .reveal .slides section.cover .mw-talk-series { font-size: 1.3475em; }
+  /* #: Margins unten per Soll-Ist-Messvergleich nachkorrigiert (gemessene Lücke gegen PDF-Soll-Lücke),
+     nicht mehr aus den rohen em-Werten abgeleitet - dieselbe Lehre wie bei Folie 1. */
+  .reveal .slides section.cover .mw-talk-kicker { font-size: 0.9625em; font-style: italic !important; margin-bottom: 6px !important; }
+  .reveal .slides section.cover .mw-talk-series { font-size: 1.3475em; margin-bottom: 15px !important; }
   .reveal .slides section.cover .mw-talk-desc { font-size: 1.0575em; margin-bottom: 0 !important; }
-  .reveal .slides section.cover .mw-talk-title { margin-top: 0.68em; }
-  .reveal .slides section.cover .mw-byline { font-size: 0.825em; margin-top: 4.4em; }
+  /* #: "margin-top" hier bewusst 0 und bei ".mw-talk-title"/".mw-byline" direkt der volle Soll-Abstand
+     (Soll-y0-zu-y0-Differenz MINUS eigener gerenderter Höhe) - angrenzende Margins kollabieren sonst
+     auf den GRÖSSTEN beteiligten Wert statt sich zu addieren, was einzelne Korrekturen zuvor
+     wirkungslos machte (per Messvergleich entdeckt). */
+  .reveal .slides section.cover .mw-talk-title { margin-top: 40px; }
+  .reveal .slides section.cover .mw-byline { font-size: 0.825em; margin-top: 178px; }
 
+  /* #: Format exakt aus der Vorlage gemessen (306x477px, hochformatig) - vorher quadratisch (280x280)
+     und damit zu eng zugeschnitten. */
   .mw-about-photo {
-    position: absolute; right: 100px; top: 230px; width: 280px; height: 280px;
+    position: absolute; right: 96px; top: 224px; width: 306px; height: 477px;
     border-radius: 8px; object-fit: cover;
   }
 </style>
@@ -128,7 +179,7 @@
   <div class="slides">
 
     <!-- Folie 1: Titelblatt -->
-    <section class="cover">
+    <section class="cover cover-title">
       <div class="mw-cover-header">
         <div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div>
       </div>
@@ -143,7 +194,7 @@
     </section>
 
     <!-- Folie 2: Vortragstitel -->
-    <section class="cover">
+    <section class="cover cover-talk">
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Mathematik</div></div></div>
       <h1>Motivation und Grundidee der Superial-Zahlen</h1>
       <div class="mw-talk-title">
@@ -158,7 +209,7 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Über mich</h2>
-      <ul>
+      <ul style="max-width: 1300px;">
         <li>Ich:
           <ul>
             <li>heiße Wolfgang Huß, komme aus Hamburg und bin 1968 geboren</li>
@@ -179,7 +230,7 @@
         <li><em>Heute:</em> Motivation, Arbeitsintuition, erste Rechenbeispiele</li>
         <li><em>Später:</em>
           <ul>
-            <li>vollständige Definition der neuen superialen Basis \( \s \) und volle Axiomatik</li>
+            <li>vollständige Definition der neuen superialen Basis <span class="mjx-pending">\( \s \)</span> und volle Axiomatik</li>
             <li>Analysis, Ableitung und Integral</li>
             <li>zahlentheoretische Bedeutung</li>
           </ul>
@@ -193,13 +244,13 @@
       <h2>Warum Mathematik Zahlbereiche erweitert</h2>
       <p>Neue Zahlen entstehen aus mathematischem Bedarf.<br>
       Zahlerweiterungen sind in der Mathematik normal, wenn neue Rechen- oder Strukturprobleme auftreten:</p>
-      <p style="text-align: center; margin: 1em 0;">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \]</p>
-      <ul>
-        <li>\( \mathbb{N} \): Zählen ermöglichen</li>
-        <li>\( \mathbb{Z} \): Subtrahieren ermöglichen</li>
-        <li>\( \mathbb{Q} \): Division ermöglichen</li>
-        <li>\( \mathbb{R} \): Grenzwerte / Kontinuität / Vollständigkeit</li>
-        <li>\( \mathbb{C} \): Gleichungen lösen wie \( x^2 + 1 = 0 \)</li>
+      <p style="text-align: center; margin: 1em 0;"><span class="mjx-pending mjx-pending-display">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \]</span></p>
+      <ul class="tight-list">
+        <li><span class="mjx-pending">\( \mathbb{N} \)</span>: Zählen ermöglichen</li>
+        <li><span class="mjx-pending">\( \mathbb{Z} \)</span>: Subtrahieren ermöglichen</li>
+        <li><span class="mjx-pending">\( \mathbb{Q} \)</span>: Division ermöglichen</li>
+        <li><span class="mjx-pending">\( \mathbb{R} \)</span>: Grenzwerte / Kontinuität / Vollständigkeit</li>
+        <li><span class="mjx-pending">\( \mathbb{C} \)</span>: Gleichungen lösen wie <span class="mjx-pending">\( x^2 + 1 = 0 \)</span></li>
       </ul>
     </section>
 
@@ -210,8 +261,8 @@
       <p>Unsere Intuition arbeitet ständig mit „klein" und „sehr klein" oder auch „sehr groß":</p>
       <ul>
         <li>kleine Änderungen</li>
-        <li>lokales Verhalten &nbsp;&nbsp; \( \Delta f \approx f'(x)\, \Delta x \)</li>
-        <li>vernachlässigbare Terme &nbsp;&nbsp; \( \text{Fläche} \approx \sum f(x_k)\, \Delta x \)</li>
+        <li>lokales Verhalten &nbsp;&nbsp; <span class="mjx-pending">\( \Delta f \approx f'(x)\, \Delta x \)</span></li>
+        <li>vernachlässigbare Terme &nbsp;&nbsp; <span class="mjx-pending">\( \text{Fläche} \approx \sum f(x_k)\, \Delta x \)</span></li>
         <li>erster / zweiter Ordnung</li>
         <li>Summation über viele kleine Schritte</li>
       </ul>
@@ -223,7 +274,7 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Kein Gegenmodell, sondern neue Formalsprache</h2>
       <p>Superial-Zahlen ergänzen die klassische Analysis — ersetzen sie nicht:</p>
-      <ul>
+      <ul class="tight-list">
         <li>Klassische Analysis:
           <ul><li>rigoros</li><li>bewährt</li><li>universell</li></ul>
         </li>
@@ -262,7 +313,7 @@
         </li>
         <li><em>Absolut und unendlich skalierbar</em> (im Sinne einer durchgehenden Skalenhierarchie)</li>
       </ul>
-      <p style="text-align: center;">\[ \cdots \ll \s^{-2} \ll \s^{-1} \ll \s^{0} = 1 \ll \s^{1} = \s \ll \s^{2} \ll \cdots \]</p>
+      <p style="text-align: center;"><span class="mjx-pending mjx-pending-display">\[ \cdots \ll \s^{-2} \ll \s^{-1} \ll \s^{0} = 1 \ll \s^{1} = \s \ll \s^{2} \ll \cdots \]</span></p>
       <p><small>Heute erst einmal als Arbeitsintuition — die präzise Definition und die innere Struktur der SN folgen später.</small></p>
     </section>
 
@@ -272,14 +323,14 @@
       <h2>Arbeitsnotation für den Einstieg</h2>
       <p>Skalierung:</p>
       <ul>
-        <li>\( \s^{-3} \): sehr viel kleiner als \( \s^{-1} \)</li>
-        <li>\( \s^{-2} \): viel kleiner als \( \s^{-1} \)</li>
-        <li>\( \s^{-1} \): infinitesimaler Schritt</li>
-        <li>\( \s^{0} = 1 \): endliche / gewöhnliche Skala</li>
-        <li>\( \s^{1} = \s \): unendlich große Skalen</li>
+        <li><span class="mjx-pending">\( \s^{-3} \)</span>: sehr viel kleiner als <span class="mjx-pending">\( \s^{-1} \)</span></li>
+        <li><span class="mjx-pending">\( \s^{-2} \)</span>: viel kleiner als <span class="mjx-pending">\( \s^{-1} \)</span></li>
+        <li><span class="mjx-pending">\( \s^{-1} \)</span>: infinitesimaler Schritt</li>
+        <li><span class="mjx-pending">\( \s^{0} = 1 \)</span>: endliche / gewöhnliche Skala</li>
+        <li><span class="mjx-pending">\( \s^{1} = \s \)</span>: unendlich große Skalen</li>
       </ul>
-      <p>Heute sehen wir \( \s \) als ein Rechensymbol.<br>
-      Spätere Herleitung über: Integral → infinitesimales Zählen → Zahlentheorie von \( \s \)</p>
+      <p>Heute sehen wir <span class="mjx-pending">\( \s \)</span> als ein Rechensymbol.<br>
+      Spätere Herleitung über: Integral → infinitesimales Zählen → Zahlentheorie von <span class="mjx-pending">\( \s \)</span></p>
     </section>
 
     <!-- Folie 11 -->
@@ -287,24 +338,24 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Brücke zur bekannten Notation</h2>
       <ul>
-        <li>Wer die \( \varepsilon \)-Notation kennt, kann \( \s^{-1} \) zunächst wie einen infinitesimalen Schritt lesen.</li>
-        <li>Wir bleiben aber bewusst bei \( \s^{-1} \), weil die SN-Notation die Skalenstruktur sichtbar macht.</li>
+        <li>Wer die <span class="mjx-pending">\( \varepsilon \)</span>-Notation kennt, kann <span class="mjx-pending">\( \s^{-1} \)</span> zunächst wie einen infinitesimalen Schritt lesen.</li>
+        <li>Wir bleiben aber bewusst bei <span class="mjx-pending">\( \s^{-1} \)</span>, weil die SN-Notation die Skalenstruktur sichtbar macht.</li>
       </ul>
     </section>
 
     <!-- Folie 12 -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
-      <h2>Erste Rechenintuition mit \( \s^{-1} \)</h2>
+      <h2>Erste Rechenintuition mit <span class="mjx-pending">\( \s^{-1} \)</span></h2>
       <p>Rechnen mit einem infinitesimalen Schritt:</p>
-      \[ \left( x + \s^{-1} \right)^{2} \;\;=\;\; x^{2} + 2x\,\s^{-1} + \s^{-2} \]
+      <span class="mjx-pending mjx-pending-display">\[ \left( x + \s^{-1} \right)^{2} \;\;=\;\; x^{2} + 2x\,\s^{-1} + \s^{-2} \]</span>
       <p>Skalenlesbarkeit der Terme:</p>
       <ul>
-        <li>\( x^2 \): endliche Hauptskala</li>
-        <li>\( 2x\,\s^{-1} \): infinitesimaler Korrekturterm 1. Ordnung</li>
-        <li>\( \s^{-2} \): noch kleinerer Term 2. Ordnung</li>
+        <li><span class="mjx-pending">\( x^2 \)</span>: endliche Hauptskala</li>
+        <li><span class="mjx-pending">\( 2x\,\s^{-1} \)</span>: infinitesimaler Korrekturterm 1. Ordnung</li>
+        <li><span class="mjx-pending">\( \s^{-2} \)</span>: noch kleinerer Term 2. Ordnung</li>
       </ul>
-      <p>Die Potenzen von \( \s \) sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
+      <p>Die Potenzen von <span class="mjx-pending">\( \s \)</span> sind nicht nur Schreibweise — sie tragen die innere Skalierungslogik der Analysis und so nun auch der neuen Superial-Zahlen.</p>
     </section>
 
     <!-- Folie 13 -->
@@ -312,8 +363,8 @@
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Ableitungsvorschau über Skalen</h2>
       <p>Von der Änderung zum linearen Anteil (Abbildung)</p>
-      <p>Für \( f(x) = x^2 \):</p>
-      \[
+      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:</p>
+      <span class="mjx-pending mjx-pending-display">\[
         \begin{array}{l}
         f'(x) \;=\; \dfrac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} } \\[0.8em]
         \phantom{f'(x)} \;=\; \dfrac{ (x + \s^{-1})^{2} - x^{2} }{ \s^{-1} } \\[0.8em]
@@ -322,7 +373,7 @@
         \phantom{f'(x)} \;=\; 2x + \s^{-1} \\[0.8em]
         \phantom{f'(x)} \;\approx\; 2x \quad \text{(klassische Ableitung)}
         \end{array}
-      \]
+      \]</span>
       <p>Der lineare Anteil trägt die Ableitungsidee.</p>
     </section>
 
@@ -336,7 +387,7 @@
         <li>Integral: Summation über sehr viele (infinite) sehr kleine (infinitesimale) Schritte</li>
         <li>Daraus entsteht die Idee des infinitesimalen Zählens:</li>
       </ul>
-      \[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \qquad\qquad \Delta x \sim \s^{-1} \;\;\Rightarrow\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]
+      <span class="mjx-pending mjx-pending-display">\[ f(x) \;=\; \sum_{\infty} f'(x)\, \Delta x \qquad\qquad \Delta x \sim \s^{-1} \;\;\Rightarrow\;\; f(x) \;=\; \sum_{\s} f'(x)\, \s^{-1} \]</span>
       <p><small>Der genaue Zusammenhang wird später entwickelt.<br>
       Heute genügt die Leitidee: <em>Aus dem Integralbedarf entsteht der Bedarf an infinitesimalem Zählen.</em></small></p>
     </section>
@@ -344,15 +395,15 @@
     <!-- Folie 15 -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="images/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
-      <h2>Warum \( \s \) heute schon verwendet wird</h2>
+      <h2>Warum <span class="mjx-pending">\( \s \)</span> heute schon verwendet wird</h2>
       <p>Arbeitssymbol jetzt — tiefere Begründung später:</p>
       <p style="text-align: center; font-style: italic;">(heute) Rechenidee zeigen &nbsp;⇒&nbsp; (später) Struktur begründen</p>
       <ul>
-        <li>\( \s \) wird heute als regelgeleitetes Arbeitssymbol verwendet</li>
-        <li>Die innere Konstruktion von \( \s \) wird heute noch nicht vorausgesetzt</li>
+        <li><span class="mjx-pending">\( \s \)</span> wird heute als regelgeleitetes Arbeitssymbol verwendet</li>
+        <li>Die innere Konstruktion von <span class="mjx-pending">\( \s \)</span> wird heute noch nicht vorausgesetzt</li>
         <li>Spätere Herleitung: <em>Integral → infinitesimales Zählen → zahlentheoretische Anforderungen</em></li>
       </ul>
-      <p><small><em>Didaktische Analogie:</em> Wie bei \( i \) in den komplexen Zahlen kann ein neues Symbol zunächst über Regeln eingeführt werden — seine Tragweite zeigt sich in seinen Rechenregeln, ebenso wie bei \( \s \).</small></p>
+      <p><small><em>Didaktische Analogie:</em> Wie bei <span class="mjx-pending">\( i \)</span> in den komplexen Zahlen kann ein neues Symbol zunächst über Regeln eingeführt werden — seine Tragweite zeigt sich in seinen Rechenregeln, ebenso wie bei <span class="mjx-pending">\( \s \)</span>.</small></p>
     </section>
 
     <!-- Folie 16 -->
@@ -362,10 +413,10 @@
       <p>Welche Fragen die Theorie der Superial-Zahlen beantworten muss:</p>
       <ol>
         <li>Was sind die Objekte der SN genau?</li>
-        <li>Welche Rechenregeln gelten für \( \s \) und seine Potenzen?</li>
+        <li>Welche Rechenregeln gelten für <span class="mjx-pending">\( \s \)</span> und seine Potenzen?</li>
         <li>Wie werden Skalen formal verglichen?</li>
         <li>Wie entstehen Ableitungen und Integrale rigoros?</li>
-        <li>Warum hat \( \s \) seine spezifische innere Struktur?</li>
+        <li>Warum hat <span class="mjx-pending">\( \s \)</span> seine spezifische innere Struktur?</li>
       </ol>
       <p><em>Ziel der Reihe:</em> Schrittweise von Arbeitsintuition zu präziser Theorie.</p>
     </section>
@@ -379,7 +430,7 @@
         <li><em>Vortrag 1:</em> Motivation und Grundidee der Superial-Zahlen ✓</li>
         <li><em>Vortrag 2:</em> Skalenstruktur und Rechnen (Grundlagen)</li>
         <li><em>Vortrag 3:</em> Von Ableitung zum Integral — Integral und infinitesimales Zählen</li>
-        <li><em>Vortrag 4:</em> Zahlentheoretische Anforderungen und Struktur von \( \s \)</li>
+        <li><em>Vortrag 4:</em> Zahlentheoretische Anforderungen und Struktur von <span class="mjx-pending">\( \s \)</span></li>
         <li><em>Vortrag 5+:</em> Differentialrechnung / Integrale / Vertiefungen / zentrale Sätze</li>
       </ul>
     </section>
@@ -391,10 +442,10 @@
       <p>Was wir heute mitnehmen:</p>
       <ul>
         <li>Die Superial-Zahlen motivieren eine skalenorientierte Rechensprache</li>
-        <li>Wir verwenden \( \s \) und \( \s^{-1} \) bereits als Arbeitsnotation</li>
+        <li>Wir verwenden <span class="mjx-pending">\( \s \)</span> und <span class="mjx-pending">\( \s^{-1} \)</span> bereits als Arbeitsnotation</li>
         <li>Erste Rechenbeispiele zeigen eine Skalen- bzw. Ordnungshierarchie</li>
         <li>Ableitung und Integral sind zwei Richtungen derselben Schrittidee</li>
-        <li>Die tiefe Struktur von \( \s \) wird später hergeleitet</li>
+        <li>Die tiefe Struktur von <span class="mjx-pending">\( \s \)</span> wird später hergeleitet</li>
       </ul>
     </section>
 
@@ -454,6 +505,18 @@
 <script src="../../share/js/reveal/dist/reveal.js"></script>
 <script src="../../share/js/reveal/dist/plugin/math.js"></script>
 <script>
+  new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      mutation.addedNodes.forEach(function(node) {
+        if (node.nodeType === 1 && node.tagName === "MJX-CONTAINER") {
+          var pending = node.closest(".mjx-pending");
+          if (pending) { var p = pending; setTimeout(function() { void node.offsetWidth; p.classList.add("mjx-ready"); }, 0); }
+        }
+      });
+    });
+  }).observe(document.documentElement, { childList: true, subtree: true });
+</script>
+<script>
   window.MathJax = {
     tex: {
       inlineMath: [ ["$","$"], ["\\(","\\)"] ],
@@ -474,6 +537,7 @@
     width: 1920,
     height: 1080,
     margin: 0,
+    slideNumber: 'c/t',
     mathjax4: {
       mathjax: '../../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js',
       tex: window.MathJax.tex,
