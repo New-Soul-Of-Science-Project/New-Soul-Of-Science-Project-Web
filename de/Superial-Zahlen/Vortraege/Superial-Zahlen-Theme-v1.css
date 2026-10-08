@@ -39,30 +39,102 @@
      selbst - wirkt auf die kombinierte Pfeilform als Ganzes (keine Naht) und ist als einzelne
      Filterfunktion deutlich breiter unterstützt als mehrfach verkettete. */
   .controls-arrow { filter: drop-shadow(0 0 4px #fff); }
-  /* #: Kleines "i"-Icon unten links (Gegenecke zu den Navigationspfeilen unten rechts) mit
-     Hover-Tooltip - zeigt, wie man die Folien als PDF sichert und welches Papierformat/welche
-     Ausrichtung dafür nötig ist. Liegt wie ".controls" direkt in ".reveal" (nicht in ".slides"),
-     skaliert dadurch mit der Folienfläche statt mit dem Browserfenster. Analog zu
-     "#pdf-export-link" aus dem ursprünglichen Demo-Deck per "html.reveal-print"-Klasse
-     ausgeblendet, sobald tatsächlich die Druckansicht aktiv ist, damit es nie im fertigen PDF
-     auftaucht. */
+  /* #: Kleines "i"-Icon unten links (Gegenecke zu den Navigationspfeilen unten rechts), öffnet
+     PER KLICK (erneuter Klick oder Klick außerhalb schließt wieder - siehe JS) ein kleines Menü
+     mit zwei Einträgen: "Sprechtext anzeigen" (blendet die Sprechtext-Notiz der aktuellen Folie
+     ein, siehe ".talk-notes" unten) und "Drucken" (Link auf "?print-pdf" mit Druckersymbol +
+     Papierformat-Hinweis). Liegt wie ".controls" direkt in ".reveal" (nicht in ".slides"),
+     skaliert dadurch mit der Folienfläche statt mit dem Browserfenster. Per
+     "html.reveal-print"-Klasse ausgeblendet, sobald tatsächlich die Druckansicht aktiv ist, damit
+     es nie im fertigen PDF auftaucht. */
   /* #: "!important" nötig - "reveal.css" enthält ".reveal a { position: relative }" (Klasse+Typ,
-     höhere Spezifität als unser bloßer Klassenselektor ".pdf-info"), was "position: absolute" hier
-     überschrieb und das Icon weit über den sichtbaren Bereich hinaus verschob. */
-  .pdf-info { position: absolute !important; left: 60px; bottom: 60px; z-index: 31; text-decoration: none; }
-  .pdf-info-icon {
+     höhere Spezifität als unser bloßer Klassenselektor ".speaker-menu"), was "position: absolute"
+     hier überschrieb und das Icon weit über den sichtbaren Bereich hinaus verschob. */
+  .speaker-menu { position: absolute !important; left: 60px; bottom: 60px; z-index: 31; }
+  .speaker-menu-icon {
     display: flex; align-items: center; justify-content: center;
-    width: 32px; height: 32px; border-radius: 50%;
+    width: 32px; height: 32px; border-radius: 50%; padding: 0; border: 0; cursor: pointer;
     background: rgba(0,0,0,0.4); color: #fff; font-family: Georgia, 'Times New Roman', serif;
     font-style: italic; font-size: 19px; filter: drop-shadow(0 0 4px #fff);
   }
-  .pdf-info-tooltip {
-    display: none; position: absolute; left: 0; bottom: 42px; width: 360px;
-    background: rgba(0,0,0,0.85); color: #fff; font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 15px; line-height: 1.4; padding: 12px 14px; border-radius: 6px;
+  /* #: Kein "overflow: hidden" hier (nur für die abgerundeten Ecken gedacht) - das würde auch die
+     seitlich daneben positionierte Drucken-Infoblase (siehe ".speaker-menu-print-info" unten)
+     abschneiden, obwohl sie technisch korrekt positioniert ist. Abgerundete Ecken stattdessen
+     direkt auf erstem/letztem Menüpunkt. */
+  .speaker-menu-list {
+    display: none; position: absolute; left: 0; bottom: 42px; width: 280px;
+    background: rgba(0,0,0,0.85); border-radius: 6px;
+    font-family: 'Open Sans', Arial, sans-serif; font-size: 15px;
   }
-  .pdf-info:hover .pdf-info-tooltip, .pdf-info:focus .pdf-info-tooltip { display: block; }
-  html.reveal-print .pdf-info { display: none; }
+  .speaker-menu.menu-open .speaker-menu-list { display: block; }
+  .speaker-menu-row { position: relative; }
+  /* #: Absolut NEBEN dem Menü positioniert, wie ".speaker-menu-print-info" bei "Drucken" - sitzt
+     nicht im normalen Textfluss, verändert also nie Größe/Form des Menüs selbst.
+     "color: #fff" nicht vergessen (wie bei ".speaker-menu-item") - DAS war der eigentliche Grund,
+     warum der Hinweis zuvor in Safari/Firefox unsichtbar blieb (per Safari-Webinspektor gefunden):
+     ohne eigene Farbe erbt das Element das globale dunkle ".reveal { color: #111 }", unsichtbar
+     auf dem fast-schwarzen Hintergrund - lag nie an der Positionierungstechnik selbst. Bei
+     ".speaker-menu-print-info" fiel das nicht auf, weil es INNERHALB eines Elements mit eigener
+     weißer Schrift (".speaker-menu-item") verschachtelt ist und die Farbe erbt; dieser Hinweis
+     liegt als Geschwister daneben.
+     Erscheint erst bei Hover über die (per JS mit ".no-notes" markierte) Zeile, nicht dauerhaft -
+     exakt wie ".speaker-menu-print-info" bei "Drucken". */
+  .speaker-menu-hint {
+    display: none; position: absolute; left: 100%; top: 0; margin-left: 10px; width: 220px;
+    background: rgba(0,0,0,0.85); border-radius: 6px; padding: 12px 14px;
+    color: #fff; font-size: 13px; font-style: italic; opacity: 0.9; line-height: 1.4;
+  }
+  .speaker-menu-row.no-notes:hover .speaker-menu-hint,
+  .speaker-menu-row.no-notes:focus-within .speaker-menu-hint { display: block; }
+  .speaker-menu-item {
+    display: block; width: 100%; box-sizing: border-box; padding: 12px 14px;
+    background: none; border: 0; border-bottom: 1px solid rgba(255,255,255,0.15);
+    color: #fff; text-decoration: none; text-align: left; line-height: 1.4;
+    font-family: inherit; font-size: inherit; cursor: pointer;
+  }
+  .speaker-menu-item:disabled { color: rgba(255,255,255,0.5); cursor: default; }
+  .speaker-menu-row:first-child .speaker-menu-item { border-radius: 6px 6px 0 0; }
+  .speaker-menu-item:last-child { border-bottom: 0; border-radius: 0 0 6px 6px; }
+  .speaker-menu-print { position: relative; }
+  /* #: Explizite Emoji-Schriftart nötig - ".reveal" setzt global "font-family: 'Open Sans', Arial,
+     sans-serif" (keine davon kann Emoji darstellen), und anders als Chrome/Safari fällt Firefox bei
+     Emoji-Zeichen nicht zuverlässig automatisch auf eine System-Emoji-Schrift zurück, das Zeichen
+     blieb dort unsichtbar. Mit explizitem Font-Stack erzwungen. */
+  .speaker-menu-print-icon { margin-right: 6px; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
+  /* #: Papierformat-/Druckhinweis erscheint erst beim Hover auf genau diesen Menüpunkt - absolut
+     NEBEN dem Menü positioniert (nicht als normaler Block-Inhalt innerhalb des Menüpunkts), damit
+     das Einblenden die Größe/Form von ".speaker-menu-list" nicht verändert. Eine Größenänderung
+     während des Hovers verschiebt sonst die Maus relativ zur Hover-Fläche, was ein Flackern
+     zwischen ein-/ausgeblendet auslöste und den Weg zu "Sprechtext anzeigen" blockierte. */
+  .speaker-menu-print-info {
+    display: none; position: absolute; left: 100%; bottom: 0; margin-left: 10px; width: 300px;
+    background: rgba(0,0,0,0.85); border-radius: 6px; padding: 12px 14px;
+    font-size: 13px; line-height: 1.4; opacity: 0.9;
+  }
+  .speaker-menu-print:hover .speaker-menu-print-info, .speaker-menu-print:focus .speaker-menu-print-info { display: block; }
+  html.reveal-print .speaker-menu { display: none; }
+  /* #: Sprechtext-Notiz pro Folie - liegt als Kind direkt im jeweiligen "<section>" im Quelltext
+     (bei der Folie selbst, nicht zentral gesammelt), ist aber standardmäßig unsichtbar. Erst wenn
+     "Sprechtext anzeigen" angeklickt wurde (JS setzt dafür die Klasse "talk-notes-on" auf ".reveal"),
+     wird die Notiz NUR der gerade aktiven Folie sichtbar - reveal.js markiert die aktive Folie
+     selbst laufend mit der Klasse "present". */
+  .talk-notes { display: none; }
+  .reveal.talk-notes-on .slides section.present .talk-notes {
+    display: block; position: absolute; left: 100px; right: 100px; bottom: 60px;
+    background: rgba(0,0,0,0.85); color: #fff; font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 26px; line-height: 1.45; padding: 24px 56px 24px 28px; border-radius: 8px; z-index: 30;
+  }
+  /* #: Liegt als erstes Kind IM jeweiligen ".talk-notes" (nicht zentral einmal im Dokument), damit
+     die Position immer exakt an der oberen rechten Ecke DER GERADE SICHTBAREN Notiz-Box sitzt,
+     unabhängig von deren variabler Höhe (die Box wächst von "bottom: 60px" aus nach oben, je nach
+     Textlänge - ein einzelner, zentral positionierter Button könnte die obere Kante nicht treffen,
+     ohne die Höhe zu kennen). Klick wird in JS per Event-Delegation auf "document" abgefangen. */
+  .talk-notes-close-btn {
+    position: absolute; top: 10px; right: 14px; width: 28px; height: 28px;
+    background: rgba(255,255,255,0.15); border: 0; border-radius: 50%;
+    color: #fff; font-size: 18px; line-height: 1; cursor: pointer;
+  }
+  .talk-notes-close-btn:hover { background: rgba(255,255,255,0.3); }
   .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 40px; }
   .reveal .slides { text-align: left; }
   .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
