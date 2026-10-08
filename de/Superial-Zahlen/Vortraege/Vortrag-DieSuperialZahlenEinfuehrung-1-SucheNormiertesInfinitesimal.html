@@ -63,33 +63,37 @@
       <h2>Die bekannte Definition</h2>
       <p>Die Ableitung beginnt mit einem Schritt</p>
       <p style="text-align: center; margin: 1em 0; font-size: 1.6em;"><span class="mjx-pending mjx-pending-display">\[ \frac{f(x+h)-f(x)}{h} \]</span></p>
-      <p style="text-align: center; margin: 0.5em 0 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \neq 0 \]</span></p>
+      <p style="text-align: center; margin: 0.5em 0 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\;\;\neq\;\;\; 0 \]</span></p>
       <p>Denn wir teilen durch <span class="mjx-pending">\( h \)</span>.</p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wir nehmen einen Punkt <span class="mjx-pending">\( x \)</span> und einen zweiten Punkt <span class="mjx-pending">\( x+h \)</span>. Der Differenzenquotient misst die Änderung der Funktion pro Schritt <span class="mjx-pending">\( h \)</span>. Eine Bedingung ist unvermeidlich: <span class="mjx-pending">\( h \)</span> darf nicht null sein. Sonst wäre diese Rechnung nicht definiert.“
         <p style="margin-top: 1em;">„Bis hierhin ist <span class="mjx-pending">\( h \)</span> ein ganz gewöhnlicher, von null verschiedener Schritt.“</p>
       </div>
     </section>
 
-    <!-- Folie 5 -->
+    <!-- Folie 5: Der Schritt wird immer kleiner -->
     <section>
-      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
-      <h2>Zu meiner Forschung</h2>
-      <ul style="font-size: 0.75em;">
-        <li>Superial-Zahlen: <a href="https://nsosp.org/de/Superial-Zahlen" target="_blank">nsosp.org/de/Superial-Zahlen</a></li>
-        <li>Fraktale Quanten-Fluss-Theorie: <a href="https://nsosp.org/de/Quanten-Fluss-Theorie" target="_blank">nsosp.org/de/Quanten-Fluss-Theorie</a></li>
-        <li>›Spannungsspiel des Lebens‹: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens" target="_blank">nsosp.org/de/Spannungsspiel-des-Lebens</a>
-          <ul>
-            <li>Der Care-Prozess: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php" target="_blank">Link</a></li>
-            <li>Die Psychosomatik: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php" target="_blank">Link</a></li>
-          </ul>
-        </li>
-        <li>Naturphilosophie-Yoga: <a href="https://nsosp.org/de/Naturphilosophie-Yoga" target="_blank">nsosp.org/de/Naturphilosophie-Yoga</a>
-          <ul>
-            <li>Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-RaHorus-Sonne-Mond.php" target="_blank">Link</a></li>
-            <li>Phönix aus der Asche: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php" target="_blank">Link</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche des sinnvoll normierten Infinitesimals der Analysis</div></div></div>
+      <h2>Der Schritt wird immer kleiner</h2>
+      <p style="margin-bottom: 0.5em;">Aber welcher Schritt <span class="mjx-pending">\( h \)</span> ist der richtige?</p>
+      <!-- #: Platzhalter für die spätere Three.js-Live-Animation (Wolfgang hat dazu bereits
+           ähnliches im Projekt, 2026-10-08 besprochen) - zeigt bis dahin die geplanten Inhalte
+           (Graph, Punkte, Sekante, schrumpfendes h) als statischen Text/Formeln. */ -->
+      <!-- #: Breite/Höhe exakt im Verhältnis des Goldenen Schnitts (1:1.618) - rechts positioniert
+           (float), damit die Formel darunter links mittig fließen kann und mehr Höhe zur
+           Verfügung steht als bei einer früheren volleren-Breite-Version. */ -->
+      <div style="float: right; width: 800px; height: 550px; box-sizing: border-box; border: 2px dashed rgba(0,0,0,0.3); border-radius: 8px; padding: 16px 18px; margin: 0.4em 0 0.8em 24px; font-size: 0.68em;">
+        <p style="margin: 0 0 0.6em 0; font-style: italic; opacity: 0.7;">[Platzhalter – später Three.js-Animation]</p>
+        <p style="margin-bottom: 0.4em;">Graph <span class="mjx-pending">\( f(x) = x^2 \)</span>, Punkt <span class="mjx-pending">\( P = (x, f(x)) \)</span>, daneben der Punkt <span class="mjx-pending">\( Q = (x+h, f(x+h)) \)</span>. Die Sekante zwischen beiden.</p>
+        <p style="margin-bottom: 0.4em;">Während der Animation wird <span class="mjx-pending">\( h \)</span> kleiner:</p>
+        <p style="text-align: center; margin: 0.6em 0 0 0;"><span class="mjx-pending mjx-pending-display">\[ h = 1 \;\longrightarrow\; 0{,}5 \;\longrightarrow\; 0{,}1 \;\longrightarrow\; 0{,}01 \;\longrightarrow\; \cdots \]</span></p>
+      </div>
+      <!-- #: "margin-right: 415px" (statt nur "margin: 0.8em 0") nötig - der Float rechts
+           beeinflusst nur normalen Fließtext/Inline-Inhalt, nicht den als Block erzwungenen
+           ".mjx-pending-display"-Span (unser FOUC-System); ohne expliziten Platz zentriert
+           "margin: auto" die Formel über die GANZE Folienbreite statt nur in der linken Spalte. -->
+      <p style="text-align: center; margin: 2.8em 1065px 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ \frac{(x+h)^2-x^2}{h} \;\;\;=\;\;\; 2x+h \]</span></p>
+      <p class="fragment" style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1em;">Wie klein soll <span class="mjx-pending">\( h \)</span> eigentlich werden?</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Je kleiner wir <span class="mjx-pending">\( h \)</span> wählen, desto näher kommt die Sekante an die Tangente. Gleichzeitig wird aus <span class="mjx-pending">\( 2x+h \)</span> immer stärker der Ausdruck <span class="mjx-pending">\( 2x \)</span>.“</div>
     </section>
 
     <!-- Folie 6 -->
