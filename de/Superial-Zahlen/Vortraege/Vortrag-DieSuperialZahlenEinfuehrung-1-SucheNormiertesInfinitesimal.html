@@ -62,9 +62,9 @@
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche des sinnvoll normierten Infinitesimals der Analysis</div></div></div>
       <h2>Die bekannte Definition</h2>
       <p>Die Ableitung beginnt mit einem Schritt</p>
-      <p style="text-align: center; margin: 1em 0; font-size: 1.6em;"><span class="mjx-pending mjx-pending-display">\[ \frac{f(x+h)-f(x)}{h} \]</span></p>
-      <p style="text-align: center; margin: 0.5em 0 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\;\;\neq\;\;\; 0 \]</span></p>
-      <p>Denn wir teilen durch <span class="mjx-pending">\( h \)</span>.</p>
+      <p style="text-align: center; margin: 2em 0 0.5em 0; font-size: 1.2em;"><span class="mjx-pending mjx-pending-display">\[ \frac{f(x+h)-f(x)}{h}  \;\; , \]</span></p>
+      <p style="text-align: center; margin: 0.5em 0 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\;\;\neq\;\;\; 0  \;\; , \]</span></p>
+      <p>denn wir teilen durch <span class="mjx-pending">\( h \)</span>.</p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wir nehmen einen Punkt <span class="mjx-pending">\( x \)</span> und einen zweiten Punkt <span class="mjx-pending">\( x+h \)</span>. Der Differenzenquotient misst die Änderung der Funktion pro Schritt <span class="mjx-pending">\( h \)</span>. Eine Bedingung ist unvermeidlich: <span class="mjx-pending">\( h \)</span> darf nicht null sein. Sonst wäre diese Rechnung nicht definiert.“
         <p style="margin-top: 1em;">„Bis hierhin ist <span class="mjx-pending">\( h \)</span> ein ganz gewöhnlicher, von null verschiedener Schritt.“</p>
       </div>
@@ -92,12 +92,49 @@
            beeinflusst nur normalen Fließtext/Inline-Inhalt, nicht den als Block erzwungenen
            ".mjx-pending-display"-Span (unser FOUC-System); ohne expliziten Platz zentriert
            "margin: auto" die Formel über die GANZE Folienbreite statt nur in der linken Spalte. -->
-      <p style="text-align: center; margin: 2.8em 1065px 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ \frac{(x+h)^2-x^2}{h} \;\;\;=\;\;\; 2x+h \]</span></p>
-      <p class="fragment" style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1em;">Wie klein soll <span class="mjx-pending">\( h \)</span> eigentlich werden?</p>
-      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Je kleiner wir <span class="mjx-pending">\( h \)</span> wählen, desto näher kommt die Sekante an die Tangente. Gleichzeitig wird aus <span class="mjx-pending">\( 2x+h \)</span> immer stärker der Ausdruck <span class="mjx-pending">\( 2x \)</span>. Wie klein soll <span class="mjx-pending">\( h \)</span> eigentlich werden?“</div>
+      <p style="text-align: center; margin: 2em 900px 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ \frac{(x+h)^2-x^2}{h} \;\;\;=\;\;\; 2x+h \]</span></p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin: 2em 900px 0.8em 0;">Wie klein muss <span class="mjx-pending">\( h \)</span> genau werden, um infinitesimal sinnvoll normiert zu sein?</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Je kleiner wir <span class="mjx-pending">\( h \)</span> wählen, desto näher kommt die Sekante an die Tangente. Gleichzeitig wird aus <span class="mjx-pending">\( 2x+h \)</span> immer stärker der Ausdruck <span class="mjx-pending">\( 2x \)</span>. Wie klein muss <span class="mjx-pending">\( h \)</span> genau werden, um unser gesuchtes sinnvoll normiertes Infinitesimal zu werden?“</div>
     </section>
 
-    <!-- Folie 6 -->
+    <!-- Folie 6: Die elegante Lösung -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche des sinnvoll normierten Infinitesimals der Analysis</div></div></div>
+      <h2>Die elegante historische Lösung</h2>
+      <p>Die klassische Antwort über den Grenzwert: kein bestimmtes <span class="mjx-pending">\( h \)</span>, sondern ein laufendes</p>
+      <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\longrightarrow\; 0  \;\; ,  \qquad f'(x)  \;\;\;=\;\;\;  \lim_{h\to0} \frac{f(x+h)-f(x)}{h}  \;\; . \]</span></p>
+      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:<span class="mjx-pending">\( \qquad\qquad\qquad\qquad\quad\;\,  \displaystyle{ \lim_{ h \to 0 } (2x + h)  \;\;\;=\;\;\;  2x  \;\; . } \)</span></p>
+      <!-- <p style="text-align: center; margin: 0.6em 0;"><span class="mjx-pending mjx-pending-display">\[ \lim_{h\to0}(2x+h) = 2x. \]</span></p> -->
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1.2em;">Der Grenzwert wählt keinen infinitesimalen Schritt.</p>
+      <p style="margin-top: 0.6em;">Er bestimmt den Wert, dem die Differenzenquotienten für immer kleinere von null verschiedene endliche Schritte zustreben.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Das ist eine mathematisch elegante Lösung. Wir müssen gar keinen kleinsten Schritt finden. <span class="mjx-pending">\( h \)</span> bleibt während der Rechnung von null verschieden, und wir untersuchen lediglich, welchem Wert sich der Differenzenquotient nähert, wenn <span class="mjx-pending">\( h \)</span> beliebig klein wird.“
+        <p style="margin-top: 1em;">„Aber damit wurde eine andere Frage noch gar nicht beantwortet.“</p>
+      </div>
+    </section>
+
+    <!-- Folie 7: Zu meiner Forschung -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche des sinnvoll normierten Infinitesimals der Analysis</div></div></div>
+      <h2>Zu meiner Forschung</h2>
+      <ul style="font-size: 0.75em;">
+        <li>Superial-Zahlen: <a href="https://nsosp.org/de/Superial-Zahlen" target="_blank">nsosp.org/de/Superial-Zahlen</a></li>
+        <li>Fraktale Quanten-Fluss-Theorie: <a href="https://nsosp.org/de/Quanten-Fluss-Theorie" target="_blank">nsosp.org/de/Quanten-Fluss-Theorie</a></li>
+        <li>›Spannungsspiel des Lebens‹: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens" target="_blank">nsosp.org/de/Spannungsspiel-des-Lebens</a>
+          <ul>
+            <li>Der Care-Prozess: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php" target="_blank">Link</a></li>
+            <li>Die Psychosomatik: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+        <li>Naturphilosophie-Yoga: <a href="https://nsosp.org/de/Naturphilosophie-Yoga" target="_blank">nsosp.org/de/Naturphilosophie-Yoga</a>
+          <ul>
+            <li>Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-RaHorus-Sonne-Mond.php" target="_blank">Link</a></li>
+            <li>Phönix aus der Asche: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Folie 8: Zur Genossenschaft -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Zur Genossenschaft</h2>
