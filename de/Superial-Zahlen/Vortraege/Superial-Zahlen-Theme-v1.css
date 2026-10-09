@@ -138,6 +138,14 @@
   .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 40px; }
   .reveal .slides { text-align: left; }
   .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
+  /* #: reveal.css setzt im Druckmodus per "html.reveal-print .reveal .slides section"
+     (3 Klassen + 2 Typen, höhere Spezifität als unsere Regel oben mit 2 Klassen + 1 Typ)
+     "padding: 0 !important" - gedacht für reveal.js' Standard-Theme ohne eigene, absolut
+     positionierte Kopfzeile. Bei uns fehlte dadurch der Freiraum über der ".mw-header"-Leiste
+     komplett, der Folientitel landete beim PDF-Export hinter der Kopfzeile statt darunter.
+     Eigene Regel mit identischer Spezifität (gleicher Selektor, aber später im Dokument
+     geladen) stellt das Padding fürs Druckmodus wieder her. */
+  html.reveal-print .reveal .slides section { padding: 226px 100px 0 100px !important; }
   .reveal h1, .reveal h2, .reveal h3 { color: #000; text-transform: none; text-align: left; }
   .reveal h2 { font-size: 1.32em; margin-bottom: 1.34em; }
   /* #: Zurück zu nativen Markern. Richtiggestellt per PDF-Messdaten: die Vorlage verwendet auf BEIDEN
@@ -244,6 +252,13 @@
   /* #: Gleiches Prinzip für Folie 2 ("Vortragstitel") - per Messung lag der Haupttitel bisher bei
      y=190 statt dem Ziel y=459.5. */
   .reveal .slides section.cover-talk { padding-top: 459px !important; }
+  /* #: Dieselbe reveal.js-Druckmodus-Falle wie bei der generischen Section-Regel weiter oben -
+     "html.reveal-print .reveal .slides section" (ohne Klassen-Zusatz) hat höhere Spezifität als
+     diese drei Cover-spezifischen Regeln und setzt ihr Padding im Druckmodus ebenfalls auf 0
+     zurück. Jede braucht eine eigene, gleich spezifische Druckmodus-Gegenregel. */
+  html.reveal-print .reveal .slides section.cover { padding: 190px 100px 0 100px !important; }
+  html.reveal-print .reveal .slides section.cover-title { padding-top: 308px !important; }
+  html.reveal-print .reveal .slides section.cover-talk { padding-top: 459px !important; }
   .reveal .slides section.cover .mw-cover-header {
     position: absolute; top: 0; left: 0; right: 0; height: 150px;
     background: var(--mw-header);

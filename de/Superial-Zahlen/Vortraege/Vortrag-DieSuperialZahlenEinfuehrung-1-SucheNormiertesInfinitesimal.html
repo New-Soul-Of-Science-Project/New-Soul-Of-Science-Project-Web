@@ -114,8 +114,8 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Innerhalb der reellen Zahlen finden wir es nicht</h2>
-      <p>Für ein infinitesimales <span class="mjx-pending">\( h \)</span> gilt grunsätzlich:</p>
-      <p style="text-align: center; margin: 1.2em 0;"><span class="mjx-pending mjx-pending-display">\[ 0  \;\;\;<\;\;\;  h  \;\;\;<\;\;\;  \frac{1}{n}  \qquad\quad \text{für alle } n \in \mathbb{N} \]</span></p>
+      <p>Für ein infinitesimales <span class="mjx-pending">\( h \)</span> gilt grundsätzlich:</p>
+      <p style="text-align: center; margin: 1.2em 0;"><span class="mjx-pending mjx-pending-display">\[ 0  \;\;\;<\;\;\;  h  \;\;\;<\;\;\;  \frac{1}{n}  \;\; ,  \qquad\quad \text{für alle } n \in \mathbb{N} \]</span></p>
       <p>Kein reelles <span class="mjx-pending">\( h \)</span> ist infinitesimal, es bleibt immer endlich.</p>
       <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">Ein solches <span class="mjx-pending">\( h \)</span> gibt es in <span class="mjx-pending">\( \mathbb{R} \)</span> nicht.</p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wenn <span class="mjx-pending">\( h \)</span> wirklich infinitesimal sein soll, muss es positiv sein, aber kleiner als <span class="mjx-pending">\( 1 \)</span>, <span class="mjx-pending">\( 1/10 \)</span>, <span class="mjx-pending">\( 1/1000 \)</span> – überhaupt kleiner als <span class="mjx-pending">\( 1/n \)</span> für jede natürliche Zahl <span class="mjx-pending">\( n \)</span>. Genau das erlaubt die archimedische Struktur der reellen Zahlen nicht.“</div>
@@ -124,13 +124,19 @@
     <!-- Folie 8: Aber irgendein Infinitesimal genügt noch nicht -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
-      <h2>Aber irgendein Infinitesimal genügt noch nicht</h2>
-      <p>Existenz allein löst das Problem noch nicht</p>
-      <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ 0 < h < \frac{1}{n} \qquad (\forall n \in \mathbb{N}) \]</span></p>
-      <p style="text-align: center; margin: 0.5em 0; font-size: 0.85em;">verschiedene denkbare Infinitesimale</p>
-      <p style="text-align: center; margin: 0 0 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ \varepsilon, \qquad 2\varepsilon, \qquad \frac{\varepsilon}{10}, \qquad \varepsilon^2, \qquad \cdots \]</span></p>
-      <p>Welches davon soll der Rechenschritt der Analysis sein?</p>
-      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">Wir brauchen nicht nur ein Infinitesimal, sondern eine Normierung.</p>
+      <h2>Aber irgendein Infinitesimal genügt noch nicht für</h2>
+      <p>
+        Angenommen, wir haben ein infinitesimales <span class="mjx-pending">\( h \)</span> mit <span class="mjx-pending">\( 0 < h < \frac{1}{n} \), für alle </span>, <span class="mjx-pending">\( n \in \mathbb{N} \)</span>, gefunden …
+        <br>
+        Dann würden doch auch die ebenso infinitesimalen Varianten diese Bedingung erfüllen:
+      </p>
+      <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ 0  \;\;\;<\;\;\;  h^{3}  \;\;\;<\;\;\;  h^{2}  \;\;\;<\;\;\;  \frac{h}{2}  \;\;\;<\;\;\;  h  \;\;\;<\;\;\;  2 h  \;\;\;<\;\;\;  3 h  \;\;\;<\;\;\;  \frac{1}{n} \]</span></p>
+      <p>Warum sollte dann gerade \(h\) der Rechenschritt der Analysis sein?</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">
+        Existenz allein löst das Problem noch nicht.
+        <br>
+        Wir brauchen nicht nur ein Infinitesimal, sondern eine Normierung.
+      </p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Mathematik kennt durchaus Systeme mit Infinitesimalen. Aber die bloße Existenz beantwortet unsere Frage noch nicht. Wenn sehr viele infinitesimale Zahlen existieren: Warum sollte gerade eine bestimmte davon der elementare Schritt der Ableitung sein? Wir suchen also nicht irgendein Infinitesimal. Wir suchen ein ausgezeichnetes, normiertes Infinitesimal.“</div>
     </section>
 
@@ -194,7 +200,7 @@
       </div>
       <a href="?print-pdf" target="_blank" class="speaker-menu-item speaker-menu-print">
         <span class="speaker-menu-print-icon" aria-hidden="true">🖨</span>Drucken
-        <span class="speaker-menu-print-info">Druckansicht öffnet sich in neuem Tab, dann <strong>Cmd/Strg + P</strong> → „Als PDF sichern", Hintergrundgrafiken aktivieren. Papierformat: A4 oder Letter, <strong>quer</strong> (Inhalt skaliert automatisch).</span>
+        <span class="speaker-menu-print-info">Druckansicht öffnet sich in neuem Tab, dann <strong>Cmd/Strg + P</strong> → „Als PDF sichern", Hintergrundgrafiken aktivieren. Am besten in <strong>Chrome</strong> exportieren – skaliert dort zuverlässig korrekt (in Safari/Firefox wird die Kopfzeile teils abgeschnitten).</span>
       </a>
     </div>
   </div>
