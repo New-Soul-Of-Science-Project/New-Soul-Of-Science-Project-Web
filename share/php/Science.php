@@ -3,12 +3,25 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.10.2026, 14:00h
+  // #: Stand: 06.10.2026, 21:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261004:  *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
-  //           20261004:  >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
+  //           20261006:  >:  "Sc_f_HeaderElements", "Sc_f_equation_latex_str_html":  Replace the blur-to-sharp ".mjx-pending" effect (see entry below) with "Fade + Scale" ("Pop-in": starts transparent and slightly shrunk, grows to normal opacity/size) - again on Wolfgang's request, testing yet another transition style. Several follow-up fixes needed to get this working correctly everywhere: (1) a first attempt set "display: inline-block" on ".mjx-pending" itself so "transform: scale(...)" would apply (plain "inline" elements ignore "transform") - this collided with "text-indent: 32px" on "tools-class-text" paragraphs: Chrome incorrectly counts a first-line-indent as part of an inline-block's own width when it's the first element on that line, leaving a 32px gap to the right of inline formulas at a paragraph's start (Wolfgang: "Bei Text-Inlines bleibt links ein großer weißer Rand") - fixed by moving "transform" to a selector targeting "mjx-container" directly (MathJax's own element, not artificially forced to "inline-block") instead, leaving ".mjx-pending" as plain "inline". (2) The MutationObserver's class-toggle callback ran synchronously in the same tick as the "<mjx-container>" insertion, so the browser never painted the initial "scale(0.92)" state before jumping straight to "scale(1)" - no visible "pop" ever actually played; fixed first via double-nested "requestAnimationFrame", which worked in Chrome/Firefox. (3) Wolfgang found Safari-specific breakage beyond that: block/display formulas ("\[...\]") showed the scale-pop but NO opacity fade at all, and inline formulas sometimes flickered (fade in, vanish, fade in again) - root-caused to (a) ".mjx-pending" being a plain "<span>" (inline) wrapping a block-rendered "<mjx-container>" for display equations (needed for the "width: fit-content; margin: auto" centering further up) - this inline-wrapping-block nesting is invalid/unusual HTML that Chrome/Firefox silently paper over but Safari composites differently, breaking the opacity transition - fixed with a new "mjx-pending-display" class (set only for "\[...\]", not inline "$...$") forcing "display: block" on the wrapper in that case; (b) Safari's well-known compositing-layer teardown glitch at the end of opacity/transform transitions on elements with SVG content, causing a brief flicker - fixed with "will-change: opacity"/"will-change: transform" so Safari keeps the layer stable throughout; (c) the double-"requestAnimationFrame" trick from (2) still weren't reliably committing a paint between state changes for MANY formulas inserted in quick succession in Safari (some formulas popped in "ad hoc" with no visible transition while others animated fine) - replaced with a combination of "setTimeout(..., 0)" (forces a real jump to the next browser task, guaranteeing a repaint opportunity between every single formula) plus a synchronous forced reflow ("void node.offsetWidth") inside it. (4) Finally, Wolfgang pointed out inline formulas (unlike display ones, which stay "super" as-is - already isolated in their own table row, so the size jump from raw text to compact formula barely registers there) reserved noticeably more horizontal space while pending than their final rendered size, since the pending phase shows the full LaTeX source as normal, unscaled text that only disrupts the surrounding reading flow for inline - brought back the "font-size: 0.01em" / "font-size: 100em" exact-inverse scaling trick from the entry below, now scoped to only ":not(.mjx-pending-display)" (i.e. inline only) via "mjx-pending:not(.mjx-pending-display)" selectors, so the invisible pending text collapses to near-zero footprint there while display formulas keep their already-working, untouched behavior. Verified live by Wolfgang in both Chrome and Safari after each fix; 9-page regression suite stayed at 0 "merror" throughout, and display-equation centering (from the "svg.displayAlign"/"width: fit-content" fixes above) remained unaffected by the new "display: block" rule.
+  //           20261006:  >:  "Sc_f_HeaderElements":  Replace the "visibility: hidden" + "font-size: 0.01em/100em" scale trick for ".mjx-pending" (see entry below) with a visible, blurred placeholder that sharpens into the rendered formula - on Wolfgang's request, to test whether this looks nicer than just having formulas silently appear: ".mjx-pending" now keeps the raw LaTeX source visible at normal size but with "filter: blur(1.15px)" and "opacity: 0.5" (value tuned live together with Wolfgang: 3px -> 1.5px -> 0.8px -> 1.15px as a middle ground), so the large-gap problem from the entry below is back by design (accepted trade-off, raw text at normal size is wider/taller than the final formula) in exchange for a softer "defocus -> focus" look instead of the previous instant pop-in. IMPORTANT DISCOVERY: "filter" and "opacity" are compositing properties (unlike "visibility"), applied by the browser to an element's entire rendered subtree as a unit - a descendant (e.g. the "<mjx-container>" MathJax inserts) cannot "undo" an ancestor's "filter"/"opacity" via its own CSS rule the way it can override an inherited "visibility" value; a first attempt using exactly that pattern (".mjx-pending mjx-container { filter: none; opacity: 1; }") left formulas permanently blurred in running text (confirmed by Wolfgang: "Im Fließtext bleibt die Unschärfe"). Fixed by changing strategy entirely: a small "MutationObserver" (new inline "<script>" in "Sc_f_HeaderElements") watches for "<mjx-container>" elements being inserted anywhere in the page and, for each one, adds a "mjx-ready" class to its closest ".mjx-pending" ancestor - since this toggles the blur/opacity off on the SAME element they were set on (not asking a child to override them), it actually resolves, and the accompanying CSS "transition" on ".mjx-pending" animates the change smoothly. Works per-formula as each is typeset, same as the previous approach.
+  //           20261006:  +:  "Sc_f_equation_latex_str_html":  Wrap every formula's raw LaTeX source in '<span class="mjx-pending">...</span>' before MathJax processes it, and add matching ".mjx-pending"/".mjx-pending mjx-container" CSS rules in "Sc_f_HeaderElements" - without this, the raw, unprocessed text (all the "\definecolor{...} \color{...} \left\{ ... \\\ \qquad..." commands) is briefly visible in the page exactly as typed, until MathJax's JS finishes replacing it with the actual rendered "<mjx-container>" (classic MathJax FOUC/"flash of unrendered content"); happens per-formula as each one is typeset, not only once for the whole page, so heavier pages (some have >1000 formulas) don't need a page-wide "hide body until fully done" delay. "visibility: hidden" on ".mjx-pending" hides the raw text; the override rule makes only the later-inserted "mjx-container" visible again (CSS "visibility" is inherited but can be overridden by a descendant, unlike e.g. "display"). FOLLOW-UP FIX (same day, Wolfgang caught this): "visibility: hidden" alone still reserves the full layout space of the hidden text, and since the raw LaTeX source is, as plain text, far wider/taller than the eventual compact rendered formula, this left a large empty gap in running body text (and could transiently widen auto-sized table cells) that suddenly collapsed once the formula appeared - fixed by additionally setting "font-size: 0.01em" on ".mjx-pending" (collapses the hidden text's box to near-zero, since glyph width scales with font-size) and the exact inverse "font-size: 100em" on the override rule (0.01 * 100 = 1), which mathematically restores the original, context-correct font size (body text vs. headline vs. "derivation" paragraphs, etc.) instead of flattening every formula to one fixed absolute size the way a plain px/rem value would.
+  //           20261005:  *:  "Sc_f_HeaderElements":  Add "svg: { displayAlign: \"left\" }" to the MathJax config - MathJax 4 is the first version to actually implement MathML3-style line-break layout (per the official "What's new in v4.0" docs): every line produced by a bare "\\" linebreak (i.e. NOT inside "array"/"aligned"/"cases") now gets an "indentalign" that resolves to "displayAlign", which defaults to "center" - so multi-line equations that used to stack LEFT-aligned relative to each other (MathJax 2/3 never implemented this MathML3 behavior, so they "accidentally" stayed left-aligned via older layout code) now centered each line instead, breaking Wolfgang's existing "\qquad"-indentation formatting on dozens of equations across the site (e.g. "SN.SinK.RZ.2", "SN.PP.75"). Root-caused via direct MathJax-src source inspection ("Wrapper.ts", "processIndent()") - confirmed there is no way to fix just the inter-line alignment via a macro ("\\" is wired directly to the TeX-parser's stack-manipulating "CrLaTeX" method, not redefinable via "macros: {...}"; "\breakAlign{...}" explicitly throws outside an array/alignment environment). First attempt placed "displayAlign" under the generic "options" block (the menu/accessibility-extension namespace) - silently ignored, no error, confirmed still broken on "SN.PP.75" (varying-width lines revealed the centering that "SN.SinK.RZ.2" alone could not, since all its broken lines happen to have near-equal width). Checked the vendored bundle directly ("displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." all appear together as one options object) - "displayAlign" is a default option of the OUTPUT JAX itself (shared by "chtml"/"svg"), so it belongs in the output-specific config block, here "svg" (this site's active output format) - moved there, which fixed the relative-line alignment (verified live on "SN.SinK.RZ.2" and "SN.PP.75": lines with equal "\qquad" now share one left edge regardless of content width) and the existing 9-page regression suite stayed at 0 "merror". NOTE: this alone also pushed EVERY display equation on the site flush-left in its table cell, single-line ones included (see the following entry's fix) - "displayAlign" is not limited to inter-line alignment, it is also how MathJax positions the whole equation box.
+  //                      *:  "Sc_f_HeaderElements":  Add a "<style>mjx-container[display=\"true\"] { width: fit-content; margin-left: auto; margin-right: auto; }</style>" rule, right after the MathJax script tags - the "svg.displayAlign: left" fix above (needed for correct inter-line alignment, see entry above) sets "text-align/justify-content: left" on MathJax's own "mjx-container" element, which by default spans the FULL width of its surrounding table cell - so instead of just straightening out the relative line alignment, it silently pushed literally every equation on the site (single-line ones too, e.g. "SN.PP.1") flush against the left edge of its cell, discarding the page-level centering that used to come for free when "displayAlign" was "center". Wolfgang caught this by eye ("die SVGs sind nicht in der Tabelle zentriert") after the previous entry's fix had seemingly "basically worked". Fix: shrink "mjx-container" down to the width of its actual SVG content ("width: fit-content") and center that now-tightly-fit box with "margin: 0 auto" - inside a box with no leftover width, "text-align: left" has nothing left to act on, so the desired inter-line left-alignment from the entry above is completely unaffected, while the equation block as a whole is centered in its cell again exactly as before MathJax 4. Verified live: "SN.PP.1" (single-line) and "SN.PP.75"/"SN.SinK.RZ.2" (multi-line) all re-centered (SVG center matches table-cell center to within half a pixel), 9-page regression suite still 0 "merror".
+  //                      *:  "$Sc_g_equation_replace_ary":  Add 'ω' -> '\upomega', 'π' -> '\uppi' - MathJax 4 (unlike MathJax 2) renders a directly typed Unicode "ω"/"π" italic by default, same as the "\omega"/"\pi" commands; forces these two back to upright to match the old behavior and the existing "\s" convention (superiale Basis), without affecting "\omega"/"\pi" themselves, which stay italic as intended. The first attempt, '\mathrm{\omega}', did NOT work (confirmed visually: still italic) - STIX2 apparently has no upright glyph reachable via "mathvariant=normal" for lowercase Greek; switched to the "upgreek" package's "\upomega"/"\uppi" instead, which is the LaTeX-standard, semantically correct way to get upright lowercase Greek letters and works reliably here - required adding "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" (see "Sc_f_HeaderElements" below). NOTE: other Greek letters are also typed directly in the content (φ, ν, λ, ρ, γ, ζ) - not touched here, since only "ω" and "π" were reported as regressed; may need the same fix if they turn out to have the same problem.
+  //                      >:  "Sc_f_HeaderElements":  Add "upgreek" to "tex.packages" and "[tex]/upgreek" to "loader.load" - needed for "\upomega"/"\uppi" used by the "$Sc_g_equation_replace_ary" fix above.
+  //           20261004:  >:  "$Sc_g_equation_replace_ary":  Change the colon-prefix spacing/glyph for '  :\neq  ', '  :\in  ', '  :\subset  ' (with surrounding padding spaces) and for ':\neq', ':\in', ':\subset' (without padding) from '\raise{-.14ex/-.15ex}{᠄}\mspace{-4.5mu}' to '\raise{-.6ex}{︓}\mspace{-7.5mu}' - uses the vertical colon glyph '︓' (U+FE13) instead of the Mongolian colon '᠄' (U+1804), raised further down with wider negative spacing before the following relation symbol.
+  //                      !:  "Sc_f_HeaderElements":  Switch MathJax output format from "CHTML" to "SVG" und entfernt den kompletten, zuvor über mehrere Einträge gewachsenen "line-height"-CSS-Patch ersatzlos: CHTML-Ausgabe hatte zwei unabhängige Darstellungsfehler - (1) "font.yui.css"s globales "body * { line-height: 1.22em; }" brachte MathJax 4s CHTML-Custom-Elements durcheinander (Overline zu hoch, \prod/\sum-Grenzen zu weit weg, "\middle|" zerstückelt - siehe die jetzt obsoleten vorherigen Einträge dieses Logs), und (2) unabhängig davon ein echter MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}" wird in CHTML bei 8 von 9 getesteten Schriften auf nur ca. 54-73% der benötigten Höhe berechnet (auch bei "stix2" noch spürbar zu kurz trotz richtiger Breite). SVG-Ausgabe (im selben Schriftpaket enthalten, nur anderer Skript-Pfad "tex-mml-svg-..." statt "tex-mml-chtml-...") ist von BEIDEN Problemen unabhängig: korrekte Klammerhöhe UND komplett immun gegen "font.yui.css", da SVG nicht auf dem CSS-Zeilenhöhen-Modell basiert, sondern reine Vektorkoordinaten verwendet. Breit getestet (>2500 Formeln, 6 Themenseiten plus gezielt die zuvor kaputten Konstruktionen) - keine Rendering-Fehler, alle zuvor gemeldeten Symptome behoben. Kompromiss: Formeltext per Maus markieren/kopieren funktioniert bei SVG nicht ganz so nativ wie bei CHTML.
+  //                      *:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-tex" back to "mathjax-stix2": zwar hatte Wolfgang "tex" nach einem Live-Vergleich aller 11 Schriftpakete stilistisch bevorzugt (siehe Eintrag unten), aber "tex" hat wie 7 der anderen 8 nicht-stix2-Pakete (newcm, termes, modern, pagella, schola, asana, bonum - alle außer "fira", nicht separat erneut gegengetestet) einen echten MathJax-4.1.3-Bug: die Höhe einer stretchy-"["-Klammer um eine mehrzeilige "\begin{cases}"-Umgebung wird systematisch auf nur ca. 54% der tatsächlich benötigten Höhe berechnet (bestätigt per DOM-Messung, auch OHNE das unten stehende Line-Height-CSS - also unabhängig davon, ein reiner MathJax-Bug), wodurch die unterste Zeile der Fallunterscheidung sichtbar außerhalb der Klammer landet (SN.AbIn.IN, Gleichung "[0,x·s[..." mit "\middle|" und dreizeiligem "cases"). Nur "stix2" berechnet hier durchgehend die korrekte Höhe. Da das ein inhaltlicher Darstellungsfehler ist (nicht nur eine Stiloption), hat das Vorrang vor der optischen Präferenz - zurück zu "stix2".
+  //                      >:  "Sc_f_HeaderElements":  Switch MathJax output font from "mathjax-stix2" to "mathjax-tex": alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex, stix2, termes, modern, pagella, schola, asana, bonum, fira, dejavu) live anhand derselben Formeln verglichen (Wolfgang wollte eine Schrift, die besser zur Textschrift "Open Sans" passt als STIX2) - kein Paket entspricht der unter MathJax 2 genutzten "STIXGeneral", "tex" war am Ende die bevorzugte Wahl.
+  //                      *:  "Sc_f_HeaderElements":  Fix the actual root cause of the visual regressions from the MathJax-4-Umstellung (siehe zwei Einträge unten): "font.yui.css" setzt global "body * { line-height: 1.22em; }" - trifft ungewollt auch MathJax 4s neue Custom Elements ("mjx-container", "mjx-over", "mjx-ext", usw.), die selbst keine eigene "line-height" definieren, wodurch die Boxen der stretchy-horizontal-Konstruktionen (Overline, Grenzen unter "\prod"/"\sum") sichtbar aufgebläht wurden (bestätigt per DOM-Messung: "mjx-ext"-Höhe 28.5px statt korrekt 5.4px). Per-Element isoliert nachgestellt (gleiche Formel, gleiche Makros, mit/ohne "font.yui.css") und so zweifelsfrei auf diese eine Regel zurückgeführt - weder die Klammer-Gruppierung "{...}" noch "\color"/"\definecolor" noch das volle 44-Makro-Set lösten den Fehler in Isolation aus. Fix: "body mjx-container, body mjx-container * { line-height: 0; }" (NICHT "normal" - das berechnet sich aus den großzügigen Mathe-Font-Metriken sogar noch größer als "1.22em") setzt die Boxen auf die von MathJax selbst über padding/clip-path bestimmte Höhe zurück. WICHTIG: Der untenstehende Font-Wechsel zu "mathjax-tex" allein hatte entgegen der ursprünglichen Annahme NICHTS an diesen Symmetrie-Problemen geändert (vom Nutzer per Screenshot nach dem Font-Wechsel erneut als "kaputt" bestätigt) - es war die ganze Zeit dieser CSS-Konflikt, nicht die Schriftart. Erneut breit getestet (>2500 Formeln, 6 Themenseiten, live auf der Produktionsseite nachgemessen) - keine Rendering-Fehler, Overline-, Wurzel-, Exponenten- und Produktzeichen-Darstellung wieder wie unter MathJax 2.
+  //                      !:  "Sc_f_HeaderElements":  Upgrade MathJax from 2.7.9 (CDN, jsdelivr) to self-hosted 4.1.3 (komplettes npm-Paket unter "share/js/mathjax/", via $Glo_PathRel_back eingebunden statt per CDN - "fully integrated into the code"). Ersetzt zugleich den nie aktivierten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros übersetzt, Zielversion 3.1.2, externes polyfill.io) komplett durch eine vollständige, neu geschriebene MathJax-4-Konfiguration: alle 44 Makros aus "TeX.Macros" 1:1 nach "tex.macros" übertragen (Werte-Syntax ist identisch geblieben), "menuSettings" nach "options.menuOptions.settings", CHTML-Ausgabe (tex-chtml.js, Standardschrift bereits eingebettet) als Nachfolger von "output/HTML-CSS". WICHTIG: "color" und "cancel" sind in MathJax 4 keine automatisch eingebundenen Pakete mehr - "tex.packages" allein aktiviert sie zwar, lädt sie aber nicht nach; sie müssen zusätzlich per "loader: { load: ["[tex]/color", "[tex]/cancel"] }" angefordert werden, sonst bleiben \color/\definecolor/\cancel stillschweigend wirkungslos (kein Fehler, nur reiner Text statt Formatierung) - betraf anfangs u.a. die \definecolor-Einfärbung JEDER Formel über "Sc_f_equation_latex()". Breit getestet (>1600 Formeln über mehrere Themenseiten hinweg, inkl. \color{Bittersweet}, \cancel, \require{cancel}, \prodx, \ord, \lpr) - keine Rendering-Fehler.
+  //                      *:  "Sc_f_equation_list":  Fix the no-number-column table (see entry below) rendering wider than and left-aligned within the surrounding text: the global ".content-horizontal-scrollable { display: block; }" rule (main.css) strips its table formatting context, so "width"/"col width"/"align=center" were silently ignored by the browser's anonymous-table fallback - now set inline "display: table; width: calc(100% - 70px)" (70px = the existing 30px+40px content margins) to match the text column exactly.
+  //                      >:  "Sc_f_equation_list":  Omit the right-hand equation-number column entirely (instead of just leaving it empty) when "equ_text_std" is '' or missing, and stretch the table to "width: 100%" in that case (instead of the old fixed 500+100 px), so the equation truly centers over the full content width.
   //           20261001:  +:  "MathJax":  Add Macro "ord" for "the layer valuation (Schichtbewertung) of" '\operatorname{ord}' (replaces the just-added, still unused Macro "deg").
   //           20260926:  +:  "$Sc_g_equation_replace_ary":  Add '  \nmid  ' -> '\;\;\;\nmid\;\;\;'.
   //           20260923:  +:  "$Sc_g_equation_replace_ary":  Add '  \longleftrightarrow  ' -> '\;\;\;\longleftrightarrow\;\;\;'.
@@ -244,35 +257,21 @@
     
     echo ''."\n";
     // #: MathJax
-    echo '    <!-- MathJax 2 -->'."\n";
-    echo '    <script type="text/x-mathjax-config">'."\n";
-    // #: See: http://docs.mathjax.org/en/latest/tex.html and http://docs.mathjax.org/en/latest/configuration.html
-    // #: MathJax 2.5
-    // #!: Does not work for scaling!
-    //echo '      MathJax.Hub.Config({ TeX: {'."\n";
-    //echo '        extensions: ["color.js"],'."\n";
-    //echo '        "HTML-CSS": { scale: 200}, preferredFont: "TeX", minScaleAdjust: 200'."\n";
-    //echo '      }});'."\n";
-    // #!: Does not work for scaling!
-    //echo '      MathJax.Hub.Config({ TeX: {'."\n";
-    //echo '        extensions: ["color.js"],'."\n";
-    //echo '        "HTML-CSS": { scale: 200}, preferredFont: "TeX", minScaleAdjust: 200'."\n";
-    //echo '      }}, {NativeMML: {scale: 200}});'."\n";
-    //echo '      MathJax.Hub.Config({ TeX: { extensions: ["color.js", "TeX/AMSmath.js", "tex2jax.js"] }, tex2jax: {inlineMath: [["$","$"], ["\\\\(","\\\\)"]], processEscapes: true, preview: ["[MathJax]"]}});'."\n";
-    // #: MathJax 2.7.1
-    //%! Test because of an error that is connected by change from 2.5 to 2.7.1:  echo '      MathJax.Hub.Config({ TeX: { extensions: ["color.js", "AMSmath.js"] }});'."\n";
-    echo '      MathJax.Hub.Config({'."\n";
-    //echo '        jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        jax: ["input/TeX", "output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        extensions: ["tex2jax.js","MathZoom.js"],'."\n";
-    echo '        tex2jax: {'."\n";
-    echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
-    echo '            processEscapes: true,'."\n";
-    echo '            preview: ["[MathJax]"]'."\n";
-    echo '          },'."\n";
-    echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js", "cancel.js"],'."\n";
-    echo '          Macros: {'."\n";
+    // #: Selbst gehostet (s. share/js/mathjax/, Version per package.json dort) statt CDN - "fully
+    // integrated into the code" statt externer Abhängigkeit. Ersetzt die alte MathJax-2.7.9-CDN-
+    // Einbindung und den nie fertiggestellten, unvollständigen MathJax-3-Entwurf (nur 7 von 44 Makros
+    // übersetzt, siehe Git-Historie) komplett durch eine vollständige MathJax-4-Konfiguration.
+    echo '    <!-- MathJax 4 -->'."\n";
+    echo '    <script>'."\n";
+    echo '      window.MathJax = {'."\n";
+    echo '        tex: {'."\n";
+    // #: Entspricht "tex2jax" aus MathJax 2 - "processEscapes" ist in MathJax 3/4 schon Standard.
+    echo '          inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
+    // #: Entspricht den TeX-"extensions" aus MathJax 2 ("color.js", "cancel.js") - in MathJax 4 sind
+    // das ladbare "packages" statt Extensions. Das moderne "color"-Paket kennt weiterhin denselben
+    // dvips-Namensraum (u.a. "Bittersweet"), den die Inhalte hier verwenden.
+    echo '          packages: {"[+]": ["color", "cancel", "upgreek"]},'."\n";
+    echo '          macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
@@ -316,82 +315,175 @@
     echo '            prodx: "\\\\sideset{}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
     echo '            sumx: "\\\\sideset{}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
     echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
-    echo '            qqed: "\\\\;\\\\;\\\\blacksquare",'."\n"; // "quod erat demonstrandum" with space in front for line end
+    echo '            qqed: "\\\\;\\\\;\\\\blacksquare"'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
-    echo '        },'."\n";
-    echo '        menuSettings: {'."\n";
-    //-- echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
-    echo '          zoom: "Double-Click",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
-    echo '          zscale: "200%"'."\n";  // !!!: This works on Safari and FireFox.
-    echo '        },'."\n";
-    echo '        MathEvents: {'."\n";
-    //-- echo '          hover: 1000'."\n";
-    echo '        }'."\n";
-    echo '      });'."\n";
-    echo '    </script>'."\n";
-    echo '    <script type="text/javascript"'."\n";
-    // #: See: http://docs.mathjax.org/en/latest/config-files.html
-    // #: MathJax 2.7.9
-    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML">'."\n";  // #: Different CDN network.
-    echo '    </script>'."\n";
-    // #!: Does not work for scaling!
-    //echo '    <style>'."\n";
-    //echo '      .MathJax {'."\n";
-    //echo '        font-size: 200%;'."\n";
-    //echo '      }'."\n";
-    //echo '    </style>'."\n";
-    
-    /*
-    echo ''."\n";
-    // #: MathJax
-    //
-    echo '    <!-- MathJax 3 -->'."\n";
-    // #: Parameter converted from v2 to v3 on page https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
-    // !!!!!!!!!!!  CommonHTML dosen't work properly  –  looks not nice and patly destroyed  !!!!!!!!!!
-    // couldn't figure out why
-    // SVG works, but looks not as nice as v2
-    echo '    <script>'."\n";
-    echo '      window.MathJax = {'."\n";
-    echo '        tex: {'."\n";
-    echo '          autoload: {'."\n";
-    echo '            color: [],          // don\'t autoload the color extension'."\n";
-    echo '            colorv2: ["color"], // do autoload the colorv2 extension'."\n";
-    echo '          },'."\n";
-    echo '          inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
-    // echo '          processEscapes: true,'."\n";  // default in v3
-    echo '          macros: {'."\n";
-    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
-    echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
-    echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
-    echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
-    echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
-    echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
-    echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}"'."\n";
-    echo '          },'."\n";
-    echo '          packages: {"[+]": ["noerrors", "color"]}'."\n";
     echo '        },'."\n";
     echo '        options: {'."\n";
     echo '          menuOptions: {'."\n";
     echo '            settings: {'."\n";
+    // !!!: In MathJax 2 war "zoom: Hover" auf Safari defekt, auf Firefox nicht - "Double-Click"
+    // funktioniert auf beiden. Noch nicht erneut mit MathJax 4 auf Safari gegengetestet.
     echo '              zoom: "Double-Click",'."\n";
     echo '              zscale: "200%"'."\n";
     echo '            }'."\n";
-    echo '          },'."\n";
-    echo '          ignoreHtmlClass: "tex2jax_ignore",'."\n";
-    echo '          processHtmlClass: "tex2jax_process"'."\n";
+    echo '          }'."\n";
+    echo '        },'."\n";
+    // #: "color", "cancel" und "upgreek" sind in MathJax 4 nicht im Standard-Bundle enthalten -
+    // "tex.packages" aktiviert sie nur, lädt sie aber nicht tatsächlich nach; ohne "loader.load"
+    // bleiben sie stumm wirkungslos (werden klanglos als reiner Text durchgereicht, kein Fehler).
+    // "upgreek" liefert "\upomega"/"\uppi" etc. für AUFRECHTE Kleinbuchstaben-Griechen - nötig, weil
+    // "\mathrm{\omega}" (naheliegender erster Versuch) in diesem Font/Setup KEIN aufrechtes Omega
+    // liefert (STIX2 hat offenbar keine über "mathvariant=normal" erreichbare aufrechte Glyphe für
+    // griechische Kleinbuchstaben) - "\upomega"/"\uppi" sind der dafür vorgesehene,
+    // semantisch korrekte LaTeX-Weg und funktionieren zuverlässig. "paths.mathjax" verweist auf das
+    // separat vendorte Hauptpaket (s. "share/js/mathjax/"), damit der Loader
+    // "input/tex/extensions/color.js" bzw. "cancel.js" bzw. "upgreek.js" dort findet - das unten
+    // geladene Bundle liegt im SEPARATEN Schriftpaket-Ordner ("share/js/mathjax-stix2-font/"), kennt
+    // den Pfad zum Hauptpaket also nicht von sich aus.
+    // #: MathJax 4 implementiert erstmals echtes MathML3-Zeilenumbruch-Layout (vgl. "What's new in
+    // v4.0" in der MathJax-Doku) - dadurch werden einzelne, per nacktem "\\" (ohne umgebendes
+    // "array"/"aligned") umgebrochene Formelzeilen nun standardmäßig ZENTRIERT zueinander gesetzt
+    // ("indentalign: auto" löst zu "displayAlign" auf), nicht mehr linksbündig wie in MathJax 2/3 (dort
+    // war dieses MathML3-Verhalten schlicht nicht implementiert). WICHTIG: "displayAlign" ist KEINE
+    // generische "options"-Einstellung (das ist der Namensraum der Menü-/Zugänglichkeits-Erweiterung),
+    // sondern eine Default-Option des jeweiligen OUTPUT-JAX selbst (bestätigt im vendorten Bundle:
+    // "displayAlign:center,displayIndent:0,displayOverflow:overflow,linebreaks:{...},font:..." - alles
+    // Felder EINES "CommonOutputJax"-Options-Objekts) - muss daher im ausgabespezifischen "svg"-Block
+    // stehen (diese Seite nutzt SVG-Ausgabe), NICHT im obigen "options"-Block (ein erster Versuch dort
+    // wurde von MathJax stillschweigend ignoriert - kein Fehler, nur wirkungslos). "displayAlign: left"
+    // setzt die Zeilen wieder linksbündig zueinander - wie vor MathJax 4. Die ÄUSSERE Zentrierung ganzer
+    // Formelblöcke (ein- wie mehrzeilig) auf der Seite bleibt davon unberührt, da sie unabhängig über die
+    // eigene HTML-Tabelle ("content-horizontal-scrollable", "td align=center"/"display: table") erfolgt,
+    // nicht über diese MathJax-Option.
+    echo '        svg: {'."\n";
+    echo '          displayAlign: "left"'."\n";
     echo '        },'."\n";
     echo '        loader: {'."\n";
-    echo '          load: ["[tex]/noerrors", "[tex]/color"]'."\n";
+    echo '          paths: { mathjax: "'.$Glo_PathRel_back.'../share/js/mathjax" },'."\n";
+    echo '          load: ["[tex]/color", "[tex]/cancel", "[tex]/upgreek"]'."\n";
     echo '        }'."\n";
     echo '      };'."\n";
     echo '    </script>'."\n";
-    echo '    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>'."\n";
-    echo '    <script id="MathJax-script" async'."\n";
-    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js">'."\n";
-    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-chtml.js">'."\n";
-    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-svg.js">'."\n";  // #: SVG
+    // #: "mathjax-stix2" statt der neuen MathJax-4-Standardschrift "New Computer Modern" oder der
+    // klassischen "mathjax-tex"-Schrift. Alle 11 verfügbaren MathJax-4-Schriftpakete (newcm, tex,
+    // stix2, termes, modern, pagella, schola, asana, bonum, fira, dejavu) wurden live verglichen -
+    // keines passt stilistisch exakt zur Textschrift "Open Sans" wie "STIXGeneral" es unter
+    // MathJax 2 tat (dafür gibt es unter MathJax 4 kein Äquivalent).
+    //
+    // #: AUSGABEFORMAT: "SVG" statt "CHTML" (tex-mml-SVG-... statt tex-mml-CHTML-...). Grund: ein
+    // echter MathJax-4.1.3-Darstellungsfehler, unabhängig von der Schriftwahl - bei CHTML-Ausgabe
+    // berechnet MathJax die Höhe einer stretchy-"["-Klammer um eine mehrzeilige
+    // "\begin{cases}"-Umgebung systematisch zu niedrig (bei 8 von 9 getesteten Schriften nur ca.
+    // 54-73% der benötigten Höhe, auch bei "stix2" noch spürbar zu kurz), wodurch Zeilen der
+    // Fallunterscheidung sichtbar außerhalb der Klammer landen. Zusätzlich setzt "font.yui.css"
+    // global "body * { line-height: 1.22em; }", was MathJax 4s CHTML-Custom-Elements (die das
+    // HTML-Box-Modell nutzen) an vielen Stellen durcheinanderbringt (Overline zu hoch, Grenzen
+    // unter \prod/\sum zu weit weg, "\middle|" zerstückelt) - dafür gab es hier zuvor einen
+    // mehrstufigen, über mehrere Elementtypen verteilten "line-height"-CSS-Patch (siehe Git-Historie
+    // dieser Datei). SVG-Ausgabe ist von BEIDEN Problemen unabhängig: sie reicht die
+    // Klammer-/Stretchy-Höhe korrekt durch (kein 54%-Bug) und ist komplett immun gegen
+    // "font.yui.css", da SVG-Elemente nicht auf dem CSS-Zeilenhöhen-Modell basieren, sondern reine
+    // Vektorkoordinaten verwenden - der gesamte Line-Height-Patch ist dadurch überflüssig geworden.
+    // Kompromiss: Formeltext lässt sich bei SVG nicht ganz so nativ per Maus markieren/kopieren wie
+    // bei CHTML (reine Vektorgrafik statt echter HTML-Textknoten).
+    echo '    <script id="MathJax-script"'."\n";
+    echo '      src="'.$Glo_PathRel_back.'../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js">'."\n";
     echo '    </script>'."\n";
-    */
+    // #: "svg.displayAlign: left" (s.o.) setzt MathJax dazu, "mjx-container" per CSS auf
+    // "text-align/justify-content: left" UND "width: 100%" (volle Breite der umgebenden Tabellenzelle)
+    // zu stellen - trifft NICHT nur mehrzeilige, sondern JEDE einzelne Formel auf der Seite, auch
+    // einzeilige: ohne diesen Patch rutscht buchstäblich jede Formel an den linken Zellenrand statt wie
+    // zuvor zentriert zu stehen (per DOM-Messung bestätigt, z.B. "SN.PP.1"). Fix: die Box von
+    // "mjx-container" selbst auf ihre tatsächliche Inhaltsbreite schrumpfen ("width: fit-content") und
+    // per "margin: 0 auto" zentrieren - innerhalb dieser schrumpfenden Box bleibt "text-align: left"
+    // wirkungslos (kein Restplatz mehr vorhanden), wodurch die gewünschte linksbündige Ausrichtung
+    // mehrzeiliger Formeln zueinander erhalten bleibt, während der gesamte Formelblock wieder wie vor
+    // MathJax 4 mittig in seiner Tabellenzelle steht.
+    // #: "mjx-pending" (s. "Sc_f_equation_latex_str_html") umhüllt jede Formel-Quelle, solange sie noch
+    // roher, unverarbeiteter LaTeX-Text ist. Wolfgang testet gerade mehrere Einblend-Effekte nacheinander
+    // live auf den echten Seiten (statt auf einer isolierten Testseite) - aktuell aktiv: Variante
+    // "Fade + Scale" ("Pop-in"): die Formel startet transparent und leicht verkleinert und wächst auf
+    // normale Deckkraft/Größe, sobald MathJax fertig ist. WICHTIG: "filter"/"opacity"/"transform" sind -
+    // anders als "visibility" - Compositing-Eigenschaften, die der Browser auf das GESAMTE gerenderte
+    // Teilbaum-Ergebnis des Elements anwendet, nicht Element für Element vererbt: ein Kind-Element kann
+    // sie NICHT per eigener Gegenregel "zurücksetzen" (bestätigt bei einem früheren Blur-Experiment, das
+    // dadurch dauerhaft unscharf blieb). Daher entfernt ein kleiner "MutationObserver" (s.u.) die
+    // Zustands-Klasse vom Wrapper SELBST, sobald MathJax darin ein "<mjx-container>" einsetzt - das löst
+    // "opacity" auf dem Wrapper tatsächlich auf (da es auf demselben Element geändert wird, nicht von
+    // einem Kind überschrieben werden muss). "transform: scale(...)" sitzt dagegen bewusst NICHT auf
+    // "mjx-pending" selbst, sondern direkt auf dem künftigen "mjx-container" (per Nachfahren-Selektor,
+    // kein Vererbungsproblem, da es hier eine ganz normale, am Kind-Element selbst deklarierte Regel
+    // ist): ein erster Versuch setzte "display: inline-block" auf "mjx-pending", damit "transform"
+    // überhaupt greift (reine "inline"-Elemente ignorieren "transform" sonst komplett) - das kollidierte
+    // aber mit "text-indent: 32px" auf den "tools-class-text"-Absätzen: steht ein "inline-block" als
+    // ERSTES Element in einer so eingerückten Zeile, rechnet Chrome den Erstzeilen-Einzug fälschlich in
+    // die eigene Box-Breite des Elements hinein statt ihn nur zu positionieren, wodurch rechts von der
+    // fertigen Formel ein 32px breiter Leerraum übrig blieb (von Wolfgang bemerkt: "Bei Text-Inlines
+    // bleibt links ein großer weißer Rand" - die Formel selbst stand also 32px zu weit rechts in ihrer
+    // eigenen, zu breiten Box). Da "mjx-container" nicht künstlich auf "inline-block" gesetzt werden
+    // muss (MathJax bringt dafür bereits eigenes, dafür getestetes CSS mit), tritt der Bug dort nicht
+    // auf - "mjx-pending" bleibt normales "inline" und ist vom Problem nicht mehr betroffen.
+    // SAFARI-SPEZIFISCHE NACHBESSERUNGEN (Firefox und Chrome zeigten den Effekt von Anfang an korrekt,
+    // bestätigt von Wolfgang): (1) Bei Block-Formeln ("\[...\]") fehlte in Safari das Opacity-Fade
+    // komplett, nur der Scale-Pop war sichtbar - vermutlich weil "mjx-pending" (als "<span>" von Haus
+    // aus "inline") dort ein von MathJax selbst block-artig gerendertes "<mjx-container>" umschließt
+    // (nötig für die "width: fit-content; margin: auto"-Zentrierung weiter oben) - ein "inline"-Element
+    // mit block-artigem Kindelement ist ungültige/unübliche Verschachtelung, die Chrome/Firefox
+    // stillschweigend "reparieren", Safari aber offenbar beim Compositing der Opacity anders behandelt.
+    // Fix: eine zusätzliche Klasse "mjx-pending-display" (nur bei "\[...\]" gesetzt, s.
+    // "Sc_f_equation_latex_str_html") macht den Wrapper in diesem Fall explizit "display: block" - passt
+    // ohnehin zur umgebenden Tabellenzelle. (2) Inline-Formeln flackerten in Safari manchmal kurz am Ende
+    // des Übergangs - eine bekannte WebKit-Eigenheit beim Abbau der Compositing-Ebene nach Abschluss
+    // einer Opacity-/Transform-Transition auf Elementen mit SVG-Inhalt. Fix: "will-change" auf die
+    // jeweils animierte Eigenschaft, damit Safari die Ebene über die gesamte Dauer stabil hält statt sie
+    // am Ende neu aufzubauen.
+    echo '    <style>'."\n";
+    echo '      mjx-container[display="true"] { width: fit-content; margin-left: auto; margin-right: auto; }'."\n";
+    echo '      .mjx-pending { opacity: 0; transition: opacity 2s ease; will-change: opacity; }'."\n";
+    echo '      .mjx-pending.mjx-ready { opacity: 1; }'."\n";
+    echo '      .mjx-pending mjx-container { transform: scale(0.92); transition: transform 2s ease; will-change: transform; }'."\n";
+    echo '      .mjx-pending.mjx-ready mjx-container { transform: scale(1); }'."\n";
+    echo '      .mjx-pending-display { display: block; }'."\n";
+    // #: Für Block-Formeln ("mjx-pending-display") wurde der Platzbedarf des rohen Rohtexts bewusst in
+    // Kauf genommen (eigener Tabellen-/Zeilenkontext, der Größensprung fällt dort kaum auf). Bei
+    // Inline-Formeln dagegen verschiebt der breitere Rohtext den umgebenden Fließtext sichtbar störender
+    // (mehr/weniger Zeilenumbrüche je nach Zustand) - dafür hier derselbe Skalierungstrick wie beim
+    // allerersten (rein unsichtbaren) Ansatz: "font-size" auf einen winzigen Wert schrumpfen (kollabiert
+    // die Breite des unsichtbaren - "opacity: 0" bleibt unverändert bestehen - Rohtexts auf nahezu null)
+    // und auf "mjx-container" exakt gegenläufig wieder hochskalieren (0.01 * 100 = 1), was unabhängig vom
+    // Fade-Zustand IMMER gilt, sobald "mjx-container" existiert - die Box hat dadurch schon beim
+    // Erscheinen ihre finale Größe, nur die Opacity/der Scale-Pop blenden innerhalb dieser Box noch ein.
+    echo '      .mjx-pending:not(.mjx-pending-display) { font-size: 0.01em; }'."\n";
+    echo '      .mjx-pending:not(.mjx-pending-display) mjx-container { font-size: 100em; }'."\n";
+    echo '    </style>'."\n";
+    echo '    <script>'."\n";
+    echo '      new MutationObserver(function(mutations) {'."\n";
+    echo '        mutations.forEach(function(mutation) {'."\n";
+    echo '          mutation.addedNodes.forEach(function(node) {'."\n";
+    echo '            if (node.nodeType === 1 && node.tagName === "MJX-CONTAINER") {'."\n";
+    echo '              var pending = node.closest(".mjx-pending");'."\n";
+    // #!!!: Browser müssen die "scale(0.92)"-Startposition des neu eingefügten "<mjx-container>" erst
+    // TATSÄCHLICH gerendert haben, bevor die Klassenänderung zu "scale(1)" einen sichtbaren Übergang
+    // erzeugen kann - ein doppelt verschachteltes "requestAnimationFrame" (vorherige Version) reichte
+    // dafür in Safari nicht zuverlässig aus (bestätigt von Wolfgang: in Firefox/Chrome lief der Effekt
+    // sauber, in Safari fehlte teils das Fade bei Block-Formeln komplett, bei Inline-Formeln flackerte
+    // es sogar (ein-/aus-/wieder einblenden) - beides deutet auf abweichendes Rendering-/Timing-Verhalten
+    // von Safaris SVG-Handling bei dynamisch eingefügten Knoten hin, siehe bereits dokumentierte
+    // MathJax/Safari-Eigenheiten in dieser Datei). Ein rein synchroner erzwungener Reflow ("void
+    // node.offsetWidth") behob das Flackern, reichte aber bei SCHNELL AUFEINANDERFOLGENDEN Formeln immer
+    // noch nicht durchgehend aus (von Wolfgang bestätigt: manche Formeln blendeten weiterhin sauber ein,
+    // andere erschienen "ad hoc" ohne sichtbaren Übergang) - Safari scheint mehrere, dicht
+    // hintereinander erzwungene Reflows ohne dazwischenliegenden Repaint zu bündeln/wegzuoptimieren.
+    // Fix: zusätzlich in "setTimeout(..., 0)" verpackt - das erzwingt einen echten Sprung in die nächste
+    // Browser-Task-Queue (statt nur eines synchronen Reflows innerhalb desselben Tasks), wodurch der
+    // Browser zwischen JEDER einzelnen Formel Gelegenheit zum tatsächlichen Neuzeichnen bekommt, auch
+    // wenn MathJax viele Formeln kurz hintereinander einfügt.
+    echo '              if (pending) { var p = pending; setTimeout(function() { void node.offsetWidth; p.classList.add("mjx-ready"); }, 0); }'."\n";
+    echo '            }'."\n";
+    echo '          });'."\n";
+    echo '        });'."\n";
+    echo '      }).observe(document.documentElement, { childList: true, subtree: true });'."\n";
+    echo '    </script>'."\n";
   }
   
   
@@ -738,12 +830,12 @@
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
-                                    array( '  :\neq  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\neq\;\;\;'),
                                     array( '  :\Leftrightarrow  ', '\;\;\;:\Leftrightarrow\;\;\;'),
                                     array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
-                                    array( '  :\in  ', '\;\;\;\raise{-.15ex}{᠄}\mspace{-4.5mu}\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \nmid  ', '\;\;\;\nmid\;\;\;'),
@@ -751,19 +843,19 @@
                                     array( '  ?\subseteq  ', '\;\;\;\overset{?}{\subseteq}\;\;\;'),
                                     array( '  \subseteq  ', '\;\;\;\subseteq\;\;\;'),
                                     array( '  \not\subseteq  ', '\;\;\;\not\subseteq\;\;\;'),
-                                    array( '  :\subset  ', '\;\;\;\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset\;\;\;'),
+                                    array( '  :\subset  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\subset\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( ':=', '≔'),
                                     array( '=:', '≕'),
-                                    array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
-                                    array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
+                                    array( ':\neq', '\raise{-.6ex}{︓}\mspace{-7.5mu}\neq'),
+                                    array( ':\in', '\raise{-.6ex}{︓}\mspace{-7.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
                                     array( '?\subseteq', '\overset{?}{\subseteq}'),
-                                    array( ':\subset', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\subset'),
+                                    array( ':\subset', '\raise{-.6ex}{︓}\mspace{-7.5mu}\subset'),
                                     array( '?\subset', '\overset{?}{\subset}'),
                                     array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
                                     array( '?\equiv', '\overset{?}{\equiv}'),
@@ -813,6 +905,8 @@
                                     array( '  \right|', ' \;\right|'),
                                     array( '  ~\middle|~  ', '\;~\middle|~\;'),
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
+                                    array( 'ω', '\upomega'),  // #: MathJax 4 renders a directly typed Unicode "ω" italic (MathJax 2 did not) - force upright via the "upgreek" package's "\upomega" (NOT "\mathrm{\omega}", which does not produce an upright glyph in this font/setup), matching old behavior; "\omega" (the command) is unaffected and stays italic as intended
+                                    array( 'π', '\uppi'),  // #: Same MathJax-4 regression as "ω" above, for directly typed "π" - uses "\uppi" from "upgreek"
                                  );
 
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
@@ -930,7 +1024,16 @@
         //$html_ret = '<span style="color: #'.$latex_color.'">\\['.$latex_str.'\\]</span>';  // #!: Does not work for the color!
         //$html_ret = '\\[ \\definecolor{formcolor}{HTML}{'.$latex_color.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: MathJax does not support HTML colors!
         //$html_ret = '<div style="font-size: 200%;"> \\[ \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\] </div>'."\n";  // #!: Font-size like that does not work. It is corrected afterwards by MathJax to normal.
-        $html_ret = (($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]'."\n");
+        // #: "mjx-pending" wird per CSS standardmäßig unsichtbar gesetzt, bis MathJax den enthaltenen
+        // rohen LaTeX-Quelltext durch "<mjx-container>" ersetzt hat - dafür macht eine Gegenregel genau
+        // dieses eingefügte Element sofort wieder sichtbar (CSS-"visibility"-Vererbung wird von
+        // Nachfahren überschrieben). Verhindert das kurze Aufblitzen der rohen "\definecolor{...}
+        // \color{...} ..."-Befehle beim Seitenaufbau, bevor MathJax fertig ist - pro Formel einzeln,
+        // ohne auf das Typesetting der kompletten (teils >1000 Formeln umfassenden) Seite warten zu
+        // müssen (siehe "mjx-pending"-CSS-Regel in "Sc_f_HeaderElements"). Zusätzliche Klasse
+        // "mjx-pending-display" (nur für "\[...\]", nicht für inline "$...$") - s. "Sc_f_HeaderElements"
+        // für den Grund (Safari-Fade-Bug bei Block-Formeln).
+        $html_ret = '<span class="mjx-pending'.(($style == 'inline') ? '' : ' mjx-pending-display').'">'.(($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]').'</span>'.(($style == 'inline') ? '' : "\n");
         //$html_ret = '\\[ \\large \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: It is a bit to big.
         break;
 

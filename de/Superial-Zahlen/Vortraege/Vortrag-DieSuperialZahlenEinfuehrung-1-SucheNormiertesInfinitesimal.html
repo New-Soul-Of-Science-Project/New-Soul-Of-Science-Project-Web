@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Motivation und Grundidee der Superial-Zahlen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="../../../share/js/reveal/dist/reset.css">
+<link rel="stylesheet" href="../../../share/js/reveal/dist/reveal.css">
+<!-- #: Gleiche Google-Fonts-Einbindung wie die Hauptseite (share/php/NSOSP.php) - ohne das fehlten
+     die kursiven/fetten Schriftschnitte von Open Sans komplett, der Browser fiel auf eine
+     System-Schrift ohne echtes Kursiv zurück. -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="Superial-Zahlen-Theme-v1.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Folie 1: Titelblatt -->
+    <section class="cover cover-title">
+      <div class="mw-cover-header">
+        <div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div>
+      </div>
+      <div class="mw-cover-sub">Menschlich Wirtschaften eG</div>
+      <h1 class="mw-cover-maintitle">Akademie</h1>
+      <div class="mw-cover-eyebrow">Mathematik</div>
+      <div class="mw-cover-talk">
+        <p class="mw-cover-kicker"><em>Vortragsreihe</em></p>
+        <p class="mw-cover-series">Superial-Zahlen (SN) – Einführung</p>
+        <p class="mw-cover-desc">Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche</p>
+      </div>
+    </section>
+
+    <!-- Folie 2: Vortragstitel -->
+    <section class="cover cover-talk">
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Mathematik</div></div></div>
+      <h1 style="margin-top: -1.8em;">Suche des sinnvoll normierten<br>Infinitesimals der Analysis</h1>
+      <div class="mw-talk-title">
+        <p class="mw-talk-kicker"><em>Vortragsreihe</em></p>
+        <p class="mw-talk-series">Superial-Zahlen (SN) – Einführung</p>
+        <p class="mw-talk-desc">Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche – <em>Teil 1</em></p>
+      </div>
+      <p class="mw-byline" style="margin-top: 160px;">Vortrag und Dialog – <em>Wolfgang Huß, X 2026</em></p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Ableitung gehört zu den erfolgreichsten Konstruktionen der Mathematik. Aber in ihrer Definition steckt eine bemerkenswerte Besonderheit: Wir führen einen Schritt <span class="mjx-pending">\( h \)</span> ein, teilen durch ihn – und lassen ihn anschließend gegen null verschwinden. Heute möchte ich nicht infrage stellen, dass das mathematisch funktioniert. Mich interessiert eine andere Frage: Warum gibt es in dieser Rechnung keinen festen infinitesimalen Schritt?“</div>
+    </section>
+
+    <!-- Folie 3: Die bekannte Definition -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Die bekannte Definition</h2>
+      <p>Die Ableitung beginnt mit einem Schritt</p>
+      <p style="text-align: center; margin: 2em 0 0.5em 0; font-size: 1.2em;"><span class="mjx-pending mjx-pending-display">\[ \frac{f(x+h)-f(x)}{h}  \;\; , \]</span></p>
+      <p style="text-align: center; margin: 0.5em 0 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\;\;\neq\;\;\; 0  \;\; , \]</span></p>
+      <p>denn wir teilen durch <span class="mjx-pending">\( h \)</span>.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wir nehmen einen Punkt <span class="mjx-pending">\( x \)</span> und einen zweiten Punkt <span class="mjx-pending">\( x+h \)</span>. Der Differenzenquotient misst die Änderung der Funktion pro Schritt <span class="mjx-pending">\( h \)</span>. Eine Bedingung ist unvermeidlich: <span class="mjx-pending">\( h \)</span> darf nicht null sein. Sonst wäre diese Rechnung nicht definiert.“
+        <p style="margin-top: 1em;">„Bis hierhin ist <span class="mjx-pending">\( h \)</span> ein ganz gewöhnlicher, von null verschiedener Schritt.“</p>
+      </div>
+    </section>
+
+    <!-- Folie 4: Der Schritt wird immer kleiner -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Der Schritt <span class="mjx-pending">\( h \)</span> wird immer kleiner</h2>
+      <!-- #: Live-Animation (Three.js, siehe "secant-animation.js") statt des früheren
+           statischen Platzhaltertexts - zeigt den Graphen von f(x)=x^2, die Punkte P/Q und die
+           Sekante, die bei automatisch schrumpfendem h sichtbar gegen die Tangente läuft.
+           Box-Maße unverändert (800x550) übernommen. -->
+      <div id="secant-animation" style="float: right; width: 800px; height: 550px; box-sizing: border-box; border-radius: 8px; margin: 0.4em 0 0.8em 24px; position: relative; overflow: hidden;"></div>
+      <p style="margin-bottom: 0.5em;">Aber welcher Schritt ist der richtige?</p>
+      <p style="margin-bottom: 0.5em;">Als Beispiel betrachten wir <span class="mjx-pending">\( f(x) = x^2 \)</span>.</p>
+      <!-- #: "margin-right: 415px" (statt nur "margin: 0.8em 0") nötig - der Float rechts
+           beeinflusst nur normalen Fließtext/Inline-Inhalt, nicht den als Block erzwungenen
+           ".mjx-pending-display"-Span (unser FOUC-System); ohne expliziten Platz zentriert
+           "margin: auto" die Formel über die GANZE Folienbreite statt nur in der linken Spalte. -->
+      <p style="text-align: center; margin: 2em 900px 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ \frac{(x+h)^2-x^2}{h} \;\;\;=\;\;\; 2x+h \]</span></p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin: 2em 900px 0.8em 0;">Wo müsste <span class="mjx-pending">\( h \)</span> liegen, wenn es selbst ein normierter infinitesimaler Schritt sein soll?</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Je kleiner wir <span class="mjx-pending">\( h \)</span> wählen, desto näher kommt die Sekante an die Tangente. Gleichzeitig wird aus <span class="mjx-pending">\( 2x+h \)</span> immer stärker der Ausdruck <span class="mjx-pending">\( 2x \)</span>. Wo muss <span class="mjx-pending">\( h \)</span> genau liegen, um unser gesuchtes sinnvoll normiertes Infinitesimal zu sein?“</div>
+    </section>
+
+    <!-- Folie 5: Die elegante Lösung -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Die elegante historische Lösung</h2>
+      <p>Die klassische Antwort über den Grenzwert: kein bestimmtes <span class="mjx-pending">\( h \)</span>, sondern ein laufendes</p>
+      <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\longrightarrow\; 0  \;\; ,  \qquad f'(x)  \;\;\;=\;\;\;  \lim_{h\to0} \frac{f(x+h)-f(x)}{h}  \;\; . \]</span></p>
+      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:<span class="mjx-pending">\( \qquad\qquad\qquad\qquad\quad\;\,  \displaystyle{ \lim_{ h \to 0 } (2x + h)  \;\;\;=\;\;\;  2x  \;\; . } \)</span></p>
+      <!-- <p style="text-align: center; margin: 0.6em 0;"><span class="mjx-pending mjx-pending-display">\[ \lim_{h\to0}(2x+h) = 2x. \]</span></p> -->
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1.2em;">Der Grenzwert wählt keinen infinitesimalen Schritt.</p>
+      <p style="margin-top: 0.6em;">Er bestimmt den Wert, dem die Differenzenquotienten für immer kleinere von null verschiedene endliche Schritte zustreben.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Das ist eine mathematisch elegante Lösung. Wir müssen gar keinen kleinsten Schritt finden. <span class="mjx-pending">\( h \)</span> bleibt während der Rechnung von null verschieden, und wir untersuchen lediglich, welchem Wert sich der Differenzenquotient nähert, wenn <span class="mjx-pending">\( h \)</span> beliebig klein wird.“
+        <p style="margin-top: 1em;">„Aber damit wurde eine andere Frage noch gar nicht beantwortet.“</p>
+      </div>
+    </section>
+
+    <!-- Folie 6: Die offene Frage -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Die offene Frage</h2>
+      <p>Was wurde damit nicht beantwortet?</p>
+      <p style="text-align: center; font-size: 1.3em; margin: 1em 0;"><span class="mjx-pending mjx-pending-display">\[ h \neq 0 \qquad\text{und}\qquad h \to 0 \]</span></p>
+      <p>Welches Zahlobjekt könnte selbst ein infinitesimaler Schritt sein?</p>
+      <p style="font-size: 0.8em; margin-top: 0.8em;">Der Grenzwert bestimmt den Ableitungswert – nicht ein ausgezeichnetes infinitesimales <span class="mjx-pending">\( h \)</span>.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die klassische Analysis braucht auf diese Frage keine Antwort. Und gerade das macht den Grenzwert so erfolgreich. Aber wenn wir den infinitesimalen Schritt selbst als Zahl untersuchen wollen, bleibt die Frage offen: Wo müsste dieses <span class="mjx-pending">\( h \)</span> eigentlich liegen?“</div>
+    </section>
+
+    <!-- Folie 7: Innerhalb der reellen Zahlen finden wir es nicht -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Innerhalb der reellen Zahlen finden wir es nicht</h2>
+      <p>Für ein infinitesimales <span class="mjx-pending">\( h \)</span> gilt grundsätzlich:</p>
+      <p style="text-align: center; margin: 1.2em 0;"><span class="mjx-pending mjx-pending-display">\[ 0  \;\;\;<\;\;\;  h  \;\;\;<\;\;\;  \frac{1}{n}  \;\; ,  \qquad\quad \text{für alle } n \in \mathbb{N} \]</span></p>
+      <p>Kein reelles <span class="mjx-pending">\( h \)</span> ist infinitesimal, es bleibt immer endlich.</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">Ein solches <span class="mjx-pending">\( h \)</span> gibt es in <span class="mjx-pending">\( \mathbb{R} \)</span> nicht.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wenn <span class="mjx-pending">\( h \)</span> wirklich infinitesimal sein soll, muss es positiv sein, aber kleiner als <span class="mjx-pending">\( 1 \)</span>, <span class="mjx-pending">\( 1/10 \)</span>, <span class="mjx-pending">\( 1/1000 \)</span> – überhaupt kleiner als <span class="mjx-pending">\( 1/n \)</span> für jede natürliche Zahl <span class="mjx-pending">\( n \)</span>. Genau das erlaubt die archimedische Struktur der reellen Zahlen nicht.“</div>
+    </section>
+
+    <!-- Folie 8: Aber irgendein Infinitesimal genügt noch nicht -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Aber irgendein Infinitesimal genügt noch nicht für</h2>
+      <p>
+        Angenommen, wir haben ein infinitesimales <span class="mjx-pending">\( h \)</span> mit <span class="mjx-pending">\( 0 < h < \frac{1}{n} \), für alle </span>, <span class="mjx-pending">\( n \in \mathbb{N} \)</span>, gefunden …
+        <br>
+        Dann würden doch auch die ebenso infinitesimalen Varianten diese Bedingung erfüllen:
+      </p>
+      <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ 0  \;\;\;<\;\;\;  h^{3}  \;\;\;<\;\;\;  h^{2}  \;\;\;<\;\;\;  \frac{h}{2}  \;\;\;<\;\;\;  h  \;\;\;<\;\;\;  2 h  \;\;\;<\;\;\;  3 h  \;\;\;<\;\;\;  \frac{1}{n} \]</span></p>
+      <p>Warum sollte dann gerade \(h\) der Rechenschritt der Analysis sein?</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">
+        Existenz allein löst das Problem noch nicht.
+        <br>
+        Wir brauchen nicht nur ein Infinitesimal, sondern eine Normierung.
+      </p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Mathematik kennt durchaus Systeme mit Infinitesimalen. Aber die bloße Existenz beantwortet unsere Frage noch nicht. Wenn sehr viele infinitesimale Zahlen existieren: Warum sollte gerade eine bestimmte davon der elementare Schritt der Ableitung sein? Wir suchen also nicht irgendein Infinitesimal. Wir suchen ein ausgezeichnetes, normiertes Infinitesimal.“</div>
+    </section>
+
+    <!-- Folie 9: Über mich -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Über mich</h2>
+      <p>Ich …</p>
+      <ul style="max-width: 1300px;">
+        <li>heiße Wolfgang Huß, komme aus Hamburg und bin 1968 geboren</li>
+        <li>bin Programmierer in einem Programmierer-Kollektiv</li>
+        <li>bin Philosoph sowie Forscher und mache Internetseiten über meine Ideen und Arbeiten</li>
+      </ul>
+      <img class="mw-about-photo" src="../../../share/images/vortraege/wolfgang-huss-foto.jpg" alt="Wolfgang Hu&szlig;">
+    </section>
+
+    <!-- Folie 10: Zu meiner Forschung -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Zu meiner Forschung</h2>
+      <ul style="font-size: 0.75em;">
+        <li>Superial-Zahlen: <a href="https://nsosp.org/de/Superial-Zahlen" target="_blank">nsosp.org/de/Superial-Zahlen</a></li>
+        <li>Fraktale Quanten-Fluss-Theorie: <a href="https://nsosp.org/de/Quanten-Fluss-Theorie" target="_blank">nsosp.org/de/Quanten-Fluss-Theorie</a></li>
+        <li>›Spannungsspiel des Lebens‹: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens" target="_blank">nsosp.org/de/Spannungsspiel-des-Lebens</a>
+          <ul>
+            <li>Der Care-Prozess: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php" target="_blank">Link</a></li>
+            <li>Die Psychosomatik: <a href="https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+        <li>Naturphilosophie-Yoga: <a href="https://nsosp.org/de/Naturphilosophie-Yoga" target="_blank">nsosp.org/de/Naturphilosophie-Yoga</a>
+          <ul>
+            <li>Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-RaHorus-Sonne-Mond.php" target="_blank">Link</a></li>
+            <li>Phönix aus der Asche: <a href="https://nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php" target="_blank">Link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Folie 11: Zur Genossenschaft -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
+      <h2>Zur Genossenschaft</h2>
+      <p>Website: <a href="https://menschlichwirtschaften.de" target="_blank">menschlichwirtschaften.de</a><br>
+      Akademie: <a href="https://menschlichwirtschaften.de/akademie" target="_blank">menschlichwirtschaften.de/akademie</a><br>
+      Vortragsreihe: <a href="https://menschlichwirtschaften.de/initiativen/XXX" target="_blank">XXX</a><br>
+      YouTube-Kanal: <a href="https://youtube.com/@MenschlichWirtschaften" target="_blank">@MenschlichWirtschaften</a></p>
+      <p>Wir freuen uns über Spenden:</p>
+      <p style="margin-left: 2em;">Menschlich Wirtschaften eG<br>
+      IBAN: DE43 1505 0500 0102 1079 04<br>
+      BIC: NOLADE21GRW<br>
+      Sparkasse Vorpommern</p>
+    </section>
+
+  </div>
+  <div class="speaker-menu" id="speaker-menu">
+    <button type="button" class="speaker-menu-icon" id="speaker-menu-toggle" aria-label="Menü">i</button>
+    <div class="speaker-menu-list">
+      <div class="speaker-menu-row" id="notes-row">
+        <button type="button" class="speaker-menu-item" id="toggle-notes-btn">Sprechtext anzeigen</button>
+        <span class="speaker-menu-hint" id="notes-hint">kein Sprechtext für diese Folie</span>
+      </div>
+      <a href="?print-pdf" target="_blank" class="speaker-menu-item speaker-menu-print">
+        <span class="speaker-menu-print-icon" aria-hidden="true">🖨</span>Drucken
+        <span class="speaker-menu-print-info">Druckansicht öffnet sich in neuem Tab, dann <strong>Cmd/Strg + P</strong> → „Als PDF sichern", Hintergrundgrafiken aktivieren. Am besten in <strong>Chrome</strong> exportieren – skaliert dort zuverlässig korrekt (in Safari/Firefox wird die Kopfzeile teils abgeschnitten).</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="../../../share/js/reveal/dist/reveal.js"></script>
+<script src="../../../share/js/reveal/dist/plugin/math.js"></script>
+
+<!-- #: Three.js-Animation für Folie 4 - gleiche Quelle/Version (CDN, "es-module-shims" für
+     Import-Maps) wie die aktuellste bestehende Animation im Projekt
+     ("share/animations/Zwei-Konstruktionen-von-s-3D.html"), aber eigenes schlankes Modul statt
+     der vollen Render-Klasse (siehe "secant-animation.js"). -->
+<script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+<script type="importmap">
+  { "imports": { "three": "https://unpkg.com/three@0.186.0/build/three.module.js" } }
+</script>
+<script type="module">
+  import { initSecantAnimation } from './secant-animation.js';
+  initSecantAnimation('secant-animation');
+</script>
+<script>
+  new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      mutation.addedNodes.forEach(function(node) {
+        if (node.nodeType === 1 && node.tagName === "MJX-CONTAINER") {
+          var pending = node.closest(".mjx-pending");
+          if (pending) { var p = pending; setTimeout(function() { void node.offsetWidth; p.classList.add("mjx-ready"); }, 0); }
+        }
+      });
+    });
+  }).observe(document.documentElement, { childList: true, subtree: true });
+</script>
+<script>
+  var revealEl = document.querySelector('.reveal');
+  var notesBtn = document.getElementById('toggle-notes-btn');
+  var notesRow = document.getElementById('notes-row');
+  var speakerMenu = document.getElementById('speaker-menu');
+  var speakerMenuToggle = document.getElementById('speaker-menu-toggle');
+
+  function setNotesOn(on) {
+    revealEl.classList.toggle('talk-notes-on', on);
+    notesBtn.textContent = on ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen';
+  }
+
+  notesBtn.addEventListener('click', function() {
+    setNotesOn(!revealEl.classList.contains('talk-notes-on'));
+  });
+  // #: Event-Delegation statt einzelner Listener - der Schließen-Button liegt als erstes Kind in
+  // JEDER ".talk-notes"-Box im Quelltext (eine pro Folie mit Sprechtext), nicht zentral einmal.
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.talk-notes-close-btn')) setNotesOn(false);
+  });
+
+  // #: Menü öffnet/schließt per Klick auf das "i" (nicht mehr per Hover) - erneuter Klick bei
+  // bereits offenem Menü schließt es wieder; Klick außerhalb schließt es ebenfalls.
+  speakerMenuToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    speakerMenu.classList.toggle('menu-open');
+  });
+  document.addEventListener('click', function(e) {
+    if (!speakerMenu.contains(e.target)) speakerMenu.classList.remove('menu-open');
+  });
+
+  // #: Markiert die Menüzeile als "ohne Sprechtext" für die aktuell sichtbare Folie - die Blase
+  // selbst erscheint erst bei Hover über diese Zeile (siehe CSS ".no-notes:hover"), analog zur
+  // Papierformat-Blase bei "Drucken". Setzt außerdem den Button-Text passend zur Folie: nur wenn
+  // tatsächlich Sprechtext vorhanden ist, macht "anzeigen"/"ausblenden" als Handlungsaufforderung
+  // Sinn - sonst bliebe "anzeigen" stehen, obwohl es nichts zum Anzeigen gibt.
+  // "disabled" verhindert zusätzlich, dass ein Klick auf der (weiterhin sichtbaren, aber
+  // wirkungslosen) Zeile über "setNotesOn()" den anzeigen/ausblenden-Text fälschlich zurückbringt
+  // - ohne das blieb der Button trotz fehlendem Sprechtext klickbar. Aktualisiert sich bei jedem
+  // Folienwechsel.
+  function updateNotesHint() {
+    var current = document.querySelector('.slides section.present');
+    var hasNotes = !!(current && current.querySelector('.talk-notes'));
+    notesRow.classList.toggle('no-notes', !hasNotes);
+    notesBtn.disabled = !hasNotes;
+    notesBtn.textContent = hasNotes
+      ? (revealEl.classList.contains('talk-notes-on') ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen')
+      : 'Sprechtext';
+  }
+  Reveal.on('slidechanged', updateNotesHint);
+  Reveal.on('ready', updateNotesHint);
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+      packages: {"[+]": ["color", "cancel", "upgreek"]},
+      macros: { s: "\\mathrm{s}", i: "\\mathrm{i}" }
+    },
+    svg: { displayAlign: "center" },
+    loader: {
+      paths: { mathjax: "../../../share/js/mathjax" },
+      load: ["[tex]/color", "[tex]/cancel", "[tex]/upgreek"]
+    }
+  };
+
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    transition: 'slide',
+    width: 1920,
+    height: 1080,
+    margin: 0,
+    slideNumber: 'c/t',
+    mathjax4: {
+      mathjax: '../../../share/js/mathjax-stix2-font/tex-mml-svg-mathjax-stix2.js',
+      tex: window.MathJax.tex,
+      svg: window.MathJax.svg,
+      loader: window.MathJax.loader
+    },
+    plugins: [ RevealMath.MathJax4 ]
+  });
+</script>
+</body>
+</html>
