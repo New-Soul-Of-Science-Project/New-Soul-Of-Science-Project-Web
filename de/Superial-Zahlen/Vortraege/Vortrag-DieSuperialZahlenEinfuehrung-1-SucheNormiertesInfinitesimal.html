@@ -253,6 +253,14 @@
   document.addEventListener('click', function(e) {
     if (e.target.closest('.talk-notes-close-btn')) setNotesOn(false);
   });
+  // #: Klick auf die Folie neben der Sprechtext-Blase schließt sie ebenfalls - nicht nur der
+  // eigene ×-Button. Klicks auf den Menü-Button selbst sind ausgenommen, sonst würde das Öffnen
+  // per "Sprechtext anzeigen" die Blase im selben Klick sofort wieder schließen.
+  document.addEventListener('click', function(e) {
+    if (!revealEl.classList.contains('talk-notes-on')) return;
+    if (e.target.closest('.talk-notes') || e.target.closest('#speaker-menu')) return;
+    setNotesOn(false);
+  });
 
   // #: Menü öffnet/schließt per Klick auf das "i" (nicht mehr per Hover) - erneuter Klick bei
   // bereits offenem Menü schließt es wieder; Klick außerhalb schließt es ebenfalls.
