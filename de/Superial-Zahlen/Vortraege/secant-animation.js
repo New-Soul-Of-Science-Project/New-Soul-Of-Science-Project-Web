@@ -277,7 +277,7 @@ export function initSecantAnimation(containerId) {
 
     infoPanel.innerHTML =
       'h = Δx = ' + deNum(h, 3) + '<br>' +
-      'Δy = (x + h)² - x²' + '<br>' +
+      'Δy = (x + h)² — x²' + '<br>' +
       'Steigung Sekante = 2x + h = ' + deNum(slope, 3) + '<br>' +
       'Steigung Tangente = 2';
 
