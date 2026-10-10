@@ -61,18 +61,11 @@
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Der Schritt <span class="mjx-pending">\( h \)</span> wird immer kleiner</h2>
-      <!-- #: Platzhalter für die spätere Three.js-Live-Animation (Wolfgang hat dazu bereits
-           ähnliches im Projekt, 2026-10-08 besprochen) - zeigt bis dahin die geplanten Inhalte
-           (Graph, Punkte, Sekante, schrumpfendes h) als statischen Text/Formeln. */ -->
-      <!-- #: Breite/Höhe exakt im Verhältnis des Goldenen Schnitts (1:1.618) - rechts positioniert
-           (float), damit die Formel darunter links mittig fließen kann und mehr Höhe zur
-           Verfügung steht als bei einer früheren volleren-Breite-Version. */ -->
-      <div style="float: right; width: 800px; height: 550px; box-sizing: border-box; border: 2px dashed rgba(0,0,0,0.3); border-radius: 8px; padding: 16px 18px; margin: 0.4em 0 0.8em 24px; font-size: 0.68em;">
-        <p style="margin: 0 0 0.6em 0; font-style: italic; opacity: 0.7;">[Platzhalter – später Three.js-Animation]</p>
-        <p style="margin-bottom: 0.4em;">Graph <span class="mjx-pending">\( f(x) = x^2 \)</span>, Punkt <span class="mjx-pending">\( P = (x, f(x)) \)</span>, daneben der Punkt <span class="mjx-pending">\( Q = (x+h, f(x+h)) \)</span>. Die Sekante zwischen beiden.</p>
-        <p style="margin-bottom: 0.4em;">Während der Animation wird <span class="mjx-pending">\( h \)</span> kleiner:</p>
-        <p style="text-align: center; margin: 0.6em 0 0 0;"><span class="mjx-pending mjx-pending-display">\[ h = 1 \;\longrightarrow\; 0{,}5 \;\longrightarrow\; 0{,}1 \;\longrightarrow\; 0{,}01 \;\longrightarrow\; \cdots \]</span></p>
-      </div>
+      <!-- #: Live-Animation (Three.js, siehe "secant-animation.js") statt des früheren
+           statischen Platzhaltertexts - zeigt den Graphen von f(x)=x^2, die Punkte P/Q und die
+           Sekante, die bei automatisch schrumpfendem h sichtbar gegen die Tangente läuft.
+           Box-Maße unverändert (800x550) übernommen. -->
+      <div id="secant-animation" style="float: right; width: 800px; height: 550px; box-sizing: border-box; border-radius: 8px; margin: 0.4em 0 0.8em 24px; position: relative; overflow: hidden;"></div>
       <p style="margin-bottom: 0.5em;">Aber welcher Schritt ist der richtige?</p>
       <p style="margin-bottom: 0.5em;">Als Beispiel betrachten wir <span class="mjx-pending">\( f(x) = x^2 \)</span>.</p>
       <!-- #: "margin-right: 415px" (statt nur "margin: 0.8em 0") nötig - der Float rechts
@@ -208,6 +201,19 @@
 
 <script src="../../../share/js/reveal/dist/reveal.js"></script>
 <script src="../../../share/js/reveal/dist/plugin/math.js"></script>
+
+<!-- #: Three.js-Animation für Folie 4 - gleiche Quelle/Version (CDN, "es-module-shims" für
+     Import-Maps) wie die aktuellste bestehende Animation im Projekt
+     ("share/animations/Zwei-Konstruktionen-von-s-3D.html"), aber eigenes schlankes Modul statt
+     der vollen Render-Klasse (siehe "secant-animation.js"). -->
+<script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+<script type="importmap">
+  { "imports": { "three": "https://unpkg.com/three@0.186.0/build/three.module.js" } }
+</script>
+<script type="module">
+  import { initSecantAnimation } from './secant-animation.js';
+  initSecantAnimation('secant-animation');
+</script>
 <script>
   new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
