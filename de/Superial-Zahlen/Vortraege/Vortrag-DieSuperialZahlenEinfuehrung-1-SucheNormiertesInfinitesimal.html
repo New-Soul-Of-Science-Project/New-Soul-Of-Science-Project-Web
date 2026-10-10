@@ -240,6 +240,13 @@
 
   notesBtn.addEventListener('click', function() {
     setNotesOn(!revealEl.classList.contains('talk-notes-on'));
+    speakerMenu.classList.remove('menu-open');
+  });
+  // #: Menü soll sich auch nach Auswahl von "Drucken" schließen, nicht nur bei "Sprechtext
+  // anzeigen/ausblenden" - der Klick-außerhalb-Listener greift hier nicht, weil der Link selbst
+  // Teil des Menüs ist.
+  document.querySelector('.speaker-menu-print').addEventListener('click', function() {
+    speakerMenu.classList.remove('menu-open');
   });
   // #: Event-Delegation statt einzelner Listener - der Schließen-Button liegt als erstes Kind in
   // JEDER ".talk-notes"-Box im Quelltext (eine pro Folie mit Sprechtext), nicht zentral einmal.
