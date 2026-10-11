@@ -171,7 +171,44 @@
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Suche nach einem normierten Infinitesimal ist kein Selbstzweck. Sie soll zusätzliche algebraische Möglichkeiten eröffnen. Bei der Ableitung könnte ein festes infinitesimales <span class="mjx-pending">\( h \)</span> unmittelbar als Rechenschritt verwendet werden. Der infinitesimale Anteil der Änderung würde dadurch nicht im Grenzübergang verschwinden, sondern als eigener Bestandteil des Ergebnisses erhalten bleiben. Auch für die Integralrechnung eröffnet sich damit eine andere Perspektive. Statt eine Folge immer feinerer endlicher Zerlegungen zu betrachten, könnte eine endliche Größe als tatsächliche Summe normierter infinitesimaler Beiträge beschrieben werden. Ein weiterer Gesichtspunkt betrifft die Darstellung von Größenordnungen. Infinitesimale, endliche und infinite Größen könnten innerhalb eines gemeinsamen algebraischen Systems unterschieden, miteinander verglichen und weiterverrechnet werden. Gerade darin liegt auch ein didaktischer Reiz: Größenordnungen erscheinen nicht nur als Verhalten eines Grenzprozesses, sondern als algebraisch sichtbare Bestandteile einer Zahl. Die weitergehende Perspektive besteht darin, auch aktual unendliche Größen, Summen und Anzahlen innerhalb eines gemeinsamen Rechensystems soweit wie möglich als konkrete algebraische Werte zu erfassen. Der nächste Schritt ist deshalb entscheidend: Wenn ein infinitesimaler Schritt normiert werden soll, muss geklärt werden, wie seine Größe mit einer dazugehörigen unendlichen Anzahl solcher Schritte zusammenhängt.“</div>
     </section>
 
-    <!-- Folie 12: Über mich -->
+    <!-- Folie 12: Schrittweite und Schrittanzahl gehören zusammen -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Schrittweite und Schrittanzahl gehören zusammen</h2>
+      <!-- #: Statisches SVG (kein Three.js nötig, keine Animation gefordert) - Zahlenstrahl von 0
+           bis 1, in 10 sichtbar gleich große Schritte geteilt; grüne Klammer markiert die Breite
+           eines einzelnen Schritts (h), die große Klammer darunter die Gesamtzahl der Schritte
+           (N Schritte). -->
+      <svg viewBox="0 0 900 132" style="width: 100%; max-width: 820px; display: block; margin: 0.6em auto 0.8em auto;">
+        <line x1="40" y1="30" x2="860" y2="30" stroke="#333" stroke-width="3"/>
+        <g stroke="#333" stroke-width="3">
+          <line x1="40" y1="24" x2="40" y2="36"/>
+          <line x1="122" y1="24" x2="122" y2="36"/>
+          <line x1="204" y1="24" x2="204" y2="36"/>
+          <line x1="286" y1="24" x2="286" y2="36"/>
+          <line x1="368" y1="24" x2="368" y2="36"/>
+          <line x1="450" y1="24" x2="450" y2="36"/>
+          <line x1="532" y1="24" x2="532" y2="36"/>
+          <line x1="614" y1="24" x2="614" y2="36"/>
+          <line x1="696" y1="24" x2="696" y2="36"/>
+          <line x1="778" y1="24" x2="778" y2="36"/>
+          <line x1="860" y1="24" x2="860" y2="36"/>
+        </g>
+        <text x="40" y="17" font-size="20" text-anchor="middle" fill="#333">0</text>
+        <text x="860" y="17" font-size="20" text-anchor="middle" fill="#333">1</text>
+        <path d="M 40 46 L 40 54 L 122 54 L 122 46" stroke="#1a4fa0" stroke-width="3" fill="none"/>
+        <text x="81" y="80" font-size="20" text-anchor="middle" fill="#1a4fa0">h</text>
+        <path d="M 40 92 L 40 100 L 860 100 L 860 92" stroke="#333" stroke-width="3" fill="none"/>
+        <text x="450" y="126" font-size="20" text-anchor="middle" fill="#333">N Schritte</text>
+      </svg>
+      <p style="text-align: center; margin: 0.6em 0;"><span class="mjx-pending mjx-pending-display">\[ \underbrace{h + h + h + \cdots + h}_{N \text{ Schritte}} \;\;\;=\;\;\; 1 \]</span></p>
+      <p style="text-align: center; margin: 0.6em 0;"><span class="mjx-pending mjx-pending-display">\[ N \cdot h \;\;\;=\;\;\; 1 \]</span></p>
+      <p style="text-align: center; margin: 0.6em 0; font-size: 1.2em;"><span class="mjx-pending mjx-pending-display">\[ N \;\;\;=\;\;\; \frac{1}{h} \]</span></p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1.4em;">Je kleiner der Schritt, desto größer muss die zugehörige Schrittanzahl sein.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Frage nach der Normierung eines infinitesimalen Schritts wird besonders anschaulich, wenn man Schrittweite und Schrittanzahl gemeinsam betrachtet. Nehmen wir eine Strecke der Länge <span class="mjx-pending">\( 1 \)</span> und zerlegen sie in gleich große Schritte der Breite <span class="mjx-pending">\( h \)</span>. Sind dafür <span class="mjx-pending">\( N \)</span> Schritte erforderlich, gilt: <span class="mjx-pending">\( N \cdot h = 1 \)</span>. Daraus folgt unmittelbar: <span class="mjx-pending">\( N = 1/h \)</span>. Schrittweite und Schrittanzahl bestimmen sich damit gegenseitig. Wird <span class="mjx-pending">\( h \)</span> kleiner, muss <span class="mjx-pending">\( N \)</span> entsprechend größer werden. Soll <span class="mjx-pending">\( h \)</span> tatsächlich infinitesimal sein, kann die zugehörige Schrittanzahl nicht mehr endlich sein. Damit zeigt sich erstmals eine grundlegende Verbindung zwischen dem Infinitesimalen und dem Unendlichen: Ein normierter infinitesimaler Schritt verlangt einen dazu passenden infiniten Gegenmaßstab. Die Normierungsfrage für <span class="mjx-pending">\( h \)</span> führt deshalb unmittelbar zu einer neuen Frage: Wie soll dieser infinite Gegenmaßstab beschrieben und selbst normiert werden?“</div>
+    </section>
+
+    <!-- Folie 13: Über mich -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Über mich</h2>
@@ -184,7 +221,7 @@
       <img class="mw-about-photo" src="../../../share/images/vortraege/wolfgang-huss-foto.jpg" alt="Wolfgang Hu&szlig;">
     </section>
 
-    <!-- Folie 13: Zu meiner Forschung -->
+    <!-- Folie 14: Zu meiner Forschung -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Zu meiner Forschung</h2>
@@ -206,7 +243,7 @@
       </ul>
     </section>
 
-    <!-- Folie 14: Zur Genossenschaft -->
+    <!-- Folie 15: Zur Genossenschaft -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Zur Genossenschaft</h2>
