@@ -316,6 +316,43 @@
   }
   Reveal.on('slidechanged', updateNotesHint);
   Reveal.on('ready', updateNotesHint);
+
+  // #: Eigene Scroll-Navigation statt reveal.js' eingebauter "mouseWheel"-Option (siehe
+  // "mouseWheel: false" oben) - die nutzt intern die veraltete "wheelDelta"/"detail"-Eigenschaft
+  // statt des heute standardisierten "deltaY"/"deltaX". Die Folien wechseln hier per
+  // "transition: 'slide'" HORIZONTAL, daher muss die Wisch-/Scrollgeste auf der X-Achse
+  // ausgewertet werden (nicht Y wie bei einer normalen vertikal scrollenden Webseite).
+  // Trackpads senden bei einer einzigen physischen Wischgeste (inkl. Nachlauf/Inertia) viele
+  // einzelne "wheel"-Events, bei manchen Trackpads/Systemeinstellungen über deutlich mehr als
+  // eine Sekunde ohne jemals eine Pause >150ms zu erzeugen - ein reiner Pausen-Reset blieb dann
+  // dauerhaft "locked" und ließ sich gar nicht mehr blättern. Deshalb zusätzlich eine harte
+  // Obergrenze (LOCK_MS): die Sperre fällt spätestens nach dieser Zeit automatisch, auch wenn
+  // der Nachlauf noch weiterläuft. "capture:true" stellt sicher, dass wir das Event wirklich
+  // bekommen, auch falls reveal.js selbst an anderer Stelle die Weiterleitung stoppt.
+  (function() {
+    var THRESHOLD = 40;
+    var RESET_GAP_MS = 150;
+    var LOCK_MS = 900;
+    var accum = 0;
+    var locked = false;
+    var lockedAt = 0;
+    var lastEventTime = 0;
+    document.addEventListener('wheel', function(e) {
+      if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
+      var now = Date.now();
+      if (now - lastEventTime > RESET_GAP_MS) { accum = 0; locked = false; }
+      lastEventTime = now;
+      if (locked) {
+        if (now - lockedAt > LOCK_MS) { locked = false; accum = 0; }
+        else { return; }
+      }
+      accum += e.deltaX;
+      if (Math.abs(accum) < THRESHOLD) return;
+      locked = true;
+      lockedAt = now;
+      if (accum > 0) { Reveal.next(); } else { Reveal.prev(); }
+    }, { capture: true, passive: true });
+  })();
 </script>
 <script>
   window.MathJax = {
@@ -335,7 +372,7 @@
     hash: true,
     center: false,
     touch: true,
-    mouseWheel: true,
+    mouseWheel: false,
     transition: 'slide',
     width: 1920,
     height: 1080,
