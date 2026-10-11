@@ -49,9 +49,9 @@
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Die bekannte Definition</h2>
       <p>Die Ableitung beginnt mit einem Schritt <span class="mjx-pending">\( h \)</span> auf der <span class="mjx-pending">\( x \)</span>-Achse und der Rechnung,</p>
-      <p style="text-align: center; margin: 1.6em 0 0.5em 0; font-size: 0.9em;"><span class="mjx-pending mjx-pending-display">\[ h  \;\;\;=\;\;\;  \Delta x  \;\;\;=\;\;\;  (x + h) - x  \;\; ,  \qquad \Delta y  \;\;\;=\;\;\;  f(x + h) - f(x) \]</span></p>
+      <p style="text-align: center; margin: 1.6em 0 0.5em 0; font-size: 0.9em;"><span class="mjx-pending mjx-pending-display">\[ h  \;=\;  \Delta x  \;=\;  (x + h) - x  \;\; ,  \qquad \Delta y  \;=\;  f(x + h) - f(x) \]</span></p>
       <p style="text-align: center; margin: 0.5em 0; font-size: 1.2em;"><span class="mjx-pending mjx-pending-display">\[ \frac{ \Delta y }{ \Delta x }  \;\;\;=\;\;\;  \frac{ f(x + h) - f(x) }{ h }  \;\; , \]</span></p>
-      <p style="text-align: center; margin: 0.5em 0 0.9em 0;"><span class="mjx-pending mjx-pending-display">\[ h  \;\;\;\neq\;\;\;  0  \;\; , \]</span></p>
+      <p style="text-align: center; margin: 0.5em 0 0.9em 0;"><span class="mjx-pending mjx-pending-display">\[ h  \;\neq\;  0  \;\; , \]</span></p>
       <p>um wieviel sich die Position dabei auf der <span class="mjx-pending">\( y \)</span>-Achse im Verhältnis zu <span class="mjx-pending">\( h \)</span> ändert.</p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die klassische Differenzenrechnung betrachtet eine Änderung des Arguments <span class="mjx-pending">\( x \)</span> um den Schritt <span class="mjx-pending">\( h \)</span>. Dieser Schritt ist identisch mit der Änderung <span class="mjx-pending">\( \Delta x = h \)</span>. Durch die Veränderung des Arguments von <span class="mjx-pending">\( x \)</span> zu <span class="mjx-pending">\( x + h \)</span> verändert sich auch der Funktionswert. Diese Änderung wird mit <span class="mjx-pending">\( \Delta y = f(x + h) - f(x) \)</span> bezeichnet. Der Differenzenquotient <span class="mjx-pending">\( \dfrac{\Delta y}{\Delta x} = \dfrac{f(x + h) - f(x)}{h} \)</span> beschreibt die mittlere Änderungsrate über diesen Schritt. Dabei muss stets <span class="mjx-pending">\( h \neq 0 \)</span> gelten, da durch <span class="mjx-pending">\( h \)</span> dividiert wird.“
       </div>
@@ -83,16 +83,40 @@
       <h2>Die elegante historische Lösung</h2>
       <p>Die klassische Antwort über den Grenzwert: kein bestimmtes <span class="mjx-pending">\( h \)</span>, sondern ein laufendes</p>
       <p style="text-align: center; margin: 0.8em 0;"><span class="mjx-pending mjx-pending-display">\[ h \;\longrightarrow\; 0  \;\; ,  \qquad f'(x)  \;\;\;=\;\;\;  \lim_{h\to0} \frac{f(x+h)-f(x)}{h}  \;\; . \]</span></p>
-      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:<span class="mjx-pending">\( \qquad\qquad\qquad\qquad\quad\;\,  \displaystyle{ \lim_{ h \to 0 } (2x + h)  \;\;\;=\;\;\;  2x  \;\; . } \)</span></p>
+      <p>Für <span class="mjx-pending">\( f(x) = x^2 \)</span>:<span class="mjx-pending">\( \qquad\quad\;\;\; \displaystyle{ \lim_{h\to0} \frac{ (x + h)^{2} - x^{2} }{ h }  \;\;\;=\;\;\;  \lim_{ h \to 0 } (2x + h)  \;\;\;=\;\;\;  2x  \;\; . } \)</span></p>
       <!-- <p style="text-align: center; margin: 0.6em 0;"><span class="mjx-pending mjx-pending-display">\[ \lim_{h\to0}(2x+h) = 2x. \]</span></p> -->
-      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1.2em;">Der Grenzwert wählt keinen infinitesimalen Schritt.</p>
       <p style="margin-top: 0.6em;">Er bestimmt den Wert, dem die Differenzenquotienten für immer kleinere von null verschiedene endliche Schritte zustreben.</p>
-      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Das ist eine mathematisch elegante Lösung. Wir müssen gar keinen kleinsten Schritt finden. <span class="mjx-pending">\( h \)</span> bleibt während der Rechnung von null verschieden, und wir untersuchen lediglich, welchem Wert sich der Differenzenquotient nähert, wenn <span class="mjx-pending">\( h \)</span> beliebig klein wird.“
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 1.2em;">Der Grenzwert wählt aber keinen infinitesimalen Schritt.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>
+        „Die klassische Analysis benötigt keinen kleinsten oder fest vorgegebenen infinitesimalen Schritt. Der Schritt <span class="mjx-pending">\( h \)</span> bleibt bei jeder einzelnen Betrachtung von null verschieden, während untersucht wird, welchem Wert der Differenzenquotient für <span class="mjx-pending">\( h \to 0 \)</span> zustrebt. Damit löst die Limesrechnung das Problem mathematisch elegant. Sie definiert die Ableitung durch einen Grenzprozess, ohne dafür ein tatsächlich vorhandenes infinitesimales Zahlobjekt voraussetzen zu müssen. Die klassische Ableitung gewinnt ihre Exaktheit durch diesen Grenzübergang. Gerade deshalb wird jedoch kein bestimmter infinitesimaler Schritt als eigenständiges Zahlobjekt ausgewählt.“
         <p style="margin-top: 1em;">„Aber damit wurde eine andere Frage noch gar nicht beantwortet.“</p>
       </div>
     </section>
 
-    <!-- Folie 6: Die offene Frage -->
+    <!-- Folie 6: Ist dx nicht schon das Infinitesimal? -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Ist <span class="mjx-pending">\( dx \)</span> nicht schon das Infinitesimal?</h2>
+      <p style="margin: 0 0 0.8em 0;">Historisch und in der Lehre oft als „infinitesimale Änderung" beschrieben:</p>
+      <p style="text-align: center; margin: 0.8em 0 0.4em 0; font-size: 1.4em;"><span class="mjx-pending mjx-pending-display">\[ dx \]</span></p>
+      <p style="margin-top: 1.2em;"><span class="mjx-pending">\( dx \)</span> ist das Differential von <span class="mjx-pending">\( x \)</span>, kein fest gewählter positiver Zahlenwert.</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;"><span class="mjx-pending">\( dx \)</span> ist in der modernen klassischen reellen Analysis keine infinitesimale Zahl.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Historisch, insbesondere in der Leibnizschen Infinitesimalrechnung, wurde <span class="mjx-pending">\( dx \)</span> als infinitesimale Änderung von <span class="mjx-pending">\( x \)</span> verstanden. Auch in der Lehre wird <span class="mjx-pending">\( dx \)</span> bis heute häufig anschaulich als ‚unendlich kleine' oder ‚infinitesimale' Änderung beschrieben. In der modernen klassischen reellen Analysis ist <span class="mjx-pending">\( dx \)</span> jedoch keine infinitesimale Zahl. Es ist das Differential von <span class="mjx-pending">\( x \)</span> und erhält seine präzise Bedeutung innerhalb des jeweiligen Differentialkalküls. Insbesondere bezeichnet <span class="mjx-pending">\( dx \)</span> keinen bestimmten positiven Zahlenwert, der kleiner als jede positive reelle Zahl wäre. Damit ist <span class="mjx-pending">\( dx \)</span> nicht bereits das Zahlobjekt, nach dem hier gesucht wird.“</div>
+    </section>
+
+    <!-- Folie 7: Was ist dann der Schritt im Differenzenquotienten? -->
+    <section>
+      <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
+      <h2>Was ist dann der Schritt im Differenzenquotienten?</h2>
+      <p style="margin: 0 0 0.8em 0;"><span class="mjx-pending">\( h \)</span> ist ein konkreter reeller Schritt:</p>
+      <p style="text-align: center; margin: 0.8em 0 0.4em 0; font-size: 1.4em;"><span class="mjx-pending mjx-pending-display">\[ h  \;\;\;=\;\;\;  \Delta x \]</span></p>
+      <p style="text-align: center; margin: 0 0 1.2em 0; font-size: 1.1em;"><span class="mjx-pending mjx-pending-display">\[ h  \;\in\;  \mathbb{R} \;\; ,  \qquad  h  \;\neq\;  0  \;\; ,  \qquad  h  \;\to\;  0 \]</span></p>
+      <p style="margin: 0 0 1.2em 0;"><span class="mjx-pending">\( h \)</span> kann beliebig klein gewählt werden, ist innerhalb von <span class="mjx-pending">\( \mathbb{R} \)</span> aber nicht infinitesimal.</p>
+      <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">Gesucht ist ein tatsächlicher infinitesimaler Zahlenwert für <span class="mjx-pending">\( h = \Delta x \)</span>, und dieser soll mathematisch normiert sein.</p>
+      <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Der konkrete Schritt im klassischen Differenzenquotienten ist <span class="mjx-pending">\( h = \Delta x \)</span>. Dabei ist <span class="mjx-pending">\( h \)</span> eine reelle Zahl. Für jede einzelne Betrachtung gilt <span class="mjx-pending">\( h \neq 0 \)</span>. Der Wert <span class="mjx-pending">\( h \)</span> kann beliebig klein gewählt werden, bleibt innerhalb der reellen Zahlen aber stets ein gewöhnlicher reeller Wert. Erst im Grenzprozess wird untersucht, was geschieht, wenn <span class="mjx-pending">\( h \to 0 \)</span>. Damit ist <span class="mjx-pending">\( h \)</span> zwar ein konkreter Zahlenwert, aber kein tatsächlich infinitesimales Zahlobjekt. Genau hier setzt die weitere Fragestellung an: Kann <span class="mjx-pending">\( h = \Delta x \)</span> selbst einen festen, von null verschiedenen, infinitesimalen und mathematisch normierten Zahlenwert erhalten?“</div>
+    </section>
+
+    <!-- Folie 8: Die offene Frage -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Die offene Frage</h2>
@@ -103,7 +127,7 @@
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die klassische Analysis braucht auf diese Frage keine Antwort. Und gerade das macht den Grenzwert so erfolgreich. Aber wenn wir den infinitesimalen Schritt selbst als Zahl untersuchen wollen, bleibt die Frage offen: Wo müsste dieses <span class="mjx-pending">\( h \)</span> eigentlich liegen?“</div>
     </section>
 
-    <!-- Folie 7: Innerhalb der reellen Zahlen finden wir es nicht -->
+    <!-- Folie 9: Innerhalb der reellen Zahlen finden wir es nicht -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Innerhalb der reellen Zahlen finden wir es nicht</h2>
@@ -114,7 +138,7 @@
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Wenn <span class="mjx-pending">\( h \)</span> wirklich infinitesimal sein soll, muss es positiv sein, aber kleiner als <span class="mjx-pending">\( 1 \)</span>, <span class="mjx-pending">\( 1/10 \)</span>, <span class="mjx-pending">\( 1/1000 \)</span> – überhaupt kleiner als <span class="mjx-pending">\( 1/n \)</span> für jede natürliche Zahl <span class="mjx-pending">\( n \)</span>. Genau das erlaubt die archimedische Struktur der reellen Zahlen nicht.“</div>
     </section>
 
-    <!-- Folie 8: Aber irgendein Infinitesimal genügt noch nicht -->
+    <!-- Folie 10: Aber irgendein Infinitesimal genügt noch nicht -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Aber irgendein Infinitesimal genügt noch nicht für</h2>
@@ -133,7 +157,7 @@
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Mathematik kennt durchaus Systeme mit Infinitesimalen. Aber die bloße Existenz beantwortet unsere Frage noch nicht. Wenn sehr viele infinitesimale Zahlen existieren: Warum sollte gerade eine bestimmte davon der elementare Schritt der Ableitung sein? Wir suchen also nicht irgendein Infinitesimal. Wir suchen ein ausgezeichnetes, normiertes Infinitesimal.“</div>
     </section>
 
-    <!-- Folie 9: Über mich -->
+    <!-- Folie 11: Über mich -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Über mich</h2>
@@ -146,7 +170,7 @@
       <img class="mw-about-photo" src="../../../share/images/vortraege/wolfgang-huss-foto.jpg" alt="Wolfgang Hu&szlig;">
     </section>
 
-    <!-- Folie 10: Zu meiner Forschung -->
+    <!-- Folie 12: Zu meiner Forschung -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Zu meiner Forschung</h2>
@@ -168,7 +192,7 @@
       </ul>
     </section>
 
-    <!-- Folie 11: Zur Genossenschaft -->
+    <!-- Folie 13: Zur Genossenschaft -->
     <section>
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Motivation und Grundidee</div></div></div>
       <h2>Zur Genossenschaft</h2>
