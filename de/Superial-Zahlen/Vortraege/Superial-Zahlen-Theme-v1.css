@@ -112,6 +112,47 @@
     font-size: 13px; line-height: 1.4; opacity: 0.9;
   }
   .speaker-menu-print:hover .speaker-menu-print-info, .speaker-menu-print:focus .speaker-menu-print-info { display: block; }
+  /* #: "Seite wählen" - wie die Druck-/Sprechtext-Hinweise per Hover (nicht Klick) geöffnet. Die
+     Liste liegt als Kind IN ".speaker-menu-pages", daher bleibt ":hover" auf der Zeile auch dann
+     aktiv, wenn die Maus in die (visuell daneben positionierte) Liste bewegt wird - sie ist ja
+     trotz "position: absolute" weiterhin ein Nachfahre der Zeile.
+     "bottom: 0" statt "top: 0" (wie bei ".speaker-menu-print-info") - das Menü sitzt nahe am
+     unteren Bildschirmrand, eine nach UNTEN wachsende Liste würde dort schnell abgeschnitten.
+     Nach OBEN wachsend bleibt deutlich mehr Platz.
+     "margin-left: -4px" statt eines positiven Abstands - überlappt das Elternmenü bewusst leicht,
+     damit zwischen Zeile und Liste KEINE Lücke ohne Hover-Fläche bleibt, durch die die Maus beim
+     Rüberfahren "durchfallen" und die Liste vorzeitig schließen könnte. */
+  .speaker-menu-page-list {
+    display: none; position: absolute; left: 100%; bottom: 0; margin-left: -4px; width: 340px;
+    max-height: 480px; overflow: hidden; background: rgba(0,0,0,0.85); border-radius: 6px;
+    font-size: 14px; line-height: 1.35;
+  }
+  .speaker-menu-pages:hover .speaker-menu-page-list,
+  .speaker-menu-pages:focus-within .speaker-menu-page-list { display: block; }
+  /* #: Scrollbar in Safari (macOS) lässt sich über "::-webkit-scrollbar-*" NICHT zuverlässig
+     abschalten/umfärben (von Apple seit einigen Versionen ignoriert, anders als in Chrome/
+     Firefox) - deshalb hier browserunabhängig per Clipping-Trick statt per Browser-Erkennung
+     gelöst: Der innere Scroll-Container ist 20px BREITER als sichtbar und um denselben Betrag
+     nach rechts gepolstert ("padding-right"), wodurch die native Scrollbar genau in diesen
+     20px-Streifen rutscht. Der äußere Container (".speaker-menu-page-list", "overflow: hidden")
+     schneidet genau diesen Streifen ab - die Scrollbar verschwindet komplett, unabhängig vom
+     Browser, ohne das Scrollen selbst zu beeinträchtigen. */
+  .speaker-menu-page-list-inner {
+    box-sizing: border-box; width: calc(100% + 20px); max-height: 480px; overflow-y: scroll;
+    padding-right: 20px;
+  }
+  /* #: Eigene Zahlen-Spalte per Flex statt Inline-Text - bei umbrechenden (zweizeiligen) Titeln
+     würde die zweite Zeile sonst unter der Zahl beginnen statt unter dem Titelanfang, siehe
+     Screenshot-Feedback ("sieht sonst blöde aus"). */
+  .speaker-menu-page-item {
+    display: flex; width: 100%; box-sizing: border-box; padding: 8px 14px;
+    background: none; border: 0; border-bottom: 1px solid rgba(255,255,255,0.15);
+    color: #fff; text-align: left; font-family: inherit; font-size: inherit; cursor: pointer;
+  }
+  .speaker-menu-page-item:last-child { border-bottom: 0; }
+  .speaker-menu-page-item:hover, .speaker-menu-page-item.current-page { background: rgba(255,255,255,0.15); }
+  .speaker-menu-page-item-num { flex: 0 0 26px; opacity: 0.6; }
+  .speaker-menu-page-item-title { flex: 1 1 auto; }
   html.reveal-print .speaker-menu { display: none; }
   /* #: Sprechtext-Notiz pro Folie - liegt als Kind direkt im jeweiligen "<section>" im Quelltext
      (bei der Folie selbst, nicht zentral gesammelt), ist aber standardmäßig unsichtbar. Erst wenn
