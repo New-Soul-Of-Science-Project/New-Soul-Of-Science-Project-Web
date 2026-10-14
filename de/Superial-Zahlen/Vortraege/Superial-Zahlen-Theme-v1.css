@@ -51,6 +51,15 @@
      höhere Spezifität als unser bloßer Klassenselektor ".speaker-menu"), was "position: absolute"
      hier überschrieb und das Icon weit über den sichtbaren Bereich hinaus verschob. */
   .speaker-menu { position: absolute !important; left: 60px; bottom: 60px; z-index: 31; }
+  /* #: Kleiner Copyright-Hinweis unten mittig - zwischen dem "i"-Icon (unten links) und den
+     Navigationspfeilen/der Seitenzahl (unten rechts), dort ist auf der 1920px breiten Folie genug
+     freier Platz. Liegt wie ".speaker-menu"/".controls" direkt in ".reveal", erscheint dadurch
+     automatisch auf jeder Folie statt 25-mal einzeln eingefügt werden zu müssen. */
+  .deck-copyright {
+    position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
+    font-size: 15px; color: rgba(0,0,0,0.38); white-space: nowrap; z-index: 5;
+  }
+  .deck-copyright a { color: inherit; }
   .speaker-menu-icon {
     display: flex; align-items: center; justify-content: center;
     width: 32px; height: 32px; border-radius: 50%; padding: 0; border: 0; cursor: pointer;
