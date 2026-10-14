@@ -214,19 +214,19 @@ export function initSecantAnimation(containerId) {
 
   // statische Achsen-Beschriftungen - neben (nicht hinter/über) der Pfeilspitze platziert, damit
   // sie innerhalb des sichtbaren Kamerabereichs bleiben
-  const axisXLabel = makeLabel(labelBase + 'color:#555; font-weight:400;');
+  const axisXLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(xAxisEnd, 0.16); axisXLabel.style.left = p.left + 'px'; axisXLabel.style.top = p.top + 'px'; axisXLabel.textContent = 'x'; }
-  const axisYLabel = makeLabel(labelBase + 'color:#555; font-weight:400;');
+  const axisYLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(0.16, yAxisEnd); axisYLabel.style.left = p.left + 'px'; axisYLabel.style.top = p.top + 'px'; axisYLabel.textContent = 'y'; }
 
   // statisches Kurven-Label, rechts von der y-Achse, etwas höher, aber unterhalb der
   // P-Projektionslinie (y=1) - dort frei von Dreieck/P/Q
   const curveLabel = makeLabel(labelBase + 'color:#111; font-size:19px;');
-  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 25) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.textContent = 'f(x) = x²'; }
+  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 25) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
 
   // statisches P-Label, unten links vom Punkt
   const pLabel = makeLabel(labelBase + 'color:#111;');
-  { const p = worldToScreen(X0, f(X0)); pLabel.style.left = (p.left - 58) + 'px'; pLabel.style.top = (p.top + 16) + 'px'; pLabel.textContent = 'P = (1; 1)'; }
+  { const p = worldToScreen(X0, f(X0)); pLabel.style.left = (p.left - 58) + 'px'; pLabel.style.top = (p.top + 16) + 'px'; pLabel.innerHTML = '<i style="font-style:italic">P</i> = (1; 1)'; }
 
   // statisches "Tangente"-Label. Anker knapp rechts vom maximalen Reichweitenpunkt des Dreiecks
   // (X0+H_MAX), linksbündig statt zentriert - der Text wächst dadurch nur nach rechts, in den
@@ -238,9 +238,9 @@ export function initSecantAnimation(containerId) {
   // dynamische Labels (pro Bild aktualisiert)
   const qLabel = makeLabel(labelBase + 'color:#8a2222;');
   const secantNameLabel = makeLabel(labelBase + 'color:#8a2222;');
-  const hLegLabel = makeLabel('font-size:16px; font-weight:600; color:#1a4fa0; transform:translate(-50%,-50%);');
+  const hLegLabel = makeLabel('font-size:16px; font-weight:600; color:#1a4fa0; font-style:italic; transform:translate(-50%,-50%);');
   const dyLegLabel = makeLabel('font-size:16px; font-weight:600; color:#1a4fa0; transform:translate(-50%,-50%);');
-  const projXLabel = makeLabel('font-size:15px; font-weight:600; color:#555; transform:translate(-50%,-50%);');
+  const projXLabel = makeLabel('font-size:15px; font-weight:600; color:#555; font-style:italic; transform:translate(-50%,-50%);');
   const projYLabel = makeLabel('font-size:15px; font-weight:600; color:#555; transform:translate(-50%,-50%);');
 
   const SECANT_LABEL_X = VIEW.xMin + 0.12; // links, wo die Sekante auch bei kleinem h gut sichtbar bleibt
@@ -273,12 +273,12 @@ export function initSecantAnimation(containerId) {
     projXLabel.textContent = 'h';
     const diffYPos = worldToScreen(0, (py + qy) / 2);
     projYLabel.style.left = (diffYPos.left - 22) + 'px'; projYLabel.style.top = diffYPos.top + 'px';
-    projYLabel.textContent = 'Δy';
+    projYLabel.innerHTML = 'Δ<i style="font-style:italic">y</i>';
 
     infoPanel.innerHTML =
-      'h = Δx = ' + deNum(h, 3) + '<br>' +
-      'Δy = (x + h)² — x²' + '<br>' +
-      'Steigung Sekante = 2x + h = ' + deNum(slope, 3) + '<br>' +
+      '<i style="font-style:italic">h</i> = Δ<i style="font-style:italic">x</i> = ' + deNum(h, 3) + '<br>' +
+      'Δ<i style="font-style:italic">y</i> = (<i style="font-style:italic">x</i> + <i style="font-style:italic">h</i>)² — <i style="font-style:italic">x</i>²' + '<br>' +
+      'Steigung Sekante = 2<i style="font-style:italic">x</i> + <i style="font-style:italic">h</i> = ' + deNum(slope, 3) + '<br>' +
       'Steigung Tangente = 2';
 
     const hMid = worldToScreen((px + qx) / 2, py);
@@ -286,7 +286,7 @@ export function initSecantAnimation(containerId) {
     hLegLabel.textContent = 'h';
     const dyMid = worldToScreen(qx, (py + qy) / 2);
     dyLegLabel.style.left = (dyMid.left + 20) + 'px'; dyLegLabel.style.top = dyMid.top + 'px';
-    dyLegLabel.textContent = 'Δy';
+    dyLegLabel.innerHTML = 'Δ<i style="font-style:italic">y</i>';
 
     // Q-Label versetzt senkrecht zur tatsächlichen Kurvenrichtung an Q (nicht zur festen Tangente
     // in P) - eine feste Bildschirm-Richtung sieht nur nahe P wie "entlang der Tangente" aus, weil
@@ -309,7 +309,7 @@ export function initSecantAnimation(containerId) {
     const QLABEL_OFFSET = 85;
     qLabel.style.left = (qPos.left + bdx * QLABEL_OFFSET) + 'px';
     qLabel.style.top = (qPos.top + bdy * QLABEL_OFFSET) + 'px';
-    qLabel.textContent = 'Q = (' + deNum(qx) + '; ' + deNum(qy) + ')';
+    qLabel.innerHTML = '<i style="font-style:italic">Q</i> = (' + deNum(qx) + '; ' + deNum(qy) + ')';
 
     const sy = py + slope * (SECANT_LABEL_X - X0);
     const sPos = worldToScreen(SECANT_LABEL_X, sy);
@@ -346,7 +346,9 @@ export function initSecantAnimation(containerId) {
   const pqToggleCheckbox = document.createElement('input');
   pqToggleCheckbox.type = 'checkbox';
   pqToggleLabel.appendChild(pqToggleCheckbox);
-  pqToggleLabel.appendChild(document.createTextNode('P, Q ausblenden'));
+  const pqToggleText = document.createElement('span');
+  pqToggleText.innerHTML = '<i style="font-style:italic">P</i>, <i style="font-style:italic">Q</i> ausblenden';
+  pqToggleLabel.appendChild(pqToggleText);
   container.appendChild(pqToggleLabel);
 
   function applyPQVisibility(hidden) {
