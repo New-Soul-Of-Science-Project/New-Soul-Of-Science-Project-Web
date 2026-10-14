@@ -51,13 +51,17 @@
      höhere Spezifität als unser bloßer Klassenselektor ".speaker-menu"), was "position: absolute"
      hier überschrieb und das Icon weit über den sichtbaren Bereich hinaus verschob. */
   .speaker-menu { position: absolute !important; left: 60px; bottom: 60px; z-index: 31; }
-  /* #: Kleiner Copyright-Hinweis unten mittig - zwischen dem "i"-Icon (unten links) und den
-     Navigationspfeilen/der Seitenzahl (unten rechts), dort ist auf der 1920px breiten Folie genug
-     freier Platz. Liegt wie ".speaker-menu"/".controls" direkt in ".reveal", erscheint dadurch
-     automatisch auf jeder Folie statt 25-mal einzeln eingefügt werden zu müssen. */
+  /* #: Kleiner Copyright-Hinweis unten mittig auf JEDER Folie. Zwei vorherige Varianten scheiterten:
+     direkt in ".reveal" (wie ".controls"/".speaker-menu") verliert bei Letterboxing den Bezug zur
+     grünen Fläche UND hat im Druckmodus keine sinnvolle Position mehr; "@page { @bottom-center }"
+     (CSS Paged Media) wird von Chrome beim regulären Drucken schlicht nicht gerendert, obwohl es
+     genau dafür vorgesehen wäre. Jetzt per JS (siehe Hauptskript unten) als eigenes Kind in JEDE
+     einzelne Folie eingefügt, dort wo jede Folie ohnehin schon "position: absolute" ist (siehe
+     reveal.css) - "bottom"/"left" wirken dadurch relativ zur jeweiligen Folien-Box selbst, exakt
+     wie jeder andere Folieninhalt auch, am Bildschirm UND im Druck. */
   .deck-copyright {
-    position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
-    font-size: 15px; color: rgba(0,0,0,0.38); white-space: nowrap; z-index: 5;
+    position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+    font-size: 15px; color: rgba(0,0,0,0.45); white-space: nowrap; z-index: 5;
   }
   .deck-copyright a { color: inherit; }
   .speaker-menu-icon {
