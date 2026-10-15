@@ -972,6 +972,10 @@
                                                          print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-print.png',
                                                          print_image_alt => 'Die Konstruktion der Teilung von s, interaktive 3D-Animation');
 
+  $SupNum_g_iframe_ary_SekanteTangente           = array( source => $Glo_PathRel_back.'../share/animations/Sekante-Tangente-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt den Graphen von \lm{ f(x) = x^{2} } sowie die Sekante, die bei schrumpfendem Schritt \lm{ h } sichtbar gegen die Tangente läuft;'."\n".
+                                                                 'die Punkte P und Q lassen sich über ein Kontrollkästchen zusätzlich einblenden.');
+
 
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".

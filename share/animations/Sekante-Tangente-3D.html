@@ -12,9 +12,13 @@
          dunklen Three.js-Beispielszenen dort, was hier den hellen Hintergrund und die dunklen
          Beschriftungen dieser Animation unlesbar machen würde. Diese Animation ist vollständig
          eigenständig (keine "#info"/"#overlay"-Struktur jener Dateien nötig). -->
+    <!-- #: 660x450 statt der 800x550 im Vortrag - passt zur üblichen Abbildungsbreite der
+         Theorieseiten (siehe die "width => '660px'"-Angaben bei den übrigen Figuren/Animationen
+         in "share/php/NSOSP.php"). Betrifft nur diese eigenständige Seite - der Vortrag importiert
+         "Sekante-Tangente-3D.js" direkt mit eigener Containergröße, nicht über dieses iframe. -->
     <style>
       body { margin: 0; }
-      #secant-animation { width: 800px; height: 550px; box-sizing: border-box; overflow: hidden; position: relative; }
+      #secant-animation { width: 660px; height: 450px; box-sizing: border-box; overflow: hidden; position: relative; }
     </style>
   </head>
   <body>
