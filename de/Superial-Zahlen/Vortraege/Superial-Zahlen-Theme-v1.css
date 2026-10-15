@@ -28,6 +28,12 @@
      hier zusätzlich etwas nach innen gerückt, damit sie auch bei leichtem Letterboxing sichtbar auf
      dem Folienhintergrund bleiben statt im dunkelgrauen Rand zu verschwinden. */
   .controls { right: 60px !important; bottom: 60px !important; }
+  /* #: reveal.css setzt auf den Pfeil-Buttons selbst zusätzlich noch "bottom: 1.4em" (siehe
+     ".navigate-left"/".navigate-right" für Decks ohne vertikale Folien, wie dieses) - dieser
+     Eigen-Versatz addiert sich zum "bottom: 60px" von ".controls" oben und lässt die Pfeile spürbar
+     höher sitzen als das "i"-Icon (das keinen solchen inneren Versatz hat). Auf 0 zurückgesetzt,
+     damit beide auf derselben Höhe liegen. */
+  .controls .navigate-left, .controls .navigate-right { bottom: 0 !important; }
   /* #: Leichter weißer Schein um die Pfeile, damit sie sowohl auf der grünen Folie als auch im
      dunkelgrauen Rand (bei schmalem/kurzem Fenster mit mehr Letterboxing) gut sichtbar bleiben,
      statt auf eine exakte Position zu setzen, die nicht bei jeder Fenstergröße passt. */
