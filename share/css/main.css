@@ -275,6 +275,19 @@ a:hover {
 /*    white-space: nowrap;*/
   }
 
+  /* #: Eigene Klasse NUR für Formeln (siehe "Sc_f_equation_list" in Science.php), getrennt von
+     ".content-horizontal-scrollable" oben (Grafiken/iframes). Formeln sind - anders als die dort
+     fest breiten Einbettungen - von Natur aus unterschiedlich breit und können die Spaltenbreite
+     tatsächlich überschreiten (z.B. "SN.AbIn.5"); durchgehend "overflow-x: auto" statt nur unter
+     730px, sonst verlieren breite Formeln auf normalen Desktop-Breiten ihre Scrollbarkeit und
+     laufen stattdessen sichtbar über den Rand hinaus. */
+  .content-horizontal-scrollable-equ {
+    display: block;
+    overflow-x: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
   .content-archive-list {
     display: flex;
     flex-direction: row;
