@@ -904,7 +904,6 @@
                                     array( '\left|  ', '\left|\; '),
                                     array( '  \right|', ' \;\right|'),
                                     array( '  ~\middle|~  ', '\;~\middle|~\;'),
-                                    array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                     array( 'ω', '\upomega'),  // #: MathJax 4 renders a directly typed Unicode "ω" italic (MathJax 2 did not) - force upright via the "upgreek" package's "\upomega" (NOT "\mathrm{\omega}", which does not produce an upright glyph in this font/setup), matching old behavior; "\omega" (the command) is unaffected and stays italic as intended
                                     array( 'π', '\uppi'),  // #: Same MathJax-4 regression as "ω" above, for directly typed "π" - uses "\uppi" from "upgreek"
                                  );
