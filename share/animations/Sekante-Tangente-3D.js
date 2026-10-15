@@ -405,21 +405,21 @@ export function initSecantAnimation(containerId) {
     if (rafId) cancelAnimationFrame(rafId);
   }
 
-  // #: Läuft nur, während die Folie tatsächlich sichtbar ist - reveal.js markiert sie laufend mit
-  // der Klasse "present". Spart Rechenleistung auf allen anderen Folien, startet/pausiert beim
-  // Folienwechsel automatisch mit. Verlassen der Folie setzt außerdem die manuelle Reglersteuerung
-  // zurück, beim erneuten Betreten läuft der Autoplay wieder normal an.
+  // #: Nur relevant, wenn dieses Modul direkt (ohne iframe) in eine reveal.js-Folie eingebunden
+  // wird - läuft dann nur, während die Folie tatsächlich sichtbar ist (reveal.js markiert sie
+  // laufend mit der Klasse "present"), spart Rechenleistung auf allen anderen Folien und
+  // startet/pausiert beim Folienwechsel automatisch mit. Verlassen der Folie setzt außerdem die
+  // manuelle Reglersteuerung zurück, beim erneuten Betreten läuft der Autoplay wieder normal an.
   function syncWithSlide() {
     const section = container.closest('section');
     if (section && section.classList.contains('present')) { start(); }
     else { stop(); manual = false; }
   }
-  // #: Sofortiger Check zusätzlich zu den Event-Listenern nötig - "<script type="module">" wird
-  // vom Browser immer verzögert ausgeführt (erst nach allen normalen Scripts, auch wenn es früher
-  // im Quelltext steht), das spätere "Reveal.initialize()" lief daher bereits, bevor dieser
-  // Listener registriert wurde, und das einmalige "ready"-Event wurde verpasst - die Animation
-  // startete nie. Der direkte Aufruf hier deckt den Fall ab, in dem reveal.js beim Laden dieses
-  // Moduls schon fertig initialisiert ist.
+  // #: "window.Reveal" existiert hier normalerweise NICHT - die Animation läuft heute über
+  // "Sekante-Tangente-3D.html" per iframe eingebunden, in dessen eigenem (isolierten) Fenster kein
+  // reveal.js läuft. Der "else"-Zweig ist dadurch der praktisch einzige aktive Pfad: einfaches
+  // Dauer-Autoplay, sobald die Seite geladen ist. Der "if"-Zweig bleibt für den Fall erhalten,
+  // dass dieses Modul doch wieder direkt in eine Folie importiert wird.
   syncWithSlide();
   if (window.Reveal && typeof window.Reveal.on === 'function') {
     window.Reveal.on('slidechanged', syncWithSlide);

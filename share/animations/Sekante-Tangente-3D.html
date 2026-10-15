@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sekante-Tangente-3D – Superial-Zahlen</title>
+    <!-- #: Gleiche Google-Fonts-Einbindung wie die übrigen Vortragsseiten/Animationen - die
+         HTML-Overlay-Beschriftungen in "Sekante-Tangente-3D.js" nutzen "Open Sans" inkl. Kursivschnitt
+         für die mathematischen Variablen (x, y, h, f, P, Q). -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!-- #: Bewusst OHNE "main.css"/"animation.css" (anders als die übrigen Seiten in diesem
+         Ordner) - "main.css" setzt u.a. "body { background-color:#000; color:#fff; }" für die
+         dunklen Three.js-Beispielszenen dort, was hier den hellen Hintergrund und die dunklen
+         Beschriftungen dieser Animation unlesbar machen würde. Diese Animation ist vollständig
+         eigenständig (keine "#info"/"#overlay"-Struktur jener Dateien nötig). -->
+    <style>
+      body { margin: 0; }
+      #secant-animation { width: 800px; height: 550px; box-sizing: border-box; overflow: hidden; position: relative; }
+    </style>
+  </head>
+  <body>
+    <div id="secant-animation"></div>
+
+    <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      { "imports": { "three": "https://unpkg.com/three@0.186.0/build/three.module.js" } }
+    </script>
+    <script type="module">
+      import { initSecantAnimation } from './Sekante-Tangente-3D.js';
+      initSecantAnimation('secant-animation');
+    </script>
+  </body>
+</html>
