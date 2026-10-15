@@ -207,6 +207,9 @@
                     'Um besser zu verstehen, was genau vor sich geht, wollen wir uns zwei Beispiele betrachten:'."\n".
                     ''))),
 
+                  array( 'iframe',
+                    array_merge( $SupNum_g_iframe_ary_SekanteTangente, array( name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:LiveAni-SekanteTangente'))),
+
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Funktion \lm{ f(x) = x^{2} } ergibt sich:'."\n".

@@ -92,7 +92,7 @@
       text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes oder das Differential',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Ableitungen-Integrale:Ableitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+        'OM:SupNum:Ableitungen-Integrale:Ableitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
           // 'OM:SupNum:Ableitungen-Integrale:Vortext:X' => array( headline_text => 'X'/* , headline_text_short => 'X'*/),
 
@@ -105,6 +105,7 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung' => array( headline_text => 'Die Integration als Umkehrung der Ableitung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen' => array( headline_text => 'Beispiele für Ableitungen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.5'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:LiveAni-SekanteTangente' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.13'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.14'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert' => array( headline_text => 'SN.AbIn.15'),

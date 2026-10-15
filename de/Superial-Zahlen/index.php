@@ -133,7 +133,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot *( \, \rad(n) \, *)_{\#}^{ω} }{ *( \, \rad(n) \, *)_{\#}^{ω} }  }',
+                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

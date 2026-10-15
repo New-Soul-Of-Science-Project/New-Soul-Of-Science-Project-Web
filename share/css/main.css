@@ -275,6 +275,29 @@ a:hover {
 /*    white-space: nowrap;*/
   }
 
+  /* #: Eigene Klasse NUR für Formeln (siehe "Sc_f_equation_list" in Science.php), getrennt von
+     ".content-horizontal-scrollable" oben (Grafiken/iframes). Formeln sind - anders als die dort
+     fest breiten Einbettungen - von Natur aus unterschiedlich breit und können die Spaltenbreite
+     tatsächlich überschreiten (z.B. "SN.AbIn.5"); durchgehend "overflow-x: auto" statt nur unter
+     730px, sonst verlieren breite Formeln auf normalen Desktop-Breiten ihre Scrollbarkeit und
+     laufen stattdessen sichtbar über den Rand hinaus. */
+  .content-horizontal-scrollable-equ {
+    display: block;
+    overflow-x: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+  /* #: Erzwingt eine klassische, dauerhaft sichtbare Scrollbar statt des OS-abhängigen
+     Auto-Hide-Overlays (macOS blendet sie unter Chrome/Firefox sonst aus, bis man tatsächlich
+     scrollt - bei einer Formel, deren Scrollbarkeit nicht offensichtlich ist, leicht zu
+     übersehen). Allein das Vorhandensein von "::-webkit-scrollbar"/"scrollbar-width" schaltet in
+     Chrome/Safari bzw. Firefox bereits auf die klassische, immer gerenderte Variante um - wie bei
+     der Seiten-Liste im Vortrags-"i"-Menü. */
+  .content-horizontal-scrollable-equ { scrollbar-width: thin; scrollbar-color: #aaa #eee; }
+  .content-horizontal-scrollable-equ::-webkit-scrollbar { height: 10px; }
+  .content-horizontal-scrollable-equ::-webkit-scrollbar-track { background: #eee; }
+  .content-horizontal-scrollable-equ::-webkit-scrollbar-thumb { background: #aaa; border-radius: 5px; }
+
   .content-archive-list {
     display: flex;
     flex-direction: row;

@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 17.07.2026, 18:00h
+// #: Stand: 15.10.2026, 22:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20261015:  +:  "To_f_manage_beforePrint", "To_f_manage_afterPrint":  New "To_f_shrinkWideEquationsForPrint" call - equations (".content-horizontal-scrollable-equ", see "Science.php") that are wider than their column are horizontally scrollable on screen, but printing has no scrolling, so an overly wide equation would simply get clipped at the column edge instead of printing in full. Measures each such equation right before printing and, if it overflows, shrinks it with "transform: scale(...)" to exactly the available width (plus a matching "height" reduction, since "transform" alone does not free up the now-smaller layout space); reverted again in "afterPrint" so the screen view keeps its normal, scrollable size.
 //          20260717:  +:  "To_f_scroll_init":  New — toggles class "is-scrolling" on ".content" and ".content-horizontal-scrollable" while scrolling.
 //          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
 //          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
@@ -534,14 +535,44 @@ function To_f_manage_beforePrint()
 {
   // The beforeprint event is fired when the associated document is about to be printed or previewed for printing.
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeprint_event
-  
+
   console.log('Before print');
-  
+
   To_f_openAll( true);
-  
+
+  To_f_shrinkWideEquationsForPrint();
+
   // call a kind of nextTick because on the NSOSP index page the footer is not at the right position
   // I guess because the page really has a lot elements to open
   // see: https://timnew.me/blog/2014/06/23/process-nexttick-implementation-in-browser/
+}
+
+
+
+function To_f_shrinkWideEquationsForPrint()
+{
+  // #: Formeln (".content-horizontal-scrollable-equ", siehe "Sc_f_equation_list" in Science.php)
+  // sind am Bildschirm per "overflow-x: auto" horizontal scrollbar, sobald sie breiter als ihre
+  // Spalte sind. Auf Papier gibt es kein Scrollen - "overflow-x: auto" würde den überstehenden
+  // Teil einer zu breiten Formel beim Drucken daher einfach abschneiden, statt ihn sichtbar zu
+  // lassen. Stattdessen wird jede zu breite Formel hier verkleinert.
+  // ERSTER VERSUCH mit "transform: scale(...)" (+ manuell verkleinertem "height", da "transform"
+  // selbst keinen Platz freigibt) sah auf dem Bildschirm richtig aus, brach aber im Druck sichtbar:
+  // "transform" wirkt rein beim Zeichnen (Compositing), die Browser-Seitenumbruch-Berechnung für
+  // den Druck arbeitet aber mit den LAYOUT-Maßen VOR dem Transform - bei "overflow: visible" (nötig,
+  // damit der zuvor weggescrollte Teil, z.B. die Formelnummer, überhaupt sichtbar wird) wurde der
+  // überlaufende, noch unskalierte Inhalt dadurch quer über die Seitengrenze hinweg aufgeteilt
+  // gedruckt (unten auf Seite 1 nochmal in voller Originalgröße sichtbar). "zoom" (nicht
+  // standardisiert, aber von Chrome/Safari seit Jahren unterstützt - und Chrome ist für den
+  // PDF-Export dieser Seite ohnehin schon die empfohlene Wahl, siehe Druck-Hinweis im "i"-Menü der
+  // Vorträge) verändert dagegen die ECHTEN Layout-Maße (Breite UND Höhe skalieren gemeinsam mit),
+  // wird also auch von der Seitenumbruch-Berechnung korrekt berücksichtigt - zugleich sorgt es
+  // automatisch dafür, dass der Inhalt gar nicht mehr überläuft (daher auch kein "overflow"/"width"
+  // mehr nötig).
+  document.querySelectorAll('.content-horizontal-scrollable-equ').forEach(function(el) {
+    if (el.scrollWidth <= el.clientWidth) return;
+    el.style.zoom = el.clientWidth / el.scrollWidth;
+  });
 }
 
 
@@ -550,10 +581,17 @@ function To_f_manage_afterPrint()
 {
   // The afterprint event is fired after the associated document has started printing or the print preview has been closed.
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/afterprint_event
-  
+
   console.log('After print');
-  
+
   To_f_closeAll( true);
+
+  // #: Rückgängigmachen der Verkleinerung aus "To_f_shrinkWideEquationsForPrint" - sonst blieben
+  // zuvor zu breite Formeln auch am Bildschirm (nach dem Schließen des Druckdialogs) dauerhaft
+  // verkleinert statt zu ihrer normalen, scrollbaren Darstellung zurückzukehren.
+  document.querySelectorAll('.content-horizontal-scrollable-equ').forEach(function(el) {
+    el.style.zoom = '';
+  });
 }
 
 
