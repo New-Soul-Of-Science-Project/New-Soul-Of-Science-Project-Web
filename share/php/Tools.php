@@ -4,9 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 02.09.2026, 23:00h
+  // #: Stand: 18.10.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
+
+  //           20261018:  >:  "To_f_replace_callback__latexcommand__jump", "To_f_anchor_Jump_html":  A link's hint is no longer put into "title" as rendered HTML - a headline with a formula ("\lm{...}") turned into '<span class="mjx-pending">...</span>', whose quotes ended the "title" attribute early and spilled the rest of the hint into the visible text (e.g. the link "keine zusätzlichen Informationen" to "Beispielrechnung zur Ableitung mit \lm{ \s^2 }"). New "To_f_hint_attr_html" writes the hint escaped into "data-hint" for the site's own tooltip ("To_f_hint_*" in "Tools.js", formulas typeset by MathJax, positioned with the self-hosted Floating UI in "share/js/floating-ui/"), plus a plain-text "title" as fallback without JavaScript.
+  //                      +:  "To_f_HeaderElements":  Load Floating UI ("share/js/floating-ui/") before "Tools.js".
 
   //           20260902:  +:  "To_f_Paragraph" type "bulletlist":  Add 'ListStyle' parameter ('bullet' default, 'number' for enumerated list), plus optional 'numberStart' (default 1).
   //           20260424:  >:  "To_f_replace_callback__latexcommand__jump":  Default 'target="_blank"' if URL parameter is set and no explicit target given.
@@ -285,6 +288,9 @@
     
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
+    // #: Floating UI (self-hosted, s. "share/js/floating-ui/README.md") positions the site's own tooltips ("To_f_hint_*" in "Tools.js").
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/floating-ui/floating-ui.core.umd.min.js" type="text/javascript"></script>'."\n";
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/floating-ui/floating-ui.dom.umd.min.js" type="text/javascript"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
@@ -997,7 +1003,7 @@
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
       {
         
-        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : ((0 < strlen( $value[1][0])) ? ' target="_blank"' : ''))." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : ((0 < strlen( $value[1][0])) ? ' target="_blank"' : '')).To_f_hint_attr_html( ((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")).((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
         
       }
       else
@@ -2841,6 +2847,22 @@
   
   
   
+  // #: The attributes of a link's hint "$hint_html" (rendered HTML, formulas included): the escaped HTML in "data-hint"
+  //    for the site's own tooltip ("To_f_hint_*" in "Tools.js", typesets formulas with MathJax), and a plain-text
+  //    "title" as fallback without JavaScript (the script removes it, so only one tooltip shows). Escaping keeps the
+  //    hint's own quotes (e.g. in '<span class="mjx-pending">') from ending the attribute early.
+  function To_f_hint_attr_html( $hint_html)
+  {
+    if (strlen( $hint_html) == 0)
+      return '';
+
+    $hint_plain = trim( preg_replace( '/\s+/u', ' ', strip_tags( $hint_html)));
+
+    return ' title="'.htmlspecialchars( $hint_plain, ENT_QUOTES, 'UTF-8', false).'" data-hint="'.htmlspecialchars( $hint_html, ENT_QUOTES, 'UTF-8').'"';
+  }
+
+
+
   function To_f_anchor_Jump_html( $text, $anchor_name, $text_num_color='', $replace_ary=null, $replace_preg_ary=null, $anchor_label='', $hint_is=true)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ, $To_g_Text_replace_ary;
@@ -2876,7 +2898,7 @@
     // return '<script> document.write( \'<a href="javascript:To_f_anchor_JumpToBy_hash( \\\'#'.$anchor_name.'\\\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a>\'); </script><noscript><a href="#'.$anchor_name.'"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a></noscript>';
     // #!: I removed the 'document.write()' because if it's there '\latexmath' or '\lm' are not working in the title.
     // !!!: But raw latex ist still in 'title' property. May create a selfmade hint menu.
-    return '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$anchor_name.'\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text)).'</a>';
+    return '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$anchor_name.'\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').To_f_hint_attr_html( $hint_title).(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text)).'</a>';
 
   }
   

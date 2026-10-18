@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 15.10.2026, 22:00h
+// #: Stand: 18.10.2026, 22:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20261018:  +:  "To_f_hint_init", "To_f_hint_show", "To_f_hint_hide", "To_f_hint_scheduleShow", "To_f_hint_scheduleHide":  New - the site's own tooltip for every link with a hint (both "To_f_replace_callback__latexcommand__jump" and "To_f_anchor_Jump_html" in Tools.php now write the hint into "data-hint" instead of "title", see Tools.php 20261018 entry), because native "title" cannot render a hint containing a MathJax formula. Shown on hover (~300ms delay) and on keyboard focus (":focus-visible" only, not every "focus", so a mouse click on the link does not show it a second time on top of the hover), positioned with the self-hosted Floating UI ("share/js/floating-ui/", "offset"/"flip"/"shift"/"arrow" + "autoUpdate"). One shared tooltip element is reused for every trigger; its content is set from "data-hint" and retypeset per formula via "MathJax.typesetPromise" ("typesetClear" first, since the same node is reused). Hides on mouseleave (small delay so moving the mouse from the trigger onto the tooltip itself does not close it), blur, click, and Escape.
 //          20261015:  +:  "To_f_manage_beforePrint", "To_f_manage_afterPrint":  New "To_f_shrinkWideEquationsForPrint" call - equations (".content-horizontal-scrollable-equ", see "Science.php") that are wider than their column are horizontally scrollable on screen, but printing has no scrolling, so an overly wide equation would simply get clipped at the column edge instead of printing in full. Measures each such equation right before printing and, if it overflows, shrinks it with "transform: scale(...)" to exactly the available width (plus a matching "height" reduction, since "transform" alone does not free up the now-smaller layout space); reverted again in "afterPrint" so the screen view keeps its normal, scrollable size.
 //          20260717:  +:  "To_f_scroll_init":  New — toggles class "is-scrolling" on ".content" and ".content-horizontal-scrollable" while scrolling.
 //          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
@@ -802,6 +803,158 @@ function To_f_scroll_init()
 
 
 
+var To_g_hint_el = null;
+var To_g_hint_arrow_el = null;
+var To_g_hint_cleanup = null;
+var To_g_hint_current = null;
+var To_g_hint_showTimer = null;
+var To_g_hint_hideTimer = null;
+
+function To_f_hint_init()
+{
+  // #: Eigenes Tooltip statt dem nativen "title" - natives "title" kann keine per MathJax
+  // gesetzten Formeln darstellen (siehe "To_f_hint_attr_html" in Tools.php, schreibt den Hinweis
+  // zusätzlich als reinen Text nach "title", als Fallback ohne JavaScript). "title" wird hier
+  // entfernt, sonst erschienen beide Tooltips gleichzeitig übereinander.
+  var triggers = document.querySelectorAll('[data-hint]');
+  if (!triggers.length) return;
+
+  To_g_hint_el = document.createElement('div');
+  To_g_hint_el.className = 'to-hint-tooltip';
+  To_g_hint_el.id = 'to-hint-tooltip';
+  To_g_hint_el.setAttribute('role', 'tooltip');
+  var content = document.createElement('div');
+  content.className = 'to-hint-tooltip-content';
+  To_g_hint_arrow_el = document.createElement('div');
+  To_g_hint_arrow_el.className = 'to-hint-tooltip-arrow';
+  To_g_hint_el.appendChild(content);
+  To_g_hint_el.appendChild(To_g_hint_arrow_el);
+  document.body.appendChild(To_g_hint_el);
+
+  // #: Maus darf auf das Tooltip selbst übergehen, ohne dass es dabei schließt - Verlassen des
+  // Auslösers plant daher nur ein verzögertes Schließen, das ein "mouseenter" auf dem Tooltip
+  // wieder abbricht (ohne diese Verzögerung würde der direkte Übergang Auslöser -> Tooltip
+  // stets ein sofortiges "mouseleave" des Auslösers auslösen, noch bevor die Maus das separate
+  // Tooltip-Element erreicht).
+  To_g_hint_el.addEventListener('mouseenter', function() { clearTimeout(To_g_hint_hideTimer); });
+  To_g_hint_el.addEventListener('mouseleave', To_f_hint_scheduleHide);
+
+  triggers.forEach(function(el) {
+    el.removeAttribute('title');
+    el.setAttribute('aria-describedby', 'to-hint-tooltip');
+    el.addEventListener('mouseenter', function(e) { clearTimeout(To_g_hint_hideTimer); To_f_hint_scheduleShow(el, e.clientX, e.clientY); });
+    el.addEventListener('mouseleave', To_f_hint_scheduleHide);
+    // #: ":focus-visible" statt jedem "focus" - sonst zeigte schon ein normaler Mausklick auf den
+    // Link (der ihn nebenbei auch fokussiert) das Tooltip ein zweites Mal an, obwohl der Hover
+    // es bereits anzeigt. Fällt auf "immer anzeigen" zurück, falls ":focus-visible" (ältere
+    // Browser) nicht unterstützt wird - harmlos, nur weniger exakt.
+    el.addEventListener('focus', function() { if (!el.matches || el.matches(':focus-visible')) To_f_hint_show(el); });
+    el.addEventListener('blur', To_f_hint_hide);
+    el.addEventListener('click', To_f_hint_hide);
+  });
+
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') To_f_hint_hide(); });
+  document.addEventListener('click', function(e) {
+    if (To_g_hint_current && !To_g_hint_current.contains(e.target) && !To_g_hint_el.contains(e.target)) To_f_hint_hide();
+  });
+}
+
+function To_f_hint_scheduleShow( el, x, y)
+{
+  clearTimeout(To_g_hint_showTimer);
+  // #: ~300ms Verzögerung, damit das Tooltip nicht schon bei jedem flüchtigen Drüberfahren
+  // aufblitzt.
+  To_g_hint_showTimer = setTimeout(function() { To_f_hint_show(el, x, y); }, 300);
+}
+
+// #: Liefert das Zeilen-Fragment (ein Eintrag aus "getClientRects()") unter dem gegebenen Punkt -
+// bei einem über mehrere Zeilen umbrechenden Link (z.B. "keine zusätzlichen\nInformationen")
+// liefert "getBoundingClientRect()" sonst die Vereinigung ALLER Zeilen, und das darauf
+// aufsetzende Tooltip würde irgendwo zwischen den Zeilen statt bei der tatsächlich gehoverten
+// verankert. Ohne Koordinaten (z.B. bei Tastatur-Fokus) wird das erste Fragment verwendet.
+function To_f_hint_rectForPoint( el, x, y)
+{
+  var rects = el.getClientRects();
+  if (!rects.length) return el.getBoundingClientRect();
+  if (x == null || y == null) return rects[0];
+  for (var i = 0; i < rects.length; i++) {
+    var r = rects[i];
+    if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return r;
+  }
+  return rects[0];
+}
+
+function To_f_hint_scheduleHide()
+{
+  clearTimeout(To_g_hint_hideTimer);
+  To_g_hint_hideTimer = setTimeout(To_f_hint_hide, 100);
+}
+
+function To_f_hint_show( el, x, y)
+{
+  clearTimeout(To_g_hint_showTimer);
+  clearTimeout(To_g_hint_hideTimer);
+  if (To_g_hint_current === el) return;
+  To_g_hint_current = el;
+
+  // #: "typesetClear" vor dem erneuten "typesetPromise" nötig, da dasselbe Tooltip-Element für
+  // jeden Auslöser wiederverwendet wird - MathJax verwechselt sich sonst zwischen den jeweils
+  // vorherigen und neuen Formeln im selben Knoten.
+  var content = To_g_hint_el.querySelector('.to-hint-tooltip-content');
+  if (window.MathJax && MathJax.typesetClear) MathJax.typesetClear([To_g_hint_el]);
+  content.innerHTML = el.getAttribute('data-hint') || '';
+  To_g_hint_el.setAttribute('data-show', '');
+  if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([To_g_hint_el]);
+
+  // #: Virtuelles Referenzelement statt "el" direkt - siehe "To_f_hint_rectForPoint" oben.
+  // "contextElement" lässt Floating UI trotzdem das echte Element für Scroll-/Resize-Tracking
+  // (per "autoUpdate") beobachten.
+  var rect = To_f_hint_rectForPoint(el, x, y);
+  var virtualEl = { getBoundingClientRect: function() { return rect; }, contextElement: el };
+
+  if (To_g_hint_cleanup) To_g_hint_cleanup();
+  To_g_hint_cleanup = FloatingUIDOM.autoUpdate(virtualEl, To_g_hint_el, function() {
+    FloatingUIDOM.computePosition(virtualEl, To_g_hint_el, {
+      placement: 'top',
+      middleware: [
+        FloatingUIDOM.offset(8),
+        FloatingUIDOM.flip(),
+        FloatingUIDOM.shift({ padding: 8 }),
+        FloatingUIDOM.arrow({ element: To_g_hint_arrow_el })
+      ]
+    }).then(function(pos) {
+      // #: "computePosition" ist asynchron - bei schnellem Wechsel über mehrere Links kann die
+      // Berechnung für einen bereits verlassenen Auslöser erst NACH der des neuen fertig werden
+      // und dessen Position mit der veralteten überschreiben (Inhalt war dabei schon korrekt,
+      // nur die Position lief verzögert hinterher). Eine verspätete Antwort für einen inzwischen
+      // nicht mehr aktuellen Auslöser wird daher verworfen.
+      if (To_g_hint_current !== el) return;
+      To_g_hint_el.style.left = pos.x + 'px';
+      To_g_hint_el.style.top = pos.y + 'px';
+      var side = pos.placement.split('-')[0];
+      var staticSide = { top: 'bottom', right: 'left', bottom: 'top', left: 'right' }[side];
+      To_g_hint_arrow_el.style.left = To_g_hint_arrow_el.style.top = To_g_hint_arrow_el.style.right = To_g_hint_arrow_el.style.bottom = '';
+      if (pos.middlewareData.arrow) {
+        if (pos.middlewareData.arrow.x != null) To_g_hint_arrow_el.style.left = pos.middlewareData.arrow.x + 'px';
+        if (pos.middlewareData.arrow.y != null) To_g_hint_arrow_el.style.top = pos.middlewareData.arrow.y + 'px';
+      }
+      To_g_hint_arrow_el.style[staticSide] = '-4px';
+    });
+  });
+}
+
+function To_f_hint_hide()
+{
+  clearTimeout(To_g_hint_showTimer);
+  clearTimeout(To_g_hint_hideTimer);
+  if (!To_g_hint_current) return;
+  To_g_hint_current = null;
+  if (To_g_hint_el) To_g_hint_el.removeAttribute('data-show');
+  if (To_g_hint_cleanup) { To_g_hint_cleanup(); To_g_hint_cleanup = null; }
+}
+
+
+
 function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
 {
   // #: Open hidden areas for the hash of first site call.
@@ -827,4 +980,6 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
   To_f_setExpandIcons();
 
   To_f_scroll_init();
+
+  To_f_hint_init();
 }
