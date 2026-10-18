@@ -163,6 +163,105 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
+                'Warum \lm{ \s^{−1} } die Standardnormierung ist (Vorschlag)', subline =>
+                  'Erkenntnisse aus dem Vortrag ›Suche nach dem sinnvoll normierten Infinitesimal der Analysis‹')),
+                  array( 'text', array( text => array(
+                    'Ein infinitesimaler Schritt allein reicht noch nicht.'."\n".
+                    'Haben wir ein positives Infinitesimal \lm{ h } gefunden, so sind \lm{ 2h }, \lm{ 3h }, \lm{ h^{2} }, \lm{ h^{3} }, … ebenso infinitesimal.'."\n".
+                    'Warum sollte gerade \lm{ h } der ausgezeichnete Rechenschritt sein?'."\n".
+                    'Dafür braucht es ein zusätzliches mathematisches Kriterium – eine Normierung.'."\n",
+                    'Der Schlüssel liegt darin, dass Schrittweite und Schrittanzahl zusammengehören.'."\n".
+                    'Setzen wir die Einheit \lm{ 1 } aus gleich großen Schritten der Breite \lm{ h } zusammen,'."\n".
+                    'gehört zu \lm{ h } eine bestimmte, infinit große Anzahl solcher Schritte.'."\n".
+                    'Diesen infiniten Gegenmaßstab nennen wir das Superial \lm{ \s }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s \cdot h  =  1  \qquad\Leftrightarrow\qquad  h  =  \s^{−1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das infinitesimale \lm{ h } und das infinite \lm{ \s } bestimmen sich gegenseitig.'."\n".
+                    'Die Frage, wie wir \lm{ h } normieren, wird damit zur Frage, wie wir \lm{ \s } normieren.'."\n",
+                    'Die Potenzen von \lm{ \s } bilden dabei eine geordnete Skala von Größenordnungen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  \ll  \cdots  \ll  \s^{−2}  \ll  \s^{−1}  \ll  \s^{0} = 1  \ll  \s  \ll  \s^{2}  \ll  \cdots  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\lm{ \s^{−1} } ist nicht die kleinste positive Zahl, denn darunter liegen \lm{ \s^{−2} }, \lm{ \s^{−3} }, ….'."\n".
+                    'Es ist die Einheit der ersten infinitesimalen Stellenwertschicht, unmittelbar unter der endlichen Schicht \lm{ \s^{0} = 1 }.'."\n".
+                    'Ebenso ist \lm{ \s } die Einheit der ersten infiniten Stellenwertschicht.'."\n",
+                    '\lm{ \s } ist eine Schrittanzahl und damit ganzzahlig.'."\n".
+                    'Damit unser Schrittmaß aber exakt verwendbar bleibt, verlangen wir mehr:'."\n".
+                    'Auch jede endliche rationale Teilstrecke muss aus einer ganzen Anzahl von Schritten \lm{ \s^{−1} } bestehen.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \tfrac{ 1 }{ n }  \;\rightarrow\;  \tfrac{ \s }{ n } \text{ Schritte}  \;\; ,  \qquad  \tfrac{ m }{ n }  \;\rightarrow\;  m \cdot \tfrac{ \s }{ n } \text{ Schritte}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das gelingt genau dann, wenn \lm{ \s } durch jede endliche natürliche Zahl teilbar ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} ,\; n \ge 1 *) *[  n \mid \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Erst so bleiben auch die Integrationsgrenzen frei wählbar, ohne dass die Schrittanzahl ihre Ganzzahligkeit verliert.'."\n",
+                    'Daraus folgt unmittelbar die Primfaktorstruktur von \lm{ \s }.'."\n".
+                    'Zu den endlichen natürlichen Zahlen gehören alle Primzahlpotenzen \lm{ p^{k} }.'."\n".
+                    'Sie alle müssen \lm{ \s } teilen, und damit reicht für keine Primzahl ein endlicher Exponent aus.'."\n".
+                    'Die Folge der Exponenten \lm{ 1, 2, 3, … } setzt sich im ersten transfiniten Ordinal \lm{ ω } fort:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  v_{p}( \s )  =  ω  \qquad \text{für jede endliche Primzahl } p  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Keine Primzahl wird dabei bevorzugt.'."\n".
+                    'Diese Struktur stellt das \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{Primzahl-Flächenprodukt} dar:'."\n".
+                    'Jede endliche Primzahl tritt in jeder seiner Zeilen genau einmal auf.'."\n".
+                    'Formal ist das die vollständige Verknüpfung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{P} \times \mathbb{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'aller endlichen Primzahlen mit allen natürlichen Exponenten.'."\n".
+                    'Jedes Paar \lm{ (p, n) } tritt genau einmal auf: keine Auswahl, keine Gewichtung, kein ausgelassenes Paar.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Die Herleitung führt zur Struktur, und die Vollständigkeit dieser Struktur liefert die Normierung.'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Dieser vollständigen primexponentiellen Struktur entspricht kanonisch \lm{ \s \equiv_{kan} ω^{ω} } – bewiesen in der'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
+                    'Diese liefert strukturell einen weiteren arithmetischen Schritt der Normierung.'."\n".
+                    ''))),
+
+                  array( 'text', array( text => array(
+                    'Mit \lm{ \s } ist damit auch \lm{ \s^{−1} } normiert.'."\n".
+                    'So wird \lm{ \s^{−1} } die exakt passende Standardschrittweite der Analysis.'."\n",
+                    'Über die rationalen Skalierungen hinaus erweisen sich sogar alle reell algebraischen Zahlen als'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}: Ihr Produkt mit \lm{ \s } ist ganzzahlig.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  *( a \cdot \s *) \cdot \s^{−1}  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wählten wir statt \lm{ \s } eine feinere Normierung wie \lm{ \s^{2} },'."\n".
+                    'entstünden im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten,'."\n".
+                    'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n".
+                    'Die klassische Grenzwertrechnung \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{vernichtet an dieser Stelle die Differenz nach der Division};'."\n".
+                    'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{Superial-Analysis erhält sie als Spur}.'."\n".
+                    ''))),
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                      
                 'Vergleich mit der Differential-Schreibweise', subline =>
                   '')),
                   array( 'text', array( text => array(
