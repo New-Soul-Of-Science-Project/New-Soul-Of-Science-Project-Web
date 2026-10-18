@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 18.10.2026, 23:30h
+  // #: Stand: 18.10.2026, 23:45h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
 
+  //           20261018:  +:  "To_f_Paragraph" ('figure' and shared figure/youtube/iframe caption cases):  The "New window" icon link in a figure caption (opens the PDF/full-size image) and an animation's caption title link (opens the embedded page standalone) now carry a tooltip saying what clicking them actually does ("Öffnet die PDF-Datei/Grafik/Animation ... in neuem Fenster.") - Wolfgang asked for this once the new tooltip was in place elsewhere; previously there was only the small "add.jpg" icon with no explanation beyond its own unobtrusive "alt=\"New window\"".
   //           20261018:  >:  "To_f_headline_add_hides_begin", "To_f_headline_add_hides_end", "To_f_Paragraph" ('figure' case):  Went through EVERY remaining "title=" in this file after Wolfgang asked whether more existed beyond what had already been found - the collapsible-chapter-heading "einblenden"/"ausblenden" toggles (both the headline link and its arrow icon) and the figure "PDF-Darstellung in neuem Fenster öffnen" hint now show the new tooltip too, via "To_f_hint_attr_html(...)" instead of a plain "title=". Not a bug fix on its own (these are hardcoded static labels, nothing dynamic could ever break the attribute) - purely for a consistent look, once everything else (links, footnotes, chapter navigation) had already moved to the new tooltip. Deliberately left alone: the YouTube iframe's "title=\"YouTube video player\"" - that one is an accessibility attribute for screen readers, not a hover hint, and needs to be present immediately rather than behind a ~300ms JS-triggered tooltip.
   //           20261018:  *:  (the "jumplist" case):  The plain "<a href=\"...\">" branch used for a cross-page/cross-site chapter link (e.g. "← Ableitungen und Integrale", linking to a different page entirely) never had any hint at all, not even the old "title" one - only the OTHER branch, for a same-page anchor jump via "To_f_anchor_Jump_html" (e.g. "→ Die Ableitung"), had one, which Wolfgang noticed as an inconsistency between otherwise-identical-looking chapter navigation links. Now adds "To_f_hint_attr_html" there too, with the same chapter/site title already used for the link text (title_chapter, falling back to title_site) - the same text "To_f_anchor_Jump_html" would show as its hint for an equivalent same-page link.
   //           20261018:  >:  "To_f_replace_callback__latexcommand__jump", "To_f_anchor_Jump_html":  A link's hint is no longer put into "title" as rendered HTML - a headline with a formula ("\lm{...}") turned into '<span class="mjx-pending">...</span>', whose quotes ended the "title" attribute early and spilled the rest of the hint into the visible text (e.g. the link "keine zusätzlichen Informationen" to "Beispielrechnung zur Ableitung mit \lm{ \s^2 }"). New "To_f_hint_attr_html" writes the hint escaped into "data-hint" for the site's own tooltip ("To_f_hint_*" in "Tools.js", formulas typeset by MathJax, positioned with the self-hosted Floating UI in "share/js/floating-ui/"), plus a plain-text "title" as fallback without JavaScript.
@@ -2123,7 +2124,7 @@
                   {
                     echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch im Bild verlinkt. >'."\n";
                     if ($figPDF_is || $figBigger_is)
-                      echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                      echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'"'.To_f_hint_attr_html( $figPDF_is ? 'Öffnet die PDF-Datei in neuem Fenster.' : 'Öffnet die Grafik in neuem Fenster.').' style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
                     else
                       echo '                  <i style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
@@ -2166,7 +2167,7 @@
                   if (0 < strlen($value_ary[titel]))
                   {
                     if ($type == 'iframe')
-                      echo '                <i><a target="_blank" href="'.($value_ary[source]).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                      echo '                <i><a target="_blank" href="'.($value_ary[source]).'"'.To_f_hint_attr_html( 'Öffnet die Animation als eigene Seite in neuem Fenster.').' style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
                     else
                       echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
