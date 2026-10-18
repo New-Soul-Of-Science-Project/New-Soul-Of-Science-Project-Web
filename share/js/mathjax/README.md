@@ -1,3 +1,10 @@
+> **Self-hosted copy for this project** (prepended note, upstream README below): MathJax 4.1.3 —
+> `tex-mml-svg-...js`-family entry scripts (global `MathJax`), SVG output, with the
+> `mathjax-stix2` font (`../mathjax-stix2-font/`, configured via `loader.paths` in each page's
+> MathJax config). Used across the main theory site (`Sc_f_HeaderElements` in `share/php/Science.php`)
+> and the talk decks (`de/Superial-Zahlen/Vortraege/`). Copied unchanged from the npm package;
+> see `LICENSE` (Apache-2.0/MIT, both included upstream).
+
 # MathJax
 ## Beautiful math in all browsers
 
