@@ -806,7 +806,7 @@
                       'Dieser Termraum enthält neben den reinen Rasterelementen auch endliche additive Verschiebungen'."\n".
                       'solcher Rasterelemente.'."\n".
                       'Daher sind die Terme \lm{ \frac{ P_{ω} }{ d } − n } dort wohldefiniert.'."\n".
-                      'Wie \bold{UnterLemma 6b} zeigen wird, gehören diese endlichen additiven Vorgänger'."\n".
+                      'Wie \bold{Unterlemma 6b} zeigen wird, gehören diese endlichen additiven Vorgänger'."\n".
                       'jedoch nicht zum reinen Primturm-Potenzraster.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2320,13 +2320,13 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Der Beweis des Lückenabstiegsprinzips basiert auf zwei Schritten:'."\n".
                       'Zuerst nutzen wir die ordinale Struktur des Raumes, um jedes aktual unendliche Rasterelement'."\n".
-                      'über Quotienten einzugrenzen (\bold{UnterLemma 6a}).'."\n".
+                      'über Quotienten einzugrenzen (\bold{Unterlemma 6a}).'."\n".
                       'Danach zeigen wir normalformtheoretisch im Primexponenten-Termraum,'."\n".
                       'dass jede endliche additive Verschiebung eines solchen Quotienten zwingend'."\n".
-                      'aus dem erzeugten Raster fällt (\bold{UnterLemma 6b}).'."\n".
+                      'aus dem erzeugten Raster fällt (\bold{Unterlemma 6b}).'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{UnterLemma 6a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
+                      '\italic{\bold{Unterlemma 6a: Quotientenabstieg – Quotienten-Koinitialität}}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach der Definition der Ordnung \lm{ ≤_{\infty,v_{p}} } ist die Menge'."\n".
@@ -2354,7 +2354,7 @@
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{UnterLemma 6b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
+                      '\italic{\bold{Unterlemma 6b: Normalform-Rasterausschluss additiver Verschiebungen}}'."\n".
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2367,7 +2367,7 @@
                     ))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\italic{\bold{Begründung UnterLemma 6b}}'."\n".
+                      '\italic{\bold{Begründung Unterlemma 6b}}'."\n".
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -2420,12 +2420,12 @@
                       ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wir führen nun UnterLemma 6a und UnterLemma 6b zusammen.'."\n".
+                      'Wir führen nun Unterlemma 6a und Unterlemma 6b zusammen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ x \in \pr*( P_{ω} *) \setminus ω } ein aktual unendliches Rasterelement.'."\n".
-                      'Nach \bold{UnterLemma 6a} wird \lm{ x } im lückenlosen Anfangsvergleich durch Quotienten der Form'."\n".
+                      'Nach \bold{Unterlemma 6a} wird \lm{ x } im lückenlosen Anfangsvergleich durch Quotienten der Form'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2441,7 +2441,7 @@
                       array( display => 'on',  latex => '{  *( d \in D_{\text{fin}} *) *( n \in \mathbb{N}_{>0} *) *[  \frac{ P_{ω} }{ d } - n  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Nach \bold{UnterLemma 6b} gehört dieser Term nicht zum reinen Primturm-Potenzraster:'."\n".
+                      'Nach \bold{Unterlemma 6b} gehört dieser Term nicht zum reinen Primturm-Potenzraster:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2504,7 +2504,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'leben dagegen im umgebenden geordneten Primexponenten-Termraum.'."\n".
-                      'Nach \bold{UnterLemma 6b} besitzen sie keine reine Primexponentenproduktform,'."\n".
+                      'Nach \bold{Unterlemma 6b} besitzen sie keine reine Primexponentenproduktform,'."\n".
                       'sondern eine zweigliedrige Normalform:'."\n".
                       ''))),
                   array( 'equations',
@@ -2526,7 +2526,7 @@
                       'Diese Terme bilden Lückenzeugen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Nach \bold{UnterLemma 6a} wird jedes aktual unendliche Rasterelement'."\n".
+                      'Nach \bold{Unterlemma 6a} wird jedes aktual unendliche Rasterelement'."\n".
                       'im lückenlosen Anfangsvergleich durch solche Quotienten'."\n".
                       'und ihre endlichen additiven Vorgänger erfasst.'."\n".
                       'Daher liegt unterhalb jedes aktual unendlichen Rasterelements ein Lückenzeuge.'."\n".
