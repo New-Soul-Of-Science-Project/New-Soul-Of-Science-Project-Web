@@ -3,10 +3,12 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 25.09.2026, 19:00h
+  // #: Stand: 18.10.2026, 23:30h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261018:  >:  WayBack-Machine-/archive.today-Links:  Zeigen jetzt ebenfalls das neue Tooltip ("To_f_hint_attr_html") statt eines reinen "title=" - rein fürs einheitliche Erscheinungsbild, dieselbe Umstellung wie bei den Einblenden/Ausblenden-Schaltern in Tools.php; Wolfgang merkte an, dass diese beiden Links als Letztes noch nach dem alten Muster aussahen.
+  //           20261018:  *:  Meta-"description"/"keywords", Druckkopf-Bild-"alt", Autorenfoto-"alt" (3 Stellen):  Schrieben bisher dynamisch gerenderten Text (kann durch "\jump{...}{...}"/"\color{...}{...}" echtes HTML enthalten) ungeschützt in ein Attribut - dieselbe Fehlerklasse, die schon bei den Link-Hinweisen und Fußnoten gefunden und behoben wurde (siehe Tools.php, 20261018-Einträge), hier nur eben in "<meta content>"/"alt" statt "title". Jetzt per "htmlspecialchars( strip_tags( ...))" (Meta/Bild-"alt" sind reiner Text, kein Markup sinnvoll) bzw. "htmlspecialchars()" (Autorenfoto, bisher komplett ungeschützt) abgesichert.
   //           20260925:  +:  "$SupNum_g_footnote_text_Disjunkt":  Primärliteratur ergänzt.
   //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
@@ -3148,8 +3150,14 @@
     echo '    <title>'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][titel])).'</title>'."\n";
     echo ''."\n";
     echo '    <meta http-equiv="content-type" content="text/html; charset=UTF-8">'."\n";
-    echo '    <meta name="description"        content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][description])).'">'."\n";
-    echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
+    // #: "htmlspecialchars( strip_tags( ...))" - "description"/"keywords" are plain-text meta
+    // attributes (no HTML markup makes sense in a search-result snippet), but "To_f_Text_replace_html"
+    // can return real markup here (e.g. "\jump{...}{...}" -> "<a href=\"...\">", "\color{...}{...}"
+    // -> "<span style=\"...\">") - without stripping/escaping, a quote in that markup (or in the raw
+    // authored text) would end the "content" attribute early and spill the rest into the page head,
+    // the same bug class already found and fixed for link hints/footnotes ("To_f_hint_attr_html").
+    echo '    <meta name="description"        content="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][description])), ENT_QUOTES, 'UTF-8').'">'."\n";
+    echo '    <meta name="keywords"           content="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])), ENT_QUOTES, 'UTF-8').'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
     echo '    <meta name="DC.Date"            content="2026-10-04T15:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
@@ -3228,7 +3236,7 @@
     //echo '        </p>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '        <p align="left" style="margin-bottom: 4px;">'."\n";
-      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '        </p>'."\n";
       echo '        <p class="navigation-extra-text" align="left">'."\n";
       echo '          '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3297,7 +3305,7 @@
     echo '            <td>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3322,7 +3330,7 @@
     echo '          <li>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p class="footer-extra-text" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3379,7 +3387,7 @@
     echo $offset.'    </colgroup>'."\n";
     echo $offset.'    <tr'.((array_key_exists( header_pict_bgcolor, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? ' bgcolor="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_bgcolor]).'"' : '').'>'."\n";
     echo $offset.'      <td align="center" valign="middle">'."\n";
-    echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
+    echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])), ENT_QUOTES, 'UTF-8').'"><br>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'    <tr class="header-links">'."\n";
@@ -3514,12 +3522,12 @@
     echo $offset.'        </p>'."\n";
     echo $offset.'      </li>'."\n";
     echo $offset.'      <li>'."\n";
-    echo $offset.'        <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" title="WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'        <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'"'.To_f_hint_attr_html( 'WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen').' style="display: inline-block;">'."\n";
     echo $offset.'          <img src="'.$Glo_PathRel_back.'../share/images/Archive/logo_wayback_210x77.png" width="120" height="44" border="0" alt="Logo Wayback Machine">'."\n";
     echo $offset.'        </a>'."\n";
     echo $offset.'      </li>'."\n";
     echo $offset.'      <li>'."\n";
-    echo $offset.'        <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll" title="archive.today – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'        <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll"'.To_f_hint_attr_html( 'archive.today – permanenten Link auf Webseiten-Kopie erstellen').' style="display: inline-block;">'."\n";
     echo $offset.'          <div>'."\n";
     echo $offset.'            <table style="margin: 0;">'."\n";
     echo $offset.'              <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.1em;">archive.today</div></td></tr>'."\n";

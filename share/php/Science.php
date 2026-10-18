@@ -3,9 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 18.10.2026, 14:00h
+  // #: Stand: 18.10.2026, 23:30h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261018:  *:  "Sc_f_equation_latex_str_html" ('Google' case):  The legacy Google-Charts equation renderer wrote the raw LaTeX source unescaped into both "src" (as the "chl" query parameter) and "alt" - same bug class as the footnote/link-hint fixes above, just here any literal quote in the LaTeX itself (not just HTML markup) could break either attribute. Likely dead code in practice (chart.apis.google.com has been shut down for years, and almost every "equations" block in the content already sets "latex_tech => 'MathJax'" explicitly), but fixed anyway while auditing every remaining unescaped attribute: "rawurlencode()" for the query parameter, "htmlspecialchars()" for "alt".
+  //           20261018:  *:  "Sc_g_footnote_last_html", "Sc_f_footnote_add_html":  Footnote-marker hints moved to the site's own tooltip too (Wolfgang asked whether any other hint still used the old mechanism, see "To_f_hint_attr_html" in Tools.php, 20261018 entry there) - the hint was written straight into "title=\"...\"" with no escaping at all, a latent version of the same bug fixed there (a literal quote in the footnote text would break the attribute the same way, though "strip_tags()" below happened to avoid the specific mjx-pending-quote case by discarding any formula markup, showing raw LaTeX source instead of a rendered formula in the native tooltip). Now routes through "To_f_hint_attr_html"; "strip_tags()" removed in "Sc_f_footnote_add_html" since its only purpose was working around the missing escaping - formulas in footnote hints now render via MathJax like everywhere else.
 
   //           20261018:  *:  "MathJax":  Fix macros "sumx"/"prodx" ('\sideset{}{^{\#}}{\sum}'/'\sideset{}{^{\#}}{\prod}') - the "#"-annotation added via "\sideset" shifted the box MathJax centers the limits (the "n \in ..." subscript line) under, so the limits no longer sat centered under the actual Σ/Π glyph (Wolfgang: this exact problem was one of the original reasons for the MathJax-4 upgrade, still unresolved there). FIRST ATTEMPT: wrap in "\mathop{\vphantom{\sum}\smash{\sideset{...}}}", the textbook LaTeX fix for "\sideset" + limits misalignment - did not work here (confirmed by Wolfgang), root cause found afterwards: "\vphantom{\sum}" and "\smash{...}" are two SEPARATE boxes placed side by side inside "\mathop{...}", not overlaid - the combined width became \sum-width PLUS the full sideset-width, worse than before, not fixed. SECOND ATTEMPT: drop "\sideset" entirely, print the "#" via "\rlap" (zero-width overlay) directly on a plain \sum/\prod ("\mathop{\sum\rlap{\,{}^{\#}}}") - the limits DID center correctly this time (confirmed by Wolfgang), but since "\rlap" reserves no space at all, the "#" now visually collided with whatever followed the operator in the formula (also confirmed live, by screenshot) - traded one bug for another. THIRD ATTEMPT: keep "\sideset" (it already reserves space correctly, avoiding the collision), mirror the "#" with an equally-sized invisible superscript on the opposite (left) shoulder - first tried "\sideset{^{\vphantom{\#}}}{^{\#}}{\sum}" - still not centered (confirmed by Wolfgang). Root cause: "\vphantom{X}" reserves X's HEIGHT/DEPTH but explicitly ZERO WIDTH (that is what "\hphantom"/"\phantom" are for) - the "symmetric" left phantom contributed no width at all, so the box was never actually made symmetric despite looking like it should. Confirmed by reading MathJax's own "ams.js" "SideSet" source directly (share/js/mathjax/input/tex/extensions/ams.js): a bare "^{X}" sideset argument (no subscript) is appended as a plain sibling node to the TeXAtom wrapping \sum, contributing its own full width to the box the limits get centered under - exactly why the lone right-side "#" (no counterweight) shifted centering in the very first version, and why a WIDTH-less left phantom changed nothing. FIX: "\hphantom" instead of "\vphantom" - "\sideset{^{\hphantom{\#}}}{^{\#}}{\sum}" (same for \prod) - reserves the "#"'s actual width on the left too, making the box genuinely symmetric this time. Not yet verified live by Wolfgang.
   //           20261018:  +:  "$Sc_g_equation_replace_ary":  Add '  :\Longleftrightarrow  ' -> '\;\;\;:\Longleftrightarrow\;\;\;' - same colon-prefix spacing already used for '  :\Leftrightarrow  ' (see 20260123 entry below), now also needed for the double-line arrow variant.
@@ -989,7 +992,13 @@
         // #: The PHP Parser will not attempt to parse strings encapsulated in single quotes (as opposed to strings within double quotes) and therefore outputs exactly what it's being fed with :)
         //      See "http://php.net/manual/de/language.variables.php".
         //return '<img src="http://chart.apis.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco='.$latex_color.'&chl='.$latex_str.'" border="0" alt="'.$latex_str.'" valign="bottom">';
-        $html_ret = '<img src="http://chart.apis.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco='.$latex_color.'&chl='.$latex_str.'" border="0" alt="'.$latex_str.'" valign="middle">'."\n";
+        // #: "$latex_str" (raw LaTeX source) went unescaped into both "src" (as the "chl" query
+        // parameter) and "alt" - a literal quote in the LaTeX (e.g. inside "\text{\"...\"}") would
+        // break either attribute, the same bug class already found and fixed for link hints,
+        // footnotes and the other "alt"/meta attributes above. "rawurlencode" for the query
+        // parameter value (also makes the URL itself valid for any LaTeX containing "&"/"?"/etc.),
+        // "htmlspecialchars" for "alt".
+        $html_ret = '<img src="http://chart.apis.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco='.$latex_color.'&chl='.rawurlencode( $latex_str).'" border="0" alt="'.htmlspecialchars( $latex_str, ENT_QUOTES, 'UTF-8').'" valign="middle">'."\n";
         break;
         
       case 'MathJax':
@@ -1369,7 +1378,7 @@
     
     //%!return '<sup title="">'.(To_f_anchor_Jump_html( $Sc_g_footnote_ary_dim, 'Lit-'.$Sc_g_footnote_ary_dim, $footnote_num_color, 'Pos-Lit-'.$Sc_g_footnote_ary_dim)).'</sup>';
     //return '<sup title="'.($Sc_g_footnote_ary[text_hint][$Sc_g_footnote_ary_dim - 1]).'">'.(To_f_anchor_Jump_html( $Sc_g_footnote_ary_dim, 'Lit-'.$Sc_g_footnote_ary_dim, $footnote_num_color, 'Pos-Lit-'.$Sc_g_footnote_ary_dim)).'</sup>';
-    return '<span title="'.($Sc_g_footnote_ary[text_hint][$Sc_g_footnote_ary_dim - 1]).'" style="'.($Sc_g_footnote_style).'">'.(To_f_anchor_Jump_html( $Sc_g_footnote_ary_dim, 'Lit-'.$Sc_g_footnote_ary_dim, $footnote_num_color, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, 'Pos-Lit-'.$Sc_g_footnote_ary_dim, false)).'</span>';
+    return '<span'.To_f_hint_attr_html( $Sc_g_footnote_ary[text_hint][$Sc_g_footnote_ary_dim - 1]).' style="'.($Sc_g_footnote_style).'">'.(To_f_anchor_Jump_html( $Sc_g_footnote_ary_dim, 'Lit-'.$Sc_g_footnote_ary_dim, $footnote_num_color, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, 'Pos-Lit-'.$Sc_g_footnote_ary_dim, false)).'</span>';
   }
   
   
@@ -1395,7 +1404,7 @@
     $footnote_str = To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $footnote_str);
     
     $Sc_g_footnote_ary[text][] = $footnote_str;
-    $Sc_g_footnote_ary[text_hint][] = strip_tags( To_f_Text_replace_html( array( array( '<br>', '&#13;')), null, $footnote_str));     // #: Convert linebreaks to Unicode and remove all other html tags.
+    $Sc_g_footnote_ary[text_hint][] = $footnote_str;     // #: Kept as-is (HTML incl. "<br>" and "\lm{}"-formulas intact) - "To_f_hint_attr_html" below escapes it safely and handles the "<br>" -> line-break conversion for both its HTML tooltip and plain-text fallback outputs.
     $Sc_g_footnote_ary[text_color][] = $footnote_lit_color;
     $Sc_g_footnote_ary_dim += 1;
     
