@@ -293,10 +293,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{ω} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ω} }  =  2^{-ω}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{*( 2^{ω} + 1 *) + 1} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
+                      array( display => 'on',  latex => '{  n  =  2_{\#}^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2_{\#}^{ω} }  =  2_{\#}^{-ω}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{*( 2_{\#}^{ω} + 1 *) + 1} *)  *[  r  =  2_{\#}^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2_{\#}^{ω}  }'),
                     ))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -307,12 +307,12 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Wir haben hier als Basismenge unserer Intervall-Menge \lm{ *( 2^{ω} + 1 *) + 1 } gewählt, weil in den Ordinalzahlen,'."\n".
-                    'wo wir hier davon ausgehen, dass \lm{ 2^{ω} \in \mathbb{On} }, und so dann auch \lm{ 2^{ω} + 1 } und \lm{ *( 2^{ω} + 1 *) + 1 }, eine solche ist,'."\n".
-                    'die Menge \lm{ *( 2^{ω} + 1 *) + 1 } dann auch die Zahl \lm{ 2^{ω} + 1 } als größte enthält,'."\n".
+                    'Wir haben hier als Basismenge unserer Intervall-Menge \lm{ *( 2_{\#}^{ω} + 1 *) + 1 } gewählt, weil in den Ordinalzahlen,'."\n".
+                    'wo wir hier davon ausgehen, dass \lm{ 2_{\#}^{ω} \in \mathbb{On} }, und so dann auch \lm{ 2_{\#}^{ω} + 1 } und \lm{ *( 2_{\#}^{ω} + 1 *) + 1 }, eine solche ist,'."\n".
+                    'die Menge \lm{ *( 2_{\#}^{ω} + 1 *) + 1 } dann auch die Zahl \lm{ 2_{\#}^{ω} + 1 } als größte enthält,'."\n".
                     'die wir ja für den Wert von \lm{ n } brauchen.'."\n".
                     'Wir hätten hier dann auch \lm{ \mathbb{On} } als Basismenge nehmen können, aber so wird diese neue interessante Fragestellung auf diese Weise näher beleuchtet.'."\n",
-                      'So erhalten wir zwar schon eine unendliche Dichte, denn der Abstand zwischen zwei benachbarten Netzpunkten \lm{ d } ist \lm{ 2^{-ω} },'."\n".
+                      'So erhalten wir zwar schon eine unendliche Dichte, denn der Abstand zwischen zwei benachbarten Netzpunkten \lm{ d } ist \lm{ 2_{\#}^{-ω} },'."\n".
                     'aber wie wir oben gesehen haben,'."\n".
                     'sind hier ganz viele Teilungen noch nicht enthalten.'."\n".
                     'Als Beispiele erreichen wir so die Punkte \lm{ \frac{ 1 }{ 3 } } und \lm{ \frac{ 2 }{ 3 } } nicht,'."\n".
@@ -339,11 +339,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{ω} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prodx_{ p_{i} \in \mathbb{P} }  p_{i} } *)^{ω}  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω}  }',
+                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)_{\#}^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prodx_{ p_{i} \in \mathbb{P} }  p_{i} } *)_{\#}^{ω}  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)_{\#}^{-ω}  }',
                                           label_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i}^{ω}  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)_{\#}^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prodx_{ p_{i} \in \mathbb{P} }  p_{i,\#}^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So gibt es nun zwischen Null und Eins keine rationalen Zahlen mehr,'."\n".
@@ -352,8 +352,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{ω} \cdot 2 ω  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  n  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)_{\#}^{ω} \cdot 2 ω  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prodx_{ p_{i} \in \mathbb{P} }  p_{i} *)_{\#}^{-ω} \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -403,9 +403,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } |*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } |*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2_{\#}^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }{ 2_{\#}^{ω} }  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -419,7 +419,7 @@
                   array( 'text', array( text => array(
                     'gilt.'."\n",
                       'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
-                    'Denn der Faktor \lm{ 2^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
+                    'Denn der Faktor \lm{ 2_{\#}^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
                     'könnte deshalb natürlich direkt gekürzt werden.'."\n".
                     'Womit wir auch sofort erkennen, dass die Formel wahr ist.'."\n",
                       'Was macht die Formel dann auf den zweiten Blick so besonders?'."\n",
@@ -449,7 +449,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  d  =  2^{-ω} \cdot 2^{ω}  =  1  }'),
+                      array( display => 'on',  latex => '{  d  =  2_{\#}^{-ω} \cdot 2_{\#}^{ω}  =  1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier fällt nun auf, dass der Faktor exakt der gleiche ist, der aus der Wurzel aus Zwei vorstehend'."\n".
@@ -464,12 +464,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{2} |*^{m}  =  2^{\frac{ m }{ k }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ m }{ k }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ m }{ k }} }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{2} |*^{m}  =  2^{\frac{ m }{ k }}  =  \frac{ 2_{\#}^{ω} \cdot 2^{\frac{ m }{ k }} }{ 2_{\#}^{ω} }  =  \frac{ 2_{\#}^{ω + \frac{ m }{ k }} }{ 2_{\#}^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  q  :=  \frac{ m }{ k }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  2^{q}  =  \frac{ 2^{ω} \cdot 2^{q} }{ 2^{ω} }  =  \frac{ 2^{ω + q} }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  2^{q}  =  \frac{ 2_{\#}^{ω} \cdot 2^{q} }{ 2_{\#}^{ω} }  =  \frac{ 2_{\#}^{ω + q} }{ 2_{\#}^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
+                    'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2_{\#}^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln', text =>
                   'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen, also für \lm{ *| \sqrt[k]{c} |*^{m} }', subline =>
@@ -479,16 +479,16 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{c} |*^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c^{ω + \frac{ m }{ k }} }{ c^{ω} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c^{ω} \cdot c^{q} }{ c^{ω} }  =  \frac{ c^{ω + q} }{ c^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{c} |*^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c_{\#}^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c_{\#}^{ω + \frac{ m }{ k }} }{ c_{\#}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c_{\#}^{ω} \cdot c^{q} }{ c_{\#}^{ω} }  =  \frac{ c_{\#}^{ω + q} }{ c_{\#}^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier ist zu bemerken, dass die Potenzen der Primzahlen der Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} von \lm{ c } ja größer als Eins sein können.'."\n".
-                    'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c^{ω} = 4^{ω} = *( 2^{2} *)^{ω} = 2^{2 ω} }'."\n".
-                    'und damit eine aktual unendliche Größenordnung größer als \lm{ 2^{ω} }, wie oben zuvor.'."\n",
+                    'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c_{\#}^{ω} = 4^{ω} = *( 2^{2} *)_{\#}^{ω} = 2_{\#}^{2 ω} }'."\n".
+                    'und damit eine aktual unendliche Größenordnung größer als \lm{ 2_{\#}^{ω} }, wie oben zuvor.'."\n",
                       'Da stellt sich die Frage:'."\n".
                     'Ist es wirklich notwenig die Größenordnung derart zu vergrößern?'."\n".
-                    'Oder reicht auch die einfache aktual unendliche Größe \lm{ 2^{ω} } aus?'."\n".
+                    'Oder reicht auch die einfache aktual unendliche Größe \lm{ 2_{\#}^{ω} } aus?'."\n".
                     'Dies ist eine besonders interessante und wichtige Frage in Bezug auf die Superial-Zahlen, weil es entscheidet,'."\n".
                     'ob Produkte zwischen der superialen Basis \lm{ \s } und den Wurzeln aus \lm{ c } auch schon ganze Zahlen ergeben,'."\n".
                     'wenn \lm{ c } größere Potenzen von Primzahlen enthält.'."\n",
@@ -497,12 +497,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot p^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}^{+} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot *( p^{k} *)^{q}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p^{ω} \cdot p^{k \cdot q}  ?\in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall q \in \mathbb{Q} *)  *[  p_{\#}^{ω} \cdot p^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}^{+} *) *( \forall q \in \mathbb{Q} *)  *[  p_{\#}^{ω} \cdot *( p^{k} *)^{q}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{\#}^{ω} \cdot p^{k \cdot q}  ?\in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  k \cdot q  \in  \mathbb{Q}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  p^{ω} \cdot p^{k \cdot q}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p^{ω} \cdot *( p^{k} *)^{q}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{\#}^{ω} \cdot p^{k \cdot q}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{\#}^{ω} \cdot *( p^{k} *)^{q}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n".
@@ -524,7 +524,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  \rad(c)^{ω} \cdot c^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  \rad(c)_{\#}^{ω} \cdot c^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Jede endliche ganze Wurzel in natürlicher Potenz aus jeder natürlichen Zahl \lm{ c } kann also'."\n".
@@ -533,7 +533,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\ \qquad\;\;  *[  *( \sqrt[k]{c} *)^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ \rad(c)^{ω} \cdot c^{\frac{ m }{ k }} }{ \rad(c)^{ω} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c^{q}  =  \frac{ \rad(c)^{ω} \cdot c^{q} }{ \rad(c)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c^{q}  =  \frac{ \rad(c)_{\#}^{ω} \cdot c^{q} }{ \rad(c)_{\#}^{ω} }  }'),
                       // array( display => 'on',  latex => '{  \Leftrightarrow  c^{q}  =  \frac{ \rad(c)^{ω + q} \cdot *( \frac{ c }{ \rad(c) } *)^{q} }{ \rad(c)^{ω} }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -571,10 +571,18 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  ω^{ω}  }',
-                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aufgrund der'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonischen Identifikation \lm{ ω \equiv_{kan} ω\overline{\#} }}'."\n".
+                    'verwenden wir für diese Basis die vereinfachte und zentrale Schreibweise:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\const{SupNum_g_text_ZFCkonform}'."\n",
@@ -594,7 +602,7 @@
                       // array( display => 'on',  latex => '{  \Leftrightarrow  X *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}_{\Z}^{-1}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
                       // array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
                       // array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω_{\#}^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1213,7 +1221,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} }  =  \frac{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }{ 2_{\#}^{ω} }  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1221,7 +1229,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  a \cdot 2^{ω} \in \mathbb{N}_{\infty}  \land  a \cdot 2^{ω - 1} \notin \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  a \cdot 2_{\#}^{ω} \in \mathbb{N}_{\infty}  \land  a \cdot 2_{\#}^{ω - 1} \notin \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -1277,7 +1285,7 @@
                     'Mit anderen Worten: \lm{ z \cdot \s^{-1} = a } bedeutet, dass ihr Faktor \lm{ z = a \cdot \s } eine ganze Zahl ist, wenn auch eine aktual unendlich große.'."\n",
                       'Zum anderen fallen die kleinsten ganzzahligen „Schwingungsknoten“ – also die Primzahl-Konstruktoren (\lm{ p }-adischen Bewertungen) von \lm{ a } –'."\n".
                     'mit dem grundlegenden Raster zusammen.'."\n",
-                      'Damit liegt zum Beispiel auch \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } auf dem im Unendlichen ganzzahligen Raster \lm{ 2^{q} \cdot 2^{ω} }, wenn \lm{ q \in \mathbb{Q} }.'."\n".
+                      'Damit liegt zum Beispiel auch \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω} } auf dem im Unendlichen ganzzahligen Raster \lm{ 2^{q} \cdot 2_{\#}^{ω} }, wenn \lm{ q \in \mathbb{Q} }.'."\n".
                     'Wollen wir dieses auf alle ganzzahligen Wurzeln und schließlich auf alle reell algebraischen Zahlen ausweiten, dann brauchen wir'."\n".
                     'allerdings das größere Raster von \lm{ \s }.'."\n".
                     'Wodurch wir dann \lm{ 2^{\frac{ 1 }{ 2 }} \s } als ganze Zahl erhalten.'."\n".
