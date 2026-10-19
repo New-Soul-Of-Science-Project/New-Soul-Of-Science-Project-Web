@@ -2,10 +2,12 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 18.10.2026, 22:00h
+// #: Stand: 19.10.2026, 13:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20261019:  *:  "To_f_hint_init":  The actual cause of Wolfgang's stray "ausblenden" tooltip, visible right after loading a page via a jump-mark link (e.g. "...#...:Ableitung"): the browser itself moves focus to the target chapter heading (or its hide toggle) when jumping to it, and that apparently still counts as ":focus-visible" even though nobody actually navigated there by keyboard - so our existing "focus" listener dutifully showed its tooltip for a jump nobody asked to see a tooltip for. New "To_g_hint_userInteracted" flag, set once on the page's first real "mousedown"/"keydown"/"touchstart", gates the "focus" listener - a "focus" occurring before any such interaction (i.e. one caused by the browser itself, not the person) no longer shows the tooltip. Genuine Tab-key navigation still works, since its "keydown" sets the flag before the resulting "focus" event fires.
+//          20261019:  *:  "To_f_hint_show":  Separately, the virtual reference element's "getBoundingClientRect" returned a single rect captured once at show-time instead of calling "To_f_hint_rectForPoint" again on every call - "autoUpdate" re-runs "computePosition" on scroll/resize as intended, but kept getting back that same frozen, now-stale rect every time, so a shown tooltip never actually followed along while the page kept scrolling (e.g. into its restored scroll position). Fixed by calling "To_f_hint_rectForPoint" inside the "getBoundingClientRect" closure itself, so every reposition check gets the element's current, live position - worth keeping regardless of the "focus" fix above, since the same staleness could occur from ordinary scrolling while a tooltip is shown by hover or genuine keyboard focus.
 //          20261018:  +:  "To_f_hint_init", "To_f_hint_show", "To_f_hint_hide", "To_f_hint_scheduleShow", "To_f_hint_scheduleHide":  New - the site's own tooltip for every link with a hint (both "To_f_replace_callback__latexcommand__jump" and "To_f_anchor_Jump_html" in Tools.php now write the hint into "data-hint" instead of "title", see Tools.php 20261018 entry), because native "title" cannot render a hint containing a MathJax formula. Shown on hover (~300ms delay) and on keyboard focus (":focus-visible" only, not every "focus", so a mouse click on the link does not show it a second time on top of the hover), positioned with the self-hosted Floating UI ("share/js/floating-ui/", "offset"/"flip"/"shift"/"arrow" + "autoUpdate"). One shared tooltip element is reused for every trigger; its content is set from "data-hint" and retypeset per formula via "MathJax.typesetPromise" ("typesetClear" first, since the same node is reused). Hides on mouseleave (small delay so moving the mouse from the trigger onto the tooltip itself does not close it), blur, click, and Escape.
 //          20261015:  +:  "To_f_manage_beforePrint", "To_f_manage_afterPrint":  New "To_f_shrinkWideEquationsForPrint" call - equations (".content-horizontal-scrollable-equ", see "Science.php") that are wider than their column are horizontally scrollable on screen, but printing has no scrolling, so an overly wide equation would simply get clipped at the column edge instead of printing in full. Measures each such equation right before printing and, if it overflows, shrinks it with "transform: scale(...)" to exactly the available width (plus a matching "height" reduction, since "transform" alone does not free up the now-smaller layout space); reverted again in "afterPrint" so the screen view keeps its normal, scrollable size.
 //          20260717:  +:  "To_f_scroll_init":  New — toggles class "is-scrolling" on ".content" and ".content-horizontal-scrollable" while scrolling.
@@ -809,6 +811,7 @@ var To_g_hint_cleanup = null;
 var To_g_hint_current = null;
 var To_g_hint_showTimer = null;
 var To_g_hint_hideTimer = null;
+var To_g_hint_userInteracted = false;
 
 function To_f_hint_init()
 {
@@ -847,10 +850,21 @@ function To_f_hint_init()
     // #: ":focus-visible" statt jedem "focus" - sonst zeigte schon ein normaler Mausklick auf den
     // Link (der ihn nebenbei auch fokussiert) das Tooltip ein zweites Mal an, obwohl der Hover
     // es bereits anzeigt. Fällt auf "immer anzeigen" zurück, falls ":focus-visible" (ältere
-    // Browser) nicht unterstützt wird - harmlos, nur weniger exakt.
-    el.addEventListener('focus', function() { if (!el.matches || el.matches(':focus-visible')) To_f_hint_show(el); });
+    // Browser) nicht unterstützt wird - harmlos, nur weniger exakt. Zusätzlich an
+    // "To_g_hint_userInteracted" gekoppelt - ohne das zeigte ein Seitenaufruf über einen
+    // Sprungmarken-Link (z.B. "...#...:Ableitung") ein Tooltip, weil der Browser selbst beim
+    // Anspringen den Fokus auf die Kapitelüberschrift (bzw. deren Ausblenden-Umschalter) legt
+    // und das offenbar ebenfalls als ":focus-visible" zählt, obwohl niemand tatsächlich mit der
+    // Tastatur navigiert hat.
+    el.addEventListener('focus', function() { if (To_g_hint_userInteracted && (!el.matches || el.matches(':focus-visible'))) To_f_hint_show(el); });
     el.addEventListener('blur', To_f_hint_hide);
     el.addEventListener('click', To_f_hint_hide);
+  });
+
+  // #: Siehe Kommentar beim "focus"-Listener oben - erst NACH einer echten Nutzerinteraktion
+  // (Maus, Tastatur, Touch) darf ein "focus" ein Tooltip auslösen.
+  ['mousedown', 'keydown', 'touchstart'].forEach(function(evt) {
+    document.addEventListener(evt, function() { To_g_hint_userInteracted = true; }, { once: true, capture: true });
   });
 
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') To_f_hint_hide(); });
@@ -908,9 +922,13 @@ function To_f_hint_show( el, x, y)
 
   // #: Virtuelles Referenzelement statt "el" direkt - siehe "To_f_hint_rectForPoint" oben.
   // "contextElement" lässt Floating UI trotzdem das echte Element für Scroll-/Resize-Tracking
-  // (per "autoUpdate") beobachten.
-  var rect = To_f_hint_rectForPoint(el, x, y);
-  var virtualEl = { getBoundingClientRect: function() { return rect; }, contextElement: el };
+  // (per "autoUpdate") beobachten. "getBoundingClientRect" ruft "To_f_hint_rectForPoint" bei
+  // JEDEM Aufruf neu auf (statt ein einmal ermitteltes Rechteck einzufrieren) - sonst bekommt
+  // "autoUpdate" bei jeder durch Scrollen ausgelösten Neuberechnung immer dasselbe alte Rechteck
+  // zurück. Fiel beim erneuten Laden einer Seite auf, bei der der Browser den Fokus auf einen
+  // "ausblenden"-Link wiederherstellte, bevor die (ebenfalls wiederhergestellte) Scroll-Position
+  // feststand - das Tooltip blieb dann an der alten Position vor dem Scrollen hängen.
+  var virtualEl = { getBoundingClientRect: function() { return To_f_hint_rectForPoint(el, x, y); }, contextElement: el };
 
   if (To_g_hint_cleanup) To_g_hint_cleanup();
   To_g_hint_cleanup = FloatingUIDOM.autoUpdate(virtualEl, To_g_hint_el, function() {

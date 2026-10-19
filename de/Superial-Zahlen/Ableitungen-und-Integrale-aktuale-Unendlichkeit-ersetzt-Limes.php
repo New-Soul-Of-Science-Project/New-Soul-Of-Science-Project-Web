@@ -198,7 +198,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \underbrace{ 0 }_{\text{\small Nullpunkt}}  \ll  \underbrace{\color{#1a4fa0}{\cdots  \ll  \s^{−3}  \ll  \s^{−2}  \ll  \boldsymbol{\s^{−1}}}}_{\text{\small infinitesimale Stellenwertschichten}}  \\\ \qquad\qquad \ll  \underbrace{\color{#4a7a3a}{ \s^{0} = 1 }}_{\text{\small endliche Schicht}}  \\\ \qquad\qquad\qquad\qquad \ll  \underbrace{\color{#cc3333}{\boldsymbol{\s}  \ll  \s^{2}  \ll  \s^{3}  \ll  \cdots}}_{\text{\small infinite Stellenwertschichten}}  }'),
+                      array( display => 'on',  latex => '{  \underbrace{ 0 }_{\text{\small Nullpunkt}}  \ll  \underbrace{\color{#1a4fa0}{\cdots  \ll  \s^{−3}  \ll  \s^{−2}  \ll  \boldsymbol{\s^{−1}}}}_{\text{\small infinitesimale Stellenwertschichten}}  \\\ \qquad\quad\;\;\, \ll  \qquad\qquad\quad\;\, \underbrace{\color{#4a7a3a}{ \s^{0} = 1 }}_{\text{\small endliche Schicht}}  \\\ \qquad\quad\;\;\, \ll  \quad\;\;\; \underbrace{\color{#cc3333}{\boldsymbol{\s}  \ll  \s^{2}  \ll  \s^{3}  \ll  \cdots}}_{\text{\small infinite Stellenwertschichten}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\lm{ \s^{−1} } ist nicht die kleinste positive Zahl, denn darunter liegen \lm{ \s^{−2} }, \lm{ \s^{−3} }, ….'."\n".
