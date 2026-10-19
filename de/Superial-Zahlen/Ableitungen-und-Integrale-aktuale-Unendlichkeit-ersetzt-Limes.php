@@ -186,9 +186,9 @@
 
                   array( 'text', array( text => array(
                     'Das infinitesimale \lm{ h } und das infinite \lm{ \s } bestimmen sich gegenseitig.'."\n".
+                    'Die Frage, wie wir \lm{ h } normieren, wird damit zur Frage, wie wir \lm{ \s } normieren.'."\n".
                     'Siehe dazu auch den Vortrag \jump['.$Glo_PathRel_back.'../de/Superial-Zahlen/Vortraege/Vortrag-DieSuperialZahlenEinfuehrung-1-SucheNormiertesInfinitesimal.html]{}{›Suche nach dem sinnvoll normierten Infinitesimal der Analysis‹}.'."\n",
-                      'Die Frage, wie wir \lm{ h } normieren, wird damit zur Frage, wie wir \lm{ \s } normieren.'."\n",
-                    'Die Potenzen von \lm{ \s } bilden dabei eine geordnete Skala von Größenordnungen:'."\n".
+                      'Die Potenzen von \lm{ \s } bilden dabei eine geordnete Skala von Größenordnungen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
