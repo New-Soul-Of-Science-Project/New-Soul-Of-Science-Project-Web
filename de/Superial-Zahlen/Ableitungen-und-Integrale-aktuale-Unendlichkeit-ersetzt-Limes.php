@@ -164,8 +164,9 @@
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
                 'Warum \lm{ \s^{−1} } die Standardnormierung ist (Vorschlag)', subline =>
-                  'Erkenntnisse aus dem Vortrag ›Suche nach dem sinnvoll normierten Infinitesimal der Analysis‹')),
+                  '')),
                   array( 'text', array( text => array(
+                    'Für den weiterhin betrachteten Schritt \lm{ \Delta x } schreiben wir im Folgenden, wie in der Analysis dafür ebenfalls gebräuchlich, \lm{ h }.'."\n",
                     'Ein infinitesimaler Schritt allein reicht noch nicht.'."\n".
                     'Haben wir ein positives Infinitesimal \lm{ h } gefunden, so sind \lm{ 2h }, \lm{ 3h }, \lm{ h^{2} }, \lm{ h^{3} }, … ebenso infinitesimal.'."\n".
                     'Warum sollte gerade \lm{ h } der ausgezeichnete Rechenschritt sein?'."\n".
@@ -179,14 +180,19 @@
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s \cdot h  =  1  \qquad\Leftrightarrow\qquad  h  =  \s^{−1}  }'),
                     ))),
+
+                  array( 'figure',
+                    array_merge( $SupNum_g_figure_ary_SchrittweiteSchrittanzahl, array( name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Fig-SchrittweiteSchrittanzahl'))),
+
                   array( 'text', array( text => array(
                     'Das infinitesimale \lm{ h } und das infinite \lm{ \s } bestimmen sich gegenseitig.'."\n".
-                    'Die Frage, wie wir \lm{ h } normieren, wird damit zur Frage, wie wir \lm{ \s } normieren.'."\n",
+                    'Siehe dazu auch den Vortrag \jump['.$Glo_PathRel_back.'../de/Superial-Zahlen/Vortraege/Vortrag-DieSuperialZahlenEinfuehrung-1-SucheNormiertesInfinitesimal.html]{}{›Suche nach dem sinnvoll normierten Infinitesimal der Analysis‹}.'."\n",
+                      'Die Frage, wie wir \lm{ h } normieren, wird damit zur Frage, wie wir \lm{ \s } normieren.'."\n",
                     'Die Potenzen von \lm{ \s } bilden dabei eine geordnete Skala von Größenordnungen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  0  \ll  \cdots  \ll  \s^{−2}  \ll  \s^{−1}  \ll  \s^{0} = 1  \ll  \s  \ll  \s^{2}  \ll  \cdots  }'),
+                      array( display => 'on',  latex => '{  \underbrace{ 0 }_{\text{\small Nullpunkt}}  \ll  \underbrace{\color{#1a4fa0}{\cdots  \ll  \s^{−3}  \ll  \s^{−2}  \ll  \boldsymbol{\s^{−1}}}}_{\text{\small infinitesimale Stellenwertschichten}}  \\\ \qquad\qquad \ll  \underbrace{\color{#4a7a3a}{ \s^{0} = 1 }}_{\text{\small endliche Schicht}}  \\\ \qquad\qquad\qquad\qquad \ll  \underbrace{\color{#cc3333}{\boldsymbol{\s}  \ll  \s^{2}  \ll  \s^{3}  \ll  \cdots}}_{\text{\small infinite Stellenwertschichten}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\lm{ \s^{−1} } ist nicht die kleinste positive Zahl, denn darunter liegen \lm{ \s^{−2} }, \lm{ \s^{−3} }, ….'."\n".
