@@ -166,7 +166,13 @@
                 'Warum \lm{ \s^{−1} } die Standardnormierung ist (Vorschlag)', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Für den weiterhin betrachteten Schritt \lm{ \Delta x } schreiben wir im Folgenden, wie in der Analysis dafür ebenfalls gebräuchlich, \lm{ h }.'."\n",
+                    'Für den weiterhin betrachteten Schritt \lm{ \Delta x } schreiben wir im Folgenden, wie in der Analysis dafür ebenfalls gebräuchlich, vorrangig \lm{ h }:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  h  =  \Delta x  }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'Ein infinitesimaler Schritt allein reicht noch nicht.'."\n".
                     'Haben wir ein positives Infinitesimal \lm{ h } gefunden, so sind \lm{ 2h }, \lm{ 3h }, \lm{ h^{2} }, \lm{ h^{3} }, … ebenso infinitesimal.'."\n".
                     'Warum sollte gerade \lm{ h } der ausgezeichnete Rechenschritt sein?'."\n".
