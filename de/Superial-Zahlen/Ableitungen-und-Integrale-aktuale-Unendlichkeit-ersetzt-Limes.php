@@ -131,41 +131,6 @@
                 'Warum \lm{ \s^{−1} } die Standardnormierung ist', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Unsere superiale Basis \lm{ \s } ist nicht einfach „jede Grenzwert-Unendlichkeit“.'."\n".
-                    '\lm{ \s } ist die kanonische aktual unendliche Recheneinheit der Superial-Analysis.'."\n".
-                    'So ist dann \lm{ \s^{−1} } die erste normierte infinitesimale Schrittweite.'."\n".
-                    'Und mit \lm{ \s } Schritten der Breite \lm{ \s^{−1} } entsteht dann genau eine endliche Einheit:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s \cdot \s^{−1}  =  1  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\lm{ a \cdot \s } ganzzahlige, reell algebraische, unendlich kleine Schritte der Breite \lm{ \s^{−1} }'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  *( a \cdot \s *) \cdot \s^{−1}  =  a  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'erlauben uns, von Null nach \lm{ a } unendlich fein und algebraisch zu schreiten.'."\n".
-                    'Dies ist die Grundlage der Integration und der Ableitung – der Differenzialrechnung.'."\n".
-                    'Weil \lm{ \s } genau die normierte Größe ist, die uns das erlaubt, ist sie die exakt passende Standardnormierung'."\n".
-                    'der Analysis.'."\n",
-                      'Wäre \lm{ \s } nicht genau so über das \jump{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}{Primzahl-Flächenprodukt} definiert,'."\n".
-                    'dann wären nicht alle reell algebraischen Zahlen'."\n".
-                    'im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{Produkt mit ihr ganzzahlig}.'."\n".
-                    'Würden wir statt \lm{ \s } eine feinere Normierung wie \lm{ \s^{2} } als Standard-Schrittanzahl verwenden,'."\n".
-                    'dann entstünden im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten,'."\n".
-                    'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n",
-                      'Die klassische Grenzwertrechnung an dieser Stelle \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{vernichtet die Differenz nach der Division};'."\n".
-                    'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{Superial-Analysis erhält sie als Spur}.'."\n".
-                    ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
-                      
-                'Warum \lm{ \s^{−1} } die Standardnormierung ist (Vorschlag)', subline =>
-                  '')),
-                  array( 'text', array( text => array(
                     'Für den weiterhin betrachteten Schritt \lm{ \Delta x } schreiben wir im Folgenden, wie in der Analysis dafür ebenfalls gebräuchlich, vorrangig \lm{ h }:'."\n",
                     ''))),
                   array( 'equations',
