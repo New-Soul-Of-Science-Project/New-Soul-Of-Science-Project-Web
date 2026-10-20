@@ -128,7 +128,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
-                'Warum \lm{ \s^{−1} } die Standardnormierung ist', subline =>
+                'Warum \lm{ \s^{−1} } die Standardnormierung der Superial-Analysis ist', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Für den weiterhin betrachteten Schritt \lm{ \Delta x } schreiben wir im Folgenden, wie in der Analysis dafür ebenfalls gebräuchlich, vorrangig \lm{ h }:'."\n",
@@ -169,7 +169,7 @@
                     '\lm{ \s^{−1} } ist nicht die kleinste positive Zahl, denn darunter liegen \lm{ \s^{−2} }, \lm{ \s^{−3} }, ….'."\n".
                     'Es ist die Einheit der ersten infinitesimalen Stellenwertschicht, unmittelbar unter der endlichen Schicht \lm{ \s^{0} = 1 }.'."\n".
                     'Ebenso ist \lm{ \s } die Einheit der ersten infiniten Stellenwertschicht.'."\n",
-                    '\lm{ \s } ist eine Schrittanzahl und damit ganzzahlig.'."\n".
+                    '\lm{ \s } ist eine Schrittanzahl und damit superial-ganzzahlig.'."\n".
                     'Damit unser Schrittmaß aber exakt verwendbar bleibt, verlangen wir mehr:'."\n".
                     'Auch jede endliche rationale Teilstrecke muss aus einer ganzen Anzahl von Schritten \lm{ \s^{−1} } bestehen.'."\n".
                     ''))),
@@ -185,11 +185,15 @@
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} ,\; n \ge 1 *) *[  n \mid \s  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Erst so bleiben auch die Integrationsgrenzen frei wählbar, ohne dass die Schrittanzahl ihre Ganzzahligkeit verliert.'."\n",
-                    'Daraus folgt unmittelbar die Primfaktorstruktur von \lm{ \s }.'."\n".
-                    'Zu den endlichen natürlichen Zahlen gehören alle Primzahlpotenzen \lm{ p^{k} }.'."\n".
-                    'Sie alle müssen \lm{ \s } teilen, und damit reicht für keine Primzahl ein endlicher Exponent aus.'."\n".
-                    'Die Folge der Exponenten \lm{ 1, 2, 3, … } setzt sich im ersten transfiniten Ordinal \lm{ ω } fort:'."\n".
+                    'Erst so bleibt die Schrittanzahl auch bei rational veränderten Integrationsgrenzen ganzzahlig.'."\n",
+                    'Daraus folgt die Primfaktorstruktur von \lm{ \s }.'."\n".
+                    'Zu den endlichen natürlichen Zahlen gehören alle endlichen Primzahlpotenzen \lm{ p^{k} }.'."\n".
+                    'Da jede endliche natürliche Zahl \lm{ \s } teilen soll, gilt insbesondere \lm{ p^{k} \mid \s }'."\n".
+                    'für jede endliche Primzahl \lm{ p } und jedes endliche \lm{ k }.'."\n".
+                    'Damit kann für keine Primzahl ein endlicher Primexponent ausreichen.'."\n",
+                    'Die Folge der endlichen Primexponenten lautet \lm{ 1, 2, 3, 4, … }.'."\n".
+                    'Ihre minimale transfinite Fortsetzung ist das erste transfinite Ordinal \lm{ ω }.'."\n".
+                    'Für die primexponentielle Normierung setzen wir daher für jede endliche Primzahl denselben minimalen transfiniten Primexponenten an:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -215,16 +219,22 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Dieser vollständigen primexponentiellen Struktur entspricht kanonisch \lm{ \s \equiv_{kan} ω^{ω} } – bewiesen in der'."\n".
+                    'Auf Grundlage der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonischen Identifikation} der vollständigen Primzahlstruktur mit \lm{ ω },'."\n".
+                    'also \lm{ ω \equiv_{kan} ω\overline{\#} } beziehungsweise formal \lm{ \lpr*( ω\overline{\#} *) = ω },'."\n".
+                    'entspricht dem vollständigen Primzahl-Flächenprodukt kanonisch \lm{ \s \equiv_{kan} ω^{ω} } – bewiesen in der'."\n".
                     '\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
-                    'Diese liefert strukturell einen weiteren arithmetischen Schritt der Normierung.'."\n".
+                    'Damit erhält die primexponentielle Normierung zugleich ihre transfinite Verankerung.'."\n",
+                    'Dabei ist \lm{ \s } schon vorher algebraisch und primexponentiell bestimmt;'."\n".
+                    'die kanonische Identifikation verankert diese Struktur zusätzlich in der transfiniten von-Neumann-Struktur.'."\n".
                     ''))),
 
                   array( 'text', array( text => array(
                     'Mit \lm{ \s } ist damit auch \lm{ \s^{−1} } normiert.'."\n".
-                    'So wird \lm{ \s^{−1} } die exakt passende Standardschrittweite der Analysis.'."\n",
+                    'So wird \lm{ \s^{−1} } zur standardmäßig normierten infinitesimalen Schrittweite der Superial-Analysis.'."\n",
                     'Über die rationalen Skalierungen hinaus erweisen sich sogar alle reell algebraischen Zahlen als'."\n".
-                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}: Ihr Produkt mit \lm{ \s } ist ganzzahlig.'."\n".
+                    '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}:'."\n".
+                    'Für jedes \lm{ a \in \mathbb{A}_{\R} } ist \lm{ a \cdot \s } superial-ganzzahlig und liegt in der ganzzahligen superialen Schicht'."\n".
+                    '– im Sinne der ganzen Superial-Zahlen, nicht der endlichen ganzen Zahlen \lm{ \Z }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -232,11 +242,16 @@
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Wählten wir statt \lm{ \s } eine feinere Normierung wie \lm{ \s^{2} },'."\n".
-                    'entstünden im Infinitesimalen zusätzliche Schichten mit Nullkoeffizienten,'."\n".
-                    'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n".
-                    'Die klassische Grenzwertrechnung \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{vernichtet an dieser Stelle die Differenz nach der Division};'."\n".
-                    'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{Superial-Analysis erhält sie als Spur}.'."\n".
+                    'Wählten wir für die Ableitung statt \lm{ \s^{−1} } eine feinere infinitesimale Schrittweite wie \lm{ \s^{−2} }'."\n".
+                    '– entsprechend einer Normierung über \lm{ \s^{2} } –,'."\n".
+                    'entstünden in der Darstellung zusätzliche Zwischenstellen mit Nullkoeffizienten,'."\n".
+                    'die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{keine zusätzlichen Informationen} tragen.'."\n",
+                    'Die Basis der Stellenwertdarstellung bleibt dabei \lm{ \s }; gerade deshalb werden die Nullkoeffizienten sichtbar.'."\n".
+                    'Die Beispielrechnung mit \lm{ \s^{−2} } zeigt damit, dass eine feinere Schrittweite die Stellenwertdarstellung zwar aufspreizt,'."\n".
+                    'aber keinen zusätzlichen Informationsgehalt erzeugt.'."\n".
+                    'So liefert \lm{ \s^{−1} } die unmittelbarste infinitesimale Auflösung, ohne informationsleere Zwischenstellen zu erzeugen.'."\n",
+                    'In der klassischen Grenzwertrechnung \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{verschwindet dieser Restterm im Grenzübergang};'."\n".
+                    'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{superiale Rechnung erhält ihn als infinitesimale Spur}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
