@@ -266,7 +266,8 @@
                     'Historisch wurde \lm{ \mathrm{d} x } in der Leibnizschen Infinitesimalrechnung als infinitesimale Änderung von \lm{ x } aufgefasst,'."\n".
                     'und auch in schulischer und universitärer Lehre wird es bis heute häufig informell als „unendlich kleine Änderung“ bezeichnet.'."\n".
                     'Im heutigen Standardverständnis der klassischen reellen Analysis ist \lm{ \mathrm{d} x } jedoch keine von null verschiedene infinitesimale Zahl.'."\n".
-                    'Je nach Kontext bezeichnet \lm{ \mathrm{d} x } insbesondere das Differential der Koordinatenfunktion \lm{ x } beziehungsweise ein Differentialelement.'."\n".
+                    'Je nach Kontext bezeichnet \lm{ \mathrm{d} x } insbesondere das Differential der Koordinatenfunktion \lm{ x };'."\n".
+                    'in der eindimensionalen Differentialrechnung ist dies die lineare Abbildung, die einen Zuwachs \lm{ h } auf \lm{ h } abbildet.'."\n".
                     'Es ist daher nicht mit einem festen positiven Zahlenwert zu verwechseln, der kleiner als jede positive reelle Zahl wäre.'."\n".
                     'In der Superial-Analysis wird dagegen mit \lm{ \s^{−1} } ausdrücklich ein von null verschiedener infinitesimaler Zahlenwert als Schrittweite verwendet.'."\n",
                     'Wenn wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise vergleichen'."\n".
@@ -278,9 +279,14 @@
                   array( 'text', array( text => array(
                     'dann sehen wir, dass einiges an struktureller Information verborgen bleibt, wenn wir nicht genau schauen,'."\n".
                     'was hinter der Formulierung steckt.'."\n".
-                    'So glauben wir eben leicht, wie gesagt, der Nenner hätte etwas mit \lm{ x } zu tun, was von der zugrunde liegenden Rechnung her'."\n".
-                    'durch das Einsetzen einer normierten aktualen Unendlichkeit nicht der Fall ist; es in Wahrheit also wenigstens nicht sein muss.'."\n",
-                      'Denn in aktualer Unendlichkeit ausgedrückt entspricht:'."\n".
+                    'Die Differential-Schreibweise kann dabei leicht den Eindruck erwecken, \lm{ \mathrm{d} x } bezeichne bereits einen bestimmten infinitesimalen Zahlenwert,'."\n".
+                    'der aus \lm{ x } selbst hervorgeht.'."\n".
+                    'Das ist jedoch weder in der klassischen Analysis der Fall noch in der folgenden superialen Auswertung erforderlich.'."\n".
+                    'Dort wird die durch \lm{ \mathrm{d} x } bezeichnete Veränderung durch die normierte Schrittweite \lm{ \s^{−1} } konkret realisiert'."\n".
+                    '– unabhängig vom jeweiligen Wert von \lm{ x }.'."\n",
+                      'Das Zeichen \lm{ \widehat{=} } bezeichnet hier daher keine klassische Gleichsetzung des Differentials \lm{ \mathrm{d} x } mit einer Zahl,'."\n".
+                    'sondern seine Realisierung durch die superiale Standardschrittweite.'."\n".
+                    'Denn in aktualer Unendlichkeit ausgedrückt entspricht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -288,8 +294,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \mathrm{d} x  \widehat{=}  1 \s^{-1}  =  ․〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Division durch \lm{ 1 \s^{-1} = \; ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
-                    'ins Endliche.'."\n".
+                    'Die Division durch \lm{ 1 \s^{-1} = \; ․〈1〉 } – also die Multiplikation mit \lm{ \s } – hebt die Differenz im Zähler um eine superiale Stellenwertschicht an.'."\n".
+                    'Bei einer gewöhnlichen endlichen ersten Ableitung wird dadurch ihr führender infinitesimaler Anteil in die endliche Schicht überführt.'."\n".
                     'Und das können wir in der Superial-Arithmetik nun auch'."\n".
                     'durch den entsprechenden unendlich großen Einheitsfaktor \lm{ 1 \s = 〈1〉_1 } erreichen:'."\n".
                     ''))),
