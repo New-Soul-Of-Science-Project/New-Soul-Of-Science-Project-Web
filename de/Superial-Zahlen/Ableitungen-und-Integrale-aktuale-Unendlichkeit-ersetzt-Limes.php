@@ -210,7 +210,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \tfrac{ 1 }{ n }  \;\rightarrow\;  \tfrac{ \s }{ n } \text{ Schritte}  \;\; ,  \qquad  \tfrac{ m }{ n }  \;\rightarrow\;  m \cdot \tfrac{ \s }{ n } \text{ Schritte}  }'),
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ n }  \longrightarrow  \frac{ \s }{ n } \text{ Schritte}  \;\; ,  \qquad  \frac{ m }{ n }  \longrightarrow  m \cdot \frac{ \s }{ n } \text{ Schritte}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das gelingt genau dann, wenn \lm{ \s } durch jede endliche natürliche Zahl teilbar ist:'."\n".
@@ -262,8 +262,9 @@
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten}: Ihr Produkt mit \lm{ \s } ist ganzzahlig.'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  *( a \cdot \s *) \cdot \s^{−1}  =  a  *]  }'),
+                    array( equ_text_std => 'SN.Ein.Erg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-reell-algebra-Zahlen-mal-s-in-ganzen-SupZahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Wählten wir statt \lm{ \s } eine feinere Normierung wie \lm{ \s^{2} },'."\n".

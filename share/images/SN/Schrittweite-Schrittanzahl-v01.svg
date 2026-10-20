@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 235" width="660" height="235" font-family="'Open Sans', sans-serif">
   <rect x="0" y="0" width="660" height="235" fill="#ffffff"/>
   <text x="330" y="44" font-size="24" font-weight="bold" text-anchor="middle" fill="#000">Schrittweite und Schrittanzahl</text>
-  <text x="330" y="76.6" font-size="18" text-anchor="middle" fill="#000">Die Einheit 1 besteht aus s Schritten der Breite h</text>
+  <text x="330" y="76.6" font-size="18" text-anchor="middle" fill="#000">Die Einheit 1 besteht aus s Schritten der Breite <tspan font-style="italic">h</tspan></text>
   <line x1="29.33" y1="136" x2="630.67" y2="136" stroke="#333" stroke-width="2.2"/>
   <g stroke="#333" stroke-width="2.2">
     <line x1="29.33" y1="131.6" x2="29.33" y2="140.4"/>
