@@ -211,7 +211,11 @@
                     ))),
                   array( 'text', array( text => array(
                     'aller endlichen Primzahlen mit allen natürlichen Exponenten.'."\n".
+                    'Die natürliche Zahl \lm{ n } in \lm{ (p, n) \in \mathbb{P} \times \mathbb{N} } mit \lm{ \mathbb{N} = *\{ 0, 1, 2, 3, … *\} } bezeichnet den Index der Primzahlzeile.'."\n".
+                    'Auch die Null-Zeile enthält jede endliche Primzahl einmal; sie ist nicht mit dem Primexponenten \lm{ 0 } zu verwechseln, also nicht mit \lm{ p^{0} = 1 }.'."\n",
                     'Jedes Paar \lm{ (p, n) } tritt genau einmal auf: keine Auswahl, keine Gewichtung, kein ausgelassenes Paar.'."\n".
+                    'Für eine feste Primzahl \lm{ p } entstehen so die Vorkommen \lm{ (p, 0), (p, 1), (p, 2), … }, also \lm{ ω } viele Vorkommen von \lm{ p }.'."\n".
+                    'Dadurch erhält jede endliche Primzahl im vollständigen Primzahl-Flächenprodukt den transfiniten Primexponenten \lm{ ω }.'."\n".
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
