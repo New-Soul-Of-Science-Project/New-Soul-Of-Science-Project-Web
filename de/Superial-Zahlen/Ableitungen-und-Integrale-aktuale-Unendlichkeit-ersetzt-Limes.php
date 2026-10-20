@@ -223,10 +223,10 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Auf Grundlage der \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonischen Identifikation} der vollständigen Primzahlstruktur mit \lm{ ω },'."\n".
-                    'also \lm{ ω \equiv_{kan} ω\overline{\#} } beziehungsweise formal \lm{ \lpr*( ω\overline{\#} *) = ω },'."\n".
-                    'entspricht dem vollständigen Primzahl-Flächenprodukt kanonisch \lm{ \s \equiv_{kan} ω^{ω} } – bewiesen in der'."\n".
-                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
+                    'Auf Grundlage des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{bewiesenen Haupttheorems der Primzahlprodukt-Vermutung} und der daraus folgenden'."\n".
+                    '\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-2-Theorem-innere-kanonische-ZFC-Strukturidentifikation}{kanonischen Identifikation} der vollständigen Primzahlstruktur mit \lm{ ω }'."\n".
+                    'wird auch das vollständige Primzahl-Flächenprodukt kanonisch in der transfiniten Struktur verankert: \lm{ \s \equiv_{kan} ω^{ω} }.'."\n".
+                    'Die grundlegende Beziehung lautet dabei \lm{ \lpr*( ω\overline{\#} *) = ω }, die kanonische Identifikation \lm{ ω \equiv_{kan} ω\overline{\#} }.'."\n".
                     'Damit erhält die primexponentielle Normierung zugleich ihre transfinite Verankerung.'."\n",
                     'Dabei ist \lm{ \s } schon vorher algebraisch und primexponentiell bestimmt;'."\n".
                     'die kanonische Identifikation verankert diese Struktur zusätzlich in der transfiniten von-Neumann-Struktur.'."\n".
@@ -254,7 +254,7 @@
                     'Die Beispielrechnung mit \lm{ \s^{−2} } zeigt damit, dass eine feinere Schrittweite die Stellenwertdarstellung zwar aufspreizt,'."\n".
                     'aber keinen zusätzlichen Informationsgehalt erzeugt.'."\n".
                     'So liefert \lm{ \s^{−1} } die unmittelbarste infinitesimale Auflösung, ohne informationsleere Zwischenstellen zu erzeugen.'."\n",
-                    'In der klassischen Grenzwertrechnung \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{verschwindet dieser Restterm im Grenzübergang};'."\n".
+                    'In der klassischen Grenzwertrechnung \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{verschwindet ein solcher infinitesimaler Restterm im Grenzübergang};'."\n".
                     'die \jump{OM:SupNum:Ableitungen-Integrale:DiskussionDerInfinitesimalrechnung:WohldefinierteArithmetikDesUnendlichen}{superiale Rechnung erhält ihn als infinitesimale Spur}.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
