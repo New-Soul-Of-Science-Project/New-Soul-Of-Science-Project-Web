@@ -210,7 +210,7 @@
                       array( display => 'on',  latex => '{  \mathbb{P} \times \mathbb{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'aller endlichen Primzahlen mit allen natürlichen Exponenten.'."\n".
+                    'aller endlichen Primzahlen mit allen natürlichen Zeilenindizes.'."\n".
                     'Die natürliche Zahl \lm{ n } in \lm{ (p, n) \in \mathbb{P} \times \mathbb{N} } mit \lm{ \mathbb{N} = *\{ 0, 1, 2, 3, … *\} } bezeichnet den Index der Primzahlzeile.'."\n".
                     'Auch die Null-Zeile enthält jede endliche Primzahl einmal; sie ist nicht mit dem Primexponenten \lm{ 0 } zu verwechseln, also nicht mit \lm{ p^{0} = 1 }.'."\n",
                     'Jedes Paar \lm{ (p, n) } tritt genau einmal auf: keine Auswahl, keine Gewichtung, kein ausgelassenes Paar.'."\n".
