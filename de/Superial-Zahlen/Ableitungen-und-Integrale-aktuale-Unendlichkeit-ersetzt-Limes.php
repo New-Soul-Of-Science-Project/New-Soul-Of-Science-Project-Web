@@ -464,9 +464,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sum_{ [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sum^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sumx_{ [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sumx^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sum_{ \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sum_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sumx_{ \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sumx_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -561,7 +561,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, x \cdot \s [_{\mathbb{S}_{\Z}}  =  \\\ \quad *\{  r  ~\middle|~  *( \forall a \in [ 0, x ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  r  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < x  \\\\  x \cdot \s + z^{-}  &  \text{ falls } a = x  \end{cases}  *]  *\}  }',
+                      array( display => 'on',  latex => '{  [ 0, x \cdot \s [_{\mathbb{S}_{\Z}}  =  \\\ \qquad *\{  r  ~\middle|~  *( \forall a \in [ 0, x ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\quad *[  r  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < x  \\\\  x \cdot \s + z^{-}  &  \text{ falls } a = x  \end{cases}  *]  *\}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Menge-natuerliche-Vorgaenger-xs}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -608,7 +608,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sum_{ [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sum^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{S}_{\Z} *)  *[  \sumx_{ [ 0, z [_{\mathbb{S}_{\Z}} } \!\! 1  :=  \sumx^{ z - 1 }_{ i = 0 } 1  =  z  *]  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -627,9 +627,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sum_{ \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sum_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sumx_{ \s^{-1} [ 0, x \cdot \s [_{\mathbb{S}_{\Z}} } \!\!\!\!\! \s^{-1}  =  \sumx_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sum_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \! .*〈 1 *〉  =  x  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{A}_{\R} *)  *[  \sumx_{ [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \! .*〈 1 *〉  =  x  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben geschildert, funktioniert dies für alle rationalen \lm{ x } und für alle \lm{ x }, die ganze Wurzel aus rationalen Zahlen sind,'."\n".
@@ -675,17 +675,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sumx_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sumx_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für das superiale Integral ergibt sich so:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a, x \in \mathbb{A}_{\R} *)  *[  f(x)  =  f(a) + \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(a) + \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  *( a, x \in \mathbb{A}_{\R} *)  *[  f(x)  =  f(a) + \!\!\! \sumx_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(a) + \!\!\! \sumx_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -714,9 +714,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  =  f(0) \; + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 2 n *〉.*〈 1 *〉 *〉  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 2 n *〉*〈 1 *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n *〉*〈 \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! 1 *〉  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  f(0) \; + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 2 n *〉.*〈 1 *〉 *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 2 n *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n *〉*〈 \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! 1 *〉  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Anschließend haben wir die innere und äußere Summe in zwei getrennte Summen umgeformt.'."\n",
@@ -725,8 +725,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n *〉*〈 x \s *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n \; + \; x *〉  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n *〉*〈 x \s *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  *〈 f(0) *〉.*〈 2 \cdot \!\!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n \; + \; x *〉  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -741,9 +741,9 @@
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,g}  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
+                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sumx_{ i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{S}_{\N} *)  *[  \sum_{ i \in [ 0, n [_{\mathbb{S}_{\N}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{S}_{\N} *)  *[  \sumx_{ i \in [ 0, n [_{\mathbb{S}_{\N}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \lm{ n },'."\n".
@@ -756,8 +756,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  .*〈 \frac{ *( *〈 x *〉_{1} *)^{2} - *〈 x *〉_{1} }{ 2 } *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ *〈 x^{2} *〉*〈 -x *〉. }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  .*〈 \frac{ *( *〈 x *〉_{1} *)^{2} - *〈 x *〉_{1} }{ 2 } *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ *〈 x^{2} *〉*〈 -x *〉. }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -829,13 +829,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\!\!\!\!\!\!\! \sum_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } - \displaystyle{ *( \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) } + \displaystyle{ *( \sum_{ n \in [x, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\; - \displaystyle{ *( \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sum_{ n \in [x, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sum_{ n \in [x, x]_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n)  }'),
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\!\!\!\!\!\!\! \sumx_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \frac{ \displaystyle{ *( f(0) + \!\!\! \sumx_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 } \\\ \qquad\qquad\qquad\quad\;\; - \frac{ \displaystyle{ *( f(0) + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sumx_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\!\! .*〈 f_{\s}\'(n) *〉 *) } - \displaystyle{ *( \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sumx_{ n \in [0, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } - \displaystyle{ *( \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \\\ \qquad\qquad\quad\;\;\; *( \displaystyle{ *( \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) } + \displaystyle{ *( \sumx_{ n \in [x, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n) *) } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\; - \displaystyle{ *( \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sumx_{ n \in [x, 〈x〉․〈1〉[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\!\! f_{\s}\'(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  ?=  \sumx_{ n \in [x, x]_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f_{\s}\'(x)  =  f_{\s}\'(x)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -863,9 +863,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 \frac{ f(〈n〉․〈1〉) - f(n) }{ ․〈1〉 } *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(〈n〉․〈1〉) \; - \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n)  }'),
+                      array( display => 'on',  latex => '{  f(x)  ?=  f(0) \; + \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 \frac{ f(〈n〉․〈1〉) - f(n) }{ ․〈1〉 } *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(〈n〉․〈1〉) \; - \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Durch das Einsetzen mit Hilfe von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
@@ -873,9 +873,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉\; - \!\!\!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! f(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n) \; + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\; - \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉\; - \!\!\!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\!\! f(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) \; + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n) \; + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\; - \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(x)  }'),
                     ))),
                       
@@ -889,9 +889,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉 - f(n) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( *〈 f(n) *〉.*〈 f_{\s}\'(n) *〉 - f(n) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(x)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -930,7 +930,7 @@
                       'Um beide Varianten miteinander vergleichen zu können, bleiben wir für die Standard-Ableitung bei \lm{ f\'(⋅) }'."\n".
                     'und für die Superial-Ableitung nutzen wir den Operator \lm{ \mathcal{D}_{\s} ⋅ \, }.'."\n".
                     'Für das Standard-Integral wird weiter der Operator \lm{ \int_{⋅}^{⋅} } genutzt'."\n".
-                    'und für das Superial-Integral nutzen wir, wie gehabt, das Summenzeichen \lm{ \sum_{⋅}^{⋅} } und Formel den Operator \lm{ \mathcal{S}_{\s}( ⋅ ) }'."\n",
+                    'und für das Superial-Integral nutzen wir, wie gehabt, das Summenzeichen \lm{ \sumx_{⋅}^{⋅} } und Formel den Operator \lm{ \mathcal{S}_{\s}( ⋅ ) }'."\n",
                       'Auch nutzen wir für die superiale Differenzialrechnung die superiale \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise},'."\n".
                     'wo beispielsweise \lm{ \s^{-1} = \; ․〈1〉 } und \lm{ x + \s^{−1} = 〈x〉․〈1〉 } ist.'."\n".
                     ''))),
@@ -961,7 +961,7 @@
                     ))),
                   array( 'text', array( text => array(
                   '\bold{Beweis.} \\\\'."\n".
-                    'Setze \lm{ \delta := \; ․〈1〉\, }.'."\n".
+                    'Setze \lm{ \delta := ․〈1〉\, }.'."\n".
                     'Taylor (2. Ordnung) liefert für ein \lm{ \xi } zwischen \lm{ x } und \lm{ x + \delta }:'."\n".
                     ''))),
                   array( 'equations',
@@ -976,8 +976,8 @@
                       array( display => 'on',  latex => '{  \mathcal{D}_{\s} f(x)  =  f\'(x ) + \frac{ 1 }{ 2 } ​\cdot f\'\'( \xi ) \cdot \delta  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der zweite Summand ist infinitesimal (da \lm{ \delta = \; ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
-                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *)  =  f\'(x) }.  \lm{ \qqed }'."\n".
+                    'Der zweite Summand ist infinitesimal (da \lm{ \delta = ․〈1〉 } infinitesimal ist und \lm{ f\'\'( \xi ) } endlich bleibt).'."\n".
+                    'Damit ist die Null-Schicht von \lm{ \mathcal{D}_{\s} f(x) } gleich \lm{ f\'( x ) }, also \lm{ \operatorname{std}*( \mathcal{D}_{\s} f(x) *) = f\'(x) }.  \lm{ \qqed }'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\italic{Bemerkung:}'."\n".
@@ -1014,7 +1014,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Std', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) \\\ *( N = (b − a) \cdot \s \in \mathbb{S}_{\Z} *) *[  \mathcal{S}_{\s}( f; a, b )  :=  \sum_{k = 0}^{N - 1} ․〈 f(〈a〉․〈k〉) 〉  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) \\\ *( N = (b − a) \cdot \s \in \mathbb{S}_{\Z} *) *[  \mathcal{S}_{\s}( f; a, b )  :=  \sumx_{k = 0}^{N - 1} ․〈 f(〈a〉․〈k〉) 〉  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben gesagt, ist hier \lm{ \mathcal{S}_{\s}( ⋅ ) } \bold{nur ein Symbolname} für diese Summe, also keine Menge der Superial-Zahlen.'."\n".
@@ -1384,8 +1384,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.DI', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 100 *〉  <  *〈 5,\!281 *〉.*〈 -2 *〉  \\\ \qquad\qquad\quad  <  *〈 5,\!292 *〉.*〈 9 *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}〉  \\\ \qquad\qquad\qquad\qquad\;  <  5,\!292 + 9 \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *〈 5,\!273 *〉.*〈 100 *〉  <  *〈 5,\!281 *〉.*〈 -2 *〉  \\\ \qquad\qquad\quad\;  <  *〈 5,\!292 *〉.*〈 9 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5,\!273 + 100 \s^{-1}  <  5,\!281 - 2 \s^{-1}  \\\ \qquad\qquad\qquad\qquad\quad\;\;  <  5,\!292 + 9 \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ist der endliche Zeitpunkt der gleiche, dann unterscheiden sich die Zeitpunkte nur noch in ihren unendlich kleinen,'."\n".
@@ -1596,9 +1596,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s - x }{ 2 }  }',
+                      array( display => 'on', latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s - x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1633,9 +1633,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  u  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
+                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\;\; *[  u  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
                                           /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s', */label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}', label_incr => false),
-                      array( display => 'on',  latex => '{  [ 0, x [_{\mathbb{S}_{\Z}^{-1}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, x ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  u  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < x  \\\\  x + z^{-} \cdot \s^{-1}  &  \text{ falls } a = x  \end{cases}  *]  *\}  }',
+                      array( display => 'on',  latex => '{  [ 0, x [_{\mathbb{S}_{\Z}^{-1}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, x ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad\, *[  u  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < x  \\\\  x + z^{-} \cdot \s^{-1}  &  \text{ falls } a = x  \end{cases}  *]  *\}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1663,7 +1663,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ z \in \mathbb{Z}} z  =  -ω  }',
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z}} z  =  -ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1671,7 +1671,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1700,10 +1700,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Rightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sum_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \sum_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sum_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \frac{ -ω }{ \s }  }',
-                                    latex_if_visible => '{  \Leftrightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sum_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \frac{ -ω }{ \s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sum_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  - \frac{ x }{ 2 }  }',
+                      array( display => 'off', latex => '{  \Rightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \frac{ -ω }{ \s }  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 ω } \cdot \frac{ -ω }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \sumx_{ z \in \mathbb{Z} }  z \cdot \s^{-1}  =  - \frac{ x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ -ω }{ \s }  =  - \frac{ x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
@@ -1731,7 +1731,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ a \in [ 0 ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  0 \cdot ω  =  0  }'),
+                      array( display => 'on',  latex => '{  *( \sumx_{ a \in [ 0 ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  0 \cdot ω  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die sinnvollen Koeffizienten der Superial-Zahlen \lm{ a } mit \lm{ 0 < a < x } in der ersten Teilsumme gibt es wirklich'."\n".
@@ -1740,8 +1740,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a *) \cdot 2 \cdot ω  =  y \cdot 2 \cdot ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  y  }'),
+                      array( display => 'on',  latex => '{  *( \sumx_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a *) \cdot 2 \cdot ω  =  y \cdot 2 \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei ist es gleich, ob die Null in der Indexmenge der Summe dabei ist oder fehlt.'."\n".
@@ -1750,14 +1750,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  y  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die Zahl \lm{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ a \in [ x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  x \cdot ω  }'),
+                      array( display => 'on',  latex => '{  *( \sumx_{ a \in [ x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  x \cdot ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Alle drei Teile gemeinsam ergeben also den ersten uns bekannten Summanden aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt},'."\n".
@@ -1771,7 +1771,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ a \in [ 0 ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  \\\ \qquad\quad\quad +  *( \sum_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a *) \cdot 2 \cdot ω  \\\ \qquad\quad\quad\quad\quad +  *( \sum_{ a \in [ x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \sumx_{ a \in [ 0 ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  \\\ \qquad\quad\quad +  *( \sumx_{ a \in ] 0, x [_{\mathbb{A}_{\R}}}  \!\! a *) \cdot 2 \cdot ω  \\\ \qquad\quad\quad\quad\quad +  *( \sumx_{ a \in [ x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  0 \cdot ω  +  y \cdot 2 \cdot ω  +  x \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2 \cdot ω  +  x \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( y \cdot 2  +  x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }',
@@ -1829,12 +1829,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \; \cdot \; x \cdot ω  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \, \cdot \; x \cdot ω  \; - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ ω }{ \s }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \; \cdot \; x \cdot ω  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \, \cdot \; x \cdot ω  \; - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \; \frac{ ω }{ \s }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \, \cdot \; ω \cdot *( x - \frac{ 1 }{ \s } *)  \;\;  }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \overline{\#} [ 0, x [_{\mathbb{A}_{\R}} \, \cdot \; ω \cdot *( x - \frac{ 1 }{ \s } *)  \;\;  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1867,7 +1867,7 @@
                       array( display => 'on',  latex => '{  *( y \cdot 2  +  x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}', label_incr => false),
                       array( display => 'on',  latex => '{  *( y + y + x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;+\;  x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;+\;  x *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Hier beachten wir, dass die Intervall-Mengen-Klammern in beiden Summen gleich ausgerichtet sind.'."\n".
@@ -1878,13 +1878,13 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  \;\;  }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in [ 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  =  \frac{ x^{2} \cdot \s }{ 2 }  \;\;  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
-                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot \s }{ 2 \cdot ω }  }'),
-                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x \cdot \s }{ 2 \cdot ω } \cdot x  }'),
-                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \overline{\#} [ 0, x [_\mathbb{Q} \; \cdot \; x  }'),
-                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot ω  =  \overline{\#} [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot ω  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sumx_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot \s }{ 2 \cdot ω }  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sumx_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x \cdot \s }{ 2 \cdot ω } \cdot x  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sumx_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \overline{\#} [ 0, x [_\mathbb{Q} \; \cdot \; x  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  *( \sumx_{ q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sumx_{ q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot ω  =  \overline{\#} [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot ω  }'),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot \s }{ 2 }  =  \overline{\#} [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1906,11 +1906,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  \\\  \qquad\qquad\qquad\qquad\qquad\qquad - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \, ω \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sum_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  \\\  \qquad\qquad\qquad\qquad\qquad\; - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \; \s^{-1} *) \cdot ω  \;\;  }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a *) \cdot ω  \\\  \qquad\qquad\qquad\qquad\qquad\qquad - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \, \cdot \, ω \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  *( \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  \;\; +  \! \sumx_{ a \in ] 0, x ]_{\mathbb{A}_{\R}}}  \!\! a  \\\  \qquad\qquad\qquad\qquad\qquad\; - \;  \overline{\#} [ 0, x \, [_{\mathbb{A}_{\R}} \; \cdot \; \s^{-1} *) \cdot ω  \;\;  }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ist in jedem Fall interessant, dass \lm{ ω } in allen Summanden vorhanden ist und generell'."\n".
@@ -1940,7 +1940,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \frac{ x^{2} \cdot \s }{ 2 \cdot ω }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  =  \frac{ x^{2} \cdot \s }{ 2 \cdot ω }  -  x  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω }  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sum_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  \;\;  }  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \;\;  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot ω } - \frac{ x }{ 2 }  \;\;  }  \;\;  ,  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1961,7 +1961,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2009,9 +2009,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
                                            label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ i \in [ 0, \frac{ x \cdot \s }{ 2 \cdot ω } [_{\mathbb{N}_{\infty}} }  \!\!\!\! i  =  \frac{ *( \frac{ x \cdot \s }{ 2 \cdot ω } *)^{2} - \frac{ x \cdot \s }{ 2 \cdot ω } }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sumx_{ i \in [ 0, \frac{ x \cdot \s }{ 2 \cdot ω } [_{\mathbb{N}_{\infty}} }  \!\!\!\! i  =  \frac{ *( \frac{ x \cdot \s }{ 2 \cdot ω } *)^{2} - \frac{ x \cdot \s }{ 2 \cdot ω } }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und das Ergebnis ist jetzt um \lm{ \frac{ \s }{ 2 \cdot ω } } zu weit'."\n",
@@ -2071,9 +2071,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.BAI', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{-x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  n^{-n}  }'),
-                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  *( -1 *)^{n + 1} n^{-n}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  - \sum_{ n = 1 }^{ \infty }  *( -n *)^{-n}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{-x} \,\mathrm{d}x  =  \sumx_{ n = 1 }^{ \infty }  n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  \sumx_{ n = 1 }^{ \infty }  *( -1 *)^{n + 1} n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  - \sumx_{ n = 1 }^{ \infty }  *( -n *)^{-n}  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
