@@ -4,9 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 18.10.2026, 23:45h
+  // #: Stand: 21.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
+
+  //           20261021:  -:  "To_f_headline_make":  The links of the side menu ("#NavigationMenu") no longer carry a tooltip. Each entry's hint was just its own link text repeated ("Die Ableitung" on the link "Die Ableitung"), since "To_f_anchor_Jump_html" takes the hint from the headline the link jumps to, which is exactly what the menu entry already says; passes "$hint_is = false" now. Hints on jump links inside the running text are untouched.
 
   //           20261018:  +:  "To_f_Paragraph" ('figure' and shared figure/youtube/iframe caption cases):  The "New window" icon link in a figure caption (opens the PDF/full-size image) and an animation's caption title link (opens the embedded page standalone) now carry a tooltip saying what clicking them actually does ("Öffnet die PDF-Datei/Grafik/Animation ... in neuem Fenster.") - Wolfgang asked for this once the new tooltip was in place elsewhere; previously there was only the small "add.jpg" icon with no explanation beyond its own unobtrusive "alt=\"New window\"".
   //           20261018:  >:  "To_f_headline_add_hides_begin", "To_f_headline_add_hides_end", "To_f_Paragraph" ('figure' case):  Went through EVERY remaining "title=" in this file after Wolfgang asked whether more existed beyond what had already been found - the collapsible-chapter-heading "einblenden"/"ausblenden" toggles (both the headline link and its arrow icon) and the figure "PDF-Darstellung in neuem Fenster öffnen" hint now show the new tooltip too, via "To_f_hint_attr_html(...)" instead of a plain "title=". Not a bug fix on its own (these are hardcoded static labels, nothing dynamic could ever break the attribute) - purely for a consistent look, once everything else (links, footnotes, chapter navigation) had already moved to the new tooltip. Deliberately left alone: the YouTube iframe's "title=\"YouTube video player\"" - that one is an accessibility attribute for screen readers, not a hover hint, and needs to be present immediately rather than behind a ~300ms JS-triggered tooltip.
@@ -2844,7 +2846,7 @@
     
     for ($i = 0; $i < $To_g_headline_ary_dim; $i++) {
       array_push( $menuList, array(
-        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)
+        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', false)
       ));
     }
 
