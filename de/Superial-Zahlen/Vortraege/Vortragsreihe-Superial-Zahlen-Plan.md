@@ -34,6 +34,160 @@ Die weitere Normierungsfrage führt über rationale Skalierungen, universelle Te
 
 Der erste Vortrag bildet deshalb den gemeinsamen Stamm, aus dem mehrere mögliche Fortsetzungen hervorgehen.
 
+## Motivation und Vision der Superial-Zahlen
+
+Die Suche nach den Superial-Zahlen beginnt nicht mit dem Wunsch, um jeden Preis ein neues Zahlensystem zu erfinden. Ausgangspunkt ist vielmehr eine **Anschaulichkeitslücke in der Analysis**.
+
+Wir lernen Ableitungen und Integrale zunächst mit sehr natürlichen Bildern:
+
+- Eine Kurve hat lokal eine Richtung.
+- Eine Fläche besteht aus immer schmaleren Streifen.
+
+Doch sobald man fragt, wie breit ein solcher infinitesimaler Streifen eigentlich ist oder wie viele davon eine endliche Strecke bilden, verlässt die klassische Analysis diese Anschauung und wechselt zum Grenzwertverfahren.
+
+Die Superial-Idee fragt deshalb, ob man diese Lücke schließen kann:
+
+> Kann der infinitesimale Schritt selbst als von null verschiedenes, normiertes Zahlobjekt erhalten bleiben und Teil der Rechnung werden?
+
+Daraus entsteht die zentrale Beziehung
+
+$$
+h=s^{-1},
+$$
+
+wobei $s^{-1}$ die infinitesimale Schrittweite und $s$ die zugehörige infinite Schrittanzahl ist. Mit
+
+$$
+s\cdot s^{-1}=1
+$$
+
+werden Schrittweite und Schrittanzahl direkt miteinander verknüpft.
+
+### Die größere Vision
+
+Die größere Vision ist, **Infinitesimales und Unendliches nicht nur als Grenzvorstellungen oder Randbegriffe der Rechnung zu behandeln, sondern stärker in das Rechnen selbst hineinzunehmen**.
+
+Das Unendliche soll Stellenwerte bekommen, das Infinitesimale eine Adresse.
+
+Größen wie
+
+$$
+s^{-2},\ s^{-1},\ 1,\ s,\ s^2
+$$
+
+bilden dann eine gemeinsame algebraische Skala für infinitesimale, endliche und infinite Größenordnungen.
+
+Damit sollen die Superial-Zahlen die unter der gewohnten Arithmetik, Algebra und Analysis liegende **Größen- und Erzeugungsstruktur sichtbar und berechenbar** machen.
+
+Sie richten den Blick auf das, was unter einem fertigen Zahlenwert oder einem klassischen Grenzwert verborgen bleibt:
+
+- Größenordnungen,
+- Restterme,
+- Teilbarkeiten,
+- Erzeugungsanzahlen,
+- Stellenwertschichten.
+
+### Beispiel: Ableitung
+
+Ein besonders anschaulicher Nutzen zeigt sich bei der Ableitung.
+
+Klassisch wird bei
+
+$$
+f(x)=x^2
+$$
+
+aus
+
+$$
+2x+h
+$$
+
+im Grenzübergang
+
+$$
+2x.
+$$
+
+Mit einem festen Infinitesimal $h=s^{-1}$ bleibt dagegen
+
+$$
+2x+s^{-1}
+$$
+
+als Zahl mit endlichem und infinitesimalem Anteil erhalten.
+
+Die klassische Analysis liefert den endlichen Ableitungswert; die superiale Perspektive versucht zusätzlich, die infinitesimale Feinstruktur sichtbar zu halten.
+
+### Beispiel: Integral
+
+Ähnlich beim Integral.
+
+Die Vorstellung einer Fläche als Summe infinitesimal schmaler Streifen wird nicht nur bildlich verwendet, sondern soll algebraisch ernst genommen werden.
+
+Für die Einheitsstrecke gilt
+
+$$
+1=s\cdot s^{-1}.
+$$
+
+Für rationale Teilstrecken entstehen Schrittanzahlen wie
+
+$$
+\frac{s}{2},\qquad
+\frac{s}{3},\qquad
+\frac{ms}{n}.
+$$
+
+Damit wird verständlich, warum die universelle Teilbarkeit von $s$ wichtig wird und warum schließlich die Primzahlen auftauchen.
+
+Die Primzahlen werden nicht künstlich in die Analysis hineingetragen, sondern entstehen aus der Forderung, dass rationale Skalierungen weiterhin zu ganzen Schrittanzahlen führen.
+
+### Die Primzahlen als arithmetischer Untergrund
+
+Daraus ergibt sich eine weitere Vision:
+
+Die Primzahlen könnten als fundamentale arithmetische Feinstruktur eine tiefere Rolle spielen, als es die gewöhnliche Darstellung fertiger Zahlen vermuten lässt.
+
+Bei rationalen und algebraischen Zahlen ist dieser Zusammenhang unmittelbar beziehungsweise strukturell nachvollziehbar.
+
+Bei transzendenten Größen wie $e$ und $\pi$ wäre eine weitergehende primzahlbasierte Struktur dagegen eine offene beziehungsweise innerhalb der Superial-Theorie eigens zu begründende Frage.
+
+### Didaktischer Gewinn
+
+Didaktisch ist die Theorie auch dann interessant, wenn jemand die Superial-Zahlen später nie verwendet.
+
+Die Suche zwingt dazu, vertraute Begriffe neu zu verstehen:
+
+- Was bedeutet $h\to0$ wirklich?
+- Warum gibt es in $\mathbb R$ kein positives Infinitesimal?
+- Was ist $dx$ eigentlich?
+- Was ist der Unterschied zwischen $\Delta f$ und $df$?
+- Warum erweitert Mathematik ihre Zahlbereiche?
+- Was bedeutet Normierung?
+- Warum sind Primzahlen für Teilbarkeit fundamental?
+- Was ist der Unterschied zwischen potentieller und aktualer Unendlichkeit?
+
+Damit wird Mathematik nicht nur angewendet, sondern ihre **strukturellen Entscheidungen werden hinterfragt**.
+
+Verschiedene mathematische Perspektiven können dieselbe Ausgangssituation unterschiedlich behandeln und dadurch unterschiedliche Informationen sichtbar machen.
+
+### Verhältnis zur klassischen Analysis
+
+Die Superial-Zahlen sollen die klassische Analysis nicht ersetzen.
+
+Die Leitidee ist vielmehr:
+
+> **Die klassische Analysis beschreibt hervorragend, was im Grenzübergang geschieht. Die Superial-Zahlen untersuchen, welche zusätzliche Struktur sichtbar wird, wenn der infinitesimale Schritt selbst als normiertes Zahlobjekt erhalten bleibt.**
+
+### Programmatische Vision
+
+> **Wir möchten eine Mathematik verstehen, in der „unendlich klein“ und „unendlich groß“ nicht nur Worte am Rand einer Rechnung sind, sondern Größen, deren Stellenwert man sehen und mit denen man rechnen kann.**
+
+Und noch allgemeiner:
+
+> **Die größere Vision ist, damit nicht nur anders zu rechnen, sondern einen tieferen Blick auf die mathematische Struktur von Veränderung, Maß, Zahl und Unendlichkeit zu gewinnen – und damit möglicherweise auch neue Perspektiven auf die mathematischen Grundlagen unserer Beschreibung der Welt zu eröffnen.**
+
 ---
 
 # Vortrag 1
