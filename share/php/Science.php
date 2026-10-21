@@ -3,9 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.10.2026, 08:00h
+  // #: Stand: 21.10.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  -:  "$Sc_g_equation_replace_ary":  Removed '.\langle' -> '.\!\langle' (negative thin space between a dot and a following \langle). The neighbouring rules '.\left\langle' -> '.\!\left\langle', '\rangle .' -> '\rangle\!.' and '\right\rangle .' -> '\right\rangle\!.' stay.
 
   //           20261021:  -:  "$Sc_g_equation_replace_ary":  Removed ' \widehat{=} ' -> '\;\widehat{=}\;' (single spaces around the sign). It also fired when the sign stood alone in running text ("\lm{ \widehat{=} }", e.g. "Das Zeichen ≙ bezeichnet …"), wrapping it in extra thin spaces there. The double-space rule '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;' and the "?\widehat{=}" variants stay.
 
@@ -895,7 +897,6 @@
                                     array( '*\rangle', '\right\rangle'),
                                     array( '.\left\langle', '.\!\left\langle'),
                                     array( '\right\rangle .', '\right\rangle\!.'),
-                                    array( '.\langle', '.\!\langle'),
                                     array( '\rangle .', '\rangle\!.'),
                                     array( '(  ', '(\; '),
                                     array( '  )', ' \;)'),
