@@ -122,7 +122,10 @@ export function initAreaStripsAnimation(containerId) {
     container.appendChild(el);
     return el;
   }
-  const labelBase = 'font-size:17px; font-weight:600; color:#222; white-space:nowrap; transform:translate(-50%,-50%);';
+  // #: Schriftgrößen skalieren mit der Höhe (Referenz: 516 px im Vortrag), damit der Zähler in der kleineren
+  // Einbindung (660x450) nicht in die y-Achse ragt.
+  const uiScale = renderH / 516;
+  const labelBase = 'font-size:' + (17 * uiScale).toFixed(1) + 'px; font-weight:600; color:#222; white-space:nowrap; transform:translate(-50%,-50%);';
   const axisXLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(xAxisEnd, 0.07); axisXLabel.style.left = p.left + 'px'; axisXLabel.style.top = p.top + 'px'; axisXLabel.textContent = 'x'; }
   // #: Die Eins auf der x-Achse - rechter Rand der Fläche, Strich plus Zahl (aufrecht, wie eine Zahl).
@@ -134,12 +137,12 @@ export function initAreaStripsAnimation(containerId) {
 
   // #: Kurvenbeschriftung wie bei der Sekanten-Animation: links oberhalb der Parabel, frei von den Streifen
   // (die liegen darunter).
-  const curveLabel = makeLabel(labelBase + 'color:#111; font-size:19px;');
-  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 85) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
+  const curveLabel = makeLabel(labelBase + 'color:#111; font-size:' + (19 * uiScale).toFixed(1) + 'px;');
+  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 85 * uiScale) + 'px'; curveLabel.style.top = (p.top - 40 * uiScale) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
 
   const countPanel = document.createElement('div');
   // #: Zähler links oben, links von der (nach rechts verschobenen) y-Achse.
-  countPanel.style.cssText = 'position:absolute; left:10px; top:8px; font-family:"Open Sans",Arial,sans-serif; font-size:19px; font-weight:600; line-height:1.5; color:#111; pointer-events:none;';
+  countPanel.style.cssText = 'position:absolute; left:10px; top:8px; font-family:"Open Sans",Arial,sans-serif; font-size:' + (19 * uiScale).toFixed(1) + 'px; font-weight:600; line-height:1.5; color:#111; pointer-events:none;';
   container.appendChild(countPanel);
 
   // #: u in [0, DOUBLINGS]: ganzzahliger Teil = Verdopplungsstufe, Nachkomma = Fortschritt darin.

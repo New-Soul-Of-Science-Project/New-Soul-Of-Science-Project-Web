@@ -3,9 +3,12 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 21.10.2026, 14:00h
+  // #: Stand: 21.10.2026, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  +:  "$SupNum_g_iframe_ary_FlaecheStreifen":  Neue Einbindung der Animation "Flaeche-Streifen-3D" (Fläche unter einer Parabel entsteht aus immer mehr, immer schmaleren Streifen)
+  //                          als iframe im Kapitel "Die Integration" der Superial-Zahlen, analog zu "$SupNum_g_iframe_ary_SekanteTangente" im Kapitel zur Ableitung. Das Bild für den Druck fehlt noch.
 
   //           20261021:  +:  "FrQFT_f_HTML_EndDivsNavExtrFootContainerBody":  Der Lizenz-Link im Fuß ("© 1986–2026 … CC BY-ND 4.0") und der Versions-Link ("v9.46.1") haben jetzt ein Tooltip ("To_f_hint_attr_html"): Lizenz mit dem ausgeschriebenen Namen der Lizenz und Hinweis aufs Impressum, Version mit dem Hinweis, dass das Release auf GitHub in neuem Fenster geöffnet wird. Beide hatten bisher keinen Hinweis.
 
@@ -991,6 +994,11 @@
                                                                  'die Punkte P und Q lassen sich über ein Kontrollkästchen zusätzlich einblenden.',
                                                          print_image => $Glo_PathRel_back.'../share/images/SN/Sekante-Tangente-3D-print.png',
                                                          print_image_alt => 'Sekante und Tangente am Graphen von f(x) = x², interaktive 3D-Animation');
+
+
+  $SupNum_g_iframe_ary_FlaecheStreifen           = array( source => $Glo_PathRel_back.'../share/animations/Flaeche-Streifen-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Fläche unter dem Graphen von \lm{ f(x) = x^{2} } zwischen \lm{ 0 } und \lm{ 1 }, die aus immer mehr und immer schmaleren Streifen aufgebaut wird;'."\n".
+                                                                 'der Regler stellt die Anzahl der Streifen von Hand ein.');
 
 
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',

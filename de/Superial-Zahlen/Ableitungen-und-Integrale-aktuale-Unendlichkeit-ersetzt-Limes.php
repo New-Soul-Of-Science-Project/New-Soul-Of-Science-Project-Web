@@ -644,7 +644,12 @@
                   array( 'text', array( text => array(
                     'Bei der Integration summieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \lm{ \s^{-1} } der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen zu einer größeren Fläche auf.'."\n".
-                    'Diese Streifen müssen wir dann auf prozesshafte Weise geordnet durchzählen und dabei jeweils addieren.'."\n",
+                    'Diese Streifen müssen wir dann auf prozesshafte Weise geordnet durchzählen und dabei jeweils addieren.'."\n".
+                    ''))),
+
+                  array( 'iframe', array_merge( $SupNum_g_iframe_ary_FlaecheStreifen, array( name => 'OM:SupNum:Ableitungen-Integrale:Integration:LiveAni-FlaecheStreifen'))),
+
+                  array( 'text', array( text => array(
                       'Die Größe der Streifen entspricht den aktual unendlich kleinen Differenzen der Steigungsdreiecke der Ableitung \lm{ f_{\s}\'(x) \cdot \s^{-1} } oder \lm{ .〈f_{\s}\'(x)〉 } einer'."\n".
                     'Funktion \lm{ f(x) } und hier noch einmal mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} in Stellenwertnotation gezeigt:'."\n".
                     ''))),

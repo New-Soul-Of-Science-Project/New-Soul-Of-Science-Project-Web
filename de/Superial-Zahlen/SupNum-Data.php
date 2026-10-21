@@ -124,6 +124,7 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-SZ' => array( headline_text => 'SN.AbIn.IN.8'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Summe-Zaehlen-von-ganzen-Infinitesimalen-SZ' => array( headline_text => 'SN.AbIn.IN.9'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Definition-des-Integrals' => array( headline_text => 'Definition des Integrals'/*, headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:Integration:LiveAni-FlaecheStreifen' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation' => array( headline_text => 'SN.AbIn.IN.15'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.AbIn.IN.16'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.IN.19'),
