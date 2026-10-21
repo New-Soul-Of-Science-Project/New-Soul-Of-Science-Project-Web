@@ -274,7 +274,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;  f_{\s}\'(x)  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \rsquigarw_{S}  f_{\s}\'(x)  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'dann sehen wir, dass einiges an struktureller Information verborgen bleibt, wenn wir nicht genau schauen,'."\n".
@@ -284,7 +284,7 @@
                     'Das ist jedoch weder in der klassischen Analysis der Fall noch in der folgenden superialen Auswertung erforderlich.'."\n".
                     'In der superialen Auswertung wird dagegen der dem Differenzenquotienten zugrunde liegende \lm{ x }-Zuwachs auf die normierte Schrittweite \lm{ \s^{−1} } festgelegt'."\n".
                     '– unabhängig vom jeweiligen Wert von \lm{ x }.'."\n",
-                      'Das Zeichen \lm{ \rightsquigarrow_{\mathbb{S}} } bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                      'Das Zeichen \lm{ \rsquigarw_{S} } bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
                     'keine Gleichheit mathematischer Objekte.'."\n".
                     'Der dem Differenzenquotienten zugrunde liegende Zuwachs wird dabei auf \lm{ \s^{−1} } normiert.'."\n".
                     'Konkret ergeben sich in aktualer Unendlichkeit die Realisierung von \lm{ \mathrm{d} x }, der Zuwachs \lm{ \Delta x },'."\n".
@@ -292,7 +292,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathrm{d} x  \;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;  \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \mathrm{d} x  \rsquigarw_{S}  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta x  =  1 \s^{-1}  =  ․〈1〉  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta y  =  f(x + \s^{-1}) - f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \Delta y }{ \Delta x }  =  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }'),
@@ -673,9 +673,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! f_{\s}\'(n) \cdot \s^{-1}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \widehat{=}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \!\!\! \sum_{ n \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(n) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für das superiale Integral ergibt sich so:'."\n".

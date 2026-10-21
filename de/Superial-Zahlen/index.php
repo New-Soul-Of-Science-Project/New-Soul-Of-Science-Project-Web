@@ -165,10 +165,12 @@
                   array( 'text', array( text => array(
                     'Folglich werden Integrale im superialen Raum als mathematisch exakte Summen über'."\n".
                     'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten definiert:'."\n".
+                    '\footnote{Das Zeichen \lm{ \rsquigarw_{S} } in der folgenden Formel bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                    'keine Gleichheit mathematischer Objekte: Das klassische Integral wird durch die superiale Summe realisiert.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

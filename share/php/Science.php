@@ -3,9 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.10.2026, 19:00h
+  // #: Stand: 21.10.2026, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  +:  "$Sc_g_equation_replace_ary":  Add '  \rsquigarw_{S}  ' -> '\;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;' and '\rsquigarw_{S}' -> '\rightsquigarrow_{\mathbb{S}}' (without surrounding spaces, for the sign standing alone in running text; placed after the spaced rule so that one wins). Short input form for the sign of the operational realisation in the superial analysis (differential or integral notation -> superial notation), written the same way as the other relation signs with two surrounding spaces.
 
   //           20261021:  -:  "$Sc_g_equation_replace_ary":  Removed '.\langle' -> '.\!\langle' (negative thin space between a dot and a following \langle). The neighbouring rules '.\left\langle' -> '.\!\left\langle', '\rangle .' -> '\rangle\!.' and '\right\rangle .' -> '\right\rangle\!.' stay.
 
@@ -836,6 +838,7 @@
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( '  \rsquigarw_{S}  ', '\;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;'),
                                     array( ' ?\widehat{=} ', '\;\overset{?}{\widehat{=}}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
@@ -870,6 +873,7 @@
                                     array( '?\equiv_{kan}', '\overset{?}{\equiv}_{\mathrm{kan}}'),
                                     array( '?\equiv', '\overset{?}{\equiv}'),
                                     array( '?\widehat{=}', '\overset{?}{\widehat{=}}'),
+                                    array( '\rsquigarw_{S}', '\rightsquigarrow_{\mathbb{S}}'),
                                     array( '\equiv_{kan}', '\equiv_{\mathrm{kan}}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
