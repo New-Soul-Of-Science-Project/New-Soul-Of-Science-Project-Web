@@ -18,6 +18,10 @@ const SPLIT_START = 0.4;      // Anteil der Dauer, in dem die Streifen zunächst
 const HOLD_END_SECONDS = 2.2; // Pause bei der feinsten Unterteilung, bevor die Schleife neu beginnt
 
 const VIEW = { xMin: -0.2, xMax: 1.2, yMin: -0.14, yMax: 1.18 };
+// #: Verschiebt das Koordinatenkreuz nach rechts (Kamera nach links) - links daneben bleibt Platz für
+// den Zähler, ohne dass er über die y-Achse läuft. Höchstens 0,32: darüber würde VIEW.xMax rechts
+// aus dem Kamerabild fallen.
+const CAMERA_SHIFT_X = 0.3;
 const COLORS = { axis: 0x6d6d6d, curve: 0x111111, strip: 0x2255aa };
 const ARROW_SIZE = 0.045;
 const AXIS_END_GAP = 0.02;
@@ -49,9 +53,12 @@ export function initAreaStripsAnimation(containerId) {
   const aspect = renderW / renderH;
   let camW = viewW, camH = viewH;
   if (aspect > viewW / viewH) { camW = viewH * aspect; } else { camH = viewW / aspect; }
-  const cx = (VIEW.xMin + VIEW.xMax) / 2, cy = (VIEW.yMin + VIEW.yMax) / 2;
+  const cx = (VIEW.xMin + VIEW.xMax) / 2 - CAMERA_SHIFT_X, cy = (VIEW.yMin + VIEW.yMax) / 2;
   const camera = new THREE.OrthographicCamera(cx - camW / 2, cx + camW / 2, cy + camH / 2, cy - camH / 2, 0.1, 10);
   camera.position.z = 5;
+  // #: Linker Rand des Kamerabilds - x-Achse und Parabel reichen bis dorthin, sonst endeten sie wegen der
+  // Verschiebung mitten im Bild.
+  const camLeft = cx - camW / 2;
 
   const projectVec = new THREE.Vector3();
   function worldToScreen(x, y) {
@@ -71,7 +78,7 @@ export function initAreaStripsAnimation(containerId) {
   // #: Achsen mit Pfeilspitzen, wie bei der Sekanten-Animation.
   const xAxisEnd = VIEW.xMax - ARROW_SIZE - AXIS_END_GAP;
   const yAxisEnd = VIEW.yMax - ARROW_SIZE - AXIS_END_GAP;
-  fatLine([new THREE.Vector3(VIEW.xMin, 0, 0), new THREE.Vector3(xAxisEnd, 0, 0)], COLORS.axis, 1.5, { opacity: 0.5 });
+  fatLine([new THREE.Vector3(camLeft, 0, 0), new THREE.Vector3(xAxisEnd, 0, 0)], COLORS.axis, 1.5, { opacity: 0.5 });
   fatLine([new THREE.Vector3(0, VIEW.yMin, 0), new THREE.Vector3(0, yAxisEnd, 0)], COLORS.axis, 1.5, { opacity: 0.5 });
   function makeArrowHead(color) {
     const s = new THREE.Shape();
@@ -104,7 +111,7 @@ export function initAreaStripsAnimation(containerId) {
   const curvePoints = [];
   const STEPS = 120;
   for (let i = 0; i <= STEPS; i++) {
-    const x = VIEW.xMin + (VIEW.xMax - VIEW.xMin) * (i / STEPS);
+    const x = camLeft + (VIEW.xMax - camLeft) * (i / STEPS);
     curvePoints.push(new THREE.Vector3(x, f(x), 0.01));
   }
   fatLine(curvePoints, COLORS.curve, 3);
@@ -121,10 +128,14 @@ export function initAreaStripsAnimation(containerId) {
   const axisYLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(0.07, yAxisEnd); axisYLabel.style.left = p.left + 'px'; axisYLabel.style.top = p.top + 'px'; axisYLabel.textContent = 'y'; }
 
+  // #: Kurvenbeschriftung wie bei der Sekanten-Animation: links oberhalb der Parabel, frei von den Streifen
+  // (die liegen darunter).
+  const curveLabel = makeLabel(labelBase + 'color:#111; font-size:19px;');
+  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 25) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
+
   const countPanel = document.createElement('div');
-  // #: Zähler im leeren Bereich über der Parabel, rechts neben der y-Achse (links oben läge er auf der
-  // Achse samt "y"-Beschriftung).
-  countPanel.style.cssText = 'position:absolute; left:175px; top:55px; font-family:"Open Sans",Arial,sans-serif; font-size:19px; font-weight:600; line-height:1.5; color:#111; pointer-events:none;';
+  // #: Zähler links oben, links von der (nach rechts verschobenen) y-Achse.
+  countPanel.style.cssText = 'position:absolute; left:10px; top:8px; font-family:"Open Sans",Arial,sans-serif; font-size:19px; font-weight:600; line-height:1.5; color:#111; pointer-events:none;';
   container.appendChild(countPanel);
 
   // #: u in [0, DOUBLINGS]: ganzzahliger Teil = Verdopplungsstufe, Nachkomma = Fortschritt darin.
