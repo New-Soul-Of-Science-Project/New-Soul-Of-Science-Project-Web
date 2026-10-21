@@ -125,13 +125,17 @@ export function initAreaStripsAnimation(containerId) {
   const labelBase = 'font-size:17px; font-weight:600; color:#222; white-space:nowrap; transform:translate(-50%,-50%);';
   const axisXLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(xAxisEnd, 0.07); axisXLabel.style.left = p.left + 'px'; axisXLabel.style.top = p.top + 'px'; axisXLabel.textContent = 'x'; }
+  // #: Die Eins auf der x-Achse - rechter Rand der Fläche, Strich plus Zahl (aufrecht, wie eine Zahl).
+  fatLine([new THREE.Vector3(1, -0.03, 0), new THREE.Vector3(1, 0.03, 0)], COLORS.axis, 1.5, { opacity: 0.7 });
+  const axisOneLabel = makeLabel(labelBase + 'color:#555; font-weight:400;');
+  { const p = worldToScreen(1, -0.085); axisOneLabel.style.left = p.left + 'px'; axisOneLabel.style.top = p.top + 'px'; axisOneLabel.textContent = '1'; }
   const axisYLabel = makeLabel(labelBase + 'color:#555; font-weight:400; font-style:italic;');
   { const p = worldToScreen(0.07, yAxisEnd); axisYLabel.style.left = p.left + 'px'; axisYLabel.style.top = p.top + 'px'; axisYLabel.textContent = 'y'; }
 
   // #: Kurvenbeschriftung wie bei der Sekanten-Animation: links oberhalb der Parabel, frei von den Streifen
   // (die liegen darunter).
   const curveLabel = makeLabel(labelBase + 'color:#111; font-size:19px;');
-  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 25) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
+  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 55) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
 
   const countPanel = document.createElement('div');
   // #: Zähler links oben, links von der (nach rechts verschobenen) y-Achse.

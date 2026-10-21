@@ -53,8 +53,8 @@
            wie die Sekanten-Animation auf der Folie "Der Schritt wird immer kleiner"; direkt als Modul
            importiert, damit sie nur läuft, solange die Folie sichtbar ist. -->
       <div id="area-strips-animation" style="float: right; width: 800px; height: 550px; box-sizing: border-box; border-radius: 8px; margin: 0.4em 0 0.8em 24px; position: relative; overflow: hidden;"></div>
-      <p>Eine Fläche besteht anschaulich aus immer schmaleren Streifen.</p>
-      <p>Aber wie breit ist ein solcher infinitesimaler Streifen eigentlich –
+      <p>Eine Fläche kann man sich anschaulich aus immer mehr und immer schmaleren Streifen zusammengesetzt vorstellen.</p>
+      <p>Aber wie breit ist ein solcher Streifen, wenn wir ihn als tatsächlich infinitesimal klein auffassen –
         <br>
         und wie viele davon ergeben die Einheit?</p>
       <p style="text-align: center; font-weight: 300; font-size: 1.1125em; margin-top: 2em;">
@@ -529,7 +529,7 @@
 <script type="module">
   import { initSecantAnimation } from '../../../share/animations/Sekante-Tangente-3D.js?v=6';
   initSecantAnimation('secant-animation');
-  import { initAreaStripsAnimation } from '../../../share/animations/Flaeche-Streifen-3D.js?v=2';
+  import { initAreaStripsAnimation } from '../../../share/animations/Flaeche-Streifen-3D.js?v=3';
   initAreaStripsAnimation('area-strips-animation');
 </script>
 <script>
