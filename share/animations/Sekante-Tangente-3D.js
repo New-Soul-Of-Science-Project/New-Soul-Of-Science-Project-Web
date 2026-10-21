@@ -237,13 +237,26 @@ export function initSecantAnimation(containerId) {
 
   // dynamische Labels (pro Bild aktualisiert)
   const qLabel = makeLabel(labelBase + 'color:#8a2222;');
-  const secantNameLabel = makeLabel(labelBase + 'color:#8a2222;');
+  const secantNameLabel = makeLabel(labelBase + 'color:#8a2222; transform:translate(0,-50%);');
   const hLegLabel = makeLabel('font-size:16px; font-weight:600; color:#1a4fa0; font-style:italic; transform:translate(-50%,-50%);');
   const dyLegLabel = makeLabel('font-size:16px; font-weight:600; color:#1a4fa0; transform:translate(-50%,-50%);');
   const projXLabel = makeLabel('font-size:15px; font-weight:600; color:#555; font-style:italic; transform:translate(-50%,-50%);');
   const projYLabel = makeLabel('font-size:15px; font-weight:600; color:#555; transform:translate(-50%,-50%);');
 
-  const SECANT_LABEL_X = VIEW.xMin + 0.12; // links, wo die Sekante auch bei kleinem h gut sichtbar bleibt
+  // #: "Sekante"-Label sitzt am selben x wie das statische "Tangente"-Label (X0+H_MAX), so dass beide
+  // bei h -> 0 exakt übereinander liegen, und folgt der Sekante dort nur in y-Richtung (in x
+  // bleibt es stehen - eine zusätzliche Wanderung entlang der Linie war ausdrücklich nicht
+  // gewünscht). Der Abstand zur Linie wandert dabei von Beginn an gleichmäßig von knapp oberhalb
+  // (-12,5px, auf Wunsch halbiert, damit der Text die steil ansteigende Linie am Anfang
+  // grafisch weniger überschneidet) nach unterhalb (+25px, wie "Tangente"), nicht erst am Schluss. Ganz links (VIEW.xMin+0.12) war es
+  // früher nie sichtbar: dort liegt die steile Sekante weit unterhalb des Ausschnitts.
+  // Nur der Übergang "Sekante" -> "Tangente" (Ausblenden und Überblenden von "Tangente" ins Rot
+  // der Sekante) läuft erst im letzten Teil der Annäherung (smoothstep ab LABEL_BLEND_START),
+  // damit zuvor beide Namen klar lesbar bleiben.
+  const LABEL_BLEND_START = 0.6;
+  const TANGENT_LABEL_RGB = [107, 107, 96];  // 0x6b6b60 (grau)
+  const SECANT_LABEL_RGB = [138, 34, 34];    // 0x8a2222 (rot, wie "Sekante"/Q-Label)
+  function smoothstep(a, b, x) { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); }
 
   function updateScene(h) {
     const qx = X0 + h, qy = f(qx), px = X0, py = f(X0);
@@ -311,10 +324,26 @@ export function initSecantAnimation(containerId) {
     qLabel.style.top = (qPos.top + bdy * QLABEL_OFFSET) + 'px';
     qLabel.innerHTML = '<i style="font-style:italic">Q</i> = (' + deNum(qx) + '; ' + deNum(qy) + ')';
 
-    const sy = py + slope * (SECANT_LABEL_X - X0);
-    const sPos = worldToScreen(SECANT_LABEL_X, sy);
-    secantNameLabel.style.left = sPos.left + 'px'; secantNameLabel.style.top = (sPos.top + 16) + 'px';
+    // Fortschritt der Annäherung h: H_MAX -> H_MIN als 0..1 (gleiche logarithmische Abbildung wie
+    // beim Schieberegler), daraus der Überblendungsgrad "blend" für den Sekante->Tangente-Übergang.
+    const approach = Math.min(1, Math.max(0, (LOG_MAX - Math.log(h)) / (LOG_MAX - LOG_MIN)));
+    const blend = smoothstep(LABEL_BLEND_START, 1, approach);
+    const sPos = worldToScreen(X0 + H_MAX, py + slope * H_MAX);
+    const labelOffsetY = -12.5 + 37.5 * approach; // von knapp oberhalb der Linie (-12,5px) nach unterhalb (+25px, wie "Tangente"), gleichmäßig über die ganze Annäherung
+    // Oberhalb der Linie läuft die steile Sekante (Bildschirmsteigung = slope, da die Kamera in x und y
+    // gleich skaliert) in Höhe der Textmitte um labelOffsetY/slope Pixel rechts vom Anker - sie würde
+    // den Textanfang durchkreuzen. Deshalb beginnt der Text dort um diese Strecke plus einen kleinen
+    // Rand weiter rechts; unterhalb der Linie (Offset > 0, wie bei "Tangente") ist keine Verschiebung
+    // mehr nötig, der Wert läuft stetig auf 0 aus und trifft bei h -> 0 genau auf "Tangente".
+    const LABEL_LINE_GAP = 6;
+    const labelShiftX = Math.max(0, LABEL_LINE_GAP - labelOffsetY / slope);
+    secantNameLabel.style.left = (sPos.left + labelShiftX) + 'px';
+    secantNameLabel.style.top = (sPos.top + labelOffsetY) + 'px';
+    secantNameLabel.style.opacity = String(1 - blend);
     secantNameLabel.textContent = 'Sekante';
+    tangentNameLabel.style.color = 'rgb(' + TANGENT_LABEL_RGB.map(function(c, i) {
+      return Math.round(c + (SECANT_LABEL_RGB[i] - c) * blend);
+    }).join(',') + ')';
   }
 
   // #: Schieberegler (HTML-Overlay unten in der Box) - erlaubt manuelles Einstellen von h,
