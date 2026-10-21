@@ -14,6 +14,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
+import { addPlayControl } from './Abspiel-Steuerung.js?v=1';
 
 const X0 = 1;                 // Punkt P liegt fest bei x=1 (damit P=(1,1) - runde Zahlen)
 const H_MAX = 0.5;             // #: bewusst kleiner als vorher (war 1.3) - siehe VIEW weiter unten:
@@ -423,16 +424,29 @@ export function initSecantAnimation(containerId) {
     rafId = requestAnimationFrame(animate);
   }
 
-  function start() {
+  // #: "resume" setzt den Lauf an der aktuellen Reglerstellung fort (am Ende: von vorn).
+  function start(resume) {
     if (running || manual) return;
     running = true;
-    startTime = performance.now();
+    const s = parseFloat(slider.value);
+    startTime = performance.now() - (resume && s < 1 ? s * CYCLE_SECONDS * 1000 : 0);
     rafId = requestAnimationFrame(animate);
+    playControl.refresh();
   }
   function stop() {
     running = false;
     if (rafId) cancelAnimationFrame(rafId);
+    playControl.refresh();
   }
+  // #: Symbol vor dem Regler und Klick in die Grafik schalten zwischen Lauf und Pause um.
+  const playControl = addPlayControl({
+    container, canvas: renderer.domElement, slider, accent: '#4a7a3a',
+    isRunning: () => running,
+    onToggle: () => {
+      if (running) { stop(); manual = true; }
+      else { manual = false; start(true); }
+    },
+  });
 
   // #: Nur relevant, wenn dieses Modul direkt (ohne iframe) in eine reveal.js-Folie eingebunden
   // wird - läuft dann nur, während die Folie tatsächlich sichtbar ist (reveal.js markiert sie

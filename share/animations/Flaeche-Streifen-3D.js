@@ -9,6 +9,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
+import { addPlayControl } from './Abspiel-Steuerung.js?v=1';
 
 const N_START = 4;            // Anzahl der Streifen am Anfang
 const DOUBLINGS = 6;          // 4 -> 8 -> 16 -> 32 -> 64 -> 128 -> 256
@@ -266,16 +267,29 @@ export function initAreaStripsAnimation(containerId) {
     renderer.render(scene, camera);
     rafId = requestAnimationFrame(animate);
   }
-  function start() {
+  // #: "resume" setzt den Lauf an der aktuellen Reglerstellung fort (am Ende: von vorn).
+  function start(resume) {
     if (running || manual) return;
     running = true;
-    startTime = performance.now();
+    const s = parseFloat(slider.value);
+    startTime = performance.now() - (resume && s < 1 ? s * CYCLE_MS : 0);
     rafId = requestAnimationFrame(animate);
+    playControl.refresh();
   }
   function stop() {
     running = false;
     if (rafId) cancelAnimationFrame(rafId);
+    playControl.refresh();
   }
+  // #: Symbol vor dem Regler und Klick in die Grafik schalten zwischen Lauf und Pause um.
+  const playControl = addPlayControl({
+    container, canvas: renderer.domElement, slider, accent: '#2255aa',
+    isRunning: () => running,
+    onToggle: () => {
+      if (running) { stop(); manual = true; }
+      else { manual = false; start(true); }
+    },
+  });
 
   // #: Läuft nur, solange die reveal.js-Folie sichtbar ist (Klasse "present"); beim Verlassen wird
   // die manuelle Steuerung zurückgesetzt, damit beim erneuten Betreten wieder der Autoplay läuft.
