@@ -48,6 +48,11 @@
     <section data-title="Warum diese Suche?">
       <div class="mw-header"><div class="mw-logo"><img src="../../../share/images/vortraege/logo-menschlich-wirtschaften.png" alt="Logo Menschlich Wirtschaften"></div><div class="mw-titles"><h3>Menschlich Wirtschaften eG</h3><div class="mw-sub">Akademie – Superial-Zahlen (SN) – Suche nach dem sinnvoll normierten Infinitesimal der Analysis</div></div></div>
       <h2>Warum diese Suche?</h2>
+      <!-- #: Live-Animation (Three.js, siehe "Flaeche-Streifen-3D.js") - die Fläche unter y = x^2 wird aus
+           Streifen aufgebaut, die immer schmaler und zahlreicher werden. Gleiches Muster und gleiche Box-Maße
+           wie die Sekanten-Animation auf der Folie "Der Schritt wird immer kleiner"; direkt als Modul
+           importiert, damit sie nur läuft, solange die Folie sichtbar ist. -->
+      <div id="area-strips-animation" style="float: right; width: 800px; height: 550px; box-sizing: border-box; border-radius: 8px; margin: 0.4em 0 0.8em 24px; position: relative; overflow: hidden;"></div>
       <p>Eine Fläche besteht anschaulich aus immer schmaleren Streifen.</p>
       <p>Aber wie breit ist ein solcher infinitesimaler Streifen eigentlich –
         <br>
@@ -524,6 +529,8 @@
 <script type="module">
   import { initSecantAnimation } from '../../../share/animations/Sekante-Tangente-3D.js?v=6';
   initSecantAnimation('secant-animation');
+  import { initAreaStripsAnimation } from '../../../share/animations/Flaeche-Streifen-3D.js?v=1';
+  initAreaStripsAnimation('area-strips-animation');
 </script>
 <script>
   new MutationObserver(function(mutations) {
