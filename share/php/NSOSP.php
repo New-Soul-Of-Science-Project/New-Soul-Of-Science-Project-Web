@@ -3,9 +3,13 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 21.10.2026, 19:00h
+  // #: Stand: 21.10.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  >:  "$nSOSp_g_info_wolfgangHuss" (author_image_URL, author_image_alt, author_image_height):  Neues Autorenfoto "Wolfgang_Huss-2023.jpg" (Hochformat, 180x280 statt 180x192 px) in der Seitenleiste.
+  //                          >:  "$NSOSP_g_figure_ary_WolfgangHuss":  Ebenfalls das neue Foto "Wolfgang_Huss-2023.jpg" (270x420 statt 270x288 px) für die Abbildung auf der Seite "New-Soul-Of-Science-Project".
+  //                          >:  Autorenfoto-"img" (3 Stellen in den Seitenleisten-/Menü-Varianten):  "height" kam bisher aus "author_image_width" (Quadrat), jetzt aus "author_image_height" - sonst wäre das Hochformat gestaucht worden.
 
   //           20261021:  +:  "$SupNum_g_iframe_ary_FlaecheStreifen":  Neue Einbindung der Animation "Flaeche-Streifen-3D" (Fläche unter einer Parabel entsteht aus immer mehr, immer schmaleren Streifen)
   //                          als iframe im Kapitel "Die Integration" der Superial-Zahlen, analog zu "$SupNum_g_iframe_ary_SekanteTangente" im Kapitel zur Ableitung. Das Bild für den Druck fehlt noch.
@@ -146,10 +150,10 @@
                    'Telefon: +49. 40. 38 03 77 37 \\\\'."\n".
                    'Mobil: +49. 173. 622 60 91',
     author_name => 'Wolfgang Huß',
-    author_image_URL => 'Wolfgang_Huss-2016-IMG_3683-clip.jpg',
-    author_image_alt => 'Wolfgang Huß ©2016 by Wolfgang Huß',
+    author_image_URL => 'Wolfgang_Huss-2023.jpg',
+    author_image_alt => 'Wolfgang Huß ©2023 by Wolfgang Huß',
     author_image_width => '180px',
-    author_image_height => '192px',
+    author_image_height => '280px',
   );
                            
   include $Glo_PathRel_back.'../de/Biordinalzahlen/BiOrd-Data.php';
@@ -860,7 +864,7 @@
   
   
   
-  $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2016-IMG_3683-clip', fig_alt_description => 'Wolfgang Huß ©2016 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '288px', name => 'set local!',
+  $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2023', fig_alt_description => 'Wolfgang Huß ©2023 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '420px', name => 'set local!',
                                                          text => 'Yoga-Lehrer/-Coach, Forscher, Programmierer');
   
 
@@ -3256,7 +3260,7 @@
     //echo '        </p>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '        <p align="left" style="margin-bottom: 4px;">'."\n";
-      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
+      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '        </p>'."\n";
       echo '        <p class="navigation-extra-text" align="left">'."\n";
       echo '          '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3325,7 +3329,7 @@
     echo '            <td>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3350,7 +3354,7 @@
     echo '          <li>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p class="footer-extra-text" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
