@@ -3,9 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 18.10.2026, 23:30h
+  // #: Stand: 21.10.2026, 08:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  -:  "$Sc_g_equation_replace_ary":  Removed ' \widehat{=} ' -> '\;\widehat{=}\;' (single spaces around the sign). It also fired when the sign stood alone in running text ("\lm{ \widehat{=} }", e.g. "Das Zeichen ≙ bezeichnet …"), wrapping it in extra thin spaces there. The double-space rule '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;' and the "?\widehat{=}" variants stay.
 
   //           20261018:  *:  "Sc_f_equation_latex_str_html" ('Google' case):  The legacy Google-Charts equation renderer wrote the raw LaTeX source unescaped into both "src" (as the "chl" query parameter) and "alt" - same bug class as the footnote/link-hint fixes above, just here any literal quote in the LaTeX itself (not just HTML markup) could break either attribute. Likely dead code in practice (chart.apis.google.com has been shut down for years, and almost every "equations" block in the content already sets "latex_tech => 'MathJax'" explicitly), but fixed anyway while auditing every remaining unescaped attribute: "rawurlencode()" for the query parameter, "htmlspecialchars()" for "alt".
   //           20261018:  *:  "Sc_g_footnote_last_html", "Sc_f_footnote_add_html":  Footnote-marker hints moved to the site's own tooltip too (Wolfgang asked whether any other hint still used the old mechanism, see "To_f_hint_attr_html" in Tools.php, 20261018 entry there) - the hint was written straight into "title=\"...\"" with no escaping at all, a latent version of the same bug fixed there (a literal quote in the footnote text would break the attribute the same way, though "strip_tags()" below happened to avoid the specific mjx-pending-quote case by discarding any formula markup, showing raw LaTeX source instead of a rendered formula in the native tooltip). Now routes through "To_f_hint_attr_html"; "strip_tags()" removed in "Sc_f_footnote_add_html" since its only purpose was working around the missing escaping - formulas in footnote hints now render via MathJax like everywhere else.
@@ -833,7 +835,6 @@
                                     array( '  ?\widehat{=}  ', '\;\;\;\overset{?}{\widehat{=}}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' ?\widehat{=} ', '\;\overset{?}{\widehat{=}}\;'),
-                                    array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  =:  ', '\;\;\;≕\;\;\;'),
                                     array( '  :\neq  ', '\;\;\;\raise{-.6ex}{︓}\mspace{-7.5mu}\neq\;\;\;'),
