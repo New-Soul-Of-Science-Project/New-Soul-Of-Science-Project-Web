@@ -369,30 +369,29 @@ export function initSecantAnimation(containerId) {
   container.appendChild(slider);
 
   // #: Umschalter unten links über dem Slider - blendet die Punkte P/Q samt ihrer
-  // Koordinaten-Labels aus, für den Fall, dass im Vortrag nur Kurve/Tangente/Sekante ohne die
-  // Punktbeschriftungen gezeigt werden sollen. Standardmäßig ausgeblendet.
+  // Koordinaten-Labels ein; standardmäßig sind sie ausgeblendet (Kästchen nicht angehakt).
   const pqToggleLabel = document.createElement('label');
   pqToggleLabel.style.cssText = 'position:absolute; left:10px; bottom:' + (SLIDER_AREA + 8) + 'px; display:flex; align-items:center; gap:5px; font-family:"Open Sans",Arial,sans-serif; font-size:13px; color:#333; cursor:pointer; user-select:none;';
   const pqToggleCheckbox = document.createElement('input');
   pqToggleCheckbox.type = 'checkbox';
   pqToggleLabel.appendChild(pqToggleCheckbox);
   const pqToggleText = document.createElement('span');
-  pqToggleText.innerHTML = '<i style="font-style:italic">P</i>, <i style="font-style:italic">Q</i> ausblenden';
+  pqToggleText.innerHTML = '<i style="font-style:italic">P</i>, <i style="font-style:italic">Q</i> einblenden';
   pqToggleLabel.appendChild(pqToggleText);
   container.appendChild(pqToggleLabel);
 
-  function applyPQVisibility(hidden) {
-    pointP.visible = !hidden;
-    pointQ.visible = !hidden;
-    pLabel.style.display = hidden ? 'none' : '';
-    qLabel.style.display = hidden ? 'none' : '';
+  function applyPQVisibility(shown) {
+    pointP.visible = shown;
+    pointQ.visible = shown;
+    pLabel.style.display = shown ? '' : 'none';
+    qLabel.style.display = shown ? '' : 'none';
   }
   pqToggleCheckbox.addEventListener('change', () => {
     applyPQVisibility(pqToggleCheckbox.checked);
     renderer.render(scene, camera);
   });
-  pqToggleCheckbox.checked = true;
-  applyPQVisibility(true);
+  pqToggleCheckbox.checked = false;
+  applyPQVisibility(false);
 
   let manual = false;
   slider.addEventListener('input', () => {
