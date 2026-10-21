@@ -998,7 +998,7 @@
 
   $SupNum_g_iframe_ary_FlaecheStreifen           = array( source => $Glo_PathRel_back.'../share/animations/Flaeche-Streifen-3D.html', width => '660px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt die Fläche unter dem Graphen von \lm{ f(x) = x^{2} } zwischen \lm{ 0 } und \lm{ 1 }, die aus immer mehr und immer schmaleren Streifen aufgebaut wird;'."\n".
-                                                                 'der Regler stellt die Anzahl der Streifen von Hand ein.');
+                                                                 'der Regler stellt die Anzahl der Streifen von Hand ein, und ein Kontrollkästchen blendet die Treppenkurve entlang der Streifenoberkanten ein.');
 
 
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',

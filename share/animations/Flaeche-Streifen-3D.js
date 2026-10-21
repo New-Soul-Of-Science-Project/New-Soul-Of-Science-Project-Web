@@ -22,7 +22,7 @@ const VIEW = { xMin: -0.2, xMax: 1.2, yMin: -0.14, yMax: 1.18 };
 // den Zähler, ohne dass er über die y-Achse läuft. Höchstens 0,32: darüber würde VIEW.xMax rechts
 // aus dem Kamerabild fallen.
 const CAMERA_SHIFT_X = 0.3;
-const COLORS = { axis: 0x6d6d6d, curve: 0x111111, strip: 0x2255aa };
+const COLORS = { axis: 0x6d6d6d, curve: 0x111111, strip: 0x2255aa, stair: 0xcc3311 };
 const ARROW_SIZE = 0.045;
 const AXIS_END_GAP = 0.02;
 const SLIDER_AREA = 34;       // px unten exklusiv für den Schieberegler
@@ -116,6 +116,20 @@ export function initAreaStripsAnimation(containerId) {
   }
   fatLine(curvePoints, COLORS.curve, 3);
 
+  // #: Treppenkurve - der Linienzug entlang der Oberkanten aller Streifen (ohne Lücken, volle Streifenbreite),
+  // per Kontrollkästchen zuschaltbar. Sie wird bei jeder Änderung neu aus den aktuellen Streifenhöhen aufgebaut.
+  const stairLine = fatLine([new THREE.Vector3(0, 0, 0.008), new THREE.Vector3(1, 0, 0.008)], COLORS.stair, 2.5);
+  stairLine.visible = false;
+  function updateStairs(heights, w) {
+    const pts = [];
+    for (let i = 0; i < heights.length; i++) {
+      pts.push(i * w, heights[i], 0.008, (i + 1) * w, heights[i], 0.008);
+    }
+    stairLine.geometry.dispose();
+    stairLine.geometry = new LineGeometry();
+    stairLine.geometry.setPositions(pts);
+  }
+
   function makeLabel(cssText) {
     const el = document.createElement('div');
     el.style.cssText = 'position:absolute; font-family:"Open Sans",Arial,sans-serif; pointer-events:none; ' + cssText;
@@ -153,7 +167,9 @@ export function initAreaStripsAnimation(containerId) {
     return 0.12 * (1 - Math.min(1, Math.max(0, t * 1.25)));
   }
 
+  let currentUValue = 0;
   function updateScene(u) {
+    currentUValue = u;
     const clamped = Math.min(DOUBLINGS, Math.max(0, u));
     const stage = Math.min(DOUBLINGS - 1, Math.floor(clamped));
     const t = clamped - stage;
@@ -165,6 +181,7 @@ export function initAreaStripsAnimation(containerId) {
     const gap = lerp(gapFraction(nOld), gapFraction(nNew), e);
 
     const w = 1 / nNew;
+    const heights = [];
     for (let i = 0; i < N_MAX; i++) {
       const m = strips[i];
       if (i >= nNew) { m.visible = false; continue; }
@@ -174,16 +191,30 @@ export function initAreaStripsAnimation(containerId) {
         h = lerp(parentH, f(i * w), e);
       }
       const drawW = w * (1 - gap);
+      heights.push(h);
       m.visible = h > 0.0005;
       m.scale.set(drawW, Math.max(h, 0.0001), 1);
       m.position.set((i + 0.5) * w, h / 2, 0.005);
     }
+
+    if (stairToggleCheckbox.checked) updateStairs(heights, w);
 
     const shown = (splitting && e > 0.5) ? nNew : nOld;
     countPanel.innerHTML =
       'Anzahl der Streifen: <span style="font-variant-numeric:tabular-nums;">' + shown + '</span><br>' +
       'Breite eines Streifens: <span style="font-variant-numeric:tabular-nums;">1/' + shown + '</span>';
   }
+
+  // #: Kontrollkästchen unten links über dem Schieberegler: blendet die Treppenkurve ein.
+  const stairToggleLabel = document.createElement('label');
+  stairToggleLabel.style.cssText = 'position:absolute; left:10px; bottom:' + (SLIDER_AREA + 8) + 'px; display:flex; align-items:center; gap:5px; font-family:"Open Sans",Arial,sans-serif; font-size:' + (13 * uiScale).toFixed(1) + 'px; color:#333; cursor:pointer; user-select:none;';
+  const stairToggleCheckbox = document.createElement('input');
+  stairToggleCheckbox.type = 'checkbox';
+  stairToggleLabel.appendChild(stairToggleCheckbox);
+  const stairToggleText = document.createElement('span');
+  stairToggleText.textContent = 'Treppenkurve einblenden';
+  stairToggleLabel.appendChild(stairToggleText);
+  container.appendChild(stairToggleLabel);
 
   // #: Schieberegler wie bei der Sekanten-Animation: Zugriff pausiert den Autoplay (bis die Folie
   // verlassen und wieder betreten wird).
@@ -201,6 +232,12 @@ export function initAreaStripsAnimation(containerId) {
   slider.setAttribute('aria-label', 'Anzahl der Streifen manuell einstellen');
   slider.style.cssText = 'position:absolute; left:12px; right:12px; bottom:6px; width:calc(100% - 24px); accent-color:#2255aa;';
   container.appendChild(slider);
+
+  stairToggleCheckbox.addEventListener('change', () => {
+    stairLine.visible = stairToggleCheckbox.checked;
+    updateScene(currentUValue);
+    renderer.render(scene, camera);
+  });
 
   let manual = false;
   slider.addEventListener('input', () => {
