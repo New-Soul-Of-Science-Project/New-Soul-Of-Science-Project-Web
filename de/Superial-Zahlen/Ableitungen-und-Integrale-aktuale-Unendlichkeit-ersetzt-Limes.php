@@ -669,7 +669,9 @@
                     'dass die Information über den absoluten Wert einer Funktion bei der Ableitung durch die Differenzierung verloren geht.'."\n".
                     'Dies kommt weil alle einzelnen Differenzen sich immer nur relativ auf den vorhergehenden Wert der Funktion beziehen.'."\n",
                       'Integrieren wir also in einem Intervall, dann müssen wir die Differenzen, auch genannt Differenziale,'."\n".
-                    'auf den Wert der ursprünglichen Funktion \lm{ f(a) } am Intervallbeginn \lm{ a } aufsummieren:'."\n".
+                    'auf den Wert der ursprünglichen Funktion \lm{ f(a) } am Intervallbeginn \lm{ a }'."\n".
+                    'aufsummieren:\footnote{Das Zeichen \lm{ \rsquigarw_{S} } in der folgenden Formel bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                    'keine Gleichheit mathematischer Objekte: Das klassische Integral wird durch die superiale Summe realisiert.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

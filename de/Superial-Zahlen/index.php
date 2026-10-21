@@ -164,8 +164,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Folglich werden Integrale im superialen Raum als mathematisch exakte Summen über'."\n".
-                    'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten definiert:'."\n".
-                    '\footnote{Das Zeichen \lm{ \rsquigarw_{S} } in der folgenden Formel bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                    'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten'."\n".
+                    'definiert:\footnote{Das Zeichen \lm{ \rsquigarw_{S} } in der folgenden Formel bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
                     'keine Gleichheit mathematischer Objekte: Das klassische Integral wird durch die superiale Summe realisiert.}'."\n".
                     ''))),
                   array( 'equations',
