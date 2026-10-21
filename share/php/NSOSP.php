@@ -3,9 +3,11 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 19.10.2026, 10:00h
+  // #: Stand: 21.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261021:  +:  "FrQFT_f_HTML_EndDivsNavExtrFootContainerBody":  Der Lizenz-Link im Fuß ("© 1986–2026 … CC BY-ND 4.0") und der Versions-Link ("v9.46.1") haben jetzt ein Tooltip ("To_f_hint_attr_html"): Lizenz mit dem ausgeschriebenen Namen der Lizenz und Hinweis aufs Impressum, Version mit dem Hinweis, dass das Release auf GitHub in neuem Fenster geöffnet wird. Beide hatten bisher keinen Hinweis.
 
   //           20261019:  >:  "$SupNum_g_figure_ary_SchrittweiteSchrittanzahl":  Der vorherige Versuch (10px oben/unten gleichmäßig ergänzt) verschob auch Überschrift/Untertitel nach unten, obwohl deren Abstand zum oberen Rand bereits korrekt der Referenzseite "Zwei-Konstruktionen-von-s-3D.html" entsprach ("Deren innere Abstände stimmen"). Zu klein war stattdessen nur der Abstand zwischen Untertitel und Diagrammanfang. Jetzt: Überschrift (Basislinie 44px) und Untertitel (76,6px) wieder exakt auf die ursprünglichen, von der Referenzseite abgeleiteten Positionen zurückgesetzt, stattdessen nur das Diagramm selbst (Zahlenstrahl mit allem Drum und Dran) um 20px nach unten verschoben.
   //
@@ -3361,11 +3363,11 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2026 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt"'.To_f_hint_attr_html( 'Lizenz des Inhalts: Creative Commons Namensnennung – Keine Bearbeitungen 4.0 International. Details im Impressum.').'>© 1986–2026 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.46.1-d20261004-t1600" target="_blank">v9.46.1</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.46.1-d20261004-t1600" target="_blank"'.To_f_hint_attr_html( 'Version 9.46.1 dieser Website. Öffnet das Release auf GitHub in neuem Fenster.').'>v9.46.1</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
