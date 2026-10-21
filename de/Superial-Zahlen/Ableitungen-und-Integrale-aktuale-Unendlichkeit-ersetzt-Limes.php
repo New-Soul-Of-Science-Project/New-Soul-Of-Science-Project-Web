@@ -274,7 +274,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'(x)  \widehat{=}  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \frac{ \mathrm{d} f(x) }{ \mathrm{d} x }  \;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;  f_{\s}\'(x)  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'dann sehen wir, dass einiges an struktureller Information verborgen bleibt, wenn wir nicht genau schauen,'."\n".
@@ -284,20 +284,22 @@
                     'Das ist jedoch weder in der klassischen Analysis der Fall noch in der folgenden superialen Auswertung erforderlich.'."\n".
                     'In der superialen Auswertung wird dagegen der dem Differenzenquotienten zugrunde liegende \lm{ x }-Zuwachs auf die normierte Schrittweite \lm{ \s^{−1} } festgelegt'."\n".
                     '– unabhängig vom jeweiligen Wert von \lm{ x }.'."\n",
-                      'Das Zeichen \lm{ \widehat{=} } bezeichnet hier keine Gleichheit im klassischen Differentialbegriff,'."\n".
-                    'sondern eine operationale Entsprechung für die superiale Auswertung:'."\n".
-                    'Der dem Differenzenquotienten zugrunde liegende Zuwachs wird auf \lm{ \s^{−1} } normiert.'."\n".
-                    'Konkret ergeben sich in aktualer Unendlichkeit der Zuwachs \lm{ \Delta x }, der Funktionszuwachs \lm{ \Delta y } und ihr Quotient:'."\n".
+                      'Das Zeichen \lm{ \rightsquigarrow_{\mathbb{S}} } bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                    'keine Gleichheit mathematischer Objekte.'."\n".
+                    'Der dem Differenzenquotienten zugrunde liegende Zuwachs wird dabei auf \lm{ \s^{−1} } normiert.'."\n".
+                    'Konkret ergeben sich in aktualer Unendlichkeit die Realisierung von \lm{ \mathrm{d} x }, der Zuwachs \lm{ \Delta x },'."\n".
+                    'der Funktionszuwachs \lm{ \Delta y } und ihr Quotient:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{d} x  \;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta x  =  1 \s^{-1}  =  ․〈1〉  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta y  =  f(x + \s^{-1}) - f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \Delta y }{ \Delta x }  =  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der tatsächliche Funktionszuwachs lautet allgemein \lm{ \Delta f = f(x + h) - f(x) }.'."\n".
-                    'Die klassische Differentialschreibweise \lm{ \mathrm{d} f_{x}( h ) = f\'(x) \cdot h } beschreibt davon die lineare Komponente.'."\n".
+                    'Die klassische Differentialschreibweise \lm{ \mathrm{d} f_{\!x}( h ) = f\'(x) \cdot h } beschreibt davon die lineare Komponente.'."\n".
                     'Die superiale Auswertung \lm{ f(x + \s^{−1}) - f(x) } erhält dagegen den vollständigen infinitesimalen Funktionszuwachs'."\n".
                     'einschließlich höherer infinitesimaler Terme.'."\n".
                     'Für \lm{ f(x) = x^{2} } ist das gut zu sehen: \lm{ f(x + \s^{−1}) - f(x) = 2 x \s^{−1} + \s^{−2} },'."\n".
