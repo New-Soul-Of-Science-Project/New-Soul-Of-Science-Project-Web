@@ -135,7 +135,7 @@ export function initAreaStripsAnimation(containerId) {
   // #: Kurvenbeschriftung wie bei der Sekanten-Animation: links oberhalb der Parabel, frei von den Streifen
   // (die liegen darunter).
   const curveLabel = makeLabel(labelBase + 'color:#111; font-size:19px;');
-  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 55) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
+  { const cxp = 0.45, cyp = f(cxp); const p = worldToScreen(cxp, cyp); curveLabel.style.left = (p.left - 85) + 'px'; curveLabel.style.top = (p.top - 40) + 'px'; curveLabel.innerHTML = '<i style="font-style:italic">f</i>(<i style="font-style:italic">x</i>) = <i style="font-style:italic">x</i>²'; }
 
   const countPanel = document.createElement('div');
   // #: Zähler links oben, links von der (nach rechts verschobenen) y-Achse.
