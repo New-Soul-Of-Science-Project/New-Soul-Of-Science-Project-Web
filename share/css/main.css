@@ -167,6 +167,15 @@ a:hover {
   /*color: #000000; text-decoration: underline;*/
   color: #C00000;
 }
+/* #: Seitenmenü-Einträge: das Grau kommt hier aus dem Stylesheet statt aus einem Inline-Style an jedem Link
+   (To_f_headline_make) - ein Inline-"color" schlägt jede :hover-Regel, die Einträge wurden deshalb beim
+   Überfahren nicht rot wie alle anderen Links. Beide Regeln mit ID-Selektor, die Hover-Regel steht dahinter. */
+#NavigationMenu table a {
+  color: #505050;
+}
+#NavigationMenu table a:hover {
+  color: #C00000;
+}
   .navigation-extra-text {
     color: #505050;
     line-height: 1.4em;

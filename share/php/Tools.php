@@ -8,6 +8,7 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
 
+  //           20261021:  *:  "To_f_headline_make":  The side menu links did not turn red on hover like all other links: each one got "style=\"color: #505050\"" inline (the "$text_num_color" parameter), and an inline color beats every ":hover" rule in "main.css". The parameter is empty now, the grey and the red hover colour of these links come from "main.css" ("#NavigationMenu table a" / "#NavigationMenu table a:hover") instead.
   //           20261021:  -:  "To_f_headline_make":  The links of the side menu ("#NavigationMenu") no longer carry a tooltip. Each entry's hint was just its own link text repeated ("Die Ableitung" on the link "Die Ableitung"), since "To_f_anchor_Jump_html" takes the hint from the headline the link jumps to, which is exactly what the menu entry already says; passes "$hint_is = false" now. Hints on jump links inside the running text are untouched.
 
   //           20261018:  +:  "To_f_Paragraph" ('figure' and shared figure/youtube/iframe caption cases):  The "New window" icon link in a figure caption (opens the PDF/full-size image) and an animation's caption title link (opens the embedded page standalone) now carry a tooltip saying what clicking them actually does ("Öffnet die PDF-Datei/Grafik/Animation ... in neuem Fenster.") - Wolfgang asked for this once the new tooltip was in place elsewhere; previously there was only the small "add.jpg" icon with no explanation beyond its own unobtrusive "alt=\"New window\"".
@@ -2846,7 +2847,7 @@
     
     for ($i = 0; $i < $To_g_headline_ary_dim; $i++) {
       array_push( $menuList, array(
-        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', false)
+        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', false)
       ));
     }
 
