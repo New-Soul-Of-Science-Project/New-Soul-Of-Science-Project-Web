@@ -1,9 +1,11 @@
-// #: Gemeinsame Abspiel-Steuerung der Three.js-Animationen: ein Symbol (Pause/Abspielen) links vor dem
-// Schieberegler, dazu Klick in die Grafik zum Umschalten. Das Symbol zeigt den Zustand (Pause-Symbol, solange
-// die Animation läuft; Abspielen-Symbol, wenn sie steht), ist blass und wird beim Überfahren kräftiger.
-// Der Hinweis beim Überfahren ist ein eigenes Tooltip im Stil der Seite (".to-hint-tooltip" in "main.css"), nicht das
-// native "title": die Animationen laufen im iframe ohne "main.css"/"Tools.js", daher hier nachgebildet.
-// "slider" muss bereits im "container" liegen; seine Breite wird für das Symbol verkürzt.
+// #: Gemeinsame Werkzeuge der Three.js-Animationen.
+// "whenSized": ruft den Aufbau erst auf, wenn der Container eine Größe hat (siehe dort).
+// "addPlayControl": Abspiel-Steuerung - ein Symbol (Pause/Abspielen) links vor dem Schieberegler, dazu Klick in die
+// Grafik zum Umschalten. Das Symbol zeigt den Zustand (Pause-Symbol, solange die Animation läuft; Abspielen-Symbol,
+// wenn sie steht), ist blass und wird beim Überfahren kräftiger. Der Hinweis beim Überfahren ist ein eigenes Tooltip
+// im Stil der Seite (".to-hint-tooltip" in "main.css"), nicht das native "title": die Animationen laufen im iframe
+// ohne "main.css"/"Tools.js", daher hier nachgebildet. "slider" muss bereits im "container" liegen; seine Breite
+// wird für das Symbol verkürzt.
 export const PLAY_CONTROL_WIDTH = 28; // px, die das Symbol links vor dem Regler beansprucht
 
 // #: Ruft "fn" auf, sobald der Container eine Größe hat (z. B. wenn reveal.js die Folie einblendet).

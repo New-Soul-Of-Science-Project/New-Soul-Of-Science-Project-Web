@@ -14,7 +14,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
-import { addPlayControl, whenSized } from './Abspiel-Steuerung.js?v=3';
+import { addPlayControl, whenSized } from './Animation-Werkzeuge.js?v=1';
 
 const X0 = 1;                 // Punkt P liegt fest bei x=1 (damit P=(1,1) - runde Zahlen)
 const H_MAX = 0.5;             // #: bewusst kleiner als vorher (war 1.3) - siehe VIEW weiter unten:

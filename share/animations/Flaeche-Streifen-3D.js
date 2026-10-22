@@ -9,7 +9,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
-import { addPlayControl, whenSized } from './Abspiel-Steuerung.js?v=3';
+import { addPlayControl, whenSized } from './Animation-Werkzeuge.js?v=1';
 
 const N_START = 4;            // Anzahl der Streifen am Anfang
 const DOUBLINGS = 6;          // 4 -> 8 -> 16 -> 32 -> 64 -> 128 -> 256
