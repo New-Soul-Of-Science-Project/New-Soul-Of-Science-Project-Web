@@ -24,7 +24,7 @@
                     'müssen wir erkennen, dass sich wichtige Eigenschaften der transzendenten Zahlen im Superial-Universum anders darstellen,'."\n".
                     'als sie in der klassischen Mathematik gesehen werden.'."\n".
                     ''))),
-                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Neue-Sicht-der-transzendenten-Zahlen', text =>
                       
                 'Neue Sicht der transzendenten Zahlen', subline =>
                   'Ein Paradigmenwechsel')),
