@@ -648,10 +648,13 @@
   // andere Folieninhalt. Funktioniert dadurch identisch am Bildschirm UND im Druck ("?print-pdf"),
   // anders als ein einzelnes Element direkt in ".reveal" (siehe CSS-Kommentar bei
   // ".deck-copyright") oder der zuvor gescheiterte "@page"-Versuch.
+  // #: Stand der Folien - von Hand mit jeder inhaltlichen Änderung des Vortrags anpassen (wie das Copyright-Jahr
+  // auf der Website); "document.lastModified" wäre nach einem Deployment per "git pull" das Pull-Datum.
+  var deckStand = '22.10.2026';
   pageSections.forEach(function(section) {
     var el = document.createElement('div');
     el.className = 'deck-copyright';
-    el.innerHTML = '© 1988–2026 Wolfgang Huß und Media Line Digital e.K. – <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.de" target="_blank" rel="noopener">CC BY-ND 4.0</a>';
+    el.innerHTML = '© 1988–2026 Wolfgang Huß und Media Line Digital e.K. – <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.de" target="_blank" rel="noopener">CC BY-ND 4.0</a> – Stand: ' + deckStand;
     section.appendChild(el);
   });
 
