@@ -159,7 +159,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(

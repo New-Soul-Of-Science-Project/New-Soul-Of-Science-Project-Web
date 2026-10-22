@@ -6,6 +6,17 @@
 // "slider" muss bereits im "container" liegen; seine Breite wird für das Symbol verkürzt.
 export const PLAY_CONTROL_WIDTH = 28; // px, die das Symbol links vor dem Regler beansprucht
 
+// #: Ruft "fn" auf, sobald der Container eine Größe hat (z. B. wenn reveal.js die Folie einblendet).
+export function whenSized(container, fn) {
+  const observer = new ResizeObserver(() => {
+    if (container.clientWidth > 0 && container.clientHeight > 0) {
+      observer.disconnect();
+      fn();
+    }
+  });
+  observer.observe(container);
+}
+
 export function addPlayControl({ container, canvas, slider, accent, isRunning, onToggle }) {
   const NS = 'http://www.w3.org/2000/svg';
   const button = document.createElement('button');

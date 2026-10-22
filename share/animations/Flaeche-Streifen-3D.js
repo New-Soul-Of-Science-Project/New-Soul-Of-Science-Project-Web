@@ -9,7 +9,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
-import { addPlayControl } from './Abspiel-Steuerung.js?v=2';
+import { addPlayControl, whenSized } from './Abspiel-Steuerung.js?v=3';
 
 const N_START = 4;            // Anzahl der Streifen am Anfang
 const DOUBLINGS = 6;          // 4 -> 8 -> 16 -> 32 -> 64 -> 128 -> 256
@@ -35,6 +35,14 @@ function lerp(a, b, t) { return a + (b - a) * t; }
 export function initAreaStripsAnimation(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
+
+  // #: Liegt der Container in einer von reveal.js ausgeblendeten Folie ("display: none", weiter entfernt als
+  // "viewDistance"), ist seine Größe jetzt 0 - der Aufbau würde eine leere/kaputte Szene erzeugen. Dann erst
+  // aufbauen, sobald die Folie sichtbar wird.
+  if (container.clientWidth === 0 || container.clientHeight === 0) {
+    whenSized(container, () => initAreaStripsAnimation(containerId));
+    return;
+  }
 
   const width = container.clientWidth;
   const height = container.clientHeight;

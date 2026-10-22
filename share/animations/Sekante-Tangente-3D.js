@@ -14,7 +14,7 @@ import * as THREE from 'three';
 import { Line2 } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/Line2.js';
 import { LineMaterial } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineMaterial.js';
 import { LineGeometry } from 'https://unpkg.com/three@0.186.0/examples/jsm/lines/LineGeometry.js';
-import { addPlayControl } from './Abspiel-Steuerung.js?v=2';
+import { addPlayControl, whenSized } from './Abspiel-Steuerung.js?v=3';
 
 const X0 = 1;                 // Punkt P liegt fest bei x=1 (damit P=(1,1) - runde Zahlen)
 const H_MAX = 0.5;             // #: bewusst kleiner als vorher (war 1.3) - siehe VIEW weiter unten:
@@ -63,6 +63,14 @@ function deNum(n, decimals = 2) { return n.toFixed(decimals).replace('.', ','); 
 export function initSecantAnimation(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
+
+  // #: Liegt der Container in einer von reveal.js ausgeblendeten Folie ("display: none", weiter entfernt als
+  // "viewDistance"), ist seine Größe jetzt 0 - der Aufbau würde eine leere/kaputte Szene erzeugen. Dann erst
+  // aufbauen, sobald die Folie sichtbar wird.
+  if (container.clientWidth === 0 || container.clientHeight === 0) {
+    whenSized(container, () => initSecantAnimation(containerId));
+    return;
+  }
 
   const width = container.clientWidth;
   const height = container.clientHeight;
