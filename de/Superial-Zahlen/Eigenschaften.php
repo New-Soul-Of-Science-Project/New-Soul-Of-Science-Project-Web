@@ -550,9 +550,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.G', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{S}_{\Z,\{ 0 \}}^{-1} } \!\!\! z  =  \sumx_{ z \in \s^{-1} \mathbb{Z}}  z  =  \sumx_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{S}_{\Z,\{ 0 \}}^{-1} } \!\!  z  =  \sumx_{ z \in \s^{-1} \mathbb{Z}} \!  z  =  \sumx_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-ueber-alle-superial-kleine-ganze-SuperialZahlen}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sumx_{ a \in \mathbb{A}_{\R}} a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sumx_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sumx_{ a \in \mathbb{A}_{\R}} \!  a }{ \overline{\#} \mathbb{A}_{\R} }  =  \sumx_{ z \in \mathbb{Z}}  z \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie dies zu deuten und zu verstehen ist, müssen wir noch herausfinden.'."\n".
@@ -654,7 +654,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\;\; *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
@@ -663,7 +663,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\;\;\, *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
@@ -671,7 +671,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  *〈 a *〉*〈 z *〉.  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉*〈 z^{-} *〉.  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\;\; *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  *〈 a *〉*〈 z *〉.  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉*〈 z^{-} *〉.  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
 
                     ))),
@@ -770,7 +770,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  ?=  *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1088,7 +1088,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sumx_{ i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
+                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sumx_{ i \in [ 0, n [_{\mathbb{M}} } \!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1187,13 +1187,13 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  \sumx_{ z \in \mathbb{Z}} z  =  - ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sumx_{ n \in \mathbb{N} } n  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sumx_{ z \in \mathbb{Z}} z  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!  z^{-} + \sumx_{ n \in \mathbb{N} } n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!  z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!  z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
                       array( display => 'on',  latex => '{  \overline{\#} [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \overline{\#} ] 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 ω } - 1  }'),
-                      array( display => 'on',  latex => '{  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sumx_{ a \in [ 0, x [_{\mathbb{A}_{\R}}}  \!\!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1234,8 +1234,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.V', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} } ω^{ω} \; + \! \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sumx_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω \; + \! \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  \sumx_{ z^{-} \in \mathbb{Z}^{-} }  ω^{ω} \; + \! \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!  z^{-}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \!\! \sumx_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω \; + \! \sumx_{ z^{-} \in \mathbb{Z}^{-} } \!  z^{-}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sumx_{ z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω + *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
