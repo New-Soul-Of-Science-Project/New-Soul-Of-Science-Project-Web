@@ -3,9 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.10.2026, 20:00h
+  // #: Stand: 23.10.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261023:  *:  "MathJax":  Change macro "sumx" from '\sideset{^{\hphantom{\#}}}{^{\#}}{\sum}' to '\mathop{\mspace{6mu}\sum\rlap{\raise 2mu {\mspace{-5mu}{}^{\#}}}\mspace{6mu}}\limits'. A "\sideset" box is no base character for MathJax, so a subscript was dropped by the full depth of the (display-sized) sigma - in a fraction numerator ("\frac{ \sumx_{ z \in \mathbb{Z} } z }{ ... }") "z \in \mathbb{Z}" hung far below the sigma (Wolfgang). Now the "#" is a zero-width overlay at the upper right of a plain sigma ("\rlap"), so it no longer influences the placement of the limits. The two equal empty "\mspace" boxes (6mu) inside the "\mathop" reserve room for the "#" on the right and keep the limits centered under the sigma; "\limits" forces the limits below the sigma everywhere (display style, fraction numerator and running text - a first version with 4mu/8mu and no \limits was off-center and put "z \in \mathbb{Z}" beside the sigma in the numerator, Wolfgang). "\mspace{-5mu}" moves the "#" close to the sigma and "\raise 2mu" lifts it slightly (final fine-tuning by Wolfgang, also checked above a fraction in display style). Checked on a test page in all three places. "prodx" is unchanged.
 
   //           20261021:  +:  "$Sc_g_equation_replace_ary":  Add '  \rsquigarw_{S}  ' -> '\;\;\;\rightsquigarrow_{\mathbb{S}}\;\;\;' and '\rsquigarw_{S}' -> '\rightsquigarrow_{\mathbb{S}}' (without surrounding spaces, for the sign standing alone in running text; placed after the spaced rule so that one wins). Short input form for the sign of the operational realisation in the superial analysis (differential or integral notation -> superial notation), written the same way as the other relation signs with two surrounding spaces.
 
@@ -325,7 +327,7 @@
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
     echo '            prodx: "\\\\sideset{^{\\\\hphantom{\\\\#}}}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
-    echo '            sumx: "\\\\sideset{^{\\\\hphantom{\\\\#}}}{^{\\\\#}}{\\\\sum}",'."\n"; // Summe mit #-Annotation
+    echo '            sumx: "\\\\mathop{\\\\mspace{6mu}\\\\sum\\\\rlap{\\\\raise 2mu {\\\\mspace{-5mu}{}^{\\\\#}}}\\\\mspace{6mu}}\\\\limits",'."\n"; // Summe mit #-Annotation
     echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
     echo '            qqed: "\\\\;\\\\;\\\\blacksquare"'."\n"; // "quod erat demonstrandum" with space in front for line end
     echo '          }'."\n";
