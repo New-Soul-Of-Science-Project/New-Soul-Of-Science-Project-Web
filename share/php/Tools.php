@@ -4,9 +4,18 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 02.09.2026, 23:00h
+  // #: Stand: 21.10.2026, 14:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
+
+  //           20261021:  *:  "To_f_headline_make":  The side menu links did not turn red on hover like all other links: each one got "style=\"color: #505050\"" inline (the "$text_num_color" parameter), and an inline color beats every ":hover" rule in "main.css". The parameter is empty now, the grey and the red hover colour of these links come from "main.css" ("#NavigationMenu table a" / "#NavigationMenu table a:hover") instead.
+  //           20261021:  -:  "To_f_headline_make":  The links of the side menu ("#NavigationMenu") no longer carry a tooltip. Each entry's hint was just its own link text repeated ("Die Ableitung" on the link "Die Ableitung"), since "To_f_anchor_Jump_html" takes the hint from the headline the link jumps to, which is exactly what the menu entry already says; passes "$hint_is = false" now. Hints on jump links inside the running text are untouched.
+
+  //           20261018:  +:  "To_f_Paragraph" ('figure' and shared figure/youtube/iframe caption cases):  The "New window" icon link in a figure caption (opens the PDF/full-size image) and an animation's caption title link (opens the embedded page standalone) now carry a tooltip saying what clicking them actually does ("Öffnet die PDF-Datei/Grafik/Animation ... in neuem Fenster.") - Wolfgang asked for this once the new tooltip was in place elsewhere; previously there was only the small "add.jpg" icon with no explanation beyond its own unobtrusive "alt=\"New window\"".
+  //           20261018:  >:  "To_f_headline_add_hides_begin", "To_f_headline_add_hides_end", "To_f_Paragraph" ('figure' case):  Went through EVERY remaining "title=" in this file after Wolfgang asked whether more existed beyond what had already been found - the collapsible-chapter-heading "einblenden"/"ausblenden" toggles (both the headline link and its arrow icon) and the figure "PDF-Darstellung in neuem Fenster öffnen" hint now show the new tooltip too, via "To_f_hint_attr_html(...)" instead of a plain "title=". Not a bug fix on its own (these are hardcoded static labels, nothing dynamic could ever break the attribute) - purely for a consistent look, once everything else (links, footnotes, chapter navigation) had already moved to the new tooltip. Deliberately left alone: the YouTube iframe's "title=\"YouTube video player\"" - that one is an accessibility attribute for screen readers, not a hover hint, and needs to be present immediately rather than behind a ~300ms JS-triggered tooltip.
+  //           20261018:  *:  (the "jumplist" case):  The plain "<a href=\"...\">" branch used for a cross-page/cross-site chapter link (e.g. "← Ableitungen und Integrale", linking to a different page entirely) never had any hint at all, not even the old "title" one - only the OTHER branch, for a same-page anchor jump via "To_f_anchor_Jump_html" (e.g. "→ Die Ableitung"), had one, which Wolfgang noticed as an inconsistency between otherwise-identical-looking chapter navigation links. Now adds "To_f_hint_attr_html" there too, with the same chapter/site title already used for the link text (title_chapter, falling back to title_site) - the same text "To_f_anchor_Jump_html" would show as its hint for an equivalent same-page link.
+  //           20261018:  >:  "To_f_replace_callback__latexcommand__jump", "To_f_anchor_Jump_html":  A link's hint is no longer put into "title" as rendered HTML - a headline with a formula ("\lm{...}") turned into '<span class="mjx-pending">...</span>', whose quotes ended the "title" attribute early and spilled the rest of the hint into the visible text (e.g. the link "keine zusätzlichen Informationen" to "Beispielrechnung zur Ableitung mit \lm{ \s^2 }"). New "To_f_hint_attr_html" writes the hint escaped into "data-hint" for the site's own tooltip ("To_f_hint_*" in "Tools.js", formulas typeset by MathJax, positioned with the self-hosted Floating UI in "share/js/floating-ui/"), plus a plain-text "title" as fallback without JavaScript.
+  //                      +:  "To_f_HeaderElements":  Load Floating UI ("share/js/floating-ui/") before "Tools.js".
 
   //           20260902:  +:  "To_f_Paragraph" type "bulletlist":  Add 'ListStyle' parameter ('bullet' default, 'number' for enumerated list), plus optional 'numberStart' (default 1).
   //           20260424:  >:  "To_f_replace_callback__latexcommand__jump":  Default 'target="_blank"' if URL parameter is set and no explicit target given.
@@ -285,6 +294,9 @@
     
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
+    // #: Floating UI (self-hosted, s. "share/js/floating-ui/README.md") positions the site's own tooltips ("To_f_hint_*" in "Tools.js").
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/floating-ui/floating-ui.core.umd.min.js" type="text/javascript"></script>'."\n";
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/floating-ui/floating-ui.dom.umd.min.js" type="text/javascript"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
@@ -997,7 +1009,7 @@
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
       {
         
-        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : ((0 < strlen( $value[1][0])) ? ' target="_blank"' : ''))." title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\"".((2 < count( $value[1])) ? " target=\"".(To_f_Color( $value[1][2]))."\"" : ((0 < strlen( $value[1][0])) ? ' target="_blank"' : '')).To_f_hint_attr_html( ((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")).((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
         
       }
       else
@@ -1994,7 +2006,7 @@
             // #?: Is URL?
             // #?: If site is not the active one or is URL defined?
             if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
-              echo $offset.'      <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '');
+              echo $offset.'      <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'"'.To_f_hint_attr_html( (array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])).'>'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '');
             else
               echo $offset.'      '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '', $replace_ary, $replace_preg_ary));
             echo '</p> </td> </tr>'."\n";
@@ -2101,7 +2113,10 @@
                   if ($figPDF_is || $figBigger_is)
                     echo '                  <a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'">'."\n";
                   echo '                    <! #: PDF in der Vorschau in JPEG mit optimaler Qualität und 20dpi exportieren. Bezogen auf eine max. Breite von 700px (nun 660px) bei 300,4cm = Faktor 2,33022636484687 im PDF. >'."\n";
-                  echo '                    <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).'.'.$figFileType.'" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'"'.((array_key_exists( border, $value_ary)) ? '' : ' border="0"').' alt="'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[fig_alt_description])).'"'.($figPDF_is ? ' title="PDF-Darstellung in neuem Fenster &ouml;ffnen"' : '').((array_key_exists( border, $value_ary)) ? ' style="border-width: '.($value_ary[border]).'; border-color: black;"' : '').'>'."\n";
+                  // #: "htmlspecialchars( strip_tags( ...))" on "alt" - same reasoning as the meta
+                  // "description"/"keywords" fix: "alt" is plain text, "To_f_Text_replace_html" can
+                  // return markup, unescaped would risk the same attribute-breakout bug.
+                  echo '                    <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).'.'.$figFileType.'" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'"'.((array_key_exists( border, $value_ary)) ? '' : ' border="0"').' alt="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[fig_alt_description])), ENT_QUOTES, 'UTF-8').'"'.($figPDF_is ? To_f_hint_attr_html( 'PDF-Darstellung in neuem Fenster öffnen') : '').((array_key_exists( border, $value_ary)) ? ' style="border-width: '.($value_ary[border]).'; border-color: black;"' : '').'>'."\n";
                   if ($figPDF_is || $figBigger_is)
                     echo '                  </a>'."\n";
                   echo '                </td>'."\n";
@@ -2112,7 +2127,7 @@
                   {
                     echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch im Bild verlinkt. >'."\n";
                     if ($figPDF_is || $figBigger_is)
-                      echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                      echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'"'.To_f_hint_attr_html( $figPDF_is ? 'Öffnet die PDF-Datei in neuem Fenster.' : 'Öffnet die Grafik in neuem Fenster.').' style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
                     else
                       echo '                  <i style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
@@ -2155,7 +2170,7 @@
                   if (0 < strlen($value_ary[titel]))
                   {
                     if ($type == 'iframe')
-                      echo '                <i><a target="_blank" href="'.($value_ary[source]).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                      echo '                <i><a target="_blank" href="'.($value_ary[source]).'"'.To_f_hint_attr_html( 'Öffnet die Animation als eigene Seite in neuem Fenster.').' style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
                     else
                       echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
@@ -2740,8 +2755,8 @@
       echo ';">'."\n";
       $To_g_elements_hides_ary[noContentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"'.To_f_hint_attr_html( 'einblenden').'><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden"'.To_f_hint_attr_html( 'einblenden').' align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
       // #: 'hideContent': With content.
@@ -2754,8 +2769,8 @@
       $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
       // #!: The anchor was moved into 'hideContent' "h2" to make the headline hide visible if jumped to.
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"'.To_f_hint_attr_html( 'ausblenden').'><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden"'.To_f_hint_attr_html( 'ausblenden').' align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
       echo $offset.'</table>'."\n";
@@ -2803,7 +2818,7 @@
     $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
     $local_elements_hides_ele_num++;
     echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;">  </td>'."\n";
-    echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
+    echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden"'.To_f_hint_attr_html( 'ausblenden').' align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
     echo $offset.'    </tr>'."\n";
     
     echo $offset.'  </table>'."\n";
@@ -2832,7 +2847,7 @@
     
     for ($i = 0; $i < $To_g_headline_ary_dim; $i++) {
       array_push( $menuList, array(
-        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)
+        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', false)
       ));
     }
 
@@ -2841,6 +2856,28 @@
   
   
   
+  // #: The attributes of a link's hint "$hint_html" (rendered HTML, formulas included): the escaped HTML in "data-hint"
+  //    for the site's own tooltip ("To_f_hint_*" in "Tools.js", typesets formulas with MathJax), and a plain-text
+  //    "title" as fallback without JavaScript (the script removes it, so only one tooltip shows). Escaping keeps the
+  //    hint's own quotes (e.g. in '<span class="mjx-pending">') from ending the attribute early.
+  function To_f_hint_attr_html( $hint_html)
+  {
+    if (strlen( $hint_html) == 0)
+      return '';
+
+    // #: "<br>" first turned into a real "\n" (kept through "strip_tags" below, which would
+    // otherwise just delete the tag without leaving any trace, not even whitespace - Wolfgang
+    // noticed multi-line footnote hints lost their line breaks entirely, not even collapsing to a
+    // space) - native "title" tooltips render "\n" as an actual line break, same as "<br>" does in
+    // the HTML-rendered "data-hint" tooltip. Only runs of SPACES/TABS are then collapsed
+    // afterwards, intentional "\n"s are left alone.
+    $hint_plain = trim( preg_replace( '/[ \t]+/u', ' ', strip_tags( preg_replace( '/\s*<br\s*\/?>\s*/i', "\n", $hint_html))));
+
+    return ' title="'.htmlspecialchars( $hint_plain, ENT_QUOTES, 'UTF-8', false).'" data-hint="'.htmlspecialchars( $hint_html, ENT_QUOTES, 'UTF-8').'"';
+  }
+
+
+
   function To_f_anchor_Jump_html( $text, $anchor_name, $text_num_color='', $replace_ary=null, $replace_preg_ary=null, $anchor_label='', $hint_is=true)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ, $To_g_Text_replace_ary;
@@ -2876,7 +2913,7 @@
     // return '<script> document.write( \'<a href="javascript:To_f_anchor_JumpToBy_hash( \\\'#'.$anchor_name.'\\\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a>\'); </script><noscript><a href="#'.$anchor_name.'"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.$text.'</a></noscript>';
     // #!: I removed the 'document.write()' because if it's there '\latexmath' or '\lm' are not working in the title.
     // !!!: But raw latex ist still in 'title' property. May create a selfmade hint menu.
-    return '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$anchor_name.'\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').((0 < strlen( $hint_title)) ? ' title="'.$hint_title.'" ' : '').(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text)).'</a>';
+    return '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$anchor_name.'\')"'.(($anchor_label != '') ? ' name="'.$anchor_label.'"' : '').To_f_hint_attr_html( $hint_title).(($text_num_color != '') ? ' style="color: #'.$text_num_color.';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text)).'</a>';
 
   }
   

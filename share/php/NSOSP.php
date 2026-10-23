@@ -3,10 +3,28 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 25.09.2026, 19:00h
+  // #: Stand: 21.10.2026, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+  //           20261021:  >:  "$nSOSp_g_info_wolfgangHuss" (author_image_URL, author_image_alt, author_image_height):  Neues Autorenfoto "Wolfgang_Huss-2023.jpg" (Hochformat, 180x280 statt 180x192 px) in der Seitenleiste.
+  //                          >:  "$NSOSP_g_figure_ary_WolfgangHuss":  Ebenfalls das neue Foto "Wolfgang_Huss-2023.jpg" (270x420 statt 270x288 px) für die Abbildung auf der Seite "New-Soul-Of-Science-Project".
+  //                          >:  Autorenfoto-"img" (3 Stellen in den Seitenleisten-/Menü-Varianten):  "height" kam bisher aus "author_image_width" (Quadrat), jetzt aus "author_image_height" - sonst wäre das Hochformat gestaucht worden.
+
+  //           20261021:  +:  "$SupNum_g_iframe_ary_FlaecheStreifen":  Neue Einbindung der Animation "Flaeche-Streifen-3D" (Fläche unter einer Parabel entsteht aus immer mehr, immer schmaleren Streifen)
+  //                          als iframe im Kapitel "Die Integration" der Superial-Zahlen, analog zu "$SupNum_g_iframe_ary_SekanteTangente" im Kapitel zur Ableitung. Das Bild für den Druck fehlt noch.
+
+  //           20261021:  +:  "FrQFT_f_HTML_EndDivsNavExtrFootContainerBody":  Der Lizenz-Link im Fuß ("© 1986–2026 … CC BY-ND 4.0") und der Versions-Link ("v9.46.1") haben jetzt ein Tooltip ("To_f_hint_attr_html"): Lizenz mit dem ausgeschriebenen Namen der Lizenz und Hinweis aufs Impressum, Version mit dem Hinweis, dass das Release auf GitHub in neuem Fenster geöffnet wird. Beide hatten bisher keinen Hinweis.
+
+  //           20261019:  >:  "$SupNum_g_figure_ary_SchrittweiteSchrittanzahl":  Der vorherige Versuch (10px oben/unten gleichmäßig ergänzt) verschob auch Überschrift/Untertitel nach unten, obwohl deren Abstand zum oberen Rand bereits korrekt der Referenzseite "Zwei-Konstruktionen-von-s-3D.html" entsprach ("Deren innere Abstände stimmen"). Zu klein war stattdessen nur der Abstand zwischen Untertitel und Diagrammanfang. Jetzt: Überschrift (Basislinie 44px) und Untertitel (76,6px) wieder exakt auf die ursprünglichen, von der Referenzseite abgeleiteten Positionen zurückgesetzt, stattdessen nur das Diagramm selbst (Zahlenstrahl mit allem Drum und Dran) um 20px nach unten verschoben.
+  //
+  //           20261019:  >:  "$SupNum_g_figure_ary_SchrittweiteSchrittanzahl":  Etwas mehr Freiraum oben/unten gewünscht - Wolfgang wollte dafür weder den Inhalt verkleinert noch links/rechts mehr Rand (ein erster Versuch mit beidem war "zuviel"). Jetzt einfach alle y-Koordinaten der SVG um 10px nach unten verschoben und die Höhe um 20px (10px oben, 10px unten) vergrößert - Breite, Inhalt und alle Schriftgrößen unverändert gegenüber dem vorherigen Stand.
+  //           20261019:  >:  "$SupNum_g_figure_ary_SchrittweiteSchrittanzahl":  Die Abbildungsmaße erneut korrigiert - zwei Fehlversuche zuvor: (1) Die SVG-Geometrie auf echte 600px-Anzeigebreite herunterskaliert, die Schriftgrößen der Achsenbeschriftung/"h"/"s Schritte" dabei aber unverändert bei 20 gelassen, wodurch diese relativ zur jetzt kleineren Geometrie zu groß wirkten ("jetzt hast du die groß gemacht"). (2) Versucht, Überschrift/Untertitel per Zeichen-Schätzung auf die 600px-Breite einzupassen (19px/12px) - Wolfgang verwies stattdessen auf die tatsächlichen Maße der Animationsseite "Zwei-Konstruktionen-von-s-3D.html" ("animation.css": "h1" 24px fett, "#headline"/"h2" 18px normal, "line-height: 1.4", "margin: 10px 0 5px 0" bzw. "0 0 10px 0", "#info" "padding: 10px" aus "main.css"). Jetzt: Abbildungsbreite auf die dort übliche 660px umgestellt (statt der hier willkürlich gewählten 600px), Überschrift/Untertitel auf die dortigen echten Pixelwerte (24px fett / 18px normal) samt daraus abgeleiteten Abständen (Basislinie Überschrift bei 44px, Untertitel bei 76,6px, Diagrammbeginn bei 94px) gesetzt, und die ursprüngliche Diagramm-Geometrie (Zahlenstrahl-Design, Schriftgröße 20 bei 900 Einheiten Breite) proportional auf 660px (Faktor 660/900) herunterskaliert, statt sie unverändert zu lassen - Überschrift und Diagramm behalten so beide ihr jeweils eigenes, stimmiges Größenverhältnis.
+  //
+  //           20261019:  +:  "$SupNum_g_figure_ary_SchrittweiteSchrittanzahl":  Neu - Zahlenstrahl-Diagramm, ursprünglich als statisches SVG für den Vortrag "Suche nach dem sinnvoll normierten Infinitesimal der Analysis" gezeichnet, jetzt auch als Abbildung auf der normalen Theorie-Seite eingebunden (Vorschlags-Abschnitt "Warum s^-1 die Standardnormierung ist"). Erst per Rastergrafik (PNG) gezeigt und in der Bildunterschrift aufs Original-SVG verlinkt (neues "figSVG_is" in "Tools.php") - auf Nachfrage ("warum ist im Rahmen immer noch ein PNG?") vereinfacht: Das SVG wird direkt inline angezeigt ("figFileType => 'svg'"), der Klick auf Bild/Bildunterschrift öffnet es per bereits bestehendem "figBigger_is" einfach standalone - "figSVG_is" damit wieder entfernt, ungenutzter Code. Der SVG selbst eine Überschrift samt Untertitel hinzugefügt, wie bei den Animationen üblich (fett/normal, Open Sans, schwarz - wie z. B. bei "Die Konstruktion von s"); "font-family" dafür einmal am "svg"-Wurzelelement gesetzt (vererbt sich auf alle "text"-Elemente), statt es nur an der neuen Überschrift zu setzen - vorher hatten Achsenbeschriftung/"h"/"s Schritte" dadurch sichtbar eine andere (Browser-Default-Serifen-)Schrift als die Überschrift. Für Überschrift+Untertitel sowie mehr Freiraum ringsum die viewBox vergrößert - Abbildungsmaße ("width"/"height") entsprechend auf das neue Seitenverhältnis angepasst.
+  //
+  //           20261018:  >:  WayBack-Machine-/archive.today-Links:  Zeigen jetzt ebenfalls das neue Tooltip ("To_f_hint_attr_html") statt eines reinen "title=" - rein fürs einheitliche Erscheinungsbild, dieselbe Umstellung wie bei den Einblenden/Ausblenden-Schaltern in Tools.php; Wolfgang merkte an, dass diese beiden Links als Letztes noch nach dem alten Muster aussahen.
+  //           20261018:  *:  Meta-"description"/"keywords", Druckkopf-Bild-"alt", Autorenfoto-"alt" (3 Stellen):  Schrieben bisher dynamisch gerenderten Text (kann durch "\jump{...}{...}"/"\color{...}{...}" echtes HTML enthalten) ungeschützt in ein Attribut - dieselbe Fehlerklasse, die schon bei den Link-Hinweisen und Fußnoten gefunden und behoben wurde (siehe Tools.php, 20261018-Einträge), hier nur eben in "<meta content>"/"alt" statt "title". Jetzt per "htmlspecialchars( strip_tags( ...))" (Meta/Bild-"alt" sind reiner Text, kein Markup sinnvoll) bzw. "htmlspecialchars()" (Autorenfoto, bisher komplett ungeschützt) abgesichert.
   //           20260925:  +:  "$SupNum_g_footnote_text_Disjunkt":  Primärliteratur ergänzt.
   //           20260903:  +:  "$SupNum_g_footnote_text_RiemannschesIntegral":  Neu; Primärliteratur ergänzt.
   //                      +:  "$SupNum_g_footnote_text_RiemannschenVermutung":  Zu "SupNum_g_footnote_text_RiemannscheVermutung" umbenannt.
@@ -132,10 +150,10 @@
                    'Telefon: +49. 40. 38 03 77 37 \\\\'."\n".
                    'Mobil: +49. 173. 622 60 91',
     author_name => 'Wolfgang Huß',
-    author_image_URL => 'Wolfgang_Huss-2016-IMG_3683-clip.jpg',
-    author_image_alt => 'Wolfgang Huß ©2016 by Wolfgang Huß',
+    author_image_URL => 'Wolfgang_Huss-2023.jpg',
+    author_image_alt => 'Wolfgang Huß ©2023 by Wolfgang Huß',
     author_image_width => '180px',
-    author_image_height => '192px',
+    author_image_height => '280px',
   );
                            
   include $Glo_PathRel_back.'../de/Biordinalzahlen/BiOrd-Data.php';
@@ -846,7 +864,7 @@
   
   
   
-  $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2016-IMG_3683-clip', fig_alt_description => 'Wolfgang Huß ©2016 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '288px', name => 'set local!',
+  $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2023', fig_alt_description => 'Wolfgang Huß ©2023 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '420px', name => 'set local!',
                                                          text => 'Yoga-Lehrer/-Coach, Forscher, Programmierer');
   
 
@@ -958,6 +976,9 @@
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
                                                                  'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
 
+  $SupNum_g_figure_ary_SchrittweiteSchrittanzahl = array( fig_file_name => 'SN/Schrittweite-Schrittanzahl-v01', figFileType => 'svg', figPDF_is => false, figBigger_is => true, fig_alt_description => 'Zahlenstrahl von 0 bis 1, unterteilt in s gleich große Schritte der Breite h', width => '660px', height => '235px', border => '1px', name => 'set local!',
+                                                         text => 'Die Einheit \lm{ 1 } setzt sich aus \lm{ \s } gleich großen Schritten der Breite \lm{ h } zusammen.');
+
   $SupNum_g_iframe_ary_sGeomKonstrukt3D_Wiederholung = array( source => $Glo_PathRel_back.'../share/animations/Zwei-Konstruktionen-von-s-3D.html?konstruktion=wiederholung', width => '660px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt die Konstruktion der rhythmischen Wiederholung:'."\n".
                                                                  'jede natürliche Zahl fällt der Reihe nach in Königsblau herab und wird zur neuen Bodenlinie, deren Länge sich zuvor auf den Anteil verkürzt, den die bisherige Gesamtzahl an der neuen, feineren Gesamtzahl ausmacht.'."\n".
@@ -971,6 +992,17 @@
                                                                  'Die jadegrün markierten Zwischenpunkte zeigen jeweils, welche weiteren Punkte für eine wirklich gleichmäßige Teilung an dieser Stelle noch fehlen würden.',
                                                          print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-print.png',
                                                          print_image_alt => 'Die Konstruktion der Teilung von s, interaktive 3D-Animation');
+
+  $SupNum_g_iframe_ary_SekanteTangente           = array( source => $Glo_PathRel_back.'../share/animations/Sekante-Tangente-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt den Graphen von \lm{ f(x) = x^{2} } sowie die Sekante, die bei schrumpfendem Schritt \lm{ h } sichtbar gegen die Tangente läuft;'."\n".
+                                                                 'die Punkte P und Q lassen sich über ein Kontrollkästchen zusätzlich einblenden.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Sekante-Tangente-3D-print.png',
+                                                         print_image_alt => 'Sekante und Tangente am Graphen von f(x) = x², interaktive 3D-Animation');
+
+
+  $SupNum_g_iframe_ary_FlaecheStreifen           = array( source => $Glo_PathRel_back.'../share/animations/Flaeche-Streifen-3D.html', width => '660px', height => '450px', name => 'set local',
+                                                         text => 'Die Animation zeigt die Fläche unter dem Graphen von \lm{ f(x) = x^{2} } zwischen \lm{ 0 } und \lm{ 1 }, die aus immer mehr und immer schmaleren Streifen aufgebaut wird;'."\n".
+                                                                 'der Regler stellt die Anzahl der Streifen von Hand ein, und ein Kontrollkästchen blendet die Treppenkurve entlang der Streifenoberkanten ein.');
 
 
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
@@ -3142,8 +3174,14 @@
     echo '    <title>'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][titel])).'</title>'."\n";
     echo ''."\n";
     echo '    <meta http-equiv="content-type" content="text/html; charset=UTF-8">'."\n";
-    echo '    <meta name="description"        content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][description])).'">'."\n";
-    echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
+    // #: "htmlspecialchars( strip_tags( ...))" - "description"/"keywords" are plain-text meta
+    // attributes (no HTML markup makes sense in a search-result snippet), but "To_f_Text_replace_html"
+    // can return real markup here (e.g. "\jump{...}{...}" -> "<a href=\"...\">", "\color{...}{...}"
+    // -> "<span style=\"...\">") - without stripping/escaping, a quote in that markup (or in the raw
+    // authored text) would end the "content" attribute early and spill the rest into the page head,
+    // the same bug class already found and fixed for link hints/footnotes ("To_f_hint_attr_html").
+    echo '    <meta name="description"        content="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][description])), ENT_QUOTES, 'UTF-8').'">'."\n";
+    echo '    <meta name="keywords"           content="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])), ENT_QUOTES, 'UTF-8').'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
     echo '    <meta name="DC.Date"            content="2026-10-04T15:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
@@ -3222,7 +3260,7 @@
     //echo '        </p>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '        <p align="left" style="margin-bottom: 4px;">'."\n";
-      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '        </p>'."\n";
       echo '        <p class="navigation-extra-text" align="left">'."\n";
       echo '          '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3291,7 +3329,7 @@
     echo '            <td>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3316,7 +3354,7 @@
     echo '          <li>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '              <p class="footer-extra-text" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
-      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_height]).'" border="0" alt="'.htmlspecialchars( $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt], ENT_QUOTES, 'UTF-8').'"> </a>'."\n";
       echo '              </p>'."\n";
       echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
@@ -3337,11 +3375,11 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2026 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt"'.To_f_hint_attr_html( 'Lizenz des Inhalts: Creative Commons Namensnennung – Keine Bearbeitungen 4.0 International. Details im Impressum.').'>© 1986–2026 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.46.1-d20261004-t1600" target="_blank">v9.46.1</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.46.1-d20261004-t1600" target="_blank"'.To_f_hint_attr_html( 'Version 9.46.1 dieser Website. Öffnet das Release auf GitHub in neuem Fenster.').'>v9.46.1</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3373,7 +3411,7 @@
     echo $offset.'    </colgroup>'."\n";
     echo $offset.'    <tr'.((array_key_exists( header_pict_bgcolor, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? ' bgcolor="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_bgcolor]).'"' : '').'>'."\n";
     echo $offset.'      <td align="center" valign="middle">'."\n";
-    echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
+    echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.htmlspecialchars( strip_tags( To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])), ENT_QUOTES, 'UTF-8').'"><br>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'    <tr class="header-links">'."\n";
@@ -3508,12 +3546,12 @@
     echo $offset.'        </p>'."\n";
     echo $offset.'      </li>'."\n";
     echo $offset.'      <li>'."\n";
-    echo $offset.'        <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" title="WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'        <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'"'.To_f_hint_attr_html( 'WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen').' style="display: inline-block;">'."\n";
     echo $offset.'          <img src="'.$Glo_PathRel_back.'../share/images/Archive/logo_wayback_210x77.png" width="120" height="44" border="0" alt="Logo Wayback Machine">'."\n";
     echo $offset.'        </a>'."\n";
     echo $offset.'      </li>'."\n";
     echo $offset.'      <li>'."\n";
-    echo $offset.'        <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll" title="archive.today – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'        <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll"'.To_f_hint_attr_html( 'archive.today – permanenten Link auf Webseiten-Kopie erstellen').' style="display: inline-block;">'."\n";
     echo $offset.'          <div>'."\n";
     echo $offset.'            <table style="margin: 0;">'."\n";
     echo $offset.'              <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.1em;">archive.today</div></td></tr>'."\n";

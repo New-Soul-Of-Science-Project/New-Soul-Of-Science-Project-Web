@@ -106,7 +106,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  *( \prodx_{ p \in \mathbb{P} }  p *)^{ω} \\\ \qquad\qquad\quad\;\;\,  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  :=  *( ω\overline{\#} *)_{\#}^{ω}  =  *( \prodx_{ p \in \mathbb{P} }  p *)^{ω} \\\ \qquad\qquad\qquad\;  =  ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )_{\#}^{ω}  \equiv_{kan}  ω^{ω}  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -133,7 +133,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot *( \, \rad(n) \, *)_{\#}^{ω} }{ *( \, \rad(n) \, *)_{\#}^{ω} }  }',
+                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \frac{ \sqrt[x]{n} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -159,16 +159,18 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 }  }',
+                      array( display => 'on',  latex => '{  f_{\s}\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  =  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Folglich werden Integrale im superialen Raum als mathematisch exakte Summen über'."\n".
-                    'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten definiert:'."\n".
+                    'eine aktual unendlich große Anzahl von normierten, infinitesimalen Abschnitten'."\n".
+                    'definiert:\footnote{Das Zeichen \lm{ \rsquigarw_{S} } in der folgenden Formel bezeichnet eine operationale Realisierung in der Superial-Analysis,'."\n".
+                    'keine Gleichheit mathematischer Objekte: Das klassische Integral wird durch die superiale Summe realisiert.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => ''/* 'SN.Home' */, equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n \,  \widehat{=}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,\mathrm{d}n  \rsquigarw_{S}  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  \! f_{\s}\'(n) \cdot \s^{-1}  =  \sum_{ n \in \lbrack a, x \lbrack_{\mathbb{S}_{\Z}}^{-1} }  .*〈 f_{\s}\'(n) *〉  }',
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
