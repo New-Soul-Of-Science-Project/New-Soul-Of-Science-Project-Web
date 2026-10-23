@@ -10,7 +10,7 @@
      die kursiven/fetten Schriftschnitte von Open Sans komplett, der Browser fiel auf eine
      System-Schrift ohne echtes Kursiv zurück. -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<link rel="stylesheet" href="Superial-Zahlen-Theme-v1.css?v=2">
+<link rel="stylesheet" href="Superial-Zahlen-Theme-v1.css?v=3">
 </head>
 <body>
 <div class="reveal">
@@ -534,6 +534,10 @@
   <div class="speaker-menu" id="speaker-menu">
     <button type="button" class="speaker-menu-icon" id="speaker-menu-toggle" aria-label="Menü">i</button>
     <div class="speaker-menu-list">
+      <a href="?print-pdf&amp;notes" target="_blank" class="speaker-menu-item speaker-menu-print">
+        <span class="speaker-menu-print-icon" aria-hidden="true">🖨💬</span>Drucken mit Sprechtext
+        <span class="speaker-menu-print-info">Wie „Drucken“, aber mit eingeblendetem Sprechtext auf jeder Folie (am unteren Folienrand). Danach ebenfalls <strong>Cmd/Strg + P</strong> → „Als PDF sichern“, Hintergrundgrafiken aktivieren, am besten in <strong>Chrome</strong>.</span>
+      </a>
       <a href="?print-pdf" target="_blank" class="speaker-menu-item speaker-menu-print">
         <span class="speaker-menu-print-icon" aria-hidden="true">🖨</span>Drucken
         <span class="speaker-menu-print-info">Druckansicht öffnet sich in neuem Tab, dann <strong>Cmd/Strg + P</strong> → „Als PDF sichern", Hintergrundgrafiken aktivieren. Am besten in <strong>Chrome</strong> exportieren – skaliert dort zuverlässig korrekt (in Safari/Firefox wird die Kopfzeile teils abgeschnitten).</span>
@@ -589,6 +593,10 @@
   var speakerMenuToggle = document.getElementById('speaker-menu-toggle');
   var pageList = document.getElementById('page-list');
 
+  // #: "?print-pdf&notes": Druckansicht mit Sprechtext auf JEDER Folie (Klasse "print-with-notes" am <html>, siehe
+  // CSS ".talk-notes" im Druck); ohne den Parameter "notes" bleibt der Ausdruck wie gehabt.
+  if (/[?&]notes(&|$)/.test(window.location.search)) document.documentElement.classList.add('print-with-notes');
+
   function setNotesOn(on) {
     revealEl.classList.toggle('talk-notes-on', on);
     notesBtn.textContent = on ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen';
@@ -601,8 +609,10 @@
   // #: Menü soll sich auch nach Auswahl von "Drucken" schließen, nicht nur bei "Sprechtext
   // anzeigen/ausblenden" - der Klick-außerhalb-Listener greift hier nicht, weil der Link selbst
   // Teil des Menüs ist.
-  document.querySelector('.speaker-menu-print').addEventListener('click', function() {
-    speakerMenu.classList.remove('menu-open');
+  document.querySelectorAll('.speaker-menu-print').forEach(function(item) {
+    item.addEventListener('click', function() {
+      speakerMenu.classList.remove('menu-open');
+    });
   });
 
   // #: "Seite wählen" - Liste der Folientitel wird einmalig aus den "data-title"-Attributen der

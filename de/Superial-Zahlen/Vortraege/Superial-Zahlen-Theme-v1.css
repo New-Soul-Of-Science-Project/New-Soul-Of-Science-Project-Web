@@ -195,6 +195,18 @@
     color: #fff; font-size: 18px; line-height: 1; cursor: pointer;
   }
   .talk-notes-close-btn:hover { background: rgba(255,255,255,0.3); }
+  /* #: Druckansicht mit Sprechtext ("?print-pdf&notes", Klasse "print-with-notes" am <html> per JS): die Notiz steht
+     auf JEDER Folie, nicht nur auf der gerade aktiven - im Druck gibt es keine "present"-Folie. Gleiche Darstellung
+     wie am Bildschirm, nur ohne Schließen-Knopf; "print-color-adjust: exact", damit der dunkle Hintergrund auch gedruckt wird
+     (sonst bliebe die weiße Schrift bei ausgeschalteten Hintergrundgrafiken unsichtbar). Ohne die Klasse bleibt der
+     Ausdruck unverändert. */
+  html.reveal-print.print-with-notes .slides section .talk-notes {
+    display: block; position: absolute; left: 100px; right: 100px; bottom: 60px;
+    background: rgba(0,0,0,0.85); color: #fff; font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 26px; line-height: 1.45; padding: 24px 28px; border-radius: 8px; z-index: 30;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  html.reveal-print.print-with-notes .talk-notes-close-btn { display: none; }
   .reveal { font-family: 'Open Sans', Arial, sans-serif; color: #111; font-size: 40px; }
   .reveal .slides { text-align: left; }
   .reveal .slides section { background: var(--mw-bg); padding: 226px 100px 0 100px !important; box-sizing: border-box; height: 100%; }
