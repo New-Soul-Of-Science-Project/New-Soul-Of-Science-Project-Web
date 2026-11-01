@@ -7,7 +7,7 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261101:  +:  "$SupNum_g_footnote_text_Infinitesimalzahl", "$SupNum_g_footnote_text_DiffernetialNichtInfinitesimal":  Primärliteratur ergänzt (Leibniz 1684, Cauchy 1885 Kapitel 2, Robinson 1966 bzw. Cauchy 1823), der Platzhalter "(Primärliteratur einfügen!)" entfällt. Neue Einträge "Leibniz:NovaMethodus:1684" und "Cauchy:ResumeDesLecons:1823" in der BibTeX-Datei und in "Literatur_de.php", ohne "url" (nicht geprüft).
+  //           20261101:  +:  "$SupNum_g_footnote_text_Infinitesimalzahl", "$SupNum_g_footnote_text_DiffernetialNichtInfinitesimal":  Primärliteratur ergänzt (Leibniz 1684, Cauchy 1885 Kapitel 2, Robinson 1966 bzw. Cauchy 1823), der Platzhalter "(Primärliteratur einfügen!)" entfällt. Neue Einträge "Leibniz:NovaMethodus:1684" und "Cauchy:ResumeDesLecons:1823" in der BibTeX-Datei und in "Literatur_de.php", mit "url" (Internet-Archive-Scans, Seiten aufgerufen und Titel geprüft am 01.11.2026; bei Cauchy direkter PDF-Link, 11 MB, Aufruf per HEAD-Anfrage geprüft).
 
   //           20261021:  >:  "$nSOSp_g_info_wolfgangHuss" (author_image_URL, author_image_alt, author_image_height):  Neues Autorenfoto "Wolfgang_Huss-2023.jpg" (Hochformat, 180x280 statt 180x192 px) in der Seitenleiste.
   //                          >:  "$NSOSP_g_figure_ary_WolfgangHuss":  Ebenfalls das neue Foto "Wolfgang_Huss-2023.jpg" (270x420 statt 270x288 px) für die Abbildung auf der Seite "New-Soul-Of-Science-Project".
