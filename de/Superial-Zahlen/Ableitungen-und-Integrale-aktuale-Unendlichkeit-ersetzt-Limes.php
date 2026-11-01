@@ -265,10 +265,10 @@
                     'Dabei ist eine begriffliche Unterscheidung wichtig:'."\n".
                     'Historisch wurde \lm{ \mathrm{d} x } in der Leibnizschen Infinitesimalrechnung als infinitesimale Änderung von \lm{ x } aufgefasst,'."\n".
                     'und auch in schulischer und universitärer Lehre wird es bis heute häufig informell als „unendlich kleine Änderung“ bezeichnet.'."\n".
-                    'Im heutigen Standardverständnis der klassischen reellen Analysis ist \lm{ \mathrm{d} x } jedoch keine von null verschiedene infinitesimale Zahl.'."\n".
+                    'Im heutigen Standardverständnis der klassischen reellen Analysis ist \lm{ \mathrm{d} x } jedoch keine von null verschiedene infinitesimale Zahl.\footnote{\const{SupNum_g_footnote_text_Infinitesimalzahl}}'."\n".
                     'Je nach Kontext bezeichnet \lm{ \mathrm{d} x } insbesondere das Differential der Koordinatenfunktion \lm{ x };'."\n".
-                    'in der eindimensionalen Differentialrechnung ist dies die lineare Abbildung, die einen Zuwachs \lm{ h } auf \lm{ h } abbildet.'."\n".
-                    'Es ist daher nicht mit einem festen positiven Zahlenwert zu verwechseln, der kleiner als jede positive reelle Zahl wäre.'."\n".
+                    'in der eindimensionalen Differentialrechnung ist dies die lineare Abbildung, die einen Zuwachs \lm{ h } auf \lm{ h } abbildet.\footnote{\const{SupNum_g_footnote_text_PfaffscheForm}}'."\n".
+                    'Es ist daher nicht mit einem festen positiven Zahlenwert zu verwechseln, der kleiner als jede positive reelle Zahl wäre.\footnote{\const{SupNum_g_footnote_text_DiffernetialNichtInfinitesimal}}'."\n".
                     'In der Superial-Analysis wird dagegen mit \lm{ \s^{−1} } ausdrücklich ein von null verschiedener infinitesimaler Zahlenwert als Schrittweite verwendet.'."\n",
                     'Wenn wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise vergleichen'."\n".
                     ''))),

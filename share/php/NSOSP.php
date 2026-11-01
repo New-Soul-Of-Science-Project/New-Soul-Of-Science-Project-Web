@@ -3,9 +3,11 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 21.10.2026, 22:00h
+  // #: Stand: 01.11.2026, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261101:  +:  "$SupNum_g_footnote_text_Infinitesimalzahl", "$SupNum_g_footnote_text_DiffernetialNichtInfinitesimal":  Primärliteratur ergänzt (Leibniz 1684, Cauchy 1885 Kapitel 2, Robinson 1966 bzw. Cauchy 1823), der Platzhalter "(Primärliteratur einfügen!)" entfällt. Neue Einträge "Leibniz:NovaMethodus:1684" und "Cauchy:ResumeDesLecons:1823" in der BibTeX-Datei und in "Literatur_de.php", ohne "url" (nicht geprüft).
 
   //           20261021:  >:  "$nSOSp_g_info_wolfgangHuss" (author_image_URL, author_image_alt, author_image_height):  Neues Autorenfoto "Wolfgang_Huss-2023.jpg" (Hochformat, 180x280 statt 180x192 px) in der Seitenleiste.
   //                          >:  "$NSOSP_g_figure_ary_WolfgangHuss":  Ebenfalls das neue Foto "Wolfgang_Huss-2023.jpg" (270x420 statt 270x288 px) für die Abbildung auf der Seite "New-Soul-Of-Science-Project".
@@ -462,6 +464,7 @@
   $SupNum_g_footnote_text_Differentialrechnung  = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Differentialrechnung:2024}.';
   $SupNum_g_footnote_text_Disjunkt              = 'Vgl. \cite{Cantor:BeitraegeZurBegruendungDerTransfinitenMengenlehre:1895}, § 1. Mächtigkeit oder Cardinalzahl, Gl. (2) (Vereinigungsmenge zweier Mengen \lm{ M } und \lm{ N }, die kein gemeinsames Element haben). \\\\ Internet: \\\\ Vgl. \cite{wiki:Disjunkt:2025}. \\\\ Vgl. \cite{wiki:DisjunkteVereinigung:2025}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = 'Vgl. \cite{Abel:UnmoeglichkeitAlgebraischerGleichungen:1826}. \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
+  $SupNum_g_footnote_text_DiffernetialNichtInfinitesimal = 'Vgl. \cite{Cauchy:ResumeDesLecons:1823} (das Differential \lm{ \mathrm{d} x } als beliebig gewählter endlicher Zuwachs \lm{ h }, nicht als infinitesimale Zahl). \\\\ Internet: \\\\ Vgl. \cite{wiki:Infinitesimalzahl:2026}, Infinitesimalrechnung.';
   $SupNum_g_footnote_text_ElliptischeKurve      = 'Vgl. \cite{Abel:RecherchesSurLesFonctionsElliptiques:1827} (Grundlegung der Theorie der elliptischen Funktionen). \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.';
   $SupNum_g_footnote_text_EulerscheZahl         = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788}. \\\\ Vgl. \cite{Hilbert:UeberDieTranszendenzDerZahlenEUndPi:1893} (Beweis der Transzendenz von \lm{ \e }). \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_Exponentialfunktion    = 'Vgl. \cite{Euler:EinleitungInDieAnalysisDesUnendlichen:1788} (Grundlegung der Exponentialfunktion und der Eulerschen Zahl \lm{ \e }; Limes-Definition \lm{ \e = \lim_{n \to \infty} *( 1 + \frac{1}{n} *)^{n} }). \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}.';
@@ -477,6 +480,7 @@
   $SupNum_g_footnote_text_GrosserFermatscherSatz = 'Vgl. \cite{Wiles:ModularEllipticCurvesAndFermatsLastTheorem:1995} (vollständiger Beweis des Großen Fermatschen Satzes). \\\\ Internet: \\\\ Vgl. \cite{wiki:GrosserFermatscherSatz:2025}.';
   $SupNum_g_footnote_text_HahnSeries            = 'Vgl. \cite{Hahn:UeberDieNichtarchimedischenGroessensysteme:1907}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HahnSeries:2025}.';
   $SupNum_g_footnote_text_HyperreelleZahl       = 'Vgl. \cite{Robinson:NonStandardAnalysis:1966} (Begründung der Nichtstandard-Analysis mit hyperreellen Zahlen als rigorosem Fundament für Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:HyperreelleZahl:2025}.';
+  $SupNum_g_footnote_text_Infinitesimalzahl     = 'Vgl. \cite{Leibniz:NovaMethodus:1684} (Einführung der Differentiale \lm{ \mathrm{d} x } als infinitesimale Größen). \\\\ Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885}, Kapitel 2 (unendlich kleine Größen als Veränderliche mit dem Grenzwert Null). \\\\ Vgl. \cite{Robinson:NonStandardAnalysis:1966} (von null verschiedene infinitesimale Zahlen in den hyperreellen Zahlen). \\\\ Internet: \\\\ Vgl. \cite{wiki:Infinitesimalzahl:2026}.';
   $SupNum_g_footnote_text_IntegralityAndValuationRings = 'Vgl. \cite{Krull:AllgemeineBewertungstheorie:1932}. \\\\ Internet: \\\\ Vgl. \cite{wiki:IntegralityAndValuationRings:2011}.';
   $SupNum_g_footnote_text_Integralrechnung      = 'Vgl. \cite{Cauchy:AlgebraischeAnalysis:1885} (formale Grundlage der Infinitesimalrechnung). \\\\ Internet: \\\\ Vgl. \cite{wiki:Integralrechnung:2023}.';
   $SupNum_g_footnote_text_Primorial             = 'Vgl. \cite{Dubner:FactorialAndPrimorialPrimes:1987}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
