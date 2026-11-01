@@ -184,6 +184,9 @@
     background: rgba(0,0,0,0.85); color: #fff; font-family: 'Open Sans', Arial, sans-serif;
     font-size: 26px; line-height: 1.45; padding: 24px 56px 24px 28px; border-radius: 8px; z-index: 30;
   }
+  /* #: Absatzabstand im Sprechtext - ein eigener, kleinerer Abstand statt einer Leerzeile ("<br><br>" = volle
+     Zeilenhöhe von 26px*1.45). Zur Probe nur in der aktiven Vortragsfassung verwendet; Höhe hier einstellbar. */
+  .talk-notes .notes-gap { display: block; height: 0.5em; }
   /* #: Liegt als erstes Kind IM jeweiligen ".talk-notes" (nicht zentral einmal im Dokument), damit
      die Position immer exakt an der oberen rechten Ecke DER GERADE SICHTBAREN Notiz-Box sitzt,
      unabhängig von deren variabler Höhe (die Box wächst von "bottom: 60px" aus nach oben, je nach
