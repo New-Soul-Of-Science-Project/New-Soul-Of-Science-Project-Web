@@ -631,13 +631,13 @@
         <span class="speaker-menu-print-info">Druckansicht öffnet sich in neuem Tab, dann <strong>Cmd/Strg + P</strong> → „Als PDF sichern", Hintergrundgrafiken aktivieren. Am besten in <strong>Chrome</strong> exportieren – skaliert dort zuverlässig korrekt (in Safari/Firefox wird die Kopfzeile teils abgeschnitten).</span>
       </a>
       <div class="speaker-menu-row speaker-menu-pages" id="pages-row">
-        <button type="button" class="speaker-menu-item" id="toggle-pages-btn">Seite wählen</button>
+        <button type="button" class="speaker-menu-item" id="toggle-pages-btn"><span class="speaker-menu-print-icon" aria-hidden="true">📑</span>Seite wählen</button>
         <div class="speaker-menu-page-list">
           <div class="speaker-menu-page-list-inner" id="page-list"></div>
         </div>
       </div>
       <div class="speaker-menu-row" id="notes-row">
-        <button type="button" class="speaker-menu-item" id="toggle-notes-btn">Sprechtext anzeigen</button>
+        <button type="button" class="speaker-menu-item" id="toggle-notes-btn"><span class="speaker-menu-print-icon" aria-hidden="true">💬</span><span id="toggle-notes-label">Sprechtext anzeigen</span></button>
         <span class="speaker-menu-hint" id="notes-hint">kein Sprechtext für diese Folie</span>
       </div>
     </div>
@@ -676,6 +676,7 @@
 <script>
   var revealEl = document.querySelector('.reveal');
   var notesBtn = document.getElementById('toggle-notes-btn');
+  var notesLabel = document.getElementById('toggle-notes-label'); // #: nur der Text, damit das Symbol beim Umschalten erhalten bleibt
   var notesRow = document.getElementById('notes-row');
   var speakerMenu = document.getElementById('speaker-menu');
   var speakerMenuToggle = document.getElementById('speaker-menu-toggle');
@@ -687,7 +688,7 @@
 
   function setNotesOn(on) {
     revealEl.classList.toggle('talk-notes-on', on);
-    notesBtn.textContent = on ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen';
+    notesLabel.textContent = on ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen';
   }
 
   notesBtn.addEventListener('click', function() {
@@ -794,7 +795,7 @@
     var hasNotes = !!(current && current.querySelector('.talk-notes'));
     notesRow.classList.toggle('no-notes', !hasNotes);
     notesBtn.disabled = !hasNotes;
-    notesBtn.textContent = hasNotes
+    notesLabel.textContent = hasNotes
       ? (revealEl.classList.contains('talk-notes-on') ? 'Sprechtext ausblenden' : 'Sprechtext anzeigen')
       : 'Sprechtext';
   }
