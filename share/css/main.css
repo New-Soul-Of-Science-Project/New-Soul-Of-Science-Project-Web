@@ -167,6 +167,15 @@ a:hover {
   /*color: #000000; text-decoration: underline;*/
   color: #C00000;
 }
+/* #: Seitenmenü-Einträge: das Grau kommt hier aus dem Stylesheet statt aus einem Inline-Style an jedem Link
+   (To_f_headline_make) - ein Inline-"color" schlägt jede :hover-Regel, die Einträge wurden deshalb beim
+   Überfahren nicht rot wie alle anderen Links. Beide Regeln mit ID-Selektor, die Hover-Regel steht dahinter. */
+#NavigationMenu table a {
+  color: #505050;
+}
+#NavigationMenu table a:hover {
+  color: #C00000;
+}
   .navigation-extra-text {
     color: #505050;
     line-height: 1.4em;
@@ -275,6 +284,18 @@ a:hover {
 /*    white-space: nowrap;*/
   }
 
+  /* #: Eigene Klasse NUR für Formeln (siehe "Sc_f_equation_list" in Science.php), getrennt von
+     ".content-horizontal-scrollable" oben (Grafiken/iframes). Formeln sind - anders als die dort
+     fest breiten Einbettungen - von Natur aus unterschiedlich breit und können die Spaltenbreite
+     tatsächlich überschreiten (z.B. "SN.AbIn.5"); durchgehend "overflow-x: auto" statt nur unter
+     730px, sonst verlieren breite Formeln auf normalen Desktop-Breiten ihre Scrollbarkeit und
+     laufen stattdessen sichtbar über den Rand hinaus. */
+  .content-horizontal-scrollable-equ {
+    display: block;
+    overflow-x: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
   .content-archive-list {
     display: flex;
     flex-direction: row;
@@ -766,4 +787,52 @@ td.tools-class-text-figure {
     display: inline-block;
   }
 
+}
+
+/* #: Eigenes Tooltip für Links mit Hinweistext ("To_f_hint_*" in "Tools.js", "data-hint" statt
+   "title" gesetzt von "To_f_hint_attr_html" in Tools.php - natives "title" kann keine per MathJax
+   gesetzten Formeln darstellen). Dunkel gehalten, wie die Sprechtext-Kästen im Vortrag
+   (".talk-notes" in "de/Superial-Zahlen/Vortraege/Superial-Zahlen-Theme-v1.css"), nicht wie dort
+   zunächst vorgeschlagen hell. */
+.to-hint-tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 320px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  padding: 10px 14px;
+  border-radius: 8px;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.to-hint-tooltip[data-show] {
+  display: block;
+}
+/* #: Eigenes ".to-hint-tooltip-content"-Element statt die Formel direkt im Tooltip-Wurzelelement
+   zu setzen - Floating UI misst/verschiebt das Wurzelelement selbst laufend (siehe
+   "autoUpdate"/"computePosition" in Tools.js); ein separates Inhalts-Element hält diese Logik von
+   dem per MathJax ersetzten Inhalt getrennt. */
+.to-hint-tooltip-content a {
+  color: inherit;
+  text-decoration: underline;
+}
+/* #: Pfeilspitze, von Floating UIs "arrow"-Middleware positioniert (s. Tools.js) - 45°-gedrehtes
+   Quadrat, dessen sichtbare (nicht abgeschnittene) Ecke zur jeweiligen Tooltip-Seite zeigt,
+   dieselbe Hintergrundfarbe wie das Tooltip selbst. */
+.to-hint-tooltip-arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  transform: rotate(45deg);
+}
+@media print {
+  .to-hint-tooltip {
+    display: none !important;
+  }
 }

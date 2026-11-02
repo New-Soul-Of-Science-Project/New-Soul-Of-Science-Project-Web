@@ -21,6 +21,10 @@
                     '• Lorentzkontraktion!',
                     '– Als Kontraktion von Feldern.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}',
                     '• Das Kapitel \\jumpname{OM:FrQFT:Gravitation:Laengenkontraktion-im-Gravitationsfeld} berücksichtigen!',
+                    '\bold{Aktuelle Forschung}',
+                    '• Die Längenkontraktion ist real, wie der Lampa–Terrell–Penrose-Effekt (Terrell rotation):'."\n",
+                    '– Sabine Hossenfelder: \jump[https://www.youtube.com/watch?v=2IwZB9PdJVw]{}{It Took Physicists 50 Years To Prove Einstein Right About This}.'."\n",
+                    '– Wikipedia: \jump[https://en.wikipedia.org/w/index.php?title=Terrell_rotation&oldid=1379469554]{}{Terrell rotation}.'."\n",
                     ))),
                     
                   array( 'text', array( text => array(

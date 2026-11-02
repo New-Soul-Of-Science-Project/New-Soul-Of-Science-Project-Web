@@ -2,10 +2,14 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 17.07.2026, 18:00h
+// #: Stand: 19.10.2026, 13:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20261019:  *:  "To_f_hint_init":  The actual cause of Wolfgang's stray "ausblenden" tooltip, visible right after loading a page via a jump-mark link (e.g. "...#...:Ableitung"): the browser itself moves focus to the target chapter heading (or its hide toggle) when jumping to it, and that apparently still counts as ":focus-visible" even though nobody actually navigated there by keyboard - so our existing "focus" listener dutifully showed its tooltip for a jump nobody asked to see a tooltip for. New "To_g_hint_userInteracted" flag, set once on the page's first real "mousedown"/"keydown"/"touchstart", gates the "focus" listener - a "focus" occurring before any such interaction (i.e. one caused by the browser itself, not the person) no longer shows the tooltip. Genuine Tab-key navigation still works, since its "keydown" sets the flag before the resulting "focus" event fires.
+//          20261019:  *:  "To_f_hint_show":  Separately, the virtual reference element's "getBoundingClientRect" returned a single rect captured once at show-time instead of calling "To_f_hint_rectForPoint" again on every call - "autoUpdate" re-runs "computePosition" on scroll/resize as intended, but kept getting back that same frozen, now-stale rect every time, so a shown tooltip never actually followed along while the page kept scrolling (e.g. into its restored scroll position). Fixed by calling "To_f_hint_rectForPoint" inside the "getBoundingClientRect" closure itself, so every reposition check gets the element's current, live position - worth keeping regardless of the "focus" fix above, since the same staleness could occur from ordinary scrolling while a tooltip is shown by hover or genuine keyboard focus.
+//          20261018:  +:  "To_f_hint_init", "To_f_hint_show", "To_f_hint_hide", "To_f_hint_scheduleShow", "To_f_hint_scheduleHide":  New - the site's own tooltip for every link with a hint (both "To_f_replace_callback__latexcommand__jump" and "To_f_anchor_Jump_html" in Tools.php now write the hint into "data-hint" instead of "title", see Tools.php 20261018 entry), because native "title" cannot render a hint containing a MathJax formula. Shown on hover (~300ms delay) and on keyboard focus (":focus-visible" only, not every "focus", so a mouse click on the link does not show it a second time on top of the hover), positioned with the self-hosted Floating UI ("share/js/floating-ui/", "offset"/"flip"/"shift"/"arrow" + "autoUpdate"). One shared tooltip element is reused for every trigger; its content is set from "data-hint" and retypeset per formula via "MathJax.typesetPromise" ("typesetClear" first, since the same node is reused). Hides on mouseleave (small delay so moving the mouse from the trigger onto the tooltip itself does not close it), blur, click, and Escape.
+//          20261015:  +:  "To_f_manage_beforePrint", "To_f_manage_afterPrint":  New "To_f_shrinkWideEquationsForPrint" call - equations (".content-horizontal-scrollable-equ", see "Science.php") that are wider than their column are horizontally scrollable on screen, but printing has no scrolling, so an overly wide equation would simply get clipped at the column edge instead of printing in full. Measures each such equation right before printing and, if it overflows, shrinks it with "transform: scale(...)" to exactly the available width (plus a matching "height" reduction, since "transform" alone does not free up the now-smaller layout space); reverted again in "afterPrint" so the screen view keeps its normal, scrollable size.
 //          20260717:  +:  "To_f_scroll_init":  New — toggles class "is-scrolling" on ".content" and ".content-horizontal-scrollable" while scrolling.
 //          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
 //          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
@@ -534,14 +538,44 @@ function To_f_manage_beforePrint()
 {
   // The beforeprint event is fired when the associated document is about to be printed or previewed for printing.
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeprint_event
-  
+
   console.log('Before print');
-  
+
   To_f_openAll( true);
-  
+
+  To_f_shrinkWideEquationsForPrint();
+
   // call a kind of nextTick because on the NSOSP index page the footer is not at the right position
   // I guess because the page really has a lot elements to open
   // see: https://timnew.me/blog/2014/06/23/process-nexttick-implementation-in-browser/
+}
+
+
+
+function To_f_shrinkWideEquationsForPrint()
+{
+  // #: Formeln (".content-horizontal-scrollable-equ", siehe "Sc_f_equation_list" in Science.php)
+  // sind am Bildschirm per "overflow-x: auto" horizontal scrollbar, sobald sie breiter als ihre
+  // Spalte sind. Auf Papier gibt es kein Scrollen - "overflow-x: auto" würde den überstehenden
+  // Teil einer zu breiten Formel beim Drucken daher einfach abschneiden, statt ihn sichtbar zu
+  // lassen. Stattdessen wird jede zu breite Formel hier verkleinert.
+  // ERSTER VERSUCH mit "transform: scale(...)" (+ manuell verkleinertem "height", da "transform"
+  // selbst keinen Platz freigibt) sah auf dem Bildschirm richtig aus, brach aber im Druck sichtbar:
+  // "transform" wirkt rein beim Zeichnen (Compositing), die Browser-Seitenumbruch-Berechnung für
+  // den Druck arbeitet aber mit den LAYOUT-Maßen VOR dem Transform - bei "overflow: visible" (nötig,
+  // damit der zuvor weggescrollte Teil, z.B. die Formelnummer, überhaupt sichtbar wird) wurde der
+  // überlaufende, noch unskalierte Inhalt dadurch quer über die Seitengrenze hinweg aufgeteilt
+  // gedruckt (unten auf Seite 1 nochmal in voller Originalgröße sichtbar). "zoom" (nicht
+  // standardisiert, aber von Chrome/Safari seit Jahren unterstützt - und Chrome ist für den
+  // PDF-Export dieser Seite ohnehin schon die empfohlene Wahl, siehe Druck-Hinweis im "i"-Menü der
+  // Vorträge) verändert dagegen die ECHTEN Layout-Maße (Breite UND Höhe skalieren gemeinsam mit),
+  // wird also auch von der Seitenumbruch-Berechnung korrekt berücksichtigt - zugleich sorgt es
+  // automatisch dafür, dass der Inhalt gar nicht mehr überläuft (daher auch kein "overflow"/"width"
+  // mehr nötig).
+  document.querySelectorAll('.content-horizontal-scrollable-equ').forEach(function(el) {
+    if (el.scrollWidth <= el.clientWidth) return;
+    el.style.zoom = el.clientWidth / el.scrollWidth;
+  });
 }
 
 
@@ -550,10 +584,17 @@ function To_f_manage_afterPrint()
 {
   // The afterprint event is fired after the associated document has started printing or the print preview has been closed.
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/afterprint_event
-  
+
   console.log('After print');
-  
+
   To_f_closeAll( true);
+
+  // #: Rückgängigmachen der Verkleinerung aus "To_f_shrinkWideEquationsForPrint" - sonst blieben
+  // zuvor zu breite Formeln auch am Bildschirm (nach dem Schließen des Druckdialogs) dauerhaft
+  // verkleinert statt zu ihrer normalen, scrollbaren Darstellung zurückzukehren.
+  document.querySelectorAll('.content-horizontal-scrollable-equ').forEach(function(el) {
+    el.style.zoom = '';
+  });
 }
 
 
@@ -764,6 +805,174 @@ function To_f_scroll_init()
 
 
 
+var To_g_hint_el = null;
+var To_g_hint_arrow_el = null;
+var To_g_hint_cleanup = null;
+var To_g_hint_current = null;
+var To_g_hint_showTimer = null;
+var To_g_hint_hideTimer = null;
+var To_g_hint_userInteracted = false;
+
+function To_f_hint_init()
+{
+  // #: Eigenes Tooltip statt dem nativen "title" - natives "title" kann keine per MathJax
+  // gesetzten Formeln darstellen (siehe "To_f_hint_attr_html" in Tools.php, schreibt den Hinweis
+  // zusätzlich als reinen Text nach "title", als Fallback ohne JavaScript). "title" wird hier
+  // entfernt, sonst erschienen beide Tooltips gleichzeitig übereinander.
+  var triggers = document.querySelectorAll('[data-hint]');
+  if (!triggers.length) return;
+
+  To_g_hint_el = document.createElement('div');
+  To_g_hint_el.className = 'to-hint-tooltip';
+  To_g_hint_el.id = 'to-hint-tooltip';
+  To_g_hint_el.setAttribute('role', 'tooltip');
+  var content = document.createElement('div');
+  content.className = 'to-hint-tooltip-content';
+  To_g_hint_arrow_el = document.createElement('div');
+  To_g_hint_arrow_el.className = 'to-hint-tooltip-arrow';
+  To_g_hint_el.appendChild(content);
+  To_g_hint_el.appendChild(To_g_hint_arrow_el);
+  document.body.appendChild(To_g_hint_el);
+
+  // #: Maus darf auf das Tooltip selbst übergehen, ohne dass es dabei schließt - Verlassen des
+  // Auslösers plant daher nur ein verzögertes Schließen, das ein "mouseenter" auf dem Tooltip
+  // wieder abbricht (ohne diese Verzögerung würde der direkte Übergang Auslöser -> Tooltip
+  // stets ein sofortiges "mouseleave" des Auslösers auslösen, noch bevor die Maus das separate
+  // Tooltip-Element erreicht).
+  To_g_hint_el.addEventListener('mouseenter', function() { clearTimeout(To_g_hint_hideTimer); });
+  To_g_hint_el.addEventListener('mouseleave', To_f_hint_scheduleHide);
+
+  triggers.forEach(function(el) {
+    el.removeAttribute('title');
+    el.setAttribute('aria-describedby', 'to-hint-tooltip');
+    el.addEventListener('mouseenter', function(e) { clearTimeout(To_g_hint_hideTimer); To_f_hint_scheduleShow(el, e.clientX, e.clientY); });
+    el.addEventListener('mouseleave', To_f_hint_scheduleHide);
+    // #: ":focus-visible" statt jedem "focus" - sonst zeigte schon ein normaler Mausklick auf den
+    // Link (der ihn nebenbei auch fokussiert) das Tooltip ein zweites Mal an, obwohl der Hover
+    // es bereits anzeigt. Fällt auf "immer anzeigen" zurück, falls ":focus-visible" (ältere
+    // Browser) nicht unterstützt wird - harmlos, nur weniger exakt. Zusätzlich an
+    // "To_g_hint_userInteracted" gekoppelt - ohne das zeigte ein Seitenaufruf über einen
+    // Sprungmarken-Link (z.B. "...#...:Ableitung") ein Tooltip, weil der Browser selbst beim
+    // Anspringen den Fokus auf die Kapitelüberschrift (bzw. deren Ausblenden-Umschalter) legt
+    // und das offenbar ebenfalls als ":focus-visible" zählt, obwohl niemand tatsächlich mit der
+    // Tastatur navigiert hat.
+    el.addEventListener('focus', function() { if (To_g_hint_userInteracted && (!el.matches || el.matches(':focus-visible'))) To_f_hint_show(el); });
+    el.addEventListener('blur', To_f_hint_hide);
+    el.addEventListener('click', To_f_hint_hide);
+  });
+
+  // #: Siehe Kommentar beim "focus"-Listener oben - erst NACH einer echten Nutzerinteraktion
+  // (Maus, Tastatur, Touch) darf ein "focus" ein Tooltip auslösen.
+  ['mousedown', 'keydown', 'touchstart'].forEach(function(evt) {
+    document.addEventListener(evt, function() { To_g_hint_userInteracted = true; }, { once: true, capture: true });
+  });
+
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') To_f_hint_hide(); });
+  document.addEventListener('click', function(e) {
+    if (To_g_hint_current && !To_g_hint_current.contains(e.target) && !To_g_hint_el.contains(e.target)) To_f_hint_hide();
+  });
+}
+
+function To_f_hint_scheduleShow( el, x, y)
+{
+  clearTimeout(To_g_hint_showTimer);
+  // #: ~300ms Verzögerung, damit das Tooltip nicht schon bei jedem flüchtigen Drüberfahren
+  // aufblitzt.
+  To_g_hint_showTimer = setTimeout(function() { To_f_hint_show(el, x, y); }, 300);
+}
+
+// #: Liefert das Zeilen-Fragment (ein Eintrag aus "getClientRects()") unter dem gegebenen Punkt -
+// bei einem über mehrere Zeilen umbrechenden Link (z.B. "keine zusätzlichen\nInformationen")
+// liefert "getBoundingClientRect()" sonst die Vereinigung ALLER Zeilen, und das darauf
+// aufsetzende Tooltip würde irgendwo zwischen den Zeilen statt bei der tatsächlich gehoverten
+// verankert. Ohne Koordinaten (z.B. bei Tastatur-Fokus) wird das erste Fragment verwendet.
+function To_f_hint_rectForPoint( el, x, y)
+{
+  var rects = el.getClientRects();
+  if (!rects.length) return el.getBoundingClientRect();
+  if (x == null || y == null) return rects[0];
+  for (var i = 0; i < rects.length; i++) {
+    var r = rects[i];
+    if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return r;
+  }
+  return rects[0];
+}
+
+function To_f_hint_scheduleHide()
+{
+  clearTimeout(To_g_hint_hideTimer);
+  To_g_hint_hideTimer = setTimeout(To_f_hint_hide, 100);
+}
+
+function To_f_hint_show( el, x, y)
+{
+  clearTimeout(To_g_hint_showTimer);
+  clearTimeout(To_g_hint_hideTimer);
+  if (To_g_hint_current === el) return;
+  To_g_hint_current = el;
+
+  // #: "typesetClear" vor dem erneuten "typesetPromise" nötig, da dasselbe Tooltip-Element für
+  // jeden Auslöser wiederverwendet wird - MathJax verwechselt sich sonst zwischen den jeweils
+  // vorherigen und neuen Formeln im selben Knoten.
+  var content = To_g_hint_el.querySelector('.to-hint-tooltip-content');
+  if (window.MathJax && MathJax.typesetClear) MathJax.typesetClear([To_g_hint_el]);
+  content.innerHTML = el.getAttribute('data-hint') || '';
+  To_g_hint_el.setAttribute('data-show', '');
+  if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([To_g_hint_el]);
+
+  // #: Virtuelles Referenzelement statt "el" direkt - siehe "To_f_hint_rectForPoint" oben.
+  // "contextElement" lässt Floating UI trotzdem das echte Element für Scroll-/Resize-Tracking
+  // (per "autoUpdate") beobachten. "getBoundingClientRect" ruft "To_f_hint_rectForPoint" bei
+  // JEDEM Aufruf neu auf (statt ein einmal ermitteltes Rechteck einzufrieren) - sonst bekommt
+  // "autoUpdate" bei jeder durch Scrollen ausgelösten Neuberechnung immer dasselbe alte Rechteck
+  // zurück. Fiel beim erneuten Laden einer Seite auf, bei der der Browser den Fokus auf einen
+  // "ausblenden"-Link wiederherstellte, bevor die (ebenfalls wiederhergestellte) Scroll-Position
+  // feststand - das Tooltip blieb dann an der alten Position vor dem Scrollen hängen.
+  var virtualEl = { getBoundingClientRect: function() { return To_f_hint_rectForPoint(el, x, y); }, contextElement: el };
+
+  if (To_g_hint_cleanup) To_g_hint_cleanup();
+  To_g_hint_cleanup = FloatingUIDOM.autoUpdate(virtualEl, To_g_hint_el, function() {
+    FloatingUIDOM.computePosition(virtualEl, To_g_hint_el, {
+      placement: 'top',
+      middleware: [
+        FloatingUIDOM.offset(8),
+        FloatingUIDOM.flip(),
+        FloatingUIDOM.shift({ padding: 8 }),
+        FloatingUIDOM.arrow({ element: To_g_hint_arrow_el })
+      ]
+    }).then(function(pos) {
+      // #: "computePosition" ist asynchron - bei schnellem Wechsel über mehrere Links kann die
+      // Berechnung für einen bereits verlassenen Auslöser erst NACH der des neuen fertig werden
+      // und dessen Position mit der veralteten überschreiben (Inhalt war dabei schon korrekt,
+      // nur die Position lief verzögert hinterher). Eine verspätete Antwort für einen inzwischen
+      // nicht mehr aktuellen Auslöser wird daher verworfen.
+      if (To_g_hint_current !== el) return;
+      To_g_hint_el.style.left = pos.x + 'px';
+      To_g_hint_el.style.top = pos.y + 'px';
+      var side = pos.placement.split('-')[0];
+      var staticSide = { top: 'bottom', right: 'left', bottom: 'top', left: 'right' }[side];
+      To_g_hint_arrow_el.style.left = To_g_hint_arrow_el.style.top = To_g_hint_arrow_el.style.right = To_g_hint_arrow_el.style.bottom = '';
+      if (pos.middlewareData.arrow) {
+        if (pos.middlewareData.arrow.x != null) To_g_hint_arrow_el.style.left = pos.middlewareData.arrow.x + 'px';
+        if (pos.middlewareData.arrow.y != null) To_g_hint_arrow_el.style.top = pos.middlewareData.arrow.y + 'px';
+      }
+      To_g_hint_arrow_el.style[staticSide] = '-4px';
+    });
+  });
+}
+
+function To_f_hint_hide()
+{
+  clearTimeout(To_g_hint_showTimer);
+  clearTimeout(To_g_hint_hideTimer);
+  if (!To_g_hint_current) return;
+  To_g_hint_current = null;
+  if (To_g_hint_el) To_g_hint_el.removeAttribute('data-show');
+  if (To_g_hint_cleanup) { To_g_hint_cleanup(); To_g_hint_cleanup = null; }
+}
+
+
+
 function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
 {
   // #: Open hidden areas for the hash of first site call.
@@ -789,4 +998,6 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
   To_f_setExpandIcons();
 
   To_f_scroll_init();
+
+  To_f_hint_init();
 }

@@ -67,8 +67,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈1〉^{〈x〉_{1}} \cdot 〈1〉․〈1〉  =  〈1〉․〈1〉^{〈〈x〉․\,〈1〉〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉_{1} + 1}  =  〈1〉․〈1〉^{〈〈x〉․\,〈1〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈1〉^{〈x〉_{1}} \cdot 〈1〉․〈1〉  =  〈1〉․〈1〉^{〈〈x〉․〈1〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉_{1} + 1}  =  〈1〉․〈1〉^{〈〈x〉․〈1〉〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉〈1〉.}  =  〈1〉․〈1〉^{〈x〉〈1〉․}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -158,7 +158,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  ω  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)_{\#}^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)_{\#}^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies ist in meinen Augen etwas sehr besonderes, ganz konkret und hat damit eine andere Qualität als'."\n".
@@ -174,15 +174,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈x〉}  =  〈1〉․〈1〉^{〈․\,〈x〉〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈x〉}  =  〈1〉․〈1〉^{x}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈x〉}  =  〈1〉․〈1〉^{〈․〈x〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․〈x〉}  =  〈1〉․〈1〉^{x}  }'),
                       array( display => 'on',  latex => '{  \e_{\s}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  〈1〉․〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  〈1〉․〈2〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  〈1〉․〈3〉〈3〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  〈1〉․〈4〉〈6〉〈4〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈5〉}  =  〈1〉․〈5〉〈10〉〈10〉〈5〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈6〉}  =  〈1〉․〈6〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈1〉}  =  〈1〉․〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈2〉}  =  〈1〉․〈2〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈3〉}  =  〈1〉․〈3〉〈3〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈4〉}  =  〈1〉․〈4〉〈6〉〈4〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈5〉}  =  〈1〉․〈5〉〈10〉〈10〉〈5〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈6〉}  =  〈1〉․〈6〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
@@ -194,10 +194,10 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \italic{über}-Operator\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
@@ -205,7 +205,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{․\,〈n〉}  =  \sum_{ k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot \s^{-k}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{․〈n〉}  =  \sumx_{ k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot \s^{-k}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nachfolgend beleuchten wir die Berechnung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe}{Summen der einzelnen Spalten der Binomialkoeffizienten}'."\n".
@@ -265,7 +265,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  \sum_{ m \in [k - 1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ k - 1 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  \sumx_{ m \in [k - 1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ k - 1 \end{array} *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'ausdrücken können.'."\n",
@@ -282,9 +282,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 1 \end{array} *)  =  \sum_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \sum_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  [ 0_{-1} \,+ \,]\, 1_{0} + 1_{1} + 1_{2} + 1_{3} + \cdots + 1_{n - 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  n  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 1 \end{array} *)  =  \sumx_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  [ 0_{-1} \,+ \,]\, 1_{0} + 1_{1} + 1_{2} + 1_{3} + \cdots + 1_{n - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  n  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \lm{ 0 }-Operator, dem Zähloperator, der Operialtheorie sehen.)} \\\\'."\n".
@@ -294,12 +294,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + m_{n - 1}  }'),
-                      array( display => 'on',  latex => '{  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad \cdots + (n - 1)_{n - 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n - 1)^{2} + (n - 1) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n^{2} - 2 n + 1) + (n - 1) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ n^{2} - n }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + m_{n - 1}  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad \cdots + (n - 1)_{n - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n - 1)^{2} + (n - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n^{2} - 2 n + 1) + (n - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ n^{2} - n }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
@@ -308,12 +308,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 3 \end{array} *)  =  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  [ 0_{1} \,+ \,]\, 1_{2} + 3_{3} + 6_{4} + 10_{5} + 15_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  *[ *( \frac{ 1^{2} - 1 }{ 2 } *)_{1} \,+ \,*]\, *( \frac{ 2^{2} - 2 }{ 2 } *)_{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 3^{2} - 3 }{ 2 } *)_{3} + *( \frac{ 4^{2} - 4 }{ 2 } *)_{4} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 5^{2} - 5 }{ 2 } *)_{5} + *( \frac{ 6^{2} - 6 }{ 2 } *)_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\quad\; \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( 1^{2} - 1 *)_{1} + *( 2^{2} - 2 *)_{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( 3^{2} - 3 *)_{3} + *( 4^{2} - 4 *)_{4} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( 5^{2} - 5 *)_{5} + *( 6^{2} - 6 *)_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\quad\; \cdots + *( m^{2} - m *)_{n - 1} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + m^{2}_{n - 1} *) \\\ \qquad\qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + m_{n - 1} *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + (n - 1)^{2}_{n - 1} *) \\\ \qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + (n - 1)_{n - 1} *) *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 3 \end{array} *)  =  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  [ 0_{1} \,+ \,]\, 1_{2} + 3_{3} + 6_{4} + 10_{5} + 15_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  *[ *( \frac{ 1^{2} - 1 }{ 2 } *)_{1} \,+ \,*]\, *( \frac{ 2^{2} - 2 }{ 2 } *)_{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 3^{2} - 3 }{ 2 } *)_{3} + *( \frac{ 4^{2} - 4 }{ 2 } *)_{4} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 5^{2} - 5 }{ 2 } *)_{5} + *( \frac{ 6^{2} - 6 }{ 2 } *)_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\quad\; \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( 1^{2} - 1 *)_{1} + *( 2^{2} - 2 *)_{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( 3^{2} - 3 *)_{3} + *( 4^{2} - 4 *)_{4} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( 5^{2} - 5 *)_{5} + *( 6^{2} - 6 *)_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\quad\; \cdots + *( m^{2} - m *)_{n - 1} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + m^{2}_{n - 1} *) \\\ \qquad\qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + m_{n - 1} *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + (n - 1)^{2}_{n - 1} *) \\\ \qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + (n - 1)_{n - 1} *) *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\const{SupNum_g_footnote_text_QuadratischePyramidalzahl}}'."\n".
@@ -344,11 +344,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; - *( \frac{ (n - 1)^{2} + (n - 1) }{ 2 } *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\, - *( \frac{ n^{2} - n }{ 2 } *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\, - *( \frac{ 3 n^{2} - 3 n }{ 6 } *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 2 n^{3} - 6 n^{2} + 4 n }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ n^{3} - 3 n^{2} + 2 n }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; - *( \frac{ (n - 1)^{2} + (n - 1) }{ 2 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\, - *( \frac{ n^{2} - n }{ 2 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\, - *( \frac{ 3 n^{2} - 3 n }{ 6 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 2 n^{3} - 6 n^{2} + 4 n }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ n^{3} - 3 n^{2} + 2 n }{ 6 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Berechnung weiterer Anteile erspare ich mir für den Moment.'."\n",
@@ -374,10 +374,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }',
+                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․〈\s〉}  =  〈1〉․〈1〉^{\s}  }',
                                           label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
                                           label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}', label_incr => true),
                     ))),
@@ -429,8 +429,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2}} \cdot 〈1〉․〈0〉〈1〉  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2}} \cdot 〈1〉․〈0〉〈1〉  =  〈1〉․〈0〉〈1〉^{〈〈x〉․〈0〉〈1〉〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․〈0〉〈1〉〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉.}  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉․}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -492,9 +492,9 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{\s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 *( \begin{array}{llll} \s^{2} \\\ 0 \end{array} *) *〉․\,*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 1 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 2 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\; \cdots *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 2 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 1 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} \end{array} *) *〉_{-\s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 *〉․\,*〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\;\;\, *〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉*〈 0 *〉*〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\quad\;\;\, \cdots *〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉*〈 0 *〉*〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 0 *〉*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 0 *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\;\;\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 0 *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\quad *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 0 *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad *〈 1 *〉*〈 0 *〉*〈 0 *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 *( \begin{array}{llll} \s^{2} \\\ 0 \end{array} *) *〉․*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 1 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 2 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\quad\;\, \cdots *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 2 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 1 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} \end{array} *) *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 *〉․*〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉*〈 0 *〉*〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad\, \cdots *〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉*〈 0 *〉*〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\;\, *〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 0 *〉*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 0 *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\quad\, \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 0 *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 0 *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\;\; *〈 1 *〉*〈 0 *〉*〈 0 *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können hier erkennen, dass wir, trotz der feineren Auflösung der Ableitung keinen Informationsgewinn erzielen.'."\n".
@@ -510,7 +510,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sumx_{ k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad\qquad\;\;\; *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\, *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
                                           label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -591,10 +591,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  =  f(a) + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(k) *〉  }',
+                      array( display => 'on',  latex => '{  f(x)  =  f(a) + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f_{\s}\'(k) *〉  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                       array( display => 'on',  latex => '{  f_{\s}\'(x)  =  f(x)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f(k) *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 f(k) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Aus dem \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{vorigen Kapitel} kennen wir \lm{ \e_{\s}^{x} } als diejenige Funktion,'."\n".
@@ -605,13 +605,13 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => false),
                       array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
                       array( display => 'on',  latex => '{  f(x)  =  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  \\\ \qquad\qquad\qquad\quad\;\; *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  \\\ \qquad\qquad\qquad\quad\;\; *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sumx_{ k \in [a, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Schauen wir uns dies doch einmal im ganz weit rein gezoomten Exponenten an.'."\n".
@@ -623,8 +623,8 @@
                       array( display => 'on',  latex => '{  x \in \mathbb{A}_{\R}  \to  *〈 x *〉․*〈 n *〉 \in \mathbb{S}_{\N}^{-1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n  \in  \mathbb{N}  }'),
                       array( display => 'on',  latex => '{  a = 0  \land  x = 0  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 *〈 n *〉_{-1} *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 0 *〉_{1}} + \!\!\! \sum_{ k \in [0, *〈 n *〉_{-1}[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{n}  =  1 + \!\!\! \sum_{ k \in [0, n[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 *〈 n *〉_{-1} *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 0 *〉_{1}} + \!\!\! \sumx_{ k \in [0, *〈 n *〉_{-1}[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{n}  =  1 + \!\!\! \sumx_{ k \in [0, n[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun können wir Beispielhaft überprüfen, ob dies stimmt.'."\n".
@@ -633,22 +633,22 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  0  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{0}  =  1 + \!\!\! \sum_{ k \in [0, 0[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{0}  =  1 + \!\!\! \sumx_{ k \in [0, 0[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  1  =  1 + 0  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  1  =  1  }'),
                       array( display => 'on',  latex => '{  n  =  1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{1}  =  1 + \!\!\! \sum_{ k \in [0, 1[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{1}  =  1 + \!\!\! \sumx_{ k \in [0, 1[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  n  =  2  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{2}  =  1 + \!\!\! \sum_{ k \in [0, 2[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{2}  =  1 + \!\!\! \sumx_{ k \in [0, 2[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉 *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉 \, + \, .*〈 1 *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  n  =  3  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 + \!\!\! \sum_{ k \in [0, 3[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 + \!\!\! \sumx_{ k \in [0, 3[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \\\ \qquad\qquad\qquad\qquad\quad\;\;\, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 2} *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  1 \, + \, .*〈 2 *〉*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 2 *〉*〈 1 *〉 *〉  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉 \, + \, . *〈 1 *〉*〈 2 *〉*〈 1 *〉  }'),
@@ -671,7 +671,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{x}  ?=  1  +  \!\!\! \sum_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  ?=  1  +  \!\!\! \sumx_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir setzen \lm{ k = j \cdot \s^{-1} }, sodass \lm{ j } von \lm{ 0 } bis \lm{ x \cdot \s - 1 } läuft.'."\n".
@@ -680,20 +680,20 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \frac{ \e_{\s}^{k} }{ \s }  =  \frac{1}{\s}  \sum_{ j = 0 }^{ x \cdot \s \,-\, 1 }  *( 1 + \s^{-1} *)^{j}  \;\;.  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \frac{ \e_{\s}^{k} }{ \s }  =  \frac{1}{\s}  \sumx_{ j = 0 }^{ x \cdot \s \,-\, 1 }  *( 1 + \s^{-1} *)^{j}  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Die geometrische Reihe werten wir durch Teleskopsumme\footnote{\const{SupNum_g_footnote_text_Teleskopsumme}} aus:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r \cdot \sum_{ j = 0 }^{ n-1 }  r^{j}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \sum_{ j = 0 }^{ n-1 }  r^{j+1}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \sum_{ j = 1 }^{ n }  r^{j}  -  \sum_{ j = 0 }^{ n-1 }  r^{j}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  *( r^{1} + r^{2} + \cdots + r^{n} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad\; -  *( r^{0} + r^{1} + \cdots + r^{n-1} *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  r^{0}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ j = 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
+                      array( display => 'on',  latex => '{  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  r \cdot \sumx_{ j = 0 }^{ n-1 }  r^{j}  -  \sumx_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  \sumx_{ j = 0 }^{ n-1 }  r^{j+1}  -  \sumx_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  \sumx_{ j = 1 }^{ n }  r^{j}  -  \sumx_{ j = 0 }^{ n-1 }  r^{j}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  *( r^{1} + r^{2} + \cdots + r^{n} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad\; -  *( r^{0} + r^{1} + \cdots + r^{n-1} *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  r^{0}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( r - 1 *)  \cdot  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  r^{n}  -  1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sumx_{ j = 0 }^{ n-1 }  r^{j}  =  \frac{ r^{n} - 1 }{ r - 1 }  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Mit \lm{ r = 1 + \s^{-1} }, \lm{ n = x \cdot \s } und \lm{ r - 1 = \s^{-1} }:'."\n".
@@ -708,8 +708,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  1  +  \!\!\! \sum_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  1  +  *( \e_{\s}^{x}  -  1 *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  1  +  \!\!\! \sum_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  \e_{\s}^{x}  \;\;.  }'),
+                      array( display => 'on',  latex => '{  1  +  \!\!\! \sumx_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  1  +  *( \e_{\s}^{x}  -  1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1  +  \!\!\! \sumx_{ k \in [0,\, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  =  \e_{\s}^{x}  \;\;.  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Damit ist gezeigt, dass die \lm{ \e_{\s} }-Funktion ihr eigenes Integral ist.'."\n".
@@ -741,7 +741,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Eine zentrale Frage der Mathematik ist, ob eine Zahl \jump{OM:SupNum:Ueberrationalitaetsvermutung}{algebraisch} oder transzendent ist.'."\n",
+                    'Eine zentrale Frage der Mathematik ist, ob eine Zahl \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{algebraisch} oder \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:Neue-Sicht-der-transzendenten-Zahlen}{transzendent} ist.'."\n",
                       'Die Regel besagt, eine Zahl ist dann algebraisch, wenn sie sich durch endlich viele kombinierte mathematische'."\n".
                     'Operationen der \jump{OM:OT:Home}{Operatoren} Plus „\lm{ + }“, Minus „\lm{ - }“, Mal „\lm{ \cdot }“, Geteilt „\lm{ \div }“ und Hoch „\lm{ ↑ }“,'."\n".
                     'ausschließlich mit Hilfe von endlichen ganzen Zahlen auf der rechten Seite, zu Null machen lässt.'."\n",
@@ -825,8 +825,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{〈․\,〈\i \cdot x〉〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{․〈\i \cdot x〉}  =  〈1〉․〈1〉^{〈․〈\i \cdot x〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{․〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Um den Ausdruck \lm{ *( 1 + \s^{-1} *)^{\i \cdot x} } auszuwerten, wenden wir den verallgemeinerten binomischen Satz an,'."\n".
@@ -834,8 +834,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x + y *)^{\alpha}  =  \sum_{ k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) x^{\alpha - k} y^{k}  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  x^{\alpha} \cdot *( 1 + \frac{ y }{ x } *)^{\alpha}  =  x^{\alpha} \cdot \sum_{ k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) *( \frac{ y }{ x } *)^{k}  }'),
+                      array( display => 'on',  latex => '{  *( x + y *)^{\alpha}  =  \sumx_{ k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) x^{\alpha - k} y^{k}  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  x^{\alpha} \cdot *( 1 + \frac{ y }{ x } *)^{\alpha}  =  x^{\alpha} \cdot \sumx_{ k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) *( \frac{ y }{ x } *)^{k}  }'),
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -846,9 +846,9 @@
                       array( display => 'on',  latex => '{  x  =  1  }'),
                       array( display => 'on',  latex => '{  y  =  ․〈1〉  =  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \alpha  =  \i \cdot x  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sum_{ k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ k \in XX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sumx_{ k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sumx_{ k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sumx_{ k \in XX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ *( \alpha - 0 *) *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - *( k - 1 *) *) }{ k! }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
@@ -891,12 +891,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  *〈 1 *〉 ․\, *〈 \i x \s *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) }{ 2 } *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) *( \i x \s - 2 *) }{ 6 } *〉 \cdots_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉 ․\, *〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  *〈 1 *〉․*〈 \i x \s *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) }{ 2 } *〉 *〈 \frac{ \i x \s *( \i x \s - 1 *) *( \i x \s - 2 *) }{ 6 } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉․*〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sumx_{ k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․*〈 - \frac{ \i \cdot x }{ 2 } \cdot e^{ \i \cdot x } *〉 *〈 *( \frac{ \i \cdot x }{ 3 } - \frac{ x^{2} }{ 8 } *) \cdot e^{ \i \cdot x } *〉 \cdots_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sum_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
+                    'Der erste Stellenwert von \lm{ \e_{\s}^{\i \cdot x} } ist die klassische Taylorreihe \lm{ \sumx_{k \in \mathbb{N}} \frac{ *( \i \cdot x *)^{k} }{ k! } = \cos(x) + \i \sin(x) }.'."\n".
                     'Die weiteren Stellenwerte tragen die aktual-infinitesimalen Korrekturen, die in der klassischen Analysis durch den Limes unsichtbar werden.'."\n".
                     'Für \lm{ x = π_{\s} } ergibt sich die Eulersche Identität — und damit der Zusammenhang mit der Kreiszahl:'."\n".
                     ''))),

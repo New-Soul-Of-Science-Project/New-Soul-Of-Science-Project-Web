@@ -858,7 +858,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x  =  a_{n} \s^{n} + a_{n - 1} \s^{n - 1} + \cdots \\\ \qquad\qquad \cdots + a_{1} \s + a_{0} + a_{-1} \s^{-1} + a_{-2} \s^{-2} + \cdots  \;\; .  }'),
+                      array( display => 'on',  latex => '{  x  =  a_{n} \s^{n} + a_{n - 1} \s^{n - 1} + \cdots \\\ \qquad\qquad\; \cdots + a_{1} \s + a_{0} + a_{-1} \s^{-1} + a_{-2} \s^{-2} + \cdots  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Potenzen von \lm{ \s } bilden die Schichten des superialen Stellenwertsystems.'."\n".
@@ -935,7 +935,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Kurz', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  *\{ z + \sum_{ k = 1 }^{ m } a_{k} \s^{k}  *|*  z \in \mathbb{Z} ,\; m \in \mathbb{N} ,\; a_{k} \in \mathbb{A}_{\R} *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z}  =  *\{  z + \sum_{ k = 1 }^{ m } a_{k} \s^{k}  *|*  z \in \mathbb{Z} ,\; m \in \mathbb{N} ,\; a_{k} \in \mathbb{A}_{\R}  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Null-Schicht der ganzen Superial-Zahlen enthält also nur klassische ganze Zahlen.'."\n".
@@ -1425,7 +1425,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Diff', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot N  \;\; + \;\;  \!\!\!\!\! \sum_{ n \in [0,b - a[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot ( b - a ) \cdot \s \\\ \qquad\qquad\qquad\qquad\quad  \;\; + \;\;  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ n \in [a,b[_{\mathbb{S}_{\Z}^{-1}} }  \!\! n  =  a \cdot ( b - a ) \cdot \s \\\ \qquad\qquad\qquad\qquad\quad\;\,  \;\; + \;\;  \frac{ ( b - a )^{2} \cdot \s - ( b - a ) }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'erhalten.'."\n",
@@ -1452,7 +1452,7 @@
                       array( display => 'off', latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad 2 a \cdot ( b - a ) + \frac{ 2 \, \s^{-1} \cdot ( b - a )^{2} \cdot \s - 2 \, \s^{-1} \cdot ( b - a ) }{ 2 } \\\ \qquad\qquad\quad + \;\; \s^{-2} \cdot ( b - a ) \cdot \s  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  \\\ \qquad\qquad 2 a \cdot ( b - a ) + \s^{-1} \cdot ( b - a )^{2} \cdot \s - \s^{-1} \cdot ( b - a ) \\\ \qquad\qquad\quad + \;\; ( b - a ) \cdot \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\quad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }',
-                                    latex_if_visible => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\qquad\qquad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }'),
+                                    latex_if_visible => '{  \Leftrightarrow  \mathcal{S}_{\s}( f_{\s}\'; a, b )  =  2 a \cdot ( b − a ) + ( b − a )^{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; − ( b − a ) \cdot \s^{−1} + ( b − a ) \cdot \s^{−1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die beiden infinitesimalen Korrekturterme heben sich exakt auf:'."\n".
@@ -1664,7 +1664,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  \;\; - \;\;  ω \cdot \s^{-1} \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\quad\;\;\quad  \;\; + \;\;  2 ω \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! a  \;\; - \;\;  ω \cdot \s^{-1} \cdot \!\!\! \sumx_{ a \in ]0, x[_{\mathbb{A}_{\R}} }  \!\! 1  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun berechnen wir die Erzeugungsanzahl des offenen inneren Intervalls'."\n".
@@ -1708,7 +1708,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad\quad  \;\; + \;\;  2 ω \cdot *( \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 } *) \\\ \qquad\qquad\qquad\quad\quad  \;\; - \;\;  ω \cdot \s^{-1} \cdot *( \frac{ x \cdot \s }{ 2 ω } - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die beiden noch auszuwertenden Terme vereinfachen sich zu:'."\n".
@@ -1723,7 +1723,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Illu.Sum', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; + \;\;  \frac{ x^{2} \cdot \s }{ 2 }  \;\; - \;\;  x \cdot ω \\\ \qquad\qquad\qquad  \;\; - \;\;  \frac{ x }{ 2 }  \;\; + \;\;  ω \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \sumx_{ n \in [0, x[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! n  =  -ω \cdot \s^{-1}  \;\; + \;\;  x \cdot ω \\\ \qquad\qquad\qquad\quad  \;\; + \;\;  \frac{ x^{2} \cdot \s }{ 2 }  \;\; - \;\;  x \cdot ω \\\ \qquad\qquad\qquad\quad\quad  \;\; - \;\;  \frac{ x }{ 2 }  \;\; + \;\;  ω \cdot \s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun heben sich die erzeugungshierarchischen Randkorrekturen exakt auf:'."\n".
@@ -2257,7 +2257,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2286,7 +2286,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  B  =  \rad(n)^{ω}  \\;\; .  }'),
+                      array( display => 'on',  latex => '{  B  =  \rad(n)_{\#}^{ω}  \\;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die klassische Irrationalität bleibt erhalten:'."\n".

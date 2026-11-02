@@ -260,7 +260,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!: *( \forall x \in \mathbb{S}_{\N}^{+}\!: *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!:  \quad  *( \forall x \in \mathbb{S}_{\N}^{+}\!: \;\; *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *]  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'aller superialen Primzahlen.'."\n",
@@ -696,7 +696,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{ k \in \mathbb{Z} \!: a_{k} \ne 0 *\}  }'),
+                      array( display => 'on',  latex => '{  \supp(a)  :=  *\{  k \in \mathbb{Z}  *|*  a_{k} \ne 0  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'nach oben beschränkt ist, es existiert also \lm{ n \in \mathbb{Z} } mit \lm{ \supp(a) \subseteq \;\rbrack \!-\!\infty , n \rbrack_{\mathbb{Z}} }.'."\n".
@@ -712,7 +712,7 @@
                     'Wir definieren für \lm{ a \ne 0 }:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\lm{ \operatorname{lt}(a) := k_{max} \;\;\;\;\;\;\;\;\;\;\;\; } (Leitexponent, „größte Stelle“),'."\n",
+                        '\lm{ \operatorname{lt}(a) := k_{max} \;\;\;\;\;\;\;\;\;\;\;\;\, } (Leitexponent, „größte Stelle“),'."\n",
                         '\lm{ \operatorname{lc}(a) := a_{k_{max}} \in \mathbb{A}_{\R} \;\;\; } (Leitkoeffizient).'."\n",
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Algebraische-Grundlagen:SIstGeordneterKoerper:X', text =>
@@ -727,7 +727,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a > 0  :\Leftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\R}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  a > 0  :\Longleftrightarrow  \operatorname{lc}(a) > 0 \in \mathbb{A}_{\R}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und \lm{ a < 0 } entsprechend durch \lm{ \operatorname{lc}(a) < 0 }.'."\n".
@@ -742,8 +742,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a < b  :\Leftrightarrow  b - a > 0  }'),
-                      array( display => 'on',  latex => '{  a \le b  :\Leftrightarrow  *( a < b  \lor  a = b *)  \;\; .  }'),
+                      array( display => 'on',  latex => '{  a < b  :\Longleftrightarrow  b - a > 0  }'),
+                      array( display => 'on',  latex => '{  a \le b  :\Longleftrightarrow  *(  a < b  \lor  a = b  *)  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Äquivalent (und oft anschaulicher):'."\n".
@@ -774,7 +774,7 @@
                   '\bold{Lemma 3 (Monotonie unter Addition).} \\\\'."\n".
                     'Aus \lm{ a < b } folgt für alle \lm{ h \in \mathbb{S} }: \lm{ f + h < g + h }. \\\\'."\n".
                     '\italic{Begründung:}'."\n".
-                    '\lm{ f < g \Leftrightarrow g − f > 0 }. Dann ist \lm{ ( g + h ) − ( f + h ) = g − f > 0 }.'."\n".
+                    '\lm{ f < g \Longleftrightarrow g − f > 0 }. Dann ist \lm{ ( g + h ) − ( f + h ) = g − f > 0 }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Insbesondere ist die Ordnung \italic{translationsinvariant}.'."\n".
@@ -974,7 +974,7 @@
                   array( 'text', array( text => array(
                     'Axiom 6 trägt der biordinalen Ontologie Rechnung: Jede negative Zahl entsteht aus einer natürlichen Zahl'."\n".
                     'durch Verschiebung, ohne Umkehr der Zählrichtung, sodass \lm{ \mathbb{Z}^{-} } und \lm{ \mathbb{N} } dieselbe Erzeugungsanzahl \lm{ ω } besitzen.'."\n".
-                    'Hingegen gilt \lm{ \overline{\#}_{\mathrm{erz}}(-\mathbb{N}) = ω + 1 }, weil \lm{ -\mathbb{N} = \{0, -1, -2, \ldots\} } die Null einschließt'."\n".
+                    'Hingegen gilt \lm{ \overline{\#}_{\mathrm{erz}}(-\mathbb{N}) = \, ω \! + 1 }, weil \lm{ -\mathbb{N} = \{0, -1, -2, \ldots\} } die Null einschließt'."\n".
                     'und daher ein Element mehr erzeugt als \lm{ \mathbb{Z}^{-} }.'."\n",
                       'Aus den Axiomen lassen sich die Kernbeispiele direkt ableiten:'."\n".
                     ''))),

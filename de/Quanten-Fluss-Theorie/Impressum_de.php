@@ -24,7 +24,7 @@
                   array( 'text', array( text => array(
                     '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="569" height="872" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
                     '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="200" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
-                    '<img src="../../share/images/Wolfgang Huss-IMG_2229 beschn klein.jpg" width="238" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
+                    '<img src="../../share/images/Wolfgang_Huss-2023.jpg" width="197" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
                     ''."\n"))),
                   array( 'text', array( text => array(
                     //'Wolfgang Huß \\italic{alias} Lucius Damian \\hidden{Cosmas }Stardust \\\\'."\n".

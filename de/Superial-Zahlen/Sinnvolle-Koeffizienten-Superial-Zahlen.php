@@ -284,7 +284,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
@@ -307,7 +307,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[-x]{ n } \,|*  =  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt[-x]{ n } \,|*  =  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)_{\#}^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN1plus}', label_incr => false),
@@ -576,7 +576,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{2}{9} \cdot \s  =  2^{ ω + 1} \cdot 3^{ ω - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
+                      array( display => 'on',  latex => '{  \frac{2}{9} \cdot \s  =  2_{\#}^{ ω + 1} \cdot 3_{\#}^{ ω - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier können wir sehen, dass \lm{ \s } durch Multiplikation mit endlich beliebig vielen'."\n".
@@ -640,14 +640,14 @@
                 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
+                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2_{\#}^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
                     'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } \,|* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }',
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω}  \in  \mathbb{N}_{\infty}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2_{\#}^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  \;\; ,  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -675,13 +675,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } \,|*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } \,|*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }{ 2_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Das vollständige Kürzen von \lm{ 2^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
+                    'Das vollständige Kürzen von \lm{ 2_{\#}^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
                     'keine ganze Zahl mehr wäre, was aber gesucht war.'."\n".
                     'Unsere neue Erkenntnis zeigt uns jedoch, dass wir den Faktor Zwei im Zähler und Nenner so oft kürzen oder hinzufügen können,'."\n".
                     'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
@@ -703,13 +703,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n_{\#}^{ω}  \in  \mathbb{N}_{\infty}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                      array( display => 'on',  latex => '{  n_{\#}^{ω}  \in  \mathbb{N}_{\infty}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n_{\#}^{ω} }{ n_{\#}^{ω} }  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n_{\#}^{ω + \frac{ 1 }{ x }} }{ n_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -725,12 +725,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ω}  =  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  =  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \s  =  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{ω}  =  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)_{\#}^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{ω}  =  p_{\#,1}^{k_{1} ω} \cdot p_{\#,2}^{k_{2} ω} \cdot p_{\#, 3}^{k_{3} ω} \cdot p_{\#,4}^{k_{4} ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \s  =  p_{\#,1}^{ω} \cdot p_{\#,2}^{ω} \cdot p_{\#,3}^{ω} \cdot p_{\#,4}^{ω} \cdot \cdots  }'),
                       array( display => 'on',  latex => '{  k_{1} \ge 2 \lor k_{2} \ge 2 \lor k_{3} \ge 2 \lor k_{4} \ge 2 \lor \cdots  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  \nmid  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  \nmid  \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{\#,1}^{k_{1} ω} \cdot p_{\#,2}^{k_{2} ω} \cdot p_{\#,3}^{k_{3} ω} \cdot p_{\#,4}^{k_{4} ω} \cdot \cdots  \nmid  p_{\#,1}^{ω} \cdot p_{\#,2}^{ω} \cdot p_{\#,3}^{ω} \cdot p_{\#,4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{ω}  \nmid  \s  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und aus diesem Grund können wir aus unseren bisherigen Erkenntnissen nicht folgern, dass \lm{ n^{\frac{ 1 }{ x }} \cdot \s }'."\n".
@@ -741,8 +741,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)_{\#}^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)_{\#}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)_{\#}^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)_{\#}^{ω} }  }'),
                       // array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ p_{1}^{k_{1} *( ω + q *)} \cdot p_{2}^{k_{2} *( ω + q *)} \cdot p_{3}^{k_{3} *( ω + q *)} \cdot p_{4}^{k_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -750,8 +750,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)_{\#}^{ω} }{ *( p_{i}^{k_{i}} *)_{\#}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)_{\#}^{ω}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
@@ -760,24 +760,24 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{\#,i}^{ω} }{ p_{\#,i}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{\#,i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'denn nur dann, wenn das gegeben ist, ist auch jede dieser Wurzeln im Produkt mit unserer superialen Basis \lm{ \s }'."\n".
                     'eine aktual unendlich große natürliche Superial-Zahl, weil \lm{ \s } eben „nur“ jede Primzahl in'."\n".
-                    'einfacher vollständiger Induktionen \lm{ p_{i}^{ω} } enthält:'."\n".
+                    'einfacher vollständiger Induktionen \lm{ p_{\#,i}^{ω} } enthält:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}^{ω}  \parallel  \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
+                      array( display => 'on',  latex => '{  p_{\#,i}^{ω}  \parallel  \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)_{\#}^{ω}  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei stellt \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz dar und'."\n".
-                    '\lm{ \rad(n)^{ω} } teilt daher des Primzahl-Flächenprodukt von \lm{ \s } exakt.'."\n",
+                    '\lm{ \rad(n)_{\#}^{ω} } teilt daher des Primzahl-Flächenprodukt von \lm{ \s } exakt.'."\n",
                       'Wie oben gesagt stellen wir im Beweis der Überrationalitätsvermutung fest, dass'."\n".
                     'wir in der Wahl der aktual unendlich großen ganzen Potenz von \lm{ n } frei sind,'."\n".
                     'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
@@ -787,10 +787,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n_{\#}^{g}  \in  \mathbb{N}_{\infty}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)_{\#}^{g}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{\#,i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So können wir für \lm{ k_{i} \cdot g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
@@ -798,7 +798,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{\#,i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was wunderbarerweise genau die Eigenschaft ist, die wir an dieser Stelle für sinnvolle Koeffizienten der Superial-Zahlen benötigen.'."\n",
@@ -806,9 +806,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }',
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)_{\#}^{ω}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-rad-n-hoch-omega-in-N-infty}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
                     ))),
@@ -847,7 +847,7 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     // '\bold{X}',
-                    '• Hier ggf. auch mit \lm{ n^{ω - \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
+                    '• Hier ggf. auch mit \lm{ n_{\#}^{ω - \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -863,8 +863,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.KR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }}  =  \frac{ n^{- \frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  \;\;,  }',
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }}  =  \frac{ n^{- \frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }{ \rad(n)_{\#}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)_{\#}^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)_{\#}^{ω} }  \;\;,  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
