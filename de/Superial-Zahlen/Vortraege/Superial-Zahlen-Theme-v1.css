@@ -111,6 +111,7 @@
     color: #fff; text-decoration: none; text-align: left; line-height: 1.4;
     font-family: inherit; font-size: inherit; cursor: pointer;
   }
+  .speaker-menu-item:hover:not(:disabled) { background: rgba(255,255,255,0.15); }
   .speaker-menu-item:disabled { color: rgba(255,255,255,0.5); cursor: default; }
   .speaker-menu-row:first-child .speaker-menu-item { border-radius: 6px 6px 0 0; }
   .speaker-menu-item:last-child { border-bottom: 0; border-radius: 0 0 6px 6px; }
