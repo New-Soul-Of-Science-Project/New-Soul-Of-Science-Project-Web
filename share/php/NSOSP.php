@@ -7,7 +7,7 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-  //           20261104:  +:  "$SupNum_g_iframe_ary_sGeomKonstrukt3D_Primturm":  Neue Einbindung der Animation "Zwei-Konstruktionen-von-s-3D" im dritten Modus "?konstruktion=primturm" (Die Lücken der Primzahltürme: Halbieren bis 2^ω lässt 1/3 aus, Dritteln bis 3^ω lässt 1/5 aus, selbst beider Vereinigung lässt 1/6 aus, erst das Produkt 2^ω · 3^ω trifft sie). Das Bild für den Druck fehlt noch.
+  //           20261104:  +:  "$SupNum_g_iframe_ary_sGeomKonstrukt3D_Primturm":  Neue Einbindung der Animation "Zwei-Konstruktionen-von-s-3D" im dritten Modus "?konstruktion=primturm" (Die Lücken der Primzahltürme: Halbieren bis 2^ω lässt 1/3 aus, Dritteln bis 3^ω lässt 1/5 aus, selbst beider Vereinigung lässt 1/6 aus, erst das Produkt 2^ω · 3^ω trifft sie). Druckbild "Zwei-Konstruktionen-von-s-3D-Primturm-print.png" (Schritt 3, "1/6 fehlt").
 
   //           20261101:  +:  "$SupNum_g_footnote_text_Infinitesimalzahl", "$SupNum_g_footnote_text_DiffernetialNichtInfinitesimal":  Primärliteratur ergänzt (Leibniz 1684, Cauchy 1885 Kapitel 2, Robinson 1966 bzw. Cauchy 1823), der Platzhalter "(Primärliteratur einfügen!)" entfällt. Neue Einträge "Leibniz:NovaMethodus:1684" und "Cauchy:ResumeDesLecons:1823" in der BibTeX-Datei und in "Literatur_de.php", mit "url" (Internet-Archive-Scans, Seiten aufgerufen und Titel geprüft am 01.11.2026; bei Cauchy direkter PDF-Link, 11 MB, Aufruf per HEAD-Anfrage geprüft).
 
@@ -1003,7 +1003,9 @@
                                                          text => 'Die Animation zeigt die Lücken der reinen Primzahltürme:'."\n".
                                                                  'Die Zweierteilung bis \lm{ 2^{ω} } trifft den Punkt \lm{ \frac{ 1 }{ 3 } } nie, die Dreierteilung bis \lm{ 3^{ω} } den Punkt \lm{ \frac{ 1 }{ 5 } } nicht,'."\n".
                                                                  'und selbst die Vereinigung beider Teilungen lässt \lm{ \frac{ 1 }{ 6 } } aus.'."\n".
-                                                                 'Erst die Rhythmen \lm{ 6 }, \lm{ 12 }, \lm{ 18 } und \lm{ 36 } des Produkts \lm{ 2^{ω} \cdot 3^{ω} } treffen \lm{ \frac{ 1 }{ 6 } }.');
+                                                                 'Erst die Rhythmen \lm{ 6 }, \lm{ 12 }, \lm{ 18 } und \lm{ 36 } des Produkts \lm{ 2^{ω} \cdot 3^{ω} } treffen \lm{ \frac{ 1 }{ 6 } }.',
+                                                         print_image => $Glo_PathRel_back.'../share/images/SN/Zwei-Konstruktionen-von-s-3D-Primturm-print.png',
+                                                         print_image_alt => 'Die Lücken der Primzahltürme: 1/6 fehlt in der Vereinigung der Zweier- und Dreierteilung, interaktive 3D-Animation');
 
   $SupNum_g_iframe_ary_SekanteTangente           = array( source => $Glo_PathRel_back.'../share/animations/Sekante-Tangente-3D.html', width => '660px', height => '450px', name => 'set local',
                                                          text => 'Die Animation zeigt den Graphen von \lm{ f(x) = x^{2} } sowie die Sekante, die bei schrumpfendem Schritt \lm{ h } sichtbar gegen die Tangente läuft;'."\n".
