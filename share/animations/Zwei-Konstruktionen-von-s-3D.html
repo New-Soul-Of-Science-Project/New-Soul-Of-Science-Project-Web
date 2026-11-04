@@ -142,7 +142,8 @@
       // Animation mehrfach auf einer Seite einbinden lässt, jede fest auf einen Modus eingestellt -
       // das Panel bleibt trotzdem bedienbar, falls jemand doch wechseln möchte.
       const urlParams = new URLSearchParams( window.location.search )
-      let constructionMode = urlParams.get( 'konstruktion' ) === 'wiederholung' ? 'wiederholung' : 'teilung'
+      const urlMode = urlParams.get( 'konstruktion' )
+      let constructionMode = ( urlMode === 'wiederholung' || urlMode === 'primturm' ) ? urlMode : 'teilung'
 
       // Nur im Wiederholung-Modus relevant (s. Panel weiter unten, dort auch versteckt/gezeigt je nach
       // Modus): steuert, wie die History-Kopien (die zurückliegenden, im Raum nach hinten rückenden
@@ -169,11 +170,42 @@
           title: 'Die Konstruktion von s<sup>–1</sup>',
           subtitle: 'Jeder natürliche Rhythmus fällt auf die Strecke zwischen Null und Eins und verfeinert durch die hinzukommenden Primzahlen ihre Teilung',
         },
+        primturm: {
+          title: 'Die Lücken der Primzahltürme',
+          subtitle: '', // der Untertitel wechselt hier mit jedem Schritt, s. primSequence
+        },
       }
+
+      /*--------------------
+      Modus "primturm": ein festes Drehbuch in vier Schritten (nur die Zahlen der fallenden Zeilen
+      und die Marke sind vorgegeben, die Fall-/Lande-Mechanik ist dieselbe wie bei "Teilung").
+      - "rows":        die nacheinander fallenden Zeilen (Potenzen eines Primfaktors bzw. Produkte).
+      - "resetGround": leert vor dem Schritt die Bodenlinie (bis auf die Endpunkte).
+      - "addTowers":   legt ohne Fall alle Punkte der Potenz base^n zusätzlich auf die Bodenlinie.
+      - "gap":         der Bruch p/q, der nach dem Schritt als Lücke markiert wird (leerer Ring).
+      - "keepGap":     die Marke des vorigen Schritts bleibt stehen.
+      - "foundAt":     sobald diese Zeile landet, wird die Marke zu "ist da".
+      - "final":       letzter Schritt, danach beginnt der Zyklus von vorn (längere Pause).
+      --------------------*/
+      const primSequence = [
+        { rows: [ 2, 4, 8, 16, 32 ], gap: { p: 1, q: 3 },
+          subtitle: 'Wiederholtes Halbieren bis 2<sup>ω</sup> trifft nur Brüche mit einer Zweierpotenz im Nenner – 1/3 ist nie dabei' },
+        { rows: [ 3, 9, 27, 81 ], gap: { p: 1, q: 5 }, resetGround: true,
+          subtitle: 'Auch die Dreierteilung bis 3<sup>ω</sup> hat Lücken: 1/5 hat keine Dreierpotenz im Nenner und wird nie getroffen' },
+        { rows: [], gap: { p: 1, q: 6 }, addTowers: [ { base: 2, n: 5 } ], startLabel: '2⁵ ∪ 3⁴',
+          subtitle: 'Selbst die Vereinigung beider Teilungen lässt 1/6 aus – 6 teilt weder eine Zweier- noch eine Dreierpotenz' },
+        { rows: [ 6, 12, 18, 36 ], keepGap: true, foundAt: 6, final: true,
+          subtitle: 'Erst das Produkt 2<sup>ω</sup> · 3<sup>ω</sup> mit den Rhythmen 6, 12, 18, 36 … fängt auch 1/6 ein' },
+      ]
+      let primPhase = 0
+      let primHolding = false // true: Schritt fertig, die Marke steht, bis zum nächsten Schritt
+      const primHoldDuration = 3.5
+      const primFinalHoldDuration = 4.5
+
       function updateHeadlineTexts() {
         const texts = headlineTexts[ constructionMode ]
         titleEl.innerHTML = texts.title
-        headlineEl.textContent = texts.subtitle
+        headlineEl.innerHTML = constructionMode === 'primturm' ? primSequence[ primPhase ].subtitle : texts.subtitle
       }
       updateHeadlineTexts()
 
@@ -275,10 +307,15 @@
 
       let groundPoints = new Map() // key "p/q" -> { p, q, mesh }
 
+      // Im Modus "primturm" liegen bis zu 82 Punkte nebeneinander (3⁴ = 81) - die Kugeln werden
+      // dort entlang der Linie etwas schmaler, damit sie sich nicht überlappen.
+      function pointScaleX() { return constructionMode === 'primturm' ? 0.7 : 1 }
+
       function addGroundPoint( p, q ) {
         const key = p + '/' + q
         if ( groundPoints.has( key ) ) return
         const mesh = new THREE.Mesh( pointGeo, groundPointMat )
+        mesh.scale.x = pointScaleX()
         mesh.position.set( ( p / q ) * groundDisplayWidth(), 0, groundZ )
         render.scene.add( mesh )
         groundPoints.set( key, { p, q, mesh } )
@@ -366,6 +403,7 @@
         const points = []
         groundPoints.forEach( ( { p, q } ) => {
           const mesh = new THREE.Mesh( pointGeo, groundPointMat )
+          mesh.scale.x = pointScaleX()
           mesh.position.set( ( p / q ) * currentWidth, 0, groundZ )
           render.scene.add( mesh )
           points.push( { p, q, mesh } )
@@ -380,7 +418,7 @@
           missingCopies.push( { p, q, mesh } )
         })
 
-        const label = buildLabel( formatFactorization( currentL ) )
+        const label = buildLabel( groundLabelText ) // dasselbe wie die Beschriftung der Bodenlinie, s. updateGroundLabelText()
         label.position.set( currentWidth + labelRightMargin, 0, groundZ )
         clampLabelWidth( label )
         render.scene.add( label )
@@ -417,12 +455,18 @@
       // folglich nur, wenn eine Zeile tatsächlich eine neue Primzahl/-potenz einbringt (z.B. bei
       // k=6=2·3 nicht, da 2 und 3 schon enthalten sind) - bleibt stehen, bis sich currentL ändert.
       let groundLabel = null
+      let groundLabelText = '1 = 1'
       let groundLabelFadeElapsed = Infinity // >= groundLabelFadeDuration: kein aktives Einblenden mehr
       const labelRightMargin = 0.1 // Abstand der Beschriftung rechts vom Linienende
 
       function updateGroundLabel( divisionCount ) {
+        updateGroundLabelText( formatFactorization( divisionCount ) )
+      }
+
+      function updateGroundLabelText( text ) {
         clearGroundLabel()
-        groundLabel = buildLabel( formatFactorization( divisionCount ) )
+        groundLabelText = text
+        groundLabel = buildLabel( text )
         groundLabel.material.opacity = 0 // startet unsichtbar, blendet im Renderloop sanft ein
         groundLabelFadeElapsed = 0
         groundLabel.position.set( currentWidth + labelRightMargin, 0, groundZ ) // y=0: auf Linienhöhe
@@ -436,6 +480,79 @@
         groundLabel.material.dispose()
         render.scene.remove( groundLabel )
         groundLabel = null
+      }
+
+      /*--------------------
+      Lücken-Marke (nur Modus "primturm"): ein leerer oranger Ring auf dem Bruch p/q, der von den
+      bisherigen Teilungen nicht getroffen wird, samt Beschriftung "p/q fehlt" und den beiden
+      nächstgelegenen roten Punkten links und rechts davon in Orange (zeigt, wie dicht die
+      Teilung herankommt, ohne zu treffen). Die Marke wächst sanft ein (s. Renderloop). Sobald eine
+      Zeile den Bruch tatsächlich trifft, wird sie zu "p/q ist da" (markGapFound()).
+      --------------------*/
+      const gapColor = 0xe07000
+      const gapTextColor = '#c75b00'
+      const gapFoundColor = 0x0e4d36
+      const gapNearMat = new THREE.MeshLambertMaterial( { color: gapColor } )
+      const gapRingGeo = new THREE.TorusGeometry( 0.075, 0.013, 12, 40 )
+      const gapFadeDuration = 0.8
+      let gapMarker = null // { group, p, q, ringMat, label, fadeElapsed }
+
+      function setGapLabel( text, color ) {
+        if ( gapMarker.label ) {
+          gapMarker.label.material.map.dispose()
+          gapMarker.label.material.dispose()
+          gapMarker.group.remove( gapMarker.label )
+        }
+        const label = buildLabel( text, color )
+        label.center.set( 0.5, 0.5 )
+        label.position.set( 0, -0.14, 0 )
+        gapMarker.group.add( label )
+        gapMarker.label = label
+      }
+
+      function showGapMarker( p, q ) {
+        removeGapMarker()
+        const target = p / q
+        const group = new THREE.Group()
+        group.position.set( target * currentWidth, 0, groundZ )
+
+        let left = null
+        let right = null
+        groundPoints.forEach( ( { p: np, q: nq } ) => {
+          const v = np / nq
+          if ( v < target && ( !left || v > left ) ) left = v
+          if ( v > target && ( !right || v < right ) ) right = v
+        })
+        ;[ left, right ].forEach( v => {
+          if ( v === null ) return
+          const near = new THREE.Mesh( pointGeo, gapNearMat )
+          near.position.set( ( v - target ) * currentWidth, 0, 0 )
+          near.scale.set( pointScaleX() * 1.6, 1.6, 1.6 )
+          group.add( near )
+        })
+
+        const ringMat = new THREE.MeshBasicMaterial( { color: gapColor } )
+        group.add( new THREE.Mesh( gapRingGeo, ringMat ) )
+
+        group.scale.setScalar( 0 )
+        render.scene.add( group )
+        gapMarker = { group, p, q, ringMat, label: null, fadeElapsed: 0 }
+        setGapLabel( p + '/' + q + ' fehlt', gapTextColor )
+      }
+
+      function markGapFound() {
+        if ( !gapMarker ) return
+        gapMarker.ringMat.color.set( gapFoundColor )
+        setGapLabel( gapMarker.p + '/' + gapMarker.q + ' ist da', '#0e4d36' )
+      }
+
+      function removeGapMarker() {
+        if ( !gapMarker ) return
+        gapMarker.label.material.map.dispose()
+        gapMarker.label.material.dispose()
+        gapMarker.ringMat.dispose()
+        render.scene.remove( gapMarker.group )
+        gapMarker = null
       }
 
       /*--------------------
@@ -567,6 +684,7 @@
         for ( let i = 0; i <= k; i++ ) {
           const sphere = new THREE.Mesh( pointGeo, pointMaterial )
           sphere.position.set( ( i / k ) * currentWidth, 0, 0 )
+          sphere.scale.x = pointScaleX()
           group.add( sphere )
           spheres.push( { sphere, i, k } )
         }
@@ -600,6 +718,11 @@
       function landRow() {
         const k = fallingRow.k
         disposeFallingRow()
+
+        if ( constructionMode === 'primturm' ) {
+          landPrimRow( k )
+          return
+        }
 
         if ( constructionMode === 'teilung' ) {
           for ( let i = 0; i <= k; i++ ) {
@@ -694,12 +817,78 @@
         if ( constructionMode === 'wiederholung' ) setupGroundShrink()
       }
 
+      // Modus "primturm": Landung einer Zeile - die Punkte bleiben (Vereinigung), danach entweder die
+      // nächste Zeile des Schritts oder, nach der letzten, die Haltephase mit der Lücken-Marke.
+      function landPrimRow( k ) {
+        for ( let i = 0; i <= k; i++ ) {
+          const { p, q } = reduceFraction( i, k )
+          addGroundPoint( p, q )
+        }
+        updateGroundLabel( k )
+
+        const phase = primSequence[ primPhase ]
+        if ( phase.foundAt === k ) markGapFound()
+
+        const nextIndex = phase.rows.indexOf( k ) + 1
+        if ( nextIndex < phase.rows.length ) {
+          currentK = phase.rows[ nextIndex ]
+          snapshotGroundLine()
+        } else {
+          primHolding = true
+          if ( phase.gap ) showGapMarker( phase.gap.p, phase.gap.q )
+        }
+        waitingToSpawn = true
+        pauseElapsed = 0
+      }
+
+      // Beginnt Schritt "index" des Drehbuchs (s. primSequence). Schritt 0 ist der Zyklus-Anfang.
+      function startPrimPhase( index ) {
+        primPhase = index
+        const phase = primSequence[ index ]
+        updateHeadlineTexts()
+        if ( !phase.keepGap ) removeGapMarker()
+        if ( index === 0 ) {
+          performCycleReset()
+        } else if ( phase.resetGround ) {
+          clearLineHistory()
+          clearGroundPoints()
+          seedGroundEndpoints()
+          updateGroundLabel( 1 )
+        } else {
+          clearLineHistory()
+        }
+        if ( phase.addTowers ) {
+          phase.addTowers.forEach( ( { base, n } ) => {
+            const total = Math.pow( base, n )
+            for ( let i = 0; i <= total; i++ ) {
+              const { p, q } = reduceFraction( i, total )
+              addGroundPoint( p, q )
+            }
+          })
+        }
+        if ( phase.startLabel ) updateGroundLabelText( phase.startLabel )
+
+        pauseElapsed = 0
+        waitingToSpawn = true
+        if ( phase.rows.length ) {
+          currentK = phase.rows[ 0 ]
+          primHolding = false
+        } else {
+          primHolding = true // kein Fall in diesem Schritt: direkt die Marke zeigen
+          if ( phase.gap ) showGapMarker( phase.gap.p, phase.gap.q )
+        }
+      }
+
       // Bricht eine evtl. laufende Fallanimation ab und startet sofort einen neuen Zyklus - wird
       // beim Umschalten zwischen Teilung und Wiederholung im Panel aufgerufen.
       function resetForModeSwitch() {
+        primPhase = 0
         updateHeadlineTexts()
         if ( fallingRow ) disposeFallingRow()
+        removeGapMarker()
         performCycleReset()
+        primHolding = false
+        if ( constructionMode === 'primturm' ) startPrimPhase( 0 )
         waitingToSpawn = true
         pauseElapsed = 0
         fallElapsed = 0
@@ -721,7 +910,7 @@
 
         const pausedName = 'Animation anhalten'
         const constructionModeName = 'Konstruktion'
-        const constructionModeOptions = { 'Teilung': 'teilung', 'Wiederholung': 'wiederholung' }
+        const constructionModeOptions = { 'Teilung': 'teilung', 'Wiederholung': 'wiederholung', 'Primzahltürme': 'primturm' }
         const shrinkAllLinesName = 'Alle Zahlenlinien verkürzen'
         const maxRhythmsName = 'Rhythmen bis zum Neustart (n)'
         const speedName = 'Fallgeschwindigkeit'
@@ -736,16 +925,20 @@
         panel.add( settings, constructionModeName, constructionModeOptions ).onChange( v => {
           constructionMode = v
           shrinkAllLinesController.show( constructionMode === 'wiederholung' )
+          maxRhythmsController.show( constructionMode !== 'primturm' )
           resetForModeSwitch()
         })
         // Nur im Wiederholung-Modus sinnvoll (s. Kommentar bei "let shrinkAllLines" oben) - im
         // Teilung-Modus von Anfang an versteckt.
         const shrinkAllLinesController = panel.add( settings, shrinkAllLinesName ).onChange( v => { shrinkAllLines = v } )
         shrinkAllLinesController.show( constructionMode === 'wiederholung' )
-        panel.add( settings, maxRhythmsName, 3, 12, 1 ).onChange( v => { maxRhythms = v } )
+        // Im Modus "primturm" gibt das Drehbuch die Zeilen fest vor - der Regler ist dort wirkungslos.
+        const maxRhythmsController = panel.add( settings, maxRhythmsName, 3, 12, 1 ).onChange( v => { maxRhythms = v } )
+        maxRhythmsController.show( constructionMode !== 'primturm' )
         panel.add( settings, speedName, 0.3, 3, 0.1 ).onChange( v => { speedFactor = v } )
       }
       createPanel()
+      if ( constructionMode === 'primturm' ) startPrimPhase( 0 )
       createInfoButton( container, container.querySelector( '.lil-gui .title' ) )
 
       const maxDelta = 1 / 30 // verhindert große Zeitsprünge, wenn der Tab ausgeblendet war
@@ -763,6 +956,12 @@
             const progress = Math.min( 1, entry.fadeElapsed / missingFadeInDuration )
             entry.mesh.scale.set( progress * missingTargetScale, progress, progress )
           })
+
+          if ( gapMarker && gapMarker.fadeElapsed < gapFadeDuration ) {
+            gapMarker.fadeElapsed += delta
+            const progress = Math.min( 1, gapMarker.fadeElapsed / gapFadeDuration )
+            gapMarker.group.scale.setScalar( progress )
+          }
 
           // Neue Formel nach einer Landung: sanft einblenden statt plötzlich zu erscheinen (s.
           // updateGroundLabel, die "groundLabelFadeElapsed" jeweils auf 0 zurücksetzt).
@@ -819,12 +1018,19 @@
               }
             }
 
-            const requiredPause = pendingReset ? finalPauseDuration : basePauseDuration
+            let requiredPause = pendingReset ? finalPauseDuration : basePauseDuration
+            if ( primHolding ) requiredPause = primSequence[ primPhase ].final ? primFinalHoldDuration : primHoldDuration
             if ( pauseElapsed >= requiredPause ) {
-              if ( pendingReset ) performCycleReset()
-              waitingToSpawn = false
-              fallElapsed = 0
-              spawnRow( currentK )
+              if ( primHolding ) {
+                // Modus "primturm": Haltephase vorbei - nächster Schritt (nach dem letzten wieder der erste)
+                primHolding = false
+                startPrimPhase( ( primPhase + 1 ) % primSequence.length )
+              } else {
+                if ( pendingReset ) performCycleReset()
+                waitingToSpawn = false
+                fallElapsed = 0
+                spawnRow( currentK )
+              }
             }
           } else if ( fallingRow ) {
             fallElapsed += delta

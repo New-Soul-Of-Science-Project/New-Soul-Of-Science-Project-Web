@@ -255,6 +255,7 @@
       jump_ary => array(
         'OM:SupNum:Arithmetische-Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-Primzahltuerme' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
           'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),

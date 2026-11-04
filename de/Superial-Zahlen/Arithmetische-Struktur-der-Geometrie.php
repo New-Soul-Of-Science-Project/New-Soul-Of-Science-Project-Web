@@ -200,6 +200,22 @@
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}}  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'Dabei zeigt sich etwas Wichtiges:'."\n".
+                    'Die reine Zweierteilung, bis hin zu \lm{ 2^{ω} }, trifft den Punkt \lm{ \frac{ 1 }{ 3 } } nie.'."\n".
+                    'Er wird in keiner der Halbierungen erzeugt, denn die Drei teilt keine Potenz von Zwei.'."\n".
+                    'Teilen wir stattdessen bis \lm{ 3^{ω} }, dann fehlt \lm{ \frac{ 1 }{ 5 } }.'."\n".
+                    'Und auch \lm{ \frac{ 1 }{ 6 } } fehlt, selbst wenn wir beide Teilungen vereinigen,'."\n".
+                    'denn die Sechs teilt weder eine Potenz von Zwei noch eine Potenz von Drei.'."\n".
+                    'Das zeigt die folgende Animation:'."\n".
+                    ''))),
+
+                  array( 'iframe',
+                    array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D_Primturm, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-Primzahltuerme'))),
+
+                  array( 'text', array( text => array(
+                    'Erst das Produkt beider Teilungen, \lm{ 2^{ω} \cdot 3^{ω} }, fängt auch \lm{ \frac{ 1 }{ 6 } } ein.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                     'So geht es nun immer weiter.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
