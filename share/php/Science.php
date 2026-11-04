@@ -3,9 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 23.10.2026, 12:00h
+  // #: Stand: 04.11.2026, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+
+  //           20261104:  *:  "MathJax":  Change macro "prodx" from '\sideset{^{\hphantom{\#}}}{^{\#}}{\prod}' to '\mathop{\mspace{6mu}\prod\rlap{\raise 2mu {\mspace{-5mu}{}^{\#}}}\mspace{6mu}}\limits', the same construction as for "sumx" (see 20261023): a "\sideset" box is no base character for MathJax, so a subscript was dropped by the full depth of the pi (e.g. in a fraction numerator) and the limits were off-center. The "#" is now a zero-width overlay at the upper right of a plain pi, with equal empty "\mspace" boxes on both sides and forced "\limits". The fine-tuning (-5mu, 2mu) is taken over unchanged from the sigma and still has to be checked for the pi.
 
   //           20261023:  *:  "MathJax":  Change macro "sumx" from '\sideset{^{\hphantom{\#}}}{^{\#}}{\sum}' to '\mathop{\mspace{6mu}\sum\rlap{\raise 2mu {\mspace{-5mu}{}^{\#}}}\mspace{6mu}}\limits'. A "\sideset" box is no base character for MathJax, so a subscript was dropped by the full depth of the (display-sized) sigma - in a fraction numerator ("\frac{ \sumx_{ z \in \mathbb{Z} } z }{ ... }") "z \in \mathbb{Z}" hung far below the sigma (Wolfgang). Now the "#" is a zero-width overlay at the upper right of a plain sigma ("\rlap"), so it no longer influences the placement of the limits. The two equal empty "\mspace" boxes (6mu) inside the "\mathop" reserve room for the "#" on the right and keep the limits centered under the sigma; "\limits" forces the limits below the sigma everywhere (display style, fraction numerator and running text - a first version with 4mu/8mu and no \limits was off-center and put "z \in \mathbb{Z}" beside the sigma in the numerator, Wolfgang). "\mspace{-5mu}" moves the "#" close to the sigma and "\raise 2mu" lifts it slightly (final fine-tuning by Wolfgang, also checked above a fraction in display style). Checked on a test page in all three places. "prodx" is unchanged.
 
@@ -326,7 +328,7 @@
     echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
     echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
-    echo '            prodx: "\\\\sideset{^{\\\\hphantom{\\\\#}}}{^{\\\\#}}{\\\\prod}",'."\n"; // Primexponentenprodukt-Symbol
+    echo '            prodx: "\\\\mathop{\\\\mspace{6mu}\\\\prod\\\\rlap{\\\\raise 2mu {\\\\mspace{-5mu}{}^{\\\\#}}}\\\\mspace{6mu}}\\\\limits",'."\n"; // Primexponentenprodukt-Symbol
     echo '            sumx: "\\\\mathop{\\\\mspace{6mu}\\\\sum\\\\rlap{\\\\raise 2mu {\\\\mspace{-5mu}{}^{\\\\#}}}\\\\mspace{6mu}}\\\\limits",'."\n"; // Summe mit #-Annotation
     echo '            qed: "\\\\blacksquare",'."\n"; // "quod erat demonstrandum" without space in front for solitaire
     echo '            qqed: "\\\\;\\\\;\\\\blacksquare"'."\n"; // "quod erat demonstrandum" with space in front for line end
