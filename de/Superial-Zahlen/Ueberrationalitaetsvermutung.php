@@ -747,8 +747,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω - 1 *)  *[  n^{\sum_{ i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω *)  *[  n^{\sum_{ i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω - 1 *)  *[  n_{\#}^{\sum_{ i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω *)  *[  n_{\#}^{\sum_{ i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'in dem wir nun die Entwicklungsschritte \lm{ r } durch die vollständigen Induktion \lm{ ω } ersetzt haben.'."\n".
@@ -757,8 +757,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω - 1 } - x^{ 2 ω - 2 } + x^{ 2 ω - 3 } - \cdots + x } \mid a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω } - x^{ 2 ω - 1 } + x^{ 2 ω - 2 } - x^{ 2 ω - 3 } + \cdots - x } \mid b  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{ x_{\#}^{ 2 ω - 1 } - x_{\#}^{ 2 ω - 2 } + x_{\#}^{ 2 ω - 3 } - \cdots + x } \mid a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{ x_{\#}^{ 2 ω } - x_{\#}^{ 2 ω - 1 } + x_{\#}^{ 2 ω - 2 } - x_{\#}^{ 2 ω - 3 } + \cdots - x } \mid b  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'von wo aus wir weiter vorangehen können.'."\n",
@@ -1877,7 +1877,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.UPZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall k, m, x \in \mathbb{N}^{+} *) *( \forall y \in \mathbb{Z} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall k, m, x \in \mathbb{N}^{+} *) *( \forall y \in \mathbb{Z} *)  *[  n_{\#}^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{Pn}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
