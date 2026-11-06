@@ -397,21 +397,21 @@
                   '')),
                   array( 'text', array( text => array(
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
-                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \lm{ \s } ist \lm{ 2^ω }.'."\n".
+                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \lm{ \s } ist \lm{ 2_{\#}^ω }.'."\n".
                     'Wenn wir berücksichtigen, dass ja oben \lm{ \s } durch \lm{ 2 ω } geteilt wird und wir den Faktor \lm{ 2 } schon mal aus'."\n".
-                    'der unendlichen Potenz von \lm{ 2 } entfernen, ergibt sich immer noch \lm{ 2^{ω-1} }, wobei \lm{ ω - 1 } als'."\n".
+                    'der unendlichen Potenz von \lm{ 2 } entfernen, ergibt sich immer noch \lm{ 2_{\#}^{ω-1} }, wobei \lm{ ω - 1 } als'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Nun ist es offensichtlich, dass \lm{ 2^{ω-1} } ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
+                      'Nun ist es offensichtlich, dass \lm{ 2_{\#}^{ω-1} } ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω - 1}  \neq  ω  }'),
-                      array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  *]  }'),
+                      array( display => 'on',  latex => '{  2_{\#}^{ω - 1}  \neq  ω  }'),
+                      array( display => 'on',  latex => '{  2_{\#}^{ω - 1}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p_{\#}^{ω}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies gilt dann auch für alle Potenzen dieser Größenordnung endlicher Primzahlen.'."\n",
@@ -419,7 +419,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Somit kommt keine Primzahl der Potenz \lm{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
+                    'Somit kommt keine Primzahl der Potenz \lm{ p_{\#}^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
                     'als unendlich großer Primexponentenanteil von \lm{ \s }, der \lm{ ω } gleichen kann, in Frage.'."\n".
                     ''))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
@@ -434,7 +434,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  ω  ?\equiv_{kan}  ω_{\forall p}  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots)_{\#}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \s  :=  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  \\\ \qquad\quad\,  =  *( ω_{\forall p} *)^{ω}  ?\equiv_{kan}  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  :=  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}^{ω}  \\\ \qquad\quad\,  =  *( ω_{\forall p} *)_{\#}^{ω}  ?\equiv_{kan}  ω^{ω}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -3602,7 +3602,7 @@
                     'Bei den Vielfachen der Primzahlen \lm{ p \cdot n } geht in \lm{ n } das Spiel des Zählens im Grunde wieder von vorne los.'."\n".
                     'Auch sind in \lm{ n } nun alle Primzahlen gefragt, und nicht nur die bis \lm{ p }.'."\n",
                       'Begrenzen wir uns bis \lm{ p }, so gelangen wir bald zu \lm{ p \cdot p = p^{2} }, wo wir nach deren Erreichen dann mit \lm{ p^{2} \cdot n } fortfahren müssen.'."\n".
-                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert,'."\n".
+                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p_{\#}^{ω} } liefert,'."\n".
                     'also zu jedem der Potenztürme in \lm{ \s }.'."\n".
                     ''))),
 
@@ -4432,7 +4432,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.EG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \displaystyle *( \prodx_{ p \in \mathbb{P} }  p *)_{\#}^{ω}  }',
                                                label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
