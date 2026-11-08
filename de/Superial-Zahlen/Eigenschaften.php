@@ -1671,19 +1671,19 @@
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n_{\#}^{g}  \in  \mathbb{N}_{\infty}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-in-natuerlich-infinit}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Hier steht \lm{ g } für jede aktual unendlich große ganze Zahl.'."\n".
-                    '\lm{ n^{g} } ist demnach dann auch eine aktual unendlich große ganze Zahl.'."\n",
+                    '\lm{ n_{\#}^{g} } ist demnach dann auch eine aktual unendlich große ganze Zahl.'."\n",
                       'Dies können wir noch etwas eleganter und genauer ausdrücken, wenn wir die Klasse der wirklich aktual unendlich großen ganzen Zahlen \lm{ \mathbb{N}_{\infty}^{\infty} } definieren:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}_{\infty}^{\infty}  :=  *\{  u \in \mathbb{N}_{\infty}  *|*  *( \forall i \in \mathbb{N} *) *[ i < u *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  g  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Nun wissen wir schon aus Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit},'."\n".
@@ -1691,29 +1691,29 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}^{+} *)  *[  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}^{+} *)  *[  n_{\#}^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann gilt auch'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall y \in \mathbb{Z} *)  *[  n^{g + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall y \in \mathbb{Z} *)  *[  n_{\#}^{g + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'denn'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  *( n^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  n^{g + \frac{ y }{ x }}  =  \frac{ *( n^{g + \frac{ 1 }{ x }} *)^{y} }{ *( n^{g} *)^{y - 1} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g + \frac{ y }{ x }} }{ n^{(y - 1) g} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{*( y g + \frac{ y }{ x } *) - (y - 1) g}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{y g - (y - 1) g + \frac{ y }{ x }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g + \frac{ y }{ x }}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( n_{\#}^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( n_{\#}^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  n_{\#}^{g + \frac{ y }{ x }}  =  \frac{ *( n_{\#}^{g + \frac{ 1 }{ x }} *)^{y} }{ *( n_{\#}^{g} *)^{y - 1} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  \frac{ n_{\#}^{y g + \frac{ y }{ x }} }{ n_{\#}^{(y - 1) g} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  n_{\#}^{*( y g + \frac{ y }{ x } *) - (y - 1) g}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  n_{\#}^{y g - (y - 1) g + \frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  n_{\#}^{g + \frac{ y }{ x }}  \;\; .  }'),
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
@@ -1722,15 +1722,15 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{g} n^{\frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{y g} n^{\frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  *( n^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{(y - 1) g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
-                      array( display => 'on',  latex => '{  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g} n^{\frac{ y }{ x }} }{ n^{(y - 1) g} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  \frac{ n^{y g} }{ n^{(y - 1) g} } n^{\frac{ y }{ x }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g} n^{\frac{ y }{ x }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ y }{ x }}  =  n^{g + \frac{ y }{ x }}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( n_{\#}^{g + \frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n_{\#}^{g} n^{\frac{ 1 }{ x }} *)^{y}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{y g} n^{\frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( n_{\#}^{g} *)^{y - 1}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{(y - 1) g}  \in  \mathbb{N}_{\infty}^{\infty}  }'),
+                      array( display => 'on',  latex => '{  n_{\#}^{g + \frac{ y }{ x }}  =  \frac{ n_{\#}^{y g} n^{\frac{ y }{ x }} }{ n_{\#}^{(y - 1) g} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  \frac{ n_{\#}^{y g} }{ n_{\#}^{(y - 1) g} } n^{\frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  n_{\#}^{g} n^{\frac{ y }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n_{\#}^{g + \frac{ y }{ x }}  =  n_{\#}^{g + \frac{ y }{ x }}  \;\; .  }'),
                     ))),
 
                     ))),
@@ -1756,8 +1756,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.NR.Exp', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{k ω^{m} + \frac{ y }{ x }}  :\in  \mathbb{Pn}  }',
+                      array( display => 'on',  latex => '{  *( \forall k, m \in \mathbb{N}^{+} *)  *[  n_{\#}^{k ω^{m} + \frac{ y }{ x }}  \in  \mathbb{N}_{\infty}^{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\#}^{k ω^{m} + \frac{ y }{ x }}  :\in  \mathbb{Pn}  }',
                                           label_name => 'OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn', label_text => '\name{OM:SupNum:Eigenschaften:NeueRechenregelnImUnendlichen:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Potenzialzahlen:Equ-n-hoch-k-omega-Potenz-plus-y-durch-x-in-Pn}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
