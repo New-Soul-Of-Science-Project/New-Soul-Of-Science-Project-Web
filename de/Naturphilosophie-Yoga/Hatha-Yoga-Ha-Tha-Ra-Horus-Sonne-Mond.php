@@ -476,6 +476,7 @@
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Yin-Yang-heiliges-Kind'),
+                      array(  jump_name => 'OM:NPYo:Aegypten-Geographie'),
                     )),
               )
           ); ?>
