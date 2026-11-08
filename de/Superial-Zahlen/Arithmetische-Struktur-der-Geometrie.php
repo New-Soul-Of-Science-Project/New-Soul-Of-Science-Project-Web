@@ -201,9 +201,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dabei zeigt sich etwas Wichtiges:'."\n".
-                    'Die reine Zweierteilung, bis hin zu \lm{ 2^{ω} }, trifft den Punkt \lm{ \frac{ 1 }{ 3 } } nie.'."\n".
+                    'Die reine Zweierteilung, bis hin zu \lm{ 2_{\#}^{ω} }, trifft den Punkt \lm{ \frac{ 1 }{ 3 } } nie.'."\n".
                     'Er wird in keiner der Halbierungen erzeugt, denn die Drei teilt keine Potenz von Zwei.'."\n".
-                    'Teilen wir stattdessen bis \lm{ 3^{ω} }, dann fehlt \lm{ \frac{ 1 }{ 5 } }.'."\n".
+                    'Teilen wir stattdessen bis \lm{ 3_{\#}^{ω} }, dann fehlt \lm{ \frac{ 1 }{ 5 } }.'."\n".
                     'Und auch \lm{ \frac{ 1 }{ 6 } } fehlt, selbst wenn wir beide Teilungen vereinigen,'."\n".
                     'denn die Sechs teilt weder eine Potenz von Zwei noch eine Potenz von Drei.'."\n".
                     'Das zeigt die folgende Animation:'."\n".
@@ -213,7 +213,7 @@
                     array_merge( $SupNum_g_iframe_ary_sGeomKonstrukt3D_Primturm, array( name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:LiveAni-Primzahltuerme'))),
 
                   array( 'text', array( text => array(
-                    'Erst das Produkt beider Teilungen, \lm{ 2^{ω} \cdot 3^{ω} }, fängt auch \lm{ \frac{ 1 }{ 6 } } ein.'."\n".
+                    'Erst das Produkt beider Teilungen, \lm{ 2_{\#}^{ω} \cdot 3_{\#}^{ω} }, fängt auch \lm{ \frac{ 1 }{ 6 } } ein.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'So geht es nun immer weiter.'."\n".
@@ -317,7 +317,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Offene Fragestellungen}',
-                    '• Hier gehen wir davon aus, dass \lm{ 2^{ω} }, und damit dann auch \lm{ *( 2^{ω} + 1 *) + 1 = 2^{ω} + 2 }, wirklich einer geordneten Menge entspricht und vermutlich eine Ordinalzahl ist,'."\n".
+                    '• Hier gehen wir davon aus, dass \lm{ 2_{\#}^{ω} }, und damit dann auch \lm{ *( 2_{\#}^{ω} + 1 *) + 1 = 2_{\#}^{ω} + 2 }, wirklich einer geordneten Menge entspricht und vermutlich eine Ordinalzahl ist,'."\n".
                     'wofür ich noch keinen expliziten Beweis gesehen habe, was aber eine gewisse Plausibilität besitzt und hier so Verwendung findet, dass die Formeln in sich logisch erscheinen.'."\n".
                     '\color{*Entwick}{Die Fragestellung ist interessant und sollte auf der Seite der Biordinalzahlen untersucht werden.}',
                     ))),
@@ -342,7 +342,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Kontinuumshypothese}',
-                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2_{\#}^{ω} \cdot 3_{\#}^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2_{\#}^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
@@ -452,15 +452,15 @@
                     'Und dies ist mit einem klaren Ja zu beantworten.'."\n".
                     'Denn der Widerspruchsbeweis ist so angesetzt,'."\n".
                     'dass er einen ganzzahligen Zähler zur Bedingung macht und erst diese und weitere Annahmen die Konstruktionsanweisung hervorbringen.'."\n",
-                      'Der Faktor \lm{ 2^{ω} } ist so groß – eben aktual unendlich groß –, ganzzahlig und so strukturiert,'."\n".
+                      'Der Faktor \lm{ 2_{\#}^{ω} } ist so groß – eben aktual unendlich groß –, ganzzahlig und so strukturiert,'."\n".
                     'dass er im Produkt mit jeder ganzen Wurzel aus Zwei, also aus jeder rational gebrochenen Potenz von Zwei, eine ganze Zahl hervorbringt.'."\n".
                     'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
                     'Sein Geheimnis wird erst offenbar, wenn wir seine Entstehungsgeschichte verstehen und'."\n".
                     'damit seine Bedeutung entschlüsseln und so erkennen.'."\n",
                       'Oben in Formel \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}'."\n".
                     'haben wir berechnet, in welchem Abstand die Punkte auf dem aktual unendlichen Zweiteilungsraster liegen,'."\n".
-                    'nämlich \lm{ d = 2^{-ω} }, wenn wir in die aktuale Unendlichkeit der vollständigen Induktion \lm{ ω } übergehen.'."\n".
-                    'Wir können diesen Abstand oder dieses Raster durch Skalierung, also durch Multiplikation, mit seinem Kehrwert \lm{ 2^{ω} },'."\n".
+                    'nämlich \lm{ d = 2_{\#}^{-ω} }, wenn wir in die aktuale Unendlichkeit der vollständigen Induktion \lm{ ω } übergehen.'."\n".
+                    'Wir können diesen Abstand oder dieses Raster durch Skalierung, also durch Multiplikation, mit seinem Kehrwert \lm{ 2_{\#}^{ω} },'."\n".
                     'auf den Zählabstand von Eins bringen, also auf die Ganzzahligkeit:'."\n".
                     ''))),
                   array( 'equations',
@@ -495,12 +495,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{c} |*^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c_{\#}^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c_{\#}^{ω + \frac{ m }{ k }} }{ c_{\#}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{c} |*^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c_{\#}^{ω} \cdot c^{\frac{ m }{ k }} }{ c_{\#}^{ω} }  =  \frac{ c_{\#}^{ω + \frac{ m }{ k }} }{ c_{\#}^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c_{\#}^{ω} \cdot c^{q} }{ c_{\#}^{ω} }  =  \frac{ c_{\#}^{ω + q} }{ c_{\#}^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier ist zu bemerken, dass die Potenzen der Primzahlen der Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}} von \lm{ c } ja größer als Eins sein können.'."\n".
-                    'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c_{\#}^{ω} = 4^{ω} = *( 2^{2} *)_{\#}^{ω} = 2_{\#}^{2 ω} }'."\n".
+                    'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c_{\#}^{ω} = 4_{\#}^{ω} = *( 2^{2} *)_{\#}^{ω} = 2_{\#}^{2 ω} }'."\n".
                     'und damit eine aktual unendliche Größenordnung größer als \lm{ 2_{\#}^{ω} }, wie oben zuvor.'."\n",
                       'Da stellt sich die Frage:'."\n".
                     'Ist es wirklich notwenig die Größenordnung derart zu vergrößern?'."\n".
