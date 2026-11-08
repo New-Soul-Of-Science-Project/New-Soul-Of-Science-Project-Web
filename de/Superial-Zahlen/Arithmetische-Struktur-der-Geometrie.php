@@ -342,7 +342,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Kontinuumshypothese}',
-                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2_{\#}^{ω} \cdot 3_{\#}^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2_{\#}^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2_{\#}^{ω} \cdot 3_{\#}^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasAnalytischeKontinuum}{Kontinuumshypothese} verneinen.',
                     ))),
 
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:X', text =>
