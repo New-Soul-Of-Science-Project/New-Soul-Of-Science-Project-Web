@@ -554,7 +554,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Aus der Definition des Superial-Körpers \lm{ \mathbb{S} } als Hahn-Reihe auf der Basis \lm{ \s } über der Wertegruppe \lm{ \mathbb{Z} }'."\n".
-                    'folgt unmittelbar, dass transfiniten Ordinalzahlen wie \lm{ ω } oder unendliche Primzahlpotenzen wie \lm{ p^{ω} }'."\n".
+                    'folgt unmittelbar, dass transfiniten Ordinalzahlen wie \lm{ ω } oder unendliche Primzahlpotenzen wie \lm{ p_{\#}^{ω} }'."\n".
                     'keine direkten Elemente des Trägerraums oder des eingebetteten Superial-Rings sein können.'."\n".
                     'Diese Objekte existieren kategorial als Indizes innerhalb der übergeordneten Bewertungstheorie des Systems.'."\n",
                       'Dennoch besitzt die superiale Basis \lm{ \s } eine exakt definierte, unendliche Teilbarkeitsstruktur.'."\n".
