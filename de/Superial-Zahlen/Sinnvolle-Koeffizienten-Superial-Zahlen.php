@@ -620,7 +620,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Hier ggf. auch mit \lm{ n^{ω + \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
+                    '• Hier ggf. auch mit \lm{ n_{\#}^{ω + \frac{1}{X}} } als neue Potenzarithmetik argumentieren?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -721,7 +721,7 @@
                       array( display => 'on',  latex => '{  *( \exists k_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies hat zur Folge, dass \lm{ n } in der Potenz der vollständigen Induktion \lm{ n^{ω} } kein Teiler der superialen Basis \lm{ \s } ist'."\n".
+                    'Dies hat zur Folge, dass \lm{ n } in der Potenz der vollständigen Induktion \lm{ n_{\#}^{ω} } kein Teiler der superialen Basis \lm{ \s } ist'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -736,7 +736,7 @@
                     'und aus diesem Grund können wir aus unseren bisherigen Erkenntnissen nicht folgern, dass \lm{ n^{\frac{ 1 }{ x }} \cdot \s }'."\n".
                     'immer eine natürliche Superial-Zahl ist und damit alle \lm{ n^{\frac{ 1 }{ x }} } sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
                       'Wir müssen also klären, ob auch die aktual unendlichen Teiler von \lm{ \s }, in Form der Produkte von Primzahlen mit Potenzen der'."\n".
-                    'vollständigen Induktion \lm{ p_{i}^{ω} }, ausreichen, um im Produkt mit diesen Wurzeln immer natürliche Superial-Zahlen zu erzeugen.'."\n".
+                    'vollständigen Induktion \lm{ p_{\#,i}^{ω} }, ausreichen, um im Produkt mit diesen Wurzeln immer natürliche Superial-Zahlen zu erzeugen.'."\n".
                     'Und dazu drücken wir die Wurzel als Bruch von Potenzen der Primzahlen von \lm{ n } aus:'."\n".
                     ''))),
                   array( 'equations',
@@ -755,7 +755,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
-                    'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
+                    'einfache vollständige Induktion in der Potenz \lm{ p_{\#,i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
                     'zu einer ganzen Zahl zu machen'."\n".
                     ''))),
                   array( 'equations',
