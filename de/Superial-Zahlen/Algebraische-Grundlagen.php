@@ -71,7 +71,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
                                           label_name => 'OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -138,7 +138,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\R} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  \, *( \forall a, b, c, g \in \mathbb{A}_{\R} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 0 *〉․  \in  \mathbb{S}_{\Z}  }'),
@@ -159,7 +159,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\;\;\, *( \forall a_{i} \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\;\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn wir uns einwenig damit beschäftigen, kommen wir schnell dahinter und können gut verstehen, dass dies plausibel ist.'."\n".
@@ -198,7 +198,7 @@
                     'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\R}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\qquad\qquad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\qquad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für den Fall, dass \lm{ d = 0 } ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
@@ -435,7 +435,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.SK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\quad\;\; \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  :=  *\{  a = \sum_{ k \in \mathbb{Z} } a_{k} \cdot \s^{k}  *|*  a_{k} \in K, \\\ \qquad\qquad\qquad\qquad\qquad\qquad \exists n \in \mathbb{Z} : \forall k > n : a_{k} = 0  *\}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Äquivalent zu'."\n".
@@ -1746,7 +1746,7 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  -ω  <  a  <  ω  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  0  <  ω^{-1}  <  a^{+}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\quad\,  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\;\;\;  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\R} } der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
@@ -1774,7 +1774,7 @@
                                                label_name => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n', label_text => '\name{OM:SupNum:Algebraische-Grundlagen:Formalien:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R} *)  *[  - \s  <  a  <  \s  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\R}^{+} *)  *[  0  <  \s^{-1}  <  a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\qquad  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\R} *)  *( \forall a \in \mathbb{A}_{\R}^{+} *)  \\\ \qquad\quad\,  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\;  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Eigenschaft der Superial-Zahlen, mit ihnen keinen unscharfen, sondern einen konkreten „Limes“ definieren zu können, eröffnet die Möglichkeit'."\n".
@@ -1806,7 +1806,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.F.SW', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\R} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\R} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hierbei ist an jeder spitzen Klammer ein Index notiert, die wir großteils in der Praxis auch weglassen:'."\n".
@@ -1832,7 +1832,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\R} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\R} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
@@ -1859,7 +1859,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.F.SW', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad\;\;\;\, *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Grundlagen:Formalien:Stellenwertsystem:X',
