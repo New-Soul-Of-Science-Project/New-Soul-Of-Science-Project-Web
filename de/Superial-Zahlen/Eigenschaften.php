@@ -628,8 +628,8 @@
                     'siehe \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
                     'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",
                       'Der Beweis der Überrationalitätsvermutung zeigt beispielsweise für'."\n".
-                    '\lm{ a = *| \sqrt{2} \,|* = \frac{ *| \sqrt{2} \,|* \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ *| \sqrt{2} \,|* \cdot \s } eine ganze Zahl ist.'."\n".
-                    'Und zwar, weil \lm{ *| \sqrt{2} \,|* \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
+                    '\lm{ a = *| \sqrt{2} \,|* = \frac{ *| \sqrt{2} \,|* \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} } = \frac{ 2_{\#}^{ω + \frac{1}{2}} }{ 2_{\#}^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ *| \sqrt{2} \,|* \cdot \s } eine ganze Zahl ist.'."\n".
+                    'Und zwar, weil \lm{ *| \sqrt{2} \,|* \cdot 2_{\#}^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2_{\#}^{ω} } enthält.'."\n".
                     'Deshalb ist \lm{ *| \sqrt{2} \,|* } ein sinnvoller Koeffizient und es gilt \lm{ *| \sqrt{2} \,|* \in \mathbb{A}_{\R} }.'."\n".
                     'Schon hierin liegen einige erstaunliche neue Erkenntnisse, die bisher offenbar unbekannt waren.'."\n".
                     'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
@@ -900,22 +900,22 @@
                     'wie geschehen, über die Superial-Zahlen definieren.'."\n".
                     'Und dazu passend ist es auch offensichtlich, dass \lm{ a } nicht alle \lm{ \s } der Punkte'."\n".
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{als Koeffizient adressieren} kann:'."\n",
-                      'So können zum Beispiel in der Menge der Superial-Zahlen nicht die Punkte \lm{ \frac{ k }{ 2^{ω} } }'."\n".
+                      'So können zum Beispiel in der Menge der Superial-Zahlen nicht die Punkte \lm{ \frac{ k }{ 2_{\#}^{ω} } }'."\n".
                     'der arithmetischen Struktur der Geometrie adressiert werden,'."\n".
                     'weil \lm{ x \in \lbrack 0, 1 \lbrack_{\mathbb{S}^{-1}_{\N}} } diesen Wert wegen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *) *( \forall k \in \mathbb{N}^{+} *)  *[  x  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in [0, 1[_{\mathbb{A}_{\S}} *) *( \forall z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  a + \frac{ z }{ \s }  \neq  \frac{ k }{ 2^{ω} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a + \frac{ z }{ 2^{ω} 3^{ω} 5^{ω} 7^{ω} 11^{ω} \cdots }  \neq  \frac{ k }{ 2^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *) *( \forall k \in \mathbb{N}^{+} *)  *[  x  \neq  \frac{ k }{ 2_{\#}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in [0, 1[_{\mathbb{A}_{\S}} *) *( \forall z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \neq  \frac{ k }{ 2_{\#}^{ω} }  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a + \frac{ z }{ \s }  \neq  \frac{ k }{ 2_{\#}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a + \frac{ z }{ 2_{\#}^{ω} 3_{\#}^{ω} 5_{\#}^{ω} 7_{\#}^{ω} 11_{\#}^{ω} \cdots }  \neq  \frac{ k }{ 2_{\#}^{ω} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'nicht annehmen kann.'."\n".
-                    'Es kann zwar \lm{ a = 0 } sein, aber \lm{ z } kann nicht die unendlichen Potenzen der Primzahlen, bis auf \lm{ 2^{ω} }, eliminieren.'."\n",
+                    'Es kann zwar \lm{ a = 0 } sein, aber \lm{ z } kann nicht die unendlichen Potenzen der Primzahlen, bis auf \lm{ 2_{\#}^{ω} }, eliminieren.'."\n",
                       'Nach dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} ist interessanterweise zum Beispiel'."\n".
-                    '\lm{ a = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } } adressierbar.'."\n".
+                    '\lm{ a = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} } } adressierbar.'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.S.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1626,12 +1626,12 @@
                     'Zunächst im wesentlichen in den Exponenten der Primzahlen, wenn wir das Primzahl-Flächenprodukt von \lm{ \s } betrachten.'."\n".
                     'Schließlich dann auch in den \jump{OM:SupNum:Algebraische-Grundlagen:Erzeugungsanzahl}{Erzeugungsanzahlen oder Erzeugungssummen} der Elemente der Teilmengen der Superial-Zahlen.'."\n".
                     'Nun aber zu den Exponenten.'."\n",
-                      'Multiplizieren wir \lm{ \s } mit \lm{ 2 }, so verändert sich die Potenz der Primzahl \lm{ 2 } im Primzahl-Flächenprodukt von \lm{ 2^{ω} } zu \lm{ 2^{ω + 1} },'."\n".
+                      'Multiplizieren wir \lm{ \s } mit \lm{ 2 }, so verändert sich die Potenz der Primzahl \lm{ 2 } im Primzahl-Flächenprodukt von \lm{ 2_{\#}^{ω} } zu \lm{ 2_{\#}^{ω + 1} },'."\n".
                     'wie wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Veraenderung-Primfaktorzerlegung-s-rationale-Koeffizienten}{oben} schon betrachtet haben.'."\n".
-                    'Im Falle des Produkts \lm{ *| \sqrt{2} |* \s = 2^{\frac{ 1 }{ 2 }} \s } verändert sich die Potenz von \lm{ 2^{ω} } dann zu \lm{ 2^{ω + \frac{ 1 }{ 2 }} }.'."\n",
+                    'Im Falle des Produkts \lm{ *| \sqrt{2} |* \s = 2^{\frac{ 1 }{ 2 }} \s } verändert sich die Potenz von \lm{ 2_{\#}^{ω} } dann zu \lm{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }.'."\n",
                       'Wir wissen nun aus dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}, dass'."\n".
-                    '\lm{ 2^{ω + \frac{ 1 }{ 2 }} } eine ganze Zahl sein muss.'."\n".
-                    'Dies gilt sogar für alle \lm{ n^{\frac{1}{x}} \cdot n^{ω} = n^{ω + \frac{1}{x}} },'."\n".
+                    '\lm{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} } eine ganze Zahl sein muss.'."\n".
+                    'Dies gilt sogar für alle \lm{ n^{\frac{1}{x}} \cdot n_{\#}^{ω} = n_{\#}^{ω + \frac{1}{x}} },'."\n".
                     'denn anders als im Endlichen sind im Unendlichen alle diese Zahlen ganze Zahlen, was sehr bemerkenswert ist und für die Ganzheit'."\n".
                     'der Superial-Zahlen wichtige Konsequenzen hat.'."\n",
                       'Und es gibt noch weitere Erkenntnisse.'."\n".
@@ -1919,7 +1919,7 @@
                     ''))),
                   array( 'headline', array( headlineTag => 'h3', jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
-                'Die Potenz \lm{ 2^{ω} } ist uns aus dem Primzahl-Flächenprodukt bereits bekannt', subline =>
+                'Die Potenz \lm{ 2_{\#}^{ω} } ist uns aus dem Primzahl-Flächenprodukt bereits bekannt', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die von uns bewiesene \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zeigt,'."\n".
@@ -1938,7 +1938,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Auch im Exponenten der Primzahlen kommt die Anzahl aller endlichen natürlichen Zahlen \lm{ ω } vor.'."\n".
-                    'Die besagte Potenz \lm{ 2^{ω} } sehen wir hier nun als ersten Primzahlturm im Primzahl-Flächenprodukt von \lm{ \s },'."\n".
+                    'Die besagte Potenz \lm{ 2_{\#}^{ω} } sehen wir hier nun als ersten Primzahlturm im Primzahl-Flächenprodukt von \lm{ \s },'."\n".
                     'dass sich ja aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie} ergeben hat.'."\n",
                       'So wissen wir dann, dass die besagte Potenz \lm{ 2^{ω} } der Mächtigkeit \lm{ \aleph_{1} } gleich ist, welches dann in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
                     'Produkt aller endlichen Primzahlen enthält:'."\n".
