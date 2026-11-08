@@ -97,8 +97,8 @@
                   array( 'text', array( text => array(
                     'Weil die im Produkt von \lm{ \s } enthaltenen Potenzen der Primzahlen allesamt der vollständigen Induktion \lm{ ω } gleichen,'."\n".
                     'kommen wir über die Superial-Zahlen, wenn wir uns auch noch ein wenig mit den von mir auf dieser Seite begründeten Biordinalzahlen befassen,'."\n".
-                    'zur Primfaktorisierung von \lm{ ω } und auch zur Erkenntnis, dass zum Beispiel \lm{ *| \sqrt{n} \,|* \cdot n^{ω} = n^{ω + ½} },'."\n".
-                    'und im Grunde alle ähnlichen Ausdrücke \lm{ *| \sqrt[k]{n} \,|* \cdot n^{ω} = n^{ω + \frac{ 1 }{ k }} }, ganze Zahlen ergeben.'."\n",
+                    'zur Primfaktorisierung von \lm{ ω } und auch zur Erkenntnis, dass zum Beispiel \lm{ *| \sqrt{n} \,|* \cdot n_{\#}^{ω} = n_{\#}^{ω + ½} },'."\n".
+                    'und im Grunde alle ähnlichen Ausdrücke \lm{ *| \sqrt[k]{n} \,|* \cdot n_{\#}^{ω} = n_{\#}^{ω + \frac{ 1 }{ k }} }, ganze Zahlen ergeben.'."\n",
                       'Die \jump{OM:BiOrd:Home}{Biordinalzahlen} sind ein weiteres meiner mathematischen Themen, dass sich mit der Darstellung von negativen aktual unendlichen Zahlen, wie \lm{ -ω }, und den Vorgängern der Limeszahlen, wie \lm{ ω - n },'."\n".
                     'befasst, wodurch wir beispielsweise herausfinden, dass es genauso viele negative Zahlen, wie natürliche Zahlen mit der Null gibt.'."\n",
                       'Über die Primfaktorisierung von \lm{ ω } verstehen wir dann auch, dass \lm{ \s } den gleichen Wert wie \lm{ ω^{ω} } trägt.'."\n",
