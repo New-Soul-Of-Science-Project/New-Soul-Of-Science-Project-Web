@@ -2211,9 +2211,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; .  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }{ 2_{\#}^{ω} }  \;\; .  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -2221,7 +2221,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω}  }'),
+                      array( display => 'on',  latex => '{  2_{\#}^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'trägt die vollständige aktual unendliche Teilbarkeit durch \lm{ 2 }.'."\n".
@@ -2229,7 +2229,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  =  2^{ω + \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω}  =  2_{\#}^{ω + \frac{ 1 }{ 2 }}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'trägt dieselbe aktual unendliche Teilbarkeitsstruktur, verschoben um den Wurzelexponenten.'."\n".
@@ -2333,7 +2333,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω}  }'),
+                      array( display => 'on',  latex => '{  2_{\#}^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'eine aktual unendliche Teilbarkeitsstruktur zur Verfügung.'."\n".
@@ -2342,7 +2342,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Bew.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω}}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2_{\#}^{ω} }{ 2_{\#}^{ω} }  =  \frac{ 2_{\#}^{ω + \frac{ 1 }{ 2 }} }{ 2_{\#}^{ω}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die Superial-Zahlen ist dies grundlegend, weil die'."\n".
