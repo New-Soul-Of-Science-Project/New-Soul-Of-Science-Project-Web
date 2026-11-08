@@ -349,7 +349,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;\;  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN1plus}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \pm *( n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-pm-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SZ1}', label_incr => false),
@@ -544,7 +544,7 @@
                                           label_text => '\jumpname{OM:SupNum:ZFC-Modellkonstruktion:Vortext:Equ-s-ist-explicitly-alle-Primzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \prodx_{ n \in \mathbb{N} } *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)_{\#}  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 1} \\\ \qquad\qquad\quad\;\;\;\, \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 2} \\\ \qquad\qquad\quad\;\;\;\, \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, 3} \\\ \qquad\qquad\quad\;\;\;\, \;\;\;\; \vdots \\\ \qquad\qquad\quad\;\;\;\, \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\#, n \in \mathbb{N}} \\\ \qquad\qquad\quad\;\;\;\, \;\;\;\; \vdots  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => true),
                     ))),
                   array( 'headline', array( headlineTag => 'h4', jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RationaleZahlenSinnvolleKoeffizienten:X', text =>
@@ -589,8 +589,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.RZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k - 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{k} \cdot \s^{m}  <  q_{k - 1} \cdot \s^{k - 1}  *]   }'),
-                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k + 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{k} \cdot \s^{m}  >  q_{k + 1} \cdot \s^{k + 1}  *]   }'),
+                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k - 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\;\;\;\, *[  q_{k} \cdot \s^{m}  <  q_{k - 1} \cdot \s^{k - 1}  *]   }'),
+                      array( display => 'on',  latex => '{  *( \nexists q_{k} \in \mathbb{Q}^{+} *) *( \forall q_{k + 1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\;\;\;\, *[  q_{k} \cdot \s^{m}  >  q_{k + 1} \cdot \s^{k + 1}  *]   }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Potenz \lm{ k } in \lm{ \s^{k} } dominiert den Koeffizienten \lm{ q_{k} }'."\n".
@@ -1005,7 +1005,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\,  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
@@ -1028,7 +1028,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }',
                                           label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN1plus}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1092,7 +1092,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\;\;  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
@@ -1148,7 +1148,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad\;  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N,\{ 1 \}}^{+}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann'."\n".
@@ -1256,7 +1256,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\;\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\quad\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
@@ -1428,7 +1428,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\quad\;\;\,  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; m^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
