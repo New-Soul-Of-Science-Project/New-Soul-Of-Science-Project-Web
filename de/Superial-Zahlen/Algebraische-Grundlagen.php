@@ -1489,7 +1489,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10_{\#}^{-ω}  }'),
                       array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1497,7 +1497,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{ω\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10_{\#}^{-ω}  }'),
                       array( display => 'on',  latex => '{  0{,}\underbrace{333…333}_{\s\text{-Stellen}}  =  \frac{ 1 }{ 3 } - \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1602,7 +1602,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Gru.GAD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d_{ω}  =  \frac{ 1 }{ 3 } \cdot 10_{\#}^{-ω}  }'),
                       array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ 3 } \cdot 10^{-\s}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
