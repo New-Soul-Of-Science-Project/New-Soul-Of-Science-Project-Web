@@ -34,7 +34,7 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Aegypten-Geographie'),
+                      array(  jump_name => 'OM:NPYo:Aegypten-Mythologie-Geographie'),
                     )),
                 )
           ); ?>

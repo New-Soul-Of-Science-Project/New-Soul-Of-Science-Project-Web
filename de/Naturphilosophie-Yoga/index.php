@@ -141,7 +141,7 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Yin-Yang-heiliges-Kind'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Aegypten-Geographie'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Aegypten-Mythologie-Geographie'),
                       array( title => 'Der Blaue Lotus – Reinigung, Erleuchtung und Materialisierung \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '',
                                 description => 'Der Blaue Lotus am Nil verhält sich wie der Sonnengruß und die Reinigung – Erleuchtung, Auskristallisieren und Materialisierung, der Weg von der Milch zur Butter zum Ghee'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Stein-der-Weisen'),
