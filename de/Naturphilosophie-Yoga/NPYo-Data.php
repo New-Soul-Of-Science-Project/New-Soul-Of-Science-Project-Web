@@ -51,6 +51,20 @@
         'OM:NPYo:Home:Haftungsausschluss' => array( headline_text => 'Haftungsausschluss', headline_text_short => 'Haftungsausschluss'),
       ),
     ),
+    'OM:NPYo:Aegypten-Geographie' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Aegypten-Mythologische-Geographie-Nil-Weltenachse-Djed-Blauer-Lotus.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Aegypten-Mythologische-Geographie-Nil-Weltenachse-Djed-Blauer-Lotus.php',
+      titel => 'Das alte Ägypten und seine mythologische Geographie - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => 'Im Lichte von Sonne, Mond und Sternen verläuft der Nil parallel zur Weltachse. In der Wahrnehmung steht er als Weltenachse im Zentrum und alles dreht sich um ihn; das lebenschöpfende Rückgrat, die Wirbelsäule des Universums. Der Nil steht im Zentrum des Wechselspiels zwischen Leben und Tod, zwischen Bewusstsein und Unterbewusstsein, das unser Leben heilt.',
+      keywords => '',
+      text_titel_h1 => 'Das alte Ägypten und seine mythologische Geographie',
+      text_titel_short => 'Das alte Ägypten und seine mythologische Geographie',
+      text_undertitel_h2 => 'Der Nil als Weltenachse, Rückgrat des Universums und Wirbelsäule des Lebens, als ewiger Fluss',
+      text_titel_discr_h3 => 'Im Lichte von Sonne, Mond und Sternen verläuft der Nil parallel zur Weltachse. In der Wahrnehmung steht er als Weltenachse im Zentrum und alles dreht sich um ihn; das lebenschöpfende Rückgrat, die Wirbelsäule des Universums. Der Nil steht im Zentrum des Wechselspiels zwischen Leben und Tod, zwischen Bewusstsein und Unterbewusstsein, das unser Leben heilt.',
+      jump_ary => array(
+        'OM:NPYo:Aegypten-Geographie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+      ),
+    ),
     'OM:NPYo:Anker-im-Milchocean' => array(
       url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Anker-im-Milchocean.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Anker-im-Milchocean.php',
@@ -203,20 +217,6 @@
             'OM:NPYo:Yin-Yang-heiliges-Kind:YouTube-SecretSymbolOfShivaExposed' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
                    
         // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
-      ),
-    ),
-    'OM:NPYo:Aegypten-Geographie' => array(
-      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Aegypten-Mythologische-Geographie-Nil-Weltenachse-Djed-Blauer-Lotus.php',
-      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Aegypten-Mythologische-Geographie-Nil-Weltenachse-Djed-Blauer-Lotus.php',
-      titel => 'Das alte Ägypten und seine mythologische Geographie - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-      description => 'Im Lichte von Sonne, Mond und Sternen verläuft der Nil parallel zur Weltachse. In der Wahrnehmung steht er als Weltenachse im Zentrum und alles dreht sich um ihn; das lebenschöpfende Rückgrat, die Wirbelsäule des Universums. Der Nil steht im Zentrum des Wechselspiels zwischen Leben und Tod, zwischen Bewusstsein und Unterbewusstsein, das unser Leben heilt.',
-      keywords => '',
-      text_titel_h1 => 'Das alte Ägypten und seine mythologische Geographie',
-      text_titel_short => 'Das alte Ägypten und seine mythologische Geographie',
-      text_undertitel_h2 => 'Der Nil als Weltenachse, Rückgrat des Universums und Wirbelsäule des Lebens, als ewiger Fluss',
-      text_titel_discr_h3 => 'Im Lichte von Sonne, Mond und Sternen verläuft der Nil parallel zur Weltachse. In der Wahrnehmung steht er als Weltenachse im Zentrum und alles dreht sich um ihn; das lebenschöpfende Rückgrat, die Wirbelsäule des Universums. Der Nil steht im Zentrum des Wechselspiels zwischen Leben und Tod, zwischen Bewusstsein und Unterbewusstsein, das unser Leben heilt.',
-      jump_ary => array(
-        'OM:NPYo:Aegypten-Geographie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
       ),
     ),
   );

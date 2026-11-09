@@ -34,7 +34,7 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:Aegypten-Geographie'),
                     )),
                 )
           ); ?>

@@ -7,7 +7,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Home'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Yin-Yang-heiliges-Kind'); ?>
 
 
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -78,8 +78,7 @@
                     'Daher war und ist der Nil ein besonders heiliger Fluss.'."\n"))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:HaTha'),
-                      array(  jump_name => 'OM:NPYo:Yin-Yang-heiliges-Kind'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
                     )),
                 )
           ); ?>
