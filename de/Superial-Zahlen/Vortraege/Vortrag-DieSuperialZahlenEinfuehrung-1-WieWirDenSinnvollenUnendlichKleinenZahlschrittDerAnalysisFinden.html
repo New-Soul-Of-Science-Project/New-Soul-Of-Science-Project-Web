@@ -41,9 +41,12 @@
       <div class="mw-talk-title">
         <p class="mw-talk-kicker"><em>Vortragsreihe</em></p>
         <p class="mw-talk-series">Superial-Zahlen – Einführung</p>
-        <p class="mw-talk-desc">Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche – <em>Teil 1</em></p>
+        <p class="mw-talk-desc">
+          Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche
+          <br>
+          <em>Teil 1 – Analytischer Einstieg</em></p>
       </div>
-      <p class="mw-byline" style="margin-top: 160px;">Vortrag und Dialog – <em>Wolfgang Huß, X 2026</em></p>
+      <p class="mw-byline" style="margin-top: 160px;">Vortrag und Dialog – <em>Wolfgang Huß, September 2026</em></p>
       <div class="talk-notes"><button type="button" class="talk-notes-close-btn" aria-label="Sprechtext schließen">×</button>„Die Ableitung gehört zu den erfolgreichsten Konstruktionen der Mathematik. Aber in ihrer Definition steckt eine bemerkenswerte Besonderheit: Wir führen einen Schritt <span class="mjx-pending">\( h \)</span> ein, teilen durch ihn – und lassen ihn anschließend gegen null verschwinden. Heute möchte ich nicht infrage stellen, dass das mathematisch funktioniert. Mich interessiert eine andere Frage: Warum gibt es in dieser Rechnung keinen festen infinitesimalen Schritt?“</div>
     </section>
 
@@ -840,7 +843,7 @@
   // per "Sprechtext anzeigen" die Blase im selben Klick sofort wieder schließen.
   document.addEventListener('click', function(e) {
     if (!revealEl.classList.contains('talk-notes-on')) return;
-    if (e.target.closest('.talk-notes') || e.target.closest('#speaker-menu')) return;
+    if (e.target.closest('.talk-notes') || e.target.closest('#speaker-menu') || e.target.closest('.controls') || e.target.closest('.slide-number')) return;
     setNotesOn(false);
   });
 
