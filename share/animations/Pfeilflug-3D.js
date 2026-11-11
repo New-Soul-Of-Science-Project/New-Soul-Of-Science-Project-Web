@@ -225,7 +225,7 @@ export function initArrowAnimation(containerId) {
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(renderW, renderH);
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.shadowMap.type = THREE.PCFShadowMap;
   container.appendChild(renderer.domElement);
 
   const scene = new THREE.Scene();
