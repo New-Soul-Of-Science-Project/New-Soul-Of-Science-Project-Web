@@ -262,7 +262,7 @@ export function initArrowAnimation(containerId) {
   // per View-Offset verschoben, der Drehpunkt bleibt der Pfeil). OrbitControls: freies Drehen und Zoomen, kein Verschieben.
   const camera = new THREE.PerspectiveCamera(34, renderW / renderH, 0.1, 400);
   camera.setViewOffset(renderW, renderH, -0.2 * renderW, 0, renderW, renderH);
-  const INIT_OFFSET = new THREE.Vector3(0, 0.2, 6.5);   // Kamera relativ zum Pfeil
+  const INIT_OFFSET = new THREE.Vector3(-5.36, 0.45, 3.65);   // Kamera relativ zum Pfeil: leicht von hinten (Azimut -56°), Höhe 4°, Abstand 6,5 m
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enablePan = false; controls.enableDamping = false;
   controls.minDistance = 1; controls.maxDistance = 60;
@@ -447,6 +447,18 @@ export function initArrowAnimation(containerId) {
   resetView(stateAt(clock - PRE).x, stateAt(clock - PRE).y);
   controls.addEventListener('change', () => { if (!inRender) renderFrame(); });
   renderer.domElement.addEventListener('dblclick', () => { const c = stateAt(Math.min(Math.max(clock - PRE, 0), T)); resetView(c.x, c.y); renderFrame(); });
+  // #: Hilfe zum Festlegen der Ausgangsansicht: "pfeilAnsicht()" in der Konsole gibt die aktuelle Kameralage relativ zum
+  // Pfeil aus (als Zeile für "INIT_OFFSET" samt Kugelkoordinaten).
+  window.pfeilAnsicht = () => {
+    const o = camera.position.clone().sub(controls.target), r = o.length();
+    const out = {
+      INIT_OFFSET: 'new THREE.Vector3(' + [o.x, o.y, o.z].map((v) => v.toFixed(2)).join(', ') + ')',
+      abstand_m: +r.toFixed(2),
+      azimut_grad: +THREE.MathUtils.radToDeg(Math.atan2(o.x, o.z)).toFixed(1),   // 0 = Blick von der Seite (z-Achse), + = zur Scheibe hin
+      hoehe_grad: +THREE.MathUtils.radToDeg(Math.asin(o.y / r)).toFixed(1),      // 0 = waagerecht, + = von oben
+    };
+    console.log(out.INIT_OFFSET, out); return out;
+  };
   syncWithSlide();
   if (window.Reveal && typeof window.Reveal.on === 'function') {
     window.Reveal.on('slidechanged', syncWithSlide);
