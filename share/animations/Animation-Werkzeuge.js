@@ -19,7 +19,8 @@ export function whenSized(container, fn) {
   observer.observe(container);
 }
 
-export function addPlayControl({ container, canvas, slider, accent, isRunning, onToggle }) {
+// #: "texts" (optional): eigene Tooltip-Texte { pause, play } statt "Animation anhalten/fortsetzen".
+export function addPlayControl({ container, canvas, slider, accent, isRunning, onToggle, texts = {} }) {
   const NS = 'http://www.w3.org/2000/svg';
   const button = document.createElement('button');
   button.type = 'button';
@@ -60,7 +61,7 @@ export function addPlayControl({ container, canvas, slider, accent, isRunning, o
     svg.innerHTML = running
       ? '<rect x="5" y="4" width="5" height="16" rx="1"/><rect x="14" y="4" width="5" height="16" rx="1"/>'
       : '<path d="M7 4 L20 12 L7 20 Z"/>';
-    const text = running ? 'Animation anhalten' : 'Animation fortsetzen';
+    const text = running ? (texts.pause || 'Animation anhalten') : (texts.play || 'Animation fortsetzen');
     tipText.textContent = text;
     button.setAttribute('aria-label', text);
   }
