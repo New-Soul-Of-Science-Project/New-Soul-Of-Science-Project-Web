@@ -316,7 +316,7 @@ export function initArrowAnimation(containerId) {
   container.appendChild(dim);
   const it = (s) => '<i style="font-style:italic">' + s + '</i>';
 
-  let tau = WINDOWS[0];
+  let tau = 0.03;   // Startwert des Zeitfensters
   const panel = document.createElement('div');
   panel.style.cssText = 'position:absolute; right:14px; top:12px; padding:8px 12px; font-family:"Open Sans",Arial,sans-serif; font-size:17px; color:#111; background:rgba(255,255,255,0.82); border-radius:8px; text-align:right;';
   panel.innerHTML = '<div style="margin-bottom:6px;">Zeitfenster Δ<i>t</i>: Wie lange schauen wir hin?</div>';
